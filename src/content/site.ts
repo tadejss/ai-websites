@@ -1,4 +1,4 @@
-import defaultSite from "./data/default.site.json";
+import defaultSite from "./sites/default.json";
 import type { SiteConfig } from "./types/site";
 
 export type {
