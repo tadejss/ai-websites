@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/sections/HeroSection";
+import { Section } from "@/components/ui/Section";
 import { Icon } from "@/content/icons";
 import { siteConfig } from "@/content/site";
 
@@ -89,8 +90,7 @@ function Navbar() {
 
 function Services() {
   return (
-    <section id={services.id} className="border-t border-border py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-6">
+    <Section id={services.id}>
         <SectionHeading
           eyebrow={services.eyebrow}
           title={services.title}
@@ -115,15 +115,13 @@ function Services() {
             </article>
           ))}
         </div>
-      </div>
-    </section>
+    </Section>
   );
 }
 
 function WhyChooseUs() {
   return (
-    <section id={whyChooseUs.id} className="border-t border-border py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-6">
+    <Section id={whyChooseUs.id}>
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
             <SectionHeading
@@ -161,8 +159,7 @@ function WhyChooseUs() {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 }
 
@@ -170,8 +167,7 @@ function Contact() {
   const { form } = contact;
 
   return (
-    <section id={contact.id} className="border-t border-border py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-6">
+    <Section id={contact.id}>
         <SectionHeading
           eyebrow={contact.eyebrow}
           title={contact.title}
@@ -261,8 +257,7 @@ function Contact() {
             </div>
           </form>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 }
 
