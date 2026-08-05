@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { siteConfig } from "@/content/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,9 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Avto Servis Novak | Profesionalni avtoservis",
-  description:
-    "Zanesljiv avtoservis v Sloveniji. Diagnostika, vzdrževanje, popravila in vulkanizerstvo z več kot 25-letnimi izkušnjami.",
+  title: siteConfig.metadata.title,
+  description: siteConfig.metadata.description,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
