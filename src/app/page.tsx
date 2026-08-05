@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/sections/HeroSection";
+import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
 import { Icon } from "@/content/icons";
 import { siteConfig } from "@/content/site";
@@ -53,12 +54,9 @@ function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href={`#${contact.id}`}
-            className="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
-          >
+          <Button href={`#${contact.id}`} size="sm">
             {nav.cta}
-          </a>
+          </Button>
         </div>
 
         <details className="relative md:hidden">
@@ -248,12 +246,9 @@ function Contact() {
                   placeholder={form.messagePlaceholder}
                 />
               </div>
-              <button
-                type="submit"
-                className="w-full rounded-full bg-accent py-3.5 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
-              >
+              <Button type="submit" size="md">
                 {form.submitLabel}
-              </button>
+              </Button>
             </div>
           </form>
         </div>
