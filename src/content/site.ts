@@ -1,4 +1,4 @@
-import defaultSite from "./sites/default.json";
+import { getSiteConfig } from "./get-site-config";
 import type { SiteConfig } from "./types/site";
 
 export type {
@@ -11,4 +11,4 @@ export type {
   Stat,
 } from "./types/site";
 
-export const siteConfig: SiteConfig = defaultSite as SiteConfig;
+export const siteConfig: SiteConfig = getSiteConfig();
