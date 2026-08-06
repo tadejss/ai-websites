@@ -1,19 +1,12 @@
 import type { SiteConfig } from "@/content/types/site";
+import { getSiteConfigProvider } from "./providers";
+import type { BusinessInput } from "./types";
 
-export type BusinessInput = {
-  companyName?: string;
-  industry?: string;
-  tagline?: string;
-  services?: string[];
-  phone?: string;
-  email?: string;
-  address?: string;
-  openingHours?: string;
-  sellingPoints?: string[];
-};
+export type { BusinessInput } from "./types";
 
 export async function generateSiteConfig(
-  _input: BusinessInput,
+  input: BusinessInput,
 ): Promise<SiteConfig> {
-  throw new Error("AI provider not configured");
+  const provider = getSiteConfigProvider();
+  return provider.generateSiteConfig(input);
 }
