@@ -1,0 +1,21 @@
+{
+  "companyName": "Ime Podjetja",
+  "industry": "Lokalne storitve",
+  "tagline": "Kratka predstavitev podjetja v eni vrstici.",
+  "services": [
+    "Osnovna storitev",
+    "Specializirana storitev",
+    "Svetovanje",
+    "Vzdrževanje"
+  ],
+  "phone": "+386 1 234 56 78",
+  "email": "info@podjetje.si",
+  "address": "Ulica 123, 1000 Ljubljana",
+  "openingHours": "Pon–Pet: 8:00–17:00 · Sob: 9:00–13:00",
+  "sellingPoints": [
+    "Izkušena ekipa z dolgoletno prakso",
+    "Transparentne cene brez skritih stroškov",
+    "Hiter odziv in osebni pristop",
+    "Zanesljiva storitev za lokalne stranke"
+  ]
+}

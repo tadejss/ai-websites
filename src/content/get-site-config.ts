@@ -4,6 +4,14 @@ import { validateSiteConfig } from "./validate-site-config";
 
 const DEFAULT_SLUG = "default";
 
+function isDirectSiteJson(key: string): boolean {
+  return /^\.\/[^/]+\.json$/.test(key);
+}
+
+function toSlug(key: string): string {
+  return key.replace(/^\.\//, "").replace(/\.json$/, "");
+}
+
 type SiteContext = {
   keys(): string[];
   (id: string): unknown;
@@ -21,7 +29,11 @@ const siteContext = (
 
 const siteConfigs = siteContext.keys().reduce<Record<string, SiteConfig>>(
   (acc, key) => {
-    const slug = key.replace(/^\.\//, "").replace(/\.json$/, "");
+    if (!isDirectSiteJson(key)) {
+      return acc;
+    }
+
+    const slug = toSlug(key);
     acc[slug] = validateSiteConfig(siteContext(key));
     return acc;
   },
