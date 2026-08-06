@@ -1,0 +1,149 @@
+{
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Novak"
+  },
+  "metadata": {
+    "title": "Avtoservis Novak d.o.o. | Zanesljiv avtoservis v Ljubljani",
+    "description": "Zanesljiv avtoservis za vaše vozilo v Ljubljani in okolici. Nudimo redne servise, popravila, menjavo olja in diagnostiko z osebnim pristopom."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Strokovno vzdrževanje in popravila za vaše",
+    "titleHighlight": "osebno vozilo",
+    "description": "Zagotavljamo vrhunske avtomehanične storitve za lastnike osebnih vozil v Ljubljani in okolici. Z osebnim pristopom in strokovnostjo poskrbimo, da je vaše voz sempre v najboljši kondiciji.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "100%",
+        "label": "Zadovoljne stranke"
+      },
+      {
+        "value": "Celovito",
+        "label": "Vzdrževanje vozil"
+      },
+      {
+        "value": "Hitro",
+        "label": "In zanesljivo"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo na enem mestu",
+    "description": "V avtomehanični delavnici Novak v Ljubljani poskrbimo za brezhibno delovanje vašega jeklenega konjička z uporabo sodobne opreme in preverjenih delov.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Strokovno izvedeni redni servisi po navodilih proizvajalca za varno in brezskrbno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila motorjev in mehanike",
+        "description": "Natančna odprava napak na motornih sestavih in mehanskih delih vašega vozila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Menjava tekočin in olja",
+        "description": "Pravočasna menjava motornega olja in tekočin za dolgo življenjsko dobo motorja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika napak",
+        "description": "Sodobni računalniški pregled za hitro in natančno odkrivanje skritih okvar.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Splošna vzdrževalna dela",
+        "description": "Vse preostale storitve za ohranjanje varnosti, udobja in zanesljivosti vašega avtomobila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo z dolgoletnimi izkušnjami",
+    "description": "Izstopamo po svojem osebnem pristopu, strokovnosti in visoki ravni zadovoljstva naših strank, ki se rade vračajo.",
+    "highlights": [
+      "Strokovni mojstri z osebnim pristopom do vsake stranke",
+      "Visoka ocena zadovoljstva na podlagi mnenj voznikov",
+      "Celovite storitve vzdrževanja in popravil na enem mestu",
+      "Prilagodljivost in hitra odzivnost v Ljubljani"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebni pristop",
+        "description": "Vsakemu vozilu se posvetimo individualno in poiščemo optimalno rešitev."
+      },
+      {
+        "stat": "Preverjeno",
+        "label": "Visoko zadovoljstvo",
+        "description": "Številne pozitivne ocene strank potrjujejo kakovost našega dela."
+      },
+      {
+        "stat": "Celovito",
+        "label": "Vse na enem mestu",
+        "description": "Od rednih servisov do zahtevnejših popravil in diagnostike."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami in rezervirajte termin",
+    "description": "Obiščite naš servis na Kašeljski cesti v Ljubljani ali nas pokličite za več informacij in dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kašeljska cesta 12, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "0590 52852",
+        "href": "tel:059052852",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo z vozilom ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kašeljska cesta 12, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  }
+}

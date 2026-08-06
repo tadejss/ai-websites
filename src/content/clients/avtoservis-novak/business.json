@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Novak storitveno in trgovsko podjetje d.o.o.",
+  "industry": "Avtomehanična delavnica in avtoservis",
+  "tagline": "Zanesljiv avtoservis za vaše vozilo v Ljubljani",
+  "services": [
+    "Redni servisi vozil",
+    "Popravila motorjev in mehanike",
+    "Menjava tekočin in olja",
+    "Diagnostika napak",
+    "Splošna vzdrževalna dela"
+  ],
+  "phone": "0590 52852",
+  "email": "",
+  "address": "Kašeljska cesta 12, 1000 Ljubljana, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Izkušeni in strokovni mojstri z osebnim pristopom",
+    "Visoka ocena zadovoljstva strank na podlagi številnih mnenj",
+    "Celovite storitve vzdrževanja in popravil vozil"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil, ki potrebujejo zanesljiv servis in vzdrževanje",
+  "serviceArea": "Ljubljana in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, zaupanja vreden, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}
