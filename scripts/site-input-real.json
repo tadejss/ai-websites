@@ -1,0 +1,27 @@
+{
+  "companyName": "Avto Servis Novak",
+  "industry": "Avtoservis",
+  "tagline": "Hiter in zanesljiv servis vozil v Ljubljani.",
+  "services": [
+    "Servis motorjev",
+    "Diagnostika vozil",
+    "Menjava pnevmatik",
+    "Vzdrževanje vozil"
+  ],
+  "phone": "+386 40 123 456",
+  "email": "info@avtoservis.si",
+  "address": "Celovška cesta 100, Ljubljana",
+  "openingHours": "Pon–Pet 8:00–17:00",
+  "sellingPoints": [
+    "20 let izkušenj",
+    "Hiter termin",
+    "Transparentne cene"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil iz Ljubljane in okolice",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "20 let",
+  "tone": "profesionalen, zaupanja vreden",
+  "brandStyle": "moderen in tehničen",
+  "competitors": "majhni lokalni avtoservisi",
+  "callToAction": "Naročite servis"
+}

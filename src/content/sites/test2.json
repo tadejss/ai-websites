@@ -1,69 +1,80 @@
 {
   "brand": {
-    "prefix": "Detajl",
-    "highlight": "Tadej"
+    "prefix": "Ime",
+    "highlight": "Podjetja"
   },
   "metadata": {
-    "title": "Ime Podjetja | Lokalno podjetje",
-    "description": "Profesionalne storitve v vaši bližini. Zanesljivost, kakovost in osebni pristop za vsako stranko."
+    "title": "Ime Podjetja | Lokalne storitve",
+    "description": "Kratka predstavitev podjetja v eni vrstici."
   },
   "nav": {
     "links": [
-      { "href": "#storitve", "label": "Storitve" },
-      { "href": "#zakaj-mi", "label": "Zakaj mi" },
-      { "href": "#kontakt", "label": "Kontakt" }
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
     ],
     "cta": "Rezerviraj termin"
   },
   "hero": {
-    "badge": "Odprto danes do 17:00",
+    "badge": "Pon–Pet: 8:00–17:00 · Sob: 9:00–13:00",
     "title": "Kakovostna storitev v",
     "titleHighlight": "vaši bližini",
-    "description": "Lokalno podjetje z dolgoletnimi izkušnjami. Osebni pristop, poštene cene in storitve, ki jim lahko zaupate.",
+    "description": "Kratka predstavitev podjetja v eni vrstici.",
     "primaryCta": "Rezerviraj termin",
     "secondaryCta": "Naše storitve",
     "stats": [
-      { "value": "500+", "label": "zadovoljnih strank" },
-      { "value": "4,9", "label": "povprečna ocena" },
-      { "value": "10+", "label": "let izkušenj" },
-      { "value": "24 h", "label": "odzivni čas" }
+      {
+        "value": "500+",
+        "label": "zadovoljnih strank"
+      },
+      {
+        "value": "4,9",
+        "label": "povprečna ocena"
+      },
+      {
+        "value": "10+",
+        "label": "let izkušenj"
+      },
+      {
+        "value": "24 h",
+        "label": "odzivni čas"
+      }
     ]
   },
   "services": {
     "id": "storitve",
     "eyebrow": "Storitve",
     "title": "Vse, kar potrebujete na enem mestu",
-    "description": "Ponujamo širok nabor storitev, prilagojenih potrebam naših strank. Vsak projekt obravnavamo s skrbnostjo in pozornostjo do detajlov.",
+    "description": "Ponujamo storitve s področja lokalne storitve. Vsak projekt obravnavamo s skrbnostjo in pozornostjo do detajlov.",
     "items": [
       {
-        "title": "Osnovne storitve",
-        "description": "Celovite rešitve za vsakodnevne potrebe z jasno komunikacijo in dogovorjenimi roki.",
+        "title": "Osnovna storitev",
+        "description": "Storitev, prilagojena potrebam naših strank, z jasno komunikacijo in zanesljivo izvedbo.",
         "icon": "service-1"
       },
       {
-        "title": "Specializirane storitve",
-        "description": "Strokovno znanje in oprema za zahtevnejše naloge in posebne zahteve strank.",
+        "title": "Specializirana storitev",
+        "description": "Storitev, prilagojena potrebam naših strank, z jasno komunikacijo in zanesljivo izvedbo.",
         "icon": "service-2"
       },
       {
         "title": "Svetovanje",
-        "description": "Personalizirani nasveti in načrti, prilagojeni vašim ciljem in proračunu.",
+        "description": "Storitev, prilagojena potrebam naših strank, z jasno komunikacijo in zanesljivo izvedbo.",
         "icon": "service-3"
       },
       {
         "title": "Vzdrževanje",
-        "description": "Redno spremljanje in preventivno vzdrževanje za dolgoročno zanesljivost.",
+        "description": "Storitev, prilagojena potrebam naših strank, z jasno komunikacijo in zanesljivo izvedbo.",
         "icon": "service-4"
-      },
-      {
-        "title": "Podpora strankam",
-        "description": "Dostopna pomoč in odgovori na vprašanja skozi celoten proces sodelovanja.",
-        "icon": "service-5"
-      },
-      {
-        "title": "Hitra pomoč",
-        "description": "Prioritetna obravnava nujnih primerov z jasno oceno časa in stroškov.",
-        "icon": "service-6"
       }
     ]
   },
@@ -73,10 +84,10 @@
     "title": "Kakovost, ki ji stranke zaupajo",
     "description": "Verjamemo v transparentnost, natančnost in osebni pristop. Vsako stranko obravnavamo enako skrbno in profesionalno.",
     "highlights": [
-      "Izkušena ekipa z rednimi usposabljanji",
-      "Brez skritih stroškov — ceno vedno potrdite vnaprej",
-      "Prilagojene rešitve za posameznike in podjetja",
-      "Dolgoročno partnerstvo z našimi strankami"
+      "Izkušena ekipa z dolgoletno prakso",
+      "Transparentne cene brez skritih stroškov",
+      "Hiter odziv in osebni pristop",
+      "Zanesljiva storitev za lokalne stranke"
     ],
     "benefits": [
       {
@@ -104,13 +115,13 @@
     "items": [
       {
         "label": "Naslov",
-        "value": "Ulica 123, 1000 Mesto",
+        "value": "Ulica 123, 1000 Ljubljana",
         "icon": "location"
       },
       {
         "label": "Telefon",
-        "value": "+386 1 000 00 00",
-        "href": "tel:+38610000000",
+        "value": "+386 1 234 56 78",
+        "href": "tel:+38612345678",
         "icon": "phone"
       },
       {
@@ -131,14 +142,14 @@
       "nameLabel": "Ime in priimek",
       "namePlaceholder": "Ime Priimek",
       "phoneLabel": "Telefon",
-      "phonePlaceholder": "+386 40 000 000",
+      "phonePlaceholder": "+386 1 234 56 78",
       "messageLabel": "Sporočilo",
       "messagePlaceholder": "Opišite, kako vam lahko pomagamo...",
       "submitLabel": "Pošlji povpraševanje"
     }
   },
   "footer": {
-    "address": "Ulica 123, 1000 Mesto",
+    "address": "Ulica 123, 1000 Ljubljana",
     "rights": "Vse pravice pridržane."
   }
 }
