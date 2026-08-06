@@ -1,0 +1,363 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-websites.local/schemas/site-config.schema.json",
+  "title": "SiteConfig",
+  "description": "Configuration schema for a local business website.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "brand",
+    "metadata",
+    "nav",
+    "hero",
+    "services",
+    "whyChooseUs",
+    "contact",
+    "footer"
+  ],
+  "properties": {
+    "brand": {
+      "$ref": "#/$defs/Brand"
+    },
+    "metadata": {
+      "$ref": "#/$defs/Metadata"
+    },
+    "nav": {
+      "$ref": "#/$defs/Nav"
+    },
+    "hero": {
+      "$ref": "#/$defs/Hero"
+    },
+    "services": {
+      "$ref": "#/$defs/ServicesSection"
+    },
+    "whyChooseUs": {
+      "$ref": "#/$defs/WhyChooseUsSection"
+    },
+    "contact": {
+      "$ref": "#/$defs/ContactSection"
+    },
+    "footer": {
+      "$ref": "#/$defs/Footer"
+    }
+  },
+  "$defs": {
+    "IconName": {
+      "type": "string",
+      "enum": [
+        "building",
+        "menu",
+        "check",
+        "location",
+        "phone",
+        "email",
+        "clock",
+        "service-1",
+        "service-2",
+        "service-3",
+        "service-4",
+        "service-5",
+        "service-6"
+      ]
+    },
+    "NavLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["href", "label"],
+      "properties": {
+        "href": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    },
+    "Service": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "description", "icon"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "icon": {
+          "$ref": "#/$defs/IconName"
+        }
+      }
+    },
+    "Benefit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stat", "label", "description"],
+      "properties": {
+        "stat": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "Stat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "label"],
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    },
+    "ContactItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "value", "icon"],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "icon": {
+          "$ref": "#/$defs/IconName"
+        }
+      }
+    },
+    "ContactForm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "description",
+        "nameLabel",
+        "namePlaceholder",
+        "phoneLabel",
+        "phonePlaceholder",
+        "messageLabel",
+        "messagePlaceholder",
+        "submitLabel"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "nameLabel": {
+          "type": "string"
+        },
+        "namePlaceholder": {
+          "type": "string"
+        },
+        "phoneLabel": {
+          "type": "string"
+        },
+        "phonePlaceholder": {
+          "type": "string"
+        },
+        "messageLabel": {
+          "type": "string"
+        },
+        "messagePlaceholder": {
+          "type": "string"
+        },
+        "submitLabel": {
+          "type": "string"
+        }
+      }
+    },
+    "Brand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prefix", "highlight"],
+      "properties": {
+        "prefix": {
+          "type": "string"
+        },
+        "highlight": {
+          "type": "string"
+        }
+      }
+    },
+    "Metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "description"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "Nav": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["links", "cta"],
+      "properties": {
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/NavLink"
+          }
+        },
+        "cta": {
+          "type": "string"
+        }
+      }
+    },
+    "Hero": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "badge",
+        "title",
+        "titleHighlight",
+        "description",
+        "primaryCta",
+        "secondaryCta",
+        "stats"
+      ],
+      "properties": {
+        "badge": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "titleHighlight": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "primaryCta": {
+          "type": "string"
+        },
+        "secondaryCta": {
+          "type": "string"
+        },
+        "stats": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Stat"
+          }
+        }
+      }
+    },
+    "ServicesSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "eyebrow", "title", "description", "items"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Service"
+          }
+        }
+      }
+    },
+    "WhyChooseUsSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "eyebrow", "title", "description", "highlights", "benefits"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "highlights": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "benefits": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Benefit"
+          }
+        }
+      }
+    },
+    "ContactSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "eyebrow", "title", "description", "items", "form"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "eyebrow": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ContactItem"
+          }
+        },
+        "form": {
+          "$ref": "#/$defs/ContactForm"
+        }
+      }
+    },
+    "Footer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["address", "rights"],
+      "properties": {
+        "address": {
+          "type": "string"
+        },
+        "rights": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
