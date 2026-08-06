@@ -1,0 +1,28 @@
+{
+  "companyName": "Kavarna Trnovo",
+  "industry": "bar",
+  "tagline": "Prijeten kotiček za odlično kavo v Ljubljani",
+  "services": [
+    "Kava za s seboj",
+    "Topli napitki",
+    "Osvežilne pijače",
+    "Družabni prostor",
+    "Jutranja kava"
+  ],
+  "phone": "",
+  "email": "",
+  "address": "Devinska ulica 1c, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 10:00 PM · Tuesday: 7:00 AM – 10:00 PM · Wednesday: 7:00 AM – 10:00 PM · Thursday: 7:00 AM – 10:00 PM · Friday: 7:00 AM – 10:00 PM · Saturday: 9:00 AM – 4:00 PM · Sunday: 9:00 AM – 4:00 PM",
+  "sellingPoints": [
+    "Odlična kava",
+    "Prijeten ambient",
+    "Prijazna postrežba"
+  ],
+  "targetCustomers": "Lokalni prebivalci, obiskovalci in ljubitelji kave",
+  "serviceArea": "Ljubljana",
+  "yearsExperience": "",
+  "tone": "prijazen, sproščen",
+  "brandStyle": "topel lokalni kotiček",
+  "competitors": "Lokalne kavarne in bari v okolici",
+  "callToAction": "Obiščite nas"
+}

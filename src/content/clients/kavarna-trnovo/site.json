@@ -1,0 +1,147 @@
+{
+  "brand": {
+    "prefix": "Kavarna",
+    "highlight": "Trnovo"
+  },
+  "metadata": {
+    "title": "Kavarna Trnovo | Prijeten kotiček za odlično kavo v Ljubljani",
+    "description": "Obiščite Kavarno Trnovo v Ljubljani. Nudimo odlično kavo, tople napitke in prijeten družabni prostor za lokalne prebivalce in ljubitelje kave."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Obiščite nas"
+  },
+  "hero": {
+    "badge": "Vaš topel lokalni kotiček",
+    "title": "Prijeten kotiček za",
+    "titleHighlight": "odlično kavo v Ljubljani",
+    "description": "Zasnovano za lokalne prebivalce, obiskovalce in ljubitelje kave. Uživajte v sproščenem ambientu in vrhunski postrežbi.",
+    "primaryCta": "Obiščite nas",
+    "secondaryCta": "Naša ponudba",
+    "stats": [
+      {
+        "value": "7 dni",
+        "label": "Odprti vsak teden"
+      },
+      {
+        "value": "100%",
+        "label": "Odlična kava"
+      },
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      },
+      {
+        "value": "Trnovo",
+        "label": "Ljubljana"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj ponujamo",
+    "title": "Naša ponudba in specialitete",
+    "description": "V Kavarni Trnovo poskrbimo za vsak trenutek vašega dneva v osrčju Ljubljane.",
+    "items": [
+      {
+        "title": "Jutranja kava",
+        "description": "Začnite dan z najboljšo skodelico kave, ki vas napolni z energijo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kava za s seboj",
+        "description": "Za vse hitre trenutke in sprehode po mestu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Topli napitki",
+        "description": "Pester izbor čajev in drugih toplih napitkov za hladnejše dni.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Osvežilne pijače",
+        "description": "Hladni napitki za osvežitev v toplejših dneh.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Družabni prostor",
+        "description": "Prijeten ambient za druženje s prijatelji ali sproščeno branje.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prostor, kjer se boste počutili kot doma",
+    "description": "Ločimo se od povprečnih lokalov z osebnim pristopom, vrhunsko kavo in domačim vzdušjem.",
+    "highlights": [
+      "Skrbno izbrana zrna za popoln okus kave",
+      "Topel in domač ambient v mirnem delu Ljubljane",
+      "Prijazno osebje, ki vas vedno pričaka z nasmehom"
+    ],
+    "benefits": [
+      {
+        "stat": "100%",
+        "label": "Domače vzdušje",
+        "description": "Ustvarjamo prostor, kjer je vsak obiskovalec dobrodošel in cenjen."
+      },
+      {
+        "stat": "Vrh",
+        "label": "Kakovost pijač",
+        "description": "Uporabljamo le najboljše sestavine za nepozaben okus."
+      },
+      {
+        "stat": "Trnovo",
+        "label": "Lokalna skupnost",
+        "description": "Priljubljeno zbirališče domačinov in ljubiteljev prave kave."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Pridite na kavo",
+    "description": "Obiščite nas na spodnjem naslovu ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Devinska ulica 1c, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 22:00, Sob–Ned: 9:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Imate vprašanje? Pišite nam in z veseljem vam bomo odgovorili.",
+      "nameLabel": "Ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo...",
+      "submitLabel": "Obiščite nas"
+    }
+  },
+  "footer": {
+    "address": "Devinska ulica 1c, 1000 Ljubljana, Slovenia",
+    "rights": "© 2025 Kavarna Trnovo. Vse pravice pridržane."
+  }
+}

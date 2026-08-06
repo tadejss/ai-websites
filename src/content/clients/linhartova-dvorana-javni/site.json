@@ -1,0 +1,149 @@
+{
+  "brand": {
+    "prefix": "Linhartova",
+    "highlight": "dvorana"
+  },
+  "metadata": {
+    "title": "Linhartova dvorana Radovljica - Kino in gledališče",
+    "description": "Kulturno srce Radovljice s pestrim filmskim in gledališkim programom za vse ljubitelje umetnosti in kulture."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Program"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "O nas"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Preverite spored"
+  },
+  "hero": {
+    "badge": "Kulturno srce Radovljice",
+    "title": "Doživite čarobnost filma in",
+    "titleHighlight": "gledališča",
+    "description": "Vabimo vse ljubitelje filma, gledališča in lokalne kulture v Radovljici z okolico na nepozabne dogodke, predstave in druženja.",
+    "primaryCta": "Preverite spored",
+    "secondaryCta": "Več o nas",
+    "stats": [
+      {
+        "value": "100%",
+        "label": "Kulturnih doživetij"
+      },
+      {
+        "value": "Vrhunski",
+        "label": "Filmski program"
+      },
+      {
+        "value": "Prijeten",
+        "label": "Družabni prostor"
+      },
+      {
+        "value": "Bogata",
+        "label": "Tradicija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Filmske predstave, gledališče in dogodki",
+    "description": "Odkrijte pester nabor kulturnih vsebin, ki jih pripravljamo za obiskovalce v Radovljici z okolico.",
+    "items": [
+      {
+        "title": "Filmske predstave",
+        "description": "Odlična projekcija, kakovostna slika ter bogat nabor umetniških in neuveljavljenih filmov za filmske navdušence.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Gledališke igre",
+        "description": "Priznane gledališke predstave, ki bogastvo izraza prinašajo na oder Linhartove dvorane.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Kulturni dogodki",
+        "description": "Raznolika kulturna srečanja, gostovanja in prireditve z dolgoletno tradicijo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Gostinski lokal",
+        "description": "Prijeten bar pod dvorano z izbiro osvežilnih pijač in slastnega peciva za druženje obiskovalcev.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj obiskati dvorano",
+    "title": "Prostor z dušo in bogato tradicijo",
+    "description": "Združujemo strast do umetnosti, udobje gledanja in domače vzdušje v središču Gorenjske.",
+    "highlights": [
+      "Vrhunska avdio-vizualna izkušnja za prave filmske navdušence",
+      "Edinstven spoj umetniških filmov in gledališke ustvarjalnosti",
+      "Domač in topel sprejem z udobnim barom pod dvorano",
+      "Zgodovinski prostor z globoko zakoreninjeno kulturno tradicijo"
+    ],
+    "benefits": [
+      {
+        "stat": "Vrhunsko",
+        "label": "Kakovost projekcij",
+        "description": "Zagotavljamo odlično sliko in zvok, ki presega običajne standarde regionalnih kinematografov."
+      },
+      {
+        "stat": "Umetniško",
+        "label": "Skrbno izbran program",
+        "description": "Ponujamo pester nabor umetniških filmov in gledaliških iger, ki burijo domišljijo."
+      },
+      {
+        "stat": "Domače",
+        "label": "Prijetno druženje",
+        "description": "Obiščite naš bar s pijačo in pecivom ter delite svoje vtise po predstavi."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Obiščite nas v Radovljici",
+    "description": "Imate vprašanja o programu ali vstopnicah? Naša ekipa vam z veseljem pomaga.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gorenjska cesta 19a, 4240 Radovljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(04) 537 29 00",
+        "href": "tel:+38645372900",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 8:00 - 14:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Vnesite svoje podatke in z veseljem vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje...",
+      "submitLabel": "Preverite spored"
+    }
+  },
+  "footer": {
+    "address": "Gorenjska cesta 19a, 4240 Radovljica, Slovenia",
+    "rights": "© Linhartova dvorana, javni zavod Radovljica. Vse pravice pridržane."
+  }
+}

@@ -9,12 +9,21 @@ function writeJsonFile(filePath: string, data: unknown): void {
   writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
 }
 
-function createLeadData(slug: string, businessInput: any) {
+function createLeadData(
+  slug: string,
+  businessInput: any,
+  rawBusiness: any,
+) {
   return {
     slug,
+    url: `/${slug}`,
     companyName: businessInput.companyName,
+    industry: businessInput.industry,
     phone: businessInput.phone,
     address: businessInput.address,
+    googleRating: rawBusiness.rating,
+    googleReviewCount: rawBusiness.reviewCount,
+    existingWebsite: rawBusiness.website ?? "",
     status: "generated",
   };
 }
@@ -40,6 +49,6 @@ export async function generateClient(
 
   writeJsonFile(
     resolve(leadsDir, `${slug}.json`),
-    createLeadData(slug, businessInput),
+    createLeadData(slug, businessInput, rawBusiness),
   );
 }
