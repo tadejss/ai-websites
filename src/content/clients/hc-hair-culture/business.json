@@ -1,0 +1,29 @@
+{
+  "companyName": "HC Hair Culture",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in strokovno striženje v središču Ljubljane",
+  "services": [
+    "Moško in žensko striženje",
+    "Barvanje las",
+    "Korekcija barve",
+    "Stiliranje las",
+    "Nega las s profesionalnimi produkti"
+  ],
+  "phone": "031 605 090",
+  "email": "",
+  "address": "Gosposvetska cesta 1, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 7:00 PM · Tuesday: 8:00 AM – 7:00 PM · Wednesday: 8:00 AM – 7:00 PM · Thursday: 8:00 AM – 7:00 PM · Friday: 8:00 AM – 3:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno natančno striženje z veliko pozornostjo do detajlov",
+    "Strokovna korekcija barve in uporaba kakovostnih produktov",
+    "Prijazno in strokovno osebje, ki prisluhne vašim željam",
+    "Priročna lokacija v samem središču mesta"
+  ],
+  "targetCustomers": "Moški in ženske, ki iščejo vrhunske frizerske storitve in profesionalno svetovanje v Ljubljani",
+  "serviceArea": "Ljubljana",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "moderen in zanesljiv frizerski salon",
+  "competitors": "Lokalni frizerski saloni v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

@@ -1,0 +1,153 @@
+{
+  "brand": {
+    "prefix": "HC",
+    "highlight": "Hair Culture"
+  },
+  "metadata": {
+    "title": "HC Hair Culture | Frizerski salon Ljubljana",
+    "description": "Vrhunske frizerske storitve, moško in žensko striženje ter barvanje las v središču Ljubljane. Rezervirajte svoj termin za profesionalno nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Vrhunski frizerski salon v Ljubljani",
+    "title": "Umetnost striženja in",
+    "titleHighlight": "popolna nega vaših las",
+    "description": "Moderen in zanesljiv frizerski salon v središču Ljubljane, namenjen moškim in ženskam, ki iščejo vrhunske frizerske storitve in profesionalno svetovanje.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "100%",
+        "label": "Predanost"
+      },
+      {
+        "value": "Vrhunski",
+        "label": "Produkti"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "V salonu HC Hair Culture v Ljubljani poskrbimo za vaš celostni videz z naborom vrhunskih frizerskih storitev.",
+    "items": [
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Izjemno natančno striženje z veliko pozornostjo do detajlov, prilagojeno vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna preobrazba z uporabo vrhunskih in lasem prijaznih profesionalnih barv.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Korekcija barve",
+        "description": "Strokovna korekcija barve za doseganje enakomernega, sijočega in naravnega videza vaših las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stiliranje las",
+        "description": "Popolna frizura za vsak dan ali posebne priložnosti, ustvarjena z občutkom za estetiko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las s profesionalnimi produkti",
+        "description": "Globinska nega in obnova las s skrbno izbranimi profesionalnimi produkti za zdravje in sijaj.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Izkušnja, ki postavlja nove standarde",
+    "description": "Ločimo se od povprečja s strastjo do frizerskega poklica, posluhom za stranke in vrhunskimi rezultati.",
+    "highlights": [
+      "Natančnost in pozornost do vsakega detajla",
+      "Uporaba izključno preverjenih profesionalnih produktov",
+      "Prijeten ambient v samem središču Ljubljane"
+    ],
+    "benefits": [
+      {
+        "stat": "100%",
+        "label": "Posluh za želje",
+        "description": "Prijazno in strokovno osebje, ki prisluhne vašim željam in svetuje najboljšo rešitev."
+      },
+      {
+        "stat": "Top",
+        "label": "Lokacija",
+        "description": "Priročna lokacija v samem središču mesta omogoča enostaven dostop za vse stranke."
+      },
+      {
+        "stat": "Pro",
+        "label": "Kakovost",
+        "description": "Vrhunska korekcija barve in nega las za zdrav, sijoč in negovan videz."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas v središču Ljubljane ali nas kontaktirajte za rezervacijo termina in vprašanja.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gosposvetska cesta 1, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 605 090",
+        "href": "tel:031605090",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Čet: 8:00 – 19:00 · Pet: 8:00 – 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vas bomo kontaktirali glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Gosposvetska cesta 1, 1000 Ljubljana, Slovenia",
+    "rights": "© 2025 HC Hair Culture. Vse pravice pridržane."
+  }
+}
