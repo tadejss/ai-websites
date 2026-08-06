@@ -66,6 +66,26 @@ INVALID:
 VALID:
 "contact": { "form": { "title": "Pošljite povpraševanje", "description": "...", "nameLabel": "...", "namePlaceholder": "...", "phoneLabel": "...", "phonePlaceholder": "...", "messageLabel": "...", "messagePlaceholder": "...", "submitLabel": "Pošlji povpraševanje" } }
 
+Business input fields:
+The user message contains a JSON business input. Use every provided field to write specific copy. Optional fields may include:
+targetCustomers, serviceArea, yearsExperience, tone, brandStyle, competitors, callToAction
+
+When these fields are provided, apply them as follows:
+- targetCustomers → shape hero.description and whyChooseUs copy toward the intended audience
+- serviceArea → reference the local area in hero copy, metadata.description, and services.description where relevant
+- yearsExperience → use in hero.stats and whyChooseUs.benefits (stat/label/description)
+- tone → apply consistently across all visible text
+- brandStyle → reflect in hero copy, section titles, and overall wording style
+- competitors → use subtly in whyChooseUs.highlights and benefits to differentiate without naming competitors directly unless provided
+- callToAction → use for nav.cta, hero.primaryCta, and contact.form.submitLabel when appropriate
+
+Field mapping summary:
+- hero copy: targetCustomers, serviceArea, tone, brandStyle
+- whyChooseUs.benefits and highlights: yearsExperience, competitors, sellingPoints, targetCustomers
+- services.items[].description and services.description: services list, serviceArea, targetCustomers
+- CTA texts: callToAction for nav.cta, hero.primaryCta, contact.form.submitLabel
+- metadata.description: tagline, industry, targetCustomers, serviceArea, tone
+
 Use realistic copy based on the provided business input. Match footer.address to the contact address.`;
 
 export function buildUserPrompt(input: BusinessInput): string {

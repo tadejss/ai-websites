@@ -8,4 +8,11 @@ export type BusinessInput = {
   address?: string;
   openingHours?: string;
   sellingPoints?: string[];
+  targetCustomers?: string;
+  serviceArea?: string;
+  yearsExperience?: string;
+  tone?: string;
+  brandStyle?: string;
+  competitors?: string;
+  callToAction?: string;
 };
