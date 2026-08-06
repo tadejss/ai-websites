@@ -27,7 +27,11 @@ const siteConfigs = siteContext.keys().reduce<Record<string, SiteConfig>>(
 );
 
 function resolveSlug(slug?: string): string {
-  return slug ?? DEFAULT_SLUG;
+  if (slug !== undefined) {
+    return slug;
+  }
+
+  return process.env.SITE_SLUG ?? DEFAULT_SLUG;
 }
 
 export function getSiteConfig(slug?: string): SiteConfig {
