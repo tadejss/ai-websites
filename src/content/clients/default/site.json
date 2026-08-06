@@ -1,0 +1,101 @@
+{
+  "brand": {
+    "prefix": "Ime",
+    "highlight": "Podjetja"
+  },
+  "metadata": {
+    "title": "Ime Podjetja",
+    "description": "Lokalno podjetje."
+  },
+  "nav": {
+    "links": [
+      { "href": "#storitve", "label": "Storitve" },
+      { "href": "#zakaj-mi", "label": "Zakaj mi" },
+      { "href": "#kontakt", "label": "Kontakt" }
+    ],
+    "cta": "Kontakt"
+  },
+  "hero": {
+    "badge": "Odprto",
+    "title": "Dobrodošli pri",
+    "titleHighlight": "nas",
+    "description": "Lokalno podjetje z osnovnimi informacijami.",
+    "primaryCta": "Kontakt",
+    "secondaryCta": "Storitve",
+    "stats": [
+      { "value": "10+", "label": "let izkušenj" }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Storitve",
+    "title": "Naše storitve",
+    "description": "Osnovna ponudba storitev.",
+    "items": [
+      {
+        "title": "Osnovna storitev",
+        "description": "Opis storitve.",
+        "icon": "service-1"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj mi",
+    "title": "Zakaj izbrati nas",
+    "description": "Kratka predstavitev prednosti.",
+    "highlights": [
+      "Zanesljiva storitev"
+    ],
+    "benefits": [
+      {
+        "stat": "10+",
+        "label": "let izkušenj",
+        "description": "Dolgoletna praksa."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Kontakt",
+    "description": "Stopite v stik z nami.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "",
+        "icon": "phone"
+      },
+      {
+        "label": "E-pošta",
+        "value": "",
+        "icon": "email"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite sporočilo",
+      "description": "Odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime",
+      "namePlaceholder": "Ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Sporočilo",
+      "submitLabel": "Pošlji"
+    }
+  },
+  "footer": {
+    "address": "",
+    "rights": "Vse pravice pridržane."
+  }
+}

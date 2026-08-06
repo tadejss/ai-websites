@@ -7,6 +7,7 @@ import {
   type BusinessInput,
 } from "../src/ai/generate-site-config";
 import { validateSiteConfig } from "../src/content/validate-site-config";
+import { createFileSource } from "../src/sources/file-source";
 
 const root = resolve(__dirname, "..");
 const sitesDir = resolve(root, "src/content/sites");
@@ -27,8 +28,12 @@ function usage(): never {
   process.exit(1);
 }
 
-function isBusinessInputObject(value: unknown): value is BusinessInput {
+function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function isBusinessInputObject(value: unknown): value is BusinessInput {
+  return isRecord(value) && "companyName" in value;
 }
 
 async function readBusinessInput(
@@ -43,11 +48,14 @@ async function readBusinessInput(
       return { businessInput: parsed, generated: false };
     }
   } catch {
-    // Fall through to plain text generation.
+    // Fall through to RawBusinessData generation.
   }
 
+  const source = createFileSource(inputPath);
+  const rawBusiness = await source.getBusiness();
+
   return {
-    businessInput: await generateBusinessInput(rawContent),
+    businessInput: await generateBusinessInput(rawBusiness),
     generated: true,
   };
 }
