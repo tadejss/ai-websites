@@ -1,3 +1,5 @@
+import { clientSlugs } from "../clients";
+
 type SiteContext = {
   keys(): string[];
 };
@@ -12,7 +14,14 @@ const siteContext = (
   }
 ).context(".", false, /\.json$/);
 
-export const siteSlugs = siteContext
+function isDirectSiteJson(key: string): boolean {
+  return /^\.\/[^/]+\.json$/.test(key);
+}
+
+export const legacySiteSlugs = siteContext
   .keys()
+  .filter(isDirectSiteJson)
   .map((key) => key.replace(/^\.\//, "").replace(/\.json$/, ""))
   .sort();
+
+export const siteSlugs = [...new Set([...clientSlugs, ...legacySiteSlugs])].sort();
