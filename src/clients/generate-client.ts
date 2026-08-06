@@ -9,6 +9,16 @@ function writeJsonFile(filePath: string, data: unknown): void {
   writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
 }
 
+function createLeadData(slug: string, businessInput: any) {
+  return {
+    slug,
+    companyName: businessInput.companyName,
+    phone: businessInput.phone,
+    address: businessInput.address,
+    status: "generated",
+  };
+}
+
 export async function generateClient(
   slug: string,
   source: BusinessSource,
@@ -23,4 +33,13 @@ export async function generateClient(
 
   writeJsonFile(resolve(clientDir, "business.json"), businessInput);
   writeJsonFile(resolve(clientDir, "site.json"), siteConfig);
+
+  const leadsDir = resolve(__dirname, "../content/leads");
+
+  mkdirSync(leadsDir, { recursive: true });
+
+  writeJsonFile(
+    resolve(leadsDir, `${slug}.json`),
+    createLeadData(slug, businessInput),
+  );
 }

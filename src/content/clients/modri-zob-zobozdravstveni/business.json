@@ -1,0 +1,29 @@
+{
+  "companyName": "Modri Zob - Zobozdravstveni center - Ljubljana",
+  "industry": "Zobozdravstvena ordinacija",
+  "tagline": "Vrhunske zobozdravstvene storitve in prijetna izkušnja brez bolečin",
+  "services": [
+    "Preventivno zobozdravstvo",
+    "Estetsko zobozdravstvo",
+    "Ortodontija z Invisalign",
+    "Popravilo in polnjenje zob",
+    "Lajšanje bolečin in nujna stanja"
+  ],
+  "phone": "040 585 949",
+  "email": "",
+  "address": "Ukmarjeva ul. 6, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 7:00 PM · Tuesday: 7:00 AM – 7:00 PM · Wednesday: 7:00 AM – 7:00 PM · Thursday: 7:00 AM – 7:00 PM · Friday: 7:00 AM – 1:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Brezbolečinsko in skrbno upravljanje z bolečino",
+    "Prijazno osebje, ki pomaga premagati strah pred zobozdravnikom",
+    "Visoka strokovnost in natančnost osebja",
+    "Ugodna razmerje med ceno in kakovostjo"
+  ],
+  "targetCustomers": "Vsi, ki iščejo zanesljivega zobozdravnika, vključno s pacienti z zobnim strahom in tistimi, ki potrebujejo ortodontsko oskrbo",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "stroqunski, topel in pomirjujoč",
+  "brandStyle": "sodoben in paciento-prijazen",
+  "competitors": "Lokalne zobozdravstvene ambulante v Ljubljani",
+  "callToAction": "Naročite se na pregled"
+}

@@ -1,0 +1,154 @@
+{
+  "brand": {
+    "prefix": "Modri",
+    "highlight": "Zob"
+  },
+  "metadata": {
+    "title": "Modri Zob - Zobozdravstveni center Ljubljana",
+    "description": "Vrhunske zobozdravstvene storitve in prijetna izkušnja brez bolečin za paciente v Ljubljani s širšo okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na pregled"
+  },
+  "hero": {
+    "badge": "Zobozdravstveni center Ljubljana",
+    "title": "Vrhunske zobozdravstvene storitve in",
+    "titleHighlight": "prijetna izkušnja brez bolečin",
+    "description": "Specializirani smo za paciente z zobnim strahom in vse, ki iščejo zanesljivo in sodobno zobozdravstveno oskrbo v Ljubljani s širšo okolico.",
+    "primaryCta": "Naročite se na pregled",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "100%",
+        "label": "Brezbolečinski pristop"
+      },
+      {
+        "value": "Sodobno",
+        "label": "Opremljena ordinacija"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Prijazno osebje"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Dostopna lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita zobozdravstvena oskrba na enem mestu",
+    "description": "Zagotavljamo vrhunske zobozdravstvene storitve za paciente vseh starosti v Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Preventivno zobozdravstvo",
+        "description": "Redni pregledi in čiščenje zob za dolgotrajno zdravje vašega nasmeha.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Estetsko zobozdravstvo",
+        "description": "Povrnite sijoč videz vaših zob z naprednimi estetskimi postopki.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Ortodontija z Invisalign",
+        "description": "Diskreten in učinkovit ravnanje zob z nevidnimi zobnimi aparati.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravilo in polnjenje zob",
+        "description": "Kakovostna pllomba in sanacija poškodovanih zob z naravnim videzom.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Lajšanje bolečin in nujna stanja",
+        "description": "Hitra pomoč in strokovno lajšanje bolečin v nujnih primerih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Modri Zob",
+    "title": "Zobozdravstvo, ki mu lahko zaupate",
+    "description": "Združujemo visoko strokovnost, sodoben pristop in posluh za vsakega pacienta posebej.",
+    "highlights": [
+      "Brezbolečinsko in skrbno upravljanje z bolečino",
+      "Prijazno osebje, ki pomaga premagati strah pred zobozdravnikom",
+      "Visoka strokovnost in natančnost osebja",
+      "Ugodno razmerje med ceno in kakovostjo"
+    ],
+    "benefits": [
+      {
+        "stat": "Brez strahu",
+        "label": "Pomirjujoče okolje",
+        "description": "Specializirani pristop za paciente z zobnim strahom v sproščenem vzdušju."
+      },
+      {
+        "stat": "Natančnost",
+        "label": "Strokovna ekipa",
+        "description": "Visoka stopnja strokovnosti in uporaba sodobnih materialov."
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "Odlično razmerje",
+        "description": "Kakovostne storitve po dostopnih cenah za vsakogar."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na vaš termin",
+    "description": "Obiščite naš zobozdravstveni center v Ljubljani ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ukmarjeva ul. 6, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 585 949",
+        "href": "tel:040585949",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Čet: 7:00–19:00, Pet: 7:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili ter določili termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, kakšne težave imate ali katero storitev potrebujete...",
+      "submitLabel": "Naročite se na pregled"
+    }
+  },
+  "footer": {
+    "address": "Ukmarjeva ul. 6, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  }
+}
