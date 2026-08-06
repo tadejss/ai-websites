@@ -1,4 +1,5 @@
 import { resolve } from "node:path";
+import { existsSync } from "node:fs";
 import { config as loadEnv } from "dotenv";
 import type { RawBusinessData } from "../src/ai/types/raw-business-data";
 import { validateRawBusinessData } from "../src/ai/validate-raw-business-data";
@@ -73,6 +74,12 @@ function slugFromBusinessName(name: string): string {
   return words.join("-").replace(/-+/g, "-").replace(/^-|-$/g, "");
 }
 
+function clientExists(slug: string): boolean {
+  return existsSync(
+    resolve(root, "src/content/clients", slug, "site.json"),
+  );
+}
+
 function createCachedSource(data: RawBusinessData): BusinessSource {
   return {
     async getBusiness() {
@@ -98,7 +105,12 @@ async function main(): Promise<void> {
     console.error("Error: Could not create a slug from the business name.");
     process.exit(1);
   }
-
+  
+  if (clientExists(slug)) {
+    console.error(`Error: Client "${slug}" already exists.`);
+    process.exit(1);
+  }
+  
   await generateClient(slug, createCachedSource(rawBusiness));
   console.log(`Client generated: ${slug}`);
 }
