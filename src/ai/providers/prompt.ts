@@ -4,16 +4,21 @@ import type { BusinessInput } from "../types";
 
 export const SYSTEM_PROMPT = `You generate SiteConfig JSON for a local business website.
 
-Return ONLY a valid JSON object. No markdown, comments, or extra text.
+Return ONLY a valid JSON object. No markdown, no code fences, no comments, and no text before or after the JSON.
 
-Required top-level keys:
+Every field and value MUST match the SiteConfig schema exactly:
+- use the correct JSON types for every field
+- include every required field
+- do not add extra keys at any level
+- do not invent extra nesting or wrapper objects
+- never use null; omit optional fields instead
+
+Required top-level keys (exactly these eight):
 brand, metadata, nav, hero, services, whyChooseUs, contact, footer
-
-Do not add extra keys at any level.
 
 Write all visible text in Slovenian unless the business input specifies another language.
 
-Icon rules — use ONLY these exact values:
+Icon rules — contact.items[].icon and services.items[].icon must use ONLY these exact IconName strings:
 location, phone, email, clock, service-1, service-2, service-3, service-4, service-5, service-6
 
 Nav and section ID rules:
@@ -22,20 +27,44 @@ Nav and section ID rules:
 - contact.id = "kontakt", nav href "#kontakt"
 
 Structure requirements:
-- brand: { prefix, highlight } — split the company name for logo styling
-- metadata: { title, description }
-- nav: { links: [{ href, label } x3], cta }
-- hero: { badge, title, titleHighlight, description, primaryCta, secondaryCta, stats }
-  - stats: 4 items with { value, label }
-- services: { id, eyebrow, title, description, items }
-  - items: 4-6 services, each { title, description, icon } with unique service-N icons
-- whyChooseUs: { id, eyebrow, title, description, highlights, benefits }
-  - highlights: 3-4 strings
-  - benefits: 3 items with { stat, label, description }
-- contact: { id, eyebrow, title, description, items, form }
-  - items: address (location), phone (phone + tel: href), email (email + mailto: href), hours (clock)
-  - form: all nine label/placeholder/submit fields
-- footer: { address, rights }
+- brand: { prefix: string, highlight: string }
+- metadata: { title: string, description: string }
+- nav: { links: [{ href: string, label: string } x3], cta: string }
+- hero: { badge: string, title: string, titleHighlight: string, description: string, primaryCta: string, secondaryCta: string, stats: [{ value: string, label: string } x4] }
+- services: { id: string, eyebrow: string, title: string, description: string, items: [{ title: string, description: string, icon: IconName } x4-6] }
+- whyChooseUs: { id: string, eyebrow: string, title: string, description: string, highlights: [string x3-4], benefits: [{ stat: string, label: string, description: string } x3] }
+- contact: { id: string, eyebrow: string, title: string, description: string, items: ContactItem[], form: ContactForm }
+- footer: { address: string, rights: string }
+
+contact.form must ALWAYS include all nine required string fields:
+title, description, nameLabel, namePlaceholder, phoneLabel, phonePlaceholder, messageLabel, messagePlaceholder, submitLabel
+
+Valid vs invalid examples:
+
+INVALID:
+"nav": { "cta": { "label": "Rezerviraj", "href": "#kontakt" } }
+VALID:
+"nav": { "cta": "Rezerviraj termin" }
+
+INVALID:
+"hero": { "primaryCta": { "text": "Kontakt" }, "secondaryCta": { "text": "Storitve" } }
+VALID:
+"hero": { "primaryCta": "Rezerviraj termin", "secondaryCta": "Naše storitve" }
+
+INVALID:
+"contact": { "items": [{ "label": "Telefon", "value": "+386 1 234 56 78", "icon": "phone-icon" }] }
+VALID:
+"contact": { "items": [{ "label": "Telefon", "value": "+386 1 234 56 78", "href": "tel:+38612345678", "icon": "phone" }] }
+
+INVALID:
+"contact": { "items": [{ "label": "Naslov", "value": "Ulica 1", "icon": "location", "href": null }] }
+VALID:
+"contact": { "items": [{ "label": "Naslov", "value": "Ulica 1", "icon": "location" }] }
+
+INVALID:
+"contact": { "form": { "title": "Kontakt", "submitLabel": "Pošlji" } }
+VALID:
+"contact": { "form": { "title": "Pošljite povpraševanje", "description": "...", "nameLabel": "...", "namePlaceholder": "...", "phoneLabel": "...", "phonePlaceholder": "...", "messageLabel": "...", "messagePlaceholder": "...", "submitLabel": "Pošlji povpraševanje" } }
 
 Use realistic copy based on the provided business input. Match footer.address to the contact address.`;
 
@@ -45,6 +74,65 @@ export function buildUserPrompt(input: BusinessInput): string {
 ${JSON.stringify(input, null, 2)}`;
 }
 
+function stripMarkdownFences(content: string): string {
+  const trimmed = content.trim();
+  const fenced = trimmed.match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
+
+  if (fenced) {
+    return fenced[1].trim();
+  }
+
+  return trimmed.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
+}
+
+function extractJsonObject(content: string): string {
+  const start = content.indexOf("{");
+
+  if (start === -1) {
+    return content;
+  }
+
+  let depth = 0;
+  let inString = false;
+  let escaped = false;
+
+  for (let i = start; i < content.length; i++) {
+    const char = content[i];
+
+    if (inString) {
+      if (escaped) {
+        escaped = false;
+      } else if (char === "\\") {
+        escaped = true;
+      } else if (char === '"') {
+        inString = false;
+      }
+      continue;
+    }
+
+    if (char === '"') {
+      inString = true;
+      continue;
+    }
+
+    if (char === "{") {
+      depth += 1;
+    } else if (char === "}") {
+      depth -= 1;
+      if (depth === 0) {
+        return content.slice(start, i + 1);
+      }
+    }
+  }
+
+  return content.slice(start);
+}
+
+function sanitizeJsonResponse(content: string): string {
+  const withoutFences = stripMarkdownFences(content);
+  return extractJsonObject(withoutFences).trim();
+}
+
 export function parseAndValidateSiteConfig(
   content: string,
   providerName: string,
@@ -52,7 +140,7 @@ export function parseAndValidateSiteConfig(
   let parsed: unknown;
 
   try {
-    parsed = JSON.parse(content);
+    parsed = JSON.parse(sanitizeJsonResponse(content));
   } catch {
     throw new Error(`${providerName} returned invalid JSON`);
   }

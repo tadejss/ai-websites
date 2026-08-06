@@ -1,15 +1,18 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { config as loadEnv } from "dotenv";
 import {
   generateSiteConfig,
   type BusinessInput,
 } from "../src/ai/generate-site-config";
 import { validateSiteConfig } from "../src/content/validate-site-config";
 
-const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-
 const root = resolve(__dirname, "..");
 const sitesDir = resolve(root, "src/content/sites");
+
+loadEnv({ path: resolve(root, ".env.local") });
+
+const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function usage(): never {
   console.error("Usage: npm run generate-ai-site -- <slug> <input-json-path>");

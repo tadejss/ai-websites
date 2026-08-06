@@ -7,7 +7,7 @@ import {
 } from "./prompt";
 import type { SiteConfigProvider } from "./types";
 
-const MODEL = "gemini-2.0-flash";
+const MODEL = "gemini-3.5-flash-lite";
 const PROVIDER_NAME = "Gemini";
 
 function createGeminiClient(): GoogleGenerativeAI {
