@@ -1,8 +1,10 @@
 import { Icon } from "@/content/icons";
-import { siteConfig } from "@/content/site";
 import { Section } from "@/components/ui/Section";
+import type { SiteConfig } from "@/content/types/site";
 
-const { whyChooseUs } = siteConfig;
+type Props = {
+  siteConfig: SiteConfig;
+};
 
 function SectionHeading({
   eyebrow,
@@ -26,7 +28,8 @@ function SectionHeading({
   );
 }
 
-export function BenefitsSection() {
+export function BenefitsSection({ siteConfig }: Props) {
+  const { whyChooseUs } = siteConfig;
   return (
     <Section id={whyChooseUs.id}>
       <div className="grid items-center gap-16 lg:grid-cols-2">

@@ -72,10 +72,10 @@ export function SitePage({ siteConfig }: Props) {
       </header>
 
       <main>
-        <HeroSection />
-        <ServicesSection />
-        <BenefitsSection />
-        <ContactSection />
+        <HeroSection siteConfig={siteConfig} />
+        <ServicesSection siteConfig={siteConfig} />
+        <BenefitsSection siteConfig={siteConfig} />
+        <ContactSection siteConfig={siteConfig} />
       </main>
 
       <footer className="border-t border-border py-8">

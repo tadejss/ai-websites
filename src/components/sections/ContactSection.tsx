@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
 import { Icon } from "@/content/icons";
-import { siteConfig } from "@/content/site";
+import type { SiteConfig } from "@/content/types/site";
 
-const { contact } = siteConfig;
+type Props = {
+  siteConfig: SiteConfig;
+};
 
 function SectionHeading({
   eyebrow,
@@ -27,7 +29,8 @@ function SectionHeading({
   );
 }
 
-export function ContactSection() {
+export function ContactSection({ siteConfig }: Props) {
+  const { contact } = siteConfig;
   const { form } = contact;
 
   return (

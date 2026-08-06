@@ -1,8 +1,12 @@
-import { siteConfig } from "@/content/site";
+import type { SiteConfig } from "@/content/types/site";
 
-const { hero, services, contact } = siteConfig;
+type Props = {
+  siteConfig: SiteConfig;
+};
 
-export function HeroSection() {
+export function HeroSection({ siteConfig }: Props) {
+  const { hero, services, contact } = siteConfig;
+
   return (
     <section className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28">
       <div

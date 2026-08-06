@@ -1,8 +1,10 @@
 import { Icon } from "@/content/icons";
-import { siteConfig } from "@/content/site";
 import { Section } from "@/components/ui/Section";
+import type { SiteConfig } from "@/content/types/site";
 
-const { services } = siteConfig;
+type Props = {
+  siteConfig: SiteConfig;
+};
 
 function SectionHeading({
   eyebrow,
@@ -26,7 +28,8 @@ function SectionHeading({
   );
 }
 
-export function ServicesSection() {
+export function ServicesSection({ siteConfig }: Props) {
+  const { services } = siteConfig;
   return (
     <Section id={services.id}>
       <SectionHeading
