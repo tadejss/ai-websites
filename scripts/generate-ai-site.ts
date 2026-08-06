@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { config as loadEnv } from "dotenv";
 import { generateBusinessInput } from "../src/ai/generate-business-input";
@@ -10,6 +10,7 @@ import { validateSiteConfig } from "../src/content/validate-site-config";
 
 const root = resolve(__dirname, "..");
 const sitesDir = resolve(root, "src/content/sites");
+const businessDir = resolve(root, "src/content/business");
 
 loadEnv({ path: resolve(root, ".env.local") });
 
@@ -30,20 +31,25 @@ function isBusinessInputObject(value: unknown): value is BusinessInput {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
-async function readBusinessInput(inputPath: string): Promise<BusinessInput> {
+async function readBusinessInput(
+  inputPath: string,
+): Promise<{ businessInput: BusinessInput; generated: boolean }> {
   const rawContent = readFileSync(inputPath, "utf8").trim();
 
   try {
     const parsed: unknown = JSON.parse(rawContent);
 
     if (isBusinessInputObject(parsed)) {
-      return parsed;
+      return { businessInput: parsed, generated: false };
     }
   } catch {
     // Fall through to plain text generation.
   }
 
-  return generateBusinessInput(rawContent);
+  return {
+    businessInput: await generateBusinessInput(rawContent),
+    generated: true,
+  };
 }
 
 async function main(): Promise<void> {
@@ -75,13 +81,25 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  const businessInput = await readBusinessInput(inputPath);
+  const { businessInput, generated } = await readBusinessInput(inputPath);
+
+  if (generated) {
+    mkdirSync(businessDir, { recursive: true });
+    writeFileSync(
+      resolve(businessDir, `${slug}.json`),
+      `${JSON.stringify(businessInput, null, 2)}\n`,
+      "utf8",
+    );
+  }
 
   const config = validateSiteConfig(await generateSiteConfig(businessInput));
 
   writeFileSync(targetPath, `${JSON.stringify(config, null, 2)}\n`, "utf8");
 
   console.log(`Generated site config: src/content/sites/${slug}.json`);
+  if (generated) {
+    console.log(`Saved business input: src/content/business/${slug}.json`);
+  }
   console.log(`Run with: SITE_SLUG=${slug} npm run dev`);
 }
 
