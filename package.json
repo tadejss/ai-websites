@@ -9,7 +9,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "create-site": "npx tsx scripts/create-site.ts"
+    "create-site": "npx tsx scripts/create-site.ts",
+    "generate-site": "tsx scripts/generate-site.ts",
+    "save-site": "tsx scripts/save-generated-site.ts",
+    "new-site": "tsx scripts/new-site.ts",
+    "generate-ai-site": "tsx scripts/generate-ai-site.ts"
   },
   "dependencies": {
     "next": "16.3.0",
@@ -26,6 +30,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
     "tailwindcss": "^4",
+    "tsx": "^4.23.9",
     "typescript": "^5"
   }
 }
