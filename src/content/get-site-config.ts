@@ -1,10 +1,12 @@
 import type { SiteConfig } from "./types/site";
+import { siteSlugs } from "./sites";
+import { validateSiteConfig } from "./validate-site-config";
 
 const DEFAULT_SLUG = "default";
 
 type SiteContext = {
   keys(): string[];
-  (id: string): SiteConfig;
+  (id: string): unknown;
 };
 
 const siteContext = (
@@ -20,7 +22,7 @@ const siteContext = (
 const siteConfigs = siteContext.keys().reduce<Record<string, SiteConfig>>(
   (acc, key) => {
     const slug = key.replace(/^\.\//, "").replace(/\.json$/, "");
-    acc[slug] = siteContext(key) as SiteConfig;
+    acc[slug] = validateSiteConfig(siteContext(key));
     return acc;
   },
   {},
@@ -36,6 +38,13 @@ function resolveSlug(slug?: string): string {
 
 export function getSiteConfig(slug?: string): SiteConfig {
   const resolvedSlug = resolveSlug(slug);
+
+  if (!siteSlugs.includes(resolvedSlug)) {
+    throw new Error(
+      `Site config not found for slug "${resolvedSlug}". Expected file: src/content/sites/${resolvedSlug}.json`,
+    );
+  }
+
   const config = siteConfigs[resolvedSlug];
 
   if (!config) {

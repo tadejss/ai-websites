@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:default": "SITE_SLUG=default next dev",
+    "dev:test": "SITE_SLUG=test next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
