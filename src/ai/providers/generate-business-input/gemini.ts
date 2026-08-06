@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import type { RawBusinessData } from "../../types/raw-business-data";
 import {
   SYSTEM_PROMPT,
   buildUserPrompt,
@@ -22,7 +23,7 @@ function createGeminiClient(): GoogleGenerativeAI {
 export function createGeminiProvider(): BusinessInputProvider {
   return {
     name: "gemini",
-    async generateBusinessInput(input: string) {
+    async generateBusinessInput(input: RawBusinessData) {
       const client = createGeminiClient();
       const model = client.getGenerativeModel({
         model: MODEL,

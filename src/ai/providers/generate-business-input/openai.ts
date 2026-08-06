@@ -1,4 +1,5 @@
 import OpenAI from "openai";
+import type { RawBusinessData } from "../../types/raw-business-data";
 import {
   SYSTEM_PROMPT,
   buildUserPrompt,
@@ -22,7 +23,7 @@ function createOpenAIClient(): OpenAI {
 export function createOpenAIProvider(): BusinessInputProvider {
   return {
     name: "openai",
-    async generateBusinessInput(input: string) {
+    async generateBusinessInput(input: RawBusinessData) {
       const client = createOpenAIClient();
 
       const response = await client.chat.completions.create({

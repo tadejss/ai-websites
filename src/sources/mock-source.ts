@@ -1,13 +1,7 @@
-import { resolve } from "node:path";
-import { config as loadEnv } from "dotenv";
-import { generateBusinessInput } from "../src/ai/generate-business-input";
-import type { RawBusinessData } from "../src/ai/types/raw-business-data";
+import type { RawBusinessData } from "@/ai/types/raw-business-data";
+import type { BusinessSource } from "./types";
 
-const root = resolve(__dirname, "..");
-
-loadEnv({ path: resolve(root, ".env.local") });
-
-const input: RawBusinessData = {
+const avtoServisNovakData: RawBusinessData = {
   name: "Avto Servis Novak",
   category: "Avtoservis",
   description:
@@ -26,12 +20,10 @@ const input: RawBusinessData = {
   ],
 };
 
-async function main(): Promise<void> {
-  const result = await generateBusinessInput(input);
-  console.log(JSON.stringify(result, null, 2));
+export function createMockSource(): BusinessSource {
+  return {
+    async getBusiness() {
+      return avtoServisNovakData;
+    },
+  };
 }
-
-main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
-  process.exit(1);
-});

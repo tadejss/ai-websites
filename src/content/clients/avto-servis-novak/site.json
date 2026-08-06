@@ -4,8 +4,8 @@
     "highlight": "Novak"
   },
   "metadata": {
-    "title": "Avto Servis Novak | Hiter in zanesljiv servis vozil v Ljubljani",
-    "description": "Hiter in zanesljiv servis vozil v Ljubljani in okolici. 20 let izkušenj, diagnostika, menjava pnevmatik in redno vzdrževanje za osebna vozila."
+    "title": "Avto Servis Novak | Zanesljiv servis osebnih vozil v Ljubljani",
+    "description": "Zanesljiv servis osebnih vozil v Ljubljani. Nudimo avtodiagnostiko, vzdrževanje, menjavo pnevmatik in hitre servisne preglede za lastnike vozil v Ljubljani in okolici."
   },
   "nav": {
     "links": [
@@ -22,31 +22,31 @@
         "label": "Kontakt"
       }
     ],
-    "cta": "Naročite servis"
+    "cta": "Rezervirajte termin"
   },
   "hero": {
-    "badge": "Zanesljiv avtoservis v Ljubljani",
-    "title": "Vrhunsko vzdrževanje in",
-    "titleHighlight": "diagnostika vozil",
-    "description": "Zagotavljamo vrhunsko strokovno oskrbo za osebna vozila v Ljubljani z okolico. Z združitvijo moderne tehnologije in dolgoletnih izkušenj poskrbimo za varnost vašega jeklenega konjička.",
-    "primaryCta": "Naročite servis",
-    "secondaryCta": "Preverite storitve",
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Strokovno vzdrževanje in popravilo",
+    "titleHighlight": "vašega vozila",
+    "description": "Poskrbite za brezhibno delovanje vašega avtomobila. Lastnikom osebnih vozil v Ljubljani in okolici nudimo hitro, pošteno in strokovno storitev.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
     "stats": [
       {
-        "value": "20 let",
-        "label": "Izkušenj"
-      },
-      {
         "value": "100%",
-        "label": "Transparentne cene"
+        "label": "Zadovoljne stranke"
       },
       {
-        "value": "Hitri",
-        "label": "Termini"
+        "value": "Hitro",
+        "label": "Odzivni časi"
       },
       {
-        "value": "Strokovna",
-        "label": "Oprema"
+        "value": "Strokovno",
+        "label": "Osebje z izkušnjami"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Lokalna lokacija"
       }
     ]
   },
@@ -54,26 +54,26 @@
     "id": "storitve",
     "eyebrow": "Naše storitve",
     "title": "Celovite rešitve za vaše vozilo",
-    "description": "Za lastnike osebnih vozil v Ljubljani z okolico nudimo širok spekter storitev z uporabo sodobne opreme in preverjenih nadomestnih delov.",
+    "description": "V našem servisu v Ljubljani nudimo kakovostne storitve za vsa osebna vozila, s poudarkom na varnosti, hitrosti in poštenem odnosu.",
     "items": [
       {
-        "title": "Servis motorjev",
-        "description": "Temeljit pregled, menjava olja, filtrov in redno vzdrževanje srčne verige vašega vozila.",
+        "title": "Avtodiagnostika",
+        "description": "Natančno odkrivanje električnih in mehanskih napak z napredno diagnostično opremo.",
         "icon": "service-1"
       },
       {
-        "title": "Diagnostika vozil",
-        "description": "Natančno računalniško odkrivanje napak in odpravljanje težav na elektroniki ter motorju.",
+        "title": "Vzdrževanje vozil",
+        "description": "Redni servisni pregledi, menjava olja, filtrov in tekočin za dolgo življenjsko dobo motorja.",
         "icon": "service-2"
       },
       {
         "title": "Menjava pnevmatik",
-        "description": "Hitro premontaža, centriranje in ustrezno shranjevanje pnevmatik za vse letne čase.",
+        "description": "Hitro in strokovno preobuvanje ter centriranje pnevmatik za varno vožnjo v vseh letnih časih.",
         "icon": "service-3"
       },
       {
-        "title": "Vzdrževanje vozil",
-        "description": "Preventivni pregledi, zavorne tekočine, zavore in priprave vozil na tehnični pregled.",
+        "title": "Hitri servisni pregledi",
+        "description": "Pregledi pred tehničnim pregledom, menjava zavor in druge manjše hitre popravke.",
         "icon": "service-4"
       }
     ]
@@ -81,41 +81,40 @@
   "whyChooseUs": {
     "id": "zakaj-mi",
     "eyebrow": "Zakaj izbrati nas",
-    "title": "Zaupanja vreden partner za vaše vozilo",
-    "description": "Izstopamo s profesionalnim pristopom, hitro odzivnostjo in popolno transparentnostjo v primerjavi s povprečnimi lokalnimi servisi.",
+    "title": "Servis, kimu lahko zaupate",
+    "description": "Zavedamo se, da je vaše vozilo nepogrešljiv del vašega vsakdana, zato se vedno posvetimo vsaki stranki posebej.",
     "highlights": [
-      "20 let izkušenj na področju avtoservisa",
-      "Zagotovljeni hitri termini brez dolgih čakalnih vrst",
-      "Brez skritih stroškov – transparentne cene storitev",
-      "Uporaba sodobne diagnostične opreme"
+      "Hitra in poštena storitev brez skritih stroškov",
+      "Jasna razlaga napak in predlogov popravil na vozilu",
+      "Prijazno in strokovno osebje z občutkom za detail"
     ],
     "benefits": [
       {
-        "stat": "20 let",
-        "label": "Tradicije in izkušenj",
-        "description": "Dolgoletno delo na področju avtomobilske mehanike in diagnostike nam omogoča reševanje še tako zahtevnih izzivov."
+        "stat": "100%",
+        "label": "Transparentnost",
+        "description": "Pred vsakim posegom vam odkrito razložimo stanje in potrebne korake."
       },
       {
-        "stat": "Takoj",
-        "label": "Odzivnost in termini",
-        "description": "Zavedamo se, da je vaše vozilo nujno za vsakdanje življenje, zato zagotavljamo hitro izvedbo del."
+        "stat": "Hitro",
+        "label": "Učinkovitost",
+        "description": "Cenimo vaš čas, zato dela izvajamo zanesljivo in v dogovorjenih rokovih."
       },
       {
-        "stat": "Pošteno",
-        "label": "Transparentno poslovanje",
-        "description": "Pred vsakim posegom vas odkrito seznanimo z obsegom dela in predvidenimi stroški."
+        "stat": "Strokovno",
+        "label": "Kakovost",
+        "description": "Uporabljamo preverjene dele in sodobna orodja za najboljšo oskrbo vašega avta."
       }
     ]
   },
   "contact": {
     "id": "kontakt",
-    "eyebrow": "Kontakt",
-    "title": "Stopite v stik z nami",
-    "description": "Naročite se na servis ali postavite vprašanje glede vašega vozila. Z veseljem vam bomo svetovali.",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Celovški cesti ali nam pošljite povpraševanje. Z veseljem bomo odgovorili na vsa vaša vprašanja.",
     "items": [
       {
         "label": "Naslov",
-        "value": "Celovška cesta 100, Ljubljana",
+        "value": "Celovška cesta 120, 1000 Ljubljana",
         "icon": "location"
       },
       {
@@ -126,30 +125,30 @@
       },
       {
         "label": "E-pošta",
-        "value": "info@avtoservis.si",
-        "href": "mailto:info@avtoservis.si",
+        "value": "info@avtoservis-novak.si",
+        "href": "mailto:info@avtoservis-novak.si",
         "icon": "email"
       },
       {
         "label": "Delovni čas",
-        "value": "Pon–Pet 8:00–17:00",
+        "value": "Pon–Pet: 8:00–17:00 · Sob: 8:00–13:00",
         "icon": "clock"
       }
     ],
     "form": {
       "title": "Pošljite povpraševanje",
-      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vas bomo kontaktirali za potrditev termina.",
       "nameLabel": "Ime in priimek",
-      "namePlaceholder": "Vnesite vaše ime",
+      "namePlaceholder": "Janez Novak",
       "phoneLabel": "Telefonska številka",
-      "phonePlaceholder": "Vnesite vašo številko",
+      "phonePlaceholder": "+386 40 123 456",
       "messageLabel": "Sporočilo",
-      "messagePlaceholder": "Napišite za katero storitev se zanimate...",
-      "submitLabel": "Naročite servis"
+      "messagePlaceholder": "Napišite za katero storitev se zanimate in želeni termin...",
+      "submitLabel": "Rezervirajte termin"
     }
   },
   "footer": {
-    "address": "Celovška cesta 100, Ljubljana",
-    "rights": "© 2024 Avto Servis Novak. Vse pravice pridržane."
+    "address": "Celovška cesta 120, 1000 Ljubljana",
+    "rights": "© 2025 Avto Servis Novak. Vse pravice pridržane."
   }
 }

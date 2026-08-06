@@ -13,7 +13,8 @@
     "generate-site": "tsx scripts/generate-site.ts",
     "save-site": "tsx scripts/save-generated-site.ts",
     "new-site": "tsx scripts/new-site.ts",
-    "generate-ai-site": "tsx scripts/generate-ai-site.ts"
+    "generate-ai-site": "tsx scripts/generate-ai-site.ts",
+    "create-client": "tsx scripts/create-client.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

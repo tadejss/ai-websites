@@ -1,5 +1,7 @@
 import { validateBusinessInput } from "../../validate-business-input";
+import { validateRawBusinessData } from "../../validate-raw-business-data";
 import type { BusinessInput } from "../../types";
+import type { RawBusinessData } from "../../types/raw-business-data";
 
 export const SYSTEM_PROMPT = `You generate BusinessInput JSON for a local business website.
 
@@ -16,32 +18,55 @@ companyName, industry, tagline, services, phone, email, address, openingHours, s
 
 Write all text in Slovenian by default unless the source input clearly specifies another language.
 
+Source data:
+The user message contains structured RawBusinessData scraped from the web. Map these fields into BusinessInput:
+- name → companyName
+- category → industry
+- description → tagline and supporting copy context
+- phone → phone
+- email → email
+- address → address
+- openingHours → openingHours
+- website → serviceArea or business context only; never invent a website URL
+- reviews → sellingPoints when present; paraphrase review themes, do not copy verbatim unless useful
+- infer targetCustomers, services, yearsExperience, tone, brandStyle, competitors, and callToAction from the available data
+
+Contact and trust rules (strict):
+- NEVER invent contact information
+- phone, email, address, and openingHours must come ONLY from RawBusinessData
+- if phone, email, address, or openingHours are missing in RawBusinessData, return an empty string ""
+- NEVER create fake domains, email addresses, phone numbers, or street addresses
+- NEVER create fake ratings or review counts
+- do NOT copy rating or reviewCount into BusinessInput; use reviews only when present to inform sellingPoints
+- do NOT fabricate social proof numbers in yearsExperience, sellingPoints, or any other field
+
 Inference rules:
-- infer reasonable values for missing business context when needed
-- do NOT invent contact details
-- if phone, email, address, or openingHours are unknown, use an empty string ""
+- infer reasonable values for missing non-contact business context when needed
 - services should contain 4-6 short service names when inferring
 - sellingPoints should contain 3-5 concise bullet strings when inferring
+- tone and brandStyle must be short, clear phrases (2-5 words each); avoid long sentences and typo-prone wording
 
 Field guidance:
 - companyName: business name
 - industry: business type or market
 - tagline: one-line pitch
 - services: array of main services or products
-- phone, email, address, openingHours: contact details or empty strings
+- phone, email, address, openingHours: copy from RawBusinessData exactly or use ""
 - sellingPoints: unique selling points as string array
 - targetCustomers: intended audience
-- serviceArea: geographic area served
-- yearsExperience: experience summary, e.g. "10+ let"
-- tone: desired writing tone
-- brandStyle: brand personality or style
+- serviceArea: geographic area served; may be inferred from address or website when present
+- yearsExperience: experience summary only when supportable from source data, otherwise ""
+- tone: concise writing tone, e.g. "profesionalen, prijazen"
+- brandStyle: concise brand style, e.g. "zanesljiv lokalni servis"
 - competitors: competitor context or differentiation notes
 - callToAction: preferred primary CTA label`;
 
-export function buildUserPrompt(input: string): string {
-  return `Generate a BusinessInput JSON object from this business description:
+export function buildUserPrompt(input: RawBusinessData): string {
+  const data = validateRawBusinessData(input);
 
-${input.trim()}`;
+  return `Generate a BusinessInput JSON object from this scraped business data:
+
+${JSON.stringify(data, null, 2)}`;
 }
 
 function stripMarkdownFences(content: string): string {

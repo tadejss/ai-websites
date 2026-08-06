@@ -1,0 +1,27 @@
+{
+  "companyName": "Avto Servis Novak",
+  "industry": "Avtoservis",
+  "tagline": "Zanesljiv servis osebnih vozil v Ljubljani",
+  "services": [
+    "Avtodiagnostika",
+    "Vzdrževanje vozil",
+    "Menjava pnevmatik",
+    "Hitri servisni pregledi"
+  ],
+  "phone": "+386 40 123 456",
+  "email": "info@avtoservis-novak.si",
+  "address": "Celovška cesta 120, 1000 Ljubljana",
+  "openingHours": "Pon–Pet: 8:00–17:00 · Sob: 8:00–13:00",
+  "sellingPoints": [
+    "Hitra in poštena storitev",
+    "Jasna razlaga napak na vozilu",
+    "Prijazno in strokovno osebje"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici",
+  "serviceArea": "Ljubljana",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalni avtoservisi v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}
