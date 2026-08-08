@@ -17,6 +17,7 @@
     "create-client": "tsx scripts/create-client.ts",
     "list-clients": "tsx scripts/list-clients.ts",
     "list-leads": "tsx scripts/list-leads.ts",
+    "lead-summary": "tsx scripts/lead-summary.ts",
     "update-lead": "tsx scripts/update-lead.ts",
     "backfill-place-ids": "tsx scripts/backfill-place-ids.ts"
   },
