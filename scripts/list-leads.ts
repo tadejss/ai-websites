@@ -1,5 +1,6 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { getLeadPriority } from "../src/leads/priority";
 import { isLeadStatus, LEAD_STATUSES } from "../src/leads/statuses";
 
 const statusFilter = process.argv[2];
@@ -40,6 +41,7 @@ for (const file of leads) {
   );
   console.log(`  Telefon: ${lead.phone ?? "-"}`);
   console.log(`  Demo: ${lead.url ?? ""}`);
+  console.log(`  Priority: ${getLeadPriority(lead)}`);
   console.log(`  Status: ${lead.status}`);
   console.log("");
 }
