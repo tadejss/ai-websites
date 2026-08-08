@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { siteConfig } from "@/content/site";
+import { getSiteBaseUrl } from "@/site-url";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,9 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteBaseUrl = getSiteBaseUrl();
+
 export const metadata: Metadata = {
-  title: siteConfig.metadata.title,
-  description: siteConfig.metadata.description,
+  ...(siteBaseUrl ? { metadataBase: new URL(siteBaseUrl) } : {}),
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
