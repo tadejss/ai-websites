@@ -1,7 +1,6 @@
-import { readdirSync, readFileSync } from "node:fs";
-import { resolve } from "node:path";
 import { getLeadPriority } from "../src/leads/priority";
 import { isLeadStatus, LEAD_STATUSES } from "../src/leads/statuses";
+import { readAllLeads } from "../src/leads/store";
 
 const statusFilter = process.argv[2];
 
@@ -12,19 +11,9 @@ if (statusFilter && !isLeadStatus(statusFilter)) {
   process.exit(1);
 }
 
-const leadsDir = resolve(__dirname, "../src/content/leads");
-
-const leads = readdirSync(leadsDir)
-  .filter((file) => file.endsWith(".json"))
-  .sort();
-
 let shown = 0;
 
-for (const file of leads) {
-  const lead = JSON.parse(
-    readFileSync(resolve(leadsDir, file), "utf8"),
-  );
-
+for (const lead of readAllLeads()) {
   if (statusFilter && lead.status !== statusFilter) {
     continue;
   }
