@@ -3,6 +3,9 @@ import { resolve } from "node:path";
 import { generateBusinessInput } from "@/ai/generate-business-input";
 import { generateSiteConfig } from "@/ai/generate-site-config";
 import { validateRawBusinessData } from "@/ai/validate-raw-business-data";
+import type { BusinessInput } from "@/ai/types";
+import type { RawBusinessData } from "@/ai/types/raw-business-data";
+import { saveLead } from "@/leads/store";
 import type { BusinessSource } from "@/sources/types";
 
 function writeJsonFile(filePath: string, data: unknown): void {
@@ -11,12 +14,13 @@ function writeJsonFile(filePath: string, data: unknown): void {
 
 function createLeadData(
   slug: string,
-  businessInput: any,
-  rawBusiness: any,
+  businessInput: BusinessInput,
+  rawBusiness: RawBusinessData,
 ) {
   return {
     slug,
     url: `/${slug}`,
+    googlePlaceId: rawBusiness.googlePlaceId ?? "",
     companyName: businessInput.companyName,
     industry: businessInput.industry,
     phone: businessInput.phone,
@@ -43,12 +47,5 @@ export async function generateClient(
   writeJsonFile(resolve(clientDir, "business.json"), businessInput);
   writeJsonFile(resolve(clientDir, "site.json"), siteConfig);
 
-  const leadsDir = resolve(__dirname, "../content/leads");
-
-  mkdirSync(leadsDir, { recursive: true });
-
-  writeJsonFile(
-    resolve(leadsDir, `${slug}.json`),
-    createLeadData(slug, businessInput, rawBusiness),
-  );
+  saveLead(createLeadData(slug, businessInput, rawBusiness));
 }
