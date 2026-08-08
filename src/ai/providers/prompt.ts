@@ -73,7 +73,7 @@ targetCustomers, serviceArea, yearsExperience, tone, brandStyle, competitors, ca
 When these fields are provided, apply them as follows:
 - targetCustomers → shape hero.description and whyChooseUs copy toward the intended audience
 - serviceArea → reference the local area in hero copy, metadata.description, and services.description where relevant
-- yearsExperience → use in hero.stats and whyChooseUs.benefits (stat/label/description)
+- yearsExperience → use in hero.stats and whyChooseUs.benefits ONLY when it is a non-empty value; when it is empty, never substitute an invented number
 - tone → apply consistently across all visible text
 - brandStyle → reflect in hero copy, section titles, and overall wording style
 - competitors → use subtly in whyChooseUs.highlights and benefits to differentiate without naming competitors directly unless provided
@@ -85,6 +85,29 @@ Field mapping summary:
 - services.items[].description and services.description: services list, serviceArea, targetCustomers
 - CTA texts: callToAction for nav.cta, hero.primaryCta, contact.form.submitLabel
 - metadata.description: tagline, industry, targetCustomers, serviceArea, tone
+
+Factual accuracy rules (strict):
+- use ONLY facts present in the business input; this website will be shown to the real business owner
+- NEVER invent percentages; "100%", "98%" and similar are forbidden unless the number appears in the business input
+- NEVER invent years of experience, founding dates or company history
+- NEVER invent customer, client, project or review counts such as "500+ strank"
+- NEVER invent awards, certifications, guarantees, prices or partnerships
+- NEVER claim 24/7 or non-stop availability unless openingHours says so
+- NEVER invent services that are not in the business input
+
+hero.stats and whyChooseUs.benefits[].stat do NOT have to be numbers. When there is no supportable number, use a short qualitative word instead.
+
+BAD stats (invented social proof):
+{ "value": "100%", "label": "Zadovoljne stranke" }
+{ "value": "20 let", "label": "Izkušenj" }
+GOOD stats (supported by the business input):
+{ "value": "Osebni", "label": "Pristop" }
+{ "value": "Ljubljana", "label": "Lokacija" }
+{ "value": "7 dni", "label": "Odprti vsak teden" }
+
+The last example is only allowed when openingHours actually shows seven open days.
+
+When information is missing, prefer conservative wording over an invented value. Write "Osebni pristop in strokovna obravnava" rather than "100% zadovoljnih strank".
 
 Use realistic copy based on the provided business input. Match footer.address to the contact address.`;
 
