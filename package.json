@@ -15,12 +15,14 @@
     "new-site": "tsx scripts/new-site.ts",
     "generate-ai-site": "tsx scripts/generate-ai-site.ts",
     "create-client": "tsx scripts/create-client.ts",
-    "test-guards": "tsx scripts/test-generation-guards.ts",
+    "generate-batch": "tsx scripts/generate-batch.ts",
     "list-clients": "tsx scripts/list-clients.ts",
     "list-leads": "tsx scripts/list-leads.ts",
     "lead-summary": "tsx scripts/lead-summary.ts",
     "update-lead": "tsx scripts/update-lead.ts",
-    "backfill-place-ids": "tsx scripts/backfill-place-ids.ts"
+    "backfill-place-ids": "tsx scripts/backfill-place-ids.ts",
+    "test-guards": "tsx scripts/test-generation-guards.ts",
+    "test-batch": "tsx scripts/test-batch.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
