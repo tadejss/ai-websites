@@ -1,3 +1,7 @@
+import {
+  GenerationContentError,
+  toContentError,
+} from "../../generation-error";
 import { validateBusinessInput } from "../../validate-business-input";
 import { validateRawBusinessData } from "../../validate-raw-business-data";
 import type { BusinessInput } from "../../types";
@@ -61,12 +65,24 @@ Field guidance:
 - competitors: competitor context or differentiation notes
 - callToAction: preferred primary CTA label`;
 
-export function buildUserPrompt(input: RawBusinessData): string {
+export function buildUserPrompt(
+  input: RawBusinessData,
+  correction?: string,
+): string {
   const data = validateRawBusinessData(input);
 
-  return `Generate a BusinessInput JSON object from this scraped business data:
+  const prompt = `Generate a BusinessInput JSON object from this scraped business data:
 
 ${JSON.stringify(data, null, 2)}`;
+
+  if (!correction) {
+    return prompt;
+  }
+
+  return `${prompt}
+
+Your previous attempt was rejected. Fix exactly these problems and return the corrected JSON:
+${correction}`;
 }
 
 function stripMarkdownFences(content: string): string {
@@ -137,8 +153,14 @@ export function parseBusinessInput(
   try {
     parsed = JSON.parse(sanitizeJsonResponse(content));
   } catch {
-    throw new Error(`${providerName} returned invalid JSON`);
+    throw new GenerationContentError(
+      `${providerName} returned invalid JSON`,
+    );
   }
 
-  return validateBusinessInput(parsed);
+  try {
+    return validateBusinessInput(parsed);
+  } catch (error) {
+    throw toContentError(error);
+  }
 }

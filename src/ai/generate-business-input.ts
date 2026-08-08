@@ -1,3 +1,4 @@
+import { isRetryable } from "./generation-error";
 import { getBusinessInputProvider } from "./providers/generate-business-input";
 import type { BusinessInput } from "./types";
 import type { RawBusinessData } from "./types/raw-business-data";
@@ -11,5 +12,17 @@ export async function generateBusinessInput(
 ): Promise<BusinessInput> {
   const validatedInput = validateRawBusinessData(input);
   const provider = getBusinessInputProvider();
-  return provider.generateBusinessInput(validatedInput);
+
+  try {
+    return await provider.generateBusinessInput(validatedInput);
+  } catch (error) {
+    if (!isRetryable(error)) {
+      throw error;
+    }
+
+    return provider.generateBusinessInput(
+      validatedInput,
+      (error as Error).message,
+    );
+  }
 }

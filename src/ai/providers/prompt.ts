@@ -1,6 +1,9 @@
 import type { SiteConfig } from "@/content/types/site";
 import { validateSiteConfig } from "@/content/validate-site-config";
 import type { BusinessInput } from "../types";
+import { GenerationContentError, toContentError } from "../generation-error";
+import { validateClaims } from "../validate-claims";
+import { validateGeneratedSiteConfig } from "../validate-generated-site-config";
 
 export const SYSTEM_PROMPT = `You generate SiteConfig JSON for a local business website.
 
@@ -111,10 +114,22 @@ When information is missing, prefer conservative wording over an invented value.
 
 Use realistic copy based on the provided business input. Match footer.address to the contact address.`;
 
-export function buildUserPrompt(input: BusinessInput): string {
-  return `Generate a SiteConfig JSON object for this business:
+export function buildUserPrompt(
+  input: BusinessInput,
+  correction?: string,
+): string {
+  const prompt = `Generate a SiteConfig JSON object for this business:
 
 ${JSON.stringify(input, null, 2)}`;
+
+  if (!correction) {
+    return prompt;
+  }
+
+  return `${prompt}
+
+Your previous attempt was rejected. Fix exactly these problems and return the corrected JSON:
+${correction}`;
 }
 
 function stripMarkdownFences(content: string): string {
@@ -179,14 +194,23 @@ function sanitizeJsonResponse(content: string): string {
 export function parseAndValidateSiteConfig(
   content: string,
   providerName: string,
+  input: BusinessInput,
 ): SiteConfig {
   let parsed: unknown;
 
   try {
     parsed = JSON.parse(sanitizeJsonResponse(content));
   } catch {
-    throw new Error(`${providerName} returned invalid JSON`);
+    throw new GenerationContentError(
+      `${providerName} returned invalid JSON`,
+    );
   }
 
-  return validateSiteConfig(parsed);
+  try {
+    const config = validateGeneratedSiteConfig(validateSiteConfig(parsed));
+
+    return validateClaims(config, input);
+  } catch (error) {
+    throw toContentError(error);
+  }
 }
