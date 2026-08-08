@@ -1,19 +1,12 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { isLeadStatus, LEAD_STATUSES } from "../src/leads/statuses";
 
 const [slug, status] = process.argv.slice(2);
 
-const allowedStatuses = [
-  "generated",
-  "contacted",
-  "interested",
-  "customer",
-  "rejected",
-];
-
-if (status && !allowedStatuses.includes(status)) {
+if (status && !isLeadStatus(status)) {
   console.error(
-    `Invalid status "${status}". Allowed: ${allowedStatuses.join(", ")}`,
+    `Invalid status "${status}". Allowed: ${LEAD_STATUSES.join(", ")}`,
   );
   process.exit(1);
 }
