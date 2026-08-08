@@ -1,6 +1,9 @@
 import type { SiteConfig } from "@/content/types/site";
 import { validateSiteConfig } from "@/content/validate-site-config";
 import type { BusinessInput } from "../types";
+import { GenerationContentError, toContentError } from "../generation-error";
+import { validateClaims } from "../validate-claims";
+import { validateGeneratedSiteConfig } from "../validate-generated-site-config";
 
 export const SYSTEM_PROMPT = `You generate SiteConfig JSON for a local business website.
 
@@ -73,7 +76,7 @@ targetCustomers, serviceArea, yearsExperience, tone, brandStyle, competitors, ca
 When these fields are provided, apply them as follows:
 - targetCustomers → shape hero.description and whyChooseUs copy toward the intended audience
 - serviceArea → reference the local area in hero copy, metadata.description, and services.description where relevant
-- yearsExperience → use in hero.stats and whyChooseUs.benefits (stat/label/description)
+- yearsExperience → use in hero.stats and whyChooseUs.benefits ONLY when it is a non-empty value; when it is empty, never substitute an invented number
 - tone → apply consistently across all visible text
 - brandStyle → reflect in hero copy, section titles, and overall wording style
 - competitors → use subtly in whyChooseUs.highlights and benefits to differentiate without naming competitors directly unless provided
@@ -86,12 +89,47 @@ Field mapping summary:
 - CTA texts: callToAction for nav.cta, hero.primaryCta, contact.form.submitLabel
 - metadata.description: tagline, industry, targetCustomers, serviceArea, tone
 
+Factual accuracy rules (strict):
+- use ONLY facts present in the business input; this website will be shown to the real business owner
+- NEVER invent percentages; "100%", "98%" and similar are forbidden unless the number appears in the business input
+- NEVER invent years of experience, founding dates or company history
+- NEVER invent customer, client, project or review counts such as "500+ strank"
+- NEVER invent awards, certifications, guarantees, prices or partnerships
+- NEVER claim 24/7 or non-stop availability unless openingHours says so
+- NEVER invent services that are not in the business input
+
+hero.stats and whyChooseUs.benefits[].stat do NOT have to be numbers. When there is no supportable number, use a short qualitative word instead.
+
+BAD stats (invented social proof):
+{ "value": "100%", "label": "Zadovoljne stranke" }
+{ "value": "20 let", "label": "Izkušenj" }
+GOOD stats (supported by the business input):
+{ "value": "Osebni", "label": "Pristop" }
+{ "value": "Ljubljana", "label": "Lokacija" }
+{ "value": "7 dni", "label": "Odprti vsak teden" }
+
+The last example is only allowed when openingHours actually shows seven open days.
+
+When information is missing, prefer conservative wording over an invented value. Write "Osebni pristop in strokovna obravnava" rather than "100% zadovoljnih strank".
+
 Use realistic copy based on the provided business input. Match footer.address to the contact address.`;
 
-export function buildUserPrompt(input: BusinessInput): string {
-  return `Generate a SiteConfig JSON object for this business:
+export function buildUserPrompt(
+  input: BusinessInput,
+  correction?: string,
+): string {
+  const prompt = `Generate a SiteConfig JSON object for this business:
 
 ${JSON.stringify(input, null, 2)}`;
+
+  if (!correction) {
+    return prompt;
+  }
+
+  return `${prompt}
+
+Your previous attempt was rejected. Fix exactly these problems and return the corrected JSON:
+${correction}`;
 }
 
 function stripMarkdownFences(content: string): string {
@@ -156,14 +194,23 @@ function sanitizeJsonResponse(content: string): string {
 export function parseAndValidateSiteConfig(
   content: string,
   providerName: string,
+  input: BusinessInput,
 ): SiteConfig {
   let parsed: unknown;
 
   try {
     parsed = JSON.parse(sanitizeJsonResponse(content));
   } catch {
-    throw new Error(`${providerName} returned invalid JSON`);
+    throw new GenerationContentError(
+      `${providerName} returned invalid JSON`,
+    );
   }
 
-  return validateSiteConfig(parsed);
+  try {
+    const config = validateGeneratedSiteConfig(validateSiteConfig(parsed));
+
+    return validateClaims(config, input);
+  } catch (error) {
+    throw toContentError(error);
+  }
 }

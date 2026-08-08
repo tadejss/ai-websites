@@ -1,4 +1,5 @@
 export const LEAD_STATUSES = [
+  "discovered",
   "generated",
   "contacted",
   "interested",

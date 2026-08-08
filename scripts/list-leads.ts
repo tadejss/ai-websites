@@ -1,3 +1,4 @@
+import { getDemoUrl } from "../src/leads/demo-url";
 import { getLeadPriority } from "../src/leads/priority";
 import { isLeadStatus, LEAD_STATUSES } from "../src/leads/statuses";
 import { readAllLeads } from "../src/leads/store";
@@ -29,7 +30,7 @@ for (const lead of readAllLeads()) {
     `  Website: ${lead.existingWebsite ? lead.existingWebsite : "NI"}`,
   );
   console.log(`  Telefon: ${lead.phone ?? "-"}`);
-  console.log(`  Demo: ${lead.url ?? ""}`);
+  console.log(`  Demo: ${getDemoUrl(lead)}`);
   console.log(`  Priority: ${getLeadPriority(lead)}`);
   console.log(`  Status: ${lead.status}`);
   console.log("");

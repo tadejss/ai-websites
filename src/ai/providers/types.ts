@@ -3,5 +3,8 @@ import type { BusinessInput } from "../types";
 
 export type SiteConfigProvider = {
   name: string;
-  generateSiteConfig(input: BusinessInput): Promise<SiteConfig>;
+  generateSiteConfig(
+    input: BusinessInput,
+    correction?: string,
+  ): Promise<SiteConfig>;
 };

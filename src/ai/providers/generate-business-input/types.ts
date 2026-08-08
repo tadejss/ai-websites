@@ -3,5 +3,8 @@ import type { RawBusinessData } from "../../types/raw-business-data";
 
 export type BusinessInputProvider = {
   name: string;
-  generateBusinessInput(input: RawBusinessData): Promise<BusinessInput>;
+  generateBusinessInput(
+    input: RawBusinessData,
+    correction?: string,
+  ): Promise<BusinessInput>;
 };
