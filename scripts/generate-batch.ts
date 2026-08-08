@@ -3,6 +3,10 @@ import { resolve } from "node:path";
 import { config as loadEnv } from "dotenv";
 import { createClientFromQuery } from "../src/clients/create-client-from-query";
 import { isFatalGenerationError } from "../src/clients/fatal-error";
+import {
+  appendGenerationLog,
+  getGenerationLogPath,
+} from "../src/logs/generation-log";
 
 const root = resolve(__dirname, "..");
 
@@ -103,8 +107,20 @@ async function main(): Promise<void> {
   let stoppedAt: number | null = null;
 
   for (const [index, query] of selected.entries()) {
+    const startedAt = Date.now();
+
     try {
       const result = await createClientFromQuery(query);
+
+      appendGenerationLog({
+        query,
+        outcome: result.outcome === "created" ? "created" : "skipped",
+        durationMs: Date.now() - startedAt,
+        slug: result.slug,
+        companyName: result.companyName,
+        googlePlaceId: result.googlePlaceId,
+        reason: result.outcome === "skipped" ? result.reason : undefined,
+      });
 
       if (result.outcome === "created") {
         generated += 1;
@@ -115,6 +131,13 @@ async function main(): Promise<void> {
       }
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
+
+      appendGenerationLog({
+        query,
+        outcome: "failed",
+        durationMs: Date.now() - startedAt,
+        reason: message,
+      });
 
       if (isFatalGenerationError(error)) {
         console.error(`\nFATAL: ${message}`);
@@ -138,6 +161,8 @@ async function main(): Promise<void> {
   if (remaining > 0) {
     console.log(`Not attempted: ${remaining}`);
   }
+
+  console.log(`Log: ${getGenerationLogPath()}`);
 
   if (stoppedAt !== null) {
     process.exit(1);
