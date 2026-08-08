@@ -33,7 +33,9 @@ function normalize(value: string): string {
     .toLowerCase();
 }
 
-function collectCopy(config: SiteConfig): Array<[string, string]> {
+export function collectVisibleCopy(
+  config: SiteConfig,
+): Array<[string, string]> {
   const entries: Array<[string, string]> = [
     ["brand.prefix", config.brand.prefix],
     ["brand.highlight", config.brand.highlight],
@@ -102,7 +104,7 @@ export function findUnsupportedClaims(
 
   const claims: UnsupportedClaim[] = [];
 
-  for (const [field, value] of collectCopy(config)) {
+  for (const [field, value] of collectVisibleCopy(config)) {
     if (!value) {
       continue;
     }
