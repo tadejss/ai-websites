@@ -18,7 +18,9 @@
     "test-guards": "tsx scripts/test-generation-guards.ts",
     "list-clients": "tsx scripts/list-clients.ts",
     "list-leads": "tsx scripts/list-leads.ts",
-    "update-lead": "tsx scripts/update-lead.ts"
+    "lead-summary": "tsx scripts/lead-summary.ts",
+    "update-lead": "tsx scripts/update-lead.ts",
+    "backfill-place-ids": "tsx scripts/backfill-place-ids.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

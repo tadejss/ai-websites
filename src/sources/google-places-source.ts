@@ -3,6 +3,7 @@ import type { BusinessSource } from "./types";
 
 const PLACES_SEARCH_URL = "https://places.googleapis.com/v1/places:searchText";
 const FIELD_MASK = [
+  "places.id",
   "places.displayName",
   "places.primaryType",
   "places.types",
@@ -17,6 +18,7 @@ const FIELD_MASK = [
 ].join(",");
 
 type GooglePlace = {
+  id?: string;
   displayName?: { text?: string };
   primaryType?: string;
   types?: string[];
@@ -46,6 +48,7 @@ function getApiKey(): string {
 
 function mapPlaceToRawBusinessData(place: GooglePlace): RawBusinessData {
   return {
+    googlePlaceId: place.id,
     name: place.displayName?.text,
     category: place.primaryType ?? place.types?.[0],
     description: place.editorialSummary?.text,

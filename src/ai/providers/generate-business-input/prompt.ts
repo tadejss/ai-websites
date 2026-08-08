@@ -65,11 +65,19 @@ Field guidance:
 - competitors: competitor context or differentiation notes
 - callToAction: preferred primary CTA label`;
 
+function withoutInternalFields(
+  data: RawBusinessData,
+): Omit<RawBusinessData, "googlePlaceId"> {
+  const promptData = { ...data };
+  delete promptData.googlePlaceId;
+  return promptData;
+}
+
 export function buildUserPrompt(
   input: RawBusinessData,
   correction?: string,
 ): string {
-  const data = validateRawBusinessData(input);
+  const data = withoutInternalFields(validateRawBusinessData(input));
 
   const prompt = `Generate a BusinessInput JSON object from this scraped business data:
 
