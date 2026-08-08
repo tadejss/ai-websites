@@ -1,0 +1,16 @@
+# One Google Places search query per line.
+# Blank lines and lines starting with # are ignored.
+#
+# Copy this file, edit it, and run:
+#   npm run generate-batch -- --file data/queries.txt --limit 10
+
+frizer Ljubljana
+avtoservis Ljubljana
+zobozdravnik Ljubljana
+racunovodski servis Ljubljana
+klima servis Ljubljana
+elektricar Ljubljana
+
+frizer Kranj
+avtoservis Kranj
+zobozdravnik Kranj
