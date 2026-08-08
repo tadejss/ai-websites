@@ -3,6 +3,7 @@ import type { RawBusinessData } from "./types/raw-business-data";
 
 export const rawBusinessDataSchema = z
   .object({
+    googlePlaceId: z.string().optional(),
     name: z.string().optional(),
     category: z.string().optional(),
     description: z.string().optional(),
