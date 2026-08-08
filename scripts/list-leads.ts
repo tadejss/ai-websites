@@ -1,7 +1,10 @@
+import { config as loadEnv } from "dotenv";
 import { getDemoUrl } from "../src/leads/demo-url";
 import { getLeadPriority } from "../src/leads/priority";
 import { isLeadStatus, LEAD_STATUSES } from "../src/leads/statuses";
 import { readAllLeads } from "../src/leads/store";
+
+loadEnv({ path: ".env.local" });
 
 const statusFilter = process.argv[2];
 
