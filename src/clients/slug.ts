@@ -45,6 +45,29 @@ function isMeaningfulWord(word: string): boolean {
   );
 }
 
+/**
+ * Two different businesses can share a name, which matters far more once
+ * discovery writes dozens of leads per run rather than one at a time.
+ */
+export function uniqueSlug(
+  base: string,
+  isTaken: (slug: string) => boolean,
+): string {
+  if (!isTaken(base)) {
+    return base;
+  }
+
+  for (let suffix = 2; suffix <= 99; suffix += 1) {
+    const candidate = `${base}-${suffix}`;
+
+    if (!isTaken(candidate)) {
+      return candidate;
+    }
+  }
+
+  throw new Error(`Could not find a free slug for "${base}"`);
+}
+
 export function slugFromBusinessName(name: string): string {
   const normalized = stripLegalSuffixes(normalizeBusinessName(name));
 

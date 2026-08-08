@@ -16,6 +16,7 @@
     "generate-ai-site": "tsx scripts/generate-ai-site.ts",
     "create-client": "tsx scripts/create-client.ts",
     "generate-batch": "tsx scripts/generate-batch.ts",
+    "discover-leads": "tsx scripts/discover-leads.ts",
     "list-clients": "tsx scripts/list-clients.ts",
     "list-leads": "tsx scripts/list-leads.ts",
     "lead-summary": "tsx scripts/lead-summary.ts",

@@ -80,9 +80,18 @@ export function saveLead(lead: LeadRecord): "created" | "updated" {
   const merged: Record<string, unknown> = { ...existing, ...lead };
 
   for (const field of SALES_OWNED_FIELDS) {
-    if (field in existing) {
-      merged[field] = existing[field];
+    if (!(field in existing)) {
+      continue;
     }
+
+    // "discovered" is a lifecycle placeholder rather than a sales state, so
+    // generating a site is allowed to move it on. Anything the salesperson
+    // set - contacted, interested, customer - always wins.
+    if (field === "status" && existing[field] === "discovered") {
+      continue;
+    }
+
+    merged[field] = existing[field];
   }
 
   writeFileSync(
