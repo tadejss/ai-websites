@@ -4,6 +4,7 @@ import { config as loadEnv } from "dotenv";
 import type { RawBusinessData } from "../src/ai/types/raw-business-data";
 import { validateRawBusinessData } from "../src/ai/validate-raw-business-data";
 import { generateClient } from "../src/clients/generate-client";
+import { findLeadByPlaceId } from "../src/leads/store";
 import { createGooglePlacesSource } from "../src/sources/google-places-source";
 import type { BusinessSource } from "../src/sources/types";
 
@@ -99,18 +100,29 @@ async function main(): Promise<void> {
 
   const source = createGooglePlacesSource(query);
   const rawBusiness = validateRawBusinessData(await source.getBusiness());
+
+  const existingLead = findLeadByPlaceId(rawBusiness.googlePlaceId ?? "");
+
+  if (existingLead) {
+    console.error(
+      `Error: "${rawBusiness.name}" already exists as "${existingLead.slug}" (same Google Place ID).`,
+    );
+    process.exit(1);
+  }
+
   const slug = slugFromBusinessName(rawBusiness.name ?? "");
 
   if (!slug) {
     console.error("Error: Could not create a slug from the business name.");
     process.exit(1);
   }
-  
+
   if (clientExists(slug)) {
     console.error(`Error: Client "${slug}" already exists.`);
     process.exit(1);
   }
-  
+
+
   await generateClient(slug, createCachedSource(rawBusiness));
   console.log(`Client generated: ${slug}`);
 }
