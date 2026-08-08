@@ -1,4 +1,5 @@
 import OpenAI from "openai";
+import { GenerationContentError } from "../generation-error";
 import type { BusinessInput } from "../types";
 import {
   SYSTEM_PROMPT,
@@ -23,7 +24,7 @@ function createOpenAIClient(): OpenAI {
 export function createOpenAIProvider(): SiteConfigProvider {
   return {
     name: "openai",
-    async generateSiteConfig(input: BusinessInput) {
+    async generateSiteConfig(input: BusinessInput, correction?: string) {
       const client = createOpenAIClient();
 
       const response = await client.chat.completions.create({
@@ -31,17 +32,19 @@ export function createOpenAIProvider(): SiteConfigProvider {
         response_format: { type: "json_object" },
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
-          { role: "user", content: buildUserPrompt(input) },
+          { role: "user", content: buildUserPrompt(input, correction) },
         ],
       });
 
       const content = response.choices[0]?.message?.content;
 
       if (!content) {
-        throw new Error(`${PROVIDER_NAME} returned an empty response`);
+        throw new GenerationContentError(
+          `${PROVIDER_NAME} returned an empty response`,
+        );
       }
 
-      return parseAndValidateSiteConfig(content, PROVIDER_NAME);
+      return parseAndValidateSiteConfig(content, PROVIDER_NAME, input);
     },
   };
 }

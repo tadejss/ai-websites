@@ -1,24 +1,30 @@
 import { z } from "zod";
 import type { BusinessInput } from "./types";
 
+const requiredText = z.string().trim().min(1).max(200);
+
+// Contact fields stay nullable-by-emptiness on purpose: the prompt instructs
+// the model to return "" rather than invent a phone, email or address.
+const optionalText = z.string().max(600);
+
 const businessInputSchema = z
   .object({
-    companyName: z.string(),
-    industry: z.string(),
-    tagline: z.string(),
-    services: z.array(z.string()),
-    phone: z.string(),
-    email: z.string(),
-    address: z.string(),
-    openingHours: z.string(),
-    sellingPoints: z.array(z.string()),
-    targetCustomers: z.string(),
-    serviceArea: z.string(),
-    yearsExperience: z.string(),
-    tone: z.string(),
-    brandStyle: z.string(),
-    competitors: z.string(),
-    callToAction: z.string(),
+    companyName: requiredText,
+    industry: requiredText,
+    tagline: requiredText,
+    services: z.array(requiredText).min(1).max(10),
+    phone: optionalText,
+    email: optionalText,
+    address: optionalText,
+    openingHours: optionalText,
+    sellingPoints: z.array(requiredText).min(1).max(10),
+    targetCustomers: optionalText,
+    serviceArea: optionalText,
+    yearsExperience: optionalText,
+    tone: optionalText,
+    brandStyle: optionalText,
+    competitors: optionalText,
+    callToAction: optionalText,
   })
   .strict() satisfies z.ZodType<BusinessInput>;
 

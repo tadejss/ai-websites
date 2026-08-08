@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GenerationContentError } from "../../generation-error";
 import type { RawBusinessData } from "../../types/raw-business-data";
 import {
   SYSTEM_PROMPT,
@@ -23,7 +24,7 @@ function createGeminiClient(): GoogleGenerativeAI {
 export function createGeminiProvider(): BusinessInputProvider {
   return {
     name: "gemini",
-    async generateBusinessInput(input: RawBusinessData) {
+    async generateBusinessInput(input: RawBusinessData, correction?: string) {
       const client = createGeminiClient();
       const model = client.getGenerativeModel({
         model: MODEL,
@@ -33,11 +34,15 @@ export function createGeminiProvider(): BusinessInputProvider {
         },
       });
 
-      const response = await model.generateContent(buildUserPrompt(input));
+      const response = await model.generateContent(
+        buildUserPrompt(input, correction),
+      );
       const content = response.response.text();
 
       if (!content) {
-        throw new Error(`${PROVIDER_NAME} returned an empty response`);
+        throw new GenerationContentError(
+          `${PROVIDER_NAME} returned an empty response`,
+        );
       }
 
       return parseBusinessInput(content, PROVIDER_NAME);
