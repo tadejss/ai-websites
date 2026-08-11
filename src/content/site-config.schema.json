@@ -16,6 +16,11 @@
     "footer"
   ],
   "properties": {
+    "appearance": {
+      "type": "string",
+      "enum": ["default", "beauty"],
+      "description": "Visual appearance category controlling layout and theme tokens."
+    },
     "brand": {
       "$ref": "#/$defs/Brand"
     },

@@ -1,0 +1,155 @@
+{
+  "appearance": "beauty",
+  "brand": {
+    "prefix": "ES",
+    "highlight": "beauty"
+  },
+  "metadata": {
+    "title": "ES beauty - Frizerski in lepotni salon Ljubljana",
+    "description": "Strokovne frizerske in lepotne storitve v središču Ljubljane za vse, ki cenijo osebni pristop in urejen videz."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski in lepotni salon Ljubljana",
+    "title": "Vaš kotiček za",
+    "titleHighlight": "popolno nego",
+    "description": "Strokovne frizerske in lepotne storitve v središču Ljubljane za stranke, ki iščejo kakovost in topel, oseben pristop.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Celostna",
+        "label": "Nega"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Ugodne",
+        "label": "Cene"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase in nohte",
+    "description": "V salonu ES beauty v Ljubljani nudimo celostno nego za urejen videz in dobro počutje.",
+    "items": [
+      {
+        "title": "Žensko in moško striženje",
+        "description": "Moderne in klasične frizure, prilagojene vašemu slogu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki in tehnike barvanja za sijoče in zdrave lase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive nege in tretmaji, ki povrnejo moč, mehkobo in lesk vašim lasem.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Manikura in urejanje nohtov",
+        "description": "Urejeni in čudoviti nohti za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Svečane in vsakdanje pričeske, oblikovane z občutkom za estetiko.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Kakovost, strokovnost in prijazen ambient",
+    "description": "Posvečamo se vsaki stranki posebej ter poskrbimo, da se v našem salonu počutite sproščeno in dobrodošlo.",
+    "highlights": [
+      "Prijazno in strokovno osebje z občutkom za vaše želje",
+      "Celostna nega las in nohtov na enem mestu",
+      "Prijeten ambient v bližini centra mesta",
+      "Ugodne cene in dostopnost storitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazno",
+        "label": "Osebje",
+        "description": "Strokovna ekipa, ki prisluhne vašim željam in poskrbi za prijetno izkušnjo."
+      },
+      {
+        "stat": "Celostno",
+        "label": "Urejanje",
+        "description": "Vse frizerske in lepotne storitve na enem mestu v Ljubljani."
+      },
+      {
+        "stat": "Prijeten",
+        "label": "Ambient",
+        "description": "Sproščujoče okolje v bližini centra mesta za vaš odmor od vsakdana."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za vprašanja glede storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 314 558",
+        "href": "tel:040314558",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Štihova ulica 2, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Sob: odprto · Nedelja: zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Štihova ulica 2, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  }
+}

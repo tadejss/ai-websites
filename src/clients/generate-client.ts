@@ -3,8 +3,10 @@ import { resolve } from "node:path";
 import { generateBusinessInput } from "@/ai/generate-business-input";
 import { generateSiteConfig } from "@/ai/generate-site-config";
 import { validateRawBusinessData } from "@/ai/validate-raw-business-data";
+import { appearanceForIndustry } from "@/appearances/industry-appearance";
 import type { BusinessInput } from "@/ai/types";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
+import type { SiteConfig } from "@/content/types/site";
 import { saveLead } from "@/leads/store";
 import type { BusinessSource } from "@/sources/types";
 
@@ -38,7 +40,11 @@ export async function generateClient(
 ): Promise<void> {
   const rawBusiness = validateRawBusinessData(await source.getBusiness());
   const businessInput = await generateBusinessInput(rawBusiness);
-  const siteConfig = await generateSiteConfig(businessInput);
+  const generatedConfig = await generateSiteConfig(businessInput);
+  const siteConfig: SiteConfig = {
+    ...generatedConfig,
+    appearance: appearanceForIndustry(businessInput.industry ?? ""),
+  };
 
   const clientDir = resolve(__dirname, "../content/clients", slug);
 

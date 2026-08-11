@@ -58,7 +58,10 @@ const contactFormSchema = z.object({
   submitLabel: z.string(),
 });
 
+const appearanceSchema = z.enum(["default", "beauty"]).optional();
+
 const siteConfigSchema = z.object({
+  appearance: appearanceSchema,
   brand: z.object({
     prefix: z.string(),
     highlight: z.string(),
@@ -110,5 +113,10 @@ const siteConfigSchema = z.object({
 }) satisfies z.ZodType<SiteConfig>;
 
 export function validateSiteConfig(data: unknown): SiteConfig {
-  return siteConfigSchema.parse(data);
+  const parsed = siteConfigSchema.parse(data);
+
+  return {
+    ...parsed,
+    appearance: parsed.appearance ?? "default",
+  };
 }

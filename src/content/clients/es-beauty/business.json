@@ -1,0 +1,29 @@
+{
+  "companyName": "ES beauty",
+  "industry": "Frizerski in lepotni salon",
+  "tagline": "Strokovne frizerske in lepotne storitve v središču Ljubljane",
+  "services": [
+    "Žensko in moško striženje",
+    "Barvanje las",
+    "Nega las",
+    "Manikura in urejanje nohtov",
+    "Stilsko oblikovanje pričesk"
+  ],
+  "phone": "040 314 558",
+  "email": "",
+  "address": "Štihova ulica 2, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Open 24 hours · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazno in strokovno osebje",
+    "Ugodne cene storitev",
+    "Prijeten ambient v bližini centra mesta",
+    "Celostna nega las in nohtov na enem mestu"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo kakovostne frizerske in lepotne storitve ter cenijo osebni pristop",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "sodoben, urejen, dostopen",
+  "competitors": "Lokalni frizerski in lepotni saloni v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

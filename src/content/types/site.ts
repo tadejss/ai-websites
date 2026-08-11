@@ -42,7 +42,10 @@ export type ContactItem = {
   icon: IconName;
 };
 
+export type AppearanceId = "default" | "beauty";
+
 export type SiteConfig = {
+  appearance?: AppearanceId;
   brand: {
     prefix: string;
     highlight: string;

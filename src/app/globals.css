@@ -1,14 +1,33 @@
 @import "tailwindcss";
 
-:root {
+:root,
+[data-appearance="default"] {
   --background: #0a0e14;
   --foreground: #f4f4f5;
   --muted: #94a3b8;
   --accent: #f59e0b;
   --accent-hover: #d97706;
+  --accent-foreground: #0a0e14;
   --surface: #111827;
   --surface-elevated: #1a2332;
   --border: rgba(255, 255, 255, 0.08);
+  --radius-card: 1rem;
+}
+
+[data-appearance="beauty"] {
+  --background: #f7f3ee;
+  --foreground: #2c2118;
+  --muted: #7a6f65;
+  --accent: #3d2b1f;
+  --accent-hover: #2f2013;
+  --accent-foreground: #f7f3ee;
+  --surface: #efe9e1;
+  --surface-elevated: #e8e0d6;
+  --border: rgba(44, 33, 24, 0.12);
+  --radius-card: 2rem;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  color: var(--foreground);
+  background-color: var(--background);
 }
 
 @theme inline {
@@ -17,11 +36,18 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
+  --color-accent-foreground: var(--accent-foreground);
   --color-surface: var(--surface);
   --color-surface-elevated: var(--surface-elevated);
   --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-geist-sans);
+}
+
+[data-appearance="beauty"] .font-display {
+  font-family: var(--font-bodoni), "Bodoni Moda", Georgia, serif;
+  font-optical-sizing: auto;
 }
 
 html {

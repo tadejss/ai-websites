@@ -19,6 +19,8 @@ Every field and value MUST match the SiteConfig schema exactly:
 Required top-level keys (exactly these eight):
 brand, metadata, nav, hero, services, whyChooseUs, contact, footer
 
+Do not include an appearance field — it is assigned automatically after generation based on industry.
+
 Write all visible text in Slovenian unless the business input specifies another language.
 
 Icon rules — contact.items[].icon and services.items[].icon must use ONLY these exact IconName strings:
