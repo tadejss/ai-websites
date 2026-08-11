@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski in Lepotilni BStudio, Branka Sumer s.p.",
+  "industry": "Frizerski in lepotilni salon",
+  "tagline": "Vrhunske frizerske in lepotilne storitve za vaše dobro počutje",
+  "services": [
+    "Moško in žensko striženje",
+    "Barvanje in prameni las",
+    "Oblikovanje pričesk",
+    "Nega in tretmaji las",
+    "Lepotne storitve"
+  ],
+  "phone": "031 248 954",
+  "email": "",
+  "address": "Dupleška cesta 33, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 7:30 AM – 7:30 PM · Tuesday: 7:30 AM – 7:30 PM · Wednesday: 7:30 AM – 7:30 PM · Thursday: 7:30 AM – 7:30 PM · Friday: 7:30 AM – 7:30 PM · Saturday: 7:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prijazno osebje",
+    "Visoka ocena in odlične strankine izkušnje",
+    "Vrhunska kvaliteta storitev v mestu"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo kakovostne frizerske in lepotne storitve v Mariboru",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "moderen in urejen salon",
+  "competitors": "Lokalni frizerski saloni v Mariboru",
+  "callToAction": "Rezervirajte svoj termin"
+}

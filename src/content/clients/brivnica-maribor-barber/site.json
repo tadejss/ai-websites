@@ -1,0 +1,149 @@
+{
+  "brand": {
+    "prefix": "Brivec",
+    "highlight": "Olaf"
+  },
+  "metadata": {
+    "title": "Brivnica Maribor | Barber Shop Brivec Olaf",
+    "description": "Vrhunska moška frizura in nega brade v Mariboru in okolici. Obiščite Brivec Olaf za urejanje brade, klasično britje in sproščeno vzdušje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Vrhunska brivnica v Mariboru",
+    "title": "Vrhunska moška frizura in",
+    "titleHighlight": "nega brade",
+    "description": "Za moške, ki cenijo kakovostno striženje, urejanje brade in sproščeno vzdušje v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "Nega in striženje"
+      },
+      {
+        "value": "Sproščeno",
+        "label": "Vzdušje z glasbo"
+      },
+      {
+        "value": "Maribor",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Prijazen",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite brivske storitve za sodobnega moškega",
+    "description": "Izberite storitev po vaši meri in doživite vrhunsko izkušnjo urejanja las in brade v Mariboru.",
+    "items": [
+      {
+        "title": "Moško striženje l",
+        "description": "Kakovostno moško striženje, prilagojeno vašemu stilu in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Urejanje brade",
+        "description": "Natančno oblikovanje in urejanje brade za urejen in negovan videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Klasično britje",
+        "description": "Tradicionalno klasično britje z izjemno pozornostjo do podrobnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Celovita nega las in brade",
+        "description": "Popolna kombinacija striženja las in nege brade za celosten videz.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Izjemna skrb za stranke in pozornost do podrobnosti",
+    "description": "Pri nas niste le še ena stranka. Poskrbimo za vrhunsko izkušnjo v prijetnem ambientu.",
+    "highlights": [
+      "Izjemna pozornost do podrobnosti in strokovnost",
+      "Prijeten ambient z glasbo in domačo pijačo",
+      "Prilagodljivost in izjemna skrb za stranke"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Znanje",
+        "description": "Izjemna pozornost do podrobnosti pri vsakem rezu in britju."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Sproščenost",
+        "description": "Prijeten prostor z glasbo in domačo pijačo za vaš popolni oddih."
+      },
+      {
+        "stat": "Prilagodljivo",
+        "label": "Za stranke",
+        "description": "Visoka stopnja prilagodljivosti in predanosti vsakemu posamezniku."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Hektorovičevi ulici v Mariboru ali nas pokličite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Hektorovičeva ulica 20, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 726 208",
+        "href": "tel:041726208",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 8:00 – 18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Hektorovičeva ulica 20, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

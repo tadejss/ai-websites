@@ -1,0 +1,155 @@
+{
+  "brand": {
+    "prefix": "BStudio",
+    "highlight": "Maribor"
+  },
+  "metadata": {
+    "title": "Frizerski in Lepotilni BStudio | Branka Sumer s.p.",
+    "description": "Vrhunske frizerske in lepotilne storitve za vaše dobro počutje v Mariboru in okolici. Obiščite moderen in urejen salon."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski in lepotilni salon BStudio",
+    "title": "Vrhunske frizerske in lepotilne storitve za",
+    "titleHighlight": "vaše dobro počutje",
+    "description": "Nudimo celovite frizerske in lepotne rešitve za stranke v Mariboru in okolici. Prepustite se prijaznemu osebju v modernem in urejenem salonu.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Moderen",
+        "label": "Salon"
+      },
+      {
+        "value": "Maribor",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Delo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaša lase in lepoto",
+    "description": "V salonu BStudio v Mariboru poskrbimo za celostno urejenost in sprostitev z izbranimi storitvami.",
+    "items": [
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Prilagojeno striženje za vsak stil in obliko obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje in prameni las",
+        "description": "Moderne tehnike barvanja in osvežitve barve vaših las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in tretmaji las",
+        "description": "Globinska nega za zdravje, lesk in vitalnost vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Lepotne storitve",
+        "description": "Dodatne lepotne storitve za popoln in urejen videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Udobje, strokovnost in urejenost v središču Maribora",
+    "description": "Zavezani smo k visoki kakovosti storitev in temu, da se v našem salonu počutite sproščeno.",
+    "highlights": [
+      "Izjemno prijazno osebje, ki se posveti vsakemu posamezniku",
+      "Visoka ocena in odlične izkušnje naših strank",
+      "Vrhunska kvaliteta storitev v mestu",
+      "Moderen in urejen salon za vaše popolno udobje"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazno",
+        "label": "Osebje",
+        "description": "Topel sprejem in posluh za vaše želje ob vsakem obisku."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Storitev",
+        "description": "Uporaba preverjenih pristopov za najboljše rezultate."
+      },
+      {
+        "stat": "Urejeno",
+        "label": "Okolje",
+        "description": "Sproščujoč ambient v modernem salonu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dupleška cesta 33, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 248 954",
+        "href": "tel:031248954",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:30–19:30, Sob: 7:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Dupleška cesta 33, 2000 Maribor, Slovenia",
+    "rights": "© Frizerski in Lepotilni BStudio, Branka Sumer s.p. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

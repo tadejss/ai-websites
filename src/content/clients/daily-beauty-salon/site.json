@@ -1,0 +1,150 @@
+{
+  "brand": {
+    "prefix": "Daily Beauty",
+    "highlight": "salon"
+  },
+  "metadata": {
+    "title": "Daily Beauty salon | Lepotni salon v Ljubljani",
+    "description": "Vaš najljubši kotiček za nego nohtov, las in trepalnic v Ljubljani. Vrhunske lepotne storitve v prijetnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lepotni salon Ljubljana",
+    "title": "Vaš najljubši kotiček za",
+    "titleHighlight": "nego nohtov, las in trepalnic",
+    "description": "Celovite lepotne storitve za ljudi, ki cenijo kakovostno nego, sproščeno vzdušje in strokovnost v Ljubljani.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Ljubljana",
+        "label": "Lokacija salona"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Sproščeno",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Materiali"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite lepotne storitve",
+    "description": "Poskrbite za svoj videz z našimi strokovnimi storitvami v Ljubljani.",
+    "items": [
+      {
+        "title": "Manikura in pedikura",
+        "description": "Nega nohtov z visoko obstojnostjo materialov in pozornostjo do detajlov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Urejanje pričesk",
+        "description": "Strokovno urejanje las za urejen in eleganten videz ob vsaki priložnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega trepalnic",
+        "description": "Poudarite svoj pogled z urejenimi in lepo oblikovanimi trepalnicami.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Celovite lepotne storitve",
+        "description": "Združite nego las, nohtov in trepalnic na enem mestu v prijetnem ambientu.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Posvečeni vaši lepoti in počutju",
+    "description": "V salonu Daily Beauty združujemo strokovnost, prijeten ambient in osebni pristop za najboljšo izkušnjo.",
+    "highlights": [
+      "Visoka strokovnost in pozornost do detajlov",
+      "Prijeten, sproščujoč in čist ambient",
+      "Vrhunska obstojnost materialov brez poškodb",
+      "Prijazno osebje z osebnim pristopom"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje in pristop",
+        "description": "Prijazno osebje se posveti vsakemu posamezniku z visoko stopnjo strokovnosti."
+      },
+      {
+        "stat": "Vrhunsko",
+        "label": "Materiali",
+        "description": "Uporaba kakovostnih materialov zagotavlja dolgo obstojnost in nego brez poškodb."
+      },
+      {
+        "stat": "Sproščeno",
+        "label": "Ambient",
+        "description": "Čist in prijeten prostor v Ljubljani nudi popoln oddih med lepotno nego."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za vprašanja glede storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Rakuševa ulica 8, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "030 686 546",
+        "href": "tel:030686546",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 10:00–19:00, Sob: 11:00–15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Izpolnite spodnji obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Rakuševa ulica 8, 1000 Ljubljana, Slovenia",
+    "rights": "© Daily Beauty salon. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

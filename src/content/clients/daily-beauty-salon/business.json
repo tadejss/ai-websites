@@ -1,0 +1,28 @@
+{
+  "companyName": "Daily Beauty salon",
+  "industry": "Lepotni salon",
+  "tagline": "Vaš najljubši kotiček za nego nohtov, las in trepalnic v Ljubljani",
+  "services": [
+    "Manikura in pedikura",
+    "Urejanje pričesk",
+    "Nega trepalnic",
+    "Celovite lepotne storitve"
+  ],
+  "phone": "030 686 546",
+  "email": "",
+  "address": "Rakuševa ulica 8, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 10:00 AM – 7:00 PM · Tuesday: 10:00 AM – 7:00 PM · Wednesday: 10:00 AM – 7:00 PM · Thursday: 10:00 AM – 7:00 PM · Friday: 10:00 AM – 7:00 PM · Saturday: 11:00 AM – 3:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka strokovnost in pozornost do detajlov",
+    "Prijeten, sproščujoč in čist ambient",
+    "Vrhunska obstojnost materialov brez poškodb",
+    "Prijazno osebje z osebnim pristopom"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo kakovostno lepotno nego, sproščeno vzdušje in strokovnost v Ljubljani",
+  "serviceArea": "Ljubljana",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "eleganten in sodoben",
+  "competitors": "Lokalni lepotni saloni v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

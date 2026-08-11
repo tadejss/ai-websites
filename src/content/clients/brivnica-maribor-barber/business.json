@@ -1,0 +1,28 @@
+{
+  "companyName": "Brivnica Maribor Barber Shop Brivec Olaf",
+  "industry": "Brivnica in moški frizer",
+  "tagline": "Vrhunska moška frizura in nega brade v Mariboru.",
+  "services": [
+    "Moško striženje l",
+    "Urejanje brade",
+    "Klasično britje",
+    "Celovita nega las in brade"
+  ],
+  "phone": "041 726 208",
+  "email": "",
+  "address": "Hektorovičeva ulica 20, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 6:00 PM · Tuesday: 8:00 AM – 6:00 PM · Wednesday: 8:00 AM – 6:00 PM · Thursday: 8:00 AM – 6:00 PM · Friday: 8:00 AM – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemna pozornost do podrobnosti in strokovnost",
+    "Prijeten ambient z glasbo in domačo pijačo",
+    "Prilagodljivost in izjemna skrb za stranke",
+    "Vrhunska izkušnja striženja in britja"
+  ],
+  "targetCustomers": "Moški, ki ceni kakovostno striženje, urejanje brade in sproščeno vzdušje.",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen, sproščen",
+  "brandStyle": "vrhunska moška brivnica",
+  "competitors": "Lokalni moški frizerji in brivnice v Mariboru",
+  "callToAction": "Rezervirajte termin"
+}
