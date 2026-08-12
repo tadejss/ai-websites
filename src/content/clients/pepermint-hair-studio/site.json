@@ -1,0 +1,159 @@
+{
+  "brand": {
+    "prefix": "Pepermint",
+    "highlight": "Hair Studio"
+  },
+  "metadata": {
+    "title": "Pepermint Hair Studio | Frizerski salon Maribor",
+    "description": "Vrhunske frizerske storitve in osebni pristop v Mariboru. Striženje, barvanje, nega las in svečane pričeske v sproščenem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Sodoben in butični salon v Mariboru",
+    "title": "Vrhunske frizerske storitve in",
+    "titleHighlight": "osebni pristop",
+    "description": "Odkrijte prostor, kjer se strokovnost sreča s sproščenim vzdušjem. Nudimo celovite frizerske storitve za vse, ki cenijo kakovost in urejen videz v Mariboru z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Sproščen",
+        "label": "Ambient"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Nasvet"
+      },
+      {
+        "value": "Maribor",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita skrb za vaše lase",
+    "description": "V salonu Pepermint poskrbimo za vaš izgled in zdravje vaših las z izbrano paleto storitev v Mariboru z okolico.",
+    "items": [
+      {
+        "title": "Striženje in oblikovanje pričesk",
+        "description": "Natančno striženje in oblikovanje pričesk, prilagojeno vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje in prameni",
+        "description": "Moderne tehnike barvanja in pramenov za sijoč videz in globino barve.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega las",
+        "description": "Globinska nega in obnova las z vrhunskimi pripravki za zdravje in lesk.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje o stilu",
+        "description": "Strokovni nasveti glede nege in izbire prave pričeske za vaš vsakdan.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poročne in svečane pričeske",
+        "description": "Elegantne in obstojne pričeske za vaše najpomembnejše življenjske dogodke.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Izkušnja, ki presega običajno friziranje",
+    "description": "Posvečeni smo vsakemu posamezniku z veliko mero pozornosti in dobre volje.",
+    "highlights": [
+      "Izjemna strokovnost in pozornost do detajlov",
+      "Prijeten ambient z odlično kavo in glasbo",
+      "Individualni pristop in strokovni nasveti",
+      "Pozitivna energija in sproščeno vzdušje"
+    ],
+    "benefits": [
+      {
+        "stat": "Detajli",
+        "label": "Pozornost",
+        "description": "Izjemna strokovnost in natančnost pri vsakem oblikovanju pričeske."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Sproščenost",
+        "description": "Prijeten prostor z odlično kavo, glasbo in pozitivno energijo."
+      },
+      {
+        "stat": "Nasvet",
+        "label": "Individulano",
+        "description": "Strokovno svetovanje in popolna posvečenost vašim željam."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite v Mariboru.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Krekova ulica 26, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 415 443",
+        "href": "tel:040415443",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 10:00–18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Krekova ulica 26, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "outfit-cormorant"
+  }
+}

@@ -26,7 +26,8 @@
     "backfill-place-ids": "tsx scripts/backfill-place-ids.ts",
     "test-guards": "tsx scripts/test-generation-guards.ts",
     "test-batch": "tsx scripts/test-batch.ts",
-    "test-discovery": "tsx scripts/test-discovery.ts"
+    "test-discovery": "tsx scripts/test-discovery.ts",
+    "test-theme": "tsx scripts/test-theme.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

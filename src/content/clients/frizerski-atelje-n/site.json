@@ -1,0 +1,159 @@
+{
+  "brand": {
+    "prefix": "Frizerski atelje",
+    "highlight": "N&T"
+  },
+  "metadata": {
+    "title": "Frizerski atelje N&T | Vrhunske frizerske storitve v Kranju",
+    "description": "Vrhunske frizerske storitve, moško in žensko striženje, barvanje ter sproščujoča nega las v Kranju z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Moderen frizerski studio v Kranju",
+    "title": "Vrhunske frizerske storitve in",
+    "titleHighlight": "nega las",
+    "description": "Profesionalne frizerske storitve, modne strižbe, barvanje ter sproščujoča nega las za vse, ki iščejo najboljše v Kranju in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Kranj",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Masažni",
+        "label": "Stoli"
+      },
+      {
+        "value": "Celostna",
+        "label": "Nega"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbimo za vaš svež videz in zdravje las z vrhunskimi izdelki ter strokovnim svetovanjem v Kranju z okolico.",
+    "items": [
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Moderne in klasične frizure, prilagojene vašemu slogu, obliki obraza in osebnim željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las in balayage",
+        "description": "Najnovejše tehnike barvanja in balayage za sijoče, globoke in naravne odtenke vaših las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje pričesk za posebne prilike",
+        "description": "Elegantne in unikatne pričeske za poroke, zabave in druge pomembne dogodke.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža lasišča",
+        "description": "Sproščujoča masaža lasišča, ki blagodejno vpliva na vaše počutje in sprostitev med obiskom.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi las",
+        "description": "Strokovni nasveti in izbira ustreznih izdelkov za dolgotrajno zdravje in lepoto vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vrhunska izkušnja in pozornost do vaših las",
+    "description": "Združujemo strokovnost, prijaznost in sproščujoče okolje, da se boste v našem salonu vedno počutili odlično.",
+    "highlights": [
+      "Vrhunska strokovnost in posluh za želje vsake stranke",
+      "Sproščujoče okolje opremljeno z udobnimi masažnimi stoli",
+      "Celostna nega z vrhunskimi šamponi in negovalnimi izdelki",
+      "Prilagodljiv delovni čas in enostavna dostopnost v Kranju"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "Pozornost do želja",
+        "description": "Posvečamo se vašim individualnim željam za popoln končni rezultat."
+      },
+      {
+        "stat": "Sprostitev",
+        "label": "Masažni stoli",
+        "description": "Uživajte v prijetnem in sproščujočem okolju med vsakim obiskom."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Vrhunski izdelki",
+        "description": "Za vaše lase uporabljamo le preverjene šampone in profesionalne preparate."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za vsa vprašanja glede ponudbe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ručigajeva cesta 5, 4000 Kranj, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 868 322",
+        "href": "tel:041868322",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–21:00, Sob: 8:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ručigajeva cesta 5, 4000 Kranj, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "manrope-bodoni"
+  }
+}

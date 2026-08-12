@@ -1,0 +1,29 @@
+{
+  "companyName": "Pepermint Hair Studio",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in osebni pristop v Mariboru",
+  "services": [
+    "Striženje in oblikovanje pričesk",
+    "Barvanje in prameni",
+    "Nega las",
+    "Svetovanje o stilu",
+    "Poročne in svečane pričeske"
+  ],
+  "phone": "040 415 443",
+  "email": "",
+  "address": "Krekova ulica 26, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 10:00 AM – 6:00 PM · Tuesday: 10:00 AM – 6:00 PM · Wednesday: 10:00 AM – 6:00 PM · Thursday: 10:00 AM – 6:00 PM · Friday: 10:00 AM – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemna strokovnost in pozornost do detajlov",
+    "Prijeten ambient z odlično kavo in glasbo",
+    "Individualni pristop in strokovni nasveti",
+    "Pozitivna energija in sproščeno vzdušje"
+  ],
+  "targetCustomers": "Vsi, ki cenijo kakovostne frizerske storitve, urejen videz in prijetno sproščeno okolje v Mariboru.",
+  "serviceArea": "Maribor z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, sproščen",
+  "brandStyle": "sodoben in butični salon",
+  "competitors": "Lokalni frizerski saloni v Mariboru",
+  "callToAction": "Rezervirajte svoj termin"
+}

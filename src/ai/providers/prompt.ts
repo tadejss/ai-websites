@@ -20,6 +20,7 @@ Required top-level keys (exactly these eight):
 brand, metadata, nav, hero, services, whyChooseUs, contact, footer
 
 Do not include an appearance field — it is assigned automatically after generation based on industry.
+Do not include a theme field — palette and font pairing are assigned automatically after generation.
 
 Write all visible text in Slovenian unless the business input specifies another language.
 

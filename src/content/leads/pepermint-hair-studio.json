@@ -1,13 +1,13 @@
 {
   "slug": "pepermint-hair-studio",
-  "url": "",
+  "url": "/pepermint-hair-studio",
   "googlePlaceId": "ChIJzd9x07B3b0cRQIH7kLEZdoY",
   "companyName": "Pepermint Hair Studio",
-  "industry": "hair_salon",
+  "industry": "Frizerski salon",
   "phone": "040 415 443",
   "address": "Krekova ulica 26, 2000 Maribor, Slovenia",
   "googleRating": "4.9",
   "googleReviewCount": "76",
   "existingWebsite": "",
-  "status": "discovered"
+  "status": "generated"
 }

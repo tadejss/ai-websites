@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski atelje N&T, Tadej Likar s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in nega las v Kranju",
+  "services": [
+    "Moško in žensko striženje",
+    "Barvanje las in balayage",
+    "Urejanje pričesk za posebne prilike",
+    "Masaža lasišča",
+    "Svetovanje o negi las"
+  ],
+  "phone": "041 868 322",
+  "email": "",
+  "address": "Ručigajeva cesta 5, 4000 Kranj, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 9:00 PM · Tuesday: 9:00 AM – 9:00 PM · Wednesday: 9:00 AM – 9:00 PM · Thursday: 9:00 AM – 9:00 PM · Friday: 9:00 AM – 9:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunska strokovnost in pozornost do želja strank",
+    "Prijazno osebje in sproščujoče okolje z masažnimi stoli",
+    "Celostna nega z vrhunskimi šamponi in izdelki",
+    "Prilagodljiv urnik in odlična lokacija v Kranju"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo profesionalne frizerske storitve, modne strižbe, barvanje ter sproščujočo nego las v Kranju in okolici.",
+  "serviceArea": "Kranj z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "moderen frizerski studio",
+  "competitors": "Lokalni frizerski saloni v Kranju",
+  "callToAction": "Rezervirajte termin"
+}

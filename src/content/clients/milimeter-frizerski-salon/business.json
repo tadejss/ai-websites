@@ -1,0 +1,29 @@
+{
+  "companyName": "MILIMETER frizerski salon",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve z osebnim pristopom v Mariboru",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Stilsko oblikovanje",
+    "Nega kodrastih las",
+    "Moško in žensko friziranje"
+  ],
+  "phone": "0838 81432",
+  "email": "",
+  "address": "Gregorčičeva ulica 15, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 7:00 PM · Tuesday: 8:00 AM – 7:00 PM · Wednesday: 8:00 AM – 7:00 PM · Thursday: 8:00 AM – 7:00 PM · Friday: 8:00 AM – 7:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Strokovno in prijazno osebje z veliko znanja",
+    "Posebej prilagojena nega za kodraste lase",
+    "Prijeten ambient z avtentično energijo",
+    "Vrhunska kvaliteta in profesionalni pristop"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo profesionalne frizerske storitve, kakovostno nego in prijetno izkušnjo v Mariboru",
+  "serviceArea": "Maribor z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Mariboru",
+  "callToAction": "Rezervirajte svoj termin"
+}

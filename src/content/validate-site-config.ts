@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { fontPairingIds } from "@/theme/fonts/pairings";
+import { paletteIds } from "@/theme/palettes";
 import type { SiteConfig } from "./types/site";
 
 const iconNameSchema = z.enum([
@@ -60,8 +62,16 @@ const contactFormSchema = z.object({
 
 const appearanceSchema = z.enum(["default", "beauty"]).optional();
 
+const themeSchema = z
+  .object({
+    paletteId: z.enum(paletteIds as [string, ...string[]]),
+    fontPairingId: z.enum(fontPairingIds as [string, ...string[]]),
+  })
+  .optional();
+
 const siteConfigSchema = z.object({
   appearance: appearanceSchema,
+  theme: themeSchema,
   brand: z.object({
     prefix: z.string(),
     highlight: z.string(),

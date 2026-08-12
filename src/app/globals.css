@@ -12,6 +12,8 @@
   --surface-elevated: #1a2332;
   --border: rgba(255, 255, 255, 0.08);
   --radius-card: 1rem;
+  --font-body: var(--font-geist-sans);
+  --font-display: var(--font-geist-sans);
 }
 
 [data-appearance="beauty"] {
@@ -25,9 +27,8 @@
   --surface-elevated: #e8e0d6;
   --border: rgba(44, 33, 24, 0.12);
   --radius-card: 2rem;
-  font-family: var(--font-manrope), system-ui, sans-serif;
-  color: var(--foreground);
-  background-color: var(--background);
+  --font-body: var(--font-manrope);
+  --font-display: var(--font-bodoni);
 }
 
 @theme inline {
@@ -42,12 +43,26 @@
   --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-display: var(--font-geist-sans);
+  --font-display: var(--font-display);
+}
+
+[data-appearance="beauty"] {
+  font-family: var(--font-body), system-ui, sans-serif;
+  color: var(--foreground);
+  background-color: var(--background);
 }
 
 [data-appearance="beauty"] .font-display {
-  font-family: var(--font-bodoni), "Bodoni Moda", Georgia, serif;
+  font-family: var(--font-display), Georgia, serif;
   font-optical-sizing: auto;
+}
+
+[data-appearance="default"] {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+[data-appearance="default"] .font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
 }
 
 html {

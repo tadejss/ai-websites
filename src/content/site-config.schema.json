@@ -21,6 +21,22 @@
       "enum": ["default", "beauty"],
       "description": "Visual appearance category controlling layout and theme tokens."
     },
+    "theme": {
+      "type": "object",
+      "description": "Per-site palette and font pairing assigned at generation time.",
+      "additionalProperties": false,
+      "required": ["paletteId", "fontPairingId"],
+      "properties": {
+        "paletteId": {
+          "type": "string",
+          "description": "Identifier for the assigned color palette."
+        },
+        "fontPairingId": {
+          "type": "string",
+          "description": "Identifier for the assigned heading/body font pairing."
+        }
+      }
+    },
     "brand": {
       "$ref": "#/$defs/Brand"
     },

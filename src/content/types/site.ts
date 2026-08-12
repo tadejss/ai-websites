@@ -44,8 +44,14 @@ export type ContactItem = {
 
 export type AppearanceId = "default" | "beauty";
 
+export type SiteTheme = {
+  paletteId: string;
+  fontPairingId: string;
+};
+
 export type SiteConfig = {
   appearance?: AppearanceId;
+  theme?: SiteTheme;
   brand: {
     prefix: string;
     highlight: string;

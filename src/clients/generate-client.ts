@@ -4,6 +4,7 @@ import { generateBusinessInput } from "@/ai/generate-business-input";
 import { generateSiteConfig } from "@/ai/generate-site-config";
 import { validateRawBusinessData } from "@/ai/validate-raw-business-data";
 import { appearanceForIndustry } from "@/appearances/industry-appearance";
+import { assignTheme } from "@/theme/assign-theme";
 import type { BusinessInput } from "@/ai/types";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
 import type { SiteConfig } from "@/content/types/site";
@@ -41,9 +42,11 @@ export async function generateClient(
   const rawBusiness = validateRawBusinessData(await source.getBusiness());
   const businessInput = await generateBusinessInput(rawBusiness);
   const generatedConfig = await generateSiteConfig(businessInput);
+  const appearance = appearanceForIndustry(businessInput.industry ?? "");
   const siteConfig: SiteConfig = {
     ...generatedConfig,
-    appearance: appearanceForIndustry(businessInput.industry ?? ""),
+    appearance,
+    theme: assignTheme(slug, appearance),
   };
 
   const clientDir = resolve(__dirname, "../content/clients", slug);

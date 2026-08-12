@@ -1,0 +1,158 @@
+{
+  "brand": {
+    "prefix": "MILIMETER",
+    "highlight": "frizerski salon"
+  },
+  "metadata": {
+    "title": "MILIMETER frizerski salon | Maribor",
+    "description": "Vrhunske frizerske storitve z osebnim pristopom v Mariboru in okolici. Nudimo striženje, barvanje, stilsko oblikovanje in nego za kodraste lase."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Mariboru",
+    "title": "Vrhunske frizerske storitve z",
+    "titleHighlight": "osebnim pristopom",
+    "description": "Odkrijte sodoben lokalni salon v Mariboru z okolico, kjer nudimo profesionalno striženje, barvanje in nego las v prijetnem ambientu.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Kodrasti",
+        "label": "Specializirana nega"
+      },
+      {
+        "value": "Maribor",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "Poskrbimo za vaš svež videz in zdravje las z našimi strokovnimi storitvami za stranke v Mariboru z okolico.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Moderne in klasične frizure za moške in ženske, prilagojene vašemu stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki in tehnike barvanja za sijoče ter zdrave lase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega kodrastih las",
+        "description": "Posebej prilagojena nega in oblikovanje za lepe in definirane kodre.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Moško in žensko friziranje",
+        "description": "Celovite frizerske storitve za vso družino v prijetnem vzdušju.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel ambient in strokovnost",
+    "description": "Združujemo strokovno znanje, prijaznost in ljubezen do frizerskega ustvarjanja.",
+    "highlights": [
+      "Strokovno in prijazno osebje z veliko znanja",
+      "Posebej prilagojena nega za kodraste lase",
+      "Prijeten ambient z avtentično energijo"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Prijazno osebje z veliko znanja in izkušnjami."
+      },
+      {
+        "stat": "Specializirana",
+        "label": "Nega",
+        "description": "Posebej prilagojena nega za kodraste lase."
+      },
+      {
+        "stat": "Prijeten",
+        "label": "Ambient",
+        "description": "Sprostite se v salonu z avtentično energijo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Gregorčičevi ulici v Mariboru ali nas kontaktirajte za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gregorčičeva ulica 15, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "0838 81432",
+        "href": "tel:083881432",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–19:00, Sob: 8:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Gregorčičeva ulica 15, 2000 Maribor, Slovenia",
+    "rights": "© 2024 MILIMETER frizerski salon. Vse pravice pridržane."
+  },
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "coastal-fog",
+    "fontPairingId": "manrope-bodoni"
+  }
+}
