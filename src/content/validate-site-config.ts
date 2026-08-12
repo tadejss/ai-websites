@@ -34,12 +34,26 @@ const benefitSchema = z.object({
   stat: z.string(),
   label: z.string(),
   description: z.string(),
+  title: z.string().optional(),
 });
 
 const statSchema = z.object({
   value: z.string(),
   label: z.string(),
+  title: z.string().optional(),
 });
+
+const siteImageSchema = z.object({
+  src: z.string(),
+  alt: z.string(),
+});
+
+const siteImagesSchema = z
+  .object({
+    hero: siteImageSchema,
+    services: siteImageSchema,
+  })
+  .optional();
 
 const contactItemSchema = z.object({
   label: z.string(),
@@ -72,6 +86,7 @@ const themeSchema = z
 const siteConfigSchema = z.object({
   appearance: appearanceSchema,
   theme: themeSchema,
+  images: siteImagesSchema,
   brand: z.object({
     prefix: z.string(),
     highlight: z.string(),

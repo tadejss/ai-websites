@@ -37,6 +37,16 @@
         }
       }
     },
+    "images": {
+      "type": "object",
+      "description": "Per-site images assigned at generation time.",
+      "additionalProperties": false,
+      "required": ["hero", "services"],
+      "properties": {
+        "hero": { "$ref": "#/$defs/SiteImage" },
+        "services": { "$ref": "#/$defs/SiteImage" }
+      }
+    },
     "brand": {
       "$ref": "#/$defs/Brand"
     },
@@ -63,6 +73,15 @@
     }
   },
   "$defs": {
+    "SiteImage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["src", "alt"],
+      "properties": {
+        "src": { "type": "string" },
+        "alt": { "type": "string" }
+      }
+    },
     "IconName": {
       "type": "string",
       "enum": [
@@ -123,6 +142,9 @@
         },
         "description": {
           "type": "string"
+        },
+        "title": {
+          "type": "string"
         }
       }
     },
@@ -135,6 +157,9 @@
           "type": "string"
         },
         "label": {
+          "type": "string"
+        },
+        "title": {
           "type": "string"
         }
       }

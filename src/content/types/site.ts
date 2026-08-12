@@ -28,11 +28,23 @@ export type Benefit = {
   stat: string;
   label: string;
   description: string;
+  title?: string;
 };
 
 export type Stat = {
   value: string;
   label: string;
+  title?: string;
+};
+
+export type SiteImage = {
+  src: string;
+  alt: string;
+};
+
+export type SiteImages = {
+  hero: SiteImage;
+  services: SiteImage;
 };
 
 export type ContactItem = {
@@ -52,6 +64,7 @@ export type SiteTheme = {
 export type SiteConfig = {
   appearance?: AppearanceId;
   theme?: SiteTheme;
+  images?: SiteImages;
   brand: {
     prefix: string;
     highlight: string;

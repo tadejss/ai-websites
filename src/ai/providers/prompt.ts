@@ -21,6 +21,7 @@ brand, metadata, nav, hero, services, whyChooseUs, contact, footer
 
 Do not include an appearance field — it is assigned automatically after generation based on industry.
 Do not include a theme field — palette and font pairing are assigned automatically after generation.
+Do not include an images field — images are assigned automatically after generation.
 
 Write all visible text in Slovenian unless the business input specifies another language.
 
@@ -102,6 +103,10 @@ Factual accuracy rules (strict):
 - NEVER invent services that are not in the business input
 
 hero.stats and whyChooseUs.benefits[].stat do NOT have to be numbers. When there is no supportable number, use a short qualitative word instead.
+
+For hero.stats, prefer a single "title" field with the full USP phrase (e.g. "Osebni pristop", "Kodrasta nega"). You may still include value and label for backward compatibility, but title is preferred.
+
+For whyChooseUs.benefits, prefer a single "title" field combining stat and label when they form one phrase (e.g. "Strokovno osebje"). Keep description separate.
 
 BAD stats (invented social proof):
 { "value": "100%", "label": "Zadovoljne stranke" }

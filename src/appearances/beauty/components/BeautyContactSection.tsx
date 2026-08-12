@@ -14,7 +14,7 @@ export function BeautyContactSection({ siteConfig }: Props) {
   return (
     <section
       id={contact.id}
-      className="bg-background px-4 py-20 sm:px-6 sm:py-28"
+      className="bg-background px-4 py-24 sm:px-6 sm:py-32"
     >
       <div className="mx-auto max-w-7xl">
         <SectionHeading

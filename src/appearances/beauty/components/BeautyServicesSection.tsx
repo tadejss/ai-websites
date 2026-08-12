@@ -1,6 +1,6 @@
 import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { BeautyImagePanel } from "./BeautyImagePanel";
+import { BeautyImage } from "./BeautyImage";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -8,10 +8,13 @@ type Props = {
 };
 
 export function BeautyServicesSection({ siteConfig }: Props) {
-  const { services } = siteConfig;
+  const { services, images } = siteConfig;
 
   return (
-    <section id={services.id} className="bg-background px-4 py-20 sm:px-6 sm:py-28">
+    <section
+      id={services.id}
+      className="bg-background px-4 py-24 sm:px-6 sm:py-32"
+    >
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           variant="beauty"
@@ -20,23 +23,8 @@ export function BeautyServicesSection({ siteConfig }: Props) {
           description={services.description}
         />
 
-        <div className="mt-12 flex gap-3 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {services.items.map((service) => (
-            <span
-              key={service.title}
-              className="shrink-0 snap-start rounded-full border border-accent/15 bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground"
-            >
-              {service.title}
-            </span>
-          ))}
-        </div>
-
-        <div className="relative mt-16 lg:mt-20">
-          <div className="hidden lg:absolute lg:right-0 lg:top-0 lg:block lg:w-[42%]">
-            <BeautyImagePanel className="min-h-[560px]" />
-          </div>
-
-          <div className="grid gap-5 lg:max-w-[55%]">
+        <div className="mt-14 grid gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-10">
+          <div className="flex flex-col gap-5">
             {services.items.map((service) => (
               <article
                 key={service.title}
@@ -58,6 +46,12 @@ export function BeautyServicesSection({ siteConfig }: Props) {
               </article>
             ))}
           </div>
+
+          <BeautyImage
+            src={images?.services.src}
+            alt={images?.services.alt ?? services.title}
+            className="min-h-[320px] lg:min-h-full"
+          />
         </div>
       </div>
     </section>

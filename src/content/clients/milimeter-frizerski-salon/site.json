@@ -1,4 +1,19 @@
 {
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "coastal-fog",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/milimeter-frizerski-salon/hero.jpg",
+      "alt": "Sodoben in prijeten ambient frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/milimeter-frizerski-salon/services.jpg",
+      "alt": "Strokovno barvanje in stilsko oblikovanje las v salonu"
+    }
+  },
   "brand": {
     "prefix": "MILIMETER",
     "highlight": "frizerski salon"
@@ -149,10 +164,5 @@
   "footer": {
     "address": "Gregorčičeva ulica 15, 2000 Maribor, Slovenia",
     "rights": "© 2024 MILIMETER frizerski salon. Vse pravice pridržane."
-  },
-  "appearance": "beauty",
-  "theme": {
-    "paletteId": "coastal-fog",
-    "fontPairingId": "manrope-bodoni"
   }
 }

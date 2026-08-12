@@ -5,6 +5,7 @@ import { generateSiteConfig } from "@/ai/generate-site-config";
 import { validateRawBusinessData } from "@/ai/validate-raw-business-data";
 import { appearanceForIndustry } from "@/appearances/industry-appearance";
 import { assignTheme } from "@/theme/assign-theme";
+import { generateSiteImages } from "@/images/generate-site-images";
 import type { BusinessInput } from "@/ai/types";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
 import type { SiteConfig } from "@/content/types/site";
@@ -48,13 +49,15 @@ export async function generateClient(
     appearance,
     theme: assignTheme(slug, appearance),
   };
+  const images = await generateSiteImages(slug, businessInput, siteConfig);
+  const finalConfig: SiteConfig = images ? { ...siteConfig, images } : siteConfig;
 
   const clientDir = resolve(__dirname, "../content/clients", slug);
 
   mkdirSync(resolve(clientDir, "assets"), { recursive: true });
 
   writeJsonFile(resolve(clientDir, "business.json"), businessInput);
-  writeJsonFile(resolve(clientDir, "site.json"), siteConfig);
+  writeJsonFile(resolve(clientDir, "site.json"), finalConfig);
 
   saveLead(createLeadData(slug, businessInput, rawBusiness));
 }

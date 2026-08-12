@@ -1,5 +1,6 @@
 import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { formatCardTitle } from "../utils/format-card-title";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -12,7 +13,7 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
   return (
     <section
       id={whyChooseUs.id}
-      className="bg-background px-4 py-20 sm:px-6 sm:py-28"
+      className="bg-background px-4 py-24 sm:px-6 sm:py-32"
     >
       <div className="mx-auto max-w-7xl">
         <div className="grid items-start gap-16 lg:grid-cols-2 lg:gap-20">
@@ -40,16 +41,13 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
             {whyChooseUs.benefits.map((benefit) => (
               <article
-                key={benefit.label}
-                className="rounded-[var(--radius-card)] bg-surface p-7 sm:p-9"
+                key={formatCardTitle(benefit)}
+                className="rounded-[var(--radius-card)] bg-accent p-7 text-accent-foreground sm:p-9"
               >
-                <p className="font-display text-4xl leading-none text-foreground sm:text-5xl">
-                  {benefit.stat}
+                <p className="font-display text-3xl leading-tight sm:text-4xl">
+                  {formatCardTitle(benefit)}
                 </p>
-                <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted">
-                  {benefit.label}
-                </p>
-                <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">
+                <p className="mt-4 text-sm leading-relaxed text-accent-foreground/75 sm:text-base">
                   {benefit.description}
                 </p>
               </article>
