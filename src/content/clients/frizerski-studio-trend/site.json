@@ -1,0 +1,149 @@
+{
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Jerneja Šmid s.p."
+  },
+  "metadata": {
+    "title": "Frizerski studio trend Jerneja Šmid s.p. | Škofja Loka",
+    "description": "Strokovno striženje, barvanje in nega las v Škofji Loki. Obiščite naš sodoben salon z individualnim pristopom."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Škofja Loka",
+    "title": "Strokovno striženje in urejanje",
+    "titleHighlight": "pričesk",
+    "description": "Strokovno striženje in urejanje pričesk za vsako priložnost za lokalne prebivalce in vse, ki iščejo kakovostne frizerske storitve v Škofji Loki.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Individualen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Urejen",
+        "label": "Salon"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Škofja Loka",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "Celovite frizerske storitve za stranke v Škofji Loki z okolico, prilagojene vašim željam.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske striženje ter oblikovanje pričesk.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Kakovostno moško striženje in urejanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Strokovno barvanje las za sijoč in zdrav videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priložnostne pričeske",
+        "description": "Urejanje pričesk za svečane in posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Negovalni tretmaji za obnovo in vitalnost vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel in strokoven pristop k urejanju pričesk",
+    "description": "V našem salonu se posvetimo vsaki stranki posebej ter poskrbimo za prijetno izkušnjo.",
+    "highlights": [
+      "Visoko usposobljeni in strokovni frizerji",
+      "Urejen in čist frizerski salon v Škofji Loki",
+      "Individualen pristop k željam vsake stranke"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazno",
+        "label": "Osebje",
+        "description": "Izjemno prijazno in ustrežljivo osebje poskrbi za vaše dobro počutje."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Znanje",
+        "description": "Visoko usposobljeni strokovnjaki za nego in oblikovanje las."
+      },
+      {
+        "stat": "Čisto",
+        "label": "Okolje",
+        "description": "Urejen in čist frizerski salon za sproščeno izkušnjo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na termin ali nas obiščite v salonu v Škofji Loki.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "030 266 178",
+        "href": "tel:030266178",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Stara cesta 18, 4220 Škofja Loka, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali naročanje.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Stara cesta 18, 4220 Škofja Loka, Slovenia",
+    "rights": "© 2025 Frizerski studio trend Jerneja Šmid s.p. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

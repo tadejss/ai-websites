@@ -1,0 +1,154 @@
+{
+  "brand": {
+    "prefix": "Hair Salon",
+    "highlight": "Aida"
+  },
+  "metadata": {
+    "title": "Hair Salon Aida | Frizerske storitve Jesenice",
+    "description": "Vaša priljubljena izbira za profesionalno striženje, barvanje in oblikovanje pričesk v Jesenicah in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Jesenice",
+    "title": "Profesionalne frizerske storitve za",
+    "titleHighlight": "vaš popoln videz",
+    "description": "Zanesljive in kvalitetne frizerske storitve za lokalne prebivalce in vse, ki iščejo strokoven pristop v Jesenicah s okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Jesenice",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Naročanje"
+      },
+      {
+        "value": "Ugodno",
+        "label": "Razmerje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve",
+    "description": "Poskrbimo za vaš svež videz in urejeno pričesko v Jesenicah s okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Kakovostno žensko striženje in oblikovanje pričeske po vaših željah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje za urejen in sodoben videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Stilsko oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Profesionalno barvanje las z obstojnimi in sijočimi odtenki.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Hitro urejanje pričesk",
+        "description": "Hitro urejanje pričesk za tiste, ki cenijo svoj čas.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Izkušeni frizerji za vaše lase",
+    "description": "Združujemo strokovnost, dostopne cene in prijetno izkušnjo za vsak obisk.",
+    "highlights": [
+      "Profesionalni in izkušeni frizerji",
+      "Dostopne cene in ugodno razmerje",
+      "Prilagodljivost pri naročanju in hitra postrežba"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Profesionalni in izkušeni frizerji za najboljšo skrb za vaše lase."
+      },
+      {
+        "stat": "Prilagodljivo",
+        "label": "Naročanje",
+        "description": "Hitra postrežba in prilagodljivost pri naročanju na termine."
+      },
+      {
+        "stat": "Ugodno",
+        "label": "Razmerje",
+        "description": "Dostopne cene in redne stranke, ki se radi vračajo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite v salonu v Jesenicah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta železarjev 4b, 4270 Jesenice, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "0599 50414",
+        "href": "tel:059950414",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–20:00, Sob: 8:00–13:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta železarjev 4b, 4270 Jesenice, Slovenia",
+    "rights": "© Hair Salon Aida. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

@@ -1,0 +1,149 @@
+{
+  "brand": {
+    "prefix": "Frizer",
+    "highlight": "Aleksandra"
+  },
+  "metadata": {
+    "title": "Frizer Aleksandra Šlibar s.p. | Frizerski salon Bled",
+    "description": "Strokovno in skrbno striženje za vaš popoln videz na Bledu z okolico. Obiščite naš topel in domač salon."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Bled",
+    "title": "Strokovno in skrbno striženje za vaš",
+    "titleHighlight": "popoln videz",
+    "description": "Dobrodošli v domačem in zanesljivem salonu na Bledu, kjer nudimo kakovostne frizerske storitve za lokalne stranke in obiskovalce.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Natančno",
+        "label": "Striženje"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Prijeten",
+        "label": "Ambient"
+      },
+      {
+        "value": "Bled",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "Celovite frizerske storitve, prilagojene vašim željam in potrebam, za stranke na Bledu in v širši okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje in striženje las po vaših željah z veliko mero natančnosti in skrbnosti.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in moderno moško striženje v prijetnem in sproščenem okolju.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje za osvežitev barve ali popolno preobrazbo vašega videza.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive in obnovitvene nege za zdravje, lesk in mehkobo vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Salon, kjer so vaši lasje v dobrih rokah",
+    "description": "Z združevanjem strokovnega znanja in toplega pristopa poskrbimo, da se v našem salonu vedno počutite dobrodošle.",
+    "highlights": [
+      "Zelo natančna in prijazna frizerka z občutkom za želje strank",
+      "Prijeten ambient z glasbenim ozadjem za popolno sprostitev",
+      "Visoka raven zadovoljstva vseh obiskovalcev salona"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Skrbno delo",
+        "description": "Vsakemu obisku se posvetimo z vso pozornostjo in natančnostjo."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Prijetno vzdušje",
+        "description": "Uživajte v sproščenem okolju z glasbenim ozadjem med urejanjem pričeske."
+      },
+      {
+        "stat": "Zadovoljstvo",
+        "label": "Topel pristop",
+        "description": "Prizadevamo si, da naš salon zapustite z nasmehom in urejenimi lasmi."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij o storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Grajska cesta 22, 4260 Bled, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(04) 574 44 62",
+        "href": "tel:+38645744462",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Grajska cesta 22, 4260 Bled, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

@@ -1,0 +1,150 @@
+{
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Škarjarija"
+  },
+  "metadata": {
+    "title": "Frizerski salon Škarjarija | Kranj",
+    "description": "Vrhunska negovalna izkušnja, frizura z okusom in naravna kozmetika v Kranju z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Moderen in butičen salon v Kranju",
+    "title": "Vrhunska negovalna izkušnja in",
+    "titleHighlight": "frizura z okusom",
+    "description": "Topel, domač in strokoven prostor za vse, ki cenijo kakovostno nego las, naravne izdelke in sproščeno vzdušje.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Manj",
+        "label": "Škodljivi izdelki"
+      },
+      {
+        "value": "Naravna",
+        "label": "Kozmetika"
+      },
+      {
+        "value": "Sproščeno",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Kranj",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase in dobro počutje",
+    "description": "Poskrbite za svoje lase z vrhunskimi in skrbno izbranimi storitvami v Kranju.",
+    "items": [
+      {
+        "title": "Striženje in oblikovanje pričesk",
+        "description": "Strokovno striženje in oblikovanje pričesk po vaših željah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las z manj škodljivimi izdelki",
+        "description": "Barvanje las z uporabo izdelkov, ki so prijaznejši do vaših las in lasišča.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega in tretmaji za lase",
+        "description": "Globinska nega in posebni tretmaji za zdravje ter sijaj vaših las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža lasišča ob storitvi",
+        "description": "Sproščujoča masaža lasišča, ki poskrbi za popoln odklop med obiskom.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prodaja naravne kozmetike Skinfairytale",
+        "description": "Ponudba in prodaja naravnih krem znamke Skinfairytale.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Butična izkušnja in osebni pristop",
+    "description": "V Frizerskem salonu Škarjarija združujemo strokovnost, toplino in skrb za zdravje vaših las.",
+    "highlights": [
+      "Uporaba manj škodljivih izdelkov za lase",
+      "Prijazno osebje z vrhunskim svetovanjem",
+      "Sprostitev ob kavi in masaži",
+      "Ponudba naravnih krem znamke Skinfairytale"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Svetovanje",
+        "description": "Prijazno osebje vam pomaga izbrati najboljšo nego in pričesko."
+      },
+      {
+        "stat": "Naravno",
+        "label": "In varno",
+        "description": "Uporabljamo izdelke z manj škodljivimi sestavinami ter naravno kozmetiko."
+      },
+      {
+        "stat": "Sproščeno",
+        "label": "Vzdušje",
+        "description": "Uživajte v trenutkih zase ob kavi in sproščujoči masaži lasišča."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj obisk",
+    "description": "Obiščite nas na Kurirski poti v Kranju ali nas pokličite za svoj termin.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 915 855",
+        "href": "tel:041915855",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kurirska pot 15, 4000 Kranj, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Kurirska pot 15, 4000 Kranj, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

@@ -1,0 +1,154 @@
+{
+  "brand": {
+    "prefix": "Frizerski Salon",
+    "highlight": "Pričeska"
+  },
+  "metadata": {
+    "title": "Frizerski Salon Pričeska | Škofja Loka",
+    "description": "Moderne in čudovite pričeske za vaš edinstven slog v Škofji Loki z okolico. Žensko in moško striženje, barvanje las ter strokovna nega."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Škofji Loki",
+    "title": "Moderne in čudovite pričeske za vaš",
+    "titleHighlight": "edinstven slog",
+    "description": "Poskrbimo za vaš moderen izgled in urejene lase. Prijazna in strokovna storitev za ljudi vseh starosti v Škofji Loki z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Moderen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Urejen",
+        "label": "Izgled"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Škofja Loka",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vaše lase",
+    "description": "V našem salonu v Škofji Loki nudimo kakovostno striženje, barvanje in nego las za vsak okus.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašemu obrazu in stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje za sodoben izgled.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje, prameni in osvežitev barve z obstojnimi odtenki.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilne in obnovitvene nege za zdravje, sijaj in mehkobo vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Izkušnja, ki poudari vašo naravno lepoto",
+    "description": "Združujemo sodobne trende in dostopne cene, da bi vsak obisk presegel vaša pričakovanja.",
+    "highlights": [
+      "Sledimo sodobnim in trendovskim frizerskim trendom",
+      "Zagotavljamo kakovostne storitve po dostopnih cenah",
+      "Poskrbimo, da so vaše pričeske vedno čudovite in urejene"
+    ],
+    "benefits": [
+      {
+        "stat": "Sodobni",
+        "label": "Trendi",
+        "description": "Uporabljamo sodobne in trendovske frizerske smernice za vaš popoln videz."
+      },
+      {
+        "stat": "Dostopne",
+        "label": "Cene",
+        "description": "Kakovostne storitve so na voljo po dostopnih cenah za vsakogar."
+      },
+      {
+        "stat": "Urejene",
+        "label": "Pričeske",
+        "description": "Z našo pomočjo bodo vaše pričeske vedno čudovite in lepo urejene."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij o naših storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Šolska ulica 7, 4220 Škofja Loka, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 428 958",
+        "href": "tel:041428958",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, Čet: 13:00–20:00 · Tor, Pet: 08:00–15:00 · Sob: 08:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Šolska ulica 7, 4220 Škofja Loka, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

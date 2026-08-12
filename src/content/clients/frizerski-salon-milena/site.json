@@ -1,0 +1,154 @@
+{
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Milena Mlakar Lozej s.p."
+  },
+  "metadata": {
+    "title": "Frizerski salon Milena Mlakar Lozej s.p. | Škofja Loka",
+    "description": "Strokovne frizerske storitve za vaše popolno zadovoljstvo v Škofji Loki in okolici. Nudimo žensko in moško striženje, barvanje, nego las ter styling."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Topel družinski salon v Škofji Loki",
+    "title": "Strokovne frizerske storitve za vaše",
+    "titleHighlight": "popolno zadovoljstvo",
+    "description": "Poskrbite za svoj videz z osebnim pristopom in strokovno obravnavo v Škofji Loki s širšo okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      },
+      {
+        "value": "6 dni",
+        "label": "Odprti tedensko"
+      },
+      {
+        "value": "Škofja Loka",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve",
+    "description": "Prilagojene frizerske storitve za stranke v Škofji Loki s širšo okolico, izvedene s posluhom za vaše želje.",
+    "items": [
+      {
+        "title": "Žensko striženje in pričeske",
+        "description": "Oblikovanje pričesk, ki poudarijo vaš osebni slog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasična in sodobna moška striženja ter urejanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni nanosi barv za sijoče in zdrave lase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega las",
+        "description": "Negovalni tretmaji za povrnitev prožnosti in leska.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Styling za posebne priložnosti",
+        "description": "Svečane pričeske in urejanje za pomembne dogodke.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanje, strokovnost in domačnost",
+    "description": "Združujemo dolgoletne izkušnje in prijetno vzdušje za vsak obisk v našem salonu.",
+    "highlights": [
+      "Prijazno in izkušeno osebje",
+      "Individualen in topel pristop",
+      "Enostavno telefonsko naročanje"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazno",
+        "label": "Osebje",
+        "description": "Izkušeni in prijazni frizerji poskrbijo za vaše dobro počutje."
+      },
+      {
+        "stat": "Osebni",
+        "label": "Pristop",
+        "description": "Prisluhnemo vašim željam in se posvetimo vsaki stranki posebej."
+      },
+      {
+        "stat": "Enostavno",
+        "label": "Naročanje",
+        "description": "Hitro in preprosto naročanje preko telefona."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za rezervacijo termina ali obiščite naš salon v Škofji Loki.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Suška cesta 49, 4220 Škofja Loka, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(04) 513 41 44",
+        "href": "tel:045134144",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–19:00, Sob: 8:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali želje glede terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Suška cesta 49, 4220 Škofja Loka, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

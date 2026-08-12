@@ -1,0 +1,149 @@
+{
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Brigita"
+  },
+  "metadata": {
+    "title": "Frizerski salon Brigita | Bled",
+    "description": "Kakovostne in cenovno dostopne frizerske storitve na Bledu. Striženje, barvanje, oblikovanje pričesk in nega las v prijetnem vzdušju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon na Bledu",
+    "title": "Kakovostne in dostopne",
+    "titleHighlight": "frizerske storitve",
+    "description": "Za lokalne prebivalce in obiskovalce Bleda, ki cenijo kakovost, ugodne cene ter prijazno in udobno vzdušje.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Bled",
+        "label": "In okolica"
+      },
+      {
+        "value": "Ugodno",
+        "label": "Cene storitev"
+      },
+      {
+        "value": "Hitro",
+        "label": "Strokovna storitev"
+      },
+      {
+        "value": "Toplo",
+        "label": "Prijazno vzdušje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve",
+    "description": "Poskrbimo za vaš videz z naborom kakovostnih storitev za lasišče in lase na območju Bleda.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Natančno striženje prilagojeno vaši obliki obraza in osebnemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve, prameni ali popolna preobrazba z uporabo preizkušenih preparatov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti, ki poudarijo vašo naravno lepoto.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega las",
+        "description": "Globinska nega in hranjenje las za zdrav lesk, mehkobo in vitalnost.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Udobje, strokovnost in dostopnost",
+    "description": "Zavedamo se, kako pomembno je, da se v svoji koži in s svojo pričesko počutite odlično.",
+    "highlights": [
+      "Hitra in strokovna storitev",
+      "Ugodne cene glede na kakovost",
+      "Prijazno in udobno vzdušje v salonu"
+    ],
+    "benefits": [
+      {
+        "stat": "Hitro",
+        "label": "Strokovna izvedba",
+        "description": "Cenimo vaš čas in poskrbimo za hitro ter zanesljivo storitev."
+      },
+      {
+        "stat": "Ugodno",
+        "label": "Dostopne cene",
+        "description": "Nudimo odlično razmerje med visoko kakovostjo in dostopno ceno."
+      },
+      {
+        "stat": "Prijetno",
+        "label": "Domače vzdušje",
+        "description": "Sprostite se v toplem okolju našega salona na Bledu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas na Izletniški ulici na Bledu ali nas pokličite za rezervacijo svojega termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Izletniška ul. 11, 4260 Bled, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 619 660",
+        "href": "tel:031619660",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon-Tor: 13:00–20:00, Sre-Čet: 08:00–14:00, Pet: 10:00–17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali dogovor o terminu.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Izletniška ul. 11, 4260 Bled, Slovenia",
+    "rights": "© 2025 Brigita, frizerski salon, Brigita Ferjan s.p. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

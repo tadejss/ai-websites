@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Škarjarija, Lola Sever s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunska negovalna izkušnja in frizura z okusom",
+  "services": [
+    "Striženje in oblikovanje pričesk",
+    "Barvanje las z manj škodljivimi izdelki",
+    "Nega in tretmaji za lase",
+    "Masaža lasišča ob storitvi",
+    "Prodaja naravne kozmetike Skinfairytale"
+  ],
+  "phone": "041 915 855",
+  "email": "",
+  "address": "Kurirska pot 15, 4000 Kranj, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Uporaba manj škodljivih izdelkov za lase",
+    "Prijazno osebje z vrhunskim svetovanjem",
+    "Sprostitev ob kavi in masaži",
+    "Ponudba naravnih krem znamke Skinfairytale"
+  ],
+  "targetCustomers": "Vsi, ki cenijo kakovostno nego las, naravne izdelke in sproščeno vzdušje v salonu",
+  "serviceArea": "Kranj z okolico",
+  "yearsExperience": "",
+  "tone": "topel, domač, strokoven",
+  "brandStyle": "moderen in butičen salon",
+  "competitors": "Lokalni frizerski saloni v Kranju",
+  "callToAction": "Rezervirajte svoj termin"
+}

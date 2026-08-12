@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerstvo Blanka, Blanka Lenček s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve z dolgoletno tradicijo in prijaznim pristopom v Jesenicah",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Frizure za posebne priložnosti",
+    "Moško in žensko striženje",
+    "Nega las"
+  ],
+  "phone": "041 618 580",
+  "email": "",
+  "address": "Cesta Borisa Kidriča 31, 4270 Jesenice, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Izjemno prijazno in osebno toplo osebje",
+    "Več kot 20 let zvestih strank in izkušenj",
+    "Vrhunska kvaliteta striženja in urejanja videza"
+  ],
+  "targetCustomers": "Vsi, ki iščejo strokovne frizerske storitve v prijetnem in domačem vzdušju",
+  "serviceArea": "Jesenice in okolica",
+  "yearsExperience": "Več kot 20 let izkušenj",
+  "tone": "topel, prijazen, domač",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

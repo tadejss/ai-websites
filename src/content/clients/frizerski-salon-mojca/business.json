@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski Salon Mojca, Mojca Avsec S.P.",
+  "industry": "Frizerski salon",
+  "tagline": "Vaš zanesljiv partner za čudovite pričeske in urejen videz v Radovljici.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje lase",
+    "Stilsko oblikovanje pričesk"
+  ],
+  "phone": "(04) 531 25 90",
+  "email": "",
+  "address": "Kranjska cesta 2, 4240 Radovljica, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 6:00 PM · Tuesday: 8:00 AM – 6:00 PM · Wednesday: Closed · Thursday: 8:00 AM – 6:00 PM · Friday: 8:00 AM – 6:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Hiter in učinkovit servis z dolgoletnimi izkušnjami",
+    "Potrpežljiv in občutljiv pristop k urejanju otrok",
+    "Strokovno znanje in prilagojeno svetovanje za nego las"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve za vso družino v Radovljici in okolici.",
+  "serviceArea": "Radovljica in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, domač, profesionalen",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v občini Radovljica",
+  "callToAction": "Rezervirajte termin"
+}

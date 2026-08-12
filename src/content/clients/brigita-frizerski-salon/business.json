@@ -1,0 +1,27 @@
+{
+  "companyName": "Brigita, frizerski salon, Brigita Ferjan s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Kakovostne in cenovno dostopne frizerske storitve na Bledu",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "031 619 660",
+  "email": "",
+  "address": "Izletniška ul. 11, 4260 Bled, Slovenia",
+  "openingHours": "Monday: 1:00 – 8:00 PM · Tuesday: 1:00 – 8:00 PM · Wednesday: 8:00 AM – 2:00 PM · Thursday: 8:00 AM – 2:00 PM · Friday: 10:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Hitra in strokovna storitev",
+    "Ugodne cene glede na kakovost",
+    "Prijazno in udobno vzdušje"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci Bleda, ki cenijo kakovost in dostopne cene",
+  "serviceArea": "Bled in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Drugi frizerski saloni na območju Bleda",
+  "callToAction": "Naročite se na termin"
+}

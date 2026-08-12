@@ -1,0 +1,155 @@
+{
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Pika Kozar Sabine"
+  },
+  "metadata": {
+    "title": "Frizerski salon Pika Kozar Sabine s.p. | Jesenice",
+    "description": "Sodobne pričeske in strokovna nega las za vso družino na Jesenicah in v okolici. Prijazna obravnava ter prilagodljive storitve za vsakogar."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Jesenice",
+    "title": "Sodobne pričeske in strokovna nega za",
+    "titleHighlight": "vso družino",
+    "description": "Vabljeni v naš sodoben in domač lokalni salon na Jesenicah. Nudimo celovite frizerske storitve, prilagojene vašim željam in potrebam.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Jesenice",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Družinski",
+        "label": "Salon"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Naročanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vaše lase",
+    "description": "Poskrbimo za vaš svež videz in zdravje vaših las z izbiro preverjenih frizerskih storitev na Jesenicah in v okolici.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Natančno striženje za vsak stil in dolžino las, prilagojeno obliki vašega obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje in osvežitev barve z uporabo sodobnih tehnik.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in tretmaji za lase",
+        "description": "Hranljivi tretmaji za obnovo in sijaj vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Moško in žensko frizerstvo",
+        "description": "Storitve striženja in urejanja za vso družino na enem mestu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topla domačnost in strokovno delo",
+    "description": "Trudimo se, da se v našem salonu vsak obiskovalec počuti dobrodošlo in sproščeno.",
+    "highlights": [
+      "Prijazna in strokovna obravnava vsake stranke",
+      "Sledenje najnovejšim frizerskim trendom",
+      "Dostopne in primerne cene storitev",
+      "Hitre in prilagodljive možnosti naročanja"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Osebni pristop",
+        "description": "Posvetimo se vsakemu posamezniku in njegovim željam glede pričeske."
+      },
+      {
+        "stat": "Trendi",
+        "label": "Sodobne smernice",
+        "description": "Redno sledimo novostim v frizerskem svetu za sodoben videz."
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "Ugodne cene",
+        "description": "Ponujamo kakovostne storitve po dostopnih cenah za vsakogar."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij o naših storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica heroja Verdnika 34, 4270 Jesenice, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 743 479",
+        "href": "tel:041743479",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon: 13:00–19:00, Tor-Sre: 07:00–14:30, Čet-Pet: 13:00–19:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Izpolnite spodnji obrazek za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica heroja Verdnika 34, 4270 Jesenice, Slovenia",
+    "rights": "© 2025 Frizerski salon Pika Kozar Sabine s.p. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

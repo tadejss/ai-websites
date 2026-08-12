@@ -1,0 +1,154 @@
+{
+  "brand": {
+    "prefix": "Frizerski Salon",
+    "highlight": "Mojca"
+  },
+  "metadata": {
+    "title": "Frizerski Salon Mojca | Radovljica",
+    "description": "Vaš zanesljiv partner za čudovite pričeske in urejen videz v Radovljici in okolici. Nudimo žensko, moško in otroško striženje ter barvanje las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon v Radovljici",
+    "title": "Vaš zanesljiv partner za",
+    "titleHighlight": "čudovite pričeske",
+    "description": "Poskrbite za svoj urejen videz v prijetnem in domačem okolju. Nudimo strokovne frizerske storitve za vso družino v Radovljici in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Družinski",
+        "label": "Pristop"
+      },
+      {
+        "value": "Radovljica",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Udobno",
+        "label": "Okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vso družino",
+    "description": "V našem salonu v Radovljici poskrbimo za celostno urejen videz vsakega družinskega člana z individualnim pristopom.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje za urejen in svež vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Potrpežljiv in občutljiv pristop k urejanju otrok v sproščenem vzdušju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje lase",
+        "description": "Kakovostni barvni odtenki in tehnike za sijoče ter negovane lase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti po vaših željah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in strokovna skrb za vaše lase",
+    "description": "Z združevanjem dolgoletnih izkušenj in prilagojenega svetovanja poskrbimo, da se boste v našem salonu vedno počutili odlično.",
+    "highlights": [
+      "Hiter in učinkovit servis z dolgoletnimi izkušnjami",
+      "Potrpežljiv in občutljiv pristop k urejanju otrok",
+      "Strokovno znanje in prilagojeno svetovanje za nego las"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebni",
+        "label": "Pristop",
+        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo vašim željam."
+      },
+      {
+        "stat": "Udobno",
+        "label": "Vzdušje",
+        "description": "Topel lokalni salon, kjer je poskrbljeno za sprostitev med urejanjem."
+      },
+      {
+        "stat": "Celovito",
+        "label": "Za družino",
+        "description": "Storitve prilagojene vsem generacijam na enem mestu v Radovljici."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij o naših storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kranjska cesta 2, 4240 Radovljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(04) 531 25 90",
+        "href": "tel:045312590",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Tor, Sre, Čet, Pet: 8:00 - 18:00, Sob: 8:00 - 12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kranjska cesta 2, 4240 Radovljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

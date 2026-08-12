@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizer Aleksandra Šlibar s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno in skrbno striženje za vaš popoln videz",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje",
+    "Nega las"
+  ],
+  "phone": "(04) 574 44 62",
+  "email": "",
+  "address": "Grajska cesta 22, 4260 Bled, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Zelo natančna in prijazna frizerka",
+    "Prijeten ambient z glasbenim ozadjem",
+    "Visoka raven zadovoljstva strank"
+  ],
+  "targetCustomers": "Lokalne stranke in obiskovalci Bleda, ki iščejo kakovostne frizerske storitve",
+  "serviceArea": "Bled z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, topel, strokoven",
+  "brandStyle": "domač in zanesljiv salon",
+  "competitors": "Lokalni frizerski saloni na Bledu",
+  "callToAction": "Rezervirajte svoj termin"
+}

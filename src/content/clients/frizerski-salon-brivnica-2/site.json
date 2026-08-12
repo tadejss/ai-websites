@@ -1,0 +1,149 @@
+{
+  "brand": {
+    "prefix": "Frizerski salon in brivnica",
+    "highlight": "Lučka"
+  },
+  "metadata": {
+    "title": "Frizerski salon in brivnica Lučka | Škofja Loka",
+    "description": "Vrhunske frizerske storitve in strokovno striženje za moške in ženske v Škofji Loki s okolico. Rezervirajte svoj termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon in brivnica v Škofji Loki",
+    "title": "Vrhunske frizerske storitve in strokovno",
+    "titleHighlight": "striženje za vsak okus",
+    "description": "Domač in zanesljiv salon nudimo moškim, ženskam in vsem, ki iščejo strokovno urejanje pričeske in brade v Škofji Loki s okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Znanje in izkušnje"
+      },
+      {
+        "value": "Prijazen",
+        "label": "In dostopen pristop"
+      },
+      {
+        "value": "Sproščeno",
+        "label": "Domače vzdušje"
+      },
+      {
+        "value": "Celovito",
+        "label": "Urejanje za vsakogar"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske in brivske storitve",
+    "description": "Poskrbimo za vaš svež videz in urejeno pričesko ali brado. Delujemo na območju Škofje Loke s okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk, striženje in prilagajanje vašemu tipu las ter osebnemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje in britje",
+        "description": "Natančno moško striženje ter urejanje in britje brade v sproščenem vzdušju.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje in osvežitev barve vaših las za sijoč in zdrav videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti, prilagojeno vašim željam.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi las",
+        "description": "Strokovni nasveti o pravilni negi in izbiri ustreznih izdelkov za vaše lase.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati salon Lučka",
+    "title": "Domač in zanesljiv salon za vaš popoln videz",
+    "description": "Združujemo strokovno znanje, prijaznost in sproščeno okolje, kjer se boste počutili dobrodošle.",
+    "highlights": [
+      "Vrhunska in prijazna storitev za vsako stranko",
+      "Strokovno znanje in razumevanje različnih tipov las",
+      "Prijetna družba in sproščeno vzdušje v salonu"
+    ],
+    "benefits": [
+      {
+        "stat": "Vrhunska",
+        "label": "Kakovost storitev",
+        "description": "Vsaki stranki se posvetimo individualno in poskrbimo za urejen videz."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Znanje",
+        "description": "Z razumevanjem različnih tipov las dosežemo rezultate po vaših željah."
+      },
+      {
+        "stat": "Prijetno",
+        "label": "Vzdušje",
+        "description": "Sproščena družba in domače okolje za vaš popoln oddih med urejanjem."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite naš frizerski salon in brivnico v Škofji Loki ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Frankovo naselje 67, 4220 Škofja Loka, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "030 434 201",
+        "href": "tel:030434201",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili ter se dogovorili za termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Frankovo naselje 67, 4220 Škofja Loka, Slovenia",
+    "rights": "© Frizerski salon in brivnica Lučka, Tjaša Čeligoj s.p. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

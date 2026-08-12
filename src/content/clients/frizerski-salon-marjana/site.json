@@ -1,0 +1,154 @@
+{
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Marjana"
+  },
+  "metadata": {
+    "title": "Frizerski salon Marjana | Jesenice",
+    "description": "Prijazne in strokovne frizerske storitve z dolgoletno tradicijo na Jesenicah za vso družino."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon na Jesenicah",
+    "title": "Prijazne in strokovne frizerske storitve z",
+    "titleHighlight": "dolgoletno tradicijo",
+    "description": "Nudimo kakovostno nego las za lokalne prebivalce vseh starosti, ki cenijo osebni pristop, prijaznost in domače vzdušje.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Tradicionalen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Domače",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Jesenice",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Osebno",
+        "label": "Svetovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vso družino",
+    "description": "Poskrbimo za vaš urejen videz z naborom preverjenih frizerskih storitev na Jesenicah z okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk, prilagojenih vaši obliki obraza in osebnemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in sodobno moško striženje ter urejanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Potrpežljivo in prijazno striženje za najmlajše v sproščenem okolju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve, barvanje narastka in modni odtenki za sijoče lase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Priprava pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Salon, kjer so stranke na prvem mestu",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za želje vsake stranke ustvarjamo prostor, kamor se radi vračate.",
+    "highlights": [
+      "Dolgoletna tradicija in zveste stranke",
+      "Prijazno in domače vzdušje ob vsakem obisku",
+      "Dostopne cene storitev za vsakogar"
+    ],
+    "benefits": [
+      {
+        "stat": "Tradicija",
+        "label": "Dolgoletne izkušnje",
+        "description": "Zanesljivo delo in bogate izkušnje na področju frizerstva."
+      },
+      {
+        "stat": "Domače",
+        "label": "Prijetno vzdušje",
+        "description": "Topel in oseben pristop, kjer se boste počutili dobrodošle."
+      },
+      {
+        "stat": "Vrednost",
+        "label": "Dostopne cene",
+        "description": "Kakovostne storitve po dostopnih cenah za vso družino."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas na Jesenicah ali nas pokličite in si zagotovite svoj termin.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta maršala Tita 52, 4270 Jesenice, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(04) 586 21 58",
+        "href": "tel:045862158",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon in čet: 13:00–18:00 · Tor in pet: 9:00–14:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali želje glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta maršala Tita 52, 4270 Jesenice, Slovenia",
+    "rights": "© Frizerski salon Marjana. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

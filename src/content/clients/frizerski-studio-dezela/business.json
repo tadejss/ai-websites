@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski studio Dežela Las d.o.o.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve za vaš popoln videz",
+  "services": [
+    "Moško in žensko striženje",
+    "Barvanje las",
+    "Prameni in balayage",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "041 277 219",
+  "email": "",
+  "address": "Cesta Cirila Tavčarja 8, 4270 Jesenice, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične strankine ocene in zadovoljstvo",
+    "Vrhunska storitev in skrb za stranke",
+    "Strokovno svetovanje in urejen videz"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo profesionalne frizerske storitve in urejen videz na Jesenicah",
+  "serviceArea": "Jesenice z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "modern in urejen",
+  "competitors": "Lokalni frizerski saloni na Jesenicah",
+  "callToAction": "Rezervirajte termin"
+}

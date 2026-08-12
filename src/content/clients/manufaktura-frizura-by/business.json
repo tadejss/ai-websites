@@ -1,0 +1,28 @@
+{
+  "companyName": "Manufaktura Frizura by Nina",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in umetniški pristop v Bledu",
+  "services": [
+    "Striženje in oblikovanje las",
+    "Barvanje las",
+    "Fen frizure in styling",
+    "Svečane pričeske za poroke"
+  ],
+  "phone": "031 305 133",
+  "email": "",
+  "address": "Cesta svobode 15, 4260 Bled, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 10:00 AM – 7:00 PM · Wednesday: 10:00 AM – 7:00 PM · Thursday: 10:00 AM – 7:00 PM · Friday: 10:00 AM – 7:00 PM · Saturday: 10:00 AM – 7:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prijazna in prilagodljiva frizerka",
+    "Strokovnost, kreativnost in umetniški pristop",
+    "Pošteno oblikovanje cen in prilagojene storitve",
+    "Sproščujoče in prijetno vzdušje v salonu"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci Bleda, ki iščejo vrhunsko striženje in pričeske za posebne priložnosti",
+  "serviceArea": "Bled in okolica",
+  "yearsExperience": "",
+  "tone": "topel, strokoven in prijazen",
+  "brandStyle": "moderen in butični salon",
+  "competitors": "Ostali frizerski saloni na območju Bleda",
+  "callToAction": "Rezervirajte termin"
+}

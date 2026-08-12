@@ -1,0 +1,150 @@
+{
+  "brand": {
+    "prefix": "Manufaktura Frizura",
+    "highlight": "by Nina"
+  },
+  "metadata": {
+    "title": "Manufaktura Frizura by Nina | Frizerski salon Bled",
+    "description": "Vrhunske frizerske storitve in umetniški pristop na Bledu. Odkrijte striženje, barvanje in svečane pričeske v sproščenem vzdušju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Bled",
+    "title": "Umetniški pristop in vrhunske",
+    "titleHighlight": "frizerske storitve",
+    "description": "Topel, strokoven in prijazen butični salon na Bledu, namenjen lokalnim prebivalcem in obiskovalcem, ki cenijo kakovostno nego las.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Bled",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Butično",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Topel",
+        "label": "Pristop"
+      },
+      {
+        "value": "Prilagojeno",
+        "label": "Za vas"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbite za svoj videz z našimi storitvami, prilagojenimi za območje Bleda in okolice.",
+    "items": [
+      {
+        "title": "Striženje in oblikovanje las",
+        "description": "Precizno striženje in oblikovanje las, prilagojeno vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kreativne tehnike barvanja in osvežitev barve z vrhunskimi izdelki.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Fen frizure in styling",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti z dolgotrajnim sijajem.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svečane pričeske za poroke",
+        "description": "Unikatne in elegantne svečane pričeske za poroke ter druge nepozabne dogodke.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Butična izkušnja in osebni pristop",
+    "description": "V salonu Manufaktura Frizura združujemo strokovnost, kreativnost in prijetno vzdušje.",
+    "highlights": [
+      "Izjemno prijazna in prilagodljiva frizerka",
+      "Strokovnost, kreativnost in umetniški pristop",
+      "Pošteno oblikovanje cen in prilagojene storitve",
+      "Sproščujoče in prijetno vzdušje v salonu"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazno",
+        "label": "Prilagodljivost",
+        "description": "Izjemno prijazna in prilagodljiva obravnava vsake stranke."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Umetniški pristop",
+        "description": "Združujemo strokovnost, kreativnost in umetniški navdih."
+      },
+      {
+        "stat": "Pošteno",
+        "label": "Oblikovanje cen",
+        "description": "Prilagojene storitve in pošteno oblikovanje cen."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite na Bledu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta svobode 15, 4260 Bled, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 305 133",
+        "href": "tel:031305133",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Tor–Sob: 10:00–19:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Pišite nam za rezervacijo termina ali vprašanja o storitvah.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta svobode 15, 4260 Bled, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

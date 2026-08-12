@@ -1,0 +1,150 @@
+{
+  "brand": {
+    "prefix": "Salon z razgledom",
+    "highlight": "Janez Šenk s.p."
+  },
+  "metadata": {
+    "title": "Salon z razgledom | Frizerstvo in manikura Bled",
+    "description": "Vrhunske frizure in manikura z edinstvenim razgledom na Bledu za prebivalce in obiskovalce."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski in kozmetični salon Bled",
+    "title": "Vrhunske frizure in manikura z",
+    "titleHighlight": "edinstvenim razgledom",
+    "description": "Uživajte v sproščeni in prijetni atmosferi sodobnega lokalnega salona na Bledu ter poskrbite za svoj videz z razgledom.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Bled",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Vrhunski",
+        "label": "Materiali"
+      },
+      {
+        "value": "Sproščeno",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase in nohte",
+    "description": "Ponujamo celovite frizerske in lepotne storitve za prebivalce Bleda in okolice.",
+    "items": [
+      {
+        "title": "Striženje in styling",
+        "description": "Moderne in klasične frizure, prilagojene vašemu stilu in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostne barve in tehnike barvanja za sijoč videz vaših las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Moško frizerstvo",
+        "description": "Natančno striženje in urejanje za moške, ki cenijo urejen videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Manikura",
+        "description": "Urejanje in nego nohtov za lepe in negovane roke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilne nege za zdravje, mehkobo in sijaj vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Doživite nego z razgledom",
+    "description": "Združujemo strokovnost, prijetno okolje in edinstveno lokacijo na Bledu.",
+    "highlights": [
+      "Edinstven razgled med obiskom salona na Bledu",
+      "Strokovne in profesionalne frizerske storitve",
+      "Sproščena in prijetna atmosfera za vsak obisk",
+      "Ugodne cene za vrhunsko kakovost storitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Razgled",
+        "label": "Edinstvena lokacija",
+        "description": "Uživajte v čudovitem razgledu medtem ko skrbimo za vaš videz."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Strokovne storitve",
+        "description": "Nudimo profesionalno nego las in nohtov z visoko stopnjo posvečenosti."
+      },
+      {
+        "stat": "Domače",
+        "label": "Sproščeno vzdušje",
+        "description": "Prijazna in sproščena atmosfera za vaš popolni oddih od vsakdana."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska cesta 29 A, 4260 Bled, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 865 609",
+        "href": "tel:040865609",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeni termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska cesta 29 A, 4260 Bled, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

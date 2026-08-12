@@ -1,0 +1,29 @@
+{
+  "companyName": "Hair Salon Aida",
+  "industry": "Frizerski salon",
+  "tagline": "Vaša priljubljena izbira za profesionalno striženje in pričeske v Jesenicah",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Stilsko oblikovanje pričesk",
+    "Barvanje las",
+    "Hitro urejanje pričesk"
+  ],
+  "phone": "0599 50414",
+  "email": "",
+  "address": "Cesta železarjev 4b, 4270 Jesenice, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Profesionalni in izkušeni frizerji",
+    "Dostopne cene in ugodno razmerje",
+    "Prilagodljivost pri naročanju in hitra postrežba",
+    "Zadovoljne stranke z rednimi obiski"
+  ],
+  "targetCustomers": "Lokalni prebivalci in vsi, ki iščejo zanesljive in kvalitetne frizerske storitve v Jesenicah",
+  "serviceArea": "Jesenice s okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "moderen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte termin"
+}

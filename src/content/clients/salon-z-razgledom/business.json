@@ -1,0 +1,29 @@
+{
+  "companyName": "Salon z razgledom, frizerstvo in Manikura, Janez Šenk s.p.",
+  "industry": "Frizerski in kozmetični salon",
+  "tagline": "Vrhunske frizure in manikura z edinstvenim razgledom na Bledu.",
+  "services": [
+    "Striženje in styling",
+    "Barvanje las",
+    "Moško frizerstvo",
+    "Manikura",
+    "Nega las"
+  ],
+  "phone": "040 865 609",
+  "email": "",
+  "address": "Kolodvorska cesta 29 A, 4260 Bled, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Čudovit razgled med obiskom salona",
+    "Strokovne in profesionalne frizerske storitve",
+    "Sproščena in prijetna atmosfera",
+    "Ugodne cene za vrhunsko kakovost"
+  ],
+  "targetCustomers": "Prebivalci Bleda in okolice ter obiskovalci, ki cenijo kakovostne frizerske in lepotne storitve.",
+  "serviceArea": "Bled in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, sproščen, profesionalen",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Lokalni frizerski in lepotni saloni na območju Bleda",
+  "callToAction": "Rezervirajte svoj termin"
+}

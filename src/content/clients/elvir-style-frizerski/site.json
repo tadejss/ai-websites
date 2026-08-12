@@ -1,0 +1,155 @@
+{
+  "brand": {
+    "prefix": "Elvir Style",
+    "highlight": "Frizerski Studio"
+  },
+  "metadata": {
+    "title": "Elvir Style | Frizerski studio v Radovljici",
+    "description": "Vrhunske frizerske storitve, modni stili in sproščujoče terapevtsko pranje las z masažo v Radovljici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Sodoben lokalni salon v Radovljici",
+    "title": "Vrhunske frizerske storitve in",
+    "titleHighlight": "modni stili",
+    "description": "Profesionalne frizerske storitve, modne pričeske in sprostitvena izkušnja za vse, ki iščejo najboljše za svoje lase v Radovljici z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Moško in žensko striženje"
+      },
+      {
+        "value": "Modno",
+        "label": "Barvanje las"
+      },
+      {
+        "value": "Sproščujoče",
+        "label": "Terapevtsko pranje"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Radovljica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve za vaš videz",
+    "description": "V frizerskem studiu Elvir Style poskrbimo za vaš svež videz in popolno sprostitev v Radovljici z okolico.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Natančno in sodobno moško striženje, prilagojeno vašemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Stilsko oblikovanje in striženje za sodobne ženske pričeske.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Modno barvanje lase",
+        "description": "Kakovostno modno barvanje las, ki poudari vašo osebnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Terapevtsko pranje las z masažo",
+        "description": "Sproščujoče terapevtsko pranje las, pospremljeno s prijetno masažo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje in oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prijazna, domača in strokovna izkušnja",
+    "description": "Združujemo strokovnost, posluh za želje strank in sproščeno vzdušje v našem salonu.",
+    "highlights": [
+      "Vrhunska ocena in zaupanje strank",
+      "Sproščujoče terapevtsko pranje las z masažo",
+      "Modni in stilsko dovršenistriženje",
+      "Prijazna in strokovna storitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Zaupanje",
+        "label": "Vrhunska ocena",
+        "description": "Zaupanje in zadovoljstvo naših strank sta naša največja potrditev."
+      },
+      {
+        "stat": "Sprostitev",
+        "label": "Terapevtska masaža",
+        "description": "Prepustite se blagodejnemu pranju las in sproščujoči masaži."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Prijazen pristop",
+        "description": "Topel, domač in profesionalen odnos do vsake stranke posebej."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Obiščite naš salon",
+    "description": "Stopite v stik z nami in si zagotovite svoj termin v frizerskem studiu Elvir Style.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gorenjska cesta 6, 4240 Radovljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 790 819",
+        "href": "tel:041790819",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, Pet: 9:00–17:00 · Tor, Čet: 12:00–20:00 · Sob, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Gorenjska cesta 6, 4240 Radovljica, Slovenia",
+    "rights": "© 2025 Elvir Style frizerski studio Elvir Hadžić s.p. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

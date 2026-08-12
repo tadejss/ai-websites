@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Pika Kozar Sabine s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Sodobne pričeske in strokovna nega las za vso družino",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega in tretmaji za lase",
+    "Moško in žensko frizerstvo"
+  ],
+  "phone": "041 743 479",
+  "email": "",
+  "address": "Ulica heroja Verdnika 34, 4270 Jesenice, Slovenia",
+  "openingHours": "Monday: 1:00 – 7:00 PM · Tuesday: 7:00 AM – 2:30 PM · Wednesday: 7:00 AM – 2:30 PM · Thursday: 1:00 – 7:00 PM · Friday: 1:00 – 7:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazna in strokovna obravnava",
+    "Sledenje najnovejšim frizerskim trendom",
+    "Dostopne in primerne cene",
+    "Hitre in prilagodljive storitve"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci Jesenic, ki iščejo kakovostne frizerske storitve",
+  "serviceArea": "Jesenice in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen in strokoven",
+  "brandStyle": "sodoben in domač lokalni salon",
+  "competitors": "Lokalni frizerski saloni na območju Jesenic",
+  "callToAction": "Rezervirajte svoj termin"
+}

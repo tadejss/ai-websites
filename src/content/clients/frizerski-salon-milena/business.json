@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Milena Mlakar Lozej s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve za vaše popolno zadovoljstvo",
+  "services": [
+    "Žensko striženje in pričeske",
+    "Moško striženje",
+    "Barvanje las",
+    "Nega las",
+    "Styling za posebne priložnosti"
+  ],
+  "phone": "(04) 513 41 44",
+  "email": "",
+  "address": "Suška cesta 49, 4220 Škofja Loka, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 7:00 PM · Tuesday: 8:00 AM – 7:00 PM · Wednesday: 8:00 AM – 7:00 PM · Thursday: 8:00 AM – 7:00 PM · Friday: 8:00 AM – 7:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izkušeni in prijazni frizerji",
+    "Visoko zadovoljstvo strank",
+    "Enostavno naročanje po telefonu",
+    "Osebni pristop k vsaki stranki"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve v Škofji Loki in okolici",
+  "serviceArea": "Škofja Loka s širšo okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel družinski salon",
+  "competitors": "Lokalni frizerski saloni v občini Škofja Loka",
+  "callToAction": "Rezervirajte svoj termin"
+}

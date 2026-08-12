@@ -1,0 +1,29 @@
+{
+  "companyName": "Elvir Style frizerski studio Elvir Hadžić s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in modni stili v Radovljici",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Modno barvanje lase",
+    "Terapevtsko pranje las z masažo",
+    "Stilsko oblikovanje pričesk"
+  ],
+  "phone": "041 790 819",
+  "email": "",
+  "address": "Gorenjska cesta 6, 4240 Radovljica, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 5:00 PM · Tuesday: 12:00 – 8:00 PM · Wednesday: 9:00 AM – 5:00 PM · Thursday: 12:00 – 8:00 PM · Friday: 9:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunska ocena in zaupanje strank",
+    "Sproščujoče terapevtsko pranje las z masažo",
+    "Modni in stilsko dovršenistriženje",
+    "Prijazna in strokovna storitev"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo profesionalne frizerske storitve, modne pričeske in sprostitveno izkušnjo v Radovljici",
+  "serviceArea": "Radovljica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen, domač",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

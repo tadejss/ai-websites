@@ -1,0 +1,149 @@
+{
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Blanka"
+  },
+  "metadata": {
+    "title": "Frizerstvo Blanka | Frizerski salon Jesenice",
+    "description": "Vrhunske frizerske storitve z dolgoletno tradicijo in prijaznim pristopom v Jesenicah in okolici. Nudimo striženje, barvanje in nego las v domačem vzdušju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon",
+    "title": "Vrhunske frizerske storitve z",
+    "titleHighlight": "dolgoletno tradicijo",
+    "description": "Vsem, ki iščejo strokovne frizerske storitve v prijetnem in domačem vzdušju na območju Jesenic in okolice.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "20+ let",
+        "label": "Izkušenj"
+      },
+      {
+        "value": "Topel",
+        "label": "Pristop"
+      },
+      {
+        "value": "Jesenice",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Osebje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaš popoln videz",
+    "description": "Poskrbimo za vaš svež videz in zdravje vaših las z individualnim pristopom za stranke iz Jesenic in okolice.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Moderne in klasične frizure, prilagojene vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki za sijoče in žive lase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Frizure za posebne priložnosti",
+        "description": "Urejanje pričesk za poroke, obhajila, rojstne dneve in druge dogodke.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Strokovne frizerske storitve za vso družino v prijetnem okolju.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Negovalni tretmaji za obnovo, mehkobo in zdrav lesk vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in strokovnost",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za želje vsake stranke ustvarjamo prostor, kamor se radi vračate.",
+    "highlights": [
+      "Izjemno prijazno in osebno toplo osebje",
+      "Več kot 20 let zvestih strank in izkušenj",
+      "Vrhunska kvaliteta striženja in urejanja videza"
+    ],
+    "benefits": [
+      {
+        "stat": "20+ let",
+        "label": "Tradicije",
+        "description": "Dolgoletne izkušnje in zveste stranke potrjujejo našo kakovost."
+      },
+      {
+        "stat": "Topel",
+        "label": "Domači pristop",
+        "description": "Pri nas se boste počutili sproščeno in dobrodošli."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Urejanje",
+        "description": "Vrhunska kvaliteta striženja in nege za vaš najboljši videz."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nas obiščite v salonu v Jesenicah. Z veseljem vam bomo prisluhnili.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta Borisa Kidriča 31, 4270 Jesenice, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 618 580",
+        "href": "tel:041618580",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta Borisa Kidriča 31, 4270 Jesenice, Slovenia",
+    "rights": "© 2024 Frizerstvo Blanka, Blanka Lenček s.p. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

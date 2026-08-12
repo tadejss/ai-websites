@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon \"Marjana\" Marjana Smolej Ocepek s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Prijazne in strokovne frizerske storitve z dolgoletno tradicijo na Jesenicah.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "(04) 586 21 58",
+  "email": "",
+  "address": "Cesta maršala Tita 52, 4270 Jesenice, Slovenia",
+  "openingHours": "Monday: 1:00 – 6:00 PM · Tuesday: 9:00 AM – 2:00 PM · Wednesday: Closed · Thursday: 1:00 – 6:00 PM · Friday: 9:00 AM – 2:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Dolgoletna tradicija in zveste stranke",
+    "Prijazno in domače vzdušje",
+    "Dostopne cene storitev",
+    "Preverjeno odlične ocene zadovoljnih strank"
+  ],
+  "targetCustomers": "Lokalni prebivalci vseh starosti, ki cenijo osebni pristop in prijaznost.",
+  "serviceArea": "Jesenice z okolico",
+  "yearsExperience": "",
+  "tone": "topel, prijazen, domač",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni na območju Jesenic",
+  "callToAction": "Naročite se na termin"
+}

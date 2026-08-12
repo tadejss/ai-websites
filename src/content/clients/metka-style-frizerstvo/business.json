@@ -1,0 +1,29 @@
+{
+  "companyName": "Metka Style, frizerstvo, Metka Kovačič s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne in prilagojene frizerske storitve v Bledu",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Svetovanje o negi las"
+  ],
+  "phone": "041 267 260",
+  "email": "",
+  "address": "Savska cesta 11e, 4260 Bled, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka strokovnost in prilagodljivost strankam",
+    "Prijazen, iskren in oseben pristop",
+    "Skrbno poslušanje želja strank",
+    "Odlične ocene in zadovoljne stranke"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne in profesionalne frizerske storitve na Bledu z osebnim pristopom",
+  "serviceArea": "Bled in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni na Bledu",
+  "callToAction": "Rezervirajte svoj termin"
+}

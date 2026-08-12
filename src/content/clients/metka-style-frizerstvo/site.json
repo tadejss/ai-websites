@@ -1,0 +1,149 @@
+{
+  "brand": {
+    "prefix": "Metka",
+    "highlight": "Style"
+  },
+  "metadata": {
+    "title": "Metka Style | Frizerski salon Bled",
+    "description": "Strokovne in prilagojene frizerske storitve v Bledu z osebnim pristopom. Žensko in moško striženje, barvanje las ter stilsko oblikovanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Bled",
+    "title": "Strokovne in prilagojene",
+    "titleHighlight": "frizerske storitve",
+    "description": "Visoka strokovnost in oseben pristop za svež videz vaših las na Bledu in v okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Bled",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Prilagojeno",
+        "label": "Za vas"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vas",
+    "description": "Poskrbimo za vaš urejen videz in zdravje vaših las z dolgoletnimi izkušnjami in posluhom za vaše želje na Bledu.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah ob skrbnem poslušanju in strokovnem svetovanju.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje za urejen in sodoben vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki, ki poudarijo vašo naravno lepoto in stil.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi las",
+        "description": "Strokovni nasveti za vzdrževanje zdravja in leska vaših las doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Metka Style",
+    "title": "Zanesljiv lokalni salon na Bledu",
+    "description": "Združujemo strokovnost, prijaznost in individualno obravnavo vsake stranke.",
+    "highlights": [
+      "Visoka strokovnost in prilagodljivost strankam",
+      "Prijazen, iskren in oseben pristop",
+      "Skrbno poslušanje želja strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Iskren",
+        "label": "Pristop",
+        "description": "Vsaki stranki se posvetimo z veliko pozornosti in razumevanja njenih želja."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "Zaupanje",
+        "description": "Zanesljiv lokalni salon na Bledu, kjer se boste počutili dobrodošli."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Znanje",
+        "description": "Natančnost in predanost frizerski stroki za vaše popolno zadovoljstvo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših frizerskih storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Savska cesta 11e, 4260 Bled, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 267 260",
+        "href": "tel:041267260",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Savska cesta 11e, 4260 Bled, Slovenia",
+    "rights": "© 2025 Metka Style, Metka Kovačič s.p. Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}

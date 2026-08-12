@@ -1,0 +1,154 @@
+{
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Dežela Las"
+  },
+  "metadata": {
+    "title": "Frizerski studio Dežela Las d.o.o. | Frizerski salon Jesenice",
+    "description": "Vrhunske frizerske storitve za vaš popoln videz na Jesenicah z okolico. Nudimo moško in žensko striženje, barvanje, balayage, nego las in oblikovanje pričesk."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Jesenice",
+    "title": "Vrhunske frizerske storitve za",
+    "titleHighlight": "vaš popoln videz",
+    "description": "Profesionalne frizerske storitve in urejen videz na Jesenicah z okolico za vse, ki cenijo strokovnost in urejenost.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Urejen",
+        "label": "Videz"
+      },
+      {
+        "value": "Jesenice",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbite za svoj videz z našimi storitvami, prilagojenimi strankam na Jesenicah z okolico.",
+    "items": [
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Natančno striženje za vsak stil in obliko obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna preobrazba z izbranimi pripravki.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prameni in balayage",
+        "description": "Naravni prelivi in sodobne tehnike barvanja za sijaj vaših las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Globinska nega in obnova za zdravje in mehkobo vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Celovita skrb za vaše lase",
+    "description": "Z odlikami, kot so odlične ocene strank, skrb za detajle in strokovno svetovanje, poskrbimo za vaš urejen videz.",
+    "highlights": [
+      "Odlične strankine ocene in visoko zadovoljstvo",
+      "Vrhunska storitev in predana skrb za stranke",
+      "Strokovno svetovanje za vaš edinstven videz"
+    ],
+    "benefits": [
+      {
+        "stat": "Odlične",
+        "label": "Ocene strank",
+        "description": "Ponosni smo na pozitivne odzive in zadovoljstvo tistih, ki nam zaupajo."
+      },
+      {
+        "stat": "Vrhunska",
+        "label": "Skrb za stranke",
+        "description": "Vsakemu obisku namenimo vso pozornost in strokovno podporo."
+      },
+      {
+        "stat": "Urejen",
+        "label": "Videz",
+        "description": "Pomagamo vam do pričeske, v kateri se boste počutili samozavestno."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših frizerskih storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta Cirila Tavčarja 8, 4270 Jesenice, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 277 219",
+        "href": "tel:041277219",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: Odprti 24h · Sob–Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali dodatna vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta Cirila Tavčarja 8, 4270 Jesenice, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "appearance": "beauty"
+}
