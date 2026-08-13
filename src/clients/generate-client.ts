@@ -33,6 +33,7 @@ function createLeadData(
     googleRating: rawBusiness.rating,
     googleReviewCount: rawBusiness.reviewCount,
     existingWebsite: rawBusiness.website ?? "",
+    email: businessInput.email?.trim() || undefined,
     status: "generated",
   };
 }

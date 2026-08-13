@@ -30,7 +30,10 @@
     "test-theme": "tsx scripts/test-theme.ts",
     "regenerate-images": "tsx scripts/regenerate-images.ts",
     "backfill-privacy": "tsx scripts/backfill-privacy.ts",
-    "test-privacy": "tsx scripts/test-privacy.ts"
+    "test-privacy": "tsx scripts/test-privacy.ts",
+    "send-outreach": "tsx scripts/send-outreach.ts",
+    "outreach-summary": "tsx scripts/outreach-summary.ts",
+    "test-outreach": "tsx scripts/test-outreach.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -39,6 +42,8 @@
     "openai": "^7.4.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
+    "resend": "^6.19.0",
+    "svix": "^1.99.1",
     "zod": "^4.4.3"
   },
   "devDependencies": {
