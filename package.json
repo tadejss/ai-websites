@@ -28,11 +28,14 @@
     "test-batch": "tsx scripts/test-batch.ts",
     "test-discovery": "tsx scripts/test-discovery.ts",
     "test-theme": "tsx scripts/test-theme.ts",
-    "regenerate-images": "tsx scripts/regenerate-images.ts"
+    "regenerate-images": "tsx scripts/regenerate-images.ts",
+    "backfill-privacy": "tsx scripts/backfill-privacy.ts",
+    "test-privacy": "tsx scripts/test-privacy.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "next": "16.3.0",
+    "nodemailer": "^9.0.5",
     "openai": "^7.4.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
@@ -41,6 +44,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/nodemailer": "^8.0.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",

@@ -105,7 +105,7 @@ export default async function ClientPage({ params }: Props) {
   return (
     <>
       <LocalBusinessJsonLd slug={slug} config={siteConfig} />
-      <SitePage siteConfig={siteConfig} />
+      <SitePage siteConfig={siteConfig} siteSlug={slug} />
     </>
   );
 }

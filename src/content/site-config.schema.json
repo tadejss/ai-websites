@@ -70,6 +70,12 @@
     },
     "footer": {
       "$ref": "#/$defs/Footer"
+    },
+    "business": {
+      "$ref": "#/$defs/Business"
+    },
+    "privacy": {
+      "$ref": "#/$defs/Privacy"
     }
   },
   "$defs": {
@@ -402,6 +408,99 @@
         },
         "rights": {
           "type": "string"
+        }
+      }
+    },
+    "Business": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "address", "email"],
+      "properties": {
+        "name": { "type": "string" },
+        "legalName": { "type": "string" },
+        "address": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "registrationNumber": { "type": "string" },
+        "vatNumber": { "type": "string" }
+      }
+    },
+    "Privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled",
+        "lastUpdated",
+        "contactForm",
+        "analytics",
+        "marketing",
+        "booking",
+        "thirdPartyEmbeds",
+        "cookies"
+      ],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "lastUpdated": { "type": "string" },
+        "contactForm": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enabled", "fields"],
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "fields": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["name", "phone", "message"]
+              }
+            }
+          }
+        },
+        "analytics": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enabled", "provider"],
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "provider": { "type": ["string", "null"] }
+          }
+        },
+        "marketing": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enabled"],
+          "properties": {
+            "enabled": { "type": "boolean" }
+          }
+        },
+        "booking": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enabled", "type", "providerName", "url"],
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "type": { "type": "string", "enum": ["external_link"] },
+            "providerName": { "type": "string" },
+            "url": { "type": "string" },
+            "privacyUrl": { "type": "string" }
+          }
+        },
+        "thirdPartyEmbeds": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["googleMaps", "youtube"],
+          "properties": {
+            "googleMaps": { "type": "boolean" },
+            "youtube": { "type": "boolean" }
+          }
+        },
+        "cookies": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["nonEssential"],
+          "properties": {
+            "nonEssential": { "type": "boolean" }
+          }
         }
       }
     }

@@ -1,4 +1,5 @@
 {
+  "appearance": "beauty",
   "brand": {
     "prefix": "Elvir Style",
     "highlight": "Frizerski Studio"
@@ -151,5 +152,43 @@
     "address": "Gorenjska cesta 6, 4240 Radovljica, Slovenia",
     "rights": "© 2025 Elvir Style frizerski studio Elvir Hadžić s.p. Vse pravice pridržane."
   },
-  "appearance": "beauty"
+  "business": {
+    "name": "Elvir Style Frizerski Studio",
+    "address": "Gorenjska cesta 6, 4240 Radovljica, Slovenia",
+    "email": "",
+    "phone": "041 790 819"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-13",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
 }

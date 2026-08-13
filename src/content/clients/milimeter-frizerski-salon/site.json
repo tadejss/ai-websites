@@ -164,5 +164,44 @@
   "footer": {
     "address": "Gregorčičeva ulica 15, 2000 Maribor, Slovenia",
     "rights": "© 2024 MILIMETER frizerski salon. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "MILIMETER frizerski salon",
+    "address": "Gregorčičeva ulica 15, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "0838 81432"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-13",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

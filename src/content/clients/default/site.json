@@ -9,9 +9,18 @@
   },
   "nav": {
     "links": [
-      { "href": "#storitve", "label": "Storitve" },
-      { "href": "#zakaj-mi", "label": "Zakaj mi" },
-      { "href": "#kontakt", "label": "Kontakt" }
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
     ],
     "cta": "Kontakt"
   },
@@ -23,7 +32,10 @@
     "primaryCta": "Kontakt",
     "secondaryCta": "Storitve",
     "stats": [
-      { "value": "10+", "label": "let izkušenj" }
+      {
+        "value": "10+",
+        "label": "let izkušenj"
+      }
     ]
   },
   "services": {
@@ -97,5 +109,44 @@
   "footer": {
     "address": "",
     "rights": "Vse pravice pridržane."
+  },
+  "appearance": "default",
+  "business": {
+    "name": "Ime Podjetja",
+    "address": "",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-13",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

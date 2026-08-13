@@ -1,4 +1,5 @@
 {
+  "appearance": "beauty",
   "brand": {
     "prefix": "Frizerski salon in brivnica",
     "highlight": "Lučka"
@@ -145,5 +146,43 @@
     "address": "Frankovo naselje 67, 4220 Škofja Loka, Slovenia",
     "rights": "© Frizerski salon in brivnica Lučka, Tjaša Čeligoj s.p. Vse pravice pridržane."
   },
-  "appearance": "beauty"
+  "business": {
+    "name": "Frizerski salon in brivnica Lučka",
+    "address": "Frankovo naselje 67, 4220 Škofja Loka, Slovenia",
+    "email": "",
+    "phone": "030 434 201"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-13",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
 }

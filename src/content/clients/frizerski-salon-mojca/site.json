@@ -1,4 +1,5 @@
 {
+  "appearance": "beauty",
   "brand": {
     "prefix": "Frizerski Salon",
     "highlight": "Mojca"
@@ -150,5 +151,43 @@
     "address": "Kranjska cesta 2, 4240 Radovljica, Slovenia",
     "rights": "Vse pravice pridržane."
   },
-  "appearance": "beauty"
+  "business": {
+    "name": "Frizerski Salon Mojca",
+    "address": "Kranjska cesta 2, 4240 Radovljica, Slovenia",
+    "email": "",
+    "phone": "(04) 531 25 90"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-13",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
 }

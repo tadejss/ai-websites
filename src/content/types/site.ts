@@ -61,6 +61,48 @@ export type SiteTheme = {
   fontPairingId: string;
 };
 
+export type ContactFormField = "name" | "phone" | "message";
+
+export type SiteBusinessInfo = {
+  name: string;
+  legalName?: string;
+  address: string;
+  email: string;
+  phone?: string;
+  registrationNumber?: string;
+  vatNumber?: string;
+};
+
+export type SitePrivacyConfig = {
+  enabled: boolean;
+  lastUpdated: string;
+  contactForm: {
+    enabled: boolean;
+    fields: ContactFormField[];
+  };
+  analytics: {
+    enabled: boolean;
+    provider: string | null;
+  };
+  marketing: {
+    enabled: boolean;
+  };
+  booking: {
+    enabled: boolean;
+    type: "external_link";
+    providerName: string;
+    url: string;
+    privacyUrl?: string;
+  };
+  thirdPartyEmbeds: {
+    googleMaps: boolean;
+    youtube: boolean;
+  };
+  cookies: {
+    nonEssential: boolean;
+  };
+};
+
 export type SiteConfig = {
   appearance?: AppearanceId;
   theme?: SiteTheme;
@@ -123,4 +165,6 @@ export type SiteConfig = {
     address: string;
     rights: string;
   };
+  business: SiteBusinessInfo;
+  privacy: SitePrivacyConfig;
 };

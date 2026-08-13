@@ -6,7 +6,7 @@ import { BeautyHeroSection } from "./components/BeautyHeroSection";
 import { BeautyServicesSection } from "./components/BeautyServicesSection";
 import type { AppearancePageProps } from "../types";
 
-export function BeautySitePage({ siteConfig }: AppearancePageProps) {
+export function BeautySitePage({ siteConfig, siteSlug }: AppearancePageProps) {
   return (
     <>
       <BeautyHeader siteConfig={siteConfig} />
@@ -14,9 +14,9 @@ export function BeautySitePage({ siteConfig }: AppearancePageProps) {
         <BeautyHeroSection siteConfig={siteConfig} />
         <BeautyServicesSection siteConfig={siteConfig} />
         <BeautyBenefitsSection siteConfig={siteConfig} />
-        <BeautyContactSection siteConfig={siteConfig} />
+        <BeautyContactSection siteConfig={siteConfig} siteSlug={siteSlug} />
       </main>
-      <BeautyFooter siteConfig={siteConfig} />
+      <BeautyFooter siteConfig={siteConfig} siteSlug={siteSlug} />
     </>
   );
 }

@@ -9,6 +9,7 @@ import { generateSiteImages } from "@/images/generate-site-images";
 import type { BusinessInput } from "@/ai/types";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
 import type { SiteConfig } from "@/content/types/site";
+import { validateSiteConfig } from "@/content/validate-site-config";
 import { saveLead } from "@/leads/store";
 import type { BusinessSource } from "@/sources/types";
 
@@ -44,20 +45,21 @@ export async function generateClient(
   const businessInput = await generateBusinessInput(rawBusiness);
   const generatedConfig = await generateSiteConfig(businessInput);
   const appearance = appearanceForIndustry(businessInput.industry ?? "");
-  const siteConfig: SiteConfig = {
+  const siteConfig = {
     ...generatedConfig,
     appearance,
     theme: assignTheme(slug, appearance),
   };
-  const images = await generateSiteImages(slug, businessInput, siteConfig);
-  const finalConfig: SiteConfig = images ? { ...siteConfig, images } : siteConfig;
+  const images = await generateSiteImages(slug, businessInput, siteConfig as SiteConfig);
+  const finalConfig = images ? { ...siteConfig, images } : siteConfig;
+  const persistedConfig = validateSiteConfig(finalConfig);
 
   const clientDir = resolve(__dirname, "../content/clients", slug);
 
   mkdirSync(resolve(clientDir, "assets"), { recursive: true });
 
   writeJsonFile(resolve(clientDir, "business.json"), businessInput);
-  writeJsonFile(resolve(clientDir, "site.json"), finalConfig);
+  writeJsonFile(resolve(clientDir, "site.json"), persistedConfig);
 
   saveLead(createLeadData(slug, businessInput, rawBusiness));
 }

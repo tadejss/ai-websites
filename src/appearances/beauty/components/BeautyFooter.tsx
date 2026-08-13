@@ -1,10 +1,12 @@
+import { LegalFooterLinks } from "@/components/legal/LegalFooterLinks";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
   siteConfig: SiteConfig;
+  siteSlug: string;
 };
 
-export function BeautyFooter({ siteConfig }: Props) {
+export function BeautyFooter({ siteConfig, siteSlug }: Props) {
   const { brand, footer } = siteConfig;
 
   return (
@@ -14,7 +16,10 @@ export function BeautyFooter({ siteConfig }: Props) {
           &copy; {new Date().getFullYear()} {brand.prefix} {brand.highlight}.{" "}
           {footer.rights}
         </p>
-        <p className="text-center sm:text-right">{footer.address}</p>
+        <div className="flex flex-col items-center gap-3 sm:items-end">
+          <LegalFooterLinks siteSlug={siteSlug} />
+          <p className="text-center sm:text-right">{footer.address}</p>
+        </div>
       </div>
     </footer>
   );

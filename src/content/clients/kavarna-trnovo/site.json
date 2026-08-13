@@ -143,5 +143,44 @@
   "footer": {
     "address": "Devinska ulica 1c, 1000 Ljubljana, Slovenia",
     "rights": "© 2025 Kavarna Trnovo. Vse pravice pridržane."
+  },
+  "appearance": "default",
+  "business": {
+    "name": "Kavarna Trnovo",
+    "address": "Devinska ulica 1c, 1000 Ljubljana, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-13",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

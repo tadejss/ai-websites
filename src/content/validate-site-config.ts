@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { defaultPrivacyConfig } from "@/privacy/defaults";
+import { deriveBusinessFromSiteConfig, mergeBusinessInfo } from "@/privacy/derive-business";
 import { fontPairingIds } from "@/theme/fonts/pairings";
 import { paletteIds } from "@/theme/palettes";
 import type { SiteConfig } from "./types/site";
@@ -83,6 +85,48 @@ const themeSchema = z
   })
   .optional();
 
+const contactFormFieldSchema = z.enum(["name", "phone", "message"]);
+
+const businessSchema = z.object({
+  name: z.string(),
+  legalName: z.string().optional(),
+  address: z.string(),
+  email: z.string(),
+  phone: z.string().optional(),
+  registrationNumber: z.string().optional(),
+  vatNumber: z.string().optional(),
+});
+
+const privacySchema = z.object({
+  enabled: z.boolean(),
+  lastUpdated: z.string(),
+  contactForm: z.object({
+    enabled: z.boolean(),
+    fields: z.array(contactFormFieldSchema),
+  }),
+  analytics: z.object({
+    enabled: z.boolean(),
+    provider: z.string().nullable(),
+  }),
+  marketing: z.object({
+    enabled: z.boolean(),
+  }),
+  booking: z.object({
+    enabled: z.boolean(),
+    type: z.literal("external_link"),
+    providerName: z.string(),
+    url: z.string(),
+    privacyUrl: z.string().optional(),
+  }),
+  thirdPartyEmbeds: z.object({
+    googleMaps: z.boolean(),
+    youtube: z.boolean(),
+  }),
+  cookies: z.object({
+    nonEssential: z.boolean(),
+  }),
+});
+
 const siteConfigSchema = z.object({
   appearance: appearanceSchema,
   theme: themeSchema,
@@ -135,13 +179,21 @@ const siteConfigSchema = z.object({
     address: z.string(),
     rights: z.string(),
   }),
-}) satisfies z.ZodType<SiteConfig>;
+  business: businessSchema.optional(),
+  privacy: privacySchema.optional(),
+});
 
 export function validateSiteConfig(data: unknown): SiteConfig {
   const parsed = siteConfigSchema.parse(data);
-
-  return {
+  const base = {
     ...parsed,
     appearance: parsed.appearance ?? "default",
+  };
+  const derivedBusiness = deriveBusinessFromSiteConfig(base);
+
+  return {
+    ...base,
+    business: mergeBusinessInfo(derivedBusiness, parsed.business),
+    privacy: parsed.privacy ?? defaultPrivacyConfig(),
   };
 }

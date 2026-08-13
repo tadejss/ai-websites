@@ -6,6 +6,7 @@ export type AppearanceId = (typeof APPEARANCE_IDS)[number];
 
 export type AppearancePageProps = {
   siteConfig: SiteConfig;
+  siteSlug: string;
 };
 
 export type AppearanceDefinition = {

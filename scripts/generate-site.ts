@@ -125,7 +125,9 @@ function toMailtoHref(email: string): string {
   return `mailto:${email.trim()}`;
 }
 
-function mapSiteInputToConfig(input: SiteInput): SiteConfig {
+function mapSiteInputToConfig(
+  input: SiteInput,
+): Omit<SiteConfig, "business" | "privacy"> {
   const companyName = pickText(input.companyName, DEFAULTS.companyName);
   const industry = pickText(input.industry, DEFAULTS.industry);
   const tagline = pickText(input.tagline, DEFAULTS.tagline);

@@ -1,4 +1,9 @@
 {
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "manrope-bodoni"
+  },
   "brand": {
     "prefix": "Frizerski atelje",
     "highlight": "N&T"
@@ -151,9 +156,43 @@
     "address": "Ručigajeva cesta 5, 4000 Kranj, Slovenia",
     "rights": "Vse pravice pridržane."
   },
-  "appearance": "beauty",
-  "theme": {
-    "paletteId": "slate-blue",
-    "fontPairingId": "manrope-bodoni"
+  "business": {
+    "name": "Frizerski atelje N&T",
+    "address": "Ručigajeva cesta 5, 4000 Kranj, Slovenia",
+    "email": "",
+    "phone": "041 868 322"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-13",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

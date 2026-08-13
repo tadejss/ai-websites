@@ -151,5 +151,44 @@
   "footer": {
     "address": "Štihova ulica 2, 1000 Ljubljana, Slovenia",
     "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "ES beauty",
+    "address": "Štihova ulica 2, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 314 558"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-13",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

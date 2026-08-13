@@ -1,4 +1,9 @@
 {
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "outfit-cormorant"
+  },
   "brand": {
     "prefix": "Pepermint",
     "highlight": "Hair Studio"
@@ -151,9 +156,43 @@
     "address": "Krekova ulica 26, 2000 Maribor, Slovenia",
     "rights": "Vse pravice pridržane."
   },
-  "appearance": "beauty",
-  "theme": {
-    "paletteId": "deep-seafoam",
-    "fontPairingId": "outfit-cormorant"
+  "business": {
+    "name": "Pepermint Hair Studio",
+    "address": "Krekova ulica 26, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "040 415 443"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-13",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

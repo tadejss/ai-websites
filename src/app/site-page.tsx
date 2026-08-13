@@ -5,12 +5,14 @@ import { resolveThemeCssVars } from "@/theme/resolve-theme";
 
 type Props = {
   siteConfig: SiteConfig;
+  siteSlug?: string;
 };
 
-export function SitePage({ siteConfig }: Props) {
+export function SitePage({ siteConfig, siteSlug }: Props) {
   const appearance = resolveAppearance(siteConfig.appearance);
   const { Page } = appearanceRegistry[appearance];
   const themeStyle = resolveThemeCssVars(siteConfig.theme, appearance);
+  const resolvedSlug = siteSlug ?? process.env.SITE_SLUG ?? "default";
 
   return (
     <div
@@ -18,7 +20,7 @@ export function SitePage({ siteConfig }: Props) {
       style={themeStyle}
       className="min-h-full bg-background text-foreground"
     >
-      <Page siteConfig={siteConfig} />
+      <Page siteConfig={siteConfig} siteSlug={resolvedSlug} />
     </div>
   );
 }

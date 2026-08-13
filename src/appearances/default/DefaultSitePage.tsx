@@ -2,11 +2,12 @@ import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
+import { LegalFooterLinks } from "@/components/legal/LegalFooterLinks";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/content/icons";
 import type { AppearancePageProps } from "../types";
 
-export function DefaultSitePage({ siteConfig }: AppearancePageProps) {
+export function DefaultSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
   const { brand, nav, contact, footer } = siteConfig;
 
   return (
@@ -71,7 +72,7 @@ export function DefaultSitePage({ siteConfig }: AppearancePageProps) {
         <HeroSection siteConfig={siteConfig} />
         <ServicesSection siteConfig={siteConfig} />
         <BenefitsSection siteConfig={siteConfig} />
-        <ContactSection siteConfig={siteConfig} />
+        <ContactSection siteConfig={siteConfig} siteSlug={siteSlug} />
       </main>
 
       <footer className="border-t border-border py-8">
@@ -80,7 +81,10 @@ export function DefaultSitePage({ siteConfig }: AppearancePageProps) {
             &copy; {new Date().getFullYear()} {brand.prefix} {brand.highlight}.{" "}
             {footer.rights}
           </p>
-          <p>{footer.address}</p>
+          <div className="flex flex-col items-center gap-3 sm:items-end">
+            <LegalFooterLinks siteSlug={siteSlug} />
+            <p>{footer.address}</p>
+          </div>
         </div>
       </footer>
     </>

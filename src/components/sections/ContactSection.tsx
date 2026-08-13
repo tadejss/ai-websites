@@ -1,16 +1,17 @@
 import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ContactForm } from "@/components/contact/ContactForm";
 import { Icon } from "@/content/icons";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
   siteConfig: SiteConfig;
+  siteSlug: string;
 };
 
-export function ContactSection({ siteConfig }: Props) {
+export function ContactSection({ siteConfig, siteSlug }: Props) {
   const { contact } = siteConfig;
-  const { form } = contact;
 
   return (
     <Section id={contact.id}>
@@ -49,56 +50,19 @@ export function ContactSection({ siteConfig }: Props) {
           ))}
         </div>
 
-        <form className="rounded-2xl border border-border bg-surface-elevated p-8">
-          <h3 className="text-lg font-semibold text-foreground">
-            {form.title}
-          </h3>
-          <p className="mt-1 text-sm text-muted">{form.description}</p>
-
-          <div className="mt-6 space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-muted">
-                {form.nameLabel}
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                autoComplete="name"
-                className="mt-1.5 w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-accent"
-                placeholder={form.namePlaceholder}
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-muted">
-                {form.phoneLabel}
-              </label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                autoComplete="tel"
-                className="mt-1.5 w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-accent"
-                placeholder={form.phonePlaceholder}
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-muted">
-                {form.messageLabel}
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="mt-1.5 w-full resize-none rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-accent"
-                placeholder={form.messagePlaceholder}
-              />
-            </div>
-            <Button type="submit" size="md">
-              {form.submitLabel}
-            </Button>
-          </div>
-        </form>
+        <div className="rounded-2xl border border-border bg-surface-elevated p-8">
+          <ContactForm
+            siteSlug={siteSlug}
+            siteConfig={siteConfig}
+            labelClassName="block text-sm font-medium text-muted"
+            inputClassName="mt-1.5 w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-accent disabled:opacity-60"
+            submitButton={
+              <Button type="submit" size="md">
+                {contact.form.submitLabel}
+              </Button>
+            }
+          />
+        </div>
       </div>
     </Section>
   );
