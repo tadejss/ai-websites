@@ -51,6 +51,13 @@ export const fontPairings: FontPairing[] = [
     display: { family: "EB Garamond", variable: "--font-eb-garamond" },
   },
   {
+    id: "inter-space-grotesk-light",
+    name: "Inter + Space Grotesk",
+    modes: ["light"],
+    body: { family: "Inter", variable: "--font-inter" },
+    display: { family: "Space Grotesk", variable: "--font-space-grotesk" },
+  },
+  {
     id: "figtree-dm-serif",
     name: "Figtree + DM Serif Display",
     modes: ["light"],

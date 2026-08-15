@@ -121,4 +121,22 @@ export const lightPalettes: Palette[] = [
     mode: "light",
     swatches: ["#faf5f5", "#e8c4c4", "#b56576", "#6d2e46", "#3d1f2e"],
   },
+  {
+    id: "zbrendiraj",
+    name: "Zbrendiraj",
+    mode: "light",
+    swatches: ["#F6F4EF", "#D9D6CF", "#C7FF3D", "#171717", "#77756F"],
+    tokens: {
+      background: "#F6F4EF",
+      foreground: "#171717",
+      muted: "#77756F",
+      accent: "#C7FF3D",
+      accentHover: "#b8eb35",
+      accentForeground: "#171717",
+      surface: "#D9D6CF",
+      surfaceElevated: "#F6F4EF",
+      border: "rgba(23, 23, 23, 0.12)",
+      radiusCard: "2rem",
+    },
+  },
 ];

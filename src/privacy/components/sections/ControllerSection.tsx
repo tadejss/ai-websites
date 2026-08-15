@@ -6,14 +6,18 @@ type Props = {
 };
 
 export function ControllerSection({ business }: Props) {
+  const controllerName = business.legalName?.trim() || business.name;
+
   return (
     <LegalSection title="Upravljavec osebnih podatkov">
       <p>
-        Upravljavec osebnih podatkov je <strong>{business.name}</strong>
-        {business.legalName && business.legalName !== business.name ? (
+        Upravljavec osebnih podatkov je <strong>{controllerName}</strong>
+        {business.legalName &&
+        business.legalName !== business.name &&
+        business.name.trim() ? (
           <>
             {" "}
-            (pravno ime: <strong>{business.legalName}</strong>)
+            (blagovna znamka: <strong>{business.name}</strong>)
           </>
         ) : null}
         .
