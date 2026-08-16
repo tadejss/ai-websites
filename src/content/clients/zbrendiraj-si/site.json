@@ -1,22 +1,23 @@
 {
-  "appearance": "beauty",
+  "appearance": "zbrendiraj",
   "theme": {
     "paletteId": "zbrendiraj",
-    "fontPairingId": "inter-space-grotesk-light"
+    "fontPairingId": "inter-oswald"
   },
   "images": {
     "hero": {
       "src": "/clients/zbrendiraj-si/hero.jpg",
-      "alt": "Sodoben delovni prostor za digitalno agencijo z računalnikom"
+      "alt": "Zbrendiraj.si — vizualna identiteta"
     },
     "services": {
-      "src": "/clients/zbrendiraj-si/services.jpg",
-      "alt": "Prikaz izdelave spletnih strani in digitalnih rešitev"
+      "src": "/clients/zbrendiraj-si/owner.jpg",
+      "alt": "Lastnik majhnega podjetja v svojem delovnem okolju"
     }
   },
   "brand": {
-    "prefix": "Zbrendiraj",
-    "highlight": ".si"
+    "prefix": "Zbrendiraj.si",
+    "highlight": "",
+    "hideMonogram": true
   },
   "metadata": {
     "title": "Zbrendiraj.si — Tvoj biznis, končno online.",
@@ -29,12 +30,12 @@
         "label": "Storitve"
       },
       {
-        "href": "#kako-deluje",
-        "label": "Kako deluje"
+        "href": "#primere",
+        "label": "Primeri"
       },
       {
         "href": "#kako-deluje",
-        "label": "Industrije"
+        "label": "Kako deluje"
       },
       {
         "href": "#kontakt",
@@ -49,31 +50,15 @@
     "titleHighlight": "končno online.",
     "description": "Profesionalna spletna stran za tvoj biznis — brez kompliciranja, dolgih rokov in nepotrebnih stroškov.",
     "primaryCta": "Ustvari svojo stran",
-    "secondaryCta": "Kako deluje?",
-    "stats": [
-      {
-        "value": "6+",
-        "label": "primerov dejavnosti"
-      },
-      {
-        "value": "48h",
-        "label": "do predogleda strani"
-      },
-      {
-        "value": "100%",
-        "label": "prilagojeno mobilnim"
-      },
-      {
-        "value": "3",
-        "label": "preprosti koraki"
-      }
-    ]
+    "secondaryCta": "Poglej primere",
+    "secondaryCtaHref": "#primere",
+    "stats": []
   },
   "services": {
     "id": "storitve",
     "eyebrow": "Zakaj Zbrendiraj.si",
     "title": "Vse, kar potrebuješ za profesionalno spletno prisotnost",
-    "description": "Ena predloga, tvoja zgodba — stran, ki deluje za tvoj biznis in tvoje stranke.",
+    "description": "Izgleda kot tvoja stran. Ker je.",
     "items": [
       {
         "title": "Profesionalen dizajn",
@@ -82,7 +67,7 @@
       },
       {
         "title": "Prilagojeno tvojemu biznisu",
-        "description": "Ne generična stran, ampak vsebina in izgled, ki ustrezata tvoji dejavnosti.",
+        "description": "Vsebina in izgled, ki ustrezata tvoji dejavnosti in tvojim strankam.",
         "icon": "service-2"
       },
       {
@@ -91,72 +76,84 @@
         "icon": "service-3"
       },
       {
-        "title": "Več povpraševanj",
-        "description": "Jasni pozivi k akciji, kontakt in vse informacije, ki jih stranka potrebuje.",
-        "icon": "service-4"
-      },
-      {
         "title": "Hitro online",
-        "description": "Brez tednov usklajevanj in neskončnih popravkov.",
+        "description": "Brez tednov usklajevanj in neskončnih popravkov — od ideje do objave v nekaj dneh.",
         "icon": "service-5"
-      },
-      {
-        "title": "Pripravljeno za rast",
-        "description": "Stran lahko kasneje nadgradiš z dodatnimi funkcionalnostmi. Testna cena: od 199 € / mesec (demo).",
-        "icon": "service-6"
       }
-    ]
+    ],
+    "pricing": {
+      "title": "Preprosto in pregledno.",
+      "description": "Končna cena je odvisna od tega, kaj potrebuje tvoj biznis."
+    }
   },
   "whyChooseUs": {
-    "id": "kako-deluje",
-    "eyebrow": "Kako deluje",
-    "title": "Od ideje do objavljene strani v treh korakih",
-    "description": "Preprost postopek, primeri za različne lokalne dejavnosti in jasna pot do tvoje spletne prisotnosti.",
-    "highlights": [
-      "01 — Poveš nam o svojem biznisu",
-      "02 — Pripravimo tvojo stran",
-      "03 — Objaviš in začneš dobivati obiskovalce",
-      "Primerno za frizerje, salone, gostince in obrtnike"
-    ],
+    "id": "primere",
+    "eyebrow": "Primeri",
+    "title": "Vsak biznis je drugačen. Tudi njegova stran.",
+    "description": "Zbrendiraj.si prilagodimo tvoji dejavnosti, tvojemu stilu in tvojim strankam.",
+    "highlights": [],
     "benefits": [
       {
-        "stat": "Frizer",
-        "label": "Frizerski salon",
-        "description": "Predstavitev storitev, cene in kontakt — vse na enem mestu za tvoje stranke."
-      },
-      {
-        "stat": "Salon",
-        "label": "Kozmetični salon",
-        "description": "Poudarek na storitvah, ambientu in rezervaciji — profesionalen videz brez kompliciranja."
-      },
-      {
-        "stat": "Servis",
+        "title": "Avtoservis Novak",
         "label": "Avtoservis",
-        "description": "Jasna ponudba, delovni čas in lokacija — da te stranke hitro najdejo in pokličejo."
+        "description": "Temna, tehnična identiteta — jasna ponudba, delovni čas in kontakt na enem mestu.",
+        "image": {
+          "src": "/clients/zbrendiraj-si/examples/avtoservis-novak.jpg",
+          "alt": "avtoservis-novak.si"
+        },
+        "href": "https://splet.vercel.app/avtoservis-novak"
       },
       {
-        "stat": "Demo",
-        "label": "Maja, frizerski salon",
-        "description": "»Končno imamo stran, ki izgleda tako dobro, kot se počutimo v salonu.« — prikazovalni odziv stranke."
+        "title": "Milimeter Frizerski Salon",
+        "label": "Frizerski salon",
+        "description": "Topla, elegantna predstavitev salona — popolnoma drugačen videz, ista kakovost izdelave.",
+        "image": {
+          "src": "/clients/zbrendiraj-si/examples/milimeter-frizerski-salon.jpg",
+          "alt": "milimeter-frizerski-salon.si"
+        },
+        "href": "https://splet.vercel.app/milimeter-frizerski-salon"
       }
-    ]
+    ],
+    "steps": {
+      "id": "kako-deluje",
+      "eyebrow": "Kako deluje",
+      "title": "Od ideje do objavljene strani v treh korakih",
+      "items": [
+        "Poveš nam o svojem biznisu",
+        "Pripravimo tvojo stran",
+        "Objaviš in začneš dobivati obiskovalce"
+      ]
+    }
   },
   "contact": {
     "id": "kontakt",
-    "eyebrow": "Začni danes",
-    "title": "Tvoj biznis si zasluži več kot Instagram profil.",
-    "description": "Postavi ga online tako, kot si zasluži. Pogosto vprašanje: Kako hitro je stran pripravljena? Običajno v nekaj dneh po tem, ko imamo osnovne informacije. Ali lahko uporabim svojo domeno? Da. Ali je stran prilagojena telefonu? Da — mobilna prilagoditev je vključena. Ali lahko kasneje spremenim vsebino? Seveda.",
+    "eyebrow": "Kontakt",
+    "title": "Povej nam o svojem biznisu.",
+    "description": "Povej nam nekaj osnovnih informacij. Mi pa ti pokažemo, kako bi lahko izgledala tvoja spletna stran.",
+    "faq": [
+      {
+        "question": "Kako hitro je stran pripravljena?",
+        "answer": "Običajno v nekaj dneh po tem, ko imamo osnovne informacije o tvojem biznisu."
+      },
+      {
+        "question": "Ali lahko uporabim svojo domeno?",
+        "answer": "Da. Pomagamo ti povezati obstoječo domeno ali pridobiti novo."
+      },
+      {
+        "question": "Ali je stran prilagojena telefonu?",
+        "answer": "Da — mobilna prilagoditev je vključena v vsako stran, ki jo pripravimo."
+      },
+      {
+        "question": "Ali lahko kasneje spremenim vsebino?",
+        "answer": "Seveda. Stran lahko kadarkoli posodobiš ali nadgradiš z dodatnimi funkcionalnostmi."
+      }
+    ],
     "items": [
       {
         "label": "E-pošta",
         "value": "info@zbrendiraj.si",
         "href": "mailto:info@zbrendiraj.si",
         "icon": "email"
-      },
-      {
-        "label": "Lokacija",
-        "value": "Slovenija",
-        "icon": "location"
       },
       {
         "label": "Odziv",
@@ -173,12 +170,14 @@
       "phonePlaceholder": "Tvoja telefonska številka",
       "messageLabel": "Sporočilo",
       "messagePlaceholder": "Kratko opiši svoj biznis in kaj potrebuješ...",
-      "submitLabel": "Ustvari svojo stran"
+      "submitLabel": "Pošlji povpraševanje"
     }
   },
   "footer": {
-    "address": "Slovenija",
-    "rights": "Vse pravice pridržane. Tadej Šarabon Štojs s.p."
+    "address": "",
+    "rights": "Vse pravice pridržane.",
+    "tagline": "Tvoj biznis, končno online.",
+    "managedBy": "Upravlja Tadej Šarabon Štojs s.p."
   },
   "business": {
     "name": "Zbrendiraj.si",
@@ -217,6 +216,9 @@
     },
     "cookies": {
       "nonEssential": false
+    },
+    "terms": {
+      "enabled": true
     }
   }
 }

@@ -24,11 +24,39 @@ export type Service = {
   icon: IconName;
 };
 
+export type BenefitVariant =
+  | "warm"
+  | "dark"
+  | "minimal"
+  | "natural"
+  | "editorial"
+  | "premium";
+
 export type Benefit = {
-  stat: string;
+  stat?: string;
   label: string;
-  description: string;
+  description?: string;
   title?: string;
+  variant?: BenefitVariant;
+  image?: SiteImage;
+  href?: string;
+};
+
+export type WhyChooseUsSteps = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  items: string[];
+};
+
+export type PricingNote = {
+  title: string;
+  description: string;
+};
+
+export type ContactFaqItem = {
+  question: string;
+  answer: string;
 };
 
 export type Stat = {
@@ -40,6 +68,7 @@ export type Stat = {
 export type SiteImage = {
   src: string;
   alt: string;
+  frame?: "browser";
 };
 
 export type SiteImages = {
@@ -54,7 +83,7 @@ export type ContactItem = {
   icon: IconName;
 };
 
-export type AppearanceId = "default" | "beauty";
+export type AppearanceId = "default" | "beauty" | "zbrendiraj";
 
 export type SiteTheme = {
   paletteId: string;
@@ -101,6 +130,9 @@ export type SitePrivacyConfig = {
   cookies: {
     nonEssential: boolean;
   };
+  terms?: {
+    enabled: boolean;
+  };
 };
 
 export type SiteConfig = {
@@ -110,6 +142,7 @@ export type SiteConfig = {
   brand: {
     prefix: string;
     highlight: string;
+    hideMonogram?: boolean;
   };
   metadata: {
     title: string;
@@ -126,6 +159,7 @@ export type SiteConfig = {
     description: string;
     primaryCta: string;
     secondaryCta: string;
+    secondaryCtaHref?: string;
     stats: Stat[];
   };
   services: {
@@ -134,6 +168,7 @@ export type SiteConfig = {
     title: string;
     description: string;
     items: Service[];
+    pricing?: PricingNote;
   };
   whyChooseUs: {
     id: string;
@@ -142,12 +177,14 @@ export type SiteConfig = {
     description: string;
     highlights: string[];
     benefits: Benefit[];
+    steps?: WhyChooseUsSteps;
   };
   contact: {
     id: string;
     eyebrow: string;
     title: string;
     description: string;
+    faq?: ContactFaqItem[];
     items: ContactItem[];
     form: {
       title: string;
@@ -164,6 +201,8 @@ export type SiteConfig = {
   footer: {
     address: string;
     rights: string;
+    tagline?: string;
+    managedBy?: string;
   };
   business: SiteBusinessInfo;
   privacy: SitePrivacyConfig;

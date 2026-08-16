@@ -1,5 +1,6 @@
 import { BeautyButton } from "./BeautyButton";
 import { Icon } from "@/content/icons";
+import { formatBrandName } from "@/content/brand-name";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -8,17 +9,26 @@ type Props = {
 
 export function BeautyHeader({ siteConfig }: Props) {
   const { brand, nav, contact } = siteConfig;
+  const brandName = formatBrandName(brand);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-background/85 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6">
         <a href="#" className="group flex items-center gap-3">
-          <span className="font-display flex size-10 items-center justify-center rounded-full border border-accent/15 bg-surface text-lg text-accent">
-            {brand.prefix.charAt(0)}
-          </span>
+          {!brand.hideMonogram ? (
+            <span className="font-display flex size-10 items-center justify-center rounded-full border border-accent/15 bg-surface text-lg text-accent">
+              {brand.prefix.charAt(0)}
+            </span>
+          ) : null}
           <span className="font-display text-2xl leading-none text-foreground">
-            {brand.prefix}
-            <span className="italic font-normal"> {brand.highlight}</span>
+            {brand.highlight ? (
+              <>
+                {brand.prefix}
+                <span className="font-normal italic"> {brand.highlight}</span>
+              </>
+            ) : (
+              brandName
+            )}
           </span>
         </a>
 

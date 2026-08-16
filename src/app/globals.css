@@ -65,6 +65,18 @@
   font-family: var(--font-display), system-ui, sans-serif;
 }
 
+[data-appearance="zbrendiraj"] {
+  font-family: var(--font-body), system-ui, sans-serif;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+[data-appearance="zbrendiraj"] .font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
 html {
   scroll-behavior: smooth;
 }

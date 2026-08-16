@@ -45,6 +45,17 @@ export function BeautyServicesSection({ siteConfig }: Props) {
                 </div>
               </article>
             ))}
+
+            {services.pricing ? (
+              <article className="rounded-[var(--radius-card)] border border-accent/20 bg-accent/10 p-7 sm:p-9">
+                <h3 className="font-display text-2xl leading-tight text-foreground sm:text-3xl">
+                  {services.pricing.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
+                  {services.pricing.description}
+                </p>
+              </article>
+            ) : null}
           </div>
 
           <BeautyImage

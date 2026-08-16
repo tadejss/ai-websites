@@ -1,5 +1,7 @@
 import { BeautyButton } from "./BeautyButton";
 import { BeautyDecorativeRings } from "./BeautyDecorativeRings";
+import { BeautyBrowserFrame } from "./BeautyBrowserFrame";
+import { BeautyHeroWebsitePreview } from "./BeautyHeroWebsitePreview";
 import { BeautyImage } from "./BeautyImage";
 import type { SiteConfig } from "@/content/types/site";
 
@@ -9,6 +11,8 @@ type Props = {
 
 export function BeautyHeroSection({ siteConfig }: Props) {
   const { hero, services, contact, images } = siteConfig;
+  const secondaryHref = hero.secondaryCtaHref ?? `#${services.id}`;
+  const useBrowserFrame = images?.hero?.frame === "browser";
 
   return (
     <section className="relative overflow-hidden bg-background px-4 pb-24 pt-28 sm:px-6 sm:pb-28 sm:pt-32 lg:pb-32">
@@ -39,19 +43,28 @@ export function BeautyHeroSection({ siteConfig }: Props) {
             <BeautyButton href={`#${contact.id}`} variant="cream">
               {hero.primaryCta}
             </BeautyButton>
-            <BeautyButton href={`#${services.id}`} variant="outline-cream">
+            <BeautyButton href={secondaryHref} variant="outline-cream">
               {hero.secondaryCta}
             </BeautyButton>
           </div>
         </div>
 
         <div className="relative order-1 h-full min-h-[480px] lg:order-2 lg:min-h-[640px]">
-          <BeautyImage
-            src={images?.hero.src}
-            alt={images?.hero.alt ?? hero.badge}
-            className="h-full min-h-[480px] lg:min-h-[640px]"
-            priority
-          />
+          {useBrowserFrame ? (
+            <BeautyBrowserFrame
+              url="studio-maja.si"
+              className="h-full min-h-[480px] lg:min-h-[640px]"
+            >
+              <BeautyHeroWebsitePreview />
+            </BeautyBrowserFrame>
+          ) : (
+            <BeautyImage
+              src={images?.hero.src}
+              alt={images?.hero.alt ?? hero.badge}
+              className="h-full min-h-[480px] lg:min-h-[640px]"
+              priority
+            />
+          )}
         </div>
       </div>
     </section>

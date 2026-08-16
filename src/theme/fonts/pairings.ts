@@ -79,6 +79,13 @@ export const fontPairings: FontPairing[] = [
     display: { family: "Space Grotesk", variable: "--font-space-grotesk" },
   },
   {
+    id: "inter-oswald",
+    name: "Inter + Oswald",
+    modes: ["dark"],
+    body: { family: "Inter", variable: "--font-inter" },
+    display: { family: "Oswald", variable: "--font-oswald" },
+  },
+  {
     id: "dm-sans-syne",
     name: "DM Sans + Syne",
     modes: ["dark"],

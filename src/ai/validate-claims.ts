@@ -79,12 +79,16 @@ export function collectVisibleCopy(
   });
 
   config.whyChooseUs.benefits.forEach((benefit, index) => {
-    entries.push([`whyChooseUs.benefits[${index}].stat`, benefit.stat]);
+    if (benefit.stat) {
+      entries.push([`whyChooseUs.benefits[${index}].stat`, benefit.stat]);
+    }
     entries.push([`whyChooseUs.benefits[${index}].label`, benefit.label]);
-    entries.push([
-      `whyChooseUs.benefits[${index}].description`,
-      benefit.description,
-    ]);
+    if (benefit.description) {
+      entries.push([
+        `whyChooseUs.benefits[${index}].description`,
+        benefit.description,
+      ]);
+    }
   });
 
   config.contact.items.forEach((item, index) => {

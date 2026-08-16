@@ -14,6 +14,7 @@ import {
   Libre_Baskerville,
   Lora,
   Manrope,
+  Oswald,
   Outfit,
   Playfair_Display,
   Plus_Jakarta_Sans,
@@ -136,6 +137,12 @@ const dmSerifDisplay = DM_Serif_Display({
   style: ["normal", "italic"],
 });
 
+const oswald = Oswald({
+  variable: "--font-oswald",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+});
+
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
@@ -175,6 +182,7 @@ const fontClassNames = [
   figtree.variable,
   dmSerifDisplay.variable,
   spaceGrotesk.variable,
+  oswald.variable,
   syne.variable,
   bitter.variable,
 ];

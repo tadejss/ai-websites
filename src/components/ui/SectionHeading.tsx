@@ -1,7 +1,7 @@
 type Props = {
   eyebrow: string;
   title: string;
-  description: string;
+  description?: string;
   variant?: "default" | "beauty";
   align?: "center" | "left";
 };
@@ -29,9 +29,11 @@ export function SectionHeading({
           {title}
           {!title.endsWith(".") && !title.endsWith("!") ? "." : ""}
         </h2>
-        <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
-          {description}
-        </p>
+        {description ? (
+          <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
+            {description}
+          </p>
+        ) : null}
       </div>
     );
   }
@@ -50,7 +52,9 @@ export function SectionHeading({
       <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
         {title}
       </h2>
-      <p className="mt-4 text-lg leading-relaxed text-muted">{description}</p>
+      {description ? (
+        <p className="mt-4 text-lg leading-relaxed text-muted">{description}</p>
+      ) : null}
     </div>
   );
 }

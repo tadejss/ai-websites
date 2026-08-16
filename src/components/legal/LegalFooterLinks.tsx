@@ -1,10 +1,14 @@
 import Link from "next/link";
+import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
   siteSlug: string;
+  siteConfig?: SiteConfig;
 };
 
-export function LegalFooterLinks({ siteSlug }: Props) {
+export function LegalFooterLinks({ siteSlug, siteConfig }: Props) {
+  const showTerms = siteConfig?.privacy.terms?.enabled === true;
+
   return (
     <nav
       aria-label="Pravne informacije"
@@ -25,6 +29,19 @@ export function LegalFooterLinks({ siteSlug }: Props) {
       >
         Piškotki
       </Link>
+      {showTerms ? (
+        <>
+          <span className="text-muted/50" aria-hidden="true">
+            |
+          </span>
+          <Link
+            href={`/${siteSlug}/splosni-pogoji`}
+            className="text-muted transition-colors hover:text-foreground"
+          >
+            Splošni pogoji
+          </Link>
+        </>
+      ) : null}
     </nav>
   );
 }

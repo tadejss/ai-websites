@@ -1,5 +1,6 @@
 import { BeautySitePage } from "./beauty/BeautySitePage";
 import { DefaultSitePage } from "./default/DefaultSitePage";
+import { ZbrendirajSitePage } from "./zbrendiraj/ZbrendirajSitePage";
 import type { AppearanceDefinition } from "./types";
 
 export const appearanceRegistry = {
@@ -10,5 +11,9 @@ export const appearanceRegistry = {
   beauty: {
     id: "beauty",
     Page: BeautySitePage,
+  },
+  zbrendiraj: {
+    id: "zbrendiraj",
+    Page: ZbrendirajSitePage,
   },
 } satisfies Record<string, AppearanceDefinition>;

@@ -4,7 +4,7 @@ import { siteSlugs } from "@/content/sites";
 
 const DEFAULT_SLUG = "default";
 
-export type LegalPageKind = "privacy" | "cookies";
+export type LegalPageKind = "privacy" | "cookies" | "terms";
 
 export type LegalPageContext = {
   slug: string;
@@ -41,6 +41,10 @@ export function legalPageTitle(kind: LegalPageKind, config: SiteConfig): string 
     return `Politika zasebnosti – ${config.business.name}`;
   }
 
+  if (kind === "terms") {
+    return `Splošni pogoji – ${config.business.name}`;
+  }
+
   return `Politika piškotkov – ${config.business.name}`;
 }
 
@@ -50,6 +54,10 @@ export function legalPageDescription(
 ): string {
   if (kind === "privacy") {
     return `Informacije o obdelavi osebnih podatkov na spletni strani ${config.business.name}.`;
+  }
+
+  if (kind === "terms") {
+    return `Splošni pogoji uporabe spletne strani in storitev ${config.business.name}.`;
   }
 
   return `Informacije o uporabi piškotkov in podobnih tehnologij na spletni strani ${config.business.name}.`;

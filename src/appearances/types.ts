@@ -1,6 +1,6 @@
 import type { SiteConfig } from "@/content/types/site";
 
-export const APPEARANCE_IDS = ["default", "beauty"] as const;
+export const APPEARANCE_IDS = ["default", "beauty", "zbrendiraj"] as const;
 
 export type AppearanceId = (typeof APPEARANCE_IDS)[number];
 

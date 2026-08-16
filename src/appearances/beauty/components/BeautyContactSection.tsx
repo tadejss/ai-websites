@@ -25,6 +25,24 @@ export function BeautyContactSection({ siteConfig, siteSlug }: Props) {
           description={contact.description}
         />
 
+        {contact.faq && contact.faq.length > 0 ? (
+          <div className="mt-12 grid gap-4 sm:grid-cols-2">
+            {contact.faq.map((item) => (
+              <article
+                key={item.question}
+                className="rounded-[var(--radius-card)] bg-surface p-6"
+              >
+                <h3 className="font-display text-lg text-foreground">
+                  {item.question}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  {item.answer}
+                </p>
+              </article>
+            ))}
+          </div>
+        ) : null}
+
         <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="space-y-4">
             {contact.items.map((item) => (
@@ -58,16 +76,16 @@ export function BeautyContactSection({ siteConfig, siteSlug }: Props) {
 
           <div className="rounded-[var(--radius-card)] bg-surface p-7 sm:p-9">
             <ContactForm
-              siteSlug={siteSlug}
-              siteConfig={siteConfig}
-              labelClassName="block text-[11px] font-semibold uppercase tracking-[0.2em] text-muted"
-              inputClassName="mt-2 min-h-12 w-full rounded-2xl border border-border bg-background px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted/50 focus:border-accent disabled:opacity-60"
-              submitButton={
-                <BeautyButton type="submit" variant="chocolate" className="w-full">
-                  {contact.form.submitLabel}
-                </BeautyButton>
-              }
-            />
+                siteSlug={siteSlug}
+                siteConfig={siteConfig}
+                labelClassName="block text-[11px] font-semibold uppercase tracking-[0.2em] text-muted"
+                inputClassName="mt-2 min-h-12 w-full rounded-2xl border border-border bg-background px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted/50 focus:border-accent disabled:opacity-60"
+                submitButton={
+                  <BeautyButton type="submit" variant="chocolate" className="w-full">
+                    {contact.form.submitLabel}
+                  </BeautyButton>
+                }
+              />
           </div>
         </div>
       </div>

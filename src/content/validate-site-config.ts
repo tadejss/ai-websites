@@ -32,22 +32,35 @@ const serviceSchema = z.object({
   icon: iconNameSchema,
 });
 
+const benefitVariantSchema = z.enum([
+  "warm",
+  "dark",
+  "minimal",
+  "natural",
+  "editorial",
+  "premium",
+]);
+
+const siteImageSchema = z.object({
+  src: z.string(),
+  alt: z.string(),
+  frame: z.enum(["browser"]).optional(),
+});
+
 const benefitSchema = z.object({
-  stat: z.string(),
+  stat: z.string().optional(),
   label: z.string(),
-  description: z.string(),
+  description: z.string().optional(),
   title: z.string().optional(),
+  variant: benefitVariantSchema.optional(),
+  image: siteImageSchema.optional(),
+  href: z.string().optional(),
 });
 
 const statSchema = z.object({
   value: z.string(),
   label: z.string(),
   title: z.string().optional(),
-});
-
-const siteImageSchema = z.object({
-  src: z.string(),
-  alt: z.string(),
 });
 
 const siteImagesSchema = z
@@ -76,7 +89,7 @@ const contactFormSchema = z.object({
   submitLabel: z.string(),
 });
 
-const appearanceSchema = z.enum(["default", "beauty"]).optional();
+const appearanceSchema = z.enum(["default", "beauty", "zbrendiraj"]).optional();
 
 const themeSchema = z
   .object({
@@ -125,6 +138,28 @@ const privacySchema = z.object({
   cookies: z.object({
     nonEssential: z.boolean(),
   }),
+  terms: z
+    .object({
+      enabled: z.boolean(),
+    })
+    .optional(),
+});
+
+const whyChooseUsStepsSchema = z.object({
+  id: z.string(),
+  eyebrow: z.string(),
+  title: z.string(),
+  items: z.array(z.string()),
+});
+
+const pricingNoteSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+});
+
+const contactFaqItemSchema = z.object({
+  question: z.string(),
+  answer: z.string(),
 });
 
 const siteConfigSchema = z.object({
@@ -134,6 +169,7 @@ const siteConfigSchema = z.object({
   brand: z.object({
     prefix: z.string(),
     highlight: z.string(),
+    hideMonogram: z.boolean().optional(),
   }),
   metadata: z.object({
     title: z.string(),
@@ -150,6 +186,7 @@ const siteConfigSchema = z.object({
     description: z.string(),
     primaryCta: z.string(),
     secondaryCta: z.string(),
+    secondaryCtaHref: z.string().optional(),
     stats: z.array(statSchema),
   }),
   services: z.object({
@@ -158,6 +195,7 @@ const siteConfigSchema = z.object({
     title: z.string(),
     description: z.string(),
     items: z.array(serviceSchema),
+    pricing: pricingNoteSchema.optional(),
   }),
   whyChooseUs: z.object({
     id: z.string(),
@@ -166,18 +204,22 @@ const siteConfigSchema = z.object({
     description: z.string(),
     highlights: z.array(z.string()),
     benefits: z.array(benefitSchema),
+    steps: whyChooseUsStepsSchema.optional(),
   }),
   contact: z.object({
     id: z.string(),
     eyebrow: z.string(),
     title: z.string(),
     description: z.string(),
+    faq: z.array(contactFaqItemSchema).optional(),
     items: z.array(contactItemSchema),
     form: contactFormSchema,
   }),
   footer: z.object({
     address: z.string(),
     rights: z.string(),
+    tagline: z.string().optional(),
+    managedBy: z.string().optional(),
   }),
   business: businessSchema.optional(),
   privacy: privacySchema.optional(),

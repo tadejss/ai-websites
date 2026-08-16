@@ -18,7 +18,7 @@
   "properties": {
     "appearance": {
       "type": "string",
-      "enum": ["default", "beauty"],
+      "enum": ["default", "beauty", "zbrendiraj"],
       "description": "Visual appearance category controlling layout and theme tokens."
     },
     "theme": {
@@ -85,7 +85,11 @@
       "required": ["src", "alt"],
       "properties": {
         "src": { "type": "string" },
-        "alt": { "type": "string" }
+        "alt": { "type": "string" },
+        "frame": {
+          "type": "string",
+          "enum": ["browser"]
+        }
       }
     },
     "IconName": {
@@ -138,7 +142,7 @@
     "Benefit": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["stat", "label", "description"],
+      "required": ["label"],
       "properties": {
         "stat": {
           "type": "string"
@@ -151,7 +155,49 @@
         },
         "title": {
           "type": "string"
+        },
+        "variant": {
+          "type": "string",
+          "enum": ["warm", "dark", "minimal", "natural", "editorial", "premium"]
+        },
+        "image": {
+          "$ref": "#/$defs/SiteImage"
+        },
+        "href": {
+          "type": "string"
         }
+      }
+    },
+    "WhyChooseUsSteps": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "eyebrow", "title", "items"],
+      "properties": {
+        "id": { "type": "string" },
+        "eyebrow": { "type": "string" },
+        "title": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "PricingNote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "description"],
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "ContactFaqItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["question", "answer"],
+      "properties": {
+        "question": { "type": "string" },
+        "answer": { "type": "string" }
       }
     },
     "Stat": {
@@ -243,6 +289,9 @@
         },
         "highlight": {
           "type": "string"
+        },
+        "hideMonogram": {
+          "type": "boolean"
         }
       }
     },
@@ -306,6 +355,9 @@
         "secondaryCta": {
           "type": "string"
         },
+        "secondaryCtaHref": {
+          "type": "string"
+        },
         "stats": {
           "type": "array",
           "items": {
@@ -336,6 +388,9 @@
           "items": {
             "$ref": "#/$defs/Service"
           }
+        },
+        "pricing": {
+          "$ref": "#/$defs/PricingNote"
         }
       }
     },
@@ -367,6 +422,9 @@
           "items": {
             "$ref": "#/$defs/Benefit"
           }
+        },
+        "steps": {
+          "$ref": "#/$defs/WhyChooseUsSteps"
         }
       }
     },
@@ -386,6 +444,12 @@
         },
         "description": {
           "type": "string"
+        },
+        "faq": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ContactFaqItem"
+          }
         },
         "items": {
           "type": "array",
@@ -407,6 +471,12 @@
           "type": "string"
         },
         "rights": {
+          "type": "string"
+        },
+        "tagline": {
+          "type": "string"
+        },
+        "managedBy": {
           "type": "string"
         }
       }
@@ -500,6 +570,14 @@
           "required": ["nonEssential"],
           "properties": {
             "nonEssential": { "type": "boolean" }
+          }
+        },
+        "terms": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enabled"],
+          "properties": {
+            "enabled": { "type": "boolean" }
           }
         }
       }
