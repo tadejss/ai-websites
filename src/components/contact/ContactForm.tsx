@@ -8,6 +8,7 @@ type Props = {
   siteConfig: SiteConfig;
   inputClassName: string;
   labelClassName: string;
+  textareaClassName?: string;
   submitButton: ReactNode;
 };
 
@@ -18,6 +19,7 @@ export function ContactForm({
   siteConfig,
   inputClassName,
   labelClassName,
+  textareaClassName,
   submitButton,
 }: Props) {
   const { form } = siteConfig.contact;
@@ -145,7 +147,7 @@ export function ContactForm({
               rows={4}
               value={message}
               onChange={(event) => setMessage(event.target.value)}
-              className={inputClassName}
+              className={textareaClassName ?? inputClassName}
               placeholder={form.messagePlaceholder}
               disabled={state === "loading"}
             />

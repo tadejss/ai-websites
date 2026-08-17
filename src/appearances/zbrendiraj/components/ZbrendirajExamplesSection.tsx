@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ZbrendirajSectionHeading } from "./ZbrendirajSectionHeading";
+import {
+  getHostname,
+  ZbrendirajExamplePreview,
+} from "./ZbrendirajExamplePreview";
 import { zbBodyText, zbCard } from "../styles";
 import type { SiteConfig } from "@/content/types/site";
 
@@ -38,15 +42,22 @@ export function ZbrendirajExamplesSection({ siteConfig }: Props) {
 
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {whyChooseUs.benefits.map((benefit) => {
+              const previewUrl = benefit.href
+                ? getHostname(benefit.href)
+                : (benefit.image?.alt ?? `${benefit.title?.toLowerCase()}.si`);
+
               const card = (
                 <article
                   className={`group overflow-hidden ${zbCard} hover:border-accent/50`}
                 >
-                  <ExampleBrowserChrome
-                    url={benefit.image?.alt ?? `${benefit.title?.toLowerCase()}.si`}
-                  />
-                  <div className="relative aspect-[16/10] overflow-hidden bg-[#111]">
-                    {benefit.image ? (
+                  <ExampleBrowserChrome url={previewUrl} />
+                  {benefit.href ? (
+                    <ZbrendirajExamplePreview
+                      href={benefit.href}
+                      title={benefit.title ?? benefit.label}
+                    />
+                  ) : benefit.image ? (
+                    <div className="relative aspect-[16/10] overflow-hidden bg-[#111]">
                       <Image
                         src={benefit.image.src}
                         alt={benefit.image.alt}
@@ -54,8 +65,8 @@ export function ZbrendirajExamplesSection({ siteConfig }: Props) {
                         sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
                       />
-                    ) : null}
-                  </div>
+                    </div>
+                  ) : null}
                   <div className="p-6">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent">
                       {benefit.label}

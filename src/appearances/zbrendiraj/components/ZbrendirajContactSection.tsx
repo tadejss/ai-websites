@@ -8,6 +8,7 @@ import {
   zbIconWrap,
   zbInputClassName,
   zbLabelClassName,
+  zbTextareaClassName,
 } from "../styles";
 import type { SiteConfig } from "@/content/types/site";
 
@@ -27,24 +28,6 @@ export function ZbrendirajContactSection({ siteConfig, siteSlug }: Props) {
           title={contact.title}
           description={contact.description}
         />
-
-        {contact.faq && contact.faq.length > 0 ? (
-          <div className="mt-12 grid gap-4 sm:grid-cols-2">
-            {contact.faq.map((item) => (
-              <article
-                key={item.question}
-                className="w-full rounded-[var(--radius-card)] bg-accent p-6"
-              >
-                <h3 className="font-display text-lg font-semibold text-black sm:text-xl">
-                  {item.question}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-black/70 sm:text-base">
-                  {item.answer}
-                </p>
-              </article>
-            ))}
-          </div>
-        ) : null}
 
         <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="space-y-4">
@@ -78,6 +61,7 @@ export function ZbrendirajContactSection({ siteConfig, siteSlug }: Props) {
               siteConfig={siteConfig}
               labelClassName={zbLabelClassName}
               inputClassName={zbInputClassName}
+              textareaClassName={zbTextareaClassName}
               submitButton={
                 <ZbrendirajButton type="submit" className="w-full">
                   {contact.form.submitLabel}
@@ -86,6 +70,24 @@ export function ZbrendirajContactSection({ siteConfig, siteSlug }: Props) {
             />
           </div>
         </div>
+
+        {contact.faq && contact.faq.length > 0 ? (
+          <div className="mt-14 grid gap-4 sm:grid-cols-2">
+            {contact.faq.map((item) => (
+              <article
+                key={item.question}
+                className="w-full rounded-[var(--radius-card)] bg-accent p-6"
+              >
+                <h3 className="font-display text-lg font-semibold text-black sm:text-xl">
+                  {item.question}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-black/70 sm:text-base">
+                  {item.answer}
+                </p>
+              </article>
+            ))}
+          </div>
+        ) : null}
       </div>
     </section>
   );

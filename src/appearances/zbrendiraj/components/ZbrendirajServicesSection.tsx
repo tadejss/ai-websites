@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Icon } from "@/content/icons";
 import { ZbrendirajSectionHeading } from "./ZbrendirajSectionHeading";
+import { ZbrendirajTimelineGraphic } from "./ZbrendirajTimelineGraphic";
 import { zbBodyText, zbCard, zbCardPadding, zbIconWrap } from "../styles";
 import type { SiteConfig } from "@/content/types/site";
 
@@ -9,7 +9,7 @@ type Props = {
 };
 
 export function ZbrendirajServicesSection({ siteConfig }: Props) {
-  const { services, images } = siteConfig;
+  const { services } = siteConfig;
 
   return (
     <section
@@ -23,8 +23,8 @@ export function ZbrendirajServicesSection({ siteConfig }: Props) {
           description={services.description}
         />
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-10">
-          <div className="flex flex-col gap-5">
+        <div className="mt-14 flex flex-col gap-8 lg:flex-row lg:justify-between">
+          <div className="flex w-full flex-col gap-5 lg:w-[60%]">
             {services.items.map((service) => (
               <article key={service.title} className={`${zbCard} ${zbCardPadding}`}>
                 <div className="flex items-start gap-5">
@@ -58,16 +58,8 @@ export function ZbrendirajServicesSection({ siteConfig }: Props) {
             ) : null}
           </div>
 
-          <div className={`relative min-h-[320px] overflow-hidden ${zbCard} lg:min-h-full`}>
-            {images?.services.src ? (
-              <Image
-                src={images.services.src}
-                alt={images.services.alt ?? services.title}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            ) : null}
+          <div className={`relative min-h-[420px] w-full overflow-hidden lg:w-[30%] ${zbCard}`}>
+            <ZbrendirajTimelineGraphic />
           </div>
         </div>
       </div>

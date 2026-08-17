@@ -15,5 +15,8 @@ export const zbSectionEyebrow =
 export const zbInputClassName =
   "mt-2 min-h-12 w-full rounded-2xl border border-white/20 bg-black px-4 text-sm text-white outline-none transition-colors placeholder:text-[#9A9A9A] focus:border-accent disabled:opacity-60";
 
+export const zbTextareaClassName =
+  "mt-2 min-h-[120px] w-full resize-y rounded-2xl border border-white/20 bg-black px-4 py-3 text-sm leading-relaxed text-white outline-none transition-colors placeholder:text-[#9A9A9A] focus:border-accent disabled:opacity-60";
+
 export const zbLabelClassName =
   "block text-[11px] font-semibold uppercase tracking-[0.2em] text-[#D0D0D0]";
