@@ -24,7 +24,7 @@ export function ZbrendirajServicesSection({ siteConfig }: Props) {
         />
 
         <div className="mt-14 flex flex-col gap-8 lg:flex-row lg:justify-between">
-          <div className="flex w-full flex-col gap-5 lg:w-[60%]">
+          <div className="flex w-full flex-col gap-5 lg:w-[80%]">
             {services.items.map((service) => (
               <article key={service.title} className={`${zbCard} ${zbCardPadding}`}>
                 <div className="flex items-start gap-5">
@@ -58,7 +58,7 @@ export function ZbrendirajServicesSection({ siteConfig }: Props) {
             ) : null}
           </div>
 
-          <div className={`relative min-h-[420px] w-full overflow-hidden lg:w-[30%] ${zbCard}`}>
+          <div className={`relative min-h-[420px] w-full overflow-hidden lg:w-[20%] ${zbCard}`}>
             <ZbrendirajTimelineGraphic />
           </div>
         </div>
