@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { sendContactEmail } from "@/contact/smtp";
+import { sendContactEmail } from "@/contact/send-email";
 import { getSiteConfig } from "@/content/get-site-config";
 
 export const runtime = "nodejs";
