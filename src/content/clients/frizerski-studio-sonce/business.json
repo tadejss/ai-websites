@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski studio sonce Ksenija Tomšič s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Vaš zanesljiv frizerski salon za čudovite pričeske in profesionalno nego",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "031 333 432",
+  "email": "",
+  "address": "Stara vas 21, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Izjemno strokovno in prijazno osebje",
+    "Vrhunske frizerske storitve z odličnimi ocenami strank",
+    "Udobno in prijetno okolje"
+  ],
+  "targetCustomers": "Vsi, ki iščejo profesionalne frizerske storitve in urejen videz",
+  "serviceArea": "Postojna in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen in topel",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Postojni",
+  "callToAction": "Rezervirajte svoj termin"
+}

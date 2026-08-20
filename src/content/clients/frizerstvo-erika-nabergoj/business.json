@@ -1,0 +1,27 @@
+{
+  "companyName": "Frizerstvo Erika Nabergoj Erika s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve in urejanje pričesk v Postojni",
+  "services": [
+    "Moško in žensko striženje",
+    "Barvanje las",
+    "Priprava svečanih pričesk",
+    "Nega las"
+  ],
+  "phone": "041 804 983",
+  "email": "",
+  "address": "Novi trg 6, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 5:00 PM · Tuesday: 9:00 AM – 5:00 PM · Wednesday: Closed · Thursday: 9:00 AM – 5:00 PM · Friday: 9:00 AM – 5:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Osebni pristop k strankam",
+    "Kakovostne frizerske storitve",
+    "Prijeten ambient v središču Postojne"
+  ],
+  "targetCustomers": "Vsi, ki iščejo profesionalno striženje in nego las v Postojni",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domače, zanesljivo",
+  "competitors": "Lokalni frizerski saloni v Postojni",
+  "callToAction": "Naročite se na termin"
+}

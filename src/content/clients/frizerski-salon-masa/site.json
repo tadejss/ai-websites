@@ -1,0 +1,208 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "forest-mist",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-masa/hero.jpg",
+      "alt": "Topel in svetel frizerski salon z domačim vzdušjem"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-masa/services.jpg",
+      "alt": "Strokovno barvanje in oblikovanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Maša"
+  },
+  "metadata": {
+    "title": "Frizerski salon Maša | Helena Kraševec s.p. Cerknica",
+    "description": "Vrhunske frizerske storitve z osebnim pristopom v Cerknici z okolico. Žensko, moško in otroško striženje, barvanje ter oblikovanje pričesk."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon v Cerknici",
+    "title": "Vrhunske frizerske storitve z",
+    "titleHighlight": "osebnim pristopom",
+    "description": "Ustvarjamo pričeske za lokalne prebivalce in vse, ki cenijo kakovostno striženje, strokovno svetovanje in domače vzdušje v Cerknici z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vso družino",
+    "description": "Poskrbimo za vaš svež videz in pričeske, ki so enostavne za vzdrževanje doma. Delujemo v Cerknici z okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske strižne linije, prilagojene obliki vašega obraza in življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričesk za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Potrpežljivo in prijazno striženje najmlajših v sproščenem vzdušju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje laseh",
+        "description": "Kakovostne barve in tehnike barvanja za sijoče, zdrave in obstojne odtenke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti, ki poudarijo vašo osebnost.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel ambient in strokovna skrb za vaše lase",
+    "description": "Združujemo dolgoletne izkušnje, posluh za želje strank in domače vzdušje, kjer se boste vedno počutili dobrodošle.",
+    "highlights": [
+      "Izjemno prijazno osebje z dolgoletnimi izkušnjami",
+      "Strokovno svetovanje in posluh za želje strank",
+      "Prijeten ambient in domače vzdušje v Cerknici",
+      "Pričeske, ki so enostavne za vzdrževanje doma"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazno",
+        "label": "Osebje",
+        "description": "Izjemno prijazno osebje z dolgoletnimi izkušnjami poskrbi za vaše dobro počutje."
+      },
+      {
+        "stat": "Domače",
+        "label": "Vzdušje",
+        "description": "Prijeten ambient in domače vzdušje v salonu za sproščen obisk."
+      },
+      {
+        "stat": "Enostavno",
+        "label": "Vzdrževanje",
+        "description": "Pričeske, ki jih boste z lahkoto urejali tudi sami doma."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin v Cerknici",
+    "description": "Obiščite nas na Cesti v Dolenjo vas ali nas pokličite za dogovor o vašem terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta v Dolenjo vas 2a, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(01) 709 66 96",
+        "href": "tel:017096696",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:30–19:30, Sob: 7:00–12:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Imate vprašanje ali želite rezervirati termin? Pišite nam.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta v Dolenjo vas 2a, 1380 Cerknica, Slovenia",
+    "rights": "© 2025 Frizerski salon Maša, Helena Kraševec s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Maša",
+    "address": "Cesta v Dolenjo vas 2a, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "(01) 709 66 96"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

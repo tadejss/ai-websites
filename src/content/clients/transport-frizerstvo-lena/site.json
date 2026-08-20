@@ -1,0 +1,187 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "brand": {
+    "prefix": "Lena",
+    "highlight": "Jože Meden s.p."
+  },
+  "metadata": {
+    "title": "Transport in frizerstvo Lena Jože Meden s.p. | Cerknica",
+    "description": "Zanesljive transportne in kakovostne frizerske storitve v Cerknici z okolico. Prevoz blaga, tovorni transport ter striženje in nega las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Cerknica z okolico",
+    "title": "Zanesljive transportne in kakovostne",
+    "titleHighlight": "frizerske storitve",
+    "description": "Vsestranska ponudba transporta in frizerskih storitev za lokalne prebivalce in poslovne partnerje. Zanesljiv in prijazen pristop na enem mestu.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Prevoz blaga"
+      },
+      {
+        "value": "Nega las",
+        "label": "Frizerske storitve"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Cerknica z okolico"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Osebni pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite storitve na enem mestu",
+    "description": "Ponujamo zanesljiv tovorni transport, prevoz blaga ter strokovne frizerske storitve za stranke v Cerknici in okolici.",
+    "items": [
+      {
+        "title": "Prevoz blaga in tovorni transport",
+        "description": "Zanesljiv prevoz blaga in tovorni transport prilagojen vašim potrebam v regiji.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Frizerske storitve",
+        "description": "Kakovostne frizerske storitve za osvežen in urejen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Striženje in nega las",
+        "description": "Strokovno striženje in skrbna nega las za vso družino.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Lokalne in regionalne dostave",
+        "description": "Hitre ter točne lokalne in regionalne dostave po dogovoru.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv in zaupanja vreden lokalni ponudnik",
+    "description": "Z združevanjem transportnih in frizerskih storitev vam nudimo priročno rešitev in osebni pristop.",
+    "highlights": [
+      "Odlične ocene in zadovoljne stranke",
+      "Vsestranska ponudba transporta in frizerskih storitev",
+      "Zanesljiv in prijazen pristop"
+    ],
+    "benefits": [
+      {
+        "stat": "Vsestransko",
+        "label": "Dve storitvi",
+        "description": "Transport in frizerstvo na enem mestu za prihranek vašega časa."
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "Preverjena kakovost",
+        "description": "Zanesljiv transport in skrbna frizerska nega z domačim pristopom."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "Cerknica",
+        "description": "Hitro odzivni in prilagojeni potrebam lokalnega okolja."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Potrebujete prevoz blaga ali frizerske storitve? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 880 986",
+        "href": "tel:031880986",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Notranjska cesta 61, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali povpraševanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Notranjska cesta 61, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lena Jože Meden s.p.",
+    "address": "Notranjska cesta 61, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "031 880 986"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

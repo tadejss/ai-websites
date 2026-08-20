@@ -1,0 +1,187 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sage-meadow",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "brand": {
+    "prefix": "Moj - Ca",
+    "highlight": "Styling"
+  },
+  "metadata": {
+    "title": "Moj - Ca - Styling | Frizerski salon Cerknica",
+    "description": "Strokovno striženje, barvanje in oblikovanje pričesk v Cerknici z okolico. Osebni pristop in kakovostna nega las za vse generacije."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Cerknica",
+    "title": "Urejen videz in",
+    "titleHighlight": "vrhunska nega las",
+    "description": "Strokovno striženje, barvanje in oblikovanje pričesk po vaših merah v Cerknici z okolico. Ustvarjamo v prijetnem vzdušju za stranke vseh starosti.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Sodobni",
+        "label": "Trendi"
+      },
+      {
+        "value": "Kakovostni",
+        "label": "Pripravki"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbimo za vaš svež videz z izbiro preverjenih tehnik in vrhunskih lasnih pripravkov v Cerknici z okolico.",
+    "items": [
+      {
+        "title": "Žensko in moško striženje",
+        "description": "Natančno striženje, prilagojeno obliki vašega obraza, tipu las in vašim osebnim željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Uporaba sodobnih tehnik barvanja in pramenov za sijoče, globoke in naravne odtenke.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje svečanih pričesk",
+        "description": "Unikatne in obstojne pričeske za poroke, obhajila, rojstne dneve in druge posebne dogodke.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in obnova las",
+        "description": "Globinska nega in obnova poškodovanih las z uporabo kakovostnih pripravkov za zdrav videz.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel lokalni salon za vaše lase",
+    "description": "Vsaki stranki se posvetimo individualno, saj verjamemo, da si vaši lasje zaslužijo najboljšo možno oskrbo.",
+    "highlights": [
+      "Osebni pristop in posluh za želje vsake stranke",
+      "Uporaba skrbno izbranih in kakovostnih lasnih pripravkov",
+      "Nenehno sledenje sodobnim frizerskim trendom"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebno",
+        "label": "Sodelovanje",
+        "description": "Posvetujemo se z vami in poiščemo pričesko, v kateri se boste počutili samozavestno."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "In trendi",
+        "description": "Uporabljamo preverjene pripravke in sledimo novostim na frizerskem področju."
+      },
+      {
+        "stat": "Prijetno",
+        "label": "Vzdušje",
+        "description": "Sproščeno okolje v Cerknici, kjer si vzamemo čas samo za vas."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas za dogovor o terminu ali obiščite naš salon na Taboru v Cerknici.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tabor 5b, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 568 839",
+        "href": "tel:041568839",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Tabor 5b, 1380 Cerknica, Slovenia",
+    "rights": "© Moj - Ca - Styling Mojca Marolt s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Moj - Ca Styling",
+    "address": "Tabor 5b, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "041 568 839"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

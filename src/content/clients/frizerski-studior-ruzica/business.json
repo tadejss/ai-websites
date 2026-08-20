@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski Studio-R, Ružica Furlan, s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in prijazen osebni pristop v Postojni",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "031 422 734",
+  "email": "",
+  "address": "Ulica Vilka Kledeta 5 a, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 1:00 – 7:00 PM · Wednesday: 8:00 AM – 4:00 PM · Thursday: 1:00 – 7:00 PM · Friday: 1:00 – 7:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prijazno osebje in strokoven pristop",
+    "Lepo urejen in prijeten ambient salona",
+    "Visoka kakovost striženja in storitev",
+    "Dostopne in primerne cene"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve, urejen videz in prijetno vzdušje v Postojni",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Postojni",
+  "callToAction": "Rezervirajte svoj termin"
+}

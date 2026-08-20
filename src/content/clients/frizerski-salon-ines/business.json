@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Ines",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje, barvanje in nega las v Postojni",
+  "services": [
+    "Žensko in moško striženje",
+    "Barvanje las in prameni",
+    "Oblikovanje pričesk za posebne prilike",
+    "Nega in obnova lasišča",
+    "Svetovanje o negi las"
+  ],
+  "phone": "(05) 720 31 59",
+  "email": "",
+  "address": "Titova cesta 10, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 8:00 AM – 2:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prilagodljiv delovni čas med tednom in ob sobotah",
+    "Osebni pristop k vsaki stranki",
+    "Udoben in prijeten ambient"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve v Postojni in okolici",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Postojni",
+  "callToAction": "Rezervirajte svoj termin"
+}

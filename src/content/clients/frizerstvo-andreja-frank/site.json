@@ -1,0 +1,208 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "warm-earth",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-andreja-frank/hero.jpg",
+      "alt": "Topel in svetel frizerski salon"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-andreja-frank/services.jpg",
+      "alt": "Strokovno barvanje in striženje las"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Andreja Frank s.p."
+  },
+  "metadata": {
+    "title": "Frizerstvo Andreja Frank s.p. | Frizerski salon Postojna",
+    "description": "Strokovno in prijazno frizersko osebje za vaš popoln izgled v Postojni z okolico. Nudimo žensko in moško striženje, barvanje las ter nego."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Postojna",
+    "title": "Strokovno in prijazno frizersko osebje za vaš",
+    "titleHighlight": "popoln izgled",
+    "description": "Topel, strokoven in zanesljiv lokalni salon v Postojni z okolico, namenjen ljudem vseh starosti, ki cenijo urejen videz in prijetno počutje.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Topel",
+        "label": "Pristop"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Postojna",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Prijetno",
+        "label": "Vzdušje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Kakovostne frizerske storitve",
+    "description": "V našem salonu v Postojni z okolico poskrbimo za celovito nego in urejenost vaših las z osebnim pristopom.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Prilagojeno striženje in oblikovanje po vaših željah ter obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasične in sodobne moške frizure za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostne barve in tehnike za sijoče, zdrave in obstojne odtenke.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljivi tretmaji in nega za povrnitev sijaja ter zdravja vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač in zanesljiv lokalni salon",
+    "description": "Zavedamo se, da so lasje vaš okras, zato se jedem gostu posvetimo z vso pozornostjo.",
+    "highlights": [
+      "Izjemno prijazno in strokovno osebje",
+      "Sproščeno in prijetno vzdušje v salonu",
+      "Visoko zadovoljstvo strank",
+      "Kakovostne frizerske storitve"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Izjemno prijazno osebje z znanjem za vaše lasne želje."
+      },
+      {
+        "stat": "Sproščeno",
+        "label": "Vzdušje",
+        "description": "Prijetno vzdušje v salonu, kjer se boste počutili kot doma."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Storitev",
+        "description": "Zanesljive in vrhunske frizerske storitve za vsakogar."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Tržaški cesti v Postojni ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tržaška cesta 26, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 638 714",
+        "href": "tel:041638714",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Toret–Pet: 10:00–18:00, Sob: 8:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Tržaška cesta 26, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Andreja Frank s.p.",
+    "address": "Tržaška cesta 26, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 638 714"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

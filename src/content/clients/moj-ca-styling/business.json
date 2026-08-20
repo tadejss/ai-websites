@@ -1,0 +1,27 @@
+{
+  "companyName": "Moj - Ca - Styling Mojca Marolt s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje, barvanje in oblikovanje pričesk po vaših merah.",
+  "services": [
+    "Žensko in moško striženje",
+    "Barvanje las in prameni",
+    "Oblikovanje svečanih pričesk",
+    "Nega in obnova las"
+  ],
+  "phone": "041 568 839",
+  "email": "",
+  "address": "Tabor 5b, 1380 Cerknica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Osebni pristop k vsaki stranki",
+    "Uporaba kakovostnih lasnih pripravkov",
+    "Sledenje sodobnim frizerskim trendom"
+  ],
+  "targetCustomers": "Ljudje vseh starosti, ki cenijo urejen videz, kakovostno nego las in prijetno vzdušje.",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte termin"
+}

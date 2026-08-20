@@ -1,0 +1,27 @@
+{
+  "companyName": "Salon 33 kozmetika in pedikura Magdalena Mekina s.p.",
+  "industry": "Kozmetični salon in pedikura",
+  "tagline": "Strokovna nega telesa in stopal za vaše dobro počutje",
+  "services": [
+    "Kozmetične storitve",
+    "Pedikura",
+    "Nega obraza",
+    "Nega telesa"
+  ],
+  "phone": "041 789 108",
+  "email": "",
+  "address": "Sinja Gorica 21, 1380 Cerknica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Zadovoljne stranke in pozitivne ocene",
+    "Kakovostna izvedba storitev",
+    "Prijazen pristop"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo strokovno nego telesa, obraza in stopal v okolici Cerknice",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "strookoven, prijazen",
+  "brandStyle": "domač in zanesljiv",
+  "competitors": "Lokalni kozmetični saloni in saloni za pedikuro",
+  "callToAction": "Rezervirajte svoj termin"
+}

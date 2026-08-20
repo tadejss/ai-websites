@@ -1,0 +1,28 @@
+{
+  "companyName": "Žensko frizerstvo Ambrožič Vesna s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve za ženske brez dolgega čakanja",
+  "services": [
+    "Žensko striženje",
+    "Barvanje lase",
+    "Prameni in balayage",
+    "Frizure za posebne priložnosti",
+    "Nega las"
+  ],
+  "phone": "(05) 726 55 41",
+  "email": "",
+  "address": "Erazmova ulica 21, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Brez čakalnih vrst in dolgih čakalnih obdobij",
+    "Osebni pristop in strokovno svetovanje",
+    "Prijeten in domač ambient"
+  ],
+  "targetCustomers": "Ženske, ki cenijo hiter dostop do storitev, kakovost in osebno pozornost pri negovanju las.",
+  "serviceArea": "Postojna in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Postojni",
+  "callToAction": "Rezervirajte svoj termin"
+}

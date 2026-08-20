@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Helena, Helena Virant s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Prijazne in strokovne frizerske storitve v Cerknici.",
+  "services": [
+    "žensko striženje",
+    "moško striženje",
+    "otroško striženje",
+    "barvanje las",
+    "oblikovanje pričesk"
+  ],
+  "phone": "031 381 905",
+  "email": "",
+  "address": "Cesta na Jezero 12, 1380 Cerknica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "izjemno prijazno osebje in dobro vzdušje",
+    "prilagodljivost strankam",
+    "dolgoletne izkušnje v lokalnem okolju"
+  ],
+  "targetCustomers": "lokalni prebivalci vseh starosti, ki cenijo prijazen pristop in urejen videz",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen in domač",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "drugi lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se na termin"
+}

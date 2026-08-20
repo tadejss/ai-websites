@@ -1,0 +1,207 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-edita/hero.jpg",
+      "alt": "Svetel in urejen frizerski salon z naravno svetlobo v Pivki"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-edita/services.jpg",
+      "alt": "Strokovno barvanje in nega las v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "EDITA"
+  },
+  "metadata": {
+    "title": "Frizerski salon EDITA | Pivka z okolico",
+    "description": "Vrhunske striženja in osebni pristop za vaš popoln videz v Pivki z okolico. Žensko in moško striženje, barvanje ter nega las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon EDITA",
+    "title": "Vrhunske striženja in osebni pristop za",
+    "titleHighlight": "vaš popoln videz",
+    "description": "Nudimo kakovostno nego las in urejen videz za posameznike v Pivki z okolico. Zaupajte našemu strokovnemu pristopu.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Kakovostne",
+        "label": "Storitve"
+      },
+      {
+        "value": "Dostopne",
+        "label": "Cene"
+      },
+      {
+        "value": "Pivka",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita nega las za vas",
+    "description": "Za stranke v Pivki z okolico izvajamo frizerske storitve s poudarkom na kakovosti in vašem zadovoljstvu.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske striženje, prilagojeno obliki vašega obraza in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričeske za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las, ki poskrbi za sijočo barvo in zdrav videz vaših las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive nege za obnovo in mehkobo vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prijaznost, strokovnost in urejenost",
+    "description": "V našem salonu se posvetimo vsaki stranki posebej ter poskrbimo za prijetno izkušnjo.",
+    "highlights": [
+      "Odličen in strokoven pristop",
+      "Visoka kakovost storitev",
+      "Dostopne cene za vsakogar"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "in pristop",
+        "description": "Zavzeto in strokovno poskrbimo za vaše lase."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "storitev",
+        "description": "Uporabljamo preverjene metode za vaš popoln videz."
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "cen",
+        "description": "Ponujamo odlično razmerje med ceno in kakovostjo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite na Kolodvorski cesti v Pivki.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska cesta 14b, 6257 Pivka, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 528 475",
+        "href": "tel:041528475",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Torka in petek: 12:00–19:00, Sreda in četrtek: 8:00–16:00, Sobota: 7:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska cesta 14b, 6257 Pivka, Slovenia",
+    "rights": "Vse pravice pridržane. Frizerski salon EDITA, Edita Štavar s.p."
+  },
+  "business": {
+    "name": "Frizerski salon EDITA",
+    "address": "Kolodvorska cesta 14b, 6257 Pivka, Slovenia",
+    "email": "",
+    "phone": "041 528 475"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

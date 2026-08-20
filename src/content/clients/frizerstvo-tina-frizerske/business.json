@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerstvo Tina frizerske storitve d.o.o.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in urejen videz",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Pramena",
+    "Pranje las z masažnimi stoli"
+  ],
+  "phone": "031 833 450",
+  "email": "",
+  "address": "Cesta 4. maja 50e, 1380 Cerknica, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 9:00 PM · Tuesday: 8:00 AM – 9:00 PM · Wednesday: 8:00 AM – 9:00 PM · Thursday: 8:00 AM – 9:00 PM · Friday: 8:00 AM – 9:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunsko barvanje in striženje",
+    "Sproščujoči masažni stoli pri pranju las",
+    "Prijazno in strokovno osebje",
+    "Natančno izpolnjevanje želja strank"
+  ],
+  "targetCustomers": "Lokalne stranke, ki iščejo kakovostne frizerske storitve za moške in ženske",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Lokalni frizerski saloni na območju Cerknice",
+  "callToAction": "Rezervirajte svoj termin"
+}

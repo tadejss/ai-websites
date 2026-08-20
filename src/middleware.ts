@@ -12,6 +12,14 @@ const CUSTOM_DOMAIN_ROOT_PATHS = new Set([
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Public demos: /demo/{slug} → existing /{slug} template routes.
+  if (pathname.startsWith("/demo/")) {
+    const rewriteUrl = request.nextUrl.clone();
+    rewriteUrl.pathname = pathname.slice("/demo".length) || "/";
+    return NextResponse.rewrite(rewriteUrl);
+  }
+
   const customSlug = getSlugForHost(request.headers.get("host"));
 
   if (customSlug && CUSTOM_DOMAIN_ROOT_PATHS.has(pathname)) {
@@ -54,6 +62,7 @@ export const config = {
     "/politika-zasebnosti",
     "/piskotki",
     "/splosni-pogoji",
+    "/demo/:path*",
     "/admin/:path*",
   ],
 };

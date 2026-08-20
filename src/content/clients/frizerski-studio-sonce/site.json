@@ -1,0 +1,202 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-sonce/hero.jpg",
+      "alt": "Notranjost modernega frizerskega studia v Postojni z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-sonce/services.jpg",
+      "alt": "Strokovno barvanje in oblikovanje las v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Sonce"
+  },
+  "metadata": {
+    "title": "Frizerski studio sonce Ksenija Tomšič s.p. | Frizerski salon Postojna",
+    "description": "Vaš zanesljiv frizerski salon za čudovite pričeske in profesionalno nego v Postojni in okolici. Rezervirajte svoj termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Postojni",
+    "title": "Vaš zanesljiv frizerski salon za",
+    "titleHighlight": "čudovite pričeske",
+    "description": "Nudimo profesionalno nego in urejen videz za vse, ki cenijo strokovnost v prijetnem okolju v Postojni in okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Vrhunske",
+        "label": "Storitve"
+      },
+      {
+        "value": "Prijetno",
+        "label": "Okolje"
+      },
+      {
+        "value": "Postojna",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vaše lase",
+    "description": "V našem studiu v Postojni poskrbimo za celostno nego, modne striženje in obstojne barve.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene obliki vašega obraza in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričeske za urejen in svež videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki, prameni in barvanje narastka za sijoče lase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Globinska nega in obnova las za zdrav, sijoč in mehak videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Udobno okolje in strokoven pristop",
+    "description": "Vsaki stranki se posvetimo individualno ter poskrbimo za sproščeno izkušnjo in odličen končni rezultat.",
+    "highlights": [
+      "Izjemno strokovno in prijazno osebje",
+      "Vrhunske frizerske storitve z odličnimi ocenami",
+      "Udobno in prijetno okolje za popolno sprostitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "in prijaznost",
+        "description": "Naše osebje se posveča vsaki stranki z veliko mero strokovnosti in topline."
+      },
+      {
+        "stat": "Vrhunsko",
+        "label": "zaupanje",
+        "description": "Ponašamo se z odličnimi ocenami naših strank in predanostjo kakovosti."
+      },
+      {
+        "stat": "Udobje",
+        "label": "in sprostitev",
+        "description": "Obiščite nas v prijetnem okolju v Postojni in si privoščite trenutek zase."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 333 432",
+        "href": "tel:031333432",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Stara vas 21, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Stara vas 21, 6230 Postojna, Slovenia",
+    "rights": "© Frizerski studio sonce Ksenija Tomšič s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Sonce",
+    "address": "Stara vas 21, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "031 333 432"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "caramel-vanilla",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-klara/hero.jpg",
+      "alt": "Topel in prijeten interior frizerskega salona Klara v Pivki"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-klara/services.jpg",
+      "alt": "Kakovostne frizerske storitve in barvanje las v salonu Klara"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Klara"
+  },
+  "metadata": {
+    "title": "Frizerski salon Klara | Pivka",
+    "description": "Vaš zanesljiv in prijazen frizerski salon v Pivki in okolici. Nudimo žensko, moško in otroško striženje, barvanje las ter oblikovanje pričesk."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Pivki",
+    "title": "Vaš zanesljiv in prijazen frizerski",
+    "titleHighlight": "salon v Pivki",
+    "description": "Topel, prijazen in strokoven frizerski salon za lokalne prebivalce vseh generacij v Pivki in okolici. Poskrbimo za vaš svež videz v prijetnem ambientu.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Natančna",
+        "label": "Kakovost"
+      },
+      {
+        "value": "Dober",
+        "label": "Ambient"
+      },
+      {
+        "value": "Pivka",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vso družino",
+    "description": "V salonu Klara v Pivki in okolici nudimo celovite frizerske storitve, prilagojene vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Natančno striženje in oblikovanje pričesk, prilagojeno vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Urejen videz za sodobnega moškega s poudarkom na natančnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Prijazno in potrpežljivo striženje najmlajših v sproščenem vzdušju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki za sijoče, negovane in zdrave lase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Priprava pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač in zanesljiv lokalni salon",
+    "description": "Zavedamo se pomena dobrega počutja in urejenega videza, zato se vsaki stranki posvetimo z vso pozornostjo.",
+    "highlights": [
+      "Izjemno prijazno in nasmejano osebje",
+      "Visoka natančnost in kakovost storitev",
+      "Prijeten ambient z dobro kavo",
+      "Dostopne in razumne cene"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in nasmeh",
+        "description": "Izjemno prijazno osebje poskrbi, da se boste pri nas vedno počutili dobrodošle."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "in natančnost",
+        "description": "Visoka natančnost pri vsakem striženju in barvanju za vaš popoln videz."
+      },
+      {
+        "stat": "Ambient",
+        "label": "in sprostitev",
+        "description": "Prijeten domač ambient z dobro kavo poskrbi za vaš sproščen oddih."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na svoj termin ali nas obiščite v salonu v Pivki.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Velika Pristava 22, 6257 Pivka, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 187 282",
+        "href": "tel:040187282",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Torek in petek: 8:00–12:00 in 14:00–18:00, Sreda in četrtek: 8:00–16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Velika Pristava 22, 6257 Pivka, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Klara",
+    "address": "Velika Pristava 22, 6257 Pivka, Slovenia",
+    "email": "",
+    "phone": "040 187 282"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

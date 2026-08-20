@@ -1,0 +1,187 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "lavender-cream",
+    "fontPairingId": "lato-libre"
+  },
+  "brand": {
+    "prefix": "Salon 33",
+    "highlight": "Kozmetika in pedikura"
+  },
+  "metadata": {
+    "title": "Salon 33 | Kozmetika in pedikura Magdalena Mekina s.p.",
+    "description": "Strokovna nega telesa, obraza in stopal v Cerknici z okolico. Prijazen pristop in kakovostne storitve za vaše dobro počutje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Salon 33 v Cerknici",
+    "title": "Strokovna nega telesa in stopal",
+    "titleHighlight": "za vaše dobro počutje",
+    "description": "Zanesljive in strokovne kozmetične storitve ter pedikura za stranke v Cerknici z okolico. Poskrbite za svoj videz in sprostitev v prijetnem domačem okolju.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Prijazen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Kakovostna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite storitve za nego in sprostitev",
+    "description": "V Salonu 33 nudimo pester nabor storitev za nego obraza, telesa in stopal, prilagojenih vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Kozmetične storitve",
+        "description": "Raznolike kozmetične storitve za svež videz in nego vaše kože.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pedikura",
+        "description": "Strokovna nega stopal za zdravje in urejen videz vaših nog.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega obraza",
+        "description": "Skrbno izbrani tretmaji za sijoč in negovan obraz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega telesa",
+        "description": "Sproščujoče in negovalne storitve za celotno telo.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Salon 33",
+    "title": "Zanesljiva izbira za vašo nego v Cerknici",
+    "description": "Združujemo strokovnost, prijaznost in predanost vsaki stranki posebej.",
+    "highlights": [
+      "Zadovoljne stranke in pozitivne ocene",
+      "Kakovostna izvedba vseh storitev",
+      "Topel in prijazen pristop"
+    ],
+    "benefits": [
+      {
+        "stat": "Zadovoljstvo",
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na pozitivne ocene in zaupanje ljudi, ki se radi vračajo k nam."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Visoki standardi",
+        "description": "Vsak tretma izvajamo skrbno, z mislijo na vaše dobro počutje in rezultate."
+      },
+      {
+        "stat": "Prijaznost",
+        "label": "Domač ambient",
+        "description": "Pri nas boste vedno deležni prijaznega in osebnega pristopa."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Imate vprašanje ali želite naročiti na storitev? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 789 108",
+        "href": "tel:041789108",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Sinja Gorica 21, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Sinja Gorica 21, 1380 Cerknica, Slovenia",
+    "rights": "© Salon 33 Magdalena Mekina s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Salon 33 Kozmetika in pedikura",
+    "address": "Sinja Gorica 21, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "041 789 108"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

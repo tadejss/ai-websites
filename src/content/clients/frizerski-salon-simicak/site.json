@@ -1,0 +1,207 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-simicak/hero.jpg",
+      "alt": "Topel in prijeten ambient frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-simicak/services.jpg",
+      "alt": "Strokovno striženje in barvanje las v prijetnem lokalnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Simičak"
+  },
+  "metadata": {
+    "title": "Frizerski salon Simičak | Cerknica",
+    "description": "Strokovno striženje, barvanje las in prijazna storitev v Cerknici z okolico. Rezervirajte svoj termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon",
+    "title": "Strokovno striženje in prijazna storitev v",
+    "titleHighlight": "Cerknici",
+    "description": "Zanesljive frizerske storitve za prebivalce Cerknice in okolice. Prilagojene frizure v prijetnem ambientu.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Ugodne",
+        "label": "Cene"
+      },
+      {
+        "value": "Strokovni",
+        "label": "Nasveti"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vso družino",
+    "description": "Poskrbimo za vaš svež videz z našimi storitvami v Cerknici in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašim željam in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje za vsak dan ali posebne priložnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Potrpežljivo in prijazno striženje za najmlajše v domačem vzdušju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni odtenki in barvanje, ki poudarijo vašo naravno lepoto.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Strokovno svetovanje",
+        "description": "Osebni nasveti glede nege in izbire prave pričeske za vaše lase.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in strokovna obravnava",
+    "description": "V našem salonu se posvetimo vsaki stranki posebej.",
+    "highlights": [
+      "Prijazno in ustrežljivo osebje",
+      "Odlično razmerje med kakovostjo ter ceno",
+      "Hitra izvedba in prijeten ambient"
+    ],
+    "benefits": [
+      {
+        "stat": "Ustrežljivo",
+        "label": "Osebje",
+        "description": "Prijazen pristop in posluh za vaše želje ob vsakem obisku."
+      },
+      {
+        "stat": "Odlično",
+        "label": "Razmerje",
+        "description": "Ugodne cene za visoko kakovost storitev in materialov."
+      },
+      {
+        "stat": "Prijeten",
+        "label": "Ambient",
+        "description": "Sproščeno in domače okolje v osrčju Cerknice."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nas obiščite v salonu v Cerknici.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(01) 709 35 56",
+        "href": "tel:017093556",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta 4. maja 47A, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Torka - četrtek: 7:30 - 17:00, petek: 7:30 - 17:00, sobota: 7:00 - 12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Imate vprašanje ali želite rezervirati termin? Pišite nam.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje za termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta 4. maja 47A, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Simičak",
+    "address": "Cesta 4. maja 47A, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "(01) 709 35 56"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

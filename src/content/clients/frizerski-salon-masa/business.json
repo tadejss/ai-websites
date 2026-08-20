@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon \" Maša\" Helena Kraševec s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Vrhunske frizerske storitve z osebnim pristopom v Cerknici",
+  "services": [
+    "žensko striženje",
+    "moško striženje",
+    "otroško striženje",
+    "barvanje laseh",
+    "oblikovanje pričesk"
+  ],
+  "phone": "(01) 709 66 96",
+  "email": "",
+  "address": "Cesta v Dolenjo vas 2a, 1380 Cerknica, Slovenia",
+  "openingHours": "Monday: 7:30 AM – 7:30 PM · Tuesday: 7:30 AM – 7:30 PM · Wednesday: 7:30 AM – 7:30 PM · Thursday: 7:30 AM – 7:30 PM · Friday: 7:30 AM – 7:30 PM · Saturday: 7:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "izjemno prijazno osebje z dolgoletnimi izkušnjami",
+    "strokovno svetovanje in posluh za želje strank",
+    "prijeten ambient in domače vzdušje",
+    "pričeske, ki so enostavne za vzdrževanje doma"
+  ],
+  "targetCustomers": "lokalne prebivalce in stranke, ki cenijo kakovostno striženje in osebni pristop",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "topel, domač, profesionalen",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

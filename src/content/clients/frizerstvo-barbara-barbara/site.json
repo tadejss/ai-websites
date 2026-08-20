@@ -1,0 +1,193 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "work-sans-lora"
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Barbara"
+  },
+  "metadata": {
+    "title": "Frizerstvo Barbara | Frizerski salon Postojna",
+    "description": "Vaš zanesljiv partner za čudovite pričeske v Postojni in okolici. Nudimo žensko in moško striženje, barvanje las ter nego."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Postojna",
+    "title": "Vaš zanesljiv partner za",
+    "titleHighlight": "čudovite pričeske",
+    "description": "Profesionalne frizerske storitve v Postojni z okolico. Poskrbimo za urejen videz, zdravje vaših las in osebni pristop.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "Nega las"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Urejen",
+        "label": "Salon"
+      },
+      {
+        "value": "Postojna",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve frizerskega salona",
+    "description": "Izberite storitev, ki ustreza vašim željam in potrebam, za popolno preobrazbo ali osvežitev vaše pričeske v Postojni.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske strižbe, prilagojene vaši obliki obraza in stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje za urejen in samozavesten videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostne barve in tehnike barvanja za sijoče, obstojne in zdrave lase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Globinska nega in tretmaji za povrnitev sijaja in zdravja vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega salona",
+    "description": "Zavedamo se, kako pomembni so vaši lasje, zato se vam vedno posvetimo z vso pozornostjo.",
+    "highlights": [
+      "Vrhunske storitve striženja in nege",
+      "Prijazna in strokovna obravnava",
+      "Odlične ocene zadovoljnih strank",
+      "Udobno okolje lokalnega salona"
+    ],
+    "benefits": [
+      {
+        "stat": "Vrhunsko",
+        "label": "Strokovno delo",
+        "description": "Zagotavljamo visoko kakovost storitev striženja in nege las."
+      },
+      {
+        "stat": "Prijazno",
+        "label": "Osebje",
+        "description": "Prijazna in strokovna obravnava v sproščenem vzdušju."
+      },
+      {
+        "stat": "Zadovoljne",
+        "label": "Stranke",
+        "description": "Trudimo se, da vsak obisk preseže vaša pričakovanja."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na svoj termin ali nas kontaktirajte za več informacij o naših storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Stritarjeva ulica 3, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 744 460",
+        "href": "tel:040744460",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Stritarjeva ulica 3, 6230 Postojna, Slovenia",
+    "rights": "© Frizerstvo Barbara, Barbara Žele s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Barbara",
+    "address": "Stritarjeva ulica 3, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "040 744 460"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

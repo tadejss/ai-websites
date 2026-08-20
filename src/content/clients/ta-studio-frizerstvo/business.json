@@ -1,0 +1,29 @@
+{
+  "companyName": "TA studio - frizerstvo in storitve Andrej Trontelj s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunsko frizersko strokovno znanje in prijetna izkušnja v Grahovem",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje",
+    "Nega las"
+  ],
+  "phone": "041 754 726",
+  "email": "",
+  "address": "Grahovo 30a, 1384 Grahovo, Slovenia",
+  "openingHours": "Monday: 12:00 – 6:00 PM · Tuesday: 12:00 – 6:00 PM · Wednesday: 12:00 – 6:00 PM · Thursday: 12:00 – 6:00 PM · Friday: 12:00 – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Večdesetletne izkušnje in zaupanje strank",
+    "Prijazen in ustrežljiv pristop",
+    "Prijeten in domač ambient salona",
+    "Vrhunska frizerska umetnost in natančnost"
+  ],
+  "targetCustomers": "Lokalni prebivalci in vsi, ki iščejo vrhunske frizerske storitve z dolgoletno tradicijo",
+  "serviceArea": "Grahovo in okolica",
+  "yearsExperience": "",
+  "tone": "topel, strokoven in prijazen",
+  "brandStyle": "domač in zanesljiv salon",
+  "competitors": "lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

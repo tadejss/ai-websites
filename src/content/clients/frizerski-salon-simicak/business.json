@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon \"Simičak\" Marta Tekavec s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Strokovno striženje in prijazna storitev v Cerknici",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Strokovno svetovanje"
+  ],
+  "phone": "(01) 709 35 56",
+  "email": "",
+  "address": "Cesta 4. maja 47A, 1380 Cerknica, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 7:30 AM – 5:00 PM · Wednesday: 7:30 AM – 5:00 PM · Thursday: 7:30 AM – 5:00 PM · Friday: 7:30 AM – 5:00 PM · Saturday: 7:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazno in ustrežljivo osebje",
+    "Ugodne cene in odlično razmerje med kakovostjo ter ceno",
+    "Strokovni nasveti in prilagojene frizure",
+    "Prijeten ambient in hitra izvedba"
+  ],
+  "targetCustomers": "Prebivalci Cerknice in okolice, ki iščejo zanesljive frizerske storitve",
+  "serviceArea": "Cerknica in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, domač, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

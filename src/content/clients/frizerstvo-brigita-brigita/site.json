@@ -1,0 +1,202 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sage-meadow",
+    "fontPairingId": "work-sans-lora"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-brigita-brigita/hero.jpg",
+      "alt": "Topel in svetel frizerski salon"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-brigita-brigita/services.jpg",
+      "alt": "Strokovno barvanje in urejanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Brigita"
+  },
+  "metadata": {
+    "title": "Frizerstvo Brigita, Brigita Tosic s.p. | Frizerski salon Postojna",
+    "description": "Vrhunske frizerske storitve in osebni pristop v Postojni za vso družino. Naročite se na žensko ali moško striženje, barvanje ter nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon v Postojni",
+    "title": "Vrhunske frizerske storitve in",
+    "titleHighlight": "osebni pristop",
+    "description": "Zagotavljamo kakovostne frizerske storitve za vso družino v Postojni in okolici. Poskrbimo za vaš urejen videz in zdravje vaših las.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "Kvaliteta"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Celotna",
+        "label": "Družina"
+      },
+      {
+        "value": "Postojna",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vaše lase",
+    "description": "V našem salonu v Postojni nudimo strokovno striženje, barvanje in nego las, prilagojeno vašim željam.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene obliki vašega obraza in vašemu stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričesk za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostne barve in tehnike barvanja za sijoče, zdrave in obstojne odtenke las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilne nege za obnovo in sijaj vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden frizerski salon v lokalnem okolju",
+    "description": "Ponosni smo na zadovoljne stranke, prijetno vzdušje in strokovno delo.",
+    "highlights": [
+      "Vrhunska kvaliteta striženja in nege las",
+      "Prijazna in strokovna obravnava",
+      "Visoko ocenjen frizerski salon v lokalnem okolju"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Prijazna in strokovna obravnava vsake stranke."
+      },
+      {
+        "stat": "Zanesljiv",
+        "label": "Pristop",
+        "description": "Zadovoljne stranke in zanesljiv pristop k vsaki frizuri."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "Okolje",
+        "description": "Visoko ocenjen salon v Postojni in okolici."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših frizerskih storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Rožna ulica 1a, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 510 382",
+        "href": "tel:031510382",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili ter se dogovorili za termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Rožna ulica 1a, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Brigita",
+    "address": "Rožna ulica 1a, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "031 510 382"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

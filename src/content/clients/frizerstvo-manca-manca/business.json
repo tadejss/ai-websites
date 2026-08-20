@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerstvo Manca, Manca Vučić s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve za vso družino v Postojni",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje laseh",
+    "Stilsko oblikovanje",
+    "Nega las"
+  ],
+  "phone": "041 687 265",
+  "email": "",
+  "address": "Volaričeva ulica 32, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunska ocena zadovoljstva strank",
+    "Osebni pristop k vsaki stranki",
+    "Strokovno svetovanje pri izbiri pričeske"
+  ],
+  "targetCustomers": "Posamezniki in družine, ki iščejo kakovostne frizerske storitve v Postojni",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domač in zanesljiv salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

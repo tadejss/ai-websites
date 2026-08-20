@@ -1,0 +1,207 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sage-meadow",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-manis/hero.jpg",
+      "alt": "Topel in prijeten ambient frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-manis/services.jpg",
+      "alt": "Strokovno striženje, barvanje in nega las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Manis"
+  },
+  "metadata": {
+    "title": "Frizerski salon Manis | Pivka",
+    "description": "Vrhunske frizerske storitve v prijetnem in domačem okolju v Pivki z okolico. Žensko in moško striženje, barvanje ter nega las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Manis",
+    "title": "Vrhunske frizerske storitve v",
+    "titleHighlight": "prijetnem okolju",
+    "description": "Nudimo strokovno striženje, barvanje in nego las za lokalne prebivalce in obiskovalce v Pivki z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Domače",
+        "label": "Okolje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Točnost",
+        "label": "In zanesljivost"
+      },
+      {
+        "value": "Pivka",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita nega vaših las",
+    "description": "V salonu Manis v Pivki poskrbimo za vaš urejen videz z naborom kakovostnih frizerskih storitev.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah v sproščenem in prijetnem vzdušju.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Korektne in zanesljive moške frizure za vsak dan.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna preobrazba z uporabo kakovostnih pripravkov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Strokovna nega za zdravje, sijaj in mehkobo vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in domačnost",
+    "description": "Prizadevamo si, da se v našem salonu vedno počutite dobrodošli in sproščeni.",
+    "highlights": [
+      "Izjemno prijazna in strokovna frizerka z znanjem angleškega jezika",
+      "Prijetna in sproščena atmosfera v salonu",
+      "Zanesljiva točnost in korektna storitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "In strokovnost",
+        "description": "Individualen pristop in posluh za želje vsake stranke."
+      },
+      {
+        "stat": "Sproščeno",
+        "label": "Vzdušje",
+        "description": "Domače okolje, kjer si lahko oddahnete med urejanjem pričeske."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "In točnost",
+        "description": "Korektna storitev in spoštovanje dogovorjenih terminov."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas na Postojnski cesti v Pivki ali nas pokličite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Postojnska cesta 18, 6257 Pivka, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 350 707",
+        "href": "tel:041350707",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Torek–Petek: 10:00–18:00, Sobota: 10:00–13:00 (Nedelja in ponedeljek zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Postojnska cesta 18, 6257 Pivka, Slovenia",
+    "rights": "© Frizerski salon Manis, Brigitte Urbas Johanes s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Manis",
+    "address": "Postojnska cesta 18, 6257 Pivka, Slovenia",
+    "email": "",
+    "phone": "041 350 707"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Manis, Brigitte Urbas Johanes s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve v prijetnem in domačem okolju",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "041 350 707",
+  "email": "",
+  "address": "Postojnska cesta 18, 6257 Pivka, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 10:00 AM – 6:00 PM · Wednesday: 10:00 AM – 6:00 PM · Thursday: 10:00 AM – 6:00 PM · Friday: 10:00 AM – 6:00 PM · Saturday: 10:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prijazna in strokovna frizerka z znanjem angleškega jezika",
+    "Prijetna in sproščena atmosfera v salonu",
+    "Zanesljiva točnost in korektna storitev",
+    "Visoko zadovoljstvo strank z dolgoletno tradicijo"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci, ki cenijo strokovno nego las, prijetno vzdušje in osebni pristop",
+  "serviceArea": "Pivka z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji Pivka",
+  "callToAction": "Rezervirajte svoj termin"
+}

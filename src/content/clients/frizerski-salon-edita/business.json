@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon EDITA, Edita Štavar s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske striženja in osebni pristop za vaš popoln videz.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "041 528 475",
+  "email": "",
+  "address": "Kolodvorska cesta 14b, 6257 Pivka, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 12:00 – 7:00 PM · Wednesday: 8:00 AM – 4:00 PM · Thursday: 8:00 AM – 4:00 PM · Friday: 12:00 – 7:00 PM · Saturday: 7:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Odličen in strokoven pristop",
+    "Visoka kakovost storitev",
+    "Dostopne cene"
+  ],
+  "targetCustomers": "Posamezniki, ki cenijo kakovostno nego las in urejen videz",
+  "serviceArea": "Pivka z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "dostopen in urejen",
+  "competitors": "Lokalni frizerski saloni v občini Pivka",
+  "callToAction": "Rezervirajte termin"
+}

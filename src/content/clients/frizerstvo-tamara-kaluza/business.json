@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerstvo, Tamara Kaluža s.p. \"Frizerski studio Tamara\"",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje in naravno barvanje v domačem vzdušju",
+  "services": [
+    "Žensko in moško striženje",
+    "Naravno barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las",
+    "Svetovanje o stilu"
+  ],
+  "phone": "041 847 274",
+  "email": "",
+  "address": "Ulica Dolomitskega odreda 6, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 1:00 – 7:00 PM · Wednesday: 9:00 AM – 3:00 PM · Thursday: 9:00 AM – 3:00 PM · Friday: 1:00 – 7:00 PM · Saturday: 9:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Strokoven in prijazen pristop",
+    "Domače in prijetno vzdušje",
+    "Vrhunsko naravno barvanje las",
+    "Odlično počutje strank"
+  ],
+  "targetCustomers": "Vsi, ki cenijo kakovostne frizerske storitve, naravno barvanje in sproščeno okolje v Postojni",
+  "serviceArea": "Postojna in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen, domač",
+  "brandStyle": "moderen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Postojni",
+  "callToAction": "Naročite se na termin"
+}

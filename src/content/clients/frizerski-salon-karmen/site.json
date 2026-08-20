@@ -1,0 +1,203 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "wine-velvet",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-karmen/hero.jpg",
+      "alt": "Topel in prijeten frizerski salon z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-karmen/services.jpg",
+      "alt": "Strokovno barvanje las in stilsko oblikovanje v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Karmen"
+  },
+  "metadata": {
+    "title": "Frizerski salon Karmen | Postojna",
+    "description": "Vrhunske frizerske storitve, barvanje las in stilsko oblikovanje pričesk v Postojni in okolici. Odkrijte sproščeno vzdušje in strokovno nego."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Postojni",
+    "title": "Vrhunske frizerske storitve in",
+    "titleHighlight": "sproščeno vzdušje",
+    "description": "Zanesljiv lokalni salon za vse, ki iščejo kakovostne frizerske storitve v prijetnem in domačem okolju na območju Postojne in okolice.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Sproščeno",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Postojna",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve za vaše lase",
+    "description": "Poskrbimo za vaš svež videz in zdravje las z individualnim pristopom ter posluhom za vaše želje v Postojni in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Natančno in stilsko žensko striženje, prilagojeno obliki vašega obraza in življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasične in sodobne moške frizure ter urejanje za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostne tehnike barvanja las za sijoče odtenke, naraven videz ali drzne spremembe.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti, ki poudarijo vašo osebnost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive nege za obnovo, mehkobo in zdrav lesk vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač salon z vrhunsko strokovnostjo",
+    "description": "Združujemo dolgoletne izkušnje, posluh za stranke in prijetno okolje, kjer se boste vedno počutili dobrodošli.",
+    "highlights": [
+      "Izjemno prilagojeno svetovanje in posluh za želje strank",
+      "Visoka natančnost in strokovnost pri delu",
+      "Sproščeno in prijetno vzdušje v salonu z akvarijem",
+      "Dosegljive in poštene cene za vrhunsko storitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Prilagojeno",
+        "label": "Svetovanje",
+        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo njenim željam."
+      },
+      {
+        "stat": "Sproščeno",
+        "label": "Vzdušje",
+        "description": "Prijetno okolje z akvarijem poskrbi za vaš popoln odklop med urejanjem."
+      },
+      {
+        "stat": "Poštene",
+        "label": "Cene",
+        "description": "Dosegljive cene za vrhunsko izvedbo vseh frizerskih storitev."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev. Z veseljem vam bomo svetovali.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 250 839",
+        "href": "tel:041250839",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Studeno 43a, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Studeno 43a, 6230 Postojna, Slovenia",
+    "rights": "© 2025 Frizerski salon Karmen, Karmen Japelj s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Karmen",
+    "address": "Studeno 43a, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 250 839"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

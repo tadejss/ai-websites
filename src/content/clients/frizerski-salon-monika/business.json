@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Monika, Monika Jambrošič s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne in prijazne frizerske storitve za vaše popolne lase",
+  "services": [
+    "Žensko striženje in fen frizure",
+    "Moško striženje",
+    "Barvanje las in prameni",
+    "Svečane pričeske",
+    "Nega las"
+  ],
+  "phone": "040 455 919",
+  "email": "",
+  "address": "Vodovodna pot 49, 1381 Rakek, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 5:00 PM · Tuesday: 9:00 AM – 5:00 PM · Wednesday: 9:00 AM – 5:00 PM · Thursday: 9:00 AM – 5:00 PM · Friday: 9:00 AM – 5:00 PM · Saturday: 9:00 AM – 2:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka strokovnost in profesionalen pristop",
+    "Prijazno osebje, ki prisluhne vašim željam",
+    "Odlične ocene zadovoljnih strank",
+    "Udobno in prijetno okolje"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve v prijetnem okolju",
+  "serviceArea": "Rakek z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni na območju Rakeka",
+  "callToAction": "Naročite se na termin"
+}

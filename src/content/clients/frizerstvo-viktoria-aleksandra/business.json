@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerstvo Viktoria Aleksandra Možina s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Poskrbite za svojo popolno pričesko v prijetnem okolju.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "040 222 913",
+  "email": "",
+  "address": "Ulica Vilka Kledeta 5, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 3:00 PM · Tuesday: 8:00 AM – 3:00 PM · Wednesday: 1:00 – 7:00 PM · Thursday: 1:00 – 7:00 PM · Friday: 1:00 – 7:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoko zadovoljstvo strank",
+    "Individualni pristop k vsaki stranki",
+    "Strokovno svetovanje pri izbiri pričeske"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo kakovostne frizerske storitve v Postojni in okolici",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen in domač frizerski salon",
+  "competitors": "Lokalni frizerski saloni v Postojni",
+  "callToAction": "Naročite se na termin"
+}

@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski studio Red Scissors",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in urejanje pričesk v Postojni",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Otroško striženje",
+    "Barvanje laseh",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "041 444 557",
+  "email": "",
+  "address": "Ulica Vilka Kledeta 5 b, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 9:00 AM – 5:00 PM · Wednesday: 9:00 AM – 2:30 PM · Thursday: 9:00 AM – 2:30 PM · Friday: 9:00 AM – 5:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno priljubljen in zanesljiv frizerski salon z odličnimi ocenami strank",
+    "Strokovna in skrbna obravnava vseh družinskih članov",
+    "Prijazno in sproščeno vzdušje",
+    "Kakovostne storitve po dostopnih cenah"
+  ],
+  "targetCustomers": "Posamezniki, pari in družine z otroki, ki iščejo kakovostne frizerske storitve v Postojni",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "moderno in domače",
+  "competitors": "Lokalni frizerski saloni v občini Postojna",
+  "callToAction": "Rezervirajte svoj termin"
+}

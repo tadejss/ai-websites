@@ -1,0 +1,192 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "warm-earth",
+    "fontPairingId": "work-sans-lora"
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Zver Nadja s.p."
+  },
+  "metadata": {
+    "title": "Frizerstvo Zver Nadja s.p. | Frizerski salon Pivka",
+    "description": "Kakovostne frizerske storitve za vso družino v Pivki z okolico. Moško in žensko striženje, barvanje las ter nega v prijetnem okolju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon v Pivki",
+    "title": "Kakovostne frizerske storitve",
+    "titleHighlight": "za vso družino",
+    "description": "Poskrbite za svoj videz z dolgoletnimi izkušnjami in strokovnim pristopom. Nudimo celovite frizerske storitve za lokalne prebivalce in družine v Pivki z okolico.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Pivka",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Družine",
+        "label": "In vsi člani"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Prijetno",
+        "label": "Okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vas",
+    "description": "V našem salonu v Pivki nudimo strokovno striženje, barvanje in nego las, prilagojeno vašim željam.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in moderno moško striženje, prilagojeno vašemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk in striženje za sodoben ter urejen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostne barve in tehnike barvanja za sijoče in zdrave lase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilna nega in tretmaji za povrnitev sijaja in mehkobe vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel pristop in strokovnost",
+    "description": "Zavedamo se pomena urejenega videza in dobrega počutja, zato se jedem strank posvetimo individualno.",
+    "highlights": [
+      "Dolgoročne izkušnje in strokovnost na področju frizerstva",
+      "Prilagojen pristop k vsaki stranki posebej",
+      "Udobno in prijetno okolje za vso družino"
+    ],
+    "benefits": [
+      {
+        "stat": "Izkušnje",
+        "label": "Dolgoročna tradicija",
+        "description": "Zanesljivo delo temelji na bogatih izkušnjah in strokovnem znanju."
+      },
+      {
+        "stat": "Pristop",
+        "label": "Prilagojeno vam",
+        "description": "Prisluhnemo vašim željam in svetujemo najboljšo rešitev za vaše lase."
+      },
+      {
+        "stat": "Okolje",
+        "label": "Udoben salon",
+        "description": "Sprostite se v prijetnem ambientu našega salona v Pivki."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na svoj termin ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska cesta 19, 6257 Pivka, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(05) 757 18 20",
+        "href": "tel:057571820",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska cesta 19, 6257 Pivka, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Zver Nadja s.p.",
+    "address": "Kolodvorska cesta 19, 6257 Pivka, Slovenia",
+    "email": "",
+    "phone": "(05) 757 18 20"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

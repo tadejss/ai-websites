@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Katja Vadnal Katica s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Vrhunske frizerske storitve z izjemno prijaznostjo v Postojni",
+  "services": [
+    "žensko striženje",
+    "moško striženje",
+    "striženje otrok",
+    "barvanje las",
+    "oblikovanje pričesk"
+  ],
+  "phone": "(05) 726 18 87",
+  "email": "",
+  "address": "Ulica IX. korpusa 1, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "izjemna prijaznost osebja",
+    "vrhunska kakovost striženja",
+    "ugodne cene in visoko zadovoljstvo strank"
+  ],
+  "targetCustomers": "lokalni prebivalci in vsi, ki iščejo kakovostne frizerske storitve v Postojni",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "topel, prijazen, domač",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "lokalni frizerski saloni v Postojni",
+  "callToAction": "Rezervirajte svoj termin"
+}

@@ -1,0 +1,29 @@
+{
+  "companyName": "R.M.hair studio",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in strokovno oblikovanje pričesk v Pivki",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Moško in žensko striženje",
+    "Nega las"
+  ],
+  "phone": "031 608 525",
+  "email": "",
+  "address": "Kolodvorska cesta 19, 6257 Pivka, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka strokovnost in natančnost pri oblikovanju kratkih in dolgih pričesk",
+    "Zelo prijazen in topel pristop do vseh strank, vključno z otroki",
+    "Izkušena in predana ekipa z odličnimi ocenami strank",
+    "Prijetno in domače vzdušje v salonu"
+  ],
+  "targetCustomers": "Posamezniki, družine in vsi, ki iščejo profesionalne frizerske storitve z osebnim pristopom",
+  "serviceArea": "Pivka z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

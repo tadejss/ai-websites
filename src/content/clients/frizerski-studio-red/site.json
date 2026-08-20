@@ -1,0 +1,207 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "lato-libre"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-red/hero.jpg",
+      "alt": "Notranjnost sodobnega frizerskega studia z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-red/services.jpg",
+      "alt": "Strokovno barvanje in urejanje las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Red Scissors"
+  },
+  "metadata": {
+    "title": "Frizerski studio Red Scissors | Postojna",
+    "description": "Vrhunske frizerske storitve in urejanje pričesk za vso družino v Postojni z okolico. Rezervirajte svoj termin v prijetnem in domačem vzdušju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Postojni",
+    "title": "Vrhunske frizerske storitve za",
+    "titleHighlight": "vso družino",
+    "description": "Poskrbite za svojo pričesko v prijetnem in sproščenem vzdušju. Nudimo strokovno moško, žensko in otroško striženje ter barvanje las v Postojni z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Moško",
+        "label": "Striženje"
+      },
+      {
+        "value": "Žensko",
+        "label": "Striženje"
+      },
+      {
+        "value": "Otroško",
+        "label": "Striženje"
+      },
+      {
+        "value": "Barvanje",
+        "label": "In oblikovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve",
+    "description": "V salonu Red Scissors poskrbimo za videz posameznikov, parov in družin z otroki v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Moderne in klasične moške pričeske, urejanje in striženje las po vaših željah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Strokovno striženje, prilagojeno obliki vašega obraza in vašemu osebnemu slogu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Prijazno in potrpežljivo striženje za najmlajše družinske člane.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki in tehnike barvanja za osvežen ter sijoč videz las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje in oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Mesto, kjer se tradicija sreča z modernim slogom",
+    "description": "Zavedamo se, kako pomembna je urejena pričesa in dober občutek, zato se vsaki stranki posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Strokovna in skrbna obravnava vseh družinskih članov",
+      "Prijazno in sproščeno vzdušje v sodobno opremljenem salonu",
+      "Kakovostne storitve po dostopnih cenah"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivo",
+        "label": "Delo",
+        "description": "Izjemno priljubljen in zanesljiv frizerski salon z odličnimi ocenami zadovoljnih strank."
+      },
+      {
+        "stat": "Družinsko",
+        "label": "Okolje",
+        "description": "Prijeten prostor, prilagojen posameznikom, parom in družinam z otroki."
+      },
+      {
+        "stat": "Kakovostno",
+        "label": "In dostopno",
+        "description": "Vrhunska nega in urejanje pričesk po dostopnih cenah za vsakogar."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas v Postojni ali nas pokličite in si zagotovite svoj termin za frizerske storitve.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Vilka Kledeta 5 b, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 444 557",
+        "href": "tel:041444557",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Torka do petka ter sobote dopoldan (ponedeljek in nedelja zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in stopili bomo v stik z vami glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Vilka Kledeta 5 b, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Red Scissors",
+    "address": "Ulica Vilka Kledeta 5 b, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 444 557"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

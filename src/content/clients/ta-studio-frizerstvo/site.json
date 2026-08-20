@@ -1,0 +1,197 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "dusty-rose",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "brand": {
+    "prefix": "TA",
+    "highlight": "studio"
+  },
+  "metadata": {
+    "title": "TA studio | Frizerske storitve v Grahovem",
+    "description": "Vrhunsko frizersko strokovno znanje in prijetna izkušnja v Grahovem za lokalne prebivalce in obiskovalce."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Grahovem",
+    "title": "Vrhunsko frizersko strokovno znanje in",
+    "titleHighlight": "prijetna izkušnja",
+    "description": "Odkrijte domač in zanesljiv salon, kjer se prepletajo dolgoletne izkušnje, natančnost in topel pristop za vsako stranko v Grahovem in okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Tradicionalno",
+        "label": "Znanje in zaupanje"
+      },
+      {
+        "value": "Domač",
+        "label": "Ambient salona"
+      },
+      {
+        "value": "Grahovo",
+        "label": "Lokacija z okolico"
+      },
+      {
+        "value": "Topel",
+        "label": "In ustrežljiv pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Ponujamo celovite frizerske storitve za moške in ženske v Grahovem in okolici, prilagojene vašim željam.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričeske v prijetnem ambientu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Strokovno žensko striženje, prilagojeno obliki vašega obraza in stilu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las za sijoč videz in popolno prekrivnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Negovalni tretmaji za zdravje, mehkobo in sijaj vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati TA studio",
+    "title": "Zaupanje, tradicija in domače vzdušje",
+    "description": "Prizadevamo si, da se v našem salonu počutite sproščeno, medtem ko poskrbimo za vaš urejen videz.",
+    "highlights": [
+      "Večdesetletne izkušnje in zaupanje strank",
+      "Prijazen in ustrežljiv pristop",
+      "Prijeten in domač ambient salona"
+    ],
+    "benefits": [
+      {
+        "stat": "Izkušnje",
+        "label": "Dolgoletna tradicija",
+        "description": "Večdesetletne izkušnje zagotavljajo zanesljivost in visoko kakovost storitev."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Domače vzdušje",
+        "description": "Prijeten in domač salon, kjer je vsaka stranka deležna osebne pozornosti."
+      },
+      {
+        "stat": "Pristop",
+        "label": "Topla obravnava",
+        "description": "Prijazen in ustrežljiv pristop za sproščeno izkušnjo ob vsakem obisku."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas v Grahovem ali nas pokličite za dogovor o vašem terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Grahovo 30a, 1384 Grahovo, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 754 726",
+        "href": "tel:041754726",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 12:00 – 18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in stopili bomo v stik z vami glede prostega termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Grahovo 30a, 1384 Grahovo, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "TA studio",
+    "address": "Grahovo 30a, 1384 Grahovo, Slovenia",
+    "email": "",
+    "phone": "041 754 726"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

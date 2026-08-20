@@ -1,0 +1,207 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "warm-earth",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-monika/hero.jpg",
+      "alt": "Topel in prijeten ambient frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-monika/services.jpg",
+      "alt": "Strokovno striženje, barvanje in nega las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Monika"
+  },
+  "metadata": {
+    "title": "Frizerski salon Monika | Rakek",
+    "description": "Strokovne in prijazne frizerske storitve za vaše popolne lase na Rakeku z okolico. Žensko in moško striženje, barvanje, prameni ter nega las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon na Rakeku",
+    "title": "Strokovne in prijazne frizerske storitve za",
+    "titleHighlight": "vaše popolne lase",
+    "description": "Nudimo kakovostne frizerske storitve v prijetnem okolju za vse, ki si želijo urejenega videza in strokovne oskrbe na Rakeku z okolico.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Okolje"
+      },
+      {
+        "value": "Rakek",
+        "label": "Lokacija"
+      },
+      {
+        "value": "6 dni",
+        "label": "Odprti tedensko"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve prilagojene vašim željam",
+    "description": "V našem salonu na Rakeku poskrbimo za celostno urejenost vaših las z uporabo strokovnih pristopov.",
+    "items": [
+      {
+        "title": "Žensko striženje in fen frizure",
+        "description": "Oblikovanje pričesk, striženje in obstojne fen frizure za vsako priložnost.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasična in moderna moška striženja ter urejanje videza.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Osvežitev barve, barvanje narastka in ustvarjanje naravnih pramenov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svečane pričeske",
+        "description": "Urejanje pričesk za posebne dogodke, poroke in praznovanja.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilne in obnovitvene nege za zdravje in lesk vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel salon, kjer so vaše želje na prvem mestu",
+    "description": "Z združevanjem strokovnosti in prijaznosti poskrbimo, da se v našem salonu počutite sproščeno.",
+    "highlights": [
+      "Visoka strokovnost in profesionalen pristop",
+      "Prijazno osebje, ki zares prisluhne vašim željam",
+      "Udobno in prijetno okolje za vsako stranko"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Pristop",
+        "description": "Visoka strokovnost in profesionalnost pri vsakem obisku."
+      },
+      {
+        "stat": "Poslušanje",
+        "label": "Želje",
+        "description": "Prijazno osebje, ki prisluhne vašim idejam in svetuje."
+      },
+      {
+        "stat": "Prijetno",
+        "label": "Okolje",
+        "description": "Udoben prostor na Rakeku za vaš trenutek sprostitve."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 455 919",
+        "href": "tel:040455919",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Vodovodna pot 49, 1381 Rakek, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–17:00, Sob: 9:00–14:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Vodovodna pot 49, 1381 Rakek, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Monika",
+    "address": "Vodovodna pot 49, 1381 Rakek, Slovenia",
+    "email": "",
+    "phone": "040 455 919"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

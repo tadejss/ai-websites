@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski studio Simona, Simona Žnidaršič, s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve in prijazen pristop v Cerknici",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "040 383 440",
+  "email": "",
+  "address": "Zelše 6a, 1380 Cerknica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunska strokovnost in profesionalen striženje",
+    "Zelo prijazen in oseben pristop do strank",
+    "Udoben in prijeten ambient salona",
+    "Visoko zadovoljstvo strank z dolgoletno tradicijo"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve in osebni pristop v Cerknici z okolico",
+  "serviceArea": "Cerknica in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "domač, butičen, zanesljiv",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

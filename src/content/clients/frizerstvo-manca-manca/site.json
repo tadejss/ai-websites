@@ -1,0 +1,192 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "lavender-cream",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Manca"
+  },
+  "metadata": {
+    "title": "Frizerstvo Manca | Frizerski salon Postojna",
+    "description": "Strokovne frizerske storitve za vso družino v Postojni z okolico. Žensko in moško striženje, barvanje las ter osebni pristop."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Postojni",
+    "title": "Strokovne frizerske storitve za",
+    "titleHighlight": "vso družino",
+    "description": "Domač in zanesljiv salon v Postojni z okolico, kjer poskrbimo za posameznike in družine z osebnim pristopom in strokovnim svetovanjem.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Družinski",
+        "label": "Salon"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Postojna",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve",
+    "description": "V našem salonu v Postojni nudimo kakovostno striženje, barvanje in nego las za vse generacije.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las za sijoč videz in obstojno barvo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive nege za zdravje in lepoto vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv salon z osebnim pristopom",
+    "description": "Zavedamo se, kako pomembna je urejena pričeska, zato se jeder stranki posvetimo individualno.",
+    "highlights": [
+      "Vrhunska ocena zadovoljstva strank",
+      "Osebni pristop k vsaki stranki",
+      "Strokovno svetovanje pri izbiri pričeske"
+    ],
+    "benefits": [
+      {
+        "stat": "Zadovoljstvo",
+        "label": "Strank",
+        "description": "Ponosni smo na visoko raven zadovoljstva naših obiskovalcev."
+      },
+      {
+        "stat": "Osebni",
+        "label": "Pristop",
+        "description": "Prisluhnemo vašim željam in svetujemo najboljšo rešitev."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "In svetovanje",
+        "description": "Pomagamo vam izbrati pričesko, ki poudari vašo osebnost."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Volaričeva ulica 32, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 687 265",
+        "href": "tel:041687265",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Volaričeva ulica 32, 6230 Postojna, Slovenia",
+    "rights": "© 2025 Frizerstvo Manca, Manca Vučić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Manca",
+    "address": "Volaričeva ulica 32, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 687 265"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "lato-libre"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-andreja/hero.jpg",
+      "alt": "Topel in svetel frizerski salon v Postojni z udobnim ambientom"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-andreja/services.jpg",
+      "alt": "Strokovno striženje in barvanje las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Andreja"
+  },
+  "metadata": {
+    "title": "Frizerski salon Andreja | Hrenovice, Postojna in okolica",
+    "description": "Vrhunske frizerske storitve z osebnim pristopom v Postojni in okolici. Nudimo žensko in moško striženje, barvanje ter strokovno svetovanje v prijetnem domačem vzdušju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon v Postojni",
+    "title": "Vrhunske frizerske storitve z",
+    "titleHighlight": "osebnim pristopom",
+    "description": "Prijazno vzdušje in kakovostno striženje za vse, ki cenijo skrb za lase v Hrenovicah, Postojni in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Urnik"
+      },
+      {
+        "value": "Toplo",
+        "label": "Vzdušje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita nega vaših las",
+    "description": "Poskrbimo za vaš svež videz z naborom frizerskih storitev, prilagojenih vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah z upoštevanjem oblike obraza in strukture vaših las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje za urejen ter sodoben videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje laseh",
+        "description": "Kakovostno barvanje z živahnimi odtenki in skrbjo za zdravje vaših las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi las",
+        "description": "Strokovni nasveti za pravilno nego in vzdrževanje zdravih las doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in strokovnost",
+    "description": "Zavedamo se, da so vaši lasje vaš ponos, zato se vam posvetimo z vso pozornostjo.",
+    "highlights": [
+      "Prijazno in strokovno osebje z občutkom za sočloveka",
+      "Prilagodljivost urniku strank za vaše udobje",
+      "Strokovno svetovanje glede vseh postopkov nege",
+      "Vrhunska kakovost storitev v domačem okolju"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "In strokovnost",
+        "description": "Topel sprejem in strokovna izvedba vseh frizerskih storitev."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Urniku",
+        "description": "Najdemo termin, ki ustreza vašemu ritmu življenja."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Za lase",
+        "description": "Individualni pristop in nasveti za nego vaših las."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas v Hrenovicah ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Hrenovice 40a, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 263 340",
+        "href": "tel:041263340",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Hrenovice 40a, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Andreja",
+    "address": "Hrenovice 40a, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 263 340"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

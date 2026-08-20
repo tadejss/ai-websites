@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerstvo, Andreja Frank s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno in prijazno frizersko osebje za vaš popoln izgled",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "041 638 714",
+  "email": "",
+  "address": "Tržaška cesta 26, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 10:00 AM – 6:00 PM · Wednesday: 10:00 AM – 6:00 PM · Thursday: 10:00 AM – 6:00 PM · Friday: 10:00 AM – 6:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prijazno in strokovno osebje",
+    "Sproščeno in prijetno vzdušje v salonu",
+    "Visoka ocena in zadovoljstvo strank",
+    "Kakovostne frizerske storitve"
+  ],
+  "targetCustomers": "Ljudje vseh starosti, ki cenijo strokovnost, urejen videz in prijetno počutje med striženjem.",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, prijazen",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Postojni",
+  "callToAction": "Rezervirajte svoj termin"
+}

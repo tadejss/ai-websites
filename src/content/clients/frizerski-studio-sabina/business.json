@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski studio Sabina, Sabina Česnik s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in osebni pristop v Postojni",
+  "services": [
+    "žensko striženje",
+    "moško striženje",
+    "barvanje las",
+    "prameni in balayage",
+    "oblikovanje pričesk"
+  ],
+  "phone": "031 781 929",
+  "email": "",
+  "address": "Tržaška cesta 3, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Odlične ocene in zadovoljne stranke",
+    "Strokovno in prijazno osebje",
+    "Osebni pristop k vsaki stranki"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve in urejen videz v Postojni in okolici",
+  "serviceArea": "Postojna",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "lokalni frizerski saloni v Postojni",
+  "callToAction": "Rezervirajte termin"
+}

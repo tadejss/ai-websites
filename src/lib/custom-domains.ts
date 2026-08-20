@@ -1,6 +1,6 @@
 /**
  * Maps custom production hostnames to an existing client slug.
- * Path-based demos (e.g. /zbrendiraj-si) stay available on the factory domain.
+ * Path-based demos stay available at /{slug} and /demo/{slug}.
  */
 const HOST_TO_SLUG: Record<string, string> = {
   "zbrendiraj.si": "zbrendiraj-si",

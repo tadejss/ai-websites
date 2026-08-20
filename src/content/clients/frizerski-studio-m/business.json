@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski studio M",
+  "industry": "Frizerstvo in striženje",
+  "tagline": "Vaš zanesljiv naslov za urejene pričeske v Cerknici.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Prameni in balayage",
+    "Urejanje pričesk za posebne priložnosti"
+  ],
+  "phone": "040 616 812",
+  "email": "",
+  "address": "Zelše 19a, 1380 Cerknica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Individualen pristop k strankam",
+    "Udoben in prijeten ambient",
+    "Kakovostni lasni produkti",
+    "Strokovno svetovanje"
+  ],
+  "targetCustomers": "Lokalni prebivalci Cerknice in okolice, ki cenijo urejen videz in strokovno nego las.",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domač in urejen salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

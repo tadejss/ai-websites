@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Andreja, Andreja Merše s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve z osebnim pristopom v Postojni",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje laseh",
+    "Stilsko oblikovanje pričesk",
+    "Svetovanje o negi las"
+  ],
+  "phone": "041 263 340",
+  "email": "",
+  "address": "Hrenovice 40a, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prijazno in strokovno osebje",
+    "Prilagodljivost urniku strank",
+    "Strokovno svetovanje glede postopkov",
+    "Vrhunska kakovost storitev"
+  ],
+  "targetCustomers": "Vsi, ki cenijo kakovostno striženje, prijetno vzdušje in prilagodljivost.",
+  "serviceArea": "Hrenovice, Postojna in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, domač",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji Postojna",
+  "callToAction": "Rezervirajte termin"
+}

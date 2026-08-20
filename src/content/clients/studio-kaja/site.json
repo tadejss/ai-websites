@@ -1,0 +1,180 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "work-sans-lora"
+  },
+  "brand": {
+    "prefix": "Studio",
+    "highlight": "Kaja"
+  },
+  "metadata": {
+    "title": "Studio Kaja | Nega in dobro počutje Postojna",
+    "description": "Vaš zanesljiv partner za osebno nego in dobro počutje v Postojni z okolico. Prijeten ambient in individualna obravnava strank."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Postojna z okolico",
+    "title": "Vaš zanesljiv partner za",
+    "titleHighlight": "osebno nego in dobro počutje",
+    "description": "Zagotavljamo sodoben, urejen in prijazen pristop za lokalne prebivalce in obiskovalce Postojne, ki cenijo kakovostne storitve.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prijeten",
+        "label": "Ambient"
+      },
+      {
+        "value": "Individualno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Postojna",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovite storitve za nego, lepoto in sprostitev, prilagojene strankam v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Storitve za nego in lepoto",
+        "description": "Nega telesa in obraza za svež in urejen videz v sodobnem ambientu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Svetovanje in konzultacije",
+        "description": "Strokovni nasveti, prilagojeni vašim osebnim željam in potrebam.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Individualni pristop",
+        "description": "Popolna posvečenost vsaki stranki za najboljše rezultate.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sprostitvene storitve",
+        "description": "Udoben in domač kotiček za vaš oddih ter dobro počutje.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Studio Kaja",
+    "title": "Prednosti, ki jih cenijo naše stranke",
+    "description": "S trudom zagotavljamo visoko raven storitev in prijetno izkušnjo za vsakogar.",
+    "highlights": [
+      "Prijeten in domač ambient",
+      "Individualna obravnava strank",
+      "Lokalno dostopna lokacija v Postojni"
+    ],
+    "benefits": [
+      {
+        "stat": "Ambient",
+        "label": "Prijeten in domač",
+        "description": "Prostor, kjer se boste takoj počutili sproščeno in dobrodošlo."
+      },
+      {
+        "stat": "Obravnava",
+        "label": "Individualni pristop",
+        "description": "Prisluhnemo vašim željam in prilagodimo storitev posebej vam."
+      },
+      {
+        "stat": "Lokacija",
+        "label": "Dostopnost v Postojni",
+        "description": "Enostavno dosegljiva lokacija na Tržaški cesti za vse prebivalce in obiskovalce."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Tržaški cesti 11 v Postojni ali nam pošljite sporočilo za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tržaška cesta 11, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Tržaška cesta 11, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Studio Kaja",
+    "address": "Tržaška cesta 11, 6230 Postojna, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerstvo Barbara, Barbara Žele s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vaš zanesljiv partner za čudovite pričeske v Postojni",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje",
+    "Nega las"
+  ],
+  "phone": "040 744 460",
+  "email": "",
+  "address": "Stritarjeva ulica 3, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunske storitve striženja in nege",
+    "Prijazna in strokovna obravnava",
+    "Odlične ocene zadovoljnih strank"
+  ],
+  "targetCustomers": "Vsi, ki iščejo profesionalne frizerske storitve v Postojni",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Postojni",
+  "callToAction": "Naročite se na termin"
+}

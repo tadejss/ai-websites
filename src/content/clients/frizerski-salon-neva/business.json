@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski Salon Neva, Nevenka Jerman, s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje in osebni pristop v sproščenem ambientu",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Svetovanje o negi las"
+  ],
+  "phone": "(01) 709 21 02",
+  "email": "",
+  "address": "Kebetova ulica 5, 1380 Cerknica, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 8:00 PM · Tuesday: 7:00 AM – 8:00 PM · Wednesday: 7:00 AM – 8:00 PM · Thursday: 7:00 AM – 8:00 PM · Friday: 7:00 AM – 8:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno strokovno in prijazno osebje",
+    "Prijeten in prenovljen ambient",
+    "Individualno svetovanje in posvečenost stranki",
+    "Sproščena in dobrodošla izkušnja"
+  ],
+  "targetCustomers": "Vsi, ki iščejo profesionalne frizerske storitve in osebni pristop v Cerknici z okolico",
+  "serviceArea": "Cerknica in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "domač in profesionalen salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

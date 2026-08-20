@@ -1,0 +1,193 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "lato-libre"
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "M"
+  },
+  "metadata": {
+    "title": "Frizerski studio M | Striženje in nega las v Cerknici",
+    "description": "Vaš zanesljiv naslov za urejene pričeske, striženje in barvanje las v Cerknici z okolico. Individualen pristop in kakovostna nega."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Cerknica",
+    "title": "Vaš zanesljiv naslov za",
+    "titleHighlight": "urejene pričeske",
+    "description": "Nudimo strokovno striženje, barvanje in nego las za lokalne prebivalce Cerknice in okolice, ki cenijo urejen videz.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Individualen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Udoben",
+        "label": "Ambient"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Nasvet"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za nego in striženje las",
+    "description": "Prepustite se strokovnim rokam v domačem in urejenem salonu v Cerknici z okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah z upoštevanjem strukture vaših las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in sodobno moško striženje ter urejanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni produkti in natančni odtenki za sijoče lase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prameni in balayage",
+        "description": "Moderne tehnike pramenov in balayage za naraven videz in prelivanje barv.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Urejanje pričesk za posebne priložnosti",
+        "description": "Svečane pričeske, ki bodo dopolnile vaš izgled ob pomembnih dogodkih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač in urejen salon z osebnim pristopom",
+    "description": "Poskrbimo, da se boste med urejanjem pričeske počutili sproščeno in udobno.",
+    "highlights": [
+      "Individualen pristop k vsaki stranki",
+      "Udoben in prijeten ambient",
+      "Uporaba kakovostnih lasnih produktov",
+      "Strokovno svetovanje pri izbiri pričeske"
+    ],
+    "benefits": [
+      {
+        "stat": "Pristop",
+        "label": "Individualen",
+        "description": "Prisluhnemo vašim željam in svetujemo najboljšo nego za vaše lase."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Udoben",
+        "description": "Sproščeno vzdušje v našem salonu poskrbi za vaš hiter oddih."
+      },
+      {
+        "stat": "Produkti",
+        "label": "Kakovostni",
+        "description": "Uporabljamo preverjene lasne produkte za zdravje in lesk vaših las."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših frizerskih storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Zelše 19a, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 616 812",
+        "href": "tel:040616812",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Zelše 19a, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio M",
+    "address": "Zelše 19a, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "040 616 812"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

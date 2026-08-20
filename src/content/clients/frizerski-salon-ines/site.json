@@ -1,0 +1,197 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Ines"
+  },
+  "metadata": {
+    "title": "Frizerski salon Ines | Postojna",
+    "description": "Strokovno striženje, barvanje in nega las v Postojni z okolico. Obiščite nas za urejen videz in prijeten osebni pristop."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Postojni",
+    "title": "Strokovno striženje, barvanje in",
+    "titleHighlight": "nega las",
+    "description": "Pridih urejenosti in strokovnosti za vse, ki iščejo kakovostne frizerske storitve v Postojni in okolici. Poskrbimo za vaš videz in dobro počutje.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Udoben",
+        "label": "Ambient"
+      },
+      {
+        "value": "Postojna",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Delovni čas"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "V našem salonu v Postojni nudimo celovite frizerske storitve, prilagojene vašim željam in potrebam vaših las.",
+    "items": [
+      {
+        "title": "Žensko in moško striženje",
+        "description": "Moderne in klasične frizure, prilagojene obliki vašega obraza in življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Osvežitev barve, ustvarjanje dimenzije s prameni in modni odtenki z uporabo kakovostnih pripravkov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk za posebne prilike",
+        "description": "Urejanje pričesk za slavja, dogodke in posebne trenutek, ko želite zasijati.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in obnova lasišča",
+        "description": "Specializirani postopki za nego, vlaženje in povrnitev zdravja vašim lasem.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi las",
+        "description": "Strokovni nasveti za domačo nego in izbiro ustreznih izdelkov za zdravje vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Salon, kjer so vaše želje na prvem mestu",
+    "description": "Združujemo strokovnost, posluh za stranke in sproščeno vzdušje v osrčju Postojne.",
+    "highlights": [
+      "Individualni pristop in posvet pred vsako storitvijo",
+      "Udoben in prijeten ambient za popolno sprostitev",
+      "Prilagodljiv delovni čas med tednom in ob sobotah"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebno",
+        "label": "Zaupanje",
+        "description": "Vsaki stranki se posvetimo celostno in poiščemo najboljšo rešitev za njen videz."
+      },
+      {
+        "stat": "Udobje",
+        "label": "Ambient",
+        "description": "Sprostite se v urejenem in prijetnem okolju našega salona."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Urnik",
+        "description": "Delovni čas je prilagojen vašim obveznostim, od ponedeljka do sobote."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za vprašanja glede storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Titova cesta 10, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(05) 720 31 59",
+        "href": "tel:057203159",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 20:00, Sob: 8:00 – 14:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Titova cesta 10, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Ines",
+    "address": "Titova cesta 10, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "(05) 720 31 59"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

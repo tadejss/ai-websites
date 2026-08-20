@@ -1,0 +1,192 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "work-sans-lora"
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Helena"
+  },
+  "metadata": {
+    "title": "Frizerski salon Helena | Cerknica",
+    "description": "Prijazne in strokovne frizerske storitve za vso družino v Cerknici z okolico. Naročite se na termin v prijetnem in domačem okolju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon v Cerknici",
+    "title": "Prijazne in strokovne",
+    "titleHighlight": "frizerske storitve",
+    "description": "Ustvarjamo urejen videz in dobro vzdušje za lokalne prebivalce vseh starosti v Cerknici z okolico.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Toplo",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Izkušnje",
+        "label": "V lokalnem okolju"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Za stranke"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za veselje do urejenega videza",
+    "description": "Poskrbimo za vaš svež videz z naborom frizerskih storitev, prilagojenih posamezniku v Cerknici z okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk in striženje, prilagojeno vašim željam in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasična in sodobna moška striženja za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Potrpežljivo in prijazno striženje najmlajših v sproščenem vzdušju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve, prameni in barvni odtenki za sijoče lase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti po vaših željah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in strokovnost v Cerknici",
+    "description": "Z dolgoletnimi izkušnjami v lokalnem okolju in posluhom za stranke poskrbimo, da se v našem salonu vedno počutite dobrodošle.",
+    "highlights": [
+      "Izjemno prijazno osebje in dobro vzdušje",
+      "Visoka prilagodljivost željam strank",
+      "Dolgoletne izkušnje v lokalnem okolju"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "In dobro vzdušje",
+        "description": "V salonu vas vedno sprejmemo toplo in z nasmehom."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Strankam",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "Lokalno okolje",
+        "description": "Dolgoletno delovanje in poznavanje potreb naših strank."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na svoj termin",
+    "description": "Obiščite nas v Cerknici ali nas pokličite za dogovor o vašem naslednjem obisku.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 381 905",
+        "href": "tel:031381905",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta na Jezero 12, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali zahtevek za termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta na Jezero 12, 1380 Cerknica, Slovenia",
+    "rights": "© Frizerski salon Helena, Helena Virant s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Helena",
+    "address": "Cesta na Jezero 12, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "031 381 905"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

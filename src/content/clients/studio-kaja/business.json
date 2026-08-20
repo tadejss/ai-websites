@@ -1,0 +1,27 @@
+{
+  "companyName": "Studio Kaja",
+  "industry": "Storitve in lepota",
+  "tagline": "Vaš zanesljiv partner za osebno nego in dobro počutje v Postojni",
+  "services": [
+    "Storitve za nego in lepoto",
+    "Svetovanje in konzultacije",
+    "Individualni pristop",
+    "Sprostitvene storitve"
+  ],
+  "phone": "",
+  "email": "",
+  "address": "Tržaška cesta 11, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prijeten in domač ambient",
+    "Individualna obravnava strank",
+    "Lokalno dostopna lokacija v Postojni"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci Postojne, ki cenijo kakovostne storitve",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben, urejen",
+  "competitors": "Lokalni ponudniki primerljivih storitev",
+  "callToAction": "Rezervirajte svoj termin"
+}

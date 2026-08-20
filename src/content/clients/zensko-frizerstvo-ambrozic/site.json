@@ -1,0 +1,192 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "plum-dusk",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Ambrožič Vesna"
+  },
+  "metadata": {
+    "title": "Žensko frizerstvo Ambrožič Vesna s.p. | Frizerski salon Postojna",
+    "description": "Vrhunske frizerske storitve za ženske v Postojni in okolici. Brez čakalnih vrst, z osebnim pristopom in strokovnim svetovanjem."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon v Postojni",
+    "title": "Vrhunske frizerske storitve za ženske",
+    "titleHighlight": "brez dolgega čakanja",
+    "description": "Namenjeno ženskam, ki cenijo hiter dostop do storitev, kakovost in osebno pozornost pri negovanju las v Postojni in okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Brez",
+        "label": "Čakalnih vrst"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      },
+      {
+        "value": "Postojna",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "Celovite frizerske storitve, prilagojene vašim željam in potrebam, za stranke iz Postojne in okolice.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične striženje, prilagojeno obliki vašega obraza in tipu las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje lase",
+        "description": "Kakovostni barvni odtenki za sijoč in zdrav videz vaših las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prameni in balayage",
+        "description": "Usklajeni prameni in priljubljena tehnika balayage za naravne prelive in globino.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Frizure za posebne priložnosti",
+        "description": "Svečane, elegantne in spete frizure za poroke, obhajila ter druge dogodke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive nege, ki povrnejo vlago, lesk in zdravje poškodovanim lasem.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati naš salon?",
+    "description": "Združujemo strokovnost, posluh za vaše želje in prijetno domače okolje.",
+    "highlights": [
+      "Hitra dostopnost brez dolgih čakalnih obdobij",
+      "Strokovno svetovanje in individualna obravnava",
+      "Sproščeno vzdušje v domačem ambientu"
+    ],
+    "benefits": [
+      {
+        "stat": "Takoj",
+        "label": "Dostopno",
+        "description": "Brez dolgega čakanja na svoj termin."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Svetovanje",
+        "description": "Osebni pristop in posluh za vaše želje."
+      },
+      {
+        "stat": "Prijetno",
+        "label": "Vzdušje",
+        "description": "Domač ambient, kjer se boste počutili sproščeno."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjih podatkov ali obrazca.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(05) 726 55 41",
+        "href": "tel:+38657265541",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Erazmova ulica 21, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Erazmova ulica 21, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Ambrožič Vesna",
+    "address": "Erazmova ulica 21, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "(05) 726 55 41"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

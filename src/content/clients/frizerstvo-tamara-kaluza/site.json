@@ -1,0 +1,208 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "lavender-cream",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-tamara-kaluza/hero.jpg",
+      "alt": "Notranjost modernega frizerskega studia Tamara z naravno svetlobo v Postojni"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-tamara-kaluza/services.jpg",
+      "alt": "Strokovno striženje in naravno barvanje las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Tamara"
+  },
+  "metadata": {
+    "title": "Frizerski studio Tamara | Frizerske storitve Postojna",
+    "description": "Strokovno striženje in naravno barvanje v domačem vzdušju v Postojni in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Moderen lokalni salon v Postojni",
+    "title": "Strokovno striženje in naravno barvanje v",
+    "titleHighlight": "domačem vzdušju",
+    "description": "Za vse, ki cenijo kakovostne frizerske storitve, naravno barvanje in sproščeno okolje v Postojni in okolici.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Naravno",
+        "label": "Barvanje"
+      },
+      {
+        "value": "Domače",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Postojna",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Celovite frizerske storitve za osvežitev vašega videza v Postojni in okolici.",
+    "items": [
+      {
+        "title": "Žensko in moško striženje",
+        "description": "Prilagojeno striženje za vsak stil in obliko obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Naravno barvanje las",
+        "description": "Vrhunsko naravno barvanje las, ki ohranja zdravje in lesk.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilna nega za obnovo in mehkobo vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o stilu",
+        "description": "Strokovni nasveti za izbiro prave pričeske in nege.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupajte izkušnjam in osebnemu pristopu",
+    "description": "V Frizerskem studiu Tamara stremimo k temu, da se vsaka stranka počuti sproščeno in odide z nasmehom.",
+    "highlights": [
+      "Strokoven in prijazen pristop",
+      "Domače in prijetno vzdušje",
+      "Vrhunsko naravno barvanje las",
+      "Odlično počutje strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazen",
+        "label": "Pristop",
+        "description": "Vsaki stranki se posvetimo individualno in z razumevanjem njenih želja."
+      },
+      {
+        "stat": "Sproščeno",
+        "label": "Okolje",
+        "description": "Domače in prijetno vzdušje poskrbi za vaš popoln odklop med urejanjem."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "In nega",
+        "description": "Uporaba kakovostnih pristopov za naravni videz in zdravje vaših las."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Naročite se na svoj termin",
+    "description": "Obiščite nas v Postojni ali nas kontaktirajte za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Dolomitskega odreda 6, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 847 274",
+        "href": "tel:041847274",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Torek-Petek: 13:00-19:00, Sreda-Četrtek: 9:00-15:00, Sobota: 9:00-13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Stopite v stik z nami in si zagotovite želeni termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Dolomitskega odreda 6, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Tamara",
+    "address": "Ulica Dolomitskega odreda 6, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 847 274"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

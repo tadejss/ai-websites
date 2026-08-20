@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Karmen, Karmen Japelj s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in sproščeno vzdušje",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "041 250 839",
+  "email": "",
+  "address": "Studeno 43a, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Izjemno prilagojeno svetovanje in posluh za želje strank",
+    "Visoka natančnost in strokovnost pri delu",
+    "Sproščeno in prijetno vzdušje v salonu z akvarijem",
+    "Dosegljive in poštene cene za vrhunsko storitev"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve v prijetnem in domačem okolju",
+  "serviceArea": "Postojna in okolica",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, prijazen",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji Postojna",
+  "callToAction": "Rezervirajte svoj termin"
+}

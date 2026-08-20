@@ -1,0 +1,193 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "lavender-cream",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "brand": {
+    "prefix": "R.M.",
+    "highlight": "hair studio"
+  },
+  "metadata": {
+    "title": "R.M. hair studio | Frizerski salon Pivka",
+    "description": "Vrhunske frizerske storitve in strokovno oblikovanje pričesk v Pivki z okolico. Odkrijte prijetno vzdušje in osebni pristop za vso družino."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Pivka",
+    "title": "Vrhunske frizerske storitve z",
+    "titleHighlight": "osebnim pristopom",
+    "description": "Nudimo profesionalno striženje, barvanje in stilsko oblikovanje pričesk za posameznike in družine v Pivki z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Domače",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Pivka",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Za vso",
+        "label": "Družino"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaši lasje",
+    "description": "Poskrbimo za vaš svež videz in zdravje las z zanesljivimi storitvami za stranke v Pivki z okolico.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Natančno striženje prilagojeno vašim željam in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki za sijoč in negovan videz las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Celovite frizerske storitve za vso družino.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljiva nega za mehkobo, lesk in zdravje vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati R.M. hair studio",
+    "title": "Kjer se strokovnost sreča s toplino",
+    "description": "Vsaki stranki se posvetimo individulano in poskrbimo, da se v našem salonu počutite sproščeno.",
+    "highlights": [
+      "Visoka strokovnost in natančnost pri oblikovanju kratkih in dolgih pričesk",
+      "Zelo prijazen in topel pristop do vseh strank, vključno z otroki",
+      "Izkušena in predana ekipa z odličnimi ocenami strank",
+      "Prijetno in domače vzdušje v salonu"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "In natančnost",
+        "description": "Natančno oblikovanje kratkih in dolgih pričesk za popoln videz."
+      },
+      {
+        "stat": "Topel",
+        "label": "Pristop",
+        "description": "Prijazno vzdušje, ki je prilagojeno vsem strankam, vključno z otroki."
+      },
+      {
+        "stat": "Domače",
+        "label": "Vzdušje",
+        "description": "Sproščeno okolje v salonu, kjer se boste počutili dobrodošle."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Kolodvorski cesti v Pivki ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 608 525",
+        "href": "tel:031608525",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska cesta 19, 6257 Pivka, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska cesta 19, 6257 Pivka, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "R.M. hair studio",
+    "address": "Kolodvorska cesta 19, 6257 Pivka, Slovenia",
+    "email": "",
+    "phone": "031 608 525"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

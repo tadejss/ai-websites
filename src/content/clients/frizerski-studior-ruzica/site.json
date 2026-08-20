@@ -1,0 +1,208 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "peach-bloom",
+    "fontPairingId": "lato-libre"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studior-ruzica/hero.jpg",
+      "alt": "Notranjost urejenega frizerskega studia z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-studior-ruzica/services.jpg",
+      "alt": "Strokovno barvanje las in oblikovanje pričesk v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski Studio",
+    "highlight": "R"
+  },
+  "metadata": {
+    "title": "Frizerski Studio-R | Frizerski salon Postojna",
+    "description": "Vrhunske frizerske storitve, prijazen osebni pristop in urejen ambient v Postojni z okolico. Rezervirajte svoj termin za striženje, barvanje in nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Postojni",
+    "title": "Vrhunske frizerske storitve in",
+    "titleHighlight": "prijazen osebni pristop",
+    "description": "Odkrijte kakovostne frizerske storitve, urejen videz in prijetno vzdušje v Postojni z okolico za vse, ki cenite strokovnost.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Urejen",
+        "label": "Ambient"
+      },
+      {
+        "value": "Postojna",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Delovni čas"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve",
+    "description": "Poskrbite za svoje lase z našimi storitvami, prilagojenimi vašim željam in potrebam v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Strokovno žensko striženje za svež in urejen videz vaših las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Kakovostno moško striženje za urejen in sodoben slog.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Uporaba kvalitetnih barv za obstojne in sijoče odtenke.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilna nega za zdravje, mehkobo in lesk vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel ambient in strokovna skrb za vaše lase",
+    "description": "Združujemo prijazen pristop, urejen prostor in visoko kakovost storitev za vsako stranko.",
+    "highlights": [
+      "Izjemno prijazno osebje in strokoven pristop",
+      "Lepo urejen in prijeten ambient salona",
+      "Visoka kakovost striženja in storitev",
+      "Dostopne in primerne cene"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Osebni pristop",
+        "description": "Izjemno prijazno osebje poskrbi, da se v salonu vedno počutite dobrodošle."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Prijeten prostor",
+        "description": "Lepo urejen in topel ambient nudi popolno sprostitev med urejanjem pričeske."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Dostopne cene",
+        "description": "Visoka kakovost striženja in storitev po dostopnih in primernih cenah."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin v salonu",
+    "description": "Obiščite nas na Ulici Vilka Kledeta v Postojni ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Vilka Kledeta 5 a, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 422 734",
+        "href": "tel:031422734",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "To, Čr, Pe: 13.00–19.00, Sr: 8.00–16.00, So: 8.00–12.00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Vilka Kledeta 5 a, 6230 Postojna, Slovenia",
+    "rights": "© Frizerski Studio-R, Ružica Furlan, s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski Studio R",
+    "address": "Ulica Vilka Kledeta 5 a, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "031 422 734"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

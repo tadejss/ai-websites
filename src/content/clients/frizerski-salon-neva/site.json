@@ -1,0 +1,207 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sage-meadow",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-neva/hero.jpg",
+      "alt": "Svetel in topel ambient frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-neva/services.jpg",
+      "alt": "Strokovno striženje in barvanje las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski Salon",
+    "highlight": "Neva"
+  },
+  "metadata": {
+    "title": "Frizerski Salon Neva | Cerknica",
+    "description": "Strokovno striženje, barvanje las in osebni pristop v sproščenem ambientu v Cerknici in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Cerknica",
+    "title": "Strokovno striženje in osebni pristop",
+    "titleHighlight": "v sproščenem ambientu",
+    "description": "Zasnovano za vse, ki iščejo profesionalne frizerske storitve in posvečenost v Cerknici z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Tim"
+      },
+      {
+        "value": "Prijeten",
+        "label": "Ambient"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vaše lase",
+    "description": "Poskrbimo za vaš svež videz in zdravje las z individualnim pristopom v Cerknici in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah z upoštevanjem oblike obraza in strukture las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasična in moderni moški striženja ter urejanje videza v prijetnem okolju.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostne barve in tehnike barvanja za sijoč in obstojen videz vaših las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti, ki poudari vašo osebnost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi las",
+        "description": "Strokovni nasveti za domačo nego, da bodo vaši lasje ostali zdravi in sijoči.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač in profesionalen salon, kjer ste na prvem mestu",
+    "description": "Združujemo strokovnost, prijaznost in sproščeno izkušnjo za vsako stranko.",
+    "highlights": [
+      "Izjemno strokovno in prijazno osebje",
+      "Prijeten in prenovljen ambient",
+      "Individualno svetovanje in posvečenost stranki"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Izjemno strokovno osebje, ki se posveti vašim željam."
+      },
+      {
+        "stat": "Prenovljen",
+        "label": "Ambient",
+        "description": "Prijeten in urejen prostor za vašo popolno sprostitev."
+      },
+      {
+        "stat": "Osebni",
+        "label": "Pristop",
+        "description": "Individualno svetovanje in posvečenost vsaki stranki posebej."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za vprašanja glede storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kebetova ulica 5, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(01) 709 21 02",
+        "href": "tel:+38617092102",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Kebetova ulica 5, 1380 Cerknica, Slovenia",
+    "rights": "© 2025 Frizerski Salon Neva, Nevenka Jerman, s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski Salon Neva",
+    "address": "Kebetova ulica 5, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "(01) 709 21 02"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

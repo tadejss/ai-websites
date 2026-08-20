@@ -1,0 +1,192 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "copper-clay",
+    "fontPairingId": "lato-libre"
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Sabina"
+  },
+  "metadata": {
+    "title": "Frizerski studio Sabina | Frizerski salon Postojna",
+    "description": "Vrhunske frizerske storitve, barvanje, prameni, balayage ter žensko in moško striženje v Postojni z osebnim pristopom."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Postojna",
+    "title": "Vrhunske frizerske storitve in",
+    "titleHighlight": "osebni pristop",
+    "description": "Poskrbite za svoj urejen videz in zdravje vaših las v Postojni in okolici. Nudimo strokovno striženje, barvanje ter modne pričeske.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Odlične",
+        "label": "Ocene strank"
+      },
+      {
+        "value": "Postojna",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve za vas",
+    "description": "V našem studiu v Postojni poskrbimo za celovito nego vaših las, prilagojeno vašemu stilu in željam.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske in striženje, prilagojeno obliki vašega obraza in tipu las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Moderne in klasične moške pričeske za urejen ter svež videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki za sijoče, zdrave in dolgotrajno obstojne lase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prameni in balayage",
+        "description": "Naravni preliv barv, prameni in priljubljena tehnika balayage za večjo globino las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti, ko želite blesteti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel lokalni salon, kjer ste vi na prvem mestu",
+    "description": "Združujemo strokovnost, prijaznost in individualen pristop, kar potrjujejo naše zadovoljne stranke.",
+    "highlights": [
+      "Odlične ocene in zadovoljne stranke v Postojni",
+      "Strokovno in prijazno osebje z občutkom za detalje",
+      "Osebni pristop k vsaki stranki in vsakemu lasu"
+    ],
+    "benefits": [
+      {
+        "stat": "Zadovoljne",
+        "label": "Stranke",
+        "description": "Ponosni smo na odlične ocene in zaupanje, ki nam ga namenjajo naše stranke."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Prijazna in strokovna obravnava za najboljše rezultate vašega videza."
+      },
+      {
+        "stat": "Osebni",
+        "label": "Pristop",
+        "description": "Prisluhnemo vašim željam in vam svetujemo stil, ki vam resnično pristoji."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za vsa vprašanja glede naših frizerskih storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 781 929",
+        "href": "tel:031781929",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Tržaška cesta 3, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Tržaška cesta 3, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Sabina",
+    "address": "Tržaška cesta 3, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "031 781 929"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

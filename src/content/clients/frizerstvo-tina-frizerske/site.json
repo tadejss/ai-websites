@@ -1,0 +1,208 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "blush-champagne",
+    "fontPairingId": "lato-libre"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-tina-frizerske/hero.jpg",
+      "alt": "Sodoben in svetel frizerski salon v Cerknici"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-tina-frizerske/services.jpg",
+      "alt": "Strokovne frizerske storitve in urejanje pričesk"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Tina"
+  },
+  "metadata": {
+    "title": "Frizerstvo Tina d.o.o. | Frizerski salon Cerknica",
+    "description": "Vrhunske frizerske storitve v Cerknici z okolico. Nudimo žensko in moško striženje, barvanje las, pramen in sproščujoče pranje z masažnimi stoli."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Sodoben lokalni salon",
+    "title": "Vrhunske frizerske storitve in",
+    "titleHighlight": "urejen videz",
+    "description": "Poskrbite za svoj stil v Cerknici z okolico. Prijazno in strokovno osebje poskrbi za vaše lase ter sproščen oddih med nego.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Žensko in moško",
+        "label": "Striženje"
+      },
+      {
+        "value": "Masažni stoli",
+        "label": "Pri pranju las"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vsak okus",
+    "description": "V salonu v Cerknici nudimo celovito nego las za vso družino, z natančnim izpolnjevanjem vaših želja.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah z obliko, ki poudari vašo osebnost.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Urejen in sodoben moški strižni stil za vsakodnevni brezhiben videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Vrhunsko barvanje z obstojnimi in sijočimi odtenki.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pramena",
+        "description": "Dovršeno ustvarjanje pramenov za več dimenzij in živahnosti vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pranje las z masažnimi stoli",
+        "description": "Popolna sprostitev med pranjem las na udobnih masažnih stolih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupajte strokovnjakom za vaše lase",
+    "description": "Prizadevamo si za vrhunsko izkušnjo vsake stranke z individualnim pristopom.",
+    "highlights": [
+      "Vrhunsko barvanje in striženje",
+      "Sproščujoči masažni stoli pri pranju las",
+      "Prijazno in strokovno osebje",
+      "Natančno izpolnjevanje želja strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Vrhunsko",
+        "label": "Barvanje in striženje",
+        "description": "Uporaba kakovostnih pristopov za popoln videz vaših las."
+      },
+      {
+        "stat": "Sproščitev",
+        "label": "Masažni stoli",
+        "description": "Uživajte v udobju in masaži med pranjem las."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Prijazna ekipa prisluhne vašim željam in poskrbi za natančnost."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite naš salon v Cerknici ali rezervirajte svoj termin preko spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta 4. maja 50e, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 833 450",
+        "href": "tel:031833450",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 21:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja glede storitev.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta 4. maja 50e, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Tina",
+    "address": "Cesta 4. maja 50e, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "031 833 450"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

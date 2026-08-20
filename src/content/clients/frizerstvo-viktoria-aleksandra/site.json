@@ -1,0 +1,197 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "caramel-vanilla",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Viktoria Aleksandra"
+  },
+  "metadata": {
+    "title": "Frizerstvo Viktoria Aleksandra Možina s.p. | Frizerski salon Postojna",
+    "description": "Poskrbite za svojo popolno pričesko v prijetnem okolju. Nudimo žensko in moško striženje, barvanje las ter nego las v Postojni z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Postojna",
+    "title": "Poskrbite za svojo",
+    "titleHighlight": "popolno pričesko",
+    "description": "Urejen in domač frizerski salon v Postojni z okolico, ki ponuja kakovostne frizerske storitve za vse, ki cenijo strokovnost in prijazen pristop.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Individualni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Prijetno",
+        "label": "Okolje"
+      },
+      {
+        "value": "Postojna",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita nega in oblikovanje vaših las",
+    "description": "V našem salonu v Postojni poskrbimo za videz in zdravje vaših las z izbiro preverjenih storitev.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Striženje in oblikovanje ženskih pričesk po vaših željah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in moderno moško striženje za urejen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve, prameni ali celovita preobrazba odtenkov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Frizure za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilni tretmaji in nega za zdravje in lesk vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prijaznost, strokovnost in domače vzdušje",
+    "description": "Vsaki stranki se posvetimo individulano in poskrbimo, da se v našem salonu počutite sproščeno.",
+    "highlights": [
+      "Visoko zadovoljstvo strank",
+      "Individualni pristop k vsaki stranki",
+      "Strokovno svetovanje pri izbiri pričeske"
+    ],
+    "benefits": [
+      {
+        "stat": "Individualno",
+        "label": "Sodelovanje",
+        "description": "Prisluhnemo vašim željam in skupaj poiščemo najboljšo rešitev za vaše lase."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "In svetovanje",
+        "description": "Pomagamo vam izbrati pričesko, ki ustreza vašemu slogu in obliki obraza."
+      },
+      {
+        "stat": "Prijetno",
+        "label": "Okolje",
+        "description": "Sprostite se v urejenem in domačem frizerskem salonu v Postojni."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na svoj termin ali nas obiščite v salonu v Postojni.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Vilka Kledeta 5, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 222 913",
+        "href": "tel:040222913",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon-Tor: 8:00–15:00 · Sre-Pet: 13:00–19:00 · Sob: 8:00–12:00 · Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali želje glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, kakšne storitve si želite...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Vilka Kledeta 5, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Viktoria Aleksandra",
+    "address": "Ulica Vilka Kledeta 5, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "040 222 913"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

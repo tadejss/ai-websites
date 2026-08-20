@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerstvo Brigita, Brigita Tosic s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in osebni pristop v Postojni",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "031 510 382",
+  "email": "",
+  "address": "Rožna ulica 1a, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunska kvaliteta striženja in nege las",
+    "Prijazna in strokovna obravnava",
+    "Visoko ocenjen frizerski salon v lokalnem okolju",
+    "Zadovoljne stranke in zanesljiv pristop"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve za vso družino v Postojni in okolici",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

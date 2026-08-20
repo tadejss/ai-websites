@@ -1,0 +1,203 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "caramel-vanilla",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-katja/hero.jpg",
+      "alt": "Topel in svetel frizerski salon z udobnim ambientom"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-katja/services.jpg",
+      "alt": "Strokovno barvanje in oblikovanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Katica"
+  },
+  "metadata": {
+    "title": "Frizerski salon Katja Vadnal Katica s.p. | Postojna",
+    "description": "Vrhunske frizerske storitve z izjemno prijaznostjo v Postojni. Žensko in moško striženje, striženje otrok, barvanje las in oblikovanje pričesk."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Postojni",
+    "title": "Vrhunske frizerske storitve z",
+    "titleHighlight": "izjemno prijaznostjo",
+    "description": "Topel, prijazen in domač salon v Postojni z okolico, kjer poskrbimo za urejen videz celotne družine z osebnim pristopom.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Topel",
+        "label": "in domač pristop"
+      },
+      {
+        "value": "Vrhunska",
+        "label": "kakovost striženja"
+      },
+      {
+        "value": "Ugodne",
+        "label": "cene storitev"
+      },
+      {
+        "value": "Postojna",
+        "label": "z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve za vas",
+    "description": "V našem salonu v Postojni nudimo strokovno nego in striženje za vsak okus.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk, prilagojenih vaši obliki obraza in stilu, z uporabo kakovostnih izdelkov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasične in sodobne moške frizure ter urejanje za vsak dan.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Striženje otrok",
+        "description": "Potrpežljivo in prijazno striženje najmlajših v prijetnem domačem vzdušju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve, prameni ali popolna preobrazba z obstojnimi barvami.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Priprava pričesk za vsakdanje priložnosti ali posebne dogodke.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Salon, kjer se boste počutili dobrodošli",
+    "description": "Združujemo strokovnost, prijaznost in dostopnost za vse naše stranke.",
+    "highlights": [
+      "Izjemna prijaznost in domače vzdušje",
+      "Vrhunska kakovost striženja in nege",
+      "Ugodne cene za celotno družino",
+      "Prilagojen pristop za vsako stranko"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in toplina",
+        "description": "Osebje vas vedno sprejme z nasmehom in poskrbi za sproščeno vzdušje."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "in natančnost",
+        "description": "Skrbno oblikujemo pričeske, ki poudarijo vašo naravno lepoto."
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "za vsakogar",
+        "description": "Ugodne cene in visoko zadovoljstvo naših zvestih strank iz Postojne."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite v salonu v Postojni.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica IX. korpusa 1, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(05) 726 18 87",
+        "href": "tel:057261887",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica IX. korpusa 1, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Katica",
+    "address": "Ulica IX. korpusa 1, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "(05) 726 18 87"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-20",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Klara, Klara Lenarčič s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vaš zanesljiv in prijazen frizerski salon v Pivki",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "040 187 282",
+  "email": "",
+  "address": "Velika Pristava 22, 6257 Pivka, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 8:00 AM – 12:00 PM, 2:00 – 6:00 PM · Wednesday: 8:00 AM – 4:00 PM · Thursday: 8:00 AM – 4:00 PM · Friday: 8:00 AM – 12:00 PM, 2:00 – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prijazno in nasmejano osebje",
+    "Visoka natančnost in kakovost storitev",
+    "Prijeten ambient z dobro kavo",
+    "Dostopne in razumen cene"
+  ],
+  "targetCustomers": "Lokalni prebivalci vseh generacij, ki cenijo kakovostno storitev in prijetno vzdušje",
+  "serviceArea": "Pivka in okolica",
+  "yearsExperience": "",
+  "tone": "topel, prijazen in strokoven",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se na termin"
+}
