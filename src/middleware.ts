@@ -1,8 +1,25 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { ADMIN_COOKIE, getAdminSecret, isValidAdminToken } from "@/lib/auth";
+import { getSlugForHost } from "@/lib/custom-domains";
+
+/** Root paths that should resolve to the mapped client slug on a custom domain. */
+const CUSTOM_DOMAIN_ROOT_PATHS = new Set([
+  "/",
+  "/politika-zasebnosti",
+  "/piskotki",
+  "/splosni-pogoji",
+]);
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const customSlug = getSlugForHost(request.headers.get("host"));
+
+  if (customSlug && CUSTOM_DOMAIN_ROOT_PATHS.has(pathname)) {
+    const rewriteUrl = request.nextUrl.clone();
+    rewriteUrl.pathname =
+      pathname === "/" ? `/${customSlug}` : `/${customSlug}${pathname}`;
+    return NextResponse.rewrite(rewriteUrl);
+  }
 
   if (!pathname.startsWith("/admin")) {
     return NextResponse.next();
@@ -32,5 +49,11 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/admin/:path*"],
+  matcher: [
+    "/",
+    "/politika-zasebnosti",
+    "/piskotki",
+    "/splosni-pogoji",
+    "/admin/:path*",
+  ],
 };
