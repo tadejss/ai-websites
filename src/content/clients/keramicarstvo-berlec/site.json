@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-berlec/hero.jpg",
+      "alt": "Keramičar natančno polaga keramične ploščice v modernem prostoru"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-berlec/services.jpg",
+      "alt": "Kakovostno položene keramične ploščice v sodobno prenovljeni kopalnici"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Berlec"
+  },
+  "metadata": {
+    "title": "Keramičarstvo Berlec d.o.o. | Polaganje keramike in prenove",
+    "description": "Natančno in strokovno polaganje keramičnih ploščic, oblaganje stopnic ter prenove kopalnic v Kamniku z okolico in širši regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pridobite ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovno polaganje keramike",
+    "title": "Natančno in strokovno polaganje",
+    "titleHighlight": "keramičnih ploščic ter oblog",
+    "description": "Zanesljive storitve za lastnike hiš, stanovanj in investitorje v gradbene prenove v Kamniku z okolico in širši regiji.",
+    "primaryCta": "Pridobite ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Vgradnja površin"
+      },
+      {
+        "value": "Strokovna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Pristop"
+      },
+      {
+        "value": "Kamnik",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske rešitve za vaš dom",
+    "description": "Zagotavljamo vrhunsko izvedbo za vse vrste keramičarskih del in gradbenih prenov v regiji.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Strokovno polaganje vseh vrst keramičnih ploščic na različne površine z visokim poudarkom na natančnosti.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Oblaganje stopnic",
+        "description": "Natančna obdelava in oblaganje notranjih ter zunanjih stopnic s keramiko ali drugimi materiali.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih del do končne postavitve keramičnih oblog.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zunanje tlakovanje",
+        "description": "Kakovostna zunanja tlakovanja ter oblaganje teras, balkonov in drugih zunanjih površin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Polaganje kamna",
+        "description": "Estetsko in natančno polaganje kamna za unikatne videze vaših prostorov in okolice.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost kakovosti in natančnosti",
+    "description": "Z našim strokovnim znanjem in zanesljivostjo presegamo običajne standarde na trgu.",
+    "highlights": [
+      "Izjemno natančna vgradnja vseh vrst površin",
+      "Zanesljiva in strokovna izvedba del",
+      "Kakovostne storitve z dolgoletnimi izkušnjami"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Izjemna vgradnja",
+        "description": "Vsak projekt izvedemo z največjo mero natančnosti na vseh vrstah površin."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Strokovna izvedba",
+        "description": "Zanesljivo in dosledno držanje dogovorov ter strokovno opravljeno delo."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Preverjene storitve",
+        "description": "Storitve, prilagojene zahtevam lastnikov hiš, stanovanj in investitorjev."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pridobite ponudbo za vaš projekt",
+    "description": "Kontaktirajte nas za svetovanje in ponudbo za polaganje keramike ter prenovah v Kamniku in okolici.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 343 047",
+        "href": "tel:041343047",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Sela pri Kamniku 9a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
+      "submitLabel": "Pridobite ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Sela pri Kamniku 9a, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Berlec",
+    "address": "Sela pri Kamniku 9a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 343 047"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "geist-geist"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-sergej-mikolic/hero.jpg",
+      "alt": "Keramičar polaga keramične ploščice v sodobni kopalnici"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-sergej-mikolic/services.jpg",
+      "alt": "Natančno položene keramične ploščice in kamniti detajli"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Sergej Mikolič s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Sergej Mikolič s.p. | Polaganje keramike Gorenjska",
+    "description": "Kakovostno in natančno polaganje keramike, adaptacije kopalnic na ključ ter hidroizolacije v Križah z okolico in na Gorenjskem."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljivo keramičarstvo",
+    "title": "Kakovostno in natančno polaganje keramike za",
+    "titleHighlight": "vaš dom",
+    "description": "Strokovne keramičarske storitve za lastnike stanovanj, hiš in poslovnih objektov, ki prenavljajo ali gradijo v Križah z okolico in na Gorenjskem.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Vrhunska izvedba"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Dogovorjeni roki"
+      },
+      {
+        "value": "Svetovanje",
+        "label": "Pri izbiri materialov"
+      },
+      {
+        "value": "Gorenjska",
+        "label": "Območje delovanja"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve na področju keramike",
+    "description": "Specializirani smo za vse vrste keramičarskih del za stranke na Gorenjskem, ki cenijo natančnost in strokovnost.",
+    "items": [
+      {
+        "title": "Polaganje stenske in talne keramike",
+        "description": "Natančno polaganje vseh vrst stenskih in talnih keramičnih ploščic v stanovanjskih ter poslovnih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacija kopalnic na ključ",
+        "description": "Celovita prenova kopalnic od začetnih del do končne montaže in polaganj ploščic.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje kamna in mozaikov",
+        "description": "Estetsko in natančno polaganje okrasnega kamna ter zahtevnejših mozaikov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Hidroizolacija kopalnic in teras",
+        "description": "Kakovostna zaščita pred vlago za dolgo življenjsko dobo vaših kopalnic, balkonov in teras.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanje polaganje ploščic",
+        "description": "Odporne in trajnostne zunanje talne obloge za terase, balkone in stopnice.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše keramičarske projekte",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke zagotavljamo kakovost, ki prepriča.",
+    "highlights": [
+      "Vrhunska natančnost in kakovost izvedbe",
+      "Dosledno držanje dogovorjenih rokov",
+      "Strokovno svetovanje pri izbiri materialov",
+      "Prijazen in domač pristop do vsake stranke"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Vrhunska izvedba",
+        "description": "Vsak projekt izpeljemo z maksimalno pozornostjo do detajlov in estetskega videza."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Držanje rokov",
+        "description": "Spoštujemo dogovorjene časovne okvirje in se držimo vnaprej določenega načrta."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Strokovna pomoč",
+        "description": "Pomagamo vam pri izbiri ustreznih materialov in rešitev za vaš prostor."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Sebenje 104, 4294 Križe, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 513 660",
+        "href": "tel:041513660",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Petek: 7:00 - 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Sebenje 104, 4294 Križe, Slovenia",
+    "rights": "© 2025 Keramičarstvo Sergej Mikolič s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Sergej Mikolič s.p.",
+    "address": "Sebenje 104, 4294 Križe, Slovenia",
+    "email": "",
+    "phone": "041 513 660"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

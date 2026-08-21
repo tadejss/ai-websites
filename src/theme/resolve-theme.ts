@@ -1,5 +1,8 @@
 import type { CSSProperties } from "react";
-import type { AppearanceId } from "@/appearances/types";
+import {
+  isTradeAppearance,
+  type AppearanceId,
+} from "@/appearances/types";
 import { getFontPairing } from "./fonts/pairings";
 import { getPalette } from "./palettes";
 import type { SiteTheme } from "./types";
@@ -20,9 +23,19 @@ export function resolveThemeCssVars(
     return undefined;
   }
 
-  const expectedMode = appearance === "beauty" ? "light" : "dark";
+  if (appearance === "beauty" && palette.mode !== "light") {
+    return undefined;
+  }
 
-  if (palette.mode !== expectedMode || !pairing.modes.includes(expectedMode)) {
+  if (
+    !isTradeAppearance(appearance) &&
+    appearance !== "beauty" &&
+    palette.mode !== "dark"
+  ) {
+    return undefined;
+  }
+
+  if (!pairing.modes.includes(palette.mode)) {
     return undefined;
   }
 

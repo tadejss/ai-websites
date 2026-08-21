@@ -1,0 +1,217 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "forest-mist",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-prevec-simon/hero.jpg",
+      "alt": "Keramičar polaga keramične ploščice v sodobno urejeni kopalnici"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-prevec-simon/services.jpg",
+      "alt": "Natančno pološčene keramične ploščice v prenovljenem prostoru"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Prevec"
+  },
+  "metadata": {
+    "title": "Keramičarstvo Prevec | Polaganje keramike in adaptacije",
+    "description": "Kakovostno polaganje stenske in talne keramike, adaptacije kopalnic ter gradbena dela v Cerknici z okolico in na Notranjskem."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljivo keramičarstvo",
+    "title": "Kakovostno polaganje keramike in strokovna izvedba",
+    "titleHighlight": "za vaš dom",
+    "description": "Strokovne keramičarske storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki prenavljajo ali gradijo v Cerknici z okolico in na regiji Notranjska.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba dela"
+      },
+      {
+        "value": "Cerknica",
+        "label": "In širša okolica"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokoven",
+        "label": "In zanesljiv partner"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za polaganje keramike in prenovo",
+    "description": "Zanesljive in natančne storitve s področja polaganj keramičnih ploščic ter priprav na Notranjskem.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno polaganje stenskih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Strokovna izvedba talnih keramičnih oblog za dolgotrajno obstojnost in lep videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacija kopalnic",
+        "description": "Celovita prenova kopalnic od začetnih priprav do končnega polaganj keramike.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje na balkonih in terasah",
+        "description": "Odporna in strokovna vgradnja ploščic na zunanjih površinah, izpostavljenih vplivom.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava podlage in izravnava tal",
+        "description": "Kakovostna priprava in izravnava površin pred samim polaganjem keramičnih oblog.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Združujemo strokovnost, natančnost in posluh za vaše želje pri vsakem projektu prenove ali gradnje.",
+    "highlights": [
+      "Visoka strokovnost in natančnost pri delu",
+      "Zanesljiva in prilagodljiva izvedba po dogovoru",
+      "Odlična izkušnja za lastnike nepremičnin"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "In natančnost",
+        "description": "Vsakemu projektu se posvetimo z maksimalno natančnostjo in posluhom za detajle."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "In prilagodljivost",
+        "description": "Dogovorjene roke spoštujemo ter se prilagajamo vašim potrebam na terenu."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "Delovanje",
+        "description": "Delujemo v Cerknici z okolico in širši regiji Notranjska."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pogovorimo se o vašem projektu",
+    "description": "Pokličite nas ali nam pošljite povpraševanje za polaganje keramike in adaptacije.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 221 874",
+        "href": "tel:040221874",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Notranjska cesta 40, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–18:00, Sob: 8:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe glede prenove...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Notranjska cesta 40, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Prevec",
+    "address": "Notranjska cesta 40, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "040 221 874"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

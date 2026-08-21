@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
 :root,
-[data-appearance="default"] {
+[data-appearance="default"],
+[data-appearance="elektro"],
+[data-appearance="construction"],
+[data-appearance="cleaning"],
+[data-appearance="health"] {
   --background: #0a0e14;
   --foreground: #f4f4f5;
   --muted: #94a3b8;
@@ -57,11 +61,19 @@
   font-optical-sizing: auto;
 }
 
-[data-appearance="default"] {
+[data-appearance="default"],
+[data-appearance="elektro"],
+[data-appearance="construction"],
+[data-appearance="cleaning"],
+[data-appearance="health"] {
   font-family: var(--font-body), system-ui, sans-serif;
 }
 
-[data-appearance="default"] .font-display {
+[data-appearance="default"] .font-display,
+[data-appearance="elektro"] .font-display,
+[data-appearance="construction"] .font-display,
+[data-appearance="cleaning"] .font-display,
+[data-appearance="health"] .font-display {
   font-family: var(--font-display), system-ui, sans-serif;
 }
 

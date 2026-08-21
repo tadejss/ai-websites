@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "steel-blue",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-ljubo-ljubomir/hero.jpg",
+      "alt": "Strokoven keramičar pri polaganju keramike"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-ljubo-ljubomir/services.jpg",
+      "alt": "Natančno položene keramične ploščice v kopalnici"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Ljubo"
+  },
+  "metadata": {
+    "title": "Keramičarstvo Ljubo | Polaganje keramike in adaptacije",
+    "description": "Strokovno in natančno polaganje keramike, adaptacije kopalnic ter hidroizolacija v Postojni z okolico. Pokličite za ponudbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljivo keramičarstvo v Postojni",
+    "title": "Strokovno in natančno",
+    "titleHighlight": "polaganje keramike",
+    "description": "Strokovno in natančno polaganje keramike za vaš dom ali poslovni prostor. Celovite storitve od priprave do zaključnih del za lastnike stanovanj, hiš in investitorje.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Kakovost izvedbe"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Držanje rokov"
+      },
+      {
+        "value": "Postojna",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Celovito",
+        "label": "Od priprave do dela"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kvalitetne keramičarske storitve in zaključna dela",
+    "description": "Poskrbimo za brezhibno izvedbo vseh vrst keramičarskih del v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Polaganje stenske in talne keramike",
+        "description": "Natančno polaganje vseh vrst stenskih in talnih keramičnih ploščic v vaših prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacija kopalnic",
+        "description": "Celovite prenove kopalnic od odstranitve starih elementov do končne postavitve.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblaganje stopnic in balkonov",
+        "description": "Trajno in estetsko oblaganje zunanjih in notranjih površin, kot so stopnice ter balkoni.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje velikih formatov ploščic",
+        "description": "Specializirano polaganje sodobnih keramičnih ploščic večjih formatov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Hidroizolacija površin",
+        "description": "Kakovostna zaščita pred vlago za dolgo obstojnost kopalnic, teras in drugih prostorov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaš dom",
+    "description": "Z našim strokovnim in zanesljivim pristopom poskrbimo, da so dela opravljena kakovostno in v dogovorjenih rokovih.",
+    "highlights": [
+      "Visoka natančnost in kakovost izvedbe",
+      "Zanesljivost in držanje dogovorjenih rokov",
+      "Celovite storitve od priprave do zaključnih del"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Visoka kakovost",
+        "description": "Vsak projekt izpeljemo z maksimalno pozornostjo do detajlov."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Dogovorjeni roki",
+        "description": "Držimo se dogovorov in spoštujemo čas naših strank."
+      },
+      {
+        "stat": "Celovitost",
+        "label": "Od A do Ž",
+        "description": "Nudimo celovite storitve od priprave podlage do zaključnih del."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pokličite nas za ponudbo",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Kontaktirajte nas preko telefona.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 715 240",
+        "href": "tel:031715240",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica prekomorskih brigad 8, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ulica prekomorskih brigad 8, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Ljubo",
+    "address": "Ulica prekomorskih brigad 8, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "031 715 240"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

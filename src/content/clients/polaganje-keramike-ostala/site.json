@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "copper-clay",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/polaganje-keramike-ostala/hero.jpg",
+      "alt": "Polaganje keramike in gradbena dela v Postojni"
+    },
+    "services": {
+      "src": "/clients/polaganje-keramike-ostala/services.jpg",
+      "alt": "Prenova kopalnice in polaganje ploščic"
+    }
+  },
+  "brand": {
+    "prefix": "Keramika in gradbeništvo",
+    "highlight": "Husein Murić s.p."
+  },
+  "metadata": {
+    "title": "Polaganje keramike in gradbena dela Husein Murić s.p.",
+    "description": "Kakovostno polaganje keramike, prenove kopalnic in zanesljiva gradbena dela v Postojni z okolico. Pokličite nas za strokovno izvedbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Postojna z okolico",
+    "title": "Kakovostno polaganje keramike in",
+    "titleHighlight": "zanesljiva gradbena dela",
+    "description": "Celovite rešitve za prenove kopalnic, polaganje ploščic in zidarska dela za lastnike stanovanj, hiš in poslovnih prostorov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Celovite",
+        "label": "Rešitve"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Izvajalec"
+      },
+      {
+        "value": "Lokalni",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Strokovne rešitve za vaš dom in poslovni prostor",
+    "description": "Nudimo kakovostne storitve s področja polaganje keramike, prenov in gradbenih del na območju Postojne z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje keramičnih ploščic vseh velikosti in vrst za notanje in zunanje površine.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Gradbena dela",
+        "description": "Zanesljiva izvedba splošnih gradbenih del in prilagoditev vaših prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih rušitvenih del do končne montaže keramike.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje ploščic",
+        "description": "Strokovno polaganje stenskih in talnih ploščic za kuhinje, kopalnice in terase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Kakovostna zidarska dela za prenove in manjše gradbene posege.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene in keramičarske projekte",
+    "description": "Z osredotočenostjo na kakovost in natančnost poskrbimo, da so vaši projekti izpeljani strokovno in zanesljivo.",
+    "highlights": [
+      "Natančna izvedba keramičarskih del",
+      "Celovite rešitve za gradbena dela",
+      "Zanesljiv in izkušen lokalni izvajalec"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "in kakovost",
+        "description": "Vsakemu projektu se posvetimo z maksimalno skrbnostjo in natančnostjo."
+      },
+      {
+        "stat": "Celovito",
+        "label": "storitev",
+        "description": "Nudimo vse od priprave do končne izvedbe keramičarskih in gradbenih del."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "zaupanje",
+        "description": "Zanesljiv lokalni izvajalec za stranke v Postojni in okolici."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete polaganje keramike ali gradbena dela? Pokličite nas za dogovor o vašem projektu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 299 231",
+        "href": "tel:031299231",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Stara vas 15, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Stara vas 15, 6230 Postojna, Slovenia",
+    "rights": "Polaganje keramike in ostala gradbena dela, Husein Murić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramika in gradbeništvo Husein Murić s.p.",
+    "address": "Stara vas 15, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "031 299 231"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

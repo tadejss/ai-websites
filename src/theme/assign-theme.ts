@@ -1,13 +1,28 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import type { AppearanceId } from "@/appearances/types";
+import {
+  isTradeAppearance,
+  type AppearanceId,
+} from "@/appearances/types";
 import { getFontPairingsForMode } from "./fonts/pairings";
 import { getPalettesForMode } from "./palettes";
-import type { SiteTheme, ThemeMode } from "./types";
+import type { Palette, SiteTheme, ThemeMode } from "./types";
 
-function appearanceToMode(appearance: AppearanceId): ThemeMode {
-  return appearance === "beauty" ? "light" : "dark";
-}
+/** Pink / soft-rose palettes excluded from trade light assignment. */
+const TRADE_EXCLUDED_LIGHT_PALETTE_IDS = new Set([
+  "dusty-rose",
+  "lavender-cream",
+  "peach-bloom",
+  "blush-champagne",
+  "plum-dusk",
+  "wine-velvet",
+]);
+
+/** Pink-accent / brand-only palettes excluded from trade dark assignment. */
+const TRADE_EXCLUDED_DARK_PALETTE_IDS = new Set([
+  "burgundy-glow",
+  "zbrendiraj",
+]);
 
 function hashString(value: string): number {
   let hash = 5381;
@@ -17,6 +32,42 @@ function hashString(value: string): number {
   }
 
   return Math.abs(hash);
+}
+
+export function appearanceToMode(
+  appearance: AppearanceId,
+  slug = "",
+): ThemeMode {
+  if (appearance === "beauty") {
+    return "light";
+  }
+
+  if (isTradeAppearance(appearance)) {
+    return hashString(`${slug}:mode`) % 2 === 0 ? "light" : "dark";
+  }
+
+  return "dark";
+}
+
+function getPalettesForAppearance(
+  appearance: AppearanceId,
+  mode: ThemeMode,
+): Palette[] {
+  const palettes = getPalettesForMode(mode);
+
+  if (!isTradeAppearance(appearance)) {
+    return palettes;
+  }
+
+  if (mode === "light") {
+    return palettes.filter(
+      (palette) => !TRADE_EXCLUDED_LIGHT_PALETTE_IDS.has(palette.id),
+    );
+  }
+
+  return palettes.filter(
+    (palette) => !TRADE_EXCLUDED_DARK_PALETTE_IDS.has(palette.id),
+  );
 }
 
 function themeKey(theme: SiteTheme): string {
@@ -68,8 +119,8 @@ export function assignTheme(
   appearance: AppearanceId,
   usedPairs: Set<string> = getUsedThemePairs(),
 ): SiteTheme {
-  const mode = appearanceToMode(appearance);
-  const palettes = getPalettesForMode(mode);
+  const mode = appearanceToMode(appearance, slug);
+  const palettes = getPalettesForAppearance(appearance, mode);
   const pairings = getFontPairingsForMode(mode);
 
   if (palettes.length === 0 || pairings.length === 0) {

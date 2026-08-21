@@ -68,20 +68,17 @@ export function assignBeautyLayout(slug: string): SiteLayout {
 
 /** Resolve layout with classic fallback for sites without an assigned profile. */
 export function resolveBeautyLayout(layout?: SiteLayout): SiteLayout {
-  if (!layout?.profileId) {
-    return {
-      profileId: "classic",
-      ...PROFILE_LAYOUTS.classic,
-    };
-  }
-
-  const defaults = PROFILE_LAYOUTS[layout.profileId] ?? PROFILE_LAYOUTS.classic;
+  const profileId =
+    layout?.profileId && layout.profileId in PROFILE_LAYOUTS
+      ? (layout.profileId as BeautyLayoutProfileId)
+      : "classic";
+  const defaults = PROFILE_LAYOUTS[profileId];
 
   return {
-    profileId: layout.profileId,
-    heroImageSide: layout.heroImageSide ?? defaults.heroImageSide,
-    servicesImageSide: layout.servicesImageSide ?? defaults.servicesImageSide,
-    heroRatio: layout.heroRatio ?? defaults.heroRatio,
-    benefitsMode: layout.benefitsMode ?? defaults.benefitsMode,
+    profileId,
+    heroImageSide: layout?.heroImageSide ?? defaults.heroImageSide,
+    servicesImageSide: layout?.servicesImageSide ?? defaults.servicesImageSide,
+    heroRatio: layout?.heroRatio ?? defaults.heroRatio,
+    benefitsMode: layout?.benefitsMode ?? defaults.benefitsMode,
   };
 }

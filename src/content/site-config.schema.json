@@ -18,7 +18,15 @@
   "properties": {
     "appearance": {
       "type": "string",
-      "enum": ["default", "beauty", "zbrendiraj"],
+      "enum": [
+        "default",
+        "beauty",
+        "zbrendiraj",
+        "elektro",
+        "construction",
+        "cleaning",
+        "health"
+      ],
       "description": "Visual appearance category controlling layout and theme tokens."
     },
     "theme": {
@@ -39,7 +47,7 @@
     },
     "layout": {
       "type": "object",
-      "description": "Optional beauty-only layout profile (column order, image presence, ratios).",
+      "description": "Optional layout profile (column order, image presence, ratios) for beauty and trade appearances.",
       "additionalProperties": false,
       "required": ["profileId"],
       "properties": {
@@ -50,7 +58,10 @@
             "media-left",
             "copy-heavy",
             "services-first-visual",
-            "airy"
+            "airy",
+            "stats-forward",
+            "image-led",
+            "calm-visual"
           ]
         },
         "heroImageSide": {
@@ -68,6 +79,18 @@
         "benefitsMode": {
           "type": "string",
           "enum": ["default", "visual"]
+        },
+        "heroAtmosphere": {
+          "type": "string",
+          "enum": ["grid", "wash", "plain"]
+        },
+        "sectionRule": {
+          "type": "string",
+          "enum": ["line", "none"]
+        },
+        "cardStyle": {
+          "type": "string",
+          "enum": ["bordered", "soft"]
         }
       }
     },

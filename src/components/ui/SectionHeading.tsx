@@ -2,7 +2,7 @@ type Props = {
   eyebrow: string;
   title: string;
   description?: string;
-  variant?: "default" | "beauty";
+  variant?: "default" | "beauty" | "trade";
   align?: "center" | "left";
 };
 
@@ -33,6 +33,28 @@ export function SectionHeading({
           <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
             {description}
           </p>
+        ) : null}
+      </div>
+    );
+  }
+
+  if (variant === "trade") {
+    return (
+      <div
+        className={
+          align === "center"
+            ? "mx-auto max-w-2xl text-center"
+            : "max-w-xl text-left"
+        }
+      >
+        <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+          {eyebrow}
+        </p>
+        <h2 className="font-display mt-3 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
+          {title}
+        </h2>
+        {description ? (
+          <p className="mt-4 text-lg leading-relaxed text-muted">{description}</p>
         ) : null}
       </div>
     );

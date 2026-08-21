@@ -1,0 +1,207 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvodekorativni-kamen-robert/hero.jpg",
+      "alt": "Natančno polaganje keramičnih ploščic v modernem interierju"
+    },
+    "services": {
+      "src": "/clients/keramicarstvodekorativni-kamen-robert/services.jpg",
+      "alt": "Montaža dekorativnega kamna na steno v sodobnem prostoru"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Robert Jujič s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Robert Jujič s.p. | Polaganje keramike in dekorativnega kamna Ljubljana",
+    "description": "Vrhunske keramičarske storitve in polaganje dekorativnega kamna v Ljubljani z okolico. Zanesljivost, natančnost in strokovno svetovanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Strokovne keramičarske storitve",
+    "title": "Vrhunsko polaganje keramike in",
+    "titleHighlight": "dekorativnega kamna",
+    "description": "Zanesljive in natančne storitve za lastnike stanovanj, hiš in investitorje v Ljubljani z okolico.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Vrhunska izvedba"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Spoštovanje rokov"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Svetovanje",
+        "label": "Pri izbiri materialov"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kakovostna izvedba vseh vrst keramičarskih del",
+    "description": "Ponujamo celovite storitve od priprave in polaganje keramike ter dekorativnega kamna do strokovnega svetovanja v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje keramičnih ploščic vseh velikosti in formatov za vaše prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montaža dekorativnega kamna",
+        "description": "Estetska namestitev dekorativnega kamna za edinstven videz notranjih in zunanjih površin.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic z zanesljivo izvedbo vseh keramičarskih del.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje ploščic na terasah",
+        "description": "Kakovostna zunanja keramika in polaganje ploščic na terasah in balkonih, odporna na vremenske vplive.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri izbiri materialov",
+        "description": "Strokovna pomoč in svetovanje pri izbiri najustreznejših materialov za vaš projekt.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Z združevanjem natančnosti, hitrega odziva in poštenega pristopa poskrbimo za brezhiben končni rezultat.",
+    "highlights": [
+      "Izjemna natančnost in kakovost izvedbe",
+      "Zanesljivost ter strogo spoštovanje dogovorov in rokov",
+      "Poštene in pregledne cene brez skritih stroškov"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Kakovost izvedbe",
+        "description": "Vsak projekt izpeljemo z največjo skrbnostjo za popoln končni videz."
+      },
+      {
+        "stat": "Odzivnost",
+        "label": "Odlična komunikacija",
+        "description": "Zagotavljamo hiter odziv in jasen dogovor v vseh fazah sodelovanja."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Spoštovanje rokov",
+        "description": "Držimo se dogovorjenih časovnih okvirjev in obljub."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 437 068",
+        "href": "tel:041437068",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Brilejeva ulica, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 8:00 – 19:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Brilejeva ulica, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Robert Jujič s.p.",
+    "address": "Brilejeva ulica, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 437 068"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

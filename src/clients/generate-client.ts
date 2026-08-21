@@ -5,6 +5,8 @@ import { generateSiteConfig } from "@/ai/generate-site-config";
 import { validateRawBusinessData } from "@/ai/validate-raw-business-data";
 import { appearanceForIndustry } from "@/appearances/industry-appearance";
 import { assignBeautyLayout } from "@/appearances/beauty/assign-layout";
+import { assignTradeLayout } from "@/appearances/trade/assign-layout";
+import { isTradeAppearance } from "@/appearances/types";
 import { assignTheme } from "@/theme/assign-theme";
 import { generateSiteImages } from "@/images/generate-site-images";
 import type { BusinessInput } from "@/ai/types";
@@ -47,11 +49,17 @@ export async function generateClient(
   const businessInput = await generateBusinessInput(rawBusiness);
   const generatedConfig = await generateSiteConfig(businessInput);
   const appearance = appearanceForIndustry(businessInput.industry ?? "");
+  const layout =
+    appearance === "beauty"
+      ? assignBeautyLayout(slug)
+      : isTradeAppearance(appearance)
+        ? assignTradeLayout(appearance, slug)
+        : undefined;
   const siteConfig = {
     ...generatedConfig,
     appearance,
     theme: assignTheme(slug, appearance),
-    ...(appearance === "beauty" ? { layout: assignBeautyLayout(slug) } : {}),
+    ...(layout ? { layout } : {}),
   };
   const images = await generateSiteImages(slug, businessInput, siteConfig as SiteConfig);
   const finalConfig = images ? { ...siteConfig, images } : siteConfig;

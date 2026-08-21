@@ -89,7 +89,17 @@ const contactFormSchema = z.object({
   submitLabel: z.string(),
 });
 
-const appearanceSchema = z.enum(["default", "beauty", "zbrendiraj"]).optional();
+const appearanceSchema = z
+  .enum([
+    "default",
+    "beauty",
+    "zbrendiraj",
+    "elektro",
+    "construction",
+    "cleaning",
+    "health",
+  ])
+  .optional();
 
 const layoutSchema = z
   .object({
@@ -99,11 +109,17 @@ const layoutSchema = z
       "copy-heavy",
       "services-first-visual",
       "airy",
+      "stats-forward",
+      "image-led",
+      "calm-visual",
     ]),
     heroImageSide: z.enum(["left", "right", "none"]).optional(),
     servicesImageSide: z.enum(["left", "right", "none"]).optional(),
     heroRatio: z.enum(["5050", "6040", "full-copy"]).optional(),
     benefitsMode: z.enum(["default", "visual"]).optional(),
+    heroAtmosphere: z.enum(["grid", "wash", "plain"]).optional(),
+    sectionRule: z.enum(["line", "none"]).optional(),
+    cardStyle: z.enum(["bordered", "soft"]).optional(),
   })
   .optional();
 

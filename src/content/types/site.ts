@@ -83,7 +83,14 @@ export type ContactItem = {
   icon: IconName;
 };
 
-export type AppearanceId = "default" | "beauty" | "zbrendiraj";
+export type AppearanceId =
+  | "default"
+  | "beauty"
+  | "zbrendiraj"
+  | "elektro"
+  | "construction"
+  | "cleaning"
+  | "health";
 
 export type BeautyLayoutProfileId =
   | "classic"
@@ -92,19 +99,36 @@ export type BeautyLayoutProfileId =
   | "services-first-visual"
   | "airy";
 
+export type TradeLayoutProfileId =
+  | BeautyLayoutProfileId
+  | "stats-forward"
+  | "image-led"
+  | "calm-visual";
+
+export type LayoutProfileId = BeautyLayoutProfileId | TradeLayoutProfileId;
+
 export type LayoutImageSide = "left" | "right" | "none";
 
 export type LayoutHeroRatio = "5050" | "6040" | "full-copy";
 
 export type LayoutBenefitsMode = "default" | "visual";
 
-/** Optional beauty-only layout profile assigned at generation time. */
+export type LayoutHeroAtmosphere = "grid" | "wash" | "plain";
+
+export type LayoutSectionRule = "line" | "none";
+
+export type LayoutCardStyle = "bordered" | "soft";
+
+/** Optional layout profile assigned at generation time (beauty + trade). */
 export type SiteLayout = {
-  profileId: BeautyLayoutProfileId;
+  profileId: LayoutProfileId;
   heroImageSide?: LayoutImageSide;
   servicesImageSide?: LayoutImageSide;
   heroRatio?: LayoutHeroRatio;
   benefitsMode?: LayoutBenefitsMode;
+  heroAtmosphere?: LayoutHeroAtmosphere;
+  sectionRule?: LayoutSectionRule;
+  cardStyle?: LayoutCardStyle;
 };
 
 export type SiteTheme = {

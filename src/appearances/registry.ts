@@ -1,5 +1,6 @@
 import { BeautySitePage } from "./beauty/BeautySitePage";
 import { DefaultSitePage } from "./default/DefaultSitePage";
+import { TradeSitePage } from "./trade/TradeSitePage";
 import { ZbrendirajSitePage } from "./zbrendiraj/ZbrendirajSitePage";
 import type { AppearanceDefinition } from "./types";
 
@@ -16,4 +17,20 @@ export const appearanceRegistry = {
     id: "zbrendiraj",
     Page: ZbrendirajSitePage,
   },
-} satisfies Record<string, AppearanceDefinition>;
+  elektro: {
+    id: "elektro",
+    Page: TradeSitePage,
+  },
+  construction: {
+    id: "construction",
+    Page: TradeSitePage,
+  },
+  cleaning: {
+    id: "cleaning",
+    Page: TradeSitePage,
+  },
+  health: {
+    id: "health",
+    Page: TradeSitePage,
+  },
+} satisfies Record<import("./types").AppearanceId, AppearanceDefinition>;

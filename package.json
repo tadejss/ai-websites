@@ -31,6 +31,8 @@
     "regenerate-images": "tsx scripts/regenerate-images.ts",
     "backfill-privacy": "tsx scripts/backfill-privacy.ts",
     "backfill-beauty-layout": "tsx scripts/backfill-beauty-layout.ts",
+    "backfill-trade-layout": "tsx scripts/backfill-trade-layout.ts",
+    "backfill-trade-visual": "tsx scripts/backfill-trade-visual.ts",
     "test-privacy": "tsx scripts/test-privacy.ts",
     "send-outreach": "tsx scripts/send-outreach.ts",
     "outreach-summary": "tsx scripts/outreach-summary.ts",

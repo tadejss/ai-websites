@@ -1,0 +1,217 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-ani-anel/hero.jpg",
+      "alt": "Strokoven keramičar pri polaganju keramičnih ploščic v modernem prostoru"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-ani-anel/services.jpg",
+      "alt": "Natančno položene keramične ploščice v prenovljeni kopalnici"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Ani Anel Ramić s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Ani Anel Ramić s.p. | Polaganje keramike Ajdovščina",
+    "description": "Kakovostno polaganje keramike, prenova kopalnic in keramičarska dela v Ajdovščini s širšo okolico. Zanesljiva in strokovna izvedba."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive keramičarske storitve",
+    "title": "Kakovostno polaganje keramike",
+    "titleHighlight": "v Ajdovščini",
+    "description": "Strokovne keramičarske storitve za lastnike stanovanj, hiš in investitorje na območju Ajdovščine s širšo okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Delo"
+      },
+      {
+        "value": "Ajdovščina",
+        "label": "In okolica"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Materiali"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske rešitve",
+    "description": "Ponujamo vam kakovostno polaganje stenske in talne keramike, prenovo kopalnic ter ureditev teras na območju Ajdovščine.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno in estetsko polaganje stenskih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Trpežno in ravno polaganje talnih ploščic za dolgotrajno uporabo in lep videz vaših prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenova kopalnic",
+        "description": "Celovita prenova kopalnic z zanesljivo izvedbo vseh keramičarskih del.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje ploščic na terasah",
+        "description": "Kakovostno polaganje keramike na zunanjih površinah, prilagojeno vremenskim vplivom.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Keramičarska dela",
+        "description": "Raznovrstna zaključna keramičarska dela po vaših željah in merah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaša keramičarska dela",
+    "description": "Zavedamo se pomena kakovosti in natančnosti pri vsakem projektu polaganje keramike.",
+    "highlights": [
+      "Odlično razmerje med ceno in kakovostjo",
+      "Zanesljiva in strokovna izvedba",
+      "Visoko ocenjene storitve s strani strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Cena",
+        "label": "Razmerje",
+        "description": "Zagotavljamo odlično razmerje med ceno in kakovostjo opravljenih storitev."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Izvedba",
+        "description": "Zanesljiva in strokovna izvedba keramičarskih del od začetka do konca."
+      },
+      {
+        "stat": "Zadovoljstvo",
+        "label": "Strank",
+        "description": "Naše storitve so visoko ocenjene s strani naših naročnikov."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete keramičarja? Pokličite nas ali nam pošljite sporočilo in z veseljem vam bomo pomagali.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 858 692",
+        "href": "tel:051858692",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Bevkova ulica 4, 5270 Ajdovščina, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Sob: 7:00 - 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe glede keramičarskih del",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Bevkova ulica 4, 5270 Ajdovščina, Slovenia",
+    "rights": "© 2025 Keramičarstvo Ani Anel Ramić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Ani Anel Ramić s.p.",
+    "address": "Bevkova ulica 4, 5270 Ajdovščina, Slovenia",
+    "email": "",
+    "phone": "051 858 692"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

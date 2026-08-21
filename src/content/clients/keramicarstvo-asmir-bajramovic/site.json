@@ -1,0 +1,218 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-asmir-bajramovic/hero.jpg",
+      "alt": "Polaganje keramike in prenova kopalnice v Postojni"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-asmir-bajramovic/services.jpg",
+      "alt": "Natančno polaganje keramičnih ploščic in zaključna dela"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Asmir Bajramović s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Asmir Bajramović s.p. | Polaganje keramike in prenova kopalnic",
+    "description": "Vrhunsko polaganje keramike, prenova kopalnic in gradbena dela v Postojni z okolico. Zanesljivost, natančnost in strokovno svetovanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster za keramiko",
+    "title": "Vrhunsko polaganje keramike in",
+    "titleHighlight": "prenova kopalnic",
+    "description": "Strokovne keramičarske storitve in zaključna dela za lastnike stanovanj, hiš in investitorje v Postojni z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Pozornost do podrobnosti"
+      },
+      {
+        "value": "Točnost",
+        "label": "Spoštovanje rokov"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Hitra in čista izvedba"
+      },
+      {
+        "value": "Postojna",
+        "label": "In širša regija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše keramičarske in gradbene storitve",
+    "description": "Specializirani smo za kakovostno polaganje keramike, prenovo kopalnic ter ureditev notranjih in zunanjih površin v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje vseh vrst keramičnih ploščic na stene in tla v stanovanjskih ter poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenova kopalnic",
+        "description": "Celovita prenova kopalnic na ključ, prilagojena vašim željam in potrebam.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblaganje stopnic",
+        "description": "Strokovno oblaganje notranjih in zunanjih stopnic s keramiko za estetski videz in trajnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zunanje tlakovanje",
+        "description": "Polaganje ploščic na terasah, balkonih in zunanjih površinah ob upoštevanju vseh hidroizolacijskih standardov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri izbiri materialov",
+        "description": "Strokovno svetovanje pri izbiri ustreznih ploščic, lepil in materialov za dolgotrajne rezultate.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost kakovosti in natančnosti",
+    "description": "Z našim odgovornim pristopom in doslednim držanjem dogovorov poskrbimo, da je vsak projekt izpeljan brezhibno.",
+    "highlights": [
+      "Izjemna natančnost in pozornost do podrobnosti",
+      "Točnost in dosledno držanje dogovorjenih rokov",
+      "Vrhunska kvaliteta in hitrost izvedbe",
+      "Urejeno delovno okolje in odgovoren pristop"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Brezkompromisna izvedba",
+        "description": "Vsak kotiček in detajl je obdelan z največjo skrbnostjo za popoln končni videz."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Spoštovani dogovori",
+        "description": "Dosledno se držimo časovnih rokov in se prilagajamo vašim potrebam na terenu."
+      },
+      {
+        "stat": "Urejost",
+        "label": "Čisto delovno okolje",
+        "description": "Po zaključku dela za seboj pustimo čisto in urejeno delovno okolje."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Zaupajte nam svoj keramičarski projekt",
+    "description": "Pokličite nas ali izpolnite obrazec in pripravili bomo ponudbo za vaše potrebe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Stjenkova ulica 4, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 345 173",
+        "href": "tel:070345173",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Sob: po dogovoru",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in stopili bomo v stik z vami v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Stjenkova ulica 4, 6230 Postojna, Slovenia",
+    "rights": "© Keramičarstvo Asmir Bajramović s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Asmir Bajramović s.p.",
+    "address": "Stjenkova ulica 4, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "070 345 173"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

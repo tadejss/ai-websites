@@ -1,0 +1,210 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/amoris-keramicarstvo-zakljucna/hero.jpg",
+      "alt": "Natančno polaganje keramike v moderni kopalnici"
+    },
+    "services": {
+      "src": "/clients/amoris-keramicarstvo-zakljucna/services.jpg",
+      "alt": "Strokovnjak pri natančnem polaganju keramičnih ploščic"
+    }
+  },
+  "brand": {
+    "prefix": "AMORIS",
+    "highlight": "Keramičarstvo"
+  },
+  "metadata": {
+    "title": "AMORIS | Keramičarstvo in zaključna gradbena dela Ilija Glišić s.p.",
+    "description": "Kakovostno polaganje keramike, prenove kopalnic in strokovna zaključna dela v Postojni in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovna gradbena dela",
+    "title": "Kakovostno polaganje keramike in",
+    "titleHighlight": "zaključna dela",
+    "description": "Natančne prenove kopalnic, oblaganje teras in notranja zaključna dela za lastnike stanovanj, hiš in poslovnih prostorov v Postojni in okolici.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "In strokovnost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Strankam"
+      },
+      {
+        "value": "Postojna",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Izvajamo kakovostna keramičarska dela in zaključne gradbene storitve na območju Postojne z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje vseh vrst keramičnih ploščic v stanovanjskih in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih pripravljalnih del do končne izvedbe.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblaganje teras in balkonov",
+        "description": "Trpežno in strokovno oblaganje zunanjih površin, odpornih na vremenske vplive.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja zaključna dela",
+        "description": "Kakovostna zaključna gradbena dela za urejen videz vaših prostorov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Ponedeljska in svetovalna dela",
+        "description": "Strokovno svetovanje in pomoč pri izbiri ustreznih materialov ter rešitev.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše prenove",
+    "description": "Z osredotočenostjo na kakovost in individualne želje strank zagotavljamo zanesljivo izvedbo projektov.",
+    "highlights": [
+      "Natančna in kvalitetna izvedba del",
+      "Zanesljivost in strokovnost na prvem mestu",
+      "Visoka stopnja prilagodljivosti strankam"
+    ],
+    "benefits": [
+      {
+        "stat": "Kakovost",
+        "label": "Natančna izvedba",
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Strokoven pristop",
+        "description": "Delo opravimo zanesljivo in v dogovorjenih časovnih okvirih."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Uhajanje željam",
+        "description": "Prisluhnemo vašim potrebam in se prilagodimo zahtevam prostora."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za keramičarska in zaključna dela? Pišite nam.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Volaričeva ulica 18, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 24h (Nedelja zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo pripravili ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Volaričeva ulica 18, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "AMORIS Keramičarstvo",
+    "address": "Volaričeva ulica 18, 6230 Postojna, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

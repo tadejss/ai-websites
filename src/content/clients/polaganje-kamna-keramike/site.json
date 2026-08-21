@@ -1,0 +1,202 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/polaganje-kamna-keramike/hero.jpg",
+      "alt": "Strokovno polaganje kamna in keramike v modernem interierju"
+    },
+    "services": {
+      "src": "/clients/polaganje-kamna-keramike/services.jpg",
+      "alt": "Natančno polaganje keramike in kamna v kopalnici"
+    }
+  },
+  "brand": {
+    "prefix": "Stojan Rodica",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Polaganje kamna in keramike Stojan Rodica s.p.",
+    "description": "Strokovno polaganje keramike in kamna z dolgoletnimi izkušnjami v Sežani z okolico in Obalno-kraški regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Polaganje keramike in kamna",
+    "title": "Strokovno polaganje keramike in kamna",
+    "titleHighlight": "z dolgoletnimi izkušnjami",
+    "description": "Zanesljive storitve za lastnike hiš, stanovanj in poslovnih prostorov v Sežani z okolico in Obalno-kraški regiji.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka",
+        "label": "Kakovost izvedbe"
+      },
+      {
+        "value": "Natančnost",
+        "label": "In zanesljivost"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Obalno-kraška",
+        "label": "Regija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za keramiko in kamen",
+    "description": "Nudimo kakovostne storitve polaganja za stanovanjske in poslovne objekte v Sežani z okolico in Obalno-kraški regiji.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Strokovno polaganje stenske in talne keramike vseh formatov za vse vrste prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje kamna",
+        "description": "Natančna vgradnja naravnega in dekorativnega kamna za unikaten videz vaših površin.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic od pripravljalnih del do končnega polagajanja ploščic.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblaganje teras in balkonov",
+        "description": "Vzdržljive in estetske zunanje obloge za terase, balkone in zunanje površine.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Notranje in zunanje obloge",
+        "description": "Izdelava kakovostnih notranjih in zunanjih oblog z materiali po vaši izbiri.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske in kamnoseške projekte",
+    "description": "Z združevanjem strokovnosti, natančnosti in dolgoletnih izkušenj poskrbimo za brezhiben končni rezultat.",
+    "highlights": [
+      "Visoka kakovost izvedbe pri vsakem projektu",
+      "Natančnost in zanesljivost na prvem mestu",
+      "Celovito strokovno svetovanje ob izbiri materialov"
+    ],
+    "benefits": [
+      {
+        "stat": "Visoka",
+        "label": "Kakovost izvedbe",
+        "description": "Uporaba preverjenih postopkov za dolgotrajne in estetske površine."
+      },
+      {
+        "stat": "Natančnost",
+        "label": "In zanesljivost",
+        "description": "Dosledno upoštevanje dogovorov in natančna izvedba detajlov."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Svetovanje",
+        "description": "Pomagamo vam pri izbiri najboljših rešitev za vaš prostor."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete polaganje keramike ali kamna? Pokličite nas in z veseljem vam bomo pomagali.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 405 641",
+        "href": "tel:041405641",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Šmarje pri Sežani 17, 6210 Sežana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Šmarje pri Sežani 17, 6210 Sežana, Slovenia",
+    "rights": "© 2024 Polaganje kamna in keramike Stojan Rodica s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Stojan Rodica s.p.",
+    "address": "Šmarje pri Sežani 17, 6210 Sežana, Slovenia",
+    "email": "",
+    "phone": "041 405 641"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

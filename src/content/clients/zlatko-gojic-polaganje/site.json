@@ -1,0 +1,203 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "geist-geist"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/zlatko-gojic-polaganje/hero.jpg",
+      "alt": "Strokovno polaganje keramike v notranjih prostorih"
+    },
+    "services": {
+      "src": "/clients/zlatko-gojic-polaganje/services.jpg",
+      "alt": "Natančna obdelava stopnic in polaganje granita"
+    }
+  },
+  "brand": {
+    "prefix": "Zlatko Gojić s.p.",
+    "highlight": "Keramika in granit"
+  },
+  "metadata": {
+    "title": "Zlatko Gojić s.p. | Polaganje keramike, granita in stopnic",
+    "description": "Strokovno polaganje keramike, granita in stopnic za lastnike stanovanj, hiš in investitorjev v Postojni z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovno polaganje keramike",
+    "title": "Kakovostno polaganje keramike, granita",
+    "titleHighlight": "in stopnic",
+    "description": "Zanesljive storitve polaganja keramike, granita ter obdelave stopnic za lastnike stanovanj, hiš in investitorjev v Postojni z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Kvalitetna",
+        "label": "Gradnja"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Pristop"
+      },
+      {
+        "value": "Postojna",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za keramiko in kamen",
+    "description": "Specializirani smo za natančno polaganje keramike, granita, obdelavo stopnic ter oblaganje površin v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Strokovno in natančno polaganje vseh vrst keramičnih ploščic v notranjih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje granita",
+        "description": "Kakovostna vgradnja granita za eleganten videz in dolgo življenjsko dobo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Obdelava stopnic",
+        "description": "Natančna obdelava in oblaganje stopnic ter stopnišč.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblaganje teras in balkonov",
+        "description": "Zunanje oblaganje površin z materiali, odpornimi na vremenske vplive.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Notranja in zunanja keramika",
+        "description": "Celovite keramičarske storitve za zunanje in notranje bivalne prostore.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Združujemo strokovnost, natančnost in dolgoletne izkušnje pri delu s keramiko in granitom.",
+    "highlights": [
+      "Natančna in kvalitetna izvedba",
+      "Bogate izkušnje s keramiko in granitom",
+      "Zanesljiv in strokoven pristop",
+      "Prilagojeno željam naročnika"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "in kvaliteta",
+        "description": "Vsak projekt izpeljemo skrbno in z občutkom za detajle."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "z materiali",
+        "description": "Specializirano znanje za delo s keramiko, granitom in kamnom."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "in strokovnost",
+        "description": "Profesionalen odnos in spoštovanje dogovorjenih rokov."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 202 208",
+        "href": "tel:040202208",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Stjenkova ulica 4, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Stjenkova ulica 4, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Zlatko Gojić s.p. Keramika in granit",
+    "address": "Stjenkova ulica 4, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "040 202 208"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

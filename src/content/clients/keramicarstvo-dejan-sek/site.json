@@ -1,0 +1,217 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-dejan-sek/hero.jpg",
+      "alt": "Strokovno polaganje keramičnih ploščic v modernem prostoru"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-dejan-sek/services.jpg",
+      "alt": "Kakovostna izvedba keramičarskih del in prenova kopalnice"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Dejan Šek s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Dejan Šek s.p. | Polaganje keramike in prenova kopalnic",
+    "description": "Kakovostno polaganje stenskih in talnih ploščic, prenova kopalnic na ključ ter sanacija starih površin v Prvačini in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv domači obrtnik",
+    "title": "Kakovostno polaganje keramike in",
+    "titleHighlight": "preureditev prostorov",
+    "description": "Strokovne keramičarske storitve za lastnike stanovanj, hiš in investitorje v Prvačini in okolici.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "In zanesljiva izvedba"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Vašim željam"
+      },
+      {
+        "value": "Prvačina",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske rešitve",
+    "description": "Nudimo kakovostno izvedbo del za prenovo vaših prostorov v Prvačini in okolici.",
+    "items": [
+      {
+        "title": "Polaganje stenskih in talnih ploščic",
+        "description": "Natančno polaganje vseh vrst keramičnih ploščic v stanovanjih in hišah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenova kopalnic na ključ",
+        "description": "Celovita preureditev in prenova kopalnic od začetka do konca.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje zunanje keramike in na terasah",
+        "description": "Trpežne rešitve za zunanje površine, balkone in terase, odporne na vremenske vplive.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Adaptacija in sanacija starih površin",
+        "description": "Urejanje in obnova obstoječih podlag ter starih keramičnih površin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri izbiri materialov",
+        "description": "Strokovna pomoč pri izbiri prave keramike in materialov za vaš prostor.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Združujemo dolgoletne izkušnje, natančnost in posluh za želje strank.",
+    "highlights": [
+      "Preverjena kakovost z odličnimi ocenami strank",
+      "Natančna in zanesljiva izvedba del",
+      "Prilagodljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "stat": "Preverjena",
+        "label": "Kakovost",
+        "description": "Dosegamo visoke standarde in se ponašamo z odličnimi ocenami strank."
+      },
+      {
+        "stat": "Natančnost",
+        "label": "In zanesljivost",
+        "description": "Vsak projekt izpeljemo skrbno, dosledno in v dogovorjenih rokovih."
+      },
+      {
+        "stat": "Celovit",
+        "label": "Pristop",
+        "description": "Nudimo strokovno svetovanje in prilagojene rešitve za vaš dom."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti prenovo? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Prvačina 236a, 5297 Prvačina, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(05) 301 66 40",
+        "href": "tel:+38653016640",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želje...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Prvačina 236a, 5297 Prvačina, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Dejan Šek s.p.",
+    "address": "Prvačina 236a, 5297 Prvačina, Slovenia",
+    "email": "",
+    "phone": "(05) 301 66 40"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
