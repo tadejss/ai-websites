@@ -4,6 +4,13 @@
     "paletteId": "peach-bloom",
     "fontPairingId": "lato-libre"
   },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerski-studior-ruzica/hero.jpg",

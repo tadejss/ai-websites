@@ -3,21 +3,48 @@ import { BeautyDecorativeRings } from "./BeautyDecorativeRings";
 import { BeautyBrowserFrame } from "./BeautyBrowserFrame";
 import { BeautyHeroWebsitePreview } from "./BeautyHeroWebsitePreview";
 import { BeautyImage } from "./BeautyImage";
+import { resolveBeautyLayout } from "../assign-layout";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
   siteConfig: SiteConfig;
 };
 
+function heroGridClass(ratio: string, showImage: boolean): string {
+  if (!showImage || ratio === "full-copy") {
+    return "mx-auto grid max-w-7xl gap-6 lg:grid-cols-1 lg:items-stretch lg:gap-8";
+  }
+
+  if (ratio === "6040") {
+    return "mx-auto grid max-w-7xl gap-6 lg:grid-cols-[1.35fr_0.65fr] lg:items-stretch lg:gap-8";
+  }
+
+  return "mx-auto grid max-w-7xl gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-8";
+}
+
 export function BeautyHeroSection({ siteConfig }: Props) {
   const { hero, services, contact, images } = siteConfig;
+  const layout = resolveBeautyLayout(siteConfig.layout);
   const secondaryHref = hero.secondaryCtaHref ?? `#${services.id}`;
   const useBrowserFrame = images?.hero?.frame === "browser";
+  const hasHeroMedia = useBrowserFrame || Boolean(images?.hero?.src);
+  const showImage = layout.heroImageSide !== "none" && hasHeroMedia;
+  const imageOnLeft = layout.heroImageSide === "left";
+  const copyOrder = showImage
+    ? imageOnLeft
+      ? "order-2 lg:order-2"
+      : "order-2 lg:order-1"
+    : "order-1";
+  const imageOrder = imageOnLeft ? "order-1 lg:order-1" : "order-1 lg:order-2";
+  const copyWide = !showImage || layout.heroRatio === "full-copy";
+  const copyMaxWidth = copyWide ? "max-w-3xl" : "max-w-md";
 
   return (
     <section className="relative overflow-hidden bg-background px-4 pb-24 pt-28 sm:px-6 sm:pb-28 sm:pt-32 lg:pb-32">
-      <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-8">
-        <div className="relative order-2 flex h-full min-h-[480px] flex-col justify-between overflow-hidden rounded-[var(--radius-card)] bg-accent p-8 sm:p-10 lg:order-1 lg:min-h-[640px] lg:p-14">
+      <div className={heroGridClass(layout.heroRatio ?? "5050", showImage)}>
+        <div
+          className={`relative flex h-full min-h-[480px] flex-col justify-between overflow-hidden rounded-[var(--radius-card)] bg-accent p-8 sm:p-10 lg:min-h-[640px] lg:p-14 ${copyOrder} ${copyWide ? "w-full" : ""}`}
+        >
           <BeautyDecorativeRings />
 
           <div className="relative flex flex-1 flex-col justify-center">
@@ -34,7 +61,9 @@ export function BeautyHeroSection({ siteConfig }: Props) {
                 {hero.titleHighlight}
               </span>
             </h1>
-            <p className="mt-8 max-w-md text-base leading-relaxed text-accent-foreground/75 sm:mt-10 sm:text-lg">
+            <p
+              className={`mt-8 text-base leading-relaxed text-accent-foreground/75 sm:mt-10 sm:text-lg ${copyMaxWidth}`}
+            >
               {hero.description}
             </p>
           </div>
@@ -49,23 +78,27 @@ export function BeautyHeroSection({ siteConfig }: Props) {
           </div>
         </div>
 
-        <div className="relative order-1 h-full min-h-[480px] lg:order-2 lg:min-h-[640px]">
-          {useBrowserFrame ? (
-            <BeautyBrowserFrame
-              url="studio-maja.si"
-              className="h-full min-h-[480px] lg:min-h-[640px]"
-            >
-              <BeautyHeroWebsitePreview />
-            </BeautyBrowserFrame>
-          ) : (
-            <BeautyImage
-              src={images?.hero.src}
-              alt={images?.hero.alt ?? hero.badge}
-              className="h-full min-h-[480px] lg:min-h-[640px]"
-              priority
-            />
-          )}
-        </div>
+        {showImage ? (
+          <div
+            className={`relative h-full min-h-[480px] lg:min-h-[640px] ${imageOrder}`}
+          >
+            {useBrowserFrame ? (
+              <BeautyBrowserFrame
+                url="studio-maja.si"
+                className="h-full min-h-[480px] lg:min-h-[640px]"
+              >
+                <BeautyHeroWebsitePreview />
+              </BeautyBrowserFrame>
+            ) : (
+              <BeautyImage
+                src={images?.hero.src}
+                alt={images?.hero.alt ?? hero.badge}
+                className="h-full min-h-[480px] lg:min-h-[640px]"
+                priority
+              />
+            )}
+          </div>
+        ) : null}
       </div>
     </section>
   );

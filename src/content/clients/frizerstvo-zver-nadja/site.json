@@ -4,6 +4,13 @@
     "paletteId": "warm-earth",
     "fontPairingId": "work-sans-lora"
   },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerstvo",
     "highlight": "Zver Nadja s.p."

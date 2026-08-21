@@ -4,6 +4,13 @@
     "paletteId": "sand-stone",
     "fontPairingId": "outfit-cormorant"
   },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Lena",
     "highlight": "Jože Meden s.p."

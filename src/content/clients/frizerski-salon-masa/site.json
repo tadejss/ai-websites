@@ -4,6 +4,13 @@
     "paletteId": "forest-mist",
     "fontPairingId": "jakarta-fraunces"
   },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerski-salon-masa/hero.jpg",

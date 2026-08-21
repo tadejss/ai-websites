@@ -4,6 +4,13 @@
     "paletteId": "lavender-cream",
     "fontPairingId": "figtree-dm-serif"
   },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerstvo",
     "highlight": "Manca"

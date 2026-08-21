@@ -4,6 +4,13 @@
     "paletteId": "sage-meadow",
     "fontPairingId": "figtree-dm-serif"
   },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Moj - Ca",
     "highlight": "Styling"

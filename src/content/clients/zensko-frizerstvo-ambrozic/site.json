@@ -4,6 +4,13 @@
     "paletteId": "plum-dusk",
     "fontPairingId": "inter-space-grotesk-light"
   },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerstvo",
     "highlight": "Ambrožič Vesna"

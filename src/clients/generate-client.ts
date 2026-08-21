@@ -4,6 +4,7 @@ import { generateBusinessInput } from "@/ai/generate-business-input";
 import { generateSiteConfig } from "@/ai/generate-site-config";
 import { validateRawBusinessData } from "@/ai/validate-raw-business-data";
 import { appearanceForIndustry } from "@/appearances/industry-appearance";
+import { assignBeautyLayout } from "@/appearances/beauty/assign-layout";
 import { assignTheme } from "@/theme/assign-theme";
 import { generateSiteImages } from "@/images/generate-site-images";
 import type { BusinessInput } from "@/ai/types";
@@ -50,6 +51,7 @@ export async function generateClient(
     ...generatedConfig,
     appearance,
     theme: assignTheme(slug, appearance),
+    ...(appearance === "beauty" ? { layout: assignBeautyLayout(slug) } : {}),
   };
   const images = await generateSiteImages(slug, businessInput, siteConfig as SiteConfig);
   const finalConfig = images ? { ...siteConfig, images } : siteConfig;

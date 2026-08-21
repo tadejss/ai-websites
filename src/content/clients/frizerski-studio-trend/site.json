@@ -1,5 +1,12 @@
 {
   "appearance": "beauty",
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerski studio",
     "highlight": "Jerneja Šmid s.p."

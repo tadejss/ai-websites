@@ -4,6 +4,13 @@
     "paletteId": "terracotta-sunset",
     "fontPairingId": "jakarta-fraunces"
   },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerski-studio-sonce/hero.jpg",

@@ -4,6 +4,13 @@
     "paletteId": "terracotta-sunset",
     "fontPairingId": "work-sans-lora"
   },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerski salon",
     "highlight": "Helena"

@@ -4,6 +4,13 @@
     "paletteId": "coastal-fog",
     "fontPairingId": "manrope-bodoni"
   },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/milimeter-frizerski-salon/hero.jpg",

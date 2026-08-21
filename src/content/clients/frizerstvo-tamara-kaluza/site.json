@@ -4,6 +4,13 @@
     "paletteId": "lavender-cream",
     "fontPairingId": "jakarta-fraunces"
   },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerstvo-tamara-kaluza/hero.jpg",

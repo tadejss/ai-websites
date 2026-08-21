@@ -4,6 +4,13 @@
     "paletteId": "rust-linen",
     "fontPairingId": "outfit-cormorant"
   },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerski-salon-edita/hero.jpg",

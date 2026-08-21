@@ -4,6 +4,13 @@
     "paletteId": "plum-dusk",
     "fontPairingId": "manrope-bodoni"
   },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerstvo",
     "highlight": "Erika Nabergoj"

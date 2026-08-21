@@ -4,6 +4,13 @@
     "paletteId": "dusty-rose",
     "fontPairingId": "dm-sans-playfair"
   },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "TA",
     "highlight": "studio"

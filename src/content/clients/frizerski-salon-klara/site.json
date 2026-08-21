@@ -4,6 +4,13 @@
     "paletteId": "caramel-vanilla",
     "fontPairingId": "inter-eb-garamond"
   },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerski-salon-klara/hero.jpg",

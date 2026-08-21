@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { BeautyImagePanel } from "./BeautyImagePanel";
 
 type Props = {
   src?: string;
@@ -15,7 +14,7 @@ export function BeautyImage({
   priority = false,
 }: Props) {
   if (!src) {
-    return <BeautyImagePanel className={className} label={alt || undefined} />;
+    return null;
   }
 
   return (

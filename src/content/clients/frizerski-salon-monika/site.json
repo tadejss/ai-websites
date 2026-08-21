@@ -4,6 +4,13 @@
     "paletteId": "warm-earth",
     "fontPairingId": "dm-sans-playfair"
   },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerski-salon-monika/hero.jpg",

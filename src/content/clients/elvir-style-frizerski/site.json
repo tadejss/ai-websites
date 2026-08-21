@@ -1,5 +1,12 @@
 {
   "appearance": "beauty",
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Elvir Style",
     "highlight": "Frizerski Studio"

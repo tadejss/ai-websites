@@ -4,6 +4,13 @@
     "paletteId": "deep-seafoam",
     "fontPairingId": "outfit-cormorant"
   },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
   "brand": {
     "prefix": "Pepermint",
     "highlight": "Hair Studio"

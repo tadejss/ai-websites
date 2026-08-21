@@ -91,6 +91,22 @@ const contactFormSchema = z.object({
 
 const appearanceSchema = z.enum(["default", "beauty", "zbrendiraj"]).optional();
 
+const layoutSchema = z
+  .object({
+    profileId: z.enum([
+      "classic",
+      "media-left",
+      "copy-heavy",
+      "services-first-visual",
+      "airy",
+    ]),
+    heroImageSide: z.enum(["left", "right", "none"]).optional(),
+    servicesImageSide: z.enum(["left", "right", "none"]).optional(),
+    heroRatio: z.enum(["5050", "6040", "full-copy"]).optional(),
+    benefitsMode: z.enum(["default", "visual"]).optional(),
+  })
+  .optional();
+
 const themeSchema = z
   .object({
     paletteId: z.enum(paletteIds as [string, ...string[]]),
@@ -165,6 +181,7 @@ const contactFaqItemSchema = z.object({
 const siteConfigSchema = z.object({
   appearance: appearanceSchema,
   theme: themeSchema,
+  layout: layoutSchema,
   images: siteImagesSchema,
   brand: z.object({
     prefix: z.string(),

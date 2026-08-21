@@ -4,6 +4,13 @@
     "paletteId": "lavender-cream",
     "fontPairingId": "lato-libre"
   },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Salon 33",
     "highlight": "Kozmetika in pedikura"

@@ -1,5 +1,12 @@
 {
   "appearance": "beauty",
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
   "brand": {
     "prefix": "Brivec",
     "highlight": "Olaf"

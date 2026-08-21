@@ -4,6 +4,13 @@
     "paletteId": "deep-seafoam",
     "fontPairingId": "inter-space-grotesk-light"
   },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerski-studio-simona/hero.jpg",

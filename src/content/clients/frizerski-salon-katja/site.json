@@ -4,6 +4,13 @@
     "paletteId": "caramel-vanilla",
     "fontPairingId": "inter-space-grotesk-light"
   },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerski-salon-katja/hero.jpg",

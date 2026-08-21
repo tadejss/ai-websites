@@ -4,6 +4,13 @@
     "paletteId": "sage-meadow",
     "fontPairingId": "work-sans-lora"
   },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerstvo-brigita-brigita/hero.jpg",

@@ -4,6 +4,13 @@
     "paletteId": "warm-earth",
     "fontPairingId": "inter-space-grotesk-light"
   },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerstvo-andreja-frank/hero.jpg",

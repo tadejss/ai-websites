@@ -1,5 +1,12 @@
 {
   "appearance": "beauty",
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Daily Beauty",
     "highlight": "salon"

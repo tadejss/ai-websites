@@ -4,6 +4,13 @@
     "paletteId": "deep-seafoam",
     "fontPairingId": "lato-libre"
   },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
   "brand": {
     "prefix": "Frizerski studio",
     "highlight": "M"

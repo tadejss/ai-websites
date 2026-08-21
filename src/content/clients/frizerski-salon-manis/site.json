@@ -4,6 +4,13 @@
     "paletteId": "sage-meadow",
     "fontPairingId": "inter-space-grotesk-light"
   },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerski-salon-manis/hero.jpg",

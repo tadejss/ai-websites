@@ -2,22 +2,34 @@ import Image from "next/image";
 import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { formatCardTitle } from "../utils/format-card-title";
+import { resolveBeautyLayout } from "../assign-layout";
 import { BeautyBrowserFrame } from "./BeautyBrowserFrame";
-import { BeautyExamplePreview } from "./BeautyExamplePreview";
-import type { Benefit, SiteConfig } from "@/content/types/site";
+import type { Benefit, IconName, SiteConfig } from "@/content/types/site";
 
 type Props = {
   siteConfig: SiteConfig;
 };
 
-function hasVisualExamples(benefits: Benefit[]): boolean {
-  return benefits.some((benefit) => benefit.variant || benefit.image);
+const BENEFIT_ICONS: IconName[] = [
+  "service-1",
+  "service-2",
+  "service-3",
+  "service-4",
+  "service-5",
+  "service-6",
+];
+
+function hasRealBenefitImages(benefits: Benefit[]): boolean {
+  return benefits.some((benefit) => Boolean(benefit.image?.src));
 }
 
 export function BeautyBenefitsSection({ siteConfig }: Props) {
   const { whyChooseUs } = siteConfig;
+  const layout = resolveBeautyLayout(siteConfig.layout);
+  const useIconGrid =
+    layout.benefitsMode === "visual" || hasRealBenefitImages(whyChooseUs.benefits);
 
-  if (hasVisualExamples(whyChooseUs.benefits)) {
+  if (useIconGrid) {
     return (
       <section className="bg-background px-4 py-24 sm:px-6 sm:py-32">
         <div className="mx-auto max-w-7xl">
@@ -30,12 +42,12 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
             />
 
             <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {whyChooseUs.benefits.map((benefit) => (
+              {whyChooseUs.benefits.map((benefit, index) => (
                 <article
                   key={benefit.title ?? benefit.label}
                   className="overflow-hidden rounded-[var(--radius-card)] border border-border bg-surface"
                 >
-                  {benefit.image ? (
+                  {benefit.image?.src ? (
                     <BeautyBrowserFrame
                       url={benefit.image.alt}
                       className="border-0 shadow-none"
@@ -50,26 +62,21 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
                         />
                       </div>
                     </BeautyBrowserFrame>
-                  ) : benefit.variant ? (
-                    <BeautyBrowserFrame
-                      url={`${benefit.title?.toLowerCase().replace(/\s+/g, "-") ?? "primer"}.si`}
-                      className="border-0 shadow-none"
-                    >
-                      <BeautyExamplePreview
-                        title={benefit.title ?? benefit.label}
-                        label={benefit.label}
-                        variant={benefit.variant}
-                      />
-                    </BeautyBrowserFrame>
-                  ) : null}
+                  ) : (
+                    <div className="flex items-start gap-4 p-6 pb-0">
+                      <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-accent/15 bg-background text-accent">
+                        <Icon name={BENEFIT_ICONS[index % BENEFIT_ICONS.length]} />
+                      </div>
+                    </div>
+                  )}
 
-                  <div className="p-5">
+                  <div className="p-6 pt-4">
                     <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted">
                       {benefit.label}
                     </p>
-                    {benefit.title ? (
+                    {(benefit.title || benefit.stat) ? (
                       <p className="font-display mt-1 text-xl text-foreground">
-                        {benefit.title}
+                        {benefit.title ?? benefit.stat}
                       </p>
                     ) : null}
                     {benefit.description ? (

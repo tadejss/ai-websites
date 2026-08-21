@@ -4,6 +4,13 @@
     "paletteId": "sand-stone",
     "fontPairingId": "inter-eb-garamond"
   },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerski salon",
     "highlight": "Ines"

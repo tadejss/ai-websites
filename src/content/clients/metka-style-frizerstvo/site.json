@@ -1,5 +1,12 @@
 {
   "appearance": "beauty",
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Metka",
     "highlight": "Style"

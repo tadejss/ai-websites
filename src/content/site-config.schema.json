@@ -37,6 +37,40 @@
         }
       }
     },
+    "layout": {
+      "type": "object",
+      "description": "Optional beauty-only layout profile (column order, image presence, ratios).",
+      "additionalProperties": false,
+      "required": ["profileId"],
+      "properties": {
+        "profileId": {
+          "type": "string",
+          "enum": [
+            "classic",
+            "media-left",
+            "copy-heavy",
+            "services-first-visual",
+            "airy"
+          ]
+        },
+        "heroImageSide": {
+          "type": "string",
+          "enum": ["left", "right", "none"]
+        },
+        "servicesImageSide": {
+          "type": "string",
+          "enum": ["left", "right", "none"]
+        },
+        "heroRatio": {
+          "type": "string",
+          "enum": ["5050", "6040", "full-copy"]
+        },
+        "benefitsMode": {
+          "type": "string",
+          "enum": ["default", "visual"]
+        }
+      }
+    },
     "images": {
       "type": "object",
       "description": "Per-site images assigned at generation time.",

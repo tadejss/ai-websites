@@ -4,6 +4,13 @@
     "paletteId": "blush-champagne",
     "fontPairingId": "lato-libre"
   },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
   "images": {
     "hero": {
       "src": "/clients/frizerstvo-tina-frizerske/hero.jpg",

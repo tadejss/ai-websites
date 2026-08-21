@@ -4,6 +4,13 @@
     "paletteId": "copper-clay",
     "fontPairingId": "lato-libre"
   },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerski studio",
     "highlight": "Sabina"

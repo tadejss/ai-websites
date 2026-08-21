@@ -4,6 +4,13 @@
     "paletteId": "slate-blue",
     "fontPairingId": "manrope-bodoni"
   },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerski atelje",
     "highlight": "N&T"

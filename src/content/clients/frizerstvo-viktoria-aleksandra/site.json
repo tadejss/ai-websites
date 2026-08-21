@@ -4,6 +4,13 @@
     "paletteId": "caramel-vanilla",
     "fontPairingId": "jakarta-fraunces"
   },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
   "brand": {
     "prefix": "Frizerstvo",
     "highlight": "Viktoria Aleksandra"

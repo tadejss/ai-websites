@@ -85,6 +85,28 @@ export type ContactItem = {
 
 export type AppearanceId = "default" | "beauty" | "zbrendiraj";
 
+export type BeautyLayoutProfileId =
+  | "classic"
+  | "media-left"
+  | "copy-heavy"
+  | "services-first-visual"
+  | "airy";
+
+export type LayoutImageSide = "left" | "right" | "none";
+
+export type LayoutHeroRatio = "5050" | "6040" | "full-copy";
+
+export type LayoutBenefitsMode = "default" | "visual";
+
+/** Optional beauty-only layout profile assigned at generation time. */
+export type SiteLayout = {
+  profileId: BeautyLayoutProfileId;
+  heroImageSide?: LayoutImageSide;
+  servicesImageSide?: LayoutImageSide;
+  heroRatio?: LayoutHeroRatio;
+  benefitsMode?: LayoutBenefitsMode;
+};
+
 export type SiteTheme = {
   paletteId: string;
   fontPairingId: string;
@@ -138,6 +160,7 @@ export type SitePrivacyConfig = {
 export type SiteConfig = {
   appearance?: AppearanceId;
   theme?: SiteTheme;
+  layout?: SiteLayout;
   images?: SiteImages;
   brand: {
     prefix: string;
