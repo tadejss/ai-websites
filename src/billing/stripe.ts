@@ -36,3 +36,25 @@ export function isCheckoutPlan(value: unknown): value is CheckoutPlan {
 export function planLabel(plan: CheckoutPlan): string {
   return plan === "monthly" ? "Mesečno" : "Letno";
 }
+
+const SI_VAT_PERCENT = 22;
+
+/** Prefer STRIPE_TAX_RATE_ID; otherwise find an active 22 % exclusive rate in Stripe. */
+export async function resolveTaxRateId(stripe: Stripe): Promise<string | undefined> {
+  const configured = process.env.STRIPE_TAX_RATE_ID?.trim();
+
+  if (configured) {
+    return configured;
+  }
+
+  const rates = await stripe.taxRates.list({ active: true, limit: 100 });
+  const match = rates.data.find(
+    (rate) =>
+      rate.active &&
+      !rate.inclusive &&
+      rate.percentage === SI_VAT_PERCENT &&
+      (rate.jurisdiction === "SI" || rate.country === "SI" || !rate.jurisdiction),
+  );
+
+  return match?.id;
+}

@@ -22,8 +22,8 @@ STRIPE_PRICE_MONTHLY=price_...
 STRIPE_PRICE_YEARLY=price_...
 CHECKOUT_NOTIFY_EMAIL=info@zbrendiraj.si
 
-# Optional: use a fixed Stripe Tax Rate instead of automatic_tax
-# STRIPE_TAX_RATE_ID=txr_...
+# Recommended: 22 % DDV (exclusive). Create in Stripe → Settings → Tax rates.
+STRIPE_TAX_RATE_ID=txr_...
 ```
 
 Also required for purchase emails: `RESEND_API_KEY`.
@@ -33,7 +33,7 @@ Also required for purchase emails: `RESEND_API_KEY`.
 ## Stripe Dashboard
 
 1. Product **Zbrendiraj spletna stran** with recurring prices 29 EUR/mo and 290 EUR/yr (exclusive of tax).
-2. Enable Stripe Tax for SI, **or** create a 22 % tax rate and set `STRIPE_TAX_RATE_ID`.
+2. Create a **22 % exclusive** tax rate (DDV, jurisdiction SI) and set `STRIPE_TAX_RATE_ID`. Without it, checkout tries Stripe Tax (`automatic_tax`), which requires Tax registration for Slovenia in the Dashboard.
 3. Webhook endpoint: `https://zbrendiraj.si/api/webhooks/stripe`
    - Event: `checkout.session.completed`
 4. Local test: `stripe listen --forward-to localhost:3000/api/webhooks/stripe`

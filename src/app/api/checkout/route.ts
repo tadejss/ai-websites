@@ -3,6 +3,7 @@ import {
   getPriceIdForPlan,
   getStripe,
   isCheckoutPlan,
+  resolveTaxRateId,
   type CheckoutPlan,
 } from "@/billing/stripe";
 import { getSiteConfig } from "@/content/get-site-config";
@@ -77,11 +78,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: message }, { status: 503 });
   }
 
-  const taxRateId = process.env.STRIPE_TAX_RATE_ID?.trim();
   const { successUrl, cancelUrl } = resolveCheckoutUrls(slug);
 
   try {
     const stripe = getStripe();
+    const taxRateId = await resolveTaxRateId(stripe);
+
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",
       client_reference_id: slug,
@@ -89,6 +91,7 @@ export async function POST(request: Request) {
       cancel_url: cancelUrl,
       allow_promotion_codes: true,
       billing_address_collection: "required",
+      tax_id_collection: { enabled: true },
       metadata: {
         slug,
         plan,
