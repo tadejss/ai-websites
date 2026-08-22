@@ -40,7 +40,7 @@ const SALES_OWNED_FIELDS = [
   "subscriptionPlan",
 ] as const;
 
-const leadsDir = resolve(__dirname, "../content/leads");
+const leadsDir = resolve(process.cwd(), "src/content/leads");
 
 function leadPath(slug: string): string {
   return resolve(leadsDir, `${slug}.json`);

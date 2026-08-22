@@ -6,6 +6,7 @@ import {
   isCheckoutPlan,
   type CheckoutPlan,
 } from "@/billing/stripe";
+import { resolveCheckoutLead } from "@/leads/checkout-lead";
 import { patchLead, readLead } from "@/leads/store";
 
 export const runtime = "nodejs";
@@ -58,33 +59,27 @@ async function handleCheckoutCompleted(
   const stripeSubscriptionId = subscriptionIdFromSession(session);
 
   const existing = readLead(slug);
-
-  if (!existing) {
-    console.error("[stripe-webhook] Lead not found for slug", slug);
-    return { handled: false };
-  }
+  const lead = existing ?? resolveCheckoutLead(slug);
 
   if (
-    existing.status === "customer" &&
+    existing?.status === "customer" &&
     existing.stripeSubscriptionId &&
     existing.stripeSubscriptionId === stripeSubscriptionId
   ) {
     return { handled: true, slug, skipped: true };
   }
 
-  const updated = patchLead(slug, {
-    status: "customer",
-    stripeCustomerId,
-    stripeSubscriptionId,
-    subscriptionPlan: plan,
-  });
-
-  if (!updated) {
-    return { handled: false };
-  }
+  const updated =
+    existing &&
+    patchLead(slug, {
+      status: "customer",
+      stripeCustomerId,
+      stripeSubscriptionId,
+      subscriptionPlan: plan,
+    });
 
   const notify = await sendCheckoutNotification({
-    lead: updated,
+    lead: updated ?? lead,
     plan,
     stripeCustomerId,
     stripeSubscriptionId,

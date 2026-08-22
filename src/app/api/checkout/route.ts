@@ -6,7 +6,7 @@ import {
   type CheckoutPlan,
 } from "@/billing/stripe";
 import { getSiteConfig } from "@/content/get-site-config";
-import { readLead } from "@/leads/store";
+import { resolveCheckoutLead } from "@/leads/checkout-lead";
 import { toAbsoluteUrl } from "@/site-url";
 
 export const runtime = "nodejs";
@@ -59,11 +59,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Site not found" }, { status: 404 });
   }
 
-  const lead = readLead(slug);
-
-  if (!lead) {
-    return NextResponse.json({ error: "Lead not found" }, { status: 404 });
-  }
+  const lead = resolveCheckoutLead(slug);
 
   if (lead.status === "customer") {
     return NextResponse.json(
