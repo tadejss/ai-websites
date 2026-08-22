@@ -40,7 +40,10 @@ export default function RootCookiePolicyPage() {
       siteSlug={context.slug}
       title="Politika piškotkov"
     >
-      <CookiePolicyContent privacy={context.siteConfig.privacy} />
+      <CookiePolicyContent
+        privacy={context.siteConfig.privacy}
+        appearance={context.siteConfig.appearance}
+      />
     </LegalPageLayout>
   );
 }

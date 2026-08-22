@@ -1,11 +1,17 @@
 import type { SitePrivacyConfig } from "@/content/types/site";
 import { LegalSection } from "./LegalPageLayout";
+import { ZbrendirajCookieContent } from "./zbrendiraj/ZbrendirajCookieContent";
 
 type Props = {
   privacy: SitePrivacyConfig;
+  appearance?: string;
 };
 
-export function CookiePolicyContent({ privacy }: Props) {
+export function CookiePolicyContent({ privacy, appearance }: Props) {
+  if (appearance === "zbrendiraj") {
+    return <ZbrendirajCookieContent />;
+  }
+
   const hasNonEssential =
     privacy.analytics.enabled ||
     privacy.marketing.enabled ||

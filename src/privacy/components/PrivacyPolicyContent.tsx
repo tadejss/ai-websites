@@ -6,12 +6,17 @@ import { ContactFormPrivacySection } from "./sections/ContactFormPrivacySection"
 import { ControllerSection } from "./sections/ControllerSection";
 import { RightsSection } from "./sections/RightsSection";
 import { ThirdPartyServicesSection } from "./sections/ThirdPartyServicesSection";
+import { ZbrendirajPrivacyContent } from "./zbrendiraj/ZbrendirajPrivacyContent";
 
 type Props = {
   siteConfig: SiteConfig;
 };
 
 export function PrivacyPolicyContent({ siteConfig }: Props) {
+  if (siteConfig.appearance === "zbrendiraj") {
+    return <ZbrendirajPrivacyContent />;
+  }
+
   const { business, privacy } = siteConfig;
 
   return (

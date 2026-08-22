@@ -1,11 +1,16 @@
 import type { SiteConfig } from "@/content/types/site";
 import { LegalSection } from "./LegalPageLayout";
+import { ZbrendirajTermsContent } from "./zbrendiraj/ZbrendirajTermsContent";
 
 type Props = {
   siteConfig: SiteConfig;
 };
 
 export function TermsOfServiceContent({ siteConfig }: Props) {
+  if (siteConfig.appearance === "zbrendiraj") {
+    return <ZbrendirajTermsContent />;
+  }
+
   const { business, privacy } = siteConfig;
   const operator = business.legalName ?? business.name;
 

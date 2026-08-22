@@ -174,20 +174,22 @@
     }
   },
   "footer": {
-    "address": "",
+    "address": "Langusova ulica 28, 4240 Radovljica",
     "rights": "Vse pravice pridržane.",
     "tagline": "Tvoj biznis, končno online.",
-    "managedBy": "Upravlja Tadej Šarabon Štojs s.p."
+    "managedBy": "DETAJL, oblikovanje, Tadej Šarabon Štojs s.p."
   },
   "business": {
     "name": "Zbrendiraj.si",
-    "legalName": "Tadej Šarabon Štojs s.p.",
-    "address": "Slovenija",
-    "email": "info@zbrendiraj.si"
+    "legalName": "DETAJL, oblikovanje, Tadej Šarabon Štojs s.p.",
+    "address": "Langusova ulica 28, 4240 Radovljica, Slovenija",
+    "email": "info@zbrendiraj.si",
+    "registrationNumber": "8665192000",
+    "vatNumber": "SI95610359"
   },
   "privacy": {
     "enabled": true,
-    "lastUpdated": "2026-08-15",
+    "lastUpdated": "2026-08-22",
     "contactForm": {
       "enabled": true,
       "fields": [
