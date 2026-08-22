@@ -28,6 +28,8 @@ OUTREACH_FOLLOWUP_2_DAYS=7
 
 `OUTREACH_FROM_EMAIL` and `RESEND_API_KEY` are required for live sends. With `OUTREACH_DRY_RUN=true`, the system logs what would be sent without contacting leads or updating outreach timestamps.
 
+For demo subscription checkout (Stripe), see [CHECKOUT.md](./CHECKOUT.md).
+
 ## Lead requirements
 
 A lead is eligible only when:

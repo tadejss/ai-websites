@@ -1,0 +1,106 @@
+"use client";
+
+import { useState, startTransition } from "react";
+import type { CheckoutPlan } from "@/billing/stripe";
+
+type Props = {
+  slug: string;
+};
+
+const PLAN_COPY: Record<
+  CheckoutPlan,
+  { label: string; price: string; hint: string }
+> = {
+  monthly: {
+    label: "Mesečno",
+    price: "29 €/mes + DDV",
+    hint: "Brez vezave · prekliči kadarkoli",
+  },
+  yearly: {
+    label: "Letno",
+    price: "290 €/leto + DDV",
+    hint: "10× mesečna cena · domena vključena",
+  },
+};
+
+export function DemoPurchaseBar({ slug }: Props) {
+  const [plan, setPlan] = useState<CheckoutPlan>("monthly");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function startCheckout() {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ slug, plan }),
+      });
+
+      const data = (await response.json()) as { url?: string; error?: string };
+
+      if (!response.ok || !data.url) {
+        throw new Error(data.error || "Checkout ni uspel");
+      }
+
+      window.location.href = data.url;
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Checkout ni uspel";
+      setError(message);
+      setLoading(false);
+    }
+  }
+
+  const copy = PLAN_COPY[plan];
+
+  return (
+    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-[60] p-3 sm:p-4">
+      <div className="pointer-events-auto mx-auto flex max-w-4xl flex-col gap-3 rounded-2xl border border-black/10 bg-zinc-950 px-4 py-3 text-white shadow-2xl sm:flex-row sm:items-center sm:gap-4 sm:px-5 sm:py-4">
+        <div className="min-w-0 flex-1">
+          <p className="text-sm font-semibold tracking-tight">
+            To je demo Zbrendiraj.si
+          </p>
+          <p className="mt-0.5 text-xs text-zinc-400">{copy.hint}</p>
+        </div>
+
+        <div className="flex items-center gap-1 rounded-full bg-zinc-900 p-1">
+          {(Object.keys(PLAN_COPY) as CheckoutPlan[]).map((option) => (
+            <button
+              key={option}
+              type="button"
+              onClick={() => {
+                startTransition(() => setPlan(option));
+                setError(null);
+              }}
+              className={`rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${
+                plan === option
+                  ? "bg-lime-300 text-zinc-950"
+                  : "text-zinc-300 hover:text-white"
+              }`}
+            >
+              {PLAN_COPY[option].label}
+            </button>
+          ))}
+        </div>
+
+        <div className="flex items-center gap-3 sm:shrink-0">
+          <p className="text-sm font-medium text-zinc-200">{copy.price}</p>
+          <button
+            type="button"
+            disabled={loading}
+            onClick={() => void startCheckout()}
+            className="rounded-full bg-lime-300 px-5 py-2.5 text-sm font-semibold text-zinc-950 transition-colors hover:bg-lime-200 disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {loading ? "Odpiram…" : "Naroči"}
+          </button>
+        </div>
+
+        {error ? (
+          <p className="text-xs text-red-300 sm:basis-full">{error}</p>
+        ) : null}
+      </div>
+    </div>
+  );
+}

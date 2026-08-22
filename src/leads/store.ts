@@ -24,6 +24,9 @@ export type LeadRecord = {
   notes?: string;
   outreach?: LeadOutreach;
   contactHistory?: ContactHistoryEntry[];
+  stripeCustomerId?: string;
+  stripeSubscriptionId?: string;
+  subscriptionPlan?: "monthly" | "yearly";
 };
 
 const SALES_OWNED_FIELDS = [
@@ -32,6 +35,9 @@ const SALES_OWNED_FIELDS = [
   "contactHistory",
   "email",
   "outreach",
+  "stripeCustomerId",
+  "stripeSubscriptionId",
+  "subscriptionPlan",
 ] as const;
 
 const leadsDir = resolve(__dirname, "../content/leads");
