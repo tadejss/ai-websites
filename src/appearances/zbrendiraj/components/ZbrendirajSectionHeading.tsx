@@ -18,7 +18,7 @@ export function ZbrendirajSectionHeading({
       className={
         align === "center"
           ? "mx-auto max-w-3xl text-center"
-          : "max-w-xl text-left"
+          : "max-w-3xl text-left"
       }
     >
       <p className={`${zbSectionEyebrow}`}>

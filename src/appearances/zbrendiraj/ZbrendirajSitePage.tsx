@@ -5,6 +5,7 @@ import { ZbrendirajFaqCtaSection } from "./components/ZbrendirajFaqCtaSection";
 import { ZbrendirajFooter } from "./components/ZbrendirajFooter";
 import { ZbrendirajHeader } from "./components/ZbrendirajHeader";
 import { ZbrendirajHeroSection } from "./components/ZbrendirajHeroSection";
+import { ZbrendirajPricingSection } from "./components/ZbrendirajPricingSection";
 import { ZbrendirajServicesSection } from "./components/ZbrendirajServicesSection";
 import { ZbrendirajStepsSection } from "./components/ZbrendirajStepsSection";
 import type { AppearancePageProps } from "../types";
@@ -16,6 +17,7 @@ export function ZbrendirajSitePage({ siteConfig, siteSlug }: AppearancePageProps
       <main>
         <ZbrendirajHeroSection siteConfig={siteConfig} />
         <ZbrendirajStepsSection siteConfig={siteConfig} />
+        <ZbrendirajPricingSection />
         <ZbrendirajServicesSection siteConfig={siteConfig} />
         <ZbrendirajConversionSection siteConfig={siteConfig} />
         <ZbrendirajFaqCtaSection siteSlug={siteSlug} />

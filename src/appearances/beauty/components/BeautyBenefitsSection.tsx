@@ -4,7 +4,12 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { formatCardTitle } from "../utils/format-card-title";
 import { resolveBeautyLayout } from "../assign-layout";
 import { BeautyBrowserFrame } from "./BeautyBrowserFrame";
-import type { Benefit, IconName, SiteConfig } from "@/content/types/site";
+import type {
+  Benefit,
+  IconName,
+  SiteConfig,
+} from "@/content/types/site";
+import { getWhyChooseUsStepTitle } from "@/content/types/site";
 
 type Props = {
   siteConfig: SiteConfig;
@@ -103,16 +108,20 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
               />
 
               <div className="mt-12 grid gap-8 md:grid-cols-3">
-                {whyChooseUs.steps.items.map((item, index) => (
-                  <article key={item} className="relative">
-                    <p className="font-display text-5xl leading-none text-accent/30">
-                      {String(index + 1).padStart(2, "0")}
-                    </p>
-                    <p className="mt-4 text-base leading-relaxed text-foreground">
-                      {item}
-                    </p>
-                  </article>
-                ))}
+                {whyChooseUs.steps.items.map((item, index) => {
+                  const title = getWhyChooseUsStepTitle(item);
+
+                  return (
+                    <article key={title} className="relative">
+                      <p className="font-display text-5xl leading-none text-accent/30">
+                        {String(index + 1).padStart(2, "0")}
+                      </p>
+                      <p className="mt-4 text-base leading-relaxed text-foreground">
+                        {title}
+                      </p>
+                    </article>
+                  );
+                })}
               </div>
             </div>
           ) : null}

@@ -235,9 +235,23 @@
         "id": { "type": "string" },
         "eyebrow": { "type": "string" },
         "title": { "type": "string" },
+        "description": { "type": "string" },
         "items": {
           "type": "array",
-          "items": { "type": "string" }
+          "items": {
+            "oneOf": [
+              { "type": "string" },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["title", "description"],
+                "properties": {
+                  "title": { "type": "string" },
+                  "description": { "type": "string" }
+                }
+              }
+            ]
+          }
         }
       }
     },

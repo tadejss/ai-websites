@@ -24,6 +24,10 @@ CHECKOUT_NOTIFY_EMAIL=info@zbrendiraj.si
 
 # Recommended: 22 % DDV (exclusive). Create in Stripe → Settings → Tax rates.
 STRIPE_TAX_RATE_ID=txr_...
+
+# Homepage pricing table (Zbrendiraj.si)
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
+NEXT_PUBLIC_STRIPE_PRICING_TABLE_ID=prctbl_...
 ```
 
 Also required for purchase emails: `RESEND_API_KEY`.

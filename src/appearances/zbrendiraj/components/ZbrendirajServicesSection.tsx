@@ -1,18 +1,9 @@
-import { Icon } from "@/content/icons";
-import { ZbrendirajSectionHeading } from "./ZbrendirajSectionHeading";
-import { zbBodyText } from "../styles";
-import type { IconName, SiteConfig } from "@/content/types/site";
+import { zbBodyText, zbSectionEyebrow } from "../styles";
+import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
   siteConfig: SiteConfig;
 };
-
-const SERVICE_ICONS: IconName[] = [
-  "sparkles",
-  "building",
-  "phone",
-  "bolt",
-];
 
 export function ZbrendirajServicesSection({ siteConfig }: Props) {
   const { services } = siteConfig;
@@ -23,67 +14,42 @@ export function ZbrendirajServicesSection({ siteConfig }: Props) {
       className="bg-black px-4 py-24 sm:px-6 sm:py-32"
     >
       <div className="mx-auto max-w-7xl">
-        <ZbrendirajSectionHeading
-          eyebrow={services.eyebrow}
-          title={services.title}
-          description={services.description}
-        />
-
-        <div className="mt-16 grid gap-x-12 gap-y-14 sm:grid-cols-2">
-          {services.items.map((service, index) => {
-            const icon = SERVICE_ICONS[index] ?? service.icon;
-
-            return (
-              <article
-                key={service.title}
-                className={
-                  index === 0
-                    ? "sm:col-span-2 sm:grid sm:grid-cols-[auto_1fr] sm:items-start sm:gap-10"
-                    : ""
-                }
-              >
-                <div className="flex size-14 items-center justify-center rounded-full bg-accent text-black">
-                  <Icon name={icon} />
-                </div>
-                <div className={index === 0 ? "mt-6 sm:mt-0" : "mt-6"}>
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-accent/70">
-                    {String(index + 1).padStart(2, "0")}
-                  </p>
-                  <h3 className="font-display mt-2 text-3xl leading-tight text-white sm:text-4xl">
-                    {service.title}
-                  </h3>
-                  <p
-                    className={`mt-4 max-w-xl ${zbBodyText} ${
-                      index === 0 ? "sm:text-lg" : ""
-                    }`}
-                  >
-                    {service.description}
-                  </p>
-                  <div
-                    aria-hidden="true"
-                    className="mt-6 h-px w-16 bg-accent/50"
-                  />
-                </div>
-              </article>
-            );
-          })}
+        <div className="max-w-4xl">
+          <p className={zbSectionEyebrow}>{services.eyebrow}</p>
+          <h2 className="font-display mt-5 text-4xl leading-[1.05] text-white sm:text-5xl lg:text-6xl">
+            {services.title}
+          </h2>
+          {services.description ? (
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#D0D0D0] sm:text-lg">
+              {services.description}
+            </p>
+          ) : null}
         </div>
 
-        {services.pricing ? (
-          <div className="mt-16 border-t border-accent/40 pt-10 sm:flex sm:items-end sm:justify-between sm:gap-10">
-            <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-accent">
-                Cena
+        <ol className="mt-16 border-t border-white/15 sm:mt-20">
+          {services.items.map((service, index) => (
+            <li
+              key={service.title}
+              className="grid gap-4 border-b border-white/15 py-10 sm:grid-cols-[7rem_minmax(0,1fr)_minmax(0,1.15fr)] sm:items-start sm:gap-12 sm:py-14"
+            >
+              <p
+                aria-hidden="true"
+                className="font-display text-5xl leading-none text-accent/45 sm:text-6xl"
+              >
+                {String(index + 1).padStart(2, "0")}
               </p>
-              <h3 className="font-display mt-3 text-3xl leading-tight text-white sm:text-4xl">
-                {services.pricing.title}
+
+              <h3 className="font-display text-2xl leading-tight text-white sm:text-3xl lg:text-4xl">
+                <span className="sr-only">
+                  {String(index + 1).padStart(2, "0")} —{" "}
+                </span>
+                {service.title}
               </h3>
-            </div>
-            <p className={`mt-4 max-w-md sm:mt-0 sm:text-right ${zbBodyText}`}>
-              {services.pricing.description}
-            </p>
-          </div>
-        ) : null}
+
+              <p className={`sm:pt-1 ${zbBodyText}`}>{service.description}</p>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );

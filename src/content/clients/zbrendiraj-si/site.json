@@ -30,18 +30,18 @@
         "label": "Kako deluje"
       },
       {
-        "href": "pogosta-vprasanja",
-        "label": "Vprašanja"
+        "href": "#cenik",
+        "label": "Cenik"
       }
     ],
-    "cta": "Ustvari svojo stran"
+    "cta": "Začni zdaj"
   },
   "hero": {
     "badge": "Zbrendiraj.si",
     "title": "Tvoj biznis,",
     "titleHighlight": "končno online.",
     "description": "Profesionalna spletna stran za tvoj biznis — brez kompliciranja, dolgih rokov in nepotrebnih stroškov.",
-    "primaryCta": "Ustvari svojo stran",
+    "primaryCta": "Začni zdaj",
     "secondaryCta": "Poglej primere",
     "secondaryCtaHref": "#primere",
     "stats": []
@@ -49,27 +49,27 @@
   "services": {
     "id": "storitve",
     "eyebrow": "Zakaj Zbrendiraj.si",
-    "title": "Vse, kar potrebuješ za profesionalno spletno prisotnost",
-    "description": "Izgleda kot tvoja stran. Ker je.",
+    "title": "Profesionalna spletna stran. Brez projekta, ki traja tri mesece.",
+    "description": "Klasična izdelava spletne strani pomeni mesece usklajevanj in več tisoč evrov na začetku. Zbrendiraj.si ti da profesionalno stran za tvoj biznis — z naročnino, brez dolgega projekta.",
     "items": [
       {
-        "title": "Profesionalen dizajn",
-        "description": "Stran, ki tvojemu biznisu naredi dobro prvo predstavitev.",
+        "title": "Brez velike začetne investicije",
+        "description": "Namesto več tisoč evrov za izdelavo dobiš profesionalno spletno stran v okviru preproste naročnine.",
         "icon": "sparkles"
       },
       {
-        "title": "Prilagojeno tvojemu biznisu",
-        "description": "Vsebina in izgled, ki ustrezata tvoji dejavnosti in tvojim strankam.",
+        "title": "Narejena za tvoj biznis",
+        "description": "Stran ni samo kopija predloge. Vsebino, strukturo, fotografije in izgled prilagodimo tvoji dejavnosti in tvojim strankam.",
         "icon": "building"
       },
       {
-        "title": "Odlično na telefonu",
-        "description": "Večina obiskovalcev pride prek telefona. Zato mora stran izgledati dobro povsod.",
+        "title": "Vedno lahko nekaj spremeniš",
+        "description": "Posodabljanje vsebine je vključeno. Ko se spremeni ponudba, delovni čas, kontakt ali karkoli drugega, se spremeni tudi stran. Večje nadgradnje in nove funkcionalnosti so možne proti doplačilu.",
         "icon": "phone"
       },
       {
-        "title": "Hitro online",
-        "description": "Brez tednov usklajevanj in neskončnih popravkov — od ideje do objave v nekaj dneh.",
+        "title": "Tvoja stran, tvoja domena",
+        "description": "Stran je objavljena na tvoji domeni, domena pa je vključena v letno naročnino. Tvoja spletna prisotnost tako ni odvisna od družbenih omrežij.",
         "icon": "bolt"
       }
     ],
@@ -109,11 +109,24 @@
     "steps": {
       "id": "kako-deluje",
       "eyebrow": "Kako deluje",
-      "title": "Od ideje do objavljene strani v treh korakih",
+      "title": "Ti poveš, kaj delaš. Mi poskrbimo, da to dobro izgleda online.",
       "items": [
-        "Poveš nam o svojem biznisu",
-        "Pripravimo tvojo stran",
-        "Objaviš in začneš dobivati obiskovalce"
+        {
+          "title": "Izbereš paket",
+          "description": "Izbereš naročnino, ki ti ustreza, in začneš brez velike začetne investicije."
+        },
+        {
+          "title": "Poveš nam o svojem biznisu",
+          "description": "Prejmeš kratek obrazec, kjer nam pošlješ podatke, vsebino, fotografije in želje za svojo stran."
+        },
+        {
+          "title": "Mi pripravimo stran",
+          "description": "Na podlagi tvojih informacij pripravimo in prilagodimo spletno stran tvojemu biznisu."
+        },
+        {
+          "title": "Pregledaš in objavimo",
+          "description": "Pregledaš pripravljeno stran. Ko je vse urejeno, jo objavimo."
+        }
       ]
     }
   },

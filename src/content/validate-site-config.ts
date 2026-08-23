@@ -179,11 +179,17 @@ const privacySchema = z.object({
     .optional(),
 });
 
+const whyChooseUsStepItemSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+});
+
 const whyChooseUsStepsSchema = z.object({
   id: z.string(),
   eyebrow: z.string(),
   title: z.string(),
-  items: z.array(z.string()),
+  description: z.string().optional(),
+  items: z.array(z.union([z.string(), whyChooseUsStepItemSchema])),
 });
 
 const pricingNoteSchema = z.object({

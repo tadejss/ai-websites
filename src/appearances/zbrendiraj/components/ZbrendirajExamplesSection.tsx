@@ -37,6 +37,7 @@ export function ZbrendirajExamplesSection({ siteConfig }: Props) {
     >
       <div className="mx-auto max-w-7xl">
         <ZbrendirajSectionHeading
+          align="left"
           eyebrow={whyChooseUs.eyebrow}
           title={whyChooseUs.title}
           description={whyChooseUs.description}

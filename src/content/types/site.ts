@@ -44,12 +44,31 @@ export type Benefit = {
   href?: string;
 };
 
+export type WhyChooseUsStepItem = {
+  title: string;
+  description: string;
+};
+
+/** String steps remain valid for simpler templates; objects add a short description. */
+export type WhyChooseUsStep = string | WhyChooseUsStepItem;
+
 export type WhyChooseUsSteps = {
   id: string;
   eyebrow: string;
   title: string;
-  items: string[];
+  description?: string;
+  items: WhyChooseUsStep[];
 };
+
+export function getWhyChooseUsStepTitle(step: WhyChooseUsStep): string {
+  return typeof step === "string" ? step : step.title;
+}
+
+export function getWhyChooseUsStepDescription(
+  step: WhyChooseUsStep,
+): string | undefined {
+  return typeof step === "string" ? undefined : step.description;
+}
 
 export type PricingNote = {
   title: string;
