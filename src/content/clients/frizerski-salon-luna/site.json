@@ -1,0 +1,170 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "blush-champagne",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-luna/hero.jpg",
+      "alt": "Svetel in umirjen ambient ženskega frizerskega salona"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-luna/services.jpg",
+      "alt": "Detajl nego in oblikovanja las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Salon",
+    "highlight": "Luna"
+  },
+  "metadata": {
+    "title": "Frizerski salon Luna | Maribor",
+    "description": "Ženski frizerski salon v Mariboru — striženje, barvanje in nega v mirnem, elegantnem ambientu."
+  },
+  "nav": {
+    "links": [
+      { "href": "#storitve", "label": "Storitve" },
+      { "href": "#zakaj-mi", "label": "Zakaj Luna" },
+      { "href": "#kontakt", "label": "Kontakt" }
+    ],
+    "cta": "Rezerviraj termin"
+  },
+  "hero": {
+    "badge": "Ženski salon · Maribor",
+    "title": "Lase, ki se",
+    "titleHighlight": "počutijo doma.",
+    "description": "Miren frizerski salon za ženske, ki želijo svež videz brez hitenja. Striženje, barvanje in nega — skrbno in po meri.",
+    "primaryCta": "Rezerviraj termin",
+    "secondaryCta": "Poglej storitve",
+    "secondaryCtaHref": "#storitve",
+    "stats": []
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Ponudba",
+    "title": "Storitve, prilagojene tebi",
+    "description": "Manjša ponudba, več pozornosti. Vsak termin je namenjen tebi.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Sveža frizura, prilagojena obrazu, teksturi las in tvojemu ritmu dneva.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje in balayage",
+        "description": "Naravni ali izraziti odtenki z nežnim prehodom in skrbjo za zdravje las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Za vsakdan ali posebno priložnost — urejeno, a še vedno tvoje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in regeneracija",
+        "description": "Obnove, maske in tretmaji, ki lase umirijo in vrnejo sijaj.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj Luna",
+    "title": "Salon, kjer ni treba hiteti",
+    "description": "Majhen prostor, jasen termin in miren ritm — da lahko res oddahneš.",
+    "highlights": [
+      "Osebni pristop, ne tekoči trak",
+      "Sodobne, a nežne tehnike barvanja",
+      "Miren ambient v središču Maribora"
+    ],
+    "benefits": [
+      {
+        "stat": "Mir",
+        "label": "Ambient",
+        "description": "Brez prenatrpanosti in hitenja — fokus je na tebi."
+      },
+      {
+        "stat": "Skrb",
+        "label": "Za lase",
+        "description": "Barvanje in nega z mislijo na zdravje las, ne le na barvo."
+      },
+      {
+        "stat": "Blizu",
+        "label": "Maribor",
+        "description": "Enostavno dostopen salon s preprosto rezervacijo termina."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Rezerviraj svoj termin",
+    "description": "Piši ali pokliči — odgovorimo še isti dan v delovnem času.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Partizanska cesta 12, 2000 Maribor",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 220 118",
+        "href": "tel:041220118",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–18:00, Sob: 8:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošlji povpraševanje",
+      "description": "Povej želeno storitev in okvirni termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Tvoje ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Tvoja telefonska številka",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Želena storitev in termin...",
+      "submitLabel": "Rezerviraj termin"
+    }
+  },
+  "footer": {
+    "address": "Partizanska cesta 12, 2000 Maribor",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Luna",
+    "address": "Partizanska cesta 12, 2000 Maribor",
+    "email": "info@salon-luna.si",
+    "phone": "041 220 118"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-23",
+    "contactForm": {
+      "enabled": true,
+      "fields": ["name", "phone", "message"]
+    },
+    "analytics": { "enabled": false, "provider": null },
+    "marketing": { "enabled": false },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": { "googleMaps": false, "youtube": false },
+    "cookies": { "nonEssential": false }
+  }
+}

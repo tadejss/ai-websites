@@ -30,7 +30,7 @@ export function ZbrendirajContactSection({ siteConfig, siteSlug }: Props) {
           description={contact.description}
         />
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-14">
+        <div className="mt-14 grid gap-5 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-start">
           <div className="space-y-5">
             {contact.items.map((item) => (
               <div key={item.label} className={`flex gap-4 ${zbCard} p-6`}>

@@ -1,0 +1,174 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/krovstvo-petek/hero.jpg",
+      "alt": "Krovci na strehi hiše med menjavo kritine"
+    },
+    "services": {
+      "src": "/clients/krovstvo-petek/services.jpg",
+      "alt": "Detajl nove strešne kritine in žlebov"
+    }
+  },
+  "brand": {
+    "prefix": "Krovstvo",
+    "highlight": "Petek"
+  },
+  "metadata": {
+    "title": "Krovstvo Petek | Štajerska",
+    "description": "Nova kritina, sanacije streh, žlebovi in nujna popravila po neurju na Štajerskem."
+  },
+  "nav": {
+    "links": [
+      { "href": "#storitve", "label": "Storitve" },
+      { "href": "#zakaj-mi", "label": "Zakaj mi" },
+      { "href": "#kontakt", "label": "Kontakt" }
+    ],
+    "cta": "Prijavi poškodbo"
+  },
+  "hero": {
+    "badge": "Krovstvo · Štajerska",
+    "title": "Streha, ki",
+    "titleHighlight": "drži vreme zunaj.",
+    "description": "Nova kritina, sanacije in žlebovi. Ko pušča — pridemo. Ko gradiš — naredimo prav.",
+    "primaryCta": "Prijavi poškodbo",
+    "secondaryCta": "Naše storitve",
+    "secondaryCtaHref": "#storitve",
+    "stats": [
+      { "value": "20+", "label": "Let na strehah" },
+      { "value": "Nujno", "label": "Po neurju" },
+      { "value": "Štajerska", "label": "Območje" }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Storitve",
+    "title": "Od kritine do žleba",
+    "description": "Osredotočeni na strehe — brez razpršenih gradbenih del.",
+    "items": [
+      {
+        "title": "Nova kritina",
+        "description": "Menjava in polaganje kritine za novogradnje in celovite prenove streh.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sanacije streh",
+        "description": "Lokalna popravila, zamenjava poškodovanih delov in odprava puščanja.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Žlebovi in odvodnjavanje",
+        "description": "Montaža in čiščenje žlebov, da voda odteče tja, kamor mora.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nujna popravila",
+        "description": "Hitra intervencija po neurju, toči ali odtrgani kritini.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj Petek",
+    "title": "Streha ni kraj za improvizacijo",
+    "description": "Delamo odločno, varno in z izkušnjami, ki jih dobiš samo na objektu.",
+    "highlights": [],
+    "benefits": [
+      {
+        "stat": "Hitra",
+        "label": "Intervencija",
+        "description": "Po škodi pride na vrsto streha — ne čakanje na idealno vreme."
+      },
+      {
+        "stat": "Vse",
+        "label": "Kritine",
+        "description": "Izkušnje z različnimi materiali in nakloni streh."
+      },
+      {
+        "stat": "Varno",
+        "label": "Delo",
+        "description": "Oprema, postopek in zaključki, ki zdržijo sezono za sezono."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Pušča? Pokliči.",
+    "description": "Opiši škodo ali projekt — dogovorimo se za ogled.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 880 267",
+        "href": "tel:051880267",
+        "icon": "phone"
+      },
+      {
+        "label": "E-pošta",
+        "value": "info@krovstvo-petek.si",
+        "href": "mailto:info@krovstvo-petek.si",
+        "icon": "email"
+      },
+      {
+        "label": "Območje",
+        "value": "Štajerska",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Prijavi poškodbo ali projekt",
+      "description": "Kratek opis strehe in težave zadostuje za prvi odziv.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vaša telefonska številka",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Npr. pušča pri dimniku, nova kritina…",
+      "submitLabel": "Pošlji"
+    }
+  },
+  "footer": {
+    "address": "Tržaška cesta 41, 2000 Maribor",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Krovstvo Petek",
+    "address": "Tržaška cesta 41, 2000 Maribor",
+    "email": "info@krovstvo-petek.si",
+    "phone": "051 880 267"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-23",
+    "contactForm": {
+      "enabled": true,
+      "fields": ["name", "phone", "message"]
+    },
+    "analytics": { "enabled": false, "provider": null },
+    "marketing": { "enabled": false },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": { "googleMaps": false, "youtube": false },
+    "cookies": { "nonEssential": false }
+  }
+}

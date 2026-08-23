@@ -1,0 +1,27 @@
+{
+  "companyName": "Elektro inštalacije Kovač",
+  "industry": "Elektroinštalater",
+  "tagline": "Hišne in poslovne elektroinštalacije z jasnim pristopom",
+  "services": [
+    "Nove elektroinštalacije",
+    "Prenove in zamenjava ožičenja",
+    "Razsvetljava",
+    "Odpravljanje napak"
+  ],
+  "phone": "040 712 334",
+  "email": "info@elektro-kovac.si",
+  "address": "Kidričeva ulica 7, 3000 Celje, Slovenia",
+  "openingHours": "Pon–Pet: 7:00–15:30",
+  "sellingPoints": [
+    "Hitro odzivanje na napake",
+    "Pregledno dokumentirano delo",
+    "Izkušnje v stanovanjskih in poslovnih objektih"
+  ],
+  "targetCustomers": "Lastniki hiš, upravniki in manjša podjetja",
+  "serviceArea": "Celje in Savinjska regija",
+  "yearsExperience": "15",
+  "tone": "tehničen, direkten, zanesljiv",
+  "brandStyle": "moderna tehnična obrt",
+  "competitors": "Lokalni elektroinštalaterji",
+  "callToAction": "Pokliči za pregled"
+}

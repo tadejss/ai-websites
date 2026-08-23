@@ -1,0 +1,174 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-hribar/hero.jpg",
+      "alt": "Sodobna kopalnica z natančno položenimi keramičnimi ploščicami"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-hribar/services.jpg",
+      "alt": "Detajl keramičnih talnih ploščic v svetlem prostoru"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Hribar"
+  },
+  "metadata": {
+    "title": "Keramičarstvo Hribar | Ljubljana",
+    "description": "Polaganje keramike, prenove kopalnic in oblaganje stopnic v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      { "href": "#storitve", "label": "Storitve" },
+      { "href": "#zakaj-mi", "label": "Zakaj mi" },
+      { "href": "#kontakt", "label": "Kontakt" }
+    ],
+    "cta": "Pridobi ponudbo"
+  },
+  "hero": {
+    "badge": "Ljubljana z okolico",
+    "title": "Keramika, ki",
+    "titleHighlight": "drži linijo.",
+    "description": "Prenove kopalnic, tla in stopnice — natančno položeno, čisto izvedeno in dogovorjeno vnaprej.",
+    "primaryCta": "Pridobi ponudbo",
+    "secondaryCta": "Preglej storitve",
+    "secondaryCtaHref": "#storitve",
+    "stats": [
+      { "value": "12+", "label": "Let izkušenj" },
+      { "value": "Ljubljana", "label": "In okolica" },
+      { "value": "Čisto", "label": "Na objektu" }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Storitve",
+    "title": "Od kopalnice do terase",
+    "description": "Osredotočamo se na dela, kjer se vidi vsak milimeter.",
+    "items": [
+      {
+        "title": "Prenove kopalnic",
+        "description": "Od priprave podlage do končnih oblog — urejena kopalnica brez kompromisov pri detajlih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Talne in stenske ploščice",
+        "description": "Polaganje vseh formatov, vključno z večjimi ploščami in zahtevnejšimi vzorci.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblaganje stopnic",
+        "description": "Notranje in zunanje stopnice z enakomernimi furgami in trdnim robom.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Terase in balkoni",
+        "description": "Zunanje površine z ustrezno hidroizolacijo in trajnimi materiali.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj Hribar",
+    "title": "Jasno dogovorjeno. Natančno izvedeno.",
+    "description": "Delamo tako, da veš, kaj prihaja — in kako bo videti na koncu.",
+    "highlights": [],
+    "benefits": [
+      {
+        "stat": "01",
+        "label": "Natančnost",
+        "description": "Ravne linije, enakomerne furge in čisti zaključki."
+      },
+      {
+        "stat": "02",
+        "label": "Dogovori",
+        "description": "Roki, obseg del in cena so usklajeni pred začetkom."
+      },
+      {
+        "stat": "03",
+        "label": "Red",
+        "description": "Objekt ostane urejen; po koncu pospravimo za sabo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Povej, kaj prenavljaš",
+    "description": "Pošlji kratek opis projekta — pripravimo okvirno ponudbo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 445 902",
+        "href": "tel:031445902",
+        "icon": "phone"
+      },
+      {
+        "label": "E-pošta",
+        "value": "info@keramicarstvo-hribar.si",
+        "href": "mailto:info@keramicarstvo-hribar.si",
+        "icon": "email"
+      },
+      {
+        "label": "Območje",
+        "value": "Ljubljana z okolico",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Povpraševanje",
+      "description": "Opiši prostor in približen obseg del.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vaša telefonska številka",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Kopalnica, tla, stopnice…",
+      "submitLabel": "Pridobi ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Celovška cesta 88, 1000 Ljubljana",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Hribar",
+    "address": "Celovška cesta 88, 1000 Ljubljana",
+    "email": "info@keramicarstvo-hribar.si",
+    "phone": "031 445 902"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-23",
+    "contactForm": {
+      "enabled": true,
+      "fields": ["name", "phone", "message"]
+    },
+    "analytics": { "enabled": false, "provider": null },
+    "marketing": { "enabled": false },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": { "googleMaps": false, "youtube": false },
+    "cookies": { "nonEssential": false }
+  }
+}

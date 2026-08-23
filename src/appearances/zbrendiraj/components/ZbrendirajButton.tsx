@@ -4,7 +4,7 @@ type Props = {
   children: React.ReactNode;
   href?: string;
   type?: "button" | "submit";
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "inverse" | "outline-inverse";
   className?: string;
 };
 
@@ -27,6 +27,10 @@ const variantStyles = {
     "bg-accent text-black hover:bg-accent-hover border border-transparent",
   outline:
     "bg-transparent text-white border border-white/25 hover:border-accent hover:text-accent",
+  inverse:
+    "bg-black text-accent hover:bg-black/85 border border-transparent",
+  "outline-inverse":
+    "bg-transparent text-black border border-black/35 hover:bg-black/10",
 } as const;
 
 export function ZbrendirajButton({
@@ -49,7 +53,9 @@ export function ZbrendirajButton({
       className={`flex size-7 items-center justify-center rounded-full ${
         variant === "primary"
           ? "bg-black/20 text-black"
-          : "border border-current text-current"
+          : variant === "inverse"
+            ? "bg-accent/20 text-accent"
+            : "border border-current text-current"
       }`}
     >
       <ArrowIcon />

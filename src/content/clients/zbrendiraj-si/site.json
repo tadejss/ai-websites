@@ -38,7 +38,7 @@
         "label": "Cenik"
       },
       {
-        "href": "#vprasanja",
+        "href": "pogosta-vprasanja",
         "label": "FAQ"
       }
     ],
@@ -94,24 +94,40 @@
     "highlights": [],
     "benefits": [
       {
-        "title": "Avtoservis Novak",
-        "label": "Avtoservis",
-        "description": "Temna, tehnična identiteta — jasna ponudba, delovni čas in kontakt na enem mestu.",
+        "title": "Frizerski salon Luna",
+        "label": "Frizerski salon",
         "image": {
-          "src": "/clients/zbrendiraj-si/examples/avtoservis-novak.jpg",
-          "alt": "avtoservis-novak.si"
+          "src": "/clients/zbrendiraj-si/examples/frizerski-salon-luna.jpg",
+          "alt": "frizerski-salon-luna.si"
         },
-        "href": "https://splet.vercel.app/avtoservis-novak"
+        "href": "https://zbrendiraj.si/frizerski-salon-luna"
       },
       {
-        "title": "Milimeter Frizerski Salon",
-        "label": "Frizerski salon",
-        "description": "Topla, elegantna predstavitev salona — popolnoma drugačen videz, ista kakovost izdelave.",
+        "title": "Keramičarstvo Hribar",
+        "label": "Keramičar",
         "image": {
-          "src": "/clients/zbrendiraj-si/examples/milimeter-frizerski-salon.jpg",
-          "alt": "milimeter-frizerski-salon.si"
+          "src": "/clients/zbrendiraj-si/examples/keramicarstvo-hribar.jpg",
+          "alt": "keramicarstvo-hribar.si"
         },
-        "href": "https://splet.vercel.app/milimeter-frizerski-salon"
+        "href": "https://zbrendiraj.si/keramicarstvo-hribar"
+      },
+      {
+        "title": "Elektro inštalacije Kovač",
+        "label": "Elektroinštalater",
+        "image": {
+          "src": "/clients/zbrendiraj-si/examples/elektro-instalacije-kovac.jpg",
+          "alt": "elektro-instalacije-kovac.si"
+        },
+        "href": "https://zbrendiraj.si/elektro-instalacije-kovac"
+      },
+      {
+        "title": "Krovstvo Petek",
+        "label": "Krovec",
+        "image": {
+          "src": "/clients/zbrendiraj-si/examples/krovstvo-petek.jpg",
+          "alt": "krovstvo-petek.si"
+        },
+        "href": "https://zbrendiraj.si/krovstvo-petek"
       }
     ],
     "steps": {

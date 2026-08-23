@@ -1,0 +1,27 @@
+{
+  "companyName": "Frizerski salon Luna",
+  "industry": "Frizerski salon",
+  "tagline": "Miren salon za ženske, ki želijo svež in urejen videz",
+  "services": [
+    "Žensko striženje",
+    "Barvanje in balayage",
+    "Oblikovanje pričesk",
+    "Nega in regeneracija las"
+  ],
+  "phone": "041 220 118",
+  "email": "info@salon-luna.si",
+  "address": "Partizanska cesta 12, 2000 Maribor, Slovenia",
+  "openingHours": "Pon–Pet: 9:00–18:00, Sob: 8:00–13:00",
+  "sellingPoints": [
+    "Miren ambient brez hitenja",
+    "Sodobne tehnike barvanja",
+    "Osebni pristop k vsaki stranki"
+  ],
+  "targetCustomers": "Ženske, ki iščejo urejen frizerski salon z osebnim pristopom v Mariboru",
+  "serviceArea": "Maribor z okolico",
+  "yearsExperience": "8",
+  "tone": "topel, eleganten, umirjen",
+  "brandStyle": "mehak ženski salon",
+  "competitors": "Lokalni frizerski saloni v Mariboru",
+  "callToAction": "Rezerviraj termin"
+}

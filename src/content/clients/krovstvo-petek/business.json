@@ -1,0 +1,27 @@
+{
+  "companyName": "Krovstvo Petek",
+  "industry": "Krovstvo in strešna dela",
+  "tagline": "Strehe, žlebovi in sanacije — trdno in brez odlašanja",
+  "services": [
+    "Nova kritina",
+    "Sanacije streh",
+    "Žlebovi in odvodnjavanje",
+    "Nujna popravila po neurju"
+  ],
+  "phone": "051 880 267",
+  "email": "info@krovstvo-petek.si",
+  "address": "Tržaška cesta 41, 2000 Maribor, Slovenia",
+  "openingHours": "Pon–Pet: 6:30–15:00",
+  "sellingPoints": [
+    "Hitra sanacija po škodi",
+    "Izkuseni krovci za vse kritine",
+    "Delo tudi v zahtevnih vremenskih razmerah"
+  ],
+  "targetCustomers": "Lastniki hiš in upravniki večstanovanjskih objektov",
+  "serviceArea": "Štajerska",
+  "yearsExperience": "20",
+  "tone": "odločen, praktičen, zanesljiv",
+  "brandStyle": "tradicionalna obrt z modernim pristopom",
+  "competitors": "Lokalna krovska podjetja",
+  "callToAction": "Prijavi poškodbo strehe"
+}

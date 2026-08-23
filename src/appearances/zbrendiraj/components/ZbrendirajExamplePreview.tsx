@@ -3,14 +3,6 @@ type Props = {
   title: string;
 };
 
-function getHostname(url: string): string {
-  try {
-    return new URL(url).hostname;
-  } catch {
-    return url;
-  }
-}
-
 export function ZbrendirajExamplePreview({ href, title }: Props) {
   return (
     <div className="relative aspect-[16/10] overflow-hidden bg-[#111]">
@@ -25,4 +17,3 @@ export function ZbrendirajExamplePreview({ href, title }: Props) {
   );
 }
 
-export { getHostname };
