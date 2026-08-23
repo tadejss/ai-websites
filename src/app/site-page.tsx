@@ -23,7 +23,7 @@ export function SitePage({ siteConfig, siteSlug }: Props) {
     <div
       data-appearance={appearance}
       style={themeStyle}
-      className={`min-h-full bg-background text-foreground ${showPurchaseBar ? "pb-36 sm:pb-28" : ""}`}
+      className="min-h-full bg-background text-foreground"
     >
       <Page siteConfig={siteConfig} siteSlug={resolvedSlug} />
       {showPurchaseBar ? <DemoPurchaseBar slug={resolvedSlug} /> : null}
