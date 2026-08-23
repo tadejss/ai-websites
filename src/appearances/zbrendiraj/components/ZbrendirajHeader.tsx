@@ -5,9 +5,22 @@ import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
   siteConfig: SiteConfig;
+  siteSlug: string;
 };
 
-export function ZbrendirajHeader({ siteConfig }: Props) {
+function resolveNavHref(href: string, siteSlug: string): string {
+  if (href.startsWith("#") || href.startsWith("http") || href.startsWith("mailto:")) {
+    return href;
+  }
+
+  if (href.startsWith("/")) {
+    return href;
+  }
+
+  return `/${siteSlug}/${href}`;
+}
+
+export function ZbrendirajHeader({ siteConfig, siteSlug }: Props) {
   const { brand, nav, contact } = siteConfig;
   const brandName = formatBrandName(brand);
 
@@ -22,7 +35,7 @@ export function ZbrendirajHeader({ siteConfig }: Props) {
           {nav.links.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={resolveNavHref(link.href, siteSlug)}
               className="text-sm font-medium tracking-wide text-[#D0D0D0] transition-colors hover:text-white"
             >
               {link.label}
@@ -43,7 +56,7 @@ export function ZbrendirajHeader({ siteConfig }: Props) {
             {nav.links.map((link) => (
               <a
                 key={link.href}
-                href={link.href}
+                href={resolveNavHref(link.href, siteSlug)}
                 className="block rounded-xl px-4 py-3 text-sm font-medium text-[#D0D0D0] transition-colors hover:bg-white/5 hover:text-white"
               >
                 {link.label}

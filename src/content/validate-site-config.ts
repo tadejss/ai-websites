@@ -13,6 +13,8 @@ const iconNameSchema = z.enum([
   "phone",
   "email",
   "clock",
+  "sparkles",
+  "bolt",
   "service-1",
   "service-2",
   "service-3",

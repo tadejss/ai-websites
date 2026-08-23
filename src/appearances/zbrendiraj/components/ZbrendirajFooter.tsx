@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LegalFooterLinks } from "@/components/legal/LegalFooterLinks";
 import { formatBrandName } from "@/content/brand-name";
 import type { SiteConfig } from "@/content/types/site";
@@ -28,7 +29,13 @@ export function ZbrendirajFooter({ siteConfig, siteSlug }: Props) {
             ) : null}
           </div>
 
-          <div className="md:text-right">
+          <div className="flex flex-col gap-4 md:items-end">
+            <Link
+              href={`/${siteSlug}/pogosta-vprasanja`}
+              className="text-sm text-[#D0D0D0] transition-colors hover:text-white"
+            >
+              Pogosta vprašanja
+            </Link>
             <LegalFooterLinks siteSlug={siteSlug} siteConfig={siteConfig} />
           </div>
         </div>

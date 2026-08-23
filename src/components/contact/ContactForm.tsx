@@ -9,6 +9,7 @@ type Props = {
   inputClassName: string;
   labelClassName: string;
   textareaClassName?: string;
+  fieldsClassName?: string;
   submitButton: ReactNode;
 };
 
@@ -20,6 +21,7 @@ export function ContactForm({
   inputClassName,
   labelClassName,
   textareaClassName,
+  fieldsClassName = "mt-6 space-y-4",
   submitButton,
 }: Props) {
   const { form } = siteConfig.contact;
@@ -97,7 +99,7 @@ export function ContactForm({
       <h3 className="text-lg font-semibold text-foreground">{form.title}</h3>
       <p className="mt-1 text-sm text-muted">{form.description}</p>
 
-      <div className="mt-6 space-y-4" aria-busy={state === "loading"}>
+      <div className={fieldsClassName} aria-busy={state === "loading"}>
         {fields.includes("name") ? (
           <div>
             <label htmlFor="contact-name" className={labelClassName}>

@@ -26,20 +26,12 @@
   "nav": {
     "links": [
       {
-        "href": "#storitve",
-        "label": "Storitve"
-      },
-      {
-        "href": "#primere",
-        "label": "Primeri"
-      },
-      {
         "href": "#kako-deluje",
         "label": "Kako deluje"
       },
       {
-        "href": "#kontakt",
-        "label": "Kontakt"
+        "href": "pogosta-vprasanja",
+        "label": "Vprašanja"
       }
     ],
     "cta": "Ustvari svojo stran"
@@ -63,22 +55,22 @@
       {
         "title": "Profesionalen dizajn",
         "description": "Stran, ki tvojemu biznisu naredi dobro prvo predstavitev.",
-        "icon": "service-1"
+        "icon": "sparkles"
       },
       {
         "title": "Prilagojeno tvojemu biznisu",
         "description": "Vsebina in izgled, ki ustrezata tvoji dejavnosti in tvojim strankam.",
-        "icon": "service-2"
+        "icon": "building"
       },
       {
         "title": "Odlično na telefonu",
         "description": "Večina obiskovalcev pride prek telefona. Zato mora stran izgledati dobro povsod.",
-        "icon": "service-3"
+        "icon": "phone"
       },
       {
         "title": "Hitro online",
         "description": "Brez tednov usklajevanj in neskončnih popravkov — od ideje do objave v nekaj dneh.",
-        "icon": "service-5"
+        "icon": "bolt"
       }
     ],
     "pricing": {
@@ -130,24 +122,7 @@
     "eyebrow": "Kontakt",
     "title": "Povej nam o svojem biznisu.",
     "description": "Povej nam nekaj osnovnih informacij. Mi pa ti pokažemo, kako bi lahko izgledala tvoja spletna stran.",
-    "faq": [
-      {
-        "question": "Kako hitro je stran pripravljena?",
-        "answer": "Običajno v nekaj dneh po tem, ko imamo osnovne informacije o tvojem biznisu."
-      },
-      {
-        "question": "Ali lahko uporabim svojo domeno?",
-        "answer": "Da. Pomagamo ti povezati obstoječo domeno ali pridobiti novo."
-      },
-      {
-        "question": "Ali je stran prilagojena telefonu?",
-        "answer": "Da — mobilna prilagoditev je vključena v vsako stran, ki jo pripravimo."
-      },
-      {
-        "question": "Ali lahko kasneje spremenim vsebino?",
-        "answer": "Seveda. Stran lahko kadarkoli posodobiš ali nadgradiš z dodatnimi funkcionalnostmi."
-      }
-    ],
+    "faq": [],
     "items": [
       {
         "label": "E-pošta",

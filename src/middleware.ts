@@ -8,6 +8,7 @@ const CUSTOM_DOMAIN_ROOT_PATHS = new Set([
   "/politika-zasebnosti",
   "/piskotki",
   "/splosni-pogoji",
+  "/pogosta-vprasanja",
 ]);
 
 export function middleware(request: NextRequest) {
@@ -62,6 +63,7 @@ export const config = {
     "/politika-zasebnosti",
     "/piskotki",
     "/splosni-pogoji",
+    "/pogosta-vprasanja",
     "/demo/:path*",
     "/admin/:path*",
   ],
