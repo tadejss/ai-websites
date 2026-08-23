@@ -134,7 +134,7 @@ export type LayoutHeroRatio = "5050" | "6040" | "full-copy";
 
 export type LayoutBenefitsMode = "default" | "visual";
 
-export type LayoutHeroAtmosphere = "grid" | "wash" | "plain";
+export type LayoutHeroAtmosphere = "grid" | "wash" | "plain" | "photo";
 
 export type LayoutSectionRule = "line" | "none";
 

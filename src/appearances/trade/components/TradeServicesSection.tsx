@@ -21,7 +21,7 @@ function ServiceCards({
   const { services } = siteConfig;
 
   return (
-    <div className={className ?? "grid gap-6 sm:grid-cols-2 lg:grid-cols-3"}>
+    <div className={className ?? "grid gap-6 sm:grid-cols-2"}>
       {services.items.map((service) => (
         <article
           key={service.title}
@@ -40,7 +40,7 @@ function ServiceCards({
       ))}
 
       {services.pricing ? (
-        <article className="rounded-[var(--radius-card)] border border-accent/30 bg-accent/10 p-6 sm:col-span-2 lg:col-span-3">
+        <article className="rounded-[var(--radius-card)] border border-accent/30 bg-accent/10 p-6 sm:col-span-2">
           <h3 className="font-display text-lg font-semibold text-foreground">
             {services.pricing.title}
           </h3>
@@ -103,7 +103,7 @@ export function TradeServicesSection({ siteConfig }: Props) {
       ) : (
         <ServiceCards
           siteConfig={siteConfig}
-          className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-16 grid gap-6 sm:grid-cols-2"
           cardClass={cardClass}
         />
       )}

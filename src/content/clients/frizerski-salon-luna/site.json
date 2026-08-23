@@ -22,7 +22,7 @@
     }
   },
   "brand": {
-    "prefix": "Salon",
+    "prefix": "Frizerski salon",
     "highlight": "Luna"
   },
   "metadata": {
@@ -39,8 +39,8 @@
   },
   "hero": {
     "badge": "Ženski salon · Maribor",
-    "title": "Lase, ki se",
-    "titleHighlight": "počutijo doma.",
+    "title": "Svež videz,",
+    "titleHighlight": "brez hitenja.",
     "description": "Miren frizerski salon za ženske, ki želijo svež videz brez hitenja. Striženje, barvanje in nega — skrbno in po meri.",
     "primaryCta": "Rezerviraj termin",
     "secondaryCta": "Poglej storitve",
@@ -87,18 +87,18 @@
     ],
     "benefits": [
       {
-        "stat": "Mir",
-        "label": "Ambient",
+        "title": "Mir",
+        "label": "Mir",
         "description": "Brez prenatrpanosti in hitenja — fokus je na tebi."
       },
       {
-        "stat": "Skrb",
-        "label": "Za lase",
+        "title": "Skrb",
+        "label": "Skrb",
         "description": "Barvanje in nega z mislijo na zdravje las, ne le na barvo."
       },
       {
-        "stat": "Blizu",
-        "label": "Maribor",
+        "title": "Blizu",
+        "label": "Blizu",
         "description": "Enostavno dostopen salon s preprosto rezervacijo termina."
       }
     ]

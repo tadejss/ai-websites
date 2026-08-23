@@ -1,7 +1,7 @@
 {
   "appearance": "elektro",
   "theme": {
-    "paletteId": "charcoal-cyan",
+    "paletteId": "steel-blue",
     "fontPairingId": "inter-oswald"
   },
   "layout": {
@@ -51,7 +51,8 @@
     "stats": [
       { "value": "15+", "label": "Let v panogi" },
       { "value": "24h", "label": "Odziv na nujno" },
-      { "value": "Celje", "label": "+ regija" }
+      { "value": "Celje", "label": "In regija" },
+      { "value": "Varno", "label": "Po predpisih" }
     ]
   },
   "services": {

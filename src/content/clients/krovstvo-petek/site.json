@@ -6,11 +6,11 @@
   },
   "layout": {
     "profileId": "services-first-visual",
-    "heroImageSide": "right",
+    "heroImageSide": "none",
     "servicesImageSide": "none",
-    "heroRatio": "5050",
+    "heroRatio": "full-copy",
     "benefitsMode": "visual",
-    "heroAtmosphere": "grid",
+    "heroAtmosphere": "photo",
     "sectionRule": "none",
     "cardStyle": "bordered"
   },
@@ -51,7 +51,8 @@
     "stats": [
       { "value": "20+", "label": "Let na strehah" },
       { "value": "Nujno", "label": "Po neurju" },
-      { "value": "Štajerska", "label": "Območje" }
+      { "value": "Štajerska", "label": "Območje" },
+      { "value": "Vse", "label": "Kritine" }
     ]
   },
   "services": {

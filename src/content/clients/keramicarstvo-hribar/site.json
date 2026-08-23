@@ -1,7 +1,7 @@
 {
   "appearance": "construction",
   "theme": {
-    "paletteId": "terracotta-sunset",
+    "paletteId": "rust-linen",
     "fontPairingId": "inter-space-grotesk-light"
   },
   "layout": {
@@ -50,8 +50,9 @@
     "secondaryCtaHref": "#storitve",
     "stats": [
       { "value": "12+", "label": "Let izkušenj" },
-      { "value": "Ljubljana", "label": "In okolica" },
-      { "value": "Čisto", "label": "Na objektu" }
+      { "value": "Ljubljana", "label": "Z okolico" },
+      { "value": "Natančno", "label": "Polaganje" },
+      { "value": "Jasni", "label": "Dogovori" }
     ]
   },
   "services": {

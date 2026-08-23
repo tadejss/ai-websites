@@ -119,7 +119,7 @@ const layoutSchema = z
     servicesImageSide: z.enum(["left", "right", "none"]).optional(),
     heroRatio: z.enum(["5050", "6040", "full-copy"]).optional(),
     benefitsMode: z.enum(["default", "visual"]).optional(),
-    heroAtmosphere: z.enum(["grid", "wash", "plain"]).optional(),
+    heroAtmosphere: z.enum(["grid", "wash", "plain", "photo"]).optional(),
     sectionRule: z.enum(["line", "none"]).optional(),
     cardStyle: z.enum(["bordered", "soft"]).optional(),
   })

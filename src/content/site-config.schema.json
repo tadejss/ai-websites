@@ -82,7 +82,7 @@
         },
         "heroAtmosphere": {
           "type": "string",
-          "enum": ["grid", "wash", "plain"]
+          "enum": ["grid", "wash", "plain", "photo"]
         },
         "sectionRule": {
           "type": "string",
