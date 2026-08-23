@@ -18,6 +18,7 @@ export function StripePricingTable({ pricingTableId, publishableKey }: Props) {
       {createElement("stripe-pricing-table", {
         "pricing-table-id": pricingTableId,
         "publishable-key": publishableKey,
+        "__locale-override": "sl",
       })}
     </div>
   );

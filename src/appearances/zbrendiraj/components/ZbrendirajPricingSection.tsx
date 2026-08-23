@@ -34,7 +34,7 @@ export function ZbrendirajPricingSection() {
           />
         </div>
 
-        <p className={`mx-auto mt-10 max-w-2xl text-center ${zbBodyText}`}>
+        <p className="mx-auto mt-10 max-w-2xl text-center text-[11px] italic leading-relaxed text-[#D0D0D0] sm:text-xs">
           Posodabljanje vsebine je vključeno. Večje funkcionalne nadgradnje in
           razširitve strani so možne proti doplačilu. Domena je vključena pri
           letni naročnini.
