@@ -14,13 +14,13 @@ export function ZbrendirajServicesSection({ siteConfig }: Props) {
       className="bg-black px-4 py-24 sm:px-6 sm:py-32"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="max-w-4xl">
+        <div className="mx-auto max-w-3xl text-center">
           <p className={zbSectionEyebrow}>{services.eyebrow}</p>
           <h2 className="font-display mt-5 text-4xl leading-[1.05] text-white sm:text-5xl lg:text-6xl">
             {services.title}
           </h2>
           {services.description ? (
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#D0D0D0] sm:text-lg">
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#D0D0D0] sm:text-lg">
               {services.description}
             </p>
           ) : null}

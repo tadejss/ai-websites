@@ -17,12 +17,12 @@ export function ZbrendirajSitePage({ siteConfig, siteSlug }: AppearancePageProps
       <main>
         <ZbrendirajHeroSection siteConfig={siteConfig} />
         <ZbrendirajStepsSection siteConfig={siteConfig} />
-        <ZbrendirajPricingSection />
         <ZbrendirajServicesSection siteConfig={siteConfig} />
-        <ZbrendirajConversionSection siteConfig={siteConfig} />
-        <ZbrendirajFaqCtaSection siteSlug={siteSlug} />
-        <ZbrendirajContactSection siteConfig={siteConfig} siteSlug={siteSlug} />
         <ZbrendirajExamplesSection siteConfig={siteConfig} />
+        <ZbrendirajPricingSection />
+        <ZbrendirajFaqCtaSection siteSlug={siteSlug} />
+        <ZbrendirajConversionSection siteConfig={siteConfig} />
+        <ZbrendirajContactSection siteConfig={siteConfig} siteSlug={siteSlug} />
       </main>
       <ZbrendirajFooter siteConfig={siteConfig} siteSlug={siteSlug} />
     </>

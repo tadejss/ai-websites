@@ -30,12 +30,16 @@
         "label": "Kako deluje"
       },
       {
+        "href": "#primere",
+        "label": "Primeri"
+      },
+      {
         "href": "#cenik",
         "label": "Cenik"
       },
       {
-        "href": "#primere",
-        "label": "Primeri"
+        "href": "#vprasanja",
+        "label": "FAQ"
       }
     ],
     "cta": "Začni zdaj"

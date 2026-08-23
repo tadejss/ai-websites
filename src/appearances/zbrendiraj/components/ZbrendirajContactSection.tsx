@@ -24,6 +24,7 @@ export function ZbrendirajContactSection({ siteConfig, siteSlug }: Props) {
     <section id={contact.id} className="bg-black px-4 py-24 sm:px-6 sm:py-32">
       <div className="mx-auto max-w-7xl">
         <ZbrendirajSectionHeading
+          align="left"
           eyebrow={contact.eyebrow}
           title={contact.title}
           description={contact.description}
