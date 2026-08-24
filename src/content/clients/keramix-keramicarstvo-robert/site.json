@@ -1,0 +1,206 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramix-keramicarstvo-robert/hero.jpg",
+      "alt": "Strokovno polaganje keramičnih ploščic v moderni kopalnici"
+    },
+    "services": {
+      "src": "/clients/keramix-keramicarstvo-robert/services.jpg",
+      "alt": "Kakovostne keramičarske storitve in prenova kopalnic"
+    }
+  },
+  "brand": {
+    "prefix": "KERAMIX",
+    "highlight": "Robert Žugelj s.p."
+  },
+  "metadata": {
+    "title": "KERAMIX - Strokovno keramičarstvo in prenova kopalnic",
+    "description": "Strokovno polaganje keramike, kamna in celovite prenove kopalnic v Metliki z okolico in regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Keramičarstvo Metlika",
+    "title": "Strokovno polaganje keramike in",
+    "titleHighlight": "prenovitvena dela",
+    "description": "Zanesljive keramičarske storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki načrtujejo prenovo ali novogradnjo v Metliki z okolico in regiji.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Celovite",
+        "label": "Prenove kopalnic"
+      },
+      {
+        "value": "Zanesljivi",
+        "label": "Dogovorjeni roki"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kakovostne keramičarske storitve in prenove",
+    "description": "Nudimo natančno in strokovno izvedbo keramičarskih del ter prenovitvenih del za vaš dom ali poslovni prostor.",
+    "items": [
+      {
+        "title": "Polaganje stenskih ploščic",
+        "description": "Natančno polaganje vseh vrst stenskih ploščic za kopalnice, kuhinje in druge prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talnih ploščic",
+        "description": "Kakovostna vgradnja talne keramike z dolgo življenjsko dobo in estetskim videzom.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenova kopalnic",
+        "description": "Celovite prenove kopalnic in prostorov od ideje do končne izvedbe.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje kamna",
+        "description": "Strokovno polaganje naravnega in umetnega kamna za unikatne detajle.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanje oblaganje in terase",
+        "description": "Odporne in estetske keramičarske rešitve za zunanje površine terase in balkone.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati KERAMIX",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Poudarek dajemo na kakovost, natančnost in spoštovanje dogovorov pri vsakem projektu.",
+    "highlights": [
+      "Natančna in kvalitetna izvedba keramičarskih del",
+      "Celovite prenove kopalnic in prostorov",
+      "Zanesljivost in upoštevanje dogovorjenih rokov",
+      "Strokovno svetovanje pri izbiri materialov"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Kakovostna izvedba",
+        "description": "Skrbno in natančno polaganje ploščic za popoln končni videz."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Spoštovanje rokov",
+        "description": "Držimo se dogovorjenih časovnih okvirov in obljub."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Izbira materialov",
+        "description": "Pomagamo vam izbrati ustrezne materiale za vaš prostor in želje."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Načrtujete prenovo ali novogradnjo? Pošljite povpraševanje in pripravili bomo ponudbo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Šolska ulica 5, 8330 Metlika, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Šolska ulica 5, 8330 Metlika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "KERAMIX Robert Žugelj s.p.",
+    "address": "Šolska ulica 5, 8330 Metlika, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

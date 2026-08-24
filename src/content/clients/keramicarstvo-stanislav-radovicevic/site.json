@@ -1,0 +1,205 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
+      "alt": "Strokovno polaganje keramičnih ploščic v modernem prostoru"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "alt": "Kakovostna adaptacija kopalnice in polaganje keramike"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Stanislav Radovičevič s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Stanislav Radovičevič s.p. | Polaganje keramike in adaptacije",
+    "description": "Strokovno polaganje keramike, naravnega kamna in celovite adaptacije kopalnic v Novem mestu z okolico. Zanesljivo in natančno delo za vaš dom ali poslovni prostor."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljivo keramičarstvo v Novem mestu",
+    "title": "Strokovno polaganje keramike in",
+    "titleHighlight": "zaključna dela v gradbeništvu",
+    "description": "Nudimo kakovostne storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo prenovo ali keramičarska dela v Novem mestu z okolico.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Visoka",
+        "label": "Kakovost izvedbe"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "In strokoven pristop"
+      },
+      {
+        "value": "Natančno",
+        "label": "Delo s strankami"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske rešitve",
+    "description": "Specializirani smo za natančno polaganje keramičnih ploščic, naravnega kamna in prenovo prostorov v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Strokovno in natančno polaganje stenskih keramičnih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Kakovostna izvedba talnih keramičnih oblog za dolgo obstojnost in lep videz vaših prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacija kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih pripravljalnih del do končne položene keramike.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje naravnega kamna",
+        "description": "Estetsko dovršeno polaganje naravnega kamna za unikaten videz notranjih in zunanjih površin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prenova prostorov",
+        "description": "Zaključna gradbena dela in prenove stanovanjskih ter poslovnih prostorov po vaših željah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vredna izbira za vaša tla in stene",
+    "description": "Z osredotočenostjo na natančnost in visoke standarde izvedbe poskrbimo, da so vaše želje uresničene.",
+    "highlights": [
+      "Visoka kakovost izvedbe vsakega projekta",
+      "Zanesljivost in strokovnost na prvem mestu",
+      "Natančno delo in posluh za stranke"
+    ],
+    "benefits": [
+      {
+        "stat": "Kakovost",
+        "label": "Visoki standardi",
+        "description": "Vsakemu projektu se posvetimo z enako mero skrbnosti in strokovnosti."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Dogovorjeni roki",
+        "description": "Držimo se dogovorov in zagotavljamo zanesljivo izvedbo del."
+      },
+      {
+        "stat": "Natančnost",
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri najboljših rešitev."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Zahtevajte ponudbo za vaš projekt",
+    "description": "Potrebujete keramičarska dela ali prenovo? Pišite nam in z veseljem vam bomo pripravili ponudbo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Groblje 6, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Groblje 6, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Stanislav Radovičevič s.p.",
+    "address": "Groblje 6, 8000 Novo mesto, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

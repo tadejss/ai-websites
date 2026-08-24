@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-tadej-potocnik/hero.jpg",
+      "alt": "Polaganje keramike in prenova kopalnice v modernem domu"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-tadej-potocnik/services.jpg",
+      "alt": "Natančno polaganje stenske in talne keramike"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Tadej Potočnik s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Tadej Potočnik s.p. | Polaganje keramike Ribnica",
+    "description": "Strokovno in natančno polaganje keramike, prenove kopalnic ter oblaganje stopnic v Ribnici z okolico. Pokličite za ponudbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster",
+    "title": "Strokovno in natančno polaganje keramike za",
+    "titleHighlight": "vaš dom",
+    "description": "Kakovostne keramične storitve in gradbena zaključna dela za lastnike stanovanj, hiš in investitorje v Ribnici z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Ribnica",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Do želja strank"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Lokalni mojster"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske rešitve",
+    "description": "Nudimo profesionalno polaganje keramike in zaključna dela na območju Ribnice z okolico.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno polaganje stenskih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Kakovostna vgradnja talne keramike za dolgotrajno obstojnost in lep videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic in sanitarfnih prostorov po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblaganje stopnic",
+        "description": "Estetsko in trpežno oblaganje notranjih ter zunanjih stopnic s keramiko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanje terase in balkoni",
+        "description": "Strokovna izvedba keramičarskih del na izpostavljenih zunanjih površinah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, natančnost in kakovost",
+    "description": "Z našim znanjem in predanostjo poskrbimo za brezhibno izvedbo vsakega projekta.",
+    "highlights": [
+      "Kakovostna izvedba keramičarskih del",
+      "Natančnost in zanesljivost na vsakem koraku",
+      "Prilagodljivost specifičnim željam strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Kakovost",
+        "label": "Izvedbe",
+        "description": "Uporaba preverjenih prijemov in natančnega dela za trajne rezultate."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "In točnost",
+        "description": "Držimo se dogovorjenih rokov in obljubljenih standardov."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Strankam",
+        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri rešitev."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pokličite nas.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 758 780",
+        "href": "tel:070758780",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Jurjevica 39, 1310 Ribnica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Jurjevica 39, 1310 Ribnica, Slovenia",
+    "rights": "© 2025 Keramičarstvo, Tadej Potočnik s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Tadej Potočnik s.p.",
+    "address": "Jurjevica 39, 1310 Ribnica, Slovenia",
+    "email": "",
+    "phone": "070 758 780"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

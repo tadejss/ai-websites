@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/bors-zakljucna-gradbena/hero.jpg",
+      "alt": "Strokovno polaganje keramike v modernem prostoru"
+    },
+    "services": {
+      "src": "/clients/bors-zakljucna-gradbena/services.jpg",
+      "alt": "Kakovostna adaptacija kopalnice in polaganje ploščic"
+    }
+  },
+  "brand": {
+    "prefix": "Bors",
+    "highlight": "Keramičarstvo"
+  },
+  "metadata": {
+    "title": "Bors, zaključna gradbena dela - Keramičarstvo d.o.o.",
+    "description": "Strokovna keramičarska dela, adaptacije kopalnic in zaključna gradbena dela na območju Otočca in okolice."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni izvajalec",
+    "title": "Strokovna keramičarska dela in",
+    "titleHighlight": "zaključne gradbene storitve",
+    "description": "Natančna in kvalitetna izvedba del za lastnike hiš, stanovanj in poslovnih prostorov, ki prenavljajo ali gradijo na Otočcu in v okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "izvedba del"
+      },
+      {
+        "value": "Kvalitetna",
+        "label": "storitev"
+      },
+      {
+        "value": "Celovite",
+        "label": "rešitve"
+      },
+      {
+        "value": "Otočec",
+        "label": "in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kvalitetna keramičarska in gradbena dela",
+    "description": "Ponujamo celovite storitve s področja keramike in zaključnih gradbenih del za vaše objekte na območju Otočca in okolice.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Strokovno in natančno polaganje vseh vrst keramičnih ploščic v stanovanjskih in poslovnih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih del do končne montaže in polaganj ploščic.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblaganje stopnic",
+        "description": "Estetsko in trajno oblaganje notranjih ter zunanjih stopnic s keramiko ali kamnom.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zunanje tlakovanje",
+        "description": "Kakovostna ureditev in polaganje tlakovcev ter keramike na zunanjih površinah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zaključna gradbena dela",
+        "description": "Raznovrstna zaključna gradbena dela za dokončanje vaših gradbenih in prenovitvenih projektov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Zavedamo se pomena kakovosti in natančnosti pri vsakem projektu, zato se posvetimo vsaki stranki posebej.",
+    "highlights": [
+      "Natančna in kvalitetna izvedba del",
+      "Zanesljiv lokalni izvajalec na območju Otočca",
+      "Celovite storitve s področja keramike in zaključnih del"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "in kvaliteta",
+        "description": "Vsak projekt izpeljemo skrbno in z občutkom za detajle."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "delovanje",
+        "description": "Hitro odzivni in zanesljivi na območju Otočca in okolice."
+      },
+      {
+        "stat": "Celovito",
+        "label": "področje",
+        "description": "Specializirani za keramiko in zaključna gradbena dela na enem mestu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 559 664",
+        "href": "tel:031559664",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Herinja vas 28, 8222 Otočec, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Herinja vas 28, 8222 Otočec, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Bors Keramičarstvo",
+    "address": "Herinja vas 28, 8222 Otočec, Slovenia",
+    "email": "",
+    "phone": "031 559 664"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

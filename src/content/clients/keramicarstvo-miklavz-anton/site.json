@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-miklavz-anton/hero.jpg",
+      "alt": "Profesionalno polaganje keramičnih ploščic v modernem interierju"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-miklavz-anton/services.jpg",
+      "alt": "Kakovostna prenova kopalnice in polaganje keramike"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Miklavž"
+  },
+  "metadata": {
+    "title": "Keramičarstvo Miklavž | Strokovno polaganje keramike",
+    "description": "Strokovno polaganje stenske in talne keramike, adaptacije kopalnic ter oblaganje teras v Kostanjevici na Krki z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljive keramičarske storitve",
+    "title": "Strokovno polaganje keramike in",
+    "titleHighlight": "prenovitvena dela",
+    "description": "Zanesljivo in kakovostno polaganje keramike ter adaptacije za lastnike stanovanj, hiš in poslovnih objektov v Kostanjevici na Krki z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka",
+        "label": "Kakovost izvedbe"
+      },
+      {
+        "value": "Točnost",
+        "label": "Držanje rokov"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Kostanjevica na Krki"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kakovostne keramičarske rešitve za vaš dom",
+    "description": "Nudimo celovite storitve s področja polaganj keramike in prenov v Kostanjevici na Krki z okolico.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno in estetsko polaganje stenskih keramičnih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Strokovna izvedba talnih oblog iz keramike za dolgotrajno obstojnost in lep videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacija kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih del do končne postavitve ploščic.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblaganje teras in balkonov",
+        "description": "Trpežne in vremensko odporne keramične obloge za zunanje površine.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava podlage za keramiko",
+        "description": "Kakovostna priprava in izravnava podlage kot ključni pogoj za ravno in trdno položeno keramiko.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanje, zanesljivost in strokovnost",
+    "description": "Gradimo na poštenem odnosu, držanju dogovorjenih rokov in visoki kakovosti izvedbe keramičarskih del.",
+    "highlights": [
+      "Visoka kakovost izvedbe vsakega projekta",
+      "Dosledno držanje dogovorjenih rokov",
+      "Strokovno svetovanje strankam pred in med izvedbo"
+    ],
+    "benefits": [
+      {
+        "stat": "Kakovost",
+        "label": "Visoki standardi",
+        "description": "Skrbno in natančno delo pri vsakem keramičarskem projektu."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Dogovorjeni roki",
+        "description": "Spoštovanje časovnih okvirjev in zanesljiva izvedba del."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Osebni pristop",
+        "description": "Pomoč pri izbiri materialov in optimalnih rešitev za vaš prostor."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pridobite ponudbo za vaše keramičarske projekte",
+    "description": "Pokličite nas ali izpolnite obrazc za vprašanja in povpraševanja.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 764 753",
+        "href": "tel:041764753",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Podstrm 2, 8311 Kostanjevica na Krki, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Podstrm 2, 8311 Kostanjevica na Krki, Slovenia",
+    "rights": "Keramičarstvo Miklavž Anton Miklavž s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Miklavž",
+    "address": "Podstrm 2, 8311 Kostanjevica na Krki, Slovenia",
+    "email": "",
+    "phone": "041 764 753"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

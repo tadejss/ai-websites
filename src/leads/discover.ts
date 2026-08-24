@@ -6,9 +6,8 @@ import {
   type LeadIndustryId,
 } from "./industry-filter";
 import {
+  getRegionLocationBias,
   matchesRegion,
-  NOTRANJSKA_LOCATION_BIAS,
-  NOTRANJSKA_REGION,
 } from "./region";
 import { readAllLeads, saveLead, type LeadRecord } from "./store";
 
@@ -60,10 +59,7 @@ export async function discoverLeads(
   options: DiscoverLeadsOptions = {},
 ): Promise<DiscoveryResult[]> {
   const businesses = await searchPlaces(query, limit, {
-    locationBias:
-      options.region === NOTRANJSKA_REGION
-        ? NOTRANJSKA_LOCATION_BIAS
-        : undefined,
+    locationBias: getRegionLocationBias(options.region),
   });
 
   const existing = readAllLeads();
@@ -73,6 +69,14 @@ export async function discoverLeads(
       .filter((id): id is string => Boolean(id)),
   );
   const takenSlugs = new Set(existing.map((lead) => lead.slug));
+
+  // Targeted queries already scope industry, but drop clear cross-industry noise.
+  const queryImpliesIndustry = leadMatchesIndustry(options.industry, {
+    industry: query,
+    companyName: "",
+  });
+  const noiseName =
+    /pekarna|gostil|restavrac|frizer|elektro|vulkan|avtoservis|trgovina|market|spar|mercator|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|unikatno\s+oblikovanje|oblikovanje\s+keramike|okrasna\s+.*keramik|kopalnice\b|extra-?form|\bšola\b|\bsola\b|vzgojitelj|trenerstvo|strojne\s+inštalacije|strojne\s+instalacije/i;
 
   const results: DiscoveryResult[] = [];
 
@@ -110,7 +114,17 @@ export async function discoverLeads(
       continue;
     }
 
-    if (
+    if (queryImpliesIndustry) {
+      if (noiseName.test(companyName)) {
+        results.push({
+          outcome: "skipped",
+          reason: "industry mismatch",
+          companyName,
+          googlePlaceId,
+        });
+        continue;
+      }
+    } else if (
       !leadMatchesIndustry(options.industry, {
         industry: business.category,
         companyName,

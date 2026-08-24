@@ -1,0 +1,207 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/gradbenistvokeramicarstvo-joze-macedoni/hero.jpg",
+      "alt": "Strokovno polaganje keramike in prenova kopalnice v modernem interierju"
+    },
+    "services": {
+      "src": "/clients/gradbenistvokeramicarstvo-joze-macedoni/services.jpg",
+      "alt": "Natančno polaganje ploščic in keramičarska dela"
+    }
+  },
+  "brand": {
+    "prefix": "Gradbeništvo-Keramičarstvo",
+    "highlight": "Jože Macedoni s.p."
+  },
+  "metadata": {
+    "title": "Gradbeništvo in keramičarstvo Jože Macedoni s.p. | Mokronog",
+    "description": "Vrhunske keramičarske in gradbene storitve ter adaptacije kopalnic v Mokronogu s širšo okolico. Zanesljiva in natančna izvedba za lastnike stanovanj in hiš."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv partner za gradbena in keramičarska dela",
+    "title": "Vrhunske keramičarske in gradbene storitve",
+    "titleHighlight": "z dolgoletnimi izkušnjami.",
+    "description": "Strokovne rešitve za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo prenovo ali keramičarska dela v Mokronogu s širšo okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunsko",
+        "label": "Znanje"
+      },
+      {
+        "value": "Natančna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Mokronog",
+        "label": "In okolica"
+      },
+      {
+        "value": "Strokovni",
+        "label": "Nasveti"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaš dom",
+    "description": "Nudimo kakovostna gradbena dela, polaganje keramike in celovite adaptacije kopalnic za stranke v Mokronogu s širšo okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Strokovno in natančno polaganje vseh vrst keramičnih ploščic v stanovanjih, hišah in poslovnih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic in sanitarnih prostorov z zanesljivo izvedbo vseh potrebnih del.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba različnih gradbenih del prilagojenih potrebam vašega objekta.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prenovitvena in zaključna dela",
+        "description": "Natančna zaključna dela, ki poskrbijo za končni videz in funkcionalnost prostorov.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše gradbene projekte",
+    "description": "Združujemo domač pristop, strokovno znanje in natančnost pri vsakem projektu prenove ali gradnje.",
+    "highlights": [
+      "Vrhunsko strokovno znanje na področju keramike in gradbeništva",
+      "Zanesljiva in natančna izvedba del na vašem objektu",
+      "Osebni pristop in strokovni nasveti prilagojeni vašim željam"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "Znanje keramike",
+        "description": "Vrhunsko strokovno znanje na področju polaganja keramike in gradbenih del."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Natančna izvedba",
+        "description": "Dosledno upoštevanje dogovorov in natančno opravljeno delo."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Podpora strankam",
+        "description": "Strokovni nasveti in pomoč pri izbiri najboljših rešitev za vaš prostor."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za prenovo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 533 120",
+        "href": "tel:041533120",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Gubčeva cesta 1, 8230 Mokronog, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Gubčeva cesta 1, 8230 Mokronog, Slovenia",
+    "rights": "Gradbeništvo-Keramičarstvo Jože Macedoni s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Gradbeništvo-Keramičarstvo Jože Macedoni s.p.",
+    "address": "Gubčeva cesta 1, 8230 Mokronog, Slovenia",
+    "email": "",
+    "phone": "041 533 120"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

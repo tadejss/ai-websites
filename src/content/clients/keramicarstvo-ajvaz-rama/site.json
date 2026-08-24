@@ -1,0 +1,217 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-ajvaz-rama/hero.jpg",
+      "alt": "Polaganje keramičnih ploščic v moderni kopalnici"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-ajvaz-rama/services.jpg",
+      "alt": "Natančno polaganje stenskih in talnih ploščic"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Ajvaz Rama s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Ajvaz Rama s.p. | Polaganje keramike in prenove",
+    "description": "Kakovostno in natančno polaganje keramike ter prenovitvena dela v Krškem z okolico. Zanesljiva izvedba za vaš dom ali poslovni prostor."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pridobite ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv partner za keramiko v Krškem",
+    "title": "Kakovostno in natančno",
+    "titleHighlight": "polaganje keramike",
+    "description": "Strokovne rešitve za lastnike stanovanj, hiš in poslovnih prostorov v Krškem z okolico, ki potrebujejo prenovo ali keramičarska dela.",
+    "primaryCta": "Pridobite ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Zanesljivi",
+        "label": "Roki"
+      },
+      {
+        "value": "Kakovostni",
+        "label": "Materiali"
+      },
+      {
+        "value": "Krško",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske in prenovitvene storitve",
+    "description": "Poskrbimo za natančno izvedbo vseh vrst keramičarskih del in prenov v Krškem z okolico.",
+    "items": [
+      {
+        "title": "Polaganje stenskih in talnih ploščic",
+        "description": "Natančno polaganje vseh vrst stenskih in talnih ploščic za brezhiben videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove kopalnic na ključ",
+        "description": "Celovite prenove kopalnic od začetnih priprav do končne izvedbe.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblaganje stopnic in teras",
+        "description": "Trpežno in estetsko oblaganje zunanjih ter notranjih stopnic ter teras.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Hidroizolacija površin",
+        "description": "Učinkovita zaščita pred vlago v kopalnicah, na terasah in drugih izpostavljenih površinah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava podlage in izravnava",
+        "description": "Kakovostna priprava podlage ter izravnava tal in sten pred polaganjem oblog.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaš dom",
+    "description": "Z združevanjem strokovnosti, natančnosti in zanesljivosti poskrbimo, da so vaši projekti izpeljani brezskrbno.",
+    "highlights": [
+      "Natančna in strokovna izvedba del",
+      "Dosledno držanje dogovorjenih rokov",
+      "Uporaba preverjenih materialov"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "In strokovnost",
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo za dosego najboljših rezultatov."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "In roki",
+        "description": "Držimo se dogovorjenih rokov in zagotavljamo zanesljivo izvedbo del."
+      },
+      {
+        "stat": "Materiali",
+        "label": "Kakovost",
+        "description": "Uporabljamo kakovostne materiale za dolgotrajno obstojnost in lep videz."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za keramičarska dela? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "069 644 260",
+        "href": "tel:069644260",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 79, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 – 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe...",
+      "submitLabel": "Pridobite ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 79, 8270 Krško, Slovenia",
+    "rights": "© 2025 Keramičarstvo Ajvaz Rama s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Ajvaz Rama s.p.",
+    "address": "Cesta krških žrtev 79, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "069 644 260"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "copper-clay",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-pecarstvo-robert/hero.jpg",
+      "alt": "Strokovno polaganje keramike in kopalniške površine"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-pecarstvo-robert/services.jpg",
+      "alt": "Izdelava kamina in keramični detajli"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo Zupan",
+    "highlight": "Robert Zupan s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo in pečarstvo Robert Zupan s.p.",
+    "description": "Strokovno polaganje keramike, adaptacija kopalnic ter izdelava peči in kaminov v Mirni Peči z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Strokovno keramičarstvo in pečarstvo",
+    "title": "Kakovostno polaganje keramike in",
+    "titleHighlight": "izdelava kaminov",
+    "description": "Zanesljive storitve za lastnike hiš, stanovanj in poslovnih objektov, ki prenavljajo ali gradijo v Mirni Peči in okolici.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Mirna Peč",
+        "label": "In okolica"
+      },
+      {
+        "value": "Kakovostna",
+        "label": "Keramika"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske in pečarske storitve",
+    "description": "Specializirani smo za vse vrste keramičarskih del in pečarskih izdelkov na območju Mirne Peči z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje stenske in talne keramike vseh formatov v stanovanjskih in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacija kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih rušitvenih del do končne položene keramike.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Peči in kamini",
+        "description": "Kakovostna izdelava peči in kaminov, ki vašemu domu dodajo toplino in domačnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblaganje stopnic",
+        "description": "Trpežno in estetsko oblaganje notranjih ter zunanjih stopnic s keramiko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanje površine",
+        "description": "Polaganje zunanjih keramičnih površin na terasah, balkonih in okoli objektov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaš dom",
+    "description": "Z dolgoletnimi izkušnjami in predanostjo zagotavljamo vrhunske rezultate pri vsakem projektu.",
+    "highlights": [
+      "Zanesljiva in kakovostna izvedba vseh del",
+      "Individualen pristop in strokovno svetovanje",
+      "Zadovoljne stranke z odličnimi izkušnjami"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivost",
+        "label": "in kakovost",
+        "description": "Dela izvedemo natančno, strokovno in v dogovorjenih rokih."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "in znanje",
+        "description": "Dolgoletne izkušnje na področju keramičarstva in pečarstva zagotavljajo brezhiben končni izdelek."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "strankam",
+        "description": "Prisluhnemo vašim željam in vam strokovno svetujemo pri izbiri materialov."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti storitev? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(07) 307 84 59",
+        "href": "tel:+38673078459",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Jablan 45, 8216 Mirna Peč, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želje...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Jablan 45, 8216 Mirna Peč, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Zupan Robert Zupan s.p.",
+    "address": "Jablan 45, 8216 Mirna Peč, Slovenia",
+    "email": "",
+    "phone": "(07) 307 84 59"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

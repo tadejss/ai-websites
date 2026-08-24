@@ -1,0 +1,195 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "burgundy-glow",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/umivalniki-dreams-obdelava/hero.jpg",
+      "alt": "Moderna prenova kopalnice s polaganjem ploščic v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/umivalniki-dreams-obdelava/services.jpg",
+      "alt": "Natančno polaganje keramike in obdelava ploščic"
+    }
+  },
+  "brand": {
+    "prefix": "Umivalniki",
+    "highlight": "dreams"
+  },
+  "metadata": {
+    "title": "Umivalniki dreams | Polaganje ploščic in prenova kopalnic",
+    "description": "Strokovna obdelava in polaganje ploščic ter sanjske rešitve za vaš dom v Novem mestu z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovne gradbene in obrtniške storitve",
+    "title": "Strokovna obdelava in polaganje ploščic ter",
+    "titleHighlight": "sanjske rešitve",
+    "description": "Zanesljive rešitve za lastnike stanovanj in hiš v Novem mestu z okolico, ki načrtujejo prenovo kopalnic ali polaganje keramike.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Celovite",
+        "label": "Storitve prenove"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Pristop"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kakovostno in natančno izvajanje",
+    "description": "Specializirani smo za polaganje keramike, obdelavo ploščic in celovite prenove kopalnic za stranke v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Strokovno polaganje keramičnih ploščic vseh vrst za vaše prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Obdelava ploščic",
+        "description": "Natančna obdelava ploščic za brezhiben končni videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža umivalnikov",
+        "description": "Kakovostna montaža umivalnikov in kopalniške opreme.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite rešitve in prenova kopalnic od začetka do konca.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Gradbena in obrtniška dela",
+        "description": "Izvedba splošnih gradbenih in obrtniških del v vašem domu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za prenovo vašega doma",
+    "description": "Z združevanjem strokovnega znanja in natančnosti poskrbimo, da so vaše želje glede prenove uresničene.",
+    "highlights": [
+      "Natančna in kvalitetna izvedba del",
+      "Celovite storitve prenove in obdelave ploščic",
+      "Zanesljiv in strokoven pristop"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Kvalitetna izvedba",
+        "description": "Vsak projekt izvedemo skrbno in z mislijo na dolgotrajne rezultate."
+      },
+      {
+        "stat": "Celovitost",
+        "label": "Vse na enem mestu",
+        "description": "Nudimo celovite storitve prenove kopalnic in polaganje keramike."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Strokoven pristop",
+        "description": "Držimo se dogovorov in zagotavljamo strokovno izvedbo del."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Načrtujete prenovo kopalnice ali polaganje keramike? Pišite nam za ponudbo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Mušičeva ulica 14, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Mušičeva ulica 14, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Umivalniki dreams",
+    "address": "Mušičeva ulica 14, 8000 Novo mesto, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

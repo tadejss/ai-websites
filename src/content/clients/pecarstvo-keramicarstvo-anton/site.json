@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "forest-mist",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/pecarstvo-keramicarstvo-anton/hero.jpg",
+      "alt": "Polaganje keramike in strokovna izvedba del v svetlem prostoru"
+    },
+    "services": {
+      "src": "/clients/pecarstvo-keramicarstvo-anton/services.jpg",
+      "alt": "Izdelava in obnova peči ter keramične storitve"
+    }
+  },
+  "brand": {
+    "prefix": "Pečarstvo in keramičarstvo",
+    "highlight": "Anton Derganc s.p."
+  },
+  "metadata": {
+    "title": "Pečarstvo in keramičarstvo Anton Derganc s.p. | Novo mesto",
+    "description": "Kakovostno polaganje keramike, gradnja in obnova peči ter strokovno svetovanje v Novem mestu z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster za vaš dom",
+    "title": "Kakovostno polaganje keramike in",
+    "titleHighlight": "izdelava pečarskih izdelkov",
+    "description": "Nudimo strokovne storitve za lastnike stanovanj, hiš in poslovnih objektov, ki prenavljajo ali gradijo v Novem mestu z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Dolgoletne",
+        "label": "Izkušnje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za keramiko in peči",
+    "description": "Zagotavljamo kakovostno izvedbo del za stranke v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje vseh vrst keramike za notranje in zunanje prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Gradnja in obnova peč",
+        "description": "Strokovna gradnja novih pečid in obnova obstoječih pečarskih izdelkov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje mozaika",
+        "description": "Estetsko dovršeno polaganje mozaikov za unikatne videze prostorov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranje in zunanje oblaganje",
+        "description": "Kakovostno oblaganje površin v različnih objektih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri izbiri materialov",
+        "description": "Strokovno svetovanje za izbiro ustreznih materialov vašemu projektu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost in strokovnost na prvem mestu",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za želje strank zagotavljamo vrhunske rezultate.",
+    "highlights": [
+      "Natančna in kvalitetna izvedba del",
+      "Dolgoletne izkušnje na področju pečarstva in keramičarstva",
+      "Zanesljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Kvalitetna izvedba",
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "Preverjeno znanje",
+        "description": "Dolgoletne izkušnje zagotavljajo zanesljive in dolgotrajne rešitve."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Strokovna podpora",
+        "description": "Pomagamo vam izbrati najboljše materiale in rešitve za vaš dom."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Za vsa vprašanja, svetovanje ali naročila smo dosegljivi preko telefona ali spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 538 017",
+        "href": "tel:041538017",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Dolenje Kamence 60, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Dolenje Kamence 60, 8000 Novo mesto, Slovenia",
+    "rights": "© Pečarstvo in keramičarstvo Anton Derganc s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Pečarstvo in keramičarstvo Anton Derganc s.p.",
+    "address": "Dolenje Kamence 60, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 538 017"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-robi-breznikar/hero.jpg",
+      "alt": "Strokoven keramičar pri polaganju ploščic v moderni kopalnici"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-robi-breznikar/services.jpg",
+      "alt": "Sodobno urejena kopalnica s kakovostno položenimi keramičnimi ploščicami"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Robi Breznikar s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Robi Breznikar s.p. | Polaganje keramike in kopalnice na ključ",
+    "description": "Kakovostno polaganje keramike, prenova kopalnic na ključ in hidroizolacije v Laškem in okolici. Zanesljiva izvedba in strokovno svetovanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovno keramičarstvo v Laškem",
+    "title": "Kakovostno polaganje keramike in",
+    "titleHighlight": "prenova kopalnic",
+    "description": "Zanesljive keramičarske storitve za lastnike stanovanj, hiš in investitorje, ki urejajo svoje bivalne prostore v Laškem in širši okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Točni",
+        "label": "Dogovorjeni roki"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Laško",
+        "label": "In širša okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske in gradbene rešitve",
+    "description": "Specializirani smo za kakovostno polaganje vseh vrst keramike in celovite adaptacije v Laškem in okolici.",
+    "items": [
+      {
+        "title": "Polaganje stenske in talne keramike",
+        "description": "Natančno polaganje stenske in talne keramike za urejene bivalne prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic na ključ",
+        "description": "Celovite prenove kopalnic od začetnih del do končne izvedbe.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje naravnega kamna",
+        "description": "Strokovna vgradnja in polaganje naravnega kamna za estetski videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacije in hidroizolacije",
+        "description": "Kakovostne sanacije in zanesljive hidroizolacije proti vlagi.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Polaganje mozaikov",
+        "description": "Estetsko dovršeno polaganje mozaikov za unikatne detajle.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Z dolgoletnimi izkušnjami v gradbeništvu in posluhom za želje strank zagotavljamo vrhunske končne rezultate.",
+    "highlights": [
+      "Natančna in kvalitetna izvedba del",
+      "Dosledno držanje dogovorjenih rokov",
+      "Strokovno svetovanje pri izbiri materialov"
+    ],
+    "benefits": [
+      {
+        "stat": "Kvaliteta",
+        "label": "Natančna izvedba",
+        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Spoštovanje rokov",
+        "description": "Držimo se dogovorjenih časovnih okvirov za izvedbo del."
+      },
+      {
+        "stat": "Podpora",
+        "label": "Strokovni nasveti",
+        "description": "Pomagamo vam pri izbiri pravih materialov za vaš prostor."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 380 478",
+        "href": "tel:041380478",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Marija Gradec 62, 3270 Laško, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite svoje ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite svojo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Marija Gradec 62, 3270 Laško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Robi Breznikar s.p.",
+    "address": "Marija Gradec 62, 3270 Laško, Slovenia",
+    "email": "",
+    "phone": "041 380 478"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

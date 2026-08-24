@@ -1,0 +1,217 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "copper-clay",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keram-zlatko-mavrin/hero.jpg",
+      "alt": "Polaganje keramike in prenova kopalnice v Ribnici"
+    },
+    "services": {
+      "src": "/clients/keram-zlatko-mavrin/services.jpg",
+      "alt": "Kakovostno položene ploščice v prenovljenem prostoru"
+    }
+  },
+  "brand": {
+    "prefix": "Kera.M",
+    "highlight": "Zlatko Mavrin s.p."
+  },
+  "metadata": {
+    "title": "Kera.M Zlatko Mavrin s.p. | Polaganje keramike in gradbena dela Ribnica",
+    "description": "Kakovostno polaganje keramike, adaptacije kopalnic in splošna gradbena dela v Ribnici z okolico. Zanesljiva izvedba za vaš dom in poslovni prostor."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Zanesljiva obrtniška dela v Ribnici",
+    "title": "Vrhunsko polaganje keramike in",
+    "titleHighlight": "gradbena dela",
+    "description": "Strokovne rešitve za lastnike stanovanj, hiš in poslovnih prostorov, ki načrtujejo prenovo ali keramičarska dela v Ribnici z okolico.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "Kakovost del"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Ribnica",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaš prostor",
+    "description": "Nudimo kakovostne storitve s področja keramičarstva in splošnih gradbenih del za stranke v Ribnici z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje vseh vrst keramičnih ploščic v kopalnicah, kuhinjah, na terasah in drugih površinah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih rušitvenih del do končne montaže elementov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Notranja prenova prostorov",
+        "description": "Kakovostna prenova notranjih prostorov za osvežitev vašega doma ali poslovnega objekta.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje kamna",
+        "description": "Strokovno polaganje naravnega in dekorativnega kamna za estetski videz površin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Splošna gradbena dela",
+        "description": "Zanesljiva izvedba splošnih gradbenih del in manjših adaptacij po vaših željah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše prenove",
+    "description": "Zavedamo se pomena kakovosti in natančnosti pri vsakem projektu prenove vašega doma ali poslovnega prostora.",
+    "highlights": [
+      "Vrhunska kakovost keramičarskih del in natančna izvedba",
+      "Zanesljivo sodelovanje in spoštovanje dogovorov",
+      "Prilagojene rešitve za stanovanjske in poslovne objekte"
+    ],
+    "benefits": [
+      {
+        "stat": "Vrhunska",
+        "label": "Kakovost",
+        "description": "Uporaba preverjenih postopkov in natančnost pri vsakem keramičarskem projektu."
+      },
+      {
+        "stat": "Zanesljiva",
+        "label": "Izvedba",
+        "description": "Pravočasno in korektno opravljena gradbena ter obrtniška dela."
+      },
+      {
+        "stat": "Domač",
+        "label": "Pristop",
+        "description": "Odgovoren odnos in posluh za želje vsake stranke v Ribnici z okolico."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete polaganje keramike ali prenovo kopalnice? Pokličite nas ali nam pošljite sporočilo za dogovor o sodelovanju.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 639 733",
+        "href": "tel:051639733",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Sajevec 30, 1310 Ribnica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – čet: 9:00 – 17:00, Pet: 9:00 – 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Sajevec 30, 1310 Ribnica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kera.M Zlatko Mavrin s.p.",
+    "address": "Sajevec 30, 1310 Ribnica, Slovenia",
+    "email": "",
+    "phone": "051 639 733"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

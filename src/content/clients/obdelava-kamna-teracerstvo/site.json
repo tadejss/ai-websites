@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/obdelava-kamna-teracerstvo/hero.jpg",
+      "alt": "Kamnosek pri natančni obdelavi naravnega kamna v delavnici"
+    },
+    "services": {
+      "src": "/clients/obdelava-kamna-teracerstvo/services.jpg",
+      "alt": "Polaganje keramičnih ploščic in kamnitih talnih oblog"
+    }
+  },
+  "brand": {
+    "prefix": "Primec Franci",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Obdelava kamna, teracerstvo in keramičarstvo Primec Franci s.p.",
+    "description": "Vrhunska obdelava kamna, teracerstvo in keramičarstvo v Grosupljem s širšo okolico. Zanesljiva izvedba za lastnike hiš in investitorje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Kakovostna obrtniška tradicija",
+    "title": "Vrhunska obdelava kamna in",
+    "titleHighlight": "keramičarstvo",
+    "description": "Zanesljive storitve za lastnike hiš, investitorje in prenove stanovanj v Grosupljem s širšo okolico.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "Kakovost"
+      },
+      {
+        "value": "Strokovna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Grosuplje",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Celovite",
+        "label": "Storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve na področju kamna in keramike",
+    "description": "Nudimo obdelavo kamna, teracerstvo, keramičarstvo, polaganje ploščic ter izdelavo kamnitih izdelkov po meri na območju Grosuplja s širšo okolico.",
+    "items": [
+      {
+        "title": "Obdelava kamna",
+        "description": "Natančna obdelava kamna za različne namene in prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Teracerstvo",
+        "description": "Kakovostne teracerske storitve z dolgoletnimi izkušnjami.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Keramičarstvo",
+        "description": "Strokovno polaganje ploščic in keramičarska dela.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Kamniti izdelki po meri",
+        "description": "Izdelava kamnitih elementov povsem po vaših željah in merah.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene in prenovitvene projekte",
+    "description": "Z večletnimi izkušnjami in poudarkom na kakovosti uresničujemo pričakovanja naših strank.",
+    "highlights": [
+      "Vrhunska kakovost izdelkov iz kamna",
+      "Zanesljiva in strokovna izvedba",
+      "Celovite storitve na enem mestu"
+    ],
+    "benefits": [
+      {
+        "stat": "Vrhunsko",
+        "label": "Znanje",
+        "description": "Strokovna in zanesljiva izvedba vseh del na področju kamnoseštva in keramike."
+      },
+      {
+        "stat": "Celovito",
+        "label": "Delo",
+        "description": "Celovite storitve od začetne ideje do končne izvedbe za lastnike hiš in investitorje."
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "Sodelovanje",
+        "description": "Poudarek na dogovorjenih rokovih in natančni izvedbi."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Za vsa vprašanja, naročila ali povpraševanja smo vam na voljo preko spodnjih kontaktnih podatkov ali obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gasilska Cesta 25, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(01) 786 09 82",
+        "href": "tel:017860982",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:30 - 15:30",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali povpraševanje...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Gasilska Cesta 25, 1290 Grosuplje, Slovenia",
+    "rights": "© Obdelava kamna - Teracerstvo - Keramičarstvo Primec Franci s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Primec Franci s.p.",
+    "address": "Gasilska Cesta 25, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "(01) 786 09 82"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

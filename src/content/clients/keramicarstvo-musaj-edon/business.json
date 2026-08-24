@@ -1,0 +1,28 @@
+{
+  "companyName": "Keramičarstvo Musaj, Edon Musaj s.p",
+  "industry": "Keramičarske storitve in gradbena dela",
+  "tagline": "Kakovostno polaganje keramike in prenovitvena dela",
+  "services": [
+    "Polaganje stenske keramike",
+    "Polaganje talne keramike",
+    "Prenova kopalnic",
+    "Polaganje zunanjih ploščic",
+    "Adaptacije prostorov"
+  ],
+  "phone": "070 560 086",
+  "email": "",
+  "address": "Seidlova cesta 20, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 3:00 PM · Tuesday: 7:00 AM – 3:00 PM · Wednesday: 7:00 AM – 3:00 PM · Thursday: 7:00 AM – 3:00 PM · Friday: 7:00 AM – 3:00 PM · Saturday: 7:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Natančna in kvalitetna izvedba",
+    "Zanesljivost in držanje rokov",
+    "Strokovno svetovanje pri izbirimaterialov"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov, ki potrebujejo prenovo ali keramičarska dela",
+  "serviceArea": "Novo mesto s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv",
+  "brandStyle": "moderen, čist",
+  "competitors": "Lokalni ponudniki keramičarskih storitev",
+  "callToAction": "Zahtevajte ponudbo"
+}

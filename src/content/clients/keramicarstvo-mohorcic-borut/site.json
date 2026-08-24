@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-mohorcic-borut/hero.jpg",
+      "alt": "Strokoven keramičar pri polaganju keramičnih ploščic v modernem prostoru"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-mohorcic-borut/services.jpg",
+      "alt": "Moderna prenovljena kopalnica z položenimi keramičnimi ploščicami"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Mohorčič"
+  },
+  "metadata": {
+    "title": "Keramičarstvo Mohorčič | Polaganje keramike in prenova kopalnic",
+    "description": "Strokovno polaganje keramike, prenova kopalnic in zaključna dela v gradbeništvu v Žužemberku s širšo okolico in na Dolenjskem."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv domači mojster",
+    "title": "Strokovno polaganje keramike in",
+    "titleHighlight": "zaključna dela",
+    "description": "Zanesljive storitve za lastnike hiš, stanovanj in poslovnih prostorov, ki prenavljajo ali gradijo v Žužemberku in na Dolenjskem.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Žužemberk",
+        "label": "In Dolenjska"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Zadovoljstvo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kvalitetne keramičarske in gradbene storitve",
+    "description": "Celovite rešitve za vaše prostore, od polaganj ploščic do celovitih prenov kopalnic na ključ.",
+    "items": [
+      {
+        "title": "Polaganje stenske in talne keramike",
+        "description": "Natančno polaganje vseh vrst stenske in talne keramike za vaše prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Oblaganje stopnic in teras",
+        "description": "Trpežno in estetsko oblaganje zunanjih in notranjih stopnic ter teras.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic na ključ",
+        "description": "Celovite prenove kopalnic, prilagojene vašim željam in potrebam.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Izdelava hidroizolacij",
+        "description": "Kakovostna izvedba hidroizolacij za zaščito pred vlago v mokrih prostorih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Polaganje naravnega kamna",
+        "description": "Strokovna vgradnja in polaganje naravnega kamna za edinstven videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Združujemo dolgoletne izkušnje, natančnost in posluh za stranke, kar zagotavlja trajne in lepe rezultate.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Strokovno svetovanje pri izbiri materialov",
+      "Visoka raven kakovosti in zadovoljstva strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivost",
+        "label": "Natančna izvedba",
+        "description": "Delo opravimo dosledno, skrbno in v dogovorjenih rokih."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Izbira materialov",
+        "description": "Pomagamo vam izbrati najboljše materiale za vaš prostor in proračun."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Zadovoljstvo strank",
+        "description": "Poskrbimo za visoko raven končne izvedbe, s katero boste dolgoročno zadovoljni."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 851 108",
+        "href": "tel:040851108",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Jurčičeva ulica 67, 8360 Žužemberk, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Jurčičeva ulica 67, 8360 Žužemberk, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Mohorčič",
+    "address": "Jurčičeva ulica 67, 8360 Žužemberk, Slovenia",
+    "email": "",
+    "phone": "040 851 108"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

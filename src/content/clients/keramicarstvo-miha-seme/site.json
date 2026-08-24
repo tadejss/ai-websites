@@ -1,0 +1,213 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-miha-seme/hero.jpg",
+      "alt": "Strokoven keramičar pri polaganju ploščic v moderni kopalnici"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-miha-seme/services.jpg",
+      "alt": "Moderna kopalnica z elegantnimi keramičnimi ploščicami"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Miha Šeme s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Miha Šeme s.p. | Polaganje keramike in adaptacije",
+    "description": "Strokovno in natančno polaganje keramike, adaptacije kopalnic na ključ ter zunanja oblaganja v Grosupljem z okolico in širši regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljive keramične storitve",
+    "title": "Strokovno in natančno polaganje keramike",
+    "titleHighlight": "za vaš dom",
+    "description": "Nudimo celovite keramične storitve in adaptacije za lastnike stanovanj, hiš ter poslovnih prostorov v Grosupljem z okolico in širši regiji.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "in čista izvedba"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "in spoštovanje rokov"
+      },
+      {
+        "value": "Individualni",
+        "label": "pristop"
+      },
+      {
+        "value": "Grosuplje",
+        "label": "z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za keramiko in adaptacije",
+    "description": "Poskrbimo za kakovostno izvedbo del na področju polaganj in priprave površin v Grosupljem z okolico in širši regiji.",
+    "items": [
+      {
+        "title": "Polaganje stenske in talne keramike",
+        "description": "Strokovno polaganje vseh vrst stenskih in talnih keramičnih ploščic v stanovanjih, hišah in poslovnih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacija kopalnic na ključ",
+        "description": "Celovita prenova kopalnic od začetnih del do končne izvedbe za brezskrbno prenovo vašega doma.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje kamna in mozaikov",
+        "description": "Natančna vgradnja kamnitih oblog in mozaikov za unikatne estetske poudarke v vašem prostoru.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zunanje oblaganje balkonov in teras",
+        "description": "Trajne in vremensko odporne zunanje obloge za balkone, terase in druge zunanje površine.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava podlage in hidrozolacija",
+        "description": "Kakovostna priprava tal in sten ter izvedba zanesljive hidrozolacije kot osnova za dolgo življenjsko dobo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaš gradbeni projekt",
+    "description": "Združujemo strokovno znanje, natančnost in posluh za želje naročnikov.",
+    "highlights": [
+      "Dolgoletne izkušnje in strokovno znanje",
+      "Natančna in čista izvedba del",
+      "Zanesljivost in spoštovanje dogovorjenih rokov",
+      "Individualni pristop k vsakemu projektu"
+    ],
+    "benefits": [
+      {
+        "stat": "Znanje",
+        "label": "Strokovni pristop",
+        "description": "Dolgoletne izkušnje in strokovno znanje zagotavljajo kakovostno izvedbo vsakega projekta."
+      },
+      {
+        "stat": "Natančnost",
+        "label": "Čista izvedba",
+        "description": "Dela izvajamo natančno, skrbno in z mislijo na urejenost delovnega prostora."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Spoštovanje rokov",
+        "description": "Držimo se dogovorjenih rokov in se individualno posvetimo vašim željam."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Troščine 15, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 871 200",
+        "href": "tel:041871200",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Troščine 15, 1290 Grosuplje, Slovenia",
+    "rights": "© 2024 Keramičarstvo Miha Šeme s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Miha Šeme s.p.",
+    "address": "Troščine 15, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "041 871 200"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

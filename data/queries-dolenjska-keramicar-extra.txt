@@ -1,0 +1,27 @@
+# Extra towns / phrases for second-pass Dolenjska keramičar discovery
+keramičar Kočevje
+keramičarstvo Kočevje
+polaganje ploščic Kočevje
+keramičar Ribnica
+keramičarstvo Ribnica
+keramičar Sodražica
+keramičar Ivančna Gorica
+keramičarstvo Ivančna Gorica
+keramičar Višnja Gora
+keramičar Radeče
+keramičarstvo Radeče
+keramičar Laško
+keramičar Hrastnik
+keramičar Trbovlje
+polaganje ploščic Črnomelj
+polaganje keramike Metlika
+polaganje keramike Sevnica
+polaganje ploščic Trebnje
+pečar keramičar Novo mesto
+pečar keramičar Krško
+zidarstvo keramičarstvo Novo mesto
+tile installer Novo mesto
+tile setter Krško
+fliesenleger Novo mesto
+keramičar Grosuplje
+keramičarstvo Grosuplje

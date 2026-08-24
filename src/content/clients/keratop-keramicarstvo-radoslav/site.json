@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keratop-keramicarstvo-radoslav/hero.jpg",
+      "alt": "Strokovno polaganje keramičnih ploščic v notranjih prostorih"
+    },
+    "services": {
+      "src": "/clients/keratop-keramicarstvo-radoslav/services.jpg",
+      "alt": "Natančno polaganje stenskih in talnih keramičnih ploščic"
+    }
+  },
+  "brand": {
+    "prefix": "Keratop",
+    "highlight": "Keramičarstvo"
+  },
+  "metadata": {
+    "title": "Keratop - Keramičarstvo Radoslav Topić s.p. | Polaganje keramike",
+    "description": "Strokovno polaganje keramike, adaptacije kopalnic in keramičarske storitve v Dolenjskih Toplicah in okolici. Natančna in zanesljiva izvedba."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Keramičarske storitve",
+    "title": "Strokovno polaganje keramike in",
+    "titleHighlight": "zaključna dela",
+    "description": "Zanesljive keramičarske storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki prenavljajo ali gradijo v Dolenjskih Toplicah in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "In držanje rokov"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Dolenjske Toplice"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske rešitve",
+    "description": "Specializirani smo za kakovostno polaganje keramike in pripravo podlag na območju Dolenjskih Toplic in okolice.",
+    "items": [
+      {
+        "title": "Polaganje stenskih ploščic",
+        "description": "Natančno polaganje stenskih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talnih ploščic",
+        "description": "Kakovostna vgradnja talne keramike za dolgotrajno obstojnost in lep videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacija kopalnic",
+        "description": "Celovite prenove in adaptacije kopalnic z vsemi potrebnimi keramičarskimi deli.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje keramike na terasah in balkonih",
+        "description": "Strokovna izvedba zunanjih površin, teras in balkonov z ustrezno zaščito.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava podlage in izravnava",
+        "description": "Temeljita priprava podlage in izravnava za brezhiben končni rezultat.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše ploščice",
+    "description": "Zavedamo se, da so kakovostno položene ploščice ključne za izgled in trajnost vašega doma ali poslovnega prostora.",
+    "highlights": [
+      "Natančna in kakovostna izvedba del",
+      "Zanesljivost in dosledno držanje rokov",
+      "Strokovno svetovanje pri izbiri materialov"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Kakovostna izvedba",
+        "description": "Vsak projekt izpeljemo skrbno in z občutkom za detajle."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Dogovorjeni roki",
+        "description": "Držimo se dogovorjenih rokov in obljubljenega obsega dela."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Izbira materialov",
+        "description": "Pomagamo vam pri izbiri ustreznih materialov za vaš prostor."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 553 873",
+        "href": "tel:041553873",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Dolenje Sušice 26, 8350 Dolenjske Toplice, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Dolenje Sušice 26, 8350 Dolenjske Toplice, Slovenia",
+    "rights": "Keratop - Keramičarstvo Radoslav Topić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keratop Keramičarstvo",
+    "address": "Dolenje Sušice 26, 8350 Dolenjske Toplice, Slovenia",
+    "email": "",
+    "phone": "041 553 873"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

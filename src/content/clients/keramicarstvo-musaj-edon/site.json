@@ -1,0 +1,217 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-musaj-edon/hero.jpg",
+      "alt": "Moderna kopalnica s položeno keramiko v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-musaj-edon/services.jpg",
+      "alt": "Natančno polaganje keramičnih ploščic"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Musaj"
+  },
+  "metadata": {
+    "title": "Keramičarstvo Musaj | Kakovostno polaganje keramike in prenova kopalnic Novo mesto",
+    "description": "Zanesljivo polaganje stenske in talne keramike, prenova kopalnic ter adaptacije prostorov v Novem mestu s širšo okolico. Zahtevajte ponudbo!"
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovne keramičarske storitve",
+    "title": "Kakovostno polaganje keramike in",
+    "titleHighlight": "prenovitvena dela",
+    "description": "Natančna in kvalitetna izvedba keramičarskih del za lastnike stanovanj, hiš in poslovnih prostorov v Novem mestu s širšo okolico.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Delo"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "In okolica"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite keramičarske in prenovitvene storitve",
+    "description": "Specializirani smo za kakovostno polaganje vseh vrst ploščic in celovite adaptacije prostorov v Novem mestu s širšo okolico.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno polaganje stenskih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Kakovostna vgradnja talnih oblog in ploščic z dolgo življenjsko dobo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenova kopalnic",
+        "description": "Celovite adaptacije kopalnic od odstranitve starih materialov do končne montaže.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje zunanjih ploščic",
+        "description": "Strokovna izvedba zunanjih površin, teras, balkonov in stopnišč.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Adaptacije prostorov",
+        "description": "Celovita prenovitvena dela za osvežitev vašega doma ali poslovnega objekta.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Z združevanjem strokovnega znanja in natančnosti poskrbimo, da so vaši prostori urejeni brezhibno.",
+    "highlights": [
+      "Natančna in kvalitetna izvedba",
+      "Zanesljivost in držanje dogovorjenih rokov",
+      "Strokovno svetovanje pri izbiri materialov"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "In kvaliteta",
+        "description": "Vsak projekt izvedemo skrbno in z občutkom za detajle."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "In roki",
+        "description": "Držimo se dogovorjenih časovnih okvirov in obljub."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Pri materialih",
+        "description": "Pomagamo vam izbrati prave materiale za dolgotrajne rezultate."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Zahtevajte ponudbo za vaš projekt",
+    "description": "Pišite nam ali nas pokličite za strokovno svetovanje in pripravo ponudbe.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 560 086",
+        "href": "tel:070560086",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Seidlova cesta 20, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 15:00, Sob: 7:00 – 13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Seidlova cesta 20, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Musaj",
+    "address": "Seidlova cesta 20, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "070 560 086"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

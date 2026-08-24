@@ -1,0 +1,202 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "zbrendiraj",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/polaganje-keramike-kamna-2/hero.jpg",
+      "alt": "Strokovno polaganje keramike v moderni kopalnici"
+    },
+    "services": {
+      "src": "/clients/polaganje-keramike-kamna-2/services.jpg",
+      "alt": "Natančno polaganje kamna in keramike"
+    }
+  },
+  "brand": {
+    "prefix": "Keramika in kamen",
+    "highlight": "Kralj Jože s.p."
+  },
+  "metadata": {
+    "title": "Polaganje keramike in kamna Kralj Jože s.p. | Dolenjske Toplice",
+    "description": "Strokovno polaganje keramike in kamna ter prenove kopalnic in stopnišč v Dolenjskih Toplicah s širšo okolico. Zanesljiva in natančna izvedba."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovno polaganje keramike in kamna",
+    "title": "Kakovostna izvedba za",
+    "titleHighlight": "vaš dom",
+    "description": "Zanesljivo polaganje keramike, kamna ter celovite prenove za lastnike hiš, stanovanj in poslovnih prostorov v Dolenjskih Toplicah s širšo okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "In strokovnost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Strankam"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Dolenjske Toplice"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske in kamnoseške storitve",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za vaše želje poskrbimo za estetsko ter trajno izvedbo vseh vrst del na območju Dolenjskih Toplic s širšo okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Strokovno polaganje vseh vrst keramičnih ploščic v kopalnicah, kuhinjah in drugih bivalnih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje kamna",
+        "description": "Kakovostna vgradnja naravnega in dekorativnega kamna za zunanje ter notranje površine.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic od odstranitve starih elementov do končnega polaganj pl",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblaganje stopnišč",
+        "description": "Precizno oblaganje notranjih in zunanjih stopnišč s keramiko ali kamnom za varno uporabo in lep videz.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanje tlakovanje",
+        "description": "Urejanje zunanjih površin, teras in dvorišč s trpežnimi materiali, odpornimi na vremenske vplive.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Ločimo se po natančnosti, spoštovanju dogovorov in strokovnem pristopu k vsakemu projektu prenove ali novogradnje.",
+    "highlights": [
+      "Natančna izvedba del z občutkom za detajle",
+      "Zanesljivost in strokovno svetovanje",
+      "Popolna prilagodljivost željam strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "In detajli",
+        "description": "Vsak projekt izvedemo skrbno in z mislijo na dolgotrajno obstojnost."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "In zaupanje",
+        "description": "Držimo se dogovorjenih rokov in zagotavljamo visoko raven strokovnosti."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Strankam",
+        "description": "Prisluhnemo vašim idejam in ponudimo optimalne rešitve za vaš prostor."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Na voljo smo za vsa vprašanja, svetovanje in naročila terminov za polaganje keramike ter kamna.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 640 122",
+        "href": "tel:041640122",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Dolenje Sušice 27, 8350 Dolenjske Toplice, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite svoje ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite svojo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Dolenje Sušice 27, 8350 Dolenjske Toplice, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramika in kamen Kralj Jože s.p.",
+    "address": "Dolenje Sušice 27, 8350 Dolenjske Toplice, Slovenia",
+    "email": "",
+    "phone": "041 640 122"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

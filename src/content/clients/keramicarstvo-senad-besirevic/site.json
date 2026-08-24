@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-senad-besirevic/hero.jpg",
+      "alt": "Strokoven keramičar pri polaganju keramike"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-senad-besirevic/services.jpg",
+      "alt": "Natančno položene keramične ploščice v kopalnici"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Senad Beširević s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Senad Beširević s.p. | Kakovostno polaganje keramike",
+    "description": "Kakovostno in natančno polaganje keramike za vaš dom v Kočevju z okolico. Celovite keramičarske storitve za prenove in novogradnje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv keramičar",
+    "title": "Kakovostno in natančno polaganje keramike",
+    "titleHighlight": "za vaš dom",
+    "description": "Strokovne keramičarske storitve za lastnike stanovanj, hiš in investitorje v Kočevju z okolico. Zagotavljamo vrhunsko kakovost in zanesljivo izvedbo.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "Kakovost"
+      },
+      {
+        "value": "Natančna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Celovite",
+        "label": "Storitve"
+      },
+      {
+        "value": "Kočevje",
+        "label": "z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske storitve in zaključna dela",
+    "description": "Nudimo strokovno polaganje keramike in prenovitvena dela na območju Kočevja z okolico za vse vrste objektov.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno polaganje stenskih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Strokovna namestitev talnih oblog iz keramike za dolgotrajno obstojnost.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenova kopalnic",
+        "description": "Celovite prenove kopalnic in sanitarnih prostorov po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblaganje teras in balkonov",
+        "description": "Kakovostna zunanja keramika, odporna na vremenske vplive.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava podlage in izravnava",
+        "description": "Temeljita priprava tal in sten za brezhiben končni rezultat.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaša keramičarska dela",
+    "description": "Z združevanjem natančnosti, domačega pristopa in vrhunske izvedbe zagotavljamo storitve, ki presegajo pričakovanja.",
+    "highlights": [
+      "Vrhunska kakovost storitev z odličnimi ocenami strank",
+      "Natančna in zanesljiva izvedba del",
+      "Celovite keramičarske storitve za prenove in novogradnje"
+    ],
+    "benefits": [
+      {
+        "stat": "Vrhunska",
+        "label": "Kakovost",
+        "description": "Zavezanost k odličnim rezultatom in zadovoljstvu strank."
+      },
+      {
+        "stat": "Natančna",
+        "label": "Izvedba",
+        "description": "Skrb za vsak detajl pri polaganju stenske in talne keramike."
+      },
+      {
+        "stat": "Celovite",
+        "label": "Storitve",
+        "description": "Od priprave podlage do končne obdelave teras, kopalnic in prostorov."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete polaganje keramike ali prenovo kopalnice? Pokličite nas za dogovor o vašem projektu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 388 030",
+        "href": "tel:031388030",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Mahovnik 82, 1330 Kočevje, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Mahovnik 82, 1330 Kočevje, Slovenia",
+    "rights": "© 2025 Keramičarstvo Senad Beširević s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Senad Beširević s.p.",
+    "address": "Mahovnik 82, 1330 Kočevje, Slovenia",
+    "email": "",
+    "phone": "031 388 030"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

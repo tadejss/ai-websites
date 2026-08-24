@@ -1,0 +1,218 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/klb-keramicarstvo-liman/hero.jpg",
+      "alt": "Strokovno polaganje keramike v modernem prostoru"
+    },
+    "services": {
+      "src": "/clients/klb-keramicarstvo-liman/services.jpg",
+      "alt": "Prenova kopalnice in polaganje ploščic"
+    }
+  },
+  "brand": {
+    "prefix": "KLB",
+    "highlight": "Keramičarstvo"
+  },
+  "metadata": {
+    "title": "KLB, keramičarstvo Liman Berisha s.p. | Krško",
+    "description": "Strokovno polaganje keramike, prenove kopalnic na ključ in celovite keramičarske storitve v Krškem in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljivo keramičarstvo v Krškem",
+    "title": "Strokovno polaganje keramike in",
+    "titleHighlight": "celovite storitve",
+    "description": "Nudimo kakovostno polaganje stenske in talne keramike, prenove kopalnic na ključ ter hidroizolacijo za lastnike stanovanj, hiš in poslovnih prostorov v Krškem in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "izvedba del"
+      },
+      {
+        "value": "Zanesljivi",
+        "label": "roki"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "strankam"
+      },
+      {
+        "value": "Celovite",
+        "label": "storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kakovostna keramičarska dela za vaš dom",
+    "description": "Izvajamo strokovna keramičarska dela in gradbene rešitve za stranke v Krškem in okolici.",
+    "items": [
+      {
+        "title": "Polaganje stenske in talne keramike",
+        "description": "Natančno polaganje vseh vrst keramičnih ploščic v stanovanjih, hišah in poslovnih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove kopalnic na ključ",
+        "description": "Celovite prenove kopalnic od začetnih pripravljalnih del do končne montaže keramike.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje kamna in mozaikov",
+        "description": "Estetsko in strokovno oblaganje površin z naravnim kamnom ter dekorativnimi mozaiki.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Hidroizolacija površin",
+        "description": "Učinkovita zaščita pred vlago v mokrih prostorih, na balkonih in terasah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanje tlakovanje in oblaganje balkonov",
+        "description": "Vzdržljiva zunanja keramična dela za balkone, terase in tlakovane površine.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati KLB",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Zavedamo se pomena kakovosti in natančnosti pri prenovi vaših prostorov.",
+    "highlights": [
+      "Natančna in kakovostna izvedba del",
+      "Držanje dogovorjenih rokov",
+      "Visoka prilagodljivost strankam",
+      "Celovite storitve na enem mestu"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "in kakovost",
+        "description": "Vsakemu projektu se posvetimo z maksimalno skrbnostjo za popoln končni rezultat."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "rokov",
+        "description": "Dosledno se držimo vnaprej dogovorjenih časovnih okvirov izvedbe."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "strankam",
+        "description": "Prisluhnemo vašim željam in potrebam ter poiščemo najboljšo rešitev za prostor."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za ponudbo",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "068 608 573",
+        "href": "tel:068608573",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Bohoričeva ulica 4, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–16:00, Sob: 7:00–14:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Bohoričeva ulica 4, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "KLB Keramičarstvo",
+    "address": "Bohoričeva ulica 4, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "068 608 573"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

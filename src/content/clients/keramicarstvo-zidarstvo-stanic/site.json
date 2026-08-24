@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-zidarstvo-stanic/hero.jpg",
+      "alt": "Polaganje keramike in zidarska dela"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-zidarstvo-stanic/services.jpg",
+      "alt": "Prenova kopalnice in keramičarske storitve"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo in zidarstvo",
+    "highlight": "Stanič"
+  },
+  "metadata": {
+    "title": "Keramičarstvo in zidarstvo Stanič | Šentjernej",
+    "description": "Kakovostne keramičarske in zidarske storitve z dolgoletnimi izkušnjami v Šentjerneju z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster v vaši bližini",
+    "title": "Kakovostne keramičarske in",
+    "titleHighlight": "zidarske storitve",
+    "description": "Zanesljive storitve za lastnike hiš, stanovanj in poslovnih objektov, ki potrebujejo prenovo ali novogradnjo v Šentjerneju z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Roki"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Šentjernej"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaš dom in objekt",
+    "description": "Izvajamo kakovostna keramičarska in zidarska dela ter celovite prenove za stranke v Šentjerneju z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje vseh vrst keramičnih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Kakovostna izvedba zidarskih del za novogradnje, adaptacije in manjše gradbene posege.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih rušitvenih del do končne montaže elementov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranje predelne stene",
+        "description": "Postavitev predelnih sten za optimalno razporeditev in izkoristek vaših prostorov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblaganje stopnic",
+        "description": "Estetsko in trajno oblaganje notranjih ter zunanjih stopnic s keramiko ali drugimi materiali.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač in zaupanja vreden mojster",
+    "description": "Z našim znanjem in izkušnjami poskrbimo, da so dela opravljena kakovostno in v dogovorjenih rokih.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Strokovno svetovanje pri izbiri materialov",
+      "Prilagodljivost in spoštovanje rokov"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivost",
+        "label": "Natančna izvedba",
+        "description": "Vsakemu projektu se posvetimo z enako mero skrbnosti in natančnosti."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "Izbira materialov",
+        "description": "Pomagamo vam izbrati prave materiale za dolgotrajne in estetske rešitve."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Spoštovanje rokov",
+        "description": "Delujemo z mislijo na vaše želje in se držimo dogovorjenih časovnih okvirjev."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Dogovorite se za izvedbo del",
+    "description": "Pokličite nas ali nam pošljite sporočilo za vprašanja, svetovanje ali naročilo storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 651 343",
+        "href": "tel:031651343",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta oktobrskih žrtev 31, 8310 Šentjernej, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potreben obseg del...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Cesta oktobrskih žrtev 31, 8310 Šentjernej, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo in zidarstvo Stanič",
+    "address": "Cesta oktobrskih žrtev 31, 8310 Šentjernej, Slovenia",
+    "email": "",
+    "phone": "031 651 343"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

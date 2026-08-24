@@ -228,6 +228,8 @@ export async function searchPlaces(
       options.locationBias,
     );
 
+    const before = results.length;
+
     for (const place of page.places ?? []) {
       const business = mapPlaceToRawBusinessData(place);
       const id = business.googlePlaceId;
@@ -246,7 +248,9 @@ export async function searchPlaces(
 
     pageToken = page.nextPageToken;
 
-    if (!pageToken) {
+    // Stop when Google stops paging, or when a page adds nothing new
+    // (overlap / stale token) so we never spin forever below `target`.
+    if (!pageToken || results.length === before) {
       break;
     }
   }

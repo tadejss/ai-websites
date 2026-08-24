@@ -1,0 +1,82 @@
+# Keramičarji — Novo mesto, Krško in okolica
+# npm run discover-leads -- --file data/queries-dolenjska-keramicar.txt --region dolenjska --no-website --until-no-website 50 --industry keramicar --limit 40
+
+keramičar Novo mesto
+keramičarstvo Novo mesto
+polaganje keramike Novo mesto
+polaganje ploščic Novo mesto
+polaganje keramičnih ploščic Novo mesto
+zaključna dela keramika Novo mesto
+pečar keramičar Novo mesto
+zidarstvo keramičarstvo Novo mesto
+keramičar Krško
+keramičarstvo Krško
+polaganje keramike Krško
+polaganje ploščic Krško
+pečar keramičar Krško
+keramičar Brežice
+keramičarstvo Brežice
+polaganje keramike Brežice
+polaganje ploščic Brežice
+keramičar Kostanjevica na Krki
+keramičarstvo Kostanjevica
+keramičar Otočec
+keramičarstvo Otočec
+keramičar Straža
+keramičarstvo Straža
+keramičar Mirna Peč
+keramičarstvo Mirna Peč
+keramičar Šentjernej
+keramičarstvo Šentjernej
+keramičar Škocjan
+keramičarstvo Škocjan
+keramičar Trebnje
+keramičarstvo Trebnje
+polaganje ploščic Trebnje
+keramičar Žužemberk
+keramičarstvo Žužemberk
+keramičar Dolenjske Toplice
+keramičarstvo Dolenjske Toplice
+keramičar Sevnica
+keramičarstvo Sevnica
+polaganje keramike Sevnica
+keramičar Mokronog
+keramičar Mirna
+keramičar Šmarješke Toplice
+keramičar Čatež ob Savi
+keramičar Brestanica
+keramičar Senovo
+keramičar Prečna
+keramičar Stopiče
+keramičar Semič
+keramičar Metlika
+keramičar Črnomelj
+keramičarstvo Metlika
+keramičarstvo Črnomelj
+polaganje ploščic Črnomelj
+polaganje keramike Metlika
+keramičar Kočevje
+keramičarstvo Kočevje
+polaganje ploščic Kočevje
+keramičar Ribnica
+keramičarstvo Ribnica
+keramičar Sodražica
+keramičar Ivančna Gorica
+keramičarstvo Ivančna Gorica
+keramičar Višnja Gora
+keramičar Radeče
+keramičarstvo Radeče
+keramičar Laško
+keramičar Hrastnik
+ploščice Novo mesto
+ploščice Krško
+ploščice Brežice
+tlakovanje Novo mesto
+tlakovanje Krško
+pečarstvo keramičarstvo Novo mesto
+pečarstvo keramičarstvo Krško
+gradbeništvo keramičarstvo Novo mesto
+gradbeništvo keramičarstvo Krško
+tile installer Novo mesto
+tile setter Krško
+fliesenleger Novo mesto

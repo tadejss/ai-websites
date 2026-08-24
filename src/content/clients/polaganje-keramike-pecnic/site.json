@@ -1,0 +1,202 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/polaganje-keramike-pecnic/hero.jpg",
+      "alt": "Strokovno polaganje keramike v notranjem prostoru"
+    },
+    "services": {
+      "src": "/clients/polaganje-keramike-pecnic/services.jpg",
+      "alt": "Detajl obdelave naravnega kamna in keramičnih ploščic"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Anton Simonič s.p."
+  },
+  "metadata": {
+    "title": "Polaganje keramike Anton Simonič s.p. | Črnomelj",
+    "description": "Strokovno polaganje keramike, pečnic in naravnega kamna v Črnomlju s širšo okolico. Zanesljive prenove kopalnic ter oblaganje teras in balkonov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovno polaganje v Črnomlju s okolico",
+    "title": "Kakovostno polaganje keramike, pečnic in",
+    "titleHighlight": "naravnega kamna",
+    "description": "Zanesljive storitve za lastnike stanovanj, hiš in investitorje v gradbenih projektih. Visoka kakovost izvedbe za vaš dom ali poslovni prostor.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka",
+        "label": "Kakovost izvedbe"
+      },
+      {
+        "value": "Natančnost",
+        "label": "In zanesljivost"
+      },
+      {
+        "value": "Črnomelj",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Celovite",
+        "label": "Prenove"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Strokovne keramičarske in kamnoseške storitve",
+    "description": "Izvajamo kakovostno polaganje keramike, postavitev pečnic, obdelavo naravnega kamna ter celovite prenove za naročnike v Črnomlju in okolici.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje vseh vrst keramičnih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Postavitev pečnic",
+        "description": "Strokovna postavitev in montaža pečnic z občutkom za detajle in tradicijo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Obdelava naravnega kamna",
+        "description": "Kakovostna obdelava in vgradnja naravnega kamna za trajnost in estetski videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih pripravljalnih del do končnega polaganja ploščic.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblaganje teras in balkonov",
+        "description": "Trpežno oblaganje zunanjih površin, teras in balkonov z ustreznimi materiali in hidroizolacijo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Z dolgoletnimi izkušnjami in predanostjo zagotavljamo vrhunske rezultate, ki prepričajo lastnike stanovanj in hiš.",
+    "highlights": [
+      "Visoka kakovost izvedbe pri vsakem projektu",
+      "Dolgoletne izkušnje in strokovnost na področju keramike",
+      "Zanesljivost, natančnost in spoštovanje dogovorov"
+    ],
+    "benefits": [
+      {
+        "stat": "Kakovost",
+        "label": "Visoka raven izvedbe",
+        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "Strokovno znanje",
+        "description": "Zanesljivo obvladujemo polaganje keramike, pečnic in kamna."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "Črnomelj in okolica",
+        "description": "Hitro odzivni in zanesljivi na vašem območju."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete polaganje keramike ali prenovo kopalnice? Pokličite nas za posvet in ponudbo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 760 149",
+        "href": "tel:041760149",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Zadružna cesta 4, 8340 Črnomelj, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Zadružna cesta 4, 8340 Črnomelj, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Anton Simonič s.p.",
+    "address": "Zadružna cesta 4, 8340 Črnomelj, Slovenia",
+    "email": "",
+    "phone": "041 760 149"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
