@@ -1,0 +1,29 @@
+{
+  "companyName": "Valentina, frizerski salon, Valentina Troha s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Vaš zanesljiv kraj za popolno frizuro in skrb za lase",
+  "services": [
+    "žensko striženje",
+    "moško striženje",
+    "barvanje las",
+    "urejanje pričesk",
+    "svetovanje o negi las"
+  ],
+  "phone": "031 285 025",
+  "email": "",
+  "address": "Babno Polje 8a, 1386 Stari trg pri Ložu, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "prijazno in strokovno osebje",
+    "poslušanje želja strank",
+    "točnost in zanesljivost",
+    "prijetno urejen salon"
+  ],
+  "targetCustomers": "lokalni prebivalci, ki cenijo osebni pristop in kakovostne frizerske storitve",
+  "serviceArea": "Babno Polje, Stari trg pri Ložu in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, topel in strokoven",
+  "brandStyle": "domač in urejen lokalni salon",
+  "competitors": "lokalni frizerski saloni na območju",
+  "callToAction": "Naročite se na termin"
+}

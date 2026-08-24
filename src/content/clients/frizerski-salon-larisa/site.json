@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "olive-gold",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-larisa/hero.jpg",
+      "alt": "Topel in svetel ambient frizerskega salona z udobnim vzdušjem"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-larisa/services.jpg",
+      "alt": "Frizersko striženje in urejanje pričesk z profesionalno opremo"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Larisa"
+  },
+  "metadata": {
+    "title": "Frizerski salon Larisa | Rakek",
+    "description": "Ugodne in profesionalne frizerske storitve za vso družino na Rakeku z okolico. Žensko, moško in otroško striženje, barvanje ter oblikovanje pričesk."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon",
+    "title": "Ugodne in profesionalne frizerske storitve",
+    "titleHighlight": "za vso družino",
+    "description": "Prijazen in domač frizerski salon Larisa na Rakeku nudi kvalitetno nego las, striženje in barvanje za lokalne prebivalce ter družine.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Družinam",
+        "label": "Prijazen salon"
+      },
+      {
+        "value": "Ugodne",
+        "label": "Cene storitev"
+      },
+      {
+        "value": "Rakek",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Domače",
+        "label": "Vzdušje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vsakogar",
+    "description": "Poskrbimo za vaš svež videz in urejeno pričesko z naborom storitev za vso družino na Rakeku.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk, striženje in nega, prilagojena vašim željam in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in moderno moško striženje za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Potrpežljivo in prijazno striženje za najmlajše družinske člane.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni preparati za barvanje, ki ohranjajo zdravje in lesk vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in strokovna skrb za vaše lase",
+    "description": "V salonu Larisa združujemo prijazen pristop, dostopne cene in dolgoletne izkušnje v službi vaše samozavesti.",
+    "highlights": [
+      "Prijazno osebje in topel, domač ambient",
+      "Dosegljive in razumen cene za vso družino",
+      "Kakovostna nega las in individualen pristop"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in domačnost",
+        "description": "Služimo lokalni skupnosti z nasmehom in posluhom za vsako stranko."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "po meri",
+        "description": "Uporaba preverjenih metod in skrb za zdravje vaših las."
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "za vsakogar",
+        "description": "Razumne cene in celostne storitve za vso družino na enem mestu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na svoj termin",
+    "description": "Obiščite nas na Partizanski cesti na Rakeku ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Partizanska cesta 9, 1381 Rakek, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(01) 705 16 04",
+        "href": "tel:017051604",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "PON, SRE, PET: 13:00 - 18:00 | TOR, ČET: 8:00 - 12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostega termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Partizanska cesta 9, 1381 Rakek, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Larisa",
+    "address": "Partizanska cesta 9, 1381 Rakek, Slovenia",
+    "email": "",
+    "phone": "(01) 705 16 04"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

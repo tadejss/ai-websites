@@ -1,0 +1,28 @@
+{
+  "companyName": "BARO, Lenart Baraga s.p.",
+  "industry": "Elektrostoritve",
+  "tagline": "Zanesljive in strokovne elektroinstalacije za vaš dom in poslovni prostor",
+  "services": [
+    "Elektroinstalacije",
+    "Servis električne opreme",
+    "Pametne inštalacije",
+    "Vzdrževanje objektov",
+    "Svetovanje"
+  ],
+  "phone": "",
+  "email": "",
+  "address": "Osredek 3, 1380 Cerknica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Strokovna izvedba elektrodel",
+    "Zanesljivost in točnost",
+    "Prilagodljivost strankam"
+  ],
+  "targetCustomers": "Lastniki stanovanjskih hiš, stanovanj in poslovnih objektov v okolici",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "moderen, zaupanja vreden",
+  "competitors": "Lokalni elektro izvajalci",
+  "callToAction": "Stopite v stik"
+}

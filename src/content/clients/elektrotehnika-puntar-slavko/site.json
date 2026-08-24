@@ -1,0 +1,202 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Elektrotehnika Puntar",
+    "highlight": "Slavko Puntar s.p."
+  },
+  "metadata": {
+    "title": "Elektroinštalacije in storitve Puntar | Rakek",
+    "description": "Zanesljive elektroinštalacije, popravila napeljav in montaža svetil za dom in podjetje na Rakeku z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive elektro storitve",
+    "title": "Strokovne elektroinštalacije za",
+    "titleHighlight": "vaš dom in podjetje",
+    "description": "Nudimo kakovostne elektroinštalacije, popravila in vzdrževanje na območju Rakeka z okolico. Zanesljiv partner za vse vaše električne sisteme.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Delo"
+      },
+      {
+        "value": "Hitro",
+        "label": "Odzivnost"
+      },
+      {
+        "value": "Rakek",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve s področja elektrotehnike",
+    "description": "Poskrbimo za varno delovanje električnih napeljav in sistemov v vaših objektih na Rakeku z okolico.",
+    "items": [
+      {
+        "title": "Elektroinštalacije",
+        "description": "Izvedba novih elektroinštalacij in prenova obstoječih sistemov v stanovanjskih in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila električnih napeljav",
+        "description": "Hitro odkrivanje napak in strokovna popravila električnih napeljav za varno bivanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža svetil in opreme",
+        "description": "Strokovna montaža svetil, stikal, vtičnic in druge električne opreme.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje elektro sistemov",
+        "description": "Redno vzdrževanje in pregledi elektro sistemov za zanesljivo delovanje brezskrbno vsak dan.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje na področju elektrotehnike",
+        "description": "Strokovni nasveti in prilagojene rešitve pri načrtovanju ali prenovi elektroinštalacij.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše elektro potrebe",
+    "description": "Z združevanjem strokovnega znanja in domačega pristopa zagotavljamo rešitve, prilagojene vsaki stranki.",
+    "highlights": [
+      "Hiter odziv in zanesljiva izvedba del",
+      "Poglobljeno strokovno znanje na področju elektrotehnike",
+      "Prilagojene rešitve za stanovanja, hiše in poslovne objekte"
+    ],
+    "benefits": [
+      {
+        "stat": "Hitrost",
+        "label": "Hiter odziv",
+        "description": "Odzivamo se hitro na vaše klice in potrebe po nujnih popravilih ali novih montažah."
+      },
+      {
+        "stat": "Znanje",
+        "label": "Strokovnost",
+        "description": "Dolgoletne izkušnje in natančnost zagotavljajo varno in dolgotrajno delovanje."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Rešitve za stranke",
+        "description": "Prisluhnemo vašim željam in poiščemo najboljšo tehnično rešitev za vaš objekt."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinštalacije ali popravilo? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(01) 705 13 89",
+        "href": "tel:017051389",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Unec 118a, 1381 Rakek, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Unec 118a, 1381 Rakek, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektrotehnika Puntar Slavko Puntar s.p.",
+    "address": "Unec 118a, 1381 Rakek, Slovenia",
+    "email": "",
+    "phone": "(01) 705 13 89"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

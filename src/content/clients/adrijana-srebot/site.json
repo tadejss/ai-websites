@@ -1,0 +1,210 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "plum-dusk",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/adrijana-srebot/hero.jpg",
+      "alt": "Topel in prijeten ambient frizerskega salona v Postojni"
+    },
+    "services": {
+      "src": "/clients/adrijana-srebot/services.jpg",
+      "alt": "Strokovno barvanje in urejanje las v frizerskem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Adrijana Srebot",
+    "highlight": "frizerski salon"
+  },
+  "metadata": {
+    "title": "Adrijana Srebot s.p. | Frizerski salon Postojna",
+    "description": "Vaš zaupanja vreden frizerski salon v Postojni za urejen in sijoč videz. Nudimo žensko in moško striženje, barvanje ter nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Postojna",
+    "title": "Vaš zaupanja vreden frizerski salon za",
+    "titleHighlight": "urejen in sijoč videz",
+    "description": "Nudimo strokovno striženje, barvanje in nego las v prijetnem in domačem ambientu za vse, ki cenijo kakovost v Postojni in okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      },
+      {
+        "value": "Postojna",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Preparati"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vaše lase",
+    "description": "Poskrbimo za vaš svež videz in zdravje las z individualnim pristopom v Postojni.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah ob upoštevanju oblike obraza in tipa las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in moderno moško striženje ter urejanje pričesk.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki in tehnike barvanja za sijoč videz vaših las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega in tretmaji za lase",
+        "description": "Hranljivi tretmaji za obnovo in sijaj vaših las z uporabo preverjenih preparatov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Tradicija in domače vzdušje",
+    "description": "Z našim znanjem in posluhom za stranke poskrbimo, da se v našem salonu vedno počutite dobrodošli.",
+    "highlights": [
+      "Dolgoletne izkušnje in strokovnost na področju frizerstva",
+      "Osebni pristop k vsaki stranki in strokovno svetovanje",
+      "Uporaba kakovostnih lasnih preparatov",
+      "Prijeten in domač ambient salona"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "in izkušnje",
+        "description": "Dolgoletno delo na področju frizerstva zagotavlja zanesljive in lepe rezultate."
+      },
+      {
+        "stat": "Osebno",
+        "label": "svetovanje",
+        "description": "Prisluhnemo vašim željam in vam svetujemo frizuro, ki ustreza vašemu stilu."
+      },
+      {
+        "stat": "Domače",
+        "label": "vzdušje",
+        "description": "Sprostite se v prijetnem ambientu našega salona v Postojni."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tržaška cesta 11, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(05) 726 30 06",
+        "href": "tel:+38657263006",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Tržaška cesta 11, 6230 Postojna, Slovenia",
+    "rights": "© Adrijana Srebot s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Adrijana Srebot frizerski salon",
+    "address": "Tržaška cesta 11, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "(05) 726 30 06"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

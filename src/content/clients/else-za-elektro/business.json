@@ -1,0 +1,27 @@
+{
+  "companyName": "Else podjetje za elektro inštalacije, servisne storitve in trgovino, d.o.o. Cerknica",
+  "industry": "elektro inštalacije in servisne storitve",
+  "tagline": "Zanesljive elektro inštalacije in servisne storitve",
+  "services": [
+    "elektro inštalacije",
+    "servisne storitve",
+    "elektro trgovina",
+    "vzdrževanje elektro sistemov"
+  ],
+  "phone": "(01) 709 13 24",
+  "email": "",
+  "address": "Sinja Gorica 37, 1380 Cerknica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "strokovna izvedba elektro inštalacij",
+    "zanesljive servisne storitve",
+    "celovita ponudba z elektro trgovino"
+  ],
+  "targetCustomers": "lastniki stanovanjskih in poslovnih objektov",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "lokalni ponudniki elektro storitev",
+  "callToAction": "Kontaktirajte nas"
+}

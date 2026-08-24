@@ -2,6 +2,10 @@ import { resolve } from "node:path";
 import { config as loadEnv } from "dotenv";
 import { createClientFromLead } from "../src/clients/create-client-from-lead";
 import { isFatalGenerationError } from "../src/clients/fatal-error";
+import {
+  isLeadIndustryId,
+  type LeadIndustryId,
+} from "../src/leads/industry-filter";
 import { LEAD_PRIORITIES, type LeadPriority } from "../src/leads/priority";
 import { selectLeads } from "../src/leads/select";
 import { appendGenerationLog, getGenerationLogPath } from "../src/logs/generation-log";
@@ -17,6 +21,8 @@ type Options = {
   priorities?: LeadPriority[];
   withoutWebsiteOnly: boolean;
   dryRun: boolean;
+  industry?: LeadIndustryId;
+  region?: string;
 };
 
 function parseLimit(raw: string | undefined): number {
@@ -71,6 +77,8 @@ function parseOptions(args: string[]): Options {
   let priorityArg: string | undefined;
   let withoutWebsiteOnly = false;
   let dryRun = false;
+  let industry: LeadIndustryId | undefined;
+  let region: string | undefined;
 
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
@@ -97,6 +105,25 @@ function parseOptions(args: string[]): Options {
       continue;
     }
 
+    if (arg === "--industry") {
+      const value = args[index + 1] ?? "";
+      if (!isLeadIndustryId(value)) {
+        console.error(
+          `Error: Invalid --industry "${value}". Allowed: frizer, keramicar, elektro, vulkanizer`,
+        );
+        process.exit(1);
+      }
+      industry = value;
+      index += 1;
+      continue;
+    }
+
+    if (arg === "--region") {
+      region = args[index + 1];
+      index += 1;
+      continue;
+    }
+
     console.error(`Error: Unknown option "${arg}".`);
     process.exit(1);
   }
@@ -106,6 +133,8 @@ function parseOptions(args: string[]): Options {
     priorities: parsePriorities(priorityArg),
     withoutWebsiteOnly,
     dryRun,
+    industry,
+    region,
   };
 }
 
@@ -116,6 +145,8 @@ async function main(): Promise<void> {
     statuses: ["discovered"],
     priorities: options.priorities,
     withoutWebsiteOnly: options.withoutWebsiteOnly,
+    industry: options.industry,
+    region: options.region,
   });
 
   if (candidates.length === 0) {
@@ -164,6 +195,8 @@ async function main(): Promise<void> {
         skipped += 1;
         console.log(`SKIPPED: ${result.companyName} - ${result.reason}`);
       }
+
+      await new Promise((resolveSleep) => setTimeout(resolveSleep, 1500));
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
 

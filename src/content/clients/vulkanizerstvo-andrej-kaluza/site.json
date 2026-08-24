@@ -1,0 +1,195 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Vulkanizerstvo",
+    "highlight": "Andrej Kaluža s.p."
+  },
+  "metadata": {
+    "title": "Vulkanizerstvo Andrej Kaluža s.p. | Ilirska Bistrica",
+    "description": "Strokovne in zanesljive vulkanizerske storitve za osebna in lahka dostavna vozila v Ilirski Bistrici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Vulkanizerske storitve v Ilirski Bistrici",
+    "title": "Strokovne in zanesljive",
+    "titleHighlight": "vulkanizerske storitve",
+    "description": "Zanesljive vulkanizerske storitve za lastnike osebnih in lahkih dostavnih vozil v Ilirski Bistrici z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Delo"
+      },
+      {
+        "value": "Natančno",
+        "label": "Centriranje"
+      },
+      {
+        "value": "Varno",
+        "label": "Na cesti"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Ilirska Bistrica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše vozilo",
+    "description": "Celovite vulkanizerske storitve za varno vožnjo vašega osebnega ali lahkega dostavnega vozila v Ilirski Bistrici z okolico.",
+    "items": [
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in strokovna menjava pnevmatik za osebna in lahka dostavna vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Premontaža pnevmatik",
+        "description": "Natančna premontaža pnevmatik z ustrezno opremo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Centriranje koles",
+        "description": "Kakovostno centriranje koles za udobno in varno vožnjo brez tresljajev.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Hramba pnevmatik",
+        "description": "Ustrezna hramba vaših pnevmatik izven sezonskih obdobij.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjši vulkanizerski popravki",
+        "description": "Strokovna sanacija manjših poškodb in popravila pnevmatik.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše pnevmatike",
+    "description": "Z združevanjem strokovnosti, natančnosti in prijaznega pristopa poskrbimo za varno in brezskrbno vožnjo.",
+    "highlights": [
+      "Visoka strokovnost in natančnost pri delu",
+      "Prijazen in zanesljiv pristop do strank",
+      "Preverjena kakovost storitev z odličnimi ocenami"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "in natančnost",
+        "description": "Vsakemu vozilu se posvetimo z visoko stopnjo natančnosti in strokovnega znanja."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "in prijazen pristop",
+        "description": "Zagotavljamo zanesljive storitve in prijazen odnos do vsake stranke."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "z odličnimi ocenami",
+        "description": "Preverjena kakovost opravljenih storitev, ki ji zaupajo lastniki vozil."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede vulkanizerskih storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Vilharjeva cesta 31a, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Vilharjeva cesta 31a, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vulkanizerstvo Andrej Kaluža s.p.",
+    "address": "Vilharjeva cesta 31a, 6250 Ilirska Bistrica, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

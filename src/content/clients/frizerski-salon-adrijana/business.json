@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Adrijana Adrijana Možina s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne in prijazne frizerske storitve v Ilirski Bistrici",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "(05) 714 16 09",
+  "email": "",
+  "address": "Gregorčičeva cesta 19, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 2:00 PM · Tuesday: 1:00 – 7:00 PM · Wednesday: 8:00 AM – 3:00 PM · Thursday: 1:00 – 7:00 PM · Friday: 8:00 AM – 3:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Zelo prijazno osebje in storitev",
+    "Visoka strokovnost in profesionalen pristop",
+    "Odlično razmerje med ceno in kakovostjo"
+  ],
+  "targetCustomers": "Lokalni prebivalci in stranke vseh starosti, ki cenijo urejen videz",
+  "serviceArea": "Ilirska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel in domač",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se na termin"
+}

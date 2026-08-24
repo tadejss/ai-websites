@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektro Ika Gregor Škerlj s.p.",
+  "industry": "Elektro storitve",
+  "tagline": "Zanesljive in strokovne elektro storitve za vaše projekte.",
+  "services": [
+    "Elektroinštalacije",
+    "Servis in popravila",
+    "Pametne inštalacije",
+    "Vzdrževanje elektro opreme",
+    "Svetovanje pri projektih"
+  ],
+  "phone": "041 741 246",
+  "email": "",
+  "address": "Begunje pri Cerknici 66, 1382 Begunje pri Cerknici, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Odlična zanesljivost in strokovnost pri izvedbi",
+    "Priznan in zanesljiv partner za zahtevnejše projekte",
+    "Pozitivne izkušnje in pohvale zadovoljnih strank"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih objektov, ki potrebujejo zanesljive elektro storitve.",
+  "serviceArea": "Begunje pri Cerknici z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni mojster",
+  "competitors": "Lokalni elektro inštalaterji in ponudniki elektro storitev",
+  "callToAction": "Pokličite nas"
+}

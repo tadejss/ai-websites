@@ -1,0 +1,202 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "forest-mist",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Servis Lavrič",
+    "highlight": "Igor s.p."
+  },
+  "metadata": {
+    "title": "Servis industrijske elektronike Lavrič Igor s.p.",
+    "description": "Zanesljiv servis in popravila industrijske elektronike za industrijska podjetja in proizvodne obrate v Postojni ter širši okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Strokovni servis elektronike",
+    "title": "Zanesljiv servis in popravila",
+    "titleHighlight": "industrijske elektronike",
+    "description": "Strokovne rešitve, diagnostika okvar in vzdrževanje elektronskih naprav za industrijska podjetja, proizvodne obrate in poslovne subjekte v Postojni s širšo okolico ter po Sloveniji.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Znanje"
+      },
+      {
+        "value": "Hitra",
+        "label": "Diagnostika"
+      },
+      {
+        "value": "Terenski",
+        "label": "Servis"
+      },
+      {
+        "value": "Prilagojen",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za industrijsko elektroniko",
+    "description": "Zagotavljamo zanesljivo podporo za delovanje vaših naprav, od natančne diagnostike do popravil na terenu.",
+    "items": [
+      {
+        "title": "Popravilo industrijske elektronike",
+        "description": "Kakovostna popravila za nemoteno delovanje vaših industrijskih sistemov in naprav.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Diagnostika okvar",
+        "description": "Natančno odkrivanje težav in hitro lociranje napak v elektronskih sklopih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje elektronskih naprav",
+        "description": "Preventivno vzdrževanje za podaljšanje življenjske dobe opreme v proizvodnji.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Tehnično posredništvo",
+        "description": "Strokovno posredništvo in podpora pri reševanju specifičnih tehničnih izzivov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Servis elektronike na terenu",
+        "description": "Hitro ukrepanje in odpravljanje težav neposredno na lokaciji vašega obrata.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vašo industrijsko elektroniko",
+    "description": "Z združevanjem strokovnega znanja, hitrega odziva in prilagodljivosti zagotavljamo visoko raven storitev za poslovne subjekte.",
+    "highlights": [
+      "Strokovno znanje na področju industrijske elektronike",
+      "Hitra in zanesljiva diagnostika ter popravila",
+      "Prilagodljivost in individualen pristop k strankam"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "Znanje",
+        "description": "Poglobljeno poznavanje industrijske elektronike in specifičnih potreb proizvodnih obratov."
+      },
+      {
+        "stat": "Odzivnost",
+        "label": "Hitrost",
+        "description": "Zanesljiva diagnostika in popravila zmanjšujejo izpade vaših procesov."
+      },
+      {
+        "stat": "Pristop",
+        "label": "Prilagodljivost",
+        "description": "Individualna obravnava in rešitve, prilagojene zahtevam posameznega podjetja."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete popravilo ali diagnostiko industrijske elektronike? Pokličite nas ali pošljite povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tržaška cesta 49c, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 740 800",
+        "href": "tel:041740800",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše povpraševanje ali težavo z elektroniko",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Tržaška cesta 49c, 6230 Postojna, Slovenia",
+    "rights": "© Servis industrijske elektronike in posredništvo Lavrič Igor s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Servis Lavrič Igor s.p.",
+    "address": "Tržaška cesta 49c, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 740 800"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

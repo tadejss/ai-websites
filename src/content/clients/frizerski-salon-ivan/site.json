@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-ivan/hero.jpg",
+      "alt": "Svetel in urejen frizerski salon v Ilirski Bistrici"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-ivan/services.jpg",
+      "alt": "Strokovne frizerske storitve za vso družino"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Ivan"
+  },
+  "metadata": {
+    "title": "Frizerski salon Ivan | Strokovne frizerske storitve v Ilirski Bistrici",
+    "description": "Strokovne frizerske storitve za vso družino v Ilirski Bistrici z okolico. Moško in žensko striženje, urejanje brade, barvanje las in frizure za priložnosti."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon",
+    "title": "Strokovne frizerske storitve za",
+    "titleHighlight": "vso družino",
+    "description": "Prijazen in domač frizerski salon v Ilirski Bistrici z okolico. Nudimo moško in žensko striženje, urejanje brade ter barvanje las za lokalne prebivalce.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Celotna",
+        "label": "Družina"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Delovnik"
+      },
+      {
+        "value": "Ilirska",
+        "label": "Bistrica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vas",
+    "description": "Poskrbimo za vaš svež videz in urejeno pričesko. Izberite storitev, ki vam ustreza.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Kakovostno in natančno moško striženje, prilagojeno vašemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske ter striženje za vsak okus.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje brade",
+        "description": "Strokovno urejanje in oblikovanje brade za urejen moški videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna preobrazba z kakovostnimi pripravki.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Frizure za priložnosti",
+        "description": "Svečane in posebne frizure za vaše dogodke in pomembne trenutke.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in strokovnost",
+    "description": "Smo priljubljena lokalna izbira v Ilirski Bistrici, kjer se posvetimo vsaki stranki posebej.",
+    "highlights": [
+      "Priljubljena lokalna izbira v Ilirski Bistrici",
+      "Prilagodljiv delovnik glede na vaše potrebe",
+      "Osebni pristop k vsaki stranki"
+    ],
+    "benefits": [
+      {
+        "stat": "Lokalno",
+        "label": "Zaupanje",
+        "description": "Prizadevamo si za dolgoročne odnose z našimi sosedi in obiskovalci."
+      },
+      {
+        "stat": "Prilagodljivo",
+        "label": "Delovnik",
+        "description": "Delovni čas prilagajamo tako, da lažje najdete termin zase."
+      },
+      {
+        "stat": "Osebno",
+        "label": "Obremenitev",
+        "description": "Individualna obravnava in prijetno vzdušje v salonu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nam pišite za dogovor o terminu obiska.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 306 845",
+        "href": "tel:051306845",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Bazoviška cesta 4, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Pet: 8:00–12:00 in 15:00–19:00 · Tor, Čet: 8:00–11:00 · Sre: 12:00–19:00 · Sob: 8:00–11:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali želje glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Bazoviška cesta 4, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "© Frizerski salon Ivan, Ivan Dubravčić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Ivan",
+    "address": "Bazoviška cesta 4, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "051 306 845"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

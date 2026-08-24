@@ -1,0 +1,197 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Elektro-Mont",
+    "highlight": "Jani Samsa s.p."
+  },
+  "metadata": {
+    "title": "Elektro-Mont | Elektro in gradbene storitve Cerknica",
+    "description": "Zanesljive elektroinštalacije, električna popravila, vzdrževanje objektov in splošne gradbene storitve v Cerknici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive storitve v Cerknici",
+    "title": "Elektro in gradbene rešitve za",
+    "titleHighlight": "vaš dom ali poslovni prostor",
+    "description": "Strokovne elektroinštalacije, popravila in vzdrževanje objektov za lastnike stanovanjskih hiš, stanovanj in poslovnih objektov v Cerknici z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Odzivnost",
+        "label": "in strokovnost"
+      },
+      {
+        "value": "Celovite",
+        "label": "rešitve na enem mestu"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "izvajanje del"
+      },
+      {
+        "value": "Cerknica",
+        "label": "z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite storitve za vaš objekt",
+    "description": "Poskrbimo za kakovostno izvedbo vseh električnih in splošnih gradbenih del na območju Cerknice z okolico.",
+    "items": [
+      {
+        "title": "Elektroinštalacije",
+        "description": "Strokovna izvedba elektroinštalacij za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Električna popravila",
+        "description": "Hitra in zanesljiva odprava napak ter popravila električnih napeljav.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje objektov",
+        "description": "Redno in namensko vzdrževanje za varno delovanje vašega objekta.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Splošne gradbene storitve",
+        "description": "Kakovostne splošne gradbene storitve za prenovitvena in vzdrževalna dela.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaš dom",
+    "description": "Z združevanjem strokovnosti, odzivnosti in celovitih rešitev poskrbimo, da so dela opravljena zanesljivo in v dogovorjenih rokih.",
+    "highlights": [
+      "Odzivnost in strokovnost pri vsakem projektu",
+      "Celovite rešitve na enem mestu za stanovanja in hiše",
+      "Zanesljivo izvajanje del z mislijo na varnost"
+    ],
+    "benefits": [
+      {
+        "stat": "Odzivnost",
+        "label": "in strokovnost",
+        "description": "Hitro se odzovemo na vaše potrebe in dela opravimo strokovno."
+      },
+      {
+        "stat": "Celovito",
+        "label": "na enem mestu",
+        "description": "Nudimo elektro in gradbene storitve, kar vam prihrani čas in skrbi."
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "izvajanje",
+        "description": "Zanesljivo izvajanje del za mirno bivanje v vašem domu ali poslovnem prostoru."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pokličite nas za sodelovanje",
+    "description": "Potrebujete elektroinštalacije, popravila ali vzdrževanje? Kontaktirajte nas in z veseljem vam bomo pomagali.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 567 624",
+        "href": "tel:031567624",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Dolenja vas 98, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec ali nas pokličite direktno na telefon.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Dolenja vas 98, 1380 Cerknica, Slovenia",
+    "rights": "© Elektro-Mont, Jani Samsa s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektro-Mont Jani Samsa s.p.",
+    "address": "Dolenja vas 98, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "031 567 624"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

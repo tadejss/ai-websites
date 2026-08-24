@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/zensko-frizerstvo-znidaric/hero.jpg",
+      "alt": "Topel in svetel ženski frizerski salon v Ilirski Bistrici"
+    },
+    "services": {
+      "src": "/clients/zensko-frizerstvo-znidaric/services.jpg",
+      "alt": "Strokovne frizerske storitve in barvanje las v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "Žensko frizerstvo",
+    "highlight": "Žnidarič Sandra"
+  },
+  "metadata": {
+    "title": "Žensko frizerstvo Sandra Žnidarič s.p. | Ilirska Bistrica",
+    "description": "Prijazne in strokovne frizerske storitve za ženske v Ilirski Bistrici in okolici. Obiščite naš topel lokalni salon za striženje, barvanje in nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon v Ilirski Bistrici",
+    "title": "Prijazne in strokovne frizerske storitve za",
+    "titleHighlight": "vaše lase",
+    "description": "Prepustite se strokovnim rokam v prijetnem in domačem okolju. Poskrbimo za vaš svež videz in zdravje vaših las v Ilirski Bistrici in okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Topel",
+        "label": "Sprejem"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Delo"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Ilirska Bistrica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve prilagojene vam",
+    "description": "V našem salonu nudimo celovito nego in urejanje las za ženske vseh generacij v Ilirski Bistrici in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Natančno in sodobno striženje, prilagojeno obliki vašega obraza in življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostne barve in tehnike barvanja za sijoče, obstojne in zdrave lase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti, ki poudari vašo naravno lepoto.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Frizure za posebne priložnosti",
+        "description": "Elegantne in svečane pričeske za poroke, obhajila, rojstne dneve in druge dogodke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Negovalni tretmaji, ki povrnejo mehkobo, lesk in vitalnost utrujenim lasem.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Salon, kjer se boste počutili dobrodošli",
+    "description": "Združujemo strokovnost, dolgoletne izkušnje in topel osebni pristop za vsako stranko.",
+    "highlights": [
+      "Prijazno osebje in topel sprejem ob vsakem obisku",
+      "Strokovna in zanesljiva frizerska storitev",
+      "Posvečeni smo vašim željam in zdravju vaših las"
+    ],
+    "benefits": [
+      {
+        "stat": "Topel",
+        "label": "Sprejem",
+        "description": "V našem salonu vas vedno sprejmemo z nasmehom in v prijetnem vzdušju."
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "Delo",
+        "description": "Uporabljamo preverjene metode in poskrbimo za kakovostno izvedbo storitev."
+      },
+      {
+        "stat": "Osebni",
+        "label": "Pristop",
+        "description": "Prisluhnemo vašim željam in vam svetujemo frizuro, ki vam najbolj ustreza."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas pokličite za več informacij o naših storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kosovelova ulica 1a, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(05) 377 12 95",
+        "href": "tel:053771295",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Kosovelova ulica 1a, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "© Žensko frizerstvo - Žnidarič Sandra s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Žensko frizerstvo Žnidarič Sandra",
+    "address": "Kosovelova ulica 1a, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "(05) 377 12 95"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

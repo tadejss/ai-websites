@@ -111,7 +111,8 @@ export type AppearanceId =
   | "elektro"
   | "construction"
   | "cleaning"
-  | "health";
+  | "health"
+  | "auto";
 
 export type BeautyLayoutProfileId =
   | "classic"
@@ -124,7 +125,8 @@ export type TradeLayoutProfileId =
   | BeautyLayoutProfileId
   | "stats-forward"
   | "image-led"
-  | "calm-visual";
+  | "calm-visual"
+  | "photo-forward";
 
 export type LayoutProfileId = BeautyLayoutProfileId | TradeLayoutProfileId;
 

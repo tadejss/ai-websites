@@ -1,0 +1,202 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "steel-blue",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/polaganje-keramike-kamna/hero.jpg",
+      "alt": "Strokovno polaganje keramike v modernem interierju"
+    },
+    "services": {
+      "src": "/clients/polaganje-keramike-kamna/services.jpg",
+      "alt": "Natančno polaganje kamna in keramike"
+    }
+  },
+  "brand": {
+    "prefix": "Keramika in kamen",
+    "highlight": "Marinko Stanković s.p."
+  },
+  "metadata": {
+    "title": "Polaganje keramike in kamna Marinko Stanković s.p. | Prestranek",
+    "description": "Strokovno polaganje keramike in kamna, prenove kopalnic in zunanje tlakovanje v Prestranku z okolico in širši regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovno polaganje keramike in kamna",
+    "title": "Kakovostne rešitve za vaš dom in",
+    "titleHighlight": "poslovne prostore",
+    "description": "Natančno polaganje keramike, kamna, prenove kopalnic ter zunanje tlakovanje za lastnike stanovanj, hiš in investitorje v regiji.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Delo"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Strankam"
+      },
+      {
+        "value": "Prestranek",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve polaganj in prenov",
+    "description": "Specializirani smo za kvalitetno delo na področju keramike in kamna za stranke v Prestranku z okolico in regiji.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Strokovno in natančno polaganje vseh vrst keramičnih ploščic v stanovanjih, hišah in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje kamna",
+        "description": "Oblaganje z naravnim in umetnim kamnom za edinstven videz notranjih ter zunanjih površin.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih pripravljalnih del do končnega polaganj keramike.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblaganje stopnic",
+        "description": "Kakovostna obdelava in oblaganje notranjih ter zunanjih stopnic s keramiko ali kamnom.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanje tlakovanje",
+        "description": "Urejanje zunanjih površin, teras, dvorišč in poti s trpežnimi materiali.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene in prenovitvene projekte",
+    "description": "Z bogatimi izkušnjami in posluhom za želje strank poskrbimo za brezhibno izvedbo vsakega projekta.",
+    "highlights": [
+      "Natančna in kvalitetna izvedba del",
+      "Dosledno držanje dogovorjenih rokov",
+      "Visoka stopnja prilagodljivosti vašim željam"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "In kvaliteta",
+        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti za dolgotrajne rezultate."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "In roki",
+        "description": "Spoštujemo dogovore in držimo se zastavljenih časovnih okvirov izvedbe."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Željam strank",
+        "description": "Prisluhnemo vašim idejam in vam svetujemo najboljše rešitve za vaš prostor."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike in kamna? Pokličite nas.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 457 291",
+        "href": "tel:041457291",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica padlih borcev 7, 6258 Prestranek, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ulica padlih borcev 7, 6258 Prestranek, Slovenia",
+    "rights": "Polaganje keramike in kamna, Marinko Stanković s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramika in kamen Marinko Stanković s.p.",
+    "address": "Ulica padlih borcev 7, 6258 Prestranek, Slovenia",
+    "email": "",
+    "phone": "041 457 291"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/bb-elektro-instalacije/hero.jpg",
+      "alt": "Električar med delom na električni napeljavi v temnem ambientu"
+    },
+    "services": {
+      "src": "/clients/bb-elektro-instalacije/services.jpg",
+      "alt": "Orodje in elektro oprema za instalacije"
+    }
+  },
+  "brand": {
+    "prefix": "Bb elektro",
+    "highlight": "instalacije"
+  },
+  "metadata": {
+    "title": "Bb elektro instalacije, Boštjan Bole s.p. | Prestranek",
+    "description": "Zanesljive in hitre elektro instalacije za vaš dom in poslovni prostor v Prestranku in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster",
+    "title": "Zanesljive in hitre elektro instalacije za",
+    "titleHighlight": "vaš dom in poslovni prostor",
+    "description": "Strokovne elektro instalacije, servis, vzdrževanje in pametne inštalacije za lastnike stanovanjskih hiš, stanovanj in poslovnih objektov v Prestranku in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Prijazna storitev"
+      },
+      {
+        "value": "Natančno",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Hitro",
+        "label": "Odzivnost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Prestranek in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve na področju elektro instalacij",
+    "description": "Poskrbimo za varno, zanesljivo in strokovno izvedbo vseh del na vašem objektu v Prestranku in okolici.",
+    "items": [
+      {
+        "title": "Elektro instalacije",
+        "description": "Kakovostne izvedbe elektro instalacij za stanovanjske hiše, stanovanja in poslovne prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis in popravila",
+        "description": "Hitra odprava napak ter strokoven servis obstoječih električnih napeljav in opreme.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje elektro opreme",
+        "description": "Redno in preventivno vzdrževanje za nemoteno in varno delovanje vaše elektro opreme.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pametne inštalacije",
+        "description": "Sodobne rešitve pametnih inštalacij za večje udobje, energetsko učinkovitost in varnost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje in pregledi",
+        "description": "Strokovni nasveti, načrtovanje in pregledi elektro instalacij pred in med izvedbo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv partner za elektro delo",
+    "description": "Združujemo prijazen pristop, natančnost in hitro odzivnost, kar nam omogoča, da vsak projekt zaključimo v obojestransko zadovoljstvo.",
+    "highlights": [
+      "Prijazna in zanesljiva storitev",
+      "Natančna izvedba del brez kompromisov glede varnosti",
+      "Hitra odzivnost na vsa povpraševanja"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Zanesljiva storitev",
+        "description": "Delo opravimo skrbno in z osebnim pristopom do vsake stranke."
+      },
+      {
+        "stat": "Natančnost",
+        "label": "Kakovostna izvedba",
+        "description": "Dosledno upoštevamo dogovore in poskrbimo za varno delovanje sistemov."
+      },
+      {
+        "stat": "Odzivnost",
+        "label": "Hitra podpora",
+        "description": "Na vaše povpraševanje se odzovemo hitro in se posvetimo vašim željam."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za ponudbo ali vprašanja",
+    "description": "Na voljo smo vam za vsa vprašanja glede elektro instalacij, servisov ali svetovanja.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 696 401",
+        "href": "tel:041696401",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "15B, Koče, 6258 Prestranek, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali vprašanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "15B, Koče, 6258 Prestranek, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Bb elektro instalacije",
+    "address": "15B, Koče, 6258 Prestranek, Slovenia",
+    "email": "",
+    "phone": "041 696 401"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "companyName": "Gavro, elektro in Hišniške storitve, Dragan Gavranić s.p.",
+  "industry": "Elektro in hišniške storitve",
+  "tagline": "Zanesljive električne in hišne storitve za vaš dom",
+  "services": [
+    "Elektroinštalacije",
+    "Popravila električnih naprav",
+    "Vzdrževanje objektov",
+    "Hišniške storitve"
+  ],
+  "phone": "041 730 205",
+  "email": "",
+  "address": "Pivška ulica 6, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: 3:00–6:00 PM · Tuesday: 3:00–6:00 PM · Wednesday: 2:00–6:00 PM · Thursday: 3:00–6:00 PM · Friday: Closed · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Zanesljive in strokovne storitve",
+    "Prilagodljivost strankam",
+    "Hitro odzivanje na težave"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov",
+  "serviceArea": "Postojna in okolica",
+  "yearsExperience": "",
+  "tone": "profesionalen in zanesljiv",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni ponudniki elektro in hišnih storitev",
+  "callToAction": "Pokličite nas"
+}

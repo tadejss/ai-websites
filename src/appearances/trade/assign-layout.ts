@@ -6,6 +6,16 @@ import type {
 
 type LayoutKnobs = Omit<SiteLayout, "profileId">;
 
+const PHOTO_FORWARD: LayoutKnobs = {
+  heroImageSide: "none",
+  servicesImageSide: "right",
+  heroRatio: "full-copy",
+  benefitsMode: "default",
+  heroAtmosphere: "photo",
+  sectionRule: "line",
+  cardStyle: "bordered",
+};
+
 const SHARED_PROFILES: Record<
   Extract<
     TradeLayoutProfileId,
@@ -65,7 +75,10 @@ const SHARED_PROFILES: Record<
 };
 
 const TRADE_ONLY_PROFILES: Record<
-  Extract<TradeLayoutProfileId, "stats-forward" | "image-led" | "calm-visual">,
+  Extract<
+    TradeLayoutProfileId,
+    "stats-forward" | "image-led" | "calm-visual" | "photo-forward"
+  >,
   LayoutKnobs
 > = {
   "stats-forward": {
@@ -95,6 +108,7 @@ const TRADE_ONLY_PROFILES: Record<
     sectionRule: "none",
     cardStyle: "soft",
   },
+  "photo-forward": PHOTO_FORWARD,
 };
 
 const ALL_PROFILES: Record<TradeLayoutProfileId, LayoutKnobs> = {
@@ -111,23 +125,30 @@ const PROFILES_BY_APPEARANCE: Record<
     "media-left",
     "copy-heavy",
     "stats-forward",
-    "services-first-visual",
+    "photo-forward",
   ],
   construction: [
     "classic",
     "media-left",
     "copy-heavy",
-    "services-first-visual",
     "image-led",
+    "photo-forward",
   ],
   cleaning: [
     "classic",
     "airy",
     "copy-heavy",
     "media-left",
-    "services-first-visual",
+    "photo-forward",
   ],
-  health: ["classic", "airy", "media-left", "copy-heavy", "calm-visual"],
+  health: ["classic", "airy", "media-left", "copy-heavy", "photo-forward"],
+  auto: [
+    "classic",
+    "media-left",
+    "copy-heavy",
+    "stats-forward",
+    "photo-forward",
+  ],
 };
 
 function hashString(value: string): number {

@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektro storitve Poje, Dejan Poje s.p.",
+  "industry": "Elektro storitve",
+  "tagline": "Zanesljive in strokovne elektro storitve za vaš dom in poslovne prostore",
+  "services": [
+    "Inštalacije elektro sistemov",
+    "Popravila in vzdrževanje",
+    "Montaža svetil",
+    "Odpravljanje napak",
+    "Svetovanje na področju elektrike"
+  ],
+  "phone": "041 819 289",
+  "email": "",
+  "address": "Babno Polje 23 A, 1386 Stari trg pri Ložu, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Preverjeno strokovno znanje in izkušnje",
+    "Zanesljiva in kakovostna izvedba del",
+    "Prijazen in strokoven pristop do strank"
+  ],
+  "targetCustomers": "Lastniki stanovanjskih hiš, stanovanj in poslovnih objektov",
+  "serviceArea": "Stari trg pri Ložu in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen, zanesljiv",
+  "brandStyle": "domači mojster, zaupanja vreden",
+  "competitors": "Lokalni elektro inštalaterji in ponudniki elektro storitev",
+  "callToAction": "Pokličite nas"
+}

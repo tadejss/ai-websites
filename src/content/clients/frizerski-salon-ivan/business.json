@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Ivan, Ivan Dubravčić s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve za vso družino v Ilirski Bistrici",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Urejanje brade",
+    "Barvanje las",
+    "Frizure za priložnosti"
+  ],
+  "phone": "051 306 845",
+  "email": "",
+  "address": "Bazoviška cesta 4, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 12:00 PM, 3:00 – 7:00 PM · Tuesday: 8:00 – 11:00 AM · Wednesday: 12:00 `-7:00 PM · Thursday: 8:00 – 11:00 AM · Friday: 8:00 AM – 12:00 PM, 3:00 – 7:00 PM · Saturday: 8:00 – 11:00 AM · Sunday: Closed",
+  "sellingPoints": [
+    "Priljubljena lokalna izbira",
+    "Prilagodljiv delovnik",
+    "Osebni pristop k strankam"
+  ],
+  "targetCustomers": "Lokalni prebivalci, moški in ženske, ki iščejo redno urejanje pričeske",
+  "serviceArea": "Ilirska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, domač",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Ilirski Bistrici",
+  "callToAction": "Rezervirajte termin"
+}

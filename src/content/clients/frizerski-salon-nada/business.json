@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon, Nada Turk s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Stkovno urejanje pričesk in celostna skrb za vaše lase",
+  "services": [
+    "žensko striženje",
+    "moško striženje",
+    "otroško striženje",
+    "barvanje las",
+    "oblikovanje pričesk"
+  ],
+  "phone": "(01) 705 70 54",
+  "email": "",
+  "address": "Iga vas 30, 1386 Stari trg pri Ložu, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "prijazna in osebna obravnava strank",
+    "strokovno svetovanje pri izbiri pričeske",
+    "prijeten ambient v Starem trgu pri Ložu"
+  ],
+  "targetCustomers": "vse generacije, ki cenijo kakovostne frizerske storitve",
+  "serviceArea": "Stari trg pri Ložu s širšo okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, domač",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "lokalni ponudniki frizerskih storitev",
+  "callToAction": "Rezervirajte svoj termin"
+}

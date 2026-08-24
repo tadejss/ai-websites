@@ -1,0 +1,212 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/elektro-ika-gregor/hero.jpg",
+      "alt": "Električar pri delu z elektroinštalacijami"
+    },
+    "services": {
+      "src": "/clients/elektro-ika-gregor/services.jpg",
+      "alt": "Pametne inštalacije in elektro oprema"
+    }
+  },
+  "brand": {
+    "prefix": "Elektro Ika",
+    "highlight": "Gregor Škerlj s.p."
+  },
+  "metadata": {
+    "title": "Elektro Ika Gregor Škerlj s.p. | Elektro storitve v Begunjah pri Cerknici",
+    "description": "Zanesljive in strokovne elektro storitve, elektroinštalacije, servis in pametne inštalacije v Begunjah pri Cerknici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster",
+    "title": "Zanesljive in strokovne",
+    "titleHighlight": "elektro storitve",
+    "description": "Strokovne elektro storitve za lastnike stanovanj, hiš and poslovnih objektov v Begunjah pri Cerknici z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Delo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Področje"
+      },
+      {
+        "value": "Prilagojeno",
+        "label": "Strankam"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše elektro storitve",
+    "description": "Celovite rešitve za vaše objekte v Begunjah pri Cerknici z okolico.",
+    "items": [
+      {
+        "title": "Elektroinštalacije",
+        "description": "Kakovostna izvedba elektroinštalacij za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis in popravila",
+        "description": "Hitro in zanesljivo odpravljanje napak ter servisiranje elektro opreme.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pametne inštalacije",
+        "description": "Moderni sistemi pametnih inštalacij za večje udobje in energijsko učinkovitost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje elektro opreme",
+        "description": "Redno in preventivno vzdrževanje za nemoteno delovanje.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri projektih",
+        "description": "Strokovni nasveti in pomoč pri načrtovanju vaših elektro projektov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv partner za elektro delo",
+    "description": "Z združevanjem strokovnosti in prijaznega pristopa poskrbimo za vaše elektro potrebe.",
+    "highlights": [
+      "Odlična zanesljivost in strokovnost pri izvedbi",
+      "Priznan in zanesljiv partner za zahtevnejše projekti",
+      "Pozitivne izkušnje in pohvale zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivost",
+        "label": "Strokovna izvedba",
+        "description": "Vsakemu projektu se posvetimo z enako mero zanesljivosti in natančnosti."
+      },
+      {
+        "stat": "Partnerstvo",
+        "label": "Zahtevnejši projekti",
+        "description": "Smo preverjen partner za obsežnejše in bolj zahtevne elektro naloge."
+      },
+      {
+        "stat": "Zadovoljstvo",
+        "label": "Pozitivne izkušnje",
+        "description": "Gradimo na dobrih odnosih in zadovoljstvu naših strank."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Iščete zanesljivega izvajalca elektro storitev? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 741 246",
+        "href": "tel:041741246",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Begunje pri Cerknici 66, 1382 Begunje pri Cerknici, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Begunje pri Cerknici 66, 1382 Begunje pri Cerknici, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektro Ika Gregor Škerlj s.p.",
+    "address": "Begunje pri Cerknici 66, 1382 Begunje pri Cerknici, Slovenia",
+    "email": "",
+    "phone": "041 741 246"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

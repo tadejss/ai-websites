@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon, Matea Prelc, s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje, nega las in modne pričeske v Ilirski Bistrici",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Prirejanje pričesk za posebne priložnosti",
+    "Nega in tretmaji za lase"
+  ],
+  "phone": "041 353 847",
+  "email": "",
+  "address": "Gregorčičeva cesta 21, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 1:00 – 8:00 PM · Wednesday: 1:00 – 8:00 PM · Thursday: 8:00 AM – 3:00 PM · Friday: 1:00 – 8:00 PM · Saturday: 7:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prilagodljiv delovni čas z popoldanskimi in dopoldanskimi termini",
+    "Osebni pristop k vsaki stranki",
+    "Kakovostna nega in striženje las"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci, ki iščejo celovite frizerske storitve",
+  "serviceArea": "Ilirska Bistrica in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v občini Ilirska Bistrica",
+  "callToAction": "Rezervirajte termin"
+}

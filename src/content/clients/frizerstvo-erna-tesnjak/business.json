@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerstvo, Erna Tešnjak S.P",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve in urejanje pričesk v Ilirski Bistrici",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "040 733 704",
+  "email": "",
+  "address": "Gregorčičeva cesta 19, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Individualen pristop k vsaki stranki",
+    "Strokovno svetovanje pri izbiri pričeske"
+  ],
+  "targetCustomers": "Ljudje vseh starosti, ki cenijo urejen videz in strokovno nego las",
+  "serviceArea": "Ilirska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se na termin"
+}

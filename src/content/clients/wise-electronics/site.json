@@ -1,0 +1,208 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "warm-earth",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Wise",
+    "highlight": "Electronics"
+  },
+  "metadata": {
+    "title": "Wise Electronics d.o.o. | Elektro storitve in inštalacije",
+    "description": "Zanesljive elektro storitve, strokovne električne inštalacije in vzdrževanje za dom in podjetja v Begunjah pri Cerknici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovne elektro storitve",
+    "title": "Zanesljive elektro storitve in",
+    "titleHighlight": "električne inštalacije",
+    "description": "Zagotavljamo strokovne rešitve, vzdrževanje in popravila za lastnike stanovanj, hiš in poslovnih objektov v Begunjah pri Cerknici z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hiter",
+        "label": "Odzivni čas"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Za dom in podjetja"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Begunje z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite elektro storitve",
+    "description": "Ponujamo širok nabor električnih del, od osnovnih inštalacij do pametnih rešitev in vzdrževanja.",
+    "items": [
+      {
+        "title": "Elektro inštalacije",
+        "description": "Kakovostna izvedba električnih inštalacij za novogradnje in prenove objektov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila in servis",
+        "description": "Hitro odkrivanje napak ter zanesljiva popravila električnih sistemov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje električnih napeljav",
+        "description": "Redni pregledi in vzdrževanje za varno delovanje vaših napeljav.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pametne inštalacije",
+        "description": "Sodobne rešitve za avtomatizacijo in večje udobje v vašem objektu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje in pregledi",
+        "description": "Strokovni nasveti in strokovni pregledi električnih sistemov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne sisteme",
+    "description": "Z osredotočenostjo na kakovost in varnost poskrbimo, da so vaše električne inštalacije vedno v brezhibnem stanju.",
+    "highlights": [
+      "Hiter odzivni čas na klic",
+      "Strokovna in varna izvedba del",
+      "Prilagojene rešitve za dom in podjetja",
+      "Zanesljiv lokalni ponudnik"
+    ],
+    "benefits": [
+      {
+        "stat": "Odziv",
+        "label": "Hitri in prilagodljivi",
+        "description": "Hitro se odzovemo na vaše klice in pravočasno izvedemo dogovorjena dela."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "Kakovostna izvedba",
+        "description": "Uporabljamo preverjene metode in poskrbimo za varno delovanje napeljav."
+      },
+      {
+        "stat": "Podpora",
+        "label": "Za dom in podjetja",
+        "description": "Celovite storitve prilagojene potrebam gospodinjstev in poslovnih objektov."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete elektro storitve? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 443 707",
+        "href": "tel:031443707",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Begunje pri Cerknici 85, 1382 Begunje pri Cerknici, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Begunje pri Cerknici 85, 1382 Begunje pri Cerknici, Slovenia",
+    "rights": "© Wise Electronics d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Wise Electronics",
+    "address": "Begunje pri Cerknici 85, 1382 Begunje pri Cerknici, Slovenia",
+    "email": "",
+    "phone": "031 443 707"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

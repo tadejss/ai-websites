@@ -1,0 +1,27 @@
+{
+  "companyName": "Frizerski salon \"Mojca\" Mojca Vrh s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Kakovostne frizerske storitve in prijetno vzdušje v Ilirski Bistrici",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "(05) 714 44 10",
+  "email": "",
+  "address": "Cankarjeva ulica 26, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prijazno in strokovno osebje",
+    "Kakovostno opravljeno delo",
+    "Zadovoljne stranke z odličnimi ocenami"
+  ],
+  "targetCustomers": "Lokalne stranke vseh starosti, ki cenijo kakovostno nego las in prijetno okolje",
+  "serviceArea": "Ilirska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Ilirski Bistrici",
+  "callToAction": "Rezervirajte termin"
+}

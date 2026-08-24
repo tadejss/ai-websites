@@ -1,0 +1,217 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
+      "alt": "Električar med delom na električni omarici"
+    },
+    "services": {
+      "src": "/clients/elektro-ivan-troha/services.jpg",
+      "alt": "Orodje in kabli za elektroinštalacije"
+    }
+  },
+  "brand": {
+    "prefix": "Elektro storitve",
+    "highlight": "Ivan Troha s.p."
+  },
+  "metadata": {
+    "title": "Elektro storitve, Ivan Troha s.p. | Elektroinštalacije in popravila",
+    "description": "Zanesljive in strokovne elektro storitve za dom in poslovne prostore v Babnem Polju, Starem trgu pri Ložu in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Vaš lokalni elektro mojster",
+    "title": "Zanesljive in strokovne elektro storitve za",
+    "titleHighlight": "vaš dom in poslovne prostore",
+    "description": "Strokovne elektroinštalacije, popravila in vzdrževanje za lastnike stanovanj, hiš in poslovnih objektov v Babnem Polju, Starem trgu pri Ložu in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "In zanesljivo"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Delovanje na terenu"
+      },
+      {
+        "value": "Hitra",
+        "label": "Odzivnost"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Za vsak projekt"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite elektro storitve za vaše objekte",
+    "description": "Ponujamo širok nabor elektroinštalacijskih del, popravil in vzdrževanja z visokim poudarkom na varnosti in zanesljivosti na območju Babnega Polja, Starega trga pri Ložu in okolice.",
+    "items": [
+      {
+        "title": "Elektroinštalacije",
+        "description": "Kakovostna izvedba elektroinštalacij v stanovanjskih in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila električnih napeljav",
+        "description": "Hitro odkrivanje napak in strokovna popravila obstoječih električnih napeljav.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža svetil in opreme",
+        "description": "Strokovna namestitev svetil ter druge električne opreme v vaših prostorih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje elektro sistemov",
+        "description": "Redno vzdrževanje in pregledi za varno delovanje vaših elektro sistemov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje in pregledi",
+        "description": "Strokovni nasveti in pregledi stanja električne napeljave za vašo varnost.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Preverjena kakovost in zanesljiv pristop",
+    "description": "Zavedamo se pomena varne in zanesljive elektrike v vašem domu ali poslovnem prostoru, zato se vsakemu projektu posvetimo z enako mero odgovornosti.",
+    "highlights": [
+      "Preverjena kakovost z odličnimi ocenami strank",
+      "Zanesljiv in strokoven pristop k vsakemu projektu",
+      "Prilagodljivost in hitra odzivnost na terenu"
+    ],
+    "benefits": [
+      {
+        "stat": "Kakovost",
+        "label": "Preverjene storitve",
+        "description": "Dela izvajamo z mislijo na varnost in dolgotrajno zanesljivost."
+      },
+      {
+        "stat": "Odzivnost",
+        "label": "Prilagodljivost na terenu",
+        "description": "Prisluhnemo vašim željam in pravočasno izvedemo dogovorjena dela."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "Zanesljiv pristop",
+        "description": "Vsakemu projektu se posvetimo celovito in strokovno."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pokličite za ponudbo ali posvet",
+    "description": "Potrebujete elektroinštalacije, popravilo ali nasvet? Z veseljem vam pomagamo pri vaših elektro vprašanjih.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 631 734",
+        "href": "tel:051631734",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Babno Polje 104, 1386 Stari trg pri Ložu, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Območje delovanja",
+        "value": "Babno Polje, Stari trg pri Ložu in okolica",
+        "icon": "service-6"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Babno Polje 104, 1386 Stari trg pri Ložu, Slovenia",
+    "rights": "© Elektro storitve, Ivan Troha s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektro storitve Ivan Troha s.p.",
+    "address": "Babno Polje 104, 1386 Stari trg pri Ložu, Slovenia",
+    "email": "",
+    "phone": "051 631 734"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

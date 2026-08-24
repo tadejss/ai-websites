@@ -1,0 +1,206 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/baro-lenart-baraga/hero.jpg",
+      "alt": "Električar pri namestitvi sodobnih elektroinstalacij v objektu"
+    },
+    "services": {
+      "src": "/clients/baro-lenart-baraga/services.jpg",
+      "alt": "Sodobna elektro omarica in pametne inštalacije"
+    }
+  },
+  "brand": {
+    "prefix": "BARO",
+    "highlight": "Elektrostoritve"
+  },
+  "metadata": {
+    "title": "BARO, Lenart Baraga s.p. | Elektroinstalacije Cerknica",
+    "description": "Zanesljive in strokovne elektroinstalacije, servis, pametne inštalacije in vzdrževanje objektov za dom in poslovne prostore v Cerknici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Strokovne elektroinstalacije",
+    "title": "Zanesljive elektrostoritve za",
+    "titleHighlight": "vaš dom in poslovni prostor",
+    "description": "Zagotavljamo strokovne elektroinstalacije, servis in vzdrževanje za lastnike stanovanjskih hiš, stanovanj in poslovnih objektov v Cerknici z okolico.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "In točnost"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Za stranke"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve na področju elektrotehnike",
+    "description": "Ponujamo kakovostne elektroinstalacije, servis in vzdrževanje za objekte v Cerknici z okolico.",
+    "items": [
+      {
+        "title": "Elektroinstalacije",
+        "description": "Kakovostna izvedba elektroinstalacij za stanovanjske in poslovne prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis električne opreme",
+        "description": "Zanesljiv servis in odpravljanje napak na električni opremi.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pametne inštalacije",
+        "description": "Moderni sistemi pametnih inštalacij za večje udobje in energijsko učinkovitost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje objektov",
+        "description": "Redno in interventno vzdrževanje električnih sistemov v objektih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje",
+        "description": "Strokovno svetovanje pri načrtovanju in izvedbi elektro del.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne sisteme",
+    "description": "Z osredotočenostjo na kakovost in potrebe strank zagotavljamo visoko raven storitev.",
+    "highlights": [
+      "Strokovna izvedba elektrodel",
+      "Zanesljivost in točnost pri delu",
+      "Prilagodljivost željam strank",
+      "Lokalna prisotnost v Cerknici z okolico"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "Kakovostna izvedba",
+        "description": "Vsak projekt izvedemo strokovno in v skladu s predpisi."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Točnost in dogovori",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za varnost."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Stranki prijazno",
+        "description": "Prisluhnemo vašim željam in ponudimo optimalne rešitve."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete elektro storitve? Stopite v stik z nami in z veseljem vam bomo pomagali.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Osredek 3, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Osredek 3, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "BARO Elektrostoritve",
+    "address": "Osredek 3, 1380 Cerknica, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

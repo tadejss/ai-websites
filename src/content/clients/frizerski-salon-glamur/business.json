@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski Salon Glamur",
+  "industry": "Frizerski salon",
+  "tagline": "Vaša pot do popolne frizure v Ilirski Bistrici",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk"
+  ],
+  "phone": "(05) 714 44 10",
+  "email": "",
+  "address": "Cankarjeva ulica 27, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "Monday: 1:00 – 8:00 PM · Tuesday: 8:00 AM – 3:00 PM · Wednesday: 1:00 – 8:00 PM · Thursday: 8:00 AM – 3:00 PM · Friday: 1:00 – 8:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazno in potrpežljivo osebje do otrok",
+    "Vrhunska kakovost in hiter preobrat videza",
+    "Topel in strokoven odnos do strank"
+  ],
+  "targetCustomers": "Vse generacije, ki cenijo kakovostno nego las in prijetno vzdušje",
+  "serviceArea": "Ilirska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se na termin"
+}

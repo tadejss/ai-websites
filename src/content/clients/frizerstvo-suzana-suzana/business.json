@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerstvo Suzana Suzana Petrač, s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Uresničimo vaše frizerske želje s strokovnim in prijaznim pristopom",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje laseh",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "(05) 714 61 48",
+  "email": "",
+  "address": "Bazoviška cesta 32, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "Monday: 2:00 – 8:00 PM · Tuesday: 8:00 AM – 3:00 PM · Wednesday: 2:00 – 8:00 PM · Thursday: 8:00 AM – 3:00 PM · Friday: 2:00 – 8:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazno in ustrežljivo osebje",
+    "Ugodne cene storitev",
+    "Strokovno in izkušeno striženje",
+    "Prilagajanje željam strank"
+  ],
+  "targetCustomers": "Lokalni prebivalci, družine ter vsi, ki iščejo kakovostne in cenovno dostopne frizerske storitve",
+  "serviceArea": "Ilirska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, topel, strokoven",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni na območju Ilirske Bistrice",
+  "callToAction": "Rezervirajte svoj termin"
+}

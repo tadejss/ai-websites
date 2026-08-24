@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerki salon Sabina, Brne Sabina s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Prijazne, cenovno dostopne in kakovostne frizerske storitve za vsakogar.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "031 486 048",
+  "email": "",
+  "address": "Vrbovo 62, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Izjemno prijazno osebje",
+    "Ugodne in dostopne cene",
+    "Hitra in učinkovita storitev",
+    "Prijeten ambient"
+  ],
+  "targetCustomers": "Lokalni prebivalci vseh starosti, ki cenijo prijaznost, hitrost in ugodne cene.",
+  "serviceArea": "Ilirska Bistrica in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, topel, domač",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "drugi frizerski saloni na območju Ilirske Bistrice",
+  "callToAction": "Rezervirajte termin"
+}

@@ -1,0 +1,202 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "brand": {
+    "prefix": "Dbf",
+    "highlight": "vulkanizerstvo"
+  },
+  "metadata": {
+    "title": "Dbf d.o.o. | Vulkanizerstvo in hitri servis Postojna",
+    "description": "Zanesljivo vulkanizerstvo in hitri servis za vaše vozilo v Postojni in okolici. Menjava pnevmatik, centriranje in servisne storitve."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo vulkanizerstvo in hitri servis",
+    "titleHighlight": "za vaše vozilo",
+    "description": "Strokovne vulkanizerske in servisne storitve za lastnike vozil v Postojni in okolici. Poskrbimo za varno in brezskrbno vožnjo.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Postojna",
+        "label": "Lokalna lokacija"
+      },
+      {
+        "value": "Hitro",
+        "label": "In strokovno"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Vulkanizerstvo"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Zagotavljamo kakovostno menjavo pnevmatik, hitri servis in vzdrževanje vozil v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in strokovna menjava pnevmatik za varno vožnjo v vseh letnih časih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Premontaža in centriranje",
+        "description": "Natančna premontaža in centriranje koles za udobnejšo in stabilnejšo vožnjo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Hitri servis vozil",
+        "description": "Učinkovit hitri servis za vzdrževanje in brezhibno delovanje vašega avtomobila.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Menjava zavornih oblog",
+        "description": "Pregled in menjava zavornih oblog za zanesljivo ustavljanje in varnost na cesti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pregled in priprava vozila",
+        "description": "Temeljit pregled ter priprava vozila na sezono ali tehnični pregled.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Ponosni smo na zaupanje naših strank v Postojni in okolici, ki cenijo našo hitrost in strokovnost.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Hitra in strokovna izvedba storitev",
+      "Zanesljivo vulkanizerstvo in servis"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "Kakovostna izvedba",
+        "description": "Naloge opravimo natančno in strokovno, da je vaše vozilo vedno v najboljšem stanju."
+      },
+      {
+        "stat": "Hitrost",
+        "label": "Učinkovit servis",
+        "description": "Cenimo vaš čas, zato storitve izvedemo hitro in brez nepotrebnih čakalnih vrst."
+      },
+      {
+        "stat": "Zaupanje",
+        "label": "Zadovoljne stranke",
+        "description": "Gradimo na dolgoročnih odnosih in visokem zadovoljstvu voznikov v regiji."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite rezervirati termin? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 376 877",
+        "href": "tel:041376877",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Volaričeva ulica 16, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Volaričeva ulica 16, 6230 Postojna, Slovenia",
+    "rights": "© Dbf, vulkanizerstvo in hitri servis, d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Dbf vulkanizerstvo",
+    "address": "Volaričeva ulica 16, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 376 877"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

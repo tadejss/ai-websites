@@ -1,0 +1,24 @@
+# npm run discover-leads -- --file data/queries-notranjska-elektro.txt --region notranjska --no-website --until-no-website 20 --industry elektro --limit 20
+
+električar Postojna
+elektroinštalacije Postojna
+električar Cerknica
+elektroinštalacije Cerknica
+električar Pivka
+električar Ilirska Bistrica
+elektroinštalacije Ilirska Bistrica
+električar Bloke
+električar Loška dolina
+elektro servis Postojna
+elektricar Postojna
+elektroinštalater Postojna
+elektricar Cerknica
+inštalater Cerknica
+elektricar Ilirska Bistrica
+elektroinštalater Ilirska Bistrica
+elektro Pivka
+elektro Prestranek
+elektro Knežak
+električar Rakek
+električar Unec
+

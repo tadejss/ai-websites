@@ -100,6 +100,22 @@ export function BeautyHeroSection({ siteConfig }: Props) {
           </div>
         ) : null}
       </div>
+
+      {hero.stats.length > 0 ? (
+        <dl className="mx-auto mt-10 grid max-w-7xl grid-cols-2 gap-4 sm:mt-14 sm:grid-cols-4 sm:gap-5">
+          {hero.stats.map((item) => (
+            <div
+              key={`${item.value}-${item.label}`}
+              className="rounded-[var(--radius-card)] border border-border bg-surface p-5"
+            >
+              <dt className="font-display text-2xl font-semibold text-accent sm:text-3xl">
+                {item.value}
+              </dt>
+              <dd className="mt-1 text-sm text-muted">{item.label}</dd>
+            </div>
+          ))}
+        </dl>
+      ) : null}
     </section>
   );
 }

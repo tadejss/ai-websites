@@ -41,7 +41,7 @@ export const lightPalettes: Palette[] = [
     id: "sand-stone",
     name: "Sand Stone",
     mode: "light",
-    swatches: ["#f8f4ef", "#d4c4b0", "#b08968", "#7f5539", "#3d2c1e"],
+    swatches: ["#f5efe8", "#c4b09a", "#8f6b4a", "#5c3d28", "#2a1c14"],
   },
   {
     id: "forest-mist",
@@ -101,7 +101,7 @@ export const lightPalettes: Palette[] = [
     id: "olive-gold",
     name: "Olive Gold",
     mode: "light",
-    swatches: ["#faf8f0", "#e9d8a6", "#caac3e", "#6b705c", "#3d4030"],
+    swatches: ["#f7f4e8", "#d4c07a", "#b8942e", "#4f5344", "#2a2c22"],
   },
   {
     id: "coastal-fog",

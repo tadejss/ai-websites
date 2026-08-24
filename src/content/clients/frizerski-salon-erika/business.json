@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Erika, Erika Novak s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne in prijazne frizerske storitve za vso družino v Ilirski Bistrici.",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Prameni in balayage",
+    "Oblikovanje pričesk",
+    "Moško in žensko striženje"
+  ],
+  "phone": "031 350 939",
+  "email": "",
+  "address": "Bazoviška cesta 31, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 9:00 AM – 2:30 PM · Wednesday: 1:00– 7:00 PM · Thursday: 9:00 AM – 2:30 PM · Friday: 1:00 – 7:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prijazen osebni pristop",
+    "Vrhunska kakovost striženja in nege",
+    "Zadovoljne stranke z odličnimi ocenami"
+  ],
+  "targetCustomers": "Lokalni prebivalci, ki iščejo kakovostne frizerske storitve",
+  "serviceArea": "Ilirska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "topel, prijazen, strokoven",
+  "brandStyle": "domače, zanesljivo, urejeno",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

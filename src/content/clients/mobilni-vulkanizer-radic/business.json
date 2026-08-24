@@ -1,0 +1,29 @@
+{
+  "companyName": "Mobilni Vulkanizer Radić 24/7",
+  "industry": "Avtomehanične storitve in vulkanizerstvo",
+  "tagline": "Hitra in zanesljiva mobilna vulkanizerska pomoč 24 ur na dan, 7 dni v tednu",
+  "services": [
+    "Menjava pnevmatik na terenu",
+    "Popravilo predrtih pnevmatik",
+    "Interventna pomoč na cesti",
+    "Mobilni vulkanizer za osebna vozila",
+    "Mobilni vulkanizer za motorna vozila"
+  ],
+  "phone": "070 238 436",
+  "email": "",
+  "address": "Vodovodna pot 24, 1381 Rakek, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Open 24 hours · Sunday: Open 24 hours",
+  "sellingPoints": [
+    "Dostopno 24/7 ob vsakem času in v vsakem vremenu",
+    "Hitri odzivni čas in pomoč neposredno na lokaciji okvare",
+    "Prijazna, strokovna in zanesljiva storitev",
+    "Reševanje nujnih primerov na avtocestah in lokalnih cestah"
+  ],
+  "targetCustomers": "Vozniki osebnih in motornih vozil, ki potrebujejo nujno pomoč ob okvari pnevmatike na cesti",
+  "serviceArea": "Rakek, Postojna in okolica ter slovenske ceste",
+  "yearsExperience": "",
+  "tone": "strokoven, odziven, prijazen",
+  "brandStyle": "zanesljiv in hiter terenski servis",
+  "competitors": "Klasične vulkanizerske delavnice z delovnim časom",
+  "callToAction": "Pokličite za takojšnjo pomoč"
+}

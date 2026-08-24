@@ -33,4 +33,8 @@ export const appearanceRegistry = {
     id: "health",
     Page: TradeSitePage,
   },
+  auto: {
+    id: "auto",
+    Page: TradeSitePage,
+  },
 } satisfies Record<import("./types").AppearanceId, AppearanceDefinition>;

@@ -1,0 +1,26 @@
+# npm run discover-leads -- --file data/queries-notranjska-vulkanizer.txt --region notranjska --no-website --until-no-website 20 --industry vulkanizer --limit 20
+
+vulkanizer Postojna
+vulkanizerstvo Postojna
+pnevmatike Postojna
+vulkanizer Cerknica
+vulkanizerstvo Cerknica
+vulkanizer Pivka
+vulkanizer Ilirska Bistrica
+pnevmatike Ilirska Bistrica
+vulkanizer Bloke
+vulkanizer Loška dolina
+gumarstvo Postojna
+avtovulkanizer Postojna
+menjava pnevmatik Postojna
+vulkanizerstvo Ilirska Bistrica
+avtovulkanizer Cerknica
+menjava gum Cerknica
+vulkanizer Prestranek
+vulkanizer Knežak
+vulkanizer Rakek
+vulkanizer Unec
+gumarstvo Ilirska Bistrica
+pnevmatike Pivka
+pnevmatike Cerknica
+

@@ -37,7 +37,7 @@ Structure requirements:
 - brand: { prefix: string, highlight: string }
 - metadata: { title: string, description: string }
 - nav: { links: [{ href: string, label: string } x3], cta: string }
-- hero: { badge: string, title: string, titleHighlight: string, description: string, primaryCta: string, secondaryCta: string, stats: [{ value: string, label: string } x4] }
+- hero: { badge: string, title: string, titleHighlight: string, description: string, primaryCta: string, secondaryCta: string, stats: [{ value: string, label: string } exactly 4] }
 - services: { id: string, eyebrow: string, title: string, description: string, items: [{ title: string, description: string, icon: IconName } x4-6] }
 - whyChooseUs: { id: string, eyebrow: string, title: string, description: string, highlights: [string x3-4], benefits: [{ stat: string, label: string, description: string } x3] }
 - contact: { id: string, eyebrow: string, title: string, description: string, items: ContactItem[], form: ContactForm }

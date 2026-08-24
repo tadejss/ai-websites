@@ -8,7 +8,7 @@ import { getFontPairingsForMode } from "./fonts/pairings";
 import { getPalettesForMode } from "./palettes";
 import type { Palette, SiteTheme, ThemeMode } from "./types";
 
-/** Pink / soft-rose palettes excluded from trade light assignment. */
+/** Pink / pastel / low-contrast palettes excluded from trade light assignment. */
 const TRADE_EXCLUDED_LIGHT_PALETTE_IDS = new Set([
   "dusty-rose",
   "lavender-cream",
@@ -16,6 +16,10 @@ const TRADE_EXCLUDED_LIGHT_PALETTE_IDS = new Set([
   "blush-champagne",
   "plum-dusk",
   "wine-velvet",
+  "sage-meadow",
+  "moss-linen",
+  "caramel-vanilla",
+  "coastal-fog",
 ]);
 
 /** Pink-accent / brand-only palettes excluded from trade dark assignment. */

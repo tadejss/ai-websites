@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Katja, Katja Dodič s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Strokovne frizerske storitve in prijetno vzdušje za vaše lase",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "040 357 190",
+  "email": "",
+  "address": "Bazoviška cesta 32, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "Monday: 1:00 – 8:00 PM · Tuesday: 8:00 AM – 2:00 PM · Wednesday: 1:00 – 8:00 PM · Thursday: 8:00 AM – 2:00 PM · Friday: 1:00 – 8:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Strokovne in profesionalne storitve",
+    "Prijetno osebje in domače vzdušje",
+    "Zadovoljne stranke z odličnimi ocenami"
+  ],
+  "targetCustomers": "Ljudje vseh starosti, ki cenijo urejen videz, strokovno nego las in prijetno izkušnjo v frizerskem salonu",
+  "serviceArea": "Ilirska Bistrica in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domač in zanesljiv",
+  "competitors": "Lokalni frizerski saloni na območju Ilirske Bistrice",
+  "callToAction": "Rezervirajte svoj termin"
+}

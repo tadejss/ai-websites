@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "moss-linen",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/valentina-frizerski-salon/hero.jpg",
+      "alt": "Topel in urejen frizerski salon z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/valentina-frizerski-salon/services.jpg",
+      "alt": "Strokovno barvanje in urejanje pričesk v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Valentina"
+  },
+  "metadata": {
+    "title": "Frizerski salon Valentina | Babno Polje in Stari trg pri Ložu",
+    "description": "Vaš zanesljiv kraj za popolno frizuro, striženje, barvanje in skrb za lase v Babnem Polju, Starem trgu pri Ložu in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Lokalni frizerski salon",
+    "title": "Vaš zanesljiv kraj za popolno frizuro in",
+    "titleHighlight": "skrb za lase",
+    "description": "Prijazen, topel in strokoven salon v Babnem Polju, Starem trgu pri Ložu in okolici, kjer prisluhnemo vašim željam in poskrbimo za urejen videz.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prijazen",
+        "label": "in strokoven pristop"
+      },
+      {
+        "value": "Urejen",
+        "label": "in prijeten salon"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "in točna storitev"
+      },
+      {
+        "value": "Celovito",
+        "label": "svetovanje o negi"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve prilagojene vam",
+    "description": "V našem salonu v Babnem Polju in Starem trgu pri Ložu nudimo celovite frizerske storitve za vso družino.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne ali klasične ženske pričeske, prilagojene obliki vašega obraza in vašemu osebnemu stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričesk za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las, ki ohranja zdrav sijaj in poudari vašo naravno lepoto.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Urejanje pričesk in svetovanje",
+        "description": "Urejanje pričesk za posebne priložnosti ter strokovno svetovanje o negi las doma.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel ambient in posluh za vaše želje",
+    "description": "Zavedamo se, da so lasje del vaše identitete, zato se vam v celoti posvetimo.",
+    "highlights": [
+      "Prijazno in strokovno osebje z individualnim pristopom",
+      "Vedno prisluhnemo vašim željam in idejam",
+      "Točnost, zanesljivost in prijetno urejen salon"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in posluh",
+        "description": "Vsaki stranki se posvetimo z razumevanjem in poslušamo njene želje."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "in zanesljivost",
+        "description": "Zagotavljamo točnost in kakovostno izvedbo vsake frizerske storitve."
+      },
+      {
+        "stat": "Prijeten",
+        "label": "ambient",
+        "description": "Sprostite se v domače urejenem lokalnem salonu v osrčju Babnega Polja."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na svoj termin",
+    "description": "Pokličite nas ali nam pišite za dogovor o terminu za vašo novo frizuro.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 285 025",
+        "href": "tel:031285025",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Babno Polje 8a, 1386 Stari trg pri Ložu, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili glede prostega termina.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite svoje ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite svojo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Babno Polje 8a, 1386 Stari trg pri Ložu, Slovenia",
+    "rights": "© 2024 Frizerski salon Valentina. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Valentina",
+    "address": "Babno Polje 8a, 1386 Stari trg pri Ložu, Slovenia",
+    "email": "",
+    "phone": "031 285 025"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

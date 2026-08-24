@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Branka Branka Mlakar s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve za vso družino v Starem trgu pri Ložu",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "031 387 760",
+  "email": "",
+  "address": "Cesta Notranjskega odreda 15, 1386 Stari trg pri Ložu, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 8:00 AM – 12:00 PM, 3:00 – 7:00 PM · Wednesday: 8:00 AM – 3:00 PM · Thursday: 12:00 – 7:00 PM · Friday: 8:00 AM – 12:00 PM, 3:00 – 7:00 PM · Saturday: 7:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Zelo prijazno osebje in odlična komunikacija",
+    "Možnost nakupa darilnih bonov poljubne vrednosti",
+    "Dolgoletne izkušnje in zveste stranke"
+  ],
+  "targetCustomers": "Lokalni prebivalci, družine ter posamezniki, ki iščejo kakovostne frizerske storitve",
+  "serviceArea": "Stari trg pri Ložu in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, domač, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni na območju Loške doline",
+  "callToAction": "Rezervirajte svoj termin"
+}

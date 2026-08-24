@@ -1,0 +1,202 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Elmont",
+    "highlight": "Elektroservis Peter Penko s.p."
+  },
+  "metadata": {
+    "title": "Elmont Elektroservis Peter Penko s.p. | Elektroinštalacije in servisi Postojna",
+    "description": "Zanesljive elektro storitve, elektroinštalacije in popravila v Postojni z okolico. Hiter odziv in strokovno delo za domove ter poslovne objekte."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Elektroservis in elektroinštalacije",
+    "title": "Zanesljive elektro storitve",
+    "titleHighlight": "v Postojni z okolico",
+    "description": "Strokovne elektroinštalacije, popravila naprav in vzdrževanje za lastnike stanovanj, hiš in poslovnih objektov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hiter",
+        "label": "Odziv"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Delo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Vzdrževanje"
+      },
+      {
+        "value": "Postojna",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše elektro sisteme",
+    "description": "Nudimo kakovostne elektroinštalacije, popravila in vzdrževanje v Postojni in okolici.",
+    "items": [
+      {
+        "title": "Elektroinštalacije",
+        "description": "Izvedba in urejanje elektroinštalacij za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila električnih naprav",
+        "description": "Hitro odkrivanje težav in učinkovita popravila vaših električnih naprav.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje elektro sistemov",
+        "description": "Redno in preventivno vzdrževanje za varno delovanje vašega elektro sistema.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Menjava varovalk in stikal",
+        "description": "Strokovna menjava dotrajanih varovalk, stikal in vtičnic.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika napak",
+        "description": "Natančno pregledovanje in hitra diagnostika električnih napak na objektu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše elektro težave",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke zagotavljamo varno ter kakovostno izvedbo.",
+    "highlights": [
+      "Hiter odziv na klice strank",
+      "Dolgoletne izkušnje na področju elektroservisa",
+      "Strokovno in zanesljivo delo"
+    ],
+    "benefits": [
+      {
+        "stat": "Odzivnost",
+        "label": "Hiter odziv",
+        "description": "Hitro se odzovemo na klice in zahteve naših strank."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "Dolgoletne izkušnje",
+        "description": "Zanesljivo obvladujemo področje elektroservisa in inštalacij."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Strokovno delo",
+        "description": "Zagotavljamo varno in korektno izvedbo vseh del."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinštalacije ali popravilo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(05) 726 12 50",
+        "href": "tel:057261250",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Notranjska ulica 6, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše vprašanje ali težavo",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Notranjska ulica 6, 6230 Postojna, Slovenia",
+    "rights": "© Elmont Elektroservis Peter Penko s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elmont Elektroservis Peter Penko s.p.",
+    "address": "Notranjska ulica 6, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "(05) 726 12 50"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -3,6 +3,11 @@ import { resolve } from "node:path";
 import { config as loadEnv } from "dotenv";
 import { isFatalGenerationError } from "../src/clients/fatal-error";
 import { discoverLeads } from "../src/leads/discover";
+import {
+  isLeadIndustryId,
+  type LeadIndustryId,
+} from "../src/leads/industry-filter";
+import { selectLeads } from "../src/leads/select";
 
 const root = resolve(__dirname, "..");
 
@@ -43,9 +48,37 @@ function parseLimit(raw: string | undefined): number {
   return requested;
 }
 
-function parseOptions(args: string[]): { queries: string[]; limit: number } {
+type Options = {
+  queries: string[];
+  limit: number;
+  region?: string;
+  withoutWebsiteOnly: boolean;
+  untilNoWebsite?: number;
+  industry?: LeadIndustryId;
+};
+
+function parseUntil(raw: string | undefined): number | undefined {
+  if (raw === undefined) {
+    return undefined;
+  }
+
+  const value = Number.parseInt(raw, 10);
+
+  if (!Number.isFinite(value) || value <= 0) {
+    console.error("Error: --until-no-website expects a positive number.");
+    process.exit(1);
+  }
+
+  return value;
+}
+
+function parseOptions(args: string[]): Options {
   const queries: string[] = [];
   let limitArg: string | undefined;
+  let region: string | undefined;
+  let withoutWebsiteOnly = false;
+  let untilArg: string | undefined;
+  let industry: LeadIndustryId | undefined;
 
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
@@ -62,16 +95,62 @@ function parseOptions(args: string[]): { queries: string[]; limit: number } {
       continue;
     }
 
+    if (arg === "--region") {
+      region = args[index + 1];
+      index += 1;
+      continue;
+    }
+
+    if (arg === "--no-website") {
+      withoutWebsiteOnly = true;
+      continue;
+    }
+
+    if (arg === "--until-no-website") {
+      untilArg = args[index + 1];
+      index += 1;
+      continue;
+    }
+
+    if (arg === "--industry") {
+      const value = args[index + 1] ?? "";
+      if (!isLeadIndustryId(value)) {
+        console.error(
+          `Error: Invalid --industry "${value}". Allowed: frizer, keramicar, elektro, vulkanizer`,
+        );
+        process.exit(1);
+      }
+      industry = value;
+      index += 1;
+      continue;
+    }
+
     queries.push(arg);
   }
 
-  return { queries, limit: parseLimit(limitArg) };
+  return {
+    queries,
+    limit: parseLimit(limitArg),
+    region,
+    withoutWebsiteOnly,
+    untilNoWebsite: parseUntil(untilArg),
+    industry,
+  };
+}
+
+function countNoWebsiteLeads(options: Options): number {
+  return selectLeads({
+    statuses: ["discovered"],
+    withoutWebsiteOnly: true,
+    industry: options.industry,
+    region: options.region,
+  }).length;
 }
 
 async function main(): Promise<void> {
-  const { queries, limit } = parseOptions(process.argv.slice(2));
+  const options = parseOptions(process.argv.slice(2));
 
-  if (queries.length === 0) {
+  if (options.queries.length === 0) {
     console.error("Error: No queries provided.");
     console.error(
       'Usage: npm run discover-leads -- "frizer Ljubljana" [--limit 20]',
@@ -83,16 +162,46 @@ async function main(): Promise<void> {
   }
 
   console.log(
-    `Queries: ${queries.length}. Up to ${limit} results per query.\n`,
+    `Queries: ${options.queries.length}. Up to ${options.limit} results per query.`,
   );
+  if (options.region) {
+    console.log(`Region: ${options.region}`);
+  }
+  if (options.industry) {
+    console.log(`Industry: ${options.industry}`);
+  }
+  if (options.withoutWebsiteOnly) {
+    console.log("Saving only businesses without a website.");
+  }
+  if (options.untilNoWebsite) {
+    console.log(
+      `Stop when ${options.untilNoWebsite} discovered no-website leads match the filters.`,
+    );
+  }
+  console.log("");
 
   let discovered = 0;
   let skipped = 0;
   let failed = 0;
 
-  for (const query of queries) {
+  for (const query of options.queries) {
+    if (
+      options.untilNoWebsite &&
+      countNoWebsiteLeads(options) >= options.untilNoWebsite
+    ) {
+      console.log(
+        `Reached ${options.untilNoWebsite} no-website leads; stopping remaining queries.`,
+      );
+      break;
+    }
+
     try {
-      const results = await discoverLeads(query, limit);
+      const results = await discoverLeads(query, options.limit, {
+        region: options.region,
+        withoutWebsiteOnly: options.withoutWebsiteOnly,
+        industry: options.industry,
+        sourceQuery: query,
+      });
 
       const found = results.filter((r) => r.outcome === "discovered").length;
       const known = results.length - found;
@@ -101,7 +210,7 @@ async function main(): Promise<void> {
       skipped += known;
 
       console.log(
-        `${query}: ${results.length} results, ${found} new, ${known} already known`,
+        `${query}: ${results.length} results, ${found} new, ${known} skipped`,
       );
 
       for (const result of results) {
@@ -116,7 +225,7 @@ async function main(): Promise<void> {
         console.error(`\nFATAL: ${message}`);
         console.error("Stopping; every remaining query would fail.");
         console.log(
-          `\nDiscovered: ${discovered}\nAlready known: ${skipped}\nFailed: ${failed}`,
+          `\nDiscovered: ${discovered}\nSkipped: ${skipped}\nFailed: ${failed}`,
         );
         process.exit(1);
       }
@@ -126,11 +235,18 @@ async function main(): Promise<void> {
     }
   }
 
+  const matching = countNoWebsiteLeads(options);
+
   console.log(
-    `\nDiscovered: ${discovered}\nAlready known: ${skipped}\nFailed: ${failed}`,
+    `\nDiscovered this run: ${discovered}\nSkipped: ${skipped}\nFailed: ${failed}`,
   );
-  console.log("\nNo websites were generated. Review with:");
-  console.log("  npm run list-leads -- discovered");
+  console.log(
+    `Discovered no-website leads matching filters: ${matching}${
+      options.untilNoWebsite ? ` / ${options.untilNoWebsite}` : ""
+    }`,
+  );
+  console.log("\nReview with:");
+  console.log("  npm run list-leads -- discovered --no-website");
   console.log("  npm run lead-summary");
 }
 

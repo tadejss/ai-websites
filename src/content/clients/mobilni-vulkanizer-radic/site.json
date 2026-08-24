@@ -1,0 +1,202 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "forest-mist",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Mobilni Vulkanizer",
+    "highlight": "Radić"
+  },
+  "metadata": {
+    "title": "Mobilni Vulkanizer Radić 24/7 | Hitra pomoč na cesti",
+    "description": "Hitra in zanesljiva mobilna vulkanizerska pomoč 24/7 na območju Rakeka, Postojne in okolice. Menjava in popravilo pnevmatik na terenu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za takojšnjo pomoč"
+  },
+  "hero": {
+    "badge": "Dostopno 24/7 na terenu",
+    "title": "Hitra in zanesljiva",
+    "titleHighlight": "mobilna vulkanizerska pomoč",
+    "description": "Rešujemo težave z vozili na cesti za voznike osebnih in motornih vozil na območju Rakeka, Postojne, okolice ter na slovenskih cestah.",
+    "primaryCta": "Pokličite za takojšnjo pomoč",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Neprekinjena dostopnost"
+      },
+      {
+        "value": "Na terenu",
+        "label": "Pomoč neposredno ob okvari"
+      },
+      {
+        "value": "Osebna",
+        "label": "In motorna vozila"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "In strokovno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Hitre vulkanizerske storitve na terenu",
+    "description": "Pridemo neposredno na lokacijo vaše okvare na cesti v Rakeku, Postojni in širši okolici ter poskrbimo za varno nadaljevanje vaše poti.",
+    "items": [
+      {
+        "title": "Menjava pnevmatik na terenu",
+        "description": "Hitra menjava pnevmatik neposredno tam, kjer se vam je zgodila okvara.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo predrtih pnevmatik",
+        "description": "Strokovno popravilo poškodovanih pnevmatik za varno vožnjo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Interventna pomoč na cesti",
+        "description": "Reševanje nujnih primerov na avtocestah in lokalnih cestah ob vsakem času.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vozila in motorji",
+        "description": "Specializirana mobilna pomoč za osebna in motorna vozila.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti mobilnega vulkanizerstva Radić",
+    "description": "Za razliko od klasičnih vulkanizerskih delavnic z omejenim delovnim časom smo vam na voljo takrat, ko nas najbolj potrebujete.",
+    "highlights": [
+      "Dostopno 24/7 ob vsakem času in v vsakem vremenu",
+      "Hitri odzivni čas in pomoč neposredno na lokaciji okvare",
+      "Reševanje nujnih primerov na avtocestah in lokalnih cestah"
+    ],
+    "benefits": [
+      {
+        "stat": "24/7",
+        "label": "Neprekinjena dostopnost",
+        "description": "Na voljo podnevi in ponoči, ob delavnikih, vikendih in praznikih."
+      },
+      {
+        "stat": "Teren",
+        "label": "Prihod na lokacijo",
+        "description": "Ni potrebe po vlečni službi; težavo rešimo tam, kjer je do okvare prišlo."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Prijazna in zanesljiva storitev",
+        "description": "Prizadevamo si za hitro in varno rešitev vsake situacije na cesti."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Potrebujete nujno pomoč na cesti?",
+    "description": "Pokličite nas takoj ali nam pošljite sporočilo za hitro intervencijo na terenu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 238 436",
+        "href": "tel:070238436",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Vodovodna pot 24, 1381 Rakek, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 00:00 - 24:00 (24/7)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali lokacijo...",
+      "submitLabel": "Pokličite za takojšnjo pomoč"
+    }
+  },
+  "footer": {
+    "address": "Vodovodna pot 24, 1381 Rakek, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mobilni Vulkanizer Radić",
+    "address": "Vodovodna pot 24, 1381 Rakek, Slovenia",
+    "email": "",
+    "phone": "070 238 436"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

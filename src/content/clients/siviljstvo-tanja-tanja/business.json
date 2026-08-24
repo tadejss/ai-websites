@@ -1,0 +1,27 @@
+{
+  "companyName": "Šiviljstvo Tanja, Tanja Rutar s.p.",
+  "industry": "hair_salon",
+  "tagline": "Strokovne frizerske storitve v Ilirski Bistrici",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "041 872 972",
+  "email": "",
+  "address": "Koseze 10a, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Osebni pristop k vsaki stranki",
+    "Kakovostne storitve oblikovanja las"
+  ],
+  "targetCustomers": "Lokalni prebivalci in vsi, ki iščejo kakovostne frizerske storitve",
+  "serviceArea": "Ilirska Bistrica in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domače, zanesljivo",
+  "competitors": "lokalni ponudniki frizerskih storitev",
+  "callToAction": "Rezervirajte termin"
+}

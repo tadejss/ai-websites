@@ -1,0 +1,212 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/elektro-poje-dejan/hero.jpg",
+      "alt": "Električar med delom na elektro inštalacijah v hiši"
+    },
+    "services": {
+      "src": "/clients/elektro-poje-dejan/services.jpg",
+      "alt": "Popravilo in vzdrževanje električnih sistemov"
+    }
+  },
+  "brand": {
+    "prefix": "Elektro storitve",
+    "highlight": "Poje"
+  },
+  "metadata": {
+    "title": "Elektro storitve Poje | Zanesljive elektro storitve Stari trg pri Ložu",
+    "description": "Zanesljive in strokovne elektro storitve za dom in poslovne prostore v Starem trgu pri Ložu z okolico. Inštalacije, popravila, montaža svetil in odpravljanje napak."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster za elektriko",
+    "title": "Strokovne elektro storitve za",
+    "titleHighlight": "vaš dom in poslovne prostore",
+    "description": "Zanesljive in strokovne rešitve s področja elektrike za lastnike stanovanjskih hiš, stanovanj in poslovnih objektov v Starem trgu pri Ložu in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Znanje"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Prijazen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Območje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite elektro rešitve na enem mestu",
+    "description": "Nudimo kakovostne elektro storitve za stanovanjske in poslovne objekte v Starem trgu pri Ložu in okolici.",
+    "items": [
+      {
+        "title": "Inštalacije elektro sistemov",
+        "description": "Izvedba in nadgradnja elektro inštalacij za nove in obstoječe objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila in vzdrževanje",
+        "description": "Redno vzdrževanje in hitra popravila elektro opreme ter napeljav.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža svetil",
+        "description": "Strokovna montaža vseh vrst svetil in svetlobnih teles.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Odpravljanje napak",
+        "description": "Hitro odkrivanje in zanesljivo odpravljanje električnih napak in okvar.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje na področju elektrike",
+        "description": "Strokovni nasveti in pomoč pri načrtovanju električnih del ter rešitev.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše elektro potrebe",
+    "description": "Z združevanjem strokovnega znanja in prilagodljivosti poskrbimo za varno delovanje vaših električnih sistemov.",
+    "highlights": [
+      "Preverjeno strokovno znanje in izkušnje",
+      "Zanesljiva in kakovostna izvedba del",
+      "Prijazen in strokoven pristop do strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Znanje",
+        "label": "Preverjene izkušnje",
+        "description": "Strokovno delo temelji na preverjenem znanju in dolgoletnih izkušnjah na področju elektrike."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Zanesljiva izvedba",
+        "description": "Vsak projekt izpeljemo zanesljivo, skrbno in v dogovorjenih rokih."
+      },
+      {
+        "stat": "Odnos",
+        "label": "Prijazen pristop",
+        "description": "Strankam se posvetimo osebno ter nudimo strokovne nasvete in podporo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektro inštalacije, popravilo ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 819 289",
+        "href": "tel:041819289",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Babno Polje 23 A, 1386 Stari trg pri Ložu, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kako vam lahko pomagamo...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Babno Polje 23 A, 1386 Stari trg pri Ložu, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektro storitve Poje",
+    "address": "Babno Polje 23 A, 1386 Stari trg pri Ložu, Slovenia",
+    "email": "",
+    "phone": "041 819 289"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

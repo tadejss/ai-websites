@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "coastal-fog",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-adrijana/hero.jpg",
+      "alt": "Notranjost prijetnega frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-adrijana/services.jpg",
+      "alt": "Strokovno striženje in barvanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Adrijana"
+  },
+  "metadata": {
+    "title": "Frizerski salon Adrijana | Gregorčičeva cesta 19, Ilirska Bistrica",
+    "description": "Strokovne in prijazne frizerske storitve v Ilirski Bistrici z okolico. Naročite se na žensko ali moško striženje, barvanje in nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Ilirska Bistrica",
+    "title": "Strokovne in prijazne frizerske storitve za",
+    "titleHighlight": "vaš urejen videz",
+    "description": "Dobrodošli v našem prijetnem salonu na Gregorčičevi cesti. Zagotavljamo topel pristop, strokovnost in nego, prilagojeno vašim lasem.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Topel",
+        "label": "in domač pristop"
+      },
+      {
+        "value": "Prijazno",
+        "label": "osebje"
+      },
+      {
+        "value": "Odlično",
+        "label": "razmerje cene in kakovosti"
+      },
+      {
+        "value": "Ilirska",
+        "label": "Bistrica z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vso družino",
+    "description": "V salonu Adrijana poskrbimo za vaše lase z naborom preverjenih frizerskih storitev v Ilirski Bistrici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene obliki vašega obraza in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje za vsak dan ali posebne priložnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki, prameni in osvežitev barve za sijoč videz las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan, svečane priložnosti in posebne dogodke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilne in obnovitvene nege za zdravje, mehkobo in sijaj vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel ambient in strokovna skrb za vaše lase",
+    "description": "Zavedamo se, kako pomemben je urejen videz in dober občutek, zato se vam v celoti posvetimo.",
+    "highlights": [
+      "Zelo prijazno osebje in storitev",
+      "Visoka strokovnost in profesionalen pristop",
+      "Odlično razmerje med ceno in kakovostjo"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in gostoljubnost",
+        "description": "Sprejmemo vas v toplem in domačem domačem okolju."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "in natančnost",
+        "description": "Uporabljamo preverjene metode za urejanje vaših las."
+      },
+      {
+        "stat": "Vrednost",
+        "label": "za ceno",
+        "description": "Nudimo odlično razmerje med ceno in kakovostjo storitev."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Naročite se na svoj termin",
+    "description": "Obiščite nas v Ilirski Bistrici ali nas pokličite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gregorčičeva cesta 19, 6250 Ilirska Bistrica",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(05) 714 16 09",
+        "href": "tel:+38657141609",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon: 8:00–14:00, Tor: 13:00–19:00, Sre: 8:00–15:00, Čet: 13:00–19:00, Pet: 8:00–15:00, Sob: 8:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali želje glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Gregorčičeva cesta 19, 6250 Ilirska Bistrica",
+    "rights": "© Frizerski salon Adrijana Možina s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Adrijana",
+    "address": "Gregorčičeva cesta 19, 6250 Ilirska Bistrica",
+    "email": "",
+    "phone": "(05) 714 16 09"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

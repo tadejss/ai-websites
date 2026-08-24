@@ -23,7 +23,7 @@ export function deriveThemeTokens(
       : mixHex(background, sorted[sorted.length - 2] ?? foreground, 0.25);
   const surfaceElevated =
     mode === "light" ? lighten(surface, 0.04) : lighten(surface, 0.08);
-  const muted = mixHex(foreground, background, mode === "light" ? 0.55 : 0.45);
+  const muted = mixHex(foreground, background, mode === "light" ? 0.42 : 0.38);
   const accentHover =
     mode === "light" ? darken(accent, 0.14) : lighten(accent, 0.1);
   const accentForeground = contrastForeground(accent);

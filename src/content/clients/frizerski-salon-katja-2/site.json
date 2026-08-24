@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "moss-linen",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-katja-2/hero.jpg",
+      "alt": "Svetel in urejen ambient frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-katja-2/services.jpg",
+      "alt": "Strokovno barvanje in urejanje las v frizerskem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Katja"
+  },
+  "metadata": {
+    "title": "Frizerski salon Katja | Katja Dodič s.p. | Ilirska Bistrica",
+    "description": "Strokovne frizerske storitve in prijetno vzdušje za vaše lase v Ilirski Bistrici in oklici. Nudimo žensko in moško striženje, barvanje ter nego."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Katja",
+    "title": "Strokovne frizerske storitve in",
+    "titleHighlight": "prijetno vzdušje",
+    "description": "Strokovne frizerske storitve in prijetno vzdušje za vaše lase v Ilirski Bistrici in okolici. Za vse, ki cenijo urejen videz in strokovno nego.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Domače",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Ilirska Bistrica",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "V frizerskem salonu Katja v Ilirski Bistrici poskrbimo za celostno urejenost vaših las z naslednjimi storitvami:",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah ob upoštevanju oblike obraza in tipa las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasična in moderna moška striženja ter urejanje videza za vsak dan.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki in tehnike barvanja, ki poudarijo vašo naravno lepoto.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Strokovne nege, ki vašim lasem povrnejo sijaj, mehkobo in zdrav videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiva izbira za vaše lase v Ilirski Bistrici",
+    "description": "Združujemo strokovnost, prijaznost in domače vzdušje, da se v našem salonu vedno počutite dobrodošli.",
+    "highlights": [
+      "Strokovne in profesionalne storitve",
+      "Prijetno osebje in domače vzdušje",
+      "Zadovoljne stranke z odličnimi ocenami"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Zanesljive in profesionalne frizerske storitve za vsako stranko."
+      },
+      {
+        "stat": "Prijetno",
+        "label": "Vzdušje",
+        "description": "Domače okolje, kjer si lahko vzamete trenutek zase."
+      },
+      {
+        "stat": "Urejen",
+        "label": "Videz",
+        "description": "Prilagojena nega in striženje za ljudi vseh starosti."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Bazoviški cesti v Ilirski Bistrici ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Bazoviška cesta 32, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 357 190",
+        "href": "tel:040357190",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, Pet: 13:00–20:00 · Tor, Čet: 08:00–14:00 · Sob: 08:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Bazoviška cesta 32, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "© Frizerski salon Katja, Katja Dodič s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Katja",
+    "address": "Bazoviška cesta 32, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "040 357 190"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

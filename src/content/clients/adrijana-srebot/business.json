@@ -1,0 +1,29 @@
+{
+  "companyName": "Adrijana Srebot s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vaš zaupanja vreden frizerski salon v Postojni za urejen in sijoč videz.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega in tretmaji za lase"
+  ],
+  "phone": "(05) 726 30 06",
+  "email": "",
+  "address": "Tržaška cesta 11, 6230 Postojna, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Dolgoletne izkušnje in strokovnost na področju frizerstva",
+    "Osebni pristop k vsaki stranki in svetovanje",
+    "Uporaba kakovostnih lasnih preparatov",
+    "Prijeten in domač ambient salona"
+  ],
+  "targetCustomers": "Vsi, ki cenijo urejen videz, strokovno striženje in kakovostno nego las v Postojni in okolici.",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel, domač lokalni salon",
+  "competitors": "Lokalni frizerski saloni v občini Postojna",
+  "callToAction": "Rezervirajte svoj termin"
+}

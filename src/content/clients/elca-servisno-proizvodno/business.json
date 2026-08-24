@@ -1,0 +1,28 @@
+{
+  "companyName": "Elca servisno, proizvodno in trgovsko podjetje, d.o.o. Cerknica",
+  "industry": "Elektroinštalaterstvo",
+  "tagline": "Zanesljive in profesionalne elektro storitve z dolgoletno tradicijo",
+  "services": [
+    "Elektroinštalacije",
+    "Servis električnih naprav",
+    "Vzdrževanje elektro objektov",
+    "Svetovanje na področju elektrotehnike",
+    "Elektro trgovina"
+  ],
+  "phone": "(01) 709 65 20",
+  "email": "",
+  "address": "Gerbičeva ulica 33, 1380 Cerknica, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 3:00 PM · Tuesday: 7:00 AM – 3:00 PM · Wednesday: 7:00 AM – 3:00 PM · Thursday: 7:00 AM – 3:00 PM · Friday: 7:00 AM – 3:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemna strokovnost in natančnost pri delu",
+    "Dolgoletne izkušnje in preverjena zanesljivost",
+    "Usklajena in resna ekipa strokovnjakov"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš, obrtnih delavnic in poslovnih objektov, ki potrebujejo kakovostne elektroinštalacije.",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "Več kot 30 let izkušenj",
+  "tone": "strokoven, zaupanja vreden",
+  "brandStyle": "tradicionalen, zanesljiv partner",
+  "competitors": "Lokalni elektroinštalaterji in elektro servisi",
+  "callToAction": "Stopite v stik"
+}

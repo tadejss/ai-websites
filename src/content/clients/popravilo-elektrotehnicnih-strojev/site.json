@@ -1,0 +1,202 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Servis",
+    "highlight": "Marko Kranjec s.p."
+  },
+  "metadata": {
+    "title": "Servis gospodinjskih aparatov Marko Kranjec s.p. | Cerknica",
+    "description": "Zanesljiv servis in popravilo bele tehnike ter elektrotehničnih naprav na domu stranke v Cerknici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za servis"
+  },
+  "hero": {
+    "badge": "Servis na terenu",
+    "title": "Popravilo bele tehnike in elektrotehničnih naprav",
+    "titleHighlight": "v prostorih naročnika",
+    "description": "Strokoven servis pralnih in pomivalnih strojev ter aparatov znamke Beko neposredno na vašem domu v Cerknici z okolico.",
+    "primaryCta": "Pokličite za servis",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Na terenu",
+        "label": "Servis pri stranki"
+      },
+      {
+        "value": "Beko",
+        "label": "Specializirano popravilo"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Lokalna pokritost"
+      },
+      {
+        "value": "Tehnično",
+        "label": "Zanesljivo znanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Servis in popravilo na vašem domu",
+    "description": "Specializirani smo za popravilo gospodinjskih aparatov in elektrotehničnih naprav na območju Cerknice z okolico.",
+    "items": [
+      {
+        "title": "Servis pralnih strojev",
+        "description": "Hitro odkrivanje napak in popravilo pralnih strojev neposredno na vašem domu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo pomivalnih strojev",
+        "description": "Učinkovito odpravljanje okvar na pomivalnih strojih vseh vrst.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Servis aparatov Beko",
+        "description": "Specializirano popravilo in vzdrževanje gospodinjskih aparatov znamke Beko.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravilo elektrotehničnih naprav",
+        "description": "Strokovni pregled in popravilo zahtevnejših elektrotehničnih strojev in naprav.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Servis na domu stranke",
+        "description": "Izvajanje popravil v prostorih naročnika za vaše maksimalno udobje.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Tradicija in strokovnost na terenu",
+    "description": "Z dolgoletnimi izkušnjami na področju elektrotehnike zagotavljamo zanesljivo pomoč gospodinjstvom ob okvarah aparatov.",
+    "highlights": [
+      "Servis opravimo direktno v prostorih naročnika",
+      "Specializacija za aparate Beko in drugo belo tehniko",
+      "Neposreden in tehnično podkovan pristop"
+    ],
+    "benefits": [
+      {
+        "stat": "Terensko",
+        "label": "Delo na domu",
+        "description": "Aparate popravljamo tam, kjer se nahajajo, brez zapletenega prevažanja."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "S področja elektrotehnike",
+        "description": "Dolgoletno delo z električnimi stroji in napravami zagotavlja kakovostno izvedbo."
+      },
+      {
+        "stat": "Fokus",
+        "label": "Beko aparati",
+        "description": "Nudimo namensko znanje za servisiranje aparatov blagovne znamke Beko."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z mojstrom",
+    "description": "Potrebujete servis bele tehnike ali popravilo elektrotehnične naprave? Pokličite nas za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(01) 709 14 50",
+        "href": "tel:017091450",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Videm 1, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Opis okvare",
+      "messagePlaceholder": "Opišite težavo z aparatom",
+      "submitLabel": "Pokličite za servis"
+    }
+  },
+  "footer": {
+    "address": "Videm 1, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Servis Marko Kranjec s.p.",
+    "address": "Videm 1, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "(01) 709 14 50"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

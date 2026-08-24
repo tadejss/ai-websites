@@ -1,6 +1,15 @@
 import { slugFromBusinessName, uniqueSlug } from "@/clients/slug";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
 import { searchPlaces } from "@/sources/google-places-source";
+import {
+  leadMatchesIndustry,
+  type LeadIndustryId,
+} from "./industry-filter";
+import {
+  matchesRegion,
+  NOTRANJSKA_LOCATION_BIAS,
+  NOTRANJSKA_REGION,
+} from "./region";
 import { readAllLeads, saveLead, type LeadRecord } from "./store";
 
 export type DiscoveryResult =
@@ -17,9 +26,17 @@ export type DiscoveryResult =
       googlePlaceId: string;
     };
 
+export type DiscoverLeadsOptions = {
+  region?: string;
+  withoutWebsiteOnly?: boolean;
+  industry?: LeadIndustryId;
+  sourceQuery?: string;
+};
+
 function toLeadRecord(
   slug: string,
   business: RawBusinessData,
+  sourceQuery?: string,
 ): LeadRecord {
   return {
     slug,
@@ -33,14 +50,21 @@ function toLeadRecord(
     googleReviewCount: business.reviewCount ?? "",
     existingWebsite: business.website ?? "",
     status: "discovered",
+    ...(sourceQuery ? { sourceQuery } : {}),
   };
 }
 
 export async function discoverLeads(
   query: string,
   limit: number,
+  options: DiscoverLeadsOptions = {},
 ): Promise<DiscoveryResult[]> {
-  const businesses = await searchPlaces(query, limit);
+  const businesses = await searchPlaces(query, limit, {
+    locationBias:
+      options.region === NOTRANJSKA_REGION
+        ? NOTRANJSKA_LOCATION_BIAS
+        : undefined,
+  });
 
   const existing = readAllLeads();
   const knownPlaceIds = new Set(
@@ -66,6 +90,41 @@ export async function discoverLeads(
       continue;
     }
 
+    if (!matchesRegion(options.region, business.address)) {
+      results.push({
+        outcome: "skipped",
+        reason: "outside region",
+        companyName,
+        googlePlaceId,
+      });
+      continue;
+    }
+
+    if (options.withoutWebsiteOnly && business.website?.trim()) {
+      results.push({
+        outcome: "skipped",
+        reason: "already has a website",
+        companyName,
+        googlePlaceId,
+      });
+      continue;
+    }
+
+    if (
+      !leadMatchesIndustry(options.industry, {
+        industry: business.category,
+        companyName,
+      })
+    ) {
+      results.push({
+        outcome: "skipped",
+        reason: "industry mismatch",
+        companyName,
+        googlePlaceId,
+      });
+      continue;
+    }
+
     const base = slugFromBusinessName(companyName);
 
     if (!base) {
@@ -80,7 +139,7 @@ export async function discoverLeads(
 
     const slug = uniqueSlug(base, (candidate) => takenSlugs.has(candidate));
 
-    saveLead(toLeadRecord(slug, business));
+    saveLead(toLeadRecord(slug, business, options.sourceQuery ?? query));
 
     takenSlugs.add(slug);
 

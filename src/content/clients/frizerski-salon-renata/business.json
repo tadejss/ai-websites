@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Renata, Renate Avsec s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vaš zanesljiv naslov za urejeno pričesko v Starem trgu pri Ložu.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "041 708 010",
+  "email": "",
+  "address": "Rožnik 6, 1386 Stari trg pri Ložu, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 12:00 PM, 3:00 – 7:00 PM · Tuesday: 8:00 AM – 12:00 PM · Wednesday: 8:00 AM – 12:00 PM, 3:00 – 7:00 PM · Thursday: 8:00 AM – 12:00 PM · Friday: 8:00 AM – 12:00 PM, 3:00 – 7:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Celovite frizerske storitve za vso družino",
+    "Prilagodljiv delovni čas z dopoldanskimi in popoldanskimi termini",
+    "Prijazna in domača izkušnja"
+  ],
+  "targetCustomers": "Lokalni prebivalci, posamezniki in družine, ki iščejo kakovostne frizerske storitve.",
+  "serviceArea": "Stari trg pri Ložu s širšo okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, domač",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se"
+}

@@ -1,0 +1,207 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Elektroinstalacije",
+    "highlight": "Slavko Praznik s.p."
+  },
+  "metadata": {
+    "title": "Elektroinstalacije Slavko Praznik s.p. | Elektroinstalacijske storitve Cerknica",
+    "description": "Zanesljive elektroinstalacije, montaža, popravila in pametne inštalacije za vaš dom in poslovne prostore v Cerknici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik",
+    "title": "Zanesljive elektroinstalacije in servis za",
+    "titleHighlight": "vaš dom ter poslovne prostore",
+    "description": "Strokovne elektroinstalacijske storitve za lastnike stanovanj, hiš in poslovnih objektov na območju Cerknice z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Cerknica z okolico"
+      },
+      {
+        "value": "Odzivno",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Za dom in posel"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve na področju elektroinstalacij",
+    "description": "Poskrbimo za varno, zanesljivo in strokovno izvedbo vseh električnih del na območju Cerknice z okolico.",
+    "items": [
+      {
+        "title": "Montaža elektroinstalacij",
+        "description": "Strokovna vgradnja novih elektroinstalacij v stanovanjskih in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila in vzdrževanje",
+        "description": "Hitra odpravljanja napak in redno vzdrževanje električnih napeljav.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pametne inštalacije",
+        "description": "Moderne rešitve za nadzor in upravljanje porabe energije v vašem domu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priklop gospodinjskih aparatov",
+        "description": "Varen in pravilen priklop vseh vrst gospodinjskih aparatov in naprav.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje električnih omrežij",
+        "description": "Skrb za nemoteno in varno delovanje obstoječih električnih omrežij.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vredne elektro storitve z osebnim pristopom",
+    "description": "Zavedamo se pomena varnosti in zanesljivosti električnih napeljav v vašem objektu.",
+    "highlights": [
+      "Strokovna izvedba elektrodel",
+      "Zanesljiv lokalni ponudnik v regiji",
+      "Visoka prilagodljivost in odzivnost"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Znanje",
+        "description": "Natančna in strokovna izvedba vseh elektrodel."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "Prisotnost",
+        "description": "Zanesljiv partner, ki deluje na območju Cerknice z okolico."
+      },
+      {
+        "stat": "Prilagodljivo",
+        "label": "Sodelovanje",
+        "description": "Prisluhnemo vašim željam in potrebam ter se hitro odzovemo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pokličite nas ali nam pošljite sporočilo",
+    "description": "Na voljo smo vam za vsa vprašanja, naročila storitev ali strokovni posvet.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(01) 709 40 44",
+        "href": "tel:017094044",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Primšarjeva ulica 15, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–18:00, Sob: 9:00–12:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Primšarjeva ulica 15, 1380 Cerknica, Slovenia",
+    "rights": "© 2025 Elektroinstalacije Slavko Praznik s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektroinstalacije Slavko Praznik s.p.",
+    "address": "Primšarjeva ulica 15, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "(01) 709 40 44"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

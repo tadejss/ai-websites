@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "copper-clay",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-branka/hero.jpg",
+      "alt": "Notranjost prijetnega frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-branka/services.jpg",
+      "alt": "Strokovno barvanje in oblikovanje las v domačem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Branka"
+  },
+  "metadata": {
+    "title": "Frizerski salon Branka | Stari trg pri Ložu",
+    "description": "Strokovne frizerske storitve za vso družino v Starem trgu pri Ložu in okolici. Prijazno osebje, dolgoletne izkušnje in kakovostna nega las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Vrhunske frizerske storitve",
+    "title": "Lepota in nega vaših las v",
+    "titleHighlight": "Starem trgu pri Ložu",
+    "description": "Strokovne frizerske storitve za vso družino v prijetnem in domačem okolju za lokalne prebivalce ter posameznike.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Za vso",
+        "label": "Družino"
+      },
+      {
+        "value": "Domače",
+        "label": "Okolje"
+      },
+      {
+        "value": "Zveste",
+        "label": "Stranke"
+      },
+      {
+        "value": "Strokovni",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve",
+    "description": "Poskrbimo za vaš svež videz in urejeno pričesko z bogatimi izkušnjami v Starem trgu pri Ložu in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske striženje ter oblikovanje las po vaših željah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričesk za vsak dan.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Prijazno in sproščeno striženje za najmlajše člane družine.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki in nega za sijoče ter zdrave lase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Svečane in vsakdanje pričeske za vse priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel lokalni salon z dolgoletno tradicijo",
+    "description": "Zavedamo se pomena dobrega počutja in urejenega videza, zato se vsaki stranki posvetimo z vso pozornostjo.",
+    "highlights": [
+      "Zelo prijazno osebje in odlična komunikacija",
+      "Možnost nakupa darilnih bonov poljubne vrednosti",
+      "Dolgoletne izkušnje in zveste stranke"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in domačnost",
+        "description": "Topel sprejem in prijetno vzdušje v vsakem trenutku obiska."
+      },
+      {
+        "stat": "Darilni",
+        "label": "boni",
+        "description": "Možnost nakupa darilnih bonov poljubne vrednosti za vaše najdražje."
+      },
+      {
+        "stat": "Zvestoba",
+        "label": "in izkušnje",
+        "description": "Dolgoletne izkušnje, ki jim zaupajo številne zveste stranke."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas v Starem trgu pri Ložu ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 387 760",
+        "href": "tel:031387760",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta Notranjskega odreda 15, 1386 Stari trg pri Ložu",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Tor, Sre, Čet, Pet in Sob (preverite podrobnosti)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Stopite v stik z nami za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Cesta Notranjskega odreda 15, 1386 Stari trg pri Ložu, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Branka",
+    "address": "Cesta Notranjskega odreda 15, 1386 Stari trg pri Ložu, Slovenia",
+    "email": "",
+    "phone": "031 387 760"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektro Žagar, Jan Žagar s.p.",
+  "industry": "Elektroinstalaterstvo",
+  "tagline": "Zanesljive in strokovne elektroinštalacije za vaš dom in poslovni prostor",
+  "services": [
+    "Elektroinštalacije v stanovanjskih in poslovnih objektih",
+    "Montaža svetil in elektroopreme",
+    "Vzdrževanje in popravila električnih napeljav",
+    "Adaptacije obstoječih električnih sistemov",
+    "Pregledi in meritve inštalacij"
+  ],
+  "phone": "051 232 395",
+  "email": "",
+  "address": "Videm 20, 1380 Cerknica, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 5:00 PM · Tuesday: 7:00 AM – 5:00 PM · Wednesday: 7:00 AM – 5:00 PM · Thursday: 7:00 AM – 5:00 PM · Friday: 7:00 AM – 5:00 PM · Saturday: 7:00 AM – 5:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Hitra odzivnost in zanesljivost",
+    "Strokovno izvedena dela",
+    "Prilagodljivost strankam"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih objektov na območju Cerknice in okolice",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "domač in strokoven lokalni ponudnik",
+  "competitors": "Lokalni elektroinštalaterji in obrtniki",
+  "callToAction": "Pokličite nas"
+}

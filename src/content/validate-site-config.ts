@@ -100,6 +100,7 @@ const appearanceSchema = z
     "construction",
     "cleaning",
     "health",
+    "auto",
   ])
   .optional();
 
@@ -114,6 +115,7 @@ const layoutSchema = z
       "stats-forward",
       "image-led",
       "calm-visual",
+      "photo-forward",
     ]),
     heroImageSide: z.enum(["left", "right", "none"]).optional(),
     servicesImageSide: z.enum(["left", "right", "none"]).optional(),

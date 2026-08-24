@@ -8,6 +8,7 @@ export const APPEARANCE_IDS = [
   "construction",
   "cleaning",
   "health",
+  "auto",
 ] as const;
 
 export type AppearanceId = (typeof APPEARANCE_IDS)[number];
@@ -17,6 +18,7 @@ export const TRADE_APPEARANCE_IDS = [
   "construction",
   "cleaning",
   "health",
+  "auto",
 ] as const;
 
 export type TradeAppearanceId = (typeof TRADE_APPEARANCE_IDS)[number];

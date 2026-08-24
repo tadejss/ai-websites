@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektroinstalacije Slavko Praznik s.p.",
+  "industry": "Elektroinstalacijske storitve",
+  "tagline": "Zanesljive elektroinstalacije in servis za vaš dom ter poslovne prostore",
+  "services": [
+    "Montaža elektroinstalacij",
+    "Popravila in vzdrževanje",
+    "Pametne inštalacije",
+    "Priklop gospodinjskih aparatov",
+    "Vzdrževanje električnih omrežij"
+  ],
+  "phone": "(01) 709 40 44",
+  "email": "",
+  "address": "Primšarjeva ulica 15, 1380 Cerknica, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 6:00 PM · Tuesday: 8:00 AM – 6:00 PM · Wednesday: 8:00 AM – 6:00 PM · Thursday: 8:00 AM – 6:00 PM · Friday: 8:00 AM – 6:00 PM · Saturday: 9:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Strokovna izvedba elektrodel",
+    "Zanesljiv lokalni ponudnik",
+    "Prilagodljivost in odzivnost"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih objektov na območju Cerknice z okolico",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni elektroinštalaterji v regiji",
+  "callToAction": "Pokličite nas"
+}

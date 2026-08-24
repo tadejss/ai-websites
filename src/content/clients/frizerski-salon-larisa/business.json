@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon \"Larisa\" Jožica Obreza s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Ugodne in profesionalne frizerske storitve za vso družino",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "(01) 705 16 04",
+  "email": "",
+  "address": "Partizanska cesta 9, 1381 Rakek, Slovenia",
+  "openingHours": "Monday: 1:00 – 6:00 PM · Tuesday: 8:00 AM – 12:00 PM · Wednesday: 1:00 – 6:00 PM · Thursday: 8:00 AM – 12:00 PM · Friday: 1:00 – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazno osebje",
+    "Dosegljive in razumen cene",
+    "Kakovostna nega las"
+  ],
+  "targetCustomers": "Lokalni prebivalci, družine ter posamezniki, ki iščejo kvalitetne in cenovno dostopne frizerske storitve",
+  "serviceArea": "Rakek z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, domač",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni na območju Rakeka in Cerknice",
+  "callToAction": "Naročite se na termin"
+}

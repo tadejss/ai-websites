@@ -1,0 +1,29 @@
+{
+  "companyName": "Zuri Hair & Beauty Salon.",
+  "industry": "Frizerski salon",
+  "tagline": "Vaša destinacija za čudovite pričeske in nego las.",
+  "services": [
+    "Žensko striženje",
+    "Pletenje kitk",
+    "Stilsko oblikovanje pričesk",
+    "Barvanje las",
+    "Nega las in lasišča"
+  ],
+  "phone": "051 882 696",
+  "email": "",
+  "address": "Vrbovo 62, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 9:00 AM – 8:00 PM · Wednesday: 9:00 AM – 8:00 PM · Thursday: 10:00 AM – 8:30 PM · Friday: 10:00 AM – 10:00 PM · Saturday: 8:30 AM – 8:00 PM · Sunday: 10:00 AM – 7:00 PM",
+  "sellingPoints": [
+    "Prijazen in dostopen pristop",
+    "Hitro in spretno oblikovanje pričesk",
+    "Prilagojeno urejanje po vaših željah",
+    "Vrhunska izkušnja za vso družino"
+  ],
+  "targetCustomers": "Posamezniki in družine, ki iščejo kakovostne frizerske storitve in urejen videz.",
+  "serviceArea": "Ilirska Bistrica in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, topel in strokoven",
+  "brandStyle": "modern in urejen",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

@@ -1,0 +1,217 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/elca-servisno-proizvodno/hero.jpg",
+      "alt": "Električar med delom na elektro omarici v svetlem prostoru"
+    },
+    "services": {
+      "src": "/clients/elca-servisno-proizvodno/services.jpg",
+      "alt": "Oprema in orodje za elektroinštalacije v urejeni delavnici"
+    }
+  },
+  "brand": {
+    "prefix": "Elca",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Elca Cerknica | Elektroinštalacije in elektro servis",
+    "description": "Zanesljive in profesionalne elektro storitve z dolgoletno tradicijo v Cerknici z okolico. Elektroinštalacije, servis naprav in vzdrževanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Tradicionalen in zanesljiv partner",
+    "title": "Zanesljive in profesionalne elektro storitve",
+    "titleHighlight": "z dolgoletno tradicijo",
+    "description": "Strokovne elektroinštalacije, servis električnih naprav in vzdrževanje za lastnike stanovanj, hiš, obrtnih delavnic in poslovnih objektov v Cerknici z okolico.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "30+ let",
+        "label": "Izkušenj"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Strokovna",
+        "label": "Ekipa"
+      },
+      {
+        "value": "Celovite",
+        "label": "Rešitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite elektro storitve na enem mestu",
+    "description": "Zagotavljamo kakovostno izvedbo elektroinštalacij, zanesljiv servis in strokovno svetovanje za objekte v Cerknici in okolici.",
+    "items": [
+      {
+        "title": "Elektroinštalacije",
+        "description": "Kakovostna izvedba elektroinštalacij za stanovanjske, obrtne in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis električnih naprav",
+        "description": "Hitro in zanesljivo odpravljanje napak ter servisiranje električnih naprav.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje elektro objektov",
+        "description": "Redno in preventivno vzdrževanje elektro objektov za varno delovanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje na področju elektrotehnike",
+        "description": "Strokovni nasveti in rešitve s področja elektrotehnike za vaše potrebe.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Elektro trgovina",
+        "description": "Nudimo pester izbor elektro materiala in opreme.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in dolgoletne izkušnje",
+    "description": "Z našim znanjem in usklajeno ekipo poskrbimo za varno ter brezhibno delovanje vaših elektro sistemov.",
+    "highlights": [
+      "Izjemna strokovnost in natančnost pri vsakem projektu",
+      "Dolgoletne izkušnje in preverjena zanesljivost na terenu",
+      "Usklajena in resna ekipa strokovnjakov"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "In natančnost",
+        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti in strokovnega znanja."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "Z dolgo tradicijo",
+        "description": "Več desetletij delovanja nam omogoča reševanje tudi zahtevnejših elektro izzivov."
+      },
+      {
+        "stat": "Ekipa",
+        "label": "Resnih strokovnjakov",
+        "description": "Usklajena ekipa zagotavlja zanesljivo izvedbo vseh del od začetka do konca."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pišite nam ali nas pokličite",
+    "description": "Potrebujete elektroinštalacije, servis ali nasvet? Z veseljem vam bomo pomagali.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gerbičeva ulica 33, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(01) 709 65 20",
+        "href": "tel:017096520",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in stopili bomo v stik z vami.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Gerbičeva ulica 33, 1380 Cerknica, Slovenia",
+    "rights": "© Elca d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elca d.o.o.",
+    "address": "Gerbičeva ulica 33, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "(01) 709 65 20"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# npm run discover-leads -- --file data/queries-notranjska-keramicar.txt --region notranjska --no-website --until-no-website 20 --industry keramicar --limit 20
+
+keramičar Postojna
+polaganje keramike Postojna
+keramičar Cerknica
+polaganje keramike Cerknica
+keramičar Pivka
+keramičar Ilirska Bistrica
+polaganje keramike Ilirska Bistrica
+keramičar Bloke
+keramičar Loška dolina
+keramičarstvo Postojna
+ploščice Postojna
+polaganje ploščic Postojna
+keramika Cerknica
+keramičarstvo Cerknica
+tlakovanje Postojna
+keramičarstvo Ilirska Bistrica
+polaganje ploščic Ilirska Bistrica
+keramika Pivka
+keramičarstvo Pivka
+keramičar Prestranek
+keramičar Knežak
+keramičar Hruševje
+keramika Loška dolina
+

@@ -1,0 +1,15 @@
+# One Google Places search query per line.
+# npm run discover-leads -- --file data/queries-notranjska-frizer.txt --region notranjska --no-website --until-no-website 20 --industry frizer --limit 20
+
+frizer Postojna
+frizerski salon Postojna
+frizer Cerknica
+frizerski salon Cerknica
+frizer Pivka
+frizerski salon Pivka
+frizer Ilirska Bistrica
+frizerski salon Ilirska Bistrica
+frizer Bloke
+frizer Loška dolina
+frizer Rakek
+frizer Unec

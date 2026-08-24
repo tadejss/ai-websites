@@ -22,6 +22,7 @@ export type LeadRecord = {
   existingWebsite?: string;
   status?: string;
   notes?: string;
+  sourceQuery?: string;
   outreach?: LeadOutreach;
   contactHistory?: ContactHistoryEntry[];
   stripeCustomerId?: string;

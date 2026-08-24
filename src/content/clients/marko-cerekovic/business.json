@@ -1,0 +1,28 @@
+{
+  "companyName": "Marko Čereković s.p.",
+  "industry": "Elektroinstalaterstvo",
+  "tagline": "Zanesljive in hitre elektro storitve 24/7",
+  "services": [
+    "Elektroinstalacije",
+    "Popravila okvar",
+    "Vzdrževanje električnih napeljav",
+    "Priklop naprav",
+    "Nujne intervencije"
+  ],
+  "phone": "070 609 203",
+  "email": "",
+  "address": "Ljubljanska cesta 30, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Open 24 hours · Sunday: Open 24 hours",
+  "sellingPoints": [
+    "Dosegljivi 24 ur na dan, vse dni v tednu",
+    "Hitra odzivnost na nujne primere",
+    "Zanesljiva in strokovna izvedba del"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih objektov",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, odziven",
+  "brandStyle": "moderen, zaupanja vreden",
+  "competitors": "Lokalni elektroinštalaterji v regiji",
+  "callToAction": "Pokličite za intervencijo"
+}

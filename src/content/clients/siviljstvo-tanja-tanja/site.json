@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/siviljstvo-tanja-tanja/hero.jpg",
+      "alt": "Notranjost prijetnega frizerskega salona v naravni svetlobi"
+    },
+    "services": {
+      "src": "/clients/siviljstvo-tanja-tanja/services.jpg",
+      "alt": "Strokovno striženje in oblikovanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Šiviljstvo",
+    "highlight": "Tanja"
+  },
+  "metadata": {
+    "title": "Šiviljstvo Tanja, Tanja Rutar s.p. | Frizerske storitve Ilirska Bistrica",
+    "description": "Strokovne frizerske storitve v Ilirski Bistrici in okolici. Nudimo striženje, barvanje, stilsko oblikovanje in nego las s poudarkom na osebnem pristopu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Ilirska Bistrica",
+    "title": "Strokovne frizerske storitve za",
+    "titleHighlight": "vaše lase",
+    "description": "Prijazne in zanesljive frizerske storitve za lokalne prebivalce ter vse, ki iščejo kakovostno nego in stilsko oblikovanje v Ilirski Bistrici in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Visoka",
+        "label": "Ocena strank"
+      },
+      {
+        "value": "Kakovostne",
+        "label": "Storitve"
+      },
+      {
+        "value": "Ilirska",
+        "label": "Bistrica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbite za svoj videz z našimi storitvami oblikovanja in nege las, prilagojenimi vsaki stranki posebej v Ilirski Bistrici in okolici.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Natančno striženje prilagojeno vaši obliki obraza in osebnemu stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje za obstojne in sijoče odtenke vaših las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive nege za zdravje, mehkobo in sijaj vaših las.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače okolje in strokoven pristop",
+    "description": "Zavedamo se pomena urejenega videza, zato se vsaki stranki posvetimo z vso pozornostjo in skrbnostjo.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Osebni pristop k vsaki stranki",
+      "Kakovostne storitve oblikovanja las"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebno",
+        "label": "Zaupanje",
+        "description": "Poudarek na osebnem pristopu in prisluhu vašim željam."
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "Delo",
+        "description": "Kakovostne storitve oblikovanja las z občutkom za estetiko."
+      },
+      {
+        "stat": "Zadovoljne",
+        "label": "Stranke",
+        "description": "Visoka ocena in pozitivne izkušnje naših obiskovalcev."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 872 972",
+        "href": "tel:041872972",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Koseze 10a, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali željo za termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Koseze 10a, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Šiviljstvo Tanja",
+    "address": "Koseze 10a, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "041 872 972"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

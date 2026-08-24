@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "olive-gold",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-mojca-2/hero.jpg",
+      "alt": "Notranjost toplega frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-mojca-2/services.jpg",
+      "alt": "Strokovno urejanje in barvanje las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Mojca"
+  },
+  "metadata": {
+    "title": "Frizerski salon Mojca | Ilirska Bistrica",
+    "description": "Kakovostne frizerske storitve in prijetno vzdušje v Ilirski Bistrici z okolico. Poskrbite za svoje lase v prijetnem okolju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon",
+    "title": "Kakovostne frizerske storitve za",
+    "titleHighlight": "vaše lase",
+    "description": "Prijazno in strokovno osebje poskrbi za stranke vseh starosti v Ilirski Bistrici z okolico, ki cenijo kakovostno nego las in prijetno okolje.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Delo"
+      },
+      {
+        "value": "Prijetno",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Lokalno",
+        "label": "okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Za stranke v Ilirski Bistrici z okolico nudimo celostno nego in urejanje las v sproščenem vzdušju.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Natančno in sodobno striženje las, prilagojeno vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las z obstojnimi odtenki in nego, ki ohranja zdrav sijaj.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje in oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilne in regenerativne nege za zdravje, mehkobo in vitalnost vaših las.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel pristop in strokovnost v Ilirski Bistrici",
+    "description": "Posvečamo se vsaki stranki posebej ter zagotavljamo visoko raven storitev in prijetno izkušnjo.",
+    "highlights": [
+      "Prijazno in strokovno osebje",
+      "Kakovostno opravljeno delo",
+      "Zadovoljne stranke z odličnimi ocenami"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Prijazna ekipa z izkušnjami poskrbi za vaše želje in potrebe."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Storitev",
+        "description": "Uporabljamo preverjene metode in poskrbimo za odlične rezultate."
+      },
+      {
+        "stat": "Prijetno",
+        "label": "Okolje",
+        "description": "Sproščeno vzdušje, kjer se boste počutili dobrodošli."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Cankarjevi ulici ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cankarjeva ulica 26, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(05) 714 44 10",
+        "href": "tel:+38657144410",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in kontaktirali vas bomo glede prostega termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cankarjeva ulica 26, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Mojca",
+    "address": "Cankarjeva ulica 26, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "(05) 714 44 10"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

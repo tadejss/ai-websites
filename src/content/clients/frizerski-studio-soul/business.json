@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski studio Soul, Ani Batista s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje in nega las za vaš popoln videz",
+  "services": [
+    "Moško in žensko striženje",
+    "Barvanje las in prameni",
+    "Oblikovanje pričesk za posebne priložnosti",
+    "Nega in obnova las",
+    "Svetovanje o negi las"
+  ],
+  "phone": "070 467 880",
+  "email": "",
+  "address": "Bazoviška cesta 3, 6250 Ilirska Bistrica, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 3:00 PM · Tuesday: 1:00 – 8:00 PM · Wednesday: 8:00 AM – 3:00 PM · Thursday: 1:00 – 8:00 PM · Friday: 8:00 AM – 3:00 PM · Saturday: 7:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prilagodljiv delovni čas z dopoldanskimi in popoldanskimi termini",
+    "Osebni pristop k vsaki stranki",
+    "Kakovostna nega in oblikovanje las"
+  ],
+  "targetCustomers": "Lokalni prebivalci Ilirske Bistrice in okolice, ki cenijo urejen videz in strokovno frizersko nego",
+  "serviceArea": "Ilirska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben, urejen",
+  "competitors": "Lokalni frizerski saloni v občini Ilirska Bistrica",
+  "callToAction": "Rezervirajte termin"
+}

@@ -149,10 +149,21 @@ function delay(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+export type PlacesLocationBias = {
+  latitude: number;
+  longitude: number;
+  radiusMeters: number;
+};
+
+export type PlacesSearchOptions = {
+  locationBias?: PlacesLocationBias;
+};
+
 async function searchPage(
   textQuery: string,
   pageSize: number,
   pageToken?: string,
+  locationBias?: PlacesLocationBias,
 ): Promise<GooglePlacesSearchResponse> {
   const response = await fetch(PLACES_SEARCH_URL, {
     method: "POST",
@@ -161,7 +172,24 @@ async function searchPage(
       "X-Goog-Api-Key": getApiKey(),
       "X-Goog-FieldMask": DISCOVERY_FIELD_MASK,
     },
-    body: JSON.stringify({ textQuery, pageSize, ...(pageToken ? { pageToken } : {}) }),
+    body: JSON.stringify({
+      textQuery,
+      pageSize,
+      ...(pageToken ? { pageToken } : {}),
+      ...(locationBias
+        ? {
+            locationBias: {
+              circle: {
+                center: {
+                  latitude: locationBias.latitude,
+                  longitude: locationBias.longitude,
+                },
+                radius: locationBias.radiusMeters,
+              },
+            },
+          }
+        : {}),
+    }),
   });
 
   if (!response.ok) {
@@ -178,6 +206,7 @@ async function searchPage(
 export async function searchPlaces(
   textQuery: string,
   limit: number,
+  options: PlacesSearchOptions = {},
 ): Promise<RawBusinessData[]> {
   const target = Math.min(limit, MAX_RESULTS_PER_QUERY);
   const results: RawBusinessData[] = [];
@@ -192,7 +221,12 @@ export async function searchPlaces(
       await delay(PAGE_TOKEN_DELAY_MS);
     }
 
-    const page = await searchPage(textQuery, pageSize, pageToken);
+    const page = await searchPage(
+      textQuery,
+      pageSize,
+      pageToken,
+      options.locationBias,
+    );
 
     for (const place of page.places ?? []) {
       const business = mapPlaceToRawBusinessData(place);

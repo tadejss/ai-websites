@@ -1,0 +1,197 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Else",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Else d.o.o. Cerknica | Elektro inštalacije in servis",
+    "description": "Zanesljive elektro inštalacije, servisne storitve in elektro trgovina za lastnike stanovanjskih in poslovnih objektov v Cerknici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Elektro inštalacije in servis",
+    "title": "Zanesljive elektro inštalacije in",
+    "titleHighlight": "servisne storitve",
+    "description": "Celovite rešitve za stanovanjske in poslovne objekte v Cerknici z okolico. Poskrbimo za strokovno izvedbo in zanesljivo vzdrževanje vaših elektro sistemov.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Delovanje"
+      },
+      {
+        "value": "Celovito",
+        "label": "Ponudba"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Cerknica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve in trgovina",
+    "description": "Nudimo kakovostne storitve in izdelke za elektro sisteme v Cerknici z okolico.",
+    "items": [
+      {
+        "title": "Elektro inštalacije",
+        "description": "Strokovna izvedba elektro inštalacij za različne vrste objektov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servisne storitve",
+        "description": "Zanesljive servisne storitve za odpravljanje napak in vzdrževanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Elektro trgovina",
+        "description": "Celovita ponudba elektro materiala in opreme.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje elektro sistemov",
+        "description": "Redno vzdrževanje za varno in nemoteno delovanje vaših sistemov.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše elektro potrebe",
+    "description": "Z dolgoletnimi izkušnjami in domačim pristopom poskrbimo za varno in kakovostno izvedbo del.",
+    "highlights": [
+      "Strokovna izvedba elektro inštalacij",
+      "Zanesljive servisne storitve",
+      "Celovita ponudba z elektro trgovino"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Znanje",
+        "description": "Natančna in strokovna izvedba vseh elektro storitev."
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "Delovanje",
+        "description": "Zanesljive servisne storitve in vzdrževanje."
+      },
+      {
+        "stat": "Celovito",
+        "label": "Na enem mestu",
+        "description": "Ponudba storitev in elektro trgovine za vsak objekt."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete elektro storitve? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(01) 709 13 24",
+        "href": "tel:017091324",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Sinja Gorica 37, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali povpraševanje",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Sinja Gorica 37, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Else d.o.o.",
+    "address": "Sinja Gorica 37, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "(01) 709 13 24"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

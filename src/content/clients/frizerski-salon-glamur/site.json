@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "wine-velvet",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-glamur/hero.jpg",
+      "alt": "Sodoben in svetel frizerski salon z vabljivim ambientom"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-glamur/services.jpg",
+      "alt": "Profesionalno striženje in barvanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski Salon",
+    "highlight": "Glamur"
+  },
+  "metadata": {
+    "title": "Frizerski Salon Glamur | Ilirska Bistrica",
+    "description": "Vaša pot do popolne frizure v Ilirski Bistrici z okolico. Žensko, moško in otroško striženje, barvanje ter stilsko oblikovanje las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Sodoben lokalni salon",
+    "title": "Vaša pot do popolne frizure v",
+    "titleHighlight": "Ilirski Bistrici",
+    "description": "Nudimo celovite frizerske storitve za vse generacije, ki cenijo kakovostno nego las in prijetno vzdušje.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vse",
+        "label": "Generacije"
+      },
+      {
+        "value": "Topel",
+        "label": "Odnos"
+      },
+      {
+        "value": "Hitri",
+        "label": "Preobrati"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Ilirska Bistrica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaši pričesko",
+    "description": "Poskrbimo za vaš svež videz z izbiro preverjenih frizerskih storitev za vso družino v Ilirski Bistrici z okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Striženje in oblikovanje ženskih pričesk po vaših željah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Moderne in klasične moške pričeske za urejen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Prijazno in potrpežljivo osebje poskrbi za udobno izkušnjo najmlajših.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki in nega za sijoče lase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel pristop in strokovnost",
+    "description": "Zavedamo se, kako pomemben je dober izgled in počutje, zato se vam v celoti posvetimo.",
+    "highlights": [
+      "Prijazno in potrpežljivo osebje do otrok",
+      "Vrhunska kakovost in hiter preobrat videza",
+      "Topel in strokoven odnos do strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Do otrok",
+        "description": "Potrpežljiv pristop, ki otrokom olajša striženje."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "In hitrost",
+        "description": "Vrhunska izvedba in hiter preobrat vašega videza."
+      },
+      {
+        "stat": "Odnosi",
+        "label": "Topel pristop",
+        "description": "Strokovno in prijetno vzdušje za vsak obisk."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas na Cankarjevi ulici ali nas pokličite za rezervacijo vašega termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cankarjeva ulica 27, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(05) 714 44 10",
+        "href": "tel:057144410",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon in Sre: 13:00–20:00 · Tor in Čet: 8:00–15:00 · Pet: 13:00–20:00 · Sob: 8:00–13:00 · Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Cankarjeva ulica 27, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski Salon Glamur",
+    "address": "Cankarjeva ulica 27, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "(05) 714 44 10"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

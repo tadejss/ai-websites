@@ -1,0 +1,212 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-zeljko-zeljko/hero.jpg",
+      "alt": "Strokovno polaganje keramičnih ploščic v notranjih prostorih"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-zeljko-zeljko/services.jpg",
+      "alt": "Natančna izvedba keramičnih del in adaptacija kopalnice"
+    }
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Grginčič"
+  },
+  "metadata": {
+    "title": "Keramičarstvo Željko Grginčič s.p. | Polaganje keramike in adaptacije",
+    "description": "Strokovno in natančno polaganje keramike ter adaptacije kopalnic na območju Stari trg pri Ložu z okolico in širše regije."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv domači mojster",
+    "title": "Strokovno in natančno",
+    "titleHighlight": "polaganje keramike",
+    "description": "Zanesljive keramične storitve in adaptacije za lastnike stanovanj, hiš ter investitorje v Starem trgu pri Ložu z okolico in širši regiji.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka",
+        "label": "Natančnost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "In roki"
+      },
+      {
+        "value": "Strokovni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Delovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše keramične in gradbene storitve",
+    "description": "Specializirani smo za kakovostno izvedbo vseh vrst keramičarskih del za stranke v Starem trgu pri Ložu z okolico in širši regiji.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno polaganje stenskih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Kakovostna vgradnja talnih oblog za dolgotrajno obstojnost in lep videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite preureditve kopalnic in mokrih prostorov po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblaganje teras in balkonov",
+        "description": "Strokovna izvedba zunanjih keramičnih površin z ustreznimi materiali.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava podlage in izravnava",
+        "description": "Temeljita priprava in izravnava tal ter sten pred samim polaganjem ploščic.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden mojster za vaš dom",
+    "description": "Odlikujejo nas dolgoletne izkušnje in posluh za želje naročnikov.",
+    "highlights": [
+      "Visoka natančnost in kakovost izvedbe",
+      "Zanesljivost in držanje dogovorjenih rokov",
+      "Dolgoletne izkušnje na področju keramičarstva"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "In kakovost",
+        "description": "Vsak projekt izvedemo skrbno in z občutkom za detajle."
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Dogovori",
+        "description": "Spoštujemo dogovorjene roke in se držimo zadanih obveznosti."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "Strokovnost",
+        "description": "Zanesljivo svetovanje in izvedba na področju keramičarstva."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pokličite nas.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 527 095",
+        "href": "tel:031527095",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ograde 49, 1386 Stari trg pri Ložu, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ograde 49, 1386 Stari trg pri Ložu, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Grginčič",
+    "address": "Ograde 49, 1386 Stari trg pri Ložu, Slovenia",
+    "email": "",
+    "phone": "031 527 095"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

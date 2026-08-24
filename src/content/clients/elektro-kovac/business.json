@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektro Kovač",
+  "industry": "Elektromonterske storitve",
+  "tagline": "Zanesljive in strokovne elektroinštalacije ter popravila",
+  "services": [
+    "Elektroinštalacije",
+    "Popravila električnih napeljav",
+    "Montaža svetil in opreme",
+    "Vzdrževanje elektro sistemov",
+    "Nujne električne intervencije"
+  ],
+  "phone": "051 710 825",
+  "email": "",
+  "address": "Viševek 41a, 1386 Stari trg pri Ložu, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Dostopnost 24 ur na dan med tednom",
+    "Hitro odzivne storitve",
+    "Strokovno in zanesljivo delo"
+  ],
+  "targetCustomers": "Lastniki stanovanjskih in poslovnih objektov, ki potrebujejo elektro storitve",
+  "serviceArea": "Stari trg pri Ložu z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni elektro ponudniki",
+  "callToAction": "Pokličite nas"
+}

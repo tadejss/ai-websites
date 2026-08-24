@@ -25,7 +25,8 @@
         "elektro",
         "construction",
         "cleaning",
-        "health"
+        "health",
+        "auto"
       ],
       "description": "Visual appearance category controlling layout and theme tokens."
     },
@@ -61,7 +62,8 @@
             "airy",
             "stats-forward",
             "image-led",
-            "calm-visual"
+            "calm-visual",
+            "photo-forward"
           ]
         },
         "heroImageSide": {

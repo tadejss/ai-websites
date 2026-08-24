@@ -1,0 +1,210 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "plum-dusk",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerki-salon-sabina/hero.jpg",
+      "alt": "Topel in prijazen frizerski salon z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerki-salon-sabina/services.jpg",
+      "alt": "Strokovno barvanje in oblikovanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Sabina"
+  },
+  "metadata": {
+    "title": "Frizerki salon Sabina | Frizerske storitve Ilirska Bistrica",
+    "description": "Prijazne, cenovno dostopne in kakovostne frizerske storitve za vso družino v Ilirski Bistrici in okoliških krajih."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon",
+    "title": "Kakovostne in dostopne frizerske storitve v",
+    "titleHighlight": "Ilirski Bistrici",
+    "description": "Topel, domač in prijazen frizerski salon za lokalne prebivalce vseh starosti. Poskrbimo za vaš svež videz po dostopni ceni.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      },
+      {
+        "value": "Ugodne",
+        "label": "Cene"
+      },
+      {
+        "value": "Vse",
+        "label": "Generacije"
+      },
+      {
+        "value": "Hitra",
+        "label": "Storitev"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vsakogar",
+    "description": "V našem salonu v Ilirski Bistrici nudimo celovito nego in urejanje las za vso družino.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vaši obliki obraza in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje za vsak dan.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Prijazno in sproščeno striženje za najmlajše člane družine.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki za sijoče, zdrave in lepe lase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in osebni pristop",
+    "description": "Zavedamo se, da je pomembno, da se v svoji koži in s svojo pričesko počutite dobro. Zato se vam vedno posvetimo.",
+    "highlights": [
+      "Izjemno prijazno osebje",
+      "Ugodne in dostopne cene",
+      "Hitra in učinkovita storitev",
+      "Prijeten ambient v Ilirski Bistrici"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Topel pristop",
+        "description": "Pri nas boste vedno deležni nasmeha in prijetne besede."
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "Ugodne cene",
+        "description": "Kakovostne storitve, ki so dostopne vsakomur."
+      },
+      {
+        "stat": "Učinkovitost",
+        "label": "Hitra storitev",
+        "description": "Cenimo vaš čas in poskrbimo za učinkovito izvedbo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas in si zagotovite svoj termin v Frizerskem salonu Sabina.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 486 048",
+        "href": "tel:031486048",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Vrbovo 62, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Vrbovo 62, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Sabina",
+    "address": "Vrbovo 62, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "031 486 048"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

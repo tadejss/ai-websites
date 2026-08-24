@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-renata/hero.jpg",
+      "alt": "Notranjost toplega lokalnega frizerskega salona v naravni svetlobi"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-renata/services.jpg",
+      "alt": "Strokovno striženje in urejanje pričesk v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Renata"
+  },
+  "metadata": {
+    "title": "Frizerski salon Renata | Stari trg pri Ložu",
+    "description": "Vaš zanesljiv naslov za urejeno pričesko v Starem trgu pri Ložu. Nudimo žensko, moško in otroško striženje ter barvanje las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se"
+  },
+  "hero": {
+    "badge": "Topel lokalni salon",
+    "title": "Vaš zanesljiv naslov za",
+    "titleHighlight": "urejeno pričesko",
+    "description": "Celovite frizerske storitve za vso družino v Starem trgu pri Ložu s širšo okolico. Doživite prijazno in domačo izkušnjo.",
+    "primaryCta": "Naročite se",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Družinski",
+        "label": "Pristop"
+      },
+      {
+        "value": "Celovite",
+        "label": "Storitve"
+      },
+      {
+        "value": "Lokalno",
+        "label": "okolje"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "urnik"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vso družino",
+    "description": "Poskrbimo za vaš svež videz in urejeno pričesko z naborom preverjenih storitev za vsakogar v Starem trgu pri Ložu in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah, prilagojeno vašemu slogu in tipu las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in sodobno striženje za urejen in samozavesten videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Prijazno in potrpežljivo striženje najmlajših v domačem vzdušju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna sprememba odtenka z kakovostnimi pripravki.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in strokovna skrb za vaše lase",
+    "description": "Zavedamo se pomena dobrega počutja in urejenega videza, zato se strankam posvetimo osebno.",
+    "highlights": [
+      "Celovite frizerske storitve za vso družino",
+      "Prilagodljiv delovni čas z dopoldanskimi in popoldanskimi termini",
+      "Prijazna in domača izkušnja"
+    ],
+    "benefits": [
+      {
+        "stat": "Družinsko",
+        "label": "okolje",
+        "description": "Prijazna in domača izkušnja za vsakega člana družine."
+      },
+      {
+        "stat": "Prilagodljiv",
+        "label": "urnik",
+        "description": "Možnost dopoldanskih in popoldanskih terminov po dogovoru."
+      },
+      {
+        "stat": "Celovita",
+        "label": "ponudba",
+        "description": "Striženje, barvanje in oblikovanje pričesk na enem mestu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na svoj termin",
+    "description": "Pokličite nas ali nam pošljite sporočilo za dogovor o terminu obiska.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 708 010",
+        "href": "tel:041708010",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Rožnik 6, 1386 Stari trg pri Ložu, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, Pet: 8:00–12:00 in 15:00–19:00, Tor, Čet, Sob: 8:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in stopili bomo v stik z vami glede prostega termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se"
+    }
+  },
+  "footer": {
+    "address": "Rožnik 6, 1386 Stari trg pri Ložu, Slovenia",
+    "rights": "© 2025 Frizerski salon Renata. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Renata",
+    "address": "Rožnik 6, 1386 Stari trg pri Ložu, Slovenia",
+    "email": "",
+    "phone": "041 708 010"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

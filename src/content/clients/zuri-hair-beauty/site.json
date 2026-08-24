@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/zuri-hair-beauty/hero.jpg",
+      "alt": "Moderen frizerski salon z urejeno notranjostjo in prijetnim vzdušjem"
+    },
+    "services": {
+      "src": "/clients/zuri-hair-beauty/services.jpg",
+      "alt": "Strokovno striženje in oblikovanje pričeske v frizerskem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Zuri Hair &",
+    "highlight": "Beauty Salon"
+  },
+  "metadata": {
+    "title": "Zuri Hair & Beauty Salon | Frizerske storitve Ilirska Bistrica",
+    "description": "Vaša destinacija za čudovite pričeske in nego las v Ilirski Bistrici in okolici. Nudimo striženje, barvanje, pletenje kitk in nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Vrbovo",
+    "title": "Vaša destinacija za čudovite",
+    "titleHighlight": "pričeske in nego las",
+    "description": "Prijazen, topel in strokoven frizerski salon v Ilirski Bistrici. Poskrbimo za posameznike in družine, ki iščejo kakovostne frizerske storitve.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prijazen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Tim"
+      },
+      {
+        "value": "Ilirska",
+        "label": "Bistrica"
+      },
+      {
+        "value": "Prilagojeno",
+        "label": "Urejanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vas",
+    "description": "V salonu Zuri nudimo pester nabor storitev za urejen videz v Ilirski Bistrici in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Natančno in stilsko žensko striženje, prilagojeno obliki vašega obraza in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pletenje kitk",
+        "description": "Umetniško in obstojno pletenje kitk za poseben videz ali vsak dan.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Hitro in spretno oblikovanje pričesk za vsako priložnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna preobrazba z uporabo kakovostnih pripravkov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las in lasišča",
+        "description": "Globinska nega, ki vaši pričeski povrne sijaj, zdravje in mehkobo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Izkušnja, ki postavlja vas na prvo mesto",
+    "description": "Združujemo topel pristop, sodoben slog in posluh za vaše želje.",
+    "highlights": [
+      "Prijazen in dostopen pristop",
+      "Prilagojeno urejanje po vaših željah",
+      "Vrhunska izkušnja za vso družino"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Dostopen pristop",
+        "description": "Vsak obisk je sproščen, topel in popolnoma prilagojen vam."
+      },
+      {
+        "stat": "Spretnost",
+        "label": "Hitro oblikovanje",
+        "description": "Hitro in spretno oblikovanje pričesk za vsakodnevni ali svečani videz."
+      },
+      {
+        "stat": "Družina",
+        "label": "Za vso družino",
+        "description": "Kakovostne frizerske storitve za posameznike in družine na enem mestu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite v salonu v Vrbovem.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Vrbovo 62, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 882 696",
+        "href": "tel:051882696",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Torka do nedelje (ponedeljek zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Vrbovo 62, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Zuri Hair & Beauty Salon",
+    "address": "Vrbovo 62, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "051 882 696"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

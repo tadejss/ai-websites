@@ -1,0 +1,202 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Gavro",
+    "highlight": "Elektro in hišniške storitve"
+  },
+  "metadata": {
+    "title": "Gavro - Zanesljive elektro in hišniške storitve Postojna",
+    "description": "Zanesljive električne in hišne storitve za vaš dom v Postojni in oklici. Elektroinštalacije, popravila in vzdrževanje objektov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Postojna in okolica",
+    "title": "Zanesljive električne in hišne",
+    "titleHighlight": "storitve za vaš dom",
+    "description": "Strokovne elektroinštalacije, popravila električnih naprav in vzdrževanje objektov za lastnike stanovanj, hiš in poslovnih prostorov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "In strokovno"
+      },
+      {
+        "value": "Hitro",
+        "label": "Odzivanje"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Strankam"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Postojna"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovite rešitve za vzdrževanje in električne napeljave v Postojni in okolici.",
+    "items": [
+      {
+        "title": "Elektroinštalacije",
+        "description": "Kakovostne in varne elektroinštalacije za stanovanjske in poslovne prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila električnih naprav",
+        "description": "Hitro odpravljanje napak in popravila različnih električnih naprav.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje objektov",
+        "description": "Redno in preventivno vzdrževanje objektov ter tehnična podpora.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Hišniške storitve",
+        "description": "Različna manjša popravila in hišna opravila za urejenost vašega doma.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaš dom",
+    "description": "Z odzivnostjo in prilagodljivostjo poskrbimo za varnost in delovanje vaših električnih in hišnih sistemov.",
+    "highlights": [
+      "Zanesljive in strokovne storitve",
+      "Prilagodljivost potrebam strank",
+      "Hitro odzivanje na nastale težave"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivost",
+        "label": "Strokovna izvedba",
+        "description": "Naloge opravimo dosledno in v dogovorjenih rokih."
+      },
+      {
+        "stat": "Odzivnost",
+        "label": "Hitro ukrepanje",
+        "description": "Hitro se odzovemo na vaše težave in poskrbimo za rešitve."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Uho in posluh",
+        "description": "Prilagodimo se vašemu urniku in specifičnim zahtevam."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za vprašanja, dogovor o delih ali naročilo storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 730 205",
+        "href": "tel:041730205",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Pivška ulica 6, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - čet: 15:00–18:00, Sre: 14:00–18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kako vam lahko pomagamo...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Pivška ulica 6, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Gavro Elektro in hišniške storitve",
+    "address": "Pivška ulica 6, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 730 205"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

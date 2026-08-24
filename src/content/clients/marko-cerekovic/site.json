@@ -1,0 +1,207 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "brand": {
+    "prefix": "Marko Čereković",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Marko Čereković s.p. | Elektroinstalaterstvo in nujne intervencije",
+    "description": "Zanesljive in hitre elektro storitve 24/7 v Postojni z okolico. Elektroinstalacije, popravila okvar in nujne intervencije."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za intervencijo"
+  },
+  "hero": {
+    "badge": "Elektro storitve 24/7",
+    "title": "Zanesljive in hitre elektro storitve v",
+    "titleHighlight": "Postojni z okolico",
+    "description": "Strokovne elektroinstalacije, popravila okvar in nujne intervencije za lastnike stanovanj, hiš in poslovnih objektov.",
+    "primaryCta": "Pokličite za intervencijo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Dosegljivost"
+      },
+      {
+        "value": "Hitra",
+        "label": "Odzivnost"
+      },
+      {
+        "value": "Strokovna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Postojna",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite elektro storitve in intervencije",
+    "description": "Zagotavljamo zanesljive rešitve za stanovanjske in poslovne objekte v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Elektroinstalacije",
+        "description": "Kakovostna izvedba elektroinstalacij za nove in obstoječe objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila okvar",
+        "description": "Hitro odkrivanje in odpravljanje električnih napak ter okvar.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje električnih napeljav",
+        "description": "Redno in preventivno vzdrževanje za varno delovanje vašega sistema.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priklop naprav",
+        "description": "Strokoven in varen priklop vseh vrst gospodinjskih in drugih aparatov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nujne intervencije",
+        "description": "Takojšnja odzivnost in posredovanje ob nujnih električnih težavah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne napeljave",
+    "description": "Z odzivnostjo in strokovnostjo poskrbimo za varnost vašega doma ali poslovnega prostora.",
+    "highlights": [
+      "Dosegljivi 24 ur na dan, vse dni v tednu",
+      "Hitra odzivnost na nujne primere v regiji",
+      "Zanesljiva in strokovna izvedba del"
+    ],
+    "benefits": [
+      {
+        "stat": "24/7",
+        "label": "Dosegljivost",
+        "description": "Na voljo smo vam vsak dan v letu, ob vsaki uri."
+      },
+      {
+        "stat": "Hitro",
+        "label": "Posredovanje",
+        "description": "Hitra odzivnost na nujne primere in okvare na terenu."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Delo",
+        "description": "Zanesljiva in varna izvedba vseh električnih del."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete nujno intervencijo ali strokovni nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 609 203",
+        "href": "tel:070609203",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 30, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Ned: Odprti 24 ur",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali storitev, ki jo potrebujete",
+      "submitLabel": "Pokličite za intervencijo"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 30, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Marko Čereković s.p.",
+    "address": "Ljubljanska cesta 30, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "070 609 203"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

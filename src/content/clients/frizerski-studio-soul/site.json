@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sage-meadow",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-soul/hero.jpg",
+      "alt": "Sodoben in svetel frizerski salon"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-soul/services.jpg",
+      "alt": "Strokovno barvanje in striženje las"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Soul"
+  },
+  "metadata": {
+    "title": "Frizerski studio Soul | Ilirska Bistrica",
+    "description": "Strokovno striženje, barvanje in nega las za stranke v Ilirski Bistrici z okolico. Rezervirajte svoj termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Ilirski Bistrici",
+    "title": "Strokovno striženje in nega las za",
+    "titleHighlight": "vaš popoln videz",
+    "description": "Pridih sodobne nege in osebni pristop za lokalne prebivalce Ilirske Bistrice in okolice, ki cenijo urejen videz.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Delovni čas"
+      },
+      {
+        "value": "Sodobna",
+        "label": "Nega las"
+      },
+      {
+        "value": "Ilirska Bistrica",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "Celovite frizerske storitve prilagojene vsakemu posamezniku v Ilirski Bistrici z okolico.",
+    "items": [
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Moderne in klasične frizure, prilagojene vašemu slogu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Osvežitev barve, barvanje narastka in ustvarjanje naravnih pramenov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk za posebne priložnosti",
+        "description": "Urejanje pričesk za poroke, zabave in druge pomembne dogodke.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in obnova las",
+        "description": "Kakovostni tretmaji za povrnitev sijaja, mehkobe in zdravja vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi las",
+        "description": "Strokovni nasveti za vsakodnevno domačo nego in izbiro ustreznih izdelkov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost lepoti in zdravju vaših las",
+    "description": "Z združevanjem strokovnosti in prijaznega pristopa poskrbimo, da se v našem salonu vedno počutite dobrodošli.",
+    "highlights": [
+      "Prilagodljiv delovni čas z dopoldanskimi in popoldanskimi termini",
+      "Osebni pristop k vsaki stranki",
+      "Kakovostna nega in oblikovanje las"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebno",
+        "label": "Srečanje",
+        "description": "Posvetimo se vašim željam in poskrbimo za individualno obravnavo."
+      },
+      {
+        "stat": "Prilagodljivo",
+        "label": "Termini",
+        "description": "Dopoldanski in popoldanski termini za lažje usklajevanje vašega urnika."
+      },
+      {
+        "stat": "Urejeno",
+        "label": "Okolje",
+        "description": "Sodoben in prijeten ambient za vaše popolno sproščanje med nego las."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj obisk",
+    "description": "Pokličite nas za termin ali nas obiščite v salonu v Ilirski Bistrici.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 467 880",
+        "href": "tel:070467880",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Bazoviška cesta 3, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, Pet: 8:00–15:00 · Tor, Čet: 13:00–20:00 · Sob: 7:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Bazoviška cesta 3, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "© 2025 Frizerski studio Soul, Ani Batista s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Soul",
+    "address": "Bazoviška cesta 3, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "070 467 880"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

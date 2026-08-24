@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-suzana-suzana/hero.jpg",
+      "alt": "Topel in svetel frizerski salon v Ilirski Bistrici"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-suzana-suzana/services.jpg",
+      "alt": "Strokovne frizerske storitve in barvanje las"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Suzana"
+  },
+  "metadata": {
+    "title": "Frizerstvo Suzana | Frizerski salon Ilirska Bistrica",
+    "description": "Uresničimo vaše frizerske želje s strokovnim in prijaznim pristopom v Ilirski Bistrici z okolico. Nudimo žensko, moško in otroško striženje ter barvanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Domač in zanesljiv lokalni salon",
+    "title": "Uresničimo vaše frizerske želje",
+    "titleHighlight": "z osebnim pristopom",
+    "description": "Vabljeni v naš frizerski salon v Ilirski Bistrici z okolico. Poskrbimo za kakovostne in cenovno dostopne storitve za vso družino.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Ugodne",
+        "label": "Cene"
+      },
+      {
+        "value": "Družinsko",
+        "label": "Striženje"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Ilirska Bistrica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vso družino",
+    "description": "V salonu v Ilirski Bistrici nudimo celovite frizerske storitve, prilagojene vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk in striženje, prilagojeno vašemu stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in sodobno moško striženje za urejen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Prijazno in sproščeno striženje za najmlajše člane družine.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje laseh",
+        "description": "Kakovostni barvni odtenki za osvežitev ali popolno spremembo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel pristop in strokovnost v vašem okolju",
+    "description": "Zavedamo se pomena dobrega počutja in urejenega videza, zato se vsem strankam posvetimo individualno.",
+    "highlights": [
+      "Prijazno in ustrežljivo osebje",
+      "Ugodne cene storitev za vsakogar",
+      "Prilagajanje željam vsake stranke"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Topel sprejem",
+        "description": "Ustvarjamo sproščeno in domače vzdušje za vsak obisk."
+      },
+      {
+        "stat": "Izkušnje",
+        "label": "Strokovno delo",
+        "description": "Zanesljivo in izkušeno striženje za vaš popoln videz."
+      },
+      {
+        "stat": "Vrednost",
+        "label": "Dostopne cene",
+        "description": "Kakovostne storitve po dostopnih cenah za vso družino."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(05) 714 61 48",
+        "href": "tel:057146148",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Bazoviška cesta 32, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, Pet: 14:00–20:00 · Tor, Čet: 8:00–15:00 · Sob, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Bazoviška cesta 32, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Suzana",
+    "address": "Bazoviška cesta 32, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "(05) 714 61 48"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

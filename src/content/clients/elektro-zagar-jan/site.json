@@ -1,0 +1,207 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "warm-earth",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "brand": {
+    "prefix": "Elektro",
+    "highlight": "Žagar"
+  },
+  "metadata": {
+    "title": "Elektro Žagar, Jan Žagar s.p. | Elektroinštalacije Cerknica",
+    "description": "Zanesljive in strokovne elektroinštalacije za vaš dom in poslovni prostor v Cerknici z okolico. Montaža, vzdrževanje, adaptacije in meritve."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Lokalni elektroinštalater",
+    "title": "Zanesljive in strokovne elektroinštalacije",
+    "titleHighlight": "za vaš dom in poslovni prostor",
+    "description": "Storitve na območju Cerknice in okolice. Hitra odzivnost, prilagodljivost in strokovna izvedba za lastnike stanovanj, hiš ter poslovnih objektov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "Odzivnost"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Delo"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Strankam"
+      },
+      {
+        "value": "Cerknica",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve na področju elektroinštalacij",
+    "description": "Poskrbimo za varno, zanesljivo in strokovno delovanje električnih sistemov v vaših objektih v Cerknici in okolici.",
+    "items": [
+      {
+        "title": "Elektroinštalacije v objektih",
+        "description": "Izvedba inštalacij v stanovanjskih in poslovnih objektih z mislijo na varnost in dolgotrajno delovanje.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montaža svetil in opreme",
+        "description": "Strokovna montaža svetil in raznolike elektroopreme za vsak prostor.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje in popravila",
+        "description": "Redno vzdrževanje in hitra odpravljanja napak na obstoječih električnih napeljavah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Adaptacije sistemov",
+        "description": "Prenove in posodobitve obstoječih električnih sistemov v starejših ali prenovljenih objektih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pregledi in meritve",
+        "description": "Natančni pregledi in meritve inštalacij za zagotavljanje brezhibnega delovanja.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne sisteme",
+    "description": "Združujemo domačnost lokalnega ponudnika in visoko strokovnost pri vsakem projektu.",
+    "highlights": [
+      "Hitra odzivnost in zanesljivost pri delu",
+      "Strokovno izvedena dela z občutkom za detajle",
+      "Visoka prilagodljivost željam in potrebam strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Odzivnost",
+        "label": "Hitro in zanesljivo",
+        "description": "Cenimo vaš čas, zato se na povpraševanja in primere odzivamo hitro."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "Kakovostna izvedba",
+        "description": "Vsak projekt izpeljemo strokovno in v skladu z veljavnimi standardi."
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Poslušamo stranke",
+        "description": "Prilagodimo se vašemu urniku in specifičnim zahtevam na terenu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete elektroinštalaterske storitve? Pokličite nas ali oddajte sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 232 395",
+        "href": "tel:051232395",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Videm 20, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 7:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kako vam lahko pomagamo...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Videm 20, 1380 Cerknica, Slovenia",
+    "rights": "© 2025 Elektro Žagar, Jan Žagar s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektro Žagar",
+    "address": "Videm 20, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "051 232 395"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

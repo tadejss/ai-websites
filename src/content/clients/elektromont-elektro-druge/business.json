@@ -1,0 +1,27 @@
+{
+  "companyName": "Elektro-Mont, elektro in druge storitve, Jani Samsa s.p.",
+  "industry": "general_contractor",
+  "tagline": "Zanesljive elektro in gradbene storitve za vaš dom ali poslovni prostor",
+  "services": [
+    "elektroinštalacije",
+    "električna popravila",
+    "vzdrževanje objektov",
+    "splošne gradbene storitve"
+  ],
+  "phone": "031 567 624",
+  "email": "",
+  "address": "Dolenja vas 98, 1380 Cerknica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "odzivnost in strokovnost",
+    "celovite rešitve na enem mestu",
+    "zanesljivo izvajanje del"
+  ],
+  "targetCustomers": "lastniki stanovanjskih hiš, stanovanj in poslovnih objektov",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "domači mojster, zaupanja vreden",
+  "competitors": "lokalni elektro izvajalci in splošni izvajalci",
+  "callToAction": "Pokličite nas"
+}

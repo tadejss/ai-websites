@@ -48,7 +48,9 @@ export async function generateClient(
   const rawBusiness = validateRawBusinessData(await source.getBusiness());
   const businessInput = await generateBusinessInput(rawBusiness);
   const generatedConfig = await generateSiteConfig(businessInput);
-  const appearance = appearanceForIndustry(businessInput.industry ?? "");
+  const appearance = appearanceForIndustry(
+    `${businessInput.industry ?? ""} ${businessInput.companyName ?? ""}`,
+  );
   const layout =
     appearance === "beauty"
       ? assignBeautyLayout(slug)

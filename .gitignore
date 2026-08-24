@@ -26,6 +26,7 @@
 
 # generation logs
 /logs
+data/.unsplash-search-times.json
 
 # debug
 npm-debug.log*

@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "plum-dusk",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-nada/hero.jpg",
+      "alt": "Notranjost prijetnega frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-nada/services.jpg",
+      "alt": "Strokovno barvanje las in urejanje pričesk v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Nada Turk s.p."
+  },
+  "metadata": {
+    "title": "Frizerski salon Nada Turk s.p. | Stari trg pri Ložu",
+    "description": "Strokovno urejanje pričesk in celostna skrb za vaše lase v Starem trgu pri Ložu s širšo okolico. Prijazna in osebna obravnava za vse generacije."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon",
+    "title": "Strokovno urejanje pričesk in ",
+    "titleHighlight": "celostna skrb za vaše lase",
+    "description": "Nudimo prijazno in osebno obravnavo za vse generacije, ki cenijo kakovostne frizerske storitve v Starem trgu pri Ložu s širšo okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Vse",
+        "label": "Generacije"
+      },
+      {
+        "value": "Prijeten",
+        "label": "Ambient"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vso družino",
+    "description": "Poskrbimo za vaš svež videz in zdravje vaših las z izbiro preverjenih storitev v Starem trgu pri Ložu.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričesk za vsak dan.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Prijazno in potrpežljivo urejanje pričesk za najmlajše.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje in niansiranje za sijoče ter negovane lase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in strokovna skrb",
+    "description": "Vsaki stranki se posvetimo individulano in poskrbimo, da se v našem salonu počutite sproščeno.",
+    "highlights": [
+      "Prijazna in osebna obravnava strank",
+      "Strokovno svetovanje pri izbiri pričeske",
+      "Prijeten ambient v Starem trgu pri Ložu"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebno",
+        "label": "Pristop",
+        "description": "Poslušamo vaše želje in skupaj poiščemo najboljšo rešitev za vaše lase."
+      },
+      {
+        "stat": "Nasveti",
+        "label": "Strokovnost",
+        "description": "Pomagamo vam izbrati pravo pričesko, ki ustreza vašemu življenjskemu slogu."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Domače",
+        "description": "Uživajte v sproščenem in prijetnem okolju našega salona."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nas obiščite v salonu v Starem trgu pri Ložu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(01) 705 70 54",
+        "href": "tel:+38617057054",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Iga vas 30, 1386 Stari trg pri Ložu, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Iga vas 30, 1386 Stari trg pri Ložu, Slovenia",
+    "rights": "© 2025 Frizerski salon, Nada Turk s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Nada Turk s.p.",
+    "address": "Iga vas 30, 1386 Stari trg pri Ložu, Slovenia",
+    "email": "",
+    "phone": "(01) 705 70 54"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

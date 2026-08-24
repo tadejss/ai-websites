@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "coastal-fog",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-matea/hero.jpg",
+      "alt": "Svetel in urejen frizerski salon z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-matea/services.jpg",
+      "alt": "Strokovno urejanje in barvanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Matea Prelc"
+  },
+  "metadata": {
+    "title": "Frizerski salon Matea Prelc, s.p. | Ilirska Bistrica",
+    "description": "Strokovno striženje, nega las in modne pričeske v Ilirski Bistrici z osebnim pristopom za vsako stranko."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Ilirska Bistrica",
+    "title": "Strokovno striženje in nega las za",
+    "titleHighlight": "vaš popoln videz",
+    "description": "V urejenem lokalnem salonu v Ilirski Bistrici poskrbimo za kakovostno striženje, modne pričeske in nego las z osebnim pristopom.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Delovni čas"
+      },
+      {
+        "value": "Kakovostna",
+        "label": "Nega las"
+      },
+      {
+        "value": "Ilirska",
+        "label": "Bistrica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Ponujamo celovite frizerske storitve za lokalne prebivalce in obiskovalce v Ilirski Bistrici ter okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričesk za vsako priložnost.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje in osvežitev barve z obstojnimi in negovalnimi produkti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prirejanje pričesk za posebne priložnosti",
+        "description": "Svečane in unikatne pričeske za poroke, praznovanja in druge dogodke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega in tretmaji za lase",
+        "description": "Globinska nega in profesionalni tretmaji za zdravje, lesk in vitalnost vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati naš salon?",
+    "description": "Zavedamo se, da so vaši lasje vaša osebna izkaznica, zato se vam posvetimo z vso pozornostjo.",
+    "highlights": [
+      "Prilagodljiv delovni čas z popoldanskimi in dopoldanskimi termini",
+      "Osebni pristop k vsaki stranki",
+      "Kakovostna nega in striženje las"
+    ],
+    "benefits": [
+      {
+        "stat": "Pristop",
+        "label": "Osebna obravnava",
+        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo vašim željam."
+      },
+      {
+        "stat": "Termini",
+        "label": "Prilagodljiv čas",
+        "description": "Nudimo popoldanske in dopoldanske termine, prilagojene vašemu urniku."
+      },
+      {
+        "stat": "Nega",
+        "label": "Kakovostni tretmaji",
+        "description": "Uporaba preverjenih metod in produktov za zdravje vaših las."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gregorčičeva cesta 21, 6250 Ilirska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 353 847",
+        "href": "tel:041353847",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Tor-Sre: 13:00-20:00, Čet: 08:00-15:00, Pet: 13:00-20:00, Sob: 07:00-12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Gregorčičeva cesta 21, 6250 Ilirska Bistrica, Slovenia",
+    "rights": "© Frizerski salon, Matea Prelc, s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Matea Prelc",
+    "address": "Gregorčičeva cesta 21, 6250 Ilirska Bistrica, Slovenia",
+    "email": "",
+    "phone": "041 353 847"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "brand": {
+    "prefix": "Vulkanizerstvo",
+    "highlight": "Mitja Kočevar s.p."
+  },
+  "metadata": {
+    "title": "Vulkanizerstvo Mitja Kočevar s.p. | Stari trg pri Ložu",
+    "description": "Zanesljive vulkanizerske storitve, premontaža, centriranje in hramba pnevmatik za osebna in dostavna vozila v Starem trgu pri Ložu in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Strokovne vulkanizerske storitve",
+    "title": "Zanesljive vulkanizerske storitve za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Zagotavljamo hitro, zanesljivo in strokovno oskrbo pnevmatik za lastnike osebnih in dostavnih vozil v Starem trgu pri Ložu in okolici.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "Oskrba"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Servis"
+      },
+      {
+        "value": "Lokalna",
+        "label": "Dostopnost"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Delo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita skrb za vaše pnevmatike",
+    "description": "Poskrbite za varno vožnjo z našimi preverjenimi storitvami za osebna in dostavna vozila na območju Starega trga pri Ložu in okolice.",
+    "items": [
+      {
+        "title": "Premontaža pnevmatik",
+        "description": "Strokovna menjava in premontaža pnevmatik za varno vožnjo v vseh vremenskih razmerah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Centriranje platišč",
+        "description": "Natančno centriranje platišč za nemoteno vožnjo in enakomerno obrabo pnevmatik.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Hramba pnevmatik",
+        "description": "Varno shranjevanje vaših sezonskih pnevmatik v ustreznih pogojih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravilo pnevmatik",
+        "description": "Kakovostno popravilo poškodb pnevmatik, kjer je to strokovno izvedljivo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prodaja pnevmatik",
+        "description": "Svetovanje in ponudba ustreznih pnevmatik za vaše osebno ali dostavno vozilo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Z domačim in strokovnim pristopom poskrbimo, da so vaše pnevmatike vedno pripravljene na cesto.",
+    "highlights": [
+      "Hiter in zanesljiv servis",
+      "Lokalna dostopnost v regiji",
+      "Strokovno delo z izkušnjami"
+    ],
+    "benefits": [
+      {
+        "stat": "Hitrost",
+        "label": "in zanesljivost",
+        "description": "Storitve opravimo zanesljivo in v dogovorjenem času."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "okolje",
+        "description": "Domača in dostopna vulkanizerska delavnica v Starem trgu pri Ložu."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "in izkušnje",
+        "description": "Kakovostno opravljeno delo za varno vožnjo vašega vozila."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Dogovorite se za termin",
+    "description": "Pokličite nas za naročilo na servis ali dodatna vprašanja glede pnevmatik.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 575 576",
+        "href": "tel:031575576",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Viševek 45a, 1386 Stari trg pri Ložu, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Pokličite za termin"
+    }
+  },
+  "footer": {
+    "address": "Viševek 45a, 1386 Stari trg pri Ložu, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vulkanizerstvo Mitja Kočevar s.p.",
+    "address": "Viševek 45a, 1386 Stari trg pri Ložu, Slovenia",
+    "email": "",
+    "phone": "031 575 576"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -8,7 +8,7 @@ type Bounds = { min: number; max: number };
 
 const SECTION_BOUNDS: Record<string, Bounds> = {
   "nav.links": { min: 3, max: 4 },
-  "hero.stats": { min: 3, max: 4 },
+  "hero.stats": { min: 4, max: 4 },
   "services.items": { min: 3, max: 6 },
   "whyChooseUs.highlights": { min: 3, max: 4 },
   "whyChooseUs.benefits": { min: 3, max: 4 },

@@ -1,4 +1,5 @@
 import type { ImageSearchBrief, UnsplashPhoto } from "../types";
+import { acquireUnsplashSearchSlot } from "../unsplash-rate-limit";
 
 const UNSPLASH_API = "https://api.unsplash.com";
 
@@ -26,6 +27,8 @@ async function searchPhotos(
     return undefined;
   }
 
+  await acquireUnsplashSearchSlot();
+
   const params = new URLSearchParams({
     query,
     per_page: "5",
@@ -43,9 +46,15 @@ async function searchPhotos(
     },
   });
 
-  if ((response.status === 403 || response.status === 429) && attempt < 2) {
-    await sleep(1000 * (attempt + 1));
-    return searchPhotos(query, orientation, attempt + 1);
+  if (response.status === 403 || response.status === 429) {
+    if (attempt < 1) {
+      await sleep(60_000);
+      return searchPhotos(query, orientation, attempt + 1);
+    }
+
+    throw new Error(
+      `Unsplash hourly quota exhausted (${response.status}); resume later.`,
+    );
   }
 
   if (!response.ok) {
@@ -62,23 +71,21 @@ async function findPhoto(
   brief: ImageSearchBrief,
   slot: "hero" | "services",
 ): Promise<UnsplashPhoto | undefined> {
-  const queries = [brief.query, FALLBACK_QUERIES[slot]];
-  const orientations: Array<ImageSearchBrief["orientation"] | undefined> = [
-    brief.orientation,
-    undefined,
-  ];
+  const primary = await searchPhotos(brief.query, brief.orientation);
 
-  for (const query of queries) {
-    for (const orientation of orientations) {
-      const photo = await searchPhotos(query, orientation);
+  if (primary) {
+    return primary;
+  }
 
-      if (photo) {
-        return photo;
-      }
+  if (brief.orientation) {
+    const unoriented = await searchPhotos(brief.query);
+
+    if (unoriented) {
+      return unoriented;
     }
   }
 
-  return undefined;
+  return searchPhotos(FALLBACK_QUERIES[slot]);
 }
 
 export async function downloadUnsplashPhoto(
