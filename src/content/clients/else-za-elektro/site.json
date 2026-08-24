@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/else-za-elektro/hero.jpg",
+      "alt": "Električar pri izvedbi elektro inštalacij v objektu"
+    },
+    "services": {
+      "src": "/clients/else-za-elektro/services.jpg",
+      "alt": "Orodja in material za elektro inštalacije in servis"
+    }
+  },
   "brand": {
     "prefix": "Else",
     "highlight": "d.o.o."

@@ -27,7 +27,11 @@ async function searchPhotos(
     return undefined;
   }
 
-  await acquireUnsplashSearchSlot();
+  const slot = await acquireUnsplashSearchSlot();
+
+  if (slot === "skipped") {
+    return undefined;
+  }
 
   const params = new URLSearchParams({
     query,
@@ -48,13 +52,14 @@ async function searchPhotos(
 
   if (response.status === 403 || response.status === 429) {
     if (attempt < 1) {
-      await sleep(60_000);
+      await sleep(5_000);
       return searchPhotos(query, orientation, attempt + 1);
     }
 
-    throw new Error(
-      `Unsplash hourly quota exhausted (${response.status}); resume later.`,
+    console.warn(
+      `Unsplash quota exhausted (${response.status}); falling back if available.`,
     );
+    return undefined;
   }
 
   if (!response.ok) {
@@ -110,7 +115,7 @@ export async function downloadUnsplashPhoto(
 
   return {
     data,
-    photographer: photo.user.name,
+    photographer: `${photo.user.name} (Unsplash)`,
   };
 }
 

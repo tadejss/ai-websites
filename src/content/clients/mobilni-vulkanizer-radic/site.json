@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/mobilni-vulkanizer-radic/hero.jpg",
+      "alt": "Mobilni vulkanizer nudi pomoč na cesti v meglenem jutru"
+    },
+    "services": {
+      "src": "/clients/mobilni-vulkanizer-radic/services.jpg",
+      "alt": "Menjava avtomobilske pnevmatike na terenu ob cesti"
+    }
+  },
   "brand": {
     "prefix": "Mobilni Vulkanizer",
     "highlight": "Radić"

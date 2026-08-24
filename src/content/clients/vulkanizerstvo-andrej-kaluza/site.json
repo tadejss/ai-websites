@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/vulkanizerstvo-andrej-kaluza/hero.jpg",
+      "alt": "Mehanik menja pnevmatike v sodobni delavnici"
+    },
+    "services": {
+      "src": "/clients/vulkanizerstvo-andrej-kaluza/services.jpg",
+      "alt": "Stroj za centriranje koles v avtomehanični delavnici"
+    }
+  },
   "brand": {
     "prefix": "Vulkanizerstvo",
     "highlight": "Andrej Kaluža s.p."

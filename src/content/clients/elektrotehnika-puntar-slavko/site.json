@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/elektrotehnika-puntar-slavko/hero.jpg",
+      "alt": "Električar med delom na elektro omarici"
+    },
+    "services": {
+      "src": "/clients/elektrotehnika-puntar-slavko/services.jpg",
+      "alt": "Elektroinštalacije in oprema za dom in podjetje"
+    }
+  },
   "brand": {
     "prefix": "Elektrotehnika Puntar",
     "highlight": "Slavko Puntar s.p."

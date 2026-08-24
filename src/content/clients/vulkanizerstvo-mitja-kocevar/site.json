@@ -14,6 +14,16 @@
     "sectionRule": "none",
     "cardStyle": "soft"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/vulkanizerstvo-mitja-kocevar/hero.jpg",
+      "alt": "Strokovne vulkanizerske storitve v delavnici"
+    },
+    "services": {
+      "src": "/clients/vulkanizerstvo-mitja-kocevar/services.jpg",
+      "alt": "Premontaža in centriranje pnevmatik"
+    }
+  },
   "brand": {
     "prefix": "Vulkanizerstvo",
     "highlight": "Mitja Kočevar s.p."

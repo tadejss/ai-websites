@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/wise-electronics/hero.jpg",
+      "alt": "Električar pri delu na sodobni električni napeljavi v svetlem prostoru"
+    },
+    "services": {
+      "src": "/clients/wise-electronics/services.jpg",
+      "alt": "Podrobnost električne omarice in napeljav za pametne inštalacije"
+    }
+  },
   "brand": {
     "prefix": "Wise",
     "highlight": "Electronics"

@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/popravilo-elektrotehnicnih-strojev/hero.jpg",
+      "alt": "Serviser popravlja gospodinjski aparat na domu stranke"
+    },
+    "services": {
+      "src": "/clients/popravilo-elektrotehnicnih-strojev/services.jpg",
+      "alt": "Orodja in rezervni deli za servis bele tehnike"
+    }
+  },
   "brand": {
     "prefix": "Servis",
     "highlight": "Marko Kranjec s.p."

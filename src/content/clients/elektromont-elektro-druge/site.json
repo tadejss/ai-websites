@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/elektromont-elektro-druge/hero.jpg",
+      "alt": "Električar pri delu na električni omarici v objektu"
+    },
+    "services": {
+      "src": "/clients/elektromont-elektro-druge/services.jpg",
+      "alt": "Orodje za elektroinštalacije in gradbena dela"
+    }
+  },
   "brand": {
     "prefix": "Elektro-Mont",
     "highlight": "Jani Samsa s.p."

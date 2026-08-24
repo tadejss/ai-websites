@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/elvip-elektroinstalacije-podboj/hero.jpg",
+      "alt": "Električar pri delu na sodobni električni napeljavi"
+    },
+    "services": {
+      "src": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "alt": "Strokovne elektroinštalacije in oprema"
+    }
+  },
   "brand": {
     "prefix": "El-Vip",
     "highlight": "elektroinštalacije"

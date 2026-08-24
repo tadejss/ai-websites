@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/vulkanizerstvo-rok-kompara/hero.jpg",
+      "alt": "Mehanik menja pnevmatiko na avtomobilu v delavnici"
+    },
+    "services": {
+      "src": "/clients/vulkanizerstvo-rok-kompara/services.jpg",
+      "alt": "Centriranje platišč in vulkanizerska dela"
+    }
+  },
   "brand": {
     "prefix": "Vulkanizerstvo",
     "highlight": "Rok Kompara s.p."

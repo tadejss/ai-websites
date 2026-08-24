@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/elmont-elektroservis-peter/hero.jpg",
+      "alt": "Električar med delom na električni omarici"
+    },
+    "services": {
+      "src": "/clients/elmont-elektroservis-peter/services.jpg",
+      "alt": "Strokovne elektroinštalacije in orodje"
+    }
+  },
   "brand": {
     "prefix": "Elmont",
     "highlight": "Elektroservis Peter Penko s.p."

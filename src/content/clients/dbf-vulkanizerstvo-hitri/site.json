@@ -14,6 +14,16 @@
     "sectionRule": "none",
     "cardStyle": "soft"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/dbf-vulkanizerstvo-hitri/hero.jpg",
+      "alt": "Notranjost avtomehanične delavnice z orodjem in avtomobilom"
+    },
+    "services": {
+      "src": "/clients/dbf-vulkanizerstvo-hitri/services.jpg",
+      "alt": "Menjava in centriranje pnevmatik v vulkanizerski delavnici"
+    }
+  },
   "brand": {
     "prefix": "Dbf",
     "highlight": "vulkanizerstvo"

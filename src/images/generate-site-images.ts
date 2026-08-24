@@ -2,9 +2,9 @@ import type { BusinessInput } from "@/ai/types";
 import type { SiteConfig, SiteImages } from "@/content/types/site";
 import { buildImageSearchPlan } from "./build-search-queries";
 import {
-  downloadUnsplashPhoto,
-  isUnsplashConfigured,
-} from "./providers/unsplash";
+  downloadStockPhoto,
+  isAnyImageProviderConfigured,
+} from "./download-stock-photo";
 import { saveClientImage } from "./save-client-image";
 import type { ImageSlot } from "./types";
 
@@ -14,7 +14,7 @@ async function fetchSlotImage(
   plan: Awaited<ReturnType<typeof buildImageSearchPlan>>,
 ): Promise<{ src: string; alt: string; photographer?: string } | undefined> {
   const brief = plan[slot];
-  const downloaded = await downloadUnsplashPhoto(brief, slot);
+  const downloaded = await downloadStockPhoto(brief, slot);
 
   if (!downloaded) {
     return undefined;
@@ -34,9 +34,9 @@ export async function generateSiteImages(
   businessInput: BusinessInput,
   siteConfig: SiteConfig,
 ): Promise<SiteImages | undefined> {
-  if (!isUnsplashConfigured()) {
+  if (!isAnyImageProviderConfigured()) {
     console.warn(
-      "UNSPLASH_ACCESS_KEY is not configured; skipping image generation.",
+      "Neither PEXELS_API_KEY nor UNSPLASH_ACCESS_KEY is configured; skipping image generation.",
     );
     return undefined;
   }

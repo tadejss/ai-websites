@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/vulkanizerstvo-izdelava-kljucev/hero.jpg",
+      "alt": "Avtovulkanizerska delavnica z opremo za premontažo pnevmatik"
+    },
+    "services": {
+      "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg",
+      "alt": "Natančna izdelava ključev v delavnici"
+    }
+  },
   "brand": {
     "prefix": "Damjan Rodošek",
     "highlight": "s.p."

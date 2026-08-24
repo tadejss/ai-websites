@@ -14,6 +14,16 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "/clients/servis-industrijske-elektronike/hero.jpg",
+      "alt": "Tehnik med popravilom industrijske elektronike v delavnici"
+    },
+    "services": {
+      "src": "/clients/servis-industrijske-elektronike/services.jpg",
+      "alt": "Diagnostika in vzdrževanje industrijskih elektronskih naprav"
+    }
+  },
   "brand": {
     "prefix": "Servis Lavrič",
     "highlight": "Igor s.p."
