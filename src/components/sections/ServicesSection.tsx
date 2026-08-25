@@ -1,6 +1,6 @@
-import { Icon } from "@/content/icons";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { TextList, TextListItem } from "@/components/ui/TextListItem";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -9,6 +9,7 @@ type Props = {
 
 export function ServicesSection({ siteConfig }: Props) {
   const { services } = siteConfig;
+
   return (
     <Section id={services.id}>
       <SectionHeading
@@ -17,24 +18,22 @@ export function ServicesSection({ siteConfig }: Props) {
         description={services.description}
       />
 
-      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <TextList className="mx-auto mt-12 max-w-2xl space-y-10">
         {services.items.map((service) => (
-          <article
+          <TextListItem
             key={service.title}
-            className="group rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/30 hover:bg-surface-elevated"
-          >
-            <div className="flex size-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-background">
-              <Icon name={service.icon} />
-            </div>
-            <h3 className="mt-5 text-lg font-semibold text-foreground">
-              {service.title}
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted">
-              {service.description}
-            </p>
-          </article>
+            title={service.title}
+            description={service.description}
+          />
         ))}
-      </div>
+
+        {services.pricing ? (
+          <TextListItem
+            title={services.pricing.title}
+            description={services.pricing.description}
+          />
+        ) : null}
+      </TextList>
     </Section>
   );
 }

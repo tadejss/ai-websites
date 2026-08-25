@@ -39,7 +39,7 @@ Structure requirements:
 - nav: { links: [{ href: string, label: string } x3], cta: string }
 - hero: { badge: string, title: string, titleHighlight: string, description: string, primaryCta: string, secondaryCta: string, stats: [{ value: string, label: string } exactly 4] }
 - services: { id: string, eyebrow: string, title: string, description: string, items: [{ title: string, description: string, icon: IconName } x4-6] }
-- whyChooseUs: { id: string, eyebrow: string, title: string, description: string, highlights: [string x3-4], benefits: [{ stat: string, label: string, description: string } x3] }
+- whyChooseUs: { id: string, eyebrow: string, title: string, description: string, highlights: [string x3-4], benefits: [{ title: string, description: string, stat?: string, label?: string } x3] }
 - contact: { id: string, eyebrow: string, title: string, description: string, items: ContactItem[], form: ContactForm }
 - footer: { address: string, rights: string }
 
@@ -102,11 +102,15 @@ Factual accuracy rules (strict):
 - NEVER claim 24/7 or non-stop availability unless openingHours says so
 - NEVER invent services that are not in the business input
 
-hero.stats and whyChooseUs.benefits[].stat do NOT have to be numbers. When there is no supportable number, use a short qualitative word instead.
+Typography rules for services and whyChooseUs (these render as title + one sentence, not cards):
+- services.items[].title: a short service name or phrase (e.g. "Otroško striženje", "Talno gretje", "Montaža pametnih inštalacij") — not a long slogan
+- services.items[].description: exactly one clear sentence
+- whyChooseUs.benefits: prefer a single "title" field as a short word or phrase (e.g. "Strokovnost", "Lokalna izvedba") plus "description" as one sentence; still include "label" (may match title) because it is required by the schema; stat remains optional
+- highlights remain in the JSON schema but are not shown; keep them short and factual anyway
+
+hero.stats do NOT have to be numbers. When there is no supportable number, use a short qualitative word instead.
 
 For hero.stats, prefer a single "title" field with the full USP phrase (e.g. "Osebni pristop", "Kodrasta nega"). You may still include value and label for backward compatibility, but title is preferred.
-
-For whyChooseUs.benefits, prefer a single "title" field combining stat and label when they form one phrase (e.g. "Strokovno osebje"). Keep description separate.
 
 BAD stats (invented social proof):
 { "value": "100%", "label": "Zadovoljne stranke" }
