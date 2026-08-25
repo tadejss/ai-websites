@@ -1,5 +1,5 @@
+import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TextList, TextListItem } from "@/components/ui/TextListItem";
 import { BeautyImage } from "./BeautyImage";
 import { resolveBeautyLayout } from "../assign-layout";
 import type { SiteConfig } from "@/content/types/site";
@@ -8,7 +8,7 @@ type Props = {
   siteConfig: SiteConfig;
 };
 
-function ServiceList({
+function ServiceCards({
   siteConfig,
   className,
 }: {
@@ -18,24 +18,39 @@ function ServiceList({
   const { services } = siteConfig;
 
   return (
-    <TextList variant="beauty" className={className ?? "space-y-12"}>
+    <div className={className ?? "flex flex-col gap-5"}>
       {services.items.map((service) => (
-        <TextListItem
+        <article
           key={service.title}
-          variant="beauty"
-          title={service.title}
-          description={service.description}
-        />
+          className="rounded-[var(--radius-card)] bg-surface p-7 transition-colors hover:bg-surface-elevated sm:p-9"
+        >
+          <div className="flex items-start gap-5">
+            <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-accent/10 bg-background text-accent">
+              <Icon name={service.icon} />
+            </div>
+            <div>
+              <h3 className="font-display text-2xl leading-tight text-foreground sm:text-3xl">
+                {service.title}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
+                {service.description}
+              </p>
+            </div>
+          </div>
+        </article>
       ))}
 
       {services.pricing ? (
-        <TextListItem
-          variant="beauty"
-          title={services.pricing.title}
-          description={services.pricing.description}
-        />
+        <article className="rounded-[var(--radius-card)] border border-accent/20 bg-accent/10 p-7 sm:p-9 md:col-span-2">
+          <h3 className="font-display text-2xl leading-tight text-foreground sm:text-3xl">
+            {services.pricing.title}
+          </h3>
+          <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
+            {services.pricing.description}
+          </p>
+        </article>
       ) : null}
-    </TextList>
+    </div>
   );
 }
 
@@ -60,31 +75,31 @@ export function BeautyServicesSection({ siteConfig }: Props) {
         />
 
         {showImage ? (
-          <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
+          <div className="mt-14 grid gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-10">
             {imageOnLeft ? (
               <>
                 <BeautyImage
                   src={images?.services.src}
                   alt={images?.services.alt ?? services.title}
-                  className="min-h-[320px] lg:min-h-[28rem]"
+                  className="min-h-[320px] lg:min-h-full"
                 />
-                <ServiceList siteConfig={siteConfig} />
+                <ServiceCards siteConfig={siteConfig} />
               </>
             ) : (
               <>
-                <ServiceList siteConfig={siteConfig} />
+                <ServiceCards siteConfig={siteConfig} />
                 <BeautyImage
                   src={images?.services.src}
                   alt={images?.services.alt ?? services.title}
-                  className="min-h-[320px] lg:min-h-[28rem]"
+                  className="min-h-[320px] lg:min-h-full"
                 />
               </>
             )}
           </div>
         ) : (
-          <ServiceList
+          <ServiceCards
             siteConfig={siteConfig}
-            className="mx-auto mt-14 max-w-2xl space-y-12"
+            className="mt-14 grid gap-5 md:grid-cols-2"
           />
         )}
       </div>

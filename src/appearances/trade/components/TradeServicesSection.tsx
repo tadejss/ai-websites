@@ -1,7 +1,7 @@
+import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TextList, TextListItem } from "@/components/ui/TextListItem";
 import { TradeImage } from "./TradeImage";
-import { TradeSection } from "./TradeSection";
+import { TradeSection, tradeCardClass } from "./TradeSection";
 import { resolveTradeLayoutFromConfig } from "./trade-layout";
 import type { SiteConfig } from "@/content/types/site";
 
@@ -9,34 +9,47 @@ type Props = {
   siteConfig: SiteConfig;
 };
 
-function ServiceList({
+function ServiceCards({
   siteConfig,
   className,
+  cardClass,
 }: {
   siteConfig: SiteConfig;
   className?: string;
+  cardClass: string;
 }) {
   const { services } = siteConfig;
 
   return (
-    <TextList variant="trade" className={className ?? "space-y-12"}>
+    <div className={className ?? "grid gap-6 sm:grid-cols-2"}>
       {services.items.map((service) => (
-        <TextListItem
+        <article
           key={service.title}
-          variant="trade"
-          title={service.title}
-          description={service.description}
-        />
+          className={`group transition-colors hover:bg-surface-elevated ${cardClass}`}
+        >
+          <div className="flex size-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
+            <Icon name={service.icon} />
+          </div>
+          <h3 className="font-display mt-5 text-lg font-semibold text-foreground">
+            {service.title}
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted">
+            {service.description}
+          </p>
+        </article>
       ))}
 
       {services.pricing ? (
-        <TextListItem
-          variant="trade"
-          title={services.pricing.title}
-          description={services.pricing.description}
-        />
+        <article className="rounded-[var(--radius-card)] border border-accent/30 bg-accent/10 p-6 sm:col-span-2">
+          <h3 className="font-display text-lg font-semibold text-foreground">
+            {services.pricing.title}
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-muted">
+            {services.pricing.description}
+          </p>
+        </article>
       ) : null}
-    </TextList>
+    </div>
   );
 }
 
@@ -46,6 +59,7 @@ export function TradeServicesSection({ siteConfig }: Props) {
   const hasServicesImage = Boolean(images?.services?.src);
   const showImage = layout.servicesImageSide !== "none" && hasServicesImage;
   const imageOnLeft = layout.servicesImageSide === "left";
+  const cardClass = tradeCardClass(layout.cardStyle);
 
   return (
     <TradeSection id={services.id} sectionRule={layout.sectionRule}>
@@ -57,31 +71,40 @@ export function TradeServicesSection({ siteConfig }: Props) {
       />
 
       {showImage ? (
-        <div className="mt-16 grid gap-10 lg:grid-cols-2 lg:items-start">
+        <div className="mt-16 grid gap-8 lg:grid-cols-2 lg:items-stretch">
           {imageOnLeft ? (
             <>
               <TradeImage
                 src={images?.services.src}
                 alt={images?.services.alt ?? services.title}
-                className="min-h-[280px] lg:min-h-[24rem]"
+                className="min-h-[280px] lg:min-h-full"
               />
-              <ServiceList siteConfig={siteConfig} />
+              <ServiceCards
+                siteConfig={siteConfig}
+                className="grid gap-6 sm:grid-cols-1"
+                cardClass={cardClass}
+              />
             </>
           ) : (
             <>
-              <ServiceList siteConfig={siteConfig} />
+              <ServiceCards
+                siteConfig={siteConfig}
+                className="grid gap-6 sm:grid-cols-1"
+                cardClass={cardClass}
+              />
               <TradeImage
                 src={images?.services.src}
                 alt={images?.services.alt ?? services.title}
-                className="min-h-[280px] lg:min-h-[24rem]"
+                className="min-h-[280px] lg:min-h-full"
               />
             </>
           )}
         </div>
       ) : (
-        <ServiceList
+        <ServiceCards
           siteConfig={siteConfig}
-          className="mx-auto mt-16 max-w-2xl space-y-12"
+          className="mt-16 grid gap-6 sm:grid-cols-2"
+          cardClass={cardClass}
         />
       )}
     </TradeSection>

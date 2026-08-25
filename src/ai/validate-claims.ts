@@ -79,9 +79,6 @@ export function collectVisibleCopy(
   });
 
   config.whyChooseUs.benefits.forEach((benefit, index) => {
-    if (benefit.title) {
-      entries.push([`whyChooseUs.benefits[${index}].title`, benefit.title]);
-    }
     if (benefit.stat) {
       entries.push([`whyChooseUs.benefits[${index}].stat`, benefit.stat]);
     }
