@@ -21,7 +21,7 @@ function resolveNavHref(href: string, siteSlug: string): string {
 }
 
 export function ZbrendirajHeader({ siteConfig, siteSlug }: Props) {
-  const { brand, nav, contact } = siteConfig;
+  const { brand, nav } = siteConfig;
   const brandName = formatBrandName(brand);
 
   return (
@@ -41,7 +41,7 @@ export function ZbrendirajHeader({ siteConfig, siteSlug }: Props) {
               {link.label}
             </a>
           ))}
-          <ZbrendirajButton href={`#${contact.id}`}>{nav.cta}</ZbrendirajButton>
+          <ZbrendirajButton href="#cenik">{nav.cta}</ZbrendirajButton>
         </div>
 
         <details className="relative lg:hidden">
@@ -63,7 +63,7 @@ export function ZbrendirajHeader({ siteConfig, siteSlug }: Props) {
               </a>
             ))}
             <a
-              href={`#${contact.id}`}
+              href="#cenik"
               className="mt-2 block rounded-full bg-accent px-4 py-3 text-center text-sm font-semibold text-black"
             >
               {nav.cta}

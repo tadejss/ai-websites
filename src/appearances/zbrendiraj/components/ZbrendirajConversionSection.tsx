@@ -7,7 +7,7 @@ type Props = {
 };
 
 export function ZbrendirajConversionSection({ siteConfig }: Props) {
-  const { contact, nav } = siteConfig;
+  const { nav } = siteConfig;
 
   return (
     <section
@@ -24,7 +24,7 @@ export function ZbrendirajConversionSection({ siteConfig }: Props) {
           pripravljeno za tvoje stranke.
         </p>
         <div className="mt-10 flex justify-center">
-          <ZbrendirajButton href={`#${contact.id}`} className="px-8">
+          <ZbrendirajButton href="#cenik" className="px-8">
             {nav.cta}
           </ZbrendirajButton>
         </div>

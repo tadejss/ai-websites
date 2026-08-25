@@ -40,6 +40,10 @@
       {
         "href": "pogosta-vprasanja",
         "label": "FAQ"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
       }
     ],
     "cta": "Začni zdaj"

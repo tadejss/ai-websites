@@ -7,7 +7,7 @@ type Props = {
 };
 
 export function ZbrendirajHeroSection({ siteConfig }: Props) {
-  const { hero, contact } = siteConfig;
+  const { hero } = siteConfig;
   const secondaryHref = hero.secondaryCtaHref ?? "#primere";
 
   return (
@@ -31,7 +31,7 @@ export function ZbrendirajHeroSection({ siteConfig }: Props) {
           </div>
 
           <div className="mt-10 flex flex-col gap-3 sm:mt-12 sm:flex-row sm:flex-wrap">
-            <ZbrendirajButton href={`#${contact.id}`}>{hero.primaryCta}</ZbrendirajButton>
+            <ZbrendirajButton href="#cenik">{hero.primaryCta}</ZbrendirajButton>
             <ZbrendirajButton href={secondaryHref} variant="outline">
               {hero.secondaryCta}
             </ZbrendirajButton>
