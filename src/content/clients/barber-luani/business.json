@@ -1,0 +1,28 @@
+{
+  "companyName": "Barber Luani",
+  "industry": "Brivec",
+  "tagline": "Vrhunske brivske storitve in urejanje pričesk v Novem mestu",
+  "services": [
+    "Moško striženje",
+    "Urejanje brade",
+    "Klasično britje",
+    "Taper fade",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "070 446 947",
+  "email": "",
+  "address": "Novi trg 9, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 7:30 PM · Tuesday: 9:00 AM – 7:30 PM · Wednesday: 9:00 AM – 7:30 PM · Thursday: 9:00 AM – 7:30 PM · Friday: 9:00 AM – 7:30 PM · Saturday: 9:00 AM – 7:30 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Priljubljene moderne frizure, kot je taper fade",
+    "Priročni delovni čas tudi ob sobotah",
+    "Lokacija v središču Novega mesta"
+  ],
+  "targetCustomers": "Moški, ki cenijo urejen videz, sodobne pričeske in nego brade",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "moderen brivski salon",
+  "competitors": "Lokalni frizerski saloni in brivci v Novem mestu",
+  "callToAction": "Rezervirajte termin"
+}

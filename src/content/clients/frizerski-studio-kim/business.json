@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski studio Kim",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje, barvanje in osebni pristop za vso družino",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Stiliranje in nega las"
+  ],
+  "phone": "041 410 585",
+  "email": "",
+  "address": "Ljubljanska cesta 80, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 7:00 PM · Tuesday: 8:00 AM – 7:00 PM · Wednesday: 8:00 AM – 7:00 PM · Thursday: 8:00 AM – 7:00 PM · Friday: 8:00 AM – 7:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prijazen in potrpežljiv pristop do otrok",
+    "Natančne in strokovne frizerske storitve",
+    "Prijazne in dostopne cene",
+    "Prijeten in udoben ambient v studiu"
+  ],
+  "targetCustomers": "Posamezniki, družine in otroci, ki iščejo kakovostne frizerske storitve z osebnim pristopom",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel in domač salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

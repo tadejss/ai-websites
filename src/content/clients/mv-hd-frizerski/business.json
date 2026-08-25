@@ -1,0 +1,29 @@
+{
+  "companyName": "Mv Hd frizerski atelje Matija Vavtar s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve in sproščeno vzdušje v Novem mestu",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Oblikovanje pričesk",
+    "Barvanje las",
+    "Svetovanje o negi las"
+  ],
+  "phone": "040 228 069",
+  "email": "",
+  "address": "Rozmanova ulica 25, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 12:00 – 8:00 PM · Tuesday: 12:00 – 8:00 PM · Wednesday: 8:00 AM – 3:00 PM · Thursday: 8:00 AM – 3:00 PM · Friday: 8:00 AM – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunska strokovnost in pozornost do podrobnosti",
+    "Sproščeno in prijetno vzdušje",
+    "Skrb za dobro počutje strank",
+    "Odlične ocene zadovoljnih strank"
+  ],
+  "targetCustomers": "Vsi, ki cenijo kakovostno striženje, strokovno svetovanje in sproščen pristop v Novem mestu.",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

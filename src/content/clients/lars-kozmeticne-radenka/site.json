@@ -1,0 +1,197 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "peach-bloom",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/lars-kozmeticne-radenka/hero.jpg",
+      "alt": "Topel in svetel kozmetični salon z urejenim prostorom za nego"
+    },
+    "services": {
+      "src": "/clients/lars-kozmeticne-radenka/services.jpg",
+      "alt": "Strokovna nega obraza in kozmetične storitve v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "Lars",
+    "highlight": "Kozmetika"
+  },
+  "metadata": {
+    "title": "Lars, kozmetične storitve Radenka Stakić s.p. | Novo mesto",
+    "description": "Strokovne kozmetične storitve, manikura in nega obraza v Novem mestu z večletnimi izkušnjami. Rezervirajte svoj termin za urejen videz in dobro počutje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon v Novem mestu",
+    "title": "Strokovne kozmetične storitve in urejen videz za",
+    "titleHighlight": "vaše dobro počutje",
+    "description": "Namenjeno vsem, ki cenijo strokovno nego, urejen videz in osebni pristop v Novem mestu.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Večletne",
+        "label": "Izkušnje"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Znanje"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše kozmetične storitve",
+    "description": "Celovite in strokovne storitve za nego in urejen videz, prilagojene vašim željam.",
+    "items": [
+      {
+        "title": "Manikura",
+        "description": "Urejanje in nega nohtov za lep ter negovan videz vaših rok.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nega obraza",
+        "description": "Strokovna nega obraza za sijočo, svežo in zdravo kožo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Kozmetične storitve",
+        "description": "Različne kozmetične storitve za vaše dobro počutje in sprostitev.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje in nega telesa",
+        "description": "Strokovno svetovanje in nega za celostno skrb za vaše telo.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vašo lepotno nego",
+    "description": "Z dolgoletnimi izkušnjami in prijaznim pristopom poskrbimo, da se boste v naši družbi počutili sproščeno in urejeno.",
+    "highlights": [
+      "Dolgoletne izkušnje in strokovno znanje",
+      "Prijazen pristop in prilagajanje željam strank",
+      "Visoka raven profesionalnosti"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "in znanje",
+        "description": "Dolgoletne izkušnje na področju kozmetičnih storitev zagotavljajo kakovost."
+      },
+      {
+        "stat": "Prilagojenost",
+        "label": "strankam",
+        "description": "Prijazen pristop in posluh za individualne želje vsake stranke."
+      },
+      {
+        "stat": "Zadovoljstvo",
+        "label": "in urejenost",
+        "description": "Visoka raven profesionalnosti za vaše dobro počutje."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših kozmetičnih storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Seidlova cesta 24, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za rezervacijo termina ali dodatne informacije.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeni termin",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Seidlova cesta 24, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lars Kozmetika",
+    "address": "Seidlova cesta 24, 8000 Novo mesto, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

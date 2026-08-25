@@ -1,0 +1,28 @@
+{
+  "companyName": "Lepotni studio Mojca Košiček - Bevc s.p.",
+  "industry": "Kozmetični salon",
+  "tagline": "Vaša oaza za lepoto in dobro počutje v Novem mestu.",
+  "services": [
+    "Nega obraza",
+    "Manikura",
+    "Pedikura",
+    "Ličenje",
+    "Oblikovanje obrvi"
+  ],
+  "phone": "(07) 338 28 22",
+  "email": "",
+  "address": "Lebanova ulica 9, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prijazno in domače vzdušje",
+    "Individualen pristop k vsaki stranki",
+    "Strokovna nega in posvečenost"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo kakovostne lepotne storitve in sprostitev",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, topel in strokoven",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "Lokalni kozmetični saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

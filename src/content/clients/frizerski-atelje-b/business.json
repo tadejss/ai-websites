@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski atelje \"B\" Bojana Černoga Udovč s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve v sproščenem in prijetnem vzdušju",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "(07) 488 16 14",
+  "email": "",
+  "address": "Cesta krških žrtev 135 C, 8270 Krško, Slovenia",
+  "openingHours": "Monday: 7:30 AM – 8:00 PM · Tuesday: 7:30 AM – 8:00 PM · Wednesday: 7:30 AM – 8:00 PM · Thursday: 7:30 AM – 8:00 PM · Friday: 7:30 AM – 8:00 PM · Saturday: 7:30 AM – 2:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Držanje dogovorjenih terminov",
+    "Sproščeno in zabavno vzdušje",
+    "Kakovostna storitev po dostopni ceni",
+    "Zagotovljeno parkirno mesto"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci, ki iščejo kakovostne frizerske storitve v prijetnem okolju",
+  "serviceArea": "Krško z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, domač",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v občini Krško",
+  "callToAction": "Naročite se na termin"
+}

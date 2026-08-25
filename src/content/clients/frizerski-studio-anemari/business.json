@@ -1,0 +1,27 @@
+{
+  "companyName": "Frizerski studio Ane-Mari, Ana Marija Danko s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve za vaš popoln videz v Krškem.",
+  "services": [
+    "Striženje in oblikovanje las",
+    "Barvanje las in prameni",
+    "Priprava pričesk za posebne prilike",
+    "Nega in obnova las"
+  ],
+  "phone": "041 433 419",
+  "email": "",
+  "address": "Kovinarska ulica 8, 8270 Krško, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Top storitve in prijazen pristop",
+    "Individualno svetovanje za nego las",
+    "Udoben in sproščen ambient"
+  ],
+  "targetCustomers": "Posamezniki, ki cenijo kakovostno striženje, nego in urejen videz las.",
+  "serviceArea": "Krško in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, topel, strokoven",
+  "brandStyle": "modern in urejen salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

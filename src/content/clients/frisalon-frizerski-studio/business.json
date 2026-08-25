@@ -1,0 +1,27 @@
+{
+  "companyName": "Frisalon frizerski studio Renata Blatnik s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje, nega las in modne pričeske v Novem mestu",
+  "services": [
+    "Žensko in moško striženje",
+    "Barvanje las in prameni",
+    "Stilsko oblikovanje pričesk",
+    "Nega in tretmaji za lase"
+  ],
+  "phone": "(07) 332 27 77",
+  "email": "",
+  "address": "Novi trg 10, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Celovite frizerske storitve za vso družino",
+    "Prilagodljiv pristop k željam strank",
+    "Prijeten ambient v središču Novega mesta"
+  ],
+  "targetCustomers": "Posamezniki in družine, ki iščejo kakovostne frizerske storitve v Novem mestu",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

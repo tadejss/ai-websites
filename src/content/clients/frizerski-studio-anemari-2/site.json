@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "blush-champagne",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-anemari-2/hero.jpg",
+      "alt": "Topel in domač interior frizerskega studia z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-anemari-2/services.jpg",
+      "alt": "Strokovno striženje in urejanje las v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Ane-Mari"
+  },
+  "metadata": {
+    "title": "Frizerski studio Ane-Mari | Krško",
+    "description": "Strokovne frizerske storitve v Krškem z okolico. Celovito striženje, barvanje, urejanje pričesk in nega las v prijetnem domačem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lokalni frizerski salon v Krškem",
+    "title": "Strokovne frizerske storitve za",
+    "titleHighlight": "vaše lase",
+    "description": "Dobrodošli v našem domačem lokalnem salonu v Krškem. Nudimo celovite frizerske storitve, prilagojene prebivalcem Krškega in okolice, ki iščejo redno urejanje in nego las.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Udoben",
+        "label": "Ambient"
+      },
+      {
+        "value": "Celovite",
+        "label": "Storitve"
+      },
+      {
+        "value": "Krško",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve",
+    "description": "Poskrbite za zdravje in izgled svojih las z našimi strokovnimi storitvami v Krškem.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Natančno in prilagojeno striženje za osvežitev vašega videza in enostavno vzdrževanje pričeske.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje in odtenki, ki poudarijo vašo naravno lepoto ter poskrbijo za sijoč videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti, prilagojeno vašim željam in tipu las.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive nege za različne tipe las, ki povrnejo mehkobo, lesk in zdravje vašim lasem.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač ambient in strokovna skrb za vaše lase",
+    "description": "V Frizerskem studiu Ane-Mari se posvetimo vsaki stranki posebej ter poskrbimo za prijetno izkušnjo urejanja las.",
+    "highlights": [
+      "Osebni pristop k vsaki stranki in individualno svetovanje",
+      "Celovite frizerske storitve primerne za različne tipe las",
+      "Udoben in sproščen lokalni ambient v Krškem"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebno",
+        "label": "Sodelovanje",
+        "description": "Prisluhnemo vašim željam in skupaj poiščemo najboljšo pričesko za vas."
+      },
+      {
+        "stat": "Lokalno",
+        "label": "Povezovanje",
+        "description": "Zanesljiv frizerski salon za prebivalce Krškega in širše okolice."
+      },
+      {
+        "stat": "Celovito",
+        "label": "Urejanje",
+        "description": "Vse storitve od striženja do nege las na enem mestu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Cesti krških žrtev 137 v Krškem ali nas pokličite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 433 419",
+        "href": "tel:041433419",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 137, 8270 Krško, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 137, 8270 Krško, Slovenia",
+    "rights": "© Frizerski studio Ane-Mari, Ana Marija Danko s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Ane-Mari",
+    "address": "Cesta krških žrtev 137, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "041 433 419"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

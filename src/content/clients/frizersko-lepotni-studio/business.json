@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizersko lepotni studio AS",
+  "industry": "Frizerski salon",
+  "tagline": "Vaš zanesljiv naslov za urejen videz in nego las v Novem mestu",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Frizure za priložnosti",
+    "Nega las",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "(07) 302 35 71",
+  "email": "",
+  "address": "Zwittrova ulica 1, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 6:00 PM · Tuesday: 7:00 AM – 6:00 PM · Wednesday: 7:00 AM – 6:00 PM · Thursday: 7:00 AM – 6:00 PM · Friday: 7:00 AM – 6:00 PM · Saturday: 7:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Prijazna in strokovna storitev",
+    "Prilagodljiv delovni čas"
+  ],
+  "targetCustomers": "Vsi, ki cenijo urejen videz, kakovostno striženje in prijetno vzdušje v Novem mestu",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "moderen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

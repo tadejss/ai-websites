@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sage-meadow",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/barber-luani/hero.jpg",
+      "alt": "Moderen brivski salon v Novem mestu z urejenim prostorom za moško striženje"
+    },
+    "services": {
+      "src": "/clients/barber-luani/services.jpg",
+      "alt": "Nega brade in natančno moško striženje v brivskem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Barber",
+    "highlight": "Luani"
+  },
+  "metadata": {
+    "title": "Barber Luani | Brivec Novo mesto",
+    "description": "Vrhunske brivske storitve in urejanje pričesk za moške v Novem mestu z okolico. Moško striženje, urejanje brade, taper fade in klasično britje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Moderen brivski salon v Novem mestu",
+    "title": "Vrhunske brivske storitve in",
+    "titleHighlight": "urejanje pričesk",
+    "description": "Namenjeno moškim, ki cenijo urejen videz, sodobne pričeske in nego brade v Novem mestu z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Moderne",
+        "label": "Frizure"
+      },
+      {
+        "value": "Novi trg",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Odprti",
+        "label": "Tudi ob sobotah"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za urejen videz",
+    "description": "Celovite brivske storitve prilagojene vašim željam in sodobnim trendom v Novem mestu.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Kakovostno striženje las po vaših željah in obliki glave.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Urejanje brade",
+        "description": "Nega in natančno oblikovanje brade za popoln videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Klasično britje",
+        "description": "Tradicionalno britje z britvijo za popolno gladkost in sprostitev.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Taper fade",
+        "description": "Priljubljene moderne in ostre linije striženja s prehodom.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Strokovno zaključno oblikovanje in svetovanje glede nege.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Mesto, kjer se tradicija sreča s sodobnim stilom",
+    "description": "Z našim strokovnim in prijaznim pristopom poskrbimo, da boste vedno izstopali z urejenim videzom.",
+    "highlights": [
+      "Priljubljene moderne frizure, kot je taper fade",
+      "Priročni delovni čas tudi ob sobotah",
+      "Lokacija v središču Novega mesta"
+    ],
+    "benefits": [
+      {
+        "stat": "Sodobno",
+        "label": "Oblikovanje",
+        "description": "Sledenje sodobnim brivskim trendom za izjemen končni videz."
+      },
+      {
+        "stat": "Dostopno",
+        "label": "Lokacija",
+        "description": "Nahajamo se na priročni lokaciji na Novem trgu v Novem mestu."
+      },
+      {
+        "stat": "Prilagodljivo",
+        "label": "Delovni čas",
+        "description": "Odprti smo vsak dan od ponedeljka do sobote, kar olajša obisk."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite v salonu Barber Luani.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Novi trg 9, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 446 947",
+        "href": "tel:070446947",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 9:00 – 19:30, Nedelja: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Novi trg 9, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Barber Luani",
+    "address": "Novi trg 9, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "070 446 947"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

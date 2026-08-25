@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Jelka Rudi Redek s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Kakovostno striženje, nega in oblikovanje las v Novem mestu",
+  "services": [
+    "Moško in žensko striženje",
+    "Nega in obnova poškodovanih las",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Svetovanje pri negi las"
+  ],
+  "phone": "031 736 532",
+  "email": "",
+  "address": "Paderšičeva ulica 12, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 7:30 AM – 7:00 PM · Wednesday: 1:00 – 7:30 PM · Thursday: 7:30 AM – 3:30 PM · Friday: 1:00 – 7:30 PM · Saturday: 7:30 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka kakovost in natančnost striženja",
+    "Strokovna obnova in reševanje poškodovanih las",
+    "Hitra in cenovno dostopna storitev",
+    "Prijazen in strokoven pristop k strankam"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo zanesljivega frizerja za kakovostno striženje in nego las v Novem mestu",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte termin"
+}

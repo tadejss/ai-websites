@@ -1,0 +1,28 @@
+{
+  "companyName": "Epiks frizerski salon Katja Katja Trontelj Potočar s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Vaš zanesljiv frizerski salon za čudovit izgled in dobro počutje",
+  "services": [
+    "Striženje in oblikovanje las",
+    "Barvanje las",
+    "Prameni in balayage",
+    "Svečane pričeske",
+    "Nega las"
+  ],
+  "phone": "041 348 773",
+  "email": "",
+  "address": "Drska 16a, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunske storitve z odličnimi ocenami strank",
+    "Prijazno in domače vzdušje v salonu",
+    "Strokoven in topel pristop k vsaki stranki"
+  ],
+  "targetCustomers": "Ljudje vseh starosti, ki cenijo kakovostno nego las in prijetno vzdušje",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, topel in strokoven",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

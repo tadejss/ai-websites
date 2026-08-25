@@ -1,0 +1,29 @@
+{
+  "companyName": "Natura Frizura",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve v prijetnem in toplem okolju",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje las",
+    "Nega las"
+  ],
+  "phone": "",
+  "email": "",
+  "address": "Krka 58c, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Dolgoletne izkušnje in vrhunska strokovnost frizerke",
+    "Topel, prijeten in domač ambient",
+    "Pozitivna energija in sproščeno vzdušje",
+    "Izjemno osebni pristop k vsaki stranki"
+  ],
+  "targetCustomers": "Vsi, ki cenijo kakovostno striženje, nego las in prijetno ter sproščeno okolje",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "Več kot desetletje izkušenj",
+  "tone": "topel, prijazen, domač",
+  "brandStyle": "privlačen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

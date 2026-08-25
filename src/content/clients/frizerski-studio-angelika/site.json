@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "olive-gold",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-angelika/hero.jpg",
+      "alt": "Notranjost prijetnega frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-angelika/services.jpg",
+      "alt": "Strokovno barvanje in urejanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Angelika"
+  },
+  "metadata": {
+    "title": "Frizerski studio Angelika Pavlin Dragica s.p. | Krško",
+    "description": "Ustvarjalne pričeske in osebni pristop za vaše lase v Krškem in okolici. Prijazen, topel in strokoven frizerski salon za vso družino."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Lokalni frizerski salon v Krškem",
+    "title": "Ustvarjalne pričeske in",
+    "titleHighlight": "osebni pristop",
+    "description": "Nudimo urejanje las za ljudi vseh starosti v Krškem in okolici. Prepustite se prijaznim rokam in poskrbite za svoj urejen videz.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Urejen",
+        "label": "Videz"
+      },
+      {
+        "value": "Ljudje",
+        "label": "Vseh starosti"
+      },
+      {
+        "value": "Krško",
+        "label": "in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "V našem salonu v Krškem poskrbimo za celostno nego in urejanje vaših las z upoštevanjem individualnih želja.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk, prilagojenih vaši obliki obraza in stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasična in moderna moška striženja ter urejanje videza.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve, prameni in popolna preobrazba.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Frizure za vsak dan in posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Kakovostna nega za zdravje in sijaj vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel in zanesljiv lokalni salon",
+    "description": "Zavedamo se, da so lepi lasje del vaše samozavesti. Zato se vsaki stranki posvetimo individualno.",
+    "highlights": [
+      "Prijazna in ustvarjalna frizerka",
+      "Upoštevanje individualnih želja strank",
+      "Zveste in zadovoljne stranke"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in toplina",
+        "description": "Ustvarjamo sproščeno in domače vzdušje za vsak obisk."
+      },
+      {
+        "stat": "Poslušanje",
+        "label": "želja",
+        "description": "Skrbno prisluhnemo vašim željam in svetujemo najboljšo izbiro."
+      },
+      {
+        "stat": "Zaupanje",
+        "label": "strank",
+        "description": "Gradimo dolgoročne odnose z našimi zvestimi strankami."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na svoj termin",
+    "description": "Obiščite nas na Cesti krških žrtev 132 v Krškem ali nas pokličite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "(07) 492 22 22",
+        "href": "tel:074922222",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 132, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Tor, Sre, Čet, Pet: 8:00 – 15:00 / 12:00 – 19:00, Sob: 7:00 – 12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 132, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Angelika",
+    "address": "Cesta krških žrtev 132, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "(07) 492 22 22"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

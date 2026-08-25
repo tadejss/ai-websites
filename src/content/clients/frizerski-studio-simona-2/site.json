@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-simona-2/hero.jpg",
+      "alt": "Sodoben in svetel frizerski salon s toplimi naravnimi toni"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-simona-2/services.jpg",
+      "alt": "Strokovno striženje in urejanje las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Simona"
+  },
+  "metadata": {
+    "title": "Frizerski studio Simona | Novo mesto",
+    "description": "Vrhunske frizerske storitve za vaš popoln videz v Novem mestu. Moško in žensko striženje, barvanje, prameni, balayage in nega las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Novo mesto",
+    "title": "Za vaš popoln videz in",
+    "titleHighlight": "zdrave lase",
+    "description": "Vrhunske frizerske storitve za vsakogar, ki ceni strokovno nego, urejen videz in prijetno vzdušje v Novem mestu.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Kakovostna",
+        "label": "Nega las"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Prilagojen",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve",
+    "description": "Poskrbimo za vaš svež in urejen videz z naborom celovitih frizerskih storitev v Novem mestu.",
+    "items": [
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Moderne in klasične frizure, prilagojene vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Obstojni odtenki in profesionalno barvanje za sijoč videz vaših las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prameni in balayage",
+        "description": "Umetelno senčenje in prameni za naraven videz in več dimenzije.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk in nega",
+        "description": "Nega las in oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Salon, kjer so vaši lasje na prvem mestu",
+    "description": "Združujemo strokovnost, prijaznost in posluh za vaše želje, da boste iz salona vedno odšli zadovoljni.",
+    "highlights": [
+      "Prijazno in strokovno osebje",
+      "Visoka raven zadovoljstva strank",
+      "Odlična lokacija v Novem mestu"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in strokovnost",
+        "description": "Posvečeni smo vašemu dobremu počutju in vrhunskemu končnemu rezultatu."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "nege",
+        "description": "Uporabljamo preverjene pristope za nego in striženje vaših las."
+      },
+      {
+        "stat": "Lokacija",
+        "label": "v mestu",
+        "description": "Enostaven dostop na Belokranjski cesti v Novem mestu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na svoj termin",
+    "description": "Obiščite nas na Belokranjski cesti ali nas pokličite ter si zagotovite termin za urejen videz.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Belokranjska cesta 5, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 302 22 30",
+        "href": "tel:073022230",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–20:00, Sob: 8:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Belokranjska cesta 5, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Simona",
+    "address": "Belokranjska cesta 5, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "(07) 302 22 30"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

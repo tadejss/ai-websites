@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/luxiaz-beauty-salon/hero.jpg",
+      "alt": "Sodoben in topel ambient lepotnega salona"
+    },
+    "services": {
+      "src": "/clients/luxiaz-beauty-salon/services.jpg",
+      "alt": "Nega nohtov in sprostitvene storitve v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Luxiaz",
+    "highlight": "Beauty Salon"
+  },
+  "metadata": {
+    "title": "Luxiaz Beauty Salon | Novo mesto",
+    "description": "Vrhunske lepotne storitve in sprostitev v Novem mestu z okolico. Nega nohtov, masaža hrbta, trepalnice, obrvi in beljenje zob."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Novo mesto in okolica",
+    "title": "Vrhunske lepotne storitve in sprostitev za vaše",
+    "titleHighlight": "dobro počutje",
+    "description": "Prijazna in strokovna obravnava ter vrhunska nega telesa za vse, ki cenijo sprostitev in lepotne tretmaje.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Raziščite storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Salon"
+      },
+      {
+        "value": "Vrhunska",
+        "label": "Nega"
+      },
+      {
+        "value": "Toplo",
+        "label": "Okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lepše počutje",
+    "description": "Izberite med našimi skrbno izbranimi lepotnimi in sprostitvenimi storitvami v Novem mestu.",
+    "items": [
+      {
+        "title": "Masaža hrbta",
+        "description": "Sproščujoča masaža za odpravo napetosti in celostno dobro počutje vašega hrbta.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje zob",
+        "description": "Poskrbite za sijoč nasmeh in samozavesten videz z našim postopkom beljenja zob.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega nohtov",
+        "description": "Urejeni in čudoviti nohti, ki poudarijo vaš osebni slog ter urejen videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Storitve za trepalnice in obrvi",
+        "description": "Uokvirite svoj obraz s popolno urejenimi trepalnicami in obrvmi.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost lepoti in vašemu sproščanju",
+    "description": "V salonu Luxiaz združujemo strokovnost, prijaznost in individualen pristop za vsako stranko.",
+    "highlights": [
+      "Prijazna in strokovna lastnica z osebnim pristopom",
+      "Visoka kakovost vseh lepotnih in sprostitvenih storitev",
+      "Odlične ocene zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokoven",
+        "label": "Pristop",
+        "description": "Vsaki stranki se posvetimo individualno in z veliko mero pozornosti."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Storitev",
+        "description": "Uporabljamo preverjene metode za najboljše rezultate."
+      },
+      {
+        "stat": "Sproščeno",
+        "label": "Okolje",
+        "description": "Prijeten ambient v Novem mestu za popoln oddih od vsakdana."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pišite nam ali nas pokličite in si zagotovite svoj lepotni razvajajoči termin.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 836 018",
+        "href": "tel:040836018",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Foersterjeva ulica 10, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Foersterjeva ulica 10, 8000 Novo mesto, Slovenia",
+    "rights": "© Luxiaz Beauty Salon. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Luxiaz Beauty Salon",
+    "address": "Foersterjeva ulica 10, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 836 018"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

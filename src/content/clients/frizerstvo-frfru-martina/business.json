@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerstvo Fr-Fru, Martina Kocjan s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne in kvalitetne frizerske storitve v prijetnem vzdušju",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "041 523 981",
+  "email": "",
+  "address": "Cesta krških žrtev 34, 8270 Krško, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 6:00 PM · Tuesday: Closed · Wednesday: 8:00 AM – 6:00 PM · Thursday: 8:00 AM – 6:00 PM · Friday: 8:00 AM – 6:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazno osebje",
+    "Strokovna in kvalitetna izvedba",
+    "Udobno in mirno vzdušje",
+    "Dolgoletne izkušnje in zveste stranke"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve za vso družino v Krškem",
+  "serviceArea": "Krško in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte svoj termin"
+}

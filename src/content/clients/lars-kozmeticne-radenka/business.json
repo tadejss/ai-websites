@@ -1,0 +1,27 @@
+{
+  "companyName": "Lars, kozmetične storitve Radenka Stakić s.p.",
+  "industry": "kozmetični salon",
+  "tagline": "Strokovne kozmetične storitve in urejen videz za vaše dobro počutje",
+  "services": [
+    "Manikura",
+    "Nega obraza",
+    "Kozmetične storitve",
+    "Svetovanje in nega telesa"
+  ],
+  "phone": "",
+  "email": "",
+  "address": "Seidlova cesta 24, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Dolgoletne izkušnje in strokovno znanje",
+    "Prijazen pristop in prilagajanje željam strank",
+    "Visoka raven profesionalnosti in zadovoljstva strank"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo strokovno nego, urejen videz in osebni pristop",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "večletne izkušnje",
+  "tone": "topel, strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "lokalni kozmetični saloni",
+  "callToAction": "Rezervirajte svoj termin"
+}

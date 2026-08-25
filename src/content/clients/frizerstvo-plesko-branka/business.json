@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerstvo Pleško Branka s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje in prilagojene frizure za vsak tip lase",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje",
+    "Svetovanje glede oblike obraza"
+  ],
+  "phone": "(07) 332 36 70",
+  "email": "",
+  "address": "Dilančeva ulica 7, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Odlično poznavanje frizerskih tehnik in striženja",
+    "Prilagajanje pričeske obliki vašega obraza",
+    "Strokovna obravnava vseh tipov las"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo kakovostne frizerske storitve in strokovno svetovanje v Novem mestu",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

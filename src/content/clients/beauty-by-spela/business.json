@@ -1,0 +1,28 @@
+{
+  "companyName": "BEAUTY BY ŠPELA, lepotne storitve",
+  "industry": "Lepotni salon",
+  "tagline": "Vrhunske lepotne storitve in urejanje nohtov v Novem mestu",
+  "services": [
+    "Urejanje in nega nohtov",
+    "Manikura",
+    "Strokovni tečaji",
+    "Kozmetične storitve"
+  ],
+  "phone": "040 981 514",
+  "email": "",
+  "address": "Novi trg 10, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Kakovostni materiali in natančna izvedba",
+    "Prijazno in strokovno osebje",
+    "Velika izbira barv za nohte",
+    "Prijeten ambient z visoko estetiko"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo urejen videz, kakovostno nego nohtov in prijetno vzdušje v lepotnem salonu.",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "moderen, estetski",
+  "competitors": "Lokalni lepotni in negovalni saloni v regiji",
+  "callToAction": "Rezervirajte termin"
+}

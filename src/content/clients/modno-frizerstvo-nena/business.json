@@ -1,0 +1,28 @@
+{
+  "companyName": "Modno frizerstvo \"Nena\" Nevenka Dajčman s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Ustreljen in urejen videz za vsak dan z osebnim pristopom",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "(07) 302 15 44",
+  "email": "",
+  "address": "Volčičeva ulica 15A, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 12:00 – 6:00 PM · Tuesday: 10:00 AM – 6:00 PM · Wednesday: 10:00 AM – 6:00 PM · Thursday: 10:00 AM – 5:00 PM · Friday: 10:00 AM – 5:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazna in ustrežljiva frizerka",
+    "Prilagojen pristop k strankam",
+    "Visoka kakovost storitev"
+  ],
+  "targetCustomers": "Lokalni prebivalci, ki cenijo osebni pristop in urejen videz",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "",
+  "tone": "prijazen, topel, strokoven",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Ostali frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

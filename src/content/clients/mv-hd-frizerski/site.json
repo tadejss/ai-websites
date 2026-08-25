@@ -1,0 +1,215 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/mv-hd-frizerski/hero.jpg",
+      "alt": "Sodoben in svetel frizerski salon v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/mv-hd-frizerski/services.jpg",
+      "alt": "Strokovno striženje in barvanje las v sproščenem vzdušju"
+    }
+  },
+  "brand": {
+    "prefix": "Mv Hd",
+    "highlight": "frizerski atelje"
+  },
+  "metadata": {
+    "title": "Mv Hd frizerski atelje Matija Vavtar s.p. | Frizerski salon Novo mesto",
+    "description": "Vrhunske frizerske storitve in sproščeno vzdušje v Novem mestu. Nudimo moško in žensko striženje, barvanje ter strokovno svetovanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski atelje v Novem mestu",
+    "title": "Vrhunske frizerske storitve in",
+    "titleHighlight": "sproščeno vzdušje",
+    "description": "Strokovno striženje, barvanje in osebni pristop za vse, ki cenijo kakovostno nego las v Novem mestu in okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Sproščeno",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vaše lase",
+    "description": "V frizerskem ateljeju Mv Hd se posvetimo vašim željam in poskrbimo za zdravje ter izgled vaših las v Novem mestu.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričeske po vaših merah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske frizure ter oblikovanje las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje in oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje in niansiranje za sijoč videz vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi las",
+        "description": "Strokovni nasveti za pravilno nego in vzdrževanje pričeske doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost lepoti vaših las in dobremu počutju",
+    "description": "Z združevanjem strokovnega znanja in prijetnega okolja ustvarjamo frizersko izkušnjo, ki presega pričakovanja.",
+    "highlights": [
+      "Vrhunska strokovnost in pozornost do podrobnosti",
+      "Sproščeno in prijetno vzdušje v salonu",
+      "Skrb za dobro počutje vsake stranke",
+      "Prilagojen pristop v Novem mestu in okolici"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Pozornost do vsake podrobnosti za popoln končni rezultat."
+      },
+      {
+        "stat": "Prijetno",
+        "label": "Vzdušje",
+        "description": "Sproščen ambient, kjer se boste počutili dobrodošle."
+      },
+      {
+        "stat": "Celostna",
+        "label": "Skrb",
+        "description": "Nega in svetovanje, prilagojena vašemu tipu las."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših frizerskih storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Rozmanova ulica 25, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 228 069",
+        "href": "tel:040228069",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon-Tor: 12:00-20:00, Sre-Čet: 08:00-15:00, Pet: 08:00-18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Rozmanova ulica 25, 8000 Novo mesto, Slovenia",
+    "rights": "© Mv Hd frizerski atelje Matija Vavtar s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mv Hd frizerski atelje",
+    "address": "Rozmanova ulica 25, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 228 069"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

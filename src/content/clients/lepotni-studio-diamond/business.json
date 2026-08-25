@@ -1,0 +1,27 @@
+{
+  "companyName": "Lepotni Studio DIAMOND",
+  "industry": "Lepotni salon",
+  "tagline": "Vrhunska nega za vašo dušo in telo",
+  "services": [
+    "Hair spa",
+    "Frizerske storitve",
+    "Nega obraza",
+    "Nega telesa"
+  ],
+  "phone": "031 514 945",
+  "email": "",
+  "address": "Ljubljanska cesta 26, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Sprostitev in nega v enem",
+    "Balsamična izkušnja za dušo in telo",
+    "Prilagojen pristop k vsaki stranki"
+  ],
+  "targetCustomers": "Posamezniki, ki iščejo sprostitev, nego las in celostno razvajanje",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "topel, sproščujoč",
+  "brandStyle": "eleganten in domač lepotni kotiček",
+  "competitors": "Lokalni saloni z lepotnimi in frizerskimi storitvami",
+  "callToAction": "Rezervirajte svoj termin"
+}

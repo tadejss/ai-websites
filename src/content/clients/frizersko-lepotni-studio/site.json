@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "caramel-vanilla",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizersko-lepotni-studio/hero.jpg",
+      "alt": "Moderen frizerski salon s toplo osvetlitvijo v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/frizersko-lepotni-studio/services.jpg",
+      "alt": "Strokovno striženje in barvanje las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizersko lepotni studio",
+    "highlight": "AS"
+  },
+  "metadata": {
+    "title": "Frizersko lepotni studio AS | Novo mesto",
+    "description": "Vaš zanesljiv naslov za urejen videz in nego las v Novem mestu in okolici. Naročite se na striženje, barvanje ali nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Moderen lokalni salon v Novem mestu",
+    "title": "Vaš zanesljiv naslov za",
+    "titleHighlight": "urejen videz in nego las",
+    "description": "Nudimo kakovostno striženje, barvanje in nego las za vse, ki cenijo urejen videz in prijetno vzdušje v Novem mestu in okolici.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Novo mesto",
+        "label": "In okolica"
+      },
+      {
+        "value": "Prijazna",
+        "label": "Strokovna storitev"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Delovni čas"
+      },
+      {
+        "value": "Urejen",
+        "label": "Videz in nega"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske in lepotne storitve",
+    "description": "Poskrbite za svoje lase z našimi strokovnimi storitvami v Novem mestu.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Moderna in klasična striženja, prilagojena vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostna barvanja, prameni in osvežitev barve za sijoče lase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Frizure za priložnosti",
+        "description": "Urejanje pričesk za posebne dogodke, poroke in praznovanja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive nege za obnovo in zdrav videz vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Vsakodnevno ali svečano feniranje in oblikovanje po vaših željah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupajte izkušeni ekipi v lokalnem okolju",
+    "description": "Trudimo se, da se v našem salonu vedno počutite sproščeno, vaš videz pa je brezhiben.",
+    "highlights": [
+      "Prijazna in strokovna storitev za vsakogar",
+      "Prilagodljiv delovni čas po vaših merah",
+      "Udobno okolje v Novem mestu"
+    ],
+    "benefits": [
+      {
+        "stat": "Odlične",
+        "label": "Ocene",
+        "description": "Zadovoljne stranke cenijo naš trud in predanost."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Prijazna in strokovna storitev ob vsakem obisku."
+      },
+      {
+        "stat": "Prilagodljivo",
+        "label": "Delovanje",
+        "description": "Prilagodljiv delovni čas, vključno z dopoldnevi in popoldnevi."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na termin ali nas obiščite v salonu v Novem mestu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Zwittrova ulica 1, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 302 35 71",
+        "href": "tel:073023571",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–18:00, Sob: 7:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali želje glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Zwittrova ulica 1, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizersko lepotni studio AS",
+    "address": "Zwittrova ulica 1, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "(07) 302 35 71"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

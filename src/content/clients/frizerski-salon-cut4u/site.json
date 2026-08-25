@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "warm-earth",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-cut4u/hero.jpg",
+      "alt": "Notranjost sodobnega frizerskega salona v toplih naravnih tonih"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-cut4u/services.jpg",
+      "alt": "Strokovno barvanje in stilsko oblikovanje las v urejenem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Cut4u"
+  },
+  "metadata": {
+    "title": "Frizerski salon Cut4u Martina Drobež s.p. | Novo mesto",
+    "description": "Strokovne in urejene frizerske storitve z osebnim pristopom v Novem mestu z okolico. Moško in žensko striženje, barvanje ter nega las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Novem mestu",
+    "title": "Strokovne in urejene frizerske storitve z",
+    "titleHighlight": "osebnim pristopom",
+    "description": "Nudimo kakovostno moško in žensko striženje, barvanje ter nego las za vse, ki cenijo urejen videz v Novem mestu z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka",
+        "label": "Ocena strank"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Udoben",
+        "label": "Salon"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vas",
+    "description": "Izberite storitev po vaši meri in poskrbite za svoj videz v urejenem salonu v Novem mestu.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje prilagojeno vašemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Strokovno žensko striženje in oblikovanje pričesk za vsako priložnost.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las z obstojnimi in negovalnimi barvami.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje in oblikovanje pričesk za popoln videz.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Celovita nega za zdravje in sijoč videz vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljive in kakovostne storitve",
+    "description": "Naš cilj je vaše zadovoljstvo in sproščeno vzdušje med vsakim obiskom.",
+    "highlights": [
+      "Visoka ocena strank in preverjeno zadovoljstvo",
+      "Prijazno osebje in točnost",
+      "Udoben in urejen salon"
+    ],
+    "benefits": [
+      {
+        "stat": "Zadovoljstvo",
+        "label": "Preverjeno zadovoljstvo",
+        "description": "Visoka ocena strank potrjuje našo predanost kakovosti."
+      },
+      {
+        "stat": "Točnost",
+        "label": "Prijazno osebje",
+        "description": "Zagotavljamo prijazen sprejem, strokovnost in spoštovanje dogovorjenih terminov."
+      },
+      {
+        "stat": "Udobje",
+        "label": "Urejen salon",
+        "description": "Prijetno in udobno okolje za vaše popolno sproščanje."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 91, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 944 503",
+        "href": "tel:041944503",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali dodatne informacije.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 91, 8000 Novo mesto, Slovenia",
+    "rights": "© Frizerski salon Cut4u Martina Drobež s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Cut4u",
+    "address": "Ljubljanska cesta 91, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 944 503"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

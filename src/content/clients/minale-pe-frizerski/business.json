@@ -1,0 +1,28 @@
+{
+  "companyName": "Minale d.o.o., PE frizerski salon Atmosfera",
+  "industry": "Frizerski salon",
+  "tagline": "Hitre in kakovostne frizerske storitve v prijetnem vzdušju",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "(07) 337 99 78",
+  "email": "",
+  "address": "Ulica Slavka Gruma 7, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 7:00 PM · Tuesday: 7:00 AM – 7:00 PM · Wednesday: 7:00 AM – 7:00 PM · Thursday: 7:00 AM – 7:00 PM · Friday: 7:00 AM – 7:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Hitra in učinkovita postrežba",
+    "Prijazno osebje in strokoven pristop",
+    "Možnost predhodnega naročanja"
+  ],
+  "targetCustomers": "Lokalni prebivalci Novega mesta, ki iščejo hitre in zanesljive frizerske storitve",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

@@ -1,0 +1,80 @@
+# Frizerji — Novo mesto, Krško in okolica (Dolenjska)
+# npm run discover-leads -- --file data/queries-dolenjska-frizer.txt --region dolenjska --no-website --until-no-website 50 --industry frizer --limit 40
+
+frizer Novo mesto
+frizerski salon Novo mesto
+frizerski studio Novo mesto
+frizerstvo Novo mesto
+barber Novo mesto
+hair salon Novo mesto
+kozmetični salon Novo mesto
+frizer Krško
+frizerski salon Krško
+frizerski studio Krško
+frizerstvo Krško
+barber Krško
+frizer Brežice
+frizerski salon Brežice
+frizerstvo Brežice
+frizer Kostanjevica na Krki
+frizerski salon Kostanjevica
+frizer Otočec
+frizerski salon Otočec
+frizer Straža
+frizerski salon Straža
+frizer Mirna Peč
+frizerski salon Mirna Peč
+frizer Šentjernej
+frizerski salon Šentjernej
+frizer Škocjan
+frizerski salon Škocjan
+frizer Trebnje
+frizerski salon Trebnje
+frizerstvo Trebnje
+frizer Žužemberk
+frizerski salon Žužemberk
+frizer Dolenjske Toplice
+frizerski salon Dolenjske Toplice
+frizer Sevnica
+frizerski salon Sevnica
+frizerstvo Sevnica
+frizer Mokronog
+frizerski salon Mokronog
+frizer Mirna
+frizerski salon Mirna
+frizer Šmarješke Toplice
+frizerski salon Šmarješke Toplice
+frizer Čatež ob Savi
+frizer Brestanica
+frizer Senovo
+frizer Prečna
+frizer Stopiče
+frizer Semič
+frizerski salon Semič
+frizer Metlika
+frizerski salon Metlika
+frizer Črnomelj
+frizerski salon Črnomelj
+frizerstvo Črnomelj
+frizer Kočevje
+frizerski salon Kočevje
+frizerstvo Kočevje
+frizer Ribnica
+frizerski salon Ribnica
+frizer Sodražica
+frizer Ivančna Gorica
+frizerski salon Ivančna Gorica
+frizer Višnja Gora
+frizer Radeče
+frizerski salon Radeče
+frizer Grosuplje
+frizerski salon Grosuplje
+frizerstvo Grosuplje
+frizer Laško
+frizer Hrastnik
+ženski frizer Novo mesto
+moški frizer Novo mesto
+barbershop Novo mesto
+barbershop Krško
+hairdresser Novo mesto
+hairdresser Krško

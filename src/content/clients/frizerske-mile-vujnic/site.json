@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "blush-champagne",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerske-mile-vujnic/hero.jpg",
+      "alt": "Notranjost sodobnega frizerskega salona z naravno svetlobo v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/frizerske-mile-vujnic/services.jpg",
+      "alt": "Strokovno striženje, oblikovanje in barvanje las v frizerskem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerske storitve",
+    "highlight": "Mile Vujnić s.p."
+  },
+  "metadata": {
+    "title": "Frizerske storitve Mile Vujnić s.p. | Frizerski salon Novo mesto",
+    "description": "Profesionalne frizerske storitve v Novem mestu za moške in ženske. Nudimo moško in žensko striženje, oblikovanje pričesk, barvanje ter nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Novo mesto",
+    "title": "Profesionalne frizerske storitve za vaš",
+    "titleHighlight": "popoln videz",
+    "description": "Zanesljiv lokalni salon v Novem mestu nudi strokovno striženje, oblikovanje in nego las za moške in ženske, ki cenijo urejen videz.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Moški in",
+        "label": "Ženske"
+      },
+      {
+        "value": "Novo",
+        "label": "Mesto"
+      },
+      {
+        "value": "Celovita",
+        "label": "Nega las"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve",
+    "description": "Poskrbimo za vaš svež in urejen videz z našimi storitvami v Novem mestu.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričeske po vaših željah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene obliki vašega obraza.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Strokovno oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las za sijoč videz in obstojno barvo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljiva nega las, ki povrne zdravje, mehkobo in sijaj vašim lasem.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv lokalni salon",
+    "description": "Strankam v Novem mestu nudimo prijazno okolje in visoko raven storitev.",
+    "highlights": [
+      "Prijazno in strokovno osebje",
+      "Visoka raven zadovoljstva strank",
+      "Odlično razmerje med ceno in kakovostjo"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Osebje",
+        "description": "Prijazno in strokovno osebje poskrbi za vaše želje."
+      },
+      {
+        "stat": "Zadovoljstvo",
+        "label": "Strank",
+        "description": "Visoka raven zadovoljstva naših obiskovalcev."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "In cena",
+        "description": "Odlično razmerje med dostopno ceno in vrhunsko izvedbo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na termin ali nas obiščite na Ljubljanski cesti v Novem mestu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 22, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 709 208",
+        "href": "tel:070709208",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00 – 19:00, Sob: 9:00 – 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 22, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerske storitve Mile Vujnić s.p.",
+    "address": "Ljubljanska cesta 22, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "070 709 208"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

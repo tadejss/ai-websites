@@ -1,0 +1,215 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "caramel-vanilla",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-jelka/hero.jpg",
+      "alt": "Topel in svetel frizerski salon"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-jelka/services.jpg",
+      "alt": "Strokovno striženje in nega las"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Jelka"
+  },
+  "metadata": {
+    "title": "Frizerski salon Jelka | Novo mesto",
+    "description": "Kakovostno striženje, nega in oblikovanje las v Novem mestu in okolici. Zanesljiv lokalni frizerski salon z osebnim pristopom."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon",
+    "title": "Kakovostno striženje, nega in",
+    "titleHighlight": "oblikovanje las",
+    "description": "Nudimo kakovostno striženje, nego in oblikovanje las za vse, ki v Novem mestu in okolici iščejo zanesljivega frizerja.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Natančno",
+        "label": "Striženje"
+      },
+      {
+        "value": "Strokovna",
+        "label": "Nega las"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Prijazen",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbite za svoje lase z našimi storitvami v Novem mestu in okolici.",
+    "items": [
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Kakovostno in natančno striženje za moške in ženske, prilagojeno vašemu stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nega in obnova poškodovanih las",
+        "description": "Strokovna obnova in reševanje poškodovanih las za zdrav in sijoč videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna sprememba tonov z uporabo preverjenih tehnik.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri negi las",
+        "description": "Strokovni nasveti za pravilno domačo nego in vzdrževanje zdravih las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, natančnost in strokovnost",
+    "description": "V našem salonu se osredotočamo na kakovost, dostopnost in dobro počutje naših strank.",
+    "highlights": [
+      "Visoka kakovost in natančnost striženja",
+      "Strokovna obnova in reševanje poškodovanih las",
+      "Hitra in cenovno dostopna storitev",
+      "Prijazen in strokoven pristop k strankam"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Visoka kakovost",
+        "description": "Zanesljivo in natančno striženje ter oblikovanje las za vsako stranko."
+      },
+      {
+        "stat": "Obnova",
+        "label": "Poškodovani lasje",
+        "description": "Strokovna nega in reševanje poškodovanih las, ki vrača zdravje vašim lasem."
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "Hitra storitev",
+        "description": "Cenovno dostopne in učinkovite frizerske storitve v prijetnem okolju."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 736 532",
+        "href": "tel:031736532",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Paderšičeva ulica 12, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Tor: 7:30–19:00, Sre: 13:00–19:30, Čet: 7:30–15:30, Pet: 13:00–19:30, Sob: 7:30–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja glede storitev.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Paderšičeva ulica 12, 8000 Novo mesto, Slovenia",
+    "rights": "© 2025 Frizerski salon Jelka Rudi Redek s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Jelka",
+    "address": "Paderšičeva ulica 12, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "031 736 532"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "companyName": "Frizerski studio Ane-Mari, Ana Marija Danko s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve v Krškem",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Urejanje pričesk",
+    "Nega las"
+  ],
+  "phone": "041 433 419",
+  "email": "",
+  "address": "Cesta krških žrtev 137, 8270 Krško, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Celovite frizerske storitve za različne tipe las",
+    "Osebni pristop k strankam",
+    "Udoben ambient v Krškem"
+  ],
+  "targetCustomers": "Prebivalci Krškega in okolice, ki iščejo redno urejanje in nego las",
+  "serviceArea": "Krško z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, dostopen",
+  "brandStyle": "domač lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Rezervirajte termin"
+}

@@ -71,12 +71,24 @@ export async function discoverLeads(
   const takenSlugs = new Set(existing.map((lead) => lead.slug));
 
   // Targeted queries already scope industry, but drop clear cross-industry noise.
+  // Exclude the active industry's own keywords so we don't reject matching businesses.
   const queryImpliesIndustry = leadMatchesIndustry(options.industry, {
     industry: query,
     companyName: "",
   });
+  const noiseByIndustry: Record<string, RegExp> = {
+    frizer:
+      /pekarna|gostil|restavrac|elektro|vulkan|avtoservis|keramič|keramic|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|\bšola\b|\bsola\b|vzgojitelj|trenerstvo|strojne\s+inštalacije|strojne\s+instalacije|gradbeništvo|gradbenistvo/i,
+    keramicar:
+      /pekarna|gostil|restavrac|frizer|elektro|vulkan|avtoservis|trgovina|market|spar|mercator|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|unikatno\s+oblikovanje|oblikovanje\s+keramike|okrasna\s+.*keramik|kopalnice\b|extra-?form|\bšola\b|\bsola\b|vzgojitelj|trenerstvo|strojne\s+inštalacije|strojne\s+instalacije/i,
+    elektro:
+      /pekarna|gostil|restavrac|frizer|vulkan|avtoservis|keramič|keramic|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|\bšola\b|\bsola\b|vzgojitelj|trenerstvo/i,
+    vulkanizer:
+      /pekarna|gostil|restavrac|frizer|elektro|keramič|keramic|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|\bšola\b|\bsola\b|vzgojitelj|trenerstvo/i,
+  };
   const noiseName =
-    /pekarna|gostil|restavrac|frizer|elektro|vulkan|avtoservis|trgovina|market|spar|mercator|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|unikatno\s+oblikovanje|oblikovanje\s+keramike|okrasna\s+.*keramik|kopalnice\b|extra-?form|\bšola\b|\bsola\b|vzgojitelj|trenerstvo|strojne\s+inštalacije|strojne\s+instalacije/i;
+    (options.industry && noiseByIndustry[options.industry]) ||
+    /pekarna|gostil|restavrac|avtoservis|trgovina|market|spar|mercator|\bšola\b|\bsola\b|vzgojitelj|trenerstvo/i;
 
   const results: DiscoveryResult[] = [];
 

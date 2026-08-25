@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "wine-velvet",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/brivsko-frizerski-salon/hero.jpg",
+      "alt": "Notranjost tradicionalnega frizerskega in brivskega salona z toplo osvetlitvijo"
+    },
+    "services": {
+      "src": "/clients/brivsko-frizerski-salon/services.jpg",
+      "alt": "Strokovno striženje in nega las v prijetnem ambientu salona"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski in brivski salon",
+    "highlight": "Ljudmila Kapš"
+  },
+  "metadata": {
+    "title": "Brivsko frizerski salon Ljudmila Kapš s.p. | Novo mesto",
+    "description": "Strokovne frizerske in brivske storitve z dolgoletno tradicijo v Novem mestu za moške in ženske. Osebni pristop in udoben ambient."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Tradicija in strokovnost v Novem mestu",
+    "title": "Celovite frizerske in brivske storitve za",
+    "titleHighlight": "vaš urejen videz",
+    "description": "Dobrodošli v salonu z dolgoletno tradicijo, kjer nudimo strokovno nego las in brade za moške in ženske vseh starosti v Novem mestu z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Celovite",
+        "label": "Storitve"
+      },
+      {
+        "value": "Domač",
+        "label": "Ambient"
+      },
+      {
+        "value": "Novo",
+        "label": "Mesto"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske in brivske storitve",
+    "description": "Poskrbimo za vaš svež in urejen videz z naborom preverjenih storitev za nego las in brade v Novem mestu.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in moderno moško striženje, prilagojeno vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Brivske storitve in urejanje brade",
+        "description": "Natančno britje, striženje in oblikovanje brade z uporabo kakovostnih pripravkov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Strokovno striženje in oblikovanje pričesk za ženske, ki cenijo urejen videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las, ki osveži vaš videz in poudari vašo osebnost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje in oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv lokalni salon z dolgoletno tradicijo",
+    "description": "Združujemo dolgoletne izkušnje in topel, domač pristop, da se v našem salonu vedno počutite dobrodošli.",
+    "highlights": [
+      "Osebni pristop k vsaki stranki",
+      "Celovite frizerske in brivske storitve na enem mestu",
+      "Udoben in domač ambient v Novem mestu"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebno",
+        "label": "Sodelovanje",
+        "description": "Prisluhnemo vašim željam in vam svetujemo pri izbiri prave pričeske ali urejanja brade."
+      },
+      {
+        "stat": "Tradicija",
+        "label": "In izkušnje",
+        "description": "Dolgoletna prisotnost v Novem mestu jamči zanesljivost in kakovost storitev."
+      },
+      {
+        "stat": "Ambient",
+        "label": "S sproščenim vzdušjem",
+        "description": "Udoben in domač prostor, kjer si lahko vzamete trenutek zase."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nas obiščite v salonu v Novem mestu. Z veseljem bomo poskrbeli za vas.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Šmihelska cesta 1, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 302 86 41",
+        "href": "tel:+38673028641",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Pišite nam za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Šmihelska cesta 1, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski in brivski salon Ljudmila Kapš",
+    "address": "Šmihelska cesta 1, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "(07) 302 86 41"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

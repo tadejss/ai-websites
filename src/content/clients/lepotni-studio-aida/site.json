@@ -1,0 +1,210 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "moss-linen",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/lepotni-studio-aida/hero.jpg",
+      "alt": "Sproščeni in elegantni ambient lepotnega studia v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/lepotni-studio-aida/services.jpg",
+      "alt": "Storitve nege obraza in urejanja nohtov v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Lepotni studio",
+    "highlight": "Aida"
+  },
+  "metadata": {
+    "title": "Lepotni studio Aida | Nega obraza, nohti in obrvi Novo mesto",
+    "description": "Vrhunske lepotne storitve za nego obraza, urejanje nohtov ter oblikovanje in laminacijo obrvi v Novem mestu. Prijazen pristop in strokovni tretmaji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lepotni salon Novo mesto",
+    "title": "Vrhunske lepotne storitve za vaš",
+    "titleHighlight": "sijaj in nego",
+    "description": "Odkrijte prilagojene tretmaje za nego obraza, urejene nohte ter profesionalno oblikovanje obrvi v sproščenem ambientu v Novem mestu.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Nega",
+        "label": "Obraza in kože"
+      },
+      {
+        "value": "Nohti",
+        "label": "Manikura"
+      },
+      {
+        "value": "Obrvi",
+        "label": "Oblikovanje in laminacija"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija studia"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za nego in lepoto",
+    "description": "Vsak lepotni tretma v našem studiu v Novem mestu je prilagojen vašim željam in potrebam za dosego vidnih rezultatov.",
+    "items": [
+      {
+        "title": "Nega obraza",
+        "description": "Kakovostna nega obraza za osvežitev, navlažitev in sijoč videz vaše kože.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Manikura in nohti",
+        "description": "Urejanje in nega nohtov za urejen ter privlačen videz vaših rok.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje in barvanje obrvi",
+        "description": "Natančno oblikovanje in barvanje obrvi, ki poudarita naravno lepoto vašega obraza.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Laminacija obrvi",
+        "description": "Sodobna tehnika laminacije obrvi za gostejši, urejen in obstojen videz.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Udobje, strokovnost in osebni pristop",
+    "description": "V Lepotnem studiu Aida združujemo strokovno znanje in sproščeno vzdušje, da se boste počutili sproščeno in odšli urejeni.",
+    "highlights": [
+      "Prilagojeni in profesionalni lepotni tretmaji",
+      "Zelo prijazen pristop in sproščeno vzdušje",
+      "Natančna izvedba z vidnimi rezultati",
+      "Urejen in prijeten ambient"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Prilagojeni tretmaji",
+        "description": "Vsaki stranki se posvetimo individulano in prilagodimo nego njenih potreb."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Urejen in prijeten prostor",
+        "description": "Uživajte v sproščenem vzdušju našega lepotnega studia v Novem mestu."
+      },
+      {
+        "stat": "Natančnost",
+        "label": "Vidni rezultati",
+        "description": "Skrbna in natančna izvedba storitev za vaš najboljši videz."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Mirana Jarca 20, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "068 157 208",
+        "href": "tel:068157208",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon in Sre: 8:00–16:00 · Tor in Čet: 12:00–20:00 · Pet: 8:00–16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Mirana Jarca 20, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lepotni studio Aida",
+    "address": "Ulica Mirana Jarca 20, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "068 157 208"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

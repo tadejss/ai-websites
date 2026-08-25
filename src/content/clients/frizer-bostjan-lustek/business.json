@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizer Boštjan Luštek s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Hitra, učinkovita in strokovna frizerska storitev po dostopnih cenah.",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Oblikovanje pričesk",
+    "Barvanje las",
+    "Nega las"
+  ],
+  "phone": "(07) 332 60 53",
+  "email": "",
+  "address": "Mlinarska pot 16, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 8:00 AM – 8:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Hitra in učinkovita storitev",
+    "Prijazne cene",
+    "Strohekoven in prijazen pristop",
+    "Odlične ocene zadovoljnih strank"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne in hitre frizerske storitve v Novem mestu.",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domač in zanesljiv salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

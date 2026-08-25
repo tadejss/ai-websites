@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerstvo Marija Marija Šenica s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne in prijazne frizerske storitve za vso družino",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "031 210 017",
+  "email": "",
+  "address": "Seidlova cesta 36, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prijazna in precizna izvedba storitev",
+    "Dolgogodišnje zaupanje strank",
+    "Ugodne cene frizerskih storitev",
+    "Odlično delo z majhnimi otroki"
+  ],
+  "targetCustomers": "Posamezniki, družine in otroci, ki iščejo kakovostne in cenovno dostopne frizerske storitve v Novem mestu",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, topel, strokoven",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

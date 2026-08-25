@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "moss-linen",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/salon-milka-zensko/hero.jpg",
+      "alt": "Topel in svetel interier frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/salon-milka-zensko/services.jpg",
+      "alt": "Strokovno barvanje las in nega v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Salon",
+    "highlight": "Milka"
+  },
+  "metadata": {
+    "title": "Salon Milka | Frizerski salon Novo mesto",
+    "description": "Vrhunsko žensko in moško frizerstvo z dolgoletno tradicijo v Novem mestu. Nudimo striženje, barvanje in nego las v sproščenem vzdušju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Dolgoletna tradicija v Novem mestu",
+    "title": "Vrhunsko žensko in moško frizerstvo",
+    "titleHighlight": "z dolgoletno tradicijo",
+    "description": "Prepustite se strokovnim rokam v Salonu Milka, kjer združujemo dolgoletne izkušnje, visoko natančnost in prijetno, domače vzdušje.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "20+ let",
+        "label": "Tradicije"
+      },
+      {
+        "value": "Žensko",
+        "label": "in moško striženje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "svetovanje"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve za vas",
+    "description": "V Salonu Milka v Novem mestu poskrbimo za vaš svež videz z izjemno prilagojenim striženjem, barvanjem in nego las.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah z natančnim striženjem in strokovnim svetovanjem.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Moderne in klasične moške pričeske za urejen videz ob vsaki priložnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki in tehnike barvanja za sijoče ter zdrave lase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Priprava pričesk za vsak dan ali posebne dogodke, ki dolgo ohranijo svojo obliko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Negovalni tretmaji, prilagojeni vašemu tipu las za globinsko obnovo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, izkušnje in domače vzdušje",
+    "description": "Naš cilj je, da se v salonu počutite sproščeno, vaši lasje pa zasijejo v polnem sijaju.",
+    "highlights": [
+      "Izjemno prilagojeno striženje in strokovno svetovanje",
+      "Prijazno, domače in sproščeno vzdušje",
+      "Visoka natančnost in dolgo obstojne pričeske"
+    ],
+    "benefits": [
+      {
+        "stat": "20+ let",
+        "label": "Tradicije",
+        "description": "Zveste stranke nas spremljajo že več kot dvajset let."
+      },
+      {
+        "stat": "Topel",
+        "label": "Pristop",
+        "description": "Prijazno in domače vzdušje, kjer se boste počutili dobrodošle."
+      },
+      {
+        "stat": "Natančnost",
+        "label": "In strokovnost",
+        "description": "Visoka natančnost pri vsakem striženju in oblikovanju pričesk."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas v Novem mestu ali rezervirajte svoj termin po telefonu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kandijska c. 34, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 334 12 82",
+        "href": "tel:073341282",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–20:00, Sob: 7:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Kandijska c. 34, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Salon Milka",
+    "address": "Kandijska c. 34, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "(07) 334 12 82"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

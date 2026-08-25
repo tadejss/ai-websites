@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski studio KREATIVA, Anja Blatnik s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve in sproščujoče vzdušje v Novem mestu",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Prameni in balayage",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "031 768 467",
+  "email": "",
+  "address": "Šegova ulica 4a, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 2:00 PM · Tuesday: 7:00 AM – 2:00 PM · Wednesday: 12:00 – 7:00 PM · Thursday: 12:00 – 7:00 PM · Friday: 7:00 AM – 7:00 PM · Saturday: 7:00 AM – 2:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izkušena in srčna ekipa frizerk",
+    "Prijeten in domač ambient z masažnimi stoli",
+    "Postrežba kave med daljšimi storitvami",
+    "Dolgoletna tradicija in zveste stranke"
+  ],
+  "targetCustomers": "Vsi, ki cenijo strokovno nego las, sproščeno vzdušje in osebni pristop.",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, sproščen",
+  "brandStyle": "sodoben in domač frizerski salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

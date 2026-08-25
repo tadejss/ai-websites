@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerstvo Vesna Vukšinič s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve in urejanje pričesk v Novem mestu",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las",
+    "Poročne in svečane pričeske"
+  ],
+  "phone": "041 714 522",
+  "email": "",
+  "address": "Ulica Mirana Jarca 2, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Osebni pristop k vsaki stranki",
+    "Kakovostna nega las in oblikovanje"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve v Novem mestu",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

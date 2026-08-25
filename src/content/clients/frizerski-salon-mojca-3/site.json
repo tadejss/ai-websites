@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "plum-dusk",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-mojca-3/hero.jpg",
+      "alt": "Topel in domač frizerski salon z naravno svetlobo v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-mojca-3/services.jpg",
+      "alt": "Strokovno barvanje in striženje las v frizerskem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Mojca"
+  },
+  "metadata": {
+    "title": "Frizerski salon Mojca | Novo mesto",
+    "description": "Vaš osebni frizer za edinstven slog v Novem mestu. Nudimo striženje, barvanje, stilsko oblikovanje in nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Osebni frizerski salon v Novem mestu",
+    "title": "Vaš osebni frizer za",
+    "titleHighlight": "edinstven slog",
+    "description": "Topel, strokoven in oseben pristop za vse, ki iščete kakovostne frizerske storitve v Novem mestu.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Tim"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Ugoden",
+        "label": "Urnik"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbimo za vaš videz in zdravje vaših las z izbranimi storitvami v Novem mestu.",
+    "items": [
+      {
+        "title": "Striženje las",
+        "description": "Oblikovanje pričeske po vaši meri, prilagojeno vašemu osebnemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna preobrazba z uporabo kakovostnih pripravkov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje",
+        "description": "Priprava pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega las",
+        "description": "Globinska nega in hranjenje las za zdrav lesk in mehkobo.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač in zaupanja vreden salon",
+    "description": "Zavedamo se, da je frizer več kot le striženje – je prostor, kjer se počutite dobro.",
+    "highlights": [
+      "Razumevanje osebnega sloga in značaja stranke",
+      "Izjemno in strokovno vodenje",
+      "Visoka ocena in zadovoljstvo strank"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebno",
+        "label": "Razumevanje",
+        "description": "Prisluhnemo vašim željam in poiščemo slog, ki ustreza vašemu značaju."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Znanje",
+        "description": "Nudimo strokovno vodenje in nego za zdravje vaših las."
+      },
+      {
+        "stat": "Zaupanje",
+        "label": "In domačnost",
+        "description": "Ustvarjamo sproščeno vzdušje, kjer se boste vedno radi vračali."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite na Seidlovi cesti v Novem mestu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Seidlova cesta 62, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 304 209",
+        "href": "tel:070304209",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon: 8:00–15:00 · Tor-Čet: 12:00–19:00 · Pet: 8:00–19:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili glede prostega termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Seidlova cesta 62, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Mojca",
+    "address": "Seidlova cesta 62, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "070 304 209"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

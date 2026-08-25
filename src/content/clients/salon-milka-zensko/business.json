@@ -1,0 +1,29 @@
+{
+  "companyName": "Salon Milka žensko in moško frizerstvo Gregor Pavlič s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunsko žensko in moško frizerstvo z dolgoletno tradicijo v Novem mestu",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "(07) 334 12 82",
+  "email": "",
+  "address": "Kandijska c. 34, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 8:00 PM · Tuesday: 7:00 AM – 8:00 PM · Wednesday: 7:00 AM – 8:00 PM · Thursday: 7:00 AM – 8:00 PM · Friday: 7:00 AM – 8:00 PM · Saturday: 7:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prilagojeno striženje in strokovno svetovanje",
+    "Prijazno, domače in sproščeno vzdušje",
+    "Dolgoletna tradicija in zveste stranke že več kot 20 let",
+    "Visoka natančnost in dolgo obstojne pričeske"
+  ],
+  "targetCustomers": "Vse stranke, ki iščejo strokovne frizerske storitve za ženske in moške v Novem mestu",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "več kot 20 let",
+  "tone": "topel, strokoven",
+  "brandStyle": "domač in zanesljiv",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

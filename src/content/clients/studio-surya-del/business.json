@@ -1,0 +1,27 @@
+{
+  "companyName": "Studio SURYA",
+  "industry": "Solarij in lepotni studio",
+  "tagline": "Zanesljivo sončenje in prijetno okolje za vašo polt",
+  "services": [
+    "Turško sončenje",
+    "Kozmetične storitve",
+    "Nega kože",
+    "Svetovanje za sončenje"
+  ],
+  "phone": "040 523 399",
+  "email": "",
+  "address": "Ulica Slavka Gruma 7, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Open 24 hours · Sunday: Open 24 hours",
+  "sellingPoints": [
+    "Zelo prijazno osebje",
+    "Čisti in lepo urejeni prostori",
+    "Priročna lokacija v soseski Drska"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci, ki želijo lepo porjavelost in urejen videz",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben, čist in dostopen",
+  "competitors": "Lokalni saloni in solariji v Novem mestu",
+  "callToAction": "Rezervirajte termin"
+}

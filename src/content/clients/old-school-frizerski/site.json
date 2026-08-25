@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "dusty-rose",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/old-school-frizerski/hero.jpg",
+      "alt": "Notranjost frizerskega studia v toplih toni z udobnim vzdušjem"
+    },
+    "services": {
+      "src": "/clients/old-school-frizerski/services.jpg",
+      "alt": "Striženje las in urejanje pričeske v frizerskem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Old School",
+    "highlight": "frizerski studio"
+  },
+  "metadata": {
+    "title": "Old School frizerski studio | Novo mesto",
+    "description": "Kakovostno striženje, urejanje brade in sproščeno vzdušje v Novem mestu z okolico. Rezervirajte svoj termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Novo mesto",
+    "title": "Kakovostno striženje in sproščeno vzdušje v",
+    "titleHighlight": "Novem mestu",
+    "description": "Za moške in ženske, ki cenijo kakovostno frizersko storitev, urejanje brade in prijeten ambient v Novem mestu z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Moško",
+        "label": "in žensko striženje"
+      },
+      {
+        "value": "Urejanje",
+        "label": "brade"
+      },
+      {
+        "value": "Osebni",
+        "label": "pristop"
+      },
+      {
+        "value": "Domače",
+        "label": "vzdušje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vas",
+    "description": "V našem studiu v Novem mestu poskrbimo za vaš urejen videz in zdravje vaših las z naslednjimi storitvami:",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in moderno moško striženje, prilagojeno vašemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk, striženje in nega las za ženske.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje brade",
+        "description": "Natančno urejanje, oblikovanje in nega brade za urejen videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stiliranje las",
+        "description": "Profesionalno stiliranje za vsako priložnost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi las",
+        "description": "Strokovni nasveti za vsakodnevno nego in ohranjanje zdravih las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Tradicionalne vrednote in sodoben pristop",
+    "description": "Old School frizerski studio združuje prijazen pristop, domače vzdušje in strokovnost.",
+    "highlights": [
+      "Prijetno in sproščeno vzdušje v studiu",
+      "Prijazna in osebna postrežba s strani lastnika",
+      "Visoka kakovost storitev po dostopnih cenah"
+    ],
+    "benefits": [
+      {
+        "stat": "Osebno",
+        "label": "vzdušje",
+        "description": "Prijazna in osebna postrežba v sproščenem ambientu."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "in dostopnost",
+        "description": "Visoka kakovost storitev po dostopnih cenah za vsakogar."
+      },
+      {
+        "stat": "Zaupanje",
+        "label": "strank",
+        "description": "Odlične ocene in zadovoljne stranke, ki se radi vračajo."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Obiščite naš studio",
+    "description": "Stopite v stik z nami in si rezervirajte svoj termin v Novem mestu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 27, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 366 758",
+        "href": "tel:031366758",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Rezervirajte termin",
+      "description": "Pošljite nam sporočilo in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 27, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Old School frizerski studio",
+    "address": "Ljubljanska cesta 27, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "031 366 758"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

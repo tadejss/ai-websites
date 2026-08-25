@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski studio Angelika Pavlin Dragica s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Ustvarjalne pričeske in osebni pristop za vaše lase",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "(07) 492 22 22",
+  "email": "",
+  "address": "Cesta krških žrtev 132, 8270 Krško, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 3:00 PM · Tuesday: 8:00 AM – 3:00 PM · Wednesday: 12:00 – 7:00 PM · Thursday: 12:00 – 7:00 PM · Friday: 8:00 AM – 3:00 PM · Saturday: 7:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazna in ustvarjalna frizerka",
+    "Upoštevanje individualnih želja strank",
+    "Zveste in zadovoljne stranke"
+  ],
+  "targetCustomers": "Ljudje vseh starosti, ki cenijo osebni pristop in urejen videz las",
+  "serviceArea": "Krško in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, topel, strokoven",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se na termin"
+}

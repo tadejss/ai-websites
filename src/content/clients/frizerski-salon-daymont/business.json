@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Daymont Look Cvetanovski Renata s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Strokovne frizerske storitve s poudarkom na prijaznosti in profesionalnosti.",
+  "services": [
+    "žensko striženje",
+    "moško striženje",
+    "barvanje las",
+    "urejanje pričesk",
+    "frizersko svetovanje"
+  ],
+  "phone": "(07) 302 50 16",
+  "email": "",
+  "address": "Cesta brigad 14, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "izjemna prijaznost do strank",
+    "visoka stopnja profesionalnosti",
+    "odlične storitve striženja in nege las"
+  ],
+  "targetCustomers": "lokalni prebivalci in vsi, ki iščejo kakovostne frizerske storitve v Novem mestu",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "coastal-fog",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/epiks-frizerski-salon/hero.jpg",
+      "alt": "Topel in prijeten ambient frizerskega salona v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/epiks-frizerski-salon/services.jpg",
+      "alt": "Strokovno striženje, barvanje in nega las"
+    }
+  },
+  "brand": {
+    "prefix": "Epiks",
+    "highlight": "Frizerski salon Katja"
+  },
+  "metadata": {
+    "title": "Epiks Frizerski salon Katja v Novem mestu",
+    "description": "Vaš zanesljiv frizerski salon v Novem mestu z okolico. Ponujamo striženje, barvanje, prameni, balayage in nego las v prijetnem in domačem vzdušju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Novo mesto",
+    "title": "Vaš zanesljiv frizerski salon za čudovit izgled",
+    "titleHighlight": "čudovit izgled",
+    "description": "Topel in strokoven pristop k vsaki stranki v Novem mestu z okolico. Poskrbimo za vaše lase z vrhunskimi storitvami in v prijetnem domačem vzdušju.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Topel",
+        "label": "Pristop"
+      },
+      {
+        "value": "Domače",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Vrhunske",
+        "label": "Storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Celovite frizerske storitve za vse generacije v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Striženje in oblikovanje las",
+        "description": "Kakovostno striženje in modno oblikovanje las, prilagojeno vašemu stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Uporaba preverjenih barv za obstojne in sijoče odtenke vaših las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prameni in balayage",
+        "description": "Moderni prameni in tehnika balayage za naraven videz in globino.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svečane pričeske",
+        "description": "Urejanje pričesk za posebne priložnosti, dogodke in praznovanja.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Globinska nega las za zdravje, mehkobo in sijoč lesk vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in domače vzdušje",
+    "description": "Pri delu združujemo strokovni pristop in prijetno okolje, kjer se boste počutili dobrodošle.",
+    "highlights": [
+      "Vrhunske storitve z odličnimi ocenami strank",
+      "Prijazno in domače vzdušje v salonu",
+      "Strokoven in topel pristop k vsaki stranki"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokoven",
+        "label": "Pristop",
+        "description": "Posvetimo se vsakemu posamezniku in njegovim željam."
+      },
+      {
+        "stat": "Domače",
+        "label": "Vzdušje",
+        "description": "Sprostite se v prijetnem okolju našega salona."
+      },
+      {
+        "stat": "Odlične",
+        "label": "Ocene",
+        "description": "Zadovoljne stranke cenijo našo kakovost in zanesljivost."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Drska 16a, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 348 773",
+        "href": "tel:041348773",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Drska 16a, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Epiks Frizerski salon Katja",
+    "address": "Drska 16a, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 348 773"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

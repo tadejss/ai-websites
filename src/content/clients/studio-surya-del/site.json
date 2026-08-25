@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "lavender-cream",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/studio-surya-del/hero.jpg",
+      "alt": "Sodoben in čist prostor solarija z mehko svetlobo v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/studio-surya-del/services.jpg",
+      "alt": "Kozmetične storitve in nega kože v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "Studio",
+    "highlight": "SURYA"
+  },
+  "metadata": {
+    "title": "Studio SURYA | Solarij in lepotni studio Novo mesto",
+    "description": "Zanesljivo sončenje, nega kože in prijetno okolje za vašo polt v Novem mestu. Obiščite Studio SURYA."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Solarij in lepotni studio Novo mesto",
+    "title": "Zanesljivo sončenje in",
+    "titleHighlight": "prijetno okolje",
+    "description": "Zanesljivo sončenje in prijetno okolje za vašo polt. Poskrbite za lepo porjavelost in urejen videz v sodobnih prostorih v Novem mestu.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Odprto vsak dan"
+      },
+      {
+        "value": "Drska",
+        "label": "Priročna lokacija"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Urejeni",
+        "label": "Čisti prostori"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vašo polt in videz",
+    "description": "V Studiu SURYA v Novem mestu nudimo celovite storitve za nego kože, sončenje in dobro počutje.",
+    "items": [
+      {
+        "title": "Turško sončenje",
+        "description": "Kakovostno in zanesljivo sončenje za lepo polt v vsakem letnem času.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kozmetične storitve",
+        "description": "Strokovne kozmetične storitve za vaš urejen in svež videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega kože",
+        "description": "Skrbno izbrani tretmaji za nego kože, prilagojeni vašim potrebam.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje za sončenje",
+        "description": "Strokovni nasveti za varno in enakomerno porjavitev vaše polti.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti Studia SURYA",
+    "description": "Združujemo sodoben pristop, čistočo in prijaznost, da se boste pri nas vedno počutili odlično.",
+    "highlights": [
+      "Zelo prijazno osebje, ki se posveti vsakemu obiskovalcu",
+      "Čisti in lepo urejeni prostori za vaše popolno udobje",
+      "Priročna lokacija v soseski Drska z enostavnim dostopom"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Zelo prijazno osebje",
+        "description": "Naša ekipa poskrbi za prijetno vzdušje in strokovno podporo ob vsakem obisku."
+      },
+      {
+        "stat": "Čistoča",
+        "label": "Urejeni prostori",
+        "description": "Vsi prostori našega studia so čisti, skrbno vzdrževani in prilagojeni vašemu sproščanju."
+      },
+      {
+        "stat": "Lokacija",
+        "label": "Soseska Drska",
+        "description": "Nahajamo se na priročni lokaciji v Novem mestu, kar omogoča hiter in preprost dostop."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas v Novem mestu ali nas pokličite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Slavka Gruma 7, 8000 Novo mesto",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 523 399",
+        "href": "tel:040523399",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 00:00 - 24:00 (Odprto 24 ur)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Slavka Gruma 7, 8000 Novo mesto, Slovenia",
+    "rights": "© 2025 Studio SURYA. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Studio SURYA",
+    "address": "Ulica Slavka Gruma 7, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 523 399"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

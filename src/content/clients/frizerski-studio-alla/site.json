@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "peach-bloom",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-alla/hero.jpg",
+      "alt": "Svetel in domač frizerski salon v Krškem z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-alla/services.jpg",
+      "alt": "Frizerske storitve striženja in barvanja las v urejenem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Alla"
+  },
+  "metadata": {
+    "title": "Frizerski studio Alla | Krško",
+    "description": "Vaša destinacija za čudovite pričeske v Krškem. Nudimo žensko in moško striženje, barvanje, prameni in stiliranje za vso družino."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Urejen lokalni salon",
+    "title": "Vaša destinacija za čudovite pričeske v",
+    "titleHighlight": "Krškem",
+    "description": "Prijazen in domač frizerski studio v Krškem in okolini. Nudimo celovite frizerske storitve z individualnim pristopom za lokalne prebivalce in obiskovalce.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Lokalno",
+        "label": "V Krškem"
+      },
+      {
+        "value": "Družinsko",
+        "label": "Za vso družino"
+      },
+      {
+        "value": "Individualno",
+        "label": "Pristop k strankam"
+      },
+      {
+        "value": "Urejen",
+        "label": "Domač salon"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbimo za vaš svež videz z naborom storitev za vso družino v Krškem in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Strokovno striženje in oblikovanje ženskih pričesk po vaših željah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Moderne in klasične moške frizure za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las za sijoč videz in polnost barve.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prameni",
+        "description": "Prameni za več dimenzij, globine in živahnosti vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Stiliranje pričesk",
+        "description": "Urejanje in stiliranje las za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Urejen lokalni salon z domačim vzdušjem",
+    "description": "Zavedamo se, kako pomemben je dober izgled in počutje. Zato se v našem studiu posvetimo vsakemu posebej.",
+    "highlights": [
+      "Lokalna dostopnost v Krškem in okolici",
+      "Celovite frizerske storitve za vso družino",
+      "Individualen in prijazen pristop k vsaki stranki"
+    ],
+    "benefits": [
+      {
+        "stat": "Lokalno",
+        "label": "Dostopnost",
+        "description": "Nahajamo se na Kolodvorski ulici v Krškem, kar omogoča preprost dostop."
+      },
+      {
+        "stat": "Celovito",
+        "label": "Za vso družino",
+        "description": "Nudimo striženje, barvanje in stiliranje na enem mestu za vsakogar."
+      },
+      {
+        "stat": "Osebno",
+        "label": "Individualni pristop",
+        "description": "Prisluhnemo vašim željam in poskrbimo za prijetno, domače vzdušje."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas v Frizerskem studiu Alla v Krškem ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska ulica 1a, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 554 006",
+        "href": "tel:070554006",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska ulica 1a, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Alla",
+    "address": "Kolodvorska ulica 1a, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "070 554 006"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

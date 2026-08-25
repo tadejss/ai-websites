@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Damjana, Damjana Kern s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne frizerske storitve in prijazen pristop za vaše popolno počutje.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las in prameni",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "070 894 350",
+  "email": "",
+  "address": "Ulica 11. novembra 49, 8273 Leskovec pri Krškem, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 7:00 PM · Tuesday: 8:00 AM – 7:00 PM · Wednesday: 8:00 AM – 7:00 PM · Thursday: 8:00 AM – 7:00 PM · Friday: 8:00 AM – 7:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno prijazen in strokovni kader",
+    "Dostopne cene storitev za vsakogar",
+    "Kakovostno striženje in oblikovanje pričesk",
+    "Visoko ocenjene storitve s strani zadovoljnih strank"
+  ],
+  "targetCustomers": "Lokalni prebivalci in vsi, ki iščejo kakovostne ter cenovno dostopne frizerske storitve",
+  "serviceArea": "Leskovec pri Krškem in okoliška območja",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni na območju Krškega in okolice",
+  "callToAction": "Naročite se na termin"
+}

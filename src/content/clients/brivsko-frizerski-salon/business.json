@@ -1,0 +1,28 @@
+{
+  "companyName": "Brivsko frizerski salon Ljudmila Kapš s.p.",
+  "industry": "Frizerski in brivski salon",
+  "tagline": "Strokovne frizerske in brivske storitve z dolgoletno tradicijo v Novem mestu.",
+  "services": [
+    "Moško striženje",
+    "Brivske storitve in urejanje brade",
+    "Žensko striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "(07) 302 86 41",
+  "email": "",
+  "address": "Šmihelska cesta 1, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Osebni pristop k vsaki stranki",
+    "Celovite frizerske in brivske storitve",
+    "Udoben in domač ambient"
+  ],
+  "targetCustomers": "Moški in ženske vseh starosti, ki cenijo urejen videz in strokovno nego las ter brade",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "topel, domač, strokoven",
+  "brandStyle": "tradicionalen in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski in brivski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

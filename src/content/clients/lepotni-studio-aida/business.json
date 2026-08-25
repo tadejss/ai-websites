@@ -1,0 +1,29 @@
+{
+  "companyName": "Lepotni studio Aida",
+  "industry": "Lepega in negovalnega studia",
+  "tagline": "Vrhunske lepotne storitve za nego obraza, nohtov in obrvi",
+  "services": [
+    "Nega obraza",
+    "Manikura in nohti",
+    "Oblikovanje obrvi",
+    "Laminacija obrvi",
+    "Barvanje obrvi"
+  ],
+  "phone": "068 157 208",
+  "email": "",
+  "address": "Ulica Mirana Jarca 20, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 4:00 PM · Tuesday: 12:00 AM – 8:00 PM · Wednesday: 8:00 AM – 4:00 PM · Thursday: 12:00 AM – 8:00 PM · Friday: 8:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Prilagojeni in profesionalni lepotni tretmaji",
+    "Zelo prijazen pristom in sproščeno vzdušje",
+    "Natančna izvedba z vidnimi rezultati",
+    "Urejen in prijeten ambient"
+  ],
+  "targetCustomers": "Osebe, ki iščejo kakovostno nego obraza, urejene nohte in profesionalno oblikovanje obrvi",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "eleganten in sproščen lepotni salon",
+  "competitors": "Lokalni lepotni in kozmetični saloni",
+  "callToAction": "Rezervirajte termin"
+}

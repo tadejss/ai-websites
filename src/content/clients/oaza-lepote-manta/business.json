@@ -1,0 +1,29 @@
+{
+  "companyName": "Oaza lepote manta frizerstvo Tanja Sluga s.p.",
+  "industry": "Frizerski salon in kavarna",
+  "tagline": "Vaša oaza sprostitve, lepote in dobre kavarne v Krškem",
+  "services": [
+    "Žensko in moško frizerstvo",
+    "Barvanje in stiliranje las",
+    "Nega las",
+    "Postrežba kav in pijač",
+    "Sprostitveni kotiček za družine"
+  ],
+  "phone": "(07) 492 54 57",
+  "email": "",
+  "address": "Cesta 4. julija 41, 8270 Krško, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 7:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Zelo prijazno osebje",
+    "Ugodne cene storitev in pijač",
+    "Prijeten ambient za sprostitev s kavo",
+    "Otrokom prijazno z igračami"
+  ],
+  "targetCustomers": "Lokalni prebivalci, družine, posamezniki, ki iščejo frizerske storitve in prijeten prostor za kavo",
+  "serviceArea": "Krško z okolico",
+  "yearsExperience": "",
+  "tone": "topel, prijazen, domač",
+  "brandStyle": "sproščen lokalni salon",
+  "competitors": "Ostali frizerski saloni in kavarne v regiji Krško",
+  "callToAction": "Rezervirajte termin"
+}

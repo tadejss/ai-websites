@@ -1,0 +1,210 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "olive-gold",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/lamia-lepotni-studio/hero.jpg",
+      "alt": "Topel in eleganten lepotni studio v Novem mestu z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/lamia-lepotni-studio/services.jpg",
+      "alt": "Strokovna nega nohtov in manikura v lepotnem studiu"
+    }
+  },
+  "brand": {
+    "prefix": "Lamia",
+    "highlight": "Lepotni Studio"
+  },
+  "metadata": {
+    "title": "Lamia, lepotni studio | Novo mesto",
+    "description": "Strokovne in estetske lepotne storitve za vaši urejenost in samozavest v Novem mestu in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lepotni studio v Novem mestu",
+    "title": "Strokovne in estetske lepotne storitve za vašo",
+    "titleHighlight": "urejenost in samozavest",
+    "description": "Poskrbite za svoj urejen videz z vrhunsko nego nohtov, manikuro in kozmetičnimi storitvami v Novem mestu in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Nega",
+        "label": "Nohtov in rok"
+      },
+      {
+        "value": "Topel",
+        "label": "In strokoven pristop"
+      },
+      {
+        "value": "Estetske",
+        "label": "In lepotne storitve"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Strokovne lepotne storitve",
+    "description": "Izberite med našimi storitvami za nego rok, nohtov, urejanje obrvi in splošno kozmetično nego v Novem mestu.",
+    "items": [
+      {
+        "title": "Nega nohtov",
+        "description": "Kakovostna in skrbna nega nohtov za zdrav ter urejen videz vaših rok.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Manikura",
+        "description": "Profesionalna manikura z obstojnimi in lepimi rezultati.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje obrvi",
+        "description": "Natančno in estetsko urejanje obrvi, ki poudarijo vaš obraz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Kozmetične storitve",
+        "description": "Celovite kozmetične storitve za vaše dobro počutje in lepoto.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega rok",
+        "description": "Negovane in mehke roke ter urejen videz ob vsaki priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in urejen videz",
+    "description": "V lepotnem studiu Lamia se posvetimo vsakemu posamezniku z visoko stopnjo natančnosti in prijaznosti.",
+    "highlights": [
+      "Visoka strokovnost in natančnost pri delu",
+      "Prijazno osebje in topel sprejem",
+      "Obstojni in lepi rezultati",
+      "Ugodne cene in hitra izvedba"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "Natančnost pri delu",
+        "description": "Vsaki storitvi se posvetimo z veliko mero natančnosti za najboljše rezultate."
+      },
+      {
+        "stat": "Prijaznost",
+        "label": "Topel sprejem",
+        "description": "Pri nas vas pričaka prijazno osebje in sproščeno vzdušje."
+      },
+      {
+        "stat": "Obstojnost",
+        "label": "Lepi rezultati",
+        "description": "Uporaba preverjenih pristopov za obstojne in lepe estetske rešitve."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite naš lepotni studio v Novem mestu ali nas kontaktirajte za vprašanja in rezervacije.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Pod Trško Goro 23, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 201 603",
+        "href": "tel:031201603",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Pod Trško Goro 23, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lamia Lepotni Studio",
+    "address": "Pod Trško Goro 23, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "031 201 603"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

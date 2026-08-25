@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "coastal-fog",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-daymont/hero.jpg",
+      "alt": "Svetel in urejen frizerski salon v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-daymont/services.jpg",
+      "alt": "Strokovne frizerske storitve in urejanje pričesk"
+    }
+  },
+  "brand": {
+    "prefix": "Daymont Look",
+    "highlight": "Cvetanovski Renata s.p."
+  },
+  "metadata": {
+    "title": "Frizerski salon Daymont Look Novo mesto",
+    "description": "Strokovne frizerske storitve s poudarkom na prijaznosti in profesionalnosti v Novem mestu. Rezervirajte svoj termin za striženje, barvanje in nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Novem mestu",
+    "title": "Strokovne frizerske storitve za",
+    "titleHighlight": "vaše lase",
+    "description": "Dobrodošli v urejenem lokalnem salonu v Novem mestu, kjer združujemo izjemno prijaznost, visoko stopnjo profesionalnosti in vrhunsko nego.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Prijaznost",
+        "label": "Do vsake stranke"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Striženje in nega"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokalna lokacija"
+      },
+      {
+        "value": "Urejen",
+        "label": "Ambient salona"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve",
+    "description": "Poskrbite za svoj videz z našimi storitvami oblikovanja pričesk, prilagojenimi prebivalcem Novega mesta.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Profesionalno striženje in oblikovanje ženskih pričesk po vaši meri.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje za urejen in svež videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las z obstojnimi in sijočimi odtenki.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Urejanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Frizersko svetovanje",
+        "description": "Strokovni nasveti glede nege in izbire primerne pričeske.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega salona",
+    "description": "Zavedamo se, kako pomembna sta videz in počutje vaših las, zato se v salonu Daymont Look posvetimo vsakemu posebej.",
+    "highlights": [
+      "Izjemna prijaznost do vsake stranke",
+      "Visoka stopnja profesionalnosti pri delu",
+      "Odlične storitve striženja in nege las"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazno",
+        "label": "Osebje",
+        "description": "Topel sprejem in prijetno vzdušje v salonu."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Znanje",
+        "description": "Visoka raven profesionalnosti pri vseh frizerskih storitvah."
+      },
+      {
+        "stat": "Kakovostna",
+        "label": "Nega",
+        "description": "Skrbno izbrane storitve za striženje in nego vaših las."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite naš salon v Novem mestu ali nas pokličite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta brigad 14, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 302 50 16",
+        "href": "tel:+38673025016",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede vašega termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta brigad 14, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Daymont Look Cvetanovski Renata s.p.",
+    "address": "Cesta brigad 14, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "(07) 302 50 16"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

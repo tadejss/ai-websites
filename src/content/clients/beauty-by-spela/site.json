@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "peach-bloom",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/beauty-by-spela/hero.jpg",
+      "alt": "Notranjost sodobnega lepotnega salona z manikurno mizo v toplih tonih"
+    },
+    "services": {
+      "src": "/clients/beauty-by-spela/services.jpg",
+      "alt": "Strokovna nega nohtov in manikura v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "BEAUTY BY",
+    "highlight": "ŠPELA"
+  },
+  "metadata": {
+    "title": "BEAUTY BY ŠPELA | Lepotne storitve in nega nohtov Novo mesto",
+    "description": "Vrhunske lepotne storitve, nega nohtov, manikura in strokovni tečaji v Novem mestu z okolico. Poskrbite za svoj urejen videz v prijetnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lepotni salon Novo mesto",
+    "title": "Vrhunske lepotne storitve in",
+    "titleHighlight": "urejanje nohtov",
+    "description": "Zasnovano za vse, ki cenijo urejen videz, kakovostno nego nohtov in prijetno vzdušje v Novem mestu in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Velika",
+        "label": "Izbira barv"
+      },
+      {
+        "value": "Prijeten",
+        "label": "Ambient"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše lepotne storitve",
+    "description": "Ponujamo celovite rešitve za urejanje nohtov in kozmetične storitve za stranke v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Urejanje in nega nohtov",
+        "description": "Celovita nega in urejanje nohtov za zdrav in negovan videz z uporabo kakovostnih materialov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Manikura",
+        "description": "Strokovna manikura z veliko izbiro barv in natančno izvedbo za popolne roke.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Strokovni tečaji",
+        "description": "Izobraževanja in tečaji s področja nege in urejanja nohtov pod strokovnim vodstvom.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Kozmetične storitve",
+        "description": "Kakovostne kozmetične storitve v prijetnem ambientu z visoko estetiko.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Udobje, kakovost in strokovnost",
+    "description": "Z izbiro našega salona v Novem mestu se odločate za visoke standarde in predanost lepoti.",
+    "highlights": [
+      "Kakovostni materiali in natančna izvedba",
+      "Prijazno in strokovno osebje z občutkom za estetiko",
+      "Velika izbira barv za nohte in individualen pristop"
+    ],
+    "benefits": [
+      {
+        "stat": "Materiali",
+        "label": "Kakovost",
+        "description": "Uporaba preverjenih in kakovostnih materialov za dolgotrajne rezultate."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Sproščujoče",
+        "description": "Prijeten prostor z visoko estetiko za vaše popolno razvajanje."
+      },
+      {
+        "stat": "Osebje",
+        "label": "Prijaznost",
+        "description": "Strokovna in prijazna obravnava vsake stranke."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših lepotnih storitev in tečajev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Novi trg 10, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 981 514",
+        "href": "tel:040981514",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Novi trg 10, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "BEAUTY BY ŠPELA",
+    "address": "Novi trg 10, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 981 514"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

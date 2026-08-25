@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski studio Luka Branka Pavlović s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske striženje in frizerske storitve v Novem mestu",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Oblikovanje pričesk",
+    "Barvanje las",
+    "Nega las"
+  ],
+  "phone": "(07) 334 11 01",
+  "email": "",
+  "address": "Kandijska c. 30, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Izkušeni in prijazni frizerji",
+    "Visoka ocena in zadovoljne stranke",
+    "Kakovostne in cenovno dostopne storitve",
+    "Osebni pristop k vsaki stranki"
+  ],
+  "targetCustomers": "Lokalni prebivalci in vsi, ki iščejo kakovostne frizerske storitve v Novem mestu",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "dostopen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

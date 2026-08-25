@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-dejan/hero.jpg",
+      "alt": "Notranjost sodobnega frizerskega studia v toplih toni"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-dejan/services.jpg",
+      "alt": "Striženje in oblikovanje las v svatljenem frizerskem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Dejan"
+  },
+  "metadata": {
+    "title": "Frizerski studio Dejan | Vrhunske in modne pričeske v Krškem",
+    "description": "Vrhunske in modne pričeske za ženske, moške in otroke v Krškem z okolico. Naročite se na striženje in strokovno nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon v Krškem",
+    "title": "Vrhunske in modne pričeske",
+    "titleHighlight": "za vsak okus",
+    "description": "Nudimo kakovostne frizerske storitve za ženske, moške in otroke v Krškem z okolico. Doživite prijazen pristop in strokovno svetovanje.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančno",
+        "label": "Striženje kratkih las"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje za nego"
+      },
+      {
+        "value": "Dostopno",
+        "label": "Kakovostne cene"
+      },
+      {
+        "value": "Prijazen",
+        "label": "Lokalni pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vso družino",
+    "description": "Poskrbimo za vaš svež videz in dolgotrajno obstojnost pričeske v Krškem z okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Modne in klasične ženske pričeske, prilagojene vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Izjemno natančno striženje moških in kratkih las ter urejanje videza.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Striženje otrok",
+        "description": "Prijazno in potrpežljivo striženje za najmlajše člane družine.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje in oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje za nego las",
+        "description": "Strokovni nasveti za pravilno nego in vzdrževanje zdravih las doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, natančnost in domače vzdušje",
+    "description": "Z našim strokovnim znanjem in osebnim pristopom poskrbimo, da se boste v našem salonu vedno počutili odlično.",
+    "highlights": [
+      "Izjemno natančno striženje kratkih in modnih las",
+      "Hiter, kakovosten in čist servis v prijetnem okolju",
+      "Prijazen pristop in strokovno svetovanje za vsakega posameznika"
+    ],
+    "benefits": [
+      {
+        "stat": "Natančnost",
+        "label": "Modni lasje",
+        "description": "Poseben poudarek namenjamo natančnemu striženju in modnim linijam."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo nego."
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "Dolgo obstojne pričeske",
+        "description": "Uporabljamo preizkušene metode za urejene in dolgo obstojne pričeske."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na svoj termin",
+    "description": "Obiščite naš salon v Krškem ali nas pokličite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 58, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 504 601",
+        "href": "tel:041504601",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–17:00 (sreda do 16:00), Sob: 8:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostega termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 58, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Dejan",
+    "address": "Cesta krških žrtev 58, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "041 504 601"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "companyName": "Havajana frizersko lepotilni salon Janja Krumar s.p.",
+  "industry": "Frizerski in lepotilni salon",
+  "tagline": "Vrhunske frizerske storitve za vsako priložnost in nepozaben videz",
+  "services": [
+    "Striženje in oblikovanje pričesk",
+    "Barvanje las in prameni",
+    "Svečane in galo pričeske",
+    "Nega in obnova las",
+    "Lepotilne storitve"
+  ],
+  "phone": "041 234 502",
+  "email": "",
+  "address": "Ulica Slavka Gruma 24, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunska strokovnost in izjemen talent",
+    "Prilagojen pristop in strokovno svetovanje za vsako stranko",
+    "Odlične reference za posebne priložnosti in gala dogodke",
+    "Zelo prijetno in sproščeno vzdušje v salonu"
+  ],
+  "targetCustomers": "Vsi, ki cenijo kakovostno striženje, urejen videz las ter strokovno svetovanje za vsak dan in posebne priložnosti.",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "topel, strokoven in prijazen",
+  "brandStyle": "domač, eleganten in zanesljiv",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

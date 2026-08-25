@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski studio Alla",
+  "industry": "frizerski salon",
+  "tagline": "Vaša destinacija za čudovite pričeske v Krškem",
+  "services": [
+    "žensko striženje",
+    "moško striženje",
+    "barvanje las",
+    "prameni",
+    "stiliranje pričesk"
+  ],
+  "phone": "070 554 006",
+  "email": "",
+  "address": "Kolodvorska ulica 1a, 8270 Krško, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "lokalna dostopnost v Krškem",
+    "celovite frizerske storitve za vso družino",
+    "individualen pristop k strankam"
+  ],
+  "targetCustomers": "lokalni prebivalci in obiskovalci, ki iščejo urejanje las",
+  "serviceArea": "Krško in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, domač",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "drugi frizerski saloni v regiji",
+  "callToAction": "Rezervirajte termin"
+}

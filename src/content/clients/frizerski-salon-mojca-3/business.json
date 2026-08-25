@@ -1,0 +1,27 @@
+{
+  "companyName": "Frizerski salon Mojca",
+  "industry": "Frizerski salon",
+  "tagline": "Vaš osebni frizer za edinstven slog v Novem mestu",
+  "services": [
+    "Striženje las",
+    "Barvanje las",
+    "Stilsko oblikovanje",
+    "Nega las"
+  ],
+  "phone": "070 304 209",
+  "email": "",
+  "address": "Seidlova cesta 62, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 3:00 PM · Tuesday: 12:00 – 7:00 PM · Wednesday: 12:00 – 7:00 PM · Thursday: 12:00 – 7:00 PM · Friday: 8:00 AM – 7:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Razumevanje osebnega sloga in značaja stranke",
+    "Izjemno in strokovno vodenje",
+    "Visoka ocena in zadovoljstvo strank"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo osebni pristop k urejanju pričeske in kakovostne frizerske storitve v Novem mestu",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, oseben",
+  "brandStyle": "domač in zaupanja vreden salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

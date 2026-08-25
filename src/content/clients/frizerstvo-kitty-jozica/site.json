@@ -1,0 +1,210 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-kitty-jozica/hero.jpg",
+      "alt": "Svetel in urejen frizerski salon v Krškem"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-kitty-jozica/services.jpg",
+      "alt": "Strokovno striženje in nega las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Kitty Jožica Kožar s.p."
+  },
+  "metadata": {
+    "title": "Frizerstvo Kitty Jožica Kožar s.p. | Frizerski salon Krško",
+    "description": "Strokovno in urejeno striženje ter nega las v Krškem z okolico. Celovite frizerske storitve za vso družino z osebnim pristopom."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Krškem",
+    "title": "Strokovno striženje in nega las za",
+    "titleHighlight": "vso družino",
+    "description": "Zanesljive in celovite frizerske storitve za lokalne prebivalce ter obiskovalce Krškega z okolico. Poskrbimo za vaš urejen videz in zdravje vaših las.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Družinsko",
+        "label": "Striženje"
+      },
+      {
+        "value": "Celovita",
+        "label": "Nega las"
+      },
+      {
+        "value": "Individualen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Krško",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve",
+    "description": "Ponujamo široko paleto storitev za nego in oblikovanje vaših las v Krškem.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Urejeno in natančno moško striženje za vsak dan ali posebne priložnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje las, prameni in osvežitev barve z obstojnimi odtenki.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Svečane in vsakdanje pričeske za vse vaše dogodke in pomembne trenutke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilne nege za obnovo, sijaj in zdravje vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač in zanesljiv frizerski salon",
+    "description": "Z našim strokovnim in prijaznim osebjem poskrbimo, da se boste v našem salonu vedno počutili dobrodošle.",
+    "highlights": [
+      "Celovite frizerske storitve za vso družino",
+      "Prijazno in strokovno osebje",
+      "Individualen pristop k negi las",
+      "Lokalna dostopnost v Krškem"
+    ],
+    "benefits": [
+      {
+        "stat": "Celovito",
+        "label": "Za vso družino",
+        "description": "Ponujamo storitve za vse generacije na enem mestu v Krškem."
+      },
+      {
+        "stat": "Prijazno",
+        "label": "Strokovno osebje",
+        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri prave pričeske."
+      },
+      {
+        "stat": "Osebno",
+        "label": "Individualen pristop",
+        "description": "Vsaki stranki se posvetimo posebej, da zagotovimo najboljšo nego las."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij o naših storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 75, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 842 555",
+        "href": "tel:040842555",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 75, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Kitty Jožica Kožar s.p.",
+    "address": "Cesta krških žrtev 75, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "040 842 555"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

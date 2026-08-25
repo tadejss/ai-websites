@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerske storitve, Mile Vujnić s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Profesionalne frizerske storitve za vaš popoln videz",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Oblikovanje pričesk",
+    "Barvanje las",
+    "Nega las"
+  ],
+  "phone": "070 709 208",
+  "email": "",
+  "address": "Ljubljanska cesta 22, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 7:00 PM · Tuesday: 9:00 AM – 7:00 PM · Wednesday: 9:00 AM – 7:00 PM · Thursday: 9:00 AM – 7:00 PM · Friday: 9:00 AM – 7:00 PM · Saturday: 9:00 AM – 3:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazno in strokovno osebje",
+    "Visoka raven zadovoljstva strank",
+    "Odlično razmerje med ceno in kakovostjo"
+  ],
+  "targetCustomers": "Moški in ženske, ki cenijo kakovostno striženje in urejen videz",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

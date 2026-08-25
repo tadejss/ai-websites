@@ -1,0 +1,29 @@
+{
+  "companyName": "Old School frizerski studio",
+  "industry": "frizerski salon",
+  "tagline": "Kakovostno striženje in sproščeno vzdušje v Novem mestu",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Urejanje brade",
+    "Stiliranje las",
+    "Svetovanje o negi las"
+  ],
+  "phone": "031 366 758",
+  "email": "",
+  "address": "Ljubljanska cesta 27, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prijetno in sproščeno vzdušje v studiu",
+    "Prijazna in osebna postrežba s strani lastnika",
+    "Visoka kakovost storitev po dostopnih cenah",
+    "Odlične ocene zadovoljnih strank"
+  ],
+  "targetCustomers": "Moški in ženske, ki cenijo kakovostno frizersko storitev in prijeten ambient",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, domač, profesionalen",
+  "brandStyle": "klasičen, zanesljiv, dostopen",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

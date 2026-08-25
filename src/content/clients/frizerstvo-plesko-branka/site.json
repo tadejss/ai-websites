@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-plesko-branka/hero.jpg",
+      "alt": "Svetel in sodoben frizerski salon z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-plesko-branka/services.jpg",
+      "alt": "Strokovno striženje in barvanje las v frizerskem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo Pleško",
+    "highlight": "Branka s.p."
+  },
+  "metadata": {
+    "title": "Frizerstvo Pleško Branka s.p. | Frizerski salon Novo mesto",
+    "description": "Strokovno striženje in prilagojene frizure za vsak tip lase v Novem mestu in okolini. Naročite se na termin in zaupajte izkušeni roki."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Novo mesto",
+    "title": "Strokovno striženje in prilagojene frizure za",
+    "titleHighlight": "vsak tip lase",
+    "description": "Dobrodošli v našem domačem in zaupanja vrednem salonu. Nudimo kakovostne frizerske storitve in strokovno svetovanje za stranke iz Novega mesta in okolice.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Striženje"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Vsi tipi",
+        "label": "Las"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vas",
+    "description": "Prilagajamo pričeske obliki vašega obraza in poskrbimo za zdrav ter urejen videz vaših las v Novem mestu in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričesk za vsakdanji ali eleganten videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje in osvežitev barve z izdelki, ki varujejo vaše lase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje",
+        "description": "Oblikovanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje glede oblike obraza",
+        "description": "Strokovno svetovanje pri izbiri pričeske, ki se popolnoma prilega vašemu obrazu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače okolje in strokovna obravnava",
+    "description": "Z našim znanjem in posluhom za vaše želje poskrbimo, da se boste v našem salonu vedno počutili dobro.",
+    "highlights": [
+      "Odlično poznavanje frizerskih tehnik in striženja",
+      "Prilagajanje pričeske obliki vašega obraza",
+      "Strokovna obravnava vseh tipov las"
+    ],
+    "benefits": [
+      {
+        "stat": "Tehnika",
+        "label": "Poznavanje",
+        "description": "Zanesljivo obvladovanje sodobnih in klasičnih frizerskih tehnik."
+      },
+      {
+        "stat": "Obraz",
+        "label": "Prilagajanje",
+        "description": "Vsaka pričeska je skrbno izbrana glede na obliko vašega obraza."
+      },
+      {
+        "stat": "Zaupanje",
+        "label": "Domače vzdušje",
+        "description": "Prijazen in strokoven pristop v prijetnem okolju v Novem mestu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na svoj termin ali nas pokličite za vsa vprašanja glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dilančeva ulica 7, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 332 36 70",
+        "href": "tel:073323670",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Dilančeva ulica 7, 8000 Novo mesto, Slovenia",
+    "rights": "© 2024 Frizerstvo Pleško Branka s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Pleško Branka s.p.",
+    "address": "Dilančeva ulica 7, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "(07) 332 36 70"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

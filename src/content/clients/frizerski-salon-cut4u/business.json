@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski salon Cut4u Martina Drobež s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne in urejene frizerske storitve z osebnim pristopom v Novem mestu",
+  "services": [
+    "Moško striženje",
+    "Žensko striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "041 944 503",
+  "email": "",
+  "address": "Ljubljanska cesta 91, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena strank in preverjeno zadovoljstvo",
+    "Prijazno osebje in točnost",
+    "Kakovostne frizerske storitve",
+    "Udoben in urejen salon"
+  ],
+  "targetCustomers": "Moški, ženske in vsi, ki cenijo kakovostno striženje ter urejen videz v Novem mestu",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "moderno, domače",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte termin"
+}

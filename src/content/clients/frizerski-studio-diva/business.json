@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski studio diva Nina Gorjup s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovne in prijazne frizerske storitve za vso družino v Krškem.",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Otroško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk"
+  ],
+  "phone": "051 336 866",
+  "email": "",
+  "address": "Cesta 4. julija 84a, 8270 Krško, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prijazno osebje in osebni pristop",
+    "Hiter in profesionalen servis",
+    "Prijeten ambient z dobro postrežbo",
+    "Primerno za vso družino"
+  ],
+  "targetCustomers": "Posamezniki in družine, ki iščejo kakovostne in prijazne frizerske storitve v Krškem",
+  "serviceArea": "Krško z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, topel in profesionalen",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se na termin"
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Renata, Renata Gazvoda s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Topel ambient, prijazna storitev in čudovite pričeske za vaš popoln videz.",
+  "services": [
+    "Žensko striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Darilni boni za razvajanje"
+  ],
+  "phone": "040 184 750",
+  "email": "",
+  "address": "Seidlova cesta 34, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Zelo prijazna frizerka in prijeten, topel ambient",
+    "Kakovostne in cenovno dostopne frizerske storitve",
+    "Možnost nakupa darilnih bonov za razvajanje",
+    "Brezplačno parkiranje v spodnji garaži"
+  ],
+  "targetCustomers": "Ženske in vsi, ki iščejo kakovostno frizersko storitev v prijetnem okolju v Novem mestu",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen in topel",
+  "brandStyle": "dostopen lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se na termin"
+}

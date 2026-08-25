@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "moss-linen",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/minale-pe-frizerski/hero.jpg",
+      "alt": "Sodoben in svetel frizerski salon v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/minale-pe-frizerski/services.jpg",
+      "alt": "Strokovno striženje, barvanje in nega las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Atmosfera"
+  },
+  "metadata": {
+    "title": "Frizerski salon Atmosfera | Novo mesto",
+    "description": "Hitre in kakovostne frizerske storitve v prijetnem vzdušju v Novem mestu z okolico. Naročite se na striženje, barvanje in nego las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Sodoben lokalni salon v Novem mestu",
+    "title": "Hitre in kakovostne frizerske storitve v",
+    "titleHighlight": "prijetnem vzdušju",
+    "description": "Celovite frizerske storitve za lokalne prebivalce Novega mesta z okolico. Poskrbimo za vaš svež videz z osebnim in strokovnim pristopom.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitro",
+        "label": "Naročanje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Učinkovito",
+        "label": "Delo"
+      },
+      {
+        "value": "Prijetno",
+        "label": "Vzdušje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vsak okus",
+    "description": "V frizerskem salonu Atmosfera v Novem mestu nudimo kakovostno striženje, barvanje in nego las za vse generacije.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričeske za urejen vsakdanji videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske striženja, prilagojena obliki vašega obraza.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki in tehnike barvanja za sijoče ter zdrave lase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranljive nege za obnovo in revitalizacijo vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati salon Atmosfera",
+    "title": "Zanesljive in hitre storitve za vaše lase",
+    "description": "Združujemo hitro postrežbo, prijaznost in strokovnost, da so vaše želje vedno na prvem mestu.",
+    "highlights": [
+      "Hitra in učinkovita postrežba",
+      "Prijazno osebje in strokoven pristop",
+      "Možnost predhodnega naročanja"
+    ],
+    "benefits": [
+      {
+        "stat": "Hitrost",
+        "label": "Hitra postrežba",
+        "description": "Cenimo vaš čas in poskrbimo za učinkovito izvedbo storitev."
+      },
+      {
+        "stat": "Prijaznost",
+        "label": "Strokoven pristop",
+        "description": "Prijazno osebje poskrbi za prijetno izkušnjo ob vsakem obisku."
+      },
+      {
+        "stat": "Naročanje",
+        "label": "Predhodni termin",
+        "description": "Možnost enostavnega predhodnega naročanja za vašo popolno prilagodljivost."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Obiščite nas v Novem mestu",
+    "description": "Naročite se na svoj naslednji frizerski termin ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Slavka Gruma 7, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 337 99 78",
+        "href": "tel:+38673379978",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–19:00, Sob: 8:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali želje glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Slavka Gruma 7, 8000 Novo mesto, Slovenia",
+    "rights": "© 2024 Minale d.o.o., PE frizerski salon Atmosfera. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Atmosfera",
+    "address": "Ulica Slavka Gruma 7, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "(07) 337 99 78"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/salon-zate-frizerstvo/hero.jpg",
+      "alt": "Sodoben in urejen frizerski salon v toplih tonih"
+    },
+    "services": {
+      "src": "/clients/salon-zate-frizerstvo/services.jpg",
+      "alt": "Strokovno barvanje in stilsko oblikovanje las"
+    }
+  },
+  "brand": {
+    "prefix": "Salon zate",
+    "highlight": "Brigita Herendič s.p."
+  },
+  "metadata": {
+    "title": "Salon zate | Frizerski salon Brigita Herendič s.p.",
+    "description": "Vrhunske frizerske storitve z naravnimi barvami za lase v Novem mestu z okolico. Žensko in moško striženje, stilsko oblikovanje ter nega las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Novo mesto",
+    "title": "Vrhunske frizerske storitve z",
+    "titleHighlight": "naravnimi barvami za lase",
+    "description": "Nudimo kakovostno striženje, naravne materiale in osebni pristop za vse v Novem mestu z okolico, ki cenijo urejen videz in zdravje svojih las.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Naravne",
+        "label": "Barve za lase"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Urejen",
+        "label": "Ambient"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vaše lase",
+    "description": "V našem salonu v Novem mestu poskrbimo za vaš svež in urejen videz z uporabo kakovostnih in naravnih materialov.",
+    "items": [
+      {
+        "title": "Žensko in moško striženje",
+        "description": "Moderne in klasične frizure, prilagojene vašemu slogu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las z naravnimi barvami",
+        "description": "Zdravo barvanje z naravnimi barvami za lase, ki ohranjajo sijaj in mehkobo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in obnova las",
+        "description": "Globinska nega in obnova za sijoče in zdrave lase.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Salon, kjer so vaše želje in zdravje las na prvem mestu",
+    "description": "Združujemo strokovnost, prijeten ambient in naravne pristope k negovanju las.",
+    "highlights": [
+      "Uporaba naravnih barv za lase",
+      "Hitra in točna postrežba brez čakanja",
+      "Prijazno osebje in prijeten ambient"
+    ],
+    "benefits": [
+      {
+        "stat": "Naravno",
+        "label": "Barvanje",
+        "description": "Uporabljamo naravne barve za lase, ki negujejo in ščitijo vaše lase."
+      },
+      {
+        "stat": "Točnost",
+        "label": "Brez čakanja",
+        "description": "Zagotavljamo hitro in točno postrežbo ob dogovorjenem času."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Prijetno vzdušje",
+        "description": "Prijazno osebje poskrbi za sproščeno izkušnjo ob vsakem obisku."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših frizerskih storitev v Novem mestu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 607 966",
+        "href": "tel:031607966",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica Milana Majcna 9, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Milana Majcna 9, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Salon zate Brigita Herendič s.p.",
+    "address": "Ulica Milana Majcna 9, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "031 607 966"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

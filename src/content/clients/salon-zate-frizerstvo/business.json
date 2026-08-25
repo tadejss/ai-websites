@@ -1,0 +1,28 @@
+{
+  "companyName": "Salon zate frizerstvo Brigita Herendič s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve z naravnimi barvami za lase",
+  "services": [
+    "Žensko in moško striženje",
+    "Barvanje las z naravnimi barvami",
+    "Stilsko oblikovanje pričesk",
+    "Nega in obnova las"
+  ],
+  "phone": "031 607 966",
+  "email": "",
+  "address": "Ulica Milana Majcna 9, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Uporaba naravnih barv za lase",
+    "Hitra in točna postrežba brez čakanja",
+    "Prijazno osebje in prijeten ambient",
+    "Visoka ocena in zadovoljstvo strank"
+  ],
+  "targetCustomers": "Vsi, ki cenijo kakovostno striženje, naravne materiale in osebni pristop v Novem mestu",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben, urejen",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

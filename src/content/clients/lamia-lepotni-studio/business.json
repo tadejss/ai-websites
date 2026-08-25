@@ -1,0 +1,29 @@
+{
+  "companyName": "Lamia, lepotni studio, Monika Pajtler s.p.",
+  "industry": "Lepotni salon",
+  "tagline": "Strokovne in estetske lepotne storitve za vaši urejenost in samozavest.",
+  "services": [
+    "Nega nohtov",
+    "Manikura",
+    "Urejanje obrvi",
+    "Kozmetične storitve",
+    "Nega rok"
+  ],
+  "phone": "031 201 603",
+  "email": "",
+  "address": "Pod Trško Goro 23, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Open 24 hours · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka strokovnost in natančnost pri delu",
+    "Prijazno osebje in topel sprejem",
+    "obstojni in lepi rezultati",
+    "Ugodne cene in hitra izvedba"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo urejen videz, kakovostno nego nohtov in strokovne lepotne storitve v Novem mestu.",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "topel, strokoven",
+  "brandStyle": "eleganten in zanesljiv",
+  "competitors": "Lokalni lepotni saloni v regiji",
+  "callToAction": "Rezervirajte termin"
+}

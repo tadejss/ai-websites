@@ -1,0 +1,215 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "olive-gold",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/oaza-lepote-manta/hero.jpg",
+      "alt": "Topel in prijeten interier frizerskega salona z zlatimi toni"
+    },
+    "services": {
+      "src": "/clients/oaza-lepote-manta/services.jpg",
+      "alt": "Strokovno striženje las in prijeten kotiček s kavo"
+    }
+  },
+  "brand": {
+    "prefix": "Oaza lepote",
+    "highlight": "manta"
+  },
+  "metadata": {
+    "title": "Oaza lepote manta | Frizerski salon in kavarna Krško",
+    "description": "Vaša oaza sprostitve, lepote in dobre kavarne v Krškem. Žensko in moško frizerstvo, barvanje, nega las ter prijeten družinski kotiček."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon in kavarna v Krškem",
+    "title": "Vaša oaza sprostitve, lepote in",
+    "titleHighlight": "dobre kavarne",
+    "description": "Topel, prijazen in domač prostor v Krškem z okolico, kjer združujemo strokovne frizerske storitve in prijeten kotiček za kavo ter druženje celotne družine.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Toplo",
+        "label": "In prijazno osebje"
+      },
+      {
+        "value": "Ugodne",
+        "label": "Cene storitev in pijač"
+      },
+      {
+        "value": "Prijeten",
+        "label": "Ambient za sprostitev"
+      },
+      {
+        "value": "Otrokom",
+        "label": "Prijazno z igračami"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve in kavarna",
+    "description": "V Krškem poskrbimo za vaš svež videz in sproščen trenutek ob odlični pijači. Na voljo so storitve za vso družino.",
+    "items": [
+      {
+        "title": "Žensko in moško frizerstvo",
+        "description": "Strokovno striženje in urejanje pričesk za ženske in moške vseh generacij.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje in stiliranje las",
+        "description": "Kakovostno barvanje in oblikovanje las po vaših željah ter navdihu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega las",
+        "description": "Negovalni tretmaji, ki vaši pričeski povrnejo sijaj, mehkobo in zdrav videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Postrežba kav in pijač",
+        "description": "Uživajte v skodelici dišeče kave ali osvežilne pijače v prijetnem ambientu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Sprostitveni kotiček za družine",
+        "description": "Otrokom prijazen prostor z igračami, ki poskrbi za sproščeno izkušnjo cele družine.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in skrb za vaše dobro počutje",
+    "description": "Ustvarjamo prostor, kjer se frizerska nega in družabno utrip prepletata v prijetno izkušnjo za vsakogar.",
+    "highlights": [
+      "Zelo prijazno osebje, ki prisluhne vašim željam",
+      "Prijeten in topel ambient za sprostitev s kavo",
+      "Otrokom prijazen prostor z igračami za vso družino",
+      "Ugodne cene storitev in pijač"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Topel pristop",
+        "description": "Osebje vas vedno sprejme z nasmehom in poskrbi za domače vzdušje."
+      },
+      {
+        "stat": "Družinsko",
+        "label": "Prilagojeno vsem",
+        "description": "Prostor z igračami je namenjen družinam in posameznikom, ki želijo udobje."
+      },
+      {
+        "stat": "Celostno",
+        "label": "Kava in frizer",
+        "description": "Združite urejanje frizure in sproščen trenutek ob kavici na enem mestu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Obiščite naš salon in kavarno",
+    "description": "Stopite v stik z nami, preverite proste termine ali nas obiščite na spodnjem naslovu v Krškem.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta 4. julija 41, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 492 54 57",
+        "href": "tel:+38674925457",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–20:00, Sob: 7:00–13:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja o naši ponudbi.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta 4. julija 41, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Oaza lepote manta",
+    "address": "Cesta 4. julija 41, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "(07) 492 54 57"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

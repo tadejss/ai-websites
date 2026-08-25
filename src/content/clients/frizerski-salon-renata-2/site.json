@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sage-meadow",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-renata-2/hero.jpg",
+      "alt": "Topel in svetel ambient frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-renata-2/services.jpg",
+      "alt": "Strokovno barvanje las in oblikovanje pričesk v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Renata"
+  },
+  "metadata": {
+    "title": "Frizerski salon Renata | Novo mesto",
+    "description": "Topel ambient, prijazna storitev in čudovite pričeske za vaš popoln videz v Novem mestu z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Dostopen lokalni salon v Novem mestu",
+    "title": "Topel ambient in",
+    "titleHighlight": "čudovite pričeske",
+    "description": "Zelo prijazna storitev za ženske in vse, ki iščejo kakovostno frizersko nego v prijetnem okolju.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      },
+      {
+        "value": "Brezplačno",
+        "label": "Parkiranje"
+      },
+      {
+        "value": "Prijazna",
+        "label": "Storitev"
+      },
+      {
+        "value": "Darilni",
+        "label": "Boni"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Kakovostne frizerske storitve",
+    "description": "Poskrbimo za vaš svež videz in dobro počutje z našimi storitvami v Novem mestu.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah v sproščenem vzdušju.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna preobrazba z izbranimi prameni in odtenki.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Darilni boni za razvajanje",
+        "description": "Podarite trenutke sprostitve in lepe lase svojim bližnjim.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Razlogi za obisk našega salona",
+    "description": "Trudimo se, da se v našem salonu vedno počutite dobrodošli in odidete z nasmehom.",
+    "highlights": [
+      "Zelo prijazna frizerka in prijeten, topel ambient",
+      "Kakovostne in cenovno dostopne frizerske storitve",
+      "Brezplačno parkiranje v spodnji garaži za enostaven obisk"
+    ],
+    "benefits": [
+      {
+        "stat": "Topel",
+        "label": "Ambient",
+        "description": "Sproščeno okolje, kjer se boste počutili udobno ob vsakem obisku."
+      },
+      {
+        "stat": "Dostopno",
+        "label": "Cene",
+        "description": "Kakovostne storitve, ki so dostopne vsakemu."
+      },
+      {
+        "stat": "Udobje",
+        "label": "Parkiranje",
+        "description": "Brezplačno parkiranje v spodnji garaži za brezskrben prihod."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas v Novem mestu ali rezervirajte svoj termin preko telefona.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 184 750",
+        "href": "tel:040184750",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Seidlova cesta 34, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Seidlova cesta 34, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Renata",
+    "address": "Seidlova cesta 34, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 184 750"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

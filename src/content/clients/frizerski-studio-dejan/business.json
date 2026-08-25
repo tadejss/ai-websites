@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski studio Dejan, Dejan Kocjan, s.p.",
+  "industry": "frizerski salon",
+  "tagline": "Vrhunske in modne pričeske za vsak okus",
+  "services": [
+    "žensko striženje",
+    "moško striženje",
+    "striženje otrok",
+    "oblikovanje pričesk",
+    "svetovanje za nego las"
+  ],
+  "phone": "041 504 601",
+  "email": "",
+  "address": "Cesta krških žrtev 58, 8270 Krško, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 5:00 PM · Tuesday: 7:00 AM – 5:00 PM · Wednesday: 7:00 AM – 4:00 PM · Thursday: 7:00 AM – 5:00 PM · Friday: 7:00 AM – 5:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "izjemno natančno striženje kratkih in modnih las",
+    "hiter, kakovosten in čist servis",
+    "prijazen pristop in strokovno svetovanje",
+    "dostopne cene in dolgo obstojne pričeske"
+  ],
+  "targetCustomers": "ženske, moški in otroci, ki iščejo kakovostne frizerske storitve",
+  "serviceArea": "Krško z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "zanesljiv lokalni salon",
+  "competitors": "lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se na termin"
+}

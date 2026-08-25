@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "copper-clay",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-extreme/hero.jpg",
+      "alt": "Moderen in svetel frizerski salon v Novem mestu z udobnim ambientom"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-extreme/services.jpg",
+      "alt": "Strokovno barvanje las in oblikovanje pričesk v frizerskem studiu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Extreme Jasmina"
+  },
+  "metadata": {
+    "title": "Frizerski studio Extreme Jasmina | Frizerske storitve Novo mesto",
+    "description": "Strokovno striženje, barvanje in svetovanje za vaš popoln videz v Novem mestu z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Moderen in zanesljiv frizerski salon",
+    "title": "Strokovno striženje in svetovanje za",
+    "titleHighlight": "vaš popoln videz",
+    "description": "Topel in prijazen frizerski studio v Novem mestu z okolico, kjer nudimo celostne frizerske storitve za vsakogar.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Dostopne",
+        "label": "Cene"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "Vsakemu obisku se posvetimo individualno in poskrbimo za zdravje ter lepoto vaših las v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Žensko in moško striženje",
+        "description": "Moderne in klasične frizure, prilagojene vaši obliki obraza in stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Osvežitev barve, ustvarjanje pramenov in unikatnih odtenkov z nego.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Moderne pričeske",
+        "description": "Stilsko oblikovanje las za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Strokovno svetovanje",
+        "description": "Nasveti glede izbire prave pričeske in ustrezne nege vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Posebne priložnosti",
+        "description": "Urejanje pričesk za poroke, zabave in druge pomembne dogodke.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel pristop in strokovnost",
+    "description": "V našem studiu stremimo k najvišjemu zadovoljstvu strank skozi prijazno komunikacijo in preverjeno znanje.",
+    "highlights": [
+      "Zelo prijazno in ustrežljivo osebje",
+      "Strokovno in koristno svetovanje",
+      "Kakovostne in dostopne storitve"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in ustrežljivost",
+        "description": "Sprejmemo vas v toplem in prijetnem vzdušju."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "po vaši meri",
+        "description": "Pomagamo vam izbrati pričesko, ki poudari vašo osebnost."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "in dostopnost",
+        "description": "Nudimo profesionalne storitve po dostopnih cenah."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nam pišite za obisk našega frizerskega studia v Novem mestu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 991 144",
+        "href": "tel:041991144",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 26, 8000 Novo mesto",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 19:00, Sob: 8:00 – 12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 26, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Extreme Jasmina",
+    "address": "Ljubljanska cesta 26, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 991 144"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

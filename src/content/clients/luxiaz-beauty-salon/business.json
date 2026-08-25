@@ -1,0 +1,27 @@
+{
+  "companyName": "Luxiaz Beauty Salon",
+  "industry": "Kozmetični salon",
+  "tagline": "Vrhunske lepotne storitve in sprostitev za vaše dobro počutje",
+  "services": [
+    "Masaža hrbta",
+    "Beljenje zob",
+    "Nega nohtov",
+    "Storitve za trepalnice in obrvi"
+  ],
+  "phone": "040 836 018",
+  "email": "",
+  "address": "Foersterjeva ulica 10, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Open 24 hours · Sunday: Open 24 hours",
+  "sellingPoints": [
+    "Prijazna in strokovna lastnica z osebnim pristopom",
+    "Visoka kakovost vseh lepotnih in sprostitvenih storitev",
+    "Odlične ocene zadovoljnih strank"
+  ],
+  "targetCustomers": "Osebe, ki cenijo kakovostno nego telesa, sprostitev in lepotne tretmaje",
+  "serviceArea": "Novo mesto in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Lokalni ponudniki lepotnih storitev v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

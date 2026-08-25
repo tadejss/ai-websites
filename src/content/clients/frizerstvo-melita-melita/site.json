@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-melita-melita/hero.jpg",
+      "alt": "Sproščujoč in svetel ambient frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-melita-melita/services.jpg",
+      "alt": "Strokovno barvanje las in stilsko oblikovanje pričesk v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Melita"
+  },
+  "metadata": {
+    "title": "Frizerstvo Melita | Frizerski salon Novo mesto",
+    "description": "Vrhunske frizerske storitve za vaš sproščen in mladosten videz v Novem mestu z okolico. Obiščite nas v prijetnem in gostoljubnem okolju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv in gostoljuben lokalni salon",
+    "title": "Vrhunske frizerske storitve za vaš",
+    "titleHighlight": "sproščen in mladosten videz",
+    "description": "Profesionalne in kakovostne frizerske storitve za vse, ki iščejo sproščujoče vzdušje in strokovno nego v Novem mestu z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Prijazna",
+        "label": "Gostoljubnost"
+      },
+      {
+        "value": "Vrhunski",
+        "label": "Proizvodi"
+      },
+      {
+        "value": "Sproščujoče",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "Poskrbimo za vaš svež videz z izbiro preverjenih in kakovostnih frizerskih storitev v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah z poudarkom na vašem osebnem slogu in naravni lepoti las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno in urejeno moško striženje za sodoben ter urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Obstojne in sijoče barve, ki poudarijo vašo polt in vašim lasem podarijo novo dimenzijo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti, v katerih se boste počutili samozavestno.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las s kakovostnimi proizvodi",
+        "description": "Hranljiva nega in obnova las z uporabo vrhunskih frizerskih proizvodov za zdrav in sijoč videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Salon, kjer se boste počutili mlajše in sproščeno",
+    "description": "Združujemo strokovno znanje, topel pristop in vrhunske materiale za najboljšo skrb za vaše lase.",
+    "highlights": [
+      "Izjemno prijazna in gostoljubna frizerka",
+      "Uporaba vrhunskih frizerskih proizvodov",
+      "Sproščujoče vzdušje in osebni pristop"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "Gostoljubno okolje",
+        "description": "Izjemno prijazna in gostoljubna frizerka, ki poskrbi, da se v salonu vedno počutite dobrodošli."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Vrhunski proizvodi",
+        "description": "Za nego vaših las uporabljamo preverjene in kakovostne frizerske proizvode, ki las ne obtežijo."
+      },
+      {
+        "stat": "Sproščenost",
+        "label": "Mladosten videz",
+        "description": "Sproščujoče vzdušje v salonu, v katerem pozabite na vsakdanji stres in zaživite v novi energiji."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nam pošljite sporočilo ter si zagotovite svoj termin za urejanje pričeske.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 358 540",
+        "href": "tel:041358540",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Smolenja vas 6, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Izpolnite spodnji obrazek in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Smolenja vas 6, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Melita",
+    "address": "Smolenja vas 6, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 358 540"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

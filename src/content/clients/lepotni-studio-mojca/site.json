@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "dusty-rose",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/lepotni-studio-mojca/hero.jpg",
+      "alt": "Topel in prijeten ambient kozmetičnega studia"
+    },
+    "services": {
+      "src": "/clients/lepotni-studio-mojca/services.jpg",
+      "alt": "Strokovna nega obraza in lepotne storitve"
+    }
+  },
+  "brand": {
+    "prefix": "Lepotni studio",
+    "highlight": "Mojca Košiček - Bevc s.p."
+  },
+  "metadata": {
+    "title": "Lepotni studio Mojca Košiček - Bevc s.p. | Novo mesto",
+    "description": "Vaša oaza za lepoto in dobro počutje v Novem mestu z okolico. Ponujamo nego obraza, manikuro, pedikuro, ličenje in oblikovanje obrvi."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon Novo mesto",
+    "title": "Vaša oaza za lepoto in",
+    "titleHighlight": "dobro počutje",
+    "description": "Prijazno in domače vzdušje za vse, ki iščejo kakovostne lepotne storitve in sprostitev v Novem mestu z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Toplo",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Individualno",
+        "label": "Pristop"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Nega"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Novo mesto"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaši lepoto in nego",
+    "description": "Poskrbite za svoje telo in obraz z našimi storitvami, prilagojenimi strankam v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Nega obraza",
+        "description": "Strokovna nega obraza, prilagojena vašemu tipu kože za sijoč in zdrav videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Manikura",
+        "description": "Urejanje in nego vaših rok ter nohtov v prijetnem in domačem vzdušju.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pedikura",
+        "description": "Kakovostna nega stopal za lahkoten korak in popolno sprostitev.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Ličenje",
+        "description": "Profesionalno ličenje za vse vaše posebne priložnosti ali vsak dan.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje obrvi",
+        "description": "Natančno oblikovanje obrvi, ki poudarijo naravno lepoto vašega obraza.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel salon in osebni pristop",
+    "description": "Zavedamo se, da si vsaka stranka zasluži posebno pozornost in skrb v sproščenem okolju.",
+    "highlights": [
+      "Prijazno in domače vzdušje v salonu",
+      "Individualen pristop k vsaki stranki",
+      "Strokovna nega in popolna posvečenost"
+    ],
+    "benefits": [
+      {
+        "stat": "Domače",
+        "label": "Vzdušje",
+        "description": "Pri nas se boste vedno počutili sproščeno in dobrodošlo."
+      },
+      {
+        "stat": "Osebno",
+        "label": "Pristop",
+        "description": "Vsaki stranki se posvetimo individualno in z razumevanjem njenih želja."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Delo",
+        "description": "Skrbimo za visoko kakovost storitev in nego s pozornostjo do detajlov."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite v Lepotnem studiu Mojca Košiček - Bevc s.p. v Novem mestu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Lebanova ulica 9, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 338 28 22",
+        "href": "tel:+38673382822",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili ter se dogovorili za termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Lebanova ulica 9, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lepotni studio Mojca Košiček - Bevc s.p.",
+    "address": "Lebanova ulica 9, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "(07) 338 28 22"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sage-meadow",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-marija-marija/hero.jpg",
+      "alt": "Topel in svetel ambient frizerskega salona v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-marija-marija/services.jpg",
+      "alt": "Strokovne frizerske storitve in urejanje las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Marija"
+  },
+  "metadata": {
+    "title": "Frizerstvo Marija | Frizerski salon v Novem mestu",
+    "description": "Strokovne in prijazne frizerske storitve za vso družino v Novem mestu in okolici. Naročite se na žensko, moško ali otroško striženje ter barvanje las."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni salon v Novem mestu",
+    "title": "Strokovne in prijazne frizerske storitve",
+    "titleHighlight": "za vso družino",
+    "description": "Posamezniki, družine in otroci v Novem mestu in okolici pri nas najdejo kakovostne ter dostopne frizerske storitve v toplem in prijaznem okolju.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vso",
+        "label": "Družino"
+      },
+      {
+        "value": "Novo",
+        "label": "Mesto"
+      },
+      {
+        "value": "Prijazen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Odlično",
+        "label": "Z otroki"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vsakogar",
+    "description": "V našem salonu v Novem mestu poskrbimo za urejen videz celotne družine z natančnim striženjem in nego.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk in striženje prilagojeno vašim željam ter obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasična in moderna moška striženja ter urejanje videza.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Potrpežljivo in prijetno striženje za najmlajše z odličnim delom z otroki.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve ali popolna preobrazba z uporabo preverjenih izdelkov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Priprava pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel pristop in zanesljive storitve",
+    "description": "Gradimo na dolgoročnem zaupanju naših strank in prijetnem počutju ob vsakem obisku.",
+    "highlights": [
+      "Prijazna in precizna izvedba storitev",
+      "Dolgogodišnje zaupanje strank",
+      "Odlično delo z majhnimi otroki"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in preciznost",
+        "description": "Vsaki stranki se posvetimo z enako mero pozornosti in natančnosti."
+      },
+      {
+        "stat": "Zaupanje",
+        "label": "strank",
+        "description": "Dolgoletne izkušnje in zadovoljne stranke potrjujejo našo kakovost."
+      },
+      {
+        "stat": "Cenova",
+        "label": "dostopnost",
+        "description": "Ponujamo ugodne cene frizerskih storitev za vso družino."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za rezervacijo termina ali obiščite naš salon v Novem mestu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 210 017",
+        "href": "tel:031210017",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Seidlova cesta 36, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Seidlova cesta 36, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Marija",
+    "address": "Seidlova cesta 36, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "031 210 017"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

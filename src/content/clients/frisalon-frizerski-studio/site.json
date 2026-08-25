@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "wine-velvet",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frisalon-frizerski-studio/hero.jpg",
+      "alt": "Svetel in urejen frizerski salon z naravno svetlobo v Novem mestu"
+    },
+    "services": {
+      "src": "/clients/frisalon-frizerski-studio/services.jpg",
+      "alt": "Strokovno striženje in nega las v prijetnem ambientu salona"
+    }
+  },
+  "brand": {
+    "prefix": "Frisalon",
+    "highlight": "Renata Blatnik"
+  },
+  "metadata": {
+    "title": "Frisalon Renata Blatnik s.p. | Frizerski salon Novo mesto",
+    "description": "Strokovno striženje, nega las in modne pričeske v Novem mestu. Celovite frizerske storitve za vso družino v prijetnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Novo mesto",
+    "title": "Strokovno striženje in nega las za",
+    "titleHighlight": "vašo popolno pričesko",
+    "description": "Celovite frizerske storitve za posameznike in družine v središču Novega mesta. Prilagodljiv pristop k vašim željam v prijetnem ambientu.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vso",
+        "label": "Družino"
+      },
+      {
+        "value": "Novi trg",
+        "label": "Novo mesto"
+      },
+      {
+        "value": "Celovite",
+        "label": "Storitve"
+      },
+      {
+        "value": "Prijazen",
+        "label": "Pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vsak okus",
+    "description": "V salonu Frisalon nudimo strokovno striženje, nego las in modne pričeske za stranke iz Novega mesta in okolice.",
+    "items": [
+      {
+        "title": "Žensko in moško striženje",
+        "description": "Kakovostno striženje prilagojeno vaši obliki obraza in osebnemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Osvežitev barve, modni prameni in obstojni odtenki za vaše lase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in tretmaji za lase",
+        "description": "Hranilni tretmaji in nega za zdravje, sijaj in mehkobo vaših las.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Urejen lokalni salon z osebnim pristopom",
+    "description": "Trudimo se, da se v našem salonu v središču Novega mesta počutite sproščeno, vaši lasje pa zasijejo v novem sijaju.",
+    "highlights": [
+      "Celovite frizerske storitve za vso družino",
+      "Prilagodljiv pristop k željam vsake stranke",
+      "Prijeten ambient v središču Novega mesta"
+    ],
+    "benefits": [
+      {
+        "stat": "Celovito",
+        "label": "Za vso družino",
+        "description": "Nudimo frizerske storitve za vse generacije na enem mestu."
+      },
+      {
+        "stat": "Prilagojeno",
+        "label": "Vašim željam",
+        "description": "Prisluhnemo vašim željam in poskrbimo za videz, ki vam ustreza."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Prijetno okolje",
+        "description": "Obiščite nas na Novem trgu in si privoščite trenutek zase."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Naročite se na svoj termin",
+    "description": "Obiščite nas v Novem mestu ali nas pokličite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Novi trg 10, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 332 27 77",
+        "href": "tel:073322777",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Stopite v stik z nami za vprašanja ali naročanje.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Novi trg 10, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frisalon Renata Blatnik",
+    "address": "Novi trg 10, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "(07) 332 27 77"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

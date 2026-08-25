@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "lavender-cream",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-salon-damjana/hero.jpg",
+      "alt": "Topel in svetel frizerski salon v Leskovcu pri Krškem"
+    },
+    "services": {
+      "src": "/clients/frizerski-salon-damjana/services.jpg",
+      "alt": "Strokovne frizerske storitve in nega las"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Damjana"
+  },
+  "metadata": {
+    "title": "Frizerski salon Damjana | Leskovec pri Krškem",
+    "description": "Strokovne frizerske storitve in prijazen pristop za vaše popolno počutje v Leskovcu pri Krškem in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Vrhunske frizerske storitve v Leskovcu pri Krškem",
+    "title": "Strokovne frizerske storitve in",
+    "titleHighlight": "prijazen pristop",
+    "description": "Nudimo celovite frizerske storitve za lokalne prebivalce in vse, ki iščejo kakovostno nego las v toplem in prijetnem okolju.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Prijazen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Dostopne",
+        "label": "Cene"
+      },
+      {
+        "value": "Leskovec",
+        "label": "Pri Krškem"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lasje",
+    "description": "Poskrbimo za vaš svež videz z našimi strokovnimi frizerskimi storitvami za vso družino.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Natančno striženje in oblikovanje pričesk, prilagojeno vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasično in moderno moško striženje za urejen videz ob vsaki priložnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Uporaba kakovostnih barv za obstojne odtenke, živahne pramene in sijoč videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Svečane in vsakdanje pričeske, ki poudarijo vašo naravno lepoto.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilne in obbujevalne nege, ki vašim lasem povrnejo mehkobo in lesk.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel lokalni salon z osebnim pristopom",
+    "description": "Zavedamo se, kako pomembno je, da se v svoji koži in s svojo pričesko počutite odlično.",
+    "highlights": [
+      "Izjemno prijazen in strokovni kader",
+      "Dostopne cene storitev za vsakogar",
+      "Kakovostno striženje in oblikovanje pričesk"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in strokovnost",
+        "description": "Naša ekipa se posveti vsaki stranki posebej ter poskrbi za prijetno in sproščeno izkušnjo."
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "za vsakogar",
+        "description": "Ponujamo kakovostne storitve po cenah, ki so dostopne širšemu krogu strank."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "in urejenost",
+        "description": "Zanesljivo striženje, barvanje in nega las, s katerimi boste vedno urejeni."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na termin",
+    "description": "Obiščite naš salon v Leskovcu pri Krškem ali nas pokličite za rezervacijo vašega termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica 11. novembra 49, 8273 Leskovec pri Krškem",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 894 350",
+        "href": "tel:070894350",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–19:00, Sob: 8:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica 11. novembra 49, 8273 Leskovec pri Krškem",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Damjana",
+    "address": "Ulica 11. novembra 49, 8273 Leskovec pri Krškem",
+    "email": "",
+    "phone": "070 894 350"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

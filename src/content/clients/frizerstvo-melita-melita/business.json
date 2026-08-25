@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerstvo Melita Melita Šinkovec s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve za vaš sproščen in mladosten videz",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Stilsko oblikovanje pričesk",
+    "Nega las s kakovostnimi proizvodi"
+  ],
+  "phone": "041 358 540",
+  "email": "",
+  "address": "Smolenja vas 6, 8000 Novo mesto, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Izjemno prijazna in gostoljubna frizerka",
+    "Profesionalen pristop in visoka kakovost storitev",
+    "Uporaba vrhunskih frizerskih proizvodov",
+    "Sproščujoče vzdušje, v katerem se počutite mlajše"
+  ],
+  "targetCustomers": "Vsi, ki iščejo profesionalne in kakovostne frizerske storitve v prijetnem okolju",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, topel, strokoven",
+  "brandStyle": "zanesljiv in gostoljuben lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

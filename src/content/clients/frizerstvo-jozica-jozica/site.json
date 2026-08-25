@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "coastal-fog",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-jozica-jozica/hero.jpg",
+      "alt": "Topel in domač ambient frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-jozica-jozica/services.jpg",
+      "alt": "Strokovne frizerske storitve in urejanje pričesk"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Jožica"
+  },
+  "metadata": {
+    "title": "Frizerstvo Jožica | Frizerski salon Krško",
+    "description": "Vaš zanesljiv partner za lepe in urejene lase v Krškem z okolico. Ponujamo žensko, moško in otroško striženje, barvanje ter frizure za posebne priložnosti."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Lokalni frizerski salon v Krškem",
+    "title": "Vaš zanesljiv partner za",
+    "titleHighlight": "lepe in urejene lase",
+    "description": "Prijazen in domač ambient ter strokovne frizerske storitve za vse generacije v Krškem z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Vse",
+        "label": "Generacije"
+      },
+      {
+        "value": "Domač",
+        "label": "Ambient"
+      },
+      {
+        "value": "Krško",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Kakovostne frizerske storitve",
+    "description": "Poskrbimo za vaš svež videz in urejeno pričesko z naborom storitev, prilagojenih vsakemu posamezniku v Krškem in okolici.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašemu stilu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Urejanje in striženje las za moške vseh generacij.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Potrpežljivo in prijazno striženje za najmlajše v domačem ambientu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje lase",
+        "description": "Kakovostni odtenki in tehnike barvanja za sijoče ter zdrave lase.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Frizure za posebne priložnosti",
+        "description": "Svečane pričeske in urejanje za poroke, obhajila ter druge dogodke.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domačnost, strokovnost in posluh za vaše želje",
+    "description": "V našem salonu se posvetimo vsaki stranki posebej ter zagotavljamo prijetno izkušnjo in urejen videz.",
+    "highlights": [
+      "Prilagojen pristop k vsaki stranki",
+      "Prijeten in domač ambient v Krškem",
+      "Celovite storitve za vso družino"
+    ],
+    "benefits": [
+      {
+        "stat": "Prilagojeno",
+        "label": "Pristop k stranki",
+        "description": "Vsaki stranki se posvetimo individualno in prisluhnemo vašim željam."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Storitve",
+        "description": "Zanesljive in urejene frizerske storitve za vsak dan."
+      },
+      {
+        "stat": "Ambient",
+        "label": "Prijetno vzdušje",
+        "description": "Sprostite se v domačem in prijateljskem okolju našega salona."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nas obiščite v Ardrus pod Velikim Trnom. Z veseljem bomo poskrbeli za vaše lase.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 852 370",
+        "href": "tel:040852370",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ardro pod Velikim Trnom 5-A, 8270 Krško, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali dogovor o terminu.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ardro pod Velikim Trnom 5-A, 8270 Krško, Slovenia",
+    "rights": "Frizerstvo Jožica, Jožica Kerin s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Jožica",
+    "address": "Ardro pod Velikim Trnom 5-A, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "040 852 370"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

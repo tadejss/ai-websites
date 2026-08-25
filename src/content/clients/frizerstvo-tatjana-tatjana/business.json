@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerstvo Tatjana, Tatjana Fabjan s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje in nega las za vaš popoln videz",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Frizure za priložnosti",
+    "Nega in tretmaji za lase"
+  ],
+  "phone": "051 654 535",
+  "email": "",
+  "address": "Volčičeva ulica 15a, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 3:00 PM · Tuesday: 7:00 AM – 3:00 PM · Wednesday: 12:00 – 7:00 PM · Thursday: 12:00 – 7:00 PM · Friday: 8:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazno in strokovno osebje",
+    "Dostopne in ugodne cene",
+    "Zadovoljne stranke z odličnimi ocenami"
+  ],
+  "targetCustomers": "Posamezniki in družine, ki iščejo kakovostne frizerske storitve v Novem mestu",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Naročite se"
+}

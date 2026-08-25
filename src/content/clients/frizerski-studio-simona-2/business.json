@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski studio Simona Simona Polak s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Vrhunske frizerske storitve za vaš popoln videz v Novem mestu.",
+  "services": [
+    "Moško in žensko striženje",
+    "Barvanje las",
+    "Prameni in balayage",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "(07) 302 22 30",
+  "email": "",
+  "address": "Belokranjska cesta 5, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Prijazno in strokovno osebje",
+    "Visoka raven zadovoljstva strank",
+    "Kakovostna nega in striženje las",
+    "Odlična lokacija v Novem mestu"
+  ],
+  "targetCustomers": "Vsi, ki iščejo kakovostne frizerske storitve in urejen videz v Novem mestu.",
+  "serviceArea": "Novo mesto",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Lokalni frizerski saloni v regiji",
+  "callToAction": "Naročite se na termin"
+}

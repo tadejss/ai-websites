@@ -1,0 +1,205 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "forest-mist",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/lepotni-studio-dama/hero.jpg",
+      "alt": "Strokovno oblikovanje obrvi in nega trepalnic v lepotnem studiu"
+    },
+    "services": {
+      "src": "/clients/lepotni-studio-dama/services.jpg",
+      "alt": "Kozmetične storitve in urejanje v mirnem ambientu salona"
+    }
+  },
+  "brand": {
+    "prefix": "Lepotni studio",
+    "highlight": "dama"
+  },
+  "metadata": {
+    "title": "Lepotni studio dama, Darja Stanić s.p. | Kozmetični salon Novo mesto",
+    "description": "Vrhunske storitve urejanja obrvi, trepalnic in nege v Novem mestu z okolico. Obiščite Lepotni studio dama za urejen videz in strokovno nego."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon v Novem mestu",
+    "title": "Vrhunske lepotne storitve za",
+    "titleHighlight": "vaš sijoč videz",
+    "description": "Nudimo vrhunske storitve urejanja obrvi, trepalnic in nege za vse, ki cenijo urejen videz in strokovno pedikuro v Novem mestu s širšo okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Natančna",
+        "label": "Nega"
+      },
+      {
+        "value": "Urejen",
+        "label": "Salon"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaša lepoto in dobro počutje",
+    "description": "Specializirani smo za vrhunsko oblikovanje obrvi, nego trepalnic in druge kozmetične storitve v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Oblikovanje obrvi",
+        "description": "Specializirani smo za vrhunsko oblikovanje obrvi, ki poudarijo vaš obraz in naravno lepoto.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nega in podaljševanje trepalnic",
+        "description": "Kakovostna nega in podaljševanje trepalnic za zapeljiv pogled in urejen videz ob vsaki priložnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pedikura",
+        "description": "Strokovna pedikura za urejene in zdrave noge ter sproščujočo izkušnjo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Kozmetične storitve",
+        "description": "Celovite kozmetične storitve, izvedene z visoko strokovnostjo in natančnostjo.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel, strokoven in prijazen pristop",
+    "description": "Z našo predanostjo in posluhom za vaše želje poskrbimo, da se v našem salonu vedno počutite sproščeno in urejeno.",
+    "highlights": [
+      "Visoko strokovno in prijazno osebje",
+      "Specializirani za vrhunsko oblikovanje obrvi",
+      "Zelo dobro ocenjene storitve s strani zadovoljnih strank",
+      "Kakovostna in natančna nega za vsakogar"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "in prijaznost",
+        "description": "Naše osebje se posveča vsaki stranki posebej z visoko raven strokovnosti."
+      },
+      {
+        "stat": "Specializacija",
+        "label": "za obrvi",
+        "description": "Smo strokovnjaki za oblikovanje obrvi in nego trepalnic."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "in natančnost",
+        "description": "Zagotavljamo zanesljive in natančne lepotne storitve."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij o naših storitvah v Novem mestu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 371 193",
+        "href": "tel:040371193",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica Slavka Gruma 102, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Slavka Gruma 102, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lepotni studio dama",
+    "address": "Ulica Slavka Gruma 102, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 371 193"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

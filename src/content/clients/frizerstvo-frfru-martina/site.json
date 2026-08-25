@@ -1,0 +1,214 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "caramel-vanilla",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerstvo-frfru-martina/hero.jpg",
+      "alt": "Notranjost prijetnega frizerskega salona z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/frizerstvo-frfru-martina/services.jpg",
+      "alt": "Strokovno barvanje in urejanje las v salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerstvo",
+    "highlight": "Fr-Fru"
+  },
+  "metadata": {
+    "title": "Frizerstvo Fr-Fru | Frizerski salon Krško",
+    "description": "Strokovne in kvalitetne frizerske storitve za vso družino v prijetnem vzdušju v Krškem in okolici. Rezervirajte svoj termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Krško",
+    "title": "Strokovne in kvalitetne frizerske storitve v",
+    "titleHighlight": "prijetnem vzdušju",
+    "description": "Ponujamo celovite frizerske storitve za vso družino v Krškem in okolici. Obiščite nas in si zagotovite svež videz.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Prijazno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Delo"
+      },
+      {
+        "value": "Udobno",
+        "label": "Vzdušje"
+      },
+      {
+        "value": "Za vso",
+        "label": "Družino"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Frizerske storitve za vas",
+    "description": "Poskrbimo za vaš urejen videz z naborom kakovostnih storitev za lase v Krškem.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične ženske pričeske, prilagojene vašemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Natančno moško striženje in urejanje pričeske.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostno barvanje in odtenki, ki poudarijo vašo naravno lepoto.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilna nega za zdravje, lesk in vitalnost vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel lokalni salon z osebnim pristopom",
+    "description": "Pri delu nam je pomembno vaše počutje, sproščenost in zadovoljstvo z novo pričesko.",
+    "highlights": [
+      "Prijazno osebje in mirno okolje",
+      "Strokovna in kvalitetna izvedba storitev",
+      "Celostna skrb za lase vseh družinskih članov"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazno",
+        "label": "Osebje",
+        "description": "Topel sprejem in strokovno svetovanje ob vsakem obisku."
+      },
+      {
+        "stat": "Kvaliteta",
+        "label": "Izvedbe",
+        "description": "Natančno delo z mislijo na zdravje in lepoto vaših las."
+      },
+      {
+        "stat": "Udobje",
+        "label": "Vzdušje",
+        "description": "Sproščujoč ambient, kjer si lahko vzamete čas zase."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za vprašanja glede storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 34, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 523 981",
+        "href": "tel:041523981",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, Čet, Pet: 8:00 - 18:00, Sob: 8:00 - 13:00 (Tor, Ned: Zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 34, 8270 Krško, Slovenia",
+    "rights": "© Frizerstvo Fr-Fru, Martina Kocjan s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerstvo Fr-Fru",
+    "address": "Cesta krških žrtev 34, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "041 523 981"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

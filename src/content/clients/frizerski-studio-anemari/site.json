@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "copper-clay",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-anemari/hero.jpg",
+      "alt": "Sodobno urejen frizerski salon v Krškem z udobnim ambientom"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-anemari/services.jpg",
+      "alt": "Strokovno striženje, barvanje in nega las v frizerskem studiu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Ane-Mari"
+  },
+  "metadata": {
+    "title": "Frizerski studio Ane-Mari | Krško",
+    "description": "Vrhunske frizerske storitve, striženje, barvanje in nega las v Krškem in okolici. Poskrbite za svoj popoln videz v sproščenem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Krškem",
+    "title": "Vrhunske frizerske storitve za vaš",
+    "titleHighlight": "popoln videz",
+    "description": "Dobrodošli v sodobno urejenem salonu, kjer nudimo vrhunske storitve, striženje in nego las za vse, ki cenijo kakovost ter urejen videz.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Top",
+        "label": "Storitve"
+      },
+      {
+        "value": "Individualno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Sproščen",
+        "label": "Ambient"
+      },
+      {
+        "value": "Krško",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbite za svoje lase z našimi storitvami oblikovanja, barvanja in nege v Krškem in okolici.",
+    "items": [
+      {
+        "title": "Striženje in oblikovanje las",
+        "description": "Moderne in klasične frizure, prilagojene vaši obliki obraza in osebnemu stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Osvežitev barve, ustvarjanje pramenov in unikatnih barvnih odtenkov z vrhunskimi pripravki.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Priprava pričesk za posebne prilike",
+        "description": "Elegantne in svečane pričeske, ki bodo popolnoma dopolnile vaš videz ob pomembnih dogodkih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in obnova las",
+        "description": "Globinska nega in tretmaji za povrnitev zdravja, leska in mehkobe vaših las.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Top storitve in prijazen pristop",
+    "description": "Zavedamo se, da so vaši lasje vaša vizitka, zato se vam posvetimo celostno in z veliko mero strokovnosti.",
+    "highlights": [
+      "Top storitve in prijazen pristop",
+      "Individualno svetovanje za nego las",
+      "Udoben in sproščen ambient"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazen",
+        "label": "Pristop",
+        "description": "Toplo in domače vzdušje, kjer se boste sprostili med vsakim obiskom."
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Svetovanje",
+        "description": "Prilagojeni nasveti za nego in vzdrževanje vaše pričeske doma."
+      },
+      {
+        "stat": "Udoben",
+        "label": "Ambient",
+        "description": "Sodoben in urejen salon, ustvarjen za vaše popolno udobje."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nas obiščite v salonu v Krškem. Z veseljem bomo prisluhnili vašim željam.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 433 419",
+        "href": "tel:041433419",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kovinarska ulica 8, 8270 Krško, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želeni termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Kovinarska ulica 8, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Ane-Mari",
+    "address": "Kovinarska ulica 8, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "041 433 419"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

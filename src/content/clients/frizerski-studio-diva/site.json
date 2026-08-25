@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "peach-bloom",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-diva/hero.jpg",
+      "alt": "Topel in prijeten ambient frizerskega studia v Krškem"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-diva/services.jpg",
+      "alt": "Strokovne frizerske storitve barvanja in striženja las"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "Diva Nina Gorjup"
+  },
+  "metadata": {
+    "title": "Frizerski studio diva Nina Gorjup s.p. | Krško",
+    "description": "Strokovne in prijazne frizerske storitve za vso družino v Krškem z okolico. Naročite se na striženje, barvanje ali oblikovanje pričeske."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Lokalni frizerski salon",
+    "title": "Strokovne in prijazne frizerske storitve",
+    "titleHighlight": "za vso družino",
+    "description": "Posameznikom in družinam v Krškem z okolico nudimo kakovostne frizerske storitve v prijetnem ambientu z osebnim pristopom.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Družinski",
+        "label": "Salon"
+      },
+      {
+        "value": "Krško",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite frizerske storitve",
+    "description": "Poskrbimo za vaš svež videz z naborom storitev, prilagojenih vsakemu družinskemu članu v Krškem z okolico.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk, prilagojeno vašemu slogu, željam in strukturi las.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasična in moderna moška striženja za urejen in samozavesten videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Otroško striženje",
+        "description": "Potrpežljivo in prijazno striženje za najmlajše v sproščenem vzdušju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostne barve za živahne odtenke, prekrivanje narastka ali osvežitev barve.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač in zanesljiv lokalni salon",
+    "description": "Zavedamo se, kako pomembna je skrb za lase in dobro počutje v lastni koži.",
+    "highlights": [
+      "Prijazno osebje in osebni pristop k vsaki stranki",
+      "Hitra in profesionalna storitev v prijetnem okolju",
+      "Primerno za vso družino z dobro postrežbo"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijaznost",
+        "label": "in domačnost",
+        "description": "Ustvarjamo sproščen ambient, kjer se boste počutili dobrodošli."
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "in hitrost",
+        "description": "Zanesljive storitve, prilagojene vašemu urniku in željam."
+      },
+      {
+        "stat": "Družinsko",
+        "label": "okolje",
+        "description": "Salonu zaupajo posamezniki in cele družine iz Krškega z okolico."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na svoj termin ali nas kontaktirajte za vsa vprašanja glede storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 336 866",
+        "href": "tel:051336866",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta 4. julija 84a, 8270 Krško, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za hiter stik in dogovor o terminu.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta 4. julija 84a, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio Diva Nina Gorjup",
+    "address": "Cesta 4. julija 84a, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "051 336 866"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

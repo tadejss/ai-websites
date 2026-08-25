@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerski studio Extreme Jasmina Gobec s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno striženje, barvanje in svetovanje za vaš popoln videz",
+  "services": [
+    "Žensko in moško striženje",
+    "Barvanje las in prameni",
+    "Moderne pričeske",
+    "Strokovno svetovanje za nego las",
+    "Oblikovanje pričesk za posebne priložnosti"
+  ],
+  "phone": "041 991 144",
+  "email": "",
+  "address": "Ljubljanska cesta 26, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 7:00 PM · Tuesday: 8:00 AM – 7:00 PM · Wednesday: 8:00 AM – 7:00 PM · Thursday: 8:00 AM – 7:00 PM · Friday: 8:00 AM – 7:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Zelo prijazno in ustrežljivo osebje",
+    "Strokovno in koristno svetovanje glede izbire pričeske",
+    "Visoka raven zadovoljstva strank in odlične ocene",
+    "Kakovostne in cenovno dostopne frizerske storitve"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo profesionalne frizerske storitve, celostno svetovanje in prijazno vzdušje v Novem mestu",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, topel",
+  "brandStyle": "moderen in zanesljiv frizerski salon",
+  "competitors": "Lokalni frizerski saloni v Novem mestu",
+  "callToAction": "Rezervirajte svoj termin"
+}

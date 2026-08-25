@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerstvo Kitty Jožica Kožar s.p.",
+  "industry": "Frizerski salon",
+  "tagline": "Strokovno in urejeno striženje ter nega las v Krškem",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje las",
+    "Oblikovanje pričesk",
+    "Nega las"
+  ],
+  "phone": "040 842 555",
+  "email": "",
+  "address": "Cesta krških žrtev 75, 8270 Krško, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Celovite frizerske storitve za vso družino",
+    "Prijazno in strokovno osebje",
+    "Individualen pristop k negi las"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci Krškega, ki iščejo kakovostne frizerske storitve",
+  "serviceArea": "Krško z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "domač in zanesljiv",
+  "competitors": "Lokalni ponudniki frizerskih storitev v občini Krško",
+  "callToAction": "Rezervirajte svoj termin"
+}

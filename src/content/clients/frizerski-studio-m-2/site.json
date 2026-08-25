@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "copper-clay",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/frizerski-studio-m-2/hero.jpg",
+      "alt": "Notranjost sodobnega frizerskega studia z naravno svetlobo v Krškem"
+    },
+    "services": {
+      "src": "/clients/frizerski-studio-m-2/services.jpg",
+      "alt": "Strokovno barvanje in oblikovanje las v prijetnem salonu"
+    }
+  },
+  "brand": {
+    "prefix": "Frizerski studio",
+    "highlight": "m Style"
+  },
+  "metadata": {
+    "title": "Frizerski studio m Style | Krško",
+    "description": "Vaš zanesljiv partner za sodobne in urejene pričeske v Krškem in okolici. Nudimo žensko in moško striženje, barvanje ter nego las z individualnim pristopom."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Krškem",
+    "title": "Vaš zanesljiv partner za sodobne in",
+    "titleHighlight": "urejene pričeske",
+    "description": "Ustvarjamo pričeske za vse, ki cenijo urejen videz, kakovostno striženje in prijetno vzdušje v Krškem in okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Individualni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Kakovostni",
+        "label": "Izdelki"
+      },
+      {
+        "value": "Krško",
+        "label": "Lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "Poskrbimo za vaš celostni videz z naborom frizerskih storitev, prilagojenih vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričesk, prilagojenih vaši obliki obraza, stilu in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasične in sodobne moške frizure ter urejanje za urejen vsakdanji videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Osvežitev barve, prameni in barvni odtenki z uporabo kakovostnih pripravkov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stilsko oblikovanje pričesk",
+        "description": "Frizure za posebne priložnosti ali vsakodnevno urejen izgled.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega las",
+        "description": "Hranilni tretmaji in nega za sijoče, zdrave in polne lase.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Urejen videz in sproščeno vzdušje",
+    "description": "V našem studiu se posvetimo vsaki stranki posebej ter poskrbimo za prijetno izkušnjo in vrhunske rezultate.",
+    "highlights": [
+      "Strokovno in prijazno osebje z izkušnjami",
+      "Individualen pristop k vsaki stranki in njenim lasem",
+      "Uporaba skrbno izbranih in kakovostnih izdelkov za nego"
+    ],
+    "benefits": [
+      {
+        "stat": "Prijazno",
+        "label": "Osebje",
+        "description": "Naša ekipa poskrbi, da se v salonu vedno počutite dobrodošle."
+      },
+      {
+        "stat": "Osebni",
+        "label": "Pristop",
+        "description": "Prisluhnemo vašim željam in svetujemo stil, ki vam najbolj ustreza."
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Izdelki",
+        "description": "Uporaba preverjenih izdelkov, ki ohranjajo zdravje in lesk vaših las."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas v Krškem ali nas pokličite in si zagotovite termin za urejanje vaše pričeske.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 132a, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "(07) 492 25 00",
+        "href": "tel:+38674922500",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 132a, 8270 Krško, Slovenia",
+    "rights": "© 2025 Frizerski studio m Style, Marija Kos s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski studio m Style",
+    "address": "Cesta krških žrtev 132a, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "(07) 492 25 00"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

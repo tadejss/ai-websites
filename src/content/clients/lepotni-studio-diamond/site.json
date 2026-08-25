@@ -1,0 +1,204 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/lepotni-studio-diamond/hero.jpg",
+      "alt": "Topel in eleganten lepotni salon z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/lepotni-studio-diamond/services.jpg",
+      "alt": "Sproščujoč hair spa in tretmaji obraza v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "Lepotni Studio",
+    "highlight": "DIAMOND"
+  },
+  "metadata": {
+    "title": "Lepotni Studio DIAMOND | Vrhunska nega in sprostitev v Novem mestu",
+    "description": "Vrhunska nega za vašo dušo in telo v Novem mestu in okolici. Nudimo hair spa, frizerske storitve, nego obraza in nego telesa."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Eleganten in domač lepotni kotiček",
+    "title": "Vrhunska nega za vašo dušo in",
+    "titleHighlight": "telo",
+    "description": "Prepustite se sprostitvi in negi v Novem mestu in okolici. Poskrbimo za posameznike, ki iščejo sprostitev, nego las in celostno razvajanje.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Sprostitev",
+        "label": "in nega"
+      },
+      {
+        "value": "Balsamična",
+        "label": "izkušnja"
+      },
+      {
+        "value": "Prilagojen",
+        "label": "pristop"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše popolno razvajanje",
+    "description": "V našem lepotnem studiu v Novem mestu nudimo celovite storitve za nego in sprostitev.",
+    "items": [
+      {
+        "title": "Hair spa",
+        "description": "Globinska nega lasišča in las za popolno sprostitev in zdrav videz vaši pričeski.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Frizerske storitve",
+        "description": "Strokovno striženje, oblikovanje in nega prilagojena vašim željam.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega obraza",
+        "description": "Osvežilni in negovalni tretmaji za sijoč ter zdrav videz vaše kože.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega telesa",
+        "description": "Sprostitveni postopki za celostno razvajanje duše in telesa.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Kjer se srečata sprostitev in strokovna nega",
+    "description": "Zasnovali smo topel in domač kotiček, kjer je vsaka stranka deležna vinske pozornosti in prilagojenega pristopa.",
+    "highlights": [
+      "Sprostitev in nega v enem obisku",
+      "Balsamična izkušnja za dušo in telo",
+      "Prilagojen pristop k vsaki stranki"
+    ],
+    "benefits": [
+      {
+        "stat": "Sproščujoče",
+        "label": "okolje",
+        "description": "Topel in domač lepotni kotiček za vaš oddih od vsakdanjika."
+      },
+      {
+        "stat": "Osebni",
+        "label": "pristop",
+        "description": "Storitve prilagodimo vašim individualnim željam in potrebam."
+      },
+      {
+        "stat": "Celostno",
+        "label": "razvajanje",
+        "description": "Združujemo nego las, obraza in telesa na enem mestu."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite naš lepotni kotiček v Novem mestu ali nas kontaktirajte za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 514 945",
+        "href": "tel:031514945",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 26, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 26, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lepotni Studio DIAMOND",
+    "address": "Ljubljanska cesta 26, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "031 514 945"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

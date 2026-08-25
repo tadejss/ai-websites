@@ -1,0 +1,209 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "caramel-vanilla",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/havajana-frizersko-lepotilni/hero.jpg",
+      "alt": "Topel in eleganten frizerski salon v Novem mestu z naravno svetlobo"
+    },
+    "services": {
+      "src": "/clients/havajana-frizersko-lepotilni/services.jpg",
+      "alt": "Strokovno barvanje las in oblikovanje pričesk v prijetnem ambientu"
+    }
+  },
+  "brand": {
+    "prefix": "Havajana",
+    "highlight": "Salon"
+  },
+  "metadata": {
+    "title": "Havajana frizersko lepotilni salon | Novo mesto",
+    "description": "Vrhunske frizerske in lepotilne storitve v Novem mestu z okolico. Striženje, barvanje, svečane pričeske ter strokovno svetovanje v prijetnem vzdušju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizersko lepotilni salon v Novem mestu",
+    "title": "Vrhunske frizerske storitve za",
+    "titleHighlight": "nepozaben videz",
+    "description": "Poskrbite za svoje lase in dobro počutje z vrhunskimi storitvami za vsako priložnost. Delujemo v Novem mestu z okolico za vse, ki cenijo urejen videz.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "strokovnost"
+      },
+      {
+        "value": "Osebni",
+        "label": "pristop"
+      },
+      {
+        "value": "Prijetno",
+        "label": "vzdušje"
+      },
+      {
+        "value": "Novo",
+        "label": "mesto"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaš popoln videz",
+    "description": "Ponujamo celovite frizerske in lepotilne storitve, prilagojene vašim željam in značilnostim vaših las.",
+    "items": [
+      {
+        "title": "Striženje in oblikovanje pričesk",
+        "description": "Moderne in klasične frizure, prilagojene obliki vašega obraza in vsakemu življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Osvežitev barve, ustvarjanje dimenzije s prameni in sodobne tehnike barvanja za sijoče lase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Svečane in galo pričeske",
+        "description": "Urejanje pričesk za poroke, obhajila, rojstne dneve in druge posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega in obnova las",
+        "description": "Hranljive maske in tretmaji za vračanje mehkobe, leska in zdravja vašim lasem.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Lepotilne storitve",
+        "description": "Dopolnilne lepotilne storitve za celosten urejen videz od glave do pet.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Salon, kjer so vaše želje na prvem mestu",
+    "description": "Združujemo strokovno znanje, posluh za stranke in domače, sproščeno okolje.",
+    "highlights": [
+      "Prilagojen pristop in strokovno svetovanje za vsako stranko",
+      "Odlične reference in izkušnje za posebne priložnosti ter gala dogodke",
+      "Zelo prijetno in sproščeno vzdušje v našem salonu"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovnost",
+        "label": "in talent",
+        "description": "Vrhunska izvedba vseh storitev z občutkom za estetiko."
+      },
+      {
+        "stat": "Svetovanje",
+        "label": "za lase",
+        "description": "Individualni nasveti za nego in vzdrževanje pričeske doma."
+      },
+      {
+        "stat": "Sproščeno",
+        "label": "vzdušje",
+        "description": "Prijeten domač ambient, kjer si lahko oddahnete in se uredite."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nam pošljite sporočilo za dogovor o terminu vašega obiska.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 234 502",
+        "href": "tel:041234502",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica Slavka Gruma 24, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Slavka Gruma 24, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Havajana Salon",
+    "address": "Ulica Slavka Gruma 24, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 234 502"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
