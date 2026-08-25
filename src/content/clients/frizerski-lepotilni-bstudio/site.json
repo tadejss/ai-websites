@@ -105,18 +105,21 @@
     "benefits": [
       {
         "stat": "Prijazno",
-        "label": "Osebje",
-        "description": "Topel sprejem in posluh za vaše želje ob vsakem obisku."
+        "label": "Prijazno",
+        "description": "Topel sprejem in posluh za vaše želje ob vsakem obisku.",
+        "title": "Prijazno"
       },
       {
         "stat": "Kakovost",
-        "label": "Storitev",
-        "description": "Uporaba preverjenih pristopov za najboljše rezultate."
+        "label": "Kakovost",
+        "description": "Uporaba preverjenih pristopov za najboljše rezultate.",
+        "title": "Kakovost"
       },
       {
         "stat": "Urejeno",
-        "label": "Okolje",
-        "description": "Sproščujoč ambient v modernem salonu."
+        "label": "Urejeno",
+        "description": "Sproščujoč ambient v modernem salonu.",
+        "title": "Urejeno"
       }
     ]
   },

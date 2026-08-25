@@ -119,17 +119,20 @@
       {
         "stat": "Natančnost",
         "label": "Modni lasje",
-        "description": "Poseben poudarek namenjamo natančnemu striženju in modnim linijam."
+        "description": "Poseben poudarek namenjamo natančnemu striženju in modnim linijam.",
+        "title": "Modni lasje"
       },
       {
         "stat": "Strokovnost",
         "label": "Osebni pristop",
-        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo nego."
+        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo nego.",
+        "title": "Osebni pristop"
       },
       {
         "stat": "Dostopnost",
         "label": "Dolgo obstojne pričeske",
-        "description": "Uporabljamo preizkušene metode za urejene in dolgo obstojne pričeske."
+        "description": "Uporabljamo preizkušene metode za urejene in dolgo obstojne pričeske.",
+        "title": "Dolgo obstojne pričeske"
       }
     ]
   },

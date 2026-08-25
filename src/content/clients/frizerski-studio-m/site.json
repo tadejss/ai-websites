@@ -109,18 +109,21 @@
     "benefits": [
       {
         "stat": "Pristop",
-        "label": "Individualen",
-        "description": "Prisluhnemo vašim željam in svetujemo najboljšo nego za vaše lase."
+        "label": "Pristop",
+        "description": "Prisluhnemo vašim željam in svetujemo najboljšo nego za vaše lase.",
+        "title": "Pristop"
       },
       {
         "stat": "Ambient",
-        "label": "Udoben",
-        "description": "Sproščeno vzdušje v našem salonu poskrbi za vaš hiter oddih."
+        "label": "Ambient",
+        "description": "Sproščeno vzdušje v našem salonu poskrbi za vaš hiter oddih.",
+        "title": "Ambient"
       },
       {
         "stat": "Produkti",
-        "label": "Kakovostni",
-        "description": "Uporabljamo preverjene lasne produkte za zdravje in lesk vaših las."
+        "label": "Produkti",
+        "description": "Uporabljamo preverjene lasne produkte za zdravje in lesk vaših las.",
+        "title": "Produkti"
       }
     ]
   },

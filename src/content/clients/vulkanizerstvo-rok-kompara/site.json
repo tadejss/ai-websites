@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Hitrost",
-        "label": "In učinkovitost",
-        "description": "Poskrbimo za hitro in učinkovito menjavo pnevmatik."
+        "label": "Hitrost in učinkovitost",
+        "description": "Poskrbimo za hitro in učinkovito menjavo pnevmatik.",
+        "title": "Hitrost in učinkovitost"
       },
       {
         "stat": "Znanje",
         "label": "Angleškega jezika",
-        "description": "Prijazno osebje, ki nudi storitve tudi v angleškem jeziku."
+        "description": "Prijazno osebje, ki nudi storitve tudi v angleškem jeziku.",
+        "title": "Angleškega jezika"
       },
       {
         "stat": "Cene",
         "label": "Ugodno in pošteno",
-        "description": "Nudimo zanesljive in strokovne storitve po poštenih cenah."
+        "description": "Nudimo zanesljive in strokovne storitve po poštenih cenah.",
+        "title": "Ugodno in pošteno"
       }
     ]
   },

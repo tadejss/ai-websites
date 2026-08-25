@@ -108,18 +108,21 @@
     "benefits": [
       {
         "stat": "Individualno",
-        "label": "Sodelovanje",
-        "description": "Prisluhnemo vašim željam in skupaj poiščemo najboljšo rešitev za vaše lase."
+        "label": "Individualno",
+        "description": "Prisluhnemo vašim željam in skupaj poiščemo najboljšo rešitev za vaše lase.",
+        "title": "Individualno"
       },
       {
         "stat": "Strokovnost",
-        "label": "In svetovanje",
-        "description": "Pomagamo vam izbrati pričesko, ki ustreza vašemu slogu in obliki obraza."
+        "label": "Strokovnost in svetovanje",
+        "description": "Pomagamo vam izbrati pričesko, ki ustreza vašemu slogu in obliki obraza.",
+        "title": "Strokovnost in svetovanje"
       },
       {
         "stat": "Prijetno",
-        "label": "Okolje",
-        "description": "Sprostite se v urejenem in domačem frizerskem salonu v Postojni."
+        "label": "Prijetno",
+        "description": "Sprostite se v urejenem in domačem frizerskem salonu v Postojni.",
+        "title": "Prijetno"
       }
     ]
   },

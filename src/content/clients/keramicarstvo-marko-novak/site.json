@@ -122,17 +122,20 @@
       {
         "stat": "Zanesljivost",
         "label": "Natančna izvedba",
-        "description": "Vsakemu projektu se posvetimo z enako mero natančnosti in odgovornosti."
+        "description": "Vsakemu projektu se posvetimo z enako mero natančnosti in odgovornosti.",
+        "title": "Natančna izvedba"
       },
       {
         "stat": "Izkušnje",
         "label": "Strokovno znanje",
-        "description": "Z dolgoletnimi izkušnjami na področju keramičarstva poskrbimo za brezhiben končni izdelek."
+        "description": "Z dolgoletnimi izkušnjami na področju keramičarstva poskrbimo za brezhiben končni izdelek.",
+        "title": "Strokovno znanje"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Glede na vaše želje",
-        "description": "Prisluhnemo vašim potrebam in se prilagodimo zahtevam prostora ter vašemu urniku."
+        "description": "Prisluhnemo vašim potrebam in se prilagodimo zahtevam prostora ter vašemu urniku.",
+        "title": "Glede na vaše želje"
       }
     ]
   },

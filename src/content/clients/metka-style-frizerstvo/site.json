@@ -104,18 +104,21 @@
     "benefits": [
       {
         "stat": "Iskren",
-        "label": "Pristop",
-        "description": "Vsaki stranki se posvetimo z veliko pozornosti in razumevanja njenih želja."
+        "label": "Iskren",
+        "description": "Vsaki stranki se posvetimo z veliko pozornosti in razumevanja njenih želja.",
+        "title": "Iskren"
       },
       {
         "stat": "Lokalno",
-        "label": "Zaupanje",
-        "description": "Zanesljiv lokalni salon na Bledu, kjer se boste počutili dobrodošli."
+        "label": "Lokalno",
+        "description": "Zanesljiv lokalni salon na Bledu, kjer se boste počutili dobrodošli.",
+        "title": "Lokalno"
       },
       {
         "stat": "Strokovno",
-        "label": "Znanje",
-        "description": "Natančnost in predanost frizerski stroki za vaše popolno zadovoljstvo."
+        "label": "Strokovno",
+        "description": "Natančnost in predanost frizerski stroki za vaše popolno zadovoljstvo.",
+        "title": "Strokovno"
       }
     ]
   },

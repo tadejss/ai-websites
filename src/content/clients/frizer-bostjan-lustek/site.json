@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Hitrost",
-        "label": "In učinkovitost",
-        "description": "Cenimo vaš čas in poskrbimo za hitro ter kakovostno izvedbo."
+        "label": "Hitrost in učinkovitost",
+        "description": "Cenimo vaš čas in poskrbimo za hitro ter kakovostno izvedbo.",
+        "title": "Hitrost in učinkovitost"
       },
       {
         "stat": "Prijaznost",
         "label": "Dostopne cene",
-        "description": "Nudimo ugodne cene za vse naše frizerske storitve."
+        "description": "Nudimo ugodne cene za vse naše frizerske storitve.",
+        "title": "Dostopne cene"
       },
       {
         "stat": "Pristop",
-        "label": "Strokovnost",
-        "description": "Prijazen odnos in prilagajanje željam vsake stranke."
+        "label": "Pristop",
+        "description": "Prijazen odnos in prilagajanje željam vsake stranke.",
+        "title": "Pristop"
       }
     ]
   },

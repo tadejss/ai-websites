@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Družinsko",
-        "label": "okolje",
-        "description": "Prijazna in domača izkušnja za vsakega člana družine."
+        "label": "Družinsko okolje",
+        "description": "Prijazna in domača izkušnja za vsakega člana družine.",
+        "title": "Družinsko okolje"
       },
       {
         "stat": "Prilagodljiv",
-        "label": "urnik",
-        "description": "Možnost dopoldanskih in popoldanskih terminov po dogovoru."
+        "label": "Prilagodljiv urnik",
+        "description": "Možnost dopoldanskih in popoldanskih terminov po dogovoru.",
+        "title": "Prilagodljiv urnik"
       },
       {
         "stat": "Celovita",
-        "label": "ponudba",
-        "description": "Striženje, barvanje in oblikovanje pričesk na enem mestu."
+        "label": "Celovita ponudba",
+        "description": "Striženje, barvanje in oblikovanje pričesk na enem mestu.",
+        "title": "Celovita ponudba"
       }
     ]
   },

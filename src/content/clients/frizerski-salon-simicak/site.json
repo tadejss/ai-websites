@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Ustrežljivo",
-        "label": "Osebje",
-        "description": "Prijazen pristop in posluh za vaše želje ob vsakem obisku."
+        "label": "Ustrežljivo",
+        "description": "Prijazen pristop in posluh za vaše želje ob vsakem obisku.",
+        "title": "Ustrežljivo"
       },
       {
         "stat": "Odlično",
-        "label": "Razmerje",
-        "description": "Ugodne cene za visoko kakovost storitev in materialov."
+        "label": "Odlično",
+        "description": "Ugodne cene za visoko kakovost storitev in materialov.",
+        "title": "Odlično"
       },
       {
         "stat": "Prijeten",
-        "label": "Ambient",
-        "description": "Sproščeno in domače okolje v osrčju Cerknice."
+        "label": "Prijeten",
+        "description": "Sproščeno in domače okolje v osrčju Cerknice.",
+        "title": "Prijeten"
       }
     ]
   },

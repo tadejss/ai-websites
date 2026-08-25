@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Sodobno",
-        "label": "Oblikovanje",
-        "description": "Sledenje sodobnim brivskim trendom za izjemen končni videz."
+        "label": "Sodobno",
+        "description": "Sledenje sodobnim brivskim trendom za izjemen končni videz.",
+        "title": "Sodobno"
       },
       {
         "stat": "Dostopno",
-        "label": "Lokacija",
-        "description": "Nahajamo se na priročni lokaciji na Novem trgu v Novem mestu."
+        "label": "Dostopno",
+        "description": "Nahajamo se na priročni lokaciji na Novem trgu v Novem mestu.",
+        "title": "Dostopno"
       },
       {
         "stat": "Prilagodljivo",
         "label": "Delovni čas",
-        "description": "Odprti smo vsak dan od ponedeljka do sobote, kar olajša obisk."
+        "description": "Odprti smo vsak dan od ponedeljka do sobote, kar olajša obisk.",
+        "title": "Delovni čas"
       }
     ]
   },

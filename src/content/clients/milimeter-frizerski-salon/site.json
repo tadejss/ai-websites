@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Prijazno osebje z veliko znanja in izkušnjami."
+        "label": "Strokovno",
+        "description": "Prijazno osebje z veliko znanja in izkušnjami.",
+        "title": "Strokovno"
       },
       {
         "stat": "Specializirana",
-        "label": "Nega",
-        "description": "Posebej prilagojena nega za kodraste lase."
+        "label": "Specializirana",
+        "description": "Posebej prilagojena nega za kodraste lase.",
+        "title": "Specializirana"
       },
       {
         "stat": "Prijeten",
-        "label": "Ambient",
-        "description": "Sprostite se v salonu z avtentično energijo."
+        "label": "Prijeten",
+        "description": "Sprostite se v salonu z avtentično energijo.",
+        "title": "Prijeten"
       }
     ]
   },

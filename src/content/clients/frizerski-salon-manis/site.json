@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "In strokovnost",
-        "description": "Individualen pristop in posluh za želje vsake stranke."
+        "label": "Prijaznost in strokovnost",
+        "description": "Individualen pristop in posluh za želje vsake stranke.",
+        "title": "Prijaznost in strokovnost"
       },
       {
         "stat": "Sproščeno",
-        "label": "Vzdušje",
-        "description": "Domače okolje, kjer si lahko oddahnete med urejanjem pričeske."
+        "label": "Sproščeno",
+        "description": "Domače okolje, kjer si lahko oddahnete med urejanjem pričeske.",
+        "title": "Sproščeno"
       },
       {
         "stat": "Zanesljivost",
-        "label": "In točnost",
-        "description": "Korektna storitev in spoštovanje dogovorjenih terminov."
+        "label": "Zanesljivost in točnost",
+        "description": "Korektna storitev in spoštovanje dogovorjenih terminov.",
+        "title": "Zanesljivost in točnost"
       }
     ]
   },

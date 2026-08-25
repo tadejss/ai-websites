@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Pozornost do vsake podrobnosti za popoln končni rezultat."
+        "label": "Strokovno",
+        "description": "Pozornost do vsake podrobnosti za popoln končni rezultat.",
+        "title": "Strokovno"
       },
       {
         "stat": "Prijetno",
-        "label": "Vzdušje",
-        "description": "Sproščen ambient, kjer se boste počutili dobrodošle."
+        "label": "Prijetno",
+        "description": "Sproščen ambient, kjer se boste počutili dobrodošle.",
+        "title": "Prijetno"
       },
       {
         "stat": "Celostna",
-        "label": "Skrb",
-        "description": "Nega in svetovanje, prilagojena vašemu tipu las."
+        "label": "Celostna",
+        "description": "Nega in svetovanje, prilagojena vašemu tipu las.",
+        "title": "Celostna"
       }
     ]
   },

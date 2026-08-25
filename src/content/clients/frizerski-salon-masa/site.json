@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Prijazno",
-        "label": "Osebje",
-        "description": "Izjemno prijazno osebje z dolgoletnimi izkušnjami poskrbi za vaše dobro počutje."
+        "label": "Prijazno",
+        "description": "Izjemno prijazno osebje z dolgoletnimi izkušnjami poskrbi za vaše dobro počutje.",
+        "title": "Prijazno"
       },
       {
         "stat": "Domače",
-        "label": "Vzdušje",
-        "description": "Prijeten ambient in domače vzdušje v salonu za sproščen obisk."
+        "label": "Domače",
+        "description": "Prijeten ambient in domače vzdušje v salonu za sproščen obisk.",
+        "title": "Domače"
       },
       {
         "stat": "Enostavno",
-        "label": "Vzdrževanje",
-        "description": "Pričeske, ki jih boste z lahkoto urejali tudi sami doma."
+        "label": "Enostavno",
+        "description": "Pričeske, ki jih boste z lahkoto urejali tudi sami doma.",
+        "title": "Enostavno"
       }
     ]
   },

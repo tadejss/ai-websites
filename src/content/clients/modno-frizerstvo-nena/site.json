@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "In ustrežljivost",
-        "description": "Vsaki stranki se posvetimo z nasmehom in posluhom za njene želje."
+        "label": "Prijaznost in ustrežljivost",
+        "description": "Vsaki stranki se posvetimo z nasmehom in posluhom za njene želje.",
+        "title": "Prijaznost in ustrežljivost"
       },
       {
         "stat": "Prilagojeno",
-        "label": "Za vas",
-        "description": "Storitve prilagodimo vašemu življenjskemu slogu in značilnostim las."
+        "label": "Prilagojeno za vas",
+        "description": "Storitve prilagodimo vašemu življenjskemu slogu in značilnostim las.",
+        "title": "Prilagojeno za vas"
       },
       {
         "stat": "Kakovost",
-        "label": "In zanesljivost",
-        "description": "Zanesljiv lokalni salon v Novem mestu z visoko skrbjo za urejen videz."
+        "label": "Kakovost in zanesljivost",
+        "description": "Zanesljiv lokalni salon v Novem mestu z visoko skrbjo za urejen videz.",
+        "title": "Kakovost in zanesljivost"
       }
     ]
   },

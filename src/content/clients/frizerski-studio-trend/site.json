@@ -104,18 +104,21 @@
     "benefits": [
       {
         "stat": "Prijazno",
-        "label": "Osebje",
-        "description": "Izjemno prijazno in ustrežljivo osebje poskrbi za vaše dobro počutje."
+        "label": "Prijazno",
+        "description": "Izjemno prijazno in ustrežljivo osebje poskrbi za vaše dobro počutje.",
+        "title": "Prijazno"
       },
       {
         "stat": "Strokovno",
-        "label": "Znanje",
-        "description": "Visoko usposobljeni strokovnjaki za nego in oblikovanje las."
+        "label": "Strokovno",
+        "description": "Visoko usposobljeni strokovnjaki za nego in oblikovanje las.",
+        "title": "Strokovno"
       },
       {
         "stat": "Čisto",
-        "label": "Okolje",
-        "description": "Urejen in čist frizerski salon za sproščeno izkušnjo."
+        "label": "Čisto",
+        "description": "Urejen in čist frizerski salon za sproščeno izkušnjo.",
+        "title": "Čisto"
       }
     ]
   },

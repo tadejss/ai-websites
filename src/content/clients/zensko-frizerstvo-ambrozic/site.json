@@ -108,18 +108,21 @@
     "benefits": [
       {
         "stat": "Takoj",
-        "label": "Dostopno",
-        "description": "Brez dolgega čakanja na svoj termin."
+        "label": "Takoj",
+        "description": "Brez dolgega čakanja na svoj termin.",
+        "title": "Takoj"
       },
       {
         "stat": "Strokovno",
-        "label": "Svetovanje",
-        "description": "Osebni pristop in posluh za vaše želje."
+        "label": "Strokovno",
+        "description": "Osebni pristop in posluh za vaše želje.",
+        "title": "Strokovno"
       },
       {
         "stat": "Prijetno",
-        "label": "Vzdušje",
-        "description": "Domač ambient, kjer se boste počutili sproščeno."
+        "label": "Prijetno",
+        "description": "Domač ambient, kjer se boste počutili sproščeno.",
+        "title": "Prijetno"
       }
     ]
   },

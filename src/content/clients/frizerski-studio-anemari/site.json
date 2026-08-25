@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Prijazen",
-        "label": "Pristop",
-        "description": "Toplo in domače vzdušje, kjer se boste sprostili med vsakim obiskom."
+        "label": "Prijazen",
+        "description": "Toplo in domače vzdušje, kjer se boste sprostili med vsakim obiskom.",
+        "title": "Prijazen"
       },
       {
         "stat": "Strokovno",
-        "label": "Svetovanje",
-        "description": "Prilagojeni nasveti za nego in vzdrževanje vaše pričeske doma."
+        "label": "Strokovno",
+        "description": "Prilagojeni nasveti za nego in vzdrževanje vaše pričeske doma.",
+        "title": "Strokovno"
       },
       {
         "stat": "Udoben",
-        "label": "Ambient",
-        "description": "Sodoben in urejen salon, ustvarjen za vaše popolno udobje."
+        "label": "Udoben",
+        "description": "Sodoben in urejen salon, ustvarjen za vaše popolno udobje.",
+        "title": "Udoben"
       }
     ]
   },

@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijazni",
-        "label": "Frizerji",
-        "description": "Naša ekipa poskrbi za sproščeno vzdušje in strokovno svetovanje."
+        "label": "Prijazni",
+        "description": "Naša ekipa poskrbi za sproščeno vzdušje in strokovno svetovanje.",
+        "title": "Prijazni"
       },
       {
         "stat": "Dostopne",
-        "label": "Cene",
-        "description": "Kakovostne storitve po dostopnih cenah za vsakogar."
+        "label": "Dostopne",
+        "description": "Kakovostne storitve po dostopnih cenah za vsakogar.",
+        "title": "Dostopne"
       },
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Prisluhnemo vašim željam in poskrbimo za pričesko, ki vam ustreza."
+        "label": "Osebni",
+        "description": "Prisluhnemo vašim željam in poskrbimo za pričesko, ki vam ustreza.",
+        "title": "Osebni"
       }
     ]
   },

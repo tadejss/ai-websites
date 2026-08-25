@@ -106,17 +106,20 @@
       {
         "stat": "Zaupanje",
         "label": "Vrhunska ocena",
-        "description": "Zaupanje in zadovoljstvo naših strank sta naša največja potrditev."
+        "description": "Zaupanje in zadovoljstvo naših strank sta naša največja potrditev.",
+        "title": "Vrhunska ocena"
       },
       {
         "stat": "Sprostitev",
         "label": "Terapevtska masaža",
-        "description": "Prepustite se blagodejnemu pranju las in sproščujoči masaži."
+        "description": "Prepustite se blagodejnemu pranju las in sproščujoči masaži.",
+        "title": "Terapevtska masaža"
       },
       {
         "stat": "Strokovno",
         "label": "Prijazen pristop",
-        "description": "Topel, domač in profesionalen odnos do vsake stranke posebej."
+        "description": "Topel, domač in profesionalen odnos do vsake stranke posebej.",
+        "title": "Prijazen pristop"
       }
     ]
   },

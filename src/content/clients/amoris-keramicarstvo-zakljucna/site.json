@@ -122,17 +122,20 @@
       {
         "stat": "Kakovost",
         "label": "Natančna izvedba",
-        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov."
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov.",
+        "title": "Natančna izvedba"
       },
       {
         "stat": "Zanesljivost",
         "label": "Strokoven pristop",
-        "description": "Delo opravimo zanesljivo in v dogovorjenih časovnih okvirih."
+        "description": "Delo opravimo zanesljivo in v dogovorjenih časovnih okvirih.",
+        "title": "Strokoven pristop"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Uhajanje željam",
-        "description": "Prisluhnemo vašim potrebam in se prilagodimo zahtevam prostora."
+        "description": "Prisluhnemo vašim potrebam in se prilagodimo zahtevam prostora.",
+        "title": "Uhajanje željam"
       }
     ]
   },

@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "Znanje",
-        "description": "Poglobljeno poznavanje industrijske elektronike in specifičnih potreb proizvodnih obratov."
+        "label": "Strokovnost",
+        "description": "Poglobljeno poznavanje industrijske elektronike in specifičnih potreb proizvodnih obratov.",
+        "title": "Strokovnost"
       },
       {
         "stat": "Odzivnost",
-        "label": "Hitrost",
-        "description": "Zanesljiva diagnostika in popravila zmanjšujejo izpade vaših procesov."
+        "label": "Odzivnost",
+        "description": "Zanesljiva diagnostika in popravila zmanjšujejo izpade vaših procesov.",
+        "title": "Odzivnost"
       },
       {
         "stat": "Pristop",
-        "label": "Prilagodljivost",
-        "description": "Individualna obravnava in rešitve, prilagojene zahtevam posameznega podjetja."
+        "label": "Pristop",
+        "description": "Individualna obravnava in rešitve, prilagojene zahtevam posameznega podjetja.",
+        "title": "Pristop"
       }
     ]
   },

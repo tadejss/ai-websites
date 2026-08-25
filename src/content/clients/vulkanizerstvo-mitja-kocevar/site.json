@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Hitrost",
-        "label": "in zanesljivost",
-        "description": "Storitve opravimo zanesljivo in v dogovorjenem času."
+        "label": "Hitrost in zanesljivost",
+        "description": "Storitve opravimo zanesljivo in v dogovorjenem času.",
+        "title": "Hitrost in zanesljivost"
       },
       {
         "stat": "Lokalno",
-        "label": "okolje",
-        "description": "Domača in dostopna vulkanizerska delavnica v Starem trgu pri Ložu."
+        "label": "Lokalno okolje",
+        "description": "Domača in dostopna vulkanizerska delavnica v Starem trgu pri Ložu.",
+        "title": "Lokalno okolje"
       },
       {
         "stat": "Strokovnost",
-        "label": "in izkušnje",
-        "description": "Kakovostno opravljeno delo za varno vožnjo vašega vozila."
+        "label": "Strokovnost in izkušnje",
+        "description": "Kakovostno opravljeno delo za varno vožnjo vašega vozila.",
+        "title": "Strokovnost in izkušnje"
       }
     ]
   },

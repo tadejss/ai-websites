@@ -93,17 +93,20 @@
       {
         "stat": "Vrhunsko",
         "label": "Kakovost projekcij",
-        "description": "Zagotavljamo odlično sliko in zvok, ki presega običajne standarde regionalnih kinematografov."
+        "description": "Zagotavljamo odlično sliko in zvok, ki presega običajne standarde regionalnih kinematografov.",
+        "title": "Kakovost projekcij"
       },
       {
         "stat": "Umetniško",
         "label": "Skrbno izbran program",
-        "description": "Ponujamo pester nabor umetniških filmov in gledaliških iger, ki burijo domišljijo."
+        "description": "Ponujamo pester nabor umetniških filmov in gledaliških iger, ki burijo domišljijo.",
+        "title": "Skrbno izbran program"
       },
       {
         "stat": "Domače",
         "label": "Prijetno druženje",
-        "description": "Obiščite naš bar s pijačo in pecivom ter delite svoje vtise po predstavi."
+        "description": "Obiščite naš bar s pijačo in pecivom ter delite svoje vtise po predstavi.",
+        "title": "Prijetno druženje"
       }
     ]
   },

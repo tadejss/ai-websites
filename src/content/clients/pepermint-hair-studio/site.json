@@ -109,18 +109,21 @@
     "benefits": [
       {
         "stat": "Detajli",
-        "label": "Pozornost",
-        "description": "Izjemna strokovnost in natančnost pri vsakem oblikovanju pričeske."
+        "label": "Detajli",
+        "description": "Izjemna strokovnost in natančnost pri vsakem oblikovanju pričeske.",
+        "title": "Detajli"
       },
       {
         "stat": "Ambient",
-        "label": "Sproščenost",
-        "description": "Prijeten prostor z odlično kavo, glasbo in pozitivno energijo."
+        "label": "Ambient",
+        "description": "Prijeten prostor z odlično kavo, glasbo in pozitivno energijo.",
+        "title": "Ambient"
       },
       {
         "stat": "Nasvet",
-        "label": "Individulano",
-        "description": "Strokovno svetovanje in popolna posvečenost vašim željam."
+        "label": "Nasvet",
+        "description": "Strokovno svetovanje in popolna posvečenost vašim željam.",
+        "title": "Nasvet"
       }
     ]
   },

@@ -122,17 +122,20 @@
       {
         "stat": "Zanesljivost",
         "label": "Natančna izvedba",
-        "description": "Vsakemu projektu se posvetimo z enako mero skrbnosti in natančnosti."
+        "description": "Vsakemu projektu se posvetimo z enako mero skrbnosti in natančnosti.",
+        "title": "Natančna izvedba"
       },
       {
         "stat": "Svetovanje",
         "label": "Izbira materialov",
-        "description": "Pomagamo vam izbrati prave materiale za dolgotrajne in estetske rešitve."
+        "description": "Pomagamo vam izbrati prave materiale za dolgotrajne in estetske rešitve.",
+        "title": "Izbira materialov"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Spoštovanje rokov",
-        "description": "Delujemo z mislijo na vaše želje in se držimo dogovorjenih časovnih okvirjev."
+        "description": "Delujemo z mislijo na vaše želje in se držimo dogovorjenih časovnih okvirjev.",
+        "title": "Spoštovanje rokov"
       }
     ]
   },

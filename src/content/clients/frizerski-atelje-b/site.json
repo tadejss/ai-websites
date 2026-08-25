@@ -119,17 +119,20 @@
       {
         "stat": "Zanesljivost",
         "label": "Držanje terminov",
-        "description": "Spoštujemo vaš čas in se vedno držimo dogovorjenih ur."
+        "description": "Spoštujemo vaš čas in se vedno držimo dogovorjenih ur.",
+        "title": "Držanje terminov"
       },
       {
         "stat": "Udobje",
         "label": "Parkirno mesto",
-        "description": "Za naše stranke je vedno poskrbljeno z zagotovljenim parkirnim prostorom."
+        "description": "Za naše stranke je vedno poskrbljeno z zagotovljenim parkirnim prostorom.",
+        "title": "Parkirno mesto"
       },
       {
         "stat": "Vrednost",
         "label": "Dostopne cene",
-        "description": "Nudimo visoko kakovost storitev po dostopnih cenah za vsakogar."
+        "description": "Nudimo visoko kakovost storitev po dostopnih cenah za vsakogar.",
+        "title": "Dostopne cene"
       }
     ]
   },

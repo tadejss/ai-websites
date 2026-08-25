@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in strokovnost",
-        "description": "Naša ekipa se posveti vsaki stranki posebej ter poskrbi za prijetno in sproščeno izkušnjo."
+        "label": "Prijaznost in strokovnost",
+        "description": "Naša ekipa se posveti vsaki stranki posebej ter poskrbi za prijetno in sproščeno izkušnjo.",
+        "title": "Prijaznost in strokovnost"
       },
       {
         "stat": "Dostopnost",
-        "label": "za vsakogar",
-        "description": "Ponujamo kakovostne storitve po cenah, ki so dostopne širšemu krogu strank."
+        "label": "Dostopnost za vsakogar",
+        "description": "Ponujamo kakovostne storitve po cenah, ki so dostopne širšemu krogu strank.",
+        "title": "Dostopnost za vsakogar"
       },
       {
         "stat": "Kakovost",
-        "label": "in urejenost",
-        "description": "Zanesljivo striženje, barvanje in nega las, s katerimi boste vedno urejeni."
+        "label": "Kakovost in urejenost",
+        "description": "Zanesljivo striženje, barvanje in nega las, s katerimi boste vedno urejeni.",
+        "title": "Kakovost in urejenost"
       }
     ]
   },

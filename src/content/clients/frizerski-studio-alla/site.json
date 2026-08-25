@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Lokalno",
-        "label": "Dostopnost",
-        "description": "Nahajamo se na Kolodvorski ulici v Krškem, kar omogoča preprost dostop."
+        "label": "Lokalno",
+        "description": "Nahajamo se na Kolodvorski ulici v Krškem, kar omogoča preprost dostop.",
+        "title": "Lokalno"
       },
       {
         "stat": "Celovito",
-        "label": "Za vso družino",
-        "description": "Nudimo striženje, barvanje in stiliranje na enem mestu za vsakogar."
+        "label": "Celovito za vso družino",
+        "description": "Nudimo striženje, barvanje in stiliranje na enem mestu za vsakogar.",
+        "title": "Celovito za vso družino"
       },
       {
         "stat": "Osebno",
         "label": "Individualni pristop",
-        "description": "Prisluhnemo vašim željam in poskrbimo za prijetno, domače vzdušje."
+        "description": "Prisluhnemo vašim željam in poskrbimo za prijetno, domače vzdušje.",
+        "title": "Individualni pristop"
       }
     ]
   },

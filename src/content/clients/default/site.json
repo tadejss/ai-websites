@@ -62,8 +62,9 @@
     "benefits": [
       {
         "stat": "10+",
-        "label": "let izkušenj",
-        "description": "Dolgoletna praksa."
+        "label": "10+ let izkušenj",
+        "description": "Dolgoletna praksa.",
+        "title": "10+ let izkušenj"
       }
     ]
   },

@@ -117,17 +117,20 @@
       {
         "stat": "Strokovnost",
         "label": "Znanje keramike",
-        "description": "Vrhunsko strokovno znanje na področju polaganja keramike in gradbenih del."
+        "description": "Vrhunsko strokovno znanje na področju polaganja keramike in gradbenih del.",
+        "title": "Znanje keramike"
       },
       {
         "stat": "Zanesljivost",
         "label": "Natančna izvedba",
-        "description": "Dosledno upoštevanje dogovorov in natančno opravljeno delo."
+        "description": "Dosledno upoštevanje dogovorov in natančno opravljeno delo.",
+        "title": "Natančna izvedba"
       },
       {
         "stat": "Svetovanje",
         "label": "Podpora strankam",
-        "description": "Strokovni nasveti in pomoč pri izbiri najboljših rešitev za vaš prostor."
+        "description": "Strokovni nasveti in pomoč pri izbiri najboljših rešitev za vaš prostor.",
+        "title": "Podpora strankam"
       }
     ]
   },

@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijazno",
-        "label": "Osebje",
-        "description": "Topel sprejem in strokovno svetovanje ob vsakem obisku."
+        "label": "Prijazno",
+        "description": "Topel sprejem in strokovno svetovanje ob vsakem obisku.",
+        "title": "Prijazno"
       },
       {
         "stat": "Kvaliteta",
-        "label": "Izvedbe",
-        "description": "Natančno delo z mislijo na zdravje in lepoto vaših las."
+        "label": "Kvaliteta",
+        "description": "Natančno delo z mislijo na zdravje in lepoto vaših las.",
+        "title": "Kvaliteta"
       },
       {
         "stat": "Udobje",
-        "label": "Vzdušje",
-        "description": "Sproščujoč ambient, kjer si lahko vzamete čas zase."
+        "label": "Udobje",
+        "description": "Sproščujoč ambient, kjer si lahko vzamete čas zase.",
+        "title": "Udobje"
       }
     ]
   },

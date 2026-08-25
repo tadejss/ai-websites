@@ -116,18 +116,21 @@
     "benefits": [
       {
         "stat": "Odzivnost",
-        "label": "in strokovnost",
-        "description": "Hitro se odzovemo na vaše potrebe in dela opravimo strokovno."
+        "label": "Odzivnost in strokovnost",
+        "description": "Hitro se odzovemo na vaše potrebe in dela opravimo strokovno.",
+        "title": "Odzivnost in strokovnost"
       },
       {
         "stat": "Celovito",
-        "label": "na enem mestu",
-        "description": "Nudimo elektro in gradbene storitve, kar vam prihrani čas in skrbi."
+        "label": "Celovito na enem mestu",
+        "description": "Nudimo elektro in gradbene storitve, kar vam prihrani čas in skrbi.",
+        "title": "Celovito na enem mestu"
       },
       {
         "stat": "Zanesljivo",
-        "label": "izvajanje",
-        "description": "Zanesljivo izvajanje del za mirno bivanje v vašem domu ali poslovnem prostoru."
+        "label": "Zanesljivo izvajanje",
+        "description": "Zanesljivo izvajanje del za mirno bivanje v vašem domu ali poslovnem prostoru.",
+        "title": "Zanesljivo izvajanje"
       }
     ]
   },

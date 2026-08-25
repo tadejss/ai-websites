@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Preverjena",
-        "label": "Kakovost",
-        "description": "Dosegamo visoke standarde in se ponašamo z odličnimi ocenami strank."
+        "label": "Preverjena",
+        "description": "Dosegamo visoke standarde in se ponašamo z odličnimi ocenami strank.",
+        "title": "Preverjena"
       },
       {
         "stat": "Natančnost",
-        "label": "In zanesljivost",
-        "description": "Vsak projekt izpeljemo skrbno, dosledno in v dogovorjenih rokovih."
+        "label": "Natančnost in zanesljivost",
+        "description": "Vsak projekt izpeljemo skrbno, dosledno in v dogovorjenih rokovih.",
+        "title": "Natančnost in zanesljivost"
       },
       {
         "stat": "Celovit",
-        "label": "Pristop",
-        "description": "Nudimo strokovno svetovanje in prilagojene rešitve za vaš dom."
+        "label": "Celovit",
+        "description": "Nudimo strokovno svetovanje in prilagojene rešitve za vaš dom.",
+        "title": "Celovit"
       }
     ]
   },

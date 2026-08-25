@@ -104,17 +104,20 @@
       {
         "stat": "Zadovoljstvo",
         "label": "Zadovoljne stranke",
-        "description": "Ponosni smo na pozitivne ocene in zaupanje ljudi, ki se radi vračajo k nam."
+        "description": "Ponosni smo na pozitivne ocene in zaupanje ljudi, ki se radi vračajo k nam.",
+        "title": "Zadovoljne stranke"
       },
       {
         "stat": "Kakovost",
         "label": "Visoki standardi",
-        "description": "Vsak tretma izvajamo skrbno, z mislijo na vaše dobro počutje in rezultate."
+        "description": "Vsak tretma izvajamo skrbno, z mislijo na vaše dobro počutje in rezultate.",
+        "title": "Visoki standardi"
       },
       {
         "stat": "Prijaznost",
         "label": "Domač ambient",
-        "description": "Pri nas boste vedno deležni prijaznega in osebnega pristopa."
+        "description": "Pri nas boste vedno deležni prijaznega in osebnega pristopa.",
+        "title": "Domač ambient"
       }
     ]
   },

@@ -123,17 +123,20 @@
       {
         "stat": "Znanje",
         "label": "Strokovni pristop",
-        "description": "Dolgoletne izkušnje in strokovno znanje zagotavljajo kakovostno izvedbo vsakega projekta."
+        "description": "Dolgoletne izkušnje in strokovno znanje zagotavljajo kakovostno izvedbo vsakega projekta.",
+        "title": "Strokovni pristop"
       },
       {
         "stat": "Natančnost",
         "label": "Čista izvedba",
-        "description": "Dela izvajamo natančno, skrbno in z mislijo na urejenost delovnega prostora."
+        "description": "Dela izvajamo natančno, skrbno in z mislijo na urejenost delovnega prostora.",
+        "title": "Čista izvedba"
       },
       {
         "stat": "Zanesljivost",
         "label": "Spoštovanje rokov",
-        "description": "Držimo se dogovorjenih rokov in se individualno posvetimo vašim željam."
+        "description": "Držimo se dogovorjenih rokov in se individualno posvetimo vašim željam.",
+        "title": "Spoštovanje rokov"
       }
     ]
   },

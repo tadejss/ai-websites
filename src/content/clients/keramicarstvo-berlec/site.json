@@ -122,17 +122,20 @@
       {
         "stat": "Natančnost",
         "label": "Izjemna vgradnja",
-        "description": "Vsak projekt izvedemo z največjo mero natančnosti na vseh vrstah površin."
+        "description": "Vsak projekt izvedemo z največjo mero natančnosti na vseh vrstah površin.",
+        "title": "Izjemna vgradnja"
       },
       {
         "stat": "Zanesljivost",
         "label": "Strokovna izvedba",
-        "description": "Zanesljivo in dosledno držanje dogovorov ter strokovno opravljeno delo."
+        "description": "Zanesljivo in dosledno držanje dogovorov ter strokovno opravljeno delo.",
+        "title": "Strokovna izvedba"
       },
       {
         "stat": "Kakovost",
         "label": "Preverjene storitve",
-        "description": "Storitve, prilagojene zahtevam lastnikov hiš, stanovanj in investitorjev."
+        "description": "Storitve, prilagojene zahtevam lastnikov hiš, stanovanj in investitorjev.",
+        "title": "Preverjene storitve"
       }
     ]
   },

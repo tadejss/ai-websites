@@ -122,17 +122,20 @@
       {
         "stat": "Hitrost",
         "label": "Hiter odziv",
-        "description": "Odzivamo se hitro na vaše klice in potrebe po nujnih popravilih ali novih montažah."
+        "description": "Odzivamo se hitro na vaše klice in potrebe po nujnih popravilih ali novih montažah.",
+        "title": "Hiter odziv"
       },
       {
         "stat": "Znanje",
-        "label": "Strokovnost",
-        "description": "Dolgoletne izkušnje in natančnost zagotavljajo varno in dolgotrajno delovanje."
+        "label": "Znanje",
+        "description": "Dolgoletne izkušnje in natančnost zagotavljajo varno in dolgotrajno delovanje.",
+        "title": "Znanje"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Rešitve za stranke",
-        "description": "Prisluhnemo vašim željam in poiščemo najboljšo tehnično rešitev za vaš objekt."
+        "description": "Prisluhnemo vašim željam in poiščemo najboljšo tehnično rešitev za vaš objekt.",
+        "title": "Rešitve za stranke"
       }
     ]
   },

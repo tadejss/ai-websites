@@ -122,17 +122,20 @@
       {
         "stat": "Natančnost",
         "label": "Kvalitetna izvedba",
-        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov."
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov.",
+        "title": "Kvalitetna izvedba"
       },
       {
         "stat": "Izkušnje",
         "label": "Preverjeno znanje",
-        "description": "Dolgoletne izkušnje zagotavljajo zanesljive in dolgotrajne rešitve."
+        "description": "Dolgoletne izkušnje zagotavljajo zanesljive in dolgotrajne rešitve.",
+        "title": "Preverjeno znanje"
       },
       {
         "stat": "Svetovanje",
         "label": "Strokovna podpora",
-        "description": "Pomagamo vam izbrati najboljše materiale in rešitve za vaš dom."
+        "description": "Pomagamo vam izbrati najboljše materiale in rešitve za vaš dom.",
+        "title": "Strokovna podpora"
       }
     ]
   },

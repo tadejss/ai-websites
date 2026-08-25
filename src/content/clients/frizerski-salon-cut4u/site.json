@@ -119,17 +119,20 @@
       {
         "stat": "Zadovoljstvo",
         "label": "Preverjeno zadovoljstvo",
-        "description": "Visoka ocena strank potrjuje našo predanost kakovosti."
+        "description": "Visoka ocena strank potrjuje našo predanost kakovosti.",
+        "title": "Preverjeno zadovoljstvo"
       },
       {
         "stat": "Točnost",
         "label": "Prijazno osebje",
-        "description": "Zagotavljamo prijazen sprejem, strokovnost in spoštovanje dogovorjenih terminov."
+        "description": "Zagotavljamo prijazen sprejem, strokovnost in spoštovanje dogovorjenih terminov.",
+        "title": "Prijazno osebje"
       },
       {
         "stat": "Udobje",
         "label": "Urejen salon",
-        "description": "Prijetno in udobno okolje za vaše popolno sproščanje."
+        "description": "Prijetno in udobno okolje za vaše popolno sproščanje.",
+        "title": "Urejen salon"
       }
     ]
   },

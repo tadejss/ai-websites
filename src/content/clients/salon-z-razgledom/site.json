@@ -106,17 +106,20 @@
       {
         "stat": "Razgled",
         "label": "Edinstvena lokacija",
-        "description": "Uživajte v čudovitem razgledu medtem ko skrbimo za vaš videz."
+        "description": "Uživajte v čudovitem razgledu medtem ko skrbimo za vaš videz.",
+        "title": "Edinstvena lokacija"
       },
       {
         "stat": "Kakovost",
         "label": "Strokovne storitve",
-        "description": "Nudimo profesionalno nego las in nohtov z visoko stopnjo posvečenosti."
+        "description": "Nudimo profesionalno nego las in nohtov z visoko stopnjo posvečenosti.",
+        "title": "Strokovne storitve"
       },
       {
         "stat": "Domače",
         "label": "Sproščeno vzdušje",
-        "description": "Prijazna in sproščena atmosfera za vaš popolni oddih od vsakdana."
+        "description": "Prijazna in sproščena atmosfera za vaš popolni oddih od vsakdana.",
+        "title": "Sproščeno vzdušje"
       }
     ]
   },

@@ -108,18 +108,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "In dobro vzdušje",
-        "description": "V salonu vas vedno sprejmemo toplo in z nasmehom."
+        "label": "Prijaznost in dobro vzdušje",
+        "description": "V salonu vas vedno sprejmemo toplo in z nasmehom.",
+        "title": "Prijaznost in dobro vzdušje"
       },
       {
         "stat": "Prilagodljivost",
-        "label": "Strankam",
-        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku."
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku.",
+        "title": "Prilagodljivost"
       },
       {
         "stat": "Izkušnje",
         "label": "Lokalno okolje",
-        "description": "Dolgoletno delovanje in poznavanje potreb naših strank."
+        "description": "Dolgoletno delovanje in poznavanje potreb naših strank.",
+        "title": "Lokalno okolje"
       }
     ]
   },

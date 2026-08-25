@@ -119,17 +119,20 @@
       {
         "stat": "Prilagojeno",
         "label": "Pristop k stranki",
-        "description": "Vsaki stranki se posvetimo individualno in prisluhnemo vašim željam."
+        "description": "Vsaki stranki se posvetimo individualno in prisluhnemo vašim željam.",
+        "title": "Pristop k stranki"
       },
       {
         "stat": "Kakovost",
-        "label": "Storitve",
-        "description": "Zanesljive in urejene frizerske storitve za vsak dan."
+        "label": "Kakovost",
+        "description": "Zanesljive in urejene frizerske storitve za vsak dan.",
+        "title": "Kakovost"
       },
       {
         "stat": "Ambient",
         "label": "Prijetno vzdušje",
-        "description": "Sprostite se v domačem in prijateljskem okolju našega salona."
+        "description": "Sprostite se v domačem in prijateljskem okolju našega salona.",
+        "title": "Prijetno vzdušje"
       }
     ]
   },

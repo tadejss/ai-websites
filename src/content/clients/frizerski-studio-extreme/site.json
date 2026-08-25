@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in ustrežljivost",
-        "description": "Sprejmemo vas v toplem in prijetnem vzdušju."
+        "label": "Prijaznost in ustrežljivost",
+        "description": "Sprejmemo vas v toplem in prijetnem vzdušju.",
+        "title": "Prijaznost in ustrežljivost"
       },
       {
         "stat": "Svetovanje",
-        "label": "po vaši meri",
-        "description": "Pomagamo vam izbrati pričesko, ki poudari vašo osebnost."
+        "label": "Svetovanje po vaši meri",
+        "description": "Pomagamo vam izbrati pričesko, ki poudari vašo osebnost.",
+        "title": "Svetovanje po vaši meri"
       },
       {
         "stat": "Kakovost",
-        "label": "in dostopnost",
-        "description": "Nudimo profesionalne storitve po dostopnih cenah."
+        "label": "Kakovost in dostopnost",
+        "description": "Nudimo profesionalne storitve po dostopnih cenah.",
+        "title": "Kakovost in dostopnost"
       }
     ]
   },

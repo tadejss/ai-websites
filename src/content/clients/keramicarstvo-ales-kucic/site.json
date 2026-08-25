@@ -122,17 +122,20 @@
       {
         "stat": "Vrhunska",
         "label": "Kakovost izvedbe",
-        "description": "Uporaba preverjenih postopkov in natančnost pri vsakem položenem kvadratnem metru."
+        "description": "Uporaba preverjenih postopkov in natančnost pri vsakem položenem kvadratnem metru.",
+        "title": "Kakovost izvedbe"
       },
       {
         "stat": "Zanesljiv",
-        "label": "In strokoven pristop",
-        "description": "Držimo se dogovorjenih rokov in poskrbimo za urejeno delovišče."
+        "label": "Zanesljiv in strokoven pristop",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za urejeno delovišče.",
+        "title": "Zanesljiv in strokoven pristop"
       },
       {
         "stat": "Zadovoljne",
-        "label": "Stranke",
-        "description": "Gradimo na zaupanju in dolgoročnem zadovoljstvu naših naročnikov."
+        "label": "Zadovoljne",
+        "description": "Gradimo na zaupanju in dolgoročnem zadovoljstvu naših naročnikov.",
+        "title": "Zadovoljne"
       }
     ]
   },

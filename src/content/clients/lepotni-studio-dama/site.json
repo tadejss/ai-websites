@@ -114,18 +114,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "in prijaznost",
-        "description": "Naše osebje se posveča vsaki stranki posebej z visoko raven strokovnosti."
+        "label": "Strokovnost in prijaznost",
+        "description": "Naše osebje se posveča vsaki stranki posebej z visoko raven strokovnosti.",
+        "title": "Strokovnost in prijaznost"
       },
       {
         "stat": "Specializacija",
-        "label": "za obrvi",
-        "description": "Smo strokovnjaki za oblikovanje obrvi in nego trepalnic."
+        "label": "Specializacija za obrvi",
+        "description": "Smo strokovnjaki za oblikovanje obrvi in nego trepalnic.",
+        "title": "Specializacija za obrvi"
       },
       {
         "stat": "Kakovost",
-        "label": "in natančnost",
-        "description": "Zagotavljamo zanesljive in natančne lepotne storitve."
+        "label": "Kakovost in natančnost",
+        "description": "Zagotavljamo zanesljive in natančne lepotne storitve.",
+        "title": "Kakovost in natančnost"
       }
     ]
   },

@@ -109,18 +109,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "In natančnost",
-        "description": "Natančno oblikovanje kratkih in dolgih pričesk za popoln videz."
+        "label": "Strokovnost in natančnost",
+        "description": "Natančno oblikovanje kratkih in dolgih pričesk za popoln videz.",
+        "title": "Strokovnost in natančnost"
       },
       {
         "stat": "Topel",
-        "label": "Pristop",
-        "description": "Prijazno vzdušje, ki je prilagojeno vsem strankam, vključno z otroki."
+        "label": "Topel",
+        "description": "Prijazno vzdušje, ki je prilagojeno vsem strankam, vključno z otroki.",
+        "title": "Topel"
       },
       {
         "stat": "Domače",
-        "label": "Vzdušje",
-        "description": "Sproščeno okolje v salonu, kjer se boste počutili dobrodošle."
+        "label": "Domače",
+        "description": "Sproščeno okolje v salonu, kjer se boste počutili dobrodošle.",
+        "title": "Domače"
       }
     ]
   },

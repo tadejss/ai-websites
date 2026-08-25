@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Natančnost",
-        "label": "In kakovost",
-        "description": "Vsak projekt izvedemo skrbno in z občutkom za detajle."
+        "label": "Natančnost in kakovost",
+        "description": "Vsak projekt izvedemo skrbno in z občutkom za detajle.",
+        "title": "Natančnost in kakovost"
       },
       {
         "stat": "Zanesljivost",
-        "label": "Dogovori",
-        "description": "Spoštujemo dogovorjene roke in se držimo zadanih obveznosti."
+        "label": "Zanesljivost",
+        "description": "Spoštujemo dogovorjene roke in se držimo zadanih obveznosti.",
+        "title": "Zanesljivost"
       },
       {
         "stat": "Izkušnje",
-        "label": "Strokovnost",
-        "description": "Zanesljivo svetovanje in izvedba na področju keramičarstva."
+        "label": "Izkušnje",
+        "description": "Zanesljivo svetovanje in izvedba na področju keramičarstva.",
+        "title": "Izkušnje"
       }
     ]
   },

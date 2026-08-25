@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Znanje",
-        "description": "Natančna in strokovna izvedba vseh elektrodel."
+        "label": "Strokovno",
+        "description": "Natančna in strokovna izvedba vseh elektrodel.",
+        "title": "Strokovno"
       },
       {
         "stat": "Lokalno",
-        "label": "Prisotnost",
-        "description": "Zanesljiv partner, ki deluje na območju Cerknice z okolico."
+        "label": "Lokalno",
+        "description": "Zanesljiv partner, ki deluje na območju Cerknice z okolico.",
+        "title": "Lokalno"
       },
       {
         "stat": "Prilagodljivo",
-        "label": "Sodelovanje",
-        "description": "Prisluhnemo vašim željam in potrebam ter se hitro odzovemo."
+        "label": "Prilagodljivo",
+        "description": "Prisluhnemo vašim željam in potrebam ter se hitro odzovemo.",
+        "title": "Prilagodljivo"
       }
     ]
   },

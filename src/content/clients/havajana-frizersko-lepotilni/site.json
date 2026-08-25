@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "in talent",
-        "description": "Vrhunska izvedba vseh storitev z občutkom za estetiko."
+        "label": "Strokovnost in talent",
+        "description": "Vrhunska izvedba vseh storitev z občutkom za estetiko.",
+        "title": "Strokovnost in talent"
       },
       {
         "stat": "Svetovanje",
-        "label": "za lase",
-        "description": "Individualni nasveti za nego in vzdrževanje pričeske doma."
+        "label": "Svetovanje za lase",
+        "description": "Individualni nasveti za nego in vzdrževanje pričeske doma.",
+        "title": "Svetovanje za lase"
       },
       {
         "stat": "Sproščeno",
-        "label": "vzdušje",
-        "description": "Prijeten domač ambient, kjer si lahko oddahnete in se uredite."
+        "label": "Sproščeno vzdušje",
+        "description": "Prijeten domač ambient, kjer si lahko oddahnete in se uredite.",
+        "title": "Sproščeno vzdušje"
       }
     ]
   },

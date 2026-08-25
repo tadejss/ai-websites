@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "In natančnost",
-        "description": "Vsakemu projektu se posvetimo z maksimalno natančnostjo in posluhom za detajle."
+        "label": "Strokovnost in natančnost",
+        "description": "Vsakemu projektu se posvetimo z maksimalno natančnostjo in posluhom za detajle.",
+        "title": "Strokovnost in natančnost"
       },
       {
         "stat": "Zanesljivost",
-        "label": "In prilagodljivost",
-        "description": "Dogovorjene roke spoštujemo ter se prilagajamo vašim potrebam na terenu."
+        "label": "Zanesljivost in prilagodljivost",
+        "description": "Dogovorjene roke spoštujemo ter se prilagajamo vašim potrebam na terenu.",
+        "title": "Zanesljivost in prilagodljivost"
       },
       {
         "stat": "Lokalno",
-        "label": "Delovanje",
-        "description": "Delujemo v Cerknici z okolico in širši regiji Notranjska."
+        "label": "Lokalno",
+        "description": "Delujemo v Cerknici z okolico in širši regiji Notranjska.",
+        "title": "Lokalno"
       }
     ]
   },

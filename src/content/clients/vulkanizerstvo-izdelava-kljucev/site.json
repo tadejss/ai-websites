@@ -117,17 +117,20 @@
       {
         "stat": "Zanesljivost",
         "label": "Hitri odzivi",
-        "description": "Hiter in zanesljiv odziv na klic, ko se znajdete v težavah."
+        "description": "Hiter in zanesljiv odziv na klic, ko se znajdete v težavah.",
+        "title": "Hitri odzivi"
       },
       {
         "stat": "Natančnost",
         "label": "Kakovostno delo",
-        "description": "Kakovostna in natančna izdelava ključev ter vulkanizerske storitve."
+        "description": "Kakovostna in natančna izdelava ključev ter vulkanizerske storitve.",
+        "title": "Kakovostno delo"
       },
       {
         "stat": "Prijaznost",
-        "label": "Pošten odnos",
-        "description": "Prijazna in poštena postrežba z ugodnimi cenami za vse stranke."
+        "label": "Prijaznost Pošten odnos",
+        "description": "Prijazna in poštena postrežba z ugodnimi cenami za vse stranke.",
+        "title": "Prijaznost Pošten odnos"
       }
     ]
   },

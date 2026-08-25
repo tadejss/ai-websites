@@ -105,17 +105,20 @@
       {
         "stat": "Odlične",
         "label": "Ocene strank",
-        "description": "Ponosni smo na pozitivne odzive in zadovoljstvo tistih, ki nam zaupajo."
+        "description": "Ponosni smo na pozitivne odzive in zadovoljstvo tistih, ki nam zaupajo.",
+        "title": "Ocene strank"
       },
       {
         "stat": "Vrhunska",
         "label": "Skrb za stranke",
-        "description": "Vsakemu obisku namenimo vso pozornost in strokovno podporo."
+        "description": "Vsakemu obisku namenimo vso pozornost in strokovno podporo.",
+        "title": "Skrb za stranke"
       },
       {
         "stat": "Urejen",
-        "label": "Videz",
-        "description": "Pomagamo vam do pričeske, v kateri se boste počutili samozavestno."
+        "label": "Urejen",
+        "description": "Pomagamo vam do pričeske, v kateri se boste počutili samozavestno.",
+        "title": "Urejen"
       }
     ]
   },

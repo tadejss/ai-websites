@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Prijazno in strokovno osebje poskrbi za vaše želje."
+        "label": "Strokovno",
+        "description": "Prijazno in strokovno osebje poskrbi za vaše želje.",
+        "title": "Strokovno"
       },
       {
         "stat": "Zadovoljstvo",
-        "label": "Strank",
-        "description": "Visoka raven zadovoljstva naših obiskovalcev."
+        "label": "Zadovoljstvo",
+        "description": "Visoka raven zadovoljstva naših obiskovalcev.",
+        "title": "Zadovoljstvo"
       },
       {
         "stat": "Kakovost",
-        "label": "In cena",
-        "description": "Odlično razmerje med dostopno ceno in vrhunsko izvedbo."
+        "label": "Kakovost in cena",
+        "description": "Odlično razmerje med dostopno ceno in vrhunsko izvedbo.",
+        "title": "Kakovost in cena"
       }
     ]
   },

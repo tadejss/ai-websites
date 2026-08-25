@@ -122,17 +122,20 @@
       {
         "stat": "Znanje",
         "label": "Preverjene izkušnje",
-        "description": "Strokovno delo temelji na preverjenem znanju in dolgoletnih izkušnjah na področju elektrike."
+        "description": "Strokovno delo temelji na preverjenem znanju in dolgoletnih izkušnjah na področju elektrike.",
+        "title": "Preverjene izkušnje"
       },
       {
         "stat": "Kakovost",
         "label": "Zanesljiva izvedba",
-        "description": "Vsak projekt izpeljemo zanesljivo, skrbno in v dogovorjenih rokih."
+        "description": "Vsak projekt izpeljemo zanesljivo, skrbno in v dogovorjenih rokih.",
+        "title": "Zanesljiva izvedba"
       },
       {
         "stat": "Odnos",
         "label": "Prijazen pristop",
-        "description": "Strankam se posvetimo osebno ter nudimo strokovne nasvete in podporo."
+        "description": "Strankam se posvetimo osebno ter nudimo strokovne nasvete in podporo.",
+        "title": "Prijazen pristop"
       }
     ]
   },

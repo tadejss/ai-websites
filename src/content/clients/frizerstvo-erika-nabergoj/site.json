@@ -103,18 +103,21 @@
     "benefits": [
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri prave pričeske."
+        "label": "Osebni",
+        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri prave pričeske.",
+        "title": "Osebni"
       },
       {
         "stat": "Kakovost",
-        "label": "Storitev",
-        "description": "Uporaba preverjenih postopkov za nego in striženje."
+        "label": "Kakovost",
+        "description": "Uporaba preverjenih postopkov za nego in striženje.",
+        "title": "Kakovost"
       },
       {
         "stat": "Ambient",
         "label": "Središče Postojne",
-        "description": "Sprostite se v urejenem in prijetnem okolju salona."
+        "description": "Sprostite se v urejenem in prijetnem okolju salona.",
+        "title": "Središče Postojne"
       }
     ]
   },

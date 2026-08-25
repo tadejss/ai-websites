@@ -104,17 +104,20 @@
       {
         "stat": "Ambient",
         "label": "Prijeten in domač",
-        "description": "Prostor, kjer se boste takoj počutili sproščeno in dobrodošlo."
+        "description": "Prostor, kjer se boste takoj počutili sproščeno in dobrodošlo.",
+        "title": "Prijeten in domač"
       },
       {
         "stat": "Obravnava",
         "label": "Individualni pristop",
-        "description": "Prisluhnemo vašim željam in prilagodimo storitev posebej vam."
+        "description": "Prisluhnemo vašim željam in prilagodimo storitev posebej vam.",
+        "title": "Individualni pristop"
       },
       {
         "stat": "Lokacija",
         "label": "Dostopnost v Postojni",
-        "description": "Enostavno dosegljiva lokacija na Tržaški cesti za vse prebivalce in obiskovalce."
+        "description": "Enostavno dosegljiva lokacija na Tržaški cesti za vse prebivalce in obiskovalce.",
+        "title": "Dostopnost v Postojni"
       }
     ]
   },

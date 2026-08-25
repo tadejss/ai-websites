@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in toplina",
-        "description": "Ustvarjamo sproščeno in domače vzdušje za vsak obisk."
+        "label": "Prijaznost in toplina",
+        "description": "Ustvarjamo sproščeno in domače vzdušje za vsak obisk.",
+        "title": "Prijaznost in toplina"
       },
       {
         "stat": "Poslušanje",
-        "label": "želja",
-        "description": "Skrbno prisluhnemo vašim željam in svetujemo najboljšo izbiro."
+        "label": "Poslušanje želja",
+        "description": "Skrbno prisluhnemo vašim željam in svetujemo najboljšo izbiro.",
+        "title": "Poslušanje želja"
       },
       {
         "stat": "Zaupanje",
-        "label": "strank",
-        "description": "Gradimo dolgoročne odnose z našimi zvestimi strankami."
+        "label": "Zaupanje strank",
+        "description": "Gradimo dolgoročne odnose z našimi zvestimi strankami.",
+        "title": "Zaupanje strank"
       }
     ]
   },

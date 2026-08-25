@@ -104,18 +104,21 @@
     "benefits": [
       {
         "stat": "20+ let",
-        "label": "Tradicije",
-        "description": "Dolgoletne izkušnje in zveste stranke potrjujejo našo kakovost."
+        "label": "20+ let Tradicije",
+        "description": "Dolgoletne izkušnje in zveste stranke potrjujejo našo kakovost.",
+        "title": "20+ let Tradicije"
       },
       {
         "stat": "Topel",
         "label": "Domači pristop",
-        "description": "Pri nas se boste počutili sproščeno in dobrodošli."
+        "description": "Pri nas se boste počutili sproščeno in dobrodošli.",
+        "title": "Domači pristop"
       },
       {
         "stat": "Strokovno",
-        "label": "Urejanje",
-        "description": "Vrhunska kvaliteta striženja in nege za vaš najboljši videz."
+        "label": "Strokovno",
+        "description": "Vrhunska kvaliteta striženja in nege za vaš najboljši videz.",
+        "title": "Strokovno"
       }
     ]
   },

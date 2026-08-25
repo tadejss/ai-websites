@@ -119,17 +119,20 @@
       {
         "stat": "Hitrost",
         "label": "Hitra postrežba",
-        "description": "Cenimo vaš čas in poskrbimo za učinkovito izvedbo storitev."
+        "description": "Cenimo vaš čas in poskrbimo za učinkovito izvedbo storitev.",
+        "title": "Hitra postrežba"
       },
       {
         "stat": "Prijaznost",
         "label": "Strokoven pristop",
-        "description": "Prijazno osebje poskrbi za prijetno izkušnjo ob vsakem obisku."
+        "description": "Prijazno osebje poskrbi za prijetno izkušnjo ob vsakem obisku.",
+        "title": "Strokoven pristop"
       },
       {
         "stat": "Naročanje",
         "label": "Predhodni termin",
-        "description": "Možnost enostavnega predhodnega naročanja za vašo popolno prilagodljivost."
+        "description": "Možnost enostavnega predhodnega naročanja za vašo popolno prilagodljivost.",
+        "title": "Predhodni termin"
       }
     ]
   },

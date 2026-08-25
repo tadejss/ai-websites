@@ -120,17 +120,20 @@
       {
         "stat": "Prijaznost",
         "label": "Topel pristop",
-        "description": "Osebje vas vedno sprejme z nasmehom in poskrbi za domače vzdušje."
+        "description": "Osebje vas vedno sprejme z nasmehom in poskrbi za domače vzdušje.",
+        "title": "Topel pristop"
       },
       {
         "stat": "Družinsko",
         "label": "Prilagojeno vsem",
-        "description": "Prostor z igračami je namenjen družinam in posameznikom, ki želijo udobje."
+        "description": "Prostor z igračami je namenjen družinam in posameznikom, ki želijo udobje.",
+        "title": "Prilagojeno vsem"
       },
       {
         "stat": "Celostno",
         "label": "Kava in frizer",
-        "description": "Združite urejanje frizure in sproščen trenutek ob kavici na enem mestu."
+        "description": "Združite urejanje frizure in sproščen trenutek ob kavici na enem mestu.",
+        "title": "Kava in frizer"
       }
     ]
   },

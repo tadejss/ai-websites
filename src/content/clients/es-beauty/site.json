@@ -105,18 +105,21 @@
     "benefits": [
       {
         "stat": "Prijazno",
-        "label": "Osebje",
-        "description": "Strokovna ekipa, ki prisluhne vašim željam in poskrbi za prijetno izkušnjo."
+        "label": "Prijazno",
+        "description": "Strokovna ekipa, ki prisluhne vašim željam in poskrbi za prijetno izkušnjo.",
+        "title": "Prijazno"
       },
       {
         "stat": "Celostno",
-        "label": "Urejanje",
-        "description": "Vse frizerske in lepotne storitve na enem mestu v Ljubljani."
+        "label": "Celostno",
+        "description": "Vse frizerske in lepotne storitve na enem mestu v Ljubljani.",
+        "title": "Celostno"
       },
       {
         "stat": "Prijeten",
-        "label": "Ambient",
-        "description": "Sproščujoče okolje v bližini centra mesta za vaš odmor od vsakdana."
+        "label": "Prijeten",
+        "description": "Sproščujoče okolje v bližini centra mesta za vaš odmor od vsakdana.",
+        "title": "Prijeten"
       }
     ]
   },

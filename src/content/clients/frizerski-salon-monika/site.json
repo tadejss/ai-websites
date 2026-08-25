@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Pristop",
-        "description": "Visoka strokovnost in profesionalnost pri vsakem obisku."
+        "label": "Strokovno",
+        "description": "Visoka strokovnost in profesionalnost pri vsakem obisku.",
+        "title": "Strokovno"
       },
       {
         "stat": "Poslušanje",
-        "label": "Želje",
-        "description": "Prijazno osebje, ki prisluhne vašim idejam in svetuje."
+        "label": "Poslušanje",
+        "description": "Prijazno osebje, ki prisluhne vašim idejam in svetuje.",
+        "title": "Poslušanje"
       },
       {
         "stat": "Prijetno",
-        "label": "Okolje",
-        "description": "Udoben prostor na Rakeku za vaš trenutek sprostitve."
+        "label": "Prijetno",
+        "description": "Udoben prostor na Rakeku za vaš trenutek sprostitve.",
+        "title": "Prijetno"
       }
     ]
   },

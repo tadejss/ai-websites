@@ -119,17 +119,20 @@
       {
         "stat": "Zadovoljstvo",
         "label": "Visoke ocene",
-        "description": "Prizadevamo si za vrhunske rezultate in zadovoljstvo vsake stranke."
+        "description": "Prizadevamo si za vrhunske rezultate in zadovoljstvo vsake stranke.",
+        "title": "Visoke ocene"
       },
       {
         "stat": "Pristop",
         "label": "Individualna obravnava",
-        "description": "Vsak tretma prilagodimo edinstvenim potrebam vaše kože."
+        "description": "Vsak tretma prilagodimo edinstvenim potrebam vaše kože.",
+        "title": "Individualna obravnava"
       },
       {
         "stat": "Ambient",
         "label": "Sproščujoče okolje",
-        "description": "Uživajte v mirnem in urejenem prostoru, ustvarjenem za vaš oddih."
+        "description": "Uživajte v mirnem in urejenem prostoru, ustvarjenem za vaš oddih.",
+        "title": "Sproščujoče okolje"
       }
     ]
   },

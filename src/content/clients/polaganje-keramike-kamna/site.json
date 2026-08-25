@@ -111,18 +111,21 @@
     "benefits": [
       {
         "stat": "Natančnost",
-        "label": "In kvaliteta",
-        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti za dolgotrajne rezultate."
+        "label": "Natančnost in kvaliteta",
+        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti za dolgotrajne rezultate.",
+        "title": "Natančnost in kvaliteta"
       },
       {
         "stat": "Zanesljivost",
-        "label": "In roki",
-        "description": "Spoštujemo dogovore in držimo se zastavljenih časovnih okvirov izvedbe."
+        "label": "Zanesljivost in roki",
+        "description": "Spoštujemo dogovore in držimo se zastavljenih časovnih okvirov izvedbe.",
+        "title": "Zanesljivost in roki"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Željam strank",
-        "description": "Prisluhnemo vašim idejam in vam svetujemo najboljše rešitve za vaš prostor."
+        "description": "Prisluhnemo vašim idejam in vam svetujemo najboljše rešitve za vaš prostor.",
+        "title": "Željam strank"
       }
     ]
   },

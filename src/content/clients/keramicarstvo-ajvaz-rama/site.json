@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Natančnost",
-        "label": "In strokovnost",
-        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo za dosego najboljših rezultatov."
+        "label": "Natančnost in strokovnost",
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo za dosego najboljših rezultatov.",
+        "title": "Natančnost in strokovnost"
       },
       {
         "stat": "Zanesljivost",
-        "label": "In roki",
-        "description": "Držimo se dogovorjenih rokov in zagotavljamo zanesljivo izvedbo del."
+        "label": "Zanesljivost in roki",
+        "description": "Držimo se dogovorjenih rokov in zagotavljamo zanesljivo izvedbo del.",
+        "title": "Zanesljivost in roki"
       },
       {
         "stat": "Materiali",
-        "label": "Kakovost",
-        "description": "Uporabljamo kakovostne materiale za dolgotrajno obstojnost in lep videz."
+        "label": "Materiali",
+        "description": "Uporabljamo kakovostne materiale za dolgotrajno obstojnost in lep videz.",
+        "title": "Materiali"
       }
     ]
   },

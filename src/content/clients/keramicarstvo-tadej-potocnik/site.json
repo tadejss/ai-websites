@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Kakovost",
-        "label": "Izvedbe",
-        "description": "Uporaba preverjenih prijemov in natančnega dela za trajne rezultate."
+        "label": "Kakovost",
+        "description": "Uporaba preverjenih prijemov in natančnega dela za trajne rezultate.",
+        "title": "Kakovost"
       },
       {
         "stat": "Zanesljivost",
-        "label": "In točnost",
-        "description": "Držimo se dogovorjenih rokov in obljubljenih standardov."
+        "label": "Zanesljivost in točnost",
+        "description": "Držimo se dogovorjenih rokov in obljubljenih standardov.",
+        "title": "Zanesljivost in točnost"
       },
       {
         "stat": "Prilagodljivost",
-        "label": "Strankam",
-        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri rešitev."
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri rešitev.",
+        "title": "Prilagodljivost"
       }
     ]
   },

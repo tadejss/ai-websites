@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokoven",
-        "label": "Pristop",
-        "description": "Posvetimo se vsakemu posamezniku in njegovim željam."
+        "label": "Strokoven",
+        "description": "Posvetimo se vsakemu posamezniku in njegovim željam.",
+        "title": "Strokoven"
       },
       {
         "stat": "Domače",
-        "label": "Vzdušje",
-        "description": "Sprostite se v prijetnem okolju našega salona."
+        "label": "Domače",
+        "description": "Sprostite se v prijetnem okolju našega salona.",
+        "title": "Domače"
       },
       {
         "stat": "Odlične",
-        "label": "Ocene",
-        "description": "Zadovoljne stranke cenijo našo kakovost in zanesljivost."
+        "label": "Odlične",
+        "description": "Zadovoljne stranke cenijo našo kakovost in zanesljivost.",
+        "title": "Odlične"
       }
     ]
   },

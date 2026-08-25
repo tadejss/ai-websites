@@ -122,17 +122,20 @@
       {
         "stat": "Zanesljivost",
         "label": "Strokovna izvedba",
-        "description": "Vsakemu projektu se posvetimo z enako mero zanesljivosti in natančnosti."
+        "description": "Vsakemu projektu se posvetimo z enako mero zanesljivosti in natančnosti.",
+        "title": "Strokovna izvedba"
       },
       {
         "stat": "Partnerstvo",
         "label": "Zahtevnejši projekti",
-        "description": "Smo preverjen partner za obsežnejše in bolj zahtevne elektro naloge."
+        "description": "Smo preverjen partner za obsežnejše in bolj zahtevne elektro naloge.",
+        "title": "Zahtevnejši projekti"
       },
       {
         "stat": "Zadovoljstvo",
         "label": "Pozitivne izkušnje",
-        "description": "Gradimo na dobrih odnosih in zadovoljstvu naših strank."
+        "description": "Gradimo na dobrih odnosih in zadovoljstvu naših strank.",
+        "title": "Pozitivne izkušnje"
       }
     ]
   },

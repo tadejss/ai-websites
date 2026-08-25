@@ -97,18 +97,21 @@
     "benefits": [
       {
         "stat": "Brez strahu",
-        "label": "Pomirjujoče okolje",
-        "description": "Specializirani pristop za paciente z zobnim strahom v sproščenem vzdušju."
+        "label": "Brez strahu",
+        "description": "Specializirani pristop za paciente z zobnim strahom v sproščenem vzdušju.",
+        "title": "Brez strahu"
       },
       {
         "stat": "Natančnost",
         "label": "Strokovna ekipa",
-        "description": "Visoka stopnja strokovnosti in uporaba sodobnih materialov."
+        "description": "Visoka stopnja strokovnosti in uporaba sodobnih materialov.",
+        "title": "Strokovna ekipa"
       },
       {
         "stat": "Dostopnost",
         "label": "Odlično razmerje",
-        "description": "Kakovostne storitve po dostopnih cenah za vsakogar."
+        "description": "Kakovostne storitve po dostopnih cenah za vsakogar.",
+        "title": "Odlično razmerje"
       }
     ]
   },

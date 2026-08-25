@@ -117,17 +117,20 @@
       {
         "stat": "Kakovost",
         "label": "Visoki standardi",
-        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov."
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov.",
+        "title": "Visoki standardi"
       },
       {
         "stat": "Zanesljivost",
         "label": "Dogovorjeni roki",
-        "description": "Držimo se dogovorov in zagotavljamo strokovno izvedbo del."
+        "description": "Držimo se dogovorov in zagotavljamo strokovno izvedbo del.",
+        "title": "Dogovorjeni roki"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Geografska pokritost",
-        "description": "Delujemo v Novem mestu z okolico ter se prilagajamo vašim potrebam."
+        "description": "Delujemo v Novem mestu z okolico ter se prilagajamo vašim potrebam.",
+        "title": "Geografska pokritost"
       }
     ]
   },

@@ -123,17 +123,20 @@
       {
         "stat": "Odziv",
         "label": "Hitri in prilagodljivi",
-        "description": "Hitro se odzovemo na vaše klice in pravočasno izvedemo dogovorjena dela."
+        "description": "Hitro se odzovemo na vaše klice in pravočasno izvedemo dogovorjena dela.",
+        "title": "Hitri in prilagodljivi"
       },
       {
         "stat": "Strokovnost",
         "label": "Kakovostna izvedba",
-        "description": "Uporabljamo preverjene metode in poskrbimo za varno delovanje napeljav."
+        "description": "Uporabljamo preverjene metode in poskrbimo za varno delovanje napeljav.",
+        "title": "Kakovostna izvedba"
       },
       {
         "stat": "Podpora",
-        "label": "Za dom in podjetja",
-        "description": "Celovite storitve prilagojene potrebam gospodinjstev in poslovnih objektov."
+        "label": "Podpora za dom in podjetja",
+        "description": "Celovite storitve prilagojene potrebam gospodinjstev in poslovnih objektov.",
+        "title": "Podpora za dom in podjetja"
       }
     ]
   },

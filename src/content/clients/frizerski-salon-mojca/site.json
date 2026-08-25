@@ -104,18 +104,21 @@
     "benefits": [
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo vašim željam."
+        "label": "Osebni",
+        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo vašim željam.",
+        "title": "Osebni"
       },
       {
         "stat": "Udobno",
-        "label": "Vzdušje",
-        "description": "Topel lokalni salon, kjer je poskrbljeno za sprostitev med urejanjem."
+        "label": "Udobno",
+        "description": "Topel lokalni salon, kjer je poskrbljeno za sprostitev med urejanjem.",
+        "title": "Udobno"
       },
       {
         "stat": "Celovito",
-        "label": "Za družino",
-        "description": "Storitve prilagojene vsem generacijam na enem mestu v Radovljici."
+        "label": "Celovito za družino",
+        "description": "Storitve prilagojene vsem generacijam na enem mestu v Radovljici.",
+        "title": "Celovito za družino"
       }
     ]
   },

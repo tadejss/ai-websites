@@ -120,17 +120,20 @@
       {
         "stat": "Strokovnost",
         "label": "Natančnost pri delu",
-        "description": "Vsaki storitvi se posvetimo z veliko mero natančnosti za najboljše rezultate."
+        "description": "Vsaki storitvi se posvetimo z veliko mero natančnosti za najboljše rezultate.",
+        "title": "Natančnost pri delu"
       },
       {
         "stat": "Prijaznost",
         "label": "Topel sprejem",
-        "description": "Pri nas vas pričaka prijazno osebje in sproščeno vzdušje."
+        "description": "Pri nas vas pričaka prijazno osebje in sproščeno vzdušje.",
+        "title": "Topel sprejem"
       },
       {
         "stat": "Obstojnost",
         "label": "Lepi rezultati",
-        "description": "Uporaba preverjenih pristopov za obstojne in lepe estetske rešitve."
+        "description": "Uporaba preverjenih pristopov za obstojne in lepe estetske rešitve.",
+        "title": "Lepi rezultati"
       }
     ]
   },

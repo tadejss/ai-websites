@@ -105,17 +105,20 @@
       {
         "stat": "Tradicija",
         "label": "Dolgoletne izkušnje",
-        "description": "Zanesljivo delo in bogate izkušnje na področju frizerstva."
+        "description": "Zanesljivo delo in bogate izkušnje na področju frizerstva.",
+        "title": "Dolgoletne izkušnje"
       },
       {
         "stat": "Domače",
         "label": "Prijetno vzdušje",
-        "description": "Topel in oseben pristop, kjer se boste počutili dobrodošle."
+        "description": "Topel in oseben pristop, kjer se boste počutili dobrodošle.",
+        "title": "Prijetno vzdušje"
       },
       {
         "stat": "Vrednost",
         "label": "Dostopne cene",
-        "description": "Kakovostne storitve po dostopnih cenah za vso družino."
+        "description": "Kakovostne storitve po dostopnih cenah za vso družino.",
+        "title": "Dostopne cene"
       }
     ]
   },

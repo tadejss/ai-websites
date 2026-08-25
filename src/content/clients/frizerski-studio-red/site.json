@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Zanesljivo",
-        "label": "Delo",
-        "description": "Izjemno priljubljen in zanesljiv frizerski salon z odličnimi ocenami zadovoljnih strank."
+        "label": "Zanesljivo",
+        "description": "Izjemno priljubljen in zanesljiv frizerski salon z odličnimi ocenami zadovoljnih strank.",
+        "title": "Zanesljivo"
       },
       {
         "stat": "Družinsko",
-        "label": "Okolje",
-        "description": "Prijeten prostor, prilagojen posameznikom, parom in družinam z otroki."
+        "label": "Družinsko",
+        "description": "Prijeten prostor, prilagojen posameznikom, parom in družinam z otroki.",
+        "title": "Družinsko"
       },
       {
         "stat": "Kakovostno",
-        "label": "In dostopno",
-        "description": "Vrhunska nega in urejanje pričesk po dostopnih cenah za vsakogar."
+        "label": "Kakovostno in dostopno",
+        "description": "Vrhunska nega in urejanje pričesk po dostopnih cenah za vsakogar.",
+        "title": "Kakovostno in dostopno"
       }
     ]
   },

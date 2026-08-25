@@ -96,18 +96,21 @@
     "benefits": [
       {
         "stat": "100%",
-        "label": "Domače vzdušje",
-        "description": "Ustvarjamo prostor, kjer je vsak obiskovalec dobrodošel in cenjen."
+        "label": "100% Domače vzdušje",
+        "description": "Ustvarjamo prostor, kjer je vsak obiskovalec dobrodošel in cenjen.",
+        "title": "100% Domače vzdušje"
       },
       {
         "stat": "Vrh",
         "label": "Kakovost pijač",
-        "description": "Uporabljamo le najboljše sestavine za nepozaben okus."
+        "description": "Uporabljamo le najboljše sestavine za nepozaben okus.",
+        "title": "Kakovost pijač"
       },
       {
         "stat": "Trnovo",
         "label": "Lokalna skupnost",
-        "description": "Priljubljeno zbirališče domačinov in ljubiteljev prave kave."
+        "description": "Priljubljeno zbirališče domačinov in ljubiteljev prave kave.",
+        "title": "Lokalna skupnost"
       }
     ]
   },

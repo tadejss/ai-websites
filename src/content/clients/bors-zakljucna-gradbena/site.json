@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Natančnost",
-        "label": "in kvaliteta",
-        "description": "Vsak projekt izpeljemo skrbno in z občutkom za detajle."
+        "label": "Natančnost in kvaliteta",
+        "description": "Vsak projekt izpeljemo skrbno in z občutkom za detajle.",
+        "title": "Natančnost in kvaliteta"
       },
       {
         "stat": "Lokalno",
-        "label": "delovanje",
-        "description": "Hitro odzivni in zanesljivi na območju Otočca in okolice."
+        "label": "Lokalno delovanje",
+        "description": "Hitro odzivni in zanesljivi na območju Otočca in okolice.",
+        "title": "Lokalno delovanje"
       },
       {
         "stat": "Celovito",
-        "label": "področje",
-        "description": "Specializirani za keramiko in zaključna gradbena dela na enem mestu."
+        "label": "Celovito področje",
+        "description": "Specializirani za keramiko in zaključna gradbena dela na enem mestu.",
+        "title": "Celovito področje"
       }
     ]
   },

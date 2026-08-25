@@ -112,18 +112,21 @@
     "benefits": [
       {
         "stat": "Natančnost",
-        "label": "in kvaliteta",
-        "description": "Vsak projekt izpeljemo skrbno in z občutkom za detajle."
+        "label": "Natančnost in kvaliteta",
+        "description": "Vsak projekt izpeljemo skrbno in z občutkom za detajle.",
+        "title": "Natančnost in kvaliteta"
       },
       {
         "stat": "Izkušnje",
-        "label": "z materiali",
-        "description": "Specializirano znanje za delo s keramiko, granitom in kamnom."
+        "label": "Izkušnje z materiali",
+        "description": "Specializirano znanje za delo s keramiko, granitom in kamnom.",
+        "title": "Izkušnje z materiali"
       },
       {
         "stat": "Zanesljivost",
-        "label": "in strokovnost",
-        "description": "Profesionalen odnos in spoštovanje dogovorjenih rokov."
+        "label": "Zanesljivost in strokovnost",
+        "description": "Profesionalen odnos in spoštovanje dogovorjenih rokov.",
+        "title": "Zanesljivost in strokovnost"
       }
     ]
   },

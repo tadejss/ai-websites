@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Natančnost",
-        "label": "In kakovost",
-        "description": "Vsak projekt izvedemo z visoko stopnjo natančnosti in skrbnostjo za detajle."
+        "label": "Natančnost in kakovost",
+        "description": "Vsak projekt izvedemo z visoko stopnjo natančnosti in skrbnostjo za detajle.",
+        "title": "Natančnost in kakovost"
       },
       {
         "stat": "Svetovanje",
-        "label": "In zanesljivost",
-        "description": "Zanesljiva izvedba dogovorjenega in strokovna pomoč pri izbiri materialov."
+        "label": "Svetovanje in zanesljivost",
+        "description": "Zanesljiva izvedba dogovorjenega in strokovna pomoč pri izbiri materialov.",
+        "title": "Svetovanje in zanesljivost"
       },
       {
         "stat": "Celovitost",
-        "label": "Za prenove",
-        "description": "Popolna podpora pri prenovitvenih delih od ideje do končne izvedbe."
+        "label": "Celovitost za prenove",
+        "description": "Popolna podpora pri prenovitvenih delih od ideje do končne izvedbe.",
+        "title": "Celovitost za prenove"
       }
     ]
   },

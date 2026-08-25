@@ -119,17 +119,20 @@
       {
         "stat": "Pristop",
         "label": "Osebna obravnava",
-        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo vašim željam."
+        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo vašim željam.",
+        "title": "Osebna obravnava"
       },
       {
         "stat": "Termini",
         "label": "Prilagodljiv čas",
-        "description": "Nudimo popoldanske in dopoldanske termine, prilagojene vašemu urniku."
+        "description": "Nudimo popoldanske in dopoldanske termine, prilagojene vašemu urniku.",
+        "title": "Prilagodljiv čas"
       },
       {
         "stat": "Nega",
         "label": "Kakovostni tretmaji",
-        "description": "Uporaba preverjenih metod in produktov za zdravje vaših las."
+        "description": "Uporaba preverjenih metod in produktov za zdravje vaših las.",
+        "title": "Kakovostni tretmaji"
       }
     ]
   },

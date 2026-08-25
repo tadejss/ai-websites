@@ -123,17 +123,20 @@
       {
         "stat": "Strokovnost",
         "label": "Kakovostna izvedba",
-        "description": "Vsak projekt izvedemo strokovno in v skladu s predpisi."
+        "description": "Vsak projekt izvedemo strokovno in v skladu s predpisi.",
+        "title": "Kakovostna izvedba"
       },
       {
         "stat": "Zanesljivost",
         "label": "Točnost in dogovori",
-        "description": "Držimo se dogovorjenih rokov in poskrbimo za varnost."
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za varnost.",
+        "title": "Točnost in dogovori"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Stranki prijazno",
-        "description": "Prisluhnemo vašim željam in ponudimo optimalne rešitve."
+        "description": "Prisluhnemo vašim željam in ponudimo optimalne rešitve.",
+        "title": "Stranki prijazno"
       }
     ]
   },

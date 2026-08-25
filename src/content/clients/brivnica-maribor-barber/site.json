@@ -99,18 +99,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Znanje",
-        "description": "Izjemna pozornost do podrobnosti pri vsakem rezu in britju."
+        "label": "Strokovno",
+        "description": "Izjemna pozornost do podrobnosti pri vsakem rezu in britju.",
+        "title": "Strokovno"
       },
       {
         "stat": "Ambient",
-        "label": "Sproščenost",
-        "description": "Prijeten prostor z glasbo in domačo pijačo za vaš popolni oddih."
+        "label": "Ambient",
+        "description": "Prijeten prostor z glasbo in domačo pijačo za vaš popolni oddih.",
+        "title": "Ambient"
       },
       {
         "stat": "Prilagodljivo",
-        "label": "Za stranke",
-        "description": "Visoka stopnja prilagodljivosti in predanosti vsakemu posamezniku."
+        "label": "Prilagodljivo za stranke",
+        "description": "Visoka stopnja prilagodljivosti in predanosti vsakemu posamezniku.",
+        "title": "Prilagodljivo za stranke"
       }
     ]
   },

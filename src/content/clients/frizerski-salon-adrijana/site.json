@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in gostoljubnost",
-        "description": "Sprejmemo vas v toplem in domačem domačem okolju."
+        "label": "Prijaznost in gostoljubnost",
+        "description": "Sprejmemo vas v toplem in domačem domačem okolju.",
+        "title": "Prijaznost in gostoljubnost"
       },
       {
         "stat": "Strokovnost",
-        "label": "in natančnost",
-        "description": "Uporabljamo preverjene metode za urejanje vaših las."
+        "label": "Strokovnost in natančnost",
+        "description": "Uporabljamo preverjene metode za urejanje vaših las.",
+        "title": "Strokovnost in natančnost"
       },
       {
         "stat": "Vrednost",
-        "label": "za ceno",
-        "description": "Nudimo odlično razmerje med ceno in kakovostjo storitev."
+        "label": "Vrednost za ceno",
+        "description": "Nudimo odlično razmerje med ceno in kakovostjo storitev.",
+        "title": "Vrednost za ceno"
       }
     ]
   },

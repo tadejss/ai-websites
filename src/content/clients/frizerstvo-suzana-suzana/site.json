@@ -119,17 +119,20 @@
       {
         "stat": "Prijaznost",
         "label": "Topel sprejem",
-        "description": "Ustvarjamo sproščeno in domače vzdušje za vsak obisk."
+        "description": "Ustvarjamo sproščeno in domače vzdušje za vsak obisk.",
+        "title": "Topel sprejem"
       },
       {
         "stat": "Izkušnje",
         "label": "Strokovno delo",
-        "description": "Zanesljivo in izkušeno striženje za vaš popoln videz."
+        "description": "Zanesljivo in izkušeno striženje za vaš popoln videz.",
+        "title": "Strokovno delo"
       },
       {
         "stat": "Vrednost",
         "label": "Dostopne cene",
-        "description": "Kakovostne storitve po dostopnih cenah za vso družino."
+        "description": "Kakovostne storitve po dostopnih cenah za vso družino.",
+        "title": "Dostopne cene"
       }
     ]
   },

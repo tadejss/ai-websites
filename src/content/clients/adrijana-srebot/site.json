@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "in izkušnje",
-        "description": "Dolgoletno delo na področju frizerstva zagotavlja zanesljive in lepe rezultate."
+        "label": "Strokovnost in izkušnje",
+        "description": "Dolgoletno delo na področju frizerstva zagotavlja zanesljive in lepe rezultate.",
+        "title": "Strokovnost in izkušnje"
       },
       {
         "stat": "Osebno",
-        "label": "svetovanje",
-        "description": "Prisluhnemo vašim željam in vam svetujemo frizuro, ki ustreza vašemu stilu."
+        "label": "Osebno svetovanje",
+        "description": "Prisluhnemo vašim željam in vam svetujemo frizuro, ki ustreza vašemu stilu.",
+        "title": "Osebno svetovanje"
       },
       {
         "stat": "Domače",
-        "label": "vzdušje",
-        "description": "Sprostite se v prijetnem ambientu našega salona v Postojni."
+        "label": "Domače vzdušje",
+        "description": "Sprostite se v prijetnem ambientu našega salona v Postojni.",
+        "title": "Domače vzdušje"
       }
     ]
   },

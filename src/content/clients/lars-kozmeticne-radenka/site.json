@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "in znanje",
-        "description": "Dolgoletne izkušnje na področju kozmetičnih storitev zagotavljajo kakovost."
+        "label": "Strokovnost in znanje",
+        "description": "Dolgoletne izkušnje na področju kozmetičnih storitev zagotavljajo kakovost.",
+        "title": "Strokovnost in znanje"
       },
       {
         "stat": "Prilagojenost",
-        "label": "strankam",
-        "description": "Prijazen pristop in posluh za individualne želje vsake stranke."
+        "label": "Prilagojenost strankam",
+        "description": "Prijazen pristop in posluh za individualne želje vsake stranke.",
+        "title": "Prilagojenost strankam"
       },
       {
         "stat": "Zadovoljstvo",
-        "label": "in urejenost",
-        "description": "Visoka raven profesionalnosti za vaše dobro počutje."
+        "label": "Zadovoljstvo in urejenost",
+        "description": "Visoka raven profesionalnosti za vaše dobro počutje.",
+        "title": "Zadovoljstvo in urejenost"
       }
     ]
   },

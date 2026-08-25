@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in nasmeh",
-        "description": "Izjemno prijazno osebje poskrbi, da se boste pri nas vedno počutili dobrodošle."
+        "label": "Prijaznost in nasmeh",
+        "description": "Izjemno prijazno osebje poskrbi, da se boste pri nas vedno počutili dobrodošle.",
+        "title": "Prijaznost in nasmeh"
       },
       {
         "stat": "Kakovost",
-        "label": "in natančnost",
-        "description": "Visoka natančnost pri vsakem striženju in barvanju za vaš popoln videz."
+        "label": "Kakovost in natančnost",
+        "description": "Visoka natančnost pri vsakem striženju in barvanju za vaš popoln videz.",
+        "title": "Kakovost in natančnost"
       },
       {
         "stat": "Ambient",
-        "label": "in sprostitev",
-        "description": "Prijeten domač ambient z dobro kavo poskrbi za vaš sproščen oddih."
+        "label": "Ambient in sprostitev",
+        "description": "Prijeten domač ambient z dobro kavo poskrbi za vaš sproščen oddih.",
+        "title": "Ambient in sprostitev"
       }
     ]
   },

@@ -122,17 +122,20 @@
       {
         "stat": "Kvaliteta",
         "label": "Natančna izvedba",
-        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti."
+        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti.",
+        "title": "Natančna izvedba"
       },
       {
         "stat": "Zanesljivost",
         "label": "Spoštovanje rokov",
-        "description": "Držimo se dogovorjenih časovnih okvirov za izvedbo del."
+        "description": "Držimo se dogovorjenih časovnih okvirov za izvedbo del.",
+        "title": "Spoštovanje rokov"
       },
       {
         "stat": "Podpora",
         "label": "Strokovni nasveti",
-        "description": "Pomagamo vam pri izbiri pravih materialov za vaš prostor."
+        "description": "Pomagamo vam pri izbiri pravih materialov za vaš prostor.",
+        "title": "Strokovni nasveti"
       }
     ]
   },

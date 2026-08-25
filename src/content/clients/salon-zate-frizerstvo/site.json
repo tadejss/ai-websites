@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Naravno",
-        "label": "Barvanje",
-        "description": "Uporabljamo naravne barve za lase, ki negujejo in ščitijo vaše lase."
+        "label": "Naravno",
+        "description": "Uporabljamo naravne barve za lase, ki negujejo in ščitijo vaše lase.",
+        "title": "Naravno"
       },
       {
         "stat": "Točnost",
-        "label": "Brez čakanja",
-        "description": "Zagotavljamo hitro in točno postrežbo ob dogovorjenem času."
+        "label": "Točnost Brez čakanja",
+        "description": "Zagotavljamo hitro in točno postrežbo ob dogovorjenem času.",
+        "title": "Točnost Brez čakanja"
       },
       {
         "stat": "Ambient",
         "label": "Prijetno vzdušje",
-        "description": "Prijazno osebje poskrbi za sproščeno izkušnjo ob vsakem obisku."
+        "description": "Prijazno osebje poskrbi za sproščeno izkušnjo ob vsakem obisku.",
+        "title": "Prijetno vzdušje"
       }
     ]
   },

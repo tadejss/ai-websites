@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Hiter",
-        "label": "Odziv",
-        "description": "Odzivamo se hitro in se prilagajamo vašim časovnim okvirjem ter potrebam."
+        "label": "Hiter",
+        "description": "Odzivamo se hitro in se prilagajamo vašim časovnim okvirjem ter potrebam.",
+        "title": "Hiter"
       },
       {
         "stat": "Strokovno",
-        "label": "Delo",
-        "description": "Vsa dela izvajamo natančno, strokovno in z ustreznim znanjem."
+        "label": "Strokovno",
+        "description": "Vsa dela izvajamo natančno, strokovno in z ustreznim znanjem.",
+        "title": "Strokovno"
       },
       {
         "stat": "Lokalni",
-        "label": "Partner",
-        "description": "Kot zanesljiv lokalni izvajalec smo vedno blizu, ko nas potrebujete."
+        "label": "Lokalni",
+        "description": "Kot zanesljiv lokalni izvajalec smo vedno blizu, ko nas potrebujete.",
+        "title": "Lokalni"
       }
     ]
   },

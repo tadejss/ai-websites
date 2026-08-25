@@ -120,17 +120,20 @@
       {
         "stat": "Natančnost",
         "label": "Visoka kakovost",
-        "description": "Zanesljivo in natančno striženje ter oblikovanje las za vsako stranko."
+        "description": "Zanesljivo in natančno striženje ter oblikovanje las za vsako stranko.",
+        "title": "Visoka kakovost"
       },
       {
         "stat": "Obnova",
-        "label": "Poškodovani lasje",
-        "description": "Strokovna nega in reševanje poškodovanih las, ki vrača zdravje vašim lasem."
+        "label": "Obnova Poškodovani lasje",
+        "description": "Strokovna nega in reševanje poškodovanih las, ki vrača zdravje vašim lasem.",
+        "title": "Obnova Poškodovani lasje"
       },
       {
         "stat": "Dostopnost",
         "label": "Hitra storitev",
-        "description": "Cenovno dostopne in učinkovite frizerske storitve v prijetnem okolju."
+        "description": "Cenovno dostopne in učinkovite frizerske storitve v prijetnem okolju.",
+        "title": "Hitra storitev"
       }
     ]
   },

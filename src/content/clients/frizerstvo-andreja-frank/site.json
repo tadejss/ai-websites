@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Izjemno prijazno osebje z znanjem za vaše lasne želje."
+        "label": "Strokovno",
+        "description": "Izjemno prijazno osebje z znanjem za vaše lasne želje.",
+        "title": "Strokovno"
       },
       {
         "stat": "Sproščeno",
-        "label": "Vzdušje",
-        "description": "Prijetno vzdušje v salonu, kjer se boste počutili kot doma."
+        "label": "Sproščeno",
+        "description": "Prijetno vzdušje v salonu, kjer se boste počutili kot doma.",
+        "title": "Sproščeno"
       },
       {
         "stat": "Kakovost",
-        "label": "Storitev",
-        "description": "Zanesljive in vrhunske frizerske storitve za vsakogar."
+        "label": "Kakovost",
+        "description": "Zanesljive in vrhunske frizerske storitve za vsakogar.",
+        "title": "Kakovost"
       }
     ]
   },

@@ -114,17 +114,20 @@
       {
         "stat": "Prijazen",
         "label": "Osebni pristop",
-        "description": "Prisluhnemo vašim željam in vam svetujemo pri izbiri prave pričeske."
+        "description": "Prisluhnemo vašim željam in vam svetujemo pri izbiri prave pričeske.",
+        "title": "Osebni pristop"
       },
       {
         "stat": "Vrhunska",
-        "label": "Kakovost",
-        "description": "Skrbimo za zdravje in lepoto vaših las z zanesljivimi postopki."
+        "label": "Vrhunska",
+        "description": "Skrbimo za zdravje in lepoto vaših las z zanesljivimi postopki.",
+        "title": "Vrhunska"
       },
       {
         "stat": "Zadovoljne",
-        "label": "Stranke",
-        "description": "Ponosni smo na odlične ocene in zaupanje lokalnih prebivalcev."
+        "label": "Zadovoljne",
+        "description": "Ponosni smo na odlične ocene in zaupanje lokalnih prebivalcev.",
+        "title": "Zadovoljne"
       }
     ]
   },

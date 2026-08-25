@@ -105,17 +105,20 @@
       {
         "stat": "Vrhunska",
         "label": "Kakovost storitev",
-        "description": "Vsaki stranki se posvetimo individualno in poskrbimo za urejen videz."
+        "description": "Vsaki stranki se posvetimo individualno in poskrbimo za urejen videz.",
+        "title": "Kakovost storitev"
       },
       {
         "stat": "Strokovno",
-        "label": "Znanje",
-        "description": "Z razumevanjem različnih tipov las dosežemo rezultate po vaših željah."
+        "label": "Strokovno",
+        "description": "Z razumevanjem različnih tipov las dosežemo rezultate po vaših željah.",
+        "title": "Strokovno"
       },
       {
         "stat": "Prijetno",
-        "label": "Vzdušje",
-        "description": "Sproščena družba in domače okolje za vaš popoln oddih med urejanjem."
+        "label": "Prijetno",
+        "description": "Sproščena družba in domače okolje za vaš popoln oddih med urejanjem.",
+        "title": "Prijetno"
       }
     ]
   },

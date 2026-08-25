@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Sproščujoče",
-        "label": "okolje",
-        "description": "Topel in domač lepotni kotiček za vaš oddih od vsakdanjika."
+        "label": "Sproščujoče okolje",
+        "description": "Topel in domač lepotni kotiček za vaš oddih od vsakdanjika.",
+        "title": "Sproščujoče okolje"
       },
       {
         "stat": "Osebni",
-        "label": "pristop",
-        "description": "Storitve prilagodimo vašim individualnim željam in potrebam."
+        "label": "Osebni pristop",
+        "description": "Storitve prilagodimo vašim individualnim željam in potrebam.",
+        "title": "Osebni pristop"
       },
       {
         "stat": "Celostno",
-        "label": "razvajanje",
-        "description": "Združujemo nego las, obraza in telesa na enem mestu."
+        "label": "Celostno razvajanje",
+        "description": "Združujemo nego las, obraza in telesa na enem mestu.",
+        "title": "Celostno razvajanje"
       }
     ]
   },

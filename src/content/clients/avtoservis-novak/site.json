@@ -98,17 +98,20 @@
       {
         "stat": "Strokovno",
         "label": "Osebni pristop",
-        "description": "Vsakemu vozilu se posvetimo individualno in poiščemo optimalno rešitev."
+        "description": "Vsakemu vozilu se posvetimo individualno in poiščemo optimalno rešitev.",
+        "title": "Osebni pristop"
       },
       {
         "stat": "Preverjeno",
         "label": "Visoko zadovoljstvo",
-        "description": "Številne pozitivne ocene strank potrjujejo kakovost našega dela."
+        "description": "Številne pozitivne ocene strank potrjujejo kakovost našega dela.",
+        "title": "Visoko zadovoljstvo"
       },
       {
         "stat": "Celovito",
         "label": "Vse na enem mestu",
-        "description": "Od rednih servisov do zahtevnejših popravil in diagnostike."
+        "description": "Od rednih servisov do zahtevnejših popravil in diagnostike.",
+        "title": "Vse na enem mestu"
       }
     ]
   },

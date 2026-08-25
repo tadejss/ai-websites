@@ -104,17 +104,20 @@
       {
         "stat": "Vsestransko",
         "label": "Dve storitvi",
-        "description": "Transport in frizerstvo na enem mestu za prihranek vašega časa."
+        "description": "Transport in frizerstvo na enem mestu za prihranek vašega časa.",
+        "title": "Dve storitvi"
       },
       {
         "stat": "Zanesljivo",
         "label": "Preverjena kakovost",
-        "description": "Zanesljiv transport in skrbna frizerska nega z domačim pristopom."
+        "description": "Zanesljiv transport in skrbna frizerska nega z domačim pristopom.",
+        "title": "Preverjena kakovost"
       },
       {
         "stat": "Lokalno",
-        "label": "Cerknica",
-        "description": "Hitro odzivni in prilagojeni potrebam lokalnega okolja."
+        "label": "Lokalno",
+        "description": "Hitro odzivni in prilagojeni potrebam lokalnega okolja.",
+        "title": "Lokalno"
       }
     ]
   },

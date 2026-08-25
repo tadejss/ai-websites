@@ -122,17 +122,20 @@
       {
         "stat": "Odzivnost",
         "label": "Hitro in zanesljivo",
-        "description": "Cenimo vaš čas, zato se na povpraševanja in primere odzivamo hitro."
+        "description": "Cenimo vaš čas, zato se na povpraševanja in primere odzivamo hitro.",
+        "title": "Hitro in zanesljivo"
       },
       {
         "stat": "Strokovnost",
         "label": "Kakovostna izvedba",
-        "description": "Vsak projekt izpeljemo strokovno in v skladu z veljavnimi standardi."
+        "description": "Vsak projekt izpeljemo strokovno in v skladu z veljavnimi standardi.",
+        "title": "Kakovostna izvedba"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Poslušamo stranke",
-        "description": "Prilagodimo se vašemu urniku in specifičnim zahtevam na terenu."
+        "description": "Prilagodimo se vašemu urniku in specifičnim zahtevam na terenu.",
+        "title": "Poslušamo stranke"
       }
     ]
   },

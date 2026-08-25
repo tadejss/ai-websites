@@ -110,17 +110,20 @@
       {
         "stat": "Vrhunsko",
         "label": "Strokovno delo",
-        "description": "Zagotavljamo visoko kakovost storitev striženja in nege las."
+        "description": "Zagotavljamo visoko kakovost storitev striženja in nege las.",
+        "title": "Strokovno delo"
       },
       {
         "stat": "Prijazno",
-        "label": "Osebje",
-        "description": "Prijazna in strokovna obravnava v sproščenem vzdušju."
+        "label": "Prijazno",
+        "description": "Prijazna in strokovna obravnava v sproščenem vzdušju.",
+        "title": "Prijazno"
       },
       {
         "stat": "Zadovoljne",
-        "label": "Stranke",
-        "description": "Trudimo se, da vsak obisk preseže vaša pričakovanja."
+        "label": "Zadovoljne",
+        "description": "Trudimo se, da vsak obisk preseže vaša pričakovanja.",
+        "title": "Zadovoljne"
       }
     ]
   },

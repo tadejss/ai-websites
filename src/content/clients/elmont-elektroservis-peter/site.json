@@ -122,17 +122,20 @@
       {
         "stat": "Odzivnost",
         "label": "Hiter odziv",
-        "description": "Hitro se odzovemo na klice in zahteve naših strank."
+        "description": "Hitro se odzovemo na klice in zahteve naših strank.",
+        "title": "Hiter odziv"
       },
       {
         "stat": "Izkušnje",
         "label": "Dolgoletne izkušnje",
-        "description": "Zanesljivo obvladujemo področje elektroservisa in inštalacij."
+        "description": "Zanesljivo obvladujemo področje elektroservisa in inštalacij.",
+        "title": "Dolgoletne izkušnje"
       },
       {
         "stat": "Zanesljivost",
         "label": "Strokovno delo",
-        "description": "Zagotavljamo varno in korektno izvedbo vseh del."
+        "description": "Zagotavljamo varno in korektno izvedbo vseh del.",
+        "title": "Strokovno delo"
       }
     ]
   },

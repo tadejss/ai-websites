@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Osebno",
-        "label": "Zaupanje",
-        "description": "Poudarek na osebnem pristopu in prisluhu vašim željam."
+        "label": "Osebno",
+        "description": "Poudarek na osebnem pristopu in prisluhu vašim željam.",
+        "title": "Osebno"
       },
       {
         "stat": "Zanesljivo",
-        "label": "Delo",
-        "description": "Kakovostne storitve oblikovanja las z občutkom za estetiko."
+        "label": "Zanesljivo",
+        "description": "Kakovostne storitve oblikovanja las z občutkom za estetiko.",
+        "title": "Zanesljivo"
       },
       {
         "stat": "Zadovoljne",
-        "label": "Stranke",
-        "description": "Visoka ocena in pozitivne izkušnje naših obiskovalcev."
+        "label": "Zadovoljne",
+        "description": "Visoka ocena in pozitivne izkušnje naših obiskovalcev.",
+        "title": "Zadovoljne"
       }
     ]
   },

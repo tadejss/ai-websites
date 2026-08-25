@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Domače",
-        "label": "Vzdušje",
-        "description": "Pri nas se boste vedno počutili sproščeno in dobrodošlo."
+        "label": "Domače",
+        "description": "Pri nas se boste vedno počutili sproščeno in dobrodošlo.",
+        "title": "Domače"
       },
       {
         "stat": "Osebno",
-        "label": "Pristop",
-        "description": "Vsaki stranki se posvetimo individualno in z razumevanjem njenih želja."
+        "label": "Osebno",
+        "description": "Vsaki stranki se posvetimo individualno in z razumevanjem njenih želja.",
+        "title": "Osebno"
       },
       {
         "stat": "Strokovno",
-        "label": "Delo",
-        "description": "Skrbimo za visoko kakovost storitev in nego s pozornostjo do detajlov."
+        "label": "Strokovno",
+        "description": "Skrbimo za visoko kakovost storitev in nego s pozornostjo do detajlov.",
+        "title": "Strokovno"
       }
     ]
   },

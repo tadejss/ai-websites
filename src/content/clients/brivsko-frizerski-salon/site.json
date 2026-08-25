@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Osebno",
-        "label": "Sodelovanje",
-        "description": "Prisluhnemo vašim željam in vam svetujemo pri izbiri prave pričeske ali urejanja brade."
+        "label": "Osebno",
+        "description": "Prisluhnemo vašim željam in vam svetujemo pri izbiri prave pričeske ali urejanja brade.",
+        "title": "Osebno"
       },
       {
         "stat": "Tradicija",
-        "label": "In izkušnje",
-        "description": "Dolgoletna prisotnost v Novem mestu jamči zanesljivost in kakovost storitev."
+        "label": "Tradicija in izkušnje",
+        "description": "Dolgoletna prisotnost v Novem mestu jamči zanesljivost in kakovost storitev.",
+        "title": "Tradicija in izkušnje"
       },
       {
         "stat": "Ambient",
-        "label": "S sproščenim vzdušjem",
-        "description": "Udoben in domač prostor, kjer si lahko vzamete trenutek zase."
+        "label": "Ambient S sproščenim vzdušjem",
+        "description": "Udoben in domač prostor, kjer si lahko vzamete trenutek zase.",
+        "title": "Ambient S sproščenim vzdušjem"
       }
     ]
   },

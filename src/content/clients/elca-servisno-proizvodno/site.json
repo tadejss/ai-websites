@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "In natančnost",
-        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti in strokovnega znanja."
+        "label": "Strokovnost in natančnost",
+        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti in strokovnega znanja.",
+        "title": "Strokovnost in natančnost"
       },
       {
         "stat": "Izkušnje",
-        "label": "Z dolgo tradicijo",
-        "description": "Več desetletij delovanja nam omogoča reševanje tudi zahtevnejših elektro izzivov."
+        "label": "Izkušnje Z dolgo tradicijo",
+        "description": "Več desetletij delovanja nam omogoča reševanje tudi zahtevnejših elektro izzivov.",
+        "title": "Izkušnje Z dolgo tradicijo"
       },
       {
         "stat": "Ekipa",
         "label": "Resnih strokovnjakov",
-        "description": "Usklajena ekipa zagotavlja zanesljivo izvedbo vseh del od začetka do konca."
+        "description": "Usklajena ekipa zagotavlja zanesljivo izvedbo vseh del od začetka do konca.",
+        "title": "Resnih strokovnjakov"
       }
     ]
   },

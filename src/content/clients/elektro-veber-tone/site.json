@@ -122,17 +122,20 @@
       {
         "stat": "Odzivnost",
         "label": "Hiter odzivni čas",
-        "description": "Hitro se odzovemo na vaše klice in poskrbimo za pravočasno izvedbo."
+        "description": "Hitro se odzovemo na vaše klice in poskrbimo za pravočasno izvedbo.",
+        "title": "Hiter odzivni čas"
       },
       {
         "stat": "Kakovost",
         "label": "Kakovostna izvedba",
-        "description": "Dela izvajamo strokovno, skrbno in v skladu z veljavnimi predpisi."
+        "description": "Dela izvajamo strokovno, skrbno in v skladu z veljavnimi predpisi.",
+        "title": "Kakovostna izvedba"
       },
       {
         "stat": "Zanesljivost",
         "label": "Lokalni ponudnik",
-        "description": "Kot zanesljiv lokalni izvajalec smo vedno blizu, ko nas potrebujete."
+        "description": "Kot zanesljiv lokalni izvajalec smo vedno blizu, ko nas potrebujete.",
+        "title": "Lokalni ponudnik"
       }
     ]
   },

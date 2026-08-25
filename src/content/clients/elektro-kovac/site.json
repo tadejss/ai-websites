@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "24/5",
-        "label": "Dostopnost",
-        "description": "Dostopnost 24 ur na dan med tednom za nujne primere in vprašanja."
+        "label": "24/5 Dostopnost",
+        "description": "Dostopnost 24 ur na dan med tednom za nujne primere in vprašanja.",
+        "title": "24/5 Dostopnost"
       },
       {
         "stat": "Hitra",
-        "label": "Odzivnost",
-        "description": "Hitro odzivne storitve, ko je to najbolj potrebno."
+        "label": "Hitra",
+        "description": "Hitro odzivne storitve, ko je to najbolj potrebno.",
+        "title": "Hitra"
       },
       {
         "stat": "Zanesljivo",
-        "label": "Delo",
-        "description": "Strokovno in zanesljivo delo za vašo varnost in mir."
+        "label": "Zanesljivo",
+        "description": "Strokovno in zanesljivo delo za vašo varnost in mir.",
+        "title": "Zanesljivo"
       }
     ]
   },

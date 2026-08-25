@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in domačnost",
-        "description": "Služimo lokalni skupnosti z nasmehom in posluhom za vsako stranko."
+        "label": "Prijaznost in domačnost",
+        "description": "Služimo lokalni skupnosti z nasmehom in posluhom za vsako stranko.",
+        "title": "Prijaznost in domačnost"
       },
       {
         "stat": "Kakovost",
-        "label": "po meri",
-        "description": "Uporaba preverjenih metod in skrb za zdravje vaših las."
+        "label": "Kakovost po meri",
+        "description": "Uporaba preverjenih metod in skrb za zdravje vaših las.",
+        "title": "Kakovost po meri"
       },
       {
         "stat": "Dostopnost",
-        "label": "za vsakogar",
-        "description": "Razumne cene in celostne storitve za vso družino na enem mestu."
+        "label": "Dostopnost za vsakogar",
+        "description": "Razumne cene in celostne storitve za vso družino na enem mestu.",
+        "title": "Dostopnost za vsakogar"
       }
     ]
   },

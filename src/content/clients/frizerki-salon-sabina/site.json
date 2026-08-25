@@ -120,17 +120,20 @@
       {
         "stat": "Prijaznost",
         "label": "Topel pristop",
-        "description": "Pri nas boste vedno deležni nasmeha in prijetne besede."
+        "description": "Pri nas boste vedno deležni nasmeha in prijetne besede.",
+        "title": "Topel pristop"
       },
       {
         "stat": "Dostopnost",
         "label": "Ugodne cene",
-        "description": "Kakovostne storitve, ki so dostopne vsakomur."
+        "description": "Kakovostne storitve, ki so dostopne vsakomur.",
+        "title": "Ugodne cene"
       },
       {
         "stat": "Učinkovitost",
         "label": "Hitra storitev",
-        "description": "Cenimo vaš čas in poskrbimo za učinkovito izvedbo."
+        "description": "Cenimo vaš čas in poskrbimo za učinkovito izvedbo.",
+        "title": "Hitra storitev"
       }
     ]
   },

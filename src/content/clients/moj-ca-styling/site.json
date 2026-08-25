@@ -103,18 +103,21 @@
     "benefits": [
       {
         "stat": "Osebno",
-        "label": "Sodelovanje",
-        "description": "Posvetujemo se z vami in poiščemo pričesko, v kateri se boste počutili samozavestno."
+        "label": "Osebno",
+        "description": "Posvetujemo se z vami in poiščemo pričesko, v kateri se boste počutili samozavestno.",
+        "title": "Osebno"
       },
       {
         "stat": "Kakovost",
-        "label": "In trendi",
-        "description": "Uporabljamo preverjene pripravke in sledimo novostim na frizerskem področju."
+        "label": "Kakovost in trendi",
+        "description": "Uporabljamo preverjene pripravke in sledimo novostim na frizerskem področju.",
+        "title": "Kakovost in trendi"
       },
       {
         "stat": "Prijetno",
-        "label": "Vzdušje",
-        "description": "Sproščeno okolje v Cerknici, kjer si vzamemo čas samo za vas."
+        "label": "Prijetno",
+        "description": "Sproščeno okolje v Cerknici, kjer si vzamemo čas samo za vas.",
+        "title": "Prijetno"
       }
     ]
   },

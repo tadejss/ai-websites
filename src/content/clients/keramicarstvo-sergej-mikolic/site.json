@@ -113,17 +113,20 @@
       {
         "stat": "Natančnost",
         "label": "Vrhunska izvedba",
-        "description": "Vsak projekt izpeljemo z maksimalno pozornostjo do detajlov in estetskega videza."
+        "description": "Vsak projekt izpeljemo z maksimalno pozornostjo do detajlov in estetskega videza.",
+        "title": "Vrhunska izvedba"
       },
       {
         "stat": "Zanesljivost",
         "label": "Držanje rokov",
-        "description": "Spoštujemo dogovorjene časovne okvirje in se držimo vnaprej določenega načrta."
+        "description": "Spoštujemo dogovorjene časovne okvirje in se držimo vnaprej določenega načrta.",
+        "title": "Držanje rokov"
       },
       {
         "stat": "Svetovanje",
         "label": "Strokovna pomoč",
-        "description": "Pomagamo vam pri izbiri ustreznih materialov in rešitev za vaš prostor."
+        "description": "Pomagamo vam pri izbiri ustreznih materialov in rešitev za vaš prostor.",
+        "title": "Strokovna pomoč"
       }
     ]
   },

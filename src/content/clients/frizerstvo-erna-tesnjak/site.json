@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Pristop",
-        "label": "Individualen",
-        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo izbiro pričeske."
+        "label": "Pristop",
+        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo izbiro pričeske.",
+        "title": "Pristop"
       },
       {
         "stat": "Zadoščenje",
         "label": "Zadovoljne stranke",
-        "description": "Cenimo zaupanje naših strank in skrbimo za prijetno izkušnjo v salonu."
+        "description": "Cenimo zaupanje naših strank in skrbimo za prijetno izkušnjo v salonu.",
+        "title": "Zadovoljne stranke"
       },
       {
         "stat": "Izkušnje",
-        "label": "Strokovnost",
-        "description": "Natančno delo in skrb za zdravje vaših las."
+        "label": "Izkušnje",
+        "description": "Natančno delo in skrb za zdravje vaših las.",
+        "title": "Izkušnje"
       }
     ]
   },

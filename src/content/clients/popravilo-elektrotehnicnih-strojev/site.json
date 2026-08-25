@@ -122,17 +122,20 @@
       {
         "stat": "Terensko",
         "label": "Delo na domu",
-        "description": "Aparate popravljamo tam, kjer se nahajajo, brez zapletenega prevažanja."
+        "description": "Aparate popravljamo tam, kjer se nahajajo, brez zapletenega prevažanja.",
+        "title": "Delo na domu"
       },
       {
         "stat": "Izkušnje",
-        "label": "S področja elektrotehnike",
-        "description": "Dolgoletno delo z električnimi stroji in napravami zagotavlja kakovostno izvedbo."
+        "label": "Izkušnje S področja elektrotehnike",
+        "description": "Dolgoletno delo z električnimi stroji in napravami zagotavlja kakovostno izvedbo.",
+        "title": "Izkušnje S področja elektrotehnike"
       },
       {
         "stat": "Fokus",
         "label": "Beko aparati",
-        "description": "Nudimo namensko znanje za servisiranje aparatov blagovne znamke Beko."
+        "description": "Nudimo namensko znanje za servisiranje aparatov blagovne znamke Beko.",
+        "title": "Beko aparati"
       }
     ]
   },

@@ -105,17 +105,20 @@
       {
         "stat": "Natančnost",
         "label": "Skrbno delo",
-        "description": "Vsakemu obisku se posvetimo z vso pozornostjo in natančnostjo."
+        "description": "Vsakemu obisku se posvetimo z vso pozornostjo in natančnostjo.",
+        "title": "Skrbno delo"
       },
       {
         "stat": "Ambient",
         "label": "Prijetno vzdušje",
-        "description": "Uživajte v sproščenem okolju z glasbenim ozadjem med urejanjem pričeske."
+        "description": "Uživajte v sproščenem okolju z glasbenim ozadjem med urejanjem pričeske.",
+        "title": "Prijetno vzdušje"
       },
       {
         "stat": "Zadovoljstvo",
         "label": "Topel pristop",
-        "description": "Prizadevamo si, da naš salon zapustite z nasmehom in urejenimi lasmi."
+        "description": "Prizadevamo si, da naš salon zapustite z nasmehom in urejenimi lasmi.",
+        "title": "Topel pristop"
       }
     ]
   },

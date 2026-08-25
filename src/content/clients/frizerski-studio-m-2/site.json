@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijazno",
-        "label": "Osebje",
-        "description": "Naša ekipa poskrbi, da se v salonu vedno počutite dobrodošle."
+        "label": "Prijazno",
+        "description": "Naša ekipa poskrbi, da se v salonu vedno počutite dobrodošle.",
+        "title": "Prijazno"
       },
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Prisluhnemo vašim željam in svetujemo stil, ki vam najbolj ustreza."
+        "label": "Osebni",
+        "description": "Prisluhnemo vašim željam in svetujemo stil, ki vam najbolj ustreza.",
+        "title": "Osebni"
       },
       {
         "stat": "Kakovost",
-        "label": "Izdelki",
-        "description": "Uporaba preverjenih izdelkov, ki ohranjajo zdravje in lesk vaših las."
+        "label": "Kakovost",
+        "description": "Uporaba preverjenih izdelkov, ki ohranjajo zdravje in lesk vaših las.",
+        "title": "Kakovost"
       }
     ]
   },

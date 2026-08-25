@@ -109,17 +109,20 @@
       {
         "stat": "Izkušnje",
         "label": "Dolgoročna tradicija",
-        "description": "Zanesljivo delo temelji na bogatih izkušnjah in strokovnem znanju."
+        "description": "Zanesljivo delo temelji na bogatih izkušnjah in strokovnem znanju.",
+        "title": "Dolgoročna tradicija"
       },
       {
         "stat": "Pristop",
         "label": "Prilagojeno vam",
-        "description": "Prisluhnemo vašim željam in svetujemo najboljšo rešitev za vaše lase."
+        "description": "Prisluhnemo vašim željam in svetujemo najboljšo rešitev za vaše lase.",
+        "title": "Prilagojeno vam"
       },
       {
         "stat": "Okolje",
         "label": "Udoben salon",
-        "description": "Sprostite se v prijetnem ambientu našega salona v Pivki."
+        "description": "Sprostite se v prijetnem ambientu našega salona v Pivki.",
+        "title": "Udoben salon"
       }
     ]
   },

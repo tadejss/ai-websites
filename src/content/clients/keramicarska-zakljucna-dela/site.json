@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Vrhunska",
-        "label": "Kakovost",
-        "description": "Uporaba preverjenih materialov in natančna izvedba keramičarskih del."
+        "label": "Vrhunska",
+        "description": "Uporaba preverjenih materialov in natančna izvedba keramičarskih del.",
+        "title": "Vrhunska"
       },
       {
         "stat": "Zanesljivost",
-        "label": "In strokovnost",
-        "description": "Spoštovanje dogovorov in časovnih rokov pri vseh zaključnih delih."
+        "label": "Zanesljivost in strokovnost",
+        "description": "Spoštovanje dogovorov in časovnih rokov pri vseh zaključnih delih.",
+        "title": "Zanesljivost in strokovnost"
       },
       {
         "stat": "Zadovoljne",
-        "label": "Stranke",
-        "description": "Odlične ocene in poudarek na uresničitvi vaših pričakovanj."
+        "label": "Zadovoljne",
+        "description": "Odlične ocene in poudarek na uresničitvi vaših pričakovanj.",
+        "title": "Zadovoljne"
       }
     ]
   },

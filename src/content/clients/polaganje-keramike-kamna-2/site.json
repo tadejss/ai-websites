@@ -111,18 +111,21 @@
     "benefits": [
       {
         "stat": "Natančnost",
-        "label": "In detajli",
-        "description": "Vsak projekt izvedemo skrbno in z mislijo na dolgotrajno obstojnost."
+        "label": "Natančnost in detajli",
+        "description": "Vsak projekt izvedemo skrbno in z mislijo na dolgotrajno obstojnost.",
+        "title": "Natančnost in detajli"
       },
       {
         "stat": "Zanesljivost",
-        "label": "In zaupanje",
-        "description": "Držimo se dogovorjenih rokov in zagotavljamo visoko raven strokovnosti."
+        "label": "Zanesljivost in zaupanje",
+        "description": "Držimo se dogovorjenih rokov in zagotavljamo visoko raven strokovnosti.",
+        "title": "Zanesljivost in zaupanje"
       },
       {
         "stat": "Prilagodljivost",
-        "label": "Strankam",
-        "description": "Prisluhnemo vašim idejam in ponudimo optimalne rešitve za vaš prostor."
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim idejam in ponudimo optimalne rešitve za vaš prostor.",
+        "title": "Prilagodljivost"
       }
     ]
   },

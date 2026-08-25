@@ -106,17 +106,20 @@
       {
         "stat": "Prijaznost",
         "label": "Osebni pristop",
-        "description": "Posvetimo se vsakemu posamezniku in njegovim željam glede pričeske."
+        "description": "Posvetimo se vsakemu posamezniku in njegovim željam glede pričeske.",
+        "title": "Osebni pristop"
       },
       {
         "stat": "Trendi",
         "label": "Sodobne smernice",
-        "description": "Redno sledimo novostim v frizerskem svetu za sodoben videz."
+        "description": "Redno sledimo novostim v frizerskem svetu za sodoben videz.",
+        "title": "Sodobne smernice"
       },
       {
         "stat": "Dostopnost",
         "label": "Ugodne cene",
-        "description": "Ponujamo kakovostne storitve po dostopnih cenah za vsakogar."
+        "description": "Ponujamo kakovostne storitve po dostopnih cenah za vsakogar.",
+        "title": "Ugodne cene"
       }
     ]
   },

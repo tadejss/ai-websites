@@ -34,9 +34,18 @@
   },
   "nav": {
     "links": [
-      { "href": "#storitve", "label": "Storitve" },
-      { "href": "#zakaj-mi", "label": "Zakaj mi" },
-      { "href": "#kontakt", "label": "Kontakt" }
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
     ],
     "cta": "Pokliči za pregled"
   },
@@ -49,10 +58,22 @@
     "secondaryCta": "Storitve",
     "secondaryCtaHref": "#storitve",
     "stats": [
-      { "value": "15+", "label": "Let v panogi" },
-      { "value": "24h", "label": "Odziv na nujno" },
-      { "value": "Celje", "label": "In regija" },
-      { "value": "Varno", "label": "Po predpisih" }
+      {
+        "value": "15+",
+        "label": "Let v panogi"
+      },
+      {
+        "value": "24h",
+        "label": "Odziv na nujno"
+      },
+      {
+        "value": "Celje",
+        "label": "In regija"
+      },
+      {
+        "value": "Varno",
+        "label": "Po predpisih"
+      }
     ]
   },
   "services": {
@@ -96,18 +117,21 @@
     "benefits": [
       {
         "stat": "Varno",
-        "label": "Po standardih",
-        "description": "Delo po veljavnih predpisih in dobri praksi."
+        "label": "Varno po standardih",
+        "description": "Delo po veljavnih predpisih in dobri praksi.",
+        "title": "Varno po standardih"
       },
       {
         "stat": "Jasno",
-        "label": "Komunikacija",
-        "description": "Veš, kaj se dela, zakaj in koliko bo stalo."
+        "label": "Jasno",
+        "description": "Veš, kaj se dela, zakaj in koliko bo stalo.",
+        "title": "Jasno"
       },
       {
         "stat": "Hitro",
-        "label": "Pri napakah",
-        "description": "Prioriteta nujnim izpadom in varnostnim težavam."
+        "label": "Hitro pri napakah",
+        "description": "Prioriteta nujnim izpadom in varnostnim težavam.",
+        "title": "Hitro pri napakah"
       }
     ]
   },
@@ -162,10 +186,19 @@
     "lastUpdated": "2026-08-23",
     "contactForm": {
       "enabled": true,
-      "fields": ["name", "phone", "message"]
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
     },
-    "analytics": { "enabled": false, "provider": null },
-    "marketing": { "enabled": false },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
     "booking": {
       "enabled": false,
       "type": "external_link",
@@ -173,7 +206,12 @@
       "url": "",
       "privacyUrl": ""
     },
-    "thirdPartyEmbeds": { "googleMaps": false, "youtube": false },
-    "cookies": { "nonEssential": false }
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Prijazna in strokovna obravnava vsake stranke."
+        "label": "Strokovno",
+        "description": "Prijazna in strokovna obravnava vsake stranke.",
+        "title": "Strokovno"
       },
       {
         "stat": "Zanesljiv",
-        "label": "Pristop",
-        "description": "Zadovoljne stranke in zanesljiv pristop k vsaki frizuri."
+        "label": "Zanesljiv",
+        "description": "Zadovoljne stranke in zanesljiv pristop k vsaki frizuri.",
+        "title": "Zanesljiv"
       },
       {
         "stat": "Lokalno",
-        "label": "Okolje",
-        "description": "Visoko ocenjen salon v Postojni in okolici."
+        "label": "Lokalno",
+        "description": "Visoko ocenjen salon v Postojni in okolici.",
+        "title": "Lokalno"
       }
     ]
   },

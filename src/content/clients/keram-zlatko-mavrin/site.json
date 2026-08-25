@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Vrhunska",
-        "label": "Kakovost",
-        "description": "Uporaba preverjenih postopkov in natančnost pri vsakem keramičarskem projektu."
+        "label": "Vrhunska",
+        "description": "Uporaba preverjenih postopkov in natančnost pri vsakem keramičarskem projektu.",
+        "title": "Vrhunska"
       },
       {
         "stat": "Zanesljiva",
-        "label": "Izvedba",
-        "description": "Pravočasno in korektno opravljena gradbena ter obrtniška dela."
+        "label": "Zanesljiva",
+        "description": "Pravočasno in korektno opravljena gradbena ter obrtniška dela.",
+        "title": "Zanesljiva"
       },
       {
         "stat": "Domač",
-        "label": "Pristop",
-        "description": "Odgovoren odnos in posluh za želje vsake stranke v Ribnici z okolico."
+        "label": "Domač",
+        "description": "Odgovoren odnos in posluh za želje vsake stranke v Ribnici z okolico.",
+        "title": "Domač"
       }
     ]
   },

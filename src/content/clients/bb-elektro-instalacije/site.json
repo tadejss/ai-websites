@@ -122,17 +122,20 @@
       {
         "stat": "Prijaznost",
         "label": "Zanesljiva storitev",
-        "description": "Delo opravimo skrbno in z osebnim pristopom do vsake stranke."
+        "description": "Delo opravimo skrbno in z osebnim pristopom do vsake stranke.",
+        "title": "Zanesljiva storitev"
       },
       {
         "stat": "Natančnost",
         "label": "Kakovostna izvedba",
-        "description": "Dosledno upoštevamo dogovore in poskrbimo za varno delovanje sistemov."
+        "description": "Dosledno upoštevamo dogovore in poskrbimo za varno delovanje sistemov.",
+        "title": "Kakovostna izvedba"
       },
       {
         "stat": "Odzivnost",
         "label": "Hitra podpora",
-        "description": "Na vaše povpraševanje se odzovemo hitro in se posvetimo vašim željam."
+        "description": "Na vaše povpraševanje se odzovemo hitro in se posvetimo vašim željam.",
+        "title": "Hitra podpora"
       }
     ]
   },

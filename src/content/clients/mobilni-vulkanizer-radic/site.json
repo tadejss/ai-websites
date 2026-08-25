@@ -116,18 +116,21 @@
     "benefits": [
       {
         "stat": "24/7",
-        "label": "Neprekinjena dostopnost",
-        "description": "Na voljo podnevi in ponoči, ob delavnikih, vikendih in praznikih."
+        "label": "24/7 Neprekinjena dostopnost",
+        "description": "Na voljo podnevi in ponoči, ob delavnikih, vikendih in praznikih.",
+        "title": "24/7 Neprekinjena dostopnost"
       },
       {
         "stat": "Teren",
         "label": "Prihod na lokacijo",
-        "description": "Ni potrebe po vlečni službi; težavo rešimo tam, kjer je do okvare prišlo."
+        "description": "Ni potrebe po vlečni službi; težavo rešimo tam, kjer je do okvare prišlo.",
+        "title": "Prihod na lokacijo"
       },
       {
         "stat": "Strokovno",
         "label": "Prijazna in zanesljiva storitev",
-        "description": "Prizadevamo si za hitro in varno rešitev vsake situacije na cesti."
+        "description": "Prizadevamo si za hitro in varno rešitev vsake situacije na cesti.",
+        "title": "Prijazna in zanesljiva storitev"
       }
     ]
   },

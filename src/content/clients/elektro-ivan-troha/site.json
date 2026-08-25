@@ -122,17 +122,20 @@
       {
         "stat": "Kakovost",
         "label": "Preverjene storitve",
-        "description": "Dela izvajamo z mislijo na varnost in dolgotrajno zanesljivost."
+        "description": "Dela izvajamo z mislijo na varnost in dolgotrajno zanesljivost.",
+        "title": "Preverjene storitve"
       },
       {
         "stat": "Odzivnost",
         "label": "Prilagodljivost na terenu",
-        "description": "Prisluhnemo vašim željam in pravočasno izvedemo dogovorjena dela."
+        "description": "Prisluhnemo vašim željam in pravočasno izvedemo dogovorjena dela.",
+        "title": "Prilagodljivost na terenu"
       },
       {
         "stat": "Strokovnost",
         "label": "Zanesljiv pristop",
-        "description": "Vsakemu projektu se posvetimo celovito in strokovno."
+        "description": "Vsakemu projektu se posvetimo celovito in strokovno.",
+        "title": "Zanesljiv pristop"
       }
     ]
   },

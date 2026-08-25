@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "in natančnost",
-        "description": "Vsakemu vozilu se posvetimo z visoko stopnjo natančnosti in strokovnega znanja."
+        "label": "Strokovnost in natančnost",
+        "description": "Vsakemu vozilu se posvetimo z visoko stopnjo natančnosti in strokovnega znanja.",
+        "title": "Strokovnost in natančnost"
       },
       {
         "stat": "Zanesljivost",
-        "label": "in prijazen pristop",
-        "description": "Zagotavljamo zanesljive storitve in prijazen odnos do vsake stranke."
+        "label": "Zanesljivost in prijazen pristop",
+        "description": "Zagotavljamo zanesljive storitve in prijazen odnos do vsake stranke.",
+        "title": "Zanesljivost in prijazen pristop"
       },
       {
         "stat": "Kakovost",
-        "label": "z odličnimi ocenami",
-        "description": "Preverjena kakovost opravljenih storitev, ki ji zaupajo lastniki vozil."
+        "label": "Kakovost z odličnimi ocenami",
+        "description": "Preverjena kakovost opravljenih storitev, ki ji zaupajo lastniki vozil.",
+        "title": "Kakovost z odličnimi ocenami"
       }
     ]
   },

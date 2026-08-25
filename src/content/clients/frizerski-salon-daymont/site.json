@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijazno",
-        "label": "Osebje",
-        "description": "Topel sprejem in prijetno vzdušje v salonu."
+        "label": "Prijazno",
+        "description": "Topel sprejem in prijetno vzdušje v salonu.",
+        "title": "Prijazno"
       },
       {
         "stat": "Strokovno",
-        "label": "Znanje",
-        "description": "Visoka raven profesionalnosti pri vseh frizerskih storitvah."
+        "label": "Strokovno",
+        "description": "Visoka raven profesionalnosti pri vseh frizerskih storitvah.",
+        "title": "Strokovno"
       },
       {
         "stat": "Kakovostna",
-        "label": "Nega",
-        "description": "Skrbno izbrane storitve za striženje in nego vaših las."
+        "label": "Kakovostna",
+        "description": "Skrbno izbrane storitve za striženje in nego vaših las.",
+        "title": "Kakovostna"
       }
     ]
   },

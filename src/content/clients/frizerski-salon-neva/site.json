@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Izjemno strokovno osebje, ki se posveti vašim željam."
+        "label": "Strokovno",
+        "description": "Izjemno strokovno osebje, ki se posveti vašim željam.",
+        "title": "Strokovno"
       },
       {
         "stat": "Prenovljen",
-        "label": "Ambient",
-        "description": "Prijeten in urejen prostor za vašo popolno sprostitev."
+        "label": "Prenovljen",
+        "description": "Prijeten in urejen prostor za vašo popolno sprostitev.",
+        "title": "Prenovljen"
       },
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Individualno svetovanje in posvečenost vsaki stranki posebej."
+        "label": "Osebni",
+        "description": "Individualno svetovanje in posvečenost vsaki stranki posebej.",
+        "title": "Osebni"
       }
     ]
   },

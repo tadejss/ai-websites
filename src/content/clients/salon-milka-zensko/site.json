@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "20+ let",
-        "label": "Tradicije",
-        "description": "Zveste stranke nas spremljajo že več kot dvajset let."
+        "label": "20+ let Tradicije",
+        "description": "Zveste stranke nas spremljajo že več kot dvajset let.",
+        "title": "20+ let Tradicije"
       },
       {
         "stat": "Topel",
-        "label": "Pristop",
-        "description": "Prijazno in domače vzdušje, kjer se boste počutili dobrodošle."
+        "label": "Topel",
+        "description": "Prijazno in domače vzdušje, kjer se boste počutili dobrodošle.",
+        "title": "Topel"
       },
       {
         "stat": "Natančnost",
-        "label": "In strokovnost",
-        "description": "Visoka natančnost pri vsakem striženju in oblikovanju pričesk."
+        "label": "Natančnost in strokovnost",
+        "description": "Visoka natančnost pri vsakem striženju in oblikovanju pričesk.",
+        "title": "Natančnost in strokovnost"
       }
     ]
   },

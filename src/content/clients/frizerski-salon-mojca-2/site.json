@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Prijazna ekipa z izkušnjami poskrbi za vaše želje in potrebe."
+        "label": "Strokovno",
+        "description": "Prijazna ekipa z izkušnjami poskrbi za vaše želje in potrebe.",
+        "title": "Strokovno"
       },
       {
         "stat": "Kakovost",
-        "label": "Storitev",
-        "description": "Uporabljamo preverjene metode in poskrbimo za odlične rezultate."
+        "label": "Kakovost",
+        "description": "Uporabljamo preverjene metode in poskrbimo za odlične rezultate.",
+        "title": "Kakovost"
       },
       {
         "stat": "Prijetno",
-        "label": "Okolje",
-        "description": "Sproščeno vzdušje, kjer se boste počutili dobrodošli."
+        "label": "Prijetno",
+        "description": "Sproščeno vzdušje, kjer se boste počutili dobrodošli.",
+        "title": "Prijetno"
       }
     ]
   },

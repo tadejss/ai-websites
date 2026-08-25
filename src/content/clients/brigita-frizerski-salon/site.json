@@ -100,17 +100,20 @@
       {
         "stat": "Hitro",
         "label": "Strokovna izvedba",
-        "description": "Cenimo vaš čas in poskrbimo za hitro ter zanesljivo storitev."
+        "description": "Cenimo vaš čas in poskrbimo za hitro ter zanesljivo storitev.",
+        "title": "Strokovna izvedba"
       },
       {
         "stat": "Ugodno",
         "label": "Dostopne cene",
-        "description": "Nudimo odlično razmerje med visoko kakovostjo in dostopno ceno."
+        "description": "Nudimo odlično razmerje med visoko kakovostjo in dostopno ceno.",
+        "title": "Dostopne cene"
       },
       {
         "stat": "Prijetno",
         "label": "Domače vzdušje",
-        "description": "Sprostite se v toplem okolju našega salona na Bledu."
+        "description": "Sprostite se v toplem okolju našega salona na Bledu.",
+        "title": "Domače vzdušje"
       }
     ]
   },

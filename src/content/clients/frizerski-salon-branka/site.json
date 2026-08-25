@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in domačnost",
-        "description": "Topel sprejem in prijetno vzdušje v vsakem trenutku obiska."
+        "label": "Prijaznost in domačnost",
+        "description": "Topel sprejem in prijetno vzdušje v vsakem trenutku obiska.",
+        "title": "Prijaznost in domačnost"
       },
       {
         "stat": "Darilni",
-        "label": "boni",
-        "description": "Možnost nakupa darilnih bonov poljubne vrednosti za vaše najdražje."
+        "label": "Darilni boni",
+        "description": "Možnost nakupa darilnih bonov poljubne vrednosti za vaše najdražje.",
+        "title": "Darilni boni"
       },
       {
         "stat": "Zvestoba",
-        "label": "in izkušnje",
-        "description": "Dolgoletne izkušnje, ki jim zaupajo številne zveste stranke."
+        "label": "Zvestoba in izkušnje",
+        "description": "Dolgoletne izkušnje, ki jim zaupajo številne zveste stranke.",
+        "title": "Zvestoba in izkušnje"
       }
     ]
   },

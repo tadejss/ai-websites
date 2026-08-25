@@ -104,18 +104,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Profesionalni in izkušeni frizerji za najboljšo skrb za vaše lase."
+        "label": "Strokovno",
+        "description": "Profesionalni in izkušeni frizerji za najboljšo skrb za vaše lase.",
+        "title": "Strokovno"
       },
       {
         "stat": "Prilagodljivo",
-        "label": "Naročanje",
-        "description": "Hitra postrežba in prilagodljivost pri naročanju na termine."
+        "label": "Prilagodljivo",
+        "description": "Hitra postrežba in prilagodljivost pri naročanju na termine.",
+        "title": "Prilagodljivo"
       },
       {
         "stat": "Ugodno",
-        "label": "Razmerje",
-        "description": "Dostopne cene in redne stranke, ki se radi vračajo."
+        "label": "Ugodno",
+        "description": "Dostopne cene in redne stranke, ki se radi vračajo.",
+        "title": "Ugodno"
       }
     ]
   },

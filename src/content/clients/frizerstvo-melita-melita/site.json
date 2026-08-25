@@ -119,17 +119,20 @@
       {
         "stat": "Prijaznost",
         "label": "Gostoljubno okolje",
-        "description": "Izjemno prijazna in gostoljubna frizerka, ki poskrbi, da se v salonu vedno počutite dobrodošli."
+        "description": "Izjemno prijazna in gostoljubna frizerka, ki poskrbi, da se v salonu vedno počutite dobrodošli.",
+        "title": "Gostoljubno okolje"
       },
       {
         "stat": "Kakovost",
         "label": "Vrhunski proizvodi",
-        "description": "Za nego vaših las uporabljamo preverjene in kakovostne frizerske proizvode, ki las ne obtežijo."
+        "description": "Za nego vaših las uporabljamo preverjene in kakovostne frizerske proizvode, ki las ne obtežijo.",
+        "title": "Vrhunski proizvodi"
       },
       {
         "stat": "Sproščenost",
         "label": "Mladosten videz",
-        "description": "Sproščujoče vzdušje v salonu, v katerem pozabite na vsakdanji stres in zaživite v novi energiji."
+        "description": "Sproščujoče vzdušje v salonu, v katerem pozabite na vsakdanji stres in zaživite v novi energiji.",
+        "title": "Mladosten videz"
       }
     ]
   },

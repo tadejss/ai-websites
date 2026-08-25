@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in preciznost",
-        "description": "Vsaki stranki se posvetimo z enako mero pozornosti in natančnosti."
+        "label": "Prijaznost in preciznost",
+        "description": "Vsaki stranki se posvetimo z enako mero pozornosti in natančnosti.",
+        "title": "Prijaznost in preciznost"
       },
       {
         "stat": "Zaupanje",
-        "label": "strank",
-        "description": "Dolgoletne izkušnje in zadovoljne stranke potrjujejo našo kakovost."
+        "label": "Zaupanje strank",
+        "description": "Dolgoletne izkušnje in zadovoljne stranke potrjujejo našo kakovost.",
+        "title": "Zaupanje strank"
       },
       {
         "stat": "Cenova",
-        "label": "dostopnost",
-        "description": "Ponujamo ugodne cene frizerskih storitev za vso družino."
+        "label": "Cenova dostopnost",
+        "description": "Ponujamo ugodne cene frizerskih storitev za vso družino.",
+        "title": "Cenova dostopnost"
       }
     ]
   },

@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in posluh",
-        "description": "Vsaki stranki se posvetimo z razumevanjem in poslušamo njene želje."
+        "label": "Prijaznost in posluh",
+        "description": "Vsaki stranki se posvetimo z razumevanjem in poslušamo njene želje.",
+        "title": "Prijaznost in posluh"
       },
       {
         "stat": "Strokovnost",
-        "label": "in zanesljivost",
-        "description": "Zagotavljamo točnost in kakovostno izvedbo vsake frizerske storitve."
+        "label": "Strokovnost in zanesljivost",
+        "description": "Zagotavljamo točnost in kakovostno izvedbo vsake frizerske storitve.",
+        "title": "Strokovnost in zanesljivost"
       },
       {
         "stat": "Prijeten",
-        "label": "ambient",
-        "description": "Sprostite se v domače urejenem lokalnem salonu v osrčju Babnega Polja."
+        "label": "Prijeten ambient",
+        "description": "Sprostite se v domače urejenem lokalnem salonu v osrčju Babnega Polja.",
+        "title": "Prijeten ambient"
       }
     ]
   },

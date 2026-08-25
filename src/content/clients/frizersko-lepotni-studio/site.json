@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Odlične",
-        "label": "Ocene",
-        "description": "Zadovoljne stranke cenijo naš trud in predanost."
+        "label": "Odlične",
+        "description": "Zadovoljne stranke cenijo naš trud in predanost.",
+        "title": "Odlične"
       },
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Prijazna in strokovna storitev ob vsakem obisku."
+        "label": "Strokovno",
+        "description": "Prijazna in strokovna storitev ob vsakem obisku.",
+        "title": "Strokovno"
       },
       {
         "stat": "Prilagodljivo",
-        "label": "Delovanje",
-        "description": "Prilagodljiv delovni čas, vključno z dopoldnevi in popoldnevi."
+        "label": "Prilagodljivo",
+        "description": "Prilagodljiv delovni čas, vključno z dopoldnevi in popoldnevi.",
+        "title": "Prilagodljivo"
       }
     ]
   },

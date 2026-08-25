@@ -114,17 +114,20 @@
       {
         "stat": "Prijaznost",
         "label": "Zelo prijazno osebje",
-        "description": "Naša ekipa poskrbi za prijetno vzdušje in strokovno podporo ob vsakem obisku."
+        "description": "Naša ekipa poskrbi za prijetno vzdušje in strokovno podporo ob vsakem obisku.",
+        "title": "Zelo prijazno osebje"
       },
       {
         "stat": "Čistoča",
         "label": "Urejeni prostori",
-        "description": "Vsi prostori našega studia so čisti, skrbno vzdrževani in prilagojeni vašemu sproščanju."
+        "description": "Vsi prostori našega studia so čisti, skrbno vzdrževani in prilagojeni vašemu sproščanju.",
+        "title": "Urejeni prostori"
       },
       {
         "stat": "Lokacija",
         "label": "Soseska Drska",
-        "description": "Nahajamo se na priročni lokaciji v Novem mestu, kar omogoča hiter in preprost dostop."
+        "description": "Nahajamo se na priročni lokaciji v Novem mestu, kar omogoča hiter in preprost dostop.",
+        "title": "Soseska Drska"
       }
     ]
   },

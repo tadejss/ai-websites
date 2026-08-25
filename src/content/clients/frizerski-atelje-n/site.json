@@ -110,17 +110,20 @@
       {
         "stat": "Strokovnost",
         "label": "Pozornost do želja",
-        "description": "Posvečamo se vašim individualnim željam za popoln končni rezultat."
+        "description": "Posvečamo se vašim individualnim željam za popoln končni rezultat.",
+        "title": "Pozornost do želja"
       },
       {
         "stat": "Sprostitev",
         "label": "Masažni stoli",
-        "description": "Uživajte v prijetnem in sproščujočem okolju med vsakim obiskom."
+        "description": "Uživajte v prijetnem in sproščujočem okolju med vsakim obiskom.",
+        "title": "Masažni stoli"
       },
       {
         "stat": "Kakovost",
         "label": "Vrhunski izdelki",
-        "description": "Za vaše lase uporabljamo le preverjene šampone in profesionalne preparate."
+        "description": "Za vaše lase uporabljamo le preverjene šampone in profesionalne preparate.",
+        "title": "Vrhunski izdelki"
       }
     ]
   },

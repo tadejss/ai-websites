@@ -112,17 +112,20 @@
       {
         "stat": "Visoka",
         "label": "Kakovost izvedbe",
-        "description": "Uporaba preverjenih postopkov za dolgotrajne in estetske površine."
+        "description": "Uporaba preverjenih postopkov za dolgotrajne in estetske površine.",
+        "title": "Kakovost izvedbe"
       },
       {
         "stat": "Natančnost",
-        "label": "In zanesljivost",
-        "description": "Dosledno upoštevanje dogovorov in natančna izvedba detajlov."
+        "label": "Natančnost in zanesljivost",
+        "description": "Dosledno upoštevanje dogovorov in natančna izvedba detajlov.",
+        "title": "Natančnost in zanesljivost"
       },
       {
         "stat": "Strokovno",
-        "label": "Svetovanje",
-        "description": "Pomagamo vam pri izbiri najboljših rešitev za vaš prostor."
+        "label": "Strokovno",
+        "description": "Pomagamo vam pri izbiri najboljših rešitev za vaš prostor.",
+        "title": "Strokovno"
       }
     ]
   },

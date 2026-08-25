@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Celovito",
-        "label": "Za vso družino",
-        "description": "Ponujamo storitve za vse generacije na enem mestu v Krškem."
+        "label": "Celovito za vso družino",
+        "description": "Ponujamo storitve za vse generacije na enem mestu v Krškem.",
+        "title": "Celovito za vso družino"
       },
       {
         "stat": "Prijazno",
         "label": "Strokovno osebje",
-        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri prave pričeske."
+        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri prave pričeske.",
+        "title": "Strokovno osebje"
       },
       {
         "stat": "Osebno",
         "label": "Individualen pristop",
-        "description": "Vsaki stranki se posvetimo posebej, da zagotovimo najboljšo nego las."
+        "description": "Vsaki stranki se posvetimo posebej, da zagotovimo najboljšo nego las.",
+        "title": "Individualen pristop"
       }
     ]
   },

@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Srčna ekipa",
-        "label": "Strokovnost",
-        "description": "Izkušena in srčna ekipa frizerk se posveti vsaki stranki posebej."
+        "label": "Srčna ekipa",
+        "description": "Izkušena in srčna ekipa frizerk se posveti vsaki stranki posebej.",
+        "title": "Srčna ekipa"
       },
       {
         "stat": "Udobje",
         "label": "Masažni stoli",
-        "description": "Prijeten in domač ambient z masažnimi stoli za popolno sprostitev."
+        "description": "Prijeten in domač ambient z masažnimi stoli za popolno sprostitev.",
+        "title": "Masažni stoli"
       },
       {
         "stat": "Tradicija",
         "label": "Zveste stranke",
-        "description": "Dolgoletna tradicija in zaupanje strank, ki se rade vračajo."
+        "description": "Dolgoletna tradicija in zaupanje strank, ki se rade vračajo.",
+        "title": "Zveste stranke"
       }
     ]
   },

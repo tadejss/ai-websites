@@ -122,17 +122,20 @@
       {
         "stat": "Natančnost",
         "label": "Visoka kakovost",
-        "description": "Vsak projekt izpeljemo z maksimalno pozornostjo do detajlov."
+        "description": "Vsak projekt izpeljemo z maksimalno pozornostjo do detajlov.",
+        "title": "Visoka kakovost"
       },
       {
         "stat": "Zanesljivost",
         "label": "Dogovorjeni roki",
-        "description": "Držimo se dogovorov in spoštujemo čas naših strank."
+        "description": "Držimo se dogovorov in spoštujemo čas naših strank.",
+        "title": "Dogovorjeni roki"
       },
       {
         "stat": "Celovitost",
-        "label": "Od A do Ž",
-        "description": "Nudimo celovite storitve od priprave podlage do zaključnih del."
+        "label": "Celovitost od A do Ž",
+        "description": "Nudimo celovite storitve od priprave podlage do zaključnih del.",
+        "title": "Celovitost od A do Ž"
       }
     ]
   },

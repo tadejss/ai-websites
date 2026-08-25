@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Prilagojeno",
-        "label": "Svetovanje",
-        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo njenim željam."
+        "label": "Prilagojeno",
+        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo njenim željam.",
+        "title": "Prilagojeno"
       },
       {
         "stat": "Sproščeno",
-        "label": "Vzdušje",
-        "description": "Prijetno okolje z akvarijem poskrbi za vaš popoln odklop med urejanjem."
+        "label": "Sproščeno",
+        "description": "Prijetno okolje z akvarijem poskrbi za vaš popoln odklop med urejanjem.",
+        "title": "Sproščeno"
       },
       {
         "stat": "Poštene",
-        "label": "Cene",
-        "description": "Dosegljive cene za vrhunsko izvedbo vseh frizerskih storitev."
+        "label": "Poštene",
+        "description": "Dosegljive cene za vrhunsko izvedbo vseh frizerskih storitev.",
+        "title": "Poštene"
       }
     ]
   },

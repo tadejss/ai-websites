@@ -120,17 +120,20 @@
       {
         "stat": "Vrhunsko",
         "label": "Barvanje in striženje",
-        "description": "Uporaba kakovostnih pristopov za popoln videz vaših las."
+        "description": "Uporaba kakovostnih pristopov za popoln videz vaših las.",
+        "title": "Barvanje in striženje"
       },
       {
         "stat": "Sproščitev",
         "label": "Masažni stoli",
-        "description": "Uživajte v udobju in masaži med pranjem las."
+        "description": "Uživajte v udobju in masaži med pranjem las.",
+        "title": "Masažni stoli"
       },
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Prijazna ekipa prisluhne vašim željam in poskrbi za natančnost."
+        "label": "Strokovno",
+        "description": "Prijazna ekipa prisluhne vašim željam in poskrbi za natančnost.",
+        "title": "Strokovno"
       }
     ]
   },

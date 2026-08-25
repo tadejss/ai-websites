@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Natančnost",
-        "label": "in kakovost",
-        "description": "Vsakemu projektu se posvetimo z maksimalno skrbnostjo in natančnostjo."
+        "label": "Natančnost in kakovost",
+        "description": "Vsakemu projektu se posvetimo z maksimalno skrbnostjo in natančnostjo.",
+        "title": "Natančnost in kakovost"
       },
       {
         "stat": "Celovito",
-        "label": "storitev",
-        "description": "Nudimo vse od priprave do končne izvedbe keramičarskih in gradbenih del."
+        "label": "Celovito storitev",
+        "description": "Nudimo vse od priprave do končne izvedbe keramičarskih in gradbenih del.",
+        "title": "Celovito storitev"
       },
       {
         "stat": "Lokalno",
-        "label": "zaupanje",
-        "description": "Zanesljiv lokalni izvajalec za stranke v Postojni in okolici."
+        "label": "Lokalno zaupanje",
+        "description": "Zanesljiv lokalni izvajalec za stranke v Postojni in okolici.",
+        "title": "Lokalno zaupanje"
       }
     ]
   },

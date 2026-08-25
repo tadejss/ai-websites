@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Prijazen",
-        "label": "Pristop",
-        "description": "Vsaki stranki se posvetimo individualno in z razumevanjem njenih želja."
+        "label": "Prijazen",
+        "description": "Vsaki stranki se posvetimo individualno in z razumevanjem njenih želja.",
+        "title": "Prijazen"
       },
       {
         "stat": "Sproščeno",
-        "label": "Okolje",
-        "description": "Domače in prijetno vzdušje poskrbi za vaš popoln odklop med urejanjem."
+        "label": "Sproščeno",
+        "description": "Domače in prijetno vzdušje poskrbi za vaš popoln odklop med urejanjem.",
+        "title": "Sproščeno"
       },
       {
         "stat": "Kakovost",
-        "label": "In nega",
-        "description": "Uporaba kakovostnih pristopov za naravni videz in zdravje vaših las."
+        "label": "Kakovost in nega",
+        "description": "Uporaba kakovostnih pristopov za naravni videz in zdravje vaših las.",
+        "title": "Kakovost in nega"
       }
     ]
   },

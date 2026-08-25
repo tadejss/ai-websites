@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in toplina",
-        "description": "Osebje vas vedno sprejme z nasmehom in poskrbi za sproščeno vzdušje."
+        "label": "Prijaznost in toplina",
+        "description": "Osebje vas vedno sprejme z nasmehom in poskrbi za sproščeno vzdušje.",
+        "title": "Prijaznost in toplina"
       },
       {
         "stat": "Kakovost",
-        "label": "in natančnost",
-        "description": "Skrbno oblikujemo pričeske, ki poudarijo vašo naravno lepoto."
+        "label": "Kakovost in natančnost",
+        "description": "Skrbno oblikujemo pričeske, ki poudarijo vašo naravno lepoto.",
+        "title": "Kakovost in natančnost"
       },
       {
         "stat": "Dostopnost",
-        "label": "za vsakogar",
-        "description": "Ugodne cene in visoko zadovoljstvo naših zvestih strank iz Postojne."
+        "label": "Dostopnost za vsakogar",
+        "description": "Ugodne cene in visoko zadovoljstvo naših zvestih strank iz Postojne.",
+        "title": "Dostopnost za vsakogar"
       }
     ]
   },

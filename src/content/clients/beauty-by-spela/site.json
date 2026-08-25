@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Materiali",
-        "label": "Kakovost",
-        "description": "Uporaba preverjenih in kakovostnih materialov za dolgotrajne rezultate."
+        "label": "Materiali",
+        "description": "Uporaba preverjenih in kakovostnih materialov za dolgotrajne rezultate.",
+        "title": "Materiali"
       },
       {
         "stat": "Ambient",
-        "label": "Sproščujoče",
-        "description": "Prijeten prostor z visoko estetiko za vaše popolno razvajanje."
+        "label": "Ambient",
+        "description": "Prijeten prostor z visoko estetiko za vaše popolno razvajanje.",
+        "title": "Ambient"
       },
       {
         "stat": "Osebje",
-        "label": "Prijaznost",
-        "description": "Strokovna in prijazna obravnava vsake stranke."
+        "label": "Osebje",
+        "description": "Strokovna in prijazna obravnava vsake stranke.",
+        "title": "Osebje"
       }
     ]
   },

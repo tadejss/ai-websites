@@ -108,18 +108,21 @@
     "benefits": [
       {
         "stat": "Zadovoljstvo",
-        "label": "Strank",
-        "description": "Ponosni smo na visoko raven zadovoljstva naših obiskovalcev."
+        "label": "Zadovoljstvo",
+        "description": "Ponosni smo na visoko raven zadovoljstva naših obiskovalcev.",
+        "title": "Zadovoljstvo"
       },
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Prisluhnemo vašim željam in svetujemo najboljšo rešitev."
+        "label": "Osebni",
+        "description": "Prisluhnemo vašim željam in svetujemo najboljšo rešitev.",
+        "title": "Osebni"
       },
       {
         "stat": "Strokovnost",
-        "label": "In svetovanje",
-        "description": "Pomagamo vam izbrati pričesko, ki poudari vašo osebnost."
+        "label": "Strokovnost in svetovanje",
+        "description": "Pomagamo vam izbrati pričesko, ki poudari vašo osebnost.",
+        "title": "Strokovnost in svetovanje"
       }
     ]
   },

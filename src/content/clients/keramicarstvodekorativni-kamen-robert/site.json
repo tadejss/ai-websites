@@ -112,17 +112,20 @@
       {
         "stat": "Natančnost",
         "label": "Kakovost izvedbe",
-        "description": "Vsak projekt izpeljemo z največjo skrbnostjo za popoln končni videz."
+        "description": "Vsak projekt izpeljemo z največjo skrbnostjo za popoln končni videz.",
+        "title": "Kakovost izvedbe"
       },
       {
         "stat": "Odzivnost",
         "label": "Odlična komunikacija",
-        "description": "Zagotavljamo hiter odziv in jasen dogovor v vseh fazah sodelovanja."
+        "description": "Zagotavljamo hiter odziv in jasen dogovor v vseh fazah sodelovanja.",
+        "title": "Odlična komunikacija"
       },
       {
         "stat": "Zanesljivost",
         "label": "Spoštovanje rokov",
-        "description": "Držimo se dogovorjenih časovnih okvirjev in obljub."
+        "description": "Držimo se dogovorjenih časovnih okvirjev in obljub.",
+        "title": "Spoštovanje rokov"
       }
     ]
   },

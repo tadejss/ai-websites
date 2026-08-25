@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Topel",
-        "label": "Sprejem",
-        "description": "V našem salonu vas vedno sprejmemo z nasmehom in v prijetnem vzdušju."
+        "label": "Topel",
+        "description": "V našem salonu vas vedno sprejmemo z nasmehom in v prijetnem vzdušju.",
+        "title": "Topel"
       },
       {
         "stat": "Zanesljivo",
-        "label": "Delo",
-        "description": "Uporabljamo preverjene metode in poskrbimo za kakovostno izvedbo storitev."
+        "label": "Zanesljivo",
+        "description": "Uporabljamo preverjene metode in poskrbimo za kakovostno izvedbo storitev.",
+        "title": "Zanesljivo"
       },
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Prisluhnemo vašim željam in vam svetujemo frizuro, ki vam najbolj ustreza."
+        "label": "Osebni",
+        "description": "Prisluhnemo vašim željam in vam svetujemo frizuro, ki vam najbolj ustreza.",
+        "title": "Osebni"
       }
     ]
   },

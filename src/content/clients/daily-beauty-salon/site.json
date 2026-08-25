@@ -101,17 +101,20 @@
       {
         "stat": "Strokovno",
         "label": "Osebje in pristop",
-        "description": "Prijazno osebje se posveti vsakemu posamezniku z visoko stopnjo strokovnosti."
+        "description": "Prijazno osebje se posveti vsakemu posamezniku z visoko stopnjo strokovnosti.",
+        "title": "Osebje in pristop"
       },
       {
         "stat": "Vrhunsko",
-        "label": "Materiali",
-        "description": "Uporaba kakovostnih materialov zagotavlja dolgo obstojnost in nego brez poškodb."
+        "label": "Vrhunsko",
+        "description": "Uporaba kakovostnih materialov zagotavlja dolgo obstojnost in nego brez poškodb.",
+        "title": "Vrhunsko"
       },
       {
         "stat": "Sproščeno",
-        "label": "Ambient",
-        "description": "Čist in prijeten prostor v Ljubljani nudi popoln oddih med lepotno nego."
+        "label": "Sproščeno",
+        "description": "Čist in prijeten prostor v Ljubljani nudi popoln oddih med lepotno nego.",
+        "title": "Sproščeno"
       }
     ]
   },

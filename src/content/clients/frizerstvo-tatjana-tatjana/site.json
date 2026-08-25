@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in strokovnost",
-        "description": "Nudimo prijetno izkušnjo in strokovno svetovanje pri vsakem obisku."
+        "label": "Prijaznost in strokovnost",
+        "description": "Nudimo prijetno izkušnjo in strokovno svetovanje pri vsakem obisku.",
+        "title": "Prijaznost in strokovnost"
       },
       {
         "stat": "Dostopnost",
-        "label": "cen",
-        "description": "Kakovostne storitve po dostopnih cenah za vso družino."
+        "label": "Dostopnost cen",
+        "description": "Kakovostne storitve po dostopnih cenah za vso družino.",
+        "title": "Dostopnost cen"
       },
       {
         "stat": "Lokalno",
-        "label": "okolje",
-        "description": "Zanesljiv frizerski salon v Novem mestu z okolico."
+        "label": "Lokalno okolje",
+        "description": "Zanesljiv frizerski salon v Novem mestu z okolico.",
+        "title": "Lokalno okolje"
       }
     ]
   },

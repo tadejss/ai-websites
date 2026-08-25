@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Osebno",
-        "label": "Sodelovanje",
-        "description": "Prisluhnemo vašim željam in skupaj poiščemo najboljšo pričesko za vas."
+        "label": "Osebno",
+        "description": "Prisluhnemo vašim željam in skupaj poiščemo najboljšo pričesko za vas.",
+        "title": "Osebno"
       },
       {
         "stat": "Lokalno",
-        "label": "Povezovanje",
-        "description": "Zanesljiv frizerski salon za prebivalce Krškega in širše okolice."
+        "label": "Lokalno",
+        "description": "Zanesljiv frizerski salon za prebivalce Krškega in širše okolice.",
+        "title": "Lokalno"
       },
       {
         "stat": "Celovito",
-        "label": "Urejanje",
-        "description": "Vse storitve od striženja do nege las na enem mestu."
+        "label": "Celovito",
+        "description": "Vse storitve od striženja do nege las na enem mestu.",
+        "title": "Celovito"
       }
     ]
   },

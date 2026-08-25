@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Strokoven",
-        "label": "Pristop",
-        "description": "Vsaki stranki se posvetimo individualno in z veliko mero pozornosti."
+        "label": "Strokoven",
+        "description": "Vsaki stranki se posvetimo individualno in z veliko mero pozornosti.",
+        "title": "Strokoven"
       },
       {
         "stat": "Kakovost",
-        "label": "Storitev",
-        "description": "Uporabljamo preverjene metode za najboljše rezultate."
+        "label": "Kakovost",
+        "description": "Uporabljamo preverjene metode za najboljše rezultate.",
+        "title": "Kakovost"
       },
       {
         "stat": "Sproščeno",
-        "label": "Okolje",
-        "description": "Prijeten ambient v Novem mestu za popoln oddih od vsakdana."
+        "label": "Sproščeno",
+        "description": "Prijeten ambient v Novem mestu za popoln oddih od vsakdana.",
+        "title": "Sproščeno"
       }
     ]
   },

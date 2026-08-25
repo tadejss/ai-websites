@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Vrhunska",
-        "label": "Kakovost",
-        "description": "Zavezanost k odličnim rezultatom in zadovoljstvu strank."
+        "label": "Vrhunska",
+        "description": "Zavezanost k odličnim rezultatom in zadovoljstvu strank.",
+        "title": "Vrhunska"
       },
       {
         "stat": "Natančna",
-        "label": "Izvedba",
-        "description": "Skrb za vsak detajl pri polaganju stenske in talne keramike."
+        "label": "Natančna",
+        "description": "Skrb za vsak detajl pri polaganju stenske in talne keramike.",
+        "title": "Natančna"
       },
       {
         "stat": "Celovite",
-        "label": "Storitve",
-        "description": "Od priprave podlage do končne obdelave teras, kopalnic in prostorov."
+        "label": "Celovite",
+        "description": "Od priprave podlage do končne obdelave teras, kopalnic in prostorov.",
+        "title": "Celovite"
       }
     ]
   },

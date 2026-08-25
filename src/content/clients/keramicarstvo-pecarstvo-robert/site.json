@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Zanesljivost",
-        "label": "in kakovost",
-        "description": "Dela izvedemo natančno, strokovno in v dogovorjenih rokih."
+        "label": "Zanesljivost in kakovost",
+        "description": "Dela izvedemo natančno, strokovno in v dogovorjenih rokih.",
+        "title": "Zanesljivost in kakovost"
       },
       {
         "stat": "Izkušnje",
-        "label": "in znanje",
-        "description": "Dolgoletne izkušnje na področju keramičarstva in pečarstva zagotavljajo brezhiben končni izdelek."
+        "label": "Izkušnje in znanje",
+        "description": "Dolgoletne izkušnje na področju keramičarstva in pečarstva zagotavljajo brezhiben končni izdelek.",
+        "title": "Izkušnje in znanje"
       },
       {
         "stat": "Svetovanje",
-        "label": "strankam",
-        "description": "Prisluhnemo vašim željam in vam strokovno svetujemo pri izbiri materialov."
+        "label": "Svetovanje strankam",
+        "description": "Prisluhnemo vašim željam in vam strokovno svetujemo pri izbiri materialov.",
+        "title": "Svetovanje strankam"
       }
     ]
   },

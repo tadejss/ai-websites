@@ -115,17 +115,20 @@
       {
         "stat": "Strokovno",
         "label": "Prilagojeni tretmaji",
-        "description": "Vsaki stranki se posvetimo individulano in prilagodimo nego njenih potreb."
+        "description": "Vsaki stranki se posvetimo individulano in prilagodimo nego njenih potreb.",
+        "title": "Prilagojeni tretmaji"
       },
       {
         "stat": "Ambient",
         "label": "Urejen in prijeten prostor",
-        "description": "Uživajte v sproščenem vzdušju našega lepotnega studia v Novem mestu."
+        "description": "Uživajte v sproščenem vzdušju našega lepotnega studia v Novem mestu.",
+        "title": "Urejen in prijeten prostor"
       },
       {
         "stat": "Natančnost",
         "label": "Vidni rezultati",
-        "description": "Skrbna in natančna izvedba storitev za vaš najboljši videz."
+        "description": "Skrbna in natančna izvedba storitev za vaš najboljši videz.",
+        "title": "Vidni rezultati"
       }
     ]
   },

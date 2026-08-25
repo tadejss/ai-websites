@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Osebno",
-        "label": "Srečanje",
-        "description": "Posvetimo se vašim željam in poskrbimo za individualno obravnavo."
+        "label": "Osebno",
+        "description": "Posvetimo se vašim željam in poskrbimo za individualno obravnavo.",
+        "title": "Osebno"
       },
       {
         "stat": "Prilagodljivo",
-        "label": "Termini",
-        "description": "Dopoldanski in popoldanski termini za lažje usklajevanje vašega urnika."
+        "label": "Prilagodljivo",
+        "description": "Dopoldanski in popoldanski termini za lažje usklajevanje vašega urnika.",
+        "title": "Prilagodljivo"
       },
       {
         "stat": "Urejeno",
-        "label": "Okolje",
-        "description": "Sodoben in prijeten ambient za vaše popolno sproščanje med nego las."
+        "label": "Urejeno",
+        "description": "Sodoben in prijeten ambient za vaše popolno sproščanje med nego las.",
+        "title": "Urejeno"
       }
     ]
   },

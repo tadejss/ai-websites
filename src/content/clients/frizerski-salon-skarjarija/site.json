@@ -105,18 +105,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Svetovanje",
-        "description": "Prijazno osebje vam pomaga izbrati najboljšo nego in pričesko."
+        "label": "Strokovno",
+        "description": "Prijazno osebje vam pomaga izbrati najboljšo nego in pričesko.",
+        "title": "Strokovno"
       },
       {
         "stat": "Naravno",
-        "label": "In varno",
-        "description": "Uporabljamo izdelke z manj škodljivimi sestavinami ter naravno kozmetiko."
+        "label": "Naravno in varno",
+        "description": "Uporabljamo izdelke z manj škodljivimi sestavinami ter naravno kozmetiko.",
+        "title": "Naravno in varno"
       },
       {
         "stat": "Sproščeno",
-        "label": "Vzdušje",
-        "description": "Uživajte v trenutkih zase ob kavi in sproščujoči masaži lasišča."
+        "label": "Sproščeno",
+        "description": "Uživajte v trenutkih zase ob kavi in sproščujoči masaži lasišča.",
+        "title": "Sproščeno"
       }
     ]
   },

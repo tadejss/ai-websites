@@ -120,17 +120,20 @@
       {
         "stat": "Prijaznost",
         "label": "Osebni pristop",
-        "description": "Izjemno prijazno osebje poskrbi, da se v salonu vedno počutite dobrodošle."
+        "description": "Izjemno prijazno osebje poskrbi, da se v salonu vedno počutite dobrodošle.",
+        "title": "Osebni pristop"
       },
       {
         "stat": "Ambient",
         "label": "Prijeten prostor",
-        "description": "Lepo urejen in topel ambient nudi popolno sprostitev med urejanjem pričeske."
+        "description": "Lepo urejen in topel ambient nudi popolno sprostitev med urejanjem pričeske.",
+        "title": "Prijeten prostor"
       },
       {
         "stat": "Kakovost",
         "label": "Dostopne cene",
-        "description": "Visoka kakovost striženja in storitev po dostopnih in primernih cenah."
+        "description": "Visoka kakovost striženja in storitev po dostopnih in primernih cenah.",
+        "title": "Dostopne cene"
       }
     ]
   },

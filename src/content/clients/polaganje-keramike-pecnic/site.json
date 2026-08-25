@@ -112,17 +112,20 @@
       {
         "stat": "Kakovost",
         "label": "Visoka raven izvedbe",
-        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti."
+        "description": "Vsakemu projektu se posvetimo z največjo mero natančnosti.",
+        "title": "Visoka raven izvedbe"
       },
       {
         "stat": "Izkušnje",
         "label": "Strokovno znanje",
-        "description": "Zanesljivo obvladujemo polaganje keramike, pečnic in kamna."
+        "description": "Zanesljivo obvladujemo polaganje keramike, pečnic in kamna.",
+        "title": "Strokovno znanje"
       },
       {
         "stat": "Lokalno",
         "label": "Črnomelj in okolica",
-        "description": "Hitro odzivni in zanesljivi na vašem območju."
+        "description": "Hitro odzivni in zanesljivi na vašem območju.",
+        "title": "Črnomelj in okolica"
       }
     ]
   },

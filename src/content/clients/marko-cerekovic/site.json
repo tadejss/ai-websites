@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "24/7",
-        "label": "Dosegljivost",
-        "description": "Na voljo smo vam vsak dan v letu, ob vsaki uri."
+        "label": "24/7 Dosegljivost",
+        "description": "Na voljo smo vam vsak dan v letu, ob vsaki uri.",
+        "title": "24/7 Dosegljivost"
       },
       {
         "stat": "Hitro",
-        "label": "Posredovanje",
-        "description": "Hitra odzivnost na nujne primere in okvare na terenu."
+        "label": "Hitro",
+        "description": "Hitra odzivnost na nujne primere in okvare na terenu.",
+        "title": "Hitro"
       },
       {
         "stat": "Strokovno",
-        "label": "Delo",
-        "description": "Zanesljiva in varna izvedba vseh električnih del."
+        "label": "Strokovno",
+        "description": "Zanesljiva in varna izvedba vseh električnih del.",
+        "title": "Strokovno"
       }
     ]
   },

@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in strokovnost",
-        "description": "Posvečeni smo vašemu dobremu počutju in vrhunskemu končnemu rezultatu."
+        "label": "Prijaznost in strokovnost",
+        "description": "Posvečeni smo vašemu dobremu počutju in vrhunskemu končnemu rezultatu.",
+        "title": "Prijaznost in strokovnost"
       },
       {
         "stat": "Kakovost",
-        "label": "nege",
-        "description": "Uporabljamo preverjene pristope za nego in striženje vaših las."
+        "label": "Kakovost nege",
+        "description": "Uporabljamo preverjene pristope za nego in striženje vaših las.",
+        "title": "Kakovost nege"
       },
       {
         "stat": "Lokacija",
-        "label": "v mestu",
-        "description": "Enostaven dostop na Belokranjski cesti v Novem mestu."
+        "label": "Lokacija v mestu",
+        "description": "Enostaven dostop na Belokranjski cesti v Novem mestu.",
+        "title": "Lokacija v mestu"
       }
     ]
   },

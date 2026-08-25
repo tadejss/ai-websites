@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Zanesljive in profesionalne frizerske storitve za vsako stranko."
+        "label": "Strokovno",
+        "description": "Zanesljive in profesionalne frizerske storitve za vsako stranko.",
+        "title": "Strokovno"
       },
       {
         "stat": "Prijetno",
-        "label": "Vzdušje",
-        "description": "Domače okolje, kjer si lahko vzamete trenutek zase."
+        "label": "Prijetno",
+        "description": "Domače okolje, kjer si lahko vzamete trenutek zase.",
+        "title": "Prijetno"
       },
       {
         "stat": "Urejen",
-        "label": "Videz",
-        "description": "Prilagojena nega in striženje za ljudi vseh starosti."
+        "label": "Urejen",
+        "description": "Prilagojena nega in striženje za ljudi vseh starosti.",
+        "title": "Urejen"
       }
     ]
   },

@@ -116,18 +116,21 @@
     "benefits": [
       {
         "stat": "Strokovno",
-        "label": "Znanje",
-        "description": "Natančna in strokovna izvedba vseh elektro storitev."
+        "label": "Strokovno",
+        "description": "Natančna in strokovna izvedba vseh elektro storitev.",
+        "title": "Strokovno"
       },
       {
         "stat": "Zanesljivo",
-        "label": "Delovanje",
-        "description": "Zanesljive servisne storitve in vzdrževanje."
+        "label": "Zanesljivo",
+        "description": "Zanesljive servisne storitve in vzdrževanje.",
+        "title": "Zanesljivo"
       },
       {
         "stat": "Celovito",
-        "label": "Na enem mestu",
-        "description": "Ponudba storitev in elektro trgovine za vsak objekt."
+        "label": "Celovito na enem mestu",
+        "description": "Ponudba storitev in elektro trgovine za vsak objekt.",
+        "title": "Celovito na enem mestu"
       }
     ]
   },

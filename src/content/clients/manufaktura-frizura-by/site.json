@@ -100,18 +100,21 @@
     "benefits": [
       {
         "stat": "Prijazno",
-        "label": "Prilagodljivost",
-        "description": "Izjemno prijazna in prilagodljiva obravnava vsake stranke."
+        "label": "Prijazno",
+        "description": "Izjemno prijazna in prilagodljiva obravnava vsake stranke.",
+        "title": "Prijazno"
       },
       {
         "stat": "Strokovno",
         "label": "Umetniški pristop",
-        "description": "Združujemo strokovnost, kreativnost in umetniški navdih."
+        "description": "Združujemo strokovnost, kreativnost in umetniški navdih.",
+        "title": "Umetniški pristop"
       },
       {
         "stat": "Pošteno",
         "label": "Oblikovanje cen",
-        "description": "Prilagojene storitve in pošteno oblikovanje cen."
+        "description": "Prilagojene storitve in pošteno oblikovanje cen.",
+        "title": "Oblikovanje cen"
       }
     ]
   },

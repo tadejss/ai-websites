@@ -122,17 +122,20 @@
       {
         "stat": "Zanesljivost",
         "label": "Natančna izvedba",
-        "description": "Delo opravimo dosledno, skrbno in v dogovorjenih rokih."
+        "description": "Delo opravimo dosledno, skrbno in v dogovorjenih rokih.",
+        "title": "Natančna izvedba"
       },
       {
         "stat": "Svetovanje",
         "label": "Izbira materialov",
-        "description": "Pomagamo vam izbrati najboljše materiale za vaš prostor in proračun."
+        "description": "Pomagamo vam izbrati najboljše materiale za vaš prostor in proračun.",
+        "title": "Izbira materialov"
       },
       {
         "stat": "Kakovost",
         "label": "Zadovoljstvo strank",
-        "description": "Poskrbimo za visoko raven končne izvedbe, s katero boste dolgoročno zadovoljni."
+        "description": "Poskrbimo za visoko raven končne izvedbe, s katero boste dolgoročno zadovoljni.",
+        "title": "Zadovoljstvo strank"
       }
     ]
   },

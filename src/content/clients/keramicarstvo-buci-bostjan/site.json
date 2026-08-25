@@ -122,17 +122,20 @@
       {
         "stat": "Kakovost",
         "label": "Izvedba del",
-        "description": "Vsakemu projektu se posvetimo z maksimalno skrbnostjo in pozornostjo do detajlov."
+        "description": "Vsakemu projektu se posvetimo z maksimalno skrbnostjo in pozornostjo do detajlov.",
+        "title": "Izvedba del"
       },
       {
         "stat": "Natančnost",
         "label": "Zanesljiv mojster",
-        "description": "Dosledno upoštevamo dogovore in poskrbimo za brezhiben končni videz."
+        "description": "Dosledno upoštevamo dogovore in poskrbimo za brezhiben končni videz.",
+        "title": "Zanesljiv mojster"
       },
       {
         "stat": "Strokovnost",
         "label": "Pristop k delu",
-        "description": "Uporaba preverjenih postopkov za trajne in estetske rezultate."
+        "description": "Uporaba preverjenih postopkov za trajne in estetske rezultate.",
+        "title": "Pristop k delu"
       }
     ]
   },

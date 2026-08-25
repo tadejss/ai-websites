@@ -122,17 +122,20 @@
       {
         "stat": "Zanesljivost",
         "label": "Natančna izvedba",
-        "description": "Vsakemu projektu se posvetimo z enako skrbnostjo in natančnostjo."
+        "description": "Vsakemu projektu se posvetimo z enako skrbnostjo in natančnostjo.",
+        "title": "Natančna izvedba"
       },
       {
         "stat": "Celovitost",
         "label": "Vse na enem mestu",
-        "description": "Nudimo širok nabor storitev od pleskanja do manjših prenov."
+        "description": "Nudimo širok nabor storitev od pleskanja do manjših prenov.",
+        "title": "Vse na enem mestu"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Strokovni svetovalec",
-        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo rešitev."
+        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo rešitev.",
+        "title": "Strokovni svetovalec"
       }
     ]
   },

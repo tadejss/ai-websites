@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Celovito",
-        "label": "Za vso družino",
-        "description": "Nudimo frizerske storitve za vse generacije na enem mestu."
+        "label": "Celovito za vso družino",
+        "description": "Nudimo frizerske storitve za vse generacije na enem mestu.",
+        "title": "Celovito za vso družino"
       },
       {
         "stat": "Prilagojeno",
         "label": "Vašim željam",
-        "description": "Prisluhnemo vašim željam in poskrbimo za videz, ki vam ustreza."
+        "description": "Prisluhnemo vašim željam in poskrbimo za videz, ki vam ustreza.",
+        "title": "Vašim željam"
       },
       {
         "stat": "Ambient",
         "label": "Prijetno okolje",
-        "description": "Obiščite nas na Novem trgu in si privoščite trenutek zase."
+        "description": "Obiščite nas na Novem trgu in si privoščite trenutek zase.",
+        "title": "Prijetno okolje"
       }
     ]
   },

@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "in prijaznost",
-        "description": "Naše osebje se posveča vsaki stranki z veliko mero strokovnosti in topline."
+        "label": "Strokovnost in prijaznost",
+        "description": "Naše osebje se posveča vsaki stranki z veliko mero strokovnosti in topline.",
+        "title": "Strokovnost in prijaznost"
       },
       {
         "stat": "Vrhunsko",
-        "label": "zaupanje",
-        "description": "Ponašamo se z odličnimi ocenami naših strank in predanostjo kakovosti."
+        "label": "Vrhunsko zaupanje",
+        "description": "Ponašamo se z odličnimi ocenami naših strank in predanostjo kakovosti.",
+        "title": "Vrhunsko zaupanje"
       },
       {
         "stat": "Udobje",
-        "label": "in sprostitev",
-        "description": "Obiščite nas v prijetnem okolju v Postojni in si privoščite trenutek zase."
+        "label": "Udobje in sprostitev",
+        "description": "Obiščite nas v prijetnem okolju v Postojni in si privoščite trenutek zase.",
+        "title": "Udobje in sprostitev"
       }
     ]
   },

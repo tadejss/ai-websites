@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "Do otrok",
-        "description": "Potrpežljiv pristop, ki otrokom olajša striženje."
+        "label": "Prijaznost do otrok",
+        "description": "Potrpežljiv pristop, ki otrokom olajša striženje.",
+        "title": "Prijaznost do otrok"
       },
       {
         "stat": "Kakovost",
-        "label": "In hitrost",
-        "description": "Vrhunska izvedba in hiter preobrat vašega videza."
+        "label": "Kakovost in hitrost",
+        "description": "Vrhunska izvedba in hiter preobrat vašega videza.",
+        "title": "Kakovost in hitrost"
       },
       {
         "stat": "Odnosi",
         "label": "Topel pristop",
-        "description": "Strokovno in prijetno vzdušje za vsak obisk."
+        "description": "Strokovno in prijetno vzdušje za vsak obisk.",
+        "title": "Topel pristop"
       }
     ]
   },

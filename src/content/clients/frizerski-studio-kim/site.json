@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "Do otrok",
-        "description": "Posebej potrpežljiv pristop, da je striženje za najmlajše prijetna izkušnja."
+        "label": "Prijaznost do otrok",
+        "description": "Posebej potrpežljiv pristop, da je striženje za najmlajše prijetna izkušnja.",
+        "title": "Prijaznost do otrok"
       },
       {
         "stat": "Ambient",
-        "label": "Udobje",
-        "description": "Prijeten in domač prostor, kjer se boste sprostili med urejanjem pričeske."
+        "label": "Ambient",
+        "description": "Prijeten in domač prostor, kjer se boste sprostili med urejanjem pričeske.",
+        "title": "Ambient"
       },
       {
         "stat": "Dostopnost",
         "label": "Prijazne cene",
-        "description": "Kakovostne storitve po dostopnih cenah za vso družino."
+        "description": "Kakovostne storitve po dostopnih cenah za vso družino.",
+        "title": "Prijazne cene"
       }
     ]
   },

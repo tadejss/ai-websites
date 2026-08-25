@@ -114,17 +114,20 @@
       {
         "stat": "Strokovnost",
         "label": "Profesionalni pristop",
-        "description": "Vrhunska strokovnost in natančnost pri vsakem striženju."
+        "description": "Vrhunska strokovnost in natančnost pri vsakem striženju.",
+        "title": "Profesionalni pristop"
       },
       {
         "stat": "Domače",
         "label": "Prijetno vzdušje",
-        "description": "Udoben in prijeten ambient za popolno sprostitev med urejanjem."
+        "description": "Udoben in prijeten ambient za popolno sprostitev med urejanjem.",
+        "title": "Prijetno vzdušje"
       },
       {
         "stat": "Osebno",
         "label": "Posvečeni vam",
-        "description": "Prijazen in oseben odnos, prilagojen vašim željam."
+        "description": "Prijazen in oseben odnos, prilagojen vašim željam.",
+        "title": "Posvečeni vam"
       }
     ]
   },

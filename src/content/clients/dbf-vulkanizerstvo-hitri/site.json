@@ -122,17 +122,20 @@
       {
         "stat": "Strokovnost",
         "label": "Kakovostna izvedba",
-        "description": "Naloge opravimo natančno in strokovno, da je vaše vozilo vedno v najboljšem stanju."
+        "description": "Naloge opravimo natančno in strokovno, da je vaše vozilo vedno v najboljšem stanju.",
+        "title": "Kakovostna izvedba"
       },
       {
         "stat": "Hitrost",
         "label": "Učinkovit servis",
-        "description": "Cenimo vaš čas, zato storitve izvedemo hitro in brez nepotrebnih čakalnih vrst."
+        "description": "Cenimo vaš čas, zato storitve izvedemo hitro in brez nepotrebnih čakalnih vrst.",
+        "title": "Učinkovit servis"
       },
       {
         "stat": "Zaupanje",
         "label": "Zadovoljne stranke",
-        "description": "Gradimo na dolgoročnih odnosih in visokem zadovoljstvu voznikov v regiji."
+        "description": "Gradimo na dolgoročnih odnosih in visokem zadovoljstvu voznikov v regiji.",
+        "title": "Zadovoljne stranke"
       }
     ]
   },

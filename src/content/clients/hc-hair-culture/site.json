@@ -96,18 +96,21 @@
     "benefits": [
       {
         "stat": "100%",
-        "label": "Posluh za želje",
-        "description": "Prijazno in strokovno osebje, ki prisluhne vašim željam in svetuje najboljšo rešitev."
+        "label": "100% Posluh za želje",
+        "description": "Prijazno in strokovno osebje, ki prisluhne vašim željam in svetuje najboljšo rešitev.",
+        "title": "100% Posluh za želje"
       },
       {
         "stat": "Top",
-        "label": "Lokacija",
-        "description": "Priročna lokacija v samem središču mesta omogoča enostaven dostop za vse stranke."
+        "label": "Top",
+        "description": "Priročna lokacija v samem središču mesta omogoča enostaven dostop za vse stranke.",
+        "title": "Top"
       },
       {
         "stat": "Pro",
-        "label": "Kakovost",
-        "description": "Vrhunska korekcija barve in nega las za zdrav, sijoč in negovan videz."
+        "label": "Pro",
+        "description": "Vrhunska korekcija barve in nega las za zdrav, sijoč in negovan videz.",
+        "title": "Pro"
       }
     ]
   },

@@ -122,18 +122,21 @@
     "benefits": [
       {
         "stat": "Zanesljivost",
-        "label": "in točnost",
-        "description": "Držimo se dogovorjenih rokov in poskrbimo za urejeno delo."
+        "label": "Zanesljivost in točnost",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za urejeno delo.",
+        "title": "Zanesljivost in točnost"
       },
       {
         "stat": "Strokovnost",
-        "label": "in natančnost",
-        "description": "Visoka raven natančnosti pri vsakem položenem kosu keramike."
+        "label": "Strokovnost in natančnost",
+        "description": "Visoka raven natančnosti pri vsakem položenem kosu keramike.",
+        "title": "Strokovnost in natančnost"
       },
       {
         "stat": "Dostopnost",
-        "label": "in poštenost",
-        "description": "Ponujamo dostopne cene storitev brez skritih stroškov."
+        "label": "Dostopnost in poštenost",
+        "description": "Ponujamo dostopne cene storitev brez skritih stroškov.",
+        "title": "Dostopnost in poštenost"
       }
     ]
   },

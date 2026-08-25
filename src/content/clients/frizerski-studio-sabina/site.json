@@ -108,18 +108,21 @@
     "benefits": [
       {
         "stat": "Zadovoljne",
-        "label": "Stranke",
-        "description": "Ponosni smo na odlične ocene in zaupanje, ki nam ga namenjajo naše stranke."
+        "label": "Zadovoljne",
+        "description": "Ponosni smo na odlične ocene in zaupanje, ki nam ga namenjajo naše stranke.",
+        "title": "Zadovoljne"
       },
       {
         "stat": "Strokovno",
-        "label": "Osebje",
-        "description": "Prijazna in strokovna obravnava za najboljše rezultate vašega videza."
+        "label": "Strokovno",
+        "description": "Prijazna in strokovna obravnava za najboljše rezultate vašega videza.",
+        "title": "Strokovno"
       },
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Prisluhnemo vašim željam in vam svetujemo stil, ki vam resnično pristoji."
+        "label": "Osebni",
+        "description": "Prisluhnemo vašim željam in vam svetujemo stil, ki vam resnično pristoji.",
+        "title": "Osebni"
       }
     ]
   },

@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "In strokovnost",
-        "description": "Topel sprejem in strokovna izvedba vseh frizerskih storitev."
+        "label": "Prijaznost in strokovnost",
+        "description": "Topel sprejem in strokovna izvedba vseh frizerskih storitev.",
+        "title": "Prijaznost in strokovnost"
       },
       {
         "stat": "Prilagodljivost",
-        "label": "Urniku",
-        "description": "Najdemo termin, ki ustreza vašemu ritmu življenja."
+        "label": "Prilagodljivost",
+        "description": "Najdemo termin, ki ustreza vašemu ritmu življenja.",
+        "title": "Prilagodljivost"
       },
       {
         "stat": "Svetovanje",
-        "label": "Za lase",
-        "description": "Individualni pristop in nasveti za nego vaših las."
+        "label": "Svetovanje za lase",
+        "description": "Individualni pristop in nasveti za nego vaših las.",
+        "title": "Svetovanje za lase"
       }
     ]
   },

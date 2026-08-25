@@ -112,17 +112,20 @@
       {
         "stat": "Natančnost",
         "label": "Kvalitetna izvedba",
-        "description": "Vsak projekt izvedemo skrbno in z mislijo na dolgotrajne rezultate."
+        "description": "Vsak projekt izvedemo skrbno in z mislijo na dolgotrajne rezultate.",
+        "title": "Kvalitetna izvedba"
       },
       {
         "stat": "Celovitost",
         "label": "Vse na enem mestu",
-        "description": "Nudimo celovite storitve prenove kopalnic in polaganje keramike."
+        "description": "Nudimo celovite storitve prenove kopalnic in polaganje keramike.",
+        "title": "Vse na enem mestu"
       },
       {
         "stat": "Zanesljivost",
         "label": "Strokoven pristop",
-        "description": "Držimo se dogovorov in zagotavljamo strokovno izvedbo del."
+        "description": "Držimo se dogovorov in zagotavljamo strokovno izvedbo del.",
+        "title": "Strokoven pristop"
       }
     ]
   },

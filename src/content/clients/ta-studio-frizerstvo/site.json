@@ -109,17 +109,20 @@
       {
         "stat": "Izkušnje",
         "label": "Dolgoletna tradicija",
-        "description": "Večdesetletne izkušnje zagotavljajo zanesljivost in visoko kakovost storitev."
+        "description": "Večdesetletne izkušnje zagotavljajo zanesljivost in visoko kakovost storitev.",
+        "title": "Dolgoletna tradicija"
       },
       {
         "stat": "Ambient",
         "label": "Domače vzdušje",
-        "description": "Prijeten in domač salon, kjer je vsaka stranka deležna osebne pozornosti."
+        "description": "Prijeten in domač salon, kjer je vsaka stranka deležna osebne pozornosti.",
+        "title": "Domače vzdušje"
       },
       {
         "stat": "Pristop",
         "label": "Topla obravnava",
-        "description": "Prijazen in ustrežljiv pristop za sproščeno izkušnjo ob vsakem obisku."
+        "description": "Prijazen in ustrežljiv pristop za sproščeno izkušnjo ob vsakem obisku.",
+        "title": "Topla obravnava"
       }
     ]
   },

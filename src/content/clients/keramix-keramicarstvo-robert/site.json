@@ -123,17 +123,20 @@
       {
         "stat": "Natančnost",
         "label": "Kakovostna izvedba",
-        "description": "Skrbno in natančno polaganje ploščic za popoln končni videz."
+        "description": "Skrbno in natančno polaganje ploščic za popoln končni videz.",
+        "title": "Kakovostna izvedba"
       },
       {
         "stat": "Zanesljivost",
         "label": "Spoštovanje rokov",
-        "description": "Držimo se dogovorjenih časovnih okvirov in obljub."
+        "description": "Držimo se dogovorjenih časovnih okvirov in obljub.",
+        "title": "Spoštovanje rokov"
       },
       {
         "stat": "Svetovanje",
         "label": "Izbira materialov",
-        "description": "Pomagamo vam izbrati ustrezne materiale za vaš prostor in želje."
+        "description": "Pomagamo vam izbrati ustrezne materiale za vaš prostor in želje.",
+        "title": "Izbira materialov"
       }
     ]
   },

@@ -34,9 +34,18 @@
   },
   "nav": {
     "links": [
-      { "href": "#storitve", "label": "Storitve" },
-      { "href": "#zakaj-mi", "label": "Zakaj mi" },
-      { "href": "#kontakt", "label": "Kontakt" }
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
     ],
     "cta": "Pridobi ponudbo"
   },
@@ -49,10 +58,22 @@
     "secondaryCta": "Preglej storitve",
     "secondaryCtaHref": "#storitve",
     "stats": [
-      { "value": "12+", "label": "Let izkušenj" },
-      { "value": "Ljubljana", "label": "Z okolico" },
-      { "value": "Natančno", "label": "Polaganje" },
-      { "value": "Jasni", "label": "Dogovori" }
+      {
+        "value": "12+",
+        "label": "Let izkušenj"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Natančno",
+        "label": "Polaganje"
+      },
+      {
+        "value": "Jasni",
+        "label": "Dogovori"
+      }
     ]
   },
   "services": {
@@ -92,18 +113,21 @@
     "benefits": [
       {
         "stat": "01",
-        "label": "Natančnost",
-        "description": "Ravne linije, enakomerne furge in čisti zaključki."
+        "label": "01 Natančnost",
+        "description": "Ravne linije, enakomerne furge in čisti zaključki.",
+        "title": "01 Natančnost"
       },
       {
         "stat": "02",
-        "label": "Dogovori",
-        "description": "Roki, obseg del in cena so usklajeni pred začetkom."
+        "label": "02 Dogovori",
+        "description": "Roki, obseg del in cena so usklajeni pred začetkom.",
+        "title": "02 Dogovori"
       },
       {
         "stat": "03",
-        "label": "Red",
-        "description": "Objekt ostane urejen; po koncu pospravimo za sabo."
+        "label": "03 Red",
+        "description": "Objekt ostane urejen; po koncu pospravimo za sabo.",
+        "title": "03 Red"
       }
     ]
   },
@@ -158,10 +182,19 @@
     "lastUpdated": "2026-08-23",
     "contactForm": {
       "enabled": true,
-      "fields": ["name", "phone", "message"]
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
     },
-    "analytics": { "enabled": false, "provider": null },
-    "marketing": { "enabled": false },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
     "booking": {
       "enabled": false,
       "type": "external_link",
@@ -169,7 +202,12 @@
       "url": "",
       "privacyUrl": ""
     },
-    "thirdPartyEmbeds": { "googleMaps": false, "youtube": false },
-    "cookies": { "nonEssential": false }
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

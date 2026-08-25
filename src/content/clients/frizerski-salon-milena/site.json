@@ -104,18 +104,21 @@
     "benefits": [
       {
         "stat": "Prijazno",
-        "label": "Osebje",
-        "description": "Izkušeni in prijazni frizerji poskrbijo za vaše dobro počutje."
+        "label": "Prijazno",
+        "description": "Izkušeni in prijazni frizerji poskrbijo za vaše dobro počutje.",
+        "title": "Prijazno"
       },
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Prisluhnemo vašim željam in se posvetimo vsaki stranki posebej."
+        "label": "Osebni",
+        "description": "Prisluhnemo vašim željam in se posvetimo vsaki stranki posebej.",
+        "title": "Osebni"
       },
       {
         "stat": "Enostavno",
-        "label": "Naročanje",
-        "description": "Hitro in preprosto naročanje preko telefona."
+        "label": "Enostavno",
+        "description": "Hitro in preprosto naročanje preko telefona.",
+        "title": "Enostavno"
       }
     ]
   },

@@ -123,17 +123,20 @@
       {
         "stat": "Natančnost",
         "label": "Brezkompromisna izvedba",
-        "description": "Vsak kotiček in detajl je obdelan z največjo skrbnostjo za popoln končni videz."
+        "description": "Vsak kotiček in detajl je obdelan z največjo skrbnostjo za popoln končni videz.",
+        "title": "Brezkompromisna izvedba"
       },
       {
         "stat": "Zanesljivost",
         "label": "Spoštovani dogovori",
-        "description": "Dosledno se držimo časovnih rokov in se prilagajamo vašim potrebam na terenu."
+        "description": "Dosledno se držimo časovnih rokov in se prilagajamo vašim potrebam na terenu.",
+        "title": "Spoštovani dogovori"
       },
       {
         "stat": "Urejost",
         "label": "Čisto delovno okolje",
-        "description": "Po zaključku dela za seboj pustimo čisto in urejeno delovno okolje."
+        "description": "Po zaključku dela za seboj pustimo čisto in urejeno delovno okolje.",
+        "title": "Čisto delovno okolje"
       }
     ]
   },

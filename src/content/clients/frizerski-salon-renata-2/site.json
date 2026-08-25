@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Topel",
-        "label": "Ambient",
-        "description": "Sproščeno okolje, kjer se boste počutili udobno ob vsakem obisku."
+        "label": "Topel",
+        "description": "Sproščeno okolje, kjer se boste počutili udobno ob vsakem obisku.",
+        "title": "Topel"
       },
       {
         "stat": "Dostopno",
-        "label": "Cene",
-        "description": "Kakovostne storitve, ki so dostopne vsakemu."
+        "label": "Dostopno",
+        "description": "Kakovostne storitve, ki so dostopne vsakemu.",
+        "title": "Dostopno"
       },
       {
         "stat": "Udobje",
-        "label": "Parkiranje",
-        "description": "Brezplačno parkiranje v spodnji garaži za brezskrben prihod."
+        "label": "Udobje",
+        "description": "Brezplačno parkiranje v spodnji garaži za brezskrben prihod.",
+        "title": "Udobje"
       }
     ]
   },

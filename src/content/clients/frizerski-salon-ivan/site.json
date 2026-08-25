@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Lokalno",
-        "label": "Zaupanje",
-        "description": "Prizadevamo si za dolgoročne odnose z našimi sosedi in obiskovalci."
+        "label": "Lokalno",
+        "description": "Prizadevamo si za dolgoročne odnose z našimi sosedi in obiskovalci.",
+        "title": "Lokalno"
       },
       {
         "stat": "Prilagodljivo",
-        "label": "Delovnik",
-        "description": "Delovni čas prilagajamo tako, da lažje najdete termin zase."
+        "label": "Prilagodljivo",
+        "description": "Delovni čas prilagajamo tako, da lažje najdete termin zase.",
+        "title": "Prilagodljivo"
       },
       {
         "stat": "Osebno",
-        "label": "Obremenitev",
-        "description": "Individualna obravnava in prijetno vzdušje v salonu."
+        "label": "Osebno",
+        "description": "Individualna obravnava in prijetno vzdušje v salonu.",
+        "title": "Osebno"
       }
     ]
   },

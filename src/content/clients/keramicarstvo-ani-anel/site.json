@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Cena",
-        "label": "Razmerje",
-        "description": "Zagotavljamo odlično razmerje med ceno in kakovostjo opravljenih storitev."
+        "label": "Cena",
+        "description": "Zagotavljamo odlično razmerje med ceno in kakovostjo opravljenih storitev.",
+        "title": "Cena"
       },
       {
         "stat": "Strokovno",
-        "label": "Izvedba",
-        "description": "Zanesljiva in strokovna izvedba keramičarskih del od začetka do konca."
+        "label": "Strokovno",
+        "description": "Zanesljiva in strokovna izvedba keramičarskih del od začetka do konca.",
+        "title": "Strokovno"
       },
       {
         "stat": "Zadovoljstvo",
-        "label": "Strank",
-        "description": "Naše storitve so visoko ocenjene s strani naših naročnikov."
+        "label": "Zadovoljstvo",
+        "description": "Naše storitve so visoko ocenjene s strani naših naročnikov.",
+        "title": "Zadovoljstvo"
       }
     ]
   },

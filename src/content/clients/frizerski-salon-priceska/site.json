@@ -104,18 +104,21 @@
     "benefits": [
       {
         "stat": "Sodobni",
-        "label": "Trendi",
-        "description": "Uporabljamo sodobne in trendovske frizerske smernice za vaš popoln videz."
+        "label": "Sodobni",
+        "description": "Uporabljamo sodobne in trendovske frizerske smernice za vaš popoln videz.",
+        "title": "Sodobni"
       },
       {
         "stat": "Dostopne",
-        "label": "Cene",
-        "description": "Kakovostne storitve so na voljo po dostopnih cenah za vsakogar."
+        "label": "Dostopne",
+        "description": "Kakovostne storitve so na voljo po dostopnih cenah za vsakogar.",
+        "title": "Dostopne"
       },
       {
         "stat": "Urejene",
-        "label": "Pričeske",
-        "description": "Z našo pomočjo bodo vaše pričeske vedno čudovite in lepo urejene."
+        "label": "Urejene Pričeske",
+        "description": "Z našo pomočjo bodo vaše pričeske vedno čudovite in lepo urejene.",
+        "title": "Urejene Pričeske"
       }
     ]
   },

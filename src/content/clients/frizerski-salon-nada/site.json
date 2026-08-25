@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Osebno",
-        "label": "Pristop",
-        "description": "Poslušamo vaše želje in skupaj poiščemo najboljšo rešitev za vaše lase."
+        "label": "Osebno",
+        "description": "Poslušamo vaše želje in skupaj poiščemo najboljšo rešitev za vaše lase.",
+        "title": "Osebno"
       },
       {
         "stat": "Nasveti",
-        "label": "Strokovnost",
-        "description": "Pomagamo vam izbrati pravo pričesko, ki ustreza vašemu življenjskemu slogu."
+        "label": "Nasveti",
+        "description": "Pomagamo vam izbrati pravo pričesko, ki ustreza vašemu življenjskemu slogu.",
+        "title": "Nasveti"
       },
       {
         "stat": "Ambient",
-        "label": "Domače",
-        "description": "Uživajte v sproščenem in prijetnem okolju našega salona."
+        "label": "Ambient",
+        "description": "Uživajte v sproščenem in prijetnem okolju našega salona.",
+        "title": "Ambient"
       }
     ]
   },

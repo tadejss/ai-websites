@@ -117,17 +117,20 @@
       {
         "stat": "Zanesljivost",
         "label": "Strokovna izvedba",
-        "description": "Naloge opravimo dosledno in v dogovorjenih rokih."
+        "description": "Naloge opravimo dosledno in v dogovorjenih rokih.",
+        "title": "Strokovna izvedba"
       },
       {
         "stat": "Odzivnost",
         "label": "Hitro ukrepanje",
-        "description": "Hitro se odzovemo na vaše težave in poskrbimo za rešitve."
+        "description": "Hitro se odzovemo na vaše težave in poskrbimo za rešitve.",
+        "title": "Hitro ukrepanje"
       },
       {
         "stat": "Prilagodljivost",
         "label": "Uho in posluh",
-        "description": "Prilagodimo se vašemu urniku in specifičnim zahtevam."
+        "description": "Prilagodimo se vašemu urniku in specifičnim zahtevam.",
+        "title": "Uho in posluh"
       }
     ]
   },

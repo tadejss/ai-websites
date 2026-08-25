@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "in pristop",
-        "description": "Zavzeto in strokovno poskrbimo za vaše lase."
+        "label": "Strokovnost in pristop",
+        "description": "Zavzeto in strokovno poskrbimo za vaše lase.",
+        "title": "Strokovnost in pristop"
       },
       {
         "stat": "Kakovost",
-        "label": "storitev",
-        "description": "Uporabljamo preverjene metode za vaš popoln videz."
+        "label": "Kakovost storitev",
+        "description": "Uporabljamo preverjene metode za vaš popoln videz.",
+        "title": "Kakovost storitev"
       },
       {
         "stat": "Dostopnost",
-        "label": "cen",
-        "description": "Ponujamo odlično razmerje med ceno in kakovostjo."
+        "label": "Dostopnost cen",
+        "description": "Ponujamo odlično razmerje med ceno in kakovostjo.",
+        "title": "Dostopnost cen"
       }
     ]
   },

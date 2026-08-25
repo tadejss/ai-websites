@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Tehnika",
-        "label": "Poznavanje",
-        "description": "Zanesljivo obvladovanje sodobnih in klasičnih frizerskih tehnik."
+        "label": "Tehnika",
+        "description": "Zanesljivo obvladovanje sodobnih in klasičnih frizerskih tehnik.",
+        "title": "Tehnika"
       },
       {
         "stat": "Obraz",
-        "label": "Prilagajanje",
-        "description": "Vsaka pričeska je skrbno izbrana glede na obliko vašega obraza."
+        "label": "Obraz",
+        "description": "Vsaka pričeska je skrbno izbrana glede na obliko vašega obraza.",
+        "title": "Obraz"
       },
       {
         "stat": "Zaupanje",
         "label": "Domače vzdušje",
-        "description": "Prijazen in strokoven pristop v prijetnem okolju v Novem mestu."
+        "description": "Prijazen in strokoven pristop v prijetnem okolju v Novem mestu.",
+        "title": "Domače vzdušje"
       }
     ]
   },

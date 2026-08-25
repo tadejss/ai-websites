@@ -113,18 +113,21 @@
     "benefits": [
       {
         "stat": "Osebno",
-        "label": "Razumevanje",
-        "description": "Prisluhnemo vašim željam in poiščemo slog, ki ustreza vašemu značaju."
+        "label": "Osebno",
+        "description": "Prisluhnemo vašim željam in poiščemo slog, ki ustreza vašemu značaju.",
+        "title": "Osebno"
       },
       {
         "stat": "Strokovno",
-        "label": "Znanje",
-        "description": "Nudimo strokovno vodenje in nego za zdravje vaših las."
+        "label": "Strokovno",
+        "description": "Nudimo strokovno vodenje in nego za zdravje vaših las.",
+        "title": "Strokovno"
       },
       {
         "stat": "Zaupanje",
-        "label": "In domačnost",
-        "description": "Ustvarjamo sproščeno vzdušje, kjer se boste vedno radi vračali."
+        "label": "Zaupanje in domačnost",
+        "description": "Ustvarjamo sproščeno vzdušje, kjer se boste vedno radi vračali.",
+        "title": "Zaupanje in domačnost"
       }
     ]
   },

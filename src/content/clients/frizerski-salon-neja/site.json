@@ -108,18 +108,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "In strokovnost",
-        "description": "Vsaki stranki se posvetimo individualno in prisluhnemo vašim željam."
+        "label": "Prijaznost in strokovnost",
+        "description": "Vsaki stranki se posvetimo individualno in prisluhnemo vašim željam.",
+        "title": "Prijaznost in strokovnost"
       },
       {
         "stat": "Ambient",
         "label": "Udobje in sprostitev",
-        "description": "Obiščite nas v prijetnem in domačem okolju v Pivki."
+        "description": "Obiščite nas v prijetnem in domačem okolju v Pivki.",
+        "title": "Udobje in sprostitev"
       },
       {
         "stat": "Kakovost",
         "label": "Urejeni lasje",
-        "description": "Zanesljive storitve za ženske, moške in otroke."
+        "description": "Zanesljive storitve za ženske, moške in otroke.",
+        "title": "Urejeni lasje"
       }
     ]
   },

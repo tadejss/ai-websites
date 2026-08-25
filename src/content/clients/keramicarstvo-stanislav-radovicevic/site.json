@@ -122,17 +122,20 @@
       {
         "stat": "Kakovost",
         "label": "Visoki standardi",
-        "description": "Vsakemu projektu se posvetimo z enako mero skrbnosti in strokovnosti."
+        "description": "Vsakemu projektu se posvetimo z enako mero skrbnosti in strokovnosti.",
+        "title": "Visoki standardi"
       },
       {
         "stat": "Zanesljivost",
         "label": "Dogovorjeni roki",
-        "description": "Držimo se dogovorov in zagotavljamo zanesljivo izvedbo del."
+        "description": "Držimo se dogovorov in zagotavljamo zanesljivo izvedbo del.",
+        "title": "Dogovorjeni roki"
       },
       {
         "stat": "Natančnost",
         "label": "Osebni pristop",
-        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri najboljših rešitev."
+        "description": "Prisluhnemo vašim željam in svetujemo pri izbiri najboljših rešitev.",
+        "title": "Osebni pristop"
       }
     ]
   },

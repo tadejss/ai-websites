@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Osebno",
-        "label": "vzdušje",
-        "description": "Prijazna in osebna postrežba v sproščenem ambientu."
+        "label": "Osebno vzdušje",
+        "description": "Prijazna in osebna postrežba v sproščenem ambientu.",
+        "title": "Osebno vzdušje"
       },
       {
         "stat": "Kakovost",
-        "label": "in dostopnost",
-        "description": "Visoka kakovost storitev po dostopnih cenah za vsakogar."
+        "label": "Kakovost in dostopnost",
+        "description": "Visoka kakovost storitev po dostopnih cenah za vsakogar.",
+        "title": "Kakovost in dostopnost"
       },
       {
         "stat": "Zaupanje",
-        "label": "strank",
-        "description": "Odlične ocene in zadovoljne stranke, ki se radi vračajo."
+        "label": "Zaupanje strank",
+        "description": "Odlične ocene in zadovoljne stranke, ki se radi vračajo.",
+        "title": "Zaupanje strank"
       }
     ]
   },

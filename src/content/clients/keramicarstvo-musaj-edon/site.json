@@ -121,18 +121,21 @@
     "benefits": [
       {
         "stat": "Natančnost",
-        "label": "In kvaliteta",
-        "description": "Vsak projekt izvedemo skrbno in z občutkom za detajle."
+        "label": "Natančnost in kvaliteta",
+        "description": "Vsak projekt izvedemo skrbno in z občutkom za detajle.",
+        "title": "Natančnost in kvaliteta"
       },
       {
         "stat": "Zanesljivost",
-        "label": "In roki",
-        "description": "Držimo se dogovorjenih časovnih okvirov in obljub."
+        "label": "Zanesljivost in roki",
+        "description": "Držimo se dogovorjenih časovnih okvirov in obljub.",
+        "title": "Zanesljivost in roki"
       },
       {
         "stat": "Svetovanje",
-        "label": "Pri materialih",
-        "description": "Pomagamo vam izbrati prave materiale za dolgotrajne rezultate."
+        "label": "Svetovanje pri materialih",
+        "description": "Pomagamo vam izbrati prave materiale za dolgotrajne rezultate.",
+        "title": "Svetovanje pri materialih"
       }
     ]
   },

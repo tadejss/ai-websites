@@ -116,18 +116,21 @@
     "benefits": [
       {
         "stat": "Vrhunsko",
-        "label": "Znanje",
-        "description": "Strokovna in zanesljiva izvedba vseh del na področju kamnoseštva in keramike."
+        "label": "Vrhunsko",
+        "description": "Strokovna in zanesljiva izvedba vseh del na področju kamnoseštva in keramike.",
+        "title": "Vrhunsko"
       },
       {
         "stat": "Celovito",
-        "label": "Delo",
-        "description": "Celovite storitve od začetne ideje do končne izvedbe za lastnike hiš in investitorje."
+        "label": "Celovito",
+        "description": "Celovite storitve od začetne ideje do končne izvedbe za lastnike hiš in investitorje.",
+        "title": "Celovito"
       },
       {
         "stat": "Zanesljivo",
-        "label": "Sodelovanje",
-        "description": "Poudarek na dogovorjenih rokovih in natančni izvedbi."
+        "label": "Zanesljivo",
+        "description": "Poudarek na dogovorjenih rokovih in natančni izvedbi.",
+        "title": "Zanesljivo"
       }
     ]
   },

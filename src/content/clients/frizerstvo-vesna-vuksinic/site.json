@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Zadovoljstvo",
-        "label": "Strank",
-        "description": "Prizadevamo si, da vsaka stranka salon zapusti z nasmehom in urejeno pričesko."
+        "label": "Zadovoljstvo",
+        "description": "Prizadevamo si, da vsaka stranka salon zapusti z nasmehom in urejeno pričesko.",
+        "title": "Zadovoljstvo"
       },
       {
         "stat": "Osebni",
-        "label": "Pristop",
-        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo rešitev za vaše lase."
+        "label": "Osebni",
+        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo rešitev za vaše lase.",
+        "title": "Osebni"
       },
       {
         "stat": "Kakovost",
-        "label": "In nega",
-        "description": "Uporaba preverjenih pristopov za zdravje in lepoto vaših las."
+        "label": "Kakovost in nega",
+        "description": "Uporaba preverjenih pristopov za zdravje in lepoto vaših las.",
+        "title": "Kakovost in nega"
       }
     ]
   },

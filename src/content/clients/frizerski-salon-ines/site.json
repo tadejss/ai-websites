@@ -108,18 +108,21 @@
     "benefits": [
       {
         "stat": "Osebno",
-        "label": "Zaupanje",
-        "description": "Vsaki stranki se posvetimo celostno in poiščemo najboljšo rešitev za njen videz."
+        "label": "Osebno",
+        "description": "Vsaki stranki se posvetimo celostno in poiščemo najboljšo rešitev za njen videz.",
+        "title": "Osebno"
       },
       {
         "stat": "Udobje",
-        "label": "Ambient",
-        "description": "Sprostite se v urejenem in prijetnem okolju našega salona."
+        "label": "Udobje",
+        "description": "Sprostite se v urejenem in prijetnem okolju našega salona.",
+        "title": "Udobje"
       },
       {
         "stat": "Prilagodljivost",
-        "label": "Urnik",
-        "description": "Delovni čas je prilagojen vašim obveznostim, od ponedeljka do sobote."
+        "label": "Prilagodljivost",
+        "description": "Delovni čas je prilagojen vašim obveznostim, od ponedeljka do sobote.",
+        "title": "Prilagodljivost"
       }
     ]
   },

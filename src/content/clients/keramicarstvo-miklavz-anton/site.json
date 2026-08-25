@@ -122,17 +122,20 @@
       {
         "stat": "Kakovost",
         "label": "Visoki standardi",
-        "description": "Skrbno in natančno delo pri vsakem keramičarskem projektu."
+        "description": "Skrbno in natančno delo pri vsakem keramičarskem projektu.",
+        "title": "Visoki standardi"
       },
       {
         "stat": "Zanesljivost",
         "label": "Dogovorjeni roki",
-        "description": "Spoštovanje časovnih okvirjev in zanesljiva izvedba del."
+        "description": "Spoštovanje časovnih okvirjev in zanesljiva izvedba del.",
+        "title": "Dogovorjeni roki"
       },
       {
         "stat": "Svetovanje",
         "label": "Osebni pristop",
-        "description": "Pomoč pri izbiri materialov in optimalnih rešitev za vaš prostor."
+        "description": "Pomoč pri izbiri materialov in optimalnih rešitev za vaš prostor.",
+        "title": "Osebni pristop"
       }
     ]
   },

@@ -119,18 +119,21 @@
     "benefits": [
       {
         "stat": "Strokovnost",
-        "label": "in izkušnje",
-        "description": "Dolgoletne izkušnje in vrhunska strokovnost frizerke zagotavljajo odlične rezultate."
+        "label": "Strokovnost in izkušnje",
+        "description": "Dolgoletne izkušnje in vrhunska strokovnost frizerke zagotavljajo odlične rezultate.",
+        "title": "Strokovnost in izkušnje"
       },
       {
         "stat": "Domače",
-        "label": "vzdušje",
-        "description": "Topel, prijeten in domač ambient ter pozitivna energija za vaše popolno sproščanje."
+        "label": "Domače vzdušje",
+        "description": "Topel, prijeten in domač ambient ter pozitivna energija za vaše popolno sproščanje.",
+        "title": "Domače vzdušje"
       },
       {
         "stat": "Osebni",
-        "label": "pristop",
-        "description": "Posvetimo se vsaki stranki posebej in prisluhnemo vašim željam."
+        "label": "Osebni pristop",
+        "description": "Posvetimo se vsaki stranki posebej in prisluhnemo vašim željam.",
+        "title": "Osebni pristop"
       }
     ]
   },

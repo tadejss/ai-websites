@@ -34,9 +34,18 @@
   },
   "nav": {
     "links": [
-      { "href": "#storitve", "label": "Storitve" },
-      { "href": "#zakaj-mi", "label": "Zakaj mi" },
-      { "href": "#kontakt", "label": "Kontakt" }
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
     ],
     "cta": "Prijavi poškodbo"
   },
@@ -49,10 +58,22 @@
     "secondaryCta": "Naše storitve",
     "secondaryCtaHref": "#storitve",
     "stats": [
-      { "value": "20+", "label": "Let na strehah" },
-      { "value": "Nujno", "label": "Po neurju" },
-      { "value": "Štajerska", "label": "Območje" },
-      { "value": "Vse", "label": "Kritine" }
+      {
+        "value": "20+",
+        "label": "Let na strehah"
+      },
+      {
+        "value": "Nujno",
+        "label": "Po neurju"
+      },
+      {
+        "value": "Štajerska",
+        "label": "Območje"
+      },
+      {
+        "value": "Vse",
+        "label": "Kritine"
+      }
     ]
   },
   "services": {
@@ -92,18 +113,21 @@
     "benefits": [
       {
         "stat": "Hitra",
-        "label": "Intervencija",
-        "description": "Po škodi pride na vrsto streha — ne čakanje na idealno vreme."
+        "label": "Hitra",
+        "description": "Po škodi pride na vrsto streha — ne čakanje na idealno vreme.",
+        "title": "Hitra"
       },
       {
         "stat": "Vse",
-        "label": "Kritine",
-        "description": "Izkušnje z različnimi materiali in nakloni streh."
+        "label": "Vse",
+        "description": "Izkušnje z različnimi materiali in nakloni streh.",
+        "title": "Vse"
       },
       {
         "stat": "Varno",
-        "label": "Delo",
-        "description": "Oprema, postopek in zaključki, ki zdržijo sezono za sezono."
+        "label": "Varno",
+        "description": "Oprema, postopek in zaključki, ki zdržijo sezono za sezono.",
+        "title": "Varno"
       }
     ]
   },
@@ -158,10 +182,19 @@
     "lastUpdated": "2026-08-23",
     "contactForm": {
       "enabled": true,
-      "fields": ["name", "phone", "message"]
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
     },
-    "analytics": { "enabled": false, "provider": null },
-    "marketing": { "enabled": false },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
     "booking": {
       "enabled": false,
       "type": "external_link",
@@ -169,7 +202,12 @@
       "url": "",
       "privacyUrl": ""
     },
-    "thirdPartyEmbeds": { "googleMaps": false, "youtube": false },
-    "cookies": { "nonEssential": false }
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

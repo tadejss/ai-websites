@@ -119,17 +119,20 @@
       {
         "stat": "Prijaznost",
         "label": "Dostopen pristop",
-        "description": "Vsak obisk je sproščen, topel in popolnoma prilagojen vam."
+        "description": "Vsak obisk je sproščen, topel in popolnoma prilagojen vam.",
+        "title": "Dostopen pristop"
       },
       {
         "stat": "Spretnost",
         "label": "Hitro oblikovanje",
-        "description": "Hitro in spretno oblikovanje pričesk za vsakodnevni ali svečani videz."
+        "description": "Hitro in spretno oblikovanje pričesk za vsakodnevni ali svečani videz.",
+        "title": "Hitro oblikovanje"
       },
       {
         "stat": "Družina",
-        "label": "Za vso družino",
-        "description": "Kakovostne frizerske storitve za posameznike in družine na enem mestu."
+        "label": "Družina za vso družino",
+        "description": "Kakovostne frizerske storitve za posameznike in družine na enem mestu.",
+        "title": "Družina za vso družino"
       }
     ]
   },

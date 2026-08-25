@@ -118,18 +118,21 @@
     "benefits": [
       {
         "stat": "Prijaznost",
-        "label": "in domačnost",
-        "description": "Ustvarjamo sproščen ambient, kjer se boste počutili dobrodošli."
+        "label": "Prijaznost in domačnost",
+        "description": "Ustvarjamo sproščen ambient, kjer se boste počutili dobrodošli.",
+        "title": "Prijaznost in domačnost"
       },
       {
         "stat": "Strokovnost",
-        "label": "in hitrost",
-        "description": "Zanesljive storitve, prilagojene vašemu urniku in željam."
+        "label": "Strokovnost in hitrost",
+        "description": "Zanesljive storitve, prilagojene vašemu urniku in željam.",
+        "title": "Strokovnost in hitrost"
       },
       {
         "stat": "Družinsko",
-        "label": "okolje",
-        "description": "Salonu zaupajo posamezniki in cele družine iz Krškega z okolico."
+        "label": "Družinsko okolje",
+        "description": "Salonu zaupajo posamezniki in cele družine iz Krškega z okolico.",
+        "title": "Družinsko okolje"
       }
     ]
   },

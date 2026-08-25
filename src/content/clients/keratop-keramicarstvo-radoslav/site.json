@@ -122,17 +122,20 @@
       {
         "stat": "Natančnost",
         "label": "Kakovostna izvedba",
-        "description": "Vsak projekt izpeljemo skrbno in z občutkom za detajle."
+        "description": "Vsak projekt izpeljemo skrbno in z občutkom za detajle.",
+        "title": "Kakovostna izvedba"
       },
       {
         "stat": "Zanesljivost",
         "label": "Dogovorjeni roki",
-        "description": "Držimo se dogovorjenih rokov in obljubljenega obsega dela."
+        "description": "Držimo se dogovorjenih rokov in obljubljenega obsega dela.",
+        "title": "Dogovorjeni roki"
       },
       {
         "stat": "Svetovanje",
         "label": "Izbira materialov",
-        "description": "Pomagamo vam pri izbiri ustreznih materialov za vaš prostor."
+        "description": "Pomagamo vam pri izbiri ustreznih materialov za vaš prostor.",
+        "title": "Izbira materialov"
       }
     ]
   },
