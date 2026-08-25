@@ -1,3 +1,7 @@
+import {
+  formatHeroStatCaption,
+  formatHeroStatTitle,
+} from "@/appearances/beauty/utils/format-card-title";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -48,17 +52,26 @@ export function HeroSection({ siteConfig }: Props) {
         </div>
 
         <dl className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4">
-          {hero.stats.map((item) => (
-            <div
-              key={item.label}
-              className="rounded-2xl border border-border bg-surface/50 p-5 backdrop-blur-sm"
-            >
-              <dt className="text-2xl font-bold text-accent sm:text-3xl">
-                {item.value}
-              </dt>
-              <dd className="mt-1 text-sm text-muted">{item.label}</dd>
-            </div>
-          ))}
+          {hero.stats.map((item) => {
+            const title = formatHeroStatTitle(item);
+            const caption = formatHeroStatCaption(item);
+
+            return (
+              <div
+                key={title}
+                className="flex min-h-[5.5rem] items-center justify-center rounded-2xl border border-border bg-surface/50 px-4 py-5 text-center backdrop-blur-sm sm:min-h-[6.5rem]"
+              >
+                <div>
+                  <dt className="text-base font-bold leading-snug text-accent sm:text-lg">
+                    {title}
+                  </dt>
+                  {caption ? (
+                    <dd className="mt-1 text-xs text-muted sm:text-sm">{caption}</dd>
+                  ) : null}
+                </div>
+              </div>
+            );
+          })}
         </dl>
       </div>
     </section>

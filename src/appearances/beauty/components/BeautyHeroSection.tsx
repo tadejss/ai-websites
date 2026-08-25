@@ -4,6 +4,10 @@ import { BeautyBrowserFrame } from "./BeautyBrowserFrame";
 import { BeautyHeroWebsitePreview } from "./BeautyHeroWebsitePreview";
 import { BeautyImage } from "./BeautyImage";
 import { resolveBeautyLayout } from "../assign-layout";
+import {
+  formatHeroStatCaption,
+  formatHeroStatTitle,
+} from "../utils/format-card-title";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -103,17 +107,26 @@ export function BeautyHeroSection({ siteConfig }: Props) {
 
       {hero.stats.length > 0 ? (
         <dl className="mx-auto mt-10 grid max-w-7xl grid-cols-2 gap-4 sm:mt-14 sm:grid-cols-4 sm:gap-5">
-          {hero.stats.map((item) => (
-            <div
-              key={`${item.value}-${item.label}`}
-              className="rounded-[var(--radius-card)] border border-border bg-surface p-5"
-            >
-              <dt className="font-display text-2xl font-semibold text-accent sm:text-3xl">
-                {item.value}
-              </dt>
-              <dd className="mt-1 text-sm text-muted">{item.label}</dd>
-            </div>
-          ))}
+          {hero.stats.map((item) => {
+            const title = formatHeroStatTitle(item);
+            const caption = formatHeroStatCaption(item);
+
+            return (
+              <div
+                key={title}
+                className="flex min-h-[5.5rem] items-center justify-center rounded-[var(--radius-card)] border border-border bg-surface px-4 py-5 text-center sm:min-h-[6.5rem]"
+              >
+                <div>
+                  <dt className="font-display text-base font-semibold leading-snug text-accent sm:text-lg">
+                    {title}
+                  </dt>
+                  {caption ? (
+                    <dd className="mt-1 text-xs text-muted sm:text-sm">{caption}</dd>
+                  ) : null}
+                </div>
+              </div>
+            );
+          })}
         </dl>
       ) : null}
     </section>

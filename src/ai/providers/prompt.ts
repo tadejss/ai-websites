@@ -39,7 +39,7 @@ Structure requirements:
 - nav: { links: [{ href: string, label: string } x3], cta: string }
 - hero: { badge: string, title: string, titleHighlight: string, description: string, primaryCta: string, secondaryCta: string, stats: [{ value: string, label: string } exactly 4] }
 - services: { id: string, eyebrow: string, title: string, description: string, items: [{ title: string, description: string, icon: IconName } x4-6] }
-- whyChooseUs: { id: string, eyebrow: string, title: string, description: string, highlights: [string x3-4], benefits: [{ stat: string, label: string, description: string } x3] }
+- whyChooseUs: { id: string, eyebrow: string, title: string, description: string, highlights: [string x3-4], benefits: [{ title: string, label: string, description: string, stat?: string } x3] }
 - contact: { id: string, eyebrow: string, title: string, description: string, items: ContactItem[], form: ContactForm }
 - footer: { address: string, rights: string }
 
@@ -104,16 +104,33 @@ Factual accuracy rules (strict):
 
 hero.stats and whyChooseUs.benefits[].stat do NOT have to be numbers. When there is no supportable number, use a short qualitative word instead.
 
-For hero.stats, prefer a single "title" field with the full USP phrase (e.g. "Osebni pristop", "Kodrasta nega"). You may still include value and label for backward compatibility, but title is preferred.
+For hero.stats:
+- Prefer a single "title" with the full USP phrase (e.g. "Topel ambient", "Prijazne cene", "Osebni pristop").
+- Do NOT split one phrase across value/label (BAD: { "value": "Topel", "label": "Ambient" }, { "value": "Prijazne", "label": "Cene" }).
+- Numeric metrics may still use value + label (GOOD: { "value": "10+", "label": "let izkušenj" } only when yearsExperience supports it).
+- You may still include value and label for backward compatibility when using title; set them to the same phrase or omit inventing a split.
 
-For whyChooseUs.benefits, prefer a single "title" field combining stat and label when they form one phrase (e.g. "Strokovno osebje"). Keep description separate.
+For whyChooseUs.benefits, ALWAYS set "title" to ONE coherent short phrase that will be shown as the card heading (e.g. "Prijazne cene", "Osebni pristop", "Talno gretje"). Keep "description" as one supporting sentence. Also set "label" to the same phrase (schema requires label). Do NOT split a title across separate "stat" and "label" fields — never produce pairs like { "stat": "Ambient", "label": "Udobje" } or { "stat": "Dostopnost", "label": "Prijazne cene" }.
+
+BAD benefits:
+{ "stat": "Ambient", "label": "Udobje", "description": "..." }
+{ "stat": "Dostopnost", "label": "Prijazne cene", "description": "..." }
+GOOD benefits:
+{ "title": "Prijeten ambient", "label": "Prijeten ambient", "description": "Sproščeno okolje, kjer se počutite dobrodošlo." }
+{ "title": "Prijazne cene", "label": "Prijazne cene", "description": "Kakovostne storitve po dostopnih cenah za vso družino." }
+
+BAD hero.stats (split phrase):
+{ "value": "Topel", "label": "Ambient" }
+{ "value": "Prijazne", "label": "Cene" }
+GOOD hero.stats:
+{ "title": "Topel ambient", "value": "Topel ambient", "label": "Topel ambient" }
+{ "title": "Prijazne cene", "value": "Prijazne cene", "label": "Prijazne cene" }
+{ "value": "7 dni", "label": "Odprti vsak teden" }
 
 BAD stats (invented social proof):
 { "value": "100%", "label": "Zadovoljne stranke" }
 { "value": "20 let", "label": "Izkušenj" }
-GOOD stats (supported by the business input):
-{ "value": "Osebni", "label": "Pristop" }
-{ "value": "Ljubljana", "label": "Lokacija" }
+GOOD numeric stats (supported by the business input):
 { "value": "7 dni", "label": "Odprti vsak teden" }
 
 The last example is only allowed when openingHours actually shows seven open days.

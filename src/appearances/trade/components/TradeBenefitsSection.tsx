@@ -1,5 +1,6 @@
 import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { formatCardTitle } from "@/appearances/beauty/utils/format-card-title";
 import { TradeSection, tradeCardClass } from "./TradeSection";
 import { resolveTradeLayoutFromConfig } from "./trade-layout";
 import type { IconName, SiteConfig } from "@/content/types/site";
@@ -33,29 +34,25 @@ export function TradeBenefitsSection({ siteConfig }: Props) {
         />
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {whyChooseUs.benefits.map((benefit, index) => (
-            <article
-              key={benefit.title ?? benefit.label}
-              className={cardClass}
-            >
-              <div className="flex size-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                <Icon name={BENEFIT_ICONS[index % BENEFIT_ICONS.length]} />
-              </div>
-              <p className="mt-5 text-sm font-semibold uppercase tracking-wider text-muted">
-                {benefit.label}
-              </p>
-              {(benefit.title || benefit.stat) ? (
-                <p className="font-display mt-1 text-xl font-semibold text-foreground">
-                  {benefit.title ?? benefit.stat}
+          {whyChooseUs.benefits.map((benefit, index) => {
+            const title = formatCardTitle(benefit);
+
+            return (
+              <article key={title} className={cardClass}>
+                <div className="flex size-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                  <Icon name={BENEFIT_ICONS[index % BENEFIT_ICONS.length]} />
+                </div>
+                <p className="font-display mt-5 text-xl font-semibold text-foreground">
+                  {title}
                 </p>
-              ) : null}
-              {benefit.description ? (
-                <p className="mt-3 text-sm leading-relaxed text-muted">
-                  {benefit.description}
-                </p>
-              ) : null}
-            </article>
-          ))}
+                {benefit.description ? (
+                  <p className="mt-3 text-sm leading-relaxed text-muted">
+                    {benefit.description}
+                  </p>
+                ) : null}
+              </article>
+            );
+          })}
         </div>
       </TradeSection>
     );
@@ -86,26 +83,29 @@ export function TradeBenefitsSection({ siteConfig }: Props) {
         </div>
 
         <div className="grid gap-6">
-          {whyChooseUs.benefits.map((benefit) => (
-            <article
-              key={benefit.label}
-              className={
-                layout.cardStyle === "soft"
-                  ? "rounded-[var(--radius-card)] bg-surface-elevated p-8"
-                  : "rounded-[var(--radius-card)] border border-border bg-surface-elevated p-8"
-              }
-            >
-              <p className="font-display text-4xl font-semibold text-accent">
-                {benefit.stat}
-              </p>
-              <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-foreground">
-                {benefit.label}
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted">
-                {benefit.description}
-              </p>
-            </article>
-          ))}
+          {whyChooseUs.benefits.map((benefit) => {
+            const title = formatCardTitle(benefit);
+
+            return (
+              <article
+                key={title}
+                className={
+                  layout.cardStyle === "soft"
+                    ? "rounded-[var(--radius-card)] bg-surface-elevated p-8"
+                    : "rounded-[var(--radius-card)] border border-border bg-surface-elevated p-8"
+                }
+              >
+                <p className="font-display text-3xl font-semibold text-foreground sm:text-4xl">
+                  {title}
+                </p>
+                {benefit.description ? (
+                  <p className="mt-3 text-sm leading-relaxed text-muted">
+                    {benefit.description}
+                  </p>
+                ) : null}
+              </article>
+            );
+          })}
         </div>
       </div>
     </TradeSection>

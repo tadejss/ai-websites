@@ -47,51 +47,52 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
             />
 
             <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {whyChooseUs.benefits.map((benefit, index) => (
-                <article
-                  key={benefit.title ?? benefit.label}
-                  className="overflow-hidden rounded-[var(--radius-card)] border border-border bg-surface"
-                >
-                  {benefit.image?.src ? (
-                    <BeautyBrowserFrame
-                      url={benefit.image.alt}
-                      className="border-0 shadow-none"
-                    >
-                      <div className="relative aspect-[4/3]">
-                        <Image
-                          src={benefit.image.src}
-                          alt={benefit.image.alt}
-                          fill
-                          sizes="(max-width: 768px) 100vw, 33vw"
-                          className="object-cover"
-                        />
-                      </div>
-                    </BeautyBrowserFrame>
-                  ) : (
-                    <div className="flex items-start gap-4 p-6 pb-0">
-                      <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-accent/15 bg-background text-accent">
-                        <Icon name={BENEFIT_ICONS[index % BENEFIT_ICONS.length]} />
-                      </div>
-                    </div>
-                  )}
+              {whyChooseUs.benefits.map((benefit, index) => {
+                const title = formatCardTitle(benefit);
 
-                  <div className="p-6 pt-4">
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted">
-                      {benefit.label}
-                    </p>
-                    {(benefit.title || benefit.stat) ? (
-                      <p className="font-display mt-1 text-xl text-foreground">
-                        {benefit.title ?? benefit.stat}
+                return (
+                  <article
+                    key={title}
+                    className="overflow-hidden rounded-[var(--radius-card)] border border-border bg-surface"
+                  >
+                    {benefit.image?.src ? (
+                      <BeautyBrowserFrame
+                        url={benefit.image.alt}
+                        className="border-0 shadow-none"
+                      >
+                        <div className="relative aspect-[4/3]">
+                          <Image
+                            src={benefit.image.src}
+                            alt={benefit.image.alt}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            className="object-cover"
+                          />
+                        </div>
+                      </BeautyBrowserFrame>
+                    ) : (
+                      <div className="flex items-start gap-4 p-6 pb-0">
+                        <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-accent/15 bg-background text-accent">
+                          <Icon
+                            name={BENEFIT_ICONS[index % BENEFIT_ICONS.length]}
+                          />
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="p-6 pt-4">
+                      <p className="font-display text-xl text-foreground">
+                        {title}
                       </p>
-                    ) : null}
-                    {benefit.description ? (
-                      <p className="mt-2 text-sm leading-relaxed text-muted">
-                        {benefit.description}
-                      </p>
-                    ) : null}
-                  </div>
-                </article>
-              ))}
+                      {benefit.description ? (
+                        <p className="mt-2 text-sm leading-relaxed text-muted">
+                          {benefit.description}
+                        </p>
+                      ) : null}
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           </div>
 
@@ -159,21 +160,25 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
           </div>
 
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
-            {whyChooseUs.benefits.map((benefit) => (
-              <article
-                key={formatCardTitle(benefit)}
-                className="rounded-[var(--radius-card)] bg-accent p-7 text-accent-foreground sm:p-9"
-              >
-                <p className="font-display text-3xl leading-tight sm:text-4xl">
-                  {formatCardTitle(benefit)}
-                </p>
-                {benefit.description ? (
-                  <p className="mt-4 text-sm leading-relaxed text-accent-foreground/75 sm:text-base">
-                    {benefit.description}
+            {whyChooseUs.benefits.map((benefit) => {
+              const title = formatCardTitle(benefit);
+
+              return (
+                <article
+                  key={title}
+                  className="rounded-[var(--radius-card)] bg-accent p-7 text-accent-foreground sm:p-9"
+                >
+                  <p className="font-display text-3xl leading-tight sm:text-4xl">
+                    {title}
                   </p>
-                ) : null}
-              </article>
-            ))}
+                  {benefit.description ? (
+                    <p className="mt-4 text-sm leading-relaxed text-accent-foreground/75 sm:text-base">
+                      {benefit.description}
+                    </p>
+                  ) : null}
+                </article>
+              );
+            })}
           </div>
         </div>
       </div>

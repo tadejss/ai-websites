@@ -1,4 +1,8 @@
 import Image from "next/image";
+import {
+  formatHeroStatCaption,
+  formatHeroStatTitle,
+} from "@/appearances/beauty/utils/format-card-title";
 import { TradeImage } from "./TradeImage";
 import { resolveTradeLayoutFromConfig } from "./trade-layout";
 import type { SiteConfig } from "@/content/types/site";
@@ -22,10 +26,10 @@ function heroGridClass(ratio: string, showImage: boolean): string {
 function statsCardClass(cardStyle: string | undefined, emphasize: boolean): string {
   const base =
     cardStyle === "soft"
-      ? "rounded-[var(--radius-card)] bg-surface/70 p-5 backdrop-blur-sm"
-      : "rounded-[var(--radius-card)] border border-border bg-surface/50 p-5 backdrop-blur-sm";
+      ? "flex min-h-[5.5rem] items-center justify-center rounded-[var(--radius-card)] bg-surface/70 px-4 py-5 text-center backdrop-blur-sm sm:min-h-[6.5rem]"
+      : "flex min-h-[5.5rem] items-center justify-center rounded-[var(--radius-card)] border border-border bg-surface/50 px-4 py-5 text-center backdrop-blur-sm sm:min-h-[6.5rem]";
 
-  return emphasize ? `${base} sm:p-7` : base;
+  return emphasize ? `${base} sm:min-h-[7.5rem] sm:px-5 sm:py-6` : base;
 }
 
 export function TradeHeroSection({ siteConfig }: Props) {
@@ -137,19 +141,28 @@ export function TradeHeroSection({ siteConfig }: Props) {
         <dl
           className={`mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4 ${emphasizeStats ? "sm:gap-8" : ""}`}
         >
-          {hero.stats.map((item) => (
-            <div
-              key={`${item.value}-${item.label}`}
-              className={statsCardClass(layout.cardStyle, emphasizeStats)}
-            >
-              <dt
-                className={`font-display font-semibold text-accent ${emphasizeStats ? "text-3xl sm:text-4xl" : "text-2xl sm:text-3xl"}`}
+          {hero.stats.map((item) => {
+            const title = formatHeroStatTitle(item);
+            const caption = formatHeroStatCaption(item);
+
+            return (
+              <div
+                key={title}
+                className={statsCardClass(layout.cardStyle, emphasizeStats)}
               >
-                {item.value}
-              </dt>
-              <dd className="mt-1 text-sm text-muted">{item.label}</dd>
-            </div>
-          ))}
+                <div>
+                  <dt
+                    className={`font-display font-semibold leading-snug text-accent ${emphasizeStats ? "text-lg sm:text-xl" : "text-base sm:text-lg"}`}
+                  >
+                    {title}
+                  </dt>
+                  {caption ? (
+                    <dd className="mt-1 text-xs text-muted sm:text-sm">{caption}</dd>
+                  ) : null}
+                </div>
+              </div>
+            );
+          })}
         </dl>
       </div>
     </section>

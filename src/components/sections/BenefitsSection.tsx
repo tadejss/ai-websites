@@ -1,6 +1,7 @@
 import { Icon } from "@/content/icons";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { formatCardTitle } from "@/appearances/beauty/utils/format-card-title";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -32,20 +33,25 @@ export function BenefitsSection({ siteConfig }: Props) {
         </div>
 
         <div className="grid gap-6">
-          {whyChooseUs.benefits.map((benefit) => (
-            <article
-              key={benefit.label}
-              className="rounded-2xl border border-border bg-surface-elevated p-8"
-            >
-              <p className="text-4xl font-bold text-accent">{benefit.stat}</p>
-              <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-foreground">
-                {benefit.label}
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted">
-                {benefit.description}
-              </p>
-            </article>
-          ))}
+          {whyChooseUs.benefits.map((benefit) => {
+            const title = formatCardTitle(benefit);
+
+            return (
+              <article
+                key={title}
+                className="rounded-2xl border border-border bg-surface-elevated p-8"
+              >
+                <p className="text-3xl font-bold text-foreground sm:text-4xl">
+                  {title}
+                </p>
+                {benefit.description ? (
+                  <p className="mt-3 text-sm leading-relaxed text-muted">
+                    {benefit.description}
+                  </p>
+                ) : null}
+              </article>
+            );
+          })}
         </div>
       </div>
     </Section>
