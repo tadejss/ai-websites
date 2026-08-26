@@ -8,7 +8,7 @@ import {
 } from "@/billing/stripe";
 import { getSiteConfig } from "@/content/get-site-config";
 import { resolveCheckoutLead } from "@/leads/checkout-lead";
-import { toAbsoluteUrl } from "@/site-url";
+import { resolveRequestOrigin, toAbsoluteUrl } from "@/site-url";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -18,12 +18,25 @@ type CheckoutBody = {
   plan?: unknown;
 };
 
-function resolveCheckoutUrls(slug: string): {
+function resolveCheckoutUrls(
+  slug: string,
+  request: Request,
+): {
   successUrl: string;
   cancelUrl: string;
 } {
   const successPath = `/${slug}/hvala?session_id={CHECKOUT_SESSION_ID}`;
   const cancelPath = `/${slug}`;
+
+  // Prefer the live request host so cancel/success match zbrendiraj.si (or
+  // localhost), even if NEXT_PUBLIC_SITE_URL still points at an old deploy URL.
+  const origin = resolveRequestOrigin(request);
+  if (origin) {
+    return {
+      successUrl: `${origin}${successPath}`,
+      cancelUrl: `${origin}${cancelPath}`,
+    };
+  }
 
   return {
     successUrl: toAbsoluteUrl(successPath) || successPath,
@@ -78,7 +91,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: message }, { status: 503 });
   }
 
-  const { successUrl, cancelUrl } = resolveCheckoutUrls(slug);
+  const { successUrl, cancelUrl } = resolveCheckoutUrls(slug, request);
 
   try {
     const stripe = getStripe();

@@ -77,8 +77,8 @@ export function ZbrendirajPrivacyContent() {
           <li>izpolnjevanje zakonskih obveznosti;</li>
           <li>uveljavljanje ali varovanje pravnih zahtevkov;</li>
           <li>
-            po potrebi neposredno trženje, kadar je za to zagotovljena ustrezna
-            pravna podlaga.
+            neposredno B2B trženje (vključno s pošiljanjem SMS-ov z demo
+            povezavami), kadar je za to zagotovljena ustrezna pravna podlaga.
           </li>
         </ul>
       </LegalSection>
@@ -94,6 +94,29 @@ export function ZbrendirajPrivacyContent() {
           </li>
           <li>privolitve posameznika, kadar je ta potrebna.</li>
         </ul>
+        <p>
+          Za neposredno B2B trženje – zlasti za pošiljanje SMS-sporočil s
+          povezavo do demo spletne strani potencialnim poslovnim strankam –
+          se kot pravna podlaga uporablja zakoniti interes ponudnika (člen 6(1)(f)
+          GDPR), ob upoštevanju pravil ZEKom-2 o elektronskih komunikacijah za
+          poslovne stike. Ponudnik cilja izključno poslovne subjekte (podjetja,
+          samostojne podjetnike in druge gospodarske subjekte), katerih kontaktni
+          podatki so javno dostopni (npr. prek Google API oziroma drugih javnih
+          poslovnih virov) in pri katerih je razvidna potreba po digitalni
+          oziroma spletni prisotnosti. Obdelava je omejena na podatke, potrebne
+          za takšno kontaktiranje, in se ne uporablja za trženje potrošnikom.
+        </p>
+        <p>
+          Naslovniku je v vsakem trenutku omogočena brezplačna in takojšnja
+          odjava od nadaljnjih sporočil (npr. z odgovorom na SMS, prek povezave
+          za odjavo ali na{" "}
+          <a href="mailto:info@zbrendiraj.si" className="text-accent hover:underline">
+            info@zbrendiraj.si
+          </a>
+          ). Ugovor oziroma odjava se spoštuje brez nepotrebnega odlašanja.
+          Posameznik lahko prav tako ugovarja obdelavi, ki temelji na zakonitem
+          interesu, skladno s členom 21 GDPR.
+        </p>
       </LegalSection>
 
       <LegalSection title="6. Plačila – Stripe">

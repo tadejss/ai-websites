@@ -246,20 +246,39 @@ export function ZbrendirajTermsContent() {
         </p>
       </LegalSection>
 
-      <LegalSection title="17. Potrošniki">
+      <LegalSection title="17. B2B omejitev – izključitev potrošnikov">
         <p>
-          Storitve Zbrendiraj.si so primarno namenjene podjetjem, samostojnim
-          podjetnikom in drugim poslovnim naročnikom. Če naročilo odda
-          potrošnik, se uporabljajo tudi prisilne določbe veljavne potrošniške
-          zakonodaje.
+          Storitve Zbrendiraj.si so namenjene izključno poslovnim subjektom
+          (B2B). Storitev lahko naročijo in uporabljajo le pravne osebe,
+          samostojni podjetniki in drugi subjekti, ki delujejo v okviru svoje
+          poklicne ali gospodarske dejavnosti. Nakup in uporaba storitve
+          fizičnim osebam, ki nastopajo kot potrošniki v smislu ZVPot-1, nista
+          dovoljena.
         </p>
         <p>
-          Pri pogodbah, sklenjenih na daljavo, se pravica do odstopa in njene
-          izjeme uporabljajo skladno z ZVPot-1. Če potrošnik izrecno zahteva
-          začetek izvajanja storitve pred potekom roka za odstop, se uporabljajo
-          zakonska pravila glede posledic takšnega začetka izvajanja. Za
-          digitalne storitve se uporabljajo tudi pravila o skladnosti digitalnih
-          storitev, kadar so izpolnjeni zakonski pogoji.
+          Z vnosom podatkov, izbiro paketa in oddajo naročila (vključno s
+          potrditvijo plačila) kupec izrecno jamči, da:
+        </p>
+        <ul className="list-disc space-y-1 pl-5">
+          <li>
+            naročilo oddaja kot poslovni subjekt oziroma v imenu poslovnega
+            subjekta in ne kot potrošnik;
+          </li>
+          <li>
+            storitev naroča za namene svoje poklicne ali gospodarske dejavnosti;
+          </li>
+          <li>
+            se zaveda, da se potrošniška zaščita po ZVPot-1, vključno s
+            14-dnevno pravico do odstopa od pogodbe, sklenjene na daljavo, za
+            to naročilo ne uporablja.
+          </li>
+        </ul>
+        <p>
+          S tem se kupec zavestno odpoveduje uveljavljanju potrošniških pravic
+          v zvezi z naročilom in uporabo storitve Zbrendiraj.si. Če se
+          ugotovi, da je naročilo oddala fizična oseba kot potrošnik, lahko
+          ponudnik naročilo zavrne, prekine ali prekliče in ukine dostop do
+          storitve.
         </p>
       </LegalSection>
 
@@ -301,8 +320,7 @@ export function ZbrendirajTermsContent() {
 
       <LegalSection title="21. Pravo in spori">
         <p>
-          Za ta pravna razmerja se uporablja pravo Republike Slovenije, ob
-          upoštevanju prisilnih določb, ki se uporabljajo za potrošnike.
+          Za ta pravna razmerja se uporablja pravo Republike Slovenije.
           Stranki si prizadevata morebitne spore najprej rešiti sporazumno. Če
           sporazumna rešitev ni mogoča, je za reševanje sporov pristojno
           stvarno pristojno sodišče po pravilih veljavne zakonodaje.
