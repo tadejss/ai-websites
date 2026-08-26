@@ -26,7 +26,13 @@ export function SitePage({ siteConfig, siteSlug }: Props) {
       className="min-h-full bg-background text-foreground"
     >
       <Page siteConfig={siteConfig} siteSlug={resolvedSlug} />
-      {showPurchaseBar ? <DemoPurchaseBar slug={resolvedSlug} /> : null}
+      {showPurchaseBar ? (
+        <DemoPurchaseBar
+          slug={resolvedSlug}
+          companyName={lead?.companyName ?? siteConfig.business.name}
+          brandHighlight={siteConfig.brand.highlight}
+        />
+      ) : null}
     </div>
   );
 }

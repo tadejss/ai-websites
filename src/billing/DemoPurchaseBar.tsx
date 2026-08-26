@@ -2,32 +2,42 @@
 
 import { useEffect, useState, startTransition } from "react";
 import type { CheckoutPlan } from "@/billing/stripe";
+import {
+  extractOwnerFirstName,
+  purchaseBarHeadline,
+  purchaseBarSubtitle,
+} from "@/billing/owner-first-name";
 
 type Props = {
   slug: string;
+  companyName?: string | null;
+  brandHighlight?: string | null;
 };
 
-const PLAN_COPY: Record<
-  CheckoutPlan,
-  { label: string; price: string; hint: string }
-> = {
+const PLAN_COPY: Record<CheckoutPlan, { label: string; price: string }> = {
   monthly: {
     label: "Mesečno",
     price: "29 €/mes + DDV",
-    hint: "Brez vezave · prekliči kadarkoli",
   },
   yearly: {
     label: "Letno",
     price: "290 €/leto + DDV",
-    hint: "10× mesečna cena · domena vključena",
   },
 };
 
-export function DemoPurchaseBar({ slug }: Props) {
+export function DemoPurchaseBar({
+  slug,
+  companyName,
+  brandHighlight,
+}: Props) {
   const [show, setShow] = useState(false);
   const [plan, setPlan] = useState<CheckoutPlan>("monthly");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const firstName = extractOwnerFirstName(companyName, brandHighlight);
+  const headline = purchaseBarHeadline(firstName);
+  const subtitle = purchaseBarSubtitle(plan);
 
   useEffect(() => {
     try {
@@ -112,10 +122,10 @@ export function DemoPurchaseBar({ slug }: Props) {
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0 flex-1">
                 <p className="text-sm leading-snug font-semibold tracking-tight">
-                  Spletna stran Zbrendiraj.si
+                  {headline}
                 </p>
                 <p className="mt-0.5 text-xs leading-snug text-zinc-400">
-                  {copy.hint}
+                  {subtitle}
                 </p>
               </div>
               <p className="shrink-0 pt-0.5 text-sm font-semibold whitespace-nowrap text-lime-300">
@@ -132,10 +142,10 @@ export function DemoPurchaseBar({ slug }: Props) {
           {/* Desktop: single row */}
           <div className="hidden items-center gap-4 sm:flex">
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold tracking-tight">
-                Spletna stran Zbrendiraj.si
+              <p className="text-sm font-semibold tracking-tight">{headline}</p>
+              <p className="mt-0.5 text-xs text-zinc-400">
+                {subtitle}
               </p>
-              <p className="mt-0.5 text-xs text-zinc-400">{copy.hint}</p>
             </div>
             {planToggle}
             <p className="shrink-0 text-sm font-medium whitespace-nowrap text-zinc-200">
