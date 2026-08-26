@@ -36,10 +36,10 @@ export function BeautyHeroSection({ siteConfig }: Props) {
   const imageOnLeft = layout.heroImageSide === "left";
   const copyOrder = showImage
     ? imageOnLeft
-      ? "order-2 lg:order-2"
-      : "order-2 lg:order-1"
+      ? "order-1 lg:order-2"
+      : "order-1 lg:order-1"
     : "order-1";
-  const imageOrder = imageOnLeft ? "order-1 lg:order-1" : "order-1 lg:order-2";
+  const imageOrder = imageOnLeft ? "order-2 lg:order-1" : "order-2 lg:order-2";
   const copyWide = !showImage || layout.heroRatio === "full-copy";
   const copyMaxWidth = copyWide ? "max-w-3xl" : "max-w-md";
 
