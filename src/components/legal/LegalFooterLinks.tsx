@@ -48,12 +48,15 @@ export function LegalFooterLinks({
   return (
     <nav
       aria-label="Pravne informacije"
-      className={`flex flex-wrap items-center gap-x-4 gap-y-1 text-sm ${className ?? "justify-center"}`}
+      className={`flex flex-col gap-2 text-xs sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3 sm:gap-y-1 sm:text-sm ${className ?? "sm:justify-center"}`}
     >
       {links.map((link, index) => (
-        <span key={link.href} className="inline-flex items-center gap-x-4">
+        <span key={link.href} className="inline-flex items-center gap-x-3">
           {index > 0 ? (
-            <span className={separatorClassName} aria-hidden="true">
+            <span
+              className={`hidden sm:inline ${separatorClassName}`}
+              aria-hidden="true"
+            >
               |
             </span>
           ) : null}
