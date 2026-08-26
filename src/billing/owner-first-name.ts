@@ -282,7 +282,7 @@ function extractFromCompanyName(companyName: string): string | null {
   }
 
   const segments = stripped
-    .split(/[,–—|/]+|\s+-\s*|-(?=\p{Lu})/)
+    .split(/[,–—|/]+|\s+-\s*|-(?=\p{Lu})/u)
     .map((segment) => segment.trim())
     .filter(Boolean);
 
