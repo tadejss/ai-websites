@@ -86,6 +86,7 @@ export async function POST(request: Request) {
 
     const session = await stripe.checkout.sessions.create({
       mode: "subscription",
+      locale: "sl",
       client_reference_id: slug,
       success_url: successUrl,
       cancel_url: cancelUrl,
