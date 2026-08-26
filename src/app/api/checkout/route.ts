@@ -29,7 +29,7 @@ function resolveCheckoutUrls(
   const cancelPath = `/${slug}`;
 
   // Prefer the live request host so cancel/success match zbrendiraj.si (or
-  // localhost), even if NEXT_PUBLIC_SITE_URL still points at an old deploy URL.
+  // localhost), even if SITE_URL still points at an old deploy URL.
   const origin = resolveRequestOrigin(request);
   if (origin) {
     return {

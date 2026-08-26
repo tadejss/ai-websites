@@ -3,7 +3,7 @@ import { toAbsoluteUrl } from "@/site-url";
 
 /**
  * Public URL for a lead's demo site. Composes the absolute URL at display
- * time from NEXT_PUBLIC_SITE_URL (e.g. https://zbrendiraj.si/demo) so changing
+ * time from SITE_URL / zbrendiraj.si (e.g. https://zbrendiraj.si) so changing
  * the domain does not require rewriting every lead file. Falls back to the
  * stored relative path.
  */

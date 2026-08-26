@@ -13,6 +13,16 @@ const CUSTOM_DOMAIN_ROOT_PATHS = new Set([
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const host = request.headers.get("host")?.split(":")[0]?.toLowerCase() ?? "";
+
+  // Retired project hostname — force share / SMS links onto zbrendiraj.si.
+  if (host === "splet.vercel.app" || host === "www.splet.vercel.app") {
+    const url = request.nextUrl.clone();
+    url.protocol = "https:";
+    url.host = "zbrendiraj.si";
+    url.port = "";
+    return NextResponse.redirect(url, 308);
+  }
 
   // Public demos: /demo/{slug} → existing /{slug} template routes.
   if (pathname.startsWith("/demo/")) {
@@ -59,12 +69,10 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/",
-    "/politika-zasebnosti",
-    "/piskotki",
-    "/splosni-pogoji",
-    "/pogosta-vprasanja",
-    "/demo/:path*",
-    "/admin/:path*",
+    /*
+     * Run on all paths except static assets / image optimizer.
+     * Needed so splet.vercel.app → zbrendiraj.si redirects cover every demo URL.
+     */
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
   ],
 };

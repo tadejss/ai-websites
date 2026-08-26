@@ -32,7 +32,7 @@ NEXT_PUBLIC_STRIPE_PRICING_TABLE_ID=prctbl_...
 
 Also required for purchase emails: `RESEND_API_KEY`.
 
-`NEXT_PUBLIC_SITE_URL` should be the public demo base (e.g. `https://zbrendiraj.si` or `https://zbrendiraj.si/demo`) for canonical/demo links in emails. Checkout cancel/success URLs prefer the browser request origin (allowlisted: `zbrendiraj.si`) so a stale env value like an old `*.vercel.app` host does not send buyers back to the wrong domain. Still update the env on Vercel if it still points at `splet.vercel.app`.
+`SITE_URL` should be `https://zbrendiraj.si` (optional `/demo` suffix). Use a normal **Config** env var on Vercel — not `NEXT_PUBLIC_…` (that prefix is only for values that must ship to the browser). Legacy `NEXT_PUBLIC_SITE_URL` still works as a fallback. The retired `splet.vercel.app` host is ignored in code and redirected to `zbrendiraj.si`.
 
 ## Stripe Dashboard
 

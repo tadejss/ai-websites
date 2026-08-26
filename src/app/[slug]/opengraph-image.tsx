@@ -1,7 +1,12 @@
+import { existsSync } from "node:fs";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
+import { formatBrandName } from "@/content/brand-name";
 import { getSiteConfig } from "@/content/get-site-config";
 
-export const alt = "Business website preview";
+export const runtime = "nodejs";
+export const alt = "Predogled spletne strani";
 export const size = {
   width: 1200,
   height: 630,
@@ -14,18 +19,125 @@ type Props = {
   }>;
 };
 
+function mimeForPath(path: string): string {
+  const ext = path.split(".").pop()?.toLowerCase();
+  if (ext === "png") return "image/png";
+  if (ext === "webp") return "image/webp";
+  if (ext === "gif") return "image/gif";
+  return "image/jpeg";
+}
+
+async function loadHeroDataUrl(
+  slug: string,
+  heroSrc?: string,
+): Promise<string | null> {
+  const relative = heroSrc?.startsWith("/") ? heroSrc.slice(1) : heroSrc;
+  const candidates = [
+    relative ? join(process.cwd(), "public", relative) : null,
+    join(process.cwd(), "public", "clients", slug, "hero.jpg"),
+    join(process.cwd(), "public", "clients", slug, "hero.jpeg"),
+    join(process.cwd(), "public", "clients", slug, "hero.png"),
+    join(process.cwd(), "public", "clients", slug, "hero.webp"),
+  ].filter((path): path is string => Boolean(path));
+
+  for (const path of candidates) {
+    if (!existsSync(path)) {
+      continue;
+    }
+
+    const buffer = await readFile(path);
+    return `data:${mimeForPath(path)};base64,${buffer.toString("base64")}`;
+  }
+
+  return null;
+}
+
 export default async function Image({ params }: Props) {
   const { slug } = await params;
 
-  let title = "Website";
+  let brandName = "Zbrendiraj.si";
+  let title = "Spletna stran";
   let description = "";
+  let heroSrc: string | undefined;
 
   try {
     const config = getSiteConfig(slug);
+    brandName = formatBrandName(config.brand);
     title = config.metadata.title;
     description = config.metadata.description;
+    heroSrc = config.images?.hero?.src;
   } catch {
     // Unknown slugs still get a generic card rather than a hard failure.
+  }
+
+  const heroDataUrl = await loadHeroDataUrl(slug, heroSrc);
+
+  if (heroDataUrl) {
+    return new ImageResponse(
+      (
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            position: "relative",
+            background: "#0f172a",
+          }}
+        >
+          {/* Hero photo fills the iMessage / Open Graph card. */}
+          <img
+            src={heroDataUrl}
+            alt=""
+            width={1200}
+            height={630}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-end",
+              padding: "56px 64px",
+              background:
+                "linear-gradient(180deg, rgba(15,23,42,0) 35%, rgba(15,23,42,0.82) 100%)",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                fontSize: 22,
+                letterSpacing: "0.06em",
+                textTransform: "uppercase",
+                color: "#e2e8f0",
+                fontWeight: 600,
+              }}
+            >
+              {brandName}
+            </div>
+            <div
+              style={{
+                display: "flex",
+                marginTop: 12,
+                fontSize: 44,
+                fontWeight: 700,
+                lineHeight: 1.15,
+                color: "#f8fafc",
+                maxWidth: 980,
+              }}
+            >
+              {title.length > 90 ? `${title.slice(0, 87)}…` : title}
+            </div>
+          </div>
+        </div>
+      ),
+      { ...size },
+    );
   }
 
   return new ImageResponse(
@@ -38,7 +150,7 @@ export default async function Image({ params }: Props) {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px",
-          background: "linear-gradient(145deg, #0f172a 0%, #1e293b 55%, #0ea5e9 160%)",
+          background: "linear-gradient(145deg, #0f172a 0%, #1e293b 100%)",
           color: "#f8fafc",
           fontFamily: "sans-serif",
         }}
@@ -49,17 +161,17 @@ export default async function Image({ params }: Props) {
             fontSize: 28,
             letterSpacing: "0.08em",
             textTransform: "uppercase",
-            color: "#7dd3fc",
+            color: "#94a3b8",
             fontWeight: 600,
           }}
         >
-          Lokalna spletna stran
+          {brandName}
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div
             style={{
               display: "flex",
-              fontSize: 64,
+              fontSize: 56,
               fontWeight: 700,
               lineHeight: 1.1,
               maxWidth: 980,
@@ -71,22 +183,20 @@ export default async function Image({ params }: Props) {
             <div
               style={{
                 display: "flex",
-                fontSize: 30,
+                fontSize: 28,
                 lineHeight: 1.35,
                 color: "#cbd5e1",
                 maxWidth: 920,
               }}
             >
               {description.length > 160
-                ? `${description.slice(0, 157)}...`
+                ? `${description.slice(0, 157)}…`
                 : description}
             </div>
           ) : null}
         </div>
       </div>
     ),
-    {
-      ...size,
-    },
+    { ...size },
   );
 }
