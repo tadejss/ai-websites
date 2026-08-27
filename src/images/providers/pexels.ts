@@ -1,4 +1,5 @@
 import type { ImageSearchBrief } from "../types";
+import type { StockPhotoCandidate } from "./types";
 
 const PEXELS_API = "https://api.pexels.com/v1";
 
@@ -10,6 +11,10 @@ const FALLBACK_QUERIES: Record<"hero" | "services", string> = {
 type PexelsPhoto = {
   id: number;
   photographer: string;
+  photographer_url?: string;
+  url?: string;
+  width: number;
+  height: number;
   src: {
     large?: string;
     large2x?: string;
@@ -44,20 +49,52 @@ function toPexelsOrientation(
   return undefined;
 }
 
+function pickDownloadUrl(photo: PexelsPhoto): string | undefined {
+  return (
+    photo.src.large2x ??
+    photo.src.large ??
+    photo.src.medium ??
+    photo.src.original
+  );
+}
+
+function toCandidate(
+  photo: PexelsPhoto,
+  searchQuery: string,
+): StockPhotoCandidate | undefined {
+  const downloadUrl = pickDownloadUrl(photo);
+
+  if (!downloadUrl) {
+    return undefined;
+  }
+
+  return {
+    provider: "pexels",
+    id: String(photo.id),
+    downloadUrl,
+    sourceUrl: photo.url || `https://www.pexels.com/photo/${photo.id}/`,
+    photographer: photo.photographer,
+    photographerUrl: photo.photographer_url,
+    width: photo.width,
+    height: photo.height,
+    searchQuery,
+  };
+}
+
 async function searchPhotos(
   query: string,
   orientation?: ImageSearchBrief["orientation"],
   attempt = 0,
-): Promise<PexelsPhoto | undefined> {
+): Promise<PexelsPhoto[]> {
   const apiKey = getApiKey();
 
   if (!apiKey) {
-    return undefined;
+    return [];
   }
 
   const params = new URLSearchParams({
     query,
-    per_page: "5",
+    per_page: "8",
   });
 
   const pexelsOrientation = toPexelsOrientation(orientation);
@@ -81,7 +118,7 @@ async function searchPhotos(
     console.warn(
       `Pexels rate limit (${response.status}); skipping remaining Pexels searches.`,
     );
-    return undefined;
+    return [];
   }
 
   if (!response.ok) {
@@ -91,68 +128,98 @@ async function searchPhotos(
   }
 
   const payload = (await response.json()) as { photos?: PexelsPhoto[] };
-  return payload.photos?.[0];
+  return payload.photos ?? [];
+}
+
+function firstUnused(
+  photos: PexelsPhoto[],
+  searchQuery: string,
+  excludeIds: Set<string>,
+): StockPhotoCandidate | undefined {
+  for (const photo of photos) {
+    const id = String(photo.id);
+    if (excludeIds.has(`pexels:${id}`)) {
+      continue;
+    }
+    const candidate = toCandidate(photo, searchQuery);
+    if (candidate) {
+      return candidate;
+    }
+  }
+  return undefined;
 }
 
 async function findPhoto(
   brief: ImageSearchBrief,
   slot: "hero" | "services",
-): Promise<PexelsPhoto | undefined> {
-  const primary = await searchPhotos(brief.query, brief.orientation);
+  excludeIds: Set<string>,
+): Promise<StockPhotoCandidate | undefined> {
+  const primary = firstUnused(
+    await searchPhotos(brief.query, brief.orientation),
+    brief.query,
+    excludeIds,
+  );
 
   if (primary) {
     return primary;
   }
 
   if (brief.orientation) {
-    const unoriented = await searchPhotos(brief.query);
+    const unoriented = firstUnused(
+      await searchPhotos(brief.query),
+      brief.query,
+      excludeIds,
+    );
 
     if (unoriented) {
       return unoriented;
     }
   }
 
-  return searchPhotos(FALLBACK_QUERIES[slot]);
+  const fallbackQuery = FALLBACK_QUERIES[slot];
+  return firstUnused(
+    await searchPhotos(fallbackQuery),
+    fallbackQuery,
+    excludeIds,
+  );
 }
 
-function pickDownloadUrl(photo: PexelsPhoto): string | undefined {
-  return (
-    photo.src.large2x ??
-    photo.src.large ??
-    photo.src.medium ??
-    photo.src.original
-  );
+export async function findPexelsPhoto(
+  brief: ImageSearchBrief,
+  slot: "hero" | "services",
+  excludeIds: Set<string> = new Set(),
+): Promise<StockPhotoCandidate | undefined> {
+  return findPhoto(brief, slot, excludeIds);
 }
 
 export async function downloadPexelsPhoto(
   brief: ImageSearchBrief,
   slot: "hero" | "services",
-): Promise<{ data: Buffer; photographer: string } | undefined> {
-  const photo = await findPhoto(brief, slot);
+  excludeIds: Set<string> = new Set(),
+): Promise<
+  | {
+      data: Buffer;
+      candidate: StockPhotoCandidate;
+    }
+  | undefined
+> {
+  const candidate = await findPexelsPhoto(brief, slot, excludeIds);
 
-  if (!photo) {
+  if (!candidate) {
     return undefined;
   }
 
-  const url = pickDownloadUrl(photo);
-
-  if (!url) {
-    return undefined;
-  }
-
-  const imageResponse = await fetch(url);
+  const imageResponse = await fetch(candidate.downloadUrl);
 
   if (!imageResponse.ok) {
     throw new Error(
-      `Pexels download failed (${imageResponse.status}) for photo ${photo.id}`,
+      `Pexels download failed (${imageResponse.status}) for photo ${candidate.id}`,
     );
   }
 
-  const data = Buffer.from(await imageResponse.arrayBuffer());
-
   return {
-    data,
-    photographer: `${photo.photographer} (Pexels)`,
+    data: Buffer.from(await imageResponse.arrayBuffer()),
+    candidate,
   };
 }
 

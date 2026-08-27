@@ -80,7 +80,10 @@ export function BeautyServicesSection({ siteConfig }: Props) {
               <>
                 <BeautyImage
                   src={images?.services.src}
+                  srcFallback={images?.services.srcFallback}
                   alt={images?.services.alt ?? services.title}
+                  width={images?.services.width}
+                  height={images?.services.height}
                   className="min-h-[320px] lg:min-h-full"
                 />
                 <ServiceCards siteConfig={siteConfig} />
@@ -90,7 +93,10 @@ export function BeautyServicesSection({ siteConfig }: Props) {
                 <ServiceCards siteConfig={siteConfig} />
                 <BeautyImage
                   src={images?.services.src}
+                  srcFallback={images?.services.srcFallback}
                   alt={images?.services.alt ?? services.title}
+                  width={images?.services.width}
+                  height={images?.services.height}
                   className="min-h-[320px] lg:min-h-full"
                 />
               </>

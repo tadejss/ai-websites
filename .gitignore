@@ -27,6 +27,12 @@
 # generation logs
 /logs
 data/.unsplash-search-times.json
+data/image-asset-cache.json
+
+# Optimized stock / client images written during generation (prefer Vercel Blob in prod)
+/public/stock/
+/public/clients/**/*.avif
+/public/clients/**/*.webp
 
 # debug
 npm-debug.log*

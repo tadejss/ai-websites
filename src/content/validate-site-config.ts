@@ -47,6 +47,17 @@ const siteImageSchema = z.object({
   src: z.string(),
   alt: z.string(),
   frame: z.enum(["browser"]).optional(),
+  srcFallback: z.string().optional(),
+  width: z.number().positive().optional(),
+  height: z.number().positive().optional(),
+  format: z.enum(["avif", "webp", "jpeg", "jpg", "png"]).optional(),
+  fallbackFormat: z.enum(["webp", "jpeg", "jpg", "png"]).optional(),
+  provider: z.enum(["pexels", "unsplash"]).optional(),
+  sourceId: z.string().optional(),
+  sourceUrl: z.string().optional(),
+  photographer: z.string().optional(),
+  photographerUrl: z.string().optional(),
+  searchQuery: z.string().optional(),
 });
 
 const benefitSchema = z.object({

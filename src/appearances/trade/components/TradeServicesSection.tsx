@@ -76,7 +76,10 @@ export function TradeServicesSection({ siteConfig }: Props) {
             <>
               <TradeImage
                 src={images?.services.src}
+                srcFallback={images?.services.srcFallback}
                 alt={images?.services.alt ?? services.title}
+                width={images?.services.width}
+                height={images?.services.height}
                 className="min-h-[280px] lg:min-h-full"
               />
               <ServiceCards
@@ -94,7 +97,10 @@ export function TradeServicesSection({ siteConfig }: Props) {
               />
               <TradeImage
                 src={images?.services.src}
+                srcFallback={images?.services.srcFallback}
                 alt={images?.services.alt ?? services.title}
+                width={images?.services.width}
+                height={images?.services.height}
                 className="min-h-[280px] lg:min-h-full"
               />
             </>

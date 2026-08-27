@@ -13,12 +13,34 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/adrijana-srebot/hero.jpg",
-      "alt": "Topel in prijeten ambient frizerskega salona v Postojni"
+      "src": "/clients/adrijana-srebot/hero.avif",
+      "alt": "Notranjost toplega in domačega frizerskega salona z naravno svetlobo",
+      "srcFallback": "/clients/adrijana-srebot/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "1895701",
+      "sourceUrl": "https://www.pexels.com/photo/salon-chair-beside-oil-heater-in-front-of-mirror-inside-room-1895701/",
+      "photographer": "Lisa Fotios",
+      "photographerUrl": "https://www.pexels.com/@fotios-photos",
+      "searchQuery": "warm hair salon interior cozy lighting postojna"
     },
     "services": {
-      "src": "/clients/adrijana-srebot/services.jpg",
-      "alt": "Strokovno barvanje in urejanje las v frizerskem salonu"
+      "src": "/clients/adrijana-srebot/services.avif",
+      "alt": "Strokovno barvanje las in stilsko oblikovanje pričesk v salonu",
+      "srcFallback": "/clients/adrijana-srebot/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "26447047",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-white-photo-of-a-chair-standing-by-the-wall-26447047/",
+      "photographer": "Indybindy",
+      "photographerUrl": "https://www.pexels.com/@indybindy-770160605",
+      "searchQuery": "professional hair styling and coloring salon interior"
     }
   },
   "brand": {

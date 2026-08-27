@@ -24,29 +24,79 @@ function mimeForPath(path: string): string {
   if (ext === "png") return "image/png";
   if (ext === "webp") return "image/webp";
   if (ext === "gif") return "image/gif";
+  if (ext === "avif") return "image/avif";
   return "image/jpeg";
+}
+
+async function bufferToDataUrl(
+  buffer: Buffer,
+  mime: string,
+): Promise<string> {
+  return `data:${mime};base64,${buffer.toString("base64")}`;
+}
+
+async function loadFromPublic(relativePath: string): Promise<string | null> {
+  const absolute = join(process.cwd(), "public", relativePath);
+  if (!existsSync(absolute)) {
+    return null;
+  }
+  const buffer = await readFile(absolute);
+  return bufferToDataUrl(buffer, mimeForPath(absolute));
+}
+
+async function loadFromRemote(url: string): Promise<string | null> {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      return null;
+    }
+    const contentType = response.headers.get("content-type") || "image/jpeg";
+    const buffer = Buffer.from(await response.arrayBuffer());
+    return bufferToDataUrl(buffer, contentType.split(";")[0]!.trim());
+  } catch {
+    return null;
+  }
 }
 
 async function loadHeroDataUrl(
   slug: string,
   heroSrc?: string,
+  heroFallback?: string,
 ): Promise<string | null> {
-  const relative = heroSrc?.startsWith("/") ? heroSrc.slice(1) : heroSrc;
-  const candidates = [
-    relative ? join(process.cwd(), "public", relative) : null,
-    join(process.cwd(), "public", "clients", slug, "hero.jpg"),
-    join(process.cwd(), "public", "clients", slug, "hero.jpeg"),
-    join(process.cwd(), "public", "clients", slug, "hero.png"),
-    join(process.cwd(), "public", "clients", slug, "hero.webp"),
-  ].filter((path): path is string => Boolean(path));
+  // Prefer WebP/JPEG over AVIF for OG (broader encoder support in Satori).
+  const preferred = [heroFallback, heroSrc].filter(
+    (value): value is string => Boolean(value),
+  );
 
-  for (const path of candidates) {
-    if (!existsSync(path)) {
+  for (const src of preferred) {
+    if (src.startsWith("http://") || src.startsWith("https://")) {
+      const remote = await loadFromRemote(src);
+      if (remote) {
+        return remote;
+      }
       continue;
     }
 
-    const buffer = await readFile(path);
-    return `data:${mimeForPath(path)};base64,${buffer.toString("base64")}`;
+    const relative = src.startsWith("/") ? src.slice(1) : src;
+    const local = await loadFromPublic(relative);
+    if (local) {
+      return local;
+    }
+  }
+
+  const legacy = [
+    `clients/${slug}/hero.webp`,
+    `clients/${slug}/hero.avif`,
+    `clients/${slug}/hero.jpg`,
+    `clients/${slug}/hero.jpeg`,
+    `clients/${slug}/hero.png`,
+  ];
+
+  for (const relative of legacy) {
+    const local = await loadFromPublic(relative);
+    if (local) {
+      return local;
+    }
   }
 
   return null;
@@ -59,6 +109,7 @@ export default async function Image({ params }: Props) {
   let title = "Spletna stran";
   let description = "";
   let heroSrc: string | undefined;
+  let heroFallback: string | undefined;
 
   try {
     const config = getSiteConfig(slug);
@@ -66,11 +117,12 @@ export default async function Image({ params }: Props) {
     title = config.metadata.title;
     description = config.metadata.description;
     heroSrc = config.images?.hero?.src;
+    heroFallback = config.images?.hero?.srcFallback;
   } catch {
     // Unknown slugs still get a generic card rather than a hard failure.
   }
 
-  const heroDataUrl = await loadHeroDataUrl(slug, heroSrc);
+  const heroDataUrl = await loadHeroDataUrl(slug, heroSrc, heroFallback);
 
   if (heroDataUrl) {
     return new ImageResponse(

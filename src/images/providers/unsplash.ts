@@ -1,11 +1,17 @@
 import type { ImageSearchBrief, UnsplashPhoto } from "../types";
 import { acquireUnsplashSearchSlot } from "../unsplash-rate-limit";
+import type { StockPhotoCandidate } from "./types";
 
 const UNSPLASH_API = "https://api.unsplash.com";
 
 const FALLBACK_QUERIES: Record<"hero" | "services", string> = {
   hero: "modern hair salon interior natural light",
   services: "professional hair styling salon",
+};
+
+type UnsplashSearchPhoto = UnsplashPhoto & {
+  links?: { html?: string; download_location?: string };
+  user: UnsplashPhoto["user"] & { links?: { html?: string } };
 };
 
 function getAccessKey(): string | undefined {
@@ -16,26 +22,43 @@ function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+function toCandidate(
+  photo: UnsplashSearchPhoto,
+  searchQuery: string,
+): StockPhotoCandidate {
+  return {
+    provider: "unsplash",
+    id: photo.id,
+    downloadUrl: photo.urls.regular,
+    sourceUrl: photo.links?.html || `https://unsplash.com/photos/${photo.id}`,
+    photographer: photo.user.name,
+    photographerUrl: photo.user.links?.html,
+    width: photo.width,
+    height: photo.height,
+    searchQuery,
+  };
+}
+
 async function searchPhotos(
   query: string,
   orientation?: ImageSearchBrief["orientation"],
   attempt = 0,
-): Promise<UnsplashPhoto | undefined> {
+): Promise<UnsplashSearchPhoto[]> {
   const accessKey = getAccessKey();
 
   if (!accessKey) {
-    return undefined;
+    return [];
   }
 
   const slot = await acquireUnsplashSearchSlot();
 
   if (slot === "skipped") {
-    return undefined;
+    return [];
   }
 
   const params = new URLSearchParams({
     query,
-    per_page: "5",
+    per_page: "8",
     content_filter: "high",
   });
 
@@ -59,7 +82,7 @@ async function searchPhotos(
     console.warn(
       `Unsplash quota exhausted (${response.status}); falling back if available.`,
     );
-    return undefined;
+    return [];
   }
 
   if (!response.ok) {
@@ -68,54 +91,120 @@ async function searchPhotos(
     );
   }
 
-  const payload = (await response.json()) as { results?: UnsplashPhoto[] };
-  return payload.results?.[0];
+  const payload = (await response.json()) as {
+    results?: UnsplashSearchPhoto[];
+  };
+  return payload.results ?? [];
 }
 
-async function findPhoto(
+function firstUnused(
+  photos: UnsplashSearchPhoto[],
+  searchQuery: string,
+  excludeIds: Set<string>,
+): { candidate: StockPhotoCandidate; photo: UnsplashSearchPhoto } | undefined {
+  for (const photo of photos) {
+    if (excludeIds.has(`unsplash:${photo.id}`)) {
+      continue;
+    }
+    return { candidate: toCandidate(photo, searchQuery), photo };
+  }
+  return undefined;
+}
+
+async function findPhotoWithMeta(
   brief: ImageSearchBrief,
   slot: "hero" | "services",
-): Promise<UnsplashPhoto | undefined> {
-  const primary = await searchPhotos(brief.query, brief.orientation);
+  excludeIds: Set<string>,
+): Promise<{ candidate: StockPhotoCandidate; photo: UnsplashSearchPhoto } | undefined> {
+  const primary = firstUnused(
+    await searchPhotos(brief.query, brief.orientation),
+    brief.query,
+    excludeIds,
+  );
 
   if (primary) {
     return primary;
   }
 
   if (brief.orientation) {
-    const unoriented = await searchPhotos(brief.query);
+    const unoriented = firstUnused(
+      await searchPhotos(brief.query),
+      brief.query,
+      excludeIds,
+    );
 
     if (unoriented) {
       return unoriented;
     }
   }
 
-  return searchPhotos(FALLBACK_QUERIES[slot]);
+  const fallbackQuery = FALLBACK_QUERIES[slot];
+  return firstUnused(
+    await searchPhotos(fallbackQuery),
+    fallbackQuery,
+    excludeIds,
+  );
+}
+
+/** Notify Unsplash of a download (API guideline). Best-effort only. */
+async function triggerDownload(downloadLocation?: string): Promise<void> {
+  const accessKey = getAccessKey();
+
+  if (!accessKey || !downloadLocation) {
+    return;
+  }
+
+  try {
+    await fetch(downloadLocation, {
+      headers: {
+        Authorization: `Client-ID ${accessKey}`,
+        "Accept-Version": "v1",
+      },
+    });
+  } catch {
+    // Non-fatal — attribution URL is still stored.
+  }
+}
+
+export async function findUnsplashPhoto(
+  brief: ImageSearchBrief,
+  slot: "hero" | "services",
+  excludeIds: Set<string> = new Set(),
+): Promise<StockPhotoCandidate | undefined> {
+  const match = await findPhotoWithMeta(brief, slot, excludeIds);
+  return match?.candidate;
 }
 
 export async function downloadUnsplashPhoto(
   brief: ImageSearchBrief,
   slot: "hero" | "services",
-): Promise<{ data: Buffer; photographer: string } | undefined> {
-  const photo = await findPhoto(brief, slot);
+  excludeIds: Set<string> = new Set(),
+): Promise<
+  | {
+      data: Buffer;
+      candidate: StockPhotoCandidate;
+    }
+  | undefined
+> {
+  const match = await findPhotoWithMeta(brief, slot, excludeIds);
 
-  if (!photo) {
+  if (!match) {
     return undefined;
   }
 
-  const imageResponse = await fetch(photo.urls.regular);
+  await triggerDownload(match.photo.links?.download_location);
+
+  const imageResponse = await fetch(match.candidate.downloadUrl);
 
   if (!imageResponse.ok) {
     throw new Error(
-      `Unsplash download failed (${imageResponse.status}) for photo ${photo.id}`,
+      `Unsplash download failed (${imageResponse.status}) for photo ${match.candidate.id}`,
     );
   }
 
-  const data = Buffer.from(await imageResponse.arrayBuffer());
-
   return {
-    data,
-    photographer: `${photo.user.name} (Unsplash)`,
+    data: Buffer.from(await imageResponse.arrayBuffer()),
+    candidate: match.candidate,
   };
 }
 

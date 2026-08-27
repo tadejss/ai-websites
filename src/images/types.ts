@@ -19,6 +19,4 @@ export type UnsplashPhoto = {
   height: number;
 };
 
-export type SavedSiteImage = SiteImage & {
-  photographer?: string;
-};
+export type SavedSiteImage = SiteImage;

@@ -90,6 +90,18 @@ export type SiteImage = {
   src: string;
   alt: string;
   frame?: "browser";
+  /** WebP (or other) fallback when `src` is AVIF. */
+  srcFallback?: string;
+  width?: number;
+  height?: number;
+  format?: "avif" | "webp" | "jpeg" | "jpg" | "png";
+  fallbackFormat?: "webp" | "jpeg" | "jpg" | "png";
+  provider?: "pexels" | "unsplash";
+  sourceId?: string;
+  sourceUrl?: string;
+  photographer?: string;
+  photographerUrl?: string;
+  searchQuery?: string;
 };
 
 export type SiteImages = {

@@ -131,7 +131,10 @@ export function TradeHeroSection({ siteConfig }: Props) {
           {showImage ? (
             <TradeImage
               src={images?.hero.src}
+              srcFallback={images?.hero.srcFallback}
               alt={images?.hero.alt ?? hero.badge}
+              width={images?.hero.width}
+              height={images?.hero.height}
               className={`min-h-[280px] sm:min-h-[360px] lg:min-h-[420px] ${imageOrder}`}
               priority
             />

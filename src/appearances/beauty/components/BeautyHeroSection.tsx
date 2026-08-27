@@ -96,7 +96,10 @@ export function BeautyHeroSection({ siteConfig }: Props) {
             ) : (
               <BeautyImage
                 src={images?.hero.src}
+                srcFallback={images?.hero.srcFallback}
                 alt={images?.hero.alt ?? hero.badge}
+                width={images?.hero.width}
+                height={images?.hero.height}
                 className="h-full min-h-[480px] lg:min-h-[640px]"
                 priority
               />

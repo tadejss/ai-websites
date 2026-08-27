@@ -148,7 +148,27 @@
         "frame": {
           "type": "string",
           "enum": ["browser"]
-        }
+        },
+        "srcFallback": { "type": "string" },
+        "width": { "type": "number" },
+        "height": { "type": "number" },
+        "format": {
+          "type": "string",
+          "enum": ["avif", "webp", "jpeg", "jpg", "png"]
+        },
+        "fallbackFormat": {
+          "type": "string",
+          "enum": ["webp", "jpeg", "jpg", "png"]
+        },
+        "provider": {
+          "type": "string",
+          "enum": ["pexels", "unsplash"]
+        },
+        "sourceId": { "type": "string" },
+        "sourceUrl": { "type": "string" },
+        "photographer": { "type": "string" },
+        "photographerUrl": { "type": "string" },
+        "searchQuery": { "type": "string" }
       }
     },
     "IconName": {
