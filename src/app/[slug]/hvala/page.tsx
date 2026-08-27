@@ -65,7 +65,7 @@ export default async function ThankYouPage({ params }: Props) {
             Preverimo podatke in ti pošljemo povezavo za ureditev vsebine.
           </li>
           <li className="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-            Pri letnem planu vključimo tudi domeno (če je na voljo).
+            Pri letnem planu: + GRATIS DOMENA (če je na voljo).
           </li>
           <li className="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
             Vprašanja:{" "}

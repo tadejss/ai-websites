@@ -372,8 +372,9 @@ export function purchaseBarHeadline(firstName: string | null): string {
 }
 
 export function purchaseBarSubtitle(plan: "monthly" | "yearly"): string {
+  const base = "Gostovanje, vzdrževanje in posodobitve so vključene!";
   if (plan === "yearly") {
-    return "Gostovanje, vzdrževanje, posodobitve in domena so vključeni!";
+    return `${base} + GRATIS DOMENA`;
   }
-  return "Gostovanje, vzdrževanje in posodobitve so vključene!";
+  return base;
 }

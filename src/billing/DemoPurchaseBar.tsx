@@ -17,11 +17,11 @@ type Props = {
 const PLAN_COPY: Record<CheckoutPlan, { label: string; price: string }> = {
   monthly: {
     label: "Mesečno",
-    price: "29 €/mes + DDV",
+    price: "35 €/mes",
   },
   yearly: {
     label: "Letno",
-    price: "290 €/leto + DDV",
+    price: "350 €/leto",
   },
 };
 
@@ -128,7 +128,7 @@ export function DemoPurchaseBar({
                   {subtitle}
                 </p>
               </div>
-              <p className="shrink-0 pt-0.5 text-sm font-semibold whitespace-nowrap text-lime-300">
+              <p className="shrink-0 pt-0.5 text-base font-semibold whitespace-nowrap text-lime-300">
                 {copy.price}
               </p>
             </div>
@@ -148,7 +148,7 @@ export function DemoPurchaseBar({
               </p>
             </div>
             {planToggle}
-            <p className="shrink-0 text-sm font-medium whitespace-nowrap text-zinc-200">
+            <p className="shrink-0 text-base font-semibold whitespace-nowrap text-zinc-200">
               {copy.price}
             </p>
             {orderButton}

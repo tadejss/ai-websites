@@ -36,8 +36,8 @@ export function ZbrendirajPricingSection() {
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-[11px] italic leading-relaxed text-[#D0D0D0] sm:text-xs">
           Posodabljanje vsebine je vključeno. Večje funkcionalne nadgradnje in
-          razširitve strani so možne proti doplačilu. Domena je vključena pri
-          letni naročnini. Navedena cena ne vsebuje 22 % DDV.
+          razširitve strani so možne proti doplačilu. Pri letni naročnini je
+          domena vključena (gratis). Navedene cene vključujejo 22 % DDV.
         </p>
       </div>
     </section>
