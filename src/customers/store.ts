@@ -354,3 +354,18 @@ export async function hasUpsellPurchase(
   const types = await getPurchasedUpsellTypes(slug);
   return types.includes(upsellType);
 }
+
+/** All slugs with a persistent customer record (for admin list). */
+export async function getCustomerSlugSet(): Promise<Set<string>> {
+  if (!isDatabaseConfigured()) {
+    return new Set();
+  }
+
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT slug FROM customers
+  `) as Array<{ slug: string }>;
+
+  return new Set(rows.map((row) => row.slug));
+}
