@@ -25,7 +25,7 @@ function resolveCheckoutUrls(
   successUrl: string;
   cancelUrl: string;
 } {
-  const successPath = `/${slug}/hvala?session_id={CHECKOUT_SESSION_ID}`;
+  const successPath = `/${slug}/upsell?session_id={CHECKOUT_SESSION_ID}`;
   const cancelPath = `/${slug}`;
 
   // Prefer the live request host so cancel/success match zbrendiraj.si (or

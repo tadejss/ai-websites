@@ -1,12 +1,15 @@
 import { NextResponse } from "next/server";
 import type Stripe from "stripe";
 import { sendCheckoutNotification } from "@/billing/notify";
+import { sendUpsellNotification } from "@/billing/notify-upsell";
 import {
   getStripe,
   isCheckoutPlan,
   type CheckoutPlan,
 } from "@/billing/stripe";
+import { isUpsellType } from "@/billing/upsells";
 import { resolveCheckoutLead } from "@/leads/checkout-lead";
+import { recordUpsellPurchase, hasRecordedUpsellSession, hasPurchasedUpsell } from "@/leads/upsell-store";
 import { patchLead, readLead } from "@/leads/store";
 
 export const runtime = "nodejs";
@@ -36,7 +39,54 @@ function customerIdFromSession(
   return typeof customer === "string" ? customer : customer.id;
 }
 
-async function handleCheckoutCompleted(
+async function handleUpsellCompleted(
+  session: Stripe.Checkout.Session,
+): Promise<{ handled: boolean; slug?: string; upsell?: string; skipped?: boolean }> {
+  const upsellTypeRaw = session.metadata?.upsell_type;
+  if (!isUpsellType(upsellTypeRaw)) {
+    return { handled: false };
+  }
+
+  if (session.payment_status !== "paid") {
+    return { handled: false };
+  }
+
+  const slug =
+    session.metadata?.slug?.trim() ||
+    session.client_reference_id?.trim() ||
+    "";
+
+  if (!slug) {
+    console.error("[stripe-webhook] Missing slug on upsell session", session.id);
+    return { handled: false };
+  }
+
+  const existingLead = readLead(slug);
+  if (
+    hasRecordedUpsellSession(existingLead, session.id) ||
+    hasPurchasedUpsell(existingLead, upsellTypeRaw)
+  ) {
+    return { handled: true, slug, upsell: upsellTypeRaw, skipped: true };
+  }
+
+  const lead = recordUpsellPurchase(slug, upsellTypeRaw, session.id);
+
+  const notify = await sendUpsellNotification({
+    lead,
+    upsellType: upsellTypeRaw,
+    sessionId: session.id,
+    originalCheckoutSessionId:
+      session.metadata?.original_checkout_session_id?.trim(),
+  });
+
+  if (!notify.ok) {
+    console.error("[stripe-webhook] Upsell notify failed:", notify.error);
+  }
+
+  return { handled: true, slug, upsell: upsellTypeRaw };
+}
+
+async function handleBaseSubscriptionCompleted(
   session: Stripe.Checkout.Session,
 ): Promise<{ handled: boolean; slug?: string; skipped?: boolean }> {
   if (session.mode !== "subscription") {
@@ -91,6 +141,21 @@ async function handleCheckoutCompleted(
   }
 
   return { handled: true, slug };
+}
+
+async function handleCheckoutCompleted(
+  session: Stripe.Checkout.Session,
+): Promise<{
+  handled: boolean;
+  slug?: string;
+  skipped?: boolean;
+  upsell?: string;
+}> {
+  if (session.metadata?.upsell_type) {
+    return handleUpsellCompleted(session);
+  }
+
+  return handleBaseSubscriptionCompleted(session);
 }
 
 export async function POST(request: Request) {

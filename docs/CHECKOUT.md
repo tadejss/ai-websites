@@ -33,10 +33,10 @@ STRIPE_TAX_RATE_ID=txr_...
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
 NEXT_PUBLIC_STRIPE_PRICING_TABLE_ID=prctbl_...
 
-# Optional add-ons (Checkout Upsells) — set when Prices exist
-# STRIPE_PRICE_ADDON_EMAIL=price_...
-# STRIPE_PRICE_ADDON_GBP=price_...
-# STRIPE_PRICE_ADDON_REVIEW_BOARD=price_...
+# Optional post-purchase upsells (after base subscription)
+STRIPE_PRICE_UPSELL_GOOGLE_BUSINESS=price_...
+STRIPE_PRICE_UPSELL_SEO=price_...
+STRIPE_PRICE_UPSELL_EMAIL=price_...
 ```
 
 Also required for purchase emails: `RESEND_API_KEY`.
@@ -57,28 +57,25 @@ Also required for purchase emails: `RESEND_API_KEY`.
 1. Demo pages (all appearances except `zbrendiraj`) show a purchase bar when the lead is not already `customer`.
 2. `POST /api/checkout` with `{ slug, plan: "monthly" | "yearly" }` creates a Checkout Session and returns `{ url }`.
 3. After payment, Stripe hits the webhook → lead `status: customer` + Stripe IDs → email to `CHECKOUT_NOTIFY_EMAIL`.
-4. Buyer lands on `/{slug}/hvala` (also via `/demo/{slug}/hvala`).
+4. Buyer lands on `/{slug}/upsell?session_id={CHECKOUT_SESSION_ID}`.
+5. Optional upsells via `POST /api/checkout/upsell` → separate Stripe Checkout per upsell → back to upsell page.
+6. **Nadaljuj →** leads to `/{slug}/hvala?session_id=...`.
 
-## Upsells (planned)
+## Post-purchase upsells
 
-After the subscription is paid, Stripe can show **Checkout Upsells** (one-time products) before redirecting to `/hvala`. Catalog stub: [`src/billing/addons.ts`](../src/billing/addons.ts).
+Implemented at [`src/billing/upsells.ts`](../src/billing/upsells.ts) and [`src/app/[slug]/upsell/page.tsx`](../src/app/[slug]/upsell/page.tsx).
 
-Planned add-ons:
+| `upsell_type` | Product | Stripe mode | Env |
+|---------------|---------|-------------|-----|
+| `google_business` | Google Business profil (39 €) | `payment` | `STRIPE_PRICE_UPSELL_GOOGLE_BUSINESS` |
+| `seo` | Osnovna SEO (29 €) | `payment` | `STRIPE_PRICE_UPSELL_SEO` |
+| `professional_email` | Profesionalni e-mail (5 €/mes) | `subscription` | `STRIPE_PRICE_UPSELL_EMAIL` |
 
-| ID | Label | Env |
-|----|--------|-----|
-| `business_email` | Poslovni mail | `STRIPE_PRICE_ADDON_EMAIL` |
-| `gbp_update` | Google Business Profile update | `STRIPE_PRICE_ADDON_GBP` |
-| `review_board` | Google review tabla NFC + QR | `STRIPE_PRICE_ADDON_REVIEW_BOARD` |
+Upsell checkout reuses the **same Stripe customer** from the base subscription. Metadata on upsell sessions: `upsell_type`, `slug`, `original_checkout_session_id`, `original_customer_id`.
 
-Setup later:
+Webhook `checkout.session.completed` with `metadata.upsell_type` records purchase in lead (`purchasedUpsells`, `upsellRecords`) and sends ops email.
 
-1. Create **one-time** Prices in Stripe for each add-on.
-2. Enable [Checkout Upsells](https://docs.stripe.com/payments/checkout/upsells) and attach those products.
-3. Wire session create / webhook metadata when env price IDs are set (`listConfiguredAddons()`).
-4. Ops: include purchased add-ons in the notify email.
-
-Not implemented in checkout session create yet — avoid dead code without live price IDs.
+Purchased upsells show **✓ Dodano** on the upsell page; duplicate purchase is blocked server-side.
 
 ## Notes
 

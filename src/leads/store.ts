@@ -7,6 +7,13 @@ import {
 } from "node:fs";
 import { resolve } from "node:path";
 import type { ContactHistoryEntry, LeadOutreach } from "./outreach-types";
+import type { UpsellType } from "@/billing/upsells";
+
+export type UpsellPurchaseRecord = {
+  type: UpsellType;
+  checkoutSessionId: string;
+  purchasedAt: string;
+};
 
 export type LeadRecord = {
   slug: string;
@@ -28,6 +35,10 @@ export type LeadRecord = {
   stripeCustomerId?: string;
   stripeSubscriptionId?: string;
   subscriptionPlan?: "monthly" | "yearly";
+  /** Upsell types purchased after base subscription. */
+  purchasedUpsells?: UpsellType[];
+  /** Idempotent upsell purchase log (one row per Stripe Checkout Session). */
+  upsellRecords?: UpsellPurchaseRecord[];
 };
 
 const SALES_OWNED_FIELDS = [
@@ -39,6 +50,8 @@ const SALES_OWNED_FIELDS = [
   "stripeCustomerId",
   "stripeSubscriptionId",
   "subscriptionPlan",
+  "purchasedUpsells",
+  "upsellRecords",
 ] as const;
 
 const leadsDir = resolve(process.cwd(), "src/content/leads");
