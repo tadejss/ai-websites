@@ -41,3 +41,25 @@ CREATE UNIQUE INDEX IF NOT EXISTS customer_purchases_upsell_uidx
 
 CREATE INDEX IF NOT EXISTS customer_purchases_slug_idx
   ON customer_purchases (slug);
+
+CREATE TABLE IF NOT EXISTS customer_onboarding (
+  slug TEXT PRIMARY KEY REFERENCES customers (slug) ON DELETE CASCADE,
+  access_token TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'pending',
+  answers JSONB,
+  processed_payload JSONB,
+  contact_email TEXT,
+  contact_name TEXT,
+  welcome_email_sent_at TIMESTAMPTZ,
+  approval_email_sent_at TIMESTAMPTZ,
+  submitted_at TIMESTAMPTZ,
+  processed_at TIMESTAMPTZ,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS customer_onboarding_token_uidx
+  ON customer_onboarding (access_token);
+
+CREATE INDEX IF NOT EXISTS customer_onboarding_status_idx
+  ON customer_onboarding (status);

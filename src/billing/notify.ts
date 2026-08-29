@@ -9,6 +9,7 @@ export type CheckoutNotifyInput = {
   stripeCustomerId?: string;
   stripeSubscriptionId?: string;
   sessionId?: string;
+  onboardingUrl?: string;
 };
 
 function escapeHtml(value: string): string {
@@ -51,7 +52,10 @@ export async function sendCheckoutNotification(
     `Checkout session: ${input.sessionId ?? "-"}`,
     `Telefon: ${input.lead.phone ?? "-"}`,
     `Email (lead): ${input.lead.email ?? "-"}`,
-  ].join("\n");
+    input.onboardingUrl ? `Onboarding: ${input.onboardingUrl}` : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
 
   const html = [
     `<p><strong>Nova Stripe naročnina</strong></p>`,
@@ -64,7 +68,12 @@ export async function sendCheckoutNotification(
     `<strong>Session:</strong> ${escapeHtml(input.sessionId ?? "-")}<br />`,
     `<strong>Telefon:</strong> ${escapeHtml(input.lead.phone ?? "-")}<br />`,
     `<strong>Email (lead):</strong> ${escapeHtml(input.lead.email ?? "-")}</p>`,
-  ].join("");
+    input.onboardingUrl
+      ? `<p><strong>Onboarding:</strong> <a href="${escapeHtml(input.onboardingUrl)}">${escapeHtml(input.onboardingUrl)}</a></p>`
+      : "",
+  ]
+    .filter(Boolean)
+    .join("");
 
   const resend = new Resend(apiKey);
 

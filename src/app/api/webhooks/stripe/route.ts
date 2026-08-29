@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type Stripe from "stripe";
 import { sendCheckoutNotification } from "@/billing/notify";
+import { sendOnboardingCustomerEmail } from "@/billing/notify-onboarding-customer";
 import { sendUpsellNotification } from "@/billing/notify-upsell";
 import {
   getStripe,
@@ -14,6 +15,11 @@ import {
 } from "@/customers/store";
 import { isDatabaseConfigured } from "@/db/client";
 import { resolveCheckoutLead } from "@/leads/checkout-lead";
+import {
+  ensureOnboardingAccess,
+  getOnboardingUrl,
+  markWelcomeEmailSent,
+} from "@/onboarding/store";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -57,6 +63,22 @@ type HandlerResult = {
   skipped?: boolean;
   upsell?: string;
 };
+
+function contactEmailFromSession(
+  session: Stripe.Checkout.Session,
+): string | undefined {
+  return (
+    session.customer_details?.email?.trim() ||
+    session.customer_email?.trim() ||
+    undefined
+  );
+}
+
+function contactNameFromSession(
+  session: Stripe.Checkout.Session,
+): string | undefined {
+  return session.customer_details?.name?.trim() || undefined;
+}
 
 async function handleUpsellCompleted(
   session: Stripe.Checkout.Session,
@@ -172,27 +194,62 @@ async function handleBaseSubscriptionCompleted(
     checkoutSessionId: session.id,
   });
 
+  const contactEmail = contactEmailFromSession(session);
+  const contactName = contactNameFromSession(session);
+  const { onboarding } = await ensureOnboardingAccess({
+    slug,
+    contactEmail,
+    contactName,
+  });
+
   if (alreadyProcessed) {
     return { handled: true, slug, skipped: true };
   }
 
-  const lead = resolveCheckoutLead(slug);
-  const notify = await sendCheckoutNotification({
-    lead: {
-      ...lead,
-      status: customer.status,
+  const onboardingUrl = getOnboardingUrl(slug, onboarding.accessToken);
+
+  if (!onboarding.welcomeEmailSentAt) {
+    const lead = resolveCheckoutLead(slug);
+    const companyName = lead.companyName?.trim() || slug;
+
+    const notify = await sendCheckoutNotification({
+      lead: {
+        ...lead,
+        status: customer.status,
+        stripeCustomerId: customer.stripeCustomerId,
+        stripeSubscriptionId: customer.stripeSubscriptionId ?? undefined,
+        subscriptionPlan: customer.subscriptionPlan ?? undefined,
+      },
+      plan,
       stripeCustomerId: customer.stripeCustomerId,
       stripeSubscriptionId: customer.stripeSubscriptionId ?? undefined,
-      subscriptionPlan: customer.subscriptionPlan ?? undefined,
-    },
-    plan,
-    stripeCustomerId: customer.stripeCustomerId,
-    stripeSubscriptionId: customer.stripeSubscriptionId ?? undefined,
-    sessionId: session.id,
-  });
+      sessionId: session.id,
+      onboardingUrl,
+    });
 
-  if (!notify.ok) {
-    console.error("[stripe-webhook] Notify failed:", notify.error);
+    if (!notify.ok) {
+      console.error("[stripe-webhook] Notify failed:", notify.error);
+    }
+
+    const recipientEmail = contactEmail || lead.email?.trim();
+    if (recipientEmail) {
+      const customerEmail = await sendOnboardingCustomerEmail({
+        slug,
+        accessToken: onboarding.accessToken,
+        companyName,
+        contactEmail: recipientEmail,
+        contactName: contactName ?? onboarding.contactName,
+      });
+
+      if (!customerEmail.ok) {
+        console.error(
+          "[stripe-webhook] Onboarding customer email failed:",
+          customerEmail.error,
+        );
+      }
+    }
+
+    await markWelcomeEmailSent(slug);
   }
 
   return { handled: true, slug };

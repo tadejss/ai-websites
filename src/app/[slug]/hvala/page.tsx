@@ -4,6 +4,11 @@ import { notFound } from "next/navigation";
 import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
 import { isCustomer as isPersistedCustomer } from "@/customers/store";
+import {
+  ensureOnboardingAccess,
+  getOnboardingBySlug,
+  getOnboardingUrl,
+} from "@/onboarding/store";
 
 type Props = {
   params: Promise<{
@@ -43,6 +48,14 @@ export default async function ThankYouPage({ params }: Props) {
   }
 
   const isCustomer = await isPersistedCustomer(slug);
+  let onboarding = isCustomer ? await getOnboardingBySlug(slug) : null;
+  if (isCustomer && !onboarding) {
+    ({ onboarding } = await ensureOnboardingAccess({ slug }));
+  }
+  const onboardingUrl =
+    onboarding != null
+      ? getOnboardingUrl(slug, onboarding.accessToken)
+      : null;
 
   return (
     <main className="min-h-screen bg-zinc-950 px-6 py-24 text-white">
@@ -51,17 +64,28 @@ export default async function ThankYouPage({ params }: Props) {
           Zbrendiraj.si
         </p>
         <h1 className="mt-6 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Hvala za naročnino
+          {isCustomer ? "Plačilo je uspešno" : "Hvala za naročnino"}
         </h1>
         <p className="mt-5 text-base leading-relaxed text-zinc-400 sm:text-lg">
           {isCustomer
-            ? `Naročnina za ${brandName} je aktivna. Kmalu te kontaktiramo glede domene in naslednjih korakov.`
+            ? `Tvojo stran za ${brandName} zdaj pripravljamo na objavo. Za naslednji korak izpolni podatke o podjetju.`
             : `Plačilo za ${brandName} smo prejeli. Potrditev naročnine obdelujemo — v nekaj minutah bo aktivna.`}
         </p>
 
+        {isCustomer && onboardingUrl ? (
+          <Link
+            href={onboardingUrl}
+            className="mt-10 inline-flex rounded-full bg-lime-300 px-6 py-3 text-sm font-semibold text-zinc-950 transition-colors hover:bg-lime-200"
+          >
+            Izpolni podatke za svojo stran
+          </Link>
+        ) : null}
+
         <ul className="mt-10 space-y-3 text-left text-sm text-zinc-300">
           <li className="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-            Preverimo podatke in ti pošljemo povezavo za ureditev vsebine.
+            {isCustomer
+              ? "Po oddaji podatkov pripravimo končno različico strani in vas obvestimo pred objavo."
+              : "Preverimo podatke in ti pošljemo povezavo za ureditev vsebine."}
           </li>
           <li className="rounded-xl border border-white/10 bg-white/5 px-4 py-3">
             Pri letnem planu: + GRATIS DOMENA (če je na voljo).
@@ -79,7 +103,7 @@ export default async function ThankYouPage({ params }: Props) {
 
         <Link
           href={`/${slug}`}
-          className="mt-12 inline-flex rounded-full bg-lime-300 px-6 py-3 text-sm font-semibold text-zinc-950 transition-colors hover:bg-lime-200"
+          className="mt-12 inline-flex rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
         >
           Nazaj na stran
         </Link>

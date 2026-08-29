@@ -1,0 +1,308 @@
+import { randomBytes, timingSafeEqual } from "node:crypto";
+import { isDatabaseConfigured, sql } from "@/db/client";
+import { ensureCustomerSchema } from "@/db/ensure-schema";
+import { toAbsoluteUrl } from "@/site-url";
+import type {
+  CustomerOnboardingAnswers,
+  OnboardingRecord,
+  OnboardingStatus,
+  ProcessedOnboardingPayload,
+} from "./types";
+import { isOnboardingStatus } from "./types";
+
+type OnboardingRow = {
+  slug: string;
+  access_token: string;
+  status: string;
+  answers: CustomerOnboardingAnswers | null;
+  processed_payload: ProcessedOnboardingPayload | null;
+  contact_email: string | null;
+  contact_name: string | null;
+  welcome_email_sent_at: Date | string | null;
+  approval_email_sent_at: Date | string | null;
+  submitted_at: Date | string | null;
+  processed_at: Date | string | null;
+  created_at: Date | string;
+  updated_at: Date | string;
+};
+
+function toIso(value: Date | string | null | undefined): string | null {
+  if (!value) {
+    return null;
+  }
+  if (value instanceof Date) {
+    return value.toISOString();
+  }
+  return new Date(value).toISOString();
+}
+
+function mapRow(row: OnboardingRow): OnboardingRecord {
+  const status = isOnboardingStatus(row.status) ? row.status : "pending";
+
+  return {
+    slug: row.slug,
+    accessToken: row.access_token,
+    status,
+    answers: row.answers ?? null,
+    processedPayload: row.processed_payload ?? null,
+    contactEmail: row.contact_email,
+    contactName: row.contact_name,
+    welcomeEmailSentAt: toIso(row.welcome_email_sent_at),
+    approvalEmailSentAt: toIso(row.approval_email_sent_at),
+    submittedAt: toIso(row.submitted_at),
+    processedAt: toIso(row.processed_at),
+    createdAt: toIso(row.created_at) ?? new Date().toISOString(),
+    updatedAt: toIso(row.updated_at) ?? new Date().toISOString(),
+  };
+}
+
+function generateAccessToken(): string {
+  return randomBytes(32).toString("base64url");
+}
+
+async function requireDb(): Promise<ReturnType<typeof sql>> {
+  if (!isDatabaseConfigured()) {
+    throw new Error("DATABASE_URL is not configured");
+  }
+  await ensureCustomerSchema();
+  return sql();
+}
+
+export function getOnboardingUrl(slug: string, accessToken: string): string {
+  const path = `/${slug}/vsebina?token=${encodeURIComponent(accessToken)}`;
+  return toAbsoluteUrl(path) || path;
+}
+
+export async function getOnboardingBySlug(
+  slug: string,
+): Promise<OnboardingRecord | null> {
+  if (!isDatabaseConfigured()) {
+    return null;
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT * FROM customer_onboarding WHERE slug = ${slug} LIMIT 1
+  `) as OnboardingRow[];
+  return rows[0] ? mapRow(rows[0]) : null;
+}
+
+export async function getOnboardingByToken(
+  token: string,
+): Promise<OnboardingRecord | null> {
+  if (!isDatabaseConfigured() || !token.trim()) {
+    return null;
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT * FROM customer_onboarding WHERE access_token = ${token} LIMIT 1
+  `) as OnboardingRow[];
+  return rows[0] ? mapRow(rows[0]) : null;
+}
+
+export function isValidOnboardingToken(
+  record: OnboardingRecord | null,
+  token: string | null | undefined,
+): boolean {
+  if (!record || !token?.trim()) {
+    return false;
+  }
+
+  const expected = Buffer.from(record.accessToken);
+  const actual = Buffer.from(token.trim());
+
+  if (expected.length !== actual.length) {
+    return false;
+  }
+
+  return timingSafeEqual(expected, actual);
+}
+
+/**
+ * Creates onboarding row + token on first purchase. Token is never rotated.
+ */
+export async function ensureOnboardingAccess(input: {
+  slug: string;
+  contactEmail?: string | null;
+  contactName?: string | null;
+}): Promise<{ onboarding: OnboardingRecord; created: boolean }> {
+  const db = await requireDb();
+  const token = generateAccessToken();
+  const email = input.contactEmail?.trim() || null;
+  const name = input.contactName?.trim() || null;
+
+  const inserted = (await db`
+    INSERT INTO customer_onboarding (
+      slug,
+      access_token,
+      status,
+      contact_email,
+      contact_name,
+      created_at,
+      updated_at
+    )
+    VALUES (
+      ${input.slug},
+      ${token},
+      'pending',
+      ${email},
+      ${name},
+      NOW(),
+      NOW()
+    )
+    ON CONFLICT (slug) DO NOTHING
+    RETURNING *
+  `) as OnboardingRow[];
+
+  if (inserted[0]) {
+    return { onboarding: mapRow(inserted[0]), created: true };
+  }
+
+  const existing = await getOnboardingBySlug(input.slug);
+  if (!existing) {
+    throw new Error(`Failed to ensure onboarding for slug "${input.slug}"`);
+  }
+
+  if (email || name) {
+    await db`
+      UPDATE customer_onboarding
+      SET
+        contact_email = COALESCE(contact_email, ${email}),
+        contact_name = COALESCE(contact_name, ${name}),
+        updated_at = NOW()
+      WHERE slug = ${input.slug}
+    `;
+  }
+
+  const refreshed = await getOnboardingBySlug(input.slug);
+  if (!refreshed) {
+    throw new Error(`Onboarding missing after ensure for slug "${input.slug}"`);
+  }
+
+  return { onboarding: refreshed, created: false };
+}
+
+export async function markWelcomeEmailSent(slug: string): Promise<void> {
+  const db = await requireDb();
+  await db`
+    UPDATE customer_onboarding
+    SET welcome_email_sent_at = NOW(), updated_at = NOW()
+    WHERE slug = ${slug} AND welcome_email_sent_at IS NULL
+  `;
+}
+
+export async function markApprovalEmailSent(slug: string): Promise<void> {
+  const db = await requireDb();
+  await db`
+    UPDATE customer_onboarding
+    SET approval_email_sent_at = NOW(), updated_at = NOW()
+    WHERE slug = ${slug} AND approval_email_sent_at IS NULL
+  `;
+}
+
+export async function saveOnboardingDraft(
+  slug: string,
+  partial: CustomerOnboardingAnswers,
+): Promise<OnboardingRecord> {
+  const db = await requireDb();
+  const existing = await getOnboardingBySlug(slug);
+  const merged = { ...(existing?.answers ?? {}), ...partial };
+
+  const rows = (await db`
+    UPDATE customer_onboarding
+    SET
+      answers = ${merged},
+      status = CASE
+        WHEN status IN ('submitted', 'processing', 'ready_for_approval', 'live')
+        THEN status
+        ELSE 'in_progress'
+      END,
+      updated_at = NOW()
+    WHERE slug = ${slug}
+    RETURNING *
+  `) as OnboardingRow[];
+
+  if (!rows[0]) {
+    throw new Error(`Onboarding not found for slug "${slug}"`);
+  }
+
+  return mapRow(rows[0]);
+}
+
+export async function submitOnboarding(
+  slug: string,
+  answers: CustomerOnboardingAnswers,
+): Promise<{ onboarding: OnboardingRecord; alreadySubmitted: boolean }> {
+  const db = await requireDb();
+  const existing = await getOnboardingBySlug(slug);
+
+  if (
+    existing &&
+    ["submitted", "processing", "ready_for_approval", "live"].includes(
+      existing.status,
+    )
+  ) {
+    return { onboarding: existing, alreadySubmitted: true };
+  }
+
+  const rows = (await db`
+    UPDATE customer_onboarding
+    SET
+      answers = ${answers},
+      status = 'submitted',
+      submitted_at = COALESCE(submitted_at, NOW()),
+      updated_at = NOW()
+    WHERE slug = ${slug}
+    RETURNING *
+  `) as OnboardingRow[];
+
+  if (!rows[0]) {
+    throw new Error(`Onboarding not found for slug "${slug}"`);
+  }
+
+  return { onboarding: mapRow(rows[0]), alreadySubmitted: false };
+}
+
+export async function updateOnboardingStatus(
+  slug: string,
+  status: OnboardingStatus,
+  extra?: {
+    processedPayload?: ProcessedOnboardingPayload;
+    processedAt?: Date;
+  },
+): Promise<OnboardingRecord> {
+  const db = await requireDb();
+  const processedAt = extra?.processedAt?.toISOString() ?? null;
+
+  const rows = (await db`
+    UPDATE customer_onboarding
+    SET
+      status = ${status},
+      processed_payload = COALESCE(${extra?.processedPayload ?? null}, processed_payload),
+      processed_at = COALESCE(${processedAt}::timestamptz, processed_at),
+      updated_at = NOW()
+    WHERE slug = ${slug}
+    RETURNING *
+  `) as OnboardingRow[];
+
+  if (!rows[0]) {
+    throw new Error(`Onboarding not found for slug "${slug}"`);
+  }
+
+  return mapRow(rows[0]);
+}
+
+export async function hasSubmittedOnboarding(slug: string): Promise<boolean> {
+  const record = await getOnboardingBySlug(slug);
+  if (!record) {
+    return false;
+  }
+
+  return [
+    "submitted",
+    "processing",
+    "ready_for_approval",
+    "live",
+  ].includes(record.status);
+}
