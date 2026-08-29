@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { getLeadWithCustomerState } from "@/customers/merge";
 import { getDemoUrl } from "@/leads/demo-url";
 import { resolveLeadEmail } from "@/leads/resolve-email";
-import { readLead } from "@/leads/store";
 import {
   getDueOutreachStep,
   getNextFollowUpAt,
@@ -14,7 +14,7 @@ import { SendOutreachButton } from "./send-outreach-button";
 
 export const dynamic = "force-dynamic";
 
-function formatDate(value: string | undefined): string {
+function formatDate(value: string | undefined | null): string {
   if (!value) {
     return "—";
   }
@@ -22,11 +22,34 @@ function formatDate(value: string | undefined): string {
   return new Date(value).toLocaleString("sl-SI");
 }
 
+function planLabel(plan: string | null | undefined): string {
+  if (plan === "monthly") {
+    return "Monthly";
+  }
+  if (plan === "yearly") {
+    return "Yearly";
+  }
+  return plan ?? "—";
+}
+
+function upsellLabel(type: string | null): string {
+  switch (type) {
+    case "google_business":
+      return "Google Business";
+    case "seo":
+      return "SEO";
+    case "professional_email":
+      return "Professional Email";
+    default:
+      return type ?? "—";
+  }
+}
+
 export default async function AdminLeadDetailPage({
   params,
 }: PageProps<"/admin/leads/[slug]">) {
   const { slug } = await params;
-  const lead = readLead(slug);
+  const lead = await getLeadWithCustomerState(slug);
 
   if (!lead) {
     notFound();
@@ -36,6 +59,8 @@ export default async function AdminLeadDetailPage({
   const email = resolveLeadEmail(lead);
   const outreach = lead.outreach;
   const dueStep = getDueOutreachStep(lead);
+  const customer = lead.customer;
+  const displayStatus = customer ? "CUSTOMER" : (lead.status ?? "LEAD").toUpperCase();
 
   return (
     <div>
@@ -47,6 +72,15 @@ export default async function AdminLeadDetailPage({
         <div>
           <h1 className="text-2xl font-semibold">{lead.companyName ?? lead.slug}</h1>
           <p className="mt-1 text-sm text-neutral-600">{lead.industry}</p>
+          <p
+            className={`mt-2 inline-block rounded px-2 py-0.5 text-xs font-semibold tracking-wide ${
+              customer
+                ? "bg-emerald-100 text-emerald-800"
+                : "bg-neutral-100 text-neutral-700"
+            }`}
+          >
+            {displayStatus}
+          </p>
         </div>
 
         <SendOutreachButton
@@ -62,7 +96,7 @@ export default async function AdminLeadDetailPage({
           <dl className="mt-4 space-y-2 text-sm">
             <div className="flex justify-between gap-4">
               <dt className="text-neutral-500">Status</dt>
-              <dd>{lead.status ?? "—"}</dd>
+              <dd>{displayStatus}</dd>
             </div>
             <div className="flex justify-between gap-4">
               <dt className="text-neutral-500">Phone</dt>
@@ -136,6 +170,75 @@ export default async function AdminLeadDetailPage({
           </dl>
         </section>
       </div>
+
+      <section className="mt-6 rounded-lg border border-neutral-200 bg-white p-5">
+        <h2 className="font-medium">Customer / payment</h2>
+        {customer ? (
+          <dl className="mt-4 space-y-2 text-sm">
+            <div className="flex justify-between gap-4">
+              <dt className="text-neutral-500">Status</dt>
+              <dd className="font-medium text-emerald-700">CUSTOMER</dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="text-neutral-500">Customer</dt>
+              <dd className="font-mono text-xs">{customer.stripeCustomerId}</dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="text-neutral-500">Subscription</dt>
+              <dd className="font-mono text-xs">
+                {customer.stripeSubscriptionId ?? "—"}
+              </dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="text-neutral-500">Plan</dt>
+              <dd>{planLabel(customer.subscriptionPlan)}</dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="text-neutral-500">Purchased at</dt>
+              <dd>{formatDate(customer.purchasedAt)}</dd>
+            </div>
+            <div className="flex justify-between gap-4">
+              <dt className="text-neutral-500">Purchased upsells</dt>
+              <dd className="text-right">
+                {lead.purchasedUpsellTypes.length
+                  ? lead.purchasedUpsellTypes.map(upsellLabel).join(", ")
+                  : "—"}
+              </dd>
+            </div>
+          </dl>
+        ) : (
+          <p className="mt-4 text-sm text-neutral-600">
+            LEAD — no persistent customer record yet.
+          </p>
+        )}
+
+        {lead.purchases.length > 0 ? (
+          <div className="mt-6">
+            <h3 className="text-sm font-medium">Purchases</h3>
+            <ul className="mt-2 space-y-2 text-sm">
+              {lead.purchases.map((purchase) => (
+                <li
+                  key={purchase.id}
+                  className="rounded bg-neutral-50 px-3 py-2"
+                >
+                  <div className="font-medium">
+                    {purchase.purchaseKind === "upsell"
+                      ? `Upsell · ${upsellLabel(purchase.upsellType)}`
+                      : "Base subscription"}{" "}
+                    · {formatDate(purchase.purchasedAt)}
+                  </div>
+                  <div className="text-xs text-neutral-500">
+                    Session {purchase.stripeCheckoutSessionId}
+                    {purchase.stripeObjectId
+                      ? ` · ${purchase.stripeObjectId}`
+                      : ""}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+      </section>
 
       <section className="mt-6 rounded-lg border border-neutral-200 bg-white p-5">
         <h2 className="font-medium">Outreach timeline</h2>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
-import { readLead } from "@/leads/store";
+import { isCustomer as isPersistedCustomer } from "@/customers/store";
 
 type Props = {
   params: Promise<{
@@ -42,8 +42,7 @@ export default async function ThankYouPage({ params }: Props) {
     notFound();
   }
 
-  const lead = readLead(slug);
-  const isCustomer = lead?.status === "customer";
+  const isCustomer = await isPersistedCustomer(slug);
 
   return (
     <main className="min-h-screen bg-zinc-950 px-6 py-24 text-white">

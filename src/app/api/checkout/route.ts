@@ -7,7 +7,7 @@ import {
   type CheckoutPlan,
 } from "@/billing/stripe";
 import { getSiteConfig } from "@/content/get-site-config";
-import { resolveCheckoutLead } from "@/leads/checkout-lead";
+import { isCustomer } from "@/customers/store";
 import { resolveRequestOrigin, toAbsoluteUrl } from "@/site-url";
 
 export const runtime = "nodejs";
@@ -73,9 +73,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Site not found" }, { status: 404 });
   }
 
-  const lead = resolveCheckoutLead(slug);
-
-  if (lead.status === "customer") {
+  if (await isCustomer(slug)) {
     return NextResponse.json(
       { error: "This site is already subscribed" },
       { status: 409 },

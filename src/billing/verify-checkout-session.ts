@@ -8,6 +8,16 @@ import {
 } from "./upsells";
 import { recordUpsellPurchase } from "@/leads/upsell-store";
 
+function customerIdFromCheckoutSession(
+  session: Stripe.Checkout.Session,
+): string | undefined {
+  const customer = session.customer;
+  if (!customer) {
+    return undefined;
+  }
+  return typeof customer === "string" ? customer : customer.id;
+}
+
 export async function retrieveCheckoutSession(
   sessionId: string,
 ): Promise<Stripe.Checkout.Session | null> {
@@ -92,6 +102,23 @@ function isSessionPaid(session: Stripe.Checkout.Session): boolean {
   );
 }
 
+function paymentOrSubscriptionId(
+  session: Stripe.Checkout.Session,
+): string | null {
+  if (session.mode === "subscription") {
+    const subscription = session.subscription;
+    if (!subscription) {
+      return null;
+    }
+    return typeof subscription === "string" ? subscription : subscription.id;
+  }
+  const paymentIntent = session.payment_intent;
+  if (!paymentIntent) {
+    return null;
+  }
+  return typeof paymentIntent === "string" ? paymentIntent : paymentIntent.id;
+}
+
 /** List paid upsell types for this base session from Stripe (source of truth). */
 export async function listPurchasedUpsellTypesFromStripe(
   customerId: string,
@@ -129,8 +156,8 @@ export async function listPurchasedUpsellTypesFromStripe(
 }
 
 /**
- * Sync Stripe-paid upsells into the lead store when possible.
- * Never throws — Vercel filesystem may be read-only; Stripe remains source of truth.
+ * Sync Stripe-paid upsells into the persistent customer store when possible.
+ * Never throws — Stripe remains a recovery source of truth.
  */
 export async function syncUpsellsForBaseSession(
   customerId: string,
@@ -164,10 +191,16 @@ export async function syncUpsellsForBaseSession(
     }
 
     try {
-      recordUpsellPurchase(slug, verified.upsellType, session.id);
+      await recordUpsellPurchase(
+        slug,
+        verified.upsellType,
+        session.id,
+        customerId,
+        paymentOrSubscriptionId(session),
+      );
     } catch (error) {
       console.warn(
-        "[upsell-sync] lead write skipped:",
+        "[upsell-sync] persist skipped:",
         error instanceof Error ? error.message : error,
       );
     }
@@ -200,11 +233,22 @@ export async function confirmUpsellReturn(
     return null;
   }
 
+  const stripeCustomerId =
+    customerIdFromCheckoutSession(session) ||
+    session.metadata?.original_customer_id?.trim() ||
+    undefined;
+
   try {
-    recordUpsellPurchase(slug, verified.upsellType, session.id);
+    await recordUpsellPurchase(
+      slug,
+      verified.upsellType,
+      session.id,
+      stripeCustomerId,
+      paymentOrSubscriptionId(session),
+    );
   } catch (error) {
     console.warn(
-      "[upsell-confirm] lead write skipped:",
+      "[upsell-confirm] persist skipped:",
       error instanceof Error ? error.message : error,
     );
   }

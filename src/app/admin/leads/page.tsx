@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getCustomerBySlug } from "@/customers/store";
 import { getDemoUrl } from "@/leads/demo-url";
 import { resolveLeadEmail } from "@/leads/resolve-email";
 import { getNextFollowUpAt, getOutreachStatusLabel } from "@/outreach/eligibility";
@@ -15,10 +16,20 @@ function formatDate(value: string | undefined): string {
   return new Date(value).toLocaleString("sl-SI");
 }
 
-export default function AdminLeadsPage() {
+export default async function AdminLeadsPage() {
   const config = getOutreachConfig();
   const leads = readAllLeads().sort((a, b) =>
     (a.companyName ?? a.slug).localeCompare(b.companyName ?? b.slug, "sl"),
+  );
+
+  const customerFlags = await Promise.all(
+    leads.map(async (lead) => {
+      try {
+        return Boolean(await getCustomerBySlug(lead.slug));
+      } catch {
+        return false;
+      }
+    }),
   );
 
   return (
@@ -47,9 +58,12 @@ export default function AdminLeadsPage() {
             </tr>
           </thead>
           <tbody>
-            {leads.map((lead) => {
+            {leads.map((lead, index) => {
               const email = resolveLeadEmail(lead);
               const outreach = lead.outreach;
+              const status = customerFlags[index]
+                ? "customer"
+                : (lead.status ?? "—");
 
               return (
                 <tr key={lead.slug} className="border-b border-neutral-100">
@@ -62,7 +76,7 @@ export default function AdminLeadsPage() {
                     </Link>
                     <div className="text-xs text-neutral-500">{lead.industry}</div>
                   </td>
-                  <td className="px-4 py-3">{lead.status ?? "—"}</td>
+                  <td className="px-4 py-3">{status}</td>
                   <td className="px-4 py-3">{getOutreachStatusLabel(lead)}</td>
                   <td className="px-4 py-3">{email ?? "—"}</td>
                   <td className="px-4 py-3">{formatDate(outreach?.lastSentAt)}</td>

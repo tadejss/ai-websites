@@ -8,9 +8,12 @@ import {
   type CheckoutPlan,
 } from "@/billing/stripe";
 import { isUpsellType } from "@/billing/upsells";
+import {
+  recordCustomerUpsellPurchase,
+  upsertCustomerFromCheckout,
+} from "@/customers/store";
+import { isDatabaseConfigured } from "@/db/client";
 import { resolveCheckoutLead } from "@/leads/checkout-lead";
-import { recordUpsellPurchase, hasRecordedUpsellSession, hasPurchasedUpsell } from "@/leads/upsell-store";
-import { patchLead, readLead } from "@/leads/store";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -19,11 +22,9 @@ function subscriptionIdFromSession(
   session: Stripe.Checkout.Session,
 ): string | undefined {
   const subscription = session.subscription;
-
   if (!subscription) {
     return undefined;
   }
-
   return typeof subscription === "string" ? subscription : subscription.id;
 }
 
@@ -31,17 +32,35 @@ function customerIdFromSession(
   session: Stripe.Checkout.Session,
 ): string | undefined {
   const customer = session.customer;
-
   if (!customer) {
     return undefined;
   }
-
   return typeof customer === "string" ? customer : customer.id;
 }
 
+function paymentOrSubscriptionId(
+  session: Stripe.Checkout.Session,
+): string | undefined {
+  if (session.mode === "subscription") {
+    return subscriptionIdFromSession(session);
+  }
+  const paymentIntent = session.payment_intent;
+  if (!paymentIntent) {
+    return undefined;
+  }
+  return typeof paymentIntent === "string" ? paymentIntent : paymentIntent.id;
+}
+
+type HandlerResult = {
+  handled: boolean;
+  slug?: string;
+  skipped?: boolean;
+  upsell?: string;
+};
+
 async function handleUpsellCompleted(
   session: Stripe.Checkout.Session,
-): Promise<{ handled: boolean; slug?: string; upsell?: string; skipped?: boolean }> {
+): Promise<HandlerResult> {
   const upsellTypeRaw = session.metadata?.upsell_type;
   if (!isUpsellType(upsellTypeRaw)) {
     return { handled: false };
@@ -61,18 +80,42 @@ async function handleUpsellCompleted(
     return { handled: false };
   }
 
-  const existingLead = readLead(slug);
-  if (
-    hasRecordedUpsellSession(existingLead, session.id) ||
-    hasPurchasedUpsell(existingLead, upsellTypeRaw)
-  ) {
-    return { handled: true, slug, upsell: upsellTypeRaw, skipped: true };
+  const stripeCustomerId =
+    customerIdFromSession(session) ||
+    session.metadata?.original_customer_id?.trim();
+
+  if (!stripeCustomerId) {
+    console.error(
+      "[stripe-webhook] Missing customer on upsell session",
+      session.id,
+    );
+    return { handled: false };
   }
 
-  const lead = recordUpsellPurchase(slug, upsellTypeRaw, session.id);
+  const { customer, alreadyProcessed } = await recordCustomerUpsellPurchase({
+    slug,
+    upsellType: upsellTypeRaw,
+    stripeCustomerId,
+    checkoutSessionId: session.id,
+    stripeObjectId: paymentOrSubscriptionId(session) ?? null,
+  });
 
+  if (alreadyProcessed) {
+    return {
+      handled: true,
+      slug,
+      upsell: upsellTypeRaw,
+      skipped: true,
+    };
+  }
+
+  const lead = resolveCheckoutLead(slug);
   const notify = await sendUpsellNotification({
-    lead,
+    lead: {
+      ...lead,
+      status: customer.status,
+      stripeCustomerId: customer.stripeCustomerId,
+    },
     upsellType: upsellTypeRaw,
     sessionId: session.id,
     originalCheckoutSessionId:
@@ -88,8 +131,13 @@ async function handleUpsellCompleted(
 
 async function handleBaseSubscriptionCompleted(
   session: Stripe.Checkout.Session,
-): Promise<{ handled: boolean; slug?: string; skipped?: boolean }> {
+): Promise<HandlerResult> {
   if (session.mode !== "subscription") {
+    return { handled: false };
+  }
+
+  // Upsell email is also mode=subscription — routed earlier via metadata.
+  if (session.metadata?.upsell_type) {
     return { handled: false };
   }
 
@@ -108,31 +156,38 @@ async function handleBaseSubscriptionCompleted(
   const stripeCustomerId = customerIdFromSession(session);
   const stripeSubscriptionId = subscriptionIdFromSession(session);
 
-  const existing = readLead(slug);
-  const lead = existing ?? resolveCheckoutLead(slug);
+  if (!stripeCustomerId) {
+    console.error(
+      "[stripe-webhook] Missing customer on checkout session",
+      session.id,
+    );
+    return { handled: false };
+  }
 
-  if (
-    existing?.status === "customer" &&
-    existing.stripeSubscriptionId &&
-    existing.stripeSubscriptionId === stripeSubscriptionId
-  ) {
+  const { customer, alreadyProcessed } = await upsertCustomerFromCheckout({
+    slug,
+    stripeCustomerId,
+    stripeSubscriptionId,
+    subscriptionPlan: plan,
+    checkoutSessionId: session.id,
+  });
+
+  if (alreadyProcessed) {
     return { handled: true, slug, skipped: true };
   }
 
-  const updated =
-    existing &&
-    patchLead(slug, {
-      status: "customer",
-      stripeCustomerId,
-      stripeSubscriptionId,
-      subscriptionPlan: plan,
-    });
-
+  const lead = resolveCheckoutLead(slug);
   const notify = await sendCheckoutNotification({
-    lead: updated ?? lead,
+    lead: {
+      ...lead,
+      status: customer.status,
+      stripeCustomerId: customer.stripeCustomerId,
+      stripeSubscriptionId: customer.stripeSubscriptionId ?? undefined,
+      subscriptionPlan: customer.subscriptionPlan ?? undefined,
+    },
     plan,
-    stripeCustomerId,
-    stripeSubscriptionId,
+    stripeCustomerId: customer.stripeCustomerId,
+    stripeSubscriptionId: customer.stripeSubscriptionId ?? undefined,
     sessionId: session.id,
   });
 
@@ -145,12 +200,7 @@ async function handleBaseSubscriptionCompleted(
 
 async function handleCheckoutCompleted(
   session: Stripe.Checkout.Session,
-): Promise<{
-  handled: boolean;
-  slug?: string;
-  skipped?: boolean;
-  upsell?: string;
-}> {
+): Promise<HandlerResult> {
   if (session.metadata?.upsell_type) {
     return handleUpsellCompleted(session);
   }
@@ -164,6 +214,13 @@ export async function POST(request: Request) {
   if (!webhookSecret) {
     return NextResponse.json(
       { error: "STRIPE_WEBHOOK_SECRET is not configured" },
+      { status: 503 },
+    );
+  }
+
+  if (!isDatabaseConfigured()) {
+    return NextResponse.json(
+      { error: "DATABASE_URL is not configured" },
       { status: 503 },
     );
   }
@@ -189,8 +246,16 @@ export async function POST(request: Request) {
 
   if (event.type === "checkout.session.completed") {
     const session = event.data.object as Stripe.Checkout.Session;
-    const result = await handleCheckoutCompleted(session);
-    return NextResponse.json({ ok: true, ...result });
+    try {
+      const result = await handleCheckoutCompleted(session);
+      return NextResponse.json({ ok: true, ...result });
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : "Webhook handler failed";
+      console.error("[stripe-webhook]", message);
+      // Return 500 so Stripe retries until DB write succeeds.
+      return NextResponse.json({ error: message }, { status: 500 });
+    }
   }
 
   return NextResponse.json({ ok: true, handled: false, type: event.type });

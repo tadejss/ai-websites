@@ -1,99 +1,135 @@
 import type { UpsellType } from "@/billing/upsells";
-import { resolveCheckoutLead } from "./checkout-lead";
 import {
-  patchLead,
-  readLead,
-  saveLead,
-  type LeadRecord,
-  type UpsellPurchaseRecord,
-} from "./store";
+  getPurchasedUpsellTypes as getPurchasedUpsellTypesFromDb,
+  hasUpsellPurchase,
+  recordCustomerUpsellPurchase,
+} from "@/customers/store";
+import { isDatabaseConfigured } from "@/db/client";
+import { resolveCheckoutLead } from "./checkout-lead";
+import { readLead, type LeadRecord, type UpsellPurchaseRecord } from "./store";
 
 export type { UpsellPurchaseRecord };
 
-function normalizeUpsellRecords(
-  lead: LeadRecord | null,
-): UpsellPurchaseRecord[] {
-  if (!lead?.upsellRecords?.length) {
-    return [];
+/**
+ * Prefer persistent DB when configured; fall back to lead JSON (local/dev).
+ */
+export async function getPurchasedUpsellTypes(
+  slugOrLead: string | LeadRecord | null,
+): Promise<UpsellType[]> {
+  const slug =
+    typeof slugOrLead === "string"
+      ? slugOrLead
+      : slugOrLead?.slug?.trim() || "";
+
+  if (slug && isDatabaseConfigured()) {
+    try {
+      return await getPurchasedUpsellTypesFromDb(slug);
+    } catch (error) {
+      console.warn(
+        "[upsell-store] DB read failed:",
+        error instanceof Error ? error.message : error,
+      );
+    }
   }
-  return lead.upsellRecords.filter(
-    (record): record is UpsellPurchaseRecord =>
-      Boolean(record?.type && record?.checkoutSessionId && record?.purchasedAt),
-  );
+
+  const lead =
+    typeof slugOrLead === "string" ? readLead(slugOrLead) : slugOrLead;
+  return getPurchasedUpsellTypesFromLead(lead);
 }
 
-export function getPurchasedUpsellTypes(lead: LeadRecord | null): UpsellType[] {
-  const fromRecords = normalizeUpsellRecords(lead).map((record) => record.type);
-  const fromLegacy = lead?.purchasedUpsells ?? [];
+export function getPurchasedUpsellTypesFromLead(
+  lead: LeadRecord | null,
+): UpsellType[] {
+  if (!lead) {
+    return [];
+  }
+  const fromRecords = (lead.upsellRecords ?? [])
+    .filter(
+      (record): record is UpsellPurchaseRecord =>
+        Boolean(record?.type && record?.checkoutSessionId && record?.purchasedAt),
+    )
+    .map((record) => record.type);
+  const fromLegacy = lead.purchasedUpsells ?? [];
   return [...new Set([...fromRecords, ...fromLegacy])];
 }
 
-export function hasPurchasedUpsell(
-  lead: LeadRecord | null,
+export async function hasPurchasedUpsell(
+  slug: string,
   type: UpsellType,
-): boolean {
-  return getPurchasedUpsellTypes(lead).includes(type);
+): Promise<boolean> {
+  if (isDatabaseConfigured()) {
+    try {
+      return await hasUpsellPurchase(slug, type);
+    } catch (error) {
+      console.warn(
+        "[upsell-store] DB hasPurchasedUpsell failed:",
+        error instanceof Error ? error.message : error,
+      );
+    }
+  }
+
+  const lead = readLead(slug);
+  return getPurchasedUpsellTypesFromLead(lead).includes(type);
 }
 
-export function hasRecordedUpsellSession(
-  lead: LeadRecord | null,
-  checkoutSessionId: string,
-): boolean {
-  return normalizeUpsellRecords(lead).some(
-    (record) => record.checkoutSessionId === checkoutSessionId,
-  );
-}
-
-/** Idempotent: skip if session or upsell type already recorded. Never throws. */
-export function recordUpsellPurchase(
+/**
+ * Record upsell in persistent DB when configured.
+ * Returns a lead-shaped record for callers that still expect LeadRecord.
+ * Never throws.
+ */
+export async function recordUpsellPurchase(
   slug: string,
   type: UpsellType,
   checkoutSessionId: string,
-): LeadRecord {
-  const existing = readLead(slug);
-  const fallback = existing ?? resolveCheckoutLead(slug);
+  stripeCustomerId?: string,
+  stripeObjectId?: string | null,
+): Promise<LeadRecord> {
+  const fallback = resolveCheckoutLead(slug);
 
-  if (
-    hasRecordedUpsellSession(existing, checkoutSessionId) ||
-    hasPurchasedUpsell(existing, type)
-  ) {
+  if (isDatabaseConfigured() && stripeCustomerId) {
+    try {
+      const { customer } = await recordCustomerUpsellPurchase({
+        slug,
+        upsellType: type,
+        stripeCustomerId,
+        checkoutSessionId,
+        stripeObjectId: stripeObjectId ?? null,
+      });
+      return {
+        ...fallback,
+        status: customer.status,
+        stripeCustomerId: customer.stripeCustomerId,
+        stripeSubscriptionId: customer.stripeSubscriptionId ?? undefined,
+        subscriptionPlan: customer.subscriptionPlan ?? undefined,
+        purchasedAt: customer.purchasedAt,
+        purchasedUpsells: await getPurchasedUpsellTypesFromDb(slug),
+      };
+    } catch (error) {
+      console.warn(
+        "[upsell-store] DB write failed:",
+        error instanceof Error ? error.message : error,
+      );
+    }
+  }
+
+  // Local/dev fallback: do not rely on FS writes for production truth.
+  const existingTypes = getPurchasedUpsellTypesFromLead(
+    readLead(slug) ?? fallback,
+  );
+  if (existingTypes.includes(type)) {
     return fallback;
   }
 
-  const record: UpsellPurchaseRecord = {
-    type,
-    checkoutSessionId,
-    purchasedAt: new Date().toISOString(),
+  return {
+    ...fallback,
+    purchasedUpsells: [...new Set([...existingTypes, type])],
+    upsellRecords: [
+      ...(fallback.upsellRecords ?? []),
+      {
+        type,
+        checkoutSessionId,
+        purchasedAt: new Date().toISOString(),
+      },
+    ],
   };
-
-  const upsellRecords = [...normalizeUpsellRecords(existing), record];
-  const purchasedUpsells = [
-    ...new Set([...getPurchasedUpsellTypes(existing), type]),
-  ];
-
-  try {
-    const patched = patchLead(slug, { upsellRecords, purchasedUpsells });
-    if (patched) {
-      return patched;
-    }
-
-    const created: LeadRecord = {
-      ...fallback,
-      upsellRecords,
-      purchasedUpsells,
-    };
-    saveLead(created);
-    return created;
-  } catch (error) {
-    // Vercel serverless FS is often read-only; Stripe remains source of truth.
-    console.warn(
-      "[upsell-store] write failed:",
-      error instanceof Error ? error.message : error,
-    );
-    return {
-      ...fallback,
-      upsellRecords,
-      purchasedUpsells,
-    };
-  }
 }

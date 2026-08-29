@@ -15,7 +15,6 @@ import {
   verifyBaseCheckout,
 } from "@/billing/verify-checkout-session";
 import { hasPurchasedUpsell } from "@/leads/upsell-store";
-import { readLead } from "@/leads/store";
 import { resolveRequestOrigin, toAbsoluteUrl } from "@/site-url";
 
 export const runtime = "nodejs";
@@ -93,15 +92,14 @@ export async function POST(request: Request) {
     );
   }
 
-  // Stripe is source of truth (lead file may be ephemeral on Vercel).
+  // Persistent DB + Stripe list (recover if webhook lagged).
   const purchasedFromStripe = await listPurchasedUpsellTypesFromStripe(
     verified.customerId,
     slug,
     sessionId,
   );
-  const lead = readLead(slug);
   if (
-    hasPurchasedUpsell(lead, upsellType) ||
+    (await hasPurchasedUpsell(slug, upsellType)) ||
     purchasedFromStripe.includes(upsellType)
   ) {
     return NextResponse.json(

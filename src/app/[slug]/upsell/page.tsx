@@ -10,7 +10,6 @@ import {
 import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
 import { getPurchasedUpsellTypes } from "@/leads/upsell-store";
-import { readLead } from "@/leads/store";
 import { UpsellOffers } from "./UpsellOffers";
 
 export const dynamic = "force-dynamic";
@@ -94,14 +93,14 @@ export default async function UpsellPage({ params, searchParams }: Props) {
     );
   }
 
-  const lead = readLead(slug);
+  const purchasedFromDb = await getPurchasedUpsellTypes(slug);
   const purchasedTypes = [
     ...new Set([
-      ...getPurchasedUpsellTypes(lead),
+      ...purchasedFromDb,
       ...purchasedFromStripe,
       ...(confirmedType ? [confirmedType] : []),
     ]),
-  ] as ReturnType<typeof getPurchasedUpsellTypes>;
+  ] as Awaited<ReturnType<typeof getPurchasedUpsellTypes>>;
 
   const definitions = listUpsellDefinitions();
   const hvalaHref = `/${slug}/hvala?session_id=${encodeURIComponent(sessionId)}`;

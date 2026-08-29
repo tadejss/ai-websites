@@ -35,6 +35,8 @@ export type LeadRecord = {
   stripeCustomerId?: string;
   stripeSubscriptionId?: string;
   subscriptionPlan?: "monthly" | "yearly";
+  /** ISO timestamp of base subscription purchase (persistent DB is source of truth). */
+  purchasedAt?: string;
   /** Upsell types purchased after base subscription. */
   purchasedUpsells?: UpsellType[];
   /** Idempotent upsell purchase log (one row per Stripe Checkout Session). */

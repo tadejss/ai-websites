@@ -26,6 +26,9 @@ STRIPE_PRICE_MONTHLY=price_...
 STRIPE_PRICE_YEARLY=price_...
 CHECKOUT_NOTIFY_EMAIL=info@zbrendiraj.si
 
+# Persistent customer / payment state (Neon or Vercel Postgres)
+DATABASE_URL=postgresql://...
+
 # Tax: use Stripe Tax or an inclusive SI 22 % rate that matches inclusive prices.
 STRIPE_TAX_RATE_ID=txr_...
 
@@ -41,6 +44,8 @@ STRIPE_PRICE_UPSELL_EMAIL=price_...
 
 Also required for purchase emails: `RESEND_API_KEY`.
 
+`DATABASE_URL` (or `POSTGRES_URL` / `POSTGRES_PRISMA_URL`) is required in Production. Without it the Stripe webhook returns 503 and customer status will not persist. Schema is created automatically on first webhook (`CREATE TABLE IF NOT EXISTS`). See [Persistent customer store](#persistent-customer-store) below.
+
 `SITE_URL` should be `https://zbrendiraj.si` (optional `/demo` suffix). Use a normal **Config** env var on Vercel — not `NEXT_PUBLIC_…` (that prefix is only for values that must ship to the browser). Legacy `NEXT_PUBLIC_SITE_URL` still works as a fallback. The retired `splet.vercel.app` host is ignored in code and redirected to `zbrendiraj.si`.
 
 ## Stripe Dashboard
@@ -54,12 +59,31 @@ Also required for purchase emails: `RESEND_API_KEY`.
 
 ## Flow
 
-1. Demo pages (all appearances except `zbrendiraj`) show a purchase bar when the lead is not already `customer`.
+1. Demo pages (all appearances except `zbrendiraj`) show a purchase bar when the slug is not already a customer in the persistent DB.
 2. `POST /api/checkout` with `{ slug, plan: "monthly" | "yearly" }` creates a Checkout Session and returns `{ url }`.
-3. After payment, Stripe hits the webhook → lead `status: customer` + Stripe IDs → email to `CHECKOUT_NOTIFY_EMAIL`.
+3. After payment, Stripe hits the webhook → **UPSERT** into Postgres (`customers` + `customer_purchases`) → email to `CHECKOUT_NOTIFY_EMAIL`.
 4. Buyer lands on `/{slug}/upsell?session_id={CHECKOUT_SESSION_ID}`.
 5. Optional upsells via `POST /api/checkout/upsell` → separate Stripe Checkout per upsell → back to upsell page.
 6. **Nadaljuj →** leads to `/{slug}/hvala?session_id=...`.
+
+## Persistent customer store
+
+Git JSON under `src/content/leads/` remains static lead / demo content. **Mutable payment state** lives in Neon / Vercel Postgres:
+
+| Table | Role |
+|-------|------|
+| `customers` | One row per `slug` — status, Stripe customer/subscription IDs, plan, `purchased_at` |
+| `customer_purchases` | Idempotent purchase log (base + upsells), unique on Checkout Session ID |
+
+Helpers (Website Factory–ready): `getCustomerBySlug`, `getCustomerByStripeCustomerId`, `isCustomer`, `getCustomerPurchases` in [`src/customers/store.ts`](../src/customers/store.ts).
+
+Admin `/admin/leads/[slug]` merges static lead JSON with this DB (CUSTOMER badge, plan, Stripe IDs, upsells).
+
+### Vercel setup
+
+1. Create a **Neon** database (Vercel Marketplace → Neon, or neon.tech) and link the project.
+2. Set Production (and Preview if desired) env: `DATABASE_URL` (Neon usually also sets `POSTGRES_URL`).
+3. Redeploy. First webhook run applies schema automatically; optional: paste [`src/db/schema.sql`](../src/db/schema.sql) in the Neon SQL editor.
 
 ## Post-purchase upsells
 
@@ -73,9 +97,9 @@ Implemented at [`src/billing/upsells.ts`](../src/billing/upsells.ts) and [`src/a
 
 Upsell checkout reuses the **same Stripe customer** from the base subscription. Metadata on upsell sessions: `upsell_type`, `slug`, `original_checkout_session_id`, `original_customer_id`.
 
-Webhook `checkout.session.completed` with `metadata.upsell_type` records purchase in lead (`purchasedUpsells`, `upsellRecords`) and sends ops email.
+Webhook `checkout.session.completed` with `metadata.upsell_type` records the purchase in Postgres (`customer_purchases`) and sends ops email.
 
-Purchased upsells show **✓ Dodano** on the upsell page; duplicate purchase is blocked server-side.
+Purchased upsells show **✓ Dodano** on the upsell page; duplicate purchase is blocked server-side (DB unique indexes).
 
 ## Issuer / invoices / receipts
 
@@ -109,5 +133,5 @@ One-time upsell invoices include a footer from [`src/billing/seller.ts`](../src/
 
 ## Notes
 
-- Lead updates use the same file store as outreach webhooks; the Resend notification is the reliable ops signal on Vercel.
+- Persistent customer/payment state uses Neon Postgres (`DATABASE_URL`), not the Vercel filesystem. Lead JSON files stay static content.
 - Customer portal / cancel UI and automatic domain provisioning are out of scope for this pass.
