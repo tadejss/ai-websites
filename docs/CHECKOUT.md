@@ -77,6 +77,36 @@ Webhook `checkout.session.completed` with `metadata.upsell_type` records purchas
 
 Purchased upsells show **✓ Dodano** on the upsell page; duplicate purchase is blocked server-side.
 
+## Issuer / invoices / receipts
+
+Customer-facing Stripe PDFs and emails use **Dashboard** business settings, not app code.
+
+### Dashboard checklist (live)
+
+1. **Settings → Business → Business details / Public details**
+   - **Legal business name:** `DETAJL, Tadej Šarabon Štojs s.p.`
+   - Brand / statement descriptor can stay `Zbrendiraj.si`
+   - Support address: `Langusova ulica 28, 4240 Radovljica`
+   - Support email + website URL filled in
+2. **Settings → Billing → Invoices → Invoice tax information**
+   - Add account tax ID: **SI95610359** (Slovenian VAT)
+   - Set as **default** so it appears on all invoice PDFs
+3. **Settings → Business → Customer emails**
+   - **Successful payments** on (receipts)
+4. **Settings → Billing → Subscriptions and emails**
+   - Enable emails for paid / finalized subscription invoices
+5. Tax rate `STRIPE_TAX_RATE_ID` must be **22 % inclusive** (matches product prices)
+
+### Code behavior
+
+| Product | Mode | Document |
+|---------|------|----------|
+| Monthly / yearly site | `subscription` | Stripe Invoice (automatic) |
+| Professional email upsell | `subscription` | Stripe Invoice (automatic) |
+| GBO / SEO upsells | `payment` + `invoice_creation.enabled` | Paid Invoice + receipt links |
+
+One-time upsell invoices include a footer from [`src/billing/seller.ts`](../src/billing/seller.ts). Legal name + VAT on the PDF header still come from Dashboard Account tax IDs / Public details.
+
 ## Notes
 
 - Lead updates use the same file store as outreach webhooks; the Resend notification is the reliable ops signal on Vercel.

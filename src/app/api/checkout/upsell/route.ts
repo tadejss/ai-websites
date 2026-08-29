@@ -4,6 +4,7 @@ import {
   getUpsellPriceId,
   isUpsellType,
 } from "@/billing/upsells";
+import { sellerInvoiceFooter } from "@/billing/seller";
 import {
   getStripe,
   resolveTaxRateId,
@@ -170,7 +171,19 @@ export async function POST(request: Request) {
               },
             },
           }
-        : {}),
+        : {
+            // One-time GBO / SEO: paid Stripe Invoice (+ receipt links in email).
+            invoice_creation: {
+              enabled: true,
+              invoice_data: {
+                description: definition.title,
+                footer: sellerInvoiceFooter(),
+                rendering_options: {
+                  amount_tax_display: "include_inclusive_tax",
+                },
+              },
+            },
+          }),
       line_items: [
         {
           price: priceId,
