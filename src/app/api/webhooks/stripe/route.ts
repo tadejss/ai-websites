@@ -47,7 +47,7 @@ async function handleUpsellCompleted(
     return { handled: false };
   }
 
-  if (session.payment_status !== "paid") {
+  if (session.payment_status !== "paid" && session.status !== "complete") {
     return { handled: false };
   }
 

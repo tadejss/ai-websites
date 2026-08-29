@@ -44,19 +44,20 @@ export function hasRecordedUpsellSession(
   );
 }
 
-/** Idempotent: skip if session or upsell type already recorded. */
+/** Idempotent: skip if session or upsell type already recorded. Never throws. */
 export function recordUpsellPurchase(
   slug: string,
   type: UpsellType,
   checkoutSessionId: string,
 ): LeadRecord {
   const existing = readLead(slug);
+  const fallback = existing ?? resolveCheckoutLead(slug);
 
   if (
     hasRecordedUpsellSession(existing, checkoutSessionId) ||
     hasPurchasedUpsell(existing, type)
   ) {
-    return existing ?? resolveCheckoutLead(slug);
+    return fallback;
   }
 
   const record: UpsellPurchaseRecord = {
@@ -70,16 +71,29 @@ export function recordUpsellPurchase(
     ...new Set([...getPurchasedUpsellTypes(existing), type]),
   ];
 
-  const patched = patchLead(slug, { upsellRecords, purchasedUpsells });
-  if (patched) {
-    return patched;
-  }
+  try {
+    const patched = patchLead(slug, { upsellRecords, purchasedUpsells });
+    if (patched) {
+      return patched;
+    }
 
-  const created: LeadRecord = {
-    ...resolveCheckoutLead(slug),
-    upsellRecords,
-    purchasedUpsells,
-  };
-  saveLead(created);
-  return created;
+    const created: LeadRecord = {
+      ...fallback,
+      upsellRecords,
+      purchasedUpsells,
+    };
+    saveLead(created);
+    return created;
+  } catch (error) {
+    // Vercel serverless FS is often read-only; Stripe remains source of truth.
+    console.warn(
+      "[upsell-store] write failed:",
+      error instanceof Error ? error.message : error,
+    );
+    return {
+      ...fallback,
+      upsellRecords,
+      purchasedUpsells,
+    };
+  }
 }

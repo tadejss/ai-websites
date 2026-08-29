@@ -8,7 +8,11 @@ import {
   getStripe,
   resolveTaxRateId,
 } from "@/billing/stripe";
-import { verifyBaseCheckout } from "@/billing/verify-checkout-session";
+import {
+  hydrateCustomerFromSession,
+  listPurchasedUpsellTypesFromStripe,
+  verifyBaseCheckout,
+} from "@/billing/verify-checkout-session";
 import { hasPurchasedUpsell } from "@/leads/upsell-store";
 import { readLead } from "@/leads/store";
 import { resolveRequestOrigin, toAbsoluteUrl } from "@/site-url";
@@ -22,17 +26,36 @@ type UpsellBody = {
   slug?: unknown;
 };
 
-function upsellSuccessUrl(
-  slug: string,
-  originalSessionId: string,
-  request: Request,
-): string {
-  const path = `/${slug}/upsell?session_id=${encodeURIComponent(originalSessionId)}`;
+function absoluteUrl(path: string, request: Request): string {
   const origin = resolveRequestOrigin(request);
   if (origin) {
     return `${origin}${path}`;
   }
-  return toAbsoluteUrl(path) || path;
+  const absolute = toAbsoluteUrl(path);
+  if (absolute.startsWith("http://") || absolute.startsWith("https://")) {
+    return absolute;
+  }
+  throw new Error("Could not resolve absolute checkout return URL");
+}
+
+function upsellReturnUrls(
+  slug: string,
+  originalSessionId: string,
+  request: Request,
+): { successUrl: string; cancelUrl: string } {
+  // Keep the original base session for re-entry; Stripe replaces
+  // {CHECKOUT_SESSION_ID} with this upsell session so we can confirm purchase.
+  const successPath =
+    `/${slug}/upsell` +
+    `?session_id=${encodeURIComponent(originalSessionId)}` +
+    `&upsell_session_id={CHECKOUT_SESSION_ID}`;
+  const cancelPath =
+    `/${slug}/upsell?session_id=${encodeURIComponent(originalSessionId)}`;
+
+  return {
+    successUrl: absoluteUrl(successPath, request),
+    cancelUrl: absoluteUrl(cancelPath, request),
+  };
 }
 
 export async function POST(request: Request) {
@@ -69,8 +92,17 @@ export async function POST(request: Request) {
     );
   }
 
+  // Stripe is source of truth (lead file may be ephemeral on Vercel).
+  const purchasedFromStripe = await listPurchasedUpsellTypesFromStripe(
+    verified.customerId,
+    slug,
+    sessionId,
+  );
   const lead = readLead(slug);
-  if (hasPurchasedUpsell(lead, upsellType)) {
+  if (
+    hasPurchasedUpsell(lead, upsellType) ||
+    purchasedFromStripe.includes(upsellType)
+  ) {
     return NextResponse.json(
       { error: "Upsell already purchased" },
       { status: 409 },
@@ -87,21 +119,40 @@ export async function POST(request: Request) {
   }
 
   const definition = getUpsellDefinition(upsellType);
-  const successUrl = upsellSuccessUrl(slug, sessionId, request);
-  const cancelUrl = successUrl;
+
+  let successUrl: string;
+  let cancelUrl: string;
+  try {
+    ({ successUrl, cancelUrl } = upsellReturnUrls(slug, sessionId, request));
+  } catch (error) {
+    const message =
+      error instanceof Error ? error.message : "Invalid return URL";
+    return NextResponse.json({ error: message }, { status: 500 });
+  }
 
   try {
     const stripe = getStripe();
+
+    // Prefill: ensure Customer carries name/address from the base checkout.
+    await hydrateCustomerFromSession(verified.customerId, verified.session);
+
     const taxRateId = await resolveTaxRateId(stripe);
 
     const session = await stripe.checkout.sessions.create({
       mode: definition.mode,
       locale: "sl",
       customer: verified.customerId,
+      // Required when reusing a customer with tax_id_collection / address updates.
+      customer_update: {
+        name: "auto",
+        address: "auto",
+      },
       client_reference_id: slug,
       success_url: successUrl,
       cancel_url: cancelUrl,
-      billing_address_collection: "required",
+      // Prefer existing Customer address; still collect when Stripe needs it.
+      billing_address_collection: "auto",
+      tax_id_collection: { enabled: true },
       metadata: {
         slug,
         upsell_type: upsellType,

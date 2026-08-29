@@ -2,16 +2,26 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { listUpsellDefinitions } from "@/billing/upsells";
-import { verifyBaseCheckout, syncUpsellsForBaseSession } from "@/billing/verify-checkout-session";
+import {
+  confirmUpsellReturn,
+  syncUpsellsForBaseSession,
+  verifyBaseCheckout,
+} from "@/billing/verify-checkout-session";
 import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
 import { getPurchasedUpsellTypes } from "@/leads/upsell-store";
 import { readLead } from "@/leads/store";
 import { UpsellOffers } from "./UpsellOffers";
 
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
 type Props = {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ session_id?: string }>;
+  searchParams: Promise<{
+    session_id?: string;
+    upsell_session_id?: string;
+  }>;
 };
 
 export function generateStaticParams() {
@@ -35,7 +45,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function UpsellPage({ params, searchParams }: Props) {
   const { slug } = await params;
-  const { session_id: sessionId } = await searchParams;
+  const {
+    session_id: sessionId,
+    upsell_session_id: upsellSessionId,
+  } = await searchParams;
 
   try {
     getSiteConfig(slug);
@@ -52,16 +65,45 @@ export default async function UpsellPage({ params, searchParams }: Props) {
     redirect(`/${slug}`);
   }
 
-  await syncUpsellsForBaseSession(
-    verified.customerId,
-    slug,
-    sessionId,
-  );
+  // Confirm the upsell session Stripe just redirected from (if present).
+  let confirmedType: string | null = null;
+  try {
+    confirmedType = await confirmUpsellReturn(
+      upsellSessionId,
+      slug,
+      sessionId,
+    );
+  } catch (error) {
+    console.warn(
+      "[upsell-page] confirmUpsellReturn failed:",
+      error instanceof Error ? error.message : error,
+    );
+  }
+
+  let purchasedFromStripe: string[] = [];
+  try {
+    purchasedFromStripe = await syncUpsellsForBaseSession(
+      verified.customerId,
+      slug,
+      sessionId,
+    );
+  } catch (error) {
+    console.warn(
+      "[upsell-page] syncUpsellsForBaseSession failed:",
+      error instanceof Error ? error.message : error,
+    );
+  }
 
   const lead = readLead(slug);
-  const purchasedTypes = getPurchasedUpsellTypes(lead);
-  const definitions = listUpsellDefinitions();
+  const purchasedTypes = [
+    ...new Set([
+      ...getPurchasedUpsellTypes(lead),
+      ...purchasedFromStripe,
+      ...(confirmedType ? [confirmedType] : []),
+    ]),
+  ] as ReturnType<typeof getPurchasedUpsellTypes>;
 
+  const definitions = listUpsellDefinitions();
   const hvalaHref = `/${slug}/hvala?session_id=${encodeURIComponent(sessionId)}`;
 
   return (

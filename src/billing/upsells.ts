@@ -161,7 +161,11 @@ export function verifyUpsellCheckoutSession(
     return null;
   }
 
-  if (session.payment_status !== "paid") {
+  // Subscription upsells are "complete" when paid; also accept paid payment mode.
+  const paid =
+    session.payment_status === "paid" ||
+    session.status === "complete";
+  if (!paid) {
     return null;
   }
 
