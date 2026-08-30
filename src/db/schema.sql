@@ -68,3 +68,71 @@ CREATE INDEX IF NOT EXISTS customer_onboarding_status_idx
 
 ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS admin_approved_at TIMESTAMPTZ;
 ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS admin_publish_notify_sent_at TIMESTAMPTZ;
+
+-- SMS outreach queue (mutable state; lead identity remains in JSON files).
+CREATE TABLE IF NOT EXISTS sms_messages (
+  id BIGSERIAL PRIMARY KEY,
+  message_id TEXT NOT NULL UNIQUE,
+  slug TEXT NOT NULL,
+  to_phone TEXT NOT NULL,
+  to_phone_raw TEXT,
+  body TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'queued',
+  step TEXT NOT NULL,
+  provider_message_id TEXT,
+  last_error TEXT,
+  claimed_at TIMESTAMPTZ,
+  claimed_by TEXT,
+  claim_expires_at TIMESTAMPTZ,
+  sent_at TIMESTAMPTZ,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS sms_messages_active_slug_step_uidx
+  ON sms_messages (slug, step)
+  WHERE status IN ('queued', 'claimed', 'sending', 'sent');
+
+CREATE INDEX IF NOT EXISTS sms_messages_status_created_idx
+  ON sms_messages (status, created_at);
+
+CREATE INDEX IF NOT EXISTS sms_messages_slug_idx
+  ON sms_messages (slug);
+
+CREATE TABLE IF NOT EXISTS sms_lead_state (
+  slug TEXT PRIMARY KEY,
+  normalized_phone TEXT,
+  sms_status TEXT NOT NULL DEFAULT 'pending',
+  sms_allowed BOOLEAN NOT NULL DEFAULT TRUE,
+  sms_sent_at TIMESTAMPTZ,
+  sms_last_error TEXT,
+  sms_message_id TEXT,
+  sms_reply_at TIMESTAMPTZ,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS sms_lead_state_status_idx
+  ON sms_lead_state (sms_status);
+
+CREATE INDEX IF NOT EXISTS sms_lead_state_phone_idx
+  ON sms_lead_state (normalized_phone);
+
+CREATE TABLE IF NOT EXISTS sms_inbound (
+  id BIGSERIAL PRIMARY KEY,
+  provider_message_id TEXT UNIQUE,
+  from_phone TEXT NOT NULL,
+  to_phone TEXT,
+  body TEXT NOT NULL,
+  received_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  slug TEXT,
+  matched BOOLEAN NOT NULL DEFAULT FALSE,
+  is_opt_out BOOLEAN NOT NULL DEFAULT FALSE,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS sms_inbound_from_phone_idx
+  ON sms_inbound (from_phone);
+
+CREATE INDEX IF NOT EXISTS sms_inbound_slug_idx
+  ON sms_inbound (slug);
+

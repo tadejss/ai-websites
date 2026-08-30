@@ -42,6 +42,20 @@ export function isValidCronToken(token: string | null | undefined): boolean {
   return safeCompare(token, secret);
 }
 
+export function getSmsGatewaySecret(): string | null {
+  return process.env.SMS_GATEWAY_SECRET?.trim() || null;
+}
+
+export function isValidSmsGatewayToken(
+  token: string | null | undefined,
+): boolean {
+  const secret = getSmsGatewaySecret();
+  if (!secret || !token) {
+    return false;
+  }
+  return safeCompare(token, secret);
+}
+
 export function readBearerToken(
   authorizationHeader: string | null,
 ): string | null {

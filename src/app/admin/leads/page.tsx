@@ -7,16 +7,23 @@ import {
   isAdminOutreachFilter,
   isAdminStatusFilter,
 } from "@/admin/leads-filters";
-import { getCustomerSlugSet } from "@/customers/store";
-import { getDemoUrl } from "@/leads/demo-url";
 import { resolveLeadEmail } from "@/leads/resolve-email";
-import { getNextFollowUpAt } from "@/outreach/eligibility";
 import { getOutreachConfig } from "@/outreach/config";
 import { readAllLeads } from "@/leads/store";
+import { getDemoUrl } from "@/leads/demo-url";
+import { isDatabaseConfigured } from "@/db/client";
+import {
+  countByLeadStatus,
+  countSentToday,
+  listSmsLeadStates,
+} from "@/outreach/sms/store";
+import { getSmsConfig } from "@/outreach/sms/config";
+import { normalizeSlovenianPhone } from "@/outreach/sms/phone";
+import { getCustomerSlugSet } from "@/customers/store";
 
 export const dynamic = "force-dynamic";
 
-function formatDate(value: string | undefined): string {
+function formatDate(value: string | undefined | null): string {
   if (!value) {
     return "—";
   }
@@ -41,19 +48,25 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
     : undefined;
 
   const config = getOutreachConfig();
+  const smsConfig = getSmsConfig();
   const customerSlugs = await getCustomerSlugSet();
-  const allRows = buildAdminLeadRows(
-    readAllLeads().sort((a, b) =>
-      (a.companyName ?? a.slug).localeCompare(b.companyName ?? b.slug, "sl"),
-    ),
-    customerSlugs,
+  const allLeads = readAllLeads().sort((a, b) =>
+    (a.companyName ?? a.slug).localeCompare(b.companyName ?? b.slug, "sl"),
   );
+  const allRows = buildAdminLeadRows(allLeads, customerSlugs);
   const rows = filterAdminLeadRows(allRows, {
     status: statusFilter,
     outreach: outreachFilter,
   });
 
   const activeFilters = Boolean(statusFilter || outreachFilter);
+  const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
+  const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
+  const smsCounts = isDatabaseConfigured() ? await countByLeadStatus() : {};
+  const sentToday = isDatabaseConfigured() ? await countSentToday() : 0;
+  const withPhone = allLeads.filter((lead) =>
+    normalizeSlovenianPhone(lead.phone).ok,
+  ).length;
 
   return (
     <div>
@@ -61,12 +74,35 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
         <div>
           <h1 className="text-2xl font-semibold">Leads</h1>
           <p className="mt-1 text-sm text-neutral-600">
-            Outreach mode: {config.dryRun ? "DRY RUN" : "LIVE"}
+            Automated outreach: SMS-only · Email cron disabled
           </p>
           <p className="mt-1 text-sm text-neutral-500">
-            Showing {rows.length} of {allRows.length} leads
+            Showing {rows.length} of {allRows.length} leads · Email mode:{" "}
+            {config.dryRun ? "DRY RUN" : "LIVE"}
           </p>
         </div>
+      </div>
+
+      <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {[
+          ["With phone", String(withPhone)],
+          ["Queued", String(smsCounts.queued ?? 0)],
+          ["Sent", String(smsCounts.sent ?? 0)],
+          ["Failed", String(smsCounts.failed ?? 0)],
+          ["Replied", String(smsCounts.replied ?? 0)],
+          ["Opted out", String(smsCounts.opted_out ?? 0)],
+          ["Sent today", `${sentToday} / ${smsConfig.dailyLimit}`],
+        ].map(([label, value]) => (
+          <div
+            key={label}
+            className="rounded-lg border border-neutral-200 bg-white px-4 py-3"
+          >
+            <div className="text-xs uppercase tracking-wide text-neutral-500">
+              {label}
+            </div>
+            <div className="mt-1 text-lg font-semibold">{value}</div>
+          </div>
+        ))}
       </div>
 
       <form
@@ -134,18 +170,17 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
               <tr>
                 <th className="px-4 py-3 font-medium">Business</th>
                 <th className="px-4 py-3 font-medium">Status</th>
-                <th className="px-4 py-3 font-medium">Outreach</th>
+                <th className="px-4 py-3 font-medium">Phone</th>
+                <th className="px-4 py-3 font-medium">SMS</th>
+                <th className="px-4 py-3 font-medium">SMS sent</th>
+                <th className="px-4 py-3 font-medium">SMS error</th>
                 <th className="px-4 py-3 font-medium">Email</th>
-                <th className="px-4 py-3 font-medium">Sent</th>
-                <th className="px-4 py-3 font-medium">Next</th>
-                <th className="px-4 py-3 font-medium">Count</th>
-                <th className="px-4 py-3 font-medium">Error</th>
               </tr>
             </thead>
             <tbody>
-              {rows.map(({ lead, displayStatus, outreachLabel }) => {
+              {rows.map(({ lead, displayStatus }) => {
                 const email = resolveLeadEmail(lead);
-                const outreach = lead.outreach;
+                const sms = smsBySlug.get(lead.slug);
 
                 return (
                   <tr key={lead.slug} className="border-b border-neutral-100">
@@ -159,16 +194,17 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
                       <div className="text-xs text-neutral-500">{lead.industry}</div>
                     </td>
                     <td className="px-4 py-3">{displayStatus || "—"}</td>
-                    <td className="px-4 py-3">{outreachLabel}</td>
-                    <td className="px-4 py-3">{email ?? "—"}</td>
-                    <td className="px-4 py-3">{formatDate(outreach?.lastSentAt)}</td>
-                    <td className="px-4 py-3">
-                      {formatDate(getNextFollowUpAt(lead) ?? outreach?.nextFollowUpAt)}
+                    <td className="px-4 py-3 font-mono text-xs">
+                      {lead.phone ?? "—"}
                     </td>
-                    <td className="px-4 py-3">{outreach?.emailsSent ?? 0}</td>
+                    <td className="px-4 py-3 uppercase">
+                      {sms?.smsStatus ?? "—"}
+                    </td>
+                    <td className="px-4 py-3">{formatDate(sms?.smsSentAt)}</td>
                     <td className="max-w-xs truncate px-4 py-3 text-red-600">
-                      {outreach?.lastError ?? "—"}
+                      {sms?.smsLastError ?? "—"}
                     </td>
+                    <td className="px-4 py-3">{email ?? "—"}</td>
                   </tr>
                 );
               })}

@@ -1,5 +1,5 @@
 import { isDatabaseConfigured, sql } from "./client";
-import { CUSTOMER_SCHEMA_SQL } from "./schema";
+import { CUSTOMER_SCHEMA_SQL, SMS_SCHEMA_SQL } from "./schema";
 
 let schemaReady: Promise<void> | null = null;
 
@@ -14,7 +14,7 @@ export async function ensureCustomerSchema(): Promise<void> {
 
   if (!schemaReady) {
     schemaReady = (async () => {
-      const statements = CUSTOMER_SCHEMA_SQL.split(";")
+      const statements = `${CUSTOMER_SCHEMA_SQL};\n${SMS_SCHEMA_SQL}`.split(";")
         .map((part) => part.trim())
         .filter((part) => part.length > 0);
 

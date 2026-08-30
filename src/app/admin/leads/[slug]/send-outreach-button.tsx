@@ -64,17 +64,22 @@ export function SendOutreachButton({ slug, dueStep, eligible }: Props) {
           type="button"
           disabled={loading || !eligible}
           onClick={() => send(dueStep ?? "initial")}
-          className="rounded-md bg-neutral-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+          className="rounded-md border border-neutral-300 bg-white px-4 py-2 text-sm font-medium text-neutral-800 disabled:opacity-50"
         >
-          {loading ? "Sending…" : dueStep ? `Send ${dueStep}` : "Send initial"}
+          {loading ? "Sending…" : dueStep ? `Email: Send ${dueStep}` : "Email: Send initial"}
         </button>
       </div>
 
       {!eligible ? (
         <p className="text-xs text-neutral-500">
-          Lead is not eligible (missing email, website, or outreach is suppressed).
+          Email outreach not eligible (missing email, website, or suppressed). Manual
+          email remains available when eligible; automated outreach is SMS-only.
         </p>
-      ) : null}
+      ) : (
+        <p className="text-xs text-neutral-500">
+          Manual email only — automated outreach uses SMS.
+        </p>
+      )}
 
       {message ? <p className="text-sm text-green-700">{message}</p> : null}
       {error ? <p className="text-sm text-red-600">{error}</p> : null}

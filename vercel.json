@@ -1,7 +1,7 @@
 {
   "crons": [
     {
-      "path": "/api/cron/outreach",
+      "path": "/api/cron/sms-outreach",
       "schedule": "0 9 * * *"
     }
   ]

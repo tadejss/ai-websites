@@ -1,26 +1,23 @@
 import { NextResponse } from "next/server";
 import { isValidCronToken, readBearerToken } from "@/lib/auth";
+import { isDatabaseConfigured } from "@/db/client";
+import { enqueueDueSmsBatch } from "@/outreach/sms/enqueue-batch";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-/**
- * Legacy email outreach cron is disabled.
- * Automated outreach is SMS-only via /api/cron/sms-outreach.
- * Email remains available for onboarding/ops and manual admin send.
- */
 export async function GET(request: Request) {
   const token = readBearerToken(request.headers.get("authorization"));
   if (!isValidCronToken(token)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  return NextResponse.json({
-    ok: true,
-    skipped: true,
-    reason:
-      "Email outreach cron is disabled. Use /api/cron/sms-outreach for automated SMS enqueue.",
-  });
+  if (!isDatabaseConfigured()) {
+    return NextResponse.json({ error: "Database not configured" }, { status: 503 });
+  }
+
+  const result = await enqueueDueSmsBatch();
+  return NextResponse.json({ ok: true, channel: "sms", ...result });
 }
 
 export async function POST(request: Request) {

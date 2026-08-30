@@ -17,12 +17,24 @@ import {
 } from "@/onboarding/types";
 import { listOnboardingImages } from "@/onboarding/images";
 import { SendOutreachButton } from "./send-outreach-button";
+import { SmsOutreachButtons } from "./sms-outreach-buttons";
 import {
   AdminCopyOnboardingLink,
   AdminPublishLivePlaceholder,
 } from "./onboarding-admin";
 import { OnboardingImageGallery } from "./onboarding-gallery";
 import { AdminOnboardingApproveButton } from "./onboarding-approve-button";
+import { isCustomer } from "@/customers/store";
+import { evaluateSmsEligibility } from "@/outreach/sms/eligibility";
+import { resolveDueSmsStep } from "@/outreach/sms/enqueue-batch";
+import {
+  getSmsLeadState,
+  hasActiveOrSentStep,
+  listInboundForSlug,
+  listSmsMessagesForSlug,
+} from "@/outreach/sms/store";
+import { normalizeSlovenianPhone } from "@/outreach/sms/phone";
+import { isDatabaseConfigured } from "@/db/client";
 
 export const dynamic = "force-dynamic";
 
@@ -88,6 +100,26 @@ export default async function AdminLeadDetailPage({
   const onboardingUrl =
     onboarding != null ? getOnboardingUrl(slug, onboarding.accessToken) : null;
 
+  const smsEnabled = isDatabaseConfigured();
+  const smsState = smsEnabled ? await getSmsLeadState(slug) : null;
+  const smsMessages = smsEnabled ? await listSmsMessagesForSlug(slug) : [];
+  const smsInbound = smsEnabled ? await listInboundForSlug(slug) : [];
+  const smsDueStep = smsEnabled
+    ? await resolveDueSmsStep(slug, lead.status)
+    : null;
+  const smsAlready = smsDueStep
+    ? await hasActiveOrSentStep(slug, smsDueStep)
+    : false;
+  const smsEligibility = evaluateSmsEligibility({
+    lead,
+    isCustomer: Boolean(customer) || (await isCustomer(slug)),
+    state: smsState,
+    step: smsDueStep ?? "initial",
+    alreadySentForStep: smsAlready,
+  });
+  const lastFailed = smsMessages.find((message) => message.status === "failed");
+  const normalizedPhone = normalizeSlovenianPhone(lead.phone);
+
   return (
     <div>
       <Link href="/admin/leads" className="text-sm text-blue-700 hover:underline">
@@ -109,12 +141,120 @@ export default async function AdminLeadDetailPage({
           </p>
         </div>
 
-        <SendOutreachButton
-          slug={lead.slug}
-          dueStep={dueStep}
-          eligible={isLeadEligibleForOutreach(lead)}
-        />
+        <div className="space-y-4">
+          <SmsOutreachButtons
+            slug={lead.slug}
+            dueStep={smsDueStep}
+            canQueue={smsEligibility.ok}
+            canRetry={Boolean(lastFailed)}
+            lastFailedMessageId={lastFailed?.messageId}
+          />
+          <SendOutreachButton
+            slug={lead.slug}
+            dueStep={dueStep}
+            eligible={isLeadEligibleForOutreach(lead)}
+          />
+        </div>
       </div>
+
+      <section className="mt-6 rounded-lg border border-emerald-200 bg-emerald-50/40 p-5">
+        <h2 className="font-medium">SMS outreach</h2>
+        {!smsEnabled ? (
+          <p className="mt-3 text-sm text-neutral-600">
+            DATABASE_URL is not configured — SMS state unavailable.
+          </p>
+        ) : (
+          <>
+            <dl className="mt-4 grid gap-3 text-sm md:grid-cols-2">
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Phone</dt>
+                <dd>{lead.phone ?? "—"}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Normalized</dt>
+                <dd className="font-mono text-xs">
+                  {normalizedPhone.ok ? normalizedPhone.e164 : "invalid"}
+                </dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">SMS status</dt>
+                <dd className="font-medium uppercase">
+                  {smsState?.smsStatus ?? "pending"}
+                </dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Allowed</dt>
+                <dd>{smsState?.smsAllowed === false ? "no" : "yes"}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Last sent</dt>
+                <dd>{formatDate(smsState?.smsSentAt)}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Reply at</dt>
+                <dd>{formatDate(smsState?.smsReplyAt)}</dd>
+              </div>
+              <div className="md:col-span-2">
+                <dt className="text-neutral-500">Last error</dt>
+                <dd className="mt-1 text-red-600">
+                  {smsState?.smsLastError ?? "—"}
+                </dd>
+              </div>
+            </dl>
+
+            <div className="mt-6">
+              <h3 className="text-sm font-medium">SMS history</h3>
+              {smsMessages.length === 0 ? (
+                <p className="mt-2 text-sm text-neutral-500">No SMS yet.</p>
+              ) : (
+                <ul className="mt-2 space-y-2 text-sm">
+                  {smsMessages.map((message) => (
+                    <li
+                      key={message.messageId}
+                      className="rounded bg-white px-3 py-2"
+                    >
+                      <div className="font-medium">
+                        {message.step} · {message.status} ·{" "}
+                        {formatDate(message.sentAt ?? message.createdAt)}
+                      </div>
+                      <div className="mt-1 whitespace-pre-wrap text-neutral-700">
+                        {message.body}
+                      </div>
+                      {message.lastError ? (
+                        <div className="mt-1 text-xs text-red-600">
+                          {message.lastError}
+                        </div>
+                      ) : null}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            {smsInbound.length > 0 ? (
+              <div className="mt-6">
+                <h3 className="text-sm font-medium">Inbound replies</h3>
+                <ul className="mt-2 space-y-2 text-sm">
+                  {smsInbound.map((message) => (
+                    <li
+                      key={message.id}
+                      className="rounded bg-white px-3 py-2"
+                    >
+                      <div className="font-medium">
+                        {formatDate(message.receivedAt)}
+                        {message.isOptOut ? " · OPT-OUT" : ""}
+                      </div>
+                      <div className="mt-1 whitespace-pre-wrap">
+                        {message.body}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </>
+        )}
+      </section>
 
       <div className="mt-8 grid gap-6 md:grid-cols-2">
         <section className="rounded-lg border border-neutral-200 bg-white p-5">
