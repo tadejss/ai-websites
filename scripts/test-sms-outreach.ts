@@ -45,7 +45,44 @@ async function main() {
     rendered.text.includes("https://zbrendiraj.si/studio-test"),
     "template url",
   );
+  ok(rendered.text.includes("brezplačen predlog"), "initial copy");
+  ok(!rendered.text.toLowerCase().includes("cena"), "no pricing in initial");
   ok(rendered.length > 0, "has length");
+
+  const follow1 = renderSms({
+    companyName: "Studio Test",
+    demoUrl: "https://zbrendiraj.si/studio-test",
+    hasExistingWebsite: false,
+    step: "followup_1",
+  });
+  ok(follow1.text.includes("Samo preverjam"), "followup_1 copy");
+
+  const follow2 = renderSms({
+    companyName: "Studio Test",
+    demoUrl: "https://zbrendiraj.si/studio-test",
+    hasExistingWebsite: false,
+    step: "followup_2",
+  });
+  ok(follow2.text.includes("Še zadnjič"), "followup_2 copy");
+  ok(follow2.text.includes('"DA"'), "followup_2 DA CTA");
+
+  const { smsCompanyDisplayName } = await import(
+    "../src/outreach/sms/company-name"
+  );
+  ok(
+    smsCompanyDisplayName("Bb elektro instalacije, Boštjan Bole s.p.") ===
+      "Bb elektro instalacije",
+    "strip legal personal tail",
+  );
+  ok(
+    smsCompanyDisplayName("Studio Lepota") === "Studio Lepota",
+    "keep simple brand",
+  );
+  ok(
+    smsCompanyDisplayName("Acme d.o.o.") === "Acme",
+    "strip trailing d.o.o.",
+  );
+
   const long = analyzeSmsLength("x".repeat(500));
   ok(long.segments > 1, "long sms segments");
 

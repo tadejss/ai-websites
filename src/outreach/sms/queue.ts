@@ -12,6 +12,7 @@ import {
   upsertSmsLeadState,
 } from "./store";
 import { renderSms } from "./templates";
+import { smsCompanyDisplayName } from "./company-name";
 import type { SmsMessageRecord, SmsStep } from "./types";
 
 export type EnqueueSmsResult =
@@ -25,7 +26,10 @@ function stableMessageId(slug: string, step: SmsStep): string {
 
 function smsContext(lead: LeadRecord, step: SmsStep) {
   return {
-    companyName: lead.companyName?.trim() || lead.slug,
+    companyName: smsCompanyDisplayName(
+      lead.companyName,
+      lead.slug,
+    ),
     demoUrl: getDemoUrl(lead),
     hasExistingWebsite: Boolean(lead.existingWebsite?.trim()),
     step,

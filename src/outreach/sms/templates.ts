@@ -69,19 +69,17 @@ export function analyzeSmsLength(text: string): Omit<RenderedSms, "text"> {
 }
 
 function initialCopy(ctx: SmsTemplateContext): string {
-  if (ctx.hasExistingWebsite) {
-    return `Živjo! Opazil sem, da bi spletna stran za ${ctx.companyName} lahko bila jasnejša. Pripravil sem vam brezplačen demo: ${ctx.demoUrl} Če vam je všeč, jo lahko objavimo. LP, Tadej`;
-  }
-
-  return `Živjo! Opazil sem, da ${ctx.companyName} še nima spletne strani. Pripravil sem vam brezplačen demo: ${ctx.demoUrl} Če vam je všeč, jo lahko objavimo. LP, Tadej`;
+  return `Živjo! Za ${ctx.companyName} sem pripravil brezplačen predlog spletne strani: ${ctx.demoUrl}
+Bi vas zanimalo, da jo uredimo? Tadej, Zbrendiraj.si`;
 }
 
 function followup1Copy(ctx: SmsTemplateContext): string {
-  return `Živjo, še enkrat glede ${ctx.companyName} — demo spletne strani je še vedno tukaj: ${ctx.demoUrl} Če želite, jo skupaj uredimo. LP, Tadej`;
+  return `Živjo! Samo preverjam, če ste uspeli pogledati predlog spletne strani za ${ctx.companyName}: ${ctx.demoUrl}
+Če želite, vam lahko pošljem tudi več informacij. Tadej`;
 }
 
 function followup2Copy(ctx: SmsTemplateContext): string {
-  return `Živjo, zadnji kratek ping za ${ctx.companyName}. Demo: ${ctx.demoUrl} Če ni zanimivo, se oglasite z NE in vas ne motim več. LP, Tadej`;
+  return `Živjo! Še zadnjič se oglašam glede spletne strani za ${ctx.companyName}. Če vas zanima, mi lahko samo odgovorite z "DA" in vam razložim, kako naprej. Tadej, Zbrendiraj.si`;
 }
 
 function manualCopy(ctx: SmsTemplateContext): string {
