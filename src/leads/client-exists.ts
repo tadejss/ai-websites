@@ -1,12 +1,17 @@
 import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 
-const clientsDir = resolve(__dirname, "../content/clients");
-
+/**
+ * Resolve client site.json from the repo root.
+ * Do not use __dirname here — Next.js production bundles rewrite it to a
+ * virtual "/ROOT/..." path, so existsSync always fails at runtime.
+ */
 export function clientSiteExists(slug: string): boolean {
   if (!slug.trim()) {
     return false;
   }
 
-  return existsSync(resolve(clientsDir, slug, "site.json"));
+  return existsSync(
+    resolve(process.cwd(), "src/content/clients", slug, "site.json"),
+  );
 }

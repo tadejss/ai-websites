@@ -10,6 +10,7 @@ type Props = {
   canQueue: boolean;
   canRetry: boolean;
   lastFailedMessageId?: string | null;
+  ineligibilityReason?: string | null;
 };
 
 export function SmsOutreachButtons({
@@ -18,6 +19,7 @@ export function SmsOutreachButtons({
   canQueue,
   canRetry,
   lastFailedMessageId,
+  ineligibilityReason,
 }: Props) {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -103,8 +105,8 @@ export function SmsOutreachButtons({
       </div>
       {!canQueue ? (
         <p className="text-xs text-neutral-500">
-          SMS cannot be queued (missing/invalid phone, opted out, no demo, or
-          already queued/sent).
+          SMS cannot be queued
+          {ineligibilityReason ? `: ${ineligibilityReason}` : "."}
         </p>
       ) : null}
       {message ? <p className="text-sm text-green-700">{message}</p> : null}

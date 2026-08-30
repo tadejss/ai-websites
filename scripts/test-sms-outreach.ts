@@ -100,6 +100,26 @@ async function main() {
     "duplicate step blocked",
   );
 
+  // Exact production case: valid SI phone, generated demo, allowed, no history.
+  const { readLead } = await import("../src/leads/store");
+  const { clientSiteExists } = await import("../src/leads/client-exists");
+  const bb = readLead("bb-elektro-instalacije");
+  ok(Boolean(bb), "bb-elektro lead exists");
+  ok(Boolean(bb && clientSiteExists(bb.slug)), "bb-elektro demo site.json exists via cwd");
+  if (bb) {
+    const eligible = evaluateSmsEligibility({
+      lead: bb,
+      isCustomer: false,
+      state: null,
+      step: "initial",
+      alreadySentForStep: false,
+    });
+    ok(eligible.ok === true, "bb-elektro SMS eligible");
+    if (eligible.ok) {
+      ok(eligible.phone === "+38641696401", "bb-elektro normalized phone");
+    }
+  }
+
   ok(isOptOutMessage("STOP"), "STOP");
   ok(isOptOutMessage(" odjava "), "ODJAVA");
   ok(isOptOutMessage("Ne"), "NE exact");

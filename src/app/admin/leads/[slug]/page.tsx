@@ -148,6 +148,9 @@ export default async function AdminLeadDetailPage({
             canQueue={smsEligibility.ok}
             canRetry={Boolean(lastFailed)}
             lastFailedMessageId={lastFailed?.messageId}
+            ineligibilityReason={
+              smsEligibility.ok ? null : smsEligibility.reason
+            }
           />
           <SendOutreachButton
             slug={lead.slug}
