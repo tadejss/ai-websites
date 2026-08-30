@@ -1,6 +1,8 @@
 import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { GallerySection } from "@/components/sections/GallerySection";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { PricingSection } from "@/components/sections/PricingSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { LegalFooterLinks } from "@/components/legal/LegalFooterLinks";
 import { Button } from "@/components/ui/Button";
@@ -72,6 +74,8 @@ export function DefaultSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
         <HeroSection siteConfig={siteConfig} />
         <ServicesSection siteConfig={siteConfig} />
         <BenefitsSection siteConfig={siteConfig} />
+        <GallerySection siteConfig={siteConfig} />
+        <PricingSection siteConfig={siteConfig} />
         <ContactSection siteConfig={siteConfig} siteSlug={siteSlug} />
       </main>
 

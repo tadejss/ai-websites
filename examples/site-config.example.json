@@ -1,5 +1,9 @@
 {
   "appearance": "default",
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
   "brand": {
     "prefix": "Ime",
     "highlight": "Podjetja"
@@ -12,6 +16,7 @@
     "links": [
       { "href": "#storitve", "label": "Storitve" },
       { "href": "#zakaj-mi", "label": "Zakaj mi" },
+      { "href": "#cenik", "label": "Cenik" },
       { "href": "#kontakt", "label": "Kontakt" }
     ],
     "cta": "Rezerviraj termin"
@@ -48,52 +53,80 @@
       },
       {
         "title": "Svetovanje",
-        "description": "Personalizirani nasveti in načrti, prilagojeni vašim ciljem in proračunu.",
+        "description": "Strokovni nasveti, da izberete najboljšo rešitev za vaše potrebe in proračun.",
         "icon": "service-3"
       },
       {
         "title": "Vzdrževanje",
-        "description": "Redno spremljanje in preventivno vzdrževanje za dolgoročno zanesljivost.",
+        "description": "Redno vzdrževanje in popravila za dolgotrajno zanesljivost in mirno vest.",
         "icon": "service-4"
-      },
-      {
-        "title": "Podpora strankam",
-        "description": "Dostopna pomoč in odgovori na vprašanja skozi celoten proces sodelovanja.",
-        "icon": "service-5"
-      },
-      {
-        "title": "Hitra pomoč",
-        "description": "Prioritetna obravnava nujnih primerov z jasno oceno časa in stroškov.",
-        "icon": "service-6"
       }
     ]
   },
   "whyChooseUs": {
     "id": "zakaj-mi",
     "eyebrow": "Zakaj mi",
-    "title": "Kakovost, ki ji stranke zaupajo",
-    "description": "Verjamemo v transparentnost, natančnost in osebni pristop. Vsako stranko obravnavamo enako skrbno in profesionalno.",
+    "title": "Zaupanja vreden lokalni partner",
+    "description": "Združujemo strokovnost, odzivnost in poštene dogovore.",
     "highlights": [
-      "Izkušena ekipa z rednimi usposabljanji",
-      "Brez skritih stroškov — ceno vedno potrdite vnaprej",
-      "Prilagojene rešitve za posameznike in podjetja",
-      "Dolgoročno partnerstvo z našimi strankami"
+      "Osebni pristop",
+      "Jasna komunikacija",
+      "Kakovostna izvedba"
     ],
     "benefits": [
       {
-        "stat": "10+",
-        "label": "let izkušenj",
-        "description": "Dolgoletna tradicija in tisoče zadovoljnih strank v lokalni skupnosti."
+        "title": "Osebni pristop",
+        "label": "Osebni pristop",
+        "description": "Vsako stranko obravnavamo individualno in prilagodimo rešitev njenim potrebam."
       },
       {
-        "stat": "48 h",
-        "label": "hitra storitev",
-        "description": "Večino povpraševanj obravnavamo v dveh delovnih dneh z jasno povratno informacijo."
+        "title": "Zanesljivost",
+        "label": "Zanesljivost",
+        "description": "Dogovorjene roke in jasno komunikacijo jemljemo resno."
       },
       {
-        "stat": "100 %",
-        "label": "zavezanost",
-        "description": "Stojimo za kakovostjo našega dela in zadovoljstvom vsake stranke."
+        "title": "Lokalna prisotnost",
+        "label": "Lokalna prisotnost",
+        "description": "Hitro odzivni smo v vaši okolici in poznamo lokalne zahteve."
+      }
+    ]
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregledne informativne cene",
+    "description": "Okvirne cene storitev za lažji prvi pregled.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Osnovna storitev",
+        "description": "Standardna izvedba za vsakodnevne potrebe.",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Specializirana storitev",
+        "description": "Zahtevnejša obravnava z dodatnim svetovanjem.",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Svetovanje",
+        "description": "Kratek pregled in priporočila.",
+        "price": "25 €",
+        "unit": "/ obisk"
+      },
+      {
+        "name": "Vzdrževanje",
+        "description": "Redni pregled in osnovno vzdrževanje.",
+        "price": "od 40 €",
+        "unit": "/ mesec"
       }
     ]
   },

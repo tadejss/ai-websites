@@ -13,6 +13,7 @@ import type { BusinessInput } from "@/ai/types";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
 import type { SiteConfig } from "@/content/types/site";
 import { validateSiteConfig } from "@/content/validate-site-config";
+import { applyNewLeadSectionDefaults } from "@/content/apply-new-lead-sections";
 import { saveLead } from "@/leads/store";
 import type { BusinessSource } from "@/sources/types";
 
@@ -64,8 +65,9 @@ export async function generateClient(
     ...(layout ? { layout } : {}),
   };
   const images = await generateSiteImages(slug, businessInput, siteConfig as SiteConfig);
-  const finalConfig = images ? { ...siteConfig, images } : siteConfig;
-  const persistedConfig = validateSiteConfig(finalConfig);
+  const withImages = images ? { ...siteConfig, images } : siteConfig;
+  const withSections = applyNewLeadSectionDefaults(withImages as SiteConfig);
+  const persistedConfig = validateSiteConfig(withSections);
 
   const clientDir = resolve(__dirname, "../content/clients", slug);
 

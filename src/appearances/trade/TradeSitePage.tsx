@@ -1,4 +1,6 @@
 import { ContactSection } from "@/components/sections/ContactSection";
+import { GallerySection } from "@/components/sections/GallerySection";
+import { PricingSection } from "@/components/sections/PricingSection";
 import { LegalFooterLinks } from "@/components/legal/LegalFooterLinks";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/content/icons";
@@ -72,6 +74,8 @@ export function TradeSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
         <TradeHeroSection siteConfig={siteConfig} />
         <TradeServicesSection siteConfig={siteConfig} />
         <TradeBenefitsSection siteConfig={siteConfig} />
+        <GallerySection siteConfig={siteConfig} headingVariant="trade" />
+        <PricingSection siteConfig={siteConfig} headingVariant="trade" />
         <ContactSection siteConfig={siteConfig} siteSlug={siteSlug} />
       </main>
 

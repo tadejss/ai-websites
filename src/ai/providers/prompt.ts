@@ -16,8 +16,12 @@ Every field and value MUST match the SiteConfig schema exactly:
 - do not invent extra nesting or wrapper objects
 - never use null; omit optional fields instead
 
-Required top-level keys (exactly these eight):
-brand, metadata, nav, hero, services, whyChooseUs, contact, footer
+Required top-level keys:
+brand, metadata, nav, hero, services, whyChooseUs, contact, footer, pricing
+
+Optional top-level keys for new demos:
+- gallery (may be omitted or included with an empty items array — do NOT invent fake photos)
+- sections (usually omitted; assigned after generation)
 
 Do not include an appearance field — it is assigned automatically after generation based on industry.
 Do not include a theme field — palette and font pairing are assigned automatically after generation.
@@ -31,7 +35,10 @@ location, phone, email, clock, service-1, service-2, service-3, service-4, servi
 Nav and section ID rules:
 - services.id = "storitve", nav href "#storitve"
 - whyChooseUs.id = "zakaj-mi", nav href "#zakaj-mi"
+- pricing.id = "cenik"
+- gallery.id = "galerija" when gallery is present
 - contact.id = "kontakt", nav href "#kontakt"
+- Keep nav.links to the three core sections (#storitve, #zakaj-mi, #kontakt). Links for #galerija / #cenik may be added automatically after generation when those sections are visible.
 
 Structure requirements:
 - brand: { prefix: string, highlight: string }
@@ -40,6 +47,7 @@ Structure requirements:
 - hero: { badge: string, title: string, titleHighlight: string, description: string, primaryCta: string, secondaryCta: string, stats: [{ value: string, label: string } exactly 4] }
 - services: { id: string, eyebrow: string, title: string, description: string, items: [{ title: string, description: string, icon: IconName } x4-6] }
 - whyChooseUs: { id: string, eyebrow: string, title: string, description: string, highlights: [string x3-4], benefits: [{ title: string, label: string, description: string, stat?: string } x3] }
+- pricing: { id: "cenik", eyebrow: string, title: string, description?: string, disclaimer: string, items: [{ name: string, description?: string, price: string, unit?: string, featured?: boolean } x4-8] }
 - contact: { id: string, eyebrow: string, title: string, description: string, items: ContactItem[], form: ContactForm }
 - footer: { address: string, rights: string }
 
@@ -98,9 +106,25 @@ Factual accuracy rules (strict):
 - NEVER invent percentages; "100%", "98%" and similar are forbidden unless the number appears in the business input
 - NEVER invent years of experience, founding dates or company history
 - NEVER invent customer, client, project or review counts such as "500+ strank"
-- NEVER invent awards, certifications, guarantees, prices or partnerships
+- NEVER invent awards, certifications, guarantees or partnerships
 - NEVER claim 24/7 or non-stop availability unless openingHours says so
 - NEVER invent services that are not in the business input
+- NEVER present prices elsewhere in the site as verified/confirmed business prices
+
+Demo pricing section (required — top-level "pricing"):
+- Generate an indicative/demo price list so the website looks commercially complete
+- Create 4–8 pricing.items relevant to the business type, services list, and industry
+- Examples: hairdresser → striženje, barvanje, styling; beauty → manikura, pedikura, obrazna nega; electrician → izhod, montaža, odprava napake, ura dela; trade → common services with "od" prices
+- Prefer rounded indicative amounts (e.g. "od 35 €", "45 €", "od 80 € / ura"). Avoid absurd precision like "37,83 €"
+- Use the "od" prefix in price when an exact fee cannot reasonably be inferred
+- Set pricing.disclaimer to a short Slovenian notice that prices are informative, e.g. "Cenik je informativen. Za aktualne cene nas kontaktirajte."
+- You may mark one popular item with featured: true
+- These demo prices are provisional and easy to replace later — never claim they are the company's official confirmed prices
+
+Gallery (optional):
+- Do NOT invent or generate fake business photos
+- Prefer omitting gallery, or include gallery with items: [] when no real photo URLs are available
+- Never add stock/placeholder image URLs to gallery.items
 
 hero.stats and whyChooseUs.benefits[].stat do NOT have to be numbers. When there is no supportable number, use a short qualitative word instead.
 

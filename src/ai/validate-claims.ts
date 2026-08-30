@@ -98,6 +98,32 @@ export function collectVisibleCopy(
     entries.push([`contact.items[${index}].label`, item.label]);
   });
 
+  if (config.pricing) {
+    entries.push(["pricing.eyebrow", config.pricing.eyebrow]);
+    entries.push(["pricing.title", config.pricing.title]);
+    if (config.pricing.description) {
+      entries.push(["pricing.description", config.pricing.description]);
+    }
+    entries.push(["pricing.disclaimer", config.pricing.disclaimer]);
+    config.pricing.items.forEach((item, index) => {
+      entries.push([`pricing.items[${index}].name`, item.name]);
+      if (item.description) {
+        entries.push([
+          `pricing.items[${index}].description`,
+          item.description,
+        ]);
+      }
+    });
+  }
+
+  if (config.gallery) {
+    entries.push(["gallery.eyebrow", config.gallery.eyebrow]);
+    entries.push(["gallery.title", config.gallery.title]);
+    if (config.gallery.description) {
+      entries.push(["gallery.description", config.gallery.description]);
+    }
+  }
+
   return entries;
 }
 

@@ -210,6 +210,44 @@ const pricingNoteSchema = z.object({
   description: z.string(),
 });
 
+const galleryItemSchema = z.object({
+  src: z.string(),
+  alt: z.string(),
+  caption: z.string().optional(),
+});
+
+const gallerySectionSchema = z.object({
+  id: z.string(),
+  eyebrow: z.string(),
+  title: z.string(),
+  description: z.string().optional(),
+  items: z.array(galleryItemSchema),
+});
+
+const pricingItemSchema = z.object({
+  name: z.string(),
+  description: z.string().optional(),
+  price: z.string(),
+  unit: z.string().optional(),
+  featured: z.boolean().optional(),
+});
+
+const pricingSectionSchema = z.object({
+  id: z.string(),
+  eyebrow: z.string(),
+  title: z.string(),
+  description: z.string().optional(),
+  disclaimer: z.string(),
+  items: z.array(pricingItemSchema),
+});
+
+const sectionFlagsSchema = z
+  .object({
+    gallery: z.boolean().optional(),
+    pricing: z.boolean().optional(),
+  })
+  .optional();
+
 const contactFaqItemSchema = z.object({
   question: z.string(),
   answer: z.string(),
@@ -220,6 +258,9 @@ const siteConfigSchema = z.object({
   theme: themeSchema,
   layout: layoutSchema,
   images: siteImagesSchema,
+  sections: sectionFlagsSchema,
+  gallery: gallerySectionSchema.optional(),
+  pricing: pricingSectionSchema.optional(),
   brand: z.object({
     prefix: z.string(),
     highlight: z.string(),

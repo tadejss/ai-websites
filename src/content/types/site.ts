@@ -75,6 +75,42 @@ export type PricingNote = {
   description: string;
 };
 
+export type GalleryItem = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+export type GallerySectionConfig = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description?: string;
+  items: GalleryItem[];
+};
+
+export type PricingItem = {
+  name: string;
+  description?: string;
+  price: string;
+  unit?: string;
+  featured?: boolean;
+};
+
+export type PricingSectionConfig = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description?: string;
+  disclaimer: string;
+  items: PricingItem[];
+};
+
+export type SiteSectionFlags = {
+  gallery?: boolean;
+  pricing?: boolean;
+};
+
 export type ContactFaqItem = {
   question: string;
   answer: string;
@@ -221,6 +257,11 @@ export type SiteConfig = {
   theme?: SiteTheme;
   layout?: SiteLayout;
   images?: SiteImages;
+  /** Optional section feature flags. Omitted keys default to false (legacy clients). */
+  sections?: SiteSectionFlags;
+  gallery?: GallerySectionConfig;
+  /** Top-level demo/indicative price list (distinct from services.pricing note). */
+  pricing?: PricingSectionConfig;
   brand: {
     prefix: string;
     highlight: string;

@@ -30,6 +30,25 @@
       ],
       "description": "Visual appearance category controlling layout and theme tokens."
     },
+    "sections": {
+      "type": "object",
+      "description": "Optional section feature flags. Omitted keys default to false.",
+      "additionalProperties": false,
+      "properties": {
+        "gallery": {
+          "type": "boolean"
+        },
+        "pricing": {
+          "type": "boolean"
+        }
+      }
+    },
+    "gallery": {
+      "$ref": "#/$defs/GallerySection"
+    },
+    "pricing": {
+      "$ref": "#/$defs/PricingSection"
+    },
     "theme": {
       "type": "object",
       "description": "Per-site palette and font pairing assigned at generation time.",
@@ -284,6 +303,59 @@
       "properties": {
         "title": { "type": "string" },
         "description": { "type": "string" }
+      }
+    },
+    "GalleryItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["src", "alt"],
+      "properties": {
+        "src": { "type": "string" },
+        "alt": { "type": "string" },
+        "caption": { "type": "string" }
+      }
+    },
+    "GallerySection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "eyebrow", "title", "items"],
+      "properties": {
+        "id": { "type": "string" },
+        "eyebrow": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/GalleryItem" }
+        }
+      }
+    },
+    "PricingItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "price"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "price": { "type": "string" },
+        "unit": { "type": "string" },
+        "featured": { "type": "boolean" }
+      }
+    },
+    "PricingSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "eyebrow", "title", "disclaimer", "items"],
+      "properties": {
+        "id": { "type": "string" },
+        "eyebrow": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "disclaimer": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/PricingItem" }
+        }
       }
     },
     "ContactFaqItem": {
