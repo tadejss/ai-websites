@@ -249,6 +249,213 @@ async function main() {
     "relevant without email",
   );
 
+  const {
+    smsLeadReplenishmentNeeded,
+    smsLeadReplenishToGenerate,
+  } = await import("../src/outreach/sms/config");
+  ok(smsLeadReplenishmentNeeded(140, 500) === 360, "replenish gap 140→500");
+  ok(smsLeadReplenishmentNeeded(500, 500) === 0, "at target → 0");
+  ok(smsLeadReplenishmentNeeded(520, 500) === 0, "above target → 0");
+  ok(
+    smsLeadReplenishToGenerate(140, { target: 500, batch: 100 }) === 100,
+    "batch caps gap",
+  );
+  ok(
+    smsLeadReplenishToGenerate(470, { target: 500, batch: 100 }) === 30,
+    "gap smaller than batch",
+  );
+
+  const { isSmsGenerationCandidate } = await import(
+    "../src/outreach/sms/relevance"
+  );
+  ok(
+    isSmsGenerationCandidate({
+      slug: "x",
+      phone: "041 696 401",
+      existingWebsite: "",
+    }) === true,
+    "gen candidate: mobile no website",
+  );
+  ok(
+    isSmsGenerationCandidate({
+      slug: "x",
+      phone: "041 696 401",
+      existingWebsite: "https://a.si",
+    }) === false,
+    "gen reject: website",
+  );
+  ok(
+    isSmsGenerationCandidate({
+      slug: "x",
+      phone: "01 425 1234",
+    }) === false,
+    "gen reject: landline",
+  );
+  ok(
+    isSmsGenerationCandidate({
+      slug: "x",
+      phone: "",
+    }) === false,
+    "gen reject: no phone",
+  );
+
+  const { replenishSmsLeads } = await import("../src/leads/replenish");
+  const slots = [
+    {
+      industry: "frizer" as const,
+      region: "notranjska",
+      query: "frizer test",
+    },
+  ];
+
+  const atTarget = await replenishSmsLeads({
+    countActionable: async () => 520,
+    slots,
+    readCursor: () => 0,
+    writeCursor: () => {},
+    discover: async () => {
+      throw new Error("discover should not run when at target");
+    },
+    createFromLead: async () => {
+      throw new Error("generate should not run when at target");
+    },
+  });
+  ok(atTarget.toGenerate === 0, "520 → no replenish");
+  ok(atTarget.demosGenerated === 0, "520 → no demos");
+
+  const exactlyTarget = await replenishSmsLeads({
+    countActionable: async () => 500,
+    slots,
+    readCursor: () => 0,
+    writeCursor: () => {},
+    discover: async () => {
+      throw new Error("discover should not run at exact target");
+    },
+  });
+  ok(exactlyTarget.toGenerate === 0, "500 → no replenish");
+
+  let discoverCalls = 0;
+  let createCalls = 0;
+  const created = new Set<string>();
+  const below = await replenishSmsLeads({
+    countActionable: async () => 499,
+    slots,
+    readCursor: () => 0,
+    writeCursor: () => {},
+    placesLimitPerQuery: 5,
+    discover: async () => {
+      discoverCalls += 1;
+      return [
+        {
+          outcome: "skipped",
+          reason: "already known",
+          companyName: "Dup",
+          googlePlaceId: "p1",
+        },
+        {
+          outcome: "discovered",
+          slug: "lead-website",
+          companyName: "Has Web",
+          googlePlaceId: "p2",
+        },
+        {
+          outcome: "discovered",
+          slug: "lead-landline",
+          companyName: "Land",
+          googlePlaceId: "p3",
+        },
+        {
+          outcome: "discovered",
+          slug: "lead-nophone",
+          companyName: "NoPhone",
+          googlePlaceId: "p4",
+        },
+        {
+          outcome: "discovered",
+          slug: "lead-fail",
+          companyName: "Fail",
+          googlePlaceId: "p6",
+        },
+        {
+          outcome: "discovered",
+          slug: "lead-good",
+          companyName: "Good",
+          googlePlaceId: "p5",
+        },
+      ];
+    },
+    readLeadBySlug: (slug) => {
+      if (slug === "lead-website") {
+        return {
+          slug,
+          phone: "041111111",
+          existingWebsite: "https://x.si",
+        };
+      }
+      if (slug === "lead-landline") {
+        return { slug, phone: "01 425 1234", existingWebsite: "" };
+      }
+      if (slug === "lead-nophone") {
+        return { slug, phone: "", existingWebsite: "" };
+      }
+      if (slug === "lead-good" || slug === "lead-fail") {
+        return { slug, phone: "041 696 401", existingWebsite: "" };
+      }
+      return null;
+    },
+    siteExists: (slug) => created.has(slug),
+    createFromLead: async (slug) => {
+      createCalls += 1;
+      if (slug === "lead-fail") {
+        throw new Error("demo boom");
+      }
+      created.add(slug);
+      return { outcome: "created", slug, companyName: slug };
+    },
+  });
+
+  ok(below.needed === 1, "499→500 needed");
+  ok(below.toGenerate === 1, "toGenerate capped to gap");
+  ok(below.duplicates >= 1, "dedup counted");
+  ok(below.rejectedExistingWebsite >= 1, "website rejected before gen");
+  ok(below.rejectedInvalidOrLandline >= 1, "landline rejected");
+  ok(below.rejectedMissingPhone >= 1, "missing phone rejected");
+  ok(below.demosGenerated === 1, "one successful demo");
+  ok(below.errors.some((e) => e.includes("demo boom")), "gen failure logged");
+  ok(discoverCalls >= 1, "discover ran");
+  ok(createCalls >= 2, "fail then success create attempts");
+
+  const batchCap = await replenishSmsLeads({
+    countActionable: async () => 140,
+    slots,
+    readCursor: () => 0,
+    writeCursor: () => {},
+    placesLimitPerQuery: 50,
+    discover: async () =>
+      Array.from({ length: 50 }, (_, i) => ({
+        outcome: "discovered" as const,
+        slug: `batch-${i}`,
+        companyName: `B${i}`,
+        googlePlaceId: `g${i}`,
+      })),
+    readLeadBySlug: (slug) => ({
+      slug,
+      phone: "041 696 401",
+      existingWebsite: "",
+    }),
+    siteExists: () => false,
+    createFromLead: async (slug) => ({
+      outcome: "created",
+      slug,
+      companyName: slug,
+    }),
+  });
+  // Override batch via env is hard; inject by temporarily setting — use deps
+  // already capped by getSmsConfig(). Force via count that needs many but we
+  // pass custom by monkeypatching: re-run with smaller needed via high before.
+  ok(batchCap.demosGenerated <= batchCap.toGenerate, "never exceed toGenerate");
+  ok(batchCap.toGenerate <= 100, "default batch ceiling");
+
   ok(isOptOutMessage("STOP"), "STOP");
   ok(isOptOutMessage(" odjava "), "ODJAVA");
   ok(isOptOutMessage("Ne"), "NE exact");

@@ -1,7 +1,11 @@
 import { getOutreachStatusLabel } from "@/outreach/eligibility";
 import { LEAD_STATUSES } from "@/leads/statuses";
 import type { LeadRecord } from "@/leads/store";
-import { isRelevantSmsLead } from "@/outreach/sms/relevance";
+import {
+  isActionableSmsLead,
+  isRelevantSmsLead,
+} from "@/outreach/sms/relevance";
+import type { SmsLeadState } from "@/outreach/sms/types";
 
 /** Outreach buckets shown in admin (matches getOutreachStatusLabel + DB customer). */
 export const ADMIN_OUTREACH_FILTERS = [
@@ -41,6 +45,7 @@ export type AdminLeadRow = {
   displayStatus: string;
   outreachLabel: string;
   isRelevantSms: boolean;
+  isActionableSms: boolean;
 };
 
 export function resolveAdminLeadStatus(
@@ -68,6 +73,7 @@ export function resolveAdminOutreachLabel(
 export function buildAdminLeadRows(
   leads: LeadRecord[],
   customerSlugs: Set<string>,
+  smsBySlug?: Map<string, SmsLeadState>,
 ): AdminLeadRow[] {
   return leads.map((lead) => {
     const isCustomer = customerSlugs.has(lead.slug);
@@ -77,6 +83,10 @@ export function buildAdminLeadRows(
       displayStatus: resolveAdminLeadStatus(lead, isCustomer),
       outreachLabel: resolveAdminOutreachLabel(lead, isCustomer),
       isRelevantSms: isRelevantSmsLead(lead),
+      isActionableSms: isActionableSmsLead(lead, {
+        customerSlugs,
+        smsBySlug,
+      }),
     };
   });
 }
@@ -105,7 +115,7 @@ export function filterAdminLeadRows(
 
   return rows.filter((row) => {
     if (pipeline === "actionable") {
-      if (row.isCustomer || !row.isRelevantSms) {
+      if (!row.isActionableSms) {
         return false;
       }
     } else if (pipeline === "customers") {
@@ -113,7 +123,7 @@ export function filterAdminLeadRows(
         return false;
       }
     } else if (pipeline === "excluded") {
-      if (row.isCustomer || row.isRelevantSms) {
+      if (row.isCustomer || row.isActionableSms) {
         return false;
       }
     }

@@ -4,6 +4,7 @@ import { createClientFromLead } from "../src/clients/create-client-from-lead";
 import { isFatalGenerationError } from "../src/clients/fatal-error";
 import {
   isLeadIndustryId,
+  LEAD_INDUSTRY_IDS,
   type LeadIndustryId,
 } from "../src/leads/industry-filter";
 import { LEAD_PRIORITIES, type LeadPriority } from "../src/leads/priority";
@@ -109,7 +110,7 @@ function parseOptions(args: string[]): Options {
       const value = args[index + 1] ?? "";
       if (!isLeadIndustryId(value)) {
         console.error(
-          `Error: Invalid --industry "${value}". Allowed: frizer, keramicar, elektro, vulkanizer`,
+          `Error: Invalid --industry "${value}". Allowed: ${LEAD_INDUSTRY_IDS.join(", ")}`,
         );
         process.exit(1);
       }

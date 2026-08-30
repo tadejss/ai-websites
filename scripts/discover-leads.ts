@@ -5,6 +5,7 @@ import { isFatalGenerationError } from "../src/clients/fatal-error";
 import { discoverLeads } from "../src/leads/discover";
 import {
   isLeadIndustryId,
+  LEAD_INDUSTRY_IDS,
   type LeadIndustryId,
 } from "../src/leads/industry-filter";
 import { selectLeads } from "../src/leads/select";
@@ -116,7 +117,7 @@ function parseOptions(args: string[]): Options {
       const value = args[index + 1] ?? "";
       if (!isLeadIndustryId(value)) {
         console.error(
-          `Error: Invalid --industry "${value}". Allowed: frizer, keramicar, elektro, vulkanizer`,
+          `Error: Invalid --industry "${value}". Allowed: ${LEAD_INDUSTRY_IDS.join(", ")}`,
         );
         process.exit(1);
       }

@@ -57,7 +57,9 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
   const allLeads = readAllLeads().sort((a, b) =>
     (a.companyName ?? a.slug).localeCompare(b.companyName ?? b.slug, "sl"),
   );
-  const allRows = buildAdminLeadRows(allLeads, customerSlugs);
+  const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
+  const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
+  const allRows = buildAdminLeadRows(allLeads, customerSlugs, smsBySlug);
   const rows = filterAdminLeadRows(allRows, {
     pipeline,
     status: statusFilter,
@@ -67,20 +69,18 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
   const activeFilters = Boolean(
     statusFilter || outreachFilter || pipeline !== "actionable",
   );
-  const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
-  const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
   const smsCounts = isDatabaseConfigured() ? await countByLeadStatus() : {};
   const sentToday = isDatabaseConfigured() ? await countSentToday() : 0;
   const withMobile = allLeads.filter((lead) =>
     isSlovenianMobilePhone(lead.phone),
   ).length;
-  const actionableCount = allRows.filter(
-    (row) => row.isRelevantSms && !row.isCustomer,
-  ).length;
+  const actionableCount = allRows.filter((row) => row.isActionableSms).length;
   const excludedCount = allRows.filter(
-    (row) => !row.isCustomer && !row.isRelevantSms,
+    (row) => !row.isCustomer && !row.isActionableSms,
   ).length;
   const customerCount = allRows.filter((row) => row.isCustomer).length;
+  const leadTarget = smsConfig.leadTarget;
+  const replenishNeeded = Math.max(0, leadTarget - actionableCount);
 
   return (
     <div>
@@ -101,6 +101,8 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
       <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {[
           ["Actionable", String(actionableCount)],
+          ["Target", String(leadTarget)],
+          ["Replenishment needed", String(replenishNeeded)],
           ["With mobile", String(withMobile)],
           ["Excluded", String(excludedCount)],
           ["Customers", String(customerCount)],

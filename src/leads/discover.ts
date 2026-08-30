@@ -2,6 +2,7 @@ import { slugFromBusinessName, uniqueSlug } from "@/clients/slug";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
 import { searchPlaces } from "@/sources/google-places-source";
 import {
+  discoveryNoisePattern,
   leadMatchesIndustry,
   type LeadIndustryId,
 } from "./industry-filter";
@@ -76,19 +77,7 @@ export async function discoverLeads(
     industry: query,
     companyName: "",
   });
-  const noiseByIndustry: Record<string, RegExp> = {
-    frizer:
-      /pekarna|gostil|restavrac|elektro|vulkan|avtoservis|keramič|keramic|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|\bšola\b|\bsola\b|vzgojitelj|trenerstvo|strojne\s+inštalacije|strojne\s+instalacije|gradbeništvo|gradbenistvo/i,
-    keramicar:
-      /pekarna|gostil|restavrac|frizer|elektro|vulkan|avtoservis|trgovina|market|spar|mercator|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|unikatno\s+oblikovanje|oblikovanje\s+keramike|okrasna\s+.*keramik|kopalnice\b|extra-?form|\bšola\b|\bsola\b|vzgojitelj|trenerstvo|strojne\s+inštalacije|strojne\s+instalacije/i,
-    elektro:
-      /pekarna|gostil|restavrac|frizer|vulkan|avtoservis|keramič|keramic|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|\bšola\b|\bsola\b|vzgojitelj|trenerstvo/i,
-    vulkanizer:
-      /pekarna|gostil|restavrac|frizer|elektro|keramič|keramic|mizarstvo|slikopleskar|fasaderstvo|mehanizacija|strojni\s+ometi|transport|\bšola\b|\bsola\b|vzgojitelj|trenerstvo/i,
-  };
-  const noiseName =
-    (options.industry && noiseByIndustry[options.industry]) ||
-    /pekarna|gostil|restavrac|avtoservis|trgovina|market|spar|mercator|\bšola\b|\bsola\b|vzgojitelj|trenerstvo/i;
+  const noiseName = discoveryNoisePattern(options.industry);
 
   const results: DiscoveryResult[] = [];
 

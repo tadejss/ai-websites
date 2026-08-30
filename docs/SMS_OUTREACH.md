@@ -30,8 +30,28 @@ SMS_DAILY_LIMIT=100
 SMS_MIN_DELAY_MS=3000
 SMS_BATCH_SIZE=5
 SMS_CLAIM_LEASE_MINUTES=10
+SMS_LEAD_TARGET=500
+SMS_LEAD_REPLENISH_BATCH=100
 DATABASE_URL=...
 ```
+
+## Lead replenishment (manual)
+
+Demos live in git (`src/content/leads`, `src/content/clients`) and are bundled at build time, so **generation cannot run on Vercel**.
+
+| Job | Role |
+|-----|------|
+| `GET /api/cron/replenish-leads` (`0 6 * * *`) | Status only: actionable vs `SMS_LEAD_TARGET` |
+| `npm run replenish-leads` | **Manual** local discover + demo generation |
+
+Workflow:
+
+1. Check admin **Actionable / Target / Replenishment needed**, or hit the status cron.
+2. Locally: `npm run replenish-leads`
+3. Inspect new leads/clients.
+4. Manually commit, push, and redeploy when satisfied.
+
+Each CLI run recounts actionable leads first, then generates at most `min(gap, SMS_LEAD_REPLENISH_BATCH)`. It never auto-commits.
 
 ## API
 

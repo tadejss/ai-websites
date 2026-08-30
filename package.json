@@ -37,7 +37,8 @@
     "send-outreach": "tsx scripts/send-outreach.ts",
     "outreach-summary": "tsx scripts/outreach-summary.ts",
     "test-outreach": "tsx scripts/test-outreach.ts",
-    "test-sms-outreach": "tsx scripts/test-sms-outreach.ts"
+    "test-sms-outreach": "tsx scripts/test-sms-outreach.ts",
+    "replenish-leads": "tsx scripts/replenish-leads.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
