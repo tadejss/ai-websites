@@ -1,0 +1,291 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "wine-velvet",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lahek-korak-tamara/hero.avif",
+      "alt": "Sproščujoč ambient v kozmetičnem salonu Lahek korak",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lahek-korak-tamara/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7755549",
+      "sourceUrl": "https://www.pexels.com/photo/woman-getting-her-toenails-done-7755549/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "searchQuery": "warm medical pedicure foot care salon interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lahek-korak-tamara/services.avif",
+      "alt": "Storitve medicinske pedikure in nege telesa",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lahek-korak-tamara/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "29877719",
+      "sourceUrl": "https://www.pexels.com/photo/professional-manicure-process-in-polish-salon-29877719/",
+      "photographer": "Larysa Stratiichuk",
+      "photographerUrl": "https://www.pexels.com/@larysa-stratiichuk-1606923648",
+      "searchQuery": "professional foot care cosmetic treatment relaxing spa interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregled storitev in cen",
+    "description": "Informativni cenik naših storitev za nego stopal, obraza in telesa.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Medicinska pedikura",
+        "description": "Strokovna nega problematičnih stopal in nohtov",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Estetska pedikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožiče in nanos lakov",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Nega obraza",
+        "description": "Globinsko čiščenje, vlaženje in nega prilagojena tipu kože",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Masaža telesa",
+        "description": "Sprostitvena masaža za celotno telo",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Depilacija",
+        "description": "Odstranjevanje dlak z voskom",
+        "price": "od 15 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Lahek korak",
+    "highlight": "Tamara Komočar s.p."
+  },
+  "metadata": {
+    "title": "Lahek korak | Kozmetični salon Krško",
+    "description": "Poskrbite za urejenost in zdravje vaših stopal ter telesa v prijetnem okolju v Krškem in okolici. Nudimo medicinsko pedikuro, nego obraza, masaže in depilacijo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon Krško",
+    "title": "Poskrbite za urejenost in zdravje vaših stopal ter telesa v",
+    "titleHighlight": "prijetnem okolju.",
+    "description": "Strokovna in prijazna obravnava za vse, ki jim je mar za zdravje stopal, nego in osebno počutje v Krškem in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska pedikura",
+        "label": "Vrhunska pedikura",
+        "title": "Vrhunska pedikura"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Urejen salon",
+        "label": "Urejen salon",
+        "title": "Urejen salon"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celostna nega za vaše dobro počutje",
+    "description": "V salonu Lahek korak nudimo strokovne storitve nege stopal, obraza in telesa, prilagojene vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Medicinska pedikura",
+        "description": "Strokovna oskrba stopal za reševanje težav in vzdrževanje zdravja vaših nog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Estetska pedikura",
+        "description": "Urejanje in nega nohtov ter stopal za lep in negovan videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega obraza",
+        "description": "Osvežilni in negovalni tretmaji za sijoč in zdrav videz vaša kože.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža telesa",
+        "description": "Sprostitvene masaže za odpravljanje napetosti in popolno sprostitev telesa.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Depilacija",
+        "description": "Učinkovito in nežno odstranjevanje dlak za dolgotrajno gladko kožo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel, strokoven in prijazen pristop",
+    "description": "Zavedamo se pomena zdravja in urejenosti, zato se vam v prijetnem okolju v celoti posvetimo.",
+    "highlights": [
+      "Vrhunska pedikura in celostna nega",
+      "Prijetno in sproščujoče okolje",
+      "Prijazna in strokovna obravnava",
+      "Urejen lokalni salon v Krškem"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska pedikura",
+        "description": "Specializirana nega za zdravje in lahkotnost vaših stopal.",
+        "title": "Vrhunska pedikura"
+      },
+      {
+        "label": "Sproščujoče okolje",
+        "description": "Prijeten ambient v Krškem, kjer si lahko oddahnete od vsakdanjega stresa.",
+        "title": "Sproščujoče okolje"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Prijazna obravnava, prilagojena vašim osebnim potrebam in počutju.",
+        "title": "Strokoven pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naše ponudbe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 44, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 619 689",
+        "href": "tel:031619689",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon: 14:00–21:00 · Tor: 7:00–15:00 · Sre-Čet: 11:00–19:00 · Pet: 7:00–15:00 · Sob: 8:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Rezervirajte termin",
+      "description": "Izpolnite spodnji obrazek in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 44, 8270 Krško, Slovenia",
+    "rights": "© Lahek korak, Tamara Komočar s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lahek korak Tamara Komočar s.p.",
+    "address": "Cesta krških žrtev 44, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "031 619 689"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

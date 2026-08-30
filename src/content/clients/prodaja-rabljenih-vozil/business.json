@@ -1,0 +1,27 @@
+{
+  "companyName": "Prodaja rabljenih vozil, Aleš Mohar s.p.",
+  "industry": "Avtomehanične storitve in prodaja vozil",
+  "tagline": "Zanesljive in hitre avtomehanične storitve za vaše vozilo",
+  "services": [
+    "Servis in popravilo vozil",
+    "Hitri servisi",
+    "Vzdrževanje in pregledi",
+    "Prodaja rabljenih vozil"
+  ],
+  "phone": "040 849 123",
+  "email": "",
+  "address": "Dolnja Težka Voda 10, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Hitra in učinkovita izvedba storitev",
+    "Prijazna in strokovna podpora strankam",
+    "Kakovostno in cenovno dostopno vzdrževanje"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil, ki iščejo zanesljiv in hiter avtoservis",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, prijazen, zaupanja vreden",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalni ponudniki avtomehaničnih storitev",
+  "callToAction": "Pokličite nas"
+}

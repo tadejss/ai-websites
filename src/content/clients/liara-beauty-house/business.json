@@ -1,0 +1,29 @@
+{
+  "companyName": "Liara beauty house Krsko",
+  "industry": "Klinika za nego kože in lepotni salon",
+  "tagline": "Vrhunska nega in strokovni lepotni tretmaji v sproščenem domačem vzdušju.",
+  "services": [
+    "Medicinska in estetska pedikura",
+    "Nega obraza in kože",
+    "Manikura in nega nohtov",
+    "Strokovno svetovanje za nego",
+    "Sprostitveni lepotni tretmaji"
+  ],
+  "phone": "040 917 464",
+  "email": "",
+  "address": "Tovarniška ulica 10, 8270 Krško, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Izjemno profesionalen, natančen in prijazen pristop",
+    "Top storitve v prijetnem in domačem vzdušju",
+    "Individualno svetovanje in poglobljena nega",
+    "Visoka kakovost z vso predanostjo in znanjem"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo kakovostno pedikuro, nego kože in osebne lepotne storitve v Krškem z okolico.",
+  "serviceArea": "Krško z okolico",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, prijazen",
+  "brandStyle": "domač, butičen, zanesljiv",
+  "competitors": "Lokalni kozmetični saloni in ponudniki nege v Posavju",
+  "callToAction": "Rezervirajte svoj termin"
+}

@@ -1,0 +1,281 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "copper-clay",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmetika-mojca-pevec/hero.avif",
+      "alt": "Strokovna nega obraza v prijetnem kozmetičnem salonu v Krškem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmetika-mojca-pevec/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37229315",
+      "sourceUrl": "https://www.pexels.com/photo/relaxing-spa-facial-with-cucumber-slices-37229315/",
+      "photographer": "DΛVΞ GΛRCIΛ",
+      "photographerUrl": "https://www.pexels.com/@davegarcia",
+      "searchQuery": "warm cosmetic salon facial treatment copper clay interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmetika-mojca-pevec/services.avif",
+      "alt": "Kozmetični pripomočki in izdelki za nego kože",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmetika-mojca-pevec/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16574941",
+      "sourceUrl": "https://www.pexels.com/photo/beauty-portrait-blonde-woman-applying-cosmetics-face-mask-on-face-16574941/",
+      "photographer": "Vlad Deep",
+      "photographerUrl": "https://www.pexels.com/@vlad-deep-29415806",
+      "searchQuery": "professional skincare treatment spa tools copper clay aesthetic"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled rednih lepotnih in negovalnih tretmajev v našem salonu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Nega obraza",
+        "description": "Osnovna ali ciljna nega kože glede na tip kože",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Telesni tretmaji",
+        "description": "Nega in oblikovanje telesa",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Oblikovanje obrvi",
+        "description": "Urejanje in oblikovanje",
+        "price": "od 10 €"
+      },
+      {
+        "name": "Depilacija",
+        "description": "Odstranjevanje dlačic z voskom",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Svetovanje o negi kože",
+        "description": "Individualno posvetovanje in priprava rutine",
+        "price": "25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Kozmetika",
+    "highlight": "Mojca Pevec"
+  },
+  "metadata": {
+    "title": "Kozmetika Mojca Pevec | Kozmetični salon Krško",
+    "description": "Strokovna nega kože in lepotni tretmaji v Krškem z okolico. Rezervirajte svoj termin v urejenem in prijetnem salonu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon Krško",
+    "title": "Strokovna nega kože in",
+    "titleHighlight": "lepotni tretmaji",
+    "description": "Prilagojeni kozmetični tretmaji za zdravje in lepoto vaše kože v Krškem z okolico. Prepustite se strokovni roki.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prilagojen",
+        "label": "pristop"
+      },
+      {
+        "value": "Strokovno",
+        "label": "izvajanje"
+      },
+      {
+        "value": "Prijeten",
+        "label": "ambient"
+      },
+      {
+        "value": "Lokalno",
+        "label": "v Krškem"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Kozmetične storitve za vaše dobro počutje",
+    "description": "V salonu v Krškem nudimo celovite storitve za nego obraza in telesa, prilagojene vašim edinstvenim potrebam.",
+    "items": [
+      {
+        "title": "Nega obraza",
+        "description": "Strokovna nega kože obraza, prilagojena vašemu tipu kože in trenutnemu stanju.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Telesni tretmaji",
+        "description": "Sproščujoči in oblikovalni tretmaji za celostno nego telesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje obrvi",
+        "description": "Natančno urejanje in oblikovanje obrvi za poudarjeno naravno lepoto obraznih linij.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Depilacija",
+        "description": "Učinkovito odstranjevanje dlačic za dolgotrajno gladko kožo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi kože",
+        "description": "Strokovni nasveti in priporočila za vsakodnevno nego vaše kože doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel ambient in strokovna skrb za vašo kožo",
+    "description": "Zavedamo se, da je vsaka stranka edinstvena, zato se vam v celoti posvetimo.",
+    "highlights": [
+      "Prilagojen pristop k vsaki stranki",
+      "Strokovne kozmetične storitve",
+      "Prijeten ambient v Krškem"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojen pristop",
+        "description": "Vsak tretma skrbno prilagodimo vašim osebnim željam in potrebam kože.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Zagotavljamo zanesljive in kakovostne kozmetične storitve.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščeno okolje v Krškem, kjer boste našli trenutke zase.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede storitev. Z veseljem vam bomo svetovali.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta 4. julija 71, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 633 503",
+        "href": "tel:031633503",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaši telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta 4. julija 71, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kozmetika Mojca Pevec",
+    "address": "Cesta 4. julija 71, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "031 633 503"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

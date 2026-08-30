@@ -1,0 +1,281 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "blush-champagne",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/liara-beauty-house/hero.avif",
+      "alt": "Topel in prijeten ambient lepotnega salona z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/liara-beauty-house/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3736521",
+      "sourceUrl": "https://www.pexels.com/photo/equipment-in-beauty-salon-3736521/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "cozy luxury beauty salon interior warm aesthetic facial treatment"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/liara-beauty-house/services.avif",
+      "alt": "Strokovna nega obraza in lepotni tretmaji v sproščenem vzdušju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/liara-beauty-house/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "29877719",
+      "sourceUrl": "https://www.pexels.com/photo/professional-manicure-process-in-polish-salon-29877719/",
+      "photographer": "Larysa Stratiichuk",
+      "photographerUrl": "https://www.pexels.com/@larysa-stratiichuk-1606923648",
+      "searchQuery": "professional skincare facial treatment and manicure delicate warm lighting"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik lepotnih storitev",
+    "description": "Pregled osnovnih storitev in cen v salonu Liara beauty house.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Medicinska in estetska pedikura",
+        "description": "Celovita nega stopal, nohtov in obnohtne kožice.",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Klasična nega obraza",
+        "description": "Čiščenje, piling, masaža in maska, prilagojena tipu kože.",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Manikura in nega nohtov",
+        "description": "Urejanje nohtov, nega obnohtne kožice in nanos laka.",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Sprostitveni lepotni tretma",
+        "description": "Zasnovano za sprostitev obraznih mišic in poživitev kože.",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Strokovno svetovanje",
+        "description": "Poglobljen posvet glede nege kože in izbire ustreznih izdelkov.",
+        "price": "20 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Liara",
+    "highlight": "beauty house Krško"
+  },
+  "metadata": {
+    "title": "Liara beauty house Krško | Nega obraza, pedikura in lepotni tretmaji",
+    "description": "Vrhunska nega in strokovni lepotni tretmaji v sproščenem domačem vzdušju v Krškem z okolico. Rezervirajte svoj termin za pedikuro, nego obraza in nohtov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Lepotni salon Krško",
+    "title": "Vrhunska nega in strokovni lepotni tretmaji v",
+    "titleHighlight": "sproščenem domačem vzdušju",
+    "description": "Odkrijte celovite lepotne storitve, prilagojene vašim željam in potrebam. Strokoven, natančen in topel pristop za stranke v Krškem z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Domače vzdušje",
+        "label": "Domače vzdušje"
+      },
+      {
+        "value": "Individualna nega",
+        "label": "Individualna nega"
+      },
+      {
+        "value": "Preverjena kakovost",
+        "label": "Preverjena kakovost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite lepotne storitve za vaše dobro počutje",
+    "description": "V salonu Liara beauty house v Krškem poskrbimo za celovito nego vašega telesa in kože z individualnim pristopom.",
+    "items": [
+      {
+        "title": "Medicinska in estetska pedikura",
+        "description": "Strokovna nega stopal za zdravje in estetski videz, prilagojena vsakemu posamezniku.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nega obraza in kože",
+        "description": "Poglobljena nega obraza, ki vaši koži povrne sijoč videz, svežino in mladosten sij.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Manikura in nega nohtov",
+        "description": "Urejeni in negovani nohti za popoln vtis v vsakem trenutku.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Strokovno svetovanje za nego",
+        "description": "Individualni nasveti in priporočila za pravilno domačo nego vaše kože.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Sprostitveni lepotni tretmaji",
+        "description": "Uživajte v trenutkih sprostitve in obnovite svoje energijske moči.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Butična nega in predanost vsaki stranki",
+    "description": "Združujemo strokovno znanje, natančnost in prijeten ambient, da se boste pri nas vedno počutili dobrodošlo.",
+    "highlights": [
+      "Izjemno profesionalen, natančen in prijazen pristop",
+      "Top storitve v prijetnem in domačem vzdušju",
+      "Individualno svetovanje in poglobljena nega"
+    ],
+    "benefits": [
+      {
+        "label": "Strokoven pristop",
+        "description": "Visoka kakovost z vso predanostjo, natančnostjo in strokovnim znanjem.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Domače vzdušje",
+        "description": "Topel ambient, kjer si lahko vzamete čas zase in za sprostitev.",
+        "title": "Domače vzdušje"
+      },
+      {
+        "label": "Osebna nega",
+        "description": "Individualno svetovanje in tretmaji, prilagojeni vašemu tipu kože in željam.",
+        "title": "Osebna nega"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite rezervirati svoj termin? Z veseljem vam bomo prisluhnili.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tovarniška ulica 10, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 917 464",
+        "href": "tel:040917464",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Tovarniška ulica 10, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Liara beauty house Krško",
+    "address": "Tovarniška ulica 10, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "040 917 464"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "companyName": "Vzdrževanje vozil, Branko Pust s.p.",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Zanesljivo in strokovno vzdrževanje ter popravilo vaši vozil.",
+  "services": [
+    "Redni servisi vozil",
+    "Diagnostika in pregledi",
+    "Popravila motorjev",
+    "Vzdrževanje podvozja",
+    "Svetovanje pri vzdrževanju"
+  ],
+  "phone": "040 169 281",
+  "email": "",
+  "address": "Nova Gora 8, 8270 Krško, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunska in strokovna storitev z dolgoletnimi izkušnjami",
+    "Hitra in zanesljiva popravila vseh vrst težav",
+    "Poštene in dostopne cene storitev",
+    "Prijazen pristop in strokovni nasveti strankam"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil, ki iščejo zanesljivega in poštenega mehanika v okolici Krškega",
+  "serviceArea": "Krško z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v regiji",
+  "callToAction": "Pokličite za termin"
+}

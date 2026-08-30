@@ -1,0 +1,29 @@
+{
+  "companyName": "Lahek korak, Tamara Komočar s.p.",
+  "industry": "kozmetični salon",
+  "tagline": "Poskrbite za urejenost in zdravje vaših stopal ter telesa v prijetnem okolju.",
+  "services": [
+    "medicinska pedikura",
+    "estetska pedikura",
+    "nego obraza",
+    "masaža telesa",
+    "depilacija"
+  ],
+  "phone": "031 619 689",
+  "email": "",
+  "address": "Cesta krških žrtev 44, 8270 Krško, Slovenia",
+  "openingHours": "Monday: 2:00 – 9:00 PM · Tuesday: 7:00 AM – 3:00 PM · Wednesday: 11:00 AM – 7:00 PM · Thursday: 11:00 AM – 7:00 PM · Friday: 7:00 AM – 3:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "vrhunska pedikura",
+    "prijetno in sproščujoče okolje",
+    "prijazna in strokovna obravnava",
+    "odlične ocene zadovoljnih strank"
+  ],
+  "targetCustomers": "vsi, ki jim je mar za zdravje stopal, nego in osebno počutje",
+  "serviceArea": "Krško in okolica",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, prijazen",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "lokalni kozmetični saloni in ponudniki pedikure",
+  "callToAction": "Rezervirajte termin"
+}

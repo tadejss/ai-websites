@@ -1,0 +1,28 @@
+{
+  "companyName": "Don, avtokleparstvo in ličarstvo, d.o.o.",
+  "industry": "Avtokleparstvo in avtoličarstvo",
+  "tagline": "Strokovno avtokleparstvo in ličarstvo za vaše vozilo",
+  "services": [
+    "Avtokleparska dela",
+    "Avtoličiarske storitve",
+    "Popravilo karoserije",
+    "Sanacija poškodb",
+    "Lakiranje vozil"
+  ],
+  "phone": "040 187 404",
+  "email": "",
+  "address": "Veliki Otok 44f, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Tuesday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Wednesday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Thursday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Friday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Zelo prijazen in ustrežljiv osebni pristop",
+    "Visoka strokovnost in natančnost pri delu",
+    "Hitra in zanesljiva izvedba storitev"
+  ],
+  "targetCustomers": "Lastniki vozil, ki potrebujejo kleparska in ličarska popravila",
+  "serviceArea": "Postojna in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtokleparske in ličarske delavnice",
+  "callToAction": "Kontaktirajte nas"
+}

@@ -1,0 +1,288 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "warm-earth",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-tehnicne-gorazd/hero.avif",
+      "alt": "Električar pri delu na elektro omarici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-tehnicne-gorazd/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "34054464",
+      "sourceUrl": "https://www.pexels.com/photo/electrician-diagnosing-electrical-panel-with-multimeter-34054464/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "electrician working on modern electrical panel warm light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-tehnicne-gorazd/services.avif",
+      "alt": "Montaža svetil in elektroinštalacijska dela",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-tehnicne-gorazd/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "33314764",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-wood-interior-with-cozy-niche-seating-33314764/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "professional electrician installing lighting fixture warm interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostejših elektroinštalacijskih in tehničnih del.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in ogled nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura elektroinštalacijskih del",
+        "description": "Osnovna ura dela strokovnjaka za manjša popravila in montaže",
+        "price": "od 35 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Montaža svetila",
+        "description": "Priklop in montaža stenske ali stropne svetilke",
+        "price": "od 25 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Pregled napeljave in odprava manjše napake",
+        "description": "Diagnostika in popravilo vtičnice, stikala ali varovalke",
+        "price": "od 45 €",
+        "unit": "storitev"
+      },
+      {
+        "name": "Manjša adaptacija inštalacij",
+        "description": "Premestitev ali dodajanje priključkov v obstoječem prostoru",
+        "price": "po dogovoru",
+        "unit": "projekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Elektroinštalacije",
+    "highlight": "Gorazd Perme s.p."
+  },
+  "metadata": {
+    "title": "Elektroinštalacije Gorazd Perme s.p. | Novo mesto",
+    "description": "Zanesljive elektroinštalacije in tehnične rešitve za vaš dom in poslovni prostor v Novem mestu z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik",
+    "title": "Strokovne elektroinštalacije in tehnične rešitve za",
+    "titleHighlight": "vaš dom in poslovni prostor",
+    "description": "Nudimo celovita elektroinštalacijska dela, montažo svetil, popravila in vzdrževanje za lastnike stanovanj, hiš in poslovnih objektov v Novem mestu z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovna izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljiv partner"
+      },
+      {
+        "value": "Odzivno",
+        "label": "Hitra odzivnost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Novo mesto z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kvalitetne elektro storitve in tehnične rešitve",
+    "description": "Poskrbimo za varno, zanesljivo in strokovno izvedbo vseh vrst del na električnih napeljavah v stanovanjskih in poslovnih objektih.",
+    "items": [
+      {
+        "title": "Elektroinštalacijska dela",
+        "description": "Celovita izvedba elektroinštalacij za novogradnje, prenove in adaptacije.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montaža svetil",
+        "description": "Strokovna namestitev in priklop notranjih ter zunanjih svetil.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravila električnih napeljav",
+        "description": "Hitro odkrivanje napak in odpravljanje težav na obstoječih napeljavah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Servis in vzdrževanje",
+        "description": "Redni pregledi, servisiranje in vzdrževanje električnih sistemov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Tehnične storitve",
+        "description": "Različne tehnične rešitve, prilagojene vašim specifičnim potrebam.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, izkušnje in prilagodljivost",
+    "description": "Strankam v Novem mestu in okolici zagotavljamo kakovostno izvedbo ter osebni pristop.",
+    "highlights": [
+      "Strokovna izvedba elektroinštalacij z dolgoletnimi izkušnjami",
+      "Zanesljiv lokalni ponudnik, na katerega se lahko zanesete",
+      "Visoka prilagodljivost in hitra odzivnost na vaše potrebe"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Kakovostno opravljena dela na elektroinštalacijah v skladu s predpisi.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Lokalni ponudnik",
+        "description": "Hitro dostopni na območju Novega mesta z okolico.",
+        "title": "Lokalni ponudnik"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in zagotovimo hitro odzivnost.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinštalaterja ali tehnično pomoč? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 663 326",
+        "href": "tel:031663326",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kandijska c. 37, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Po dogovoru",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kakšne storitve potrebujete...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Kandijska c. 37, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektroinštalacije Gorazd Perme s.p.",
+    "address": "Kandijska c. 37, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "031 663 326"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

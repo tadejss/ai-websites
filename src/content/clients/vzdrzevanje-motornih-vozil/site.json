@@ -1,0 +1,276 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "burgundy-glow",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-motornih-vozil/hero.avif",
+      "alt": "Mehankar pri popravilu avtomobilskega motorja v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-motornih-vozil/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7019362",
+      "sourceUrl": "https://www.pexels.com/photo/male-auto-mechanic-working-on-car-shop-7019362/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional mechanic repairing car engine dark workshop burgundy lighting"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-motornih-vozil/services.avif",
+      "alt": "Orodja in oprema v avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-motornih-vozil/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9607005",
+      "sourceUrl": "https://www.pexels.com/photo/person-holding-a-took-9607005/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "car workshop tire repair and maintenance tools moody lighting"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih vzdrževalnih del in popravil.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Premontaža in centriranje set pnevmatik",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Splošni pregled vozila",
+        "description": "Pregled tekočin, zavores in podvozja",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Servis motornih koles",
+        "description": "Osnovni pregled in menjava olja",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Menična popravila",
+        "description": "Ura dela",
+        "price": "od 45 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Samo Petrič",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Avtomehanična delavnica Samo Petrič s.p. | Cerknica",
+    "description": "Hitro, strokovno in zanesljivo popravilo vozil ter motornih koles v Cerknici z okolico. Pokličite za pomoč."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za pomoč"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Hitro, strokovno in zanesljivo",
+    "titleHighlight": "popravilo vozil",
+    "description": "Strokovno popravilo avtomobilov, motornih koles in zanesljiva pomoč na cesti za lastnike vozil v Cerknici z okolico.",
+    "primaryCta": "Pokličite za pomoč",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "odzivnost"
+      },
+      {
+        "value": "Strokoven",
+        "label": "pristop"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "pomoč na cesti"
+      },
+      {
+        "value": "Pošteno",
+        "label": "delo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovite storitve vzdrževanja in popravil za varno vožnjo v Cerknici z okolico.",
+    "items": [
+      {
+        "title": "Popravilo in menjava pnevmatik",
+        "description": "Hitra menjava in strokovno popravilo pnevmatik za varno pot.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Mehanična popravila vozil",
+        "description": "Kakovostna mehanična popravila za brezhibno delovanje vašega avtomobila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Servis motornih koles",
+        "description": "Natančen servis in vzdrževanje motornih koles.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nujna pomoč na cesti",
+        "description": "Zanesljiva pomoč v nujnih situacijah na poti, ko jo najbolj potrebujete.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Splošno vzdrževanje vozil",
+        "description": "Redni pregledi in splošno vzdrževanje za dolgo življenjsko dobo vozila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati naš servis?",
+    "description": "Delujemo z mislijo na varnost in zadovoljstvo naših strank.",
+    "highlights": [
+      "Izjemno hitra in učinkovita storitev",
+      "Prijazen, ustrežljiv in strokoven pristop",
+      "Zanesljiva pomoč v nujnih situacijah na poti",
+      "Pošteno in predano delo"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra izvedba",
+        "description": "Izjemno hitra in učinkovita storitev, ki vas čim prej vrne na cesto.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Prijazen, ustrežljiv in strokoven pristop k vsakemu vozilu.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Zanesljiva pomoč",
+        "description": "Zanesljiva pomoč v nujnih situacijah na poti in pošteno delo.",
+        "title": "Zanesljiva pomoč"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik",
+    "description": "Potrebujete popravilo, servis ali pomoč na cesti? Pokličite nas ali pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 509 225",
+        "href": "tel:041509225",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Turšičeva ulica 8, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo z vozilom...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Turšičeva ulica 8, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Samo Petrič s.p.",
+    "address": "Turšičeva ulica 8, 1380 Cerknica, Slovenia",
+    "email": "",
+    "phone": "041 509 225"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "zbrendiraj",
+    "fontPairingId": "outfit-bitter"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-vozil-branko/hero.avif",
+      "alt": "Avtomehanična delavnica z mehanikom pri delu na vozilu v Krškem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-vozil-branko/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7019362",
+      "sourceUrl": "https://www.pexels.com/photo/male-auto-mechanic-working-on-car-shop-7019362/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional mechanic working on car engine dark workshop"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-vozil-branko/services.avif",
+      "alt": "Diagnostika in pregled osebnega vozila v avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-vozil-branko/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4062185",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-blue-car-speedometer-4062185/",
+      "photographer": "Erik Mclean",
+      "photographerUrl": "https://www.pexels.com/@introspectivedsgn",
+      "searchQuery": "car diagnostic tool plugged into dashboard modern garage"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Transparentne cene storitev",
+    "description": "Pregled pogostejših storitev vzdrževanja in popravil vozil.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Menjava na sprednji ali zadnji osi",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Pregled podvozja",
+        "description": "Celovit pregled stanja podvozja",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Ura mehaničnega dela",
+        "description": "Strokovno delo in popravila",
+        "price": "od 40 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vzdrževanje vozil",
+    "highlight": "Branko Pust s.p."
+  },
+  "metadata": {
+    "title": "Vzdrževanje vozil Branko Pust s.p. | Avtomehanična delavnica Krško",
+    "description": "Zanesljivo in strokovno vzdrževanje ter popravilo vaših vozil v Krškem z okolico. Redni servisi, diagnostika in popravila."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo in strokovno vzdrževanje",
+    "titleHighlight": "vaših vozil",
+    "description": "Strokovne avtomehanične storitve za lastnike osebnih vozil v Krškem z okolico. Poskrbimo za varno in brezskrbno vožnjo.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Pošteno",
+        "label": "Pošteno"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Prijazno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovito vzdrževanje in popravila vozil",
+    "description": "Nudimo kakovostne in zanesljive avtomehanične storitve za vaše vozilo v Krškem z okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Pravočasno in temeljito izvajanje rednih servisov za dolgo življenjsko dobo vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Diagnostika in pregledi",
+        "description": "Natančno odkrivanje napak in preventivni pregledi za varno delovanje vseh sklopov vozila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravila motorjev",
+        "description": "Kakovostna popravila motorjev in pripadajočih elementov z zanesljivimi deli.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje podvozja",
+        "description": "Pregledi in popravila podvozja za stabilno, vdobno in varno vožnjo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri vzdrževanju",
+        "description": "Strokovni nasveti in priporočila za optimalno nego in vzdrževanje vašega jeklenega konjička.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv partner za avtomobil",
+    "description": "Z dolgoletnimi izkušnjami in osebnim pristopom poskrbimo, da je vaše vozilo vedno v najboljši formi.",
+    "highlights": [
+      "Vrhunska in strokovna storitev",
+      "Hitra in zanesljiva popravila",
+      "Poštene in dostopne cene"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Vrhunska storitev z dolgoletnimi izkušnjami na področju avtomehanike.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Hitra in zanesljiva odprava vseh vrst težav na vašem vozilu.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prijazen odnos in strokovni nasveti, prilagojeni vsaki stranki.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Iščete zanesljivega mehanika v Krškem? Pokličite nas ali nam pišite za termin.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Nova Gora 8, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 169 281",
+        "href": "tel:040169281",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite težavo z vozilom ali želeno storitev...",
+      "submitLabel": "Pokličite za termin"
+    }
+  },
+  "footer": {
+    "address": "Nova Gora 8, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vzdrževanje vozil Branko Pust s.p.",
+    "address": "Nova Gora 8, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "040 169 281"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "burgundy-glow",
+    "fontPairingId": "outfit-bitter"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cevljarstvo-izdelava-kljucev/hero.avif",
+      "alt": "Tradicionalna čevljarska delavnica v Postojni",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cevljarstvo-izdelava-kljucev/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28704177",
+      "sourceUrl": "https://www.pexels.com/photo/skilled-cobbler-repairing-shoe-in-workshop-28704177/",
+      "photographer": "merve kıratlı",
+      "photographerUrl": "https://www.pexels.com/@moimerrve",
+      "searchQuery": "traditional shoe repair workshop dark moody warm lighting"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cevljarstvo-izdelava-kljucev/services.avif",
+      "alt": "Izdelava ključev in popravilo obutve",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cevljarstvo-izdelava-kljucev/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "36799021",
+      "sourceUrl": "https://www.pexels.com/photo/elderly-woman-sewing-in-malaysian-shop-36799021/",
+      "photographer": "Louis_ Every Click",
+      "photographerUrl": "https://www.pexels.com/@louis_-every-click-1402893960",
+      "searchQuery": "key duplication machine in a local locksmith workshop"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled osnovnih čevljarskih in ključavničarskih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Popravilo čevljev",
+        "description": "Osnovna popravila obutve",
+        "price": "od 10 €",
+        "featured": true
+      },
+      {
+        "name": "Izdelava ključev",
+        "description": "Izdelava navadnih hišnih ključev",
+        "price": "od 5 €"
+      },
+      {
+        "name": "Menjava pet",
+        "description": "Menjava obrabljenih pet na obutvi",
+        "price": "od 12 €"
+      },
+      {
+        "name": "Menjava podplatov",
+        "description": "Obnova in menjava podplatov",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Manjša usnjarska popravila",
+        "description": "Manjši popravki usnjenih izdelkov",
+        "price": "od 15 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čevljarstvo",
+    "highlight": "Sabahudin Hajdarpašić"
+  },
+  "metadata": {
+    "title": "Čevljarstvo in izdelava ključev Sabahudin Hajdarpašić s.p.",
+    "description": "Hitre in kakovostne čevljarske storitve ter izdelava ključev v Postojni z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Obiščite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster",
+    "title": "Hitre in kakovostne čevljarske storitve ter",
+    "titleHighlight": "izdelava ključev",
+    "description": "Zanesljive storitve za lokalne prebivalce in obiskovalce Postojne, ki potrebujejo popravilo obutve ali nove ključe.",
+    "primaryCta": "Obiščite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "izvedba"
+      },
+      {
+        "value": "Kakovostna",
+        "label": "izdelava"
+      },
+      {
+        "value": "Prijazen",
+        "label": "pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "v Postojni"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Specializirani smo za popravila obutve, izdelavo ključev in manjša usnjarska popravila v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Popravilo čevljev",
+        "description": "Celovita popravila vaše obutve za daljšo življenjsko dobo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Izdelava ključev",
+        "description": "Hitra in natančna izdelava različnih vrst ključev.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Menjava pet in podplatov",
+        "description": "Kakovostna menjava obrabljenih pet in podplatov na obutvi.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Manjša usnjarska popravila",
+        "description": "Popravila manjših usnjenih izdelkov in dodatkov.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas",
+    "description": "Zanesljiv lokalni mojster s posluhom za stranke.",
+    "highlights": [
+      "Hitra izvedba storitev",
+      "Kakovostna izdelava in popravila",
+      "Prijazno in ustrežljivo osebje"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra izvedba",
+        "description": "Trudimo se za hitro in učinkovito opravljene storitve.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Kakovost",
+        "description": "Kakovostna izdelava in popravila za vaše zadovoljstvo.",
+        "title": "Kakovost"
+      },
+      {
+        "label": "Prijaznost",
+        "description": "Prijazno in ustrežljivo osebje vam vedno priskoči na pomoč.",
+        "title": "Prijaznost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas na naši lokaciji v Postojni ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 11, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 403 594",
+        "href": "tel:041403594",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–17:00, Sob: 8:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Pišite nam in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo...",
+      "submitLabel": "Obiščite nas"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 11, 6230 Postojna, Slovenia",
+    "rights": "© Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čevljarstvo Sabahudin Hajdarpašić",
+    "address": "Ljubljanska cesta 11, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 403 594"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "companyName": "Vzdrževanje motornih vozil in druge storitve, Samo Petrič s.p.",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Hitro, strokovno in zanesljivo popravilo vozil ter motornih koles",
+  "services": [
+    "Popravilo in menjava pnevmatik",
+    "Mehanična popravila vozil",
+    "Servis motornih koles",
+    "Nujna pomoč na cesti",
+    "Splošno vzdrževanje vozil"
+  ],
+  "phone": "041 509 225",
+  "email": "",
+  "address": "Turšičeva ulica 8, 1380 Cerknica, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 4:00 PM · Tuesday: 8:00 AM – 4:00 PM · Wednesday: 8:00 AM – 4:00 PM · Thursday: 8:00 AM – 4:00 PM · Friday: 8:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno hitra in učinkovita storitev",
+    "Prijazen, ustrežljiv in strokoven pristop",
+    "Zanesljiva pomoč v nujnih situacijah na poti",
+    "Pošteno in predano delo"
+  ],
+  "targetCustomers": "Lastniki avtomobilov in motornih koles ter popotniki v težavah",
+  "serviceArea": "Cerknica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v regiji",
+  "callToAction": "Pokličite za pomoč"
+}

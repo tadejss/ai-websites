@@ -1,0 +1,264 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "zbrendiraj",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtovleka-tomaz-stangelj/hero.avif",
+      "alt": "Avtovleka in pomoč na cesti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtovleka-tomaz-stangelj/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8931963",
+      "sourceUrl": "https://www.pexels.com/photo/truck-towing-vintage-car-through-streets-8931963/",
+      "photographer": "Sami  Aksu",
+      "photographerUrl": "https://www.pexels.com/@sami-aksu-48867324",
+      "searchQuery": "tow truck roadside assistance dark moody industrial lighting"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtovleka-tomaz-stangelj/services.avif",
+      "alt": "Servis vozil in vzdrževanje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtovleka-tomaz-stangelj/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38218175",
+      "sourceUrl": "https://www.pexels.com/photo/sleek-red-car-in-modern-garage-setting-38218175/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "car repair service workshop dark professional atmosphere"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za naše osnovne storitve avtovleke in pomoči na cesti.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtovleka (osnovni izhod)",
+        "description": "Prevoz osebnega vozila na območju Novega mesta",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Pomoč na cesti",
+        "description": "Intervencija in manjša popravila na terenu",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Menjava pnevmatik (komplet)",
+        "description": "Premontaža in centriranje 4 pnevmatik",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Servis vozil (ura dela)",
+        "description": "Osnovno vzdrževanje in mehanična dela",
+        "price": "od 35 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtovleka",
+    "highlight": "Tomaž Štangelj s.p."
+  },
+  "metadata": {
+    "title": "Avtovleka Tomaž Štangelj s.p. | Zanesljiva pomoč na cesti",
+    "description": "Zanesljiva avtovleka, pomoč na cesti, menjava pnevmatik in servis vozil v Novem mestu z okolico. Pokličite za hitro in strokovno pomoč."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za pomoč"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik",
+    "title": "Zanesljiva avtovleka in",
+    "titleHighlight": "hitra pomoč na cesti",
+    "description": "Zanesljiva avtovleka in hitra pomoč na cesti za voznike z okvarami ter stranke, ki potrebujejo menjavo pnevmatik in prevoz vozil v Novem mestu z okolico.",
+    "primaryCta": "Pokličite za pomoč",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "odzivnost"
+      },
+      {
+        "value": "Strokoven",
+        "label": "pristop"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "prevoz"
+      },
+      {
+        "value": "Varen",
+        "label": "prihod"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Zagotavljamo celovite storitve za vaše vozilo, od prevozov in pomoči na cesti do servisa in menjave pnevmatik v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Avtovleka in prevoz vozil",
+        "description": "Varen in zanesljiv prevoz vašega vozila ob okvari ali nesreči.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pomoč na cesti",
+        "description": "Hitra in strokovna pomoč na terenu, ko jo najbolj potrebujete.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Strokovna menjava pnevmatik z dolgoletnimi izkušnjami.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Servis vozil",
+        "description": "Kakovostne mehanične storitve za brezhibno delovanje vašega vozila.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner na cesti",
+    "description": "Z našim prijaznim in strokovnim pristopom poskrbimo, da so vaše težave na cesti rešene hitro in učinkovito.",
+    "highlights": [
+      "Hitra in strokovna pomoč ob pravem času",
+      "Dolgoročne izkušnje z menjavo pnevmatik",
+      "Zanesljiv in prijazen pristop k strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra in strokovna pomoč",
+        "description": "Učinkovito posredujemo in nudimo strokovno podporo na terenu.",
+        "title": "Hitra in strokovna pomoč"
+      },
+      {
+        "label": "Izkušnje z menjavo",
+        "description": "Dolgoletne izkušnje z menjavo pnevmatik zagotavljajo kakovostno storitev.",
+        "title": "Izkušnje z menjavo"
+      },
+      {
+        "label": "Prijazen pristop",
+        "description": "Zanesljiv in prijazen odnos do vsake stranke v stiski.",
+        "title": "Prijazen pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete avtovleko ali pomoč na cesti? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 882 999",
+        "href": "tel:051882999",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Jurna vas 5, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali storitev, ki jo potrebujete...",
+      "submitLabel": "Pokličite za pomoč"
+    }
+  },
+  "footer": {
+    "address": "Jurna vas 5, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtovleka Tomaž Štangelj s.p.",
+    "address": "Jurna vas 5, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "051 882 999"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

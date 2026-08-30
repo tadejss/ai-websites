@@ -1,0 +1,274 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "burgundy-glow",
+    "fontPairingId": "geist-geist"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanik-benjamin-narobe/hero.avif",
+      "alt": "Mehanik pri popravilu motorja v avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanik-benjamin-narobe/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7019362",
+      "sourceUrl": "https://www.pexels.com/photo/male-auto-mechanic-working-on-car-shop-7019362/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional mechanic working on car engine dark moody lighting"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanik-benjamin-narobe/services.avif",
+      "alt": "Avtomobilska diagnostika in oprema v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanik-benjamin-narobe/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38218175",
+      "sourceUrl": "https://www.pexels.com/photo/sleek-red-car-in-modern-garage-setting-38218175/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "car diagnostic equipment professional auto repair shop interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za najpogostejša avtomehanična dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo za vaše vozilo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Komplet (4 kolesa) z centriranjem",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika vozila",
+        "description": "Priklop na tester in brisanje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pregled zavornih sistemov",
+        "description": "Pregled diskov, ploščic in tekočine",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Ura avtomehaničnega dela",
+        "description": "Splošna popravila in odpravljanje napak",
+        "price": "od 40 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtomehanik Benjamin",
+    "highlight": "narobe s.p."
+  },
+  "metadata": {
+    "title": "Avtomehanik Benjamin narobe s.p. | Postojna",
+    "description": "Zanesljivo in strokovno popravilo vašega vozila v Postojni in okolici. Redni servisi, diagnostika, menjava pnevmatik in popravila motorjev."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za servis"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis v Postojni",
+    "title": "Zanesljivo in strokovno",
+    "titleHighlight": "popravilo vašega vozila",
+    "description": "Strokovne avtomehanične storitve za lastnike vozil v Postojni in širši regiji. Poskrbimo za varnost in brezhibno delovanje vašega jeklenega konjička.",
+    "primaryCta": "Pokličite za servis",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitra izvedba"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Preverjene storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Zagotavljamo kakovostna popravila, redno vzdrževanje in strokovno svetovanje za vozila v Postojni in okolici.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Pravočasno vzdrževanje in menjava obrabnih delov za varno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila motorjev",
+        "description": "Strokovno odpravljanje napak in popravila na motornih sklopih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in natančna menjava ter premontaža pnevmatik za vse letne čase.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno odkrivanje elektronskih in mehanskih napak z napredno opremo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled, vzdrževanje in popravilo zavornih delov za vašo varnost na cesti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Zavedamo se, kako pomembno je, da je vaš avtomobil vedno v brezhibnem stanju.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Strokovna in hitra izvedba storitev",
+      "Prijazna razlaga težav in svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na visoke ocene in zaupanje voznikov, ki se radi vračajo k nam.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Cenimo vaš čas, zato storitve opravimo strokovno in v dogovorjenih rokih.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Vsaki stranki se posvetimo, odkrito razložimo težave in svetujemo najboljšo rešitev.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali nam pošljite sporočilo za rezervacijo termina ali vprašanja glede vašega vozila.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 436 598",
+        "href": "tel:051436598",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Stritarjeva ulica 2c, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opičite težavo z vozilom ali želeni termin...",
+      "submitLabel": "Pokličite za servis"
+    }
+  },
+  "footer": {
+    "address": "Stritarjeva ulica 2c, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtomehanik Benjamin narobe s.p.",
+    "address": "Stritarjeva ulica 2c, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "051 436 598"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

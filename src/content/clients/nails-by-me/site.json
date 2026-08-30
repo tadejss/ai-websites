@@ -1,0 +1,288 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "dusty-rose",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nails-by-me/hero.avif",
+      "alt": "Elegantna notranjost salona za nego nohtov z roza poudarki",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nails-by-me/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7755142",
+      "sourceUrl": "https://www.pexels.com/photo/nail-polish-on-wooden-shelves-7755142/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "searchQuery": "elegant nail salon interior dusty rose aesthetic lighting"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nails-by-me/services.avif",
+      "alt": "Strokovna manikura in urejanje nohtov od blizu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nails-by-me/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "24653480",
+      "sourceUrl": "https://www.pexels.com/photo/beautician-holding-nail-polish-24653480/",
+      "photographer": "Lidiia H",
+      "photographerUrl": "https://www.pexels.com/@lidiia-h-1302116764",
+      "searchQuery": "professional manicure and nail art close up"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene",
+    "description": "Pregled rednih storitev urejanja in nege nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kakovostna manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in zaključna nega.",
+        "price": "od 25 €",
+        "featured": false
+      },
+      {
+        "name": "Gelish in trajni lak",
+        "description": "Nanosi traj trajnostnega laka za dolgotrajen sijaj.",
+        "price": "od 30 €",
+        "featured": true
+      },
+      {
+        "name": "Podaljševanje nohtov",
+        "description": "Celoten postopek podaljševanja z izbrano dolžino.",
+        "price": "od 45 €",
+        "featured": false
+      },
+      {
+        "name": "Nail art umetnost",
+        "description": "Unikatni okraski, poslikave in dodelave po želji.",
+        "price": "od 5 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Nails By me",
+    "highlight": "Edisa Sivac s.p."
+  },
+  "metadata": {
+    "title": "Nails By me | Urejanje in podaljševanje nohtov Krško",
+    "description": "Vrhunsko urejanje, podaljševanje in umetnost nohtov v Krškem z okolico. Zagotovite si popoln videz vaših nohtov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Strokovna nega nohtov v Krškem",
+    "title": "Umetnost nohtov za vaš",
+    "titleHighlight": "popoln videz",
+    "description": "Privoščite svojim rokam vrhunsko urejanje, podaljševanje in unikatni nail art v prijetnem in strokovnem okolju.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka natančnost",
+        "label": "Visoka natančnost",
+        "title": "Visoka natančnost"
+      },
+      {
+        "value": "Unikatni vzorci",
+        "label": "Unikatni vzorci",
+        "title": "Unikatni vzorci"
+      },
+      {
+        "value": "Topel pristop",
+        "label": "Topel pristop",
+        "title": "Topel pristop"
+      },
+      {
+        "value": "Zanesljiva storitev",
+        "label": "Zanesljiva storitev",
+        "title": "Zanesljiva storitev"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve urejanja in negovanja nohtov",
+    "description": "Poskrbimo za urejen videz in zdravje vaših nohtov z uporabo preverjenih tehnik in materialov.",
+    "items": [
+      {
+        "title": "Podaljševanje nohtov",
+        "description": "Strokovno podaljševanje nohtov za želeno dolžino in naraven videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Urejanje in nega nohtov",
+        "description": "Celovita nega obnohtne kožice in oblikovanje nohtov za urejen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nail art umetnost",
+        "description": "Unikatni in čudoviti dizajni po vaši izbiri za poseben pečat.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Gelish in trajni lak",
+        "description": "Dolgo obstojen lak in gelish tehnika za sijoče nohte brez luščenja.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Kakovostna manikura",
+        "description": "Negovalna manikura, ki vaše roke in nohte naredi mehke in lepe.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost lepoti in estetiki vaši nohtov",
+    "description": "Združujemo natančnost, posluh za želje strank in ljubezen do estetike.",
+    "highlights": [
+      "Visoka natančnost in kakovost izdelave",
+      "Izjemno prijazna in profesionalna storitev",
+      "Možnost čudovitega in unikatnega nail arta"
+    ],
+    "benefits": [
+      {
+        "label": "Natančnost in kakovost",
+        "description": "Vsakemu nohtu se posvetimo z največjo mero natančnosti.",
+        "title": "Natančnost in kakovost"
+      },
+      {
+        "label": "Prijazen pristop",
+        "description": "Topel sprejem in prijetno vzdušje ob vsakem obisku.",
+        "title": "Prijazen pristop"
+      },
+      {
+        "label": "Unikatne kreacije",
+        "description": "Poskrbimo za čudovit in edinstven nail art po vaši meri.",
+        "title": "Unikatne kreacije"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Veselimo se vašega obiska. Pišite nam ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 137, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 263 183",
+        "href": "tel:040263183",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "To–Pet: odprto (obvezna predhodna rezervacija)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 137, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Nails By me Edisa Sivac s.p.",
+    "address": "Cesta krških žrtev 137, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "040 263 183"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
