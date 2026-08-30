@@ -3,7 +3,7 @@ import type { LeadRecord } from "@/leads/store";
 import { clientSiteExists } from "@/leads/client-exists";
 import { getDemoUrl } from "@/leads/demo-url";
 import type { SmsLeadState, SmsStep } from "./types";
-import { normalizeSlovenianPhone } from "./phone";
+import { normalizeSlovenianPhone, isSlovenianMobilePhone } from "./phone";
 
 export type SmsEligibilityResult =
   | { ok: true; phone: string; step: SmsStep }
@@ -44,6 +44,10 @@ export function evaluateSmsEligibility(input: {
   const phone = normalizeSlovenianPhone(lead.phone);
   if (!phone.ok) {
     return { ok: false, reason: phone.error };
+  }
+
+  if (!isSlovenianMobilePhone(lead.phone)) {
+    return { ok: false, reason: "Not a Slovenian mobile number" };
   }
 
   if (alreadySentForStep) {

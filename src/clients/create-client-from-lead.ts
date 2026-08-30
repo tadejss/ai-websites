@@ -1,5 +1,6 @@
 import { readLead, type LeadRecord } from "@/leads/store";
 import { createPlaceDetailsSource } from "@/sources/google-places-source";
+import { isSmsGenerationCandidate } from "@/outreach/sms/relevance";
 import { clientExists } from "./create-client-from-query";
 import { generateClient } from "./generate-client";
 
@@ -22,6 +23,18 @@ export async function createClientFromLead(
     return {
       outcome: "skipped",
       reason: "a site already exists for this lead",
+      slug,
+      companyName,
+    };
+  }
+
+  if (!isSmsGenerationCandidate(lead)) {
+    const reason = lead.existingWebsite?.trim()
+      ? "already has a website"
+      : "no valid Slovenian mobile phone for SMS";
+    return {
+      outcome: "skipped",
+      reason,
       slug,
       companyName,
     };

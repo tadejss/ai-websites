@@ -1,8 +1,10 @@
 import assert from "node:assert/strict";
-import { normalizeSlovenianPhone } from "../src/outreach/sms/phone";
+import { normalizeSlovenianPhone, isSlovenianMobilePhone } from "../src/outreach/sms/phone";
 import { analyzeSmsLength, renderSms } from "../src/outreach/sms/templates";
 import { evaluateSmsEligibility } from "../src/outreach/sms/eligibility";
 import { isOptOutMessage } from "../src/outreach/sms/opt-out";
+import { isRelevantSmsLead } from "../src/outreach/sms/relevance";
+import { clientSiteExists } from "../src/leads/client-exists";
 import type { LeadRecord } from "../src/leads/store";
 
 function ok(condition: boolean, message: string) {
@@ -33,6 +35,13 @@ async function main() {
   );
   ok(normalizeSlovenianPhone("123").ok === false, "invalid short");
   ok(normalizeSlovenianPhone("").ok === false, "empty invalid");
+
+  ok(isSlovenianMobilePhone("041 696 401") === true, "mobile 041");
+  ok(isSlovenianMobilePhone("+38641696401") === true, "mobile e164");
+  ok(isSlovenianMobilePhone("01 425 1234") === false, "landline 01");
+  ok(isSlovenianMobilePhone("02 234 5678") === false, "landline 02");
+  ok(isSlovenianMobilePhone("") === false, "empty not mobile");
+  ok(isSlovenianMobilePhone("123") === false, "invalid not mobile");
 
   const rendered = renderSms({
     companyName: "Studio Test",
@@ -139,7 +148,6 @@ async function main() {
 
   // Exact production case: valid SI phone, generated demo, allowed, no history.
   const { readLead } = await import("../src/leads/store");
-  const { clientSiteExists } = await import("../src/leads/client-exists");
   const bb = readLead("bb-elektro-instalacije");
   ok(Boolean(bb), "bb-elektro lead exists");
   ok(Boolean(bb && clientSiteExists(bb.slug)), "bb-elektro demo site.json exists via cwd");
@@ -155,7 +163,91 @@ async function main() {
     if (eligible.ok) {
       ok(eligible.phone === "+38641696401", "bb-elektro normalized phone");
     }
+    ok(isRelevantSmsLead(bb) === true, "bb-elektro relevant SMS lead");
   }
+
+  const demoSlug = "bb-elektro-instalacije";
+  ok(clientSiteExists(demoSlug), "shared demo for relevance fixtures");
+
+  ok(
+    isRelevantSmsLead({
+      slug: demoSlug,
+      companyName: "Test",
+      phone: "041 696 401",
+      status: "generated",
+      url: `/${demoSlug}`,
+      existingWebsite: "",
+    }) === true,
+    "relevant: no website + mobile + demo",
+  );
+
+  ok(
+    isRelevantSmsLead({
+      slug: demoSlug,
+      companyName: "Test",
+      phone: "041 696 401",
+      status: "generated",
+      url: `/${demoSlug}`,
+      existingWebsite: "https://example.com",
+    }) === false,
+    "not relevant: existing website",
+  );
+
+  ok(
+    isRelevantSmsLead({
+      slug: demoSlug,
+      companyName: "Test",
+      phone: "",
+      status: "generated",
+      url: `/${demoSlug}`,
+    }) === false,
+    "not relevant: no phone",
+  );
+
+  ok(
+    isRelevantSmsLead({
+      slug: demoSlug,
+      companyName: "Test",
+      phone: "123",
+      status: "generated",
+      url: `/${demoSlug}`,
+    }) === false,
+    "not relevant: invalid phone",
+  );
+
+  ok(
+    isRelevantSmsLead({
+      slug: demoSlug,
+      companyName: "Test",
+      phone: "01 425 1234",
+      status: "generated",
+      url: `/${demoSlug}`,
+    }) === false,
+    "not relevant: landline",
+  );
+
+  ok(
+    isRelevantSmsLead({
+      slug: "definitely-no-demo-slug-xyz",
+      companyName: "Test",
+      phone: "041 696 401",
+      status: "discovered",
+      url: "/definitely-no-demo-slug-xyz",
+    }) === false,
+    "not relevant: no demo",
+  );
+
+  ok(
+    isRelevantSmsLead({
+      slug: demoSlug,
+      companyName: "Test",
+      phone: "041 696 401",
+      status: "generated",
+      url: `/${demoSlug}`,
+      // no email field
+    }) === true,
+    "relevant without email",
+  );
 
   ok(isOptOutMessage("STOP"), "STOP");
   ok(isOptOutMessage(" odjava "), "ODJAVA");

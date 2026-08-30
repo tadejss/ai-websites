@@ -144,7 +144,9 @@ async function main(): Promise<void> {
   const candidates = selectLeads({
     statuses: ["discovered"],
     priorities: options.priorities,
-    withoutWebsiteOnly: options.withoutWebsiteOnly,
+    // SMS-only business: never spend generation on website/landline leads.
+    withoutWebsiteOnly: true,
+    requireMobilePhone: true,
     industry: options.industry,
     region: options.region,
   });

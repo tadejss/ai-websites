@@ -1,11 +1,13 @@
 import Link from "next/link";
 import {
   ADMIN_OUTREACH_FILTERS,
+  ADMIN_PIPELINE_VIEWS,
   ADMIN_STATUS_FILTERS,
   buildAdminLeadRows,
   filterAdminLeadRows,
   isAdminOutreachFilter,
   isAdminStatusFilter,
+  resolveAdminPipelineView,
 } from "@/admin/leads-filters";
 import { resolveLeadEmail } from "@/leads/resolve-email";
 import { getOutreachConfig } from "@/outreach/config";
@@ -18,7 +20,7 @@ import {
   listSmsLeadStates,
 } from "@/outreach/sms/store";
 import { getSmsConfig } from "@/outreach/sms/config";
-import { normalizeSlovenianPhone } from "@/outreach/sms/phone";
+import { isSlovenianMobilePhone } from "@/outreach/sms/phone";
 import { getCustomerSlugSet } from "@/customers/store";
 
 export const dynamic = "force-dynamic";
@@ -35,11 +37,13 @@ type Props = {
   searchParams: Promise<{
     status?: string;
     outreach?: string;
+    pipeline?: string;
   }>;
 };
 
 export default async function AdminLeadsPage({ searchParams }: Props) {
   const params = await searchParams;
+  const pipeline = resolveAdminPipelineView(params.pipeline);
   const statusFilter = isAdminStatusFilter(params.status)
     ? params.status
     : undefined;
@@ -55,18 +59,28 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
   );
   const allRows = buildAdminLeadRows(allLeads, customerSlugs);
   const rows = filterAdminLeadRows(allRows, {
+    pipeline,
     status: statusFilter,
     outreach: outreachFilter,
   });
 
-  const activeFilters = Boolean(statusFilter || outreachFilter);
+  const activeFilters = Boolean(
+    statusFilter || outreachFilter || pipeline !== "actionable",
+  );
   const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
   const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
   const smsCounts = isDatabaseConfigured() ? await countByLeadStatus() : {};
   const sentToday = isDatabaseConfigured() ? await countSentToday() : 0;
-  const withPhone = allLeads.filter((lead) =>
-    normalizeSlovenianPhone(lead.phone).ok,
+  const withMobile = allLeads.filter((lead) =>
+    isSlovenianMobilePhone(lead.phone),
   ).length;
+  const actionableCount = allRows.filter(
+    (row) => row.isRelevantSms && !row.isCustomer,
+  ).length;
+  const excludedCount = allRows.filter(
+    (row) => !row.isCustomer && !row.isRelevantSms,
+  ).length;
+  const customerCount = allRows.filter((row) => row.isCustomer).length;
 
   return (
     <div>
@@ -74,10 +88,11 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
         <div>
           <h1 className="text-2xl font-semibold">Leads</h1>
           <p className="mt-1 text-sm text-neutral-600">
-            Automated outreach: SMS-only · Email cron disabled
+            SMS sales pipeline · Email not required
           </p>
           <p className="mt-1 text-sm text-neutral-500">
-            Showing {rows.length} of {allRows.length} leads · Email mode:{" "}
+            Showing {rows.length} · Actionable {actionableCount} of{" "}
+            {allRows.length} total · Email mode:{" "}
             {config.dryRun ? "DRY RUN" : "LIVE"}
           </p>
         </div>
@@ -85,7 +100,10 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
 
       <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {[
-          ["With phone", String(withPhone)],
+          ["Actionable", String(actionableCount)],
+          ["With mobile", String(withMobile)],
+          ["Excluded", String(excludedCount)],
+          ["Customers", String(customerCount)],
           ["Queued", String(smsCounts.queued ?? 0)],
           ["Sent", String(smsCounts.sent ?? 0)],
           ["Failed", String(smsCounts.failed ?? 0)],
@@ -109,6 +127,21 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
         method="get"
         className="mb-6 flex flex-wrap items-end gap-4 rounded-lg border border-neutral-200 bg-white p-4"
       >
+        <label className="block text-sm">
+          <span className="font-medium text-neutral-700">Pipeline</span>
+          <select
+            name="pipeline"
+            defaultValue={pipeline}
+            className="mt-1 block min-w-[14rem] rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm"
+          >
+            {ADMIN_PIPELINE_VIEWS.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </label>
+
         <label className="block text-sm">
           <span className="font-medium text-neutral-700">Status</span>
           <select
@@ -191,7 +224,9 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
                       >
                         {lead.companyName ?? lead.slug}
                       </Link>
-                      <div className="text-xs text-neutral-500">{lead.industry}</div>
+                      <div className="text-xs text-neutral-500">
+                        {lead.industry}
+                      </div>
                     </td>
                     <td className="px-4 py-3">{displayStatus || "—"}</td>
                     <td className="px-4 py-3 font-mono text-xs">
@@ -214,7 +249,11 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
       )}
 
       <p className="mt-4 text-xs text-neutral-500">
-        Demo base URL: {getDemoUrl({ slug: "example", url: "/example" }).replace("/example", "")}
+        Demo base URL:{" "}
+        {getDemoUrl({ slug: "example", url: "/example" }).replace(
+          "/example",
+          "",
+        )}
       </p>
     </div>
   );

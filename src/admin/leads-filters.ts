@@ -1,6 +1,7 @@
 import { getOutreachStatusLabel } from "@/outreach/eligibility";
 import { LEAD_STATUSES } from "@/leads/statuses";
 import type { LeadRecord } from "@/leads/store";
+import { isRelevantSmsLead } from "@/outreach/sms/relevance";
 
 /** Outreach buckets shown in admin (matches getOutreachStatusLabel + DB customer). */
 export const ADMIN_OUTREACH_FILTERS = [
@@ -25,11 +26,21 @@ export const ADMIN_STATUS_FILTERS = LEAD_STATUSES.map((status) => ({
   label: status.replaceAll("_", " "),
 }));
 
+/** Default sales pipeline views for SMS-only outreach. */
+export const ADMIN_PIPELINE_VIEWS = [
+  { value: "actionable", label: "All actionable" },
+  { value: "customers", label: "Customers" },
+  { value: "excluded", label: "Excluded / not actionable" },
+] as const;
+
+export type AdminPipelineView = (typeof ADMIN_PIPELINE_VIEWS)[number]["value"];
+
 export type AdminLeadRow = {
   lead: LeadRecord;
   isCustomer: boolean;
   displayStatus: string;
   outreachLabel: string;
+  isRelevantSms: boolean;
 };
 
 export function resolveAdminLeadStatus(
@@ -65,20 +76,48 @@ export function buildAdminLeadRows(
       isCustomer,
       displayStatus: resolveAdminLeadStatus(lead, isCustomer),
       outreachLabel: resolveAdminOutreachLabel(lead, isCustomer),
+      isRelevantSms: isRelevantSmsLead(lead),
     };
   });
 }
 
 export type AdminLeadListFilters = {
+  /** Defaults to actionable when omitted. */
+  pipeline?: AdminPipelineView;
   status?: string;
   outreach?: string;
 };
+
+export function resolveAdminPipelineView(
+  value: string | undefined,
+): AdminPipelineView {
+  if (value === "customers" || value === "excluded" || value === "actionable") {
+    return value;
+  }
+  return "actionable";
+}
 
 export function filterAdminLeadRows(
   rows: AdminLeadRow[],
   filters: AdminLeadListFilters,
 ): AdminLeadRow[] {
+  const pipeline = filters.pipeline ?? "actionable";
+
   return rows.filter((row) => {
+    if (pipeline === "actionable") {
+      if (row.isCustomer || !row.isRelevantSms) {
+        return false;
+      }
+    } else if (pipeline === "customers") {
+      if (!row.isCustomer) {
+        return false;
+      }
+    } else if (pipeline === "excluded") {
+      if (row.isCustomer || row.isRelevantSms) {
+        return false;
+      }
+    }
+
     if (filters.status && row.displayStatus !== filters.status) {
       return false;
     }
@@ -113,6 +152,10 @@ export function adminLeadsFilterHref(
   filters: AdminLeadListFilters,
 ): string {
   const params = new URLSearchParams();
+
+  if (filters.pipeline && filters.pipeline !== "actionable") {
+    params.set("pipeline", filters.pipeline);
+  }
 
   if (filters.status) {
     params.set("status", filters.status);

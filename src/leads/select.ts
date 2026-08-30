@@ -1,3 +1,4 @@
+import { isSlovenianMobilePhone } from "@/outreach/sms/phone";
 import { getLeadPriority, type LeadPriority } from "./priority";
 import {
   leadMatchesIndustry,
@@ -10,6 +11,8 @@ export type LeadFilters = {
   statuses?: string[];
   priorities?: LeadPriority[];
   withoutWebsiteOnly?: boolean;
+  /** Prefer SMS-contactable mobiles only (generation pipeline). */
+  requireMobilePhone?: boolean;
   industry?: LeadIndustryId;
   region?: string;
 };
@@ -36,6 +39,10 @@ export function selectLeads(filters: LeadFilters): LeadRecord[] {
       }
 
       if (filters.withoutWebsiteOnly && lead.existingWebsite?.trim()) {
+        return false;
+      }
+
+      if (filters.requireMobilePhone && !isSlovenianMobilePhone(lead.phone)) {
         return false;
       }
 

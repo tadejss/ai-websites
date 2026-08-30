@@ -21,8 +21,20 @@ function digitsOnly(value: string): string {
 }
 
 /**
+ * National subscriber digits after +386 (no leading 0).
+ */
+export function nationalDigitsFromE164(e164: string): string | null {
+  if (!e164.startsWith("+386")) {
+    return null;
+  }
+  const national = e164.slice(4);
+  return /^\d+$/.test(national) ? national : null;
+}
+
+/**
  * Normalize Slovenian (and already-international) numbers to E.164 +386…
  * Rejects numbers that cannot be resolved reliably.
+ * Accepts both mobile and geographic (landline) numbers.
  */
 export function normalizeSlovenianPhone(
   raw: string | null | undefined,
@@ -52,12 +64,6 @@ export function normalizeSlovenianPhone(
     return { ok: false, error: "Invalid Slovenian phone length" };
   }
 
-  const prefix = digits.slice(0, 2);
-  if (!SI_MOBILE_PREFIXES.has(prefix) && digits.length === 8) {
-    // Landlines (e.g. 1, 2, 3, 4, 5, 7) are 8 digits after dropping 0.
-    // Allow them for completeness — businesses often list landlines.
-  }
-
   if (!/^\d+$/.test(digits)) {
     return { ok: false, error: "Phone contains invalid characters" };
   }
@@ -67,4 +73,25 @@ export function normalizeSlovenianPhone(
 
 export function isValidSlovenianPhone(raw: string | null | undefined): boolean {
   return normalizeSlovenianPhone(raw).ok;
+}
+
+/**
+ * True only for Slovenian mobile numbers that can receive SMS.
+ * Normalizes first, then checks the national number against known mobile
+ * network prefixes (not a naive "starts with 04" string check).
+ */
+export function isSlovenianMobilePhone(
+  raw: string | null | undefined,
+): boolean {
+  const normalized = normalizeSlovenianPhone(raw);
+  if (!normalized.ok) {
+    return false;
+  }
+
+  const national = nationalDigitsFromE164(normalized.e164);
+  if (!national || national.length !== 8) {
+    return false;
+  }
+
+  return SI_MOBILE_PREFIXES.has(national.slice(0, 2));
 }
