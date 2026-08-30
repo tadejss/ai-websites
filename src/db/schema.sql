@@ -52,6 +52,8 @@ CREATE TABLE IF NOT EXISTS customer_onboarding (
   contact_name TEXT,
   welcome_email_sent_at TIMESTAMPTZ,
   approval_email_sent_at TIMESTAMPTZ,
+  admin_approved_at TIMESTAMPTZ,
+  admin_publish_notify_sent_at TIMESTAMPTZ,
   submitted_at TIMESTAMPTZ,
   processed_at TIMESTAMPTZ,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -63,3 +65,6 @@ CREATE UNIQUE INDEX IF NOT EXISTS customer_onboarding_token_uidx
 
 CREATE INDEX IF NOT EXISTS customer_onboarding_status_idx
   ON customer_onboarding (status);
+
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS admin_approved_at TIMESTAMPTZ;
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS admin_publish_notify_sent_at TIMESTAMPTZ;

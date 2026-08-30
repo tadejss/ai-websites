@@ -2,6 +2,8 @@
 
 import { useCallback, useMemo, useState } from "react";
 import type { CustomerOnboardingAnswers } from "@/onboarding/types";
+import { listOnboardingImages, syncOnboardingImageFields } from "@/onboarding/images";
+import { ImageUploadField } from "./ImageUploadField";
 
 type Props = {
   slug: string;
@@ -70,34 +72,44 @@ export function OnboardingForm({
   initialStatus,
 }: Props) {
   const [step, setStep] = useState<Step>(1);
-  const [answers, setAnswers] = useState<CustomerOnboardingAnswers>(() => ({
-    ...emptyAnswers(),
-    ...initialPrefill,
-    services: initialPrefill.services?.length
-      ? initialPrefill.services
-      : [""],
-    sellingPoints: initialPrefill.sellingPoints?.length
-      ? initialPrefill.sellingPoints
-      : ["", "", ""],
-    logoUrls: initialPrefill.logoUrls ?? [],
-    photoUrls: initialPrefill.photoUrls ?? [],
-  }));
+  const [answers, setAnswers] = useState<CustomerOnboardingAnswers>(() =>
+    syncOnboardingImageFields({
+      ...emptyAnswers(),
+      ...initialPrefill,
+      services: initialPrefill.services?.length
+        ? initialPrefill.services
+        : [""],
+      sellingPoints: initialPrefill.sellingPoints?.length
+        ? initialPrefill.sellingPoints
+        : ["", "", ""],
+    }),
+  );
   const [status, setStatus] = useState(initialStatus);
   const [loading, setLoading] = useState(false);
-  const [uploading, setUploading] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const readOnly = useMemo(
-    () => ["submitted", "processing", "ready_for_approval", "live"].includes(status),
+    () =>
+      [
+        "submitted",
+        "processing",
+        "ready_for_approval",
+        "approved_for_publish",
+        "live",
+      ].includes(status),
     [status],
   );
 
   const patchAnswers = useCallback(
     (patch: Partial<CustomerOnboardingAnswers>) => {
-      setAnswers((current) => ({ ...current, ...patch }));
+      setAnswers((current) => syncOnboardingImageFields({ ...current, ...patch }));
     },
     [],
   );
+
+  const setAnswersSynced = useCallback((next: CustomerOnboardingAnswers) => {
+    setAnswers(syncOnboardingImageFields(next));
+  }, []);
 
   async function saveDraft() {
     setLoading(true);
@@ -126,13 +138,13 @@ export function OnboardingForm({
     setLoading(true);
     setError(null);
     try {
-      const payload = {
+      const payload = syncOnboardingImageFields({
         ...answers,
         services: (answers.services ?? []).map((s) => s.trim()).filter(Boolean),
         sellingPoints: (answers.sellingPoints ?? [])
           .map((s) => s.trim())
           .filter(Boolean),
-      };
+      });
 
       const response = await fetch(`/api/onboarding/${slug}`, {
         method: "POST",
@@ -162,35 +174,6 @@ export function OnboardingForm({
     }
   }
 
-  async function uploadFile(file: File, kind: "logo" | "photo") {
-    setUploading(kind);
-    setError(null);
-    try {
-      const formData = new FormData();
-      formData.set("token", token);
-      formData.set("kind", kind);
-      formData.set("file", file);
-
-      const response = await fetch(`/api/onboarding/${slug}/upload`, {
-        method: "POST",
-        body: formData,
-      });
-      const data = (await response.json()) as { url?: string; error?: string };
-      if (!response.ok || !data.url) {
-        throw new Error(data.error || "Nalaganje ni uspelo");
-      }
-
-      if (kind === "logo") {
-        patchAnswers({ logoUrls: [...(answers.logoUrls ?? []), data.url] });
-      } else {
-        patchAnswers({ photoUrls: [...(answers.photoUrls ?? []), data.url] });
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Nalaganje ni uspelo");
-    } finally {
-      setUploading(null);
-    }
-  }
 
   if (readOnly) {
     return (
@@ -342,49 +325,31 @@ export function OnboardingForm({
             </label>
           ))}
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            <label className="block text-sm">
-              <span className="font-medium text-zinc-300">Logo (upload)</span>
-              <input
-                type="file"
-                accept="image/*"
-                disabled={uploading === "logo"}
-                onChange={(event) => {
-                  const file = event.target.files?.[0];
-                  if (file) {
-                    void uploadFile(file, "logo");
-                  }
-                }}
-                className="mt-2 block w-full text-xs text-zinc-400"
-              />
-            </label>
-            <label className="block text-sm">
-              <span className="font-medium text-zinc-300">Fotografije (upload)</span>
-              <input
-                type="file"
-                accept="image/*"
-                disabled={uploading === "photo"}
-                onChange={(event) => {
-                  const file = event.target.files?.[0];
-                  if (file) {
-                    void uploadFile(file, "photo");
-                  }
-                }}
-                className="mt-2 block w-full text-xs text-zinc-400"
-              />
-            </label>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <ImageUploadField
+              slug={slug}
+              token={token}
+              kind="logo"
+              label="Logotipi (upload)"
+              answers={answers}
+              onAnswersChange={setAnswersSynced}
+              disabled={readOnly}
+            />
+            <ImageUploadField
+              slug={slug}
+              token={token}
+              kind="photo"
+              label="Fotografije (upload)"
+              answers={answers}
+              onAnswersChange={setAnswersSynced}
+              disabled={readOnly}
+            />
           </div>
 
-          {(answers.logoUrls?.length || answers.photoUrls?.length) ? (
-            <ul className="space-y-1 text-xs text-zinc-500">
-              {[...(answers.logoUrls ?? []), ...(answers.photoUrls ?? [])].map(
-                (url) => (
-                  <li key={url} className="truncate">
-                    ✓ {url}
-                  </li>
-                ),
-              )}
-            </ul>
+          {listOnboardingImages(answers).length > 0 ? (
+            <p className="text-xs text-zinc-500">
+              Skupaj naloženih slik: {listOnboardingImages(answers).length}
+            </p>
           ) : null}
         </div>
       ) : null}

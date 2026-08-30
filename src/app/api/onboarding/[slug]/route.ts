@@ -16,6 +16,7 @@ import {
   customerOnboardingAnswersSchema,
   customerOnboardingSubmitSchema,
 } from "@/onboarding/types";
+import { syncOnboardingImageFields } from "@/onboarding/images";
 import { sendOnboardingApprovalEmail } from "@/billing/notify-onboarding-approval";
 import { resolveCheckoutLead } from "@/leads/checkout-lead";
 
@@ -80,7 +81,10 @@ export async function PATCH(request: Request, context: RouteContext) {
     );
   }
 
-  const record = await saveOnboardingDraft(slug, parsed.data);
+  const record = await saveOnboardingDraft(
+    slug,
+    syncOnboardingImageFields(parsed.data),
+  );
   return NextResponse.json({ ok: true, status: record.status });
 }
 
@@ -114,7 +118,7 @@ export async function POST(request: Request, context: RouteContext) {
 
   const { onboarding, alreadySubmitted } = await submitOnboarding(
     slug,
-    parsed.data,
+    syncOnboardingImageFields(parsed.data),
   );
 
   if (alreadySubmitted) {

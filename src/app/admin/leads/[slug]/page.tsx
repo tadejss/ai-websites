@@ -11,12 +11,18 @@ import {
 } from "@/outreach/eligibility";
 import { getOutreachConfig } from "@/outreach/config";
 import { getOnboardingBySlug, getOnboardingUrl } from "@/onboarding/store";
-import { onboardingStatusLabel } from "@/onboarding/types";
+import {
+  canAdminApproveOnboarding,
+  onboardingStatusLabel,
+} from "@/onboarding/types";
+import { listOnboardingImages } from "@/onboarding/images";
 import { SendOutreachButton } from "./send-outreach-button";
 import {
   AdminCopyOnboardingLink,
   AdminPublishLivePlaceholder,
 } from "./onboarding-admin";
+import { OnboardingImageGallery } from "./onboarding-gallery";
+import { AdminOnboardingApproveButton } from "./onboarding-approve-button";
 
 export const dynamic = "force-dynamic";
 
@@ -36,6 +42,17 @@ function planLabel(plan: string | null | undefined): string {
     return "Yearly";
   }
   return plan ?? "—";
+}
+
+function joinList(values: string[] | undefined): string {
+  if (!values?.length) {
+    return "—";
+  }
+  return values.join(", ");
+}
+
+function onboardingField(value: string | undefined | null): string {
+  return value?.trim() ? value.trim() : "—";
 }
 
 function upsellLabel(type: string | null): string {
@@ -256,82 +273,161 @@ export default async function AdminLeadDetailPage({
             <AdminPublishLivePlaceholder />
           </div>
 
-          {onboarding?.status === "ready_for_approval" ? (
-            <div className="mt-4 rounded-md border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-              Stran čaka na potrditev — preglej odgovore in objavi LIVE, ko je
-              vse pripravljeno.
-            </div>
-          ) : null}
-
-          {onboarding ? (
-            <dl className="mt-4 space-y-2 text-sm">
-              <div className="flex justify-between gap-4">
-                <dt className="text-neutral-500">Status</dt>
-                <dd className="font-medium">
-                  {onboardingStatusLabel(onboarding.status)}
-                </dd>
-              </div>
-              <div className="flex justify-between gap-4">
-                <dt className="text-neutral-500">Submitted at</dt>
-                <dd>{formatDate(onboarding.submittedAt)}</dd>
-              </div>
-              <div className="flex justify-between gap-4">
-                <dt className="text-neutral-500">Contact email</dt>
-                <dd>{onboarding.contactEmail ?? onboarding.answers?.email ?? "—"}</dd>
-              </div>
-              <div className="flex justify-between gap-4">
-                <dt className="text-neutral-500">Desired domain</dt>
-                <dd>{onboarding.answers?.desiredDomain ?? "—"}</dd>
-              </div>
-              <div className="flex justify-between gap-4">
-                <dt className="text-neutral-500">Stripe Customer</dt>
-                <dd className="font-mono text-xs">{customer.stripeCustomerId}</dd>
-              </div>
-              <div className="flex justify-between gap-4">
-                <dt className="text-neutral-500">Subscription</dt>
-                <dd className="font-mono text-xs">
-                  {customer.stripeSubscriptionId ?? "—"}
-                </dd>
-              </div>
-            </dl>
-          ) : (
+          {!onboarding ? (
             <p className="mt-4 text-sm text-neutral-600">
               Onboarding record not created yet.
             </p>
-          )}
+          ) : (
+            <>
+              <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+                <p className="text-sm">
+                  <span className="text-neutral-500">Status: </span>
+                  <span className="font-semibold tracking-wide">
+                    {onboardingStatusLabel(onboarding.status)}
+                  </span>
+                </p>
+                {onboardingUrl ? (
+                  <AdminCopyOnboardingLink url={onboardingUrl} />
+                ) : null}
+              </div>
 
-          {onboardingUrl ? (
-            <div className="mt-4">
-              <AdminCopyOnboardingLink url={onboardingUrl} />
-            </div>
-          ) : null}
+              {canAdminApproveOnboarding(onboarding.status) ? (
+                <div className="mt-4 rounded-md border border-amber-300 bg-amber-50 px-4 py-3 text-sm font-medium text-amber-900">
+                  Spletna stran čaka na pregled
+                </div>
+              ) : null}
 
-          {onboarding?.answers ? (
-            <div className="mt-6">
-              <h3 className="text-sm font-medium">Questionnaire answers</h3>
-              <dl className="mt-3 space-y-2 text-sm">
-                {Object.entries(onboarding.answers).map(([key, value]) => (
-                  <div key={key} className="rounded bg-neutral-50 px-3 py-2">
-                    <dt className="text-xs uppercase tracking-wide text-neutral-500">
-                      {key}
-                    </dt>
-                    <dd className="mt-1 whitespace-pre-wrap">
-                      {Array.isArray(value) ? value.join(", ") : String(value ?? "—")}
-                    </dd>
+              <div className="mt-6 space-y-6">
+                <div>
+                  <h3 className="text-sm font-medium">Podatki</h3>
+                  <dl className="mt-3 grid gap-3 text-sm md:grid-cols-2">
+                    <div className="rounded bg-neutral-50 px-3 py-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        Kontakt
+                      </dt>
+                      <dd className="mt-1 whitespace-pre-wrap">
+                        {onboardingField(onboarding.answers?.contactPerson)}
+                        {" · "}
+                        {onboardingField(
+                          onboarding.contactEmail ?? onboarding.answers?.email,
+                        )}
+                        {" · "}
+                        {onboardingField(onboarding.answers?.phone)}
+                      </dd>
+                    </div>
+                    <div className="rounded bg-neutral-50 px-3 py-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        Podjetje
+                      </dt>
+                      <dd className="mt-1">
+                        {onboardingField(onboarding.answers?.companyName)}
+                      </dd>
+                    </div>
+                    <div className="rounded bg-neutral-50 px-3 py-2 md:col-span-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        Opis
+                      </dt>
+                      <dd className="mt-1 whitespace-pre-wrap">
+                        {onboardingField(onboarding.answers?.businessDescription)}
+                      </dd>
+                    </div>
+                    <div className="rounded bg-neutral-50 px-3 py-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        Storitve
+                      </dt>
+                      <dd className="mt-1">
+                        {joinList(onboarding.answers?.services)}
+                      </dd>
+                    </div>
+                    <div className="rounded bg-neutral-50 px-3 py-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        USP
+                      </dt>
+                      <dd className="mt-1">
+                        {joinList(onboarding.answers?.sellingPoints)}
+                      </dd>
+                    </div>
+                    <div className="rounded bg-neutral-50 px-3 py-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        Delovni čas
+                      </dt>
+                      <dd className="mt-1">
+                        {onboardingField(onboarding.answers?.openingHours)}
+                      </dd>
+                    </div>
+                    <div className="rounded bg-neutral-50 px-3 py-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        Domena
+                      </dt>
+                      <dd className="mt-1">
+                        {onboardingField(onboarding.answers?.desiredDomain)}
+                        {onboarding.answers?.hasExistingDomain
+                          ? " (že obstaja)"
+                          : ""}
+                      </dd>
+                    </div>
+                    <div className="rounded bg-neutral-50 px-3 py-2 md:col-span-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        Želene spremembe
+                      </dt>
+                      <dd className="mt-1 whitespace-pre-wrap">
+                        {onboardingField(onboarding.answers?.demoChanges)}
+                      </dd>
+                    </div>
+                    <div className="rounded bg-neutral-50 px-3 py-2 md:col-span-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        Opombe
+                      </dt>
+                      <dd className="mt-1 whitespace-pre-wrap">
+                        {onboardingField(onboarding.answers?.additionalNotes)}
+                      </dd>
+                    </div>
+                    <div className="rounded bg-neutral-50 px-3 py-2 md:col-span-2">
+                      <dt className="text-xs uppercase tracking-wide text-neutral-500">
+                        Oddano
+                      </dt>
+                      <dd className="mt-1">{formatDate(onboarding.submittedAt)}</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <div>
+                  <h3 className="text-sm font-medium">Slike</h3>
+                  <p className="mt-1 text-xs text-neutral-500">Galerija slik</p>
+                  <div className="mt-3">
+                    <OnboardingImageGallery
+                      images={listOnboardingImages(onboarding.answers)}
+                    />
                   </div>
-                ))}
-              </dl>
-            </div>
-          ) : null}
+                </div>
 
-          {onboarding?.processedPayload ? (
-            <div className="mt-6">
-              <h3 className="text-sm font-medium">Processed payload (factory-ready)</h3>
-              <pre className="mt-2 max-h-64 overflow-auto rounded bg-neutral-50 p-3 text-xs">
-                {JSON.stringify(onboarding.processedPayload, null, 2)}
-              </pre>
-            </div>
-          ) : null}
+                <div>
+                  <h3 className="text-sm font-medium">Akcija</h3>
+                  <div className="mt-3">
+                    <AdminOnboardingApproveButton
+                      slug={slug}
+                      canApprove={canAdminApproveOnboarding(onboarding.status)}
+                      isApproved={
+                        onboarding.status === "approved_for_publish" ||
+                        onboarding.status === "live"
+                      }
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {onboarding.processedPayload ? (
+                <details className="mt-6">
+                  <summary className="cursor-pointer text-sm font-medium text-neutral-600">
+                    Processed payload (factory-ready)
+                  </summary>
+                  <pre className="mt-2 max-h-64 overflow-auto rounded bg-neutral-50 p-3 text-xs">
+                    {JSON.stringify(onboarding.processedPayload, null, 2)}
+                  </pre>
+                </details>
+              ) : null}
+            </>
+          )}
         </section>
       ) : null}
 

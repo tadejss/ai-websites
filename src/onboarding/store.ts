@@ -9,7 +9,7 @@ import type {
   OnboardingStatus,
   ProcessedOnboardingPayload,
 } from "./types";
-import { isOnboardingStatus } from "./types";
+import { canAdminApproveOnboarding, isOnboardingStatus } from "./types";
 
 type OnboardingRow = {
   slug: string;
@@ -21,6 +21,8 @@ type OnboardingRow = {
   contact_name: string | null;
   welcome_email_sent_at: Date | string | null;
   approval_email_sent_at: Date | string | null;
+  admin_approved_at: Date | string | null;
+  admin_publish_notify_sent_at: Date | string | null;
   submitted_at: Date | string | null;
   processed_at: Date | string | null;
   created_at: Date | string;
@@ -50,6 +52,8 @@ function mapRow(row: OnboardingRow): OnboardingRecord {
     contactName: row.contact_name,
     welcomeEmailSentAt: toIso(row.welcome_email_sent_at),
     approvalEmailSentAt: toIso(row.approval_email_sent_at),
+    adminApprovedAt: toIso(row.admin_approved_at),
+    adminPublishNotifySentAt: toIso(row.admin_publish_notify_sent_at),
     submittedAt: toIso(row.submitted_at),
     processedAt: toIso(row.processed_at),
     createdAt: toIso(row.created_at) ?? new Date().toISOString(),
@@ -225,7 +229,7 @@ export async function saveOnboardingDraft(
     SET
       answers = ${merged},
       status = CASE
-        WHEN status IN ('submitted', 'processing', 'ready_for_approval', 'live')
+        WHEN status IN ('submitted', 'processing', 'ready_for_approval', 'approved_for_publish', 'live')
         THEN status
         ELSE 'in_progress'
       END,
@@ -250,7 +254,7 @@ export async function submitOnboarding(
 
   if (
     existing &&
-    ["submitted", "processing", "ready_for_approval", "live"].includes(
+    ["submitted", "processing", "ready_for_approval", "approved_for_publish", "live"].includes(
       existing.status,
     )
   ) {
@@ -314,6 +318,71 @@ export async function hasSubmittedOnboarding(slug: string): Promise<boolean> {
     "submitted",
     "processing",
     "ready_for_approval",
+    "approved_for_publish",
     "live",
   ].includes(record.status);
+}
+
+export type ApproveOnboardingResult = {
+  onboarding: OnboardingRecord;
+  alreadyApproved: boolean;
+};
+
+/**
+ * Admin approval: ready_for_approval → approved_for_publish. Idempotent.
+ */
+export async function approveOnboardingForPublish(
+  slug: string,
+): Promise<ApproveOnboardingResult> {
+  const db = await requireDb();
+  const existing = await getOnboardingBySlug(slug);
+
+  if (!existing) {
+    throw new Error(`Onboarding not found for slug "${slug}"`);
+  }
+
+  if (
+    existing.status === "approved_for_publish" ||
+    existing.status === "live"
+  ) {
+    return { onboarding: existing, alreadyApproved: true };
+  }
+
+  if (!canAdminApproveOnboarding(existing.status)) {
+    throw new Error(
+      `Onboarding status "${existing.status}" is not ready for admin approval`,
+    );
+  }
+
+  const rows = (await db`
+    UPDATE customer_onboarding
+    SET
+      status = 'approved_for_publish',
+      admin_approved_at = COALESCE(admin_approved_at, NOW()),
+      updated_at = NOW()
+    WHERE slug = ${slug}
+    RETURNING *
+  `) as OnboardingRow[];
+
+  if (!rows[0]) {
+    throw new Error(`Onboarding not found for slug "${slug}"`);
+  }
+
+  return { onboarding: mapRow(rows[0]), alreadyApproved: false };
+}
+
+export async function markAdminPublishNotifySent(slug: string): Promise<void> {
+  const db = await requireDb();
+  await db`
+    UPDATE customer_onboarding
+    SET admin_publish_notify_sent_at = NOW(), updated_at = NOW()
+    WHERE slug = ${slug} AND admin_publish_notify_sent_at IS NULL
+  `;
+}
+
+export async function shouldSendAdminPublishNotify(
+  slug: string,
+): Promise<boolean> {
+  const record = await getOnboardingBySlug(slug);
+  return Boolean(record && !record.adminPublishNotifySentAt);
 }

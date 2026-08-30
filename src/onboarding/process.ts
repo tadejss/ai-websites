@@ -10,6 +10,7 @@ import type {
   CustomerOnboardingAnswers,
   ProcessedOnboardingPayload,
 } from "./types";
+import { listOnboardingImages } from "./images";
 
 function readBusinessJson(slug: string): Record<string, unknown> | null {
   const path = resolve(process.cwd(), "src/content/clients", slug, "business.json");
@@ -52,6 +53,7 @@ export function buildProcessedPayload(
   answers: CustomerOnboardingAnswers,
 ): ProcessedOnboardingPayload {
   const existingBusiness = readBusinessJson(slug);
+  const images = listOnboardingImages(answers);
 
   return {
     slug,
@@ -62,8 +64,9 @@ export function buildProcessedPayload(
       hasExistingDomain: answers.hasExistingDomain ?? false,
       demoChanges: answers.demoChanges ?? null,
       colorPreferences: answers.colorPreferences ?? null,
-      logoUrls: answers.logoUrls ?? [],
-      photoUrls: answers.photoUrls ?? [],
+      logoUrls: images.filter((img) => img.kind === "logo").map((img) => img.url),
+      photoUrls: images.filter((img) => img.kind === "photo").map((img) => img.url),
+      uploadedImages: images,
       additionalNotes: answers.additionalNotes ?? null,
     },
   };
@@ -88,6 +91,7 @@ export async function processOnboardingSubmission(
 
   if (
     existing.status === "ready_for_approval" ||
+    existing.status === "approved_for_publish" ||
     existing.status === "live"
   ) {
     return { onboarding: existing, alreadyProcessed: true };

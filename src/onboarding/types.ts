@@ -6,6 +6,7 @@ export const ONBOARDING_STATUSES = [
   "submitted",
   "processing",
   "ready_for_approval",
+  "approved_for_publish",
   "live",
 ] as const;
 
@@ -14,6 +15,14 @@ export type OnboardingStatus = (typeof ONBOARDING_STATUSES)[number];
 export function isOnboardingStatus(value: string): value is OnboardingStatus {
   return (ONBOARDING_STATUSES as readonly string[]).includes(value);
 }
+
+export const onboardingImageSchema = z.object({
+  url: z.string().url(),
+  fileName: z.string().trim().optional(),
+  kind: z.enum(["logo", "photo"]),
+});
+
+export type OnboardingImage = z.infer<typeof onboardingImageSchema>;
 
 export const customerOnboardingAnswersSchema = z.object({
   companyName: z.string().trim().optional(),
@@ -33,6 +42,7 @@ export const customerOnboardingAnswersSchema = z.object({
   colorPreferences: z.string().trim().optional(),
   logoUrls: z.array(z.string().url()).optional(),
   photoUrls: z.array(z.string().url()).optional(),
+  uploadedImages: z.array(onboardingImageSchema).optional(),
   additionalNotes: z.string().trim().optional(),
 });
 
@@ -48,16 +58,16 @@ export const customerOnboardingSubmitSchema = customerOnboardingAnswersSchema
     businessDescription: z
       .string()
       .trim()
-      .min(1, "Kratek opis podjetja je obvezen"),
+      .min(1, "Kratek opis podjetja je obvezno"),
     services: z
       .array(z.string().trim().min(1))
       .min(1, "Vsaj ena storitev je obvezna"),
     desiredDomain: z.string().trim().min(1, "Želena domena je obvezna"),
   })
-  .refine(
-    (data) => data.email.length > 0,
-    { message: "Email je obvezen", path: ["email"] },
-  );
+  .refine((data) => data.email.length > 0, {
+    message: "Email je obvezen",
+    path: ["email"],
+  });
 
 export type ProcessedOnboardingPayload = {
   slug: string;
@@ -70,6 +80,7 @@ export type ProcessedOnboardingPayload = {
     colorPreferences: string | null;
     logoUrls: string[];
     photoUrls: string[];
+    uploadedImages: OnboardingImage[];
     additionalNotes: string | null;
   };
 };
@@ -84,6 +95,8 @@ export type OnboardingRecord = {
   contactName: string | null;
   welcomeEmailSentAt: string | null;
   approvalEmailSentAt: string | null;
+  adminApprovedAt: string | null;
+  adminPublishNotifySentAt: string | null;
   submittedAt: string | null;
   processedAt: string | null;
   createdAt: string;
@@ -102,9 +115,21 @@ export function onboardingStatusLabel(status: OnboardingStatus): string {
       return "PROCESSING";
     case "ready_for_approval":
       return "READY FOR APPROVAL";
+    case "approved_for_publish":
+      return "APPROVED FOR PUBLISH";
     case "live":
       return "LIVE";
     default:
       return String(status).toUpperCase();
   }
+}
+
+export const ADMIN_APPROVABLE_STATUSES: readonly OnboardingStatus[] = [
+  "submitted",
+  "processing",
+  "ready_for_approval",
+] as const;
+
+export function canAdminApproveOnboarding(status: OnboardingStatus): boolean {
+  return (ADMIN_APPROVABLE_STATUSES as readonly string[]).includes(status);
 }
