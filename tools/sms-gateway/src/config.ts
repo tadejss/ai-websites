@@ -1,3 +1,7 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { config as loadDotenv } from "dotenv";
+
 export type GatewayConfig = {
   apiBaseUrl: string;
   gatewaySecret: string;
@@ -11,6 +15,13 @@ export type GatewayConfig = {
   host: string;
   port: number;
 };
+
+const gatewayRoot = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "..",
+);
+
+loadDotenv({ path: path.join(gatewayRoot, ".env") });
 
 function parsePositiveInt(value: string | undefined, fallback: number): number {
   const parsed = Number.parseInt(value ?? "", 10);

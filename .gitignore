@@ -49,3 +49,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+tools/sms-gateway/.env
+
+# SMS gateway dependencies
+tools/sms-gateway/node_modules/
