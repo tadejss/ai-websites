@@ -184,6 +184,32 @@ async function findPhoto(
   );
 }
 
+export async function searchPexelsPhotos(
+  query: string,
+  orientation?: ImageSearchBrief["orientation"],
+): Promise<PexelsPhoto[]> {
+  return searchPhotos(query, orientation);
+}
+
+export function pexelsPhotoToCandidate(
+  photo: PexelsPhoto,
+  searchQuery: string,
+): StockPhotoCandidate | undefined {
+  return toCandidate(photo, searchQuery);
+}
+
+export async function downloadPexelsCandidate(
+  candidate: StockPhotoCandidate,
+): Promise<Buffer | undefined> {
+  const imageResponse = await fetch(candidate.downloadUrl);
+  if (!imageResponse.ok) {
+    throw new Error(
+      `Pexels download failed (${imageResponse.status}) for photo ${candidate.id}`,
+    );
+  }
+  return Buffer.from(await imageResponse.arrayBuffer());
+}
+
 export async function findPexelsPhoto(
   brief: ImageSearchBrief,
   slot: "hero" | "services",

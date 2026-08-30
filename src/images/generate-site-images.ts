@@ -5,6 +5,8 @@ import {
   downloadStockPhoto,
   isStockPhotoConfigured,
 } from "./download-stock-photo";
+import { generateImagesFromPool } from "./image-pool";
+import { resolveImagePoolCategory } from "./image-pool-category";
 import type { ImageSlot } from "./types";
 
 async function fetchSlotImage(
@@ -39,6 +41,38 @@ async function fetchSlotImage(
   };
 }
 
+function toSiteImage(
+  assigned: {
+    src: string;
+    srcFallback: string;
+    width: number;
+    height: number;
+    provider: string;
+    sourceId: string;
+    sourceUrl: string;
+    photographer: string;
+    photographerUrl?: string;
+    searchQuery: string;
+  },
+  alt: string,
+): SiteImage {
+  return {
+    src: assigned.src,
+    srcFallback: assigned.srcFallback,
+    alt,
+    width: assigned.width,
+    height: assigned.height,
+    format: "avif",
+    fallbackFormat: "webp",
+    provider: assigned.provider as SiteImage["provider"],
+    sourceId: assigned.sourceId,
+    sourceUrl: assigned.sourceUrl,
+    photographer: assigned.photographer,
+    photographerUrl: assigned.photographerUrl,
+    searchQuery: assigned.searchQuery,
+  };
+}
+
 export async function generateSiteImages(
   slug: string,
   businessInput: BusinessInput,
@@ -53,6 +87,30 @@ export async function generateSiteImages(
 
   try {
     const plan = await buildImageSearchPlan(businessInput, siteConfig);
+    const category = resolveImagePoolCategory({
+      industry: businessInput.industry,
+      companyName: businessInput.companyName,
+    });
+
+    if (category) {
+      const pooled = await generateImagesFromPool(category, slug);
+
+      if (pooled?.hero && pooled.services) {
+        const hero = toSiteImage(pooled.hero, plan.hero.alt);
+        const services = toSiteImage(pooled.services, plan.services.alt);
+
+        console.log(
+          `Images for ${slug} [pool:${category}]: hero by ${hero.photographer} (${hero.provider}/${hero.sourceId}), services by ${services.photographer} (${services.provider}/${services.sourceId})`,
+        );
+
+        return { hero, services };
+      }
+
+      console.warn(
+        `Pool image generation incomplete for "${slug}" (${category}); falling back to direct fetch.`,
+      );
+    }
+
     const excludeIds = new Set<string>();
 
     const hero = await fetchSlotImage(slug, "hero", plan, excludeIds);

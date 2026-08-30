@@ -81,7 +81,7 @@ async function copyCacheToClient(
   });
 }
 
-async function persistCandidate(
+export async function persistStockCandidate(
   data: Buffer,
   candidate: StockPhotoCandidate,
   slot: ImageSlot,
@@ -160,6 +160,23 @@ async function persistCandidate(
     searchQuery: candidate.searchQuery,
     fromCache: false,
   };
+}
+
+async function persistCandidate(
+  data: Buffer,
+  candidate: StockPhotoCandidate,
+  slot: ImageSlot,
+  slug: string,
+): Promise<ResolvedStockImage> {
+  return persistStockCandidate(data, candidate, slot, slug);
+}
+
+export async function assignCachedAssetToClient(
+  slug: string,
+  slot: ImageSlot,
+  cached: CachedStockAsset,
+): Promise<{ src: string; srcFallback: string } | undefined> {
+  return copyCacheToClient(slug, slot, cached);
 }
 
 /**

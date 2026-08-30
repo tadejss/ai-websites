@@ -38,6 +38,7 @@
     "outreach-summary": "tsx scripts/outreach-summary.ts",
     "test-outreach": "tsx scripts/test-outreach.ts",
     "test-sms-outreach": "tsx scripts/test-sms-outreach.ts",
+    "test-image-pool": "tsx scripts/test-image-pool.ts",
     "replenish-leads": "tsx scripts/replenish-leads.ts"
   },
   "dependencies": {
