@@ -1,0 +1,288 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-abram-marko/hero.avif",
+      "alt": "Sodobna lesena kuhinja po meri v svetlem domačem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-abram-marko/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16551819",
+      "sourceUrl": "https://www.pexels.com/photo/plywood-furniture-in-kitchen-16551819/",
+      "photographer": "Leo  Méndez",
+      "photographerUrl": "https://www.pexels.com/@leo-mendez-241206671",
+      "searchQuery": "custom wooden kitchen modern interior warm light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-abram-marko/services.avif",
+      "alt": "Izdelava unikatnega lesenega pohištva v mizarski delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-abram-marko/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "27155225",
+      "sourceUrl": "https://www.pexels.com/photo/senior-man-sitting-by-table-with-tools-27155225/",
+      "photographer": "Shuttercraftsman",
+      "photographerUrl": "https://www.pexels.com/@shuttercraftsman-240571253",
+      "searchQuery": "carpenter crafting custom wooden furniture warm workshop"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Vsak kos pohištva je unikat, zato se cene oblikujejo glede na mere, material in zahtevnost izdelave.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinje po meri",
+        "description": "Izdelava in montaža kuhinje po vaših merah.",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati in notranjo postavitvijo.",
+        "price": "od 800 €"
+      },
+      {
+        "name": "Pohištvo za spalnice",
+        "description": "Postelje, nočne omarice in komode.",
+        "price": "od 600 €"
+      },
+      {
+        "name": "Opremljanje dnevnih sob",
+        "description": "TV elementi, police in klubske mizice.",
+        "price": "od 500 €"
+      },
+      {
+        "name": "Leseni elementi po naročilu",
+        "description": "Posamezni kosi pohištva in unikatni elementi.",
+        "price": "od 150 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Abram"
+  },
+  "metadata": {
+    "title": "Mizarstvo Abram Marko s.p. | Pohištvo po meri",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Prestranku in okolici. Kuhinje, vgradne omare in leseni elementi po naročilu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarstvo po meri",
+    "title": "Kakovostno pohištvo za",
+    "titleHighlight": "vaš dom",
+    "description": "Unikatno pohištvo po meri za lastnike stanovanj in hiš v Prestranku in okolici. Zanesljivost, strokovno svetovanje in vrhunska izdelava.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska izdelava",
+        "label": "Vrhunska izdelava",
+        "title": "Vrhunska izdelava"
+      },
+      {
+        "value": "Po meri",
+        "label": "Po meri",
+        "title": "Po meri"
+      },
+      {
+        "value": "Strokovni svet",
+        "label": "Strokovni svet",
+        "title": "Strokovni svet"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kaj izdelujemo za vas",
+    "description": "Prilagojene mizarske rešitve, ustvarjene za vaš prostor in želje.",
+    "items": [
+      {
+        "title": "Kuhinje po meri",
+        "description": "Popolnoma izkoriščen prostor in funkcionalna zasnova vaše sanjske kuhinje.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Omare, narejene točno po meri vaših prostorov za maksimalen izkoristek shranjevanja.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pohištvo za spalnice",
+        "description": "Prijeten in miren ambient za vaš počitek s skrbno izdelanim pohištvom.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Opremljanje dnevnih sob",
+        "description": "Domače in estetske rešitve za osrednji prostor druženja v vašem domu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Leseni elementi po naročilu",
+        "description": "Unikatni leseni izdelki, prilagojeni vašim posebnim željam in idejam.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Tradicionalna kakovost in sodoben dizajn",
+    "description": "Z združevanjem preverjenih mizarskih znanj in sodobnih pristopov poskrbimo za končni izdelek, ki traja.",
+    "highlights": [
+      "Vrhunska izdelava z dolgoletnimi izkušnjami",
+      "Popolna prilagoditev željam stranke in prostoru",
+      "Zanesljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska izdelava",
+        "description": "Skrbno izbrani materiali in natančna obdelava lesa za dolgotrajno pohištvo.",
+        "title": "Vrhunska izdelava"
+      },
+      {
+        "label": "Prilagojeno prostoru",
+        "description": "Pohištvo izdelamo točno po merah vašega doma, ne glede na specifične postavitve.",
+        "title": "Prilagojeno prostoru"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Zanesljiv partner, ki vam pomaga uresničiti vaše ideje s koristnimi nasveti.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite ponudbo za pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 339 269",
+        "href": "tel:031339269",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Žeje 16, 6258 Prestranek, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve glede pohištva...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Žeje 16, 6258 Prestranek, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Abram",
+    "address": "Žeje 16, 6258 Prestranek, Slovenia",
+    "email": "",
+    "phone": "031 339 269"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

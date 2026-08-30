@@ -1,0 +1,289 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "terracotta-sunset",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/rakaj-bau/hero.avif",
+      "alt": "Gradbeni delavci na sodobnem gradbišču v Krškem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/rakaj-bau/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "901941",
+      "sourceUrl": "https://www.pexels.com/photo/two-men-wearing-white-hard-hat-901941/",
+      "photographer": "James Frid",
+      "photographerUrl": "https://www.pexels.com/@james-frid-81279",
+      "searchQuery": "professional construction site workers modern building facade warm lighting"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/rakaj-bau/services.avif",
+      "alt": "Zidarska dela in prenova objektov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/rakaj-bau/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38241071",
+      "sourceUrl": "https://www.pexels.com/photo/scaffolding-on-historic-church-during-renovation-38241071/",
+      "photographer": "Plato Terentev",
+      "photographerUrl": "https://www.pexels.com/@plato-terentev-3804555",
+      "searchQuery": "bricklaying and wall renovation construction work warm sunlight"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naši projekti",
+    "description": "Pregled izvedenih gradbenih in prenovitvenih del.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za gradbena in prenovitvena dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Splošna gradbena dela po dogovoru",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Prenove objektov",
+        "description": "Celovite adaptacije in prenove",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zidarska dela",
+        "description": "Izvedba zidarskih del",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Namestitev in obnova fasad",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zaključna gradbena dela",
+        "description": "Različna zaključna dela",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "RAKAJ BAU",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "RAKAJ BAU d.o.o. | Gradbena dela in prenove v Krškem",
+    "description": "Zanesljive gradbene storitve, prenove objektov, zidarska in fasaderska dela v Krškem s širšo okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Gradbena podjetja in splošne gradbene storitve",
+    "title": "Zanesljive gradbene storitve in",
+    "titleHighlight": "prenovitvena dela",
+    "description": "Strokovne rešitve za lastnike hiš, stanovanj in poslovnih objektov v Krškem s širšo okolico.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Sobote",
+        "label": "Delovni čas vključno s sobotami"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Kakovostna izvedba del"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Osebni pristop k projektu"
+      },
+      {
+        "value": "Krško",
+        "label": "In širša okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite gradbene in prenovitvene rešitve",
+    "description": "Izvajamo širok nabor gradbenih del za objekte na območju Krškega s širšo okolico.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba splošnih gradbenih del za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove in adaptacije obstoječih prostorov ter zgradb.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna in strokovna zidarska dela za različne vrste objektov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Urejanje fasad za boljšo izolativnost in estetski videz vašega doma.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zaključna gradbena dela",
+        "description": "Kakovostna izvedba zaključnih del v gradbeništvu za popoln končni videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Z združevanjem strokovnosti, prilagodljivosti in zanesljivosti poskrbimo za uspešno izvedbo vaših načrtov.",
+    "highlights": [
+      "Prilagodljivost delovnega časa vključno s sobotami",
+      "Zanesljiva izvedba gradbenih del",
+      "Strokovni pristop k vsakemu projektu"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagajamo se vašemu urniku, delamo tudi ob sobotah.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorov in poskrbimo za kakovostno izvedbo.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Strokovni pristop k vsakemu posameznemu projektu.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za gradbena dela? Kontaktirajte nas.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Ilije Gregoriča 16, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "064 156 157",
+        "href": "tel:064156157",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Sobota: 7:00 - 17:00, Nedelja: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ulica Ilije Gregoriča 16, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "RAKAJ BAU d.o.o.",
+    "address": "Ulica Ilije Gregoriča 16, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "064 156 157"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

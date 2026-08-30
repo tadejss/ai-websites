@@ -1,0 +1,289 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "olive-gold",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-meze-robert/hero.avif",
+      "alt": "Izdelava pohištva po meri v domači mizarski delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-meze-robert/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "36887744",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-wooden-interior-design-with-built-in-furniture-36887744/",
+      "photographer": "DOAN THANH BINH",
+      "photographerUrl": "https://www.pexels.com/@doan-thanh-binh-2147604563",
+      "searchQuery": "custom wooden furniture craftsmanship warm natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-meze-robert/services.avif",
+      "alt": "Sodobna kuhinja po meri z lesenimi elementi",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-meze-robert/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38609263",
+      "sourceUrl": "https://www.pexels.com/photo/modern-kitchen-interior-with-marble-countertop-38609263/",
+      "photographer": "Septian Dwicahya",
+      "photographerUrl": "https://www.pexels.com/@septian-dwicahya-3564755",
+      "searchQuery": "modern custom kitchen interior wood details olive gold"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene mizarskih storitev",
+    "description": "Ker je vsak kos pohištva unikat, so cene informativne narave in odvisne od izbire materialov ter zahtevnosti.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinja po meri",
+        "description": "Celovita izdelava in montaža kuhinje po vaših merah.",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradna omara",
+        "description": "Omara z drsnimi vrati in notranjo razporeditvijo.",
+        "price": "od 800 €"
+      },
+      {
+        "name": "Pohištvo po meri (kosi)",
+        "description": "Komode, mize, police in druge manjše mizarske rešitve.",
+        "price": "od 250 €"
+      },
+      {
+        "name": "Svetovanje in izmera",
+        "description": "Strokovni ogled na lokaciji ter priprava idejne zasnove.",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo Meze",
+    "highlight": "Robert s.p."
+  },
+  "metadata": {
+    "title": "Mizarstvo Meze Robert s.p. | Pohištvo po meri v Krškem",
+    "description": "Vrhunsko izdelano pohištvo po meri, kuhinje, vgradne omare in notranja oprema. Zanesljivo mizarstvo za Krško in okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarstvo po meri",
+    "title": "Vrhunsko izdelano pohištvo po meri",
+    "titleHighlight": "za vaš dom",
+    "description": "Ustvarjamo kakovostno pohištvo po meri za lastnike stanovanj in hiš v Krškem in okolici. Zanesljive in prilagojene rešitve za vsak kotiček vašega doma.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Visoka natančnost",
+        "title": "Visoka natančnost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Spoštovanje rokov",
+        "title": "Spoštovanje rokov"
+      },
+      {
+        "value": "Prilagojeno",
+        "label": "Za vsak prostor",
+        "title": "Za vsak prostor"
+      },
+      {
+        "value": "Odzivnost",
+        "label": "Hiter odziv",
+        "title": "Hiter odziv"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve mizarstva po meri",
+    "description": "Nudimo celovite mizarske storitve in unikatno pohištvo za opremljanje doma v Krškem in okolici.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Unikatni kosi pohištva, prilagojeni vašim željam in dimenzijam prostora.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne, estetsko dovršene in skrbno izdelane kuhinje za vaš dom.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Izkoristite vsak kotiček z vgradnimi omarami, narejenimi točno po meri.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celovite rešitve in oprema za celoten dom, ki združujejo videz in uporabnost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Leseni elementi",
+        "description": "Kakovostni leseni elementi za dopolnitev vašega bivalnega okolja.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati mizarstvo Meze?",
+    "description": "Odlikujejo nas strokovnost, natančnost in posluh za stranke.",
+    "highlights": [
+      "Izjemno profesionalen in hiter odziv",
+      "Visoka natančnost in kakovost izdelave",
+      "Spoštovanje dogovorjenih rokov",
+      "Prilagojene rešitve za vsak prostor"
+    ],
+    "benefits": [
+      {
+        "label": "Profesionalen odziv",
+        "description": "Izjemno profesionalen in hiter odziv na vsako povpraševanje.",
+        "title": "Profesionalen odziv"
+      },
+      {
+        "label": "Kakovost izdelave",
+        "description": "Visoka natančnost in vrhunska izvedba vsakega mizarskega projekta.",
+        "title": "Kakovost izdelave"
+      },
+      {
+        "label": "Zanesljivost rokov",
+        "description": "Dosledno spoštovanje dogovorjenih rokov in zanesljiv dogovor.",
+        "title": "Zanesljivost rokov"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite ponudbo za pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta 4. julija 78b, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 572 296",
+        "href": "tel:041572296",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Cesta 4. julija 78b, 8270 Krško, Slovenia",
+    "rights": "© 2025 Mizarstvo Meze Robert s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Meze Robert s.p.",
+    "address": "Cesta 4. julija 78b, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "041 572 296"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "outfit-bitter"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-bostjan-gazvoda/hero.avif",
+      "alt": "Slikopleskar pri natančnem barvanju notranjih sten",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-bostjan-gazvoda/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4981780",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-wearing-safety-glasses-and-respirator-mask-4981780/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "professional painter interior wall painting dark mood portrait"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-bostjan-gazvoda/services.avif",
+      "alt": "Kakovostna pleskarska dela in dekorativne tehnike sten",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-bostjan-gazvoda/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "14904074",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-dark-room-with-shadows-on-the-wall-14904074/",
+      "photographer": "Joe Ann Chong",
+      "photographerUrl": "https://www.pexels.com/@joe-ann-chong-405353639",
+      "searchQuery": "modern interior wall decoration dark moody lighting squarish"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega ter zahtevnosti dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje sten in stropov",
+        "description": "Beljenje v belih tonih z vsemi pripravljalnimi deli in zaščito",
+        "price": "od 2,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Odstranjevanje plesni in nanos protiglivičnih premazov",
+        "price": "od 15 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Pleskanje stavbnega pohištva",
+        "description": "Brušenje in barvanje vrat ali oken",
+        "price": "po dogovoru",
+        "unit": "na kos"
+      },
+      {
+        "name": "Dekorativne tehnike",
+        "description": "Izdelava posebnih stenskih efektov",
+        "price": "od 20 €",
+        "unit": "na m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Boštjan Gazvoda s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Boštjan Gazvoda s.p. | Kakovostno beljenje in prenova",
+    "description": "Kakovostna pleskarska dela, beljenje sten, dekorativne tehnike in sanacija vlage v Novem mestu z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo slikopleskarstvo v Novem mestu",
+    "title": "Kakovostne prenovitvene rešitve za ",
+    "titleHighlight": "vaš dom",
+    "description": "Poskrbite za svežino in urejenost vaših prostorov. Zanesljiva izvedba pleskarskih del za lastnike stanovanj, hiš in poslovnih prostorov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Kakovostni materiali",
+        "label": "Kakovostni materiali"
+      },
+      {
+        "value": "Držanje rokov",
+        "label": "Držanje rokov"
+      },
+      {
+        "value": "Čist za prostor",
+        "label": "Čist za prostor"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše stene in prostore",
+    "description": "Izvajamo kakovostna pleskarska dela in prenovitvene rešitve na območju Novega mesta z okolico.",
+    "items": [
+      {
+        "title": "Notranje beljenje sten in stropov",
+        "description": "Osvežitev in barvanje notranjih površin za prijeten in urejen videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pleskanje stavbnega pohištva",
+        "description": "Skrbno barvanje vrat, oken in drugega stavbnega pohištva za obnovljen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Dekorativne tehnike obdelave sten",
+        "description": "Ustvarjanje edinstvenih estetskih učinkov in vzorcev na vaših steni.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Učinkovito odpravljanje težav z vlago ter strokovna sanacija prizadetih površin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Suhomontažna gradnja",
+        "description": "Izdelava predelnih sten, spuščenih stropov in druge suhomontažne rešitve.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za prenovo vašega doma",
+    "description": "Zavedamo se pomena urejenega bivalnega okolja, zato se pri vsakem projektu držimo dogovorov in poskrbimo za čistočo.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Uporaba preverjenih in kakovostnih materialov",
+      "Dosledno upoštevanje dogovorjenih rokov"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Dela izvajamo z občutkom za detajle in poskrbimo za čist delovni prostor.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporabljamo preverjene materiale, ki zagotavljajo dolgotrajen in lep končni videz.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Spoštujemo dogovorjene roke in se držimo vnaprej dogovorjenega obsega dela.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Dogovorite se za ogled ali ponudbo",
+    "description": "Na voljo smo za vsa vprašanja in svetovanje glede prenove vaših prostorov v Novem mestu z okolico.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 879 155",
+        "href": "tel:031879155",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Irča vas 35, 8000 Novo mesto",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kakšne storitve potrebujete...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Irča vas 35, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Boštjan Gazvoda s.p.",
+    "address": "Irča vas 35, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "031 879 155"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

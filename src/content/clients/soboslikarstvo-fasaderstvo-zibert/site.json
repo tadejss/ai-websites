@@ -1,0 +1,299 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/soboslikarstvo-fasaderstvo-zibert/hero.avif",
+      "alt": "Slikopleskar pri natančnem barvanju notranje stene v svetlem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/soboslikarstvo-fasaderstvo-zibert/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493655",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-a-wall-5493655/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "professional painter painting interior wall warm light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/soboslikarstvo-fasaderstvo-zibert/services.avif",
+      "alt": "Izdelava nove fasade in toplotne izolacije na stanovanjski hiši",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/soboslikarstvo-fasaderstvo-zibert/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "31517287",
+      "sourceUrl": "https://www.pexels.com/photo/modern-house-with-car-in-compiegne-france-31517287/",
+      "photographer": "Bingqian Li",
+      "photographerUrl": "https://www.pexels.com/@bingqian-li-230971044",
+      "searchQuery": "modern house facade construction insulation work outdoor"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostejših slikopleskarskih in fasaderskih del.",
+    "disclaimer": "Cenik je informativen. Za točen izračun in ogled na objektu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje (belo)",
+        "description": "Priprava površine, dvoslojni nanos bele barve",
+        "price": "od 2,50 €",
+        "unit": "m²",
+        "featured": true
+      },
+      {
+        "name": "Barvanje sten v odtenku",
+        "description": "Nanašanje barve po izbiri naročnika",
+        "price": "od 3,50 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Mehanska odstranitev in protiglivična zaščita",
+        "price": "od 15,00 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Natančno lepljenje različnih vrst tapet",
+        "price": "od 10,00 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Suhomontažna dela (gips plošče)",
+        "description": "Postavitev pregradnih sten ali stropov",
+        "price": "od 25,00 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Izdelava fasade",
+        "description": "Toplotna izolacija in zaključni sloj",
+        "price": "od 45,00 €",
+        "unit": "m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Žibert Robert",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Soboslikarstvo in fasaderstvo Žibert Robert s.p. | Kakovostne storitve",
+    "description": "Zanesljive slikopleskarske in fasaderske storitve za dom in poslovne objekte na območju Rake in okolice."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv domači izvajalec",
+    "title": "Kakovostne slikopleskarske in fasaderske storitve",
+    "titleHighlight": "za vaš dom",
+    "description": "Strokovna izvedba za lastnike hiš, stanovanj in poslovnih objektov, ki prenavljajo ali gradijo na območju Rake in okolice.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "izvedba del",
+        "title": "Natančna izvedba del"
+      },
+      {
+        "value": "Preverjeni",
+        "label": "materiali",
+        "title": "Preverjeni materiali"
+      },
+      {
+        "value": "Strokovno",
+        "label": "svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Spoštovanje",
+        "label": "rokov",
+        "title": "Spoštovanje rokov"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Poskrbimo za osvežitev vaših prostorov in zaščito vašega objekta z uporabo preverjenih materialov.",
+    "items": [
+      {
+        "title": "Notranje beljenje in barvanje",
+        "description": "Osvežitev sten in stropov z barvami, ki dajo vašemu domu nov sijaj.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Natančno lepljenje tapet za unikaten videz vaših prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Izdelava fasad",
+        "description": "Kakovostna fasaderska dela za energijsko učinkovitost in lep videz hiše.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Učinkovito odpravljanje težav z vlago za zdrav bivalni prostor.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Gipsarsko in suhomontažno delo",
+        "description": "Izdelava pregradnih sten, stropov in mansardnih zaključkov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vašo prenovo",
+    "description": "Z združevanjem natančnosti in strokovnega pristopa poskrbimo, da so dela opravljena brezhibno.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Uporaba preverjenih in kakovostnih materialov",
+      "Spoštovanje dogovorjenih rokov"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in obljubljenega obsega dela.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Kakovost",
+        "description": "Uporabljamo preverjene materiale za dolgotrajne rezultate.",
+        "title": "Kakovost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Nudimo strokovno svetovanje pri izbiri pravih rešitev.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti ogled in ponudbo? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 802 054",
+        "href": "tel:041802054",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Podulce 41, 8274 Raka, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potreben obseg del...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Podulce 41, 8274 Raka, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Žibert Robert s.p.",
+    "address": "Podulce 41, 8274 Raka, Slovenia",
+    "email": "",
+    "phone": "041 802 054"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

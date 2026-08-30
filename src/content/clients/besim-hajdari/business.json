@@ -1,0 +1,30 @@
+{
+  "companyName": "BESIM HAJDARI",
+  "industry": "Restavracija in hitra prehrana",
+  "tagline": "Okusna, hitra in cenovno dostopna hrana v bližini avtobusne postaje",
+  "services": [
+    "Kakovostni burgerji",
+    "Mesne jedi z žara",
+    "Kebab in vegetarijanske jedi",
+    "Osvežilne pijače in kava",
+    "Hitra postrežba hrane"
+  ],
+  "phone": "070 157 280",
+  "email": "",
+  "address": "Jenkova ulica 6, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 10:00 PM · Tuesday: 9:00 AM – 10:00 PM · Wednesday: 9:00 AM – 10:00 PM · Thursday: 9:00 AM – 10:00 PM · Friday: 9:00 AM – 11:00 PM · Saturday: 9:00 AM – 11:00 PM · Sunday: 9:00 AM – 11:00 PM",
+  "sellingPoints": [
+    "Izjemno razmerje med ceno in kakovostjo",
+    "Prijazno osebje in izjemna gostoljubnost",
+    "Priročna lokacija blizu avtobusne postaje in Postojnske jame",
+    "Bogate in radodarne porcije okusne hrane",
+    "Primerno za družine z otroki"
+  ],
+  "targetCustomers": "Popotniki, turisti, domačini in mimoidoči",
+  "serviceArea": "Postojna",
+  "yearsExperience": "",
+  "tone": "topel, gostoljubljiv, domač",
+  "brandStyle": "prijetna lokalna okrepčevalnica",
+  "competitors": "Lokalne restavracije s hitro prehrano v Postojni",
+  "callToAction": "Obiščite nas"
+}

@@ -1,0 +1,272 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "geist-geist"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/svedra/hero.avif",
+      "alt": "Profesionalna izdelava ključev v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/svedra/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "34286675",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-white-locksmith-working-in-istanbul-34286675/",
+      "photographer": "Crab Lens",
+      "photographerUrl": "https://www.pexels.com/@crab-lens-179881567",
+      "searchQuery": "professional locksmith cutting keys dark workshop warm ambient light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/svedra/services.avif",
+      "alt": "Kopiranje in izdelava ključev",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/svedra/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20345064",
+      "sourceUrl": "https://www.pexels.com/photo/man-giving-woman-keys-20345064/",
+      "photographer": "hugoteconecta",
+      "photographerUrl": "https://www.pexels.com/@hugoteconecta-641939723",
+      "searchQuery": "locksmith hand duplicating metal keys close up dark moody"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Izdelava navadnega ključa",
+        "description": "Hitro kopiranje standardnih hišnih ključev",
+        "price": "od 5 €",
+        "featured": true
+      },
+      {
+        "name": "Izdelava specialnega ključa",
+        "description": "Kopiranje zahtevnejših ali varnostnih ključev",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Ključavničarsko svetovanje",
+        "description": "Strokovni nasveti glede ključev in mehanizmov",
+        "price": "po dogovoru"
+      },
+      {
+        "name": "Hitra intervencija",
+        "description": "Nujne storitve na terenu ali v delavnici",
+        "price": "od 25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Švedra",
+    "highlight": "Ključavničarske storitve"
+  },
+  "metadata": {
+    "title": "Švedra | Izdelava ključev Postojna",
+    "description": "Hitra in zanesljiva izdelava ključev ter storitve za lokalne prebivalce v Postojni in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik v Postojni",
+    "title": "Hitra in zanesljiva",
+    "titleHighlight": "izdelava ključev",
+    "description": "Hitre ključavničarske storitve, kopiranje ključev ter strokovno svetovanje za prebivalce Postojne in okolice.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglej storitve",
+    "stats": [
+      {
+        "value": "Hitra storitev",
+        "label": "Hitra storitev",
+        "title": "Hitra storitev"
+      },
+      {
+        "value": "Normalne cene",
+        "label": "Normalne cene",
+        "title": "Normalne cene"
+      },
+      {
+        "value": "Prijazen pristop",
+        "label": "Prijazen pristop",
+        "title": "Prijazen pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kaj nudimo za vas",
+    "description": "Nudimo hitre in zanesljive storitve izdelave in kopiranja ključev v Postojni.",
+    "items": [
+      {
+        "title": "Izdelava ključev",
+        "description": "Natančna izdelava novih ključev za različne tipe vrat in mehanizmov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kopiranje ključev",
+        "description": "Hitro kopiranje vaših obstoječih ključev z visoko natančnostjo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Hitre ključavničarske storitve",
+        "description": "Ekspresne in učinkovite rešitve za vaše takojšnje težave.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje in pomoč",
+        "description": "Strokovni nasveti in prijazna pomoč pri izbiri pravih rešitev.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost in hitrost v vašem kraju",
+    "description": "Zavedamo se pomembnosti hitre rešitve, zato delujemo hitro, strokovno in po dostopnih cenah.",
+    "highlights": [
+      "Hitra in ekspresna izdelava",
+      "Dostopne in normalne cene",
+      "Prijazna in zanesljiva storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Ekspresna izdelava",
+        "description": "Hitra izdelava ključev brez dolgega čakanja.",
+        "title": "Ekspresna izdelava"
+      },
+      {
+        "label": "Dostopne cene",
+        "description": "Poštene in normalne cene za vsakogar.",
+        "title": "Dostopne cene"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Prijazna in strokovna storitev z lokalnim pridihom.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas v Postojni ali nas pokličite za hitre informacije in storitve.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 22, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 403 594",
+        "href": "tel:041403594",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–12:00 in 13:00–17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 22, 6230 Postojna, Slovenia",
+    "rights": "© Švedra. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Švedra Ključavničarske storitve",
+    "address": "Ljubljanska cesta 22, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 403 594"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

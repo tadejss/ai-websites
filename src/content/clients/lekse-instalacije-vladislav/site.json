@@ -1,0 +1,272 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lekse-instalacije-vladislav/hero.avif",
+      "alt": "Strokovne strojne in vodovodne inštalacije za dom",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lekse-instalacije-vladislav/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "33388390",
+      "sourceUrl": "https://www.pexels.com/photo/technician-repairing-industrial-equipment-in-workshop-33388390/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "professional plumber installing modern heating and plumbing system"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lekse-instalacije-vladislav/services.avif",
+      "alt": "Vodovodne inštalacije in ogrevalni sistemi",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lekse-instalacije-vladislav/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "31085120",
+      "sourceUrl": "https://www.pexels.com/photo/industrial-wall-with-rusted-pipe-and-vents-31085120/",
+      "photographer": "Paolo Coro'",
+      "photographerUrl": "https://www.pexels.com/@paolo-coro-61607419",
+      "searchQuery": "modern water pipes and heating installation indoor view"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naša izvedena dela",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in se prilagodijo glede na obseg ter zahtevnost dela na terenu.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura inštalaterskega dela",
+        "description": "Splošna montažna in servisna dela",
+        "price": "od 35 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Montaža sanitarne opreme",
+        "description": "Priklop in montaža umivalnikov, armatur ali WC školjk",
+        "price": "od 50 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Priklop klimatske naprave",
+        "description": "Osnovna montaža enojne klimatske naprave",
+        "price": "od 180 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Pregled in manjše popravilo vodovoda",
+        "description": "Pregled napeljave in odprava manjših okvar",
+        "price": "od 60 €",
+        "unit": "izhod"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Lekše",
+    "highlight": "inštalacije"
+  },
+  "metadata": {
+    "title": "Lekše instalacije Vladislav Lekše s.p. | Strojne in vodovodne inštalacije Novo mesto",
+    "description": "Zanesljive in strokovne strojne ter vodovodne inštalacije za vaš dom in objekt v Novem mestu z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni izvajalec",
+    "title": "Zanesljive in strokovne inštalacije za",
+    "titleHighlight": "vaš dom in objekt",
+    "description": "Strokovne rešitve na področju strojnih in vodovodnih inštalacij za lastnike stanovanjskih hiš, stanovanj in poslovnih objektov v Novem mestu z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Kakovostna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Sodelovanje"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Novo mesto"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite inštalaterske rešitve",
+    "description": "Nudimo kakovostno izvedbo strojnih in vodovodnih inštalacij za objekte v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Vodovodne inštalacije",
+        "description": "Strokovna izvedba in obnova vodovodnih napeljav v vašem objektu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Ogrevalni sistemi",
+        "description": "Učinkovite rešitve za ogrevanje vašega doma ali poslovnega prostora.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Klimatske naprave",
+        "description": "Montaža in servis klimatskih naprav za prijetno bivalno okolje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanitarna oprema",
+        "description": "Montaža sanitarne opreme in elementov po vaših željah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje in popravila",
+        "description": "Hitra pomoč, redno vzdrževanje in odpravljanje napak na inštalacijah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše inštalacije",
+    "description": "Z dolgoletnimi izkušnjami in poudarkom na kakovosti poskrbimo za brezhibno delovanje vaših inštalacij.",
+    "highlights": [
+      "Dolgoletne izkušnje na področju inštalacij",
+      "Kakovostna izvedba del in uporaba preverjenih materialov",
+      "Zanesljivost, strokovnost in osebno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Dolgoletne izkušnje",
+        "description": "Bogat nabor izkušenj na področju strojnih in vodovodnih inštalacij.",
+        "title": "Dolgoletne izkušnje"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Natančna in zanesljiva izvedba vseh del na vašem objektu.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Pomagamo vam izbrati najboljše tehnične rešitve za vaše potrebe.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete inštalaterske storitve? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Šmarješka cesta 66a, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 616 085",
+        "href": "tel:041616085",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potrebe...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Šmarješka cesta 66a, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lekše inštalacije",
+    "address": "Šmarješka cesta 66a, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 616 085"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

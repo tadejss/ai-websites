@@ -1,0 +1,28 @@
+{
+  "companyName": "Rbt gradbeništvo d.o.o.",
+  "industry": "Slikopleskarstvo in gradbena dela",
+  "tagline": "Kakovostne gradbene in slikopleskarske storitve po dostopni ceni",
+  "services": [
+    "Slikopleskarska dela",
+    "Fasaderska dela",
+    "Notranja prenova",
+    "Popleskanje prostorov",
+    "Gradbena in obrtniška dela"
+  ],
+  "phone": "041 580 625",
+  "email": "",
+  "address": "Cesta krških žrtev 135c, 8270 Krško, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 4:00 PM · Tuesday: 7:00 AM – 4:00 PM · Wednesday: 7:00 AM – 4:00 PM · Thursday: 7:00 AM – 4:00 PM · Friday: 7:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka kakovost izvedbe",
+    "Ugodne in konkurenčne cene",
+    "Zanesljivo in priporočeno delo"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov, ki potrebujejo prenovo ali pleskanje",
+  "serviceArea": "Krško z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "moderno in zaupanja vredno",
+  "competitors": "Lokalni ponudniki slikopleskarskih in gradbenih storitev",
+  "callToAction": "Pokličite nas"
+}

@@ -1,0 +1,294 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-joze-zupancic/hero.avif",
+      "alt": "Leseno pohištvo in kuhinja po meri v svetli notranjosti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-joze-zupancic/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16551819",
+      "sourceUrl": "https://www.pexels.com/photo/plywood-furniture-in-kitchen-16551819/",
+      "photographer": "Leo  Méndez",
+      "photographerUrl": "https://www.pexels.com/@leo-mendez-241206671",
+      "searchQuery": "custom wooden kitchen modern interior warm light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-joze-zupancic/services.avif",
+      "alt": "Mizarska delavnica in obdelava lesa za unikatno pohištvo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-joze-zupancic/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "29038452",
+      "sourceUrl": "https://www.pexels.com/photo/craftsman-working-in-marrakech-workshop-29038452/",
+      "photographer": "Salaheddine Es-sellak",
+      "photographerUrl": "https://www.pexels.com/@salaheddine-es-sellak-2011499912",
+      "searchQuery": "carpenter workshop woodcraft artisan traditional woodworking tools"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Končna cena je odvisna od izbire materialov, dimenzij in zahtevnosti izdelave pohištva.",
+    "disclaimer": "Cenik je informativen. Za natančen izračun in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinje po meri",
+        "description": "Izdelava in montaža kuhinje po vaših načrtih in merah",
+        "price": "od 2.500 €",
+        "unit": "projekt",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati in notranjo razporeditvijo",
+        "price": "od 800 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Pohištvo za spalnice",
+        "description": "Postelja in pripadajoči elementi",
+        "price": "od 900 €",
+        "unit": "set"
+      },
+      {
+        "name": "Opremljanje dnevnih sob",
+        "description": "TV regali in regali po meri",
+        "price": "od 600 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Leseni notranji elementi",
+        "description": "Unikatni detajli in manjši kosi pohištva",
+        "price": "od 150 €",
+        "unit": "kos"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Jože Zupančič s.p."
+  },
+  "metadata": {
+    "title": "Mizarstvo Jože Zupančič s.p. | Pohištvo po meri",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Novem mestu s širšo okolico. Kuhinje, vgradne omare in notranja oprema."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarska obrt Jože Zupančič",
+    "title": "Kakovostno izdelano pohištvo po meri za",
+    "titleHighlight": "vaš dom",
+    "description": "Unikatne mizarske rešitve in izdelava pohištva po meri za lastnike stanovanj in hiš v Novem mestu s širšo okolico.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost"
+      },
+      {
+        "value": "Individualno",
+        "label": "Individualno"
+      },
+      {
+        "value": "Po meri",
+        "label": "Po meri"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske storitve za vaš prostor",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za želje strank izdelujemo pohištvo po meri za vsak kotiček vašega doma.",
+    "items": [
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne in estetske kuhinje, prilagojene vašemu prostoru in kuharskim navadam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Izdelava vgradnih omar z drsnimi vrati za optimalen izkoristek prostora za shranjevanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pohištvo za spalnice",
+        "description": "Udobne postelje, nočne omarice in komode, ki v spalnico prinašajo mir in toplino.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Opremljanje dnevnih sob",
+        "description": "Dnevni moduli, mizice in regali, narejeni po meri vašega bivalnega prostora.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Leseni notranji elementi",
+        "description": "Unikatni leseni detajli in elementi, ki dopolnjujejo notranjo opremo vašega doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za unikatno pohištvo",
+    "description": "Z združevanjem tradicionalne obrti in posluhom za prostor ustvarjamo pohištvo, ki traja.",
+    "highlights": [
+      "Visoka kakovost izdelave",
+      "Individualni pristop k strankam",
+      "Prilagodljivost prostorskim zahtevam"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost izdelave",
+        "description": "Skrbno izbrani materiali in natančna obdelava zagotavljajo dolgo življenjsko dobo pohištva.",
+        "title": "Visoka kakovost izdelave"
+      },
+      {
+        "label": "Individualni pristop",
+        "description": "Prisluhnemo vašim željam in vam svetujemo pri izbiri najboljših rešitev za vaš dom.",
+        "title": "Individualni pristop"
+      },
+      {
+        "label": "Prostorska prilagodljivost",
+        "description": "Pohištvo popolnoma prilagodimo dimenzijam in značilnostim vašega prostora.",
+        "title": "Prostorska prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti izdelavo pohištva po meri? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 682 512",
+        "href": "tel:041682512",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Sevno 12a, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve glede pohištva...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Sevno 12a, 8000 Novo mesto, Slovenia",
+    "rights": "© 2025 Mizarstvo Jože Zupančič s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Jože Zupančič s.p.",
+    "address": "Sevno 12a, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 682 512"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

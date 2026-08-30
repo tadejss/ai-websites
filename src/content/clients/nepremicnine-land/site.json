@@ -1,0 +1,270 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "zbrendiraj",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nepremicnine-land/hero.avif",
+      "alt": "Notranjost sodobne nepremičninske pisarne v Postojni",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nepremicnine-land/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30004480",
+      "sourceUrl": "https://www.pexels.com/photo/elegant-professional-in-greenville-office-setting-30004480/",
+      "photographer": "Daniel & Hannah Snipes",
+      "photographerUrl": "https://www.pexels.com/@prolificpeople",
+      "searchQuery": "modern real estate agent office interior dark mood"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nepremicnine-land/services.avif",
+      "alt": "Strokovno nepremičninsko svetovanje in posredovanje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nepremicnine-land/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8837261",
+      "sourceUrl": "https://www.pexels.com/photo/a-group-of-women-having-conversation-inside-the-office-8837261/",
+      "photographer": "Yan Krukau",
+      "photographerUrl": "https://www.pexels.com/@yankrukov",
+      "searchQuery": "professional real estate consultation meeting modern desk"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled nepremičninskih storitev",
+    "description": "Transparentne in ugodne storitve za prodajalce in kupce v regiji.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Posredovanje pri prodaji",
+        "description": "Celotna storitev posredovanja pri prodaji nepremičnine",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Posredovanje pri nakupu",
+        "description": "Iskanje in strokovna podpora pri nakupu nepremičnine",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Strokovno svetovanje",
+        "description": "Posvet z nepremičninskim strokovnjakom",
+        "price": "od 50 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Organizacija in vodenje ogledov",
+        "description": "Strokovna izvedba ogledov nepremičnin",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "NEPREMIČNINE",
+    "highlight": "Land"
+  },
+  "metadata": {
+    "title": "NEPREMIČNINE Land d.o.o. | Nepremičninska agencija Postojna",
+    "description": "Zanesljive in strokovne nepremičninske storitve za prodajo in nakup nepremičnin v Postojni in okolici. Stopite v stik z nami."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Vaš zanesljiv nepremičninski partner v Postojni",
+    "title": "Zanesljive in strokovne",
+    "titleHighlight": "nepremičninske storitve",
+    "description": "Pomagamo vam pri nakupu in prodaji nepremičnin v Postojni in okolici. Zagotavljamo strokoven pristop, prilagodljivost in osebno posvečenost vsaki stranki.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Hitri odzivi",
+        "label": "Hitri odzivi"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Ugodna cena",
+        "label": "Ugodna cena"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše nepremičnine",
+    "description": "Specializirani smo za posredovanje pri prodaji in nakupu ter strokovno svetovanje na območju Postojne in okolice.",
+    "items": [
+      {
+        "title": "Posredovanje pri prodaji nepremičnin",
+        "description": "Celostna podpora in vodenje postopka prodaje vaše nepremičnine od začetka do konca.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Posredovanje pri nakupu nepremičnin",
+        "description": "Pomagamo vam najti dom ali naložbo, ki ustreza vašim željam in potrebam.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Strokovno svetovanje pri nepremičninah",
+        "description": "Strokovni nasveti in pomoč pri sprejemanju pomembnih odločitev na trgu nepremičnin.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Organizacija ogledov nepremičnin",
+        "description": "Prilagodljivo usklajevanje in vodenje ogledov nepremičnin ob ustreznem času za vas.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše nepremičninske korake",
+    "description": "Z odzivnostjo, prijaznostjo in strokovnim delom poskrbimo, da je pot do vaše nove nepremičnine ali uspešne prodaje preprosta.",
+    "highlights": [
+      "Izjemno strokoven, hiter in koristen odziv",
+      "Prilagodljivost pri dogovarjanju za oglede",
+      "Prijazno osebje, ki se popolnoma posveti strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Odzivnost in strokovnost",
+        "description": "Zagotavljamo hiter in koristen odziv ter strokovno vodenje vseh postopkov.",
+        "title": "Odzivnost in strokovnost"
+      },
+      {
+        "label": "Prilagodljivost ogledov",
+        "description": "Prilagajamo se vašemu urniku pri dogovarjanju za oglede nepremičnin.",
+        "title": "Prilagodljivost ogledov"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prijazno osebje prisluhne vašim željam in se vam posveti.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanja glede nakupa ali prodaje nepremičnine? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Novi trg 9, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 833 000",
+        "href": "tel:051833000",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Čet: 9:00–12:00 in 13:00–16:00, Pet: 9:00–12:00 in 13:00–15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali sporočilo...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Novi trg 9, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "NEPREMIČNINE Land",
+    "address": "Novi trg 9, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "051 833 000"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-dejan-mavsar/hero.avif",
+      "alt": "Slikopleskar pri delu v svetlem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-dejan-mavsar/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493655",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-a-wall-5493655/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "professional painter painting bright interior wall natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-dejan-mavsar/services.avif",
+      "alt": "Slikopleskarsko orodje in oprema za beljenje sten",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-dejan-mavsar/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "994164",
+      "sourceUrl": "https://www.pexels.com/photo/person-holding-paint-roller-while-painting-the-wall-994164/",
+      "photographer": "Stephanie  Ho",
+      "photographerUrl": "https://www.pexels.com/@muffinsaurs",
+      "searchQuery": "painting tools roller paint can neutral interior wall"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naša pretekla dela",
+    "description": "Oglejte si primere naših slikopleskarskih in prenovitvenih del.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostejših slikopleskarskih del in storitev.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje sten in stropov",
+        "description": "Dvokratno beljenje z belo barvo",
+        "price": "od 2,50 €",
+        "unit": "/ m²",
+        "featured": true
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Pregled, zaščita in sanacija prizadetih površin",
+        "price": "od 20,00 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Pleskanje stavbnega pohištva",
+        "description": "Pleskanje vrat ali okenskih okvirjev",
+        "price": "od 35,00 €",
+        "unit": "/ kos"
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Priprava podlage in strokovno lepljenje tapet",
+        "price": "od 10,00 €",
+        "unit": "/ m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Dejan Mavsar s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Dejan Mavsar s.p. | Kakovostne slikopleskarske storitve",
+    "description": "Kakovostne slikopleskarske storitve za vaš dom in poslovni prostor v Novem mestu z okolico. Notranje beljenje, sanacija vlage, dekorativna obdelava sten."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Lokalni mojster za slikopleskarstvo",
+    "title": "Kakovostne slikopleskarske storitve",
+    "titleHighlight": "za vaš dom in prostor",
+    "description": "Zanesljive slikopleskarske rešitve za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo prenovo ali osvežitev interierja v Novem mestu z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Lokalni izvajalec",
+        "label": "Lokalni izvajalec"
+      },
+      {
+        "value": "Kakovostni materiali",
+        "label": "Kakovostni materiali"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Strokovna izvedba",
+        "label": "Strokovna izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše slikopleskarske storitve",
+    "description": "Strokovno izvedena dela z ustreznimi materiali za osvežitev in zaščito vaših prostorov.",
+    "items": [
+      {
+        "title": "Notranje beljenje sten in stropov",
+        "description": "Osvežitev in beljenje notranjih prostorov za čist in urejen videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pleskanje stavbnega pohištva",
+        "description": "Natančno pleskanje vrat, oken in drugega stavbnega pohištva.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Dekorativna obdelava sten",
+        "description": "Posebne obdelave in tehnike za edinstven videz vaših sten.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Učinkovita odprava vlage in preprečevanje nastajanja plesni.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Strokovno polaganje tapet za popestritev in stilsko dovršenost prostora.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za prenovo vaših prostorov",
+    "description": "Delujemo z mislijo na kakovost, natančnost in zadovoljstvo naših strank v Novem mestu z okolico.",
+    "highlights": [
+      "Lokalni izvajalec z izkušnjami na področju slikopleskarstva",
+      "Strokovno izvedena dela z ustreznimi materiali",
+      "Prilagodljivost željam strank"
+    ],
+    "benefits": [
+      {
+        "label": "Lokalna izkušnja",
+        "description": "Delujemo na območju Novega mesta z okolico ter nudimo hiter odziv.",
+        "title": "Lokalna izkušnja"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Pri delu uporabljamo ustrezne materiale za dolgotrajne in lepe rezultate.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku ter potrebam.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete prenovo ali osvežitev prostorov? Pokličite nas ali nam pošljite povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ragovo 10, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 573 510",
+        "href": "tel:031573510",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potreben obseg dela...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ragovo 10, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Dejan Mavsar s.p.",
+    "address": "Ragovo 10, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "031 573 510"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "appearance": "cleaning",
+  "theme": {
+    "paletteId": "warm-earth",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mavitas-cistilni-servis/hero.avif",
+      "alt": "Strokoven čistilni servis v svetli pisarni",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mavitas-cistilni-servis/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6205765",
+      "sourceUrl": "https://www.pexels.com/photo/busy-woman-cleaning-wooden-counter-in-cafe-6205765/",
+      "photographer": "Tim Douglas",
+      "photographerUrl": "https://www.pexels.com/@tim-douglas",
+      "searchQuery": "professional cleaning service modern bright office interior warm lighting"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mavitas-cistilni-servis/services.avif",
+      "alt": "Globinsko čiščenje in urejen bivalni prostor",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mavitas-cistilni-servis/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32791637",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32791637/",
+      "photographer": "Pușcaș Adryan",
+      "photographerUrl": "https://www.pexels.com/@pu-ca-adryan-163345030",
+      "searchQuery": "deep cleaning service sparkling clean modern living room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naše delo",
+    "description": "Utrinki iz očiščenih prostorov in naših storitev.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega ter zahtevnosti dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur in preprog",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Generalno čiščenje poslovnih prostorov",
+        "description": "Temeljito čiščenje pisarn in poslovnih površin",
+        "price": "od 25 € / ura"
+      },
+      {
+        "name": "Čiščenje stanovanjskih objektov",
+        "description": "Redno ali občasno čiščenje stanovanj in hiš",
+        "price": "od 20 € / ura"
+      },
+      {
+        "name": "Pranje steklenih površin",
+        "description": "Čiščenje oken in steklenih fasad",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Vzdrževalno čiščenje",
+        "description": "Redni obiski in vzdrževanje čistoče",
+        "price": "od 20 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mavitas",
+    "highlight": "čistilni servis"
+  },
+  "metadata": {
+    "title": "Mavitas | Čistilni servis Postojna in okolica",
+    "description": "Zanesljivo in kakovostno čiščenje za vaš dom in poslovne prostore v Postojni in okolici. Pokličite nas za globinsko, generalno in vzdrževalno čiščenje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo in kakovostno čiščenje za vaš",
+    "titleHighlight": "dom in poslovne prostore",
+    "description": "Strokovne čistilne storitve za lastnike stanovanj, hiš in poslovnih prostorov v Postojni in okolici. Prilagajamo se vašim željam in potrebam.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Po vaših merah",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Visoka raven čistoče",
+        "title": "Kakovost"
+      },
+      {
+        "value": "Postojna",
+        "label": "Lokalni ponudnik",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja",
+    "description": "Poskrbimo za brezhibno čistočo vaših stanovanjskih in poslovnih objektov v Postojni in okolici.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje oblazinjenega pohištva in površin.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Generalno čiščenje poslovnih prostorov",
+        "description": "Celovito čiščenje pisarn in poslovnih objektov za urejeno delovno okolje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje stanovanjskih objektov",
+        "description": "Redno ali občasno čiščenje hiš in stanovanj, prilagojeno vašemu urniku.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje steklenih površin",
+        "description": "Profesionalno čiščenje oken in steklenih fasad za sijoč pogled.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževalno čiščenje",
+        "description": "Redno vzdrževanje čistoče v vaših prostorih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Mavitas",
+    "title": "Prednosti sodelovanja z nami",
+    "description": "Z združevanjem strokovnosti, zanesljivosti in prilagodljivosti zagotavljamo vrhunske rezultate.",
+    "highlights": [
+      "Zanesljiva in strokovna izvedba storitev",
+      "Prilagodljivost željam in potrebam strank",
+      "Visoka raven čistoče za dom in podjetja"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Zanesljivo opravljeno delo z občutkom za detajle.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Delujemo v skladu z vašimi željami in urnikom.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Visoka čistoča",
+        "description": "Zagotavljamo visoko raven čistoče za dom in podjetja.",
+        "title": "Visoka čistoča"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za ponudbo ali vprašanja glede čiščenja.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 436 050",
+        "href": "tel:051436050",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Epic, Kazarje 10, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali željo glede čiščenja...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Epic, Kazarje 10, 6230 Postojna, Slovenia",
+    "rights": "© Mavitas, Vid Šalamon s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mavitas čistilni servis",
+    "address": "Epic, Kazarje 10, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "051 436 050"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

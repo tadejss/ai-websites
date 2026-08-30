@@ -1,0 +1,274 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "outfit-bitter"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vinko-cizerle/hero.avif",
+      "alt": "Delavnica za popravilo čevljev in izdelavo ključev",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vinko-cizerle/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28704177",
+      "sourceUrl": "https://www.pexels.com/photo/skilled-cobbler-repairing-shoe-in-workshop-28704177/",
+      "photographer": "merve kıratlı",
+      "photographerUrl": "https://www.pexels.com/@moimerrve",
+      "searchQuery": "traditional shoe repair workshop dark moody artisan"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vinko-cizerle/services.avif",
+      "alt": "Orodja in stroji za izdelavo ključev ter popravila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vinko-cizerle/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38028966",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-industrial-metal-pipe-fitting-38028966/",
+      "photographer": "benedicto 13",
+      "photographerUrl": "https://www.pexels.com/@benedicto-13-2150270339",
+      "searchQuery": "metal keys duplication machinery workshop industrial close up"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled pogostih storitev popravila čevljev in izdelave ključev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točne informacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Izdelava ključa (navadni)",
+        "description": "Hitra izdelava standardnih hišnih ključev.",
+        "price": "od 5 €",
+        "featured": true
+      },
+      {
+        "name": "Popravilo pete na čevljih",
+        "description": "Menjava obnošenih pet in obnova podplatov.",
+        "price": "od 10 €"
+      },
+      {
+        "name": "Manjša šivanja in popravila obutve",
+        "description": "Sanacija raztrganin in manjša usnjarska dela.",
+        "price": "od 8 €"
+      },
+      {
+        "name": "Kovičenje in splošna manjša dela",
+        "description": "Popravila torb, jermenov in drugih izdelkov.",
+        "price": "od 6 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vinko Cizerle",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Vinko Cizerle s.p. | Čevljarstvo in ključavničarstvo v Krškem",
+    "description": "Zanesljive storitve popravila čevljev in izdelave ključev v Krškem in Brežicah s širšo okolico. Kakovostno, hitro in strokovno."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster",
+    "title": "Kakovostno popravilo čevljev in izdelava ključev",
+    "titleHighlight": "v Krškem",
+    "description": "Edinstvena ponudba čevljarskih in ključavničarskih storitev za lokalne prebivalce regije Krško, Brežice in širše okolice.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Edinstvena ponudba",
+        "label": "Edinstvena ponudba",
+        "title": "Edinstvena ponudba"
+      },
+      {
+        "value": "Hitra izvedba",
+        "label": "Hitra izvedba",
+        "title": "Hitra izvedba"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Dostopne cene",
+        "label": "Dostopne cene",
+        "title": "Dostopne cene"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Zanesljive mojstrske storitve za vas",
+    "description": "Specializirani smo za popravilo obutve, izdelavo ključev ter manjša popravila v Krškem in Brežicah.",
+    "items": [
+      {
+        "title": "Popravilo čevljev",
+        "description": "Celovita popravila in obnova vaše obutve z dolgoletnimi izkušnjami in skrbnostjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Izdelava ključev",
+        "description": "Hitra in natančna izdelava različnih vrst ključev za vaša vrata in objekte.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Kovičenje in manjša popravila",
+        "description": "Natančna manjša popravila in kovičenje za različne vsakdanje predmete.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje pri izbiri rešitev",
+        "description": "Prijazen in strokoven nasvet ter pomoč pri izbiri najboljše rešitve za vaše potrebe.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in osebni pristop",
+    "description": "Kot edini specializirani ponudnik čevljarskih storitev na območju Krškega in Brežic zagotavljamo visoko kakovost.",
+    "highlights": [
+      "Edini specializirani ponudnik čevljarskih storitev v širši okolici",
+      "Hitra izvedba in visoka kakovost storitev",
+      "Prijazen ter strokoven pristop k vsaki stranki",
+      "Dostopne cene in zanesljive rešitve za vsakogar"
+    ],
+    "benefits": [
+      {
+        "label": "Specializirana ponudba",
+        "description": "Smo edini specializirani ponudnik čevljarskih storitev na območju Krškega in Brežic.",
+        "title": "Specializirana ponudba"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Zagotavljamo visoko kakovost in hitro izvedbo vseh naših storitev.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Prijazen pristop",
+        "description": "Strankam se posvetimo s strokovnim in prijaznim znanjem.",
+        "title": "Prijazen pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas na Kolodvorski ulici v Krškem ali nas pokličite za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska ulica 1, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 416 933",
+        "href": "tel:041416933",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–15:30, Sob: 7:00–12:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali opis težave...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska ulica 1, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vinko Cizerle s.p.",
+    "address": "Kolodvorska ulica 1, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "041 416 933"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

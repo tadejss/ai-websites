@@ -1,0 +1,27 @@
+{
+  "companyName": "Švedra",
+  "industry": "Storitve izdelave ključev",
+  "tagline": "Hitra in zanesljiva izdelava ključev ter storitve za vas",
+  "services": [
+    "Izdelava ključev",
+    "Kopiranje ključev",
+    "Hitre ključavničarske storitve",
+    "Svetovanje in pomoč"
+  ],
+  "phone": "041 403 594",
+  "email": "",
+  "address": "Ljubljanska cesta 22, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Tuesday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Wednesday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Thursday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Friday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Hika in ekspresna izdelava ključev",
+    "Dostopne in normalne cene",
+    "Prijazna in zanesljiva storitev"
+  ],
+  "targetCustomers": "Lokalni prebivalci in obiskovalci Postojne",
+  "serviceArea": "Postojna in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven in hiter",
+  "brandStyle": "zanesljiv lokalni ponudnik",
+  "competitors": "Lokalne ključavničarske delavnice",
+  "callToAction": "Pokličite nas"
+}

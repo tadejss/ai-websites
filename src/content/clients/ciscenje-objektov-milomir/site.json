@@ -1,0 +1,283 @@
+{
+  "appearance": "cleaning",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-objektov-milomir/hero.avif",
+      "alt": "Strokovno čiščenje poslovnih prostorov v Novem mestu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-objektov-milomir/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8273515",
+      "sourceUrl": "https://www.pexels.com/photo/man-wearing-uniform-cleaning-the-floor-8273515/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional commercial cleaning services dark modern interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-objektov-milomir/services.avif",
+      "alt": "Celovite storitve čiščenja in vzdrževanja objektov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-objektov-milomir/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32216281",
+      "sourceUrl": "https://www.pexels.com/photo/modern-office-space-with-minimalist-design-32216281/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean office interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregledne cene storitev",
+    "description": "Informativne cene naših storitev čiščenja in vzdrževanja objektov.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje poslovnih prostorov",
+        "description": "Ura dela ali mesečni pavšal",
+        "price": "od 20 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur in preprog",
+        "price": "od 40 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Čiščenje steklenih površin",
+        "description": "Pranje oken in steklenih fasad",
+        "price": "od 25 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Generalno čiščenje po obnovi",
+        "description": "Temeljito čiščenje po gradbenih delih",
+        "price": "od 30 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čiščenje objektov",
+    "highlight": "Milomir Dević s.p."
+  },
+  "metadata": {
+    "title": "Čiščenje objektov Milomir Dević s.p. | Čiščenje v Novem mestu",
+    "description": "Zanesljivo in strokovno čiščenje objektov za lastnike stanovanj, hiš in poslovnih prostorov v Novem mestu z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovno čiščenje",
+    "title": "Zanesljivo čiščenje za vaš",
+    "titleHighlight": "čist in urejen prostor",
+    "description": "Zanesljive in strokovne storitve čiščenja objektov za lastnike stanovanj, hiš, poslovnih prostorov in upravnike objektov v Novem mestu z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Kakovostna sredstva",
+        "label": "Kakovostna sredstva"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Novo mesto"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Celovite storitve čiščenja",
+    "description": "Poskrbimo za čistočo vaših stanovanjskih in poslovnih objektov v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin in oblazinjenega pohištva.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje poslovnih prostorov",
+        "description": "Redno vzdrževanje čistoče v vaših pisarnah in poslovnih objektih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje steklenih površin",
+        "description": "Profesionalno čiščenje oken in ostalih steklenih površin za bleščeč pogled.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Generalno čiščenje po obnovi",
+        "description": "Temeljito čiščenje prostorov po zaključenih gradbenih ali prenovitvenih delih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje čistoče objektov",
+        "description": "Celovito in redno vzdrževanje čistoče celotnih objektov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za čistočo vaših prostorov",
+    "description": "Z združevanjem strokovnosti, prave opreme in prilagodljivosti poskrbimo za vaše popolno zadovoljstvo.",
+    "highlights": [
+      "Zanesljiva in točna izvedba storitev",
+      "Prilagodljivost potrebam strank",
+      "Kakovostno čiščenje z ustreznimi sredstvi"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljivost",
+        "description": "Zagotavljamo točno in zanesljivo izvedbo vseh dogovorjenih storitev.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagodimo se vašemu urniku in specifičnim potrebam vašega objekta.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Kakovost",
+        "description": "Uporaba ustreznih in preverjenih sredstev za vrhunske rezultate čiščenja.",
+        "title": "Kakovost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete zanesljivo čiščenje? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 750 854",
+        "href": "tel:040750854",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica Slavka Gruma 104, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali željo glede čiščenja...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ulica Slavka Gruma 104, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čiščenje objektov Milomir Dević s.p.",
+    "address": "Ulica Slavka Gruma 104, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 750 854"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

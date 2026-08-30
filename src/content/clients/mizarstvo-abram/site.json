@@ -1,0 +1,283 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-abram/hero.avif",
+      "alt": "Leseno pohištvo po meri v sodobnem interierju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-abram/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4825736",
+      "sourceUrl": "https://www.pexels.com/photo/table-with-bottle-of-alcohol-and-oranges-4825736/",
+      "photographer": "Rachel Claire",
+      "photographerUrl": "https://www.pexels.com/@rachel-claire",
+      "searchQuery": "custom wooden kitchen interior warm natural light dark mood"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-abram/services.avif",
+      "alt": "Mizarska delavnica in izdelava pohištva",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-abram/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "27155225",
+      "sourceUrl": "https://www.pexels.com/photo/senior-man-sitting-by-table-with-tools-27155225/",
+      "photographer": "Shuttercraftsman",
+      "photographerUrl": "https://www.pexels.com/@shuttercraftsman-240571253",
+      "searchQuery": "carpenter workshop craft wood details dark moody lighting"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Ker je vsak kos pohištva unikat, so cene informativnega značaja in odvisne od izbire materialov ter zahtevnosti.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinje po meri",
+        "description": "Izdelava in montaža kuhinje po vaših merah.",
+        "price": "od 1.500 €",
+        "unit": "projekt",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati in notranjo opremo.",
+        "price": "od 600 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Pohištvo za spalnice",
+        "description": "Postelje, nočne omarice in garderobni elementi.",
+        "price": "od 500 €",
+        "unit": "garnitura"
+      },
+      {
+        "name": "Notranja vrata",
+        "description": "Lesena notranja vrata z montažo in podboji.",
+        "price": "od 250 €",
+        "unit": "kos"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Abram"
+  },
+  "metadata": {
+    "title": "Mizarstvo Abram | Pohištvo po meri Postojna",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Postojni in širši regiji. Kuhinje, vgradne omare in notranja vrata."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarstvo Abram",
+    "title": "Kakovostno izdelano pohištvo",
+    "titleHighlight": "po meri za vaš dom",
+    "description": "Celovite mizarske rešitve in unikatno pohištvo po meri za lastnike stanovanj in hiš v Postojni z okolico ter širši regiji.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Celovite rešitve",
+        "label": "Celovite rešitve"
+      },
+      {
+        "value": "Po meri",
+        "label": "Po meri"
+      },
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Unikatno pohištvo po meri",
+    "description": "Izdelujemo kakovostno pohištvo, prilagojeno vašemu prostoru in željam, v Postojni in okolici.",
+    "items": [
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne in estetsko dovršene kuhinje, prilagojene vašemu bivalnemu prostoru.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Izkoristite vsak kotiček z vgradnimi omare po meri vaših prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pohištvo za spalnice",
+        "description": "Ustvarite mirno in prijetno spalno okolje s pohištvom po naročilu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Opremljanje dnevnih sob",
+        "description": "Dnevne sobe, ki združujejo domačnost, eleganco in uporabnost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Notranja vrata",
+        "description": "Kakovostna notranja vrata, ki se ujemajo z izgledom vašega doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše mizarske želje",
+    "description": "Združujemo domače mizarsko znanje, kakovostne materiale in posluh za vaše ideje.",
+    "highlights": [
+      "Celovite rešitve od idejne zasnove do končne izdelave",
+      "Visoka kakovost materialov in natančna izdelava",
+      "Popolna prilagodljivost vašim željam in prostoru"
+    ],
+    "benefits": [
+      {
+        "label": "Celovite rešitve",
+        "description": "Celovite rešitve in izdelava po meri za vaš dom.",
+        "title": "Celovite rešitve"
+      },
+      {
+        "label": "Visoka kakovost",
+        "description": "Uporaba preverjenih materialov in visoka kakovost izdelave.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagodljivost vašim željam in specifikacijam prostora.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Hrašče 4h, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 339 269",
+        "href": "tel:031339269",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve glede pohištva...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Hrašče 4h, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Abram",
+    "address": "Hrašče 4h, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "031 339 269"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

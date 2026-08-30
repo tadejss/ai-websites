@@ -1,0 +1,289 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "warm-earth",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-fasaderstvo-slika/hero.avif",
+      "alt": "Slikopleskar pri delu v svetlem in toplem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-fasaderstvo-slika/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493655",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-a-wall-5493655/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "professional painter painting wall warm interior light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-fasaderstvo-slika/services.avif",
+      "alt": "Obnovljena fasada stanovanjske hiše v toplih tonih",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-fasaderstvo-slika/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35771549",
+      "sourceUrl": "https://www.pexels.com/photo/elegant-european-building-with-autumn-foliage-35771549/",
+      "photographer": "MrGajowy3 Teodor",
+      "photographerUrl": "https://www.pexels.com/@mrgajowy3-teodor-2158318376",
+      "searchQuery": "freshly painted house facade warm earth tones"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za naše slikopleskarske in fasaderske storitve.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje pleskanje sten",
+        "description": "Pleskanje z dvoslojnim nanosm v belih ali svetlih odtenkih",
+        "price": "od 3,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Beljenje stropov",
+        "description": "Priprava površine in beljenje stropov",
+        "price": "od 3,50 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Barvanje napuščev",
+        "description": "Zaščitni premaz in barvanje lesenih delov",
+        "price": "od 8,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Izdelava fasade z izolacijo",
+        "price": "od 45,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Obnova fasad",
+        "description": "Sanacija in pleskanje obstoječe fasade",
+        "price": "od 20,00 €",
+        "unit": "na m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slika",
+    "highlight": "David Župevec s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo in fasaderstvo David Župevec s.p.",
+    "description": "Kakovostno slikopleskarstvo in fasaderstvo za vaš dom v Novem mestu z okolico. Zanesljiva izvedba, svetovanje in kvalitetni materiali."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster za vaš dom",
+    "title": "Kakovostno slikopleskarstvo in fasaderstvo za vaš",
+    "titleHighlight": "dom",
+    "description": "Strokovne slikopleskarske in fasaderske storitve za lastnike stanovanj, hiš in poslovnih prostorov v Novem mestu z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Kvalitetni",
+        "label": "Materiali"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Poskrbimo za osvežitev notranjih prostorov in zaščito ter lep videz vaše fasade v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Notranje pleskanje sten",
+        "description": "Osvežite videz svojih sten s kakovostnimi nanosi barv za prijetnejši bivalni prostor.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Izvedba fasaderskih del za toplotno izolacijo in lepši zunanji izgled vašega objekta.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Beljenje stropov",
+        "description": "Natančno beljenje stropov za svetle in urejene prostore.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje napuščev",
+        "description": "Zaščita in barvanje lesenih ter drugih napuščev pred vremenskimi vplivi.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Obnova fasad",
+        "description": "Celovita obnova obstoječih fasad za podaljšanje njihove življenjske dobe.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden mojster z osebnim pristopom",
+    "description": "Zavedamo se, kako pomembna je urejenost vašega doma ali poslovnega prostora, zato se vsakemu projektu posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Strokovno svetovanje pri izbiri barv",
+      "Uporaba kvalitetnih materialov"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za natančno opravljeno delo.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Pomagamo vam pri izbiri ustreznih barv in materialov za vaš prostor.",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "label": "Kvalitetni materiali",
+        "description": "Uporabljamo preverjene materiale, ki zagotavljajo dolgotrajne rezultate.",
+        "title": "Kvalitetni materiali"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za prenovo? Pokličite nas ali izpolnite kontaktni obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 751 342",
+        "href": "tel:040751342",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Srebrniče 21, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potreben obseg dela...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Srebrniče 21, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slika David Župevec s.p.",
+    "address": "Srebrniče 21, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 751 342"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "appearance": "cleaning",
+  "theme": {
+    "paletteId": "olive-gold",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mgs-cistilni-servis/hero.avif",
+      "alt": "Profesionalno čiščenje poslovnih prostorov z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mgs-cistilni-servis/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "36497528",
+      "sourceUrl": "https://www.pexels.com/photo/modern-milano-office-interior-with-natural-light-36497528/",
+      "photographer": "Earth Photart",
+      "photographerUrl": "https://www.pexels.com/@earth-photart-2149767641",
+      "searchQuery": "professional commercial office cleaning service interior bright daylight"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mgs-cistilni-servis/services.avif",
+      "alt": "Globinsko čiščenje in urejen svetel prostor",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mgs-cistilni-servis/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32791637",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32791637/",
+      "photographer": "Pușcaș Adryan",
+      "photographerUrl": "https://www.pexels.com/@pu-ca-adryan-163345030",
+      "searchQuery": "deep cleaning service sparkling clean modern living room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled naših osnovnih čistilnih storitev in okvirnih cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Čiščenje stanovanjskih objektov",
+        "description": "Redno čiščenje stanovanj in hiš",
+        "price": "od 25 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Vzdrževanje čistoče v pisarnah",
+        "price": "od 30 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje pohištwa in preprog",
+        "price": "od 50 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Pranje oken",
+        "description": "Čiščenje steklenih površin in okenskih okvirjev",
+        "price": "od 35 €",
+        "unit": "objekt"
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Celostno temeljito čiščenje prostorov",
+        "price": "od 120 €",
+        "unit": "storitev"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mgs",
+    "highlight": "čistilni servis"
+  },
+  "metadata": {
+    "title": "Mgs čistilni servis | Čiščenje v Postojni in okolici",
+    "description": "Zanesljivo in profesionalno čiščenje za vaš dom in pisarno v Postojni in okolici. Nudimo globinsko čiščenje, pranje oken ter čiščenje stanovanj in poslovnih prostorov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo in profesionalno čiščenje za vaš",
+    "titleHighlight": "dom in pisarno",
+    "description": "Poskrbite za popolno čistočo vaših stanovanjskih in poslovnih prostorov v Postojni z okolico. Kakovostne in prilagodljivost strankam na enem mestu.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost",
+        "title": "Strokovnost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite čistilne storitve za vas",
+    "description": "Izvajamo profesionalno čiščenje za lastnike stanovanj, hiš in poslovnih prostorov v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje stanovanjskih objektov",
+        "description": "Redno ali občasno čiščenje stanovanj in hiš, prilagojeno vašim željam.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Skrb za čistočo pisarn in poslovnih objektov za urejeno delovno okolje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje oken",
+        "description": "Natančno pranje oken in steklenih površin za bleščeč pogled.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Generalno čiščenje",
+        "description": "Temeljito generalno čiščenje prostorov ob posebnih priložnostih ali selitvah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Mgs",
+    "title": "Zanesljiv partner za čistočo vaših prostorov",
+    "description": "Z našim strokovnim in prilagodljivim pristopom poskrbimo, da so vaši prostori vedno čisti in urejeni.",
+    "highlights": [
+      "Visoka kakovost opravljenih storitev",
+      "Zanesljivost in strokovnost pri delu",
+      "Visoka prilagodljivost potrebam strank"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Zagotavljamo vrhunske rezultate in čistočo, ki jo opazite.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Zanesljivost in strokovnost",
+        "description": "Delo opravimo strokovno, skrbno in vedno v dogovorjenih rokovih.",
+        "title": "Zanesljivost in strokovnost"
+      },
+      {
+        "label": "Prilagodljivost strankam",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku.",
+        "title": "Prilagodljivost strankam"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti čiščenje? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Zeleni biser 11, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 891 674",
+        "href": "tel:031891674",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali željo glede čiščenja...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Zeleni biser 11, 6230 Postojna, Slovenia",
+    "rights": "© 2025 Mgs čistilni servis, Mirela Savić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mgs čistilni servis",
+    "address": "Zeleni biser 11, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "031 891 674"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

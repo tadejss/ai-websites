@@ -1,0 +1,28 @@
+{
+  "companyName": "NEPREMIČNINE Land d.o.o.",
+  "industry": "Nepremičninska agencija",
+  "tagline": "Zanesljive in strokovne nepremičninske storitve za vaš dom",
+  "services": [
+    "Posredovanje pri prodaji nepremičnin",
+    "Posredovanje pri nakupu nepremičnin",
+    "Strokovno svetovanje pri nepremičninah",
+    "Organizacija ogledov nepremičnin"
+  ],
+  "phone": "051 833 000",
+  "email": "",
+  "address": "Novi trg 9, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 12:00 PM, 1:00 – 4:00 PM · Tuesday: 9:00 AM – 12:00 PM, 1:00 – 4:00 PM · Wednesday: 9:00 AM – 12:00 PM, 1:00 – 4:00 PM · Thursday: 9:00 AM – 12:00 PM, 1:00 – 4:00 PM · Friday: 9:00 AM – 12:00 PM, 1:00 – 3:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno strokoven, hiter in koristen odziv",
+    "Prilagodljivost pri dogovarjanju za oglede",
+    "Prijazno osebje, ki se posveti strankam",
+    "Več storitev za ugodno ceno glede na konkurenco"
+  ],
+  "targetCustomers": "Kupci in prodajalci nepremičnin",
+  "serviceArea": "Postojna in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv nepremičninski partner",
+  "competitors": "Lokalne nepremičninske agencije",
+  "callToAction": "Stopite v stik"
+}

@@ -1,0 +1,278 @@
+{
+  "appearance": "cleaning",
+  "theme": {
+    "paletteId": "steel-blue",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dina-cistilni-servis/hero.avif",
+      "alt": "Profesionalno čiščenje pisarniških prostorov v Novem mestu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dina-cistilni-servis/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "27441065",
+      "sourceUrl": "https://www.pexels.com/photo/pattern-blue-5-27441065/",
+      "photographer": "Dibakar Roy",
+      "photographerUrl": "https://www.pexels.com/@dibakar-roy-2432543",
+      "searchQuery": "professional cleaning service modern office interior steel blue"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dina-cistilni-servis/services.avif",
+      "alt": "Globinsko in redno čiščenje stanovanj ter poslovnih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dina-cistilni-servis/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32791637",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32791637/",
+      "photographer": "Pușcaș Adryan",
+      "photographerUrl": "https://www.pexels.com/@pu-ca-adryan-163345030",
+      "searchQuery": "deep cleaning service sparkling clean living room interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled orientacijskih cen za naše čistilne storitve.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in osebni ogled nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje stanovanj",
+        "description": "Ura čiščenja ali osnovni paket",
+        "price": "od 20 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Čiščenje sedežne garniture ali preproge",
+        "price": "od 50 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Redno vzdrževanje pisarn",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnega objekta",
+        "price": "od 120 €",
+        "unit": "po ogledu"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čistilni servis",
+    "highlight": "Dina"
+  },
+  "metadata": {
+    "title": "Čistilni servis Dina | Zanesljive čistilne storitve v Novem mestu",
+    "description": "Zanesljive in profesionalne čistilne storitve za stanovanja in poslovne prostore v Novem mestu z okolico. Pokličite nas za globinsko, redno ali generalno čiščenje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljive in profesionalne",
+    "titleHighlight": "čistilne storitve",
+    "description": "Poskrbimo za čistočo vaših stanovanj in poslovnih prostorov v Novem mestu z okolico. Zagotavljamo prilagodljivost in osebni pristop.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Zanesljiva izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite čistilne storitve za vaše prostore",
+    "description": "Izvajamo strokovno čiščenje za lastnike stanovanj, stanovalce in podjetja v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje stanovanj",
+        "description": "Redno vzdrževanje čistoče vašega doma po vaših željah in urniku.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Profesionalno čiščenje pisarn in poslovnih objektov za urejen delovni vsakdan.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Generalno čiščenje",
+        "description": "Celovito generalno čiščenje prostorov ob posebnih priložnostih ali selitvah.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega čistilnega servisa",
+    "description": "Zavedamo se pomena čistoče in urejenosti, zato se vedno prilagodimo vašim potrebam.",
+    "highlights": [
+      "Zanesljiva in kakovostna izvedba storitev",
+      "Osebni ogled in ocena stanovanja",
+      "Prilagodljivost strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Zagotavljamo dosledno in kakovostno opravljeno čiščenje vsakič.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Osebni ogled",
+        "description": "Opravimo osebni ogled in oceno stanovanja pred pričetkom dela.",
+        "title": "Osebni ogled"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali nam pošljite sporočilo za dogovor o ogledu in čiščenju.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 277 546",
+        "href": "tel:040277546",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Šentjernejska cesta 51, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, kakšno čiščenje potrebujete...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Šentjernejska cesta 51, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilni servis Dina",
+    "address": "Šentjernejska cesta 51, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 277 546"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

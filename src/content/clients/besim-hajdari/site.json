@@ -1,0 +1,287 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/besim-hajdari/hero.avif",
+      "alt": "Sočen burger s krompirčkom v restavraciji",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/besim-hajdari/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "15082384",
+      "sourceUrl": "https://www.pexels.com/photo/burger-with-french-fries-15082384/",
+      "photographer": "Marilena Baltzaki",
+      "photographerUrl": "https://www.pexels.com/@marilena-baltzaki-346260",
+      "searchQuery": "gourmet burger and fries dark moody restaurant"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/besim-hajdari/services.avif",
+      "alt": "Okusne jedi z žara in hitra prehrana",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/besim-hajdari/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16423838",
+      "sourceUrl": "https://www.pexels.com/photo/roasted-chicken-with-fries-and-salad-16423838/",
+      "photographer": "ash  iraq",
+      "photographerUrl": "https://www.pexels.com/@superash93",
+      "searchQuery": "grilled meat skewers and fast food dishes"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okusni obroki po dostopnih cenah",
+    "description": "Pregled priljubljenih jedi iz naše ponudbe.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kakovostni burger",
+        "description": "Sočen hišni burger s svežimi sestavinami",
+        "price": "od 6,50 €",
+        "featured": true
+      },
+      {
+        "name": "Mesne jedi z žara",
+        "description": "Jed z žara postrežena s prilogo",
+        "price": "od 8,50 €"
+      },
+      {
+        "name": "Kebab",
+        "description": "Klasični ali v lepinji z izbranimi omakami",
+        "price": "od 5,50 €"
+      },
+      {
+        "name": "Vegetarijanska jed",
+        "description": "Brezmesna izbira polna okusov",
+        "price": "od 6,00 €"
+      },
+      {
+        "name": "Osvežilna pijača",
+        "description": "Izbira hladnih pijač po vaši izbiri",
+        "price": "od 2,20 €"
+      },
+      {
+        "name": "Kava",
+        "description": "Dišeča kava za dober začetek dneva",
+        "price": "od 1,80 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "BESIM",
+    "highlight": "HAJDARI"
+  },
+  "metadata": {
+    "title": "Besim Hajdari | Restavracija in hitra prehrana Postojna",
+    "description": "Okusna, hitra in cenovno dostopna hrana v Postojni. Obiščite nas blizu avtobusne postaje in Postojnske jame za kakovostne burgerje, jedi z žara in kebab."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Ponudba"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Obiščite nas"
+  },
+  "hero": {
+    "badge": "Lokalna okrepčevalnica v Postojni",
+    "title": "Okusna, hitra in dostopna hrana za",
+    "titleHighlight": "popotnike in domačine",
+    "description": "Nahajamo se na priročni lokaciji blizu avtobusne postaje. Ponujamo bogate porcije kakovostnih burgerjev, jedi z žara in kebaba v toplem ter gostoljubnem ambientu.",
+    "primaryCta": "Obiščite nas",
+    "secondaryCta": "Preglejte ponudbo",
+    "stats": [
+      {
+        "value": "7 dni",
+        "label": "Odprti vsak teden"
+      },
+      {
+        "value": "Bogate porcije",
+        "label": "Bogate porcije",
+        "title": "Bogate porcije"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Prijazno osebje",
+        "label": "Prijazno osebje",
+        "title": "Prijazno osebje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Okusne jedi za vsak okus",
+    "description": "Pripravljamo sveže in okusne jedi, primerne za hiter obrok na poti ali prijetno druženje v Postojni.",
+    "items": [
+      {
+        "title": "Kakovostni burgerji",
+        "description": "Sočni burgerji pripravljeni iz kakovostnih sestavin za pravi okus.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Mesne jedi z žara",
+        "description": "Skrbno pripravljene mesne jedi z žara z bogatimi prilogami.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Kebab in vegetarijanske jedi",
+        "description": "Priljubljen kebab ter okusne vegetarijanske jedi za vsakogar.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Osvežilne pijače in kava",
+        "description": "Široka izbira pijač in dišeča kava za popoln osvežilni oddih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Hitra postrežba",
+        "description": "Hitra in prijazna postrežba hrane, primerna za popotnike in mimoidoče.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domače vzdušje in odlični okusi",
+    "description": "Združujemo hitro pripravo hrane, dostopne cene in izjemno gostoljubnost na odlični lokaciji v Postojni.",
+    "highlights": [
+      "Odlično razmerje med ceno in kakovostjo hrane",
+      "Priročna lokacija blizu avtobusne postaje in Postojnske jame",
+      "Prijazno osebje ter primernost za družine z otroki"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska lokacija",
+        "description": "Priročna dostopnost blizu avtobusne postaje in Postojnske jame.",
+        "title": "Vrhunska lokacija"
+      },
+      {
+        "label": "Bogate porcije",
+        "description": "Radodarne porcije okusne hrane po dostopnih cenah.",
+        "title": "Bogate porcije"
+      },
+      {
+        "label": "Domače vzdušje",
+        "description": "Topel sprejem in prijazno osebje, ki poskrbi za vaše dobro počutje.",
+        "title": "Domače vzdušje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Obiščite nas ali nas kontaktirajte",
+    "description": "Veselimo se vašega obiska v Postojni. Za vprašanja in informacije smo vam z veseljem na voljo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Jenkova ulica 6, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 157 280",
+        "href": "tel:070157280",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Ned: 9:00 – 22:00/23:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Imate vprašanje glede ponudbe? Pišite nam in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite svoje ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite svojo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali vprašanje...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Jenkova ulica 6, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "BESIM HAJDARI",
+    "address": "Jenkova ulica 6, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "070 157 280"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

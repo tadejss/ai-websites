@@ -1,0 +1,29 @@
+{
+  "companyName": "MAL'CA",
+  "industry": "Hitra hrana in okrepčevalnica",
+  "tagline": "Okusni in cenovno dostopni kebabi ter jedi z žara v Postojni",
+  "services": [
+    "Döner kebab",
+    "Yufka",
+    "Čevapčiči",
+    "Jedi z žara",
+    "Hitra hrana za na pot"
+  ],
+  "phone": "070 811 208",
+  "email": "",
+  "address": "Tržaška cesta 33, 6230 Postojna, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 12:00 AM · Tuesday: 8:00 AM – 12:00 AM · Wednesday: 8:00 AM – 12:00 AM · Thursday: 8:00 AM – 12:00 AM · Friday: 8:00 AM – 2:00 AM · Saturday: 8:00 AM – 12:00 AM · Sunday: 8:00 AM – 12:00 AM",
+  "sellingPoints": [
+    "Izjemno okusni in bogati kebabi",
+    "Ugodne cene in velike porcije",
+    "Prijazno osebje in hitra postrežba",
+    "Primerno za družine in lačne popotnike"
+  ],
+  "targetCustomers": "Lokalni prebivalci, turisti, študenti in ljubitelji hitre hrane",
+  "serviceArea": "Postojna z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, domač",
+  "brandStyle": "hitro, okusno in cenovno ugodno",
+  "competitors": "Lokalne ponudbe hitre hrane in okrepčevalnice",
+  "callToAction": "Naročite okusen obrok"
+}

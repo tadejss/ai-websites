@@ -1,0 +1,279 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "zbrendiraj",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/malca/hero.avif",
+      "alt": "Svež döner kebab v okrepčevalnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/malca/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "15852066",
+      "sourceUrl": "https://www.pexels.com/photo/bomb-doner-kebap-neon-15852066/",
+      "photographer": "Marius  Gabriel",
+      "photographerUrl": "https://www.pexels.com/@marius-gabriel-241207761",
+      "searchQuery": "fresh donner kebab roll dark moody lighting neon accent"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/malca/services.avif",
+      "alt": "Jedi z žara in hitra hrana",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/malca/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "13037133",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-shot-of-meat-on-a-charcoal-grill-13037133/",
+      "photographer": "Malte Luk",
+      "photographerUrl": "https://www.pexels.com/@maltelu",
+      "searchQuery": "grilled meat skewers fast food dark mood aesthetic"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki iz okrepčevalnice",
+    "description": "Oglejte si našo ponudbo in prostor, kjer pripravljamo okusne jedi.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Priljubljene jedi",
+    "description": "Izberite svoj najljubši obrok iz naše pestre ponudbe hitre hrane.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Döner kebab",
+        "description": "Klasičen döner kebab z mesom, solato in omako",
+        "price": "od 6,00 €",
+        "featured": true
+      },
+      {
+        "name": "Yufka",
+        "description": "Mesni nadev zavit v tortiljo s svežo zelenjavo",
+        "price": "od 6,50 €"
+      },
+      {
+        "name": "Čevapčiči v lepinji",
+        "description": "Sočni čevapčiči s čebulo in lepinjo",
+        "price": "od 7,00 €"
+      },
+      {
+        "name": "Jedi z žara - mešana plošča",
+        "description": "Različne mesne dobrote z žara s prilogo",
+        "price": "od 9,50 €"
+      },
+      {
+        "name": "Hitri prigrizki in dodatki",
+        "description": "Pomfrit, omake in dodatki k jedem",
+        "price": "od 2,50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Okrepčevalnica",
+    "highlight": "MAL'CA"
+  },
+  "metadata": {
+    "title": "MAL'CA Postojna | Döner kebab, jedi z žara in hitra hrana",
+    "description": "Okusni in cenovno dostopni kebabi, yufka in jedi z žara v Postojni. Hitra postrežba in velike porcije za vsak okus."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Ponudba"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite okusen obrok"
+  },
+  "hero": {
+    "badge": "Okrepčevalnica v Postojni",
+    "title": "Okusni kebabi in jedi z žara za",
+    "titleHighlight": "lačne popotnike in domačine",
+    "description": "Privoščite si bogate in okusne jedi iz naše ponudbe. Hitra postrežba, prijazno osebje in odlične cene v Postojni z okolico.",
+    "primaryCta": "Naročite okusen obrok",
+    "secondaryCta": "Oglejte si ponudbo",
+    "stats": [
+      {
+        "value": "Bogati okusi",
+        "label": "Bogati okusi"
+      },
+      {
+        "value": "Ugodne cene",
+        "label": "Ugodne cene"
+      },
+      {
+        "value": "Hitra postrežba",
+        "label": "Hitra postrežba"
+      },
+      {
+        "value": "Vsak dan",
+        "label": "Odprti vsak teden"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Kaj nudimo",
+    "description": "Sveže pripravljena hitra hrana in jedi z žara za malico, kosilo ali hiter prigrizek na poti v Postojni.",
+    "items": [
+      {
+        "title": "Döner kebab",
+        "description": "Sočno meso, sveža zelenjava in skrbno izbrane omake v hrustljavem kruhu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Yufka",
+        "description": "Bogat nadev z mesom in zelenjavo, zavit v tanko testo ter popečen do popolnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čevapčiči",
+        "description": "Klasične jedi z žara, postrežene s svežo čebulo in lepinjo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Jedi z žara",
+        "description": "Pestra izbira mesnih dobrot z žara za prave ljubitelje dobre hrane.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Hitra hrana za na pot",
+        "description": "Hitro pripravljeni obroki, ko se vam mudi in potrebujete dober obrok.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Okus, ki prepriča in nasiti",
+    "description": "Trudimo se, da vsaka stranka dobi okusen obrok v prijetnem vzdušju in po dostopni ceni.",
+    "highlights": [
+      "Izjemno okusni in bogati kebabi",
+      "Ugodne cene in velike porcije",
+      "Prijazno osebje in hitra postrežba"
+    ],
+    "benefits": [
+      {
+        "label": "Bogat okus",
+        "description": "Izjemno okusni in bogati kebabi ter jedi z žara iz svežih sestavin.",
+        "title": "Bogat okus"
+      },
+      {
+        "label": "Dostopne cene",
+        "description": "Ugodne cene in velike porcije, primerne za vsak žep.",
+        "title": "Dostopne cene"
+      },
+      {
+        "label": "Hitro in prijazno",
+        "description": "Prijazno osebje poskrbi za hitro postrežbo in dobro voljo.",
+        "title": "Hitro in prijazno"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Obiščite nas ali oddajte naročilo",
+    "description": "Nahajamo se na Tržaški cesti 33 v Postojni. Pokličite nas za naročilo ali vprašanja.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tržaška cesta 33, 6230 Postojna, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 811 208",
+        "href": "tel:070811208",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00 – 00:00 (Pet do 2:00), Ned: 8:00 – 00:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Imate vprašanje ali želite naročiti večjo količino hrane? Pišite nam.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše naročilo ali vprašanje...",
+      "submitLabel": "Naročite okusen obrok"
+    }
+  },
+  "footer": {
+    "address": "Tržaška cesta 33, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Okrepčevalnica MAL'CA",
+    "address": "Tržaška cesta 33, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "070 811 208"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

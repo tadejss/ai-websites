@@ -1,0 +1,292 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/rbt-gradbenistvo/hero.avif",
+      "alt": "Slikopleskarska in gradbena dela pri prenovi prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/rbt-gradbenistvo/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6474123",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-in-white-shirt-painting-a-house-6474123/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional painter interior wall renovation dark mood"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/rbt-gradbenistvo/services.avif",
+      "alt": "Slikopleskarstvo, fasaderstvo in notranja prenova",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/rbt-gradbenistvo/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "10582334",
+      "sourceUrl": "https://www.pexels.com/photo/an-interior-of-a-living-room-of-a-house-10582334/",
+      "photographer": "Sự Minh",
+      "photographerUrl": "https://www.pexels.com/@s-minh-151628940",
+      "searchQuery": "modern interior painting and wall renovation dark mood"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Informativni cenik naših najbolj iskanih gradbenih in slikopleskarskih del.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo glede na vaš objekt nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pleskanje zidov in stropov",
+        "description": "Beljenje z dvoslojnim nanosom barve",
+        "price": "od 3,50 €",
+        "unit": "m²",
+        "featured": true
+      },
+      {
+        "name": "Gradbena in obrtniška dela",
+        "description": "Ura izvedbe splošnih del",
+        "price": "od 25 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Notranja prenova",
+        "description": "Celovita prenova prostorov po dogovoru",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Izdelava fasade z vsemi materiali",
+        "price": "Po ogledu",
+        "unit": "m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Rbt gradbeništvo",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Rbt gradbeništvo d.o.o. | Slikopleskarstvo in gradbena dela Krško",
+    "description": "Kakovostne gradbene in slikopleskarske storitve po dostopni ceni v Krškem z okolico. Prenova, fasaderstvo in pleskanje za vaš dom ali poslovni prostor."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv partner za prenovo",
+    "title": "Kakovostne gradbene in slikopleskarske",
+    "titleHighlight": "storitve",
+    "description": "Strokovne rešitve za lastnike stanovanj, hiš in poslovnih prostorov v Krškem z okolico, ki potrebujejo prenovo ali pleskanje.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Ugodne cene",
+        "label": "Ugodne cene",
+        "title": "Ugodne cene"
+      },
+      {
+        "value": "Zanesljivo delo",
+        "label": "Zanesljivo delo",
+        "title": "Zanesljivo delo"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Krško z okolico",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite storitve za vaš dom in pisarno",
+    "description": "Poskrbimo za kakovostno izvedbo slikopleskarskih, fasaderskih in gradbenih del v Krškem z okolico.",
+    "items": [
+      {
+        "title": "Slikopleskarska dela",
+        "description": "Natančno pleskanje in osvežitev zidov za popoln videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Izdelava in obnova fasad za boljšo energijsko učinkovitost in lepši izgled stavbe.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Notranja prenova",
+        "description": "Celovite prenove notranjih prostorov po vaših željah in potrebah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popleskanje prostorov",
+        "description": "Hitro in čisto pleskanje posameznih prostorov ali celotnih objektov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Gradbena in obrtniška dela",
+        "description": "Zanesljiva izvedba različnih gradbenih in obrtniških del za vaš objekt.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in dostopne cene",
+    "description": "Zavedamo se pomena kakovostno opravljenega dela in spoštovanja dogovorov pri vsaki prenovi.",
+    "highlights": [
+      "Visoka kakovost izvedbe z modernim pristopom",
+      "Ugodne in konkurenčne cene za vsak žep",
+      "Zanesljivo in priporočeno delo na območju Krškega"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost izvedbe",
+        "description": "Pri delu uporabljamo preverjene materiale in poskrbimo za natančnost.",
+        "title": "Visoka kakovost izvedbe"
+      },
+      {
+        "label": "Ugodne cene",
+        "description": "Ponujamo konkurenčne in dostopne cene za vse gradbene ter slikopleskarske storitve.",
+        "title": "Ugodne cene"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za urejeno delovišče.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete prenovo, pleskanje ali gradbena dela? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 580 625",
+        "href": "tel:041580625",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta krških žrtev 135c, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, katere storitve potrebujete...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Cesta krških žrtev 135c, 8270 Krško, Slovenia",
+    "rights": "© 2025 Rbt gradbeništvo d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Rbt gradbeništvo d.o.o.",
+    "address": "Cesta krških žrtev 135c, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "041 580 625"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

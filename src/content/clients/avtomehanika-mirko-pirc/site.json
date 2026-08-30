@@ -1,0 +1,285 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "forest-mist",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-mirko-pirc/hero.avif",
+      "alt": "Avtomehanik pri delu v urejeni delavnici v Krškem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-mirko-pirc/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985967",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-coverall-standing-near-a-car-8985967/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional car mechanic working in bright workshop interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-mirko-pirc/services.avif",
+      "alt": "Orodja in oprema za avtomobilsko diagnostiko in servise",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-mirko-pirc/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "33917084",
+      "sourceUrl": "https://www.pexels.com/photo/rear-view-of-a-red-sports-car-in-urban-setting-33917084/",
+      "photographer": "Eric Joseph",
+      "photographerUrl": "https://www.pexels.com/@ericc",
+      "searchQuery": "modern car engine diagnostics and maintenance tools"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled osnovnih storitev",
+    "description": "Cene izbranih storitev v naši delavnici. Za natančno ponudbo nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo za vaše vozilo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Komplet 4 koles s centriranjem",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika motorja",
+        "description": "Priklop na tester in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Menjava spredaj ali zadaj",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Ura mehaničnega dela",
+        "description": "Strokovno delo po porabljenem času",
+        "price": "od 40 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtomehanika",
+    "highlight": "Mirko Pirc s.p."
+  },
+  "metadata": {
+    "title": "Avtomehanika Mirko Pirc s.p. | Zanesljiv avtomehanik v Krškem",
+    "description": "Zanesljivo in strokovno popravilo vašega vozila ter redni servisi v Krškem z okolico. Poskrbimo za varnost vašega avtomobila."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Avtomehanična delavnica Krško",
+    "title": "Zanesljivo in strokovno popravilo",
+    "titleHighlight": "vašega vozila",
+    "description": "Strokovne avtomehanične storitve za lastnike osebnih in lahkih gospodarskih vozil v Krškem in okolici. Poskrbimo za varnost in brezhibno delovanje vašega jeklenega konjička.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra storitev",
+        "label": "Hitra storitev"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Krško in okolica",
+        "label": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovito vzdrževanje in popravila vozil",
+    "description": "V naši delavnici v Krškem nudimo zanesljive storitve za varno vožnjo vašega osebnega ali lahkega gospodarskega vozila.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Menjava olja, filtrov in pregled ključnih sklopov za dolgo življenjsko dobo motorja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in strokovna menjava pnevmatik ter priprava na sezonsko vožnjo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo zavornih sistemov",
+        "description": "Pregled in menjava zavornih ploščic, diskov ter ostalih elementov za vaše varno ustavljanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika motorja",
+        "description": "Natančno odpravljanje napak in računalniška diagnostika delovanja motorja.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje podvozja",
+        "description": "Pregled in popravilo delov podvozja za udobno in varno vožnjo po vseh cestah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Z dolgoletnimi izkušnjami in osebnim pristopom poskrbimo, da je vaše vozilo vedno v najboljšem stanju.",
+    "highlights": [
+      "Hitra in zanesljiva storitev",
+      "Dolgoletne izkušnje na področju mehanike",
+      "Osebni pristop k strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra in zanesljiva storitev",
+        "description": "Delo opravimo zanesljivo in v dogovorjenih rokih, da ste čim prej spet na cesti.",
+        "title": "Hitra in zanesljiva storitev"
+      },
+      {
+        "label": "Dolgoletne izkušnje",
+        "description": "Znanje in izkušnje na področju mehanike zagotavljata kakovostno obravnavo vsakega vozila.",
+        "title": "Dolgoletne izkušnje"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in potrebam ter svetujemo najboljšo rešitev za vaše vozilo.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis ali postavite vprašanje glede popravila vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska ulica 4b, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 976 490",
+        "href": "tel:041976490",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska ulica 4b, 8270 Krško, Slovenia",
+    "rights": "© 2025 Avtomehanika Mirko Pirc s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtomehanika Mirko Pirc s.p.",
+    "address": "Kolodvorska ulica 4b, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "041 976 490"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

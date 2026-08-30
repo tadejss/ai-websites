@@ -1,0 +1,28 @@
+{
+  "companyName": "RAKAJ BAU d.o.o",
+  "industry": "Gradbena podjetja in splošne gradbene storitve",
+  "tagline": "Zanesljive gradbene storitve in prenovitvena dela",
+  "services": [
+    "Gradbena dela",
+    "Prenove objektov",
+    "Zidarska dela",
+    "Fasaderska dela",
+    "Zaključna gradbena dela"
+  ],
+  "phone": "064 156 157",
+  "email": "",
+  "address": "Ulica Ilije Gregoriča 16, 8270 Krško, Slovenia",
+  "openingHours": "Ponedeljek - Sobota: 7:00 - 17:00, Nedelja: Zaprto",
+  "sellingPoints": [
+    "Prilagodljivost delovnega časa vključno s sobotami",
+    "Zanesljiva izvedba gradbenih del",
+    "Strokovni pristop k vsakemu projektu"
+  ],
+  "targetCustomers": "Lastniki hiš, stanovanj in poslovnih objektov, ki potrebujejo gradbena ali prenovitvena dela",
+  "serviceArea": "Krško s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "modern in zaupanja vreden",
+  "competitors": "Lokalni gradbeni izvajalci in obrtniki",
+  "callToAction": "Zahtevajte ponudbo"
+}

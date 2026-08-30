@@ -1,0 +1,283 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "outfit-bitter"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avto-kljuci-kodirani/hero.avif",
+      "alt": "Profesionalna delavnica za kodiranje avtomobilskih ključev v Krškem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avto-kljuci-kodirani/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "34286675",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-white-locksmith-working-in-istanbul-34286675/",
+      "photographer": "Crab Lens",
+      "photographerUrl": "https://www.pexels.com/@crab-lens-179881567",
+      "searchQuery": "modern car key programming professional workshop deep ocean dark"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avto-kljuci-kodirani/services.avif",
+      "alt": "Natančna izdelava in kopiranje ključev ter daljincev",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avto-kljuci-kodirani/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20345064",
+      "sourceUrl": "https://www.pexels.com/photo/man-giving-woman-keys-20345064/",
+      "photographer": "hugoteconecta",
+      "photographerUrl": "https://www.pexels.com/@hugoteconecta-641939723",
+      "searchQuery": "locksmith cutting new house keys close up tool"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki dela",
+    "description": "Oglejte si nekaj primerov naših storitev.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za izdelavo in kodiranje ključev ter daljincev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kopiranje hišnega ključa",
+        "description": "Navaden navadni hišni ključ",
+        "price": "od 5 €"
+      },
+      {
+        "name": "Izdelava hišnega daljinca",
+        "description": "Za garažna vrata ali ograje",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Kodiranje avtomobilskega ključa",
+        "description": "Programiranje čipa in izdelava",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Izdelava avtomobilskega daljinca",
+        "description": "Komplet ključ z daljincem in kodiranjem",
+        "price": "od 70 €"
+      },
+      {
+        "name": "Popravilo ključa",
+        "description": "Zamenjava ohišja in gumbov",
+        "price": "od 20 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "AVTO KLJUČI",
+    "highlight": "KODIRANI IN DALJINCI"
+  },
+  "metadata": {
+    "title": "Avto Ključi Krško | Kodiranje in Izdelava Ključev",
+    "description": "Hitra in zanesljiva izdelava avtomobilskih ter hišnih ključev, kodiranje in daljinci v Krškem z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik v Krškem",
+    "title": "Hitra in zanesljiva izdelava",
+    "titleHighlight": "avtomobilskih in hišnih ključev",
+    "description": "Specializirani smo za lastnike vozil in nepremičnin v Krškem z okolico, ki potrebujete nove ključe, kodiranje ali daljince.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Hitra storitev",
+        "label": "Hitra storitev",
+        "title": "Hitra storitev"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Nudimo celovite rešitve za vaše ključe in daljince za vozila ter nepremičnine v Krškem z okolico.",
+    "items": [
+      {
+        "title": "Kodiranje avtomobilskih ključev",
+        "description": "Strokovno kodiranje ključev za različne znamke vozil.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Izdelava avtomobilskih daljincev",
+        "description": "Hitra izdelava in programiranje novih avtomobilskih daljincev.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Kopiranje hišnih ključev",
+        "description": "Natančno kopiranje vseh vrst hišnih ključev.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Izdelava hišnih daljincev",
+        "description": "Daljinci za garažna vrata in dvoriščne ograje.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Popravilo in obnova ključev",
+        "description": "Obnova obrabljenih ohišij in popravilo avtomobilskih ključev.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas?",
+    "description": "Z dolgoletnimi izkušnjami in prijaznim odnosom poskrbimo, da so vaše težave s ključi hitro rešene.",
+    "highlights": [
+      "Hiter in učinkovit servis",
+      "Prijazen odnos do strank",
+      "Kakovostna izdelava in popravila ključev"
+    ],
+    "benefits": [
+      {
+        "label": "Hiter in učinkovit servis",
+        "description": "Vaše težave s ključi rešujemo hitro in brez nepotrebnega odlašanja.",
+        "title": "Hiter in učinkovit servis"
+      },
+      {
+        "label": "Prijazen odnos do strank",
+        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo rešitev.",
+        "title": "Prijazen odnos do strank"
+      },
+      {
+        "label": "Kakovostna izdelava",
+        "description": "Uporabljamo preverjene postopke za izdelavo in popravilo ključev.",
+        "title": "Kakovostna izdelava"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete nov ključ ali imate vprašanje? Pokličite nas ali nas obiščite na lokaciji v Krškem.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska ulica 1, 8270 Krško, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 416 933",
+        "href": "tel:041416933",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–15:30, Sob: 7:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, kakšno storitev potrebujete...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska ulica 1, 8270 Krško, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "AVTO KLJUČI KODIRANI IN DALJINCI",
+    "address": "Kolodvorska ulica 1, 8270 Krško, Slovenia",
+    "email": "",
+    "phone": "041 416 933"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

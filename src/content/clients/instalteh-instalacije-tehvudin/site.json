@@ -1,0 +1,274 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "geist-geist"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/instalteh-instalacije-tehvudin/hero.avif",
+      "alt": "Vodovodni inštalater pri popravilu cevi v kopalnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/instalteh-instalacije-tehvudin/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35072812",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-craftsman-working-on-mechanical-repair-35072812/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "professional plumber fixing modern bathroom pipes dark mood"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/instalteh-instalacije-tehvudin/services.avif",
+      "alt": "Montaža sanitarne opreme v sodobnem objektu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/instalteh-instalacije-tehvudin/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "29399427",
+      "sourceUrl": "https://www.pexels.com/photo/modern-bathroom-sink-with-stylish-faucet-29399427/",
+      "photographer": "Pușcaș Adryan",
+      "photographerUrl": "https://www.pexels.com/@pu-ca-adryan-163345030",
+      "searchQuery": "modern bathroom sanitary equipment installation dark interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Informativne cene za pogoste vodovodne in inštalaterske storitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža umivalnika",
+        "description": "Montaža in priklop umivalnika s sifonom",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava armature",
+        "description": "Demontaža stare in montaža nove armature",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Popravilo vodovodne napeljave",
+        "description": "Manjša popravila in odpravljanje okvar",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Inštalacija sanitarne opreme",
+        "description": "Montaža sanitarne keramike in opreme",
+        "price": "od 70 €"
+      },
+      {
+        "name": "Vzdrževanje hišnih inštalacij",
+        "description": "Pregled in manjša vzdrževalna dela",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Instal-Teh",
+    "highlight": "Tehvudin Kantarević s.p."
+  },
+  "metadata": {
+    "title": "Instal-Teh | Vodovodne in hišne inštalacije Novo mesto",
+    "description": "Zanesljive in strokovne vodovodne ter hišne inštalacije v Novem mestu in okolini. Montaža, popravila in vzdrževanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster v Novem mestu",
+    "title": "Strokovne vodovodne in",
+    "titleHighlight": "hišne inštalacije",
+    "description": "Zanesljive storitve za lastnike stanovanj, hiš in poslovnih prostorov v Novem mestu in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Kakovost",
+        "label": "Kakovostno opravljeno delo"
+      },
+      {
+        "value": "Odzivnost",
+        "label": "Hitra odzivnost na terenu"
+      },
+      {
+        "value": "Izkušnje",
+        "label": "Lokalni izvajalec"
+      },
+      {
+        "value": "Brezhibno",
+        "label": "Zanesljiva izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše objekte",
+    "description": "Nudimo strokovno izvedbo vodovodnih in hišnih inštalacij za naročnike v Novem mestu in okolici.",
+    "items": [
+      {
+        "title": "Montaža in menjava umivalnikov",
+        "description": "Strokovna montaža in menjava umivalnikov ter pripadajoče sanitarne opreme.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo vodovodnih napeljav",
+        "description": "Hitro odkrivanje in odpravljanje napak na vaših vodovodnih napeljavah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Inštalacija sanitarne opreme",
+        "description": "Montaža in priklop vseh vrst sanitarne opreme v vašem objektu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje hišnih inštalacij",
+        "description": "Redno vzdrževanje za nemoteno delovanje hišnih inštalacij.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše inštalacije",
+    "description": "Z osredotočenostjo na kakovost in hiter odziv poskrbimo za brezhibno delovanje vaših vodovodnih sistemov.",
+    "highlights": [
+      "Kakovostno opravljeno delo",
+      "Hitra odzivnost na terenu",
+      "Lokalni izvajalec z izkušnjami"
+    ],
+    "benefits": [
+      {
+        "label": "Kakovostno delo",
+        "description": "Vsak projekt izvedemo strokovno in natančno.",
+        "title": "Kakovostno delo"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Hitro se odzovemo na vaše klice in zahteve na terenu.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Lokalni izvajalec",
+        "description": "Prisotni smo v Novem mestu in okolici za hitro pomoč.",
+        "title": "Lokalni izvajalec"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pokličite ali pošljite povpraševanje",
+    "description": "Za vprašanja, ponudbe ali naročila storitev smo vam na voljo preko spodnjih podatkov ali obrazca.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "030 340 024",
+        "href": "tel:030340024",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Markljeva ulica 16, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali težavo",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Markljeva ulica 16, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Instal-Teh Tehvudin Kantarević s.p.",
+    "address": "Markljeva ulica 16, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "030 340 024"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

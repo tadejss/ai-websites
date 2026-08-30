@@ -1,0 +1,292 @@
+{
+  "appearance": "cleaning",
+  "theme": {
+    "paletteId": "forest-mist",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "alt": "Profesionalno čiščenje svetlih poslovnih in stanovanjskih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional cleaning service sparkling clean modern interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/services.avif",
+      "alt": "Globinsko čiščenje in urejeni prostori v Postojni",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32178008",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32178008/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean apartment interior green accents"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregledne cene storitev",
+    "description": "Cene so informativne narave in se prilagajajo velikosti ter zahtevnosti objekta.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje poslovnih prostorov",
+        "description": "Vzdrževalno čiščenje pisarn in poslovnih objektov",
+        "price": "od 20 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje stanovanj in hiš",
+        "description": "Temeljito čiščenje bivalnih prostorov",
+        "price": "od 22 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur in preprog",
+        "price": "od 40 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Čiščenje po gradbenih delih",
+        "description": "Končno čiščenje po adaptacijah in gradnji",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Specialna čiščenja",
+        "description": "Zahtevnejša čiščenja posebnih površin",
+        "price": "od 30 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Val",
+    "highlight": "čistoče"
+  },
+  "metadata": {
+    "title": "Čistilni servis Val čistoče | Profesionalno čiščenje Postojna",
+    "description": "Profesionalno, natančno in vestno globinsko čiščenje ter čiščenje poslovnih in stanovanjskih objektov v Postojni in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv čistilni servis v Postojni",
+    "title": "Profesionalno, natančno in vestno",
+    "titleHighlight": "čiščenje objektov",
+    "description": "Zagotavljamo vrhunske čistilne storitve za lastnike stanovanj, hiš in poslovnih objektov v Postojni in okolici.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Profesionalno",
+        "label": "Profesionalno čiščenje"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Vestno",
+        "label": "Vestno delo"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivost strankam"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja za vsak objekt",
+    "description": "Poskrbimo za brezhibno čistočo vaših stanovanjskih in poslovnih prostorov v Postojni z okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje poslovnih prostorov",
+        "description": "Zanesljivo vzdrževanje čistoče v vaših pisarnah in poslovnih objektih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje stanovanj in hiš",
+        "description": "Redno ali občasno čiščenje stanovanjskih objektov za prijetno bivanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje po gradbenih delih",
+        "description": "Natančno končno čiščenje prostorov po prenovi ali gradbenih delih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Specialna čiščenja",
+        "description": "Prilagojena in zahtevnejša čiščenja za posebne potrebe in objekte.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za brezhibno čistočo",
+    "description": "Z izjemno profesionalnostjo in posluhom za želje strank poskrbimo, da so vaši prostori vedno čisti.",
+    "highlights": [
+      "Izjemno profesionalna in natančna izvedba storitev",
+      "Zanesljivost in vestnost pri vsakem opravljenem delu",
+      "Visoka prilagodljivost tudi za najzahtevnejše stranke in objekte"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Profesionalna izvedba",
+        "description": "Zagotavljamo izjemno profesionalno in natančno izvedbo vseh čistilnih storitev.",
+        "title": "Profesionalna izvedba"
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "Zanesljivost",
+        "description": "Odlikujeta nas zanesljivost in vestnost pri delu v vseh vrstah objektov.",
+        "title": "Zanesljivost"
+      },
+      {
+        "stat": "Prilagodljivo",
+        "label": "Prilagodljivost",
+        "description": "Prilagajamo se željam tudi najzahtevnejših strank za popolne rezultate.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali oddajte povpraševanje in poskrbeli bomo za čistočo vaših prostorov.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 877 400",
+        "href": "tel:070877400",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Vojkova ulica 4, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali željo glede čiščenja...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Vojkova ulica 4, 6230 Postojna, Slovenia",
+    "rights": "© Čistilni servis Val čistoče, Snežana Savić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Val čistoče",
+    "address": "Vojkova ulica 4, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "070 877 400"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
