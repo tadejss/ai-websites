@@ -1,8 +1,18 @@
 {
-  "appearance": "default",
+  "appearance": "auto",
   "theme": {
     "paletteId": "burgundy-glow",
     "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
   },
   "images": {
     "hero": {

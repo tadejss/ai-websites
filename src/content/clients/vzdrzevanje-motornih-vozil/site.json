@@ -1,8 +1,18 @@
 {
-  "appearance": "default",
+  "appearance": "auto",
   "theme": {
     "paletteId": "burgundy-glow",
     "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
   },
   "images": {
     "hero": {

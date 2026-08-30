@@ -10,7 +10,7 @@ const ELEKTRO_KEYWORDS =
   /elektro|električ|elektric|electrician|inštalater|instalater|ožičenj|ozicenj|razsvetlj|stikaln|elektroinštal|elektroinstal/i;
 
 const AUTO_KEYWORDS =
-  /vulkaniz|gumar|pnevmatik|tire|avtovulkan/i;
+  /avtomehan|avtoservis|avtovlek|avtoklepar|popravilo.*vozil|vzdr[žz]evanje.*vozil|prodaja.*vozil|car_repair|auto_repair|vulkaniz|gumar|pnevmatik|tire|avtovulkan/i;
 
 const CONSTRUCTION_KEYWORDS =
   /suhomontaž|suhomontaz|keramič|keramic|tile|tesar|krovec|klepar|fasader|mizar|zaključn|zakljucn|gradben|tlakov|mavč|mavc|estri|pardue|streš|stres/i;

@@ -1,8 +1,18 @@
 {
-  "appearance": "default",
+  "appearance": "auto",
   "theme": {
     "paletteId": "zbrendiraj",
     "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
   },
   "images": {
     "hero": {
