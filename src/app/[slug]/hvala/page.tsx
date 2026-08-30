@@ -3,12 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
-import { isCustomer as isPersistedCustomer } from "@/customers/store";
-import {
-  ensureOnboardingAccess,
-  getOnboardingBySlug,
-  getOnboardingUrl,
-} from "@/onboarding/store";
+import { getCustomerChromeState } from "@/onboarding/customer-chrome";
 
 type Props = {
   params: Promise<{
@@ -47,15 +42,7 @@ export default async function ThankYouPage({ params }: Props) {
     notFound();
   }
 
-  const isCustomer = await isPersistedCustomer(slug);
-  let onboarding = isCustomer ? await getOnboardingBySlug(slug) : null;
-  if (isCustomer && !onboarding) {
-    ({ onboarding } = await ensureOnboardingAccess({ slug }));
-  }
-  const onboardingUrl =
-    onboarding != null
-      ? getOnboardingUrl(slug, onboarding.accessToken)
-      : null;
+  const { isCustomer, onboardingUrl } = await getCustomerChromeState(slug);
 
   return (
     <main className="min-h-screen bg-zinc-950 px-6 py-24 text-white">

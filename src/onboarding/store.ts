@@ -1,6 +1,7 @@
 import { randomBytes, timingSafeEqual } from "node:crypto";
 import { isDatabaseConfigured, sql } from "@/db/client";
 import { ensureCustomerSchema } from "@/db/ensure-schema";
+import { getCustomerBySlug } from "@/customers/store";
 import { toAbsoluteUrl } from "@/site-url";
 import type {
   CustomerOnboardingAnswers,
@@ -128,6 +129,14 @@ export async function ensureOnboardingAccess(input: {
   contactName?: string | null;
 }): Promise<{ onboarding: OnboardingRecord; created: boolean }> {
   const db = await requireDb();
+
+  const customer = await getCustomerBySlug(input.slug);
+  if (!customer) {
+    throw new Error(
+      `Cannot create onboarding without customer row for slug "${input.slug}"`,
+    );
+  }
+
   const token = generateAccessToken();
   const email = input.contactEmail?.trim() || null;
   const name = input.contactName?.trim() || null;
@@ -161,7 +170,9 @@ export async function ensureOnboardingAccess(input: {
 
   const existing = await getOnboardingBySlug(input.slug);
   if (!existing) {
-    throw new Error(`Failed to ensure onboarding for slug "${input.slug}"`);
+    throw new Error(
+      `Onboarding insert did not persist for slug "${input.slug}"`,
+    );
   }
 
   if (email || name) {

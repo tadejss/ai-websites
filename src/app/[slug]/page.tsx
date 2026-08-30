@@ -109,3 +109,5 @@ export default async function ClientPage({ params }: Props) {
     </>
   );
 }
+
+export const dynamic = "force-dynamic";
