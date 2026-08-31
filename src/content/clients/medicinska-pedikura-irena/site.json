@@ -1,0 +1,282 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "outfit-bitter"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/medicinska-pedikura-irena/hero.avif",
+      "alt": "Strokovna medicinska pedikura in nega stopal v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/medicinska-pedikura-irena/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997350",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-long-sleeve-shirt-dong-manicure-3997350/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/medicinska-pedikura-irena/services.avif",
+      "alt": "Storitve medicinske pedikure in nege stopal",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/medicinska-pedikura-irena/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3735653",
+      "sourceUrl": "https://www.pexels.com/photo/artificial-nail-samples-3735653/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene storitev medicinske pedikure",
+    "description": "Pregled okvirnih cen za nego in zdravstveno usmerjene storitve za vaša stopala.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Medicinska pedikura",
+        "description": "Osnovna strokovna nega stopal, nohtov in kože.",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Odpravljanje vraščenih nohtov",
+        "description": "Strokovna obravnava in olajšanje pri vraščenih nohtih.",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Odstranjevanje otrdele kože in kurjih očes",
+        "description": "Varno odstranjevanje otiščancev in kurjih očes.",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Nega diabetičnega stopala",
+        "description": "Specializirana in varna nega za diabetike.",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Svetovanje o negi stopal",
+        "description": "Individualni nasveti za nego doma.",
+        "price": "Brezplačno ob storitvi"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Medicinska pedikura",
+    "highlight": "Irena Levstek s.p."
+  },
+  "metadata": {
+    "title": "Medicinska pedikura Irena Levstek s.p. | Ljubljana",
+    "description": "Strokovna in skrbna medicinska pedikura ter nega stopal v Ljubljani z okolico. Naročite se na termin za zdrava in urejena stopala."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Strokovna nega stopal v Ljubljani",
+    "title": "Strokovna in skrbna medicinska pedikura za",
+    "titleHighlight": "zdravje vaših stopal",
+    "description": "Specializirana nega za vse, ki se soočajo s težavami na stopalih, ter za diabetike, starejše in vsakogar, ki ceni zdravje in urejenost.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Individualen pristop"
+      },
+      {
+        "value": "Varno",
+        "label": "Nega za diabetike"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Delovni čas med tednom"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve medicinske pedikure",
+    "description": "Nudimo celostno nego in strokovno obravnavo stopal v Ljubljani z okolico, prilagojeno vašim individualnim potrebam.",
+    "items": [
+      {
+        "title": "Medicinska pedikura",
+        "description": "Celostna strokovna nega stopal, namenjena ohranjanju zdravja in urejenosti nohtov ter kože.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Odpravljanje vraščenih nohtov",
+        "description": "Bolečin, ki jih povzročajo vraščeni nohti, se lotimo strokovno in z ustreznim olajšanjem.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Odstranjevanje otrdele kože in kurjih očes",
+        "description": "Varno in učinkovito odstranjevanje trde kože, otiščancev ter kurjih očes za lahkotnejši korak.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega diabetičnega stopala",
+        "description": "Skrbna in prilagojena nega občutljivih stopal pri diabetikih z veliko mero previdnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o negi stopal",
+        "description": "Strokovni nasveti za vsakodnevno domačo nego in preprečevanje težav s stopali.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost zdravju in udobju vaših stopal",
+    "description": "Z združevanjem strokovnega znanja in toplega, osebnega pristopa poskrbimo, da se vaša stopala ponovno počutijo lahkotno.",
+    "highlights": [
+      "Strokoven in individualen pristop k vsaki stranki",
+      "Visoka raven higiene in skrb za varnost",
+      "Prilagodljiv delovni čas med tednom"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "description": "Individualna obravnava in prilagoditev storitev vašim specifičnim težavam.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "stat": "Zaupanja vreden salon",
+        "label": "Zaupanja vreden salon",
+        "description": "Toplo okolje in skrbna obravnava za dobro počutje vseh generacij.",
+        "title": "Zaupanja vreden salon"
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "description": "Možnost naročanja in termini med tednom, prilagojeni vašemu urniku.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na termin",
+    "description": "Pokličite nas ali nam pišite ter si zagotovite svoj termin za strokovno nego stopal.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 672 059",
+        "href": "tel:070672059",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Nove Fužine 43, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 20:00 (Sob, Ned: Zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali naročanje na termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime in priimek",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Nove Fužine 43, 1000 Ljubljana, Slovenia",
+    "rights": "© 2025 Medicinska pedikura Irena Levstek s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Medicinska pedikura Irena Levstek s.p.",
+    "address": "Nove Fužine 43, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "070 672 059"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -3,9 +3,14 @@ import type { RawBusinessData } from "@/ai/types/raw-business-data";
 import { searchPlaces } from "@/sources/google-places-source";
 import {
   discoveryNoisePattern,
+  ICP_EXCLUDE_NAME_PATTERN,
   leadMatchesIndustry,
   type LeadIndustryId,
 } from "./industry-filter";
+import {
+  professionMatchesBusiness,
+  type DiscoveryProfessionId,
+} from "./discovery-professions";
 import {
   getRegionLocationBias,
   matchesRegion,
@@ -33,6 +38,7 @@ export type DiscoverLeadsOptions = {
   /** When set, only save leads with a valid Slovenian mobile number. */
   requireMobilePhone?: boolean;
   industry?: LeadIndustryId;
+  profession?: DiscoveryProfessionId;
   sourceQuery?: string;
 };
 
@@ -74,13 +80,15 @@ export async function discoverLeads(
   );
   const takenSlugs = new Set(existing.map((lead) => lead.slug));
 
-  // Targeted queries already scope industry, but drop clear cross-industry noise.
-  // Exclude the active industry's own keywords so we don't reject matching businesses.
-  const queryImpliesIndustry = leadMatchesIndustry(options.industry, {
-    industry: query,
-    companyName: "",
-  });
-  const noiseName = discoveryNoisePattern(options.industry);
+  const useProfession = Boolean(options.profession);
+  const queryImpliesIndustry = !useProfession
+    && leadMatchesIndustry(options.industry, {
+      industry: query,
+      companyName: "",
+    });
+  const noiseName = useProfession
+    ? ICP_EXCLUDE_NAME_PATTERN
+    : discoveryNoisePattern(options.industry);
 
   const results: DiscoveryResult[] = [];
 
@@ -131,7 +139,31 @@ export async function discoverLeads(
       continue;
     }
 
-    if (queryImpliesIndustry) {
+    if (useProfession) {
+      if (
+        !professionMatchesBusiness(options.profession!, {
+          industry: business.category,
+          companyName,
+        })
+      ) {
+        results.push({
+          outcome: "skipped",
+          reason: "profession mismatch",
+          companyName,
+          googlePlaceId,
+        });
+        continue;
+      }
+      if (noiseName.test(companyName)) {
+        results.push({
+          outcome: "skipped",
+          reason: "profession mismatch",
+          companyName,
+          googlePlaceId,
+        });
+        continue;
+      }
+    } else if (queryImpliesIndustry) {
       if (noiseName.test(companyName)) {
         results.push({
           outcome: "skipped",

@@ -1,0 +1,271 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "peach-bloom",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/manikura-anela-mujetic/hero.avif",
+      "alt": "Notranjost salona za nohte v Kamniku",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/manikura-anela-mujetic/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677846",
+      "sourceUrl": "https://www.pexels.com/photo/nail-stylist-removing-cuticles-4677846/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/manikura-anela-mujetic/services.avif",
+      "alt": "Nega in urejanje nohtov v salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/manikura-anela-mujetic/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677859",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-a-lace-top-wearing-gloves-holding-a-person-s-finger-4677859/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki iz salona",
+    "description": "Oglejte si naš delovni prostor in urejen ambient.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled osnovnih storitev nege nohtov v našem salonu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Urejanje nohtov, nega kožice in zaključna nega",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Negovanje nohtov",
+        "description": "Hranljiva nega za naravne nohte",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Urejanje obnohtne kožice",
+        "description": "Natančno čiščenje in urejanje obnohtnega področja",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Lakiranje nohtov",
+        "description": "Nanosi laka po izbiri",
+        "price": "od 15 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Manikura",
+    "highlight": "Anela Mujetić s.p."
+  },
+  "metadata": {
+    "title": "Manikura, Anela Mujetić s.p. | Salon za nohte Kamnik",
+    "description": "Poskrbite za urejen videz vaših nohtov v Kamniku. Klasična manikura, negovanje nohtov in lakiranje v prijetnem okolju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Salon za nohte Kamnik",
+    "title": "Poskrbite za urejen videz vaših",
+    "titleHighlight": "nohtov v Kamniku",
+    "description": "Strokovna in natančna nega za vse, ki cenijo urejene roke in kakovostno storitev v Kamniku z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Urejen",
+        "label": "Lokalni salon"
+      },
+      {
+        "value": "Strokovno",
+        "label": "In natančno"
+      },
+      {
+        "value": "Sproščeno",
+        "label": "Prijetno okolje"
+      },
+      {
+        "value": "Osebno",
+        "label": "Pristop k strankam"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za nego nohtov",
+    "description": "Izberite storitev za urejen in negovan videz vaših rok v Kamniku z okolico.",
+    "items": [
+      {
+        "title": "Klasična manikura",
+        "description": "Celostna ureditev in nega vaših nohtov za lepe in zdrave roke.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Negovanje nohtov",
+        "description": "Kakovostna nega za trdnost in lepši videz naravnih nohtov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje obnohtne kožice",
+        "description": "Natančno in nežno urejanje obnohtne kožice za urejen videz rok.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Lakiranje nohtov",
+        "description": "Skrbno nanašanje laka za obstojen in privlačen videz.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega salona",
+    "description": "Zavezani smo h kakovosti, natančnosti in dobremu počutju vsake stranke.",
+    "highlights": [
+      "Strokovna in natančna nega nohtov",
+      "Prijetno okolje za sprostitev",
+      "Prilagojen pristop k strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna nega",
+        "description": "Strokovna in natančna nega nohtov za urejen videz.",
+        "title": "Strokovna nega"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Sproščujoč ambient, namenjen vašemu oddihu in razvajanju.",
+        "title": "Prijetno okolje"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prilagojen pristop, ki upošteva želje in potrebe vsake stranke.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kranjska cesta 3a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 870 156",
+        "href": "tel:031870156",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kranjska cesta 3a, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Manikura Anela Mujetić s.p.",
+    "address": "Kranjska cesta 3a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "031 870 156"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

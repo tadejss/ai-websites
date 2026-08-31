@@ -1,0 +1,28 @@
+{
+  "companyName": "Bona Nails",
+  "industry": "N<bos>6 salon",
+  "tagline": "Vrhunska nega in urejanje nohtov v Ljubljani",
+  "services": [
+    "Manikura",
+    "Umetni nohti",
+    "Gel lak",
+    "Nega rok",
+    "Poslikava nohtov"
+  ],
+  "phone": "069 743 514",
+  "email": "",
+  "address": "Dunajska c. 158, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 7:00 PM · Tuesday: 8:00 AM – 7:00 PM · Wednesday: 8:00 AM – 7:00 PM · Thursday: 8:00 AM – 7:00 PM · Friday: 8:00 AM – 7:00 PM · Saturday: 8:30 AM – 1:30 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Strokovna in natančna izvedba",
+    "Prijeten ambient in osebni pristop"
+  ],
+  "targetCustomers": "Vsi, ki cenijo urejen videz nohtov in kakovostno nego rok",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "sodoben in urejen",
+  "competitors": "Lokalni saloni za nego nohtov v Ljubljani",
+  "callToAction": "Rezervirajte svoj termin"
+}

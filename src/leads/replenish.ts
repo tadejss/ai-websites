@@ -2,19 +2,39 @@ import { createClientFromLead } from "@/clients/create-client-from-lead";
 import { clientSiteExists } from "@/leads/client-exists";
 import { discoverLeads } from "@/leads/discover";
 import {
-  buildIcpDiscoverySlots,
-  readReplenishCursor,
-  writeReplenishCursor,
-  type IcpDiscoverySlot,
-} from "@/leads/icp";
+  DISCOVERY_MAX_SEARCHES_PER_RUN,
+  DISCOVERY_PLACES_LIMIT_PER_QUERY,
+  DISCOVERY_ZERO_YIELD_COMPLETION_STREAK,
+} from "@/leads/discovery-config";
 import {
-  readSlotYieldState,
-  recordSlotSearch,
-  selectReplenishSlot,
-  slotKey,
-  writeSlotYieldState,
-  type SlotYieldState,
-} from "@/leads/slot-yield";
+  allHighValueCompleted,
+  buildSearchSurface,
+  nextQueryInSurface,
+  type SearchSurface,
+} from "@/leads/discovery-matrix";
+import {
+  advancePointer,
+  completedQuerySet,
+  findActiveCombination,
+  getCombinationProgress,
+  isAllCombinationsComplete,
+  markQueryCompleted,
+  readDiscoveryProgress,
+  setCombinationProgress,
+  syncPointerToCombination,
+  writeDiscoveryProgress,
+  type CombinationProgress,
+  type DiscoveryProgress,
+  type RunStopReason,
+} from "@/leads/discovery-progress";
+import {
+  getDiscoveryProfessionName,
+  type DiscoveryProfessionId,
+} from "@/leads/discovery-professions";
+import {
+  getDiscoveryRegionName,
+  type DiscoveryRegionId,
+} from "@/leads/discovery-regions";
 import { readLead } from "@/leads/store";
 import {
   getSmsConfig,
@@ -26,6 +46,16 @@ import {
   isSmsGenerationCandidate,
 } from "@/outreach/sms/relevance";
 import { isSlovenianMobilePhone, normalizeSlovenianPhone } from "@/outreach/sms/phone";
+
+export type QueryRunStats = {
+  region: string;
+  profession: string;
+  query: string;
+  newCandidates: number;
+  rejectedWebsite: number;
+  rejectedNonMobile: number;
+  duplicates: number;
+};
 
 export type ReplenishStats = {
   actionableBefore: number;
@@ -40,8 +70,13 @@ export type ReplenishStats = {
   demosGenerated: number;
   actionableAfter: number | null;
   errors: string[];
-  slotsTried: number;
-  slotsSkippedCooldown: number;
+  queriesAttempted: number;
+  queriesCompleted: number;
+  region: string;
+  profession: string;
+  nextRegion: string | null;
+  nextProfession: string | null;
+  runStopReason?: RunStopReason;
 };
 
 export type ReplenishDependencies = {
@@ -50,12 +85,12 @@ export type ReplenishDependencies = {
   createFromLead: typeof createClientFromLead;
   readLeadBySlug: typeof readLead;
   siteExists: typeof clientSiteExists;
-  readCursor: () => number;
-  writeCursor: (slotIndex: number) => void;
-  readSlotYield: () => SlotYieldState;
-  writeSlotYield: (state: SlotYieldState) => void;
-  slots: IcpDiscoverySlot[];
+  readProgress: () => DiscoveryProgress;
+  writeProgress: (progress: DiscoveryProgress) => void;
   placesLimitPerQuery: number;
+  maxSearchesPerRun: number;
+  zeroYieldCompletionStreak: number;
+  onQueryComplete?: (stats: QueryRunStats) => void;
 };
 
 const DEFAULT_DEPS: ReplenishDependencies = {
@@ -64,12 +99,11 @@ const DEFAULT_DEPS: ReplenishDependencies = {
   createFromLead: createClientFromLead,
   readLeadBySlug: readLead,
   siteExists: clientSiteExists,
-  readCursor: readReplenishCursor,
-  writeCursor: writeReplenishCursor,
-  readSlotYield: readSlotYieldState,
-  writeSlotYield: writeSlotYieldState,
-  slots: buildIcpDiscoverySlots(),
-  placesLimitPerQuery: 20,
+  readProgress: readDiscoveryProgress,
+  writeProgress: writeDiscoveryProgress,
+  placesLimitPerQuery: DISCOVERY_PLACES_LIMIT_PER_QUERY,
+  maxSearchesPerRun: DISCOVERY_MAX_SEARCHES_PER_RUN,
+  zeroYieldCompletionStreak: DISCOVERY_ZERO_YIELD_COMPLETION_STREAK,
 };
 
 function classifyRejectReason(lead: {
@@ -92,9 +126,81 @@ function classifyRejectReason(lead: {
   return null;
 }
 
+function comboSurface(combo: CombinationProgress): SearchSurface {
+  return {
+    highValueQueries: combo.highValueQueries,
+    optionalQueries: combo.optionalQueries,
+    allQueries: [...combo.highValueQueries, ...combo.optionalQueries],
+  };
+}
+
+function activateCombination(
+  regionId: DiscoveryRegionId,
+  professionId: DiscoveryProfessionId,
+  combo: CombinationProgress,
+): CombinationProgress {
+  const surface = buildSearchSurface(regionId, professionId);
+  return {
+    ...combo,
+    status: "active",
+    highValueQueries: surface.highValueQueries,
+    optionalQueries: surface.optionalQueries,
+  };
+}
+
+function shouldCompleteCombination(
+  combo: CombinationProgress,
+  surface: SearchSurface,
+  zeroYieldStreak: number,
+  zeroYieldCompletionStreak: number,
+): boolean {
+  if (zeroYieldStreak >= zeroYieldCompletionStreak) {
+    return true;
+  }
+  const completed = completedQuerySet(combo);
+  if (allHighValueCompleted(surface, completed)) {
+    return true;
+  }
+  return nextQueryInSurface(surface, completed) === null;
+}
+
+function completionReasonFor(
+  zeroYieldStreak: number,
+  zeroYieldCompletionStreak: number,
+): CombinationProgress["completionReason"] {
+  if (zeroYieldStreak >= zeroYieldCompletionStreak) {
+    return "zero_yield_streak";
+  }
+  return "all_queries_exhausted";
+}
+
+function pointerLabels(progress: DiscoveryProgress): {
+  region: string;
+  profession: string;
+  nextRegion: string | null;
+  nextProfession: string | null;
+} {
+  if (isAllCombinationsComplete(progress)) {
+    return {
+      region: getDiscoveryRegionName(progress.currentRegionId),
+      profession: getDiscoveryProfessionName(progress.currentProfessionId),
+      nextRegion: null,
+      nextProfession: null,
+    };
+  }
+
+  const next = advancePointer(progress);
+  return {
+    region: getDiscoveryRegionName(progress.currentRegionId),
+    profession: getDiscoveryProfessionName(progress.currentProfessionId),
+    nextRegion: getDiscoveryRegionName(next.currentRegionId),
+    nextProfession: getDiscoveryProfessionName(next.currentProfessionId),
+  };
+}
+
 /**
  * Top up actionable SMS leads toward SMS_LEAD_TARGET, capped by batch.
- * Recalculates actionable count at the start of every invocation.
+ * Mines the region × profession discovery matrix with persistent progress.
  */
 export async function replenishSmsLeads(
   deps: Partial<ReplenishDependencies> = {},
@@ -111,6 +217,9 @@ export async function replenishSmsLeads(
     batch,
   });
 
+  let progress = d.readProgress();
+  const labels = pointerLabels(progress);
+
   const stats: ReplenishStats = {
     actionableBefore,
     target,
@@ -124,8 +233,12 @@ export async function replenishSmsLeads(
     demosGenerated: 0,
     actionableAfter: null,
     errors: [],
-    slotsTried: 0,
-    slotsSkippedCooldown: 0,
+    queriesAttempted: 0,
+    queriesCompleted: 0,
+    region: labels.region,
+    profession: labels.profession,
+    nextRegion: labels.nextRegion,
+    nextProfession: labels.nextProfession,
   };
 
   if (toGenerate <= 0) {
@@ -133,68 +246,128 @@ export async function replenishSmsLeads(
     return stats;
   }
 
-  let cursor = d.readCursor();
-  let slotYield = d.readSlotYield();
-  const maxSlotAttempts = Math.max(d.slots.length * 2, 1);
+  let searchesThisRun = 0;
+  let runStopReason: RunStopReason | undefined;
 
-  for (let attempt = 0; attempt < maxSlotAttempts; attempt += 1) {
-    if (stats.demosGenerated >= toGenerate) {
-      break;
+  while (
+    stats.demosGenerated < toGenerate
+    && searchesThisRun < d.maxSearchesPerRun
+    && !isAllCombinationsComplete(progress)
+  ) {
+    const active = findActiveCombination(progress);
+    progress = syncPointerToCombination(
+      progress,
+      active.regionId,
+      active.professionId,
+    );
+
+    let combo = getCombinationProgress(
+      progress,
+      active.regionId,
+      active.professionId,
+    );
+
+    if (combo.status === "pending") {
+      combo = activateCombination(active.regionId, active.professionId, combo);
+      progress = setCombinationProgress(
+        progress,
+        active.regionId,
+        active.professionId,
+        combo,
+      );
+      d.writeProgress(progress);
     }
 
-    const selected = selectReplenishSlot(cursor, d.slots, slotYield);
-    cursor = selected.nextIndex;
+    const surface = comboSurface(combo);
+    const query = nextQueryInSurface(surface, completedQuerySet(combo));
 
-    if (selected.skippedCooldown > 0) {
-      stats.slotsSkippedCooldown += selected.skippedCooldown;
+    if (!query) {
+      combo = {
+        ...combo,
+        status: "completed",
+        completionReason: "all_queries_exhausted",
+      };
+      progress = setCombinationProgress(
+        progress,
+        active.regionId,
+        active.professionId,
+        combo,
+      );
+      progress = advancePointer(progress);
+      d.writeProgress(progress);
+      continue;
     }
 
-    const { slot } = selected;
-    stats.slotsTried += 1;
+    searchesThisRun += 1;
+    stats.queriesAttempted += 1;
+
+    const regionName = getDiscoveryRegionName(active.regionId);
+    const professionName = getDiscoveryProfessionName(active.professionId);
+    stats.region = regionName;
+    stats.profession = professionName;
 
     let discovered;
-    let slotCandidates = 0;
-    let slotDemos = 0;
+    let queryNewCandidates = 0;
+    let queryRejectedWebsite = 0;
+    let queryRejectedNonMobile = 0;
+    let queryDuplicates = 0;
 
     try {
-      discovered = await d.discover(slot.query, d.placesLimitPerQuery, {
+      discovered = await d.discover(query, d.placesLimitPerQuery, {
         withoutWebsiteOnly: true,
         requireMobilePhone: true,
-        industry: slot.industry,
-        region: slot.region,
-        sourceQuery: slot.query,
+        profession: active.professionId,
+        region: active.regionId,
+        sourceQuery: query,
       });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
-      stats.errors.push(`discover "${slot.query}": ${message}`);
-      d.writeCursor(cursor);
-      d.writeSlotYield(slotYield);
-      // Graceful: stop Places loop on hard API failure; keep prior demos.
+      stats.errors.push(`discover "${query}": ${message}`);
+      combo = markQueryCompleted(combo, query, 0);
+      progress = setCombinationProgress(
+        progress,
+        active.regionId,
+        active.professionId,
+        combo,
+      );
+      d.writeProgress(progress);
+      runStopReason = "global_search_limit";
       break;
     }
 
-    d.writeCursor(cursor);
+    combo.rawPlacesProcessed += discovered.length;
 
     for (const result of discovered) {
-      if (stats.demosGenerated >= toGenerate) {
-        break;
-      }
-
       if (result.outcome === "skipped") {
         if (result.reason === "already known") {
           stats.duplicates += 1;
+          queryDuplicates += 1;
+          combo.duplicates += 1;
         } else if (result.reason === "already has a website") {
           stats.rejectedExistingWebsite += 1;
-        } else if (result.reason === "missing phone") {
-          stats.rejectedMissingPhone += 1;
-        } else if (result.reason === "no valid Slovenian mobile phone") {
-          stats.rejectedInvalidOrLandline += 1;
+          queryRejectedWebsite += 1;
+          combo.rejectedWebsite += 1;
+        } else if (
+          result.reason === "missing phone"
+          || result.reason === "no valid Slovenian mobile phone"
+        ) {
+          stats.rejectedMissingPhone += result.reason === "missing phone" ? 1 : 0;
+          stats.rejectedInvalidOrLandline +=
+            result.reason === "no valid Slovenian mobile phone" ? 1 : 0;
+          queryRejectedNonMobile += 1;
+          combo.rejectedNonMobile += 1;
         }
         continue;
       }
 
+      if (stats.demosGenerated >= toGenerate) {
+        break;
+      }
+
       stats.candidatesDiscovered += 1;
-      slotCandidates += 1;
+      queryNewCandidates += 1;
+      combo.newLeads += 1;
+
       const lead = d.readLeadBySlug(result.slug);
       if (!lead) {
         stats.errors.push(`missing lead file after discover: ${result.slug}`);
@@ -229,7 +402,7 @@ export async function replenishSmsLeads(
         const created = await d.createFromLead(lead.slug);
         if (created.outcome === "created") {
           stats.demosGenerated += 1;
-          slotDemos += 1;
+          combo.actionableLeads += 1;
         } else {
           if (created.reason.includes("website")) {
             stats.rejectedExistingWebsite += 1;
@@ -247,12 +420,63 @@ export async function replenishSmsLeads(
       }
     }
 
-    slotYield = recordSlotSearch(slotYield, slotKey(slot), {
-      candidates: slotCandidates,
-      demos: slotDemos,
+    combo = markQueryCompleted(combo, query, queryNewCandidates);
+    stats.queriesCompleted += 1;
+
+    d.onQueryComplete?.({
+      region: regionName,
+      profession: professionName,
+      query,
+      newCandidates: queryNewCandidates,
+      rejectedWebsite: queryRejectedWebsite,
+      rejectedNonMobile: queryRejectedNonMobile,
+      duplicates: queryDuplicates,
     });
-    d.writeSlotYield(slotYield);
+
+    if (
+      shouldCompleteCombination(
+        combo,
+        surface,
+        combo.zeroYieldStreak,
+        d.zeroYieldCompletionStreak,
+      )
+    ) {
+      combo = {
+        ...combo,
+        status: "completed",
+        completionReason: completionReasonFor(
+          combo.zeroYieldStreak,
+          d.zeroYieldCompletionStreak,
+        ),
+      };
+      progress = advancePointer(progress);
+    }
+
+    progress = setCombinationProgress(
+      progress,
+      active.regionId,
+      active.professionId,
+      combo,
+    );
+    d.writeProgress(progress);
   }
+
+  if (!runStopReason) {
+    if (stats.demosGenerated >= toGenerate) {
+      runStopReason = "target_met";
+    } else if (isAllCombinationsComplete(progress)) {
+      runStopReason = "all_combinations_exhausted";
+    } else if (searchesThisRun >= d.maxSearchesPerRun) {
+      runStopReason = "global_search_limit";
+    }
+  }
+
+  const finalLabels = pointerLabels(progress);
+  stats.region = finalLabels.region;
+  stats.profession = finalLabels.profession;
+  stats.nextRegion = finalLabels.nextRegion;
+  stats.nextProfession = finalLabels.nextProfession;
+  stats.runStopReason = runStopReason;
 
   try {
     stats.actionableAfter = await d.countActionable();

@@ -1,0 +1,29 @@
+{
+  "companyName": "Pedikura & kozmetika Bizjak",
+  "industry": "Nega stopal in kozmetične storitve",
+  "tagline": "Strokovna pedikura in kozmetične storitve za vaše dobro počutje",
+  "services": [
+    "Medicinska pedikura",
+    "Estetska pedikura",
+    "Nega obraza",
+    "Oblikovanje obrvi",
+    "Manikura"
+  ],
+  "phone": "031 288 137",
+  "email": "",
+  "address": "Kopališka ulica 4, 1360 Vrhnika, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Strokoven in prijazen pristop",
+    "Celostna nega telesa in stopal",
+    "Prilagodljiv delovni čas"
+  ],
+  "targetCustomers": "Ljudje, ki skrbijo za zdravje in urejenost svojih stopal ter iščejo kakovostne kozmetične storitve.",
+  "serviceArea": "Vrhnika z okolico",
+  "yearsExperience": "",
+  "tone": "stroqun, sproščen, prijazen",
+  "brandStyle": "čist, eleganten, domač",
+  "competitors": "Lokalni saloni za nego stopal in kozmetiko na Vrhniki",
+  "callToAction": "Rezervirajte termin"
+}

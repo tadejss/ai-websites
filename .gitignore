@@ -55,3 +55,4 @@ tools/sms-gateway/.env
 # SMS gateway dependencies
 tools/sms-gateway/node_modules/
 data/replenish-slot-yield.json
+data/lead-discovery-progress.json

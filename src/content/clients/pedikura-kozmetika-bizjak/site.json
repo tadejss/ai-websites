@@ -1,0 +1,290 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "lavender-cream",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikura-kozmetika-bizjak/hero.avif",
+      "alt": "Notranjost salona za nego stopal z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikura-kozmetika-bizjak/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7755549",
+      "sourceUrl": "https://www.pexels.com/photo/woman-getting-her-toenails-done-7755549/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "searchQuery": "warm medical pedicure foot care salon interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikura-kozmetika-bizjak/services.avif",
+      "alt": "Strokovna nega in pedikura v prijetnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikura-kozmetika-bizjak/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7755142",
+      "sourceUrl": "https://www.pexels.com/photo/nail-polish-on-wooden-shelves-7755142/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "searchQuery": "elegant nail salon interior dusty rose aesthetic lighting"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled osnovnih storitev nege stopal in kozmetičnih tretmajev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Medicinska pedikura",
+        "description": "Strokovna nega problematičnih stopal",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Estetska pedikura",
+        "description": "Urejanje in nega zdravih stopal",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Nega obraza",
+        "description": "Osnovna nega in vlaženje kože",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Oblikovanje obrvi",
+        "description": "Oblikovanje in urejanje obrvi",
+        "price": "od 10 €"
+      },
+      {
+        "name": "Manikura",
+        "description": "Nega rok in nohtov",
+        "price": "od 25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Pedikura & kozmetika",
+    "highlight": "Bizjak"
+  },
+  "metadata": {
+    "title": "Pedikura & kozmetika Bizjak | Vrhnika",
+    "description": "Strokovna medicinska in estetska pedikura ter kozmetične storitve na Vrhniki z okolico. Poskrbite za zdravje in urejenost svojih stopal v prijetnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Nega stopal in kozmetika na Vrhniki",
+    "title": "Strokovna pedikura in kozmetične storitve za vaše",
+    "titleHighlight": "dobro počutje",
+    "description": "Celostna nega za vse, ki skrbijo za zdravje in urejenost svojih stopal ter iščejo kakovostne kozmetične storitve na Vrhniki z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Prijazno",
+        "title": "Prijazno"
+      },
+      {
+        "value": "Celostno",
+        "label": "Celostno",
+        "title": "Celostno"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo",
+        "title": "Prilagodljivo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celostna nega stopal in telesa",
+    "description": "V salonu Pedikura & kozmetika Bizjak nudimo strokovne storitve za zdravje in lepoto vaših stopal ter kože.",
+    "items": [
+      {
+        "title": "Medicinska pedikura",
+        "description": "Strokovna oskrba stopal za reševanje vraščenih nohtov, otiščancev in druge problematike.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Estetska pedikura",
+        "description": "Urejanje nohtov, nega stopal in nanos lakov za urejen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega obraza",
+        "description": "Osvežilni in negovalni tretmaji za sijoč videz in zdravje kože.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje obrvi",
+        "description": "Natančno oblikovanje obrvi, ki poudarijo vaše naravne poteze obraza.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manikura",
+        "description": "Nega rok in nohtov za urejen ter negovan vsakdanji videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost vašemu dobremu počutju",
+    "description": "Združujemo strokovnost, prijazen pristop in čist ter urejen ambient.",
+    "highlights": [
+      "Strokoven in prijazen pristop",
+      "Celostna nega telesa in stopal",
+      "Prilagodljiv delovni čas"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Strokoven in prijazen pristop k vsaki stranki posebej.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Celostna nega",
+        "description": "Vse storitve za nego stopal in kozmetiko na enem mestu.",
+        "title": "Celostna nega"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagojen delovni čas vašim obveznostim in potrebam.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kopališka ulica 4, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 288 137",
+        "href": "tel:031288137",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 20:00, Sob–Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kopališka ulica 4, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Pedikura & kozmetika Bizjak",
+    "address": "Kopališka ulica 4, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "031 288 137"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

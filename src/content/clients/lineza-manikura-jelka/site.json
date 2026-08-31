@@ -1,0 +1,253 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "coastal-fog",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene nege nohtov",
+    "description": "Pregled rednih storitev našega lepotnega kotička.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in nanos zaščitnega lakiranja.",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Negovalna nega nohtov",
+        "description": "Intenzivna nega za obnovo in poživitev naravnih nohtov.",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Urejanje in oblikovanje nohtov",
+        "description": "Hitro in natančno oblikovanje nohtov po vaši želji.",
+        "price": "od 18 €"
+      },
+      {
+        "name": "Gelish lakiranje",
+        "description": "Obstojen barvni gelish lak z dolgo obstojnostjo.",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Nega obnohtne kožice",
+        "description": "Skrbno urejanje in mehčanje obnohtne kožice.",
+        "price": "od 15 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Lineza",
+    "highlight": "manikura"
+  },
+  "metadata": {
+    "title": "Lineza, manikura | Salon za nohte Vrhnika",
+    "description": "Strokovna in urejena manikura za vaše lepe nohte na Vrhniki in v okolici. Rezervirajte svoj termin za Gelish lakiranje, klasično in negovalno nego nohtov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Salon za nohte Vrhnika",
+    "title": "Strokovna in urejena manikura za",
+    "titleHighlight": "vaše lepe nohte",
+    "description": "Poskrbite za urejen videz svojih nohtov v prijetnem in domačem lokalnem salonu na Vrhniki in okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Urejen ambient",
+        "label": "Urejen ambient",
+        "title": "Urejen ambient"
+      },
+      {
+        "value": "Osebna nega",
+        "label": "Osebna nega",
+        "title": "Osebna nega"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lepe in urejene nohte",
+    "description": "V salonu Lineza na Vrhniki nudimo celovito nego nohtov, prilagojeno vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Klasična manikura",
+        "description": "Urejanje in oblikovanje nohtov za klasičen, čist in negovan videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Negovalna nega nohtov",
+        "description": "Poglobljena nega, ki vrača nohtom zdravje, moč in naravni lesk.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje in oblikovanje nohtov",
+        "description": "Natančno piljenje in oblikovanje nohtov po vaši meri.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Gelish lakiranje",
+        "description": "Dolgotrajen in obstojen nanos laka za brezhiben videz v vsakem trenutku.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega obnohtne kožice",
+        "description": "Nežno urejanje obnohtne kožice za urejen in estetski videz rok.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Urejen in domač lokalni salon na Vrhniki",
+    "description": "Zavedamo se pomena lepih in urejenih rok, zato se vsaki stranki posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Strokovna in natančna izvedba storitev",
+      "Osebni pristop k vsaki stranki",
+      "Prijetno in urejeno okolje"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost in natančnost",
+        "description": "Vsaka storitev je izvedena skrbno, natančno in z mislijo na zdravje vaših nohtov.",
+        "title": "Strokovnost in natančnost"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in vam svetujemo pri izbiri ustrezne nege.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sprostite se v urejenem in domačem okolju našega salona na Vrhniki.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pokličite nas ali nam pošljite sporočilo ter si zagotovite svoj termin za urejanje nohtov.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 362 179",
+        "href": "tel:041362179",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Idrijska cesta 42, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Idrijska cesta 42, 1360 Vrhnika, Slovenia",
+    "rights": "Lineza, manikura, Jelka Groznik s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lineza manikura",
+    "address": "Idrijska cesta 42, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 362 179"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

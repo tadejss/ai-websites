@@ -1,0 +1,286 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "dusty-rose",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nailsbeauty/hero.avif",
+      "alt": "Notranjost sodobnega salona za nego nohtov v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nailsbeauty/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7755549",
+      "sourceUrl": "https://www.pexels.com/photo/woman-getting-her-toenails-done-7755549/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "searchQuery": "warm medical pedicure foot care salon interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nailsbeauty/services.avif",
+      "alt": "Strokovna manikura in nega rok v kozmetičnem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nailsbeauty/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7755142",
+      "sourceUrl": "https://www.pexels.com/photo/nail-polish-on-wooden-shelves-7755142/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "searchQuery": "elegant nail salon interior dusty rose aesthetic lighting"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled osnovnih storitev nege nohtov in rok.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manikura",
+        "description": "Osnovna nega in oblikovanje nohtov",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Gel lak",
+        "description": "Obstojen barvni nanos z nego",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Urejanje nohtov",
+        "description": "Krajšanje, oblikovanje in nega obnohtne kožice",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Nega rok",
+        "description": "Piling, maska in hranilna nega za roke",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Okrasitev po izbiri",
+        "price": "od 5 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Nails",
+    "highlight": "beauty"
+  },
+  "metadata": {
+    "title": "Nailsbeauty | Negovanje nohtov in kozmetični salon Ljubljana",
+    "description": "Vaša destinacija za lepe in urejene nohte v Ljubljani. Strokovna manikura, gel lak, nega rok in poslikava nohtov v prijetnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon Ljubljana",
+    "title": "Vaša destinacija za lepe in urejene",
+    "titleHighlight": "nohte",
+    "description": "Poskrbite za urejen videz nohtov in kakovostno nego rok v Ljubljani z okolico. Nudimo strokovno manikuro, gel lak in poslikave v urejenem in sodobnem ambientu.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Urejen salon",
+        "label": "Urejen salon"
+      },
+      {
+        "value": "Strokovna nega",
+        "label": "Strokovna nega"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Natančnost"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Storitve za nego nohtov in rok",
+    "description": "Celovite storitve za lepe in zdrave nohte ter negovane roke v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Manikura",
+        "description": "Klasična nega in oblikovanje nohtov za urejen vsakdanji videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Gel lak",
+        "description": "Dolgo obstojen lak in čudovit sijaj vaših nohtov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje nohtov",
+        "description": "Strokovno urejanje in oblikovanje v skladu z vašimi željami.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega rok",
+        "description": "Nega za mehke, gladke in lepe roke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Ustvarjalne in natančne poslikave za unikaten videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega salona",
+    "description": "Zaupajo nam stranke, ki cenijo urejen videz in profesionalen pristop.",
+    "highlights": [
+      "Strokovna in natančna nega nohtov",
+      "Visoka ocena in zadovoljne stranke",
+      "Prijeten ambient v Ljubljani"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Natančna in strokovna nega nohtov za najboljše rezultate.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Zadovoljstvo",
+        "description": "Visoka raven zadovoljstva strank, ki cenijo kakovost.",
+        "title": "Zadovoljstvo"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje v Ljubljani, kjer se boste počutili dobrodošlo.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "c. na Brdo 69, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 373 553",
+        "href": "tel:041373553",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "c. na Brdo 69, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Nails beauty",
+    "address": "c. na Brdo 69, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 373 553"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

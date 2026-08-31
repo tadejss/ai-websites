@@ -1,0 +1,283 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "outfit-bitter"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pro-pedis-medicinska/hero.avif",
+      "alt": "Sodobna in čista ordinacija za medicinsko pedikuro",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pro-pedis-medicinska/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997381",
+      "sourceUrl": "https://www.pexels.com/photo/person-with-red-nail-polish-3997381/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pro-pedis-medicinska/services.avif",
+      "alt": "Strokovni pripomočki za nego in zdravje stopal",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pro-pedis-medicinska/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "29877719",
+      "sourceUrl": "https://www.pexels.com/photo/professional-manicure-process-in-polish-salon-29877719/",
+      "photographer": "Larysa Stratiichuk",
+      "photographerUrl": "https://www.pexels.com/@larysa-stratiichuk-1606923648",
+      "searchQuery": "professional skincare facial treatment and manicure delicate warm lighting"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled okvirnih cen naših storitev medicinske pedikure in nege stopal.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Medicinska pedikura",
+        "description": "Celovita strokovna nega stopal, nohtov in obnohtne kožice",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Odstranjevanje kurjih očes",
+        "description": "Ciljno odstranjevanje trde kože in kurjih očes",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Sanacija vraščenih nohtov",
+        "description": "Strokovna obravnava in urejanje vraščenega nohta",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Nega diabetičnega stopala",
+        "description": "Varna in prilagojena nega občutljivih stopal",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Svetovanje za nego stopal",
+        "description": "Individualni posvet in priporočila za domačo nego",
+        "price": "brezplačno ob storitvi"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Pro",
+    "highlight": "Pedis"
+  },
+  "metadata": {
+    "title": "Pro Pedis | Medicinska pedikura Grosuplje",
+    "description": "Strokovna in posamična skrb za vaše zdravje stopal v Grosuplju z okolico. Medicinska pedikura, vraščeni nohti, kurja očesa in nega diabetičnega stopala."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Medicinska pedikura Grosuplje",
+    "title": "Strokovna in posamična skrb za vaše",
+    "titleHighlight": "zdravje stopal",
+    "description": "Nudimo strokovno medicinsko pedikuro, nego diabetičnega stopala ter pomoč pri vraščenih nohtih in kurjih očesih v Grosuplju z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Celovita skrb",
+        "label": "Celovita skrb",
+        "title": "Celovita skrb"
+      },
+      {
+        "value": "Prilagojen urnik",
+        "label": "Prilagojen urnik",
+        "title": "Prilagojen urnik"
+      },
+      {
+        "value": "Zaupanja vredno",
+        "label": "Zaupanja vredno",
+        "title": "Zaupanja vredno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za zdravje vaših stopal",
+    "description": "Specializirani smo za medicinsko pedikuro in reševanje zahtevnejših težav s stopali v Grosuplju z okolico.",
+    "items": [
+      {
+        "title": "Medicinska pedikura",
+        "description": "Strokovna nega in obravnava problematičnih predelov stopal za zagotavljanje zdravja in udobja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Odstranjevanje kurjih očes",
+        "description": "Varno in učinkovito odstranjevanje kurjih očes za takojšnje olajšanje pri hoji.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sanacija vraščenih nohtov",
+        "description": "Strokovno reševanje težav z vraščenimi nohti z ustreznimi postopki in nego.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega diabetičnega stopala",
+        "description": "Skrbna in prilagojena nega občutljivih stopal oseb s sladkorno boleznijo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje za nego stopal",
+        "description": "Strokovni nasveti za vsakodnevno domačo nego in ohranjanje zdravja stopal.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vredna skrb za vaša stopala",
+    "description": "Z združevanjem strokovnega znanja, prijaznega pristopa in prilagojenega urnika poskrbimo za dobro počutje vaših stopal.",
+    "highlights": [
+      "Visoko strokoven in prijazen pristop",
+      "Celovita skrb za zdravje stopal",
+      "Prilagojen urnik z delom ob večerih"
+    ],
+    "benefits": [
+      {
+        "label": "Strokoven pristop",
+        "description": "Visoko strokovna obravnava vseh težav s stopali s posluhom za posameznika.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Celovita skrb",
+        "description": "Specializirane storitve od medicinske pedikure do nege diabetičnega stopala.",
+        "title": "Celovita skrb"
+      },
+      {
+        "label": "Prilagojen urnik",
+        "description": "Možnost terminov, prilagojenih vašemu obveznostim, z delom ob večerih.",
+        "title": "Prilagojen urnik"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede nege vaših stopal.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska cesta 3, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 342 411",
+        "href": "tel:040342411",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, Pet: 6:00–15:00 · Tor, Čet: 6:00–20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska cesta 3, 1290 Grosuplje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Pro Pedis",
+    "address": "Kolodvorska cesta 3, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "040 342 411"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

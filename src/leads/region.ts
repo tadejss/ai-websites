@@ -1,4 +1,8 @@
 import type { PlacesLocationBias } from "@/sources/google-places-source";
+import {
+  getDiscoveryRegionLocationBias,
+  matchesDiscoveryRegion,
+} from "./discovery-regions";
 
 export const NOTRANJSKA_REGION = "notranjska";
 export const DOLENJSKA_REGION = "dolenjska";
@@ -24,7 +28,7 @@ export const DOLENJSKA_LOCATION_BIAS: PlacesLocationBias = {
   radiusMeters: 50_000,
 };
 
-const REGION_CONFIG: Record<
+const LEGACY_REGION_CONFIG: Record<
   string,
   { pattern: RegExp; locationBias: PlacesLocationBias }
 > = {
@@ -53,7 +57,12 @@ export function getRegionLocationBias(
     return undefined;
   }
 
-  return REGION_CONFIG[region]?.locationBias;
+  const legacy = LEGACY_REGION_CONFIG[region];
+  if (legacy) {
+    return legacy.locationBias;
+  }
+
+  return getDiscoveryRegionLocationBias(region);
 }
 
 export function matchesRegion(
@@ -64,11 +73,10 @@ export function matchesRegion(
     return true;
   }
 
-  const config = REGION_CONFIG[region];
-
-  if (!config) {
-    return true;
+  const legacy = LEGACY_REGION_CONFIG[region];
+  if (legacy) {
+    return legacy.pattern.test(address ?? "");
   }
 
-  return config.pattern.test(address ?? "");
+  return matchesDiscoveryRegion(region, address);
 }

@@ -1,4 +1,7 @@
 import assert from "node:assert/strict";
+import { existsSync, mkdtempSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { normalizeSlovenianPhone, isSlovenianMobilePhone } from "../src/outreach/sms/phone";
 import { analyzeSmsLength, renderSms } from "../src/outreach/sms/templates";
 import { evaluateSmsEligibility } from "../src/outreach/sms/eligibility";
@@ -300,19 +303,21 @@ async function main() {
   );
 
   const { replenishSmsLeads } = await import("../src/leads/replenish");
-  const slots = [
-    {
-      industry: "frizer" as const,
-      region: "notranjska",
-      query: "frizer test",
-    },
-  ];
+  const { createInitialProgress } = await import("../src/leads/discovery-progress");
+
+  let matrixProgress = createInitialProgress();
+  matrixProgress = {
+    ...matrixProgress,
+    currentRegionId: "zasavska",
+    currentProfessionId: "frizerji",
+  };
 
   const atTarget = await replenishSmsLeads({
     countActionable: async () => 520,
-    slots,
-    readCursor: () => 0,
-    writeCursor: () => {},
+    readProgress: () => matrixProgress,
+    writeProgress: (next) => {
+      matrixProgress = next;
+    },
     discover: async () => {
       throw new Error("discover should not run when at target");
     },
@@ -325,9 +330,10 @@ async function main() {
 
   const exactlyTarget = await replenishSmsLeads({
     countActionable: async () => 500,
-    slots,
-    readCursor: () => 0,
-    writeCursor: () => {},
+    readProgress: () => matrixProgress,
+    writeProgress: (next) => {
+      matrixProgress = next;
+    },
     discover: async () => {
       throw new Error("discover should not run at exact target");
     },
@@ -337,11 +343,20 @@ async function main() {
   let discoverCalls = 0;
   let createCalls = 0;
   const created = new Set<string>();
+  matrixProgress = createInitialProgress();
+  matrixProgress = {
+    ...matrixProgress,
+    currentRegionId: "zasavska",
+    currentProfessionId: "frizerji",
+  };
   const below = await replenishSmsLeads({
     countActionable: async () => 499,
-    slots,
-    readCursor: () => 0,
-    writeCursor: () => {},
+    maxSearchesPerRun: 5,
+    zeroYieldCompletionStreak: 99,
+    readProgress: () => matrixProgress,
+    writeProgress: (next) => {
+      matrixProgress = next;
+    },
     placesLimitPerQuery: 5,
     discover: async () => {
       discoverCalls += 1;
@@ -427,9 +442,12 @@ async function main() {
 
   const batchCap = await replenishSmsLeads({
     countActionable: async () => 140,
-    slots,
-    readCursor: () => 0,
-    writeCursor: () => {},
+    maxSearchesPerRun: 50,
+    zeroYieldCompletionStreak: 99,
+    readProgress: () => matrixProgress,
+    writeProgress: (next) => {
+      matrixProgress = next;
+    },
     placesLimitPerQuery: 50,
     discover: async () =>
       Array.from({ length: 50 }, (_, i) => ({
@@ -450,77 +468,67 @@ async function main() {
       companyName: slug,
     }),
   });
-  // Override batch via env is hard; inject by temporarily setting — use deps
-  // already capped by getSmsConfig(). Force via count that needs many but we
-  // pass custom by monkeypatching: re-run with smaller needed via high before.
   ok(batchCap.demosGenerated <= batchCap.toGenerate, "never exceed toGenerate");
   ok(batchCap.toGenerate <= 100, "default batch ceiling");
 
-
   const {
-    emptySlotYieldState,
-    isSlotOnCooldown,
-    recordSlotSearch,
-    selectReplenishSlot,
-    slotKey,
-    SLOT_ZERO_STREAK_COOLDOWN,
-  } = await import("../src/leads/slot-yield");
+    buildSearchSurface,
+    combinationKey,
+  } = await import("../src/leads/discovery-matrix");
+  const {
+    markQueryCompleted,
+    readDiscoveryProgress,
+    writeDiscoveryProgress,
+  } = await import("../src/leads/discovery-progress");
 
-  const slotA = {
-    industry: "frizer" as const,
-    region: "notranjska",
-    query: "frizer test",
+  const surface = buildSearchSurface("zasavska", "frizerji");
+  ok(surface.highValueQueries.length > 1, "matrix surface has town queries");
+
+  let progressState = createInitialProgress();
+  const key = combinationKey("zasavska", "frizerji");
+  let combo = progressState.combinations[key]!;
+  combo = {
+    ...combo,
+    status: "active",
+    highValueQueries: surface.highValueQueries,
+    optionalQueries: surface.optionalQueries,
   };
-  const slotB = {
-    industry: "elektro" as const,
-    region: "dolenjska",
-    query: "elektro test",
+  progressState = {
+    ...progressState,
+    currentRegionId: "zasavska",
+    currentProfessionId: "frizerji",
+    combinations: { ...progressState.combinations, [key]: combo },
   };
-  const testSlots = [slotA, slotB];
+  combo = markQueryCompleted(combo, surface.highValueQueries[0]!, 0);
+  combo = markQueryCompleted(combo, surface.highValueQueries[0]!, 0);
+  ok(combo.queriesCompleted.length === 1, "matrix progress dedupes completed query");
+  ok(combo.zeroYieldStreak === 2, "matrix zero-yield streak tracked");
 
-  let yieldState = emptySlotYieldState();
-  const keyA = slotKey(slotA);
-  for (let i = 0; i < SLOT_ZERO_STREAK_COOLDOWN; i += 1) {
-    yieldState = recordSlotSearch(yieldState, keyA, {
-      candidates: 0,
-      demos: 0,
-    });
-  }
-  ok(isSlotOnCooldown(yieldState, keyA), "slot enters cooldown after zero streak");
+  const tempDir = mkdtempSync(join(tmpdir(), "matrix-test-"));
+  const progressPath = join(tempDir, "lead-discovery-progress.json");
+  writeDiscoveryProgress(progressState, progressPath);
+  ok(existsSync(progressPath), "matrix progress file written");
+  const loaded = readDiscoveryProgress(progressPath);
+  ok(loaded.combinations[key]!.queriesCompleted.length === 1, "matrix progress reloads");
 
-  const picked = selectReplenishSlot(0, testSlots, yieldState);
-  ok(picked.slot.industry === "elektro", "cooled slot skipped for fresh slot");
-  ok(picked.skippedCooldown === 1, "one cooled slot skipped");
-
-  ok(isSlotOnCooldown(yieldState, keyA), "slot A stays cooled after slot B search");
-
-  yieldState = recordSlotSearch(yieldState, keyA, { candidates: 1, demos: 0 });
-  ok(
-    yieldState.slots[keyA]?.consecutiveZeroCandidates === 0,
-    "candidate hit resets zero streak",
-  );
-  ok(!isSlotOnCooldown(yieldState, keyA), "candidate hit clears cooldown");
-
-  let discoverCallsWithCooldown = 0;
-  yieldState = emptySlotYieldState();
-  for (let i = 0; i < SLOT_ZERO_STREAK_COOLDOWN; i += 1) {
-    yieldState = recordSlotSearch(yieldState, keyA, {
-      candidates: 0,
-      demos: 0,
-    });
-  }
+  let discoverCallsMatrix = 0;
+  progressState = createInitialProgress();
+  progressState = {
+    ...progressState,
+    currentRegionId: "zasavska",
+    currentProfessionId: "frizerji",
+  };
   await replenishSmsLeads({
     countActionable: async () => 499,
-    slots: testSlots,
-    readCursor: () => 0,
-    writeCursor: () => {},
-    readSlotYield: () => yieldState,
-    writeSlotYield: (state) => {
-      yieldState = state;
+    maxSearchesPerRun: 1,
+    zeroYieldCompletionStreak: 99,
+    readProgress: () => progressState,
+    writeProgress: (next) => {
+      progressState = next;
     },
     placesLimitPerQuery: 5,
     discover: async (_query, _limit, options) => {
-      discoverCallsWithCooldown += 1;
+      discoverCallsMatrix += 1;
       ok(options?.requireMobilePhone === true, "replenish requires mobile at discover");
       return [
         {
@@ -543,7 +551,7 @@ async function main() {
       companyName: slug,
     }),
   });
-  ok(discoverCallsWithCooldown === 1, "cooldown deprioritization still runs one discover");
+  ok(discoverCallsMatrix === 1, "matrix replenish runs one discover per iteration");
 
   ok(isOptOutMessage("STOP"), "STOP");
   ok(isOptOutMessage(" odjava "), "ODJAVA");

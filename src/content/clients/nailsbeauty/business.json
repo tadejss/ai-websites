@@ -1,0 +1,28 @@
+{
+  "companyName": "Nailsbeauty",
+  "industry": "Negovanje nohtov in kozmetični salon",
+  "tagline": "Vaša destinacija za lepe in urejene nohte v Ljubljani",
+  "services": [
+    "Manikura",
+    "Gel lak",
+    "Urejanje nohtov",
+    "Nega rok",
+    "Poslikava nohtov"
+  ],
+  "phone": "041 373 553",
+  "email": "",
+  "address": "c.na Brdo 69, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 5:00 PM · Tuesday: 7:00 AM – 5:00 PM · Wednesday: 7:00 AM – 5:00 PM · Thursday: 7:00 AM – 5:00 PM · Friday: 7:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Strokovna in natančna nega nohtov",
+    "Prijeten ambient v Ljubljani"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo urejen videz nohtov in kakovostno nego rok",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "urejen in sodoben",
+  "competitors": "Lokalni saloni za nego nohtov v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

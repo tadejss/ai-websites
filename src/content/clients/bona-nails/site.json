@@ -1,0 +1,290 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "coastal-fog",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/bona-nails/hero.avif",
+      "alt": "Sodoben salon za nohte z manikuro v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/bona-nails/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677846",
+      "sourceUrl": "https://www.pexels.com/photo/nail-stylist-removing-cuticles-4677846/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/bona-nails/services.avif",
+      "alt": "Nega rok in urejanje nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/bona-nails/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677859",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-a-lace-top-wearing-gloves-holding-a-person-s-finger-4677859/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled cen",
+    "description": "Informativni cenik naših storitev nege in urejanja nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manikura",
+        "description": "Oblikovanje nohtov in nega obnohtne kožice",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Gel lak",
+        "description": "Nanašanje obstojnega gel laka na naravne nohte",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Umetni nohti",
+        "description": "Podaljševanje nohtov z geli",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Nega rok",
+        "description": "Piling, maska in hranilna krema za roke",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Dodatne unikatne poslikave in dekoracija",
+        "price": "od 5 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Bona",
+    "highlight": "Nails"
+  },
+  "metadata": {
+    "title": "Bona Nails | Vrhunska nega in urejanje nohtov v Ljubljani",
+    "description": "Vrhunska nega in urejanje nohtov v Ljubljani z okolico. Manikura, gel lak, umetni nohti in nega rok v prijetnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Salon za nohte Ljubljana",
+    "title": "Vrhunska nega in urejanje nohtov",
+    "titleHighlight": "v Ljubljani",
+    "description": "Poskrbite za urejen videz vaših rok. Nudimo manikuro, gel lak, umetne nohte in nego rok za vse, ki cenijo kakovost.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokovna izvedba",
+        "label": "Strokovna izvedba",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Vrhunska nega",
+        "label": "Vrhunska nega",
+        "title": "Vrhunska nega"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Urejanje in nega nohtov",
+    "description": "Izberite med našimi storitvami za lepe in urejene roke v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Manikura",
+        "description": "Kakovostna nega in oblikovanje vaših naravnih nohtov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Umetni nohti",
+        "description": "Podaljševanje in oblikovanje nohtov po vaših željah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Gel lak",
+        "description": "Obstojen in sijoč lak, ki poskrbi za dolgotrajno urejen videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega rok",
+        "description": "Hranilna nega za mehko in negovano kožo vaših rok.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Kreativni vzorci in unikatne poslikave za poseben videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Bona Nails",
+    "title": "Prednosti, ki prepričajo",
+    "description": "Zavedamo se pomena lepih in urejenih rok, zato se vam v celoti posvetimo.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Strokovna in natančna izvedba",
+      "Prijeten ambient in osebni pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Strokovno in natančno urejanje nohtov za popoln končni videz.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje v Ljubljani, kjer se boste počutili dobrodošlo.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prilagojene storitve, ki ustrezajo vašim željam in potrebam.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dunajska c. 158, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "069 743 514",
+        "href": "tel:069743514",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–19:00, Sob: 8:30–13:30, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Dunajska c. 158, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Bona Nails",
+    "address": "Dunajska c. 158, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "069 743 514"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

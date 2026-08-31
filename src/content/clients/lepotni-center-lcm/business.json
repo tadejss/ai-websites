@@ -1,0 +1,28 @@
+{
+  "companyName": "Lepotni Center LCM",
+  "industry": "Salon za nohte in nega",
+  "tagline": "Vaša destinacija za urejene nohte in sprostitev v Grosupljem",
+  "services": [
+    "Manikura",
+    "Nega nohtov",
+    "Umetni nohti",
+    "Gelish lakiranje",
+    "Nega rok"
+  ],
+  "phone": "040 219 000",
+  "email": "",
+  "address": "Brezje pri Grosupljem 75, 1290 Grosuplje, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunska ocena zadovoljstva strank",
+    "Strokovna in natančna izvedba storitev",
+    "Prijeten ambient za sprostitev"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo urejen videz nohtov in kakovostno nego v okolici Grosuplja",
+  "serviceArea": "Grosuplje z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen in eleganten",
+  "competitors": "Lokalni saloni za nego nohtov v regiji",
+  "callToAction": "Rezervirajte termin"
+}
