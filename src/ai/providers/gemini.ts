@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { generateGeminiContent } from "../gemini-request";
 import { GenerationContentError } from "../generation-error";
 import type { BusinessInput } from "../types";
 import {
@@ -34,7 +35,8 @@ export function createGeminiProvider(): SiteConfigProvider {
         },
       });
 
-      const response = await model.generateContent(
+      const response = await generateGeminiContent(
+        model,
         buildUserPrompt(input, correction),
       );
       const content = response.response.text();

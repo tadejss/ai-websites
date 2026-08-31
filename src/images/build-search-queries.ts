@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { generateGeminiContent } from "@/ai/gemini-request";
 import type { BusinessInput } from "@/ai/types";
 import type { SiteConfig } from "@/content/types/site";
 import { getPalette } from "@/theme/palettes";
@@ -84,7 +85,7 @@ ${JSON.stringify(
 
 Visual mood: ${paletteMood(siteConfig)}`;
 
-  const response = await model.generateContent(userPrompt);
+  const response = await generateGeminiContent(model, userPrompt);
   const content = response.response.text();
 
   if (!content) {
