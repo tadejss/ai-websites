@@ -456,6 +456,95 @@ async function main() {
   ok(batchCap.demosGenerated <= batchCap.toGenerate, "never exceed toGenerate");
   ok(batchCap.toGenerate <= 100, "default batch ceiling");
 
+
+  const {
+    emptySlotYieldState,
+    isSlotOnCooldown,
+    recordSlotSearch,
+    selectReplenishSlot,
+    slotKey,
+    SLOT_ZERO_STREAK_COOLDOWN,
+  } = await import("../src/leads/slot-yield");
+
+  const slotA = {
+    industry: "frizer" as const,
+    region: "notranjska",
+    query: "frizer test",
+  };
+  const slotB = {
+    industry: "elektro" as const,
+    region: "dolenjska",
+    query: "elektro test",
+  };
+  const testSlots = [slotA, slotB];
+
+  let yieldState = emptySlotYieldState();
+  const keyA = slotKey(slotA);
+  for (let i = 0; i < SLOT_ZERO_STREAK_COOLDOWN; i += 1) {
+    yieldState = recordSlotSearch(yieldState, keyA, {
+      candidates: 0,
+      demos: 0,
+    });
+  }
+  ok(isSlotOnCooldown(yieldState, keyA), "slot enters cooldown after zero streak");
+
+  const picked = selectReplenishSlot(0, testSlots, yieldState);
+  ok(picked.slot.industry === "elektro", "cooled slot skipped for fresh slot");
+  ok(picked.skippedCooldown === 1, "one cooled slot skipped");
+
+  ok(isSlotOnCooldown(yieldState, keyA), "slot A stays cooled after slot B search");
+
+  yieldState = recordSlotSearch(yieldState, keyA, { candidates: 1, demos: 0 });
+  ok(
+    yieldState.slots[keyA]?.consecutiveZeroCandidates === 0,
+    "candidate hit resets zero streak",
+  );
+  ok(!isSlotOnCooldown(yieldState, keyA), "candidate hit clears cooldown");
+
+  let discoverCallsWithCooldown = 0;
+  yieldState = emptySlotYieldState();
+  for (let i = 0; i < SLOT_ZERO_STREAK_COOLDOWN; i += 1) {
+    yieldState = recordSlotSearch(yieldState, keyA, {
+      candidates: 0,
+      demos: 0,
+    });
+  }
+  await replenishSmsLeads({
+    countActionable: async () => 499,
+    slots: testSlots,
+    readCursor: () => 0,
+    writeCursor: () => {},
+    readSlotYield: () => yieldState,
+    writeSlotYield: (state) => {
+      yieldState = state;
+    },
+    placesLimitPerQuery: 5,
+    discover: async (_query, _limit, options) => {
+      discoverCallsWithCooldown += 1;
+      ok(options?.requireMobilePhone === true, "replenish requires mobile at discover");
+      return [
+        {
+          outcome: "discovered",
+          slug: "lead-good",
+          companyName: "Good",
+          googlePlaceId: "p5",
+        },
+      ];
+    },
+    readLeadBySlug: () => ({
+      slug: "lead-good",
+      phone: "041 696 401",
+      existingWebsite: "",
+    }),
+    siteExists: () => false,
+    createFromLead: async (slug) => ({
+      outcome: "created",
+      slug,
+      companyName: slug,
+    }),
+  });
+  ok(discoverCallsWithCooldown === 1, "cooldown deprioritization still runs one discover");
+
   ok(isOptOutMessage("STOP"), "STOP");
   ok(isOptOutMessage(" odjava "), "ODJAVA");
   ok(isOptOutMessage("Ne"), "NE exact");

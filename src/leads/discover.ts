@@ -10,6 +10,7 @@ import {
   getRegionLocationBias,
   matchesRegion,
 } from "./region";
+import { isSlovenianMobilePhone } from "@/outreach/sms/phone";
 import { readAllLeads, saveLead, type LeadRecord } from "./store";
 
 export type DiscoveryResult =
@@ -29,6 +30,8 @@ export type DiscoveryResult =
 export type DiscoverLeadsOptions = {
   region?: string;
   withoutWebsiteOnly?: boolean;
+  /** When set, only save leads with a valid Slovenian mobile number. */
+  requireMobilePhone?: boolean;
   industry?: LeadIndustryId;
   sourceQuery?: string;
 };
@@ -109,6 +112,19 @@ export async function discoverLeads(
       results.push({
         outcome: "skipped",
         reason: "already has a website",
+        companyName,
+        googlePlaceId,
+      });
+      continue;
+    }
+
+
+    if (options.requireMobilePhone && !isSlovenianMobilePhone(business.phone)) {
+      results.push({
+        outcome: "skipped",
+        reason: business.phone?.trim()
+          ? "no valid Slovenian mobile phone"
+          : "missing phone",
         companyName,
         googlePlaceId,
       });

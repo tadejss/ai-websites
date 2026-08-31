@@ -3,11 +3,18 @@ import { clientSiteExists } from "@/leads/client-exists";
 import { discoverLeads } from "@/leads/discover";
 import {
   buildIcpDiscoverySlots,
-  nextIcpSlot,
   readReplenishCursor,
   writeReplenishCursor,
   type IcpDiscoverySlot,
 } from "@/leads/icp";
+import {
+  readSlotYieldState,
+  recordSlotSearch,
+  selectReplenishSlot,
+  slotKey,
+  writeSlotYieldState,
+  type SlotYieldState,
+} from "@/leads/slot-yield";
 import { readLead } from "@/leads/store";
 import {
   getSmsConfig,
@@ -34,6 +41,7 @@ export type ReplenishStats = {
   actionableAfter: number | null;
   errors: string[];
   slotsTried: number;
+  slotsSkippedCooldown: number;
 };
 
 export type ReplenishDependencies = {
@@ -44,6 +52,8 @@ export type ReplenishDependencies = {
   siteExists: typeof clientSiteExists;
   readCursor: () => number;
   writeCursor: (slotIndex: number) => void;
+  readSlotYield: () => SlotYieldState;
+  writeSlotYield: (state: SlotYieldState) => void;
   slots: IcpDiscoverySlot[];
   placesLimitPerQuery: number;
 };
@@ -56,6 +66,8 @@ const DEFAULT_DEPS: ReplenishDependencies = {
   siteExists: clientSiteExists,
   readCursor: readReplenishCursor,
   writeCursor: writeReplenishCursor,
+  readSlotYield: readSlotYieldState,
+  writeSlotYield: writeSlotYieldState,
   slots: buildIcpDiscoverySlots(),
   placesLimitPerQuery: 20,
 };
@@ -113,6 +125,7 @@ export async function replenishSmsLeads(
     actionableAfter: null,
     errors: [],
     slotsTried: 0,
+    slotsSkippedCooldown: 0,
   };
 
   if (toGenerate <= 0) {
@@ -121,6 +134,7 @@ export async function replenishSmsLeads(
   }
 
   let cursor = d.readCursor();
+  let slotYield = d.readSlotYield();
   const maxSlotAttempts = Math.max(d.slots.length * 2, 1);
 
   for (let attempt = 0; attempt < maxSlotAttempts; attempt += 1) {
@@ -128,14 +142,24 @@ export async function replenishSmsLeads(
       break;
     }
 
-    const { slot, nextIndex } = nextIcpSlot(cursor, d.slots);
-    cursor = nextIndex;
+    const selected = selectReplenishSlot(cursor, d.slots, slotYield);
+    cursor = selected.nextIndex;
+
+    if (selected.skippedCooldown > 0) {
+      stats.slotsSkippedCooldown += selected.skippedCooldown;
+    }
+
+    const { slot } = selected;
     stats.slotsTried += 1;
 
     let discovered;
+    let slotCandidates = 0;
+    let slotDemos = 0;
+
     try {
       discovered = await d.discover(slot.query, d.placesLimitPerQuery, {
         withoutWebsiteOnly: true,
+        requireMobilePhone: true,
         industry: slot.industry,
         region: slot.region,
         sourceQuery: slot.query,
@@ -144,6 +168,7 @@ export async function replenishSmsLeads(
       const message = error instanceof Error ? error.message : String(error);
       stats.errors.push(`discover "${slot.query}": ${message}`);
       d.writeCursor(cursor);
+      d.writeSlotYield(slotYield);
       // Graceful: stop Places loop on hard API failure; keep prior demos.
       break;
     }
@@ -160,11 +185,16 @@ export async function replenishSmsLeads(
           stats.duplicates += 1;
         } else if (result.reason === "already has a website") {
           stats.rejectedExistingWebsite += 1;
+        } else if (result.reason === "missing phone") {
+          stats.rejectedMissingPhone += 1;
+        } else if (result.reason === "no valid Slovenian mobile phone") {
+          stats.rejectedInvalidOrLandline += 1;
         }
         continue;
       }
 
       stats.candidatesDiscovered += 1;
+      slotCandidates += 1;
       const lead = d.readLeadBySlug(result.slug);
       if (!lead) {
         stats.errors.push(`missing lead file after discover: ${result.slug}`);
@@ -199,6 +229,7 @@ export async function replenishSmsLeads(
         const created = await d.createFromLead(lead.slug);
         if (created.outcome === "created") {
           stats.demosGenerated += 1;
+          slotDemos += 1;
         } else {
           if (created.reason.includes("website")) {
             stats.rejectedExistingWebsite += 1;
@@ -215,6 +246,12 @@ export async function replenishSmsLeads(
         stats.errors.push(`${lead.slug}: ${message}`);
       }
     }
+
+    slotYield = recordSlotSearch(slotYield, slotKey(slot), {
+      candidates: slotCandidates,
+      demos: slotDemos,
+    });
+    d.writeSlotYield(slotYield);
   }
 
   try {

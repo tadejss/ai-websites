@@ -25,6 +25,7 @@ async function main(): Promise<void> {
         demosGenerated: stats.demosGenerated,
         actionableAfter: stats.actionableAfter,
         slotsTried: stats.slotsTried,
+        slotsSkippedCooldown: stats.slotsSkippedCooldown,
         errorCount: stats.errors.length,
       },
       null,

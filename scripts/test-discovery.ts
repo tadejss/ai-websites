@@ -161,6 +161,65 @@ async function main(): Promise<void> {
     again.length === 1 && again[0].outcome === "skipped",
   );
 
+
+  console.log("\n== mobile gate when requireMobilePhone ==");
+
+  stubFetch([
+    {
+      places: [
+        { id: "mob-1", name: "Mobile Salon", website: undefined },
+        { id: "land-1", name: "Landline Salon" },
+      ],
+    },
+  ]);
+
+  globalThis.fetch = (async (_url: string, init: { body: string }) => {
+    const body = JSON.parse(init.body) as Record<string, unknown>;
+    const places = body.pageToken
+      ? []
+      : [
+          { id: "mob-1", name: "Mobile Salon" },
+          { id: "land-1", name: "Landline Salon" },
+        ];
+    return {
+      ok: true,
+      async json() {
+        return {
+          places: places.map((place) => ({
+            id: place.id,
+            displayName: { text: place.name },
+            primaryType: "hair_salon",
+            nationalPhoneNumber:
+              place.id === "mob-1" ? "041 123 456" : "01 234 5678",
+            formattedAddress: "Neka ulica 1, 1000 Ljubljana",
+            websiteUri: undefined,
+            rating: 4.6,
+            userRatingCount: 25,
+          })),
+        };
+      },
+    };
+  }) as unknown as typeof fetch;
+
+  const mobileOnly = await discoverLeads("frizer mobile gate", 10, {
+    requireMobilePhone: true,
+  });
+  const saved = mobileOnly.filter((r) => r.outcome === "discovered");
+  check("mobile gate saves only mobile businesses", saved.length === 1);
+  check(
+    "landline skipped with reason",
+    mobileOnly.some(
+      (r) =>
+        r.outcome === "skipped" &&
+        r.reason === "no valid Slovenian mobile phone",
+    ),
+  );
+  for (const result of saved) {
+    if (result.outcome === "discovered") {
+      trackTempLead(result.slug);
+    }
+  }
+
   console.log("\n== status transitions ==");
 
   check("discovered is a known status", LEAD_STATUSES.includes("discovered"));

@@ -53,6 +53,20 @@ const DETAILS_FIELD_MASK = [
   "reviews",
 ].join(",");
 
+/** Lead demo generation — Enterprise tier without Atmosphere fields. */
+const GENERATION_DETAILS_FIELD_MASK = [
+  "id",
+  "displayName",
+  "primaryType",
+  "types",
+  "nationalPhoneNumber",
+  "formattedAddress",
+  "websiteUri",
+  "regularOpeningHours",
+  "rating",
+  "userRatingCount",
+].join(",");
+
 // Google returns at most 20 results per page and at most 3 pages per query.
 const MAX_PAGE_SIZE = 20;
 const MAX_RESULTS_PER_QUERY = 60;
@@ -264,11 +278,12 @@ export async function searchPlaces(
  */
 export async function getPlaceDetails(
   googlePlaceId: string,
+  fieldMask: string = DETAILS_FIELD_MASK,
 ): Promise<RawBusinessData> {
   const response = await fetch(`${PLACES_DETAILS_URL}/${googlePlaceId}`, {
     headers: {
       "X-Goog-Api-Key": getApiKey(),
-      "X-Goog-FieldMask": DETAILS_FIELD_MASK,
+      "X-Goog-FieldMask": fieldMask,
     },
   });
 
@@ -286,7 +301,7 @@ export function createPlaceDetailsSource(
 ): BusinessSource {
   return {
     async getBusiness() {
-      return getPlaceDetails(googlePlaceId);
+      return getPlaceDetails(googlePlaceId, GENERATION_DETAILS_FIELD_MASK);
     },
   };
 }
