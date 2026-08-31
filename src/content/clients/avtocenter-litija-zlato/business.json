@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtocenter Litija Zlato Koleša s.p.",
+  "industry": "Avtomehanična delavnica in servis",
+  "tagline": "Zanesljiv avtoservis in popravila vozil v Litiji",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava pnevmatik in vulkanizerstvo",
+    "Popravila podvozja in zavor",
+    "Diagnostika vozil",
+    "Priprava vozil na tehnični pregled"
+  ],
+  "phone": "041 409 340",
+  "email": "",
+  "address": "Brodarska ulica 9, 1270 Litija, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Hitra in učinkovita storitev",
+    "Strokovno osebje z izkušnjami",
+    "Celovita skrb za vaše vozilo"
+  ],
+  "targetCustomers": "Lastniki osebnih in lahkih gospodarskih vozil v Litiji in okolici",
+  "serviceArea": "Litija s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni avtoservisi v regiji",
+  "callToAction": "Rezervirajte termin"
+}

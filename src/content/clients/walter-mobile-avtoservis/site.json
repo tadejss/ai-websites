@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/walter-mobile-avtoservis/hero.avif",
+      "alt": "Mehanik popravlja avtomobil na terenu ob cesti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/walter-mobile-avtoservis/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985924",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-on-a-car-8985924/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional auto repair shop mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/walter-mobile-avtoservis/services.avif",
+      "alt": "Diagnostika motorja vozila z modernim orodjem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/walter-mobile-avtoservis/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985967",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-coverall-standing-near-a-car-8985967/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional car mechanic working in bright workshop interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za naše terenske storitve in pomoč na cesti.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Terenski izhod in pregled",
+        "description": "Prihod na lokacijo v Ljubljani z okolico in osnovni pregled vozila",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop na diagnostično napravo in branje napak",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Menjava akumulatorja na terenu",
+        "description": "Menjava starega akumulatorja z novim na vaši lokaciji",
+        "price": "od 30 €",
+        "featured": true
+      },
+      {
+        "name": "Manjša mehanska popravila",
+        "description": "Urna postavka za manjša popravila na terenu",
+        "price": "od 50 € / ura"
+      },
+      {
+        "name": "Pomoč na cesti",
+        "description": "Interventna pomoč na cesti in odprava zastojev delovanja",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Walter mobile",
+    "highlight": "Avtoservis"
+  },
+  "metadata": {
+    "title": "Walter mobile Avtoservis | Zanesljiv mobilni avtoservis na terenu v Ljubljani",
+    "description": "Zanesljiv mobilni avtoservis na terenu v Ljubljani in okolici. Nudimo terenska popravila vozil, menjavo akumulatorjev, diagnostiko in pomoč na cesti 24/7."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za pomoč"
+  },
+  "hero": {
+    "badge": "Mobilni avtoservis na terenu",
+    "title": "Zanesljiva pomoč na cesti",
+    "titleHighlight": "kadarkoli in kjerkoli",
+    "description": "Zanesljiv mobilni avtoservis na terenu za lastnike vozil v Ljubljani in okolici. Pridemo na vašo lokacijo in poskrbimo za hitro ter strokovno rešitev težav z vašim vozilom.",
+    "primaryCta": "Pokličite za pomoč",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Dosegljivi vsak dan"
+      },
+      {
+        "value": "Na terenu",
+        "label": "Pri vas na lokaciji"
+      },
+      {
+        "value": "Hitro",
+        "label": "Odzivnost in pomoč"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve mobilnega avtoservisa",
+    "description": "Pridemo na vašo lokacijo v Ljubljani in okolici ter poskrbimo za popravilo vašega vozila, ko to najbolj potrebujete.",
+    "items": [
+      {
+        "title": "Terenska popravila vozil",
+        "description": "Popravila in odpravljanje težav z vozilom neposredno na vaši lokaciji.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava akumulatorjev",
+        "description": "Hitra menjava in preverjanje stanja akumulatorja na terenu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Manjša mehanska popravila",
+        "description": "Učinkovita izvedba manjših mehanskih popravil tam, kjer je vaše vozilo obtičalo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno odpravljanje napak in računalniška diagnostika na terenu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pomoč na cesti",
+        "description": "Hitra in zanesljiva pomoč na cesti za varno nadaljevanje vaše poti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega mobilnega servisa",
+    "description": "Združujemo strokovnost, dostopnost in hitro odzivnost, da vam lahko pomagamo takrat, ko je to najbolj potrebno.",
+    "highlights": [
+      "Dosegljivi 24 ur na dan",
+      "Mobilna storitev na vaši lokaciji",
+      "Hitra odzivnost in strokovna pomoč"
+    ],
+    "benefits": [
+      {
+        "label": "Dosegljivost 24/7",
+        "description": "Na voljo smo vam ves čas, podnevi in ponoči, vse dni v tednu.",
+        "title": "Dosegljivost 24/7"
+      },
+      {
+        "label": "Servis na terenu",
+        "description": "Pridemo na vašo lokacijo v Ljubljani in okolici ter prihranimo vaš čas.",
+        "title": "Servis na terenu"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Zanesljiva in strokovna pomoč pri odpravljanju težav z vašim vozilom.",
+        "title": "Strokoven pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete pomoč na cesti ali terenski servis? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 884 870",
+        "href": "tel:040884870",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 00:00 - 24:00 (24/7)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo z vašim vozilom in lokacijo...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+    "rights": "© 2025 Walter mobile Avtoservis. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Walter mobile Avtoservis",
+    "address": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 884 870"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

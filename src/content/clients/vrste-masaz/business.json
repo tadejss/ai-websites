@@ -1,0 +1,27 @@
+{
+  "companyName": "vrste masaž",
+  "industry": "masažne storitve",
+  "tagline": "Sprostitev in dobro počutje z masažo v Ljubljani",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža",
+    "Športna masaža"
+  ],
+  "phone": "041 970 742",
+  "email": "",
+  "address": "Župančičeva ulica, 1000 Ljubljana, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Individualen pristop k vsaki stranki",
+    "Strokovne in sprostitvene tehnike",
+    "Prijeten ambient v središču Ljubljane"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje napetosti v mišicah in boljše počutje",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "sproščen, strokoven",
+  "brandStyle": "prijazen lokalni ponudnik",
+  "competitors": "drugi ponudniki masažnih storitev v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

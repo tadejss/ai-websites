@@ -1,0 +1,275 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/oaza-sonca-poslovno/hero.avif",
+      "alt": "Topel in pomirjujoč prostor za masažo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/oaza-sonca-poslovno/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16574941",
+      "sourceUrl": "https://www.pexels.com/photo/beauty-portrait-blonde-woman-applying-cosmetics-face-mask-on-face-16574941/",
+      "photographer": "Vlad Deep",
+      "photographerUrl": "https://www.pexels.com/@vlad-deep-29415806",
+      "searchQuery": "professional skincare treatment spa tools copper clay aesthetic"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/oaza-sonca-poslovno/services.avif",
+      "alt": "Sprostitvena masaža za dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/oaza-sonca-poslovno/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4374743",
+      "sourceUrl": "https://www.pexels.com/photo/scenery-of-pure-turquoise-seawater-4374743/",
+      "photographer": "Curioso Photography",
+      "photographerUrl": "https://www.pexels.com/@curiosophotography",
+      "searchQuery": "deep cleaning service sparkling clean modern living room ocean teal"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled rednih storitev za sprostitev in svetovanje.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščanje celega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna nega za um in telo",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Usmerjena obravnava napetosti",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Poslovno svetovanje",
+        "description": "Posvet in strokovne rešitve",
+        "price": "od 70 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Oaza",
+    "highlight": "sonca"
+  },
+  "metadata": {
+    "title": "Oaza sonca | Masaža in poslovno svetovanje",
+    "description": "Vaša oaza sprostitve in dobrega počutja na Škofljici s iršjo okolico. Klasične, sprostitvene in bolečinske masaže za celostno sprostitev."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masaža in poslovno svetovanje",
+    "title": "Vaša oaza sprostitve in",
+    "titleHighlight": "dobrega počutja",
+    "description": "Posvečeni smo posameznikom, ki iščejo sprostitev, lajšanje napetosti in celostno dobro počutje na Škofljici z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjena kakovost",
+        "label": "Preverjena kakovost"
+      },
+      {
+        "value": "Celosten pristop",
+        "label": "Celosten pristop"
+      },
+      {
+        "value": "Strokoven kader",
+        "label": "Strokoven kader"
+      },
+      {
+        "value": "Topel ambient",
+        "label": "Topel ambient"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše ravnovesje",
+    "description": "Izberite storitev, ki vam bo pomagala povrniti energijo in zmanjšati vsakodnevni stres.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Sproščanje napetih mišic in izboljšanje prekrvavitve celega telesa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi za pomiritev uma, sprostitev telesa in globok mir.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljano lajšanje napetosti in odpravljanje bolečin v mišicah ter sklepih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Poslovno svetovanje",
+        "description": "Strokovna pomoč in svetovanje za uspešen razvoj vaše poslovne poti.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Celostna skrb za vaše počutje",
+    "description": "Združujemo strokovnost, osebni pristop in naraven ambient za najboljšo izkušnjo.",
+    "highlights": [
+      "Preverjena kakovost storitev z odličnimi ocenami strank",
+      "Celostni pristop k sprostitvi in počutju",
+      "Prijazno in strokovno osebje"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Storitve temeljijo na odličnih izkušnjah in zadovoljstvu naših strank.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Celosten pristop",
+        "description": "Posvečeni smo vašemu celostnemu dobremu počutju ter sprostitvi.",
+        "title": "Celosten pristop"
+      },
+      {
+        "label": "Strokovnost in toplina",
+        "description": "Prijazno osebje poskrbi za sproščeno in domače vzdušje ob vsakem obisku.",
+        "title": "Strokovnost in toplina"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dolenjska cesta 373, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 533 277",
+        "href": "tel:031533277",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Dolenjska cesta 373, 1291 Škofljica, Slovenia",
+    "rights": "© Oaza sonca, Lana Mihele s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Oaza sonca",
+    "address": "Dolenjska cesta 373, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "031 533 277"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

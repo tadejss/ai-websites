@@ -1,0 +1,27 @@
+{
+  "companyName": "Avtokleparstvo in vzdrževanje vozil Jan Balantič S.P.",
+  "industry": "Avtokleparstvo in servis vozil",
+  "tagline": "Zanesljivo avtokleparstvo in celovito vzdrževanje vozil v Kamniku",
+  "services": [
+    "Avtokleparska dela",
+    "Popravilo karoserije",
+    "Vzdrževanje vozil",
+    "Servis in pregled vozil"
+  ],
+  "phone": "040 438 211",
+  "email": "",
+  "address": "Spodnje Palovče 12a, 1241 Kamnik, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 5:00 PM · Tuesday: 9:00 AM – 5:00 PM · Wednesday: 9:00 AM – 5:00 PM · Thursday: 9:00 AM – 5:00 PM · Friday: 9:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Strokovno popravilo karoserije",
+    "Kakovostno vzdrževanje vozil",
+    "Zanesljiva in osebna obravnava strank"
+  ],
+  "targetCustomers": "Lastniki vozil, ki potrebujejo kakovostno avtokleparstvo in redno vzdrževanje",
+  "serviceArea": "Kamnik z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalne avtokleparske delavnice in servisi v regiji",
+  "callToAction": "Pokličite za termin"
+}

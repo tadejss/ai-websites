@@ -1,0 +1,285 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/tristan-auto-works/hero.avif",
+      "alt": "Mehanik med delom na motorju v sodobni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/tristan-auto-works/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470679",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-repairing-a-car-8470679/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/tristan-auto-works/services.avif",
+      "alt": "Notranjost sodobne avtomehanične delavnice za predelave",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/tristan-auto-works/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985712",
+      "sourceUrl": "https://www.pexels.com/photo/car-engine-in-front-of-a-mechanic-8985712/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled pogostejših storitev",
+    "description": "Cene so informativne narave; za natančen izračun predelave ali servisa nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozil",
+        "description": "Menjava olja, filtrov in osnovni pregled točk na vozilu",
+        "price": "od 60 €",
+        "featured": false
+      },
+      {
+        "name": "Diagnostika vozil",
+        "description": "Pregled napak na elektroniki in motornem sistemu",
+        "price": "od 40 €",
+        "featured": false
+      },
+      {
+        "name": "Optimizacija delovanja",
+        "description": "Prilagoditve za boljše delovanje motorja in odzivnost",
+        "price": "od 150 €",
+        "featured": true
+      },
+      {
+        "name": "Svetovanje in načrtovanje predelave",
+        "description": "Strokovni posvet glede nadgradenj in homologacijskih postopkov",
+        "price": "od 50 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Tristan",
+    "highlight": "Auto Works"
+  },
+  "metadata": {
+    "title": "Tristan Auto Works | Specialne predelave vozil in servis v Litiji",
+    "description": "Specialne predelave vozil, servis in vzdrževanje, optimizacija delovanja ter svetovanje po meri v Litiji in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Strokovne predelave in servis vozil",
+    "title": "Vaš zanesljiv partner za",
+    "titleHighlight": "specialne predelave vozil",
+    "description": "Specializirane predelave vozil, nadgradnje in kakovosten servis v Litiji in okolici. Prilagojen pristop k vsakemu projektu za lastnike vozil, ki pričakujejo največ.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Specialno",
+        "label": "Znanje za predelave"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop po meri"
+      },
+      {
+        "value": "Vrhunska",
+        "label": "Natančnost in kakovost"
+      },
+      {
+        "value": "Celostna",
+        "label": "Skrb za vaše vozilo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Od specialnih predelav in optimizacije delovanja do rednega servisa in vzdrževanja v Litiji in okolici.",
+    "items": [
+      {
+        "title": "Predelava vozil",
+        "description": "Specializirane predelave in nadgradnje vozil po vaših željah in zahtevah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis in vzdrževanje vozil",
+        "description": "Redno vzdrževanje, diagnostika in popravila za varno vožnjo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Optimizacija delovanja",
+        "description": "Izboljšanje zmogljivosti, učinkovitosti in odzivnosti vašega avtomobila.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje in predelave po meri",
+        "description": "Strokovno svetovanje pri izbiri pravih nadgradenj in rešitev za vaše vozilo.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in natančnost",
+    "description": "Z združevanjem tehničnega znanja in posluhom za želje strank dosegamo vrhunske rezultate pri vsakem projektu.",
+    "highlights": [
+      "Specializirano znanje za zahtevne predelave vozil",
+      "Visoko zadovoljstvo strank z osebnim pristopom",
+      "Prilagojene rešitve, ki ustrezajo vašemu vozilu"
+    ],
+    "benefits": [
+      {
+        "stat": "Specializirano znanje",
+        "label": "Specializirano znanje",
+        "description": "Poglobljeno strokovno znanje in izkušnje na področju specialnih predelav vozil.",
+        "title": "Specializirano znanje"
+      },
+      {
+        "stat": "Prilagojen pristop",
+        "label": "Prilagojen pristop",
+        "description": "Vsakemu projektu se posvetimo individualno in poiščemo najboljšo rešitev po meri.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "stat": "Zaupanja vredno",
+        "label": "Zaupanja vredno",
+        "description": "Gradimo na zanesljivosti, natančnosti in zadovoljstvu naših strank.",
+        "title": "Zaupanja vredno"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje glede predelave ali želite rezervirati termin? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ponoviška cesta 11a, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 835 353",
+        "href": "tel:031835353",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–19:00, Sob: 9:00–14:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opičite vaše želje ali potrebe glede vozila...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ponoviška cesta 11a, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Tristan Auto Works",
+    "address": "Ponoviška cesta 11a, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "031 835 353"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

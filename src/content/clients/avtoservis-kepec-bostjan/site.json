@@ -1,0 +1,293 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-kepec-bostjan/hero.avif",
+      "alt": "Mehanik med delom v sodobno opremljeni avtoservisni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-kepec-bostjan/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985972",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-working-on-an-engine-8985972/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-kepec-bostjan/services.avif",
+      "alt": "Orodja in oprema za avtodiagnostiko in popravilo vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-kepec-bostjan/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28153670",
+      "sourceUrl": "https://www.pexels.com/photo/a-young-man-is-working-on-a-car-engine-28153670/",
+      "photographer": "dionisio castigotivane",
+      "photographerUrl": "https://www.pexels.com/@dionisio-castigotivane-1013672643",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled okvirnih cen osnovnih avtoservisnih storitev v naši delavnici.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo glede na tip vozila nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (delo)",
+        "description": "Menjava olja in filtrov",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava in centriranje 4 pnevmatik",
+        "description": "Premontaža in centriranje",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Odčitavanje napak in brisanje kod",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled zavor, podvozja in tekočin",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Sprednja ali zadnja os",
+        "price": "od 35 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Kepec"
+  },
+  "metadata": {
+    "title": "Avtoservis Kepec | Zanesljiv avtoservis v Domžalah",
+    "description": "Strokovni redni servisi, mehanična popravila, menjava gum in diagnostika vozil v Domžalah z okolico. Preverite našo ponudbo in rezervirajte termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni avtoservis",
+    "title": "Strokovna skrb za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Zanesljiv in strokoven avtoservis za lastnike osebnih vozil v Domžalah in okolici. Poskrbimo za varno in brezskrbno vožnjo.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Zanesljiva popravila",
+        "label": "Zanesljiva popravila",
+        "title": "Zanesljiva popravila"
+      },
+      {
+        "value": "Osebna nota",
+        "label": "Osebna nota",
+        "title": "Osebna nota"
+      },
+      {
+        "value": "Hitra izvedba",
+        "label": "Hitra izvedba",
+        "title": "Hitra izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše avtoservisne storitve",
+    "description": "Za vaše vozilo poskrbimo celovito – od rednega vzdrževanja do zahtevnejših mehaničnih popravil in diagnostike v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Menjava olja, filtrov in pregled ključnih sklopov za dolgo življenjsko dobo vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Mehanična popravila",
+        "description": "Hitro in kakovostno odpravljanje okvar na zavornem sistemu, vzmetenju in drugih delih vozila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zlivanje in menjava gum",
+        "description": "Celovite vulkanizerske storitve, menjava ter centriranje pnevmatik za varen oprijem na cesti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priprava vozil na tehnični pregled",
+        "description": "Temeljit preventivni pregled vašega jeklenega konjička pred obiskom tehničnega pregleda.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno odčitavanje napak in računalniška diagnostika elektronskih sistemov v vozilu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanje, ki temelji na kakovosti",
+    "description": "Zavedamo se pomena varnosti na cesti, zato se vu vsakemu vozilu posvetimo z vso skrbnostjo in strokovnostjo.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Strokovno in hitro popravilo",
+      "Osebni pristop k vsakemu vozilu"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka ocena",
+        "description": "Zadovoljne stranke so naše najboljše priporočilo in potrditev kakovostnega dela.",
+        "title": "Visoka ocena"
+      },
+      {
+        "label": "Hitro popravilo",
+        "description": "Cenimo vaš čas, zato storitve opravimo strokovno in v dogovorjenih rokih.",
+        "title": "Hitro popravilo"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in se poglobljeno posvetimo specifikam vašega vozila.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte termin za vaše vozilo",
+    "description": "Pokličite nas ali nam pišite za dogovor o servisu in popravilu vašega avtomobila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Prelog, Krožna pot 28A, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 531 021",
+        "href": "tel:041531021",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 8:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili s predlogom termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali težavo z vozilom...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Prelog, Krožna pot 28A, 1230 Domžale, Slovenia",
+    "rights": "© Avtoservis Kepec, Boštjan Kepec s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Kepec",
+    "address": "Prelog, Krožna pot 28A, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "041 531 021"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

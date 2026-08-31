@@ -1,0 +1,293 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-dobovsek/hero.avif",
+      "alt": "Notranjnost avtoservisa z opremo za popravilo vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-dobovsek/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315574",
+      "sourceUrl": "https://www.pexels.com/photo/person-in-black-long-sleeves-repairing-the-car-engine-4315574/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-dobovsek/services.avif",
+      "alt": "Diagnostika in vzdrževanje vozil v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-dobovsek/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470679",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-repairing-a-car-8470679/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naša delavnica",
+    "description": "Utrinki iz našega vsakdanjega dela in urejene delavnice v Kamniku.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled pogostih storitev",
+    "description": "Transparentne cene za vzdrževanje in popravila vašega osebnega vozila.",
+    "disclaimer": "Cenik je informativen. Za natančne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni avtoservis",
+        "description": "Menjava olja in filtrov",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Premontaža in centriranje set",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika vozila",
+        "description": "Priklop na tester in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pregled zavornega sistema",
+        "description": "Pregled ploščic, diskov in tekočine",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Celovit preventivni pregled vozila",
+        "price": "od 45 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Dobovšek"
+  },
+  "metadata": {
+    "title": "Avtoservis Dobovšek | Zanesljivo vzdrževanje vozil Kamnik",
+    "description": "Zanesljivo vzdrževanje, redni servisi, menjava pnevmatik in popravila vozil v Kamniku z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv avtoservis v Kamniku",
+    "title": "Strokovno vzdrževanje in popravila",
+    "titleHighlight": "vašega vozila",
+    "description": "Poskrbite za varno in brezskrbno vožnjo. Ponujamo celovite storitve za lastnike osebnih vozil v Kamniku in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje in izkušnje",
+        "title": "Strokovno osebje"
+      },
+      {
+        "value": "Hitra",
+        "label": "In zanesljiva izvedba",
+        "title": "Hitra izvedba"
+      },
+      {
+        "value": "Preverjena",
+        "label": "Kakovost storitev",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Kamnik z okolico",
+        "title": "Lokalni servis"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Zagotavljamo zanesljivo vzdrževanje in popravila za lastnike osebnih vozil v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Redni avtoservis",
+        "description": "Redno vzdrževanje in menjava tekočin ter filtrov za dolgoročno delovanje vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik in premontaža",
+        "description": "Hitra in strokovna menjava pnevmatik ter premontaža za varno vožnjo v vseh letnih časih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistem in vzmetenje",
+        "description": "Pregled in popravilo zavornih sistemov ter vzmetenja za vašo varnost na cesti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančna računalniška diagnostika napak in težav na vašem vozilu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozila na tehnični pregled",
+        "description": "Temeljit pregled vašega vozila, da ga brezskrbno pripeljete skozi tehnični pregled.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden avtoservis v vašem kraju",
+    "description": "Zavedamo se pomena varnosti na cesti, zato se vsakemu vozilu posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Preverjena kakovost storitev z visokimi ocenami strank",
+      "Hitra in zanesljiva izvedba popravil",
+      "Strokovno osebje z izkušnjami"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Kakovost storitev potrjujejo zadovoljne stranke.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Hitra in zanesljiva izvedba vseh popravil na vozilu.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Strokovni pristop",
+        "description": "Izkušeno osebje poskrbi za brezhibno delovanje vašega avtomobila.",
+        "title": "Strokovni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis ali postavite vprašanje glede vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kamniška Cesta 19, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 366 087",
+        "href": "tel:041366087",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:30 – 16:30",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kamniška Cesta 19, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Dobovšek",
+    "address": "Kamniška Cesta 19, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 366 087"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

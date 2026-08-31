@@ -1,0 +1,28 @@
+{
+  "companyName": "Manikira Urban Spa",
+  "industry": "Negovanje kože in lepota",
+  "tagline": "Vaša oaza za nego in lepoto v Ljubljani",
+  "services": [
+    "Klasična manikira",
+    "Negovanje nohtov",
+    "Nega kože",
+    "Sprostitvene storitve",
+    "Urejanje obrvi"
+  ],
+  "phone": "051 604 212",
+  "email": "",
+  "address": "Cesta Ljubljanske brigade 33, 1000 Ljubljana, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Lokalno dostopna lokacija v Ljubljani",
+    "Specializirane storitve za nego in lepoto",
+    "Udobno okolje za sprostitev"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo profesionalno nego nohtov in kože v Ljubljani",
+  "serviceArea": "Ljubljana",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben in sproščujoč",
+  "competitors": "Lokalni saloni za nego in lepotni studii",
+  "callToAction": "Rezervirajte termin"
+}

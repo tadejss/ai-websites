@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoličarstvo M.M, Avtoličarske storitve, d.o.o.",
+  "industry": "Avtoličarstvo in kleparstvo",
+  "tagline": "Vrhunske avtoličarske storitve in obnova lakiranja za vaše vozilo",
+  "services": [
+    "Avtoličarstvo",
+    "Barvanje vozil",
+    "Popravilo prask",
+    "Sanacija poškodb po toči",
+    "Poliranje vozil"
+  ],
+  "phone": "041 752 017",
+  "email": "",
+  "address": "Idrijska cesta 42, 1360 Vrhnika, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 6:00 PM · Tuesday: 8:00 AM – 6:00 PM · Wednesday: 8:00 AM – 6:00 PM · Thursday: 8:00 AM – 6:00 PM · Friday: 8:00 AM – 6:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Kakovostna izvedba avtoličarskih del",
+    "Zanesljivost in strokovnost"
+  ],
+  "targetCustomers": "Lastniki osebnih in dostavnih vozil, ki potrebujejo ličarska popravila ali osvežitev videza avtomobila",
+  "serviceArea": "Vrhnika z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "kakovosten lokalni servis",
+  "competitors": "Lokalne avtoličarske delavnice na Vrhniki in v širši okolici",
+  "callToAction": "Pokličite nas"
+}

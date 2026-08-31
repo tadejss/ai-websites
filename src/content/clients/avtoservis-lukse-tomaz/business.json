@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Lukše, Tomaž Lukše, s.p.",
+  "industry": "Avtoservisna delavnica",
+  "tagline": "Zanesljiv in strokoven avtoservis za vaše vozilo",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava gum in premontaža",
+    "Zavorni sistemi",
+    "Vzdrževanje in popravila",
+    "Diagnostika vozil"
+  ],
+  "phone": "041 949 411",
+  "email": "",
+  "address": "Perkova ulica 15, 1241 Kamnik, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunska ocena zadovoljstva strank",
+    "Osebni pristop in strokovno svetovanje",
+    "Zanesljiva in hitra izvedba storitev"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Kamniku in okolici",
+  "serviceArea": "Kamnik z okolico",
+  "yearsExperience": "",
+  "tone": "strookoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtoservisne delavnice v regiji",
+  "callToAction": "Rezervirajte termin"
+}

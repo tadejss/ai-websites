@@ -142,6 +142,39 @@ check(
 );
 check("blank title flagged", thinProblems.some((p) => p.includes("hero.title")));
 
+console.log("\n== gallery partial section defaults ==");
+
+const partialGallerySite = JSON.parse(
+  readFileSync(resolve(clientsDir, "avtokleparstvo-avtolicarstvo-branko/site.json"), "utf8"),
+) as SiteConfig;
+const partialGalleryBusiness = loadBusiness("avtokleparstvo-avtolicarstvo-branko");
+const partialGalleryPayload = { ...partialGallerySite } as Record<string, unknown>;
+partialGalleryPayload.gallery = { id: "galerija", items: [] };
+delete partialGalleryPayload.appearance;
+delete partialGalleryPayload.theme;
+delete partialGalleryPayload.layout;
+delete partialGalleryPayload.images;
+delete partialGalleryPayload.sections;
+
+let partialGalleryAccepted = false;
+try {
+  const normalized = parseAndValidateSiteConfig(
+    JSON.stringify(partialGalleryPayload),
+    "TestProvider",
+    partialGalleryBusiness,
+  );
+  partialGalleryAccepted =
+    normalized.gallery?.eyebrow === "Galerija"
+    && normalized.gallery?.title === "Vpogled v naše delo";
+} catch {
+  partialGalleryAccepted = false;
+}
+
+check(
+  "partial gallery gets eyebrow/title defaults before validation",
+  partialGalleryAccepted,
+);
+
 console.log("\n== retry classification ==");
 
 function attempt(content: string): { retryable: boolean; message: string } {

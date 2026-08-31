@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih-3/hero.avif",
+      "alt": "Avtomehanik pri delu v sodobni in urejeni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih-3/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315574",
+      "sourceUrl": "https://www.pexels.com/photo/person-in-black-long-sleeves-repairing-the-car-engine-4315574/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih-3/services.avif",
+      "alt": "Orodja in oprema v avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih-3/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315571",
+      "sourceUrl": "https://www.pexels.com/photo/an-auto-mechanic-repairing-the-car-engine-4315571/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih vzdrževalnih del in storitev v naši delavnici.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo za vaše vozilo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (menjava olja in filtrov)",
+        "description": "Vključuje delo in menjava olja ter osnovnih filtrov",
+        "price": "od 50 €",
+        "unit": "storitev",
+        "featured": true
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Sprednja ali zadnja os",
+        "price": "od 40 €",
+        "unit": "os"
+      },
+      {
+        "name": "Priprava vozila na tehnični pregled",
+        "description": "Pregled ključnih sklopov vozila",
+        "price": "od 45 €",
+        "unit": "pregled"
+      },
+      {
+        "name": "Pregled in diagnostika podvozja",
+        "description": "Pregled vzmetenja, končnikov in ležajev",
+        "price": "od 35 €",
+        "unit": "pregled"
+      },
+      {
+        "name": "Ura avtomehaničnega dela",
+        "description": "Splošna popravila in odprava napak",
+        "price": "45 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Primož Ločniškar s.p."
+  },
+  "metadata": {
+    "title": "Avtoservis Primož Ločniškar s.p. | Vzdrževanje in popravila vozil Zbilje, Medvode",
+    "description": "Zanesljivo vzdrževanje in popravila motornih vozil v Medvodah z okolico in Zbiljah. Redni servisi, zavorni sistemi, popravila motorjev in priprava na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za servis"
+  },
+  "hero": {
+    "badge": "Zanesljiv avtoservis v Zbiljah in Medvodah",
+    "title": "Zanesljivo vzdrževanje in",
+    "titleHighlight": "popravila motornih vozil",
+    "description": "Strokovne storitve za lastnike motornih vozil vseh znamk na območju Medvod in okolice. Zagotavljamo osebni pristop in zaupanja vreden servis vašega vozila.",
+    "primaryCta": "Pokličite za servis",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Vse znamke",
+        "label": "Servis in popravila vseh vozil"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Posvečeni vsakemu vozilu posebej"
+      },
+      {
+        "value": "Zbilje",
+        "label": "Lokalna delavnica z okolico"
+      },
+      {
+        "value": "Visoka ocena",
+        "label": "Zadovoljstvo strank"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "V naši delavnici poskrbimo za brezhibno delovanje vašega avtomobila z zanesljivimi in strokovnimi posegi.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Redno vzdrževanje, menjava olja in filtrov za dolgo življenjsko dobo vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila motorjev",
+        "description": "Strokovna odprava napak in popravila motornih sklopov za varno vožnjo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled, vzdrževanje in menjava zavornih ploščic, diskov ter ostalih delov zavore.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzmetenje in podvozje",
+        "description": "Servis vzmetenja in elementov podvozja za udobno in stabilno vožnjo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozil na tehnični pregled",
+        "description": "Temeljit pregled vašega vozila, da boste tehnični pregled opravili brezskrbno.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Z domačim in strokovnim pristopom poskrbimo, da je vaše vozilo vedno pripravljeno na varno pot.",
+    "highlights": [
+      "Strokovna in zanesljiva izvedba del",
+      "Osebni pristop k vsakemu vozilu",
+      "Zadovoljstvo strank z visoko oceno"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Strokovna in zanesljiva izvedba vseh del na motornem vozilu.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Posvetimo se vsakemu vozilu posebej in prisluhnemo vašim željam.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Visoka ocena in zadovoljstvo strank iz Medvod in okolice.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za rezervacijo termina ali vprašanja glede servisa vašega vozila.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 336 822",
+        "href": "tel:031336822",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Zbilje 47, 1215 Medvode, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite za katero storitev gre...",
+      "submitLabel": "Pokličite za servis"
+    }
+  },
+  "footer": {
+    "address": "Zbilje 47, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Primož Ločniškar s.p.",
+    "address": "Zbilje 47, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "031 336 822"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "Zavorni servis Avtomehanika Vič",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Specializiran zavorni servis in splošno vzdrževanje vozil v Ljubljani",
+  "services": [
+    "Servis zavor in menjava ploščic",
+    "Pregled in popravilo zavornega sistema",
+    "Menjava zavornih diskov",
+    "Redni avtoservis",
+    "Diagnostika vozil"
+  ],
+  "phone": "031 873 089",
+  "email": "",
+  "address": "Tbilisijska ulica 53, 1000 Ljubljana, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Specializacija za zavorne sisteme",
+    "Zanesljiva in strokovna storitev",
+    "Lokacija na Viču v Ljubljani"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici, ki potrebujejo zanesljiv servis zavor",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, zaupanja vreden",
+  "brandStyle": "avtomehanična delavnica",
+  "competitors": "Lokalni avtomehaniki in specializirani servisi v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

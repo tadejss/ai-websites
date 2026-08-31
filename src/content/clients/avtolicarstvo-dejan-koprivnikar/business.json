@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoličarstvo Dejan Koprivnikar s.p.",
+  "industry": "Avtoličarstvo in kleparstvo",
+  "tagline": "Kakovostna avtoličarska dela in obnova vozil",
+  "services": [
+    "Avtoličarstvo",
+    "Barvanje vozil",
+    "Popravilo prask",
+    "Sanacija poškodb",
+    "Poliranje vozil"
+  ],
+  "phone": "041 542 629",
+  "email": "",
+  "address": "Ulica 25. maja 7, 1270 Litija, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunska ocena zadovoljstva strank",
+    "Natančna in kvalitetna izvedba storitev",
+    "Zanesljiv in strokoven pristop"
+  ],
+  "targetCustomers": "Lastniki vozil, ki potrebujejo ličarska popravila ali osvežitev videza avtomobila",
+  "serviceArea": "Litija s širšo okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "kakovostno lokalno avtoličarstvo",
+  "competitors": "Lokalne avtoličarske in kleparske delavnice",
+  "callToAction": "Pokličite za ponudbo"
+}

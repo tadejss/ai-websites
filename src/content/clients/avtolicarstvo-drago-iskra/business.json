@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoličarstvo Drago Iskra s.p.",
+  "industry": "Avtoličarstvo in kleparstvo",
+  "tagline": "Strokovno barvanje in popravilo vozil za zanesljiv videz vašega avtomobila.",
+  "services": [
+    "Avtoličarske storitve",
+    "Barvanje vozil",
+    "Popravilo prask",
+    "Sanacija poškodb po toči",
+    "Obnova lakiranja"
+  ],
+  "phone": "041 926 753",
+  "email": "",
+  "address": "Polje 353, 1260 Ljubljana - Polje, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Kakovostna izvedba avtoličarskih del",
+    "Zanesljiva in strokovna obravnava strank",
+    "Dolgoletne izkušnje na področju popravil vozil"
+  ],
+  "targetCustomers": "Lastniki vozil, ki potrebujejo kakovostno ličarsko popravilo ali obnovo laka.",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden avtoličarski servis",
+  "competitors": "Lokalni ponudniki avtoličarskih in kleparskih storitev",
+  "callToAction": "Pokličite nas"
+}

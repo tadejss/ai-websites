@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtomehanika Primož Klančar s.p.",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Zanesljiv in strokoven avtomehanični servis za vaše vozilo",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava gum in vulkanizerstvo",
+    "Popravilo zavornih sistemov",
+    "Diagnostika motornih napak",
+    "Servis klimatskih naprav"
+  ],
+  "phone": "040 368 802",
+  "email": "",
+  "address": "Litostrojska Cesta 40a, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 8:00 AM – 8:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zaupanje strank",
+    "Prilagodljiv delovni čas tudi med vikendom",
+    "Strokovna in hitra izvedba popravil"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici, ki iščejo zanesljiv avtoservis",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

@@ -1,0 +1,284 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "moss-linen",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/manikira-urban-spa/hero.avif",
+      "alt": "Sodoben in svetel salon za nego nohtov v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/manikira-urban-spa/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997350",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-long-sleeve-shirt-dong-manicure-3997350/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/manikira-urban-spa/services.avif",
+      "alt": "Strokovna nega nohtov in kože v sproščujočem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/manikira-urban-spa/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3735653",
+      "sourceUrl": "https://www.pexels.com/photo/artificial-nail-samples-3735653/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregled storitev in cen",
+    "description": "Informativni cenik naših lepotnih in sprostitvenih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikira",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in zaključna nega.",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Negovanje nohtov",
+        "description": "Poglobljena nega in obnova nohtne plošče.",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Nega kože",
+        "description": "Osnovna nega obraza in kože z vlažilnimi pripravki.",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Urejanje obrvi",
+        "description": "Oblikovanje in urejanje obrvi.",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Sprostitvene storitve",
+        "description": "Krajši sprostitveni tretma za sprostitev napetosti.",
+        "price": "od 40 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Manikira",
+    "highlight": "Urban Spa"
+  },
+  "metadata": {
+    "title": "Manikira Urban Spa | Nega nohtov in lepota v Ljubljani",
+    "description": "Vaša oaza za nego in lepoto v Ljubljani. Ponujamo klasično manikiro, nego nohtov, nego kože, urejanje obrvi in sprostitvene storitve."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Urban Spa Ljubljana",
+    "title": "Vaša oaza za",
+    "titleHighlight": "nego in lepoto",
+    "description": "Profesionalna nega nohtov, kože in sprostitvene storitve v sodobnem ter sproščujočem okolju v Ljubljani.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Ljubljana",
+        "label": "Lokacija"
+      },
+      {
+        "value": "Sodobno",
+        "label": "In sproščujoče"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Udobno",
+        "label": "Okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše dobro počutje in lepoto",
+    "description": "Poskrbite za urejen videz in sprostitev z našimi strokovnimi storitvami v Ljubljani.",
+    "items": [
+      {
+        "title": "Klasična manikira",
+        "description": "Skrbno urejanje in nega vaših nohtov za urejen vsakdanji videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Negovanje nohtov",
+        "description": "Celovita nega nohtov z uporabo kakovostnih materialov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega kože",
+        "description": "Strokovna nega kože, prilagojena vašim potrebam.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sprostitvene storitve",
+        "description": "Privoščite si trenutke miru in sprostitve v prijetnem ambientu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Urejanje obrvi",
+        "description": "Natančno oblikovanje in urejanje obrvi za poudarjeno naravno lepoto.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Kakovostna nega v središču Ljubljane",
+    "description": "Posvečeni smo vašemu počutju in estetskemu videzu v prijetnem ambientu.",
+    "highlights": [
+      "Lokalno dostopna lokacija v Ljubljani",
+      "Specializirane storitve za nego in lepoto",
+      "Udobno okolje za sprostitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Ljubljana",
+        "label": "Lokalna dostopnost",
+        "description": "Nahajamo se na Cesti Ljubljanske brigade v Ljubljani.",
+        "title": "Lokalna dostopnost"
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Specializirana nega",
+        "description": "Strokovne storitve za nego nohtov, kože in obrvi.",
+        "title": "Specializirana nega"
+      },
+      {
+        "stat": "Udobje",
+        "label": "Sproščujoče okolje",
+        "description": "Udoben ambient, ustvarjen za vaš mir in sprostitev.",
+        "title": "Sproščujoče okolje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta Ljubljanske brigade 33, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 604 212",
+        "href": "tel:051604212",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta Ljubljanske brigade 33, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Manikira Urban Spa",
+    "address": "Cesta Ljubljanske brigade 33, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "051 604 212"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

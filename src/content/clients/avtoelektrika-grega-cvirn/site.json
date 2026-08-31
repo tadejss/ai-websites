@@ -1,0 +1,294 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoelektrika-grega-cvirn/hero.avif",
+      "alt": "Mehanik, ki popravlja avtoelektriko v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoelektrika-grega-cvirn/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985967",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-coverall-standing-near-a-car-8985967/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional car mechanic working in bright workshop interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoelektrika-grega-cvirn/services.avif",
+      "alt": "Diagnostika napak na vozilu z napravo v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoelektrika-grega-cvirn/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985972",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-working-on-an-engine-8985972/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za pogostejše avtoelektrične posege.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točen izračun nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Priklop na diagnostiko",
+        "description": "Skeniranje napak in brisanje javljenih napak v računalniku vozila",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Obnova alternatorja",
+        "description": "Demontaža, menjava ležajev ali diodnega mostička in montaža",
+        "price": "od 70 €"
+      },
+      {
+        "name": "Obnova zaganjača (alnaserja)",
+        "description": "Pregled, čiščenje in menjava dotrajanih delov zaganjača",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Menjava akumulatorja",
+        "description": "Test starega akumulatorja in strokovna montaža novega",
+        "price": "od 15 €",
+        "featured": true
+      },
+      {
+        "name": "Pregled električne napeljave",
+        "description": "Iskanje stikov, poškodb kablov in preverjanje varovalk",
+        "price": "od 40 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoelektrika",
+    "highlight": "Grega Cvirn s.p."
+  },
+  "metadata": {
+    "title": "Avtoelektrika Grega Cvirn s.p. | Servis v Kamniku",
+    "description": "Zanesljive avtoelektrične storitve, popravilo zaganjačev, alternatorjev in diagnostika v Kamniku in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za servis"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis v Kamniku",
+    "title": "Zanesljive avtoelektrične storitve",
+    "titleHighlight": "za vaše vozilo",
+    "description": "Strokovno popravilo avtoelektrike, diagnostika napak in servis za osebna in dostavna vozila v Kamniku in okolici.",
+    "primaryCta": "Pokličite za servis",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Strokovni pristop",
+        "label": "Strokovni pristop",
+        "title": "Strokovni pristop"
+      },
+      {
+        "value": "Hitra diagnostika",
+        "label": "Hitra diagnostika",
+        "title": "Hitra diagnostika"
+      },
+      {
+        "value": "Lokalni servis",
+        "label": "Lokalni servis",
+        "title": "Lokalni servis"
+      },
+      {
+        "value": "Preverjene izkušnje",
+        "label": "Preverjene izkušnje",
+        "title": "Preverjene izkušnje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše avtoelektrične storitve",
+    "description": "Celovite rešitve za težave z elektriko na vašem osebnem ali dostavnem vozilu v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Popravilo avtoelektrike",
+        "description": "Celovito odpravljanje napak na električnem sistemu vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis in menjava akumulatorjev",
+        "description": "Preverjanje stanja in strokovna menjava akumulatorjev za zanesljiv zagon.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zaganjači in alternatorji",
+        "description": "Popravilo in obnova zaganjačev ter alternatorjev za brezhibno delovanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika napak na vozilu",
+        "description": "Hitro in natančno odkrivanje skritih električnih napak z opremo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Popravilo električne napeljave",
+        "description": "Sanacija poškodovanih vodnikov, kablov in povezav v vozilu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati naš servis?",
+    "description": "Z združevanjem strokovnega znanja in posluhom za stranke zagotavljamo kakovostno storitev.",
+    "highlights": [
+      "Visoka ocena in preverjene izkušnje strank",
+      "Strokovno in zanesljivo popravilo avtoelektrike",
+      "Hitra in učinkovita diagnostika napak",
+      "Lokalna dostopnost v Kamniku"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Strokovno in zanesljivo popravilo avtoelektrike za vaše vozilo.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Hitra diagnostika",
+        "description": "Učinkovito odkrivanje in odpravljanje napak na vozilu.",
+        "title": "Hitra diagnostika"
+      },
+      {
+        "label": "Lokalna dostopnost",
+        "description": "Zanesljiv lokalni servis s sedežem v Kamniku.",
+        "title": "Lokalna dostopnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete popravilo avtoelektrike ali diagnostiko? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Podgorje 83a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 659 377",
+        "href": "tel:041659377",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Janez Novak",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "041 123 456",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo z vašim vozilom...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Podgorje 83a, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoelektrika Grega Cvirn s.p.",
+    "address": "Podgorje 83a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 659 377"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

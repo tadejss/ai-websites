@@ -1,0 +1,29 @@
+{
+  "companyName": "Sense mobilna masaža, nega telesa, d.o.o.",
+  "industry": "Masaže in nega telesa",
+  "tagline": "Profesionalne masaže in nega telesa na vašem domu.",
+  "services": [
+    "Mobilna masaža",
+    "Sprostitvena masaža",
+    "Terapevtska masaža",
+    "Nega telesa",
+    "Storitve na domu"
+  ],
+  "phone": "030 777 987",
+  "email": "",
+  "address": "Mestni trg 6, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 10:00 PM · Tuesday: 8:00 AM – 10:00 PM · Wednesday: 8:00 AM – 10:00 PM · Thursday: 8:00 AM – 10:00 PM · Friday: 8:00 AM – 10:00 PM · Saturday: 8:00 AM – 10:00 PM · Sunday: 8:00 AM – 10:00 PM",
+  "sellingPoints": [
+    "Pridemo na vaš dom ali lokacijo",
+    "Prilagodljiv delovni čas vsak dan v tednu",
+    "Celovita sprostitev in nega telesa",
+    "Visoka raven strokovnosti"
+  ],
+  "targetCustomers": "Posamezniki, ki potrebujejo sprostitev, lajšanje napetosti in nego telesa v udobju lastnega doma.",
+  "serviceArea": "Ljubljana in okolica",
+  "yearsExperience": "",
+  "tone": "sproščen, profesionalen, skrben",
+  "brandStyle": "moderen, udoben, zanesljiv",
+  "competitors": "Lokalni saloni in ponudniki wellness storitev v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

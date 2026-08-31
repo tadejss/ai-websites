@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtomehanika M.O. servis, Matjaž Ogrinec, s.p.",
+  "industry": "Avtomehanične storitve",
+  "tagline": "Zanesljivo in strokovno vzdrževanje vašega vozila",
+  "services": [
+    "Redni servisi vozil",
+    "Popravila motorjev",
+    "Zavorni sistemi",
+    "Diagnostika vozil",
+    "Priprava na tehnični pregled"
+  ],
+  "phone": "031 200 849",
+  "email": "",
+  "address": "Podgorje 5, 1241 Kamnik, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Izjemno visoka ocena zadovoljstva strank",
+    "Osebni pristop in strokovnost",
+    "Hitra in zanesljiva izvedba storitev"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil, ki iščejo kakovostnega in zaupanja vrednega mehanika",
+  "serviceArea": "Kamnik in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, zaupanja vreden",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v regiji",
+  "callToAction": "Pokličite za termin"
+}

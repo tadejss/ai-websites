@@ -1,0 +1,27 @@
+{
+  "companyName": "ViP 4 MEN Miklošičeva",
+  "industry": "Brivec",
+  "tagline": "Vrhunske brivske storitve za sodobnega moškega v središču Ljubljane",
+  "services": [
+    "Moško striženje",
+    "Urejanje brade",
+    "Klasično britje",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "064 236 836",
+  "email": "",
+  "address": "Miklošičeva c. 32, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 9:00 PM · Tuesday: 9:00 AM – 9:00 PM · Wednesday: 9:00 AM – 9:00 PM · Thursday: 9:00 AM – 9:00 PM · Friday: 9:00 AM – 9:00 PM · Saturday: 8:30 AM – 4:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izjemno visoke ocene strank",
+    "Strokovni in izkušeni brivci",
+    "Prijeten ambient v centru Ljubljane"
+  ],
+  "targetCustomers": "Moški, ki cenijo urejen videz, kakovostno nego brade in profesionalno striženje",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, sodoben, prijazen",
+  "brandStyle": "moški brivski salon",
+  "competitors": "Lokalni brivski saloni v Ljubljani",
+  "callToAction": "Rezervirajte svoj termin"
+}

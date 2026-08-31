@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "steel-blue",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-celarc-crt/hero.avif",
+      "alt": "Mehanik pri delu v avtoservisni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-celarc-crt/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28153670",
+      "sourceUrl": "https://www.pexels.com/photo/a-young-man-is-working-on-a-car-engine-28153670/",
+      "photographer": "dionisio castigotivane",
+      "photographerUrl": "https://www.pexels.com/@dionisio-castigotivane-1013672643",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-celarc-crt/services.avif",
+      "alt": "Diagnostika in vzdrževanje vozil v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-celarc-crt/services.webp",
+      "width": 732,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9626877",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
+      "photographer": "MonControlteTechnique",
+      "photographerUrl": "https://www.pexels.com/@moncontroltetechnique-110684920",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled osnovnih storitev za vaše vozilo. Za natančno ponudbo nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točen izračun nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava gum",
+        "description": "Premontaža in centriranje 4 koles",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop na tester in brisanje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled zavornih točk, podvozja in tekočin",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Pregled in popravilo zavornih diskov ter ploščic",
+        "description": "Cena za os (brez materiala)",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Celarc"
+  },
+  "metadata": {
+    "title": "Avtoservis Celarc | Zanesljivo vzdrževanje vozil na Vrhniki",
+    "description": "Zanesljivo in strokovno vzdrževanje vašega vozila na Vrhniki z osebnim pristopom in strokovno izvedbo za lastnike vozil v regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Avtoservisna delavnica Vrhnika",
+    "title": "Zanesljivo in strokovno",
+    "titleHighlight": "vzdrževanje vašega vozila",
+    "description": "Poskrbite za varno in brezskrbno vožnjo z zanesljivimi avtoservisnimi storitvami na Vrhniki in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo vzdrževanje"
+      },
+      {
+        "value": "Vrhnika",
+        "label": "Lokalna delavnica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Zagotavljamo strokovno vzdrževanje, popravila in pripravo vozil na tehnični pregled na Vrhniki z okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Kakovostni redni servisi za varno delovanje vašega motorja in podaljšanje življenjske dobe vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in vulkanizerstvo",
+        "description": "Hitra in zanesljiva menjava pnevmatik ter vulkanizerske storitve za vse letne čase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravila podvozja in zavor",
+        "description": "Strokovni pregledi in popravila zavornih sistemov ter elementov podvozja za vašo varnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančna računalniška diagnostika za hitro odkrivanje in odpravo napak na vozilu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozil na tehnični pregled",
+        "description": "Temeljit pregled vašega vozila, da boste na tehnični pregled odšli brez skrbi.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanje, strokovnost in osebni pristop",
+    "description": "Zavedamo se, kako pomembno je zanesljivo prevozno sredstvo, zato se vsakemu vozilu posvetimo z največjo skrbnostjo.",
+    "highlights": [
+      "Odlične ocene in zaupanje strank",
+      "Strokovna in hitra izvedba storitev",
+      "Osebni pristop in svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Zaupanje strank",
+        "description": "Gradimo na odličnih ocenah in dolgoročnem zaupanju naših strank.",
+        "title": "Zaupanje strank"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Strokovna in učinkovita izvedba storitev v dogovorjenih rokih.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in vam strokovno svetujemo glede vzdrževanja.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis ali postavite vprašanje glede vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Travniška ulica 2, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 396 356",
+        "href": "tel:031396356",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Čet: 8:00 – 17:00, Pet: 8:00 – 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite za katero storitev se zanimate...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Travniška ulica 2, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Celarc",
+    "address": "Travniška ulica 2, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "031 396 356"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

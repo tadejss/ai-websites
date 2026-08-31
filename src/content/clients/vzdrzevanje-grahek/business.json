@@ -1,0 +1,28 @@
+{
+  "companyName": "Vzdrževanje Grahek",
+  "industry": "Avtomehanična delavnica in vzdrževanje vozil",
+  "tagline": "Zanesljivo in strokovno vzdrževanje vašega vozila v Ljubljani",
+  "services": [
+    "Redni avtoservis",
+    "Menjava pnevmatik",
+    "Diagnostika vozil",
+    "Zavorni sistem",
+    "Priprava vozila na tehnični pregled"
+  ],
+  "phone": "041 762 187",
+  "email": "",
+  "address": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 4:00 PM · Tuesday: 8:00 AM – 4:00 PM · Wednesday: 8:00 AM – 4:00 PM · Thursday: 8:00 AM – 4:00 PM · Friday: 8:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene in zadovoljne stranke",
+    "Strokovna in hitra izvedba storitev",
+    "Zanesljivo in pošteno svetovanje"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici, ki iščejo zanesljivega mehanika",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strookoven, prijazen, zaupanja vreden",
+  "brandStyle": "zanesljiv lokalni avtoservis",
+  "competitors": "Lokalne avtomehanične delavnice v Ljubljani",
+  "callToAction": "Pokličite za termin"
+}

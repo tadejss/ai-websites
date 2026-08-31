@@ -1,0 +1,284 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-metod-globokar/hero.avif",
+      "alt": "Strokovna vulkanizerska delavnica za premontažo pnevmatik",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-metod-globokar/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870318",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-installing-a-tire-into-a-car-6870318/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-metod-globokar/services.avif",
+      "alt": "Centriranje platišč in vulkanizerske storitve",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-metod-globokar/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870316",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-wearing-blue-uniform-holding-a-car-tire-6870316/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled osnovnih vulkanizerskih storitev in okvirnih cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Premontaža pnevmatik (komplet)",
+        "description": "Demontaža, montaža in centriranje",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Centriranje platišč (kos)",
+        "description": "Natančno centriranje jeklenih ali alu platišč",
+        "price": "od 10 €"
+      },
+      {
+        "name": "Hramba pnevmatik (sezona)",
+        "description": "Varno skladiščenje 4 pnevmatik",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Popravilo pnevmatike",
+        "description": "Sanacija poškodbe ali defekta",
+        "price": "od 15 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vulkanizerstvo",
+    "highlight": "Metod Globokar"
+  },
+  "metadata": {
+    "title": "Vulkanizerstvo Metod Globokar s.p. | Grosuplje",
+    "description": "Strokovna menjava, premontaža in centriranje pnevmatik v Grosuplju z okolico. Zanesljiva storitev in strokovno svetovanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Vulkanizerstvo v Grosuplju",
+    "title": "Strokovna menjava in premontaža pnevmatik",
+    "titleHighlight": "za vaše vozilo",
+    "description": "Zagotovite varno vožnjo za vaše osebno ali dostavno vozilo. Ponujamo hitro, zanesljivo in strokovno vulkanizersko storitev v Grosuplju z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Hitra storitev",
+        "label": "Hitra storitev"
+      },
+      {
+        "value": "Strokovno svetovanje",
+        "label": "Strokovno svetovanje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovite vulkanizerske storitve za varno in brezskrbno vožnjo v Grosuplju in okolici.",
+    "items": [
+      {
+        "title": "Premontaža pnevmatik",
+        "description": "Hitra in natančna premontaža pnevmatik za osebna in dostavna vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Centriranje platišč",
+        "description": "Natančno centriranje platišč za udobno vožnjo brez tresljajev.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Hramba pnevmatik",
+        "description": "Ustrezna in varna hramba vaših pnevmatik izven sezone.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravilo pnevmatik",
+        "description": "Strokovno popravilo poškodovanih pnevmatik, kjer je to mogoče.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prodaja novih pnevmatik",
+        "description": "Pestro izbiro novih pnevmatik priznanih znamk ob strokovnem svetovanju.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas?",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke poskrbimo za varnost vašega vozila na cesti.",
+    "highlights": [
+      "Visoka ocena in zaupanje strank",
+      "Hitra in zanesljiva storitev",
+      "Strokovno svetovanje pri izbiri pnevmatik"
+    ],
+    "benefits": [
+      {
+        "label": "Zaupanje strank",
+        "description": "Gradimo na poštenem odnosu in visoki kakovosti opravljenih storitev.",
+        "title": "Zaupanje strank"
+      },
+      {
+        "label": "Hitrost",
+        "description": "Cenimo vaš čas, zato storitve opravimo hitro in brez nepotrebnega čakanja.",
+        "title": "Hitrost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "S strokovnim svetovanjem vam pomagamo izbrati najboljše pnevmatike za vaše vozilo.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za vprašanja glede pnevmatik.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cikava 38, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 549 405",
+        "href": "tel:041549405",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 8:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cikava 38, 1290 Grosuplje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vulkanizerstvo Metod Globokar",
+    "address": "Cikava 38, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "041 549 405"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

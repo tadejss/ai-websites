@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-licarstvo-g/hero.avif",
+      "alt": "Notranjnost strokovne avtokleparske delavnice z osvetljenim vozilom",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-licarstvo-g/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809560",
+      "sourceUrl": "https://www.pexels.com/photo/young-mechanic-polishing-a-red-car-in-workshop-37809560/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-licarstvo-g/services.avif",
+      "alt": "Orodja in oprema za avtoličarska in kleparska dela v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-licarstvo-g/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809561",
+      "sourceUrl": "https://www.pexels.com/photo/man-polishing-a-red-car-in-garage-37809561/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naša delavnica",
+    "description": "Oglejte si utrinke iz našega dela.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih storitev. Končna cena je odvisna od obsega poškodb in tipa vozila.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtokleparska dela",
+        "description": "Popravilo karoserije in ravnanje pločevine",
+        "price": "po ogledu",
+        "featured": true
+      },
+      {
+        "name": "Avtoličarska dela",
+        "description": "Barvanje elementov vozil",
+        "price": "od 120 €",
+        "unit": "na element"
+      },
+      {
+        "name": "Popravilo toče",
+        "description": "Sanacija udrtin od toče",
+        "price": "po ogledu"
+      },
+      {
+        "name": "Poliranje in zaščita laka",
+        "description": "Osvežitev sijaja in zaščita površine",
+        "price": "od 100 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtokleparstvo in ličarstvo",
+    "highlight": "g in n"
+  },
+  "metadata": {
+    "title": "Avtokleparstvo in ličarstvo g in n, Miran Popovič s.p. | Ljubljana",
+    "description": "Kakovostna popravila karoserije in strokovno barvanje vozil v Ljubljani in okolici. Zanesljiva avtokleparska in avtoličarska dela."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zagotovite si termin"
+  },
+  "hero": {
+    "badge": "Strokovna delavnica v Ljubljani",
+    "title": "Kakovostna popravila karoserije in",
+    "titleHighlight": "strokovno barvanje vozil",
+    "description": "Zanesljive storitve avtokleparstva in avtoličarstva za lastnike vozil v Ljubljani s širšo okolico. Poskrbimo za vašo karoserijo z osebnim pristopom.",
+    "primaryCta": "Zagotovite si termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Preverjeni",
+        "label": "Preverjeni materiali",
+        "title": "Preverjeni materiali"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana in okolica",
+        "title": "Ljubljana in okolica"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Strokovna izvedba",
+        "title": "Strokovna izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše avtokleparske in avtoličarske storitve",
+    "description": "Celovite rešitve za karoserijo vašega vozila v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Natančna popravila karoserije z ustreznimi postopki za vso vozno varnost.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Avtoličarska dela",
+        "description": "Kakovostno barvanje z uporabo preverjenih materialov za dolgotrajne rezultate.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo toče",
+        "description": "Sanacija udrtin in poškodb, ki jih povzroča toča, brez sledi.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija poškodb po nesrečah",
+        "description": "Celovita obnova vozil po prometnih nesrečah in večjih poškodbah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poliranje in zaščita laka",
+        "description": "Osvežitev videza in dolgotrajna zaščita avtomobilskega laka.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Združujemo dolgoletne izkušnje, prilagodljivost in skrb za vsako stranko.",
+    "highlights": [
+      "Prilagodljivost strankam in osebni pristop",
+      "Uporaba preverjenih materialov za dolgotrajne rezultate",
+      "Zanesljiva in strokovna izvedba kleparskih in l<bos>7čarskih storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Zanesljiva izvedba kleparskih in l<bos>7čarskih storitev za vaše vozilo.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prilagodljivost strankam in svetovanje z mislijo na vaše potrebe.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Preverjeni materiali",
+        "description": "Uporaba kakovostnih materialov za dolgotrajne in estetske rezultate.",
+        "title": "Preverjeni materiali"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete termin za popravilo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Raičeva ulica 6g, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 909 888",
+        "href": "tel:041909888",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–17:00, Sob: 9:00–12:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite poškodbo ali želeno storitev...",
+      "submitLabel": "Zagotovite si termin"
+    }
+  },
+  "footer": {
+    "address": "Raičeva ulica 6g, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtokleparstvo in ličarstvo g in n",
+    "address": "Raičeva ulica 6g, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 909 888"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

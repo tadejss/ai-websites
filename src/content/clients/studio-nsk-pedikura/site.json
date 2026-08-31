@@ -1,0 +1,276 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "dusty-rose",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-nsk-pedikura/hero.avif",
+      "alt": "Notranjost urejenega salona za pedikuro v naravni svetlobi",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-nsk-pedikura/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677859",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-a-lace-top-wearing-gloves-holding-a-person-s-finger-4677859/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-nsk-pedikura/services.avif",
+      "alt": "Strokovna nega nohtov in estetska pedikura v salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-nsk-pedikura/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677846",
+      "sourceUrl": "https://www.pexels.com/photo/nail-stylist-removing-cuticles-4677846/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled osnovnih storitev nege stopal in nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična pedikura",
+        "description": "Osnovna nega stopal in nohtov",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Estetska pedikura",
+        "description": "Urejanje in olepševanje",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Nega nohtov",
+        "description": "Oblikovanje in urejanje nohtov",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Svetovanje za nego stopal",
+        "description": "Strokovni nasveti za dom",
+        "price": "po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Studio NSK",
+    "highlight": "Pedikura Katja"
+  },
+  "metadata": {
+    "title": "Studio NSK pedikura Katja Nahtigal Svenšek s.p. | Litija",
+    "description": "Strokovna in posvečena nega vaših stopal ter nohtov v Litiji s širšo okolico. Rezervirajte svoj termin za klasično in estetsko pedikuro."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Urejen lokalni salon v Litiji",
+    "title": "Strokovna in posvečena nega",
+    "titleHighlight": "vaših stopal ter nohtov",
+    "description": "Poskrbite za zdravje in estetski videz svojih stopal. Nudimo strokovno pedikuro in nego v sproščenem okolju za stranke iz Litije s širšo okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      },
+      {
+        "value": "Skrbno",
+        "label": "Skrbno"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo"
+      },
+      {
+        "value": "Urejen salon",
+        "label": "Urejen salon"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaša stopala in nohte",
+    "description": "Izbirate lahko med različnimi storitvami nege, prilagojenimi vašim potrebam v Litiji s širšo okolico.",
+    "items": [
+      {
+        "title": "Klasična pedikura",
+        "description": "Temeljita nega stopal, urejanje nohtov in odstranjevanje trše kože za zdravje vaših stopal.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Estetska pedikura",
+        "description": "Urejanje in olepševanje nohtov ter stopal za brezhiben in negovan videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega nohtov",
+        "description": "Skrbno oblikovanje in nega nohtov na nogah za zdravje in lepoto.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje za nego stopal",
+        "description": "Strokovni nasveti za vsakodnevno domačo nego in ohranjanje zdravih stopal.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost zdravju in lepoti vaših stopal",
+    "description": "Z našo strokovno in skrbno obravnavo poskrbimo, da se boste v svojih stopalih spet počutili lahkotno.",
+    "highlights": [
+      "Odlična ocena zadovoljstva strank",
+      "Strokovna in skrbna obravnava",
+      "Prilagodljiv delovni čas"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna obravnava",
+        "description": "Posvečen in strokoven pristop k negi vsake stranke.",
+        "title": "Strokovna obravnava"
+      },
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Odlične ocene in zaupanje naših obiskovalcev.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Prilagodljiv čas",
+        "description": "Prilagodljiv delovni čas, usklajen z vašimi obveznostmi.",
+        "title": "Prilagodljiv čas"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede nege stopal.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Breg pri Litiji 4c, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 310 546",
+        "href": "tel:031310546",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Tor, Sre, Čet, Pet, Sob (prilagodljiv urnik)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeni termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Breg pri Litiji 4c, 1270 Litija, Slovenia",
+    "rights": "© Studio NSK pedikura Katja Nahtigal Svenšek s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Studio NSK Pedikura Katja",
+    "address": "Breg pri Litiji 4c, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "031 310 546"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

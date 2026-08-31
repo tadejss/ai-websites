@@ -1,0 +1,286 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-dejan-koprivnikar/hero.avif",
+      "alt": "Sodobna avtoličarska delavnica za barvanje vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-dejan-koprivnikar/hero.webp",
+      "width": 1040,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "11139239",
+      "sourceUrl": "https://www.pexels.com/photo/man-buffing-the-paint-of-the-car-11139239/",
+      "photographer": "Hasan Gulec",
+      "photographerUrl": "https://www.pexels.com/@moonlightshotz",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-dejan-koprivnikar/services.avif",
+      "alt": "Natančno poliranje in popravilo prask na avtomobilu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-dejan-koprivnikar/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809576",
+      "sourceUrl": "https://www.pexels.com/photo/detailing-expert-polishing-car-in-workshop-37809576/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki našega dela",
+    "description": "Oglejte si primere opravljenih avtoličarskih storitev.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za naša avtoličarska in kleparska dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Popravilo manjših prask",
+        "description": "Sanacija in lakiranje manjših prask na karoseriji.",
+        "price": "od 50 €",
+        "featured": false
+      },
+      {
+        "name": "Poliranje vozil",
+        "description": "Celovito poliranje za visok sijaj in zaščito laka.",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Barvanje posameznega elementa",
+        "description": "Lakiranje blatnika, odbijača ali drugega dela vozila.",
+        "price": "od 150 €",
+        "featured": false
+      },
+      {
+        "name": "Avtoličarska dela po poškodbi",
+        "description": "Sanacija večjih poškodb in priprava na barvanje.",
+        "price": "Po ogledu",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoličarstvo",
+    "highlight": "Dejan Koprivnikar s.p."
+  },
+  "metadata": {
+    "title": "Avtoličarstvo Dejan Koprivnikar s.p. | Kakovostna avtoličarska dela",
+    "description": "Kakovostna avtoličarska dela, barvanje vozil, popravilo prask in poliranje v Litiji s širšo okolico. Zanesljiv in strokoven pristop."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovno avtoličarstvo",
+    "title": "Kakovostna avtoličarska dela in",
+    "titleHighlight": "obnova vozil",
+    "description": "Zanesljive storitve za lastnike vozil v Litiji s širšo okolico, ki potrebujejo ličarska popravila ali osvežitev videza avtomobila.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "Ocena zadovoljstva",
+        "title": "Vrhunska ocena"
+      },
+      {
+        "value": "Natančna",
+        "label": "Izvedba storitev",
+        "title": "Natančna izvedba"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Strokoven pristop",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Delovanje v Litiji",
+        "title": "Lokalno delovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Poskrbimo za brezhiben videz in zaščito vašega avtomobila z uporabo preverjenih materialov in strokovnih postopkov v Litiji in okolici.",
+    "items": [
+      {
+        "title": "Avtoličarstvo",
+        "description": "Strokovna ličarska dela za osebna in druga vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje vozil",
+        "description": "Kakovostno barvanje posameznih delov ali celotnega avtomobila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo prask",
+        "description": "Učinkovito odpravljanje prask in manjših poškodb lakirane površine.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija poškodb",
+        "description": "Sanacija vidnih poškodb in priprava površine za lakiranje.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poliranje vozil",
+        "description": "Globinsko poliranje za povrnitev sijaja in zaščito laka.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Zavedamo se, kako pomemben je videz in stanje vašega avtomobila, zato vsakemu projektu posvetimo vso pozornost.",
+    "highlights": [
+      "Vrhunska ocena zadovoljstva strank",
+      "Natančna in kvalitetna izvedba storitev",
+      "Zanesljiv in strokoven pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Ponašamo se z vrhunskimi ocenami naših strank.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Natančna in zanesljiva obdelava vsakega vozila.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Zanesljivo svetovanje in strokovna obravnava.",
+        "title": "Strokoven pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za ponudbo ali nas obiščite v naši delavnici v Litiji.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 542 629",
+        "href": "tel:041542629",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica 25. maja 7, 1270 Litija, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo pripravili ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali poškodbo vozila...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ulica 25. maja 7, 1270 Litija, Slovenia",
+    "rights": "Avtoličarstvo Dejan Koprivnikar s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoličarstvo Dejan Koprivnikar s.p.",
+    "address": "Ulica 25. maja 7, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "041 542 629"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

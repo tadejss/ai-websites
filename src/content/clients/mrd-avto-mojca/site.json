@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mrd-avto-mojca/hero.avif",
+      "alt": "Avtomehanična delavnica med servisiranjem vozila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mrd-avto-mojca/hero.webp",
+      "width": 732,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9626877",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
+      "photographer": "MonControlteTechnique",
+      "photographerUrl": "https://www.pexels.com/@moncontroltetechnique-110684920",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mrd-avto-mojca/services.avif",
+      "alt": "Avtomobilska diagnostika v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mrd-avto-mojca/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315571",
+      "sourceUrl": "https://www.pexels.com/photo/an-auto-mechanic-repairing-the-car-engine-4315571/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Transparentne cene storitev",
+    "description": "Pregled okvirnih cen za redna vzdrževalna dela in popravila v naši delavnici.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točno ponudbo za vaše vozilo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (mali servis)",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava kompleta 4 pnevmatik",
+        "description": "Premontaža, centriranje in menjava",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop na tester in brisanje napak",
+        "price": "35 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Sprednja ali zadnja os",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled podvozja, zavor in svetlobnih teles",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "MRD",
+    "highlight": "AVTO"
+  },
+  "metadata": {
+    "title": "MRD AVTO - Avtomehanična delavnica Ljubljana",
+    "description": "Zanesljivo vzdrževanje in popravila vašega vozila v Ljubljani s širšo okolico. Redni servisi, menjava gum, diagnostika in priprava na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis v Ljubljani",
+    "title": "Zanesljivo vzdrževanje in",
+    "titleHighlight": "popravila vašega vozila",
+    "description": "Strokovne avtomehanične storitve za lastnike osebnih vozil v Ljubljani in okolici. Poskrbimo za varnost in brezhibno delovanje vašega jeklenega konjička.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "pristop"
+      },
+      {
+        "value": "Hitra",
+        "label": "izvedba"
+      },
+      {
+        "value": "Kakovostni",
+        "label": "deli"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "vzdrževanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "V avtomehanični delavnici MRD AVTO v Ljubljani poskrbimo za hitro, strokovno in zanesljivo popravilo ter vzdrževanje vašega osebnega vozila.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Menjava olja, filtrov in pregled ključnih sklopov za varno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in premontaža",
+        "description": "Strokovna menjava pnevmatik, centriranje in hramba po ugodnih pogojih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistem in vzmetenje",
+        "description": "Pregled in popravilo zavornih diskov, ploščic ter elementov podvozja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Avtoelektrika in diagnostika",
+        "description": "Hitro odkrivanje napak in odprava težav z avtoelektriko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozila na tehnični pregled",
+        "description": "Celovit preventivni pregled pred obiskom tehničnih pregledov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv partner za varno vožnjo",
+    "description": "Z združevanjem strokovnega znanja, kakovostnih materialov in prijaznega odnosa zagotavljamo vrhunsko izkušnjo za vas in vaše vozilo.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Hitra in strokovna izvedba del",
+      "Kakovostni rezervni deli in materiali"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na visoke ocene in zaupanje voznikov v Ljubljani in okolici.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Dela izvedemo strokovno in v dogovorjenih časovnih rokovih.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Kakovostni deli",
+        "description": "Pri popravilih uporabljamo preverjene rezervne dele in materiale.",
+        "title": "Kakovostni deli"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis ali postavite vprašanje glede vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Parmova ul. 51, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 386 293",
+        "href": "tel:041386293",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–12:00, 13:00–17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Janez Novak",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "041 123 456",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite opis težave ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Parmova ul. 51, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane. MRD AVTO, Mojca Domiter s.p."
+  },
+  "business": {
+    "name": "MRD AVTO",
+    "address": "Parmova ul. 51, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 386 293"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

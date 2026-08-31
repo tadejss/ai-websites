@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoličarstvo in druge storitve Igor Habjan s.p.",
+  "industry": "Avtoličarstvo",
+  "tagline": "Kakovostno avtoličarstvo in kleparske storitve za vaše vozilo",
+  "services": [
+    "Avtoličarstvo",
+    "Barvanje vozil",
+    "Sanacija poškodb",
+    "Poliranje vozil",
+    "Manjša popravila"
+  ],
+  "phone": "041 712 311",
+  "email": "",
+  "address": "Preserska ulica 5, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 8:00 AM – 8:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Zanesljiva in natančna izvedba",
+    "Strokovni pristop k vsakemu vozilu"
+  ],
+  "targetCustomers": "Lastniki vozil v Ljubljani in okolici, ki potrebujejo ličarske storitve",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "avtentična lokalna delavnica",
+  "competitors": "Lokalne avtoličarske delavnice v regiji",
+  "callToAction": "Pokličite za ponudbo"
+}

@@ -1,0 +1,284 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kineziotaping-bandaze-masaze/hero.avif",
+      "alt": "Strokovna masaža in sprostitev v mirnem okolju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kineziotaping-bandaze-masaze/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional cleaning service sparkling clean modern interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kineziotaping-bandaze-masaze/services.avif",
+      "alt": "Kineziotaping in storitve telesne nege",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kineziotaping-bandaze-masaze/services.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki našega studia",
+    "description": "Oglejte si prostor, kjer skrbimo za vaše dobro počutje in sprostitev.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregled storitev in cen",
+    "description": "Izberite storitev, ki ustreza vašim trenutnim potrebam po sprostitvi ali regeneraciji.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščanje celotnega telesa",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Intenzivna regeneracija za športnike",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna nega za umiritev uma in telesa",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Kineziotaping",
+        "description": "Namestitev opornih trakov",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Bandažiranje",
+        "description": "Strokovna opora in stabilizacija",
+        "price": "od 20 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Kineziotaping bandaže",
+    "highlight": "masaže"
+  },
+  "metadata": {
+    "title": "Masaže in Kineziotaping | Ig in okolica",
+    "description": "Strokovne masaže in kineziotaping za vaše dobro počutje na Igu in v okolici. Naročite se na klasično, športno ali sprostitveno masažo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik na Igu",
+    "title": "Strokovne masaže in kineziotaping za vaše",
+    "titleHighlight": "dobro počutje",
+    "description": "Namenjeno osebam z mišičnimi napetostmi, športnikom in vsem, ki iščejo sprostitev na Igu in v okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "pristop"
+      },
+      {
+        "value": "Osebna",
+        "label": "obravnava"
+      },
+      {
+        "value": "Sproščujoče",
+        "label": "okolje"
+      },
+      {
+        "value": "Podpora",
+        "label": "gibanju"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celostna skrb za vaše telo in sprostitev",
+    "description": "Ponujamo vam preverjene metode lajšanja napetosti, podporo pri gibanju in globoko sprostitev na Igu.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Učinkovito sproščanje napetih mišic in izboljšanje prekrvavitve celega telesa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kineziotaping",
+        "description": "Uporaba elastičnih trakov za podporo mišicam in sklepom ter lajšanje bolečin.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bandažiranje",
+        "description": "Strokovna opora in stabilizacija za lažje gibanje in okrevanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sprostitvene masaže",
+        "description": "Nežni gibi za umiritev uma, odpravljanje stresa in popolno sprostitev.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Športne masaže",
+        "description": "Prilagojena masaža za športnike in aktivne posameznike za hitrejšo regeneracijo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše dobro počutje",
+    "description": "Združujemo strokovno znanje in individualen pristop, da bi vam pomagali doseči ravnovesje in olajšanje.",
+    "highlights": [
+      "Strokoven pristop k sprostitvi in lajšanju napetosti",
+      "Uporaba kineziotapinga za podporo gibanju",
+      "Prilagojene masaže za vsakega posameznika"
+    ],
+    "benefits": [
+      {
+        "label": "Strokoven pristop",
+        "description": "Strokoven pristop k sprostitvi in lajšanju napetosti za vsakogar.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Podpora gibanju",
+        "description": "Uporaba kineziotapinga in bandažiranja za varno in lažje gibanje.",
+        "title": "Podpora gibanju"
+      },
+      {
+        "label": "Osebna prilagoditev",
+        "description": "Prilagojene masaže, usmerjene v vaše specifične potrebe in želje.",
+        "title": "Osebna prilagoditev"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede storitev masaže in kineziotapinga.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Banija 4, 1292 Ig, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 638 403",
+        "href": "tel:031638403",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite svojo željo ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Banija 4, 1292 Ig, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kineziotaping bandaže masaže",
+    "address": "Banija 4, 1292 Ig, Slovenia",
+    "email": "",
+    "phone": "031 638 403"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

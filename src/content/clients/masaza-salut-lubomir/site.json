@@ -1,0 +1,283 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaza-salut-lubomir/hero.avif",
+      "alt": "Sproščujoče okolje za masaže v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaza-salut-lubomir/hero.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaza-salut-lubomir/services.avif",
+      "alt": "Strokovne masažne storitve za dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaza-salut-lubomir/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32178008",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32178008/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean apartment interior green accents"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled rednih cen naših masažnih storitev v salonu v Ljubljani.",
+    "disclaimer": "Cenik je informativen. Za rezervacije in aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Masaža celega telesa (60 min)",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Aromaterapevtska sprostitev (60 min)",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Ciljna obravnava napetosti (45 min)",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Regeneracijska masaža (60 min)",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Masaže",
+    "highlight": "Lubomir Janeček"
+  },
+  "metadata": {
+    "title": "Masaža Ljubljana | Lubomir Janeček s.p.",
+    "description": "Strokovne masaže za sprostitev, lajšanje napetosti in boljše počutje v Ljubljani. Rezervirajte svoj termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažne storitve v Ljubljani",
+    "title": "Strokovne masaže za sprostitev in",
+    "titleHighlight": "dobro počutje",
+    "description": "Poskrbite za svoje telo in um. Nudimo klasične, sprostitvene, bolečinske in športne masaže v mirnem okolju v Ljubljani.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Individualno",
+        "label": "Osebni pristop",
+        "title": "Individualni pristop"
+      },
+      {
+        "value": "Sproščujoče",
+        "label": "Prijetno okolje",
+        "title": "Sproščujoče okolje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Kakovostne storitve",
+        "title": "Strokovna obravnava"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Lokacija v mestu",
+        "title": "Priročna lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Strokovne masaže za vaše dobro počutje",
+    "description": "Izberite masažo, ki ustreza vašim trenutnim potrebam po sprostitvi ali lajšanju napetosti v Ljubljani.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Tradicionalna masaža celega telesa, ki sprošča mišice, izboljšuje prekrvavitev in prispeva k splošnemu ravnovesju.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi in pomirjajoč ambient za odpravljanje stresa, umiritev misli ter popolno sprostitev telesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljno usmerjena obravnava zatrdlin in napetosti v mišicah za lajšanje bolečin in izboljšanje gibljivosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Masaža, prilagojena športnikom in aktivnim posameznikom za hitrejšo regeneracijo ter pripravo na napor.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost vaši sprostitvi in zdravju",
+    "description": "Z individualnim pristopom poskrbimo, da je vsaka masaža prilagojena vašim osebnim potrebam in počutju.",
+    "highlights": [
+      "Individualen pristop k vsaki stranki",
+      "Sproščujoče in prijetno okolje v Ljubljani",
+      "Strokovna izvedba za najboljše rezultate"
+    ],
+    "benefits": [
+      {
+        "label": "Individualen pristop",
+        "description": "Vsaki stranki se posvetimo posebej in prilagodimo masažo njenim trenutnim potrebam.",
+        "title": "Individualen pristop"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Sproščujoč ambient v Ljubljani, ki omogoča popolný odklop od vsakodnevnega stresa.",
+        "title": "Prijetno okolje"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Zanesljive in premišljene masažne tehnike za lajšanje napetosti in boljše počutje.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjega obrazca ali kontaktnih podatkov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 480 371",
+        "href": "tel:041480371",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–12:00 in 15:00–18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+    "rights": "© Masaža, salut Lubomir Janeček s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Masaže Lubomir Janeček",
+    "address": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 480 371"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

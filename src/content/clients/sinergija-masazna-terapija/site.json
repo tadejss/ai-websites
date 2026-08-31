@@ -1,0 +1,279 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "steel-blue",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sinergija-masazna-terapija/hero.avif",
+      "alt": "Sproščujoč ambient masažnega studia z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sinergija-masazna-terapija/hero.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sinergija-masazna-terapija/services.avif",
+      "alt": "Izvajanje terapevtske masaže za lajšanje napetosti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sinergija-masazna-terapija/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32791637",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32791637/",
+      "photographer": "Pușcaș Adryan",
+      "photographerUrl": "https://www.pexels.com/@pu-ca-adryan-163345030",
+      "searchQuery": "deep cleaning service sparkling clean modern living room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik masaž",
+    "description": "Pregled rednih storitev in cen za vaše dobro počutje.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sprostitvena masaža celega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Terapevtska masaža",
+        "description": "Ciljna obravnava bolečih predelov",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna masaža za umiritev uma",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Intenzivnejša obravnava napetosti",
+        "price": "od 55 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Sinergija",
+    "highlight": "masažna terapija"
+  },
+  "metadata": {
+    "title": "Sinergija, masažna terapija | Helena Bizjak s.p.",
+    "description": "Strokovna masažna terapija za vaše sproščanje in dobro počutje na Vrhniki z okolico. Rezervirajte svoj termin za klasično, terapevtsko ali sprostitveno masažo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažna terapija in dobro počutje",
+    "title": "Strokovna masažna terapija za vaše",
+    "titleHighlight": "sprostitev in dobro počutje",
+    "description": "Nudimo celostno podporo za posameznike, ki iščejo lajšanje napetosti, sprostitev in izboljšanje počutja na Vrhniki z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Individualno",
+        "label": "Individualen pristop"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovna obravnava"
+      },
+      {
+        "value": "Sproščujoče",
+        "label": "Prijeten ambient"
+      },
+      {
+        "value": "Zaupanja vredno",
+        "label": "Domače okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite masažne rešitve za vaše telo",
+    "description": "Izberite storitev, ki najbolj ustreza vašim trenutnim potrebam po sprostitvi in lajšanju napetosti.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Tradicionalna masaža celega telesa za sprostitev mišic in izboljšanje prekrvavitve.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Terapevtska masaža",
+        "description": "Ciljna obravnava za lajšanje specifičnih bolečin in odpravljanje napetosti v telesu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi za umiritev uma, zmanjšanje stresa in globoko sprostitev.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Učinkovita pomoč pri vsakodnevnih bolečinah in obremenitvah gibalnega aparata.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Sinergijo",
+    "title": "Posvečeni vašemu dobremu počutju",
+    "description": "Z združevanjem strokovnega znanja in toplega pristopa poskrbimo, da se v našem salonu počutite sproščeno in varno.",
+    "highlights": [
+      "Individualen pristop k vsaki stranki",
+      "Strokovna in sproščujoča izkušnja",
+      "Odlične ocene zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "label": "Individualen pristop",
+        "description": "Vsaki stranki se posvetimo celostno in prilagodimo masažo njenim trenutnim potrebam.",
+        "title": "Individualen pristop"
+      },
+      {
+        "label": "Strokovna izkušnja",
+        "description": "Zagotavljamo strokovno in sproščujočo izkušnjo za vsak obisk.",
+        "title": "Strokovna izkušnja"
+      },
+      {
+        "label": "Domače okolje",
+        "description": "Topel, domač in zaupanja vreden stil za vaš popoln mir in odklop.",
+        "title": "Domače okolje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjega obrazca ali kontaktnih podatkov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Betajnova 15, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "071 518 855",
+        "href": "tel:071518855",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek: 8:00–12:00, Torek: 17:00–19:30, Sreda: 14:30–17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Betajnova 15, 1360 Vrhnika, Slovenia",
+    "rights": "© Sinergija, masažna terapija, Helena Bizjak s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Sinergija masažna terapija",
+    "address": "Betajnova 15, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "071 518 855"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

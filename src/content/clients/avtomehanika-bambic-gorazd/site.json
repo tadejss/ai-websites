@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-bambic-gorazd/hero.avif",
+      "alt": "Notranjnost sodobne avtomehanične delavnice",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-bambic-gorazd/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470679",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-repairing-a-car-8470679/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-bambic-gorazd/services.avif",
+      "alt": "Diagnostika vozil v avtoservisu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-bambic-gorazd/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985712",
+      "sourceUrl": "https://www.pexels.com/photo/car-engine-in-front-of-a-mechanic-8985712/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Preglednih in poštenih cen",
+    "description": "Cene osnovnih storitev in pregledov v naši delavnici.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo za vaše vozilo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni avtoservis",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Komplet 4 koles z centriranjem",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Zavorni servis",
+        "description": "Menjava zavornih ploščic (os)",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Pregled vozila pred tehničnim pregledom",
+        "description": "Celovit preventivni pregled",
+        "price": "od 35 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtomehanika",
+    "highlight": "Bambič"
+  },
+  "metadata": {
+    "title": "Avtomehanika Bambič | Zanesljiv avtoservis Grosuplje",
+    "description": "Zanesljivo in strokovno vzdrževanje ter popravilo vašega vozila v Grosupljem in okolici. Redni servis, diagnostika in menjava pnevmatik."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lokalni avtomehanični servis",
+    "title": "Zanesljivo in strokovno",
+    "titleHighlight": "vzdrževanje vašega vozila",
+    "description": "Strokovne avtomehanične storitve za lastnike vozil v Grosupljem in širši okolici. Poskrbimo za varno in brezskrbno vožnjo.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno delo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljive storitve"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitro",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Domač servis"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Zagotavljamo kakovostno vzdrževanje in popravila vseh vrst motornih vozil v Grosupljem s širšo okolico.",
+    "items": [
+      {
+        "title": "Redni avtoservis",
+        "description": "Redno vzdrževanje in menjava tekočin ter filtrov za dolgotrajno delovanje vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo motornih vozil",
+        "description": "Strokovna odprava napak in popravila mehanskih sklopov na vašem avtomobilu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni servis",
+        "description": "Pregled in zamenjava zavornih diskov, ploščic ter ostalih komponent zavornega sistema.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in natančna menjava ter premontaža pnevmatik za varno vožnjo v vseh razmerah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Sodobna računalniška diagnostika za hitro odkrivanje in reševanje skritih napak.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv partner na cesti",
+    "description": "Zavedamo se pomena varnosti in zanesljivosti vašega jeklenega konjička.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Zanesljiva in strokovna storitev",
+      "Hitra odzivnost in osebni pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponašamo se z visoko oceno in zaupanjem naših strank.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Strokovna storitev",
+        "description": "Vsakemu vozilu se posvetimo z vso skrbnostjo in strokovnim znanjem.",
+        "title": "Strokovna storitev"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Cenimo vaš čas, zato storitve opravimo hitro in zanesljivo.",
+        "title": "Hitra odzivnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis ali postavite vprašanje glede vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta na Krko 11, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 456 561",
+        "href": "tel:041456561",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opičite težavo ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta na Krko 11, 1290 Grosuplje, Slovenia",
+    "rights": "© Avtomehanika Bambič, Gorazd Bambič s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtomehanika Bambič",
+    "address": "Cesta na Krko 11, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "041 456 561"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

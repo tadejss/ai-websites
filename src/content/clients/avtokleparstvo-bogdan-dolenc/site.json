@@ -1,0 +1,274 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-bogdan-dolenc/hero.avif",
+      "alt": "Notranjost avtokleparske delavnice z opremo za popravilo vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-bogdan-dolenc/hero.webp",
+      "width": 1040,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "11139239",
+      "sourceUrl": "https://www.pexels.com/photo/man-buffing-the-paint-of-the-car-11139239/",
+      "photographer": "Hasan Gulec",
+      "photographerUrl": "https://www.pexels.com/@moonlightshotz",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-bogdan-dolenc/services.avif",
+      "alt": "Strokovno popravilo karoserije in avtokleparska dela v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-bogdan-dolenc/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470881",
+      "sourceUrl": "https://www.pexels.com/photo/man-repairing-broken-car-8470881/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled storitev",
+    "description": "Cene so informativne narave in se prilagajajo glede na obseg in zahtevnost dela na vašem vozilu.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtokleparska dela",
+        "description": "Popravilo in ravnanje karoserijskih del",
+        "price": "po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Popravilo karoserije",
+        "description": "Sanacija manjših in večjih poškodb",
+        "price": "po dogovoru"
+      },
+      {
+        "name": "Sanacija poškodb po toči",
+        "description": "Odstranjevanje vdolbin od toče",
+        "price": "po dogovoru"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled in priprava vozila",
+        "price": "po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtokleparstvo",
+    "highlight": "Bogdan Dolenc"
+  },
+  "metadata": {
+    "title": "Avtokleparstvo Bogdan Dolenc s.p. | Strokovno popravilo vozil Ljubljana",
+    "description": "Strokovno avtokleparstvo, popravilo karoserije, sanacija poškodb po toči in priprava vozil na tehnični pregled v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis v Ljubljani",
+    "title": "Strokovno avtokleparstvo in",
+    "titleHighlight": "popravilo vozil",
+    "description": "Nudimo kakovostna avtokleparska dela, popravilo karoserije ter sanacijo poškodb za lastnike osebnih in lahkih gospodarskih vozil v Ljubljani z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "izvedba storitev"
+      },
+      {
+        "value": "Visoko",
+        "label": "zadovoljstvo strank"
+      },
+      {
+        "value": "Hitra",
+        "label": "odzivnost"
+      },
+      {
+        "value": "Strokovno",
+        "label": "svetovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Specializirani smo za popravila karoserije in pripravo vozil na tehnične pregled v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Strokovna izvedba vseh vrst avtokleparskih del za osebna in lahka gospodarska vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Natančna sanacija poškodb na karoseriji vašega jeklenega konjička.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sanacija poškodb po toči",
+        "description": "Učinkovita odprava vdolbin in poškodb, ki jih povzroči toča.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priprava vozil na tehnični pregled",
+        "description": "Temeljit pregled in priprava vašega vozila, da boste brez skrbi prestali tehnični pregled.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke poskrbimo, da je vaše vozilo vedno v varnih rokah.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Zanesljiva in natančna izvedba storitev",
+      "Strokovno svetovanje in hitra odzivnost"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Ponašamo se z visoko raven zadovoljstva in zaupanja naših strank.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsakemu vozilu se posvetimo z vso skrbnostjo in natančnostjo.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Zagotavljamo strokovno svetovanje in hitro odzivnost na vaše povpraševanje.",
+        "title": "Hitra odzivnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete avtokleparsko storitev ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 611 292",
+        "href": "tel:041611292",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Grič 13, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo ali želeno storitev",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Grič 13, 1000 Ljubljana, Slovenia",
+    "rights": "© 2025 Avtokleparstvo Bogdan Dolenc s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtokleparstvo Bogdan Dolenc",
+    "address": "Grič 13, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 611 292"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

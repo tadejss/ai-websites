@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-klemen-peklaj/hero.avif",
+      "alt": "Avtomehanik pri delu na motorju vozila v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-klemen-peklaj/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985967",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-coverall-standing-near-a-car-8985967/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional car mechanic working in bright workshop interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-klemen-peklaj/services.avif",
+      "alt": "Sodobna avtodiagnostika in oprema v mehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-klemen-peklaj/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985924",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-on-a-car-8985924/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional auto repair shop mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled osnovnih avtomehaničnih storitev.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in rezervacijo termina nas pokličite.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in vseh filtrov (brez materiala)",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava in premontaža gum",
+        "description": "Premontaža in centriranje 4 koles",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika napak",
+        "description": "Priklop na računalnik in branje napak",
+        "price": "30 €"
+      },
+      {
+        "name": "Popravilo zavornega sistema",
+        "description": "Menjava zavornih ploščic (na osi)",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Ura mehaničnega dela",
+        "description": "Strokovno delo na vozilu",
+        "price": "45 € / uro",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtomehanika",
+    "highlight": "Klemen Peklaj s.p."
+  },
+  "metadata": {
+    "title": "Avtomehanika Klemen Peklaj s.p. | Zanesljive avtomehanične storitve na Vrhniki",
+    "description": "Zanesljiva in strokovna avtomehanika za vaše vozilo na Vrhniki in v okolici. Nudimo redne servise, menjavo gum, popravila zavor, diagnostiko in vzdrževanje motorjev."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv avtomehanik na Vrhniki",
+    "title": "Zanesljiva in strokovna avtomehanika za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Poskrbite za varno in brezskrbno vožnjo vašega osebnega ali lahkega dostavnega vozila na območju Vrhnike in okolice.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo",
+        "title": "Strokovno delo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljiv pristop",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitra izvedba",
+        "title": "Hitra izvedba"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostne storitve",
+        "title": "Kakovostne storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite avtomehanične storitve",
+    "description": "Za vaše vozilo poskrbimo celovito, strokovno in zanesljivo na območju Vrhnike z okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Kakovostno izvajanje rednih servisov za dolgo življenjsko dobo vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in premontaža",
+        "description": "Hitra in strokovna menjava gum ter premontaža za varno vožnjo v vseh letnih časih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravila zavornega sistema",
+        "description": "Pregled in zanesljivo popravilo zavornega sistema za vaše popolno varno ustavljanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika napak",
+        "description": "natančna računalniška diagnostika napak za hitro odkrivanje in odpravo težav na vozilu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje in popravila motorjev",
+        "description": "Strokovno vzdrževanje in popravila motorjev za nemoteno delovanje vašega vozila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Z domačim in zaupanja vrednim pristom poskrbimo, da je vaše vozilo vedno v najboljšem stanju.",
+    "highlights": [
+      "Strokovna in zanesljiva obravnava vsakega vozila",
+      "Visoko zadovoljstvo strank na območju Vrhnike",
+      "Hitra in kakovostna izvedba vseh popravil"
+    ],
+    "benefits": [
+      {
+        "label": "Visoko zadovoljstvo",
+        "description": "Zadovoljstvo naših strank je potrditev kakovostnega in predanega dela.",
+        "title": "Visoko zadovoljstvo"
+      },
+      {
+        "label": "Zanesljiv pristop",
+        "description": "Delujemo strokovno, pošteno in se držimo dogovorjenih rokov.",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Poskrbimo za hitro in učinkovito odpravo težav, da ste čim prej spet na cesti.",
+        "title": "Hitra izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Iščete zanesljivega avtomehanika? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Sinja Gorica 78, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 506 772",
+        "href": "tel:041506772",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo z vozilom ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Sinja Gorica 78, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtomehanika Klemen Peklaj s.p.",
+    "address": "Sinja Gorica 78, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 506 772"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

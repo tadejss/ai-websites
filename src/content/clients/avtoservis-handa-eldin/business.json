@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Handa, Eldin Handanagić s.p.",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Zanesljiv in strokoven avtoservis za vaše vozilo v Ljubljani",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava gum in vulkanizerstvo",
+    "Popravilo zavornih sistemov",
+    "Diagnostika vozil",
+    "Priprava vozila na tehnični pregled"
+  ],
+  "phone": "070 416 272",
+  "email": "",
+  "address": "Dolenjska cesta 234, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 4:00 PM · Tuesday: 8:00 AM – 4:00 PM · Wednesday: 8:00 AM – 4:00 PM · Thursday: 8:00 AM – 4:00 PM · Friday: 8:00 AM – 4:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena strank in preverjena kakovost storitev",
+    "Hitra in zanesljiva izvedba avtomehaničnih del",
+    "Celovite storitve vzdrževanja za vsa osebna vozila"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici, ki iščejo zanesljivega mehanika",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "stroqunoven, zaupanja vreden",
+  "brandStyle": "domač in zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

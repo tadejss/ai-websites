@@ -1,0 +1,284 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-vzdrzevanje-vozil/hero.avif",
+      "alt": "Sodobna avtokleparska delavnica z opremo za servis vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-vzdrzevanje-vozil/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870314",
+      "sourceUrl": "https://www.pexels.com/photo/person-using-paint-spray-gun-6870314/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-vzdrzevanje-vozil/services.avif",
+      "alt": "Mehankar pri delu na popravilu karoserije vozila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-vzdrzevanje-vozil/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809581",
+      "sourceUrl": "https://www.pexels.com/photo/professional-car-detailing-in-garage-37809581/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled osnovnih storitev avtokleparstva in vzdrževanja vozil.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo glede na poškodbo ali potrebe vozila nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtokleparska dela",
+        "description": "Pregled in manjša avtokleparska popravila",
+        "price": "od 40 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Popravilo karoserije",
+        "description": "Sanacija poškodb karoserije po predhodnem ogledu",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Vzdrževanje vozil",
+        "description": "Redni pregledi in manjši servisi",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Servis in pregled vozil",
+        "description": "Celovit pregled delovanja vozila",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtokleparstvo",
+    "highlight": "Jan Balantič S.P."
+  },
+  "metadata": {
+    "title": "Avtokleparstvo in vzdrževanje vozil Jan Balantič S.P. | Kamnik",
+    "description": "Zanesljivo avtokleparstvo in celovito vzdrževanje vozil v Kamniku z okolico. Strokovna popravila karoserije in servis vozil."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Zanesljivo avtokleparstvo v Kamniku",
+    "title": "Celovito vzdrževanje vozil in",
+    "titleHighlight": "strokovno avtokleparstvo",
+    "description": "Zanesljiva in osebna obravnava za lastnike vozil v Kamniku z okolico. Poskrbimo za popravilo karoserije in brezhibnost vašega jeklenega konjička.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "popravilo karoserije",
+        "title": "Strokovno popravilo karoserije"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "vzdrževanje vozil",
+        "title": "Kakovostno vzdrževanje vozil"
+      },
+      {
+        "value": "Osebna",
+        "label": "obravnava strank",
+        "title": "Osebna obravnava strank"
+      },
+      {
+        "value": "Kamnik",
+        "label": "z okolico",
+        "title": "Kamnik z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kakovostne rešitve za vaše vozilo",
+    "description": "Nudimo celovita avtokleparska dela, popravila karoserije ter redno vzdrževanje in servise vozil.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Natančna avtokleparska dela za odpravo poškodb in obnovo prvotnega stanja vozil.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Strokovno popravilo karoserije poškodovanih vozil z zanesljivimi postopki.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje vozil",
+        "description": "Redno in preventivno vzdrževanje vozil za varno in zanesljivo vožnjo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Servis in pregled vozil",
+        "description": "Pregledi in servisne storitve za ohranjanje brezhibnega delovanja vašega avtomobila.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanje, strokovnost in osebni pristop",
+    "description": "Zavedamo se pomena varnosti na cesti, zato se vsakemu vozilu posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Strokovno popravilo karoserije",
+      "Kakovostno vzdrževanje vozil",
+      "Zanesljiva in osebna obravnava strank"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Strokovno popravilo karoserije in natančna izvedba vseh del na vozilu.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Kakovostno vzdrževanje vozil, na katerega se lahko zanesete na vsaki poti.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Zanesljiva in osebna obravnava strank, prilagojena vašim potrebam.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za termin ali dodatne informacije o storitvah za vaše vozilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Spodnje Palovče 12a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 438 211",
+        "href": "tel:040438211",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo ali želeno storitev...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Spodnje Palovče 12a, 1241 Kamnik, Slovenia",
+    "rights": "© 2025 Avtokleparstvo in vzdrževanje vozil Jan Balantič S.P. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtokleparstvo Jan Balantič S.P.",
+    "address": "Spodnje Palovče 12a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "040 438 211"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

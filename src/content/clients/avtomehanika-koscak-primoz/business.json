@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtomehanika Koščak Primož s.p.",
+  "industry": "Avtomehanične storitve",
+  "tagline": "Zanesljivo vzdrževanje in popravilo vašega vozila",
+  "services": [
+    "Redni servisi vozil",
+    "Mehanična popravila",
+    "Diagnostika vozil",
+    "Priprava vozil na tehnični pregled",
+    "Menjava pnevmatik"
+  ],
+  "phone": "041 263 649",
+  "email": "",
+  "address": "Žalna 49, 1290 Grosuplje, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljstvo strank",
+    "Strokovna in zanesljiva storitev",
+    "Hitra odzivnost in prilagodljivost"
+  ],
+  "targetCustomers": "Lastniki osebnih in lahkih gospodarskih vozil",
+  "serviceArea": "Grosuplje z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv, prijazen",
+  "brandStyle": "zanesljiv lokalni avtomehanik",
+  "competitors": "Lokalne avtomehanične delavnice v regiji",
+  "callToAction": "Rezervirajte termin"
+}

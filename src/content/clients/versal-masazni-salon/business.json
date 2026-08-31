@@ -1,0 +1,27 @@
+{
+  "companyName": "Versal, masažni salon, Lilija Furlan s.p.",
+  "industry": "Masažni salon",
+  "tagline": "Sprostitev in dobro počutje za telo in duha v Domžalah.",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža",
+    "Športna masaža"
+  ],
+  "phone": "070 416 545",
+  "email": "",
+  "address": "Ljubljanska cesta 90, 1230 Domžale, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 8:00 PM · Tuesday: 9:00 AM – 8:00 PM · Wednesday: 9:00 AM – 8:00 PM · Thursday: 9:00 AM – 8:00 PM · Friday: 9:00 AM – 8:00 PM · Saturday: 9:00 AM – 8:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunske ocene strank",
+    "Prilagojen pristop k vsaki stranki",
+    "Prijeten in sproščujoč ambient"
+  ],
+  "targetCustomers": "Osebe, ki iščejo sprostitev, lajšanje bolečin in nego telesa",
+  "serviceArea": "Domžale z okolico",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, prijazen",
+  "brandStyle": "umirjen, naraven, zanesljiv",
+  "competitors": "Lokalni masažni saloni in wellness centri",
+  "callToAction": "Rezervirajte termin"
+}

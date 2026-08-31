@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-martincic-matjaz/hero.avif",
+      "alt": "Mehanik pri delu v sodobni avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-martincic-matjaz/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315574",
+      "sourceUrl": "https://www.pexels.com/photo/person-in-black-long-sleeves-repairing-the-car-engine-4315574/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-martincic-matjaz/services.avif",
+      "alt": "Diagnostika vozil v avtoservisu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-martincic-matjaz/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315571",
+      "sourceUrl": "https://www.pexels.com/photo/an-auto-mechanic-repairing-the-car-engine-4315571/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Okvirne cene osnovnih avtoservisnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo glede na tip vozila nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in oljnega filtra (brez materiala)",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik (komplet)",
+        "description": "Premontaža in centriranje za 4 kolesa",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop na tester in brisanje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled podvozja, zavore in osnovnih sklopov",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Mehanična dela",
+        "description": "Ura avtomehaničnih del",
+        "price": "od 45 €",
+        "unit": "/ ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Martinčič"
+  },
+  "metadata": {
+    "title": "Avtoservis Martinčič | Zanesljivo vzdrževanje vozil v Litiji",
+    "description": "Zanesljivo in strokovno vzdrževanje vašega vozila v Litiji s širšo okolico. Nudimo redne servise, mehanična popravila, diagnostiko, menjavo pnevmatik in pripravo na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Avtoservisna dejavnost Martinčič",
+    "title": "Zanesljivo in strokovno",
+    "titleHighlight": "vzdrževanje vašega vozila",
+    "description": "Strokovne avtoservisne storitve za osebna in lahka gospodarska vozila v Litiji s širšo okolico. Zanesljivost, pošten odnos in prilagodljivost za vaše varno na cesti.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno vzdrževanje",
+        "title": "Strokovno vzdrževanje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljiv odnos",
+        "title": "Zanesljiv odnos"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitra odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Litija in okolica",
+        "title": "Litija in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše avtoservisne storitve",
+    "description": "Poskrbimo za brezhibno delovanje vašega osebnega ali lahkega gospodarskega vozila v Litiji s širšo okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Menjava olja, filtrov in pregled ključnih sklopov za varno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Mehanična popravila",
+        "description": "Kakovostna popravila zavornih sistemov, podvozja, izpušnih sistemov in drugih delov vozila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno branje napak in pregled elektronike vašega avtomobila.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priprava vozil na tehnični pregled",
+        "description": "Temeljit preventivni pregled, ki vam zagotavlja mirnost na tehničnem pregledu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitro in strokovno premontažo ter centriranje pnevmatik za vašo varnost.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Domač in zanesljiv servis, ki postavlja pošten odnos do strank na prvo mesto.",
+    "highlights": [
+      "Strokovna in kakovostna izvedba popravil",
+      "Zanesljiv in pošten odnos do strank",
+      "Hitra odzivnost in prilagodljivost"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Kakovostno opravljena dela na vašem osebnem ali lahkem gospodarskem vozilu.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Pošten odnos",
+        "description": "Zanesljivo svetovanje in transparenten pristop do vsake stranke.",
+        "title": "Pošten odnos"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Hitra odzivnost in posluh za vaše potrebe v Litiji s širšo okolico.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte termin za vaš avto",
+    "description": "Pokličite nas ali nam pošljite sporočilo za dogovor o servisu vašega vozila.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 221 802",
+        "href": "tel:031221802",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Tenetiše, 1270 Litija, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite opisu težave ali želen termin...",
+      "submitLabel": "Pokličite za termin"
+    }
+  },
+  "footer": {
+    "address": "Tenetiše, 1270 Litija, Slovenia",
+    "rights": "Avtoservis Martinčič, Matjaž Martinčič s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Martinčič",
+    "address": "Tenetiše, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "031 221 802"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

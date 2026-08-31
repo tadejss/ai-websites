@@ -1,0 +1,28 @@
+{
+  "companyName": "Center azijskih masaž",
+  "industry": "Masažni salon",
+  "tagline": "Sprostite telo in um z tradicionalnimi azijskimi masažami v Ljubljani.",
+  "services": [
+    "Tradicionalna tajska masaža",
+    "Masaža z olji",
+    "Masaža hrbta in vratu",
+    "Sprostitvena masaža celega telesa"
+  ],
+  "phone": "051 394 772",
+  "email": "",
+  "address": "Bratislavska cesta 12, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 10:00 AM – 8:00 PM · Tuesday: 10:00 AM – 8:00 PM · Wednesday: 10:00 AM – 8:00 PM · Thursday: 10:00 AM – 8:00 PM · Friday: 10:00 AM – 8:00 PM · Saturday: 10:00 AM – 8:00 PM · Sunday: 10:00 AM – 8:00 PM",
+  "sellingPoints": [
+    "Visoko ocenjene storitve s strani zadovoljnih strank",
+    "Sproščujoč in prijeten ambient",
+    "Izkušeni maserji in strokovni pristop",
+    "Odprto vsak dan v tednu"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje napetosti v mišicah in dobro počutje",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "pomirjujoč, strokoven, prijazen",
+  "brandStyle": "naraven, sproščujoč, avtentičen",
+  "competitors": "Lokalni masažni saloni v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

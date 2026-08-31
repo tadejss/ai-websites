@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-jan-dobnikar/hero.avif",
+      "alt": "Mehankar pri menjavi pnevmatik v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-jan-dobnikar/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "26605672",
+      "sourceUrl": "https://www.pexels.com/photo/exterior-of-a-tire-shop-26605672/",
+      "photographer": "Photo Eddie O.",
+      "photographerUrl": "https://www.pexels.com/@photoeddieo",
+      "searchQuery": "modern tire change and wheel balancing service station"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-jan-dobnikar/services.avif",
+      "alt": "Stroj za centriranje koles v avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-jan-dobnikar/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5260115",
+      "sourceUrl": "https://www.pexels.com/photo/person-holding-a-tire-5260115/",
+      "photographer": "Enis Yavuz",
+      "photographerUrl": "https://www.pexels.com/@enis-yavuz-3516387",
+      "searchQuery": "tire shop mechanic changing tire"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled osnovnih vulkanizerskih in mehanskih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Premontaža in centriranje (komplet)",
+        "description": "Menjava pnevmatik in centriranje koles",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Centriranje koles (kos)",
+        "description": "Natančno centriranje posameznega kolesa",
+        "price": "od 10 €"
+      },
+      {
+        "name": "Hramba pnevmatik (sezona)",
+        "description": "Varno shranjevanje v ustreznih pogojih",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Menjava zavornih oblog",
+        "description": "Zamenjava zavornih ploščic na osi",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Manjši avtoservis / ura dela",
+        "description": "Opravljanje manjših mehanskih del",
+        "price": "od 40 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vulkanizerstvo",
+    "highlight": "Jan Dobnikar s.p."
+  },
+  "metadata": {
+    "title": "Vulkanizerstvo in storitve Jan Dobnikar s.p. | Medvode",
+    "description": "Zanesljive vulkanizerske in avtomehanične storitve v Medvodah z okolico. Premontaža pnevmatik, centriranje, hramba in manjši servisi."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Lokalni servis v Medvodah",
+    "title": "Zanesljive vulkanizerske storitve",
+    "titleHighlight": "za vaše vozilo",
+    "description": "Strokovne vulkanizerske in avtomehanične storitve za lastnike osebnih in lahkih gospodarskih vozil v Medvodah z okolico.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost in natančnost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Hitra izvedba"
+      },
+      {
+        "value": "Osebno",
+        "label": "Lokalni pristop"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Za vaše vozilo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše vozilo",
+    "description": "Poskrbite za varno vožnjo z našimi preverjenimi storitvami menjave, centriranja in hrambe pnevmatik ter manjših popravil.",
+    "items": [
+      {
+        "title": "Premontaža pnevmatik",
+        "description": "Hitra in strokovna menjava pnevmatik za osebna in lahka gospodarska vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Centriranje koles",
+        "description": "Natančno centriranje za udobno in varno vožnjo brez tresenja volana.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Hramba pnevmatik",
+        "description": "Ustrezno shranjevanje vaših pnevmatik izven sezonskega obdobja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Menjava zavornih oblog",
+        "description": "Skrb za brezhibno delovanje zavorni sistema vašega avtomobila.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjši avto servis",
+        "description": "Osnovna vzdrževalna dela in manjša popravila za brezskrbno pot.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Zavedamo se pomena varnosti na cesti, zato se pri vsakem delu posvetimo najvišjim standardom kakovosti.",
+    "highlights": [
+      "Visoka strokovnost in natančnost",
+      "Odlične ocene zadovoljnih strank",
+      "Hitra in zanesljiva izvedba storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Visoka strokovnost in natančnost pri vsakem posegu na vašem vozilu.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Zadovoljstvo",
+        "description": "Ponosni na odlične ocene zadovoljnih strank, ki se radi vračajo.",
+        "title": "Zadovoljstvo"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Hitra in zanesljiva izvedba storitev, ko to najbolj potrebujete.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za rezervacijo termina ali dodatna vprašanja glede ponudbe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Verje 1, 1215 Medvode, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 980 476",
+        "href": "tel:041980476",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–11:00, 12:00–17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeni termin...",
+      "submitLabel": "Pokličite za termin"
+    }
+  },
+  "footer": {
+    "address": "Verje 1, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vulkanizerstvo Jan Dobnikar s.p.",
+    "address": "Verje 1, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "041 980 476"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "companyName": "Frizerer G Style Studio",
+  "industry": "Frizerski salon",
+  "tagline": "Vaša destinacija za urejen in sodoben videz v Ljubljani",
+  "services": [
+    "Moško in žensko striženje",
+    "Barvanje las in prameni",
+    "Oblikovanje pričesk",
+    "Nega las",
+    "Svetovanje o stilu"
+  ],
+  "phone": "040 583 999",
+  "email": "",
+  "address": "Frizerski studio G-style, Dunajska c. 57, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 6:00 PM · Tuesday: 9:00 AM – 6:00 PM · Wednesday: 9:00 AM – 6:00 PM · Thursday: 9:00 AM – 6:00 PM · Friday: 9:00 AM – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoko ocenjene storitve zadovoljnih strank",
+    "Sodobni frizerski trendi in tehnike",
+    "Prijazno in strokovno osebje",
+    "Udoben ambient v središču Ljubljane"
+  ],
+  "targetCustomers": "Vsi, ki cenijo urejen videz, kakovostno nego las in strokovno svetovanje",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, sodoben",
+  "brandStyle": "moderen in eleganten salon",
+  "competitors": "Lokalni frizerski saloni v Ljubljani",
+  "callToAction": "Rezervirajte svoj termin"
+}

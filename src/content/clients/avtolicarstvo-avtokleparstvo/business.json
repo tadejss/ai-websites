@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoličarstvo in avtokleparstvo",
+  "industry": "Avtoličarstvo in avtokleparstvo",
+  "tagline": "Strokovno popravilo karoserije in kakovostno barvanje vašega vozila",
+  "services": [
+    "Avtokleparska dela",
+    "Avtoličarska dela",
+    "Popravilo karoserije",
+    "Sanacija poškodb po toči",
+    "Poliranje in zaščita vozil"
+  ],
+  "phone": "031 260 168",
+  "email": "",
+  "address": "Slamnikarska cesta, 1230 Domžale, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Zanesljiva in kakovostna izvedba kleparskih in ličarskih storitev",
+    "Celovita obravnava poškodb vozil na enem mestu",
+    "Strokovno svetovanje in prilagodljivost strankam"
+  ],
+  "targetCustomers": "Lastniki osebnih in lahkih gospodarskih vozil, ki potrebujejo popravilo karoserije ali lakiranje",
+  "serviceArea": "Domžale z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zaupanja vreden",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtokleparske in avtoličarske delavnice",
+  "callToAction": "Pokličite nas"
+}

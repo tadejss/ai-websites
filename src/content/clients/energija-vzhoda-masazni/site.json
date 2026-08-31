@@ -1,0 +1,276 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "plum-dusk",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/energija-vzhoda-masazni/hero.avif",
+      "alt": "Udoben in umirjen ambient masažnega salona z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/energija-vzhoda-masazni/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628613",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628613/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/energija-vzhoda-masazni/services.avif",
+      "alt": "Sprostitvena masaža in aromaterapija za popolno udobje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/energija-vzhoda-masazni/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32178008",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32178008/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean apartment interior green accents"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Cene masažnih storitev",
+    "description": "Pregled naših rednih storitev in informativnih cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščitev celotnega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna masaža za umiritev",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Ciljna obravnava napetosti",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Aromaterapija",
+        "description": "Masaža z eteričnimi olji",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Energija",
+    "highlight": "vzhoda"
+  },
+  "metadata": {
+    "title": "Masažni salon Energija vzhoda Domžale",
+    "description": "Sprostitev telesa in duha z vrhunskimi masažami v Domžalah in okolici. Poskrbite za svoje dobro počutje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažni salon v Domžalah",
+    "title": "Sprostitev telesa in duha z",
+    "titleHighlight": "vrhunskimi masažami",
+    "description": "Nudimo strokovne masaže za posameznike v Domžalah in okolici, ki iščejo sprostitev, lajšanje bolečin in popolno dobro počutje.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Udoben ambient",
+        "label": "Udoben ambient"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Vrhunske ocene",
+        "label": "Vrhunske ocene"
+      },
+      {
+        "value": "Popolna sprostitev",
+        "label": "Popolna sprostitev"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Masaže za vaše dobro počutje",
+    "description": "Izberite storitev, ki najbolj ustreza vašim trenutnim potrebam po sprostitvi in lajšanju napetosti v Domžalah.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Tradicionalna masaža celega telesa za sprostitev mišic in izboljšanje prekrvavitve.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi za umiritev uma, odpravljanje stresa in globoko sprostitev.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljano lajšanje napetosti in bolečin v mišicah ter sklepih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Aromaterapija",
+        "description": "Blagodejna masaža z eteričnimi olji za uskladitev čutov in telesa.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Celostna skrb za vaše telo in duha",
+    "description": "Združujemo strokovnost, prijeten ambient in osebni pristop za najboljšo izkušnjo.",
+    "highlights": [
+      "Vrhunske ocene zadovoljnih strank",
+      "Strokoven in prijeten pristop",
+      "Udoben ambient za popolno sprostitev"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunske ocene",
+        "description": "Zadovoljstvo naših strank potrjuje kakovost naših storitev.",
+        "title": "Vrhunske ocene"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Izkušeni in prijazni terapevti se posvetijo vašim individualnim potrebam.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Udobno in umirjeno okolje za vaš odmor od vsakdanjega stresa.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjega obrazca ali kontaktnih podatkov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 84, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 525 638",
+        "href": "tel:041525638",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:30 – 18:30, Sob–Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanje.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 84, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Energija vzhoda",
+    "address": "Ljubljanska cesta 84, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "041 525 638"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

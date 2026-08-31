@@ -1,0 +1,28 @@
+{
+  "companyName": "Masaže, Meta Hozjan s.p.",
+  "industry": "Masažne storitve",
+  "tagline": "Sproščujoče in terapevtske masaže za vaše dobro počutje",
+  "services": [
+    "Klasična masaža",
+    "Terapevtska masaža",
+    "Sprostitvena masaža",
+    "Masaža hrbta",
+    "Bolečinska masaža"
+  ],
+  "phone": "040 501 370",
+  "email": "",
+  "address": "Notranjska Cesta 1, 1370 Logatec, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Individualen pristop k vsaki stranki",
+    "Prijeten in sproščujoč ambient"
+  ],
+  "targetCustomers": "Ljudje, ki potrebujejo sprostitev, lajšanje bolečin v mišicah in nego telesa",
+  "serviceArea": "Logatec in okolica",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, sproščujoč",
+  "brandStyle": "domač in zanesljiv lokalni salon",
+  "competitors": "Lokalni ponudniki wellness in masažnih storitev",
+  "callToAction": "Rezervirajte termin"
+}

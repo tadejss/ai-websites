@@ -1,0 +1,27 @@
+{
+  "companyName": "Sinergija, masažna terapija, Helena Bizjak s.p.",
+  "industry": "Masažna terapija in dobro počutje",
+  "tagline": "Strokovna masažna terapija za vaše sproščanje in dobro počutje velenju",
+  "services": [
+    "Klasična masaža",
+    "Terapevtska masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža"
+  ],
+  "phone": "071 518 855",
+  "email": "",
+  "address": "Betajnova 15, 1360 Vrhnika, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 12:00 PM · Tuesday: 5:00 – 7:30 PM · Wednesday: 2:30 – 5:00 PM · Thursday: Closed · Friday: Closed · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Individualen pristop k vsaki stranki",
+    "Strokovna in sproščujoča izkušnja"
+  ],
+  "targetCustomers": "Posamezniki, ki iščejo lajšanje napetosti, sprostitev in izboljšanje počutja",
+  "serviceArea": "Vrhnika z okolico",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, sproščujoč",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni ponudniki masaž in wellness storitev",
+  "callToAction": "Rezervirajte termin"
+}

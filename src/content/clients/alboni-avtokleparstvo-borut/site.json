@@ -1,0 +1,284 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/alboni-avtokleparstvo-borut/hero.avif",
+      "alt": "Notranjost avtokleparske delavnice z opremo za popravilo vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/alboni-avtokleparstvo-borut/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30250199",
+      "sourceUrl": "https://www.pexels.com/photo/professional-auto-body-spray-painting-workshop-30250199/",
+      "photographer": "Mohammad Hammad",
+      "photographerUrl": "https://www.pexels.com/@mohammad-hammad-2148098658",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/alboni-avtokleparstvo-borut/services.avif",
+      "alt": "Avtoklepar pri natančnem popravilu karoserije osebnega vozila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/alboni-avtokleparstvo-borut/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809561",
+      "sourceUrl": "https://www.pexels.com/photo/man-polishing-a-red-car-in-garage-37809561/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Cene so informativne narave in se prilagodijo glede na obseg poškodb ter tip vozila.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtokleparska dela (ura dela)",
+        "description": "Strokovno kleparsko popravilo karoserije.",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Sanacija poškodb po toči",
+        "description": "Pregled in odprava udrtin glede na obseg.",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Priprava vozila na tehnični pregled",
+        "description": "Pregled in manjše nastavitve pred pregledom.",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Menjava avtotehničnih delov",
+        "description": "Demontaža in montaža delov karoserije.",
+        "price": "od 40 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Alboni",
+    "highlight": "avtokleparstvo"
+  },
+  "metadata": {
+    "title": "Alboni avtokleparstvo Borut Vrhovc s.p. | Ljubljana",
+    "description": "Kakovostno avtokleparstvo in popravilo vozil v Ljubljani z okolico. Natančna avtokleparska dela, sanacija poškodb po toči in popravilo karoserije."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljivo avtokleparstvo v Ljubljani",
+    "title": "Strokovno popravilo karoserije in",
+    "titleHighlight": "avtokleparska dela",
+    "description": "Zanesljive in natančne storitve za lastnike osebnih vozil v Ljubljani z okolico. Poskrbimo za sanacijo poškodb, karoserijo in pripravo na tehnični pregled.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka strokovnost",
+        "label": "Visoka strokovnost"
+      },
+      {
+        "value": "Hitra izvedba",
+        "label": "Hitra izvedba"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Specializirani smo za vsa avtokleparska dela in popravila karoserije za stranke v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Natančna izvedba vseh vrst avtokleparskih del za vsa osebna vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Strokovna sanacija in popravilo poškodb karoserije z ustreznimi postopki.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sanacija poškodb po toči",
+        "description": "Učinkovito odpravljanje udrtin in poškodb, ki jih povzroči toča.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Menjava avtotehničnih delov",
+        "description": "Kakovostna menjava poškodovanih avtotehničnih delov na vašem vozilu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava na tehnični pregled",
+        "description": "Temeljit pregled in priprava vozila za brezhiben tehnični pregled.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Mojserski pristop in preverjena kakovost",
+    "description": "Zavedamo se pomena varnosti in izgleda vašega vozila, zato vsakemu poslu namenjamo vso pozornost.",
+    "highlights": [
+      "Visoka strokovnost in natančnost pri delu",
+      "Zanesljiva in hitra izvedba storitev",
+      "Odlične ocene zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka strokovnost",
+        "description": "Natančnost in strokovnost pri vsakem kleparskem popravilu vozil.",
+        "title": "Visoka strokovnost"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Hitro in zanesljivo opravljene storitve za vaše osebno vozilo.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Lokalni mojster",
+        "description": "Avtentične storitve s prilagojenim pristopom v Ljubljani z okolico.",
+        "title": "Lokalni mojster"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali nas obiščite na lokaciji v Ljubljani. Z veseljem vam pripravimo ponudbo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 696 635",
+        "href": "tel:041696635",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kosančeva ulica 12, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 7:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite poškodbo ali želeno storitev...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Kosančeva ulica 12, 1000 Ljubljana, Slovenia",
+    "rights": "Alboni avtokleparstvo Borut Vrhovc s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Alboni avtokleparstvo",
+    "address": "Kosančeva ulica 12, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 696 635"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

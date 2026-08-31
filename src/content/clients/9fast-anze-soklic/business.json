@@ -1,0 +1,28 @@
+{
+  "companyName": "9FAST s.p. Anže Soklič s.p.",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Hitro, zanesljivo in strokovno vzdrževanje vašega vozila",
+  "services": [
+    "Redni avtoservis",
+    "Menjava gum in vulkanizerstvo",
+    "Diagnostika vozil",
+    "Popravilo zavor",
+    "Servis klimatskih naprav"
+  ],
+  "phone": "041 524 127",
+  "email": "",
+  "address": "Ljubljanska cesta 12, 1270 Litija, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 4:30 PM · Tuesday: 8:00 AM – 4:30 PM · Wednesday: 8:00 AM – 4:30 PM · Thursday: 8:00 AM – 4:30 PM · Friday: 8:00 AM – 4:30 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Hitra in zanesljiva izvedba storitev",
+    "Strokovno in prijazno osebje"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Litiji in okolici",
+  "serviceArea": "Litija s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "sodobna lokalna delavnica",
+  "competitors": "Lokalni avtoservisi v regiji",
+  "callToAction": "Rezervirajte termin"
+}

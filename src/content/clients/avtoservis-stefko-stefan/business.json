@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Štefko, Štefan Bernard s.p.",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Zanesljivo vzdrževanje in popravila vašega vozila",
+  "services": [
+    "Redni servisi vozil",
+    "Mehanična popravila",
+    "Menjava gum",
+    "Priprava vozil na tehnični pregled",
+    "Diagnostika motorja"
+  ],
+  "phone": "051 258 488",
+  "email": "",
+  "address": "Zgornja Senica 16, 1215 Medvode, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljstvo strank",
+    "Strokovna in zanesljiva storitev",
+    "Hitra odzivnost"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil vseh znamk",
+  "serviceArea": "Medvode in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v regiji",
+  "callToAction": "Rezervirajte termin"
+}

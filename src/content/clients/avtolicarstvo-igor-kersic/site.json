@@ -1,0 +1,280 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-igor-kersic/hero.avif",
+      "alt": "Profesionalna avtoličarska delavnica v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-igor-kersic/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809581",
+      "sourceUrl": "https://www.pexels.com/photo/professional-car-detailing-in-garage-37809581/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-igor-kersic/services.avif",
+      "alt": "Natančno barvanje in popravilo vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-igor-kersic/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809549",
+      "sourceUrl": "https://www.pexels.com/photo/precision-dent-repair-in-automotive-workshop-37809549/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "car dent repair bodywork garage"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregledne cene storitev",
+    "description": "Okvirne cene naših storitev. Za točno ponudbo nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Barvanje posameznega elementa",
+        "description": "Lakiranje odbijača, blatnika ali vrat",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Sanacija manjših prask",
+        "description": "Lokalno popravilo prask in odrgnin",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Priprava vozila za tehnični pregled",
+        "description": "Pregled in ureditev manjših pomanjkljivosti",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Manjša kleparska popravila",
+        "description": "Ravnaje pločevine in priprava na lakiranje",
+        "price": "od 80 € / ura",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoličarstvo",
+    "highlight": "Igor Keršič s.p."
+  },
+  "metadata": {
+    "title": "Avtoličarstvo Igor Keršič s.p. | Strokovno barvanje in popravilo vozil",
+    "description": "Strokovne avtoličarske storitve, barvanje vozil in sanacija prask v Ljubljani in okolici. Zanesljiv lokalni mojster z dolgoletnimi izkušnjami."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Avtoličarstvo in kleparstvo Ljubljana",
+    "title": "Strokovno barvanje in",
+    "titleHighlight": "popravilo vozil",
+    "description": "Zanesljive avtoličarske storitve za lastnike osebnih in dostavnih vozil v Ljubljani in okolici. Natančna izvedba in strokovni pristop.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Zadovoljne stranke"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Kvalitetna izvedba"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Strokovni pristop"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite avtoličarske rešitve",
+    "description": "Poskrbimo za vaš avtomobil z natančnim barvanjem, sanacijo prask in pripravo vozil na Ljubljanskem območju.",
+    "items": [
+      {
+        "title": "Avtoličarske storitve",
+        "description": "Celovite avtoličarske storitve z uporabo preverjenih materialov za popoln izgled vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje vozil",
+        "description": "Strokovno barvanje celotnih vozil ali posameznih delov za obnovljen in sijoč videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sanacija prask in poškodb",
+        "description": "Učinkovito odstranjevanje prask, udrtin in manjših poškodb na karoseriji.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Kosi in manjša popravila",
+        "description": "Kakovostna manjša kleparska in l<bos>8popravila za varno vožnjo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava za tehnični pregled",
+        "description": "Zanesljiva priprava vašega vozila, da boste tehnični pregled opravili brez skrbi.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv lokalni avtoličar",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke poskrbimo, da vaše vozilo ponovno zasije.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Natančna in kvalitetna izvedba storitev",
+      "Zanesljivost in strokovni pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Visoka ocena in zaupanje številnih voznikov v regiji.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsakemu vozilu se posvetimo z največjo mero natančnosti.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Lokalni mojster",
+        "description": "Avtentičen pristop in hitra odzivnost v Ljubljani in okolici.",
+        "title": "Lokalni mojster"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete avtoličarske storitve ali ponudbo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ižanska cesta 379, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 725 785",
+        "href": "tel:041725785",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali poškodbo vozila...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ižanska cesta 379, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoličarstvo Igor Keršič s.p.",
+    "address": "Ižanska cesta 379, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 725 785"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

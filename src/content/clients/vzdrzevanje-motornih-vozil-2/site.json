@@ -1,0 +1,285 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-motornih-vozil-2/hero.avif",
+      "alt": "Terenski mehanik popravlja delovni stroj na prostem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-motornih-vozil-2/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315574",
+      "sourceUrl": "https://www.pexels.com/photo/person-in-black-long-sleeves-repairing-the-car-engine-4315574/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-motornih-vozil-2/services.avif",
+      "alt": "Orodja za diagnostiko in terensko popravilo vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-motornih-vozil-2/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315571",
+      "sourceUrl": "https://www.pexels.com/photo/an-auto-mechanic-repairing-the-car-engine-4315571/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni pregled cen",
+    "description": "Pregled okvirnih stroškov za terenske servise in popravila.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas pokličite.",
+    "items": [
+      {
+        "name": "Terenski izhod in pregled",
+        "description": "Prihod na vašo lokacijo in osnovni pregled okvare.",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Diagnostika napak na terenu",
+        "description": "Priklop in odčitavanje napak z diagnostično napravo.",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Ura mehaničnega dela",
+        "description": "Strokovno delo mehanika na terenu.",
+        "price": "od 45 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Redni servisni pregled",
+        "description": "Menjava tekočin, filtrov in pregled sklopa.",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Boštjan Jakša",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Vzdrževanje motornih vozil in delovnih strojev na terenu | Kamnik",
+    "description": "Zanesljivo vzdrževanje in popravilo vozil ter delovnih strojev na terenu v Kamniku in okoliških krajih."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za servis"
+  },
+  "hero": {
+    "badge": "Terenski servis vozil in strojev",
+    "title": "Zanesljivo vzdrževanje in popravilo na",
+    "titleHighlight": "vaši lokaciji",
+    "description": "Hitra in strokovna pomoč za lastnike motornih vozil, kmetovalce in podjetja z delovnimi stroji na območju Kamnika in okoliških krajev.",
+    "primaryCta": "Pokličite za servis",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Terenski",
+        "label": "prihod na vašo lokacijo"
+      },
+      {
+        "value": "Hitra",
+        "label": "odzivnost"
+      },
+      {
+        "value": "Strokovno",
+        "label": "delo in diagnostika"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "delo po dogovoru"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mehanične storitve na terenu",
+    "description": "Poskrbimo za delovanje vaših vozil in delovnih strojev neposredno tam, kjer jih potrebujete, v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Terenski servis motornih vozil",
+        "description": "Izvajamo vzdrževanje in manjša popravila motornih vozil neposredno na terenu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo delovnih strojev",
+        "description": "Specializirani smo za odpravljanje okvar in servisiranje delovnih strojev.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Redno vzdrževanje in servisi",
+        "description": "Redni pregledi in vzdrževalna dela za dolgotrajno zanesljivost vaše opreme.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika na terenu",
+        "description": "Hitro odkrivanje napak in težav z napredno diagnostično opremo na licu mesta.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nujna mehanična pomoč",
+        "description": "Odzivnost ob okvarah, ko je potrebna takojšnja strokovna pomoč na terenu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše stroje in vozila",
+    "description": "Z izkušnjami in strokovnim pristopom poskrbimo, da so vaše naprave spet delujoče v najkrajšem možnem času.",
+    "highlights": [
+      "Prihod neposredno na vašo lokacijo",
+      "Prilagodljivost in visoka odzivnost",
+      "Strokovno znanje za vozila in delovne stroje"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovno delo",
+        "description": "Natančna in zanesljiva izvedba vseh terenskih popravil.",
+        "title": "Strokovno delo"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim potrebam in se prilagodimo urniku vašega dela.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Izkušnje",
+        "description": "Bogate izkušnje s popravili delovnih strojev in motornih vozil.",
+        "title": "Izkušnje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pokličite za servis ali povpraševanje",
+    "description": "Potrebujete pomoč na terenu ali nasvet glede popravila? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 204 845",
+        "href": "tel:040204845",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta dr. Tineta Zajca 16 A, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 19:00, Sob: 8:00 – 12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo z vozilom ali strojem...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Cesta dr. Tineta Zajca 16 A, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Boštjan Jakša s.p.",
+    "address": "Cesta dr. Tineta Zajca 16 A, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "040 204 845"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

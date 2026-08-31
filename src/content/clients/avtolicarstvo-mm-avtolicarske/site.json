@@ -1,0 +1,287 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-mm-avtolicarske/hero.avif",
+      "alt": "Profesionalna avtoličarska delavnica v temnem stilu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-mm-avtolicarske/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470881",
+      "sourceUrl": "https://www.pexels.com/photo/man-repairing-broken-car-8470881/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-mm-avtolicarske/services.avif",
+      "alt": "Barvanje in poliranje vozil v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-mm-avtolicarske/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809549",
+      "sourceUrl": "https://www.pexels.com/photo/precision-dent-repair-in-automotive-workshop-37809549/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "car dent repair bodywork garage"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene storitev",
+    "description": "Pregled pogostih avtoličarskih storitev in okvirnih cen.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Popravilo manjših prask",
+        "description": "Sanacija površinskih poškodb in lokalno lakiranje",
+        "price": "od 50 €",
+        "featured": false
+      },
+      {
+        "name": "Poliranje celotnega vozila",
+        "description": "Obnovitev sijaja in zaščita laka",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Barvanje posameznega elementa",
+        "description": "Priprava in lakiranje odbijača, blatnika ali vrata",
+        "price": "od 150 €",
+        "featured": false
+      },
+      {
+        "name": "Sanacija poškodb po toči",
+        "description": "Ocenitev in odprava udrtin",
+        "price": "Po ogledu",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoličarstvo M.M",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Avtoličarstvo M.M | Vrhunske avtoličarske storitve na Vrhniki",
+    "description": "Vrhunske avtoličarske storitve, barvanje vozil, popravilo prask in sanacija poškodb po toči na Vrhniki z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovno avtoličarstvo",
+    "title": "Vrhunske avtoličarske storitve za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Zanesljive in kakovostne avtoličarske storitve za lastnike osebnih in dostavnih vozil na Vrhniki z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostno"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite avtoličarske storitve",
+    "description": "Poskrbimo za brezhiben videz vašega avtomobila z uporabo preverjenih materialov in strokovnim pristopom.",
+    "items": [
+      {
+        "title": "Avtoličarstvo",
+        "description": "Strokovna avtoličarska dela za vsa osebna in dostavna vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje vozil",
+        "description": "Natančno barvanje posameznih delov ali celotnega vozila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo prask",
+        "description": "Učinkovito odstranjevanje prask in površinskih poškodb laka.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija poškodb po toči",
+        "description": "Sanacija udrtin in poškodb, ki jih povzroči toča.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poliranje vozil",
+        "description": "Globinsko poliranje za povrnitev sijaja in zaščito barve.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za obnovo vašega vozila",
+    "description": "Z združevanjem strokovnosti in kakovostne izvedbe poskrbimo, da je vaše vozilo vedno v najboljšem stanju.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Kakovostna izvedba avtoličarskih del",
+      "Zanesljivost in strokovnost"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Kakovostna izvedba vseh avtoličarskih del za dolgotrajne rezultate.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za natančnost.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Strokovna obravnava vašega vozila z ustreznim znanjem.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete ponudbo za avtoličarske storitve? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Idrijska cesta 42, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 752 017",
+        "href": "tel:041752017",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–18:00, Sob: 8:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali poškodbo vozila...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Idrijska cesta 42, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoličarstvo M.M d.o.o.",
+    "address": "Idrijska cesta 42, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 752 017"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

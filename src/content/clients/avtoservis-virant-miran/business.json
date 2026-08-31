@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Virant, Miran Virant s.p.",
+  "industry": "Avtoservisna dejavnost in popravilo vozil",
+  "tagline": "Zanesljivo in strokovno vzdrževanje vašega vozila",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava gum in premontaža",
+    "Zavorni sistemi",
+    "Diagnostika vozil",
+    "Splošna avtomehanična popravila"
+  ],
+  "phone": "040 900 630",
+  "email": "",
+  "address": "Golo 2c, 1292 Ig, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Zanesljiva in kakovostna storitev",
+    "Strokovni pristop k popravilu vozil",
+    "Lokalna dostopnost"
+  ],
+  "targetCustomers": "Lastniki osebnih in lahkih gospodarskih vozil, ki potrebujejo servis ali popravilo",
+  "serviceArea": "Ig in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden avtoservis",
+  "competitors": "Lokalni ponudniki avtoservisnih storitev",
+  "callToAction": "Pokličite za servis"
+}

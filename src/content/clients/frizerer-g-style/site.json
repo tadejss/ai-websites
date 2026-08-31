@@ -1,0 +1,290 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "wine-velvet",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerer-g-style/hero.avif",
+      "alt": "Sodoben in svetel frizerski salon v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerer-g-style/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7823407",
+      "sourceUrl": "https://www.pexels.com/photo/empty-armchairs-in-the-room-7823407/",
+      "photographer": "Marina Chocobar",
+      "photographerUrl": "https://www.pexels.com/@marina-chocobar-1740112",
+      "searchQuery": "modern hair salon interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerer-g-style/services.avif",
+      "alt": "Storitve barvanja in oblikovanja pričesk",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerer-g-style/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "19664876",
+      "sourceUrl": "https://www.pexels.com/photo/barber-cutting-client-hair-19664876/",
+      "photographer": "Kawê  Rodrigues",
+      "photographerUrl": "https://www.pexels.com/@kawerodriguess",
+      "searchQuery": "modern hair salon interior natural light"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled rednih cen naših frizerskih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točne ponudbe nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Moško striženje",
+        "description": "Pranje, striženje in sušenje",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Žensko striženje",
+        "description": "Pranje, striženje in oblikovanje pričeske",
+        "price": "od 30 €",
+        "featured": true
+      },
+      {
+        "name": "Barvanje las",
+        "description": "Enobarvno barvanje z nego",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Prameni / Balayage",
+        "description": "Sodobne tehnike posvetljevanja in pramenov",
+        "price": "od 65 €"
+      },
+      {
+        "name": "Nega las",
+        "description": "Globinska regeneracija in maska",
+        "price": "od 25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "G Style",
+    "highlight": "Studio"
+  },
+  "metadata": {
+    "title": "Frizerer G Style Studio | Frizerski salon Ljubljana",
+    "description": "Vaša destinacija za urejen in sodoben videz v Ljubljani. Moško in žensko striženje, barvanje las, nega in svetovanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Ljubljana",
+    "title": "Vaša destinacija za urejen in sodoben",
+    "titleHighlight": "videz v Ljubljani",
+    "description": "Strokovne frizerske storitve, prilagojene vašemu stilu. Poskrbimo za moško in žensko striženje, barvanje ter nego las v prijetnem ambientu.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Moderen",
+        "label": "Moderen",
+        "title": "Moderen ambient"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Strokoven",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Sodobni",
+        "label": "Sodobni",
+        "title": "Sodobni trendi"
+      },
+      {
+        "value": "Udoben",
+        "label": "Udoben",
+        "title": "Udoben prostor"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Celovite frizerske storitve za vaši lasje, od vsakodnevnih pričesk do popolnih preobrazb v Ljubljani.",
+    "items": [
+      {
+        "title": "Moško in žensko striženje",
+        "description": "Natančno striženje prilagojeno obliki vašega obraza in osebnemu stilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las in prameni",
+        "description": "Uporaba kakovostnih barv in sodobnih tehnik barvanja za sijoč videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega las",
+        "description": "Globinska nega in obnova za zdravje in lesk vaših las.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje o stilu",
+        "description": "Strokovni nasveti glede izbire pričeske in ustrezne domače nege.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Urejen videz in strokovna nega las",
+    "description": "Združujemo sodobne frizerske trende, prijaznost in osebni pristop za vaše popolno zadovoljstvo.",
+    "highlights": [
+      "Visoko ocenjene storitve zadovoljnih strank",
+      "Sodobni frizerski trendi in tehnike",
+      "Udoben ambient v središču Ljubljane"
+    ],
+    "benefits": [
+      {
+        "label": "Prijazno osebje",
+        "description": "Strokovno in prijazno osebje poskrbi za sproščeno vzdušje.",
+        "title": "Prijazno osebje"
+      },
+      {
+        "label": "Sodobni trendi",
+        "description": "Sledimo najnovejšim modnim smernicam in tehnikam striženja.",
+        "title": "Sodobni trendi"
+      },
+      {
+        "label": "Udoben ambient",
+        "description": "Prijeten prostor v središču Ljubljane za vaš oddih in lepoto.",
+        "title": "Udoben ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za vprašanja glede storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Frizerski studio G-style, Dunajska c. 57, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 583 999",
+        "href": "tel:040583999",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00 – 18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite svoje ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite svojo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Frizerski studio G-style, Dunajska c. 57, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "G Style Studio",
+    "address": "Frizerski studio G-style, Dunajska c. 57, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 583 999"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

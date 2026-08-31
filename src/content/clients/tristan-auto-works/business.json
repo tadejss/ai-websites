@@ -1,0 +1,27 @@
+{
+  "companyName": "Tristan Auto Works, specialna predelava vozil, Marcel Šuligoj s.p.",
+  "industry": "Avtomehanična delavnica in predelava vozil",
+  "tagline": "Specialne predelave vozil in strokovne avtomehanične storitve",
+  "services": [
+    "Predelava vozil",
+    "Servis in vzdrževanje vozil",
+    "Optimizacija delovanja",
+    "Svetovanje in predelave po meri"
+  ],
+  "phone": "031 835 353",
+  "email": "",
+  "address": "Ponoviška cesta 11a, 1270 Litija, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 7:00 PM · Tuesday: 9:00 AM – 7:00 PM · Wednesday: 9:00 AM – 7:00 PM · Thursday: 9:00 AM – 7:00 PM · Friday: 9:00 AM – 7:00 PM · Saturday: 9:00 AM – 2:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Specializirano znanje za predelave vozil",
+    "Visoka ocena in zadovoljstvo strank",
+    "Prilagojen pristop k vsakemu projektu"
+  ],
+  "targetCustomers": "Lastniki vozil, ki iščejo specialne predelave, nadgradnje in kakovosten servis",
+  "serviceArea": "Litija in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prilagodljiv",
+  "brandStyle": "tehnično usmerjen, natančen, zaupanja vreden",
+  "competitors": "Lokalne avtomehanične delavnice",
+  "callToAction": "Rezervirajte termin"
+}

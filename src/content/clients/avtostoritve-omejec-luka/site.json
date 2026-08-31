@@ -1,0 +1,273 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtostoritve-omejec-luka/hero.avif",
+      "alt": "Avtomehanik pri delu v sodobni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtostoritve-omejec-luka/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7019362",
+      "sourceUrl": "https://www.pexels.com/photo/male-auto-mechanic-working-on-car-shop-7019362/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional auto mechanic working in dark modern garage workshop"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtostoritve-omejec-luka/services.avif",
+      "alt": "Diagnostika in servis vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtostoritve-omejec-luka/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38218175",
+      "sourceUrl": "https://www.pexels.com/photo/sleek-red-car-in-modern-garage-setting-38218175/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "car diagnostic equipment and engine repair in dark garage"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled pogostih storitev našega avtoservisa. Cene so informativne narave.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozil",
+        "description": "Zamenjava olja in filtrov (brez materiala)",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava gum in premontaža",
+        "description": "Komplet 4 pnevmatik z centriranjem",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Avtodiagnostika",
+        "description": "Priklop na tester in brisanje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pregled in popravilo zavor",
+        "description": "Menjava zavornih ploščic",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtostoritve",
+    "highlight": "Omejec"
+  },
+  "metadata": {
+    "title": "Avtostoritve Omejec, Luka Omejec s.p. | Zanesljiv avtoservis v Medvodah",
+    "description": "Zanesljiv avtoservis in vzdrževanje vozil v Medvodah z okolico. Nudimo redne servise, menjavo gum, zavore in diagnostiko vozil."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljiv avtoservis in vzdrževanje vozil v",
+    "titleHighlight": "Medvodah",
+    "description": "Strokovne avtoreparaturne storitve in redno vzdrževanje za lastnike osebnih vozil v Medvodah s širšo okolico. Poskrbimo za varnost vašega jeklenega konjička.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "4.9",
+        "label": "Visoka ocena strank",
+        "title": "Visoka ocena strank"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Zanesljive storitve",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Medvode in okolica",
+        "title": "Lokalno"
+      },
+      {
+        "value": "Prijazno",
+        "label": "Osebni pristop",
+        "title": "Prijazno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "V avtoreparaturni delavnici Avtostoritve Omejec nudimo zanesljiva popravila in redno vzdrževanje vozil za stranke v Medvodah in okolici.",
+    "items": [
+      {
+        "title": "Redni avtoservisi",
+        "description": "Strokovni redni servisi za varno in brezskrbno vožnjo vašega osebnega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in premontaža",
+        "description": "Hitra in natančna menjava pnevmatik ter premontaža za vse sezone.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled, vzdrževanje in popravilo zavornih sistemov za vašo varnost na cesti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno odkrivanje napak in težav z napredno avtodiagnostiko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Splošna popravila vozil",
+        "description": "Kakovostna splošna popravila in odpravljanje okvar na vašem vozilu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in prijazen odnos",
+    "description": "Zavedamo se, kako pomembno je zanesljivo vozilo. Zato se v naši delavnici posvetimo vsakemu avtomobilu posebej.",
+    "highlights": [
+      "Visoka ocena strank 4.9",
+      "Zanesljiva in strokovna storitev",
+      "Prijazen odnos do strank"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka ocena strank",
+        "description": "Zadovoljstvo naših strank potrjuje visoka ocena 4.9 za kakovost opravljenega dela.",
+        "title": "Visoka ocena strank"
+      },
+      {
+        "label": "Strokovna storitev",
+        "description": "Natančno in zanesljivo vzdrževanje ter popravila vseh vrst osebnih vozil.",
+        "title": "Strokovna storitev"
+      },
+      {
+        "label": "Prijazen pristop",
+        "description": "Prisluhnemo vašim željam in zagotovimo prijazen odnos ter pošten svetovalni pristop.",
+        "title": "Prijazen pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za rezervacijo termina ali dodatne informacije o naših storitvah v Medvodah.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 384 627",
+        "href": "tel:040384627",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Zbiljska cesta 5, 1215 Medvode, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Pokličite za termin"
+    }
+  },
+  "footer": {
+    "address": "Zbiljska cesta 5, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtostoritve Omejec",
+    "address": "Zbiljska cesta 5, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "040 384 627"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

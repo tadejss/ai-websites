@@ -1,0 +1,274 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jaa-refleksna-masaza/hero.avif",
+      "alt": "Strokovna refleksna masaža stopal v sproščujočem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jaa-refleksna-masaza/hero.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jaa-refleksna-masaza/services.avif",
+      "alt": "Sprostitvena masaža in refleksoterapija za ravnovesje telesa",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jaa-refleksna-masaza/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628599",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628599/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za refleksoterapijo in sprostitvene masaže.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Refleksna masaža stopal",
+        "description": "Osnovna refleksoterapija stopal za ravnovesje telesa.",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Masaža za umiritev in sprostitev.",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Lajšanje napetosti",
+        "description": "Ciljano delovanje na napeta področja.",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Uravnovešenje telesa",
+        "description": "Celostna obravnava za boljšo energijo.",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Jaa,",
+    "highlight": "Refleksna masaža stopal"
+  },
+  "metadata": {
+    "title": "Jaa, Refleksna masaža stopal | Vladimira Hiti s.p.",
+    "description": "Strokovna refleksna masaža stopal in sprostitvene storitve v Ljubljani s širšo okolico za vaše boljše počutje in ravnovesje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Refleksoterapija Ljubljana",
+    "title": "Strokovna refleksna masaža stopal za",
+    "titleHighlight": "vaše boljše počutje",
+    "description": "Privoščite si trenutke sprostitve ter povrnite ravnovesje svojemu telesu v prijetnem in mirnem okolju v Ljubljani s širšo okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient"
+      },
+      {
+        "value": "Celostna skrb",
+        "label": "Celostna skrb"
+      },
+      {
+        "value": "Sprostitvene metode",
+        "label": "Sprostitvene metode"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za sprostitev in ravnovesje",
+    "description": "Izbirate lahko med različnimi naravnimi metodami za lajšanje napetosti in izboljšanje počutja v Ljubljani.",
+    "items": [
+      {
+        "title": "Refleksna masaža stopal",
+        "description": "Ciljano delovanje na refleksne točke za vzpodbujanje naravnih procesov v telesu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Blagodejni dotiki za umiritev misli in globoko sprostitev celotnega telesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Lajšanje napetosti",
+        "description": "Učinkovito sproščanje nakopičenega stresa in vsakodnevnih napetosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Uravnovešenje telesa",
+        "description": "Celostni pristop k vzpostavljanju notranjega ravnovesja in harmonije.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost vašemu boljšemu počutju",
+    "description": "Z individualnim pristopom poskrbimo, da se v našem prostoru vedno počutite sproščeno in varno.",
+    "highlights": [
+      "Izkušena in strokovna obravnava",
+      "Prijetno in sproščujoče okolje",
+      "Celostni pristop k sprostitvi"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna obravnava",
+        "description": "Skrbno izbrane metode za najboljšo podporo vašemu telesu.",
+        "title": "Strokovna obravnava"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Topel ambient, namenjen izključno vaši sprostitvi in miru.",
+        "title": "Prijetno okolje"
+      },
+      {
+        "label": "Celosten pristop",
+        "description": "Poslušamo vaše potrebe in nudimo celostno podporo dobremu počutju.",
+        "title": "Celosten pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za refleksno masažo stopal ali postavite vprašanje preko spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Zaloška cesta 36, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 416 333",
+        "href": "tel:040416333",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Zaloška cesta 36, 1000 Ljubljana, Slovenia",
+    "rights": "© Vladimira Hiti s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Jaa, Refleksna masaža stopal",
+    "address": "Zaloška cesta 36, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 416 333"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

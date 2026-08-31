@@ -1,0 +1,281 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-branko/hero.avif",
+      "alt": "Notranjost sodobne avtokleparske delavnice",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-branko/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35149611",
+      "sourceUrl": "https://www.pexels.com/photo/auto-body-repair-in-garage-with-tools-35149611/",
+      "photographer": "Melih Can",
+      "photographerUrl": "https://www.pexels.com/@papaz",
+      "searchQuery": "car dent repair bodywork garage"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-branko/services.avif",
+      "alt": "Strokovno barvanje in lakiranje vozil v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-branko/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870314",
+      "sourceUrl": "https://www.pexels.com/photo/person-using-paint-spray-gun-6870314/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija del",
+    "title": "Utrinki iz naše delavnice",
+    "description": "Oglejte si primere naših uspešno izvedenih popravil in lakiranj.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled informativnih cen za osnovna avtokleparska in avtoličarska dela.",
+    "disclaimer": "Cenik je informativen. Končna cena je odvisna od obsega poškodb in materiala. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtokleparska ura dela",
+        "description": "Strokovno popravilo pločevine in karoserije",
+        "price": "od 45 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Avtoličarska ura dela",
+        "description": "Priprava in lakiranje površin",
+        "price": "od 50 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Sanacija poškodb po toči",
+        "description": "Informativni pregled in popravilo udrtin",
+        "price": "po ogledu"
+      },
+      {
+        "name": "Poliranje celotnega vozila",
+        "description": "Osvežitev laka in odstranjevanje manjših prask",
+        "price": "od 120 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtokleparstvo - Avtoličarstvo",
+    "highlight": "Branko Karner s.p."
+  },
+  "metadata": {
+    "title": "Avtokleparstvo in avtoličarstvo Branko Karner s.p. | Domžale",
+    "description": "Strokovno kleparstvo in kakovostno barvanje vozil v Domžalah in okoliški regiji. Zanesljiva popravila karoserije in sanacija poškodb."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Lokalni avtoservis Domžale",
+    "title": "Strokovno kleparstvo in",
+    "titleHighlight": "kakovostno barvanje vozil",
+    "description": "Celovita obravnava poškodb na vozilih, zanesljiva popravila karoserije in vrhunske avtoličarske storitve za lastnike vozil v Domžalah in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "zadovoljstva strank"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "izvedba del"
+      },
+      {
+        "value": "Celovita",
+        "label": "obravnava poškodb"
+      },
+      {
+        "value": "Strokoven",
+        "label": "pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Nudimo strokovna avtokleparska in avtoličarska dela ter poskrbimo za brezhiben videz in varnost vašega jeklenega konjička v Domžalah in regiji.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Natančna popravila pločevine in karoserijskih elementov vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Avtoličarske storitve",
+        "description": "Kakovostno barvanje in lakiranje z ustreznimi odtenki in materiali.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Sanacija udrtin, prask in resnejših poškodb na karoseriji.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija poškodb po toči",
+        "description": "Strokovno odpravljanje posledic toče in neurij na vozilu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poliranje in lakiranje vozil",
+        "description": "Povrnitev sijaja in zaščita lakiranih površin vašega avtomobila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z dolgoletnimi izkušnjami in predanostjo kakovosti zagotavljamo vrhunske rezultate pri vsakem popravilu.",
+    "highlights": [
+      "Visoka ocena zadovoljstva strank",
+      "Zanesljiva in kakovostna izvedba del",
+      "Celovita obravnava poškodb na vozilih"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Ponašamo se z visoko oceno zadovoljstva tistih, ki nam zaupajo svoje vozilo.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Vsa dela izvedemo natančno, zanesljivo in v dogovorjenih rokih.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Celovita obravnava",
+        "description": "Poskrbimo za celovito sanacijo vseh vrst poškodb na karoseriji vašega avtomobila.",
+        "title": "Celovita obravnava"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete avtokleparsko ali avtoličarsko storitev? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Bišče 41, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 726 995",
+        "href": "tel:041726995",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite poškodbo ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Bišče 41, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtokleparstvo - Avtoličarstvo Branko Karner s.p.",
+    "address": "Bišče 41, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "041 726 995"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

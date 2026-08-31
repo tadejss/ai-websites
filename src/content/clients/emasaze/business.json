@@ -1,0 +1,27 @@
+{
+  "companyName": "Emasaže",
+  "industry": "Masaža in dobro počutje",
+  "tagline": "Sprostite telo in um z vrhunskimi masažami v Ljubljani.",
+  "services": [
+    "Klasična masaža",
+    "Športna masaža",
+    "Sprostitvena masaža",
+    "Masaža hrbta in vratu"
+  ],
+  "phone": "041 400 010",
+  "email": "",
+  "address": "Kolarjeva ulica 45a, 1000 Ljubljana, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prilagojen pristop k vsaki stranki",
+    "Strokovna in izkušena obravnava",
+    "Prijetno in sproščujoče okolje"
+  ],
+  "targetCustomers": "Posamezniki, ki iščejo sprostitev, lajšanje napetosti v mišicah in izboljšanje počutja",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "umirjen, naravni toni",
+  "competitors": "Lokalni masažni saloni v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

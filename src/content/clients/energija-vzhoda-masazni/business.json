@@ -1,0 +1,27 @@
+{
+  "companyName": "Energija vzhoda, masažni salon, d.o.o.",
+  "industry": "masažni salon",
+  "tagline": "Sprostitev telesa in duha z vrhunskimi masažami v Domžalah",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža",
+    "Aromaterapija"
+  ],
+  "phone": "041 525 638",
+  "email": "",
+  "address": "Ljubljanska cesta 84, 1230 Domžale, Slovenia",
+  "openingHours": "Monday: 8:30 AM – 6:30 PM · Tuesday: 8:30 AM – 6:30 PM · Wednesday: 8:30 AM – 6:30 PM · Thursday: 8:30 AM – 6:30 PM · Friday: 8:30 AM – 6:30 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunske ocene zadovoljnih strank",
+    "Strokoven in prijeten pristop",
+    "Udoben ambient za popolno sprostitev"
+  ],
+  "targetCustomers": "Posamezniki, ki iščejo sprostitev, lajšanje bolečin in dobro počutje",
+  "serviceArea": "Domžale in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "umirjen, naraven",
+  "competitors": "Lokalni masažni saloni v regiji",
+  "callToAction": "Rezervirajte termin"
+}

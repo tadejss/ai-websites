@@ -1,0 +1,285 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-vinsek-ales/hero.avif",
+      "alt": "Notranjost avtokleparske delavnice z opremo za popravilo vozil v Kamniku",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-vinsek-ales/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30250199",
+      "sourceUrl": "https://www.pexels.com/photo/professional-auto-body-spray-painting-workshop-30250199/",
+      "photographer": "Mohammad Hammad",
+      "photographerUrl": "https://www.pexels.com/@mohammad-hammad-2148098658",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-vinsek-ales/services.avif",
+      "alt": "Natančna avtokleparska dela in popravilo karoserije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-vinsek-ales/services.webp",
+      "width": 1040,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "11139239",
+      "sourceUrl": "https://www.pexels.com/photo/man-buffing-the-paint-of-the-car-11139239/",
+      "photographer": "Hasan Gulec",
+      "photographerUrl": "https://www.pexels.com/@moonlightshotz",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Cene so informativne narave in se prilagodijo glede na obseg poškodb na vašem vozilu.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtokleparska dela",
+        "description": "Pregled in osnovna popravila pločevine.",
+        "price": "od 40 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Popravilo karoserije",
+        "description": "Sanacija manjših in srednjih poškodb karoserije.",
+        "price": "od 80 €",
+        "featured": true
+      },
+      {
+        "name": "Sanacija poškodb toče",
+        "description": "Popravilo udrtin nastalih zaradi toče.",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Menjava avtotehničnih delov",
+        "description": "Demontaža in montaža novih delov vozila.",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Priprava vozil na barvanje",
+        "description": "Brušenje, ravnanje in priprava površine.",
+        "price": "od 70 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtokleparstvo",
+    "highlight": "Vinšek"
+  },
+  "metadata": {
+    "title": "Avtokleparstvo Vinšek | Kakovostno popravilo vozil v Kamniku",
+    "description": "Zanesljivo avtokleparstvo in popravilo karoserije, sanacija poškodb toče ter menjava delov v Kamniku in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Kakovostno avtokleparstvo in",
+    "titleHighlight": "zanesljiva popravila vozil",
+    "description": "Strokovna in natančna izvedba vseh avtokleparskih storitev za lastnike vozil v Kamniku in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "ocena strank"
+      },
+      {
+        "value": "Strokovna",
+        "label": "in natančna izvedba"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "lokalni ponudnik"
+      },
+      {
+        "value": "Hitra",
+        "label": "odzivnost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Nudimo vam kakovostne storitve popravila karoserije in priprave vozil v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Strokovna avtokleparska dela z natančnim pristopom k odpravi poškodb vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Kakovostno popravilo karoserije za povrnitev prvotnega stanja in varnosti vašega avtomobila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sanacija poškodb toče",
+        "description": "Učinkovita sanacija poškodb po toči in drugih udrtin na karoseriji.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Menjava avtotehničnih delov",
+        "description": "Zanesljiva menjava poškodovanih avtotehničnih delov z ustreznimi nadomestnimi deli.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozil na barvanje",
+        "description": "Skrbna priprava površin vozil na kakovostno barvanje in lakiranje.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z dolgoletnimi izkušnjami in predanostjo zagotavljamo visoko raven kakovosti za vsako stranko.",
+    "highlights": [
+      "Vrhunska ocena strank na podlagi številnih pozitivnih mnenj",
+      "Strokovna in natančna izvedba vseh avtokleparskih storitev",
+      "Zanesljiv in zaupanja vreden lokalni ponudnik v regiji Kamnik"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Vrhunska ocena strank na podlagi številnih pozitivnih mnenj in zaupanja.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Natančna izvedba vseh avtokleparskih storitev z ustreznim znanjem.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Lokalni ponudnik",
+        "description": "Zanesljiv in zaupanja vreden ponudnik v Kamniku in okolici.",
+        "title": "Lokalni ponudnik"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete avtokleparsko popravilo ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tunjiška Mlaka 25a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 843 414",
+        "href": "tel:041843414",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opičite vaše težave ali potrebe glede vozila...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Tunjiška Mlaka 25a, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtokleparstvo Vinšek",
+    "address": "Tunjiška Mlaka 25a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 843 414"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

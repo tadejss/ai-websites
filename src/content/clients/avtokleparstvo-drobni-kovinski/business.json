@@ -1,0 +1,27 @@
+{
+  "companyName": "Avtokleparstvo in drobni kovinski izdelki Lojze Selan s.p.",
+  "industry": "Avtokleparstvo in kovinarstvo",
+  "tagline": "Kakovostno avtokleparstvo in izdelava drobnih kovinskih izdelkov z dolgoletnimi izkušnjami.",
+  "services": [
+    "Avtokleparska dela",
+    "Popravilo karoserij",
+    "Izdelava drobnih kovinskih izdelkov",
+    "Sanacija poškodb po trkih"
+  ],
+  "phone": "041 712 339",
+  "email": "",
+  "address": "Dobrunjska cesta 8a, 1261 Ljubljana - Dobrunje, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 3:00 PM · Tuesday: 8:00 AM – 3:00 PM · Wednesday: 8:00 AM – 3:00 PM · Thursday: 8:00 AM – 3:00 PM · Friday: 8:00 AM – 2:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena strank in preverjena kakovost",
+    "Zanesljiva in natančna izvedba storitev",
+    "Osebni pristop k strankam"
+  ],
+  "targetCustomers": "Lastniki vozil in naročniki kovinskih izdelkov v regiji",
+  "serviceArea": "Ljubljana in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden servis",
+  "competitors": "Lokalne avtokleparske delavnice",
+  "callToAction": "Pokličite nas"
+}

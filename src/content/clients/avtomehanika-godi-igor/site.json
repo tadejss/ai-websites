@@ -1,0 +1,284 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-godi-igor/hero.avif",
+      "alt": "Avtomehanik med delom v svetli in urejeni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-godi-igor/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315574",
+      "sourceUrl": "https://www.pexels.com/photo/person-in-black-long-sleeves-repairing-the-car-engine-4315574/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-godi-igor/services.avif",
+      "alt": "Servis in diagnostika motorja v avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-godi-igor/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315571",
+      "sourceUrl": "https://www.pexels.com/photo/an-auto-mechanic-repairing-the-car-engine-4315571/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled osnovnih avtomehaničnih storitev in okvirnih cen za vaše vozilo.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točen izračun glede na tip vozila nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozil",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Premontaža in centriranje 4 koles",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika vozil",
+        "description": "Priklop na računalnik in brisanje napak",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Pregled zavornega sistema",
+        "description": "Pregled diskov, ploščic in zavore",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Ura dela mehanika",
+        "description": "Splošna popravila in servisna dela",
+        "price": "45 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtomehanika godi",
+    "highlight": "Igor Golič s.p."
+  },
+  "metadata": {
+    "title": "Avtomehanika godi | Igor Golič s.p. | Servis vozil Ig",
+    "description": "Zanesljivo vzdrževanje, redni servisi, diagnostika in popravila vozil na območju Igu in okolice. Strokovno in zaupanja vredno."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv mehanik v vaši bližini",
+    "title": "Zanesljivo vzdrževanje in",
+    "titleHighlight": "popravila vašega vozila",
+    "description": "Strokovne avtomehanične storitve za lastnike osebnih in lahkih gospodarskih vozil na Igu in v okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjena kakovost",
+        "label": "Preverjena kakovost"
+      },
+      {
+        "value": "Strokovno svetovanje",
+        "label": "Strokovno svetovanje"
+      },
+      {
+        "value": "Hitra izvedba",
+        "label": "Hitra izvedba"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Poskrbimo za varno in brezhibno delovanje vašega jeklenega konjička na območju Igu in okolice.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Redno vzdrževanje in menjava tekočin ter filtrov za dolgo življenjsko dobo motorja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik in premontaža",
+        "description": "Sezonska menjava pnevmatik, centriranje in ustrezno shranjevanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled in menjava zavornih ploščic, diskov ter tekočin za vašo varnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravila motorja in menjalnika",
+        "description": "Strokovna odprava napak in popravila pogonskih sklopov vozil.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno računalniško odkrivanje napak in težav na električnih ter motornih sklopi.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Združujemo strokovnost, dolgoletne izkušnje in domač pristop, ki mu lahko zaupate.",
+    "highlights": [
+      "Visoke ocene in zadovoljstvo strank",
+      "Strokovno in zanesljivo svetovanje",
+      "Hitra in učinkovita izvedba popravil"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Kakovostne storitve, podprte z visokimi ocenami zadovoljnih strank.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Zanesljivo svetovanje",
+        "description": "Strokovni nasveti in pošten odnos do vsake stranke in vozila.",
+        "title": "Zanesljivo svetovanje"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Učinkovita popravila, da ste čim prej spet varni na cesti.",
+        "title": "Hitra izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Iščete zanesljivega mehanika? Pokličite nas ali nam pišite in rezervirajte termin.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 789 830",
+        "href": "tel:041789830",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Škurhova ulica 11, 1292 Ig, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite za katero storitev se zanimate...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Škurhova ulica 11, 1292 Ig, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtomehanika godi Igor Golič s.p.",
+    "address": "Škurhova ulica 11, 1292 Ig, Slovenia",
+    "email": "",
+    "phone": "041 789 830"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

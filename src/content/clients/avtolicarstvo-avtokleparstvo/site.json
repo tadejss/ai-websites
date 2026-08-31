@@ -1,0 +1,286 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-avtokleparstvo/hero.avif",
+      "alt": "Notranjost avtoličarske in avtokleparske delavnice",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-avtokleparstvo/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809581",
+      "sourceUrl": "https://www.pexels.com/photo/professional-car-detailing-in-garage-37809581/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-avtokleparstvo/services.avif",
+      "alt": "Strokovno popravilo karoserije in lakiranje vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-avtokleparstvo/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809561",
+      "sourceUrl": "https://www.pexels.com/photo/man-polishing-a-red-car-in-garage-37809561/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene popravil",
+    "description": "Pregled okvirnih cen za najpogostejše avtokleparske in avtoličarske storitve.",
+    "disclaimer": "Cenik je informativen. Točen znesek je odvisen od obsega poškodb na vozilu. Za ponudbo nas pokličite.",
+    "items": [
+      {
+        "name": "Avtokleparska ura dela",
+        "description": "Osnovna cena za kleparska popravila",
+        "price": "od 45 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Avtoličarska ura dela",
+        "description": "Strokovno lakiranje in priprava površine",
+        "price": "od 50 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Lakiranje enega elementa",
+        "description": "Barvanje in zaščita posameznega karoserijskega dela",
+        "price": "od 150 €",
+        "featured": true
+      },
+      {
+        "name": "Sanacija poškodb po toči",
+        "description": "Odstranjevanje udrtin na vozilu po dogovoru",
+        "price": "Po ogledu"
+      },
+      {
+        "name": "Poliranje celotnega vozila",
+        "description": "Strojno poliranje in zaščita laka",
+        "price": "od 120 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoličarstvo in",
+    "highlight": "avtokleparstvo"
+  },
+  "metadata": {
+    "title": "Avtoličarstvo in avtokleparstvo | Domžale",
+    "description": "Strokovno popravilo karoserije, avtoličarska dela in sanacija poškodb v Domžalah z okolico. Zanesljiv lokalni servis za vaša vozila."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Strokovno popravilo karoserije in",
+    "titleHighlight": "kakovostno barvanje vozila",
+    "description": "Celovite avtokleparske in avtoličarske storitve za osebna in lahka gospodarska vozila v Domžalah z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Celovito",
+        "label": "Popravilo vozil"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Delo"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Na voljo v Domžalah"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita obravnava poškodb vozil",
+    "description": "Poskrbimo za kakovostno popravilo in ohranitev vrednosti vašega jeklenega konjička na enem mestu v Domžalah.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Natančno ravnanje in popravilo pločevine ter karoserijskih delov vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Avtoličarska dela",
+        "description": "Kakovostno barvanje in lakiranje vozil z uporabo preverjenih materialov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Sanacija vseh vrst poškodb in obnova prvotne oblike ter trdnosti karoserije.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija poškodb po toči",
+        "description": "Učinkovito odpravljanje udrtin in sledi neurij na pločevini brez poškodbe laka, kjer je to mogoče.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poliranje in zaščita vozil",
+        "description": "Povrnitev sijaja lakiranih površin ter dolgotrajna zaščita pred zunanjimi vplivi.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Združujemo strokovnost, prilagodljivost in posluh za stranke iz Domžal in okolice.",
+    "highlights": [
+      "Zanesljiva in kakovostna izvedba kleparskih in ličarskih storitev",
+      "Celovita obravnava poškodb vozil na enem mestu",
+      "Strokovno svetovanje in prilagodljivost strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Kakovostno opravljena kleparska in ličarska dela za varno vožnjo.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Vse na enem mestu",
+        "description": "Celovita obravnava poškodb vozil od kleparije do lakiranja.",
+        "title": "Vse na enem mestu"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Strokovno svetovanje in prilagajanje potrebam vsake stranke.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete popravilo karoserije ali lakiranje? Pokličite nas za posvet in termin.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 260 168",
+        "href": "tel:031260168",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Slamnikarska cesta, 1230 Domžale, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite poškodbo ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Slamnikarska cesta, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoličarstvo in avtokleparstvo",
+    "address": "Slamnikarska cesta, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "031 260 168"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

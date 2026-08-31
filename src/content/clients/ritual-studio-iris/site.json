@@ -1,0 +1,275 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "plum-dusk",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ritual-studio-iris/hero.avif",
+      "alt": "Notranjost masažnega studia v naravnih tonih",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ritual-studio-iris/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4374743",
+      "sourceUrl": "https://www.pexels.com/photo/scenery-of-pure-turquoise-seawater-4374743/",
+      "photographer": "Curioso Photography",
+      "photographerUrl": "https://www.pexels.com/@curiosophotography",
+      "searchQuery": "deep cleaning service sparkling clean modern living room ocean teal"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ritual-studio-iris/services.avif",
+      "alt": "Sprostitvena masaža z aromaterapijo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ritual-studio-iris/services.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled rednih cen naših masažnih in sprostitvenih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščanje celotnega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna nega za umiritev",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Aromaterapevtska masaža",
+        "description": "Masaža z eteričnimi olji",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Masaža hrbta in vratu",
+        "description": "Ciljano lajšanje napetosti",
+        "price": "od 35 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Ritual studio",
+    "highlight": "Iris"
+  },
+  "metadata": {
+    "title": "Ritual studio Iris | Masažni salon Domžale",
+    "description": "Sprostitev in dobro počutje za telo in dušo. Klasične, sprostitvene in aromaterapevtske masaže v Domžalah z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažni salon Domžale",
+    "title": "Sprostitev in dobro počutje za",
+    "titleHighlight": "telo in dušo",
+    "description": "Vrhunska osebna obravnava in strokovni pristop za posameznike v Domžalah z okolico, ki iščejo sprostitev in lajšanje napetosti.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni pristop",
+        "label": "Vrhunska obravnava",
+        "title": "Vrhunska osebna obravnava"
+      },
+      {
+        "value": "Sproščujoče okolje",
+        "label": "Prijeten ambient",
+        "title": "Sproščujoče okolje"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Za vaše dobro počutje",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Domžale z okolico",
+        "title": "Lokalna dostopnost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve masaže za vaše ravnovesje",
+    "description": "Izberite med našimi skrbno zasnovanimi storitvami za sprostitev v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Sproščanje napetih mišic in izboljšanje prekrvavitve za celostno dobro počutje.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi za umiritev uma, sprostitev telesa in odpravljanje vsakodnevnega stresa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Aromaterapevtska masaža",
+        "description": "Blagodejni učinki naravnih eteričnih olj v kombinaciji s pomirjujočo masažo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža hrbta in vratu",
+        "description": "Ciljana nega in sprostitev predelov, kjer se najpogosteje nabirajo napetosti.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš kotiček miru v Domžalah",
+    "description": "Posvečeni smo vašemu miru, ravnovesju in sprostitvi skozi naravni in eleganten pristop.",
+    "highlights": [
+      "Vrhunska osebna obravnava strank",
+      "Sproščujoče in prijetno okolje",
+      "Strokovni pristop k sprostitvi"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska osebna obravnava",
+        "description": "Posvečeni smo vašim individualnim potrebam za kar najboljšo izkušnjo.",
+        "title": "Vrhunska osebna obravnava"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Sproščujoč ambient, ki omogoča popolný odklop od vsakdanjega tempa.",
+        "title": "Prijetno okolje"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Zanesljive in skrbno izvedene masaže za lajšanje napetosti v telesu.",
+        "title": "Strokoven pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za sprostitev ali postavite vprašanje preko spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 621 034",
+        "href": "tel:041621034",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Ritual studio Iris",
+    "address": "Ljubljanska cesta, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "041 621 034"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

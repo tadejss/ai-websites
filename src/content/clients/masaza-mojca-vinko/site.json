@@ -1,0 +1,273 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "dm-sans-playfair"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaza-mojca-vinko/hero.avif",
+      "alt": "Topel in domač masažni salon v Škofljici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaza-mojca-vinko/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional cleaning service sparkling clean modern interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaza-mojca-vinko/services.avif",
+      "alt": "Sprostitvena in klasična masaža za dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaza-mojca-vinko/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628599",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628599/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naš salon",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled naših masažnih storitev in cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Sproščanje telesa in duha",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Klasična masaža",
+        "description": "Celostna nega in sprostitev mišic",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Lajšanje napetosti in bolečin",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Regeneracija za aktivne",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Masaže",
+    "highlight": "Mojca Vinko"
+  },
+  "metadata": {
+    "title": "Masaža Mojca Vinko s.p. | Masažne storitve Škofljica",
+    "description": "Strokovne masaže za sprostitev in dobro počutje v Škofljici z okolico. Obiščite naš topel in domač salon."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažni salon v Škofljici",
+    "title": "Strokovne masaže za",
+    "titleHighlight": "sprostitev in dobro počutje",
+    "description": "Poskrbite za svoje telo in duha v prijetnem ter domačem okolju. Nudimo prilagojen pristop za lajšanje napetosti.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Topel salon",
+        "label": "Topel salon"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Sproščeno okolje",
+        "label": "Sproščeno okolje"
+      },
+      {
+        "value": "Škofljica",
+        "label": "Lokalna ponudba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Masaže prilagojene vašim potrebam",
+    "description": "Izberite storitev, ki vam bo pomagala do sprostitve in boljšega počutja v Škofljici z okolico.",
+    "items": [
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi in pomirjajoč ambient za popoln odklop od vsakodnevnega stresa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Klasična masaža",
+        "description": "Učinkovita masaža celega telesa za prekrvavitev in sprostitev mišic.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljano usmerjena masaža za lajšanje napetosti in trdovratnih bolečin v mišicah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Masaža, prilagojena športnikom in rekreativcem za hitrejšo regeneracijo.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost vašemu dobremu počutju",
+    "description": "Zavedamo se, kako pomembna sta sprostitev in skrb za lastno telo v hitrem vsakdanu.",
+    "highlights": [
+      "Prilagojen pristop k posamezniku",
+      "Prijetno in sproščujoče okolje",
+      "Strokovna obravnava v Škofljici"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljne stranke cenijo naš trud in predanost.",
+        "title": "Odlične ocene"
+      },
+      {
+        "label": "Prilagojen pristop",
+        "description": "Vsako masažo prilagodimo vašim trenutnim potrebam in željam.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Topel in domač salon nudi popolno okolje za vaš odklop.",
+        "title": "Prijetno okolje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za masažo ali postavite vprašanje preko spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Albrehtova ulica 1, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 163 638",
+        "href": "tel:040163638",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Albrehtova ulica 1, 1291 Škofljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Masaže Mojca Vinko",
+    "address": "Albrehtova ulica 1, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "040 163 638"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

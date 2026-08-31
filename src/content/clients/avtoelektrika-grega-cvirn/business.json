@@ -1,0 +1,29 @@
+{
+  "companyName": "Avtoelektrika Grega Cvirn s.p.",
+  "industry": "Avtoelektrika in popravilo vozil",
+  "tagline": "Zanesljive avtoelektrične storitve za vaše vozilo",
+  "services": [
+    "Popravilo avtoelektrike",
+    "Servis in menjava akumulatorjev",
+    "Popravilo zaganjačev in alternatorjev",
+    "Diagnostika napak na vozilu",
+    "Popravilo električne napeljave"
+  ],
+  "phone": "041 659 377",
+  "email": "",
+  "address": "Podgorje 83a, 1241 Kamnik, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 4:00 PM · Tuesday: 8:00 AM – 4:00 PM · Wednesday: 8:00 AM – 4:00 PM · Thursday: 8:00 AM – 4:00 PM · Friday: 8:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in preverjene izkušnje strank",
+    "Strokovno in zanesljivo popravilo avtoelektrike",
+    "Hitra in učinkovita diagnostika napak",
+    "Lokalna dostopnost v Kamniku"
+  ],
+  "targetCustomers": "Lastniki osebnih in dostavnih vozil, ki potrebujejo električna popravila",
+  "serviceArea": "Kamnik in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtoelektrične delavnice in servisi",
+  "callToAction": "Pokličite za servis"
+}

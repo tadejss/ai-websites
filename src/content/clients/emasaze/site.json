@@ -1,0 +1,274 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/emasaze/hero.avif",
+      "alt": "Sproščujoč ambient masažnega salona z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/emasaze/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional cleaning service sparkling clean modern interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/emasaze/services.avif",
+      "alt": "Strokovna masaža hrbta v prijetnem okolju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/emasaze/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628599",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628599/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene masaž",
+    "description": "Izberite storitev, ki vam najbolj ustreza.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža (60 min)",
+        "description": "Sproščujoča masaža celotnega telesa",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Športna masaža (60 min)",
+        "description": "Intenzivnejša obravnava mišic",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Sprostitvena masaža (60 min)",
+        "description": "Nežna aroma masaža za umiritev",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Masaža hrbta in vratu (30 min)",
+        "description": "Ciljna nega zgornjega dela telesa",
+        "price": "od 30 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "E",
+    "highlight": "masaže"
+  },
+  "metadata": {
+    "title": "Emasaže | Masaža in dobro počutje Ljubljana",
+    "description": "Sprostite telo in um z vrhunskimi masažami v Ljubljani z okolico. Klasična, športna in sprostitvena masaža v prijetnem okolju."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masaža in dobro počutje v Ljubljani",
+    "title": "Sprostite telo in um z",
+    "titleHighlight": "vrhunskimi masažami",
+    "description": "Nudimo celostno sprostitev in lajšanje napetosti v mišicah za posameznike v Ljubljani z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Umirjen",
+        "label": "Ambient"
+      },
+      {
+        "value": "Strokovna",
+        "label": "Obravnava"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše dobro počutje",
+    "description": "Izberite masažo, ki najbolj ustreza vašim trenutnim potrebam in željam v Ljubljani.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Sproščanje celotnega telesa, izboljšanje prekrvavitve in odpravljanje vsakodnevnega stresa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Učinkovita obravnava za športnike in aktivne posameznike za hitrejšo regeneracijo mišic.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi in pomirjujoči vonji za popoln odklop uma in globoko sprostitev telesa.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža hrbta in vratu",
+        "description": "Ciljno usmerjena masaža za lajšanje napetosti in bolečin v predelu hrbta ter vratu.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Emasaže",
+    "title": "Posvečeni vašemu ravnovesju in sprostitvi",
+    "description": "Združujemo strokovnost, prilagojen pristop in prijeten ambient za najboljšo izkušnjo.",
+    "highlights": [
+      "Popolnoma prilagojen pristop k vsaki stranki",
+      "Strokovna in izkušena obravnava",
+      "Prijetno in sproščujoče okolje v Ljubljani"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojen pristop",
+        "description": "Vsako masažo prilagodimo vašim trenutnim potrebam in počutju.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Strokovna obravnava",
+        "description": "Zagotavljamo strokovno izvedbo za kar najboljše rezultate in sprostitev.",
+        "title": "Strokovna obravnava"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Umirjen ambient v Ljubljani poskrbi za popoln odklop od vsakdanjika.",
+        "title": "Prijetno okolje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pišite nam ali nas pokličite za dogovor o terminu vaše masaže.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolarjeva ulica 45a, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 400 010",
+        "href": "tel:041400010",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Kolarjeva ulica 45a, 1000 Ljubljana, Slovenia",
+    "rights": "© Emasaže. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "E masaže",
+    "address": "Kolarjeva ulica 45a, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 400 010"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

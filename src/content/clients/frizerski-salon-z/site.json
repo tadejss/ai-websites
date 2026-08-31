@@ -1,0 +1,290 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "peach-bloom",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-z/hero.avif",
+      "alt": "Notranjost sodobnega frizerskega salona z urejenimi delovnimi mesti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-z/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7750122",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-black-chair-near-a-mirror-with-a-ring-light-7750122/",
+      "photographer": "Max Vakhtbovych",
+      "photographerUrl": "https://www.pexels.com/@artbovich",
+      "searchQuery": "modern hair salon interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-z/services.avif",
+      "alt": "Frizerske storitve striženja in barvanja las v prijetnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-z/services.webp",
+      "width": 965,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7750103",
+      "sourceUrl": "https://www.pexels.com/photo/black-vanity-chair-near-round-vanity-mirror-7750103/",
+      "photographer": "Max Vakhtbovych",
+      "photographerUrl": "https://www.pexels.com/@artbovich",
+      "searchQuery": "modern hair salon interior natural light"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki iz salona",
+    "description": "Oglejte si naš prostor in nekaj ustvarjenih pričesk.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled naših osnovnih frizerskih storitev in okvirnih cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Žensko striženje",
+        "description": "Pranje, striženje in sušenje",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Moško striženje",
+        "description": "Striženje in oblikovanje pričeske",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Barvanje lase",
+        "description": "Barvanje narasteka ali celotnih las",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Prameni / Balayage",
+        "description": "Sodobne tehnike posvetljevanja",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Oblikovanje pričeske",
+        "description": "Fenišanje ali svečana pričeska",
+        "price": "od 20 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Frizerski salon",
+    "highlight": "Ž"
+  },
+  "metadata": {
+    "title": "Frizerski salon Ž | Tacenska cesta, Ljubljana",
+    "description": "Vaša destinacija za čudovite in urejene lase v Ljubljani. Nudimo žensko in moško striženje, barvanje, balayage in oblikovanje pričesk."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon Ljubljana",
+    "title": "Vaša destinacija za",
+    "titleHighlight": "čudovite in urejene lase",
+    "description": "Obiščite sodoben lokalni salon v Ljubljani, kjer poskrbimo za celovite frizerske storitve za vso družino v prijetnem in strokovnem okolju.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Zadovoljne stranke",
+        "title": "Visoka ocena"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Prijazno osebje",
+        "title": "Strokovno osebje"
+      },
+      {
+        "value": "Vsa družina",
+        "label": "Celovite storitve",
+        "title": "Celovite storitve"
+      },
+      {
+        "value": "Tacenska",
+        "label": "Ljubljana",
+        "title": "Tacenska cesta"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše frizerske storitve",
+    "description": "Poskrbimo za vaš svež videz in urejeno pričesko z uporabo preverjenih tehnik striženja in barvanja.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Oblikovanje pričeske po vaših željah, striženje konic in osvežitev vašega videza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Moderne in klasične moške frizure ter urejanje za vsak dan.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje lase",
+        "description": "Kakovostno barvanje narasteka ali celotnih las z obstojnimi barvami.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prameni in balayage",
+        "description": "Sodobne tehnike pramenov in balayage za naraven videz in igro svetlobe v laseh.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Urejanje las za vsak dan ali posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Izkušnja, kimu zaupajo stranke",
+    "description": "Vsakemu obiskovalcu se posvetimo osebno in poskrbimo, da iz salona odidete zadovoljni.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Strokovno in prijazno osebje",
+      "Celovite frizerske storitve za vso družino"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Visoka ocena in zaupanje naših obiskovalcev sta naše najboljše priporočilo.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Strokovno osebje",
+        "description": "Prijazna in strokovna ekipa, ki sledi sodobnim frizerskim trendom.",
+        "title": "Strokovno osebje"
+      },
+      {
+        "label": "Za vso družino",
+        "description": "Celovite storitve na enem mestu za mlajše in starejše.",
+        "title": "Za vso družino"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjih podatkov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tacenska cesta 96, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 676 179",
+        "href": "tel:031676179",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–19:00, Sob: 8:00–12:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Tacenska cesta 96, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Frizerski salon Ž",
+    "address": "Tacenska cesta 96, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "031 676 179"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

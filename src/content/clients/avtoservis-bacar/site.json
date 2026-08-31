@@ -1,0 +1,279 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-bacar/hero.avif",
+      "alt": "Avtomehanik med delom v svetli in urejeni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-bacar/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315571",
+      "sourceUrl": "https://www.pexels.com/photo/an-auto-mechanic-repairing-the-car-engine-4315571/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-bacar/services.avif",
+      "alt": "Orodja in oprema za servisiranje in diagnostiko vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-bacar/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315574",
+      "sourceUrl": "https://www.pexels.com/photo/person-in-black-long-sleeves-repairing-the-car-engine-4315574/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Spodaj so navedene informativne cene naših rednih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozil",
+        "description": "Zamenjava olja in filtrov (osnovni material ni vštet)",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava gum in premontaža",
+        "description": "Komplet 4 koles z centriranjem",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika vozil",
+        "description": "Priklop na tester in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pregled zavornega sistema",
+        "description": "Pregled ploščic, diskov in tekočine",
+        "price": "od 25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Bačar"
+  },
+  "metadata": {
+    "title": "Avtoservis Bačar | Zanesljiv avtoservis v Kamniku pod Krimom",
+    "description": "Zanesljiv avtoservis in vzdrževanje vozil za lastnike v Kamniku pod Krimom, Preserju z okolico. Redni servisi, menjava gum, diagnostika in zavorni sistemi."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Lokalni avtoservis z domačim pristopom",
+    "title": "Zanesljiv avtoservis",
+    "titleHighlight": "za vaše vozilo",
+    "description": "Strokovne in zanesljive storitve za osebna vozila v Kamniku pod Krimom in Preserju z okolico. Poskrbimo za tehnično brezhibnost vašega jeklenega konjička.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitro"
+      },
+      {
+        "value": "Celovito",
+        "label": "Celovito"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovita skrb za vaše osebno vozilo na enem mestu v Kamniku pod Krimom.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Strokovno izvajanje rednih servisov za varno in brezskrbno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in premontaža",
+        "description": "Hitra in natančna menjava pnevmatik ter premontaža za vse sezone.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Premagovanje tehničnih težav",
+        "description": "Učinkovito odkrivanje in odpravljanje tehničnih težav na vašem vozilu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančni računalniški pregled in diagnostika delovanja vozil.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled, vzdrževanje in popravilo zavornih sistemov za vašo varnost.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Združujemo strokovnost, hitro odzivnost in domač pristop, ki mu lahko zaupate.",
+    "highlights": [
+      "Zanesljive in strokovne storitve",
+      "Hitra odzivnost na vaše potrebe",
+      "Celovita skrb za vozilo"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljive storitve",
+        "description": "Nudimo zanesljive in strokovne storitve vzdrževanja za vaše osebno vozilo.",
+        "title": "Zanesljive storitve"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Prisluhnemo vašim težavam in se odzovemo hitro ter učinkovito.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Celovita skrb",
+        "description": "Poskrbimo za celovito nego in tehnično stanje vašega avtomobila.",
+        "title": "Celovita skrb"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za termin ali dodatne informacije o vzdrževanju vašega vozila.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 740 451",
+        "href": "tel:041740451",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kamnik pod Krimom 75b, 1352 Preserje, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite za katero storitev se zanimate...",
+      "submitLabel": "Pokličite za termin"
+    }
+  },
+  "footer": {
+    "address": "Kamnik pod Krimom 75b, 1352 Preserje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Bačar",
+    "address": "Kamnik pod Krimom 75b, 1352 Preserje, Slovenia",
+    "email": "",
+    "phone": "041 740 451"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

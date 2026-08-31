@@ -1,0 +1,278 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pnevmatike-aeolus/hero.avif",
+      "alt": "Notranjost delavnice za menjavo pnevmatik z opremo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pnevmatike-aeolus/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8986133",
+      "sourceUrl": "https://www.pexels.com/photo/grayscale-photo-of-person-changing-car-tire-with-an-air-wrench-8986133/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "tire shop mechanic changing tire"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pnevmatike-aeolus/services.avif",
+      "alt": "Strokovno centriranje in premontaža pnevmatik v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pnevmatike-aeolus/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8815801",
+      "sourceUrl": "https://www.pexels.com/photo/man-using-a-lug-wrench-8815801/",
+      "photographer": "Muhammad  Khawar Nazir",
+      "photographerUrl": "https://www.pexels.com/@drmkhawarnazir",
+      "searchQuery": "tire shop mechanic changing tire"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled osnovnih vulkanizerskih storitev za osebna in dostavna vozila.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in termine nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Menjava pnevmatik (komplet)",
+        "description": "Demontaža, montaža in centriranje za 4 kolesa",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Premontaža in centriranje (kos)",
+        "description": "Menjava pnevmatike na platišču z centriranjem",
+        "price": "od 12 €"
+      },
+      {
+        "name": "Centriranje koles (kos)",
+        "description": "Natančno centriranje jeklenih ali alu platišč",
+        "price": "od 8 €"
+      },
+      {
+        "name": "Svetovanje pri izbiri pnevmatik",
+        "description": "Strokovna pomoč pri izbiri ustreznih pnevmatik AEOLUS",
+        "price": "brezplačno"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "pnevmatike",
+    "highlight": "AEOLUS"
+  },
+  "metadata": {
+    "title": "pnevmatike AEOLUS | Prodaja in servis pnevmatik Logatec",
+    "description": "Zanesljive pnevmatike in strokovna vulkanizerska dela v Logatcu z okolico. Menjava pnevmatik, premontaža in centriranje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Vulkanizerske storitve Logatec",
+    "title": "Zanesljive pnevmatike in strokovna vulkanizerska dela v",
+    "titleHighlight": "Logatcu",
+    "description": "Poskrbite za varno vožnjo vašega osebnega ali dostavnega vozila z zanesljivimi pnevmatikami AEOLUS in strokovno storitvijo v Logatcu z okolico.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "delo",
+        "title": "Strokovno delo"
+      },
+      {
+        "value": "Hitra",
+        "label": "menjava",
+        "title": "Hitra menjava"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "svetovanje",
+        "title": "Zanesljivo svetovanje"
+      },
+      {
+        "value": "Lokalno",
+        "label": "zaupanje",
+        "title": "Lokalno zaupanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Celovite storitve za vaša vozila",
+    "description": "Ponujamo vam kakovostno menjavo pnevmatik, premontažo, centriranje in strokovno svetovanje pri izbiri pravih pnevmatik za vaše vozilo v Logatcu.",
+    "items": [
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in strokovna menjava pnevmatik za osebna in dostavna vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Premontaža in centriranje",
+        "description": "Natančna premontaža ter centriranje koles za varno in udobno vožnjo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prodaja pnevmatik AEOLUS",
+        "description": "Pestra izbira kakovostnih pnevmatik blagovne znamke AEOLUS za vaše vozilo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje pri izbiri pnevmatik",
+        "description": "Strokovno svetovanje pri izbiri ustreznih pnevmatik glede na vaše potrebe.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše pnevmatike",
+    "description": "Z našim poudarkom na strokovnosti, kakovosti in prijazni storitvi poskrbimo, da je vaše vozilo pripravljeno na vse vremenske razmere.",
+    "highlights": [
+      "Strokovna in hitra menjava pnevmatik",
+      "Kakovostne pnevmatike blagovne znamke AEOLUS",
+      "Prijazna in zanesljiva lokalna storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Strokovna in hitra menjava pnevmatik za osebna in dostavna vozila.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Kakovost AEOLUS",
+        "description": "Ponudba preverjenih in kakovostnih pnevmatik blagovne znamke AEOLUS.",
+        "title": "Kakovost AEOLUS"
+      },
+      {
+        "label": "Lokalna storitev",
+        "description": "Prijazna in zanesljiva lokalna storitev v Logatcu z okolico.",
+        "title": "Lokalna storitev"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za rezervacijo termina ali vprašanja glede ponudbe pnevmatik AEOLUS.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 631 477",
+        "href": "tel:041631477",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Obrtna cona Logatec, 1370 Logatec, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Pokličite za termin"
+    }
+  },
+  "footer": {
+    "address": "Obrtna cona Logatec, 1370 Logatec, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "pnevmatike AEOLUS",
+    "address": "Obrtna cona Logatec, 1370 Logatec, Slovenia",
+    "email": "",
+    "phone": "041 631 477"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

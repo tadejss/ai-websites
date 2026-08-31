@@ -1,0 +1,28 @@
+{
+  "companyName": "ASM Avtocenter Avtopralnica in Vulkanizerstvo",
+  "industry": "Avtomobilske storitve",
+  "tagline": "Celovite storitve pranja in vulkanizerstva za vaše vozilo",
+  "services": [
+    "Ročno pranje vozil",
+    "Globinsko čiščenje notranjosti",
+    "Menjava pnevmatik",
+    "Premontaža in centriranje",
+    "Hramba pnevmatik"
+  ],
+  "phone": "051 342 342",
+  "email": "",
+  "address": "Tacenska cesta 94, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 7:00 PM · Tuesday: 8:00 AM – 7:00 PM · Wednesday: 8:00 AM – 7:00 PM · Thursday: 8:00 AM – 7:00 PM · Friday: 8:00 AM – 7:00 PM · Saturday: 9:00 AM – 2:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljstvo strank",
+    "Hitra in zanesljiva izvedba storitev",
+    "Celovita skrb za čistočo in pnevmatike na enem mestu"
+  ],
+  "targetCustomers": "Lastniki vozil v Ljubljani in okolici, ki cenijo kakovostno nego in vulkansko storitev",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, prijazen",
+  "brandStyle": "zanesljiv lokalni avtocenter",
+  "competitors": "Lokalne avtopralnice in vulkanizerji v regiji",
+  "callToAction": "Rezervirajte termin"
+}

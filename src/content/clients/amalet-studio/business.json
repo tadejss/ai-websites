@@ -1,0 +1,27 @@
+{
+  "companyName": "AMALET Studio",
+  "industry": "Masažni salon",
+  "tagline": "Sprostitev telesa in duha v srcu Ljubljane",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža",
+    "Aromaterapevtska masaža"
+  ],
+  "phone": "040 652 947",
+  "email": "",
+  "address": "Štihova ulica 13, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 10:00 AM – 10:00 PM · Tuesday: 10:00 AM – 10:00 PM · Wednesday: 10:00 AM – 10:00 PM · Thursday: 10:00 AM – 10:00 PM · Friday: 10:00 AM – 10:00 PM · Saturday: 10:00 AM – 10:00 PM · Sunday: 10:00 AM – 10:00 PM",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Prilagodljiv delovni čas vsak dan v tednu",
+    "Prijeten in sproščujoč ambient"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje napetosti v mišicah in dobro počutje",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "miren, strokoven, prijazen",
+  "brandStyle": "modern in sproščujoč",
+  "competitors": "Lokalni masažni saloni v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

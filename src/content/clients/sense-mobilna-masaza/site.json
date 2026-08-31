@@ -1,0 +1,288 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sense-mobilna-masaza/hero.avif",
+      "alt": "Masaža na domu v udobnem in modernem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sense-mobilna-masaza/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32216281",
+      "sourceUrl": "https://www.pexels.com/photo/modern-office-space-with-minimalist-design-32216281/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean office interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sense-mobilna-masaza/services.avif",
+      "alt": "Strokovna masaža in nega telesa za popolno sprostitev",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sense-mobilna-masaza/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628520",
+      "sourceUrl": "https://www.pexels.com/photo/settee-by-the-window-6628520/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled rednih cen naših mobilnih masaž in negovalnih storitev na domu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Sprostitvena masaža na domu",
+        "description": "60 minut sprostitve v udobju vašega doma",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Terapevtska masaža",
+        "description": "Ciljano lajšanje napetosti",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Mobilna masaža (daljša)",
+        "description": "90 minut celostne sprostitve",
+        "price": "od 70 €"
+      },
+      {
+        "name": "Nega telesa na domu",
+        "description": "Osvežilna nega in nega kože",
+        "price": "od 45 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Sense",
+    "highlight": "mobilna masaža"
+  },
+  "metadata": {
+    "title": "Sense mobilna masaža, nega telesa, d.o.o. | Masaže na domu v Ljubljani",
+    "description": "Profesionalne masaže in nega telesa na vašem domu v Ljubljani in okolici. Poskrbite za sprostitev in dobro počutje v udobju lastnega doma."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masaže in nega telesa na domu",
+    "title": "Profesionalna sprostitev in nega",
+    "titleHighlight": "na vašem domu",
+    "description": "Privoščite si strokovno masažo in nego telesa v udobju lastnega doma v Ljubljani in okolici. Prilagojeno vašemu urniku in potrebam.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Na vašem domu",
+        "label": "Na vašem domu",
+        "title": "Na vašem domu"
+      },
+      {
+        "value": "Vsak dan",
+        "label": "Vsak dan",
+        "title": "Vsak dan"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana in okolica",
+        "title": "Ljubljana in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve na vašem domu",
+    "description": "Izberite storitev, ki ustreza vašim trenutnim potrebam po sprostitvi in negi telesa v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Mobilna masaža",
+        "description": "Pridemo na vaš dom ali izbrano lokacijo z vso potrebno opremo za popolno udobje.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni in pomirjajoči gibi za odpravljanje vsakodnevnega stresa ter umiritev uma in telesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Terapevtska masaža",
+        "description": "Ciljano lajšanje napetosti v mišicah in odpravljanje bolečin z usmerjenim pristopom.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega telesa",
+        "description": "Kakovostna nega za poživitev kože, izboljšanje tonusa in splošno dobro počutje.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Storitve na domu",
+        "description": "Udobje brez potrebe po prevozu – strokovne storitve izvajamo tam, kjer se najbolj sprostite.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Sense",
+    "title": "Udobje, strokovnost in prilagodljivost",
+    "description": "Združujemo visoko raven strokovnosti in udobje lastnega doma za vašo popolno sprostitev.",
+    "highlights": [
+      "Pridemo na vaš dom ali lokacijo",
+      "Prilagodljiv delovni čas vsak dan v tednu",
+      "Visoka raven strokovnosti in osebni pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Prihod na dom",
+        "description": "Pridemo na vaš dom ali izbrano lokacijo v Ljubljani in okolici.",
+        "title": "Prihod na dom"
+      },
+      {
+        "label": "Prilagodljiv urnik",
+        "description": "Na voljo vsak dan v tednu, da se prilagodimo vašemu življenjskemu ritmu.",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Celovita sprostitev in nega telesa z visoko ravnjo strokovne podpore.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Rezervirajte svoj termin",
+    "description": "Stopite v stik z nami in si zagotovite termin masaže ali nege telesa na vašem domu.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "030 777 987",
+        "href": "tel:030777987",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Mestni trg 6, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Ned: 8:00 – 22:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja glede storitev.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev, lokacijo in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Mestni trg 6, 1000 Ljubljana, Slovenia",
+    "rights": "© 2025 Sense mobilna masaža, nega telesa, d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Sense mobilna masaža",
+    "address": "Mestni trg 6, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "030 777 987"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

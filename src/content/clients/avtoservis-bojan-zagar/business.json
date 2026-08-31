@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Bojan Žagar s.p.",
+  "industry": "Avtoservisna delavnica",
+  "tagline": "Zanesljiv in strokovnjak servis za vaše vozilo",
+  "services": [
+    "Redni servisi vozil",
+    "Popravila motorjev",
+    "Zavorni sistemi",
+    "Vzdrževanje podvozja",
+    "Priprava vozil na tehnični pregled"
+  ],
+  "phone": "041 711 371",
+  "email": "",
+  "address": "Spodnje Gameljne 40, 1211 Ljubljana - Šmartno, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena strank",
+    "Izkušeni strokovnjaki",
+    "Zanesljiva in hitra storitev"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici",
+  "serviceArea": "Ljubljana - Šmartno in okolica",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "dostopen lokalni servis",
+  "competitors": "Lokalne avtoservisne delavnice v regiji",
+  "callToAction": "Pokličite nas"
+}

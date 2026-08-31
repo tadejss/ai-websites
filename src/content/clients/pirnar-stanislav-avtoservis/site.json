@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "steel-blue",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pirnar-stanislav-avtoservis/hero.avif",
+      "alt": "Mehanik med delom na motorju avtomobila v sodobni avtoservisni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pirnar-stanislav-avtoservis/hero.webp",
+      "width": 732,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9626877",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
+      "photographer": "MonControlteTechnique",
+      "photographerUrl": "https://www.pexels.com/@moncontroltetechnique-110684920",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pirnar-stanislav-avtoservis/services.avif",
+      "alt": "Menjava pnevmatik in vulkanizerske storitve v avtoservisu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pirnar-stanislav-avtoservis/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28153670",
+      "sourceUrl": "https://www.pexels.com/photo/a-young-man-is-working-on-a-car-engine-28153670/",
+      "photographer": "dionisio castigotivane",
+      "photographerUrl": "https://www.pexels.com/@dionisio-castigotivane-1013672643",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Transparentne cene storitev",
+    "description": "Pregled pogostejših servisnih storitev in popravil.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava gum (komplet)",
+        "description": "Premontaža in centriranje 4 pnevmatik",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop na tester in brisanje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Menjava zavor",
+        "description": "Menjava zavornih ploščic (spredaj ali zadaj)",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled podvozja, zavor in luči",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Pirnar"
+  },
+  "metadata": {
+    "title": "Avtoservis Pirnar | Stanislav Pirnar s.p. | Kamnik",
+    "description": "Zanesljiv in strokovnjak avtoservis za vaše vozilo v Kamniku z okolico. Redni servisi, vulkanizerstvo, diagnostika in priprava na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljiv in strokovnjak avtoservis za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Strokovne avtoservisne storitve za lastnike osebnih vozil v Kamniku in okolici. Poskrbimo za varnost in brezhibno delovanje vašega avtomobila.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitro",
+        "title": "Hitro"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "V avtoservisni delavnici Pirnar poskrbimo za vse potrebe vašega jeklenega konjička v Kamniku z okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Redno vzdrževanje in menjava olja ter filtrov za dolgo življenjsko dobo motorja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in vulkanizerstvo",
+        "description": "Hitra in strokovna menjava pnevmatik ter premontaža za varno vožnjo v vseh letnih časih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Diagnostika napak",
+        "description": "Natančno računalniško odkrivanje in odpravljanje napak na električnih ter motornih sklopih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravila zavor",
+        "description": "Pregled in popravilo zavornih sistemov za vašo popolno varnost na cesti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozila na tehnični pregled",
+        "description": "Temeljit preventivni pregled vašega avtomobila pred obiskom tehničnih pregledov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z dolgoletnimi izkušnjami in osebnim pristopom poskrbimo, da je vaše vozilo vedno v najboljšem stanju.",
+    "highlights": [
+      "Strokovna in zanesljiva storitev",
+      "Odlične ocene zadovoljnih strank",
+      "Hitra odzivnost na vaše potrebe"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna in zanesljiva storitev",
+        "description": "Delo opravimo skrbno, strokovno in v dogovorjenem roku.",
+        "title": "Strokovna in zanesljiva storitev"
+      },
+      {
+        "label": "Odlične ocene strank",
+        "description": "Zadovoljstvo naših strank v Kamniku in okolici je naše najboljše priporočilo.",
+        "title": "Odlične ocene strank"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Hitro se odzovemo na vaša povpraševanja in poskrbimo za hiter pregled vozila.",
+        "title": "Hitra odzivnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete servis, menjavo gum ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Perovo 8d, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 747 628",
+        "href": "tel:041747628",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Perovo 8d, 1241 Kamnik, Slovenia",
+    "rights": "© Avtoservis Pirnar. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Pirnar",
+    "address": "Perovo 8d, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 747 628"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

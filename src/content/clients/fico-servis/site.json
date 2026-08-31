@@ -1,0 +1,293 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/fico-servis/hero.avif",
+      "alt": "Avtomehanik pri delu v sodobni delavnici Fičo servis v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/fico-servis/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470679",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-repairing-a-car-8470679/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/fico-servis/services.avif",
+      "alt": "Servis in diagnostika motorja za osebna vozila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/fico-servis/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985712",
+      "sourceUrl": "https://www.pexels.com/photo/car-engine-in-front-of-a-mechanic-8985712/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostejših storitev avtomehanične delavnice Fičo servis.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in filtrov",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik (komplet)",
+        "description": "Premontaža in centriranje 4 pnevmatik",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika motorja",
+        "description": "Priklop na tester in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Popravilo zavornega sistema",
+        "description": "Menjava zavornih ploščic",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Pregled podvozja",
+        "description": "Celovit pregled elementov podvozja",
+        "price": "od 25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Fičo",
+    "highlight": "servis"
+  },
+  "metadata": {
+    "title": "Fičo servis | Avtomehanična delavnica Ljubljana",
+    "description": "Zanesljiv in strokoven avtomobilski servis v Ljubljani s širšo okolico. Nudimo redne servise, menjavo pnevmatik, popravila zavor, diagnostiko motorja in vzdrževanje podvozja."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljiv in strokoven avtomobilski servis v",
+    "titleHighlight": "Ljubljani",
+    "description": "Strokovna skrb za vaše osebno vozilo v Ljubljani in okolici. Hitra, zanesljiva in prijazna storitev za varno vožnjo.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Hitra storitev",
+        "label": "Hitra storitev",
+        "title": "Hitra storitev"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo vzdrževanje",
+        "title": "Zanesljivo vzdrževanje"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Lokalni servis",
+        "title": "Lokalni servis"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše avtomehanične storitve",
+    "description": "Poskrbimo za brezhibno delovanje vašega vozila z zanesljivimi storitvami za lastnike osebnih vozil v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Celoviti redni servisi za varno in zanesljivo delovanje vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik in premontaža",
+        "description": "Hitra in strokovna menjava ter premontaža pnevmatik za vse letne čase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravila zavornega sistema",
+        "description": "Pregled in popravilo zavor za vaše varno ustavljanje na cesti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika motorja",
+        "description": "Natančna računalniška diagnostika motorja za hitro odkrivanje napak.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje podvozja",
+        "description": "Pregled in popravila elementov podvozja za udobno vožnjo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z našim strokovnim in prijaznim pristopom poskrbimo, da je vaše vozilo vedno v najboljšem stanju.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Hitra in zanesljiva storitev",
+      "Strokovno svetovanje in popravila"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljstvo naših strank potrjuje kakovost našega dela.",
+        "title": "Odlične ocene"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Cenimo vaš čas, zato storitve opravimo hitro in zanesljivo.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Strokovni pristop",
+        "description": "Nudimo strokovno svetovanje in kakovostna popravila za vaše vozilo.",
+        "title": "Strokovni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin ali postavite vprašanje glede servisa vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 678 597",
+        "href": "tel:041678597",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 8:00 – 18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Fičo servis",
+    "address": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 678 597"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

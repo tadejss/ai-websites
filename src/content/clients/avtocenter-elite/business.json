@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtocenter Elite",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Zanesljivo vzdrževanje in popravilo vašega vozila na enem mestu",
+  "services": [
+    "Redni servisi vozil",
+    "Premontaža in hramba pnevmatik",
+    "Diagnostika napak",
+    "Popravilo zavornih sistemov",
+    "Vzdrževanje klimatskih naprav"
+  ],
+  "phone": "040 266 506",
+  "email": "",
+  "address": "Smoletova ulica 3, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljstvo strank",
+    "Strokovna in zanesljiva storitev",
+    "Hitra odzivnost"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici, ki iščejo zanesljivega avtomehanika",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice in servisi v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

@@ -1,0 +1,274 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dani-dotik-danjela/hero.avif",
+      "alt": "Topel in prijeten masažni salon v Litiji za sprostitev in dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dani-dotik-danjela/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4374743",
+      "sourceUrl": "https://www.pexels.com/photo/scenery-of-pure-turquoise-seawater-4374743/",
+      "photographer": "Curioso Photography",
+      "photographerUrl": "https://www.pexels.com/@curiosophotography",
+      "searchQuery": "deep cleaning service sparkling clean modern living room ocean teal"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dani-dotik-danjela/services.avif",
+      "alt": "Strokovna masaža hrbta v sproščujočem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dani-dotik-danjela/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32216281",
+      "sourceUrl": "https://www.pexels.com/photo/modern-office-space-with-minimalist-design-32216281/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean office interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled rednih cen masažnih storitev v našem salonu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščanje celega telesa ali delna masaža",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Aromaterapevtski pridih za umiritev",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Bolečinska masaža hrbta",
+        "description": "Fokusirana obravnava hrbta in vratu",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Intenzivnejša obdelava mišic",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Dani",
+    "highlight": "dotik"
+  },
+  "metadata": {
+    "title": "Dani dotik | Masaže in sprostitev v Litiji",
+    "description": "Strokovne masaže za vaše dobro počutje in sprostitev v Litiji s širšo okolico. Prilagojen pristop in sproščujoče okolje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Masaža in sprostitev v Litiji",
+    "title": "Strokovne masaže za vaše",
+    "titleHighlight": "dobro počutje",
+    "description": "Poskrbite za sprostitev, lajšanje napetosti v mišicah in boljše počutje v toplem lokalnem salonu v Litiji s širšo okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Topel ambient",
+        "label": "Topel ambient"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      },
+      {
+        "value": "Sproščujoče",
+        "label": "Sproščujoče"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Masažne storitve za sprostitev in ravnovesje",
+    "description": "Izberite storitev, ki ustreza vašim trenutnim potrebam po sprostitvi ali razbremenitvi v Litiji.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Sproščanje napetosti v mišicah in izboljšanje splošnega počutja s klasičnimi masažnimi prijemom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežna masaža za umiritev uma, odpravljanje stresa in popolno sprostitev telesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža hrbta",
+        "description": "Ciljno usmerjena obravnava za lajšanje bolečin in napetosti v predelu hrbta.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Masaža, prilagojena potrebam športnikov in aktivnih posameznikov za hitrejšo regeneracijo.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Dani dotik",
+    "title": "Predanost vašemu dobremu počutju",
+    "description": "Združujemo strokovnost, posluh za vaše potrebe in prijetno okolje za najboljšo izkušnjo.",
+    "highlights": [
+      "Prilagojen pristop k vsaki stranki posebej",
+      "Sproščujoče in prijetno okolje v Litiji",
+      "Strokovna izvedba vseh masažnih storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojen pristop",
+        "description": "Vsako masažo prilagodimo vašim željam in trenutnemu počutju.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Topel lokalni salon, namenjen vaši popolni sprostitvi in miru.",
+        "title": "Prijetno okolje"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Kakovostne storitve z občutkom za vaše telo in zdravje.",
+        "title": "Strokovna izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za masažo ali postavite vprašanje preko spodnjih podatkov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Savska cesta 1a, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 219 308",
+        "href": "tel:031219308",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Savska cesta 1a, 1270 Litija, Slovenia",
+    "rights": "Dani dotik, Danjela Žurga s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Dani dotik",
+    "address": "Savska cesta 1a, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "031 219 308"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

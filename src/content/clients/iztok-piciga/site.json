@@ -1,0 +1,294 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/iztok-piciga/hero.avif",
+      "alt": "Avtomehanik pri delu v sodobni delavnici v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/iztok-piciga/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985924",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-on-a-car-8985924/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional auto repair shop mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/iztok-piciga/services.avif",
+      "alt": "Orodja za diagnostiko in popravilo vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/iztok-piciga/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985967",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-coverall-standing-near-a-car-8985967/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional car mechanic working in bright workshop interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled pogostih storitev",
+    "description": "Cene so informativne narave. Za točno ponudbo za vaše vozilo nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozil",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Premontaža in centriranje (komplet 4 koles)",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop na tester in brisanje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pregled in popravilo zavornih sistemov",
+        "description": "Menjava zavornih ploščic",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Ura mehaničnega dela",
+        "description": "Splošna popravila in servisna dela",
+        "price": "45 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Iztok Piciga"
+  },
+  "metadata": {
+    "title": "Avtomehanična delavnica Iztok Piciga | Ljubljana",
+    "description": "Zanesljivo vzdrževanje, redni servisi, menjava pnevmatik in popravila vozil v Ljubljani in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis v Ljubljani",
+    "title": "Zanesljivo vzdrževanje in popravilo vašega",
+    "titleHighlight": "vozila",
+    "description": "Kakovostne avtomehanične storitve za lastnike osebnih vozil v Ljubljani in okolici. Strokovno in zanesljivo poskrbimo za varnost vašega jeklenega konjička.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka",
+        "label": "ocena in zaupanje",
+        "title": "Visoka ocena in zaupanje"
+      },
+      {
+        "value": "Hitra",
+        "label": "odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Strokovna",
+        "label": "in zanesljiva storitev",
+        "title": "Strokovna storitev"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "in okolica",
+        "title": "Lokalna dostopnost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "V naši delavnici na Ježici v Ljubljani nudimo celovit nabor storitev za vzdrževanje in popravilo vašega avtomobila.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Strokovno izvajanje rednih servisov za varno in brezskrbno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in natančna menjava ter hramba pnevmatik za vse letne čase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Diagnostika napak",
+        "description": "Natančno odkrivanje električnih in mehanskih napak na vašem vozilu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled, popravilo in menjava zavornih komponent za vašo varnost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Popravila motorjev",
+        "description": "Zanesljiva mehanska popravila in odpravljanje težav z motorjem.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Zavedamo se, kako pomembno je, da je vaše vozilo vedno v brezhibnem stanju.",
+    "highlights": [
+      "Visoka ocena in zaupanje strank",
+      "Strokovna in zanesljiva storitev",
+      "Hitra odzivnost in osebni pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Zaupanje strank",
+        "description": "Ponašamo se z visoko oceno in številnimi zadovoljnimi strankami.",
+        "title": "Zaupanje strank"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Vsakemu vozilu se posvetimo strokovno, skrbno in zanesljivo.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Cenimo vaš čas, zato zagotavljamo hitro odzivnost in termine.",
+        "title": "Hitra odzivnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte termin za vaš avto",
+    "description": "Pokličite nas ali nam pošljite sporočilo za dogovor o servisu vašega vozila.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 134 665",
+        "href": "tel:040134665",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ježica 4, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite znamko vozila in želeno storitev...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Ježica 4, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Iztok Piciga",
+    "address": "Ježica 4, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 134 665"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

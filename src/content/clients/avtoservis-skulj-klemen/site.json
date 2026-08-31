@@ -1,0 +1,284 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-skulj-klemen/hero.avif",
+      "alt": "Avtomehanik med popravilom motorja v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-skulj-klemen/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470679",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-repairing-a-car-8470679/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-skulj-klemen/services.avif",
+      "alt": "Oprema za avtomobilsko diagnostiko in servis v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-skulj-klemen/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8986105",
+      "sourceUrl": "https://www.pexels.com/photo/a-serviceman-in-blue-coverall-standing-under-a-vehicle-and-fixing-it-8986105/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "car repair shop professional mechanic"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled pogostih servisnih in vulkanizerskih storitev za osebna vozila.",
+    "disclaimer": "Cenik je informativen. Za točne cene za vaše vozilo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Menjava gum (komplet 4 koles)",
+        "description": "Premontaža, centriranje in menjava",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Redni servis (mali servis)",
+        "description": "Menjava olja in filtrov",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Skeniranje napak in brisanje javljanj",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pregled zavornih sistemov",
+        "description": "Pregled diskov in ploščic",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled ključnih sklopov vozila",
+        "price": "od 45 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Škulj"
+  },
+  "metadata": {
+    "title": "Avtoservis Škulj | Zanesljiv avtoservis v Igu in okolici",
+    "description": "Zanesljiv in strokoven avtoservis za vaše vozilo na Igu. Nudimo redne servise, menjavo gum, vulkanizerstvo, popravila in pripravo na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lokalni avtoservis na Igu",
+    "title": "Zanesljiv in strokoven avtoservis za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Poskrbite za varno in brezskrbno vožnjo vašega osebnega vozila z našo strokovno pomočjo na območju Iga in okolice.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Hitra izvedba"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Zadovoljne stranke"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Ig in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Zagotavljamo kakovostno vzdrževanje, popravila in pripravo vozil za voznike na Igu in okolici.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Redno vzdrževanje in menjava olja ter filtrov za dolgo življenjsko dobo vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in vulkanizerstvo",
+        "description": "Hitra in strokovna menjava pnevmatik ter premontaža za varno vožnjo v vseh letnih časih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled in popravilo zavornih ploščic, diskov ter celotnega zavornega sistema.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika in popravila motorjev",
+        "description": "Natančna računalniška diagnostika napak in strokovna popravila motornih sklopov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozila na tehnični pregled",
+        "description": "Celovit pregled vašega vozila, da boste tehnični pregled opravili brez skrbi.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Z našim znanjem, izkušnjami in posluhom za stranke poskrbimo, da je vaše vozilo vedno v najboljši kondiciji.",
+    "highlights": [
+      "Visoko zadovoljstvo strank z območja Iga in okolice",
+      "Hitra in zanesljiva izvedba vseh storitev",
+      "Osebni pristop in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Visoko zadovoljstvo",
+        "description": "Prizadevamo si za vrhunsko izkušnjo in visoko raven zadovoljstva naših strank.",
+        "title": "Visoko zadovoljstvo"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Zavedamo se pomembnosti vašega časa, zato storitve opravimo hitro in zanesljivo.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in vam strokovno svetujemo pri vzdrževanju vozila.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite rezervirati termin za servis vašega vozila? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Iška vas 130, 1292 Ig, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 444 851",
+        "href": "tel:031444851",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Iška vas 130, 1292 Ig, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Škulj",
+    "address": "Iška vas 130, 1292 Ig, Slovenia",
+    "email": "",
+    "phone": "031 444 851"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

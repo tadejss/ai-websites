@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/resos-avtovleka-avtokleparstvo/hero.avif",
+      "alt": "Avtovleka in pomoč na cesti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/resos-avtovleka-avtokleparstvo/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35149611",
+      "sourceUrl": "https://www.pexels.com/photo/auto-body-repair-in-garage-with-tools-35149611/",
+      "photographer": "Melih Can",
+      "photographerUrl": "https://www.pexels.com/@papaz",
+      "searchQuery": "car dent repair bodywork garage"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/resos-avtovleka-avtokleparstvo/services.avif",
+      "alt": "Avtokleparska delavnica in popravilo vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/resos-avtovleka-avtokleparstvo/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470881",
+      "sourceUrl": "https://www.pexels.com/photo/man-repairing-broken-car-8470881/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki našega dela",
+    "description": "Oglejte si opremo in primere uspešno izvedenih storitev.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za avtovleko in avtokleparske storitve.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtovleka - lokalni prevoz",
+        "description": "Prevoz vozila na območju Iga in okolice",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Pomoč na cesti",
+        "description": "Interventni izhod in pomoč na terenu",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Avtokleparska ura",
+        "description": "Strokovno kleparsko delo na vozilu",
+        "price": "od 45 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Ocena poškodb in posvet",
+        "description": "Pregled vozila in svetovanje glede popravila",
+        "price": "Brezplačno"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Resos",
+    "highlight": "Avtovleka in avtokleparstvo"
+  },
+  "metadata": {
+    "title": "Resos Avtovleka in avtokleparstvo Janez Repar s.p.",
+    "description": "Zanesljiva avtovleka in strokovno avtokleparstvo na Igu in v okolici. Pomoč na cesti in popravilo poškodb vozil."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za pomoč"
+  },
+  "hero": {
+    "badge": "Zanesljiva pomoč na cesti",
+    "title": "Zanesljiva avtovleka in strokovno",
+    "titleHighlight": "avtokleparstvo",
+    "description": "Celovita skrb za vaše vozilo ob nezgodi na Igu in v okolici. Hitra pomoč na cesti in kakovostna kleparska popravila.",
+    "primaryCta": "Pokličite za pomoč",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Strokovno",
+        "label": "popravilo",
+        "title": "Strokovno popravilo"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "avtovleka",
+        "title": "Zanesljiva avtovleka"
+      },
+      {
+        "value": "Celovita",
+        "label": "skrb",
+        "title": "Celovita skrb"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Storitve za vaše vozilo",
+    "description": "Nudimo zanesljiv prevoz vozil, pomoč na cesti in strokovna avtokleparska dela.",
+    "items": [
+      {
+        "title": "Avtovleka in prevoz vozil",
+        "description": "Varno in zanesljivo reševanje ter prevoz vašega vozila ob okvari ali nesreči.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Avtokleparske storitve",
+        "description": "Strokovna sanacija udrtin, prask in drugih poškodb na karoseriji vašega vozila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo poškodb po nesrečah",
+        "description": "Celovito popravilo vozil po prometnih nesrečah z natančnim delom.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pomoč na cesti",
+        "description": "Hitro posredovanje in pomoč na cesti, ko jo najbolj potrebujete.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Sanacija poškodb karoserije",
+        "description": "Kakovostna obnova in popravilo vseh vrst poškodb karoserije.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj mi",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Z našim znanjem in izkušnjami poskrbimo, da je vaše vozilo v varnih rokah.",
+    "highlights": [
+      "Zanesljiva in hitra avtovleka",
+      "Kakovostno avtokleparstvo",
+      "Celovita skrb za vaše vozilo ob nezgodi"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva avtovleka",
+        "description": "Hitro in varno poskrbimo za prevoz vašega vozila do želene lokacije.",
+        "title": "Zanesljiva avtovleka"
+      },
+      {
+        "label": "Strokovno kleparstvo",
+        "description": "Natančna popravila karoserije in sanacija poškodb po nesrečah.",
+        "title": "Strokovno kleparstvo"
+      },
+      {
+        "label": "Celovita skrb",
+        "description": "Popolna podpora in pomoč na cesti, ko se znajdete v težavah.",
+        "title": "Celovita skrb"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete avtovleko ali pomoč na cesti? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 578 155",
+        "href": "tel:041578155",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Zabrv 89, 1292 Ig, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 17:00, Sob: 8:00 – 13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali vozilo...",
+      "submitLabel": "Pokličite za pomoč"
+    }
+  },
+  "footer": {
+    "address": "Zabrv 89, 1292 Ig, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Resos Avtovleka in avtokleparstvo",
+    "address": "Zabrv 89, 1292 Ig, Slovenia",
+    "email": "",
+    "phone": "041 578 155"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "Kozmetični in masažni studio, Anita Struna s.p.",
+  "industry": "Kozmetični in masažni salon",
+  "tagline": "Celostna nega telesa in sprostitev za vaše dobro počutje",
+  "services": [
+    "Kozmetične storitve",
+    "Sprostitvene masaže",
+    "Nega obraza",
+    "Nega telesa",
+    "Aromaterapija"
+  ],
+  "phone": "031 610 839",
+  "email": "",
+  "address": "Dolenjska cesta 373, 1291 Škofljica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka kakovost storitev z odličnimi ocenami strank",
+    "Osebni pristop in prilagojena nega",
+    "Prijeten in sproščujoč ambient"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo skrb za videz, zdravje in sprostitev",
+  "serviceArea": "Škofljica z okolico",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, sproščen",
+  "brandStyle": "domač, eleganten, zaupanja vreden",
+  "competitors": "Lokalni kozmetični saloni in ponudniki masaž",
+  "callToAction": "Rezervirajte svoj termin"
+}

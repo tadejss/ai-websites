@@ -1,0 +1,27 @@
+{
+  "companyName": "Masaža Mojca Vinko s.p.",
+  "industry": "Masažne storitve",
+  "tagline": "Strokovne masaže za sprostitev in dobro počutje v Škofljici.",
+  "services": [
+    "Sprostitvena masaža",
+    "Klasična masaža",
+    "Bolečinska masaža",
+    "Športna masaža"
+  ],
+  "phone": "040 163 638",
+  "email": "",
+  "address": "Albrehtova ulica 1, 1291 Škofljica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Prilagojen pristop k posamezniku",
+    "Prijetno in sproščujoče okolje"
+  ],
+  "targetCustomers": "Ljudje, ki potrebujejo sprostitev, lajšanje napetosti in nego telesa.",
+  "serviceArea": "Škofljica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel, domač salon",
+  "competitors": "Lokalni ponudniki masaž in wellness storitev",
+  "callToAction": "Rezervirajte termin"
+}

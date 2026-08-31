@@ -1,0 +1,284 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avto-smodek-avtovleka/hero.avif",
+      "alt": "Avtovleka in pomoč na cesti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avto-smodek-avtovleka/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870330",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-dress-shirt-and-blue-denim-jeans-sitting-on-brown-wooden-seat-6870330/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avto-smodek-avtovleka/services.avif",
+      "alt": "Avtoservis in popravila vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avto-smodek-avtovleka/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870322",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-long-sleeve-shirt-standing-beside-orange-car-6870322/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled pogostih storitev",
+    "description": "Cene osnovnih storitev in vulkanizerstva. Za natančno ponudbo avtovleke ali servisa nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Menjava pnevmatik (komplet 4 koles)",
+        "description": "Demontaža, montaža in centriranje",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Avtoservisni pregled",
+        "description": "Osnovni pregled tekočin in stanja vozila",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Avtovleka (lokalni prevoz)",
+        "description": "Prevoz okvarjenega vozila v regiji",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Ura avtoservisnih del",
+        "description": "Strokovno delo mehanika",
+        "price": "od 45 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "AVTO",
+    "highlight": "SMODEK"
+  },
+  "metadata": {
+    "title": "Avto Smodek | Avtovleka, Avtoservis in Vulkanizerstvo Medvode",
+    "description": "Zanesljiva avtovleka, avtoservis, vulkanizerstvo in prodaja rezervnih delov na lokaciji Zbilje, Jeprca (Medvode). Pokličite za hitro pomoč na cesti."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za pomoč"
+  },
+  "hero": {
+    "badge": "Zanesljiva pomoč na cesti",
+    "title": "Celovite avtomobilske storitve na enem",
+    "titleHighlight": "mestu",
+    "description": "Avtovleka, avtoservis, vulkanizerstvo in prodaja rezervnih delov v Medvodah z okolico. Poskrbimo za vaše vozilo hitro, strokovno in zanesljivo.",
+    "primaryCta": "Pokličite za pomoč",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Preverjena zanesljivost",
+        "label": "Preverjena zanesljivost",
+        "title": "Preverjena zanesljivost"
+      },
+      {
+        "value": "Hitra odzivnost",
+        "label": "Hitra odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Celovite storitve",
+        "label": "Celovite storitve",
+        "title": "Celovite storitve"
+      },
+      {
+        "value": "Lokalna podpora",
+        "label": "Lokalna podpora",
+        "title": "Lokalna podpora"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Vse za vaše vozilo na enem mestu",
+    "description": "Nudimo celovito paleto storitev za vsa osebna vozilih, od nujne avtovleke do rednih servisov in menjave pnevmatik.",
+    "items": [
+      {
+        "title": "Avtovleka in reševanje vozil",
+        "description": "Hitro in varno reševanje vozil ter prevoz ob okvarah ali nesrečah na cesti.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Avtoservis in popravila",
+        "description": "Strokovni pregledi, redno vzdrževanje in kakovostna popravila vašega voznega parka.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vulkanizerske storitve",
+        "description": "Menjava pnevmatik, centriranje in strokovno svetovanje pri izbiri pravih gum.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prodaja rezervnih delov",
+        "description": "Pester izbor zanesljivih rezervnih delov za vzdrževanje brezhibnega delovanja vozila.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Avto Smodek",
+    "title": "Zanesljiv partner na cesti",
+    "description": "Zavedamo se, kako pomembna je mobilnost, zato se na vsak klic odzovemo hitro in strokovno.",
+    "highlights": [
+      "Visoka ocena strank in preverjena zanesljivost",
+      "Celovite storitve od avtovleke do servisa in vulkanizerstva",
+      "Hitra in strokovna pomoč ob okvarah na cesti"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka ocena strank",
+        "description": "Zadovoljstvo naših strank potrjuje našo visoko raven strokovnosti in zanesljivosti.",
+        "title": "Visoka ocena strank"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Od prvega klica za avtovleko do končnega popravila in vulkanizerstva na enem mestu.",
+        "title": "Celovite rešitve"
+      },
+      {
+        "label": "Hitra pomoč",
+        "description": "Odzivnost in strokovna pomoč ob nepričakovanih okvarah na cesti.",
+        "title": "Hitra pomoč"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete avtovleko, servis ali imate vprašanje glede rezervnih delov? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 714 117",
+        "href": "tel:070714117",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Zbilje, Jeprca ob glavni cesti, 1215 Medvode",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Čet: 8:00–17:00, Pet: 8:00–15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš težavo ali želeno storitev...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Zbilje, Jeprca ob glavni cesti, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "AVTO SMODEK",
+    "address": "Zbilje, Jeprca ob glavni cesti, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "070 714 117"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

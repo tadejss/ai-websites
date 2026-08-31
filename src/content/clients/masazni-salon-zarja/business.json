@@ -1,0 +1,27 @@
+{
+  "companyName": "Masažni salon Zarja, Požinel d.o.o.",
+  "industry": "Masažne storitve",
+  "tagline": "Sprostitev in dobro počutje za vaše telo in dušo",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža",
+    "Športna masaža"
+  ],
+  "phone": "051 413 339",
+  "email": "",
+  "address": "Vrtnarija 3, 1360 Vrhnika, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prilagojen pristop k vsaki stranki",
+    "Prijetno in mirno okolje za sprostitev",
+    "Strokovna obravnava in izkušnje"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje napetosti v mišicah in izboljšanje splošnega počutja",
+  "serviceArea": "Vrhnika z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni ponudniki masaž in wellness storitev",
+  "callToAction": "Rezervirajte termin"
+}

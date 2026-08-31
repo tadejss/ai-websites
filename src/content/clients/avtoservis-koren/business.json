@@ -1,0 +1,28 @@
+{
+  "companyName": "AVTOSERVIS KOREN",
+  "industry": "Avtoservisna delavnica",
+  "tagline": "Zanesljiv in strokoven avtoservis za vaše vozilo v Ljubljani",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava pnevmatik in premontaža",
+    "Zavorni sistem in vzmetenje",
+    "Diagnostika vozil",
+    "Priprava vozila na tehnični pregled"
+  ],
+  "phone": "040 736 405",
+  "email": "",
+  "address": "Dimičeva ulica 16, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 4:00 PM · Tuesday: 8:00 AM – 4:00 PM · Wednesday: 8:00 AM – 4:00 PM · Thursday: 8:00 AM – 4:00 PM · Friday: 8:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunska ocena zadovoljstva strank",
+    "Strokovno in hitro vzdrževanje vozil",
+    "Zanesljiva in transparentna storitev"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici, ki iščejo zanesljiv servis",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zaupanja vreden",
+  "brandStyle": "moderen in zanesljiv lokalni servis",
+  "competitors": "Lokalne avtoservisne delavnice v Ljubljani",
+  "callToAction": "Naročite se na servis"
+}

@@ -1,0 +1,27 @@
+{
+  "companyName": "Healing hands, masaže, Benjamin Husaković s.p.",
+  "industry": "Masažne storitve",
+  "tagline": "Strokovne masaže za sprostitev telesa in duha na Vrhniki",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža",
+    "Športna masaža"
+  ],
+  "phone": "070 588 077",
+  "email": "",
+  "address": "Tržaška cesta 3a, 1360 Vrhnika, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena strank in odlična izkušnja",
+    "Prilagojen pristop k vsaki stranki",
+    "Udobno okolje za popolno sprostitev"
+  ],
+  "targetCustomers": "Ljudje, ki potrebujejo sprostitev, lajšanje bolečin v mišicah ali nego telesa",
+  "serviceArea": "Vrhnika in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, sproščen",
+  "brandStyle": "topel, terapevtski, zaupanja vreden",
+  "competitors": "Lokalni saloni za masažo in wellness na Vrhniki",
+  "callToAction": "Rezervirajte termin"
+}

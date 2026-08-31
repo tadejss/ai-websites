@@ -1,0 +1,29 @@
+{
+  "companyName": "Resos Avtovleka in avtokleparstvo Janez Repar s.p.",
+  "industry": "Avtovleka in avtokleparstvo",
+  "tagline": "Zanesljiva avtovleka in strokovno avtokleparstvo za vaše vozilo",
+  "services": [
+    "Avtovleka in prevoz vozil",
+    "Avtokleparske storitve",
+    "Popravilo poškodb po nesrečah",
+    "Pomoč na cesti",
+    "Sanacija poškodb karoserije"
+  ],
+  "phone": "041 578 155",
+  "email": "",
+  "address": "Zabrv 89, 1292 Ig, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Zanesljiva in hitra avtovleka",
+    "Kakovostno avtokleparstvo",
+    "Odlična ocena in zadovoljne stranke",
+    "Celovita skrb za vaše vozilo ob nezgodi"
+  ],
+  "targetCustomers": "Lastniki vozil, ki potrebujejo pomoč na cesti ali kleparska popravila",
+  "serviceArea": "Ig in okolica, Slovenija",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalne avtovleke in kleparske delavnice",
+  "callToAction": "Pokličite za pomoč"
+}

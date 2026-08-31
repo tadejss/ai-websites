@@ -1,0 +1,284 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-vlecna-sluzba/hero.avif",
+      "alt": "Vlečna služba in pomoč na cesti v Litiji",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-vlecna-sluzba/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809560",
+      "sourceUrl": "https://www.pexels.com/photo/young-mechanic-polishing-a-red-car-in-workshop-37809560/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-vlecna-sluzba/services.avif",
+      "alt": "Avtoličarstvo in popravilo karoserije v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-vlecna-sluzba/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809561",
+      "sourceUrl": "https://www.pexels.com/photo/man-polishing-a-red-car-in-garage-37809561/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki našega dela",
+    "description": "Oglejte si prostor in primere uspešno saniranih vozil ter naše opreme.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled storitev in okvirnih cen",
+    "description": "Cene so informativne narave in so odvisne od obsega dela ter poškodbe vozila.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Vlečna služba (osnovni prevoz)",
+        "description": "Prevoz vozila v okvari ali po nesreči v širši okolici",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Avtoličarska dela (posamezni del)",
+        "description": "Lakiranje in priprava posameznega elementa vozila",
+        "price": "od 120 €"
+      },
+      {
+        "name": "Kleparska popravila",
+        "description": "Sanacija manjših in večjih karoserijskih poškodb",
+        "price": "od 60 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Pomoč na cesti na terenu",
+        "description": "Izvoz in hitra tehnična pomoč na lokaciji",
+        "price": "od 40 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoličarstvo in vlečna služba",
+    "highlight": "Roman Planinšek s.p."
+  },
+  "metadata": {
+    "title": "Avtoličarstvo in vlečna služba Roman Planinšek s.p. | Litija",
+    "description": "Zanesljivo avtoličarstvo in hitra vlečna služba v Litiji s širšo okolico. Kakovostna popravila karoserije, kleparska dela in pomoč na cesti."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za pomoč"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis v Litiji",
+    "title": "Avtoličarstvo in hitra",
+    "titleHighlight": "vlečna služba",
+    "description": "Strokovne avtoličarske storitve, kleparska dela, popravilo karoserije in zanesljiva pomoč na cesti za lastnike vozil v Litiji s širšo okolico.",
+    "primaryCta": "Pokličite za pomoč",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Visoka ocena strank",
+        "title": "Visoka ocena strank"
+      },
+      {
+        "value": "Hitra odzivnost",
+        "label": "Hitra odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Kakovostna",
+        "label": "Kakovostna izvedba",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "value": "Lokalni servis",
+        "label": "Lokalni servis",
+        "title": "Lokalni servis"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Nudimo kakovostne avtoličarske storitve, vlečno službo, popravila karoserije in pomoč na cesti v Litiji s širšo okolico.",
+    "items": [
+      {
+        "title": "Avtoličarske storitve",
+        "description": "Kakovostno barvanje in lakiranje vozil z uporabo preverjenih materialov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Vlečna služba",
+        "description": "Hitro in zanesljivo vlečenje vozil ter prevoz ob okvarah ali nezgodah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Strokovna sanacija poškodb na karoseriji vašega osebnega ali dostavnega vozila.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Kleparska dela",
+        "description": "Natančna avtokleparska dela za povrnitev prvotnega stanja vozil.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pomoč na cesti",
+        "description": "Hitra odzivnost in podpora na terenu, ko jo najbolj potrebujete.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "S trdim delom, strokovnim pristopom in posluhom za stranke zagotavljamo visoko raven storitev.",
+    "highlights": [
+      "Visoka ocena strank in zaupanje v lokalnem okolju",
+      "Zanesljiva in hitra odzivnost ob vsakem klicu",
+      "Kakovostna izvedba vseh avtoličarskih in kleparskih del"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka ocena strank",
+        "description": "Zadovoljstvo naših strank potrjuje kakovost in zanesljivost našega dela.",
+        "title": "Visoka ocena strank"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Odzovemo se hitro in poskrbimo, da je vaše vozilo čim prej pripravljeno.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Uporabljamo preverjene postopke in strokovno znanje za najboljše rezultate.",
+        "title": "Kakovostna izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vlečno službo ali avtoličarska dela? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 686 051",
+        "href": "tel:041686051",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Graška cesta 33, 1270 Litija, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali potrebo po storitvi...",
+      "submitLabel": "Pokličite za pomoč"
+    }
+  },
+  "footer": {
+    "address": "Graška cesta 33, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoličarstvo in vlečna služba Roman Planinšek s.p.",
+    "address": "Graška cesta 33, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "041 686 051"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

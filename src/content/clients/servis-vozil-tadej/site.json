@@ -1,0 +1,293 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/servis-vozil-tadej/hero.avif",
+      "alt": "Mehanik pri delu na motorju vozila v sodobni delavnici v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/servis-vozil-tadej/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985972",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-working-on-an-engine-8985972/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/servis-vozil-tadej/services.avif",
+      "alt": "Oprema za diagnostiko in popravilo vozil v avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/servis-vozil-tadej/services.webp",
+      "width": 732,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9626877",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
+      "photographer": "MonControlteTechnique",
+      "photographerUrl": "https://www.pexels.com/@moncontroltetechnique-110684920",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled pogostih storitev",
+    "description": "Pregled okvirnih cen za vzdrževanje in servisiranje vašega vozila.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točen izračun glede na tip vozila nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Menjava in centriranje pnevmatik",
+        "description": "Komplet 4 koles",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Sprednja or zadnja os",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pregled vozila pred tehničnim pregledom",
+        "description": "Celovit pregled delovanja",
+        "price": "od 35 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Servis vozil",
+    "highlight": "Tadej Štupar s.p."
+  },
+  "metadata": {
+    "title": "Avtomehanična delavnica Tadej Štupar s.p. | Ljubljana",
+    "description": "Zanesljiv in strokoven servis vašega vozila v Ljubljani in širši okolici. Redni servisi, menjava gum, popravila zavor in diagnostika."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljiv in strokoven servis vašega vozila v",
+    "titleHighlight": "Ljubljani",
+    "description": "Strokovna oskrba za lastnike osebnih vozil v Ljubljani in okolici, ki iščejo zaupanja vrednega mehanika za redno vzdrževanje in popravila.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo",
+        "title": "Strokovno delo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljive storitve",
+        "title": "Zanesljive storitve"
+      },
+      {
+        "value": "Osebno",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Lokalna lokacija",
+        "title": "Lokalna lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovito vzdrževanje in popravila vozil",
+    "description": "Poskrbimo za brezhibno delovanje vašega jeklenega konjička v Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Pravočasna menjava olja, filtrov in pregled ključnih sklopov za varno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik in premontaža",
+        "description": "Strokovna menjava in centriranje pnevmatik za optimalen oprijem na cesti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravila zavornega sistema",
+        "description": "Pregled in zamenjava zavornih ploščic, diskov ter drugih zavornih komponent.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika napak na vozilu",
+        "description": "Natančno odkrivanje elektronskih in mehanskih napak s sodobno opremo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje in popravila motorja",
+        "description": "Kakovostna popravila in odpravljanje težav z delovanjem motorja.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost kakovosti in varnosti na cesti",
+    "description": "Z dolgoletnimi izkušnjami in individualnim pristopom zagotavljamo, da je vaše vozilo v varnih rokah.",
+    "highlights": [
+      "Visoka ocena in preverjeno zadovoljstvo strank",
+      "Strokovna in zanesljiva storitev",
+      "Osebni pristop k vsakemu vozilu"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Ponašamo se z visoko oceno in preverjenim zadovoljstvom naših strank.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Strokovna storitev",
+        "description": "Vsakemu posegu se posvetimo z vso strokovnostjo in natančnostjo.",
+        "title": "Strokovna storitev"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in se posvetimo specifikam vašega vozila.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis ali postavite vprašanje glede vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 796 181",
+        "href": "tel:041796181",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 8:00 - 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Servis vozil Tadej Štupar s.p.",
+    "address": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 796 181"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

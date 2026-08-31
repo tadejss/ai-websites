@@ -1,0 +1,284 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-meta-hozjan/hero.avif",
+      "alt": "Notranjost masažnega salona v toplih in pomirjujočih tonih",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-meta-hozjan/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4374743",
+      "sourceUrl": "https://www.pexels.com/photo/scenery-of-pure-turquoise-seawater-4374743/",
+      "photographer": "Curioso Photography",
+      "photographerUrl": "https://www.pexels.com/@curiosophotography",
+      "searchQuery": "deep cleaning service sparkling clean modern living room ocean teal"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-meta-hozjan/services.avif",
+      "alt": "Strokovna masaža hrbta v prijetnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-meta-hozjan/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32178008",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32178008/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean apartment interior green accents"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki iz našega salona",
+    "description": "Oglejte si kotiček za sprostitev.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled naših osnovnih masažnih storitev in cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Masaža celega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Terapevtska masaža",
+        "description": "Ciljna obravnava bolečih predelov",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna sprostitev telesa in duha",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Masaža hrbta",
+        "description": "Osredotočeno na hrbet in vrat",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Intenzivna terapija",
+        "price": "od 55 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Masaže",
+    "highlight": "Meta Hozjan s.p."
+  },
+  "metadata": {
+    "title": "Masaže Meta Hozjan s.p. | Sproščujoče in terapevtske masaže",
+    "description": "Sproščujoče in terapevtske masaže za vaše dobro počutje v Logatcu in okolici. Poskrbite za sprostitev in lajšanje bolečin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lokalni masažni salon",
+    "title": "Sproščujoče in terapevtske masaže za",
+    "titleHighlight": "vaše dobro počutje",
+    "description": "Nudimo strokovne klasične, terapevtske in sprostitvene masaže v Logatcu in okolici. Poskrbite za sprostitev in lajšanje bolečin v mišicah.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Topel ambient",
+        "label": "Topel ambient"
+      },
+      {
+        "value": "Individualen pristop",
+        "label": "Individualen pristop"
+      },
+      {
+        "value": "Lajšanje bolečin",
+        "label": "Lajšanje bolečin"
+      },
+      {
+        "value": "Zanesljive storitve",
+        "label": "Zanesljive storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše masažne storitve",
+    "description": "Izberite storitev, ki najbolj ustreza vašim trenutnim potrebam po sprostitvi ali lajšanju bolečin.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Sproščujoča masaža celega telesa za izboljšanje prekrvavitve in sprostitev napetih mišic.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Terapevtska masaža",
+        "description": "Ciljana masaža za odpravljanje specifičnih bolečin in napetosti v telesu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežna masaža za umiritev uma, sprostitev telesa in odpravo stresa.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža hrbta",
+        "description": "Učinkovita pomoč pri vsakodnevnih bolečinah in otrdelosti v predelu hrbta ter vratu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Intenzivnejša obravnava za lajšanje močnejših mišičnih bolečin.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Celostna skrb za vaše dobro počutje",
+    "description": "V našem salonu se posvetimo vsakemu posamezniku in poskrbimo za prijetno izkušnjo.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Individualen pristop k vsaki stranki",
+      "Prijeten in sproščujoč ambient"
+    ],
+    "benefits": [
+      {
+        "label": "Individualen pristop",
+        "description": "Masažo prilagodimo vašim osebnim željam in trenutnemu stanju telesa.",
+        "title": "Individualen pristop"
+      },
+      {
+        "label": "Sproščujoč ambient",
+        "description": "Prijeten prostor v Logatcu, kjer se lahko popolnoma odklopite od vsakodnevnega stresa.",
+        "title": "Sproščujoč ambient"
+      },
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Trudimo se za visoko kakovost storitev in dobro počutje vsakega obiskovalca.",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Notranjska Cesta 1, 1370 Logatec, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 501 370",
+        "href": "tel:040501370",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Notranjska Cesta 1, 1370 Logatec, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Masaže Meta Hozjan s.p.",
+    "address": "Notranjska Cesta 1, 1370 Logatec, Slovenia",
+    "email": "",
+    "phone": "040 501 370"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

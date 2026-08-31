@@ -1,0 +1,290 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "dusty-rose",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hairhitekt-by-tjasa/hero.avif",
+      "alt": "Sodobna notranjost frizerskega salona z elegantnimi detajli v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hairhitekt-by-tjasa/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35844833",
+      "sourceUrl": "https://www.pexels.com/photo/modern-hair-salon-interior-with-stylish-lighting-35844833/",
+      "photographer": "Emirhan Sayar",
+      "photographerUrl": "https://www.pexels.com/@emirhan-sayar-478511598",
+      "searchQuery": "modern hair salon interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hairhitekt-by-tjasa/services.avif",
+      "alt": "Strokovno striženje in nega las v frizerskem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hairhitekt-by-tjasa/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "12790167",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-photo-of-a-beautiful-woman-wearing-hat-12790167/",
+      "photographer": "Reza pix1",
+      "photographerUrl": "https://www.pexels.com/@rezapix1",
+      "searchQuery": "professional hair coloring and styling session"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled cen frizerskih storitev",
+    "description": "Kakovostna nega las po dostopnih cenah. Izberite storitev po vaši meri.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Žensko striženje",
+        "description": "Pranje, striženje in lahko sušenje",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Moško striženje",
+        "description": "Pranje, striženje in oblikovanje",
+        "price": "od 20 €",
+        "featured": true
+      },
+      {
+        "name": "Barvanje las",
+        "description": "Barvanje narastka ali celotnih las",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Prameni / Balayage",
+        "description": "Moderne tehnike senčenja in pramenov",
+        "price": "od 70 €"
+      },
+      {
+        "name": "Nega in obnova las",
+        "description": "Globinska hranilna maska in obnova",
+        "price": "od 25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Hairhitekt",
+    "highlight": "by Tjasa Pugelj"
+  },
+  "metadata": {
+    "title": "Hairhitekt by Tjasa Pugelj | Frizerski salon Ljubljana",
+    "description": "Strokovno striženje, barvanje in nega las z arhitekturnim pristopom v Ljubljani. Rezervirajte svoj termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Vrhunski frizerski salon v Ljubljani",
+    "title": "Strokovno striženje in nega las z",
+    "titleHighlight": "arhitekturnim pristopom",
+    "description": "Oblikujte svoj videz z natančnostjo in stilom. Celovite frizerske storitve v Ljubljani s poudarkom na zdravju vaših las in osebnem pristopu.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Moderen",
+        "label": "in eleganten salon",
+        "title": "Moderen in eleganten salon"
+      },
+      {
+        "value": "Osebni",
+        "label": "pristop k negi",
+        "title": "Osebni pristop k negi"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "delovni čas",
+        "title": "Prilagodljiv delovni čas"
+      },
+      {
+        "value": "Vrhunske",
+        "label": "ocene strank",
+        "title": "Vrhunske ocene strank"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite frizerske storitve za vaše lase",
+    "description": "Poskrbimo za vaš svež videz, zdravje in lesk las z uporabo preverjenih tehnik striženja in nege v Ljubljani.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Natančno in sodobno žensko striženje, prilagojeno obliki vašega obraza in življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Moško striženje",
+        "description": "Klasični in sodobni moški frizerski trendi ter urejanje pričeske.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Obstojni in sijoči odtenki, ki poudarijo vašo naravno lepoto in osebnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prameni in balayage",
+        "description": "Umetnost barvnih prehodov za naraven videz in globino vaše pričeske.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega in obnova las",
+        "description": "Intenzivni tretmaji za globoko obnovo, hidracijo in zdrav lesk vaših las.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Umetnost striženja združena z estetiko",
+    "description": "Vsakemu obisku posvetimo vso pozornost, da bi dosegli popolno ravnovesje med vašimi željami in zdravjem las.",
+    "highlights": [
+      "Vrhunske ocene zadovoljnih strank",
+      "Prilagodljiv delovni čas z zgodnjimi jutranjimi termini",
+      "Strokovno osebje z občutkom za estetiko"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunske ocene",
+        "description": "Zadovoljstvo in zaupanje naših strank potrjujeta predanost kakovostnemu delu.",
+        "title": "Vrhunske ocene"
+      },
+      {
+        "label": "Fleksibilen čas",
+        "description": "Prilagodljiv delovni čas z možnostjo zgodnjih jutranjih terminov za vaš urnik.",
+        "title": "Fleksibilen čas"
+      },
+      {
+        "label": "Strokovni pristop",
+        "description": "Izkušeno osebje z izrazitim čutom za estetiko in zdravje vaših las.",
+        "title": "Strokovni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Rezervirajte svoj termin v Ljubljani",
+    "description": "Stopite v stik z nami in si zagotovite termin za vašo novo pričesko.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Prešernova cesta 10a, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 254 403",
+        "href": "tel:041254403",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, čet: 6:00–19:00, Tor, Pet: 8:00–20:15, Sob: 6:00–10:00, Ned: zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja glede storitev.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Prešernova cesta 10a, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Hairhitekt by Tjasa Pugelj",
+    "address": "Prešernova cesta 10a, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 254 403"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

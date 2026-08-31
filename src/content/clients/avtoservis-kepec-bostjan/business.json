@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Kepec, Boštjan Kepec s.p.",
+  "industry": "Avtoservisna delavnica",
+  "tagline": "Zanesljiv in strokoven avtoservis za vaše vozilo",
+  "services": [
+    "Redni servisi vozil",
+    "Mehanična popravila",
+    "Zlivanje in menjava gum",
+    "Priprava vozil na tehnični pregled",
+    "Diagnostika vozil"
+  ],
+  "phone": "041 531 021",
+  "email": "",
+  "address": "Prelog, Krožna pot 28A, 1230 Domžale, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Strokovno in hitro popravilo",
+    "Osebni pristop k vsakemu vozilu"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Domžalah in okolici",
+  "serviceArea": "Domžale z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden avtoservis",
+  "competitors": "Lokalne avtoservisne delavnice",
+  "callToAction": "Rezervirajte termin"
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "Pirnar Stanislav s.p. - Avtoservis Pirnar",
+  "industry": "Avtoservisna delavnica",
+  "tagline": "Zanesljiv in strokovnjak avtoservis za vaše vozilo",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava gum in vulkanizerstvo",
+    "Diagnostika napak",
+    "Popravila zavor",
+    "Priprava vozila na tehnični pregled"
+  ],
+  "phone": "041 747 628",
+  "email": "",
+  "address": "Perovo 8d, 1241 Kamnik, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Strokovna in zanesljiva storitev",
+    "Hitra odzivnost"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Kamniku in okolici",
+  "serviceArea": "Kamnik z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtoservisne delavnice v regiji",
+  "callToAction": "Pokličite nas"
+}

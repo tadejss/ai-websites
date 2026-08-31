@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-handa-eldin/hero.avif",
+      "alt": "Avtomehanik med delom v urejeni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-handa-eldin/hero.webp",
+      "width": 732,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9626877",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
+      "photographer": "MonControlteTechnique",
+      "photographerUrl": "https://www.pexels.com/@moncontroltetechnique-110684920",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-handa-eldin/services.avif",
+      "alt": "Servisiranje in vzdrževanje vozil v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-handa-eldin/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470679",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-repairing-a-car-8470679/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki iz naše delavnice",
+    "description": "Oglejte si prostor, kjer strokovno poskrbimo za vaše vozilo.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled osnovnih avtomehaničnih storitev. Za natančen ponudbo nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo glede na tip vozila nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in osnovnih filtrov",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Menjava gum",
+        "description": "Komplet 4 pnevmatik z centriranjem",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Diagnostika vozil",
+        "description": "Priklop na računalnik in brisanje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled zavornih, krmilnih in podvozja",
+        "price": "od 45 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Handa"
+  },
+  "metadata": {
+    "title": "Avtoservis Handa, Eldin Handanagić s.p. | Ljubljana",
+    "description": "Zanesljiv in strokoven avtoservis za vaše vozilo v Ljubljani. Redni servisi, menjava gum, diagnostika in priprava na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lokalni avtoservis v Ljubljani",
+    "title": "Zanesljiv in strokoven avtoservis za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Celovite storitve vzdrževanja za vsa osebna vozila v Ljubljani s širšo okolico. Poskrbimo za varno in brezskrbno vožnjo.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjena",
+        "label": "Kakovost storitev",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "value": "Hitra",
+        "label": "In zanesljiva izvedba",
+        "title": "Hitra izvedba"
+      },
+      {
+        "value": "Celovite",
+        "label": "Storitve vzdrževanja",
+        "title": "Celovite storitve"
+      },
+      {
+        "value": "6 dni",
+        "label": "V tednu na voljo",
+        "title": "Odprti 6 dni"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kaj nudimo za vaše vozilo",
+    "description": "Nudimo celovito paleto avtomehaničnih storitev za vsa osebna vozila v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Redno vzdrževanje in menjava olja ter filtrov za dolgo življenjsko dobo vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in vulkanizerstvo",
+        "description": "Hitra menjava in centriranje pnevmatik ter strokovno svetovanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo zavornih sistemov",
+        "description": "Pregled in menjava zavornih diskov, ploščic ter ostalih delov zavor.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno računalniško odkrivanje napak in težav na vašem vozilu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozila na tehnični pregled",
+        "description": "Temeljit pregled vozila, da brezskrbno opravite tehnični pregled.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Zavedamo se, kako pomembna je zanesljivost vašega avtomobila. Delujemo domače, strokovno in se posvetimo vsaki stranki posebej.",
+    "highlights": [
+      "Visoka ocena strank in preverjena kakovost storitev",
+      "Hitra in zanesljiva izvedba avtomehaničnih del",
+      "Celovite storitve vzdrževanja za vsa osebna vozila"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka ocena strank",
+        "description": "Ponosni smo na preverjeno kakovost storitev in zadovoljstvo naših strank.",
+        "title": "Visoka ocena strank"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Zavedamo se pomembnosti vašega časa, zato dela izvedemo hitro in zanesljivo.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Celovita skrb",
+        "description": "Nudimo celovite storitve vzdrževanja za vsa osebna vozila na enem mestu.",
+        "title": "Celovita skrb"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite rezervirati termin za vaš avtomobil? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dolenjska cesta 234, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 416 272",
+        "href": "tel:070416272",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 16:00, Sob: 8:00 – 13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Dolenjska cesta 234, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Handa",
+    "address": "Dolenjska cesta 234, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "070 416 272"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-verde/hero.avif",
+      "alt": "Notranjost studia Verde za masažo in sprostitev v mirnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-verde/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32216281",
+      "sourceUrl": "https://www.pexels.com/photo/modern-office-space-with-minimalist-design-32216281/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean office interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-verde/services.avif",
+      "alt": "Strokovna masaža telesa v prijetnem in mirnem okolju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-verde/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32791637",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32791637/",
+      "photographer": "Pușcaș Adryan",
+      "photographerUrl": "https://www.pexels.com/@pu-ca-adryan-163345030",
+      "searchQuery": "deep cleaning service sparkling clean modern living room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled naših masažnih storitev za sprostitev in nego telesa.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Masaža celega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Intenzivna obdelava mišic",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna sprostitev z blagimi pritiski",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Masaža z eteričnimi olji",
+        "description": "Aromaterapevtska izkušnja",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Ciljno lajšanje napetosti",
+        "price": "od 55 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Studio",
+    "highlight": "Verde"
+  },
+  "metadata": {
+    "title": "Studio Verde | Masaža in dobro počutje Škofljica",
+    "description": "Sprostitev, nego telesa in duha ter lajšanje mišičnih napetosti v mirnem ambientu na Škofljici z okolico. Rezervirajte svoj termin za masažo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masaža in dobro počutje",
+    "title": "Sprostitev in nego telesa ter duha v",
+    "titleHighlight": "Studiu Verde",
+    "description": "Nudimo strokovne masaže za ljudi, ki iščejo sprostitev, lajšanje napetosti v mišicah in boljše počutje v Škofljici z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Naravni ambient",
+        "label": "Naravni ambient"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Sprostitev",
+        "label": "Sprostitev"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Izberite masažo po vaši meri",
+    "description": "Vsaka masaža v Studiu Verde na Škofljici je prilagojena vašim trenutnim potrebam in željam po sprostitvi ali odpravi napetosti.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Tradicionalna masaža celega telesa za sprostitev napetih mišic in izboljšanje prekrvavitve.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Intenzivnejša masaža, namenjena sprostitvi globokih mišičnih plasti in podpori pri okrevanju.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi in pomirjujoč ambient za popoln odklop od vsakodnevnega stresa.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža z eteričnimi olji",
+        "description": "Aromaterapevtska masaža, ki s pomočjo naravnih olj blagodejno vpliva na telo in duha.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljno usmerjena obravnava za lajšanje specifičnih bolečin in napetosti v telesu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaše zatočišče miru in dobrega počutja",
+    "description": "V Studiu Verde se posvetimo vsakemu posamezniku z individualnim pristopom in posluhom za vaše telo.",
+    "highlights": [
+      "Prilagojen pristop k vsaki stranki",
+      "Prijeten in miren ambient",
+      "Strokovne maserske storitve"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojen pristop",
+        "description": "Masažo vedno prilagodimo vašim trenutnim potrebam in počutju.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Uživajte v mirnem, naravnem in domačem okolju, ustvarjenem za vaš oddih.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Strokovne storitve",
+        "description": "Zanesljive in strokovne maserske tehnike za učinkovito lajšanje napetosti.",
+        "title": "Strokovne storitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Rezervirajte svoj termin",
+    "description": "Stopite v stik z nami za vprašanja ali rezervacijo masaže v Škofljici.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ob pošti 23, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 270 470",
+        "href": "tel:070270470",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ob pošti 23, 1291 Škofljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Studio Verde",
+    "address": "Ob pošti 23, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "070 270 470"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

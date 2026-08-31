@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtostoritve Omejec, Luka Omejec s.p.",
+  "industry": "Avtoreparaturna delavnica in servisi",
+  "tagline": "Zanesljiv avtoservis in vzdrževanje vozil v Medvodah",
+  "services": [
+    "Redni avtoservisi",
+    "Menjava gum in premontaža",
+    "Zavorni sistemi",
+    "Diagnostika vozil",
+    "Splošna popravila vozil"
+  ],
+  "phone": "040 384 627",
+  "email": "",
+  "address": "Zbiljska cesta 5, 1215 Medvode, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena strank 4.9",
+    "Zanesljiva in strokovna storitev",
+    "Prijazen odnos do strank"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Medvodah in okolici",
+  "serviceArea": "Medvode s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice",
+  "callToAction": "Pokličite za termin"
+}

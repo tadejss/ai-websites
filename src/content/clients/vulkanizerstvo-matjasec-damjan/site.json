@@ -1,0 +1,293 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-matjasec-damjan/hero.avif",
+      "alt": "Strokovne vulkanizerske storitve in menjava pnevmatik",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-matjasec-damjan/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5260115",
+      "sourceUrl": "https://www.pexels.com/photo/person-holding-a-tire-5260115/",
+      "photographer": "Enis Yavuz",
+      "photographerUrl": "https://www.pexels.com/@enis-yavuz-3516387",
+      "searchQuery": "tire shop mechanic changing tire"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-matjasec-damjan/services.avif",
+      "alt": "Menjava pnevmatik in centriranje platišč v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-matjasec-damjan/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8815800",
+      "sourceUrl": "https://www.pexels.com/photo/man-changing-vehicle-tire-8815800/",
+      "photographer": "Muhammad  Khawar Nazir",
+      "photographerUrl": "https://www.pexels.com/@drmkhawarnazir",
+      "searchQuery": "tire shop mechanic changing tire"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled naših storitev in cen",
+    "description": "Pregled cen za osnovne vulkanizerske storitve v naši delavnici.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Menjava pnevmatik (komplet)",
+        "description": "Demontaža, montaža in centriranje za 4 kolesa",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Centriranje platišč (komplet)",
+        "description": "Natančno centriranje jeklenih ali alu platišč",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Hramba pnevmatik (sezona)",
+        "description": "Varno skladiščenje pnevmatik za 6 mesecev",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Popravilo pnevmatike",
+        "description": "Sanacija poškodbe in krpanje gume",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Svetovanje pri nakupu",
+        "description": "Strokovni nasveti pri izbiri novih gum",
+        "price": "Brezplačno"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vulkanizerstvo",
+    "highlight": "Matjašec Damjan s.p."
+  },
+  "metadata": {
+    "title": "Vulkanizerstvo Matjašec Damjan s.p. | Menjava pnevmatik Ljubljana",
+    "description": "Zanesljive vulkanizerske storitve, menjava in hramba pnevmatik v Ljubljani ter okolici. Hitro, strokovno in zanesljivo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni vulkanizer v Ljubljani",
+    "title": "Zanesljive vulkanizerske storitve in",
+    "titleHighlight": "menjava pnevmatik",
+    "description": "Strokovne vulkanizerske storitve za lastnike osebnih in dostavnih vozil v Ljubljani in širši okolici. Poskrbite za varno vožnjo z našo pomočjo.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Hitra izvedba",
+        "label": "Hitra izvedba",
+        "title": "Hitra izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Prijazen pristop",
+        "label": "Prijazen pristop",
+        "title": "Prijazen pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite vulkanizerske storitve",
+    "description": "Zagotavljamo hitro, zanesljivo in strokovno obravnavo vašega vozila z dolgoletnimi izkušnjami.",
+    "items": [
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in natančna menjava pnevmatik za osebna in dostavna vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Centriranje platišč",
+        "description": "Natančno centriranje platišč za mirno in varno vožnjo brez tresljajev.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Hramba pnevmatik",
+        "description": "Varno in ustrezno skladiščenje vaših pnevmatik izven sezone.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravilo pnevmatik",
+        "description": "Strokovno krpanje in popravilo poškodovanih pnevmatik, kjer je to mogoče.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri nakupu guma",
+        "description": "Strokovno svetovanje pri izbiri najustreznejših pnevmatik za vaše vozilo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanje, hitrost in strokovnost",
+    "description": "Naše poslanstvo je zagotoviti varno vožnjo vsake stranke z osebnim pristopom.",
+    "highlights": [
+      "Vrhunska ocena in zaupanje strank",
+      "Hitra in strokovna izvedba storitev",
+      "Prijazno osebje in zanesljivost"
+    ],
+    "benefits": [
+      {
+        "label": "Zaupanje strank",
+        "description": "Ponašamo se z odličnimi ocenami in dolgoletnim zaupanjem voznikov.",
+        "title": "Zaupanje strank"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Cenimo vaš čas, zato storitve opravimo hitro in brez kompromisov pri kakovosti.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Prijazno osebje in strokovna oprema zagotavljajo brezhibno storitev.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za menjavo pnevmatik ali nas povprašajte za nasvet.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Grič 5b, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 749 677",
+        "href": "tel:041749677",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Petek: 8:00 - 16:00, Sobota - Nedelja: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Grič 5b, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane. Vulkanizerstvo Matjašec Damjan s.p."
+  },
+  "business": {
+    "name": "Vulkanizerstvo Matjašec Damjan s.p.",
+    "address": "Grič 5b, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 749 677"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

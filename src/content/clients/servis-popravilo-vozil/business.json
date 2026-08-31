@@ -1,0 +1,28 @@
+{
+  "companyName": "Servis in popravilo vozil Dejan Tavčar s.p.",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Zanesljivo vzdrževanje in popravilo vozil v Domžalah",
+  "services": [
+    "Redni servisi vozil",
+    "Mehanična popravila",
+    "Diagnostika napak",
+    "Priprava vozil na tehnični pregled",
+    "Menjava gum in premontaža"
+  ],
+  "phone": "040 580 151",
+  "email": "",
+  "address": "Depala vas 4, 1230 Domžale, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 6:00 PM · Tuesday: 7:00 AM – 6:00 PM · Wednesday: 7:00 AM – 6:00 PM · Thursday: 7:00 AM – 6:00 PM · Friday: 7:00 AM – 6:00 PM · Saturday: 8:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Zelo visoka ocena zadovoljstva strank",
+    "Prilagodljiv delovni čas med tednom in ob sobotah",
+    "Strokoven in zanesljiv pristop k popravilom"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil, ki potrebujejo zanesljiv avtoservis",
+  "serviceArea": "Domžale in okolica",
+  "yearsExperience": "",
+  "tone": "profesionalen, zaupanja vreden",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalni avtomehaniki v regiji Domžale",
+  "callToAction": "Rezervirajte termin"
+}

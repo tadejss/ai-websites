@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtomehanična delavnica Pelko",
+  "industry": "Avtomehanične storitve",
+  "tagline": "Zanesljivo in strokovno vzdrževanje vašega vozila",
+  "services": [
+    "Redni servis vozil",
+    "Popravila motorjev",
+    "Zavorni sistem in podvozje",
+    "Premontaža in hramba pnevmatik",
+    "Diagnostika napak"
+  ],
+  "phone": "041 667 335",
+  "email": "",
+  "address": "Zgornja Senica 46, 1215 Medvode, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 1:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena strank in preverjena kakovost",
+    "Strokovno in zanesljivo osebje",
+    "Hitra odzivnost in celovite storitve"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil, ki potrebujejo zanesljiv servis in vzdrževanje",
+  "serviceArea": "Medvode in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v regiji",
+  "callToAction": "Rezervirajte termin"
+}

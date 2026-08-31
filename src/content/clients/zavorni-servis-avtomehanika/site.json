@@ -1,0 +1,281 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zavorni-servis-avtomehanika/hero.avif",
+      "alt": "Mehanik popravlja zavorni sistem v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zavorni-servis-avtomehanika/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28153670",
+      "sourceUrl": "https://www.pexels.com/photo/a-young-man-is-working-on-a-car-engine-28153670/",
+      "photographer": "dionisio castigotivane",
+      "photographerUrl": "https://www.pexels.com/@dionisio-castigotivane-1013672643",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zavorni-servis-avtomehanika/services.avif",
+      "alt": "Menjava zavornih diskov in servis zavor",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zavorni-servis-avtomehanika/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315571",
+      "sourceUrl": "https://www.pexels.com/photo/an-auto-mechanic-repairing-the-car-engine-4315571/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave; za natančno ponudbo nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pregled zavornega sistema",
+        "description": "Celovit pregled stanja zavor in ploščic",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava zavornih diskov",
+        "price": "od 80 €"
+      },
+      {
+        "name": "Redni avtoservis",
+        "description": "Zamenjava olja in filtrov",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Diagnostika vozila",
+        "price": "od 40 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtomehanika",
+    "highlight": "Vič"
+  },
+  "metadata": {
+    "title": "Zavorni servis Avtomehanika Vič | Ljubljana",
+    "description": "Specializiran zavorni servis in splošno vzdrževanje vozil v Ljubljani za lastnike osebnih vozil."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zavorni servis v Ljubljani",
+    "title": "Specializiran zavorni servis in vzdrževanje vozil",
+    "titleHighlight": "Avtomehanika Vič",
+    "description": "Zanesljiva in strokovna storitev za lastnike osebnih vozil v Ljubljani in okolici, s poudarkom na varnosti vašega voznega parka.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Specializacija za zavore"
+      },
+      {
+        "value": "Vič",
+        "label": "Priročna lokacija"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Kakovostna storitev"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Poskrbite za varnost in brezhibno delovanje vašega avtomobila z našimi specializiranimi storitvami na Viču.",
+    "items": [
+      {
+        "title": "Servis zavor in menjava ploščic",
+        "description": "Hitra in strokovna menjava zavornih ploščic za varno ustavljanje na cesti.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pregled in popravilo zavornega sistema",
+        "description": "Celovit diagnostični pregled in odprava napak na zavornem sistemu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Menjava zavornih diskov",
+        "description": "Kakovostna menjava obrabljenih zavornih diskov z ustreznimi nadomestnimi deli.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Redni avtoservis",
+        "description": "Splošno vzdrževanje in redni servis za dolgo življenjsko dobo vašega vozila.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno ugotavljanje napak in pregled delovanja elektronskih sklopov vozila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše zavore",
+    "description": "Zavedamo se, kako pomembna je varnost na cesti, zato se pri delu osredotočamo na natančnost in strokovnost.",
+    "highlights": [
+      "Specializacija za zavorne sisteme",
+      "Zanesljiva in strokovna storitev",
+      "Lokacija na Viču v Ljubljani"
+    ],
+    "benefits": [
+      {
+        "label": "Specializacija za zavore",
+        "description": "Poglobljeno znanje in osredotočenost na zavorne sisteme za maksimalno varnost.",
+        "title": "Specializacija za zavore"
+      },
+      {
+        "label": "Strokovna storitev",
+        "description": "Zanesljivo delo in natančen pregled vsakega vozila.",
+        "title": "Strokovna storitev"
+      },
+      {
+        "label": "Odlična lokacija",
+        "description": "Nahajamo se na Viču v Ljubljani, kar omogoča preprost dostop.",
+        "title": "Odlična lokacija"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis zavor ali postavite vprašanje glede vašega vozila.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 873 089",
+        "href": "tel:031873089",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Tbilisijska ulica 53, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Tbilisijska ulica 53, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtomehanika Vič",
+    "address": "Tbilisijska ulica 53, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "031 873 089"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

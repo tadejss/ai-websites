@@ -1,0 +1,284 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravilo-motornih/hero.avif",
+      "alt": "Avtomehanik med popravilom motorja v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravilo-motornih/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8986105",
+      "sourceUrl": "https://www.pexels.com/photo/a-serviceman-in-blue-coverall-standing-under-a-vehicle-and-fixing-it-8986105/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "car repair shop professional mechanic"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravilo-motornih/services.avif",
+      "alt": "Diagnostika vozil v sodobni avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravilo-motornih/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985924",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-on-a-car-8985924/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional auto repair shop mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled osnovnih storitev vzdrževanja in popravil motornih vozil.",
+    "disclaimer": "Cenik je informativen. Za točne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (delo)",
+        "description": "Menjava olja in vseh filtrov",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Sprednja ali zadnja os",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled podvozja, zavornih in svetlobnih teles",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Ura avtomehaničnega dela",
+        "description": "Splošna popravila in servis",
+        "price": "od 40 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtomehanična delavnica",
+    "highlight": "Damjan Prešeren s.p."
+  },
+  "metadata": {
+    "title": "Vzdrževanje in popravilo vozil Damjan Prešeren s.p. | Kamnik",
+    "description": "Zanesljivo vzdrževanje, redni servisi, diagnostika in popravila vozil v Kamniku z okolico. Pokličite nas za zaupanja vredne storitve."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv avtomehanik v Kamniku",
+    "title": "Zanesljivo vzdrževanje in popravilo",
+    "titleHighlight": "vašega motornega vozila",
+    "description": "Strokovne avtomehanične storitve za lastnike motornih vozil v Kamniku in okolici z osebnim pristopom.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Kamnik",
+        "label": "Lokalna storitev"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovito vzdrževanje in popravila vozil",
+    "description": "Poskrbimo za brezhibno delovanje vašega jeklenega konjička z zanesljivimi storitvami v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Menjava olja, filtrov in pregled ključnih sklopov za varno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila motorjev",
+        "description": "Strokovno odpravljanje napak in popravila pogonskih sklopov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled in zamenjava zavornih ploščic, diskov ter tekočin.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Hitro in natančno odkrivanje elektronskih ter mehanskih napak.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava na tehnični pregled",
+        "description": "Temeljit pregled vozila, da boste na tehničnem pregledu brez skrbi.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vredne storitve za vaše vozilo",
+    "description": "Zavedamo se pomena varnosti na cesti, zato se vsakemu vozilu posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Strokovno in zanesljivo popravilo vozil",
+      "Osebni pristop k strankam",
+      "Kakovostne storitve vzdrževanja"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovno popravilo",
+        "description": "Zanesljivo in natančno delo na vašem motornem vozilu.",
+        "title": "Strokovno popravilo"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in svetujemo najboljšo rešitev.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Kakovost vzdrževanja",
+        "description": "Uporaba preverjenih postopkov za dolgotrajno delovanje.",
+        "title": "Kakovost vzdrževanja"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete servis ali popravilo vozila? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Jeranovo 13a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 582 647",
+        "href": "tel:041582647",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo z vozilom ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Jeranovo 13a, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtomehanična delavnica Damjan Prešeren s.p.",
+    "address": "Jeranovo 13a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 582 647"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

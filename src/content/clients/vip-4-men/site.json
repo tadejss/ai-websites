@@ -1,0 +1,275 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "outfit-bitter"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vip-4-men/hero.avif",
+      "alt": "Notranjost sodobnega brivskega salona v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vip-4-men/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "19664872",
+      "sourceUrl": "https://www.pexels.com/photo/empty-seats-in-barbershop-19664872/",
+      "photographer": "Kawê  Rodrigues",
+      "photographerUrl": "https://www.pexels.com/@kawerodriguess",
+      "searchQuery": "modern upscale barbershop interior dark mood gentleman style"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vip-4-men/services.avif",
+      "alt": "Brivnik med urejanjem brade stranke",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vip-4-men/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "13809247",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-hair-scissors-13809247/",
+      "photographer": "Ulises León",
+      "photographerUrl": "https://www.pexels.com/@ulises-leon-155336674",
+      "searchQuery": "professional barber trimming beard with scissors dark ambient"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled cen",
+    "description": "Pregledna ponudba brivskih storitev za sodobnega moškega.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Moško striženje",
+        "description": "Striženje las s pranjem in zaključnim stylingom",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Urejanje brade",
+        "description": "Striženje, oblikovanje in nega brade",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Klasično britje",
+        "description": "Tradicionalno britje z britevjo in vročo brisačo",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Striženje in brada",
+        "description": "Celoviti paket moškega striženja in urejanja brade",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Oblikovanje pričeske",
+        "description": "Hitro stiliranje in nanos profesionalnih produktov",
+        "price": "od 15 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "ViP 4 MEN",
+    "highlight": "Miklošičeva"
+  },
+  "metadata": {
+    "title": "ViP 4 MEN Miklošičeva | Vrhunski brivec v Ljubljani",
+    "description": "Vrhunske brivske storitve, moško striženje in urejanje brade v središču Ljubljane. Rezervirajte svoj termin za nepozabno izkušnjo urejanja."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Vrhunski brivski salon v Ljubljani",
+    "title": "Vrhunske brivske storitve za",
+    "titleHighlight": "sodobnega moškega",
+    "description": "Profesionalno moško striženje, urejanje brade in klasično britje v samem središču Ljubljane za moške, ki cenijo urejen videz.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Miklošičeva 32",
+        "label": "Lokacija v centru"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Izkušeni brivci"
+      },
+      {
+        "value": "Vrhunsko",
+        "label": "Urejanje brade"
+      },
+      {
+        "value": "Sodobno",
+        "label": "Moški salon"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše brivske storitve",
+    "description": "Specializirani smo za sodobno in klasično moško striženje ter nego brade v Ljubljani.",
+    "items": [
+      {
+        "title": "Moško striženje",
+        "description": "Natančno striženje las, prilagojeno vašemu slogu in obliki obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Urejanje brade",
+        "description": "Oblikovanje, striženje in nega brade z vrhunskimi izdelki.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Klasično britje",
+        "description": "Tradicionalno britje z britevjo in vročimi brisačami za popolno gladkost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje pričesk",
+        "description": "Stiliranje in nanos profesionalnih produktov za urejen videz ves dan.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Izkušnja, ki presega pričakovanja",
+    "description": "V salonu ViP 4 MEN združujemo tradicijo brivecstva s sodobnimi trendi moške nege.",
+    "highlights": [
+      "Strokovni in izkušeni brivci z občutkom za detajle",
+      "Prijeten in sproščen ambient v centru Ljubljane",
+      "Vrhunska nega in izdelki za sodobnega moškega"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovni brivci",
+        "description": "Izkušeni mojstri poskrbijo za vaš popoln videz in pričesko.",
+        "title": "Strokovni brivci"
+      },
+      {
+        "label": "Vrhunski ambient",
+        "description": "Prijetno okolje na Miklošičevi cesti v središču Ljubljane.",
+        "title": "Vrhunski ambient"
+      },
+      {
+        "label": "Celovita nega",
+        "description": "Specializirane storitve za striženje las in nego brade.",
+        "title": "Celovita nega"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Obiščite naš salon",
+    "description": "Naročite se na svoj termin ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Miklošičeva c. 32, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "064 236 836",
+        "href": "tel:064236836",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–21:00, Sob: 8:30–16:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Rezervirajte termin",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo glede prostega termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Miklošičeva c. 32, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "ViP 4 MEN Miklošičeva",
+    "address": "Miklošičeva c. 32, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "064 236 836"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

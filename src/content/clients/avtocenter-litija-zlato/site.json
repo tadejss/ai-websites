@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtocenter-litija-zlato/hero.avif",
+      "alt": "Notranjnost sodobne avtomehanične delavnice z orodjem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtocenter-litija-zlato/hero.webp",
+      "width": 732,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9626877",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
+      "photographer": "MonControlteTechnique",
+      "photographerUrl": "https://www.pexels.com/@moncontroltetechnique-110684920",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtocenter-litija-zlato/services.avif",
+      "alt": "Servisiranje in popravilo vozil v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtocenter-litija-zlato/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985967",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-coverall-standing-near-a-car-8985967/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional car mechanic working in bright workshop interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled okvirnih cen naših najpogostejših avtomehaničnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo glede na tip vozila nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (menjava olja in filtrov)",
+        "description": "Osnovni servis z menjavo motornega olja in filtrskega sklopa.",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik (komplet)",
+        "description": "Premontaža in centriranje za 4 kolesa.",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika vozila",
+        "description": "Odčitavanje in brisanje napak ter pregled parametrov.",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Priprava vozila na tehnični pregled",
+        "description": "Pregled zavornih površin, podvozja, tekočin in luči.",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Menjava ploščic spredaj ali zadaj.",
+        "price": "od 45 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtocenter",
+    "highlight": "Litija Zlato Koleša"
+  },
+  "metadata": {
+    "title": "Avtocenter Litija Zlato Koleša s.p. | Zanesljiv avtoservis",
+    "description": "Zanesljiv avtoservis in popravila vozil v Litiji s širšo okolico. Nudimo redne servise, menjavo pnevmatik, diagnostiko in pripravo na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv avtoservis v Litiji",
+    "title": "Celovita skrb za vaše",
+    "titleHighlight": "vozilo na enem mestu",
+    "description": "Zanesljiv avtoservis in popravila vozil v Litiji in okolici za lastnike osebnih in lahkih gospodarskih vozil.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Strokovno",
+        "label": "osebje",
+        "title": "Strokovno osebje"
+      },
+      {
+        "value": "Zanesljive",
+        "label": "storitve",
+        "title": "Zanesljive storitve"
+      },
+      {
+        "value": "Lokalno",
+        "label": "zaupanje",
+        "title": "Lokalno zaupanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Strokovne avtomehanične storitve",
+    "description": "Poskrbimo za varno in brezhibno delovanje vašega vozila v Litiji s širšo okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Kakovostni redni servisi za dolgo življenjsko dobo in zanesljivost vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik in vulkanizerstvo",
+        "description": "Hitra menjava pnevmatik, centriranje in strokovno svetovanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravila podvozja in zavor",
+        "description": "Pregled in popravilo zavornih sistemov ter elementov podvozja za vašo varnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Sodobna računalniška diagnostika za hitro odkrivanje in odpravo napak.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozil na tehnični pregled",
+        "description": "Temeljit pregled vozila pred tehničnim pregledom, da ga opravite brezskrbno.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z domačim in zaupanja vrednim pristopom poskrbimo, da je vaše vozilo vedno v najboljšem stanju.",
+    "highlights": [
+      "Hitra in učinkovita storitev",
+      "Strokovno osebje z izkušnjami",
+      "Celovita skrb za vaše vozilo"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra storitev",
+        "description": "Hitra in učinkovita izvedba vseh potrebnih posegov na vašem vozilu.",
+        "title": "Hitra storitev"
+      },
+      {
+        "label": "Strokovno osebje",
+        "description": "Izkušena ekipa poskrbi za strokovno obravnavo in kakovostno delo.",
+        "title": "Strokovno osebje"
+      },
+      {
+        "label": "Celovita skrb",
+        "description": "Celostna podpora in vzdrževanje za varno vožnjo na vsakem koraku.",
+        "title": "Celovita skrb"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin ali postavite vprašanje glede servisa vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Brodarska ulica 9, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 409 340",
+        "href": "tel:041409340",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Brodarska ulica 9, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtocenter Litija Zlato Koleša",
+    "address": "Brodarska ulica 9, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "041 409 340"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

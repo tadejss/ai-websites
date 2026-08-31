@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Spomenko Prpič s.p.",
+  "industry": "Avtoservisna dejavnost",
+  "tagline": "Zanesljiv servis in vzdrževanje vašega vozila",
+  "services": [
+    "Redni servisi vozil",
+    "Mehanična popravila",
+    "Menjava pnevmatik",
+    "Zavorni sistemi",
+    "Diagnostika vozil"
+  ],
+  "phone": "041 684 190",
+  "email": "",
+  "address": "Murnova cesta 3, 1290 Grosuplje, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Celovite storitve vzdrževanja za vsa vozila",
+    "Strokoven pristop in izkušnje",
+    "Hitra in zanesljiva izvedba del"
+  ],
+  "targetCustomers": "Lastniki osebnih in lahkih gospodarskih vozil v Grosupljem in okolici",
+  "serviceArea": "Grosuplje z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven in zaupanja vreden",
+  "brandStyle": "zanesljiv lokalni avtoservis",
+  "competitors": "Lokalni avtoservisi in mehanične delavnice v regiji",
+  "callToAction": "Pokličite nas"
+}

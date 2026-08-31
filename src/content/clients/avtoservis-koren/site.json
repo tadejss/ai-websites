@@ -1,0 +1,292 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-koren/hero.avif",
+      "alt": "Sodobna avtoservisna delavnica z mehaniki pri delu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-koren/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985972",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-working-on-an-engine-8985972/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-koren/services.avif",
+      "alt": "Diagnostika in vzdrževanje vozil v avtoservisu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-koren/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985712",
+      "sourceUrl": "https://www.pexels.com/photo/car-engine-in-front-of-a-mechanic-8985712/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik avtoservisa",
+    "description": "Pregled okvirnih cen rednih in preventivnih vzdrževalnih del za vaše vozilo.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (menjava olja in filtrov)",
+        "description": "Osnovni pregled in menjava motornega olja ter oljnega filtra.",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik (komplet 4 koles)",
+        "description": "Premontaža, centriranje in menjava gum na vozilu.",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika vozila",
+        "description": "Priklop na diagnostično napravo in brisanje napak.",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled zavornih točk, podvozja, luči in tekočin.",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic (spredaj ali zadaj)",
+        "description": "Strokovna menjava zavornih oblog.",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "AVTOSERVIS",
+    "highlight": "KOREN"
+  },
+  "metadata": {
+    "title": "Avtoservis Koren | Zanesljiv avtoservis v Ljubljani",
+    "description": "Zanesljiv in strokoven avtoservis za vaše vozilo v Ljubljani in okolici. Redni servisi, menjava pnevmatik, diagnostika in priprava na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na servis"
+  },
+  "hero": {
+    "badge": "Zanesljiv partner za vaše vozilo",
+    "title": "Strokoven avtoservis za",
+    "titleHighlight": "vašo varno vožnjo",
+    "description": "Poskrbite za brezhibno delovanje vašega vozila v Ljubljani s širšo okolico. Nudimo celovite avtoservisne storitve z osebnim in zanesljivim pristopom.",
+    "primaryCta": "Naročite se na servis",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo vzdrževanje"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Lokacija delavnice"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitra izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovito vzdrževanje in popravila vozil",
+    "description": "V avtoservisu Koren nudimo širok nabor storitev za varno in brezskrbno vožnjo vašega jeklenega konjička v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Menjava olja, filtrov in pregled ključnih delov za dolgo življenjsko dobo vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik in premontaža",
+        "description": "Hitra in strokovna menjava ter centriranje pnevmatik za vse letne čase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistem in vzmetenje",
+        "description": "Pregled in popravilo zavornih diskov, ploščic ter vzmetenja za varno ustavljanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "natančno odpravljanje napak na elektroniki in motornih sklopih z napredno opremo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozila na tehnični pregled",
+        "description": "Temeljit pregled celotnega vozila, da boste tehnični pregled opravili brezskrbno.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden avtoservis z izkušnjami",
+    "description": "Zavedamo se, kako pomembna je zanesljivost vašega vozila, zato se vsakemu avtomobilu posvetimo z največjo skrbnostjo.",
+    "highlights": [
+      "Vrhunska ocena zadovoljstva strank",
+      "Strokovno in hitro vzdrževanje vozil",
+      "Zanesljiva in transparentna storitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Strokovno",
+        "label": "Strokovnost",
+        "description": "Strokovno in hitro vzdrževanje vozil z natančno odpravljanjem napak.",
+        "title": "Strokovnost"
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "Transparentnost",
+        "description": "Zanesljiva in transparentna storitev brez skritih stroškov in presenečenj.",
+        "title": "Transparentnost"
+      },
+      {
+        "stat": "Vrhunsko",
+        "label": "Zadovoljstvo",
+        "description": "Vrhunska ocena zadovoljstva strank, ki se rade vračajo k nam.",
+        "title": "Zadovoljstvo"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Naročite se na servis ali postavite vprašanje",
+    "description": "Kontaktirajte nas za rezervacijo termina ali dodatne informacije o naših storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dimičeva ulica 16, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 736 405",
+        "href": "tel:040736405",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite za katero storitev se zanimate...",
+      "submitLabel": "Naročite se na servis"
+    }
+  },
+  "footer": {
+    "address": "Dimičeva ulica 16, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "AVTOSERVIS KOREN",
+    "address": "Dimičeva ulica 16, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 736 405"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

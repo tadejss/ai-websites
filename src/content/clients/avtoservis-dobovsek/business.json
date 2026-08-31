@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Dobovšek",
+  "industry": "Avtoservis in popravilo vozil",
+  "tagline": "Zanesljivo vzdrževanje in popravila vašega vozila v Kamniku",
+  "services": [
+    "Redni avtoservis",
+    "Menjava pnevmatik in premontaža",
+    "Zavorni sistem in vzmetenje",
+    "Diagnostika vozil",
+    "Priprava vozila na tehnični pregled"
+  ],
+  "phone": "041 366 087",
+  "email": "",
+  "address": "Kamniška Cesta 19, 1241 Kamnik, Slovenia",
+  "openingHours": "Monday: 7:30 AM – 4:30 PM · Tuesday: 7:30 AM – 4:30 PM · Wednesday: 7:30 AM – 4:30 PM · Thursday: 7:30 AM – 4:30 PM · Friday: 7:30 AM – 4:30 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Preverjena kakovost storitev z visokimi ocenami strank",
+    "Hitra in zanesljiva izvedba popravil",
+    "Strokovno osebje z izkušnjami"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Kamniku in okolici",
+  "serviceArea": "Kamnik z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden avtoservis",
+  "competitors": "Lokalne avtomehanične delavnice in servisi v regiji",
+  "callToAction": "Rezervirajte termin"
+}

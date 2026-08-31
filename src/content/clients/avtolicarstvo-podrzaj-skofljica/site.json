@@ -1,0 +1,286 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-podrzaj-skofljica/hero.avif",
+      "alt": "Strokovna avtoličarska delavnica in barvanje vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-podrzaj-skofljica/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870314",
+      "sourceUrl": "https://www.pexels.com/photo/person-using-paint-spray-gun-6870314/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-podrzaj-skofljica/services.avif",
+      "alt": "Natančno poliranje in popravilo prask na vozilu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-podrzaj-skofljica/services.webp",
+      "width": 1040,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "11139239",
+      "sourceUrl": "https://www.pexels.com/photo/man-buffing-the-paint-of-the-car-11139239/",
+      "photographer": "Hasan Gulec",
+      "photographerUrl": "https://www.pexels.com/@moonlightshotz",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in se prilagajajo glede na obseg in vrsto poškodbe na vozilu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Popravilo manjših prask",
+        "description": "Lokalna sanacija in barvanje manjših prask na karoseriji",
+        "price": "od 50 €",
+        "featured": false
+      },
+      {
+        "name": "Poliranje celotnega vozila",
+        "description": "Globinsko strojno poliranje in zaščita laka",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Barvanje posameznega elementa",
+        "description": "Priprava in lakiranje enega avtomobilskega dela (npr. odbijač, blatnik)",
+        "price": "od 150 €",
+        "featured": false
+      },
+      {
+        "name": "Sanacija večjih poškodb",
+        "description": "Obsežnejša avtoličarska dela in popravila karoserije",
+        "price": "Po dogovoru",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoličarstvo",
+    "highlight": "Podržaj"
+  },
+  "metadata": {
+    "title": "Avtoličarstvo Podržaj d.o.o. | Avtoličarske storitve in barvanje vozil Škofljica",
+    "description": "Vrhunska avtoličarska dela, barvanje vozil, popravilo prask in sanacija poškodb na Škofljici z okolico. Zanesljiva in strokovna storitev."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovno avtoličarstvo in kleparstvo",
+    "title": "Vrhunska avtoličarska dela in",
+    "titleHighlight": "popravila vozil v Škofljici",
+    "description": "Nudimo kakovostne avtoličarske storitve, barvanje vozil, popravilo prask ter sanacijo poškodb za lastnike vozil v Škofljici z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Visoka ocena",
+        "title": "Visoka ocena"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kaj nudimo za vaše vozilo",
+    "description": "Specializirani smo za celovite avtoličarske storitve in obnovo videza vašega jeklenega konjička na Škofljici z okolico.",
+    "items": [
+      {
+        "title": "Avtoličarske storitve",
+        "description": "Celovite avtoličarske storitve za osebna in druga vozila z uporabo preverjenih materialov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje vozil",
+        "description": "Natančno barvanje posameznih delov ali celotnih vozil v originalnih odtenkih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo prask",
+        "description": "Učinkovito odpravljanje prask, odrgnin in manjših poškodb na karoseriji.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija poškodb",
+        "description": "Strokovna sanacija poškodb in priprava površin pred nanosom barve.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poliranje vozil",
+        "description": "Globinsko poliranje za povrnitev visokega sijaja in zaščito laka vašega avtomobila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Zavedamo se, kako pomemben je videz in brezhibnost vašega vozila, zato se vsakemu projektu posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Kakovostna izvedba avtoličarskih del",
+      "Zanesljiva in strokovna storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Gradimo na visoki oceni in zadovoljstvu naših strank, ki se rade vračajo.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Uporabljamo preverjene metode in poskrbimo za brezhiben končni videz.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Nudimo zanesljivo in strokovno storitev ter korekten odnos do vsake stranke.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete ponudbo za avtoličarska dela? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Žagarska ulica 24, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 615 262",
+        "href": "tel:031615262",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali poškodbo vozila...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Žagarska ulica 24, 1291 Škofljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoličarstvo Podržaj",
+    "address": "Žagarska ulica 24, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "031 615 262"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

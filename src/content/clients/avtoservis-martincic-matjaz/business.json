@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Martinčič, Matjaž Martinčič s.p.",
+  "industry": "Avtoservisna dejavnost",
+  "tagline": "Zanesljivo in strokovno vzdrževanje vašega vozila",
+  "services": [
+    "Redni servisi vozil",
+    "Mehanična popravila",
+    "Diagnostika vozil",
+    "Priprava vozil na tehnični pregled",
+    "Menjava pnevmatik"
+  ],
+  "phone": "031 221 802",
+  "email": "",
+  "address": "Tenetiše, 1270 Litija, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Strokovna in kakovostna izvedba popravil",
+    "Zanesljiv in pošten odnos do strank",
+    "Hitra odzivnost in prilagodljivost"
+  ],
+  "targetCustomers": "Lastniki osebnih in lahkih gospodarskih vozil v okolici Litije",
+  "serviceArea": "Litija s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden servis",
+  "competitors": "Lokalni avtoservisi v občini Litija",
+  "callToAction": "Pokličite za termin"
+}

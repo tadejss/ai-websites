@@ -1,0 +1,294 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-stefko-stefan/hero.avif",
+      "alt": "Avtomehanik med popravilom motorja v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-stefko-stefan/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28153670",
+      "sourceUrl": "https://www.pexels.com/photo/a-young-man-is-working-on-a-car-engine-28153670/",
+      "photographer": "dionisio castigotivane",
+      "photographerUrl": "https://www.pexels.com/@dionisio-castigotivane-1013672643",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-stefko-stefan/services.avif",
+      "alt": "Sodobna avtomehanična delavnica z opremo za diagnostiko",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-stefko-stefan/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8986105",
+      "sourceUrl": "https://www.pexels.com/photo/a-serviceman-in-blue-coverall-standing-under-a-vehicle-and-fixing-it-8986105/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "car repair shop professional mechanic"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled pogostih storitev za vaše osebno vozilo.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (menjava olja in filtrov)",
+        "description": "Osnovni servisni pregled in menjava potrošnega materiala",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik (komplet 4 koles)",
+        "description": "Premontaža in centriranje",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika motorja",
+        "description": "Priklop na tester in brisanje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled zavornih površin, podvozja in luči",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Mehanična dela (ura dela)",
+        "description": "Splošna popravila in menjava delov",
+        "price": "od 45 €",
+        "unit": "/ ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Štefko"
+  },
+  "metadata": {
+    "title": "Avtoservis Štefko | Zanesljivo vzdrževanje vozil Medvode",
+    "description": "Zanesljivo vzdrževanje in popravila vašega vozila v Medvodah in okolici. Redni servisi, menjava gum, diagnostika in priprava na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo vzdrževanje in ",
+    "titleHighlight": "popravila vašega vozila",
+    "description": "Strokovna in zanesljiva storitev za lastnike osebnih vozil vseh znamk v Medvodah in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitro",
+        "title": "Hitro"
+      },
+      {
+        "value": "Vse znamke",
+        "label": "Vse znamke",
+        "title": "Vse znamke"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Poskrbimo za brezhibno delovanje vašega avtomobila z našimi zanesljivimi storitvami v Medvodah.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Redno vzdrževanje in menjava olja ter filtrov za varno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Mehanična popravila",
+        "description": "Kakovostna odprava okvar in popravila sklopov vašega vozila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Menjava gum",
+        "description": "Sezonska menjava in centriranje pnevmatik za vse vrste vozil.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priprava vozil na tehnični pregled",
+        "description": "Temeljit pregled vozila pred obiskom tehničnih pregledov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika motorja",
+        "description": "Natančno odkrivanje napak in težav z napredno diagnostično opremo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv partner za avto",
+    "description": "Zavedamo se pomena varnosti na cesti, zato se posvetimo vsakemu vozilu posebej.",
+    "highlights": [
+      "Strokovna in zanesljiva storitev",
+      "Hitra odzivnost na vaše potrebe",
+      "Visoka raven zadovoljstva strank"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Kakovostna izvedba vseh mehaničnih del in storitev na vozilu.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Hitro urejanje terminov in učinkovita odprava težav.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Zanesljivo vzdrževanje, na katerega se lahko zanesete vsak dan.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin ali postavite vprašanje glede servisa vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Zgornja Senica 16, 1215 Medvode, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 258 488",
+        "href": "tel:051258488",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 8:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite opisu težave ali željeni storitvi...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Zgornja Senica 16, 1215 Medvode, Slovenia",
+    "rights": "Avtoservis Štefko, Štefan Bernard s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Štefko",
+    "address": "Zgornja Senica 16, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "051 258 488"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

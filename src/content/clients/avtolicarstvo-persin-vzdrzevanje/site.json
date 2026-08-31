@@ -1,0 +1,282 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "steel-blue",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-persin-vzdrzevanje/hero.avif",
+      "alt": "Avtoličarska delavnica z avtomobilom v popravilu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-persin-vzdrzevanje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35149611",
+      "sourceUrl": "https://www.pexels.com/photo/auto-body-repair-in-garage-with-tools-35149611/",
+      "photographer": "Melih Can",
+      "photographerUrl": "https://www.pexels.com/@papaz",
+      "searchQuery": "car dent repair bodywork garage"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-persin-vzdrzevanje/services.avif",
+      "alt": "Natančno lakiranje in popravilo avtomobilske karoserije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-persin-vzdrzevanje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470881",
+      "sourceUrl": "https://www.pexels.com/photo/man-repairing-broken-car-8470881/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in se prilagodijo glede na dejansko stanje ter obseg dela na vozilu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manjša popravila prask",
+        "description": "Odprava površinskih prask in manjših poškodb laka.",
+        "price": "od 50 €",
+        "featured": false
+      },
+      {
+        "name": "Lakiranje posameznega elementa",
+        "description": "Strojno priprava in lakiranje enega karoserijskega dela.",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Popravilo karoserije",
+        "description": "Sanacija manjših udrtin in deformacij.",
+        "price": "od 90 €",
+        "featured": false
+      },
+      {
+        "name": "Pregled in vzdrževanje vozil",
+        "description": "Osnovni pregled in priprava vozila.",
+        "price": "od 40 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoličarstvo",
+    "highlight": "Peršin"
+  },
+  "metadata": {
+    "title": "Avtoličarstvo Peršin | Vzdrževanje in popravilo vozil",
+    "description": "Kakovostno vzdrževanje, avtoličarske storitve in popravilo vozil v Ljubljani - Šentvid z okolico. Zanesljivo in strokovno delo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Lokalna avtoličarska delavnica",
+    "title": "Kakovostno vzdrževanje in",
+    "titleHighlight": "popravilo vašega vozila",
+    "description": "Zanesljive avtoličarske in mehanične storitve za lastnike vozil v Ljubljani - Šentvid z okolico. Poskrbimo za brezhiben videz vašega avtomobila.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Natančno delo",
+        "label": "Natančno delo"
+      },
+      {
+        "value": "Lokalna podpora",
+        "label": "Lokalna podpora"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Specializirani smo za avtoličarstvo, popravila karoserije in vzdrževanje vozil na območju Ljubljane - Šentvid z okolico.",
+    "items": [
+      {
+        "title": "Avtoličarske storitve",
+        "description": "Kakovostno barvanje in obnova površin vašega vozila za dolgotrajno zaščito.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Strokovna sanacija poškodb karoserije z natančnim orodjem in tehnikami.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje vozil",
+        "description": "Redni pregledi in vzdrževanje, ki ohranjajo zanesljivost vašega avtomobila.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravilo prask in poškodb",
+        "description": "Učinkovito odstranjevanje manjših prask, udrtin in vidnih poškodb na lakiranih delih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Lakiranje vozil",
+        "description": "Popolna ali delna lakiranja vozil z vrhunskimi materiali in natančno izvedbo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z našim strokovnim in osebnim pristom poskrbimo, da je vaše vozilo vedno v varnih rokah.",
+    "highlights": [
+      "Strokoven pristop k popravilu vozil",
+      "Zanesljivo in natančno delo",
+      "Poudarek na visokem zadovoljstvu strank"
+    ],
+    "benefits": [
+      {
+        "label": "Strokoven pristop",
+        "description": "Vsakemu vozilu se posvetimo z vso skrbnostjo in strokovnim znanjem.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Zanesljivo delo",
+        "description": "Natančna izvedba storitev zagotavlja dolgotrajne rezultate.",
+        "title": "Zanesljivo delo"
+      },
+      {
+        "label": "Lokalna delavnica",
+        "description": "Prisotni v Ljubljani - Šentvid z okolico za hitre in pregledne dogovore.",
+        "title": "Lokalna delavnica"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete avtoličarske storitve ali popravilo karoserije? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica pregnancev 4, 1210 Ljubljana - Šentvid, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 266 412",
+        "href": "tel:031266412",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ulica pregnancev 4, 1210 Ljubljana - Šentvid, Slovenia",
+    "rights": "© Avtoličarstvo Peršin, Andrej Peršin s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoličarstvo Peršin",
+    "address": "Ulica pregnancev 4, 1210 Ljubljana - Šentvid, Slovenia",
+    "email": "",
+    "phone": "031 266 412"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

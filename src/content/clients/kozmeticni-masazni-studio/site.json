@@ -1,0 +1,276 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "wine-velvet",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmeticni-masazni-studio/hero.avif",
+      "alt": "Sproščujoč ambient v masažnem studiu z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmeticni-masazni-studio/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628613",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628613/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmeticni-masazni-studio/services.avif",
+      "alt": "Nega obraza in aromaterapija v prijetnem kozmetičnem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmeticni-masazni-studio/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32178008",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32178008/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean apartment interior green accents"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki iz našega studia",
+    "description": "Oglejte si naš topel in sproščujoč ambient.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled naših priljubljenih kozmetičnih in masažnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Nega obraza",
+        "description": "Osnovna ali prilagojena nega obraza za sijočo polt",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža telesa",
+        "description": "Sproščanje napetosti celega telesa",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Aromaterapevtska masaža",
+        "description": "Masaža z eteričnimi olji",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Kozmetične storitve po izbiri",
+        "description": "Individualne storitve za nego in urejenost",
+        "price": "od 30 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Kozmetični in masažni studio",
+    "highlight": "Anita Struna s.p."
+  },
+  "metadata": {
+    "title": "Kozmetični in masažni studio Anita Struna s.p. | Škofljica",
+    "description": "Celostna nega telesa in sprostitev za vaše dobro počutje v Škofljici z okolico. Kozmetične storitve, masaže, nega obraza in aromaterapija."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Studio Anita Struna",
+    "title": "Celostna nega telesa in",
+    "titleHighlight": "sprostitev",
+    "description": "Poskrbite za svoje dobro počutje, zdravje in urejen videz v prijetnem ambientu na Škofljici z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Odlične ocene",
+        "label": "Odlične ocene"
+      },
+      {
+        "value": "Topel ambient",
+        "label": "Topel ambient"
+      },
+      {
+        "value": "Celostna nega",
+        "label": "Celostna nega"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše ravnovesje in lepoto",
+    "description": "V našem studiu na Škofljici nudimo celostno nego telesa, prilagojeno vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Kozmetične storitve",
+        "description": "Kakovostne kozmetične storitve za urejen videz in zdravje vaše kože.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvene masaže",
+        "description": "Blagodejne masaže za sprostitev napetosti v telesu in umiritev uma.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega obraza",
+        "description": "Nega obraza, prilagojena vašemu tipu kože, za svež in sijoč videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega telesa",
+        "description": "Skrbno izbrani postopki za nego in sprostitev celega telesa.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Aromaterapija",
+        "description": "Blagodejni učinki eteričnih olj za popolno sprostitev čutov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost vašemu dobremu počutju",
+    "description": "Ustvarjamo prostor, kjer se prepletata strokovnost in domačnost.",
+    "highlights": [
+      "Visoka kakovost storitev z odličnimi ocenami strank",
+      "Osebni pristop in prilagojena nega",
+      "Prijeten in sproščujoč ambient"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene",
+        "description": "Visoka kakovost storitev, ki prepriča in navduši naše stranke.",
+        "title": "Odlične ocene"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Popolnoma prilagojena nega glede na vaše osebne želje in potrebe.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Topel, domač in sproščujoč prostor za vaš odmor od vsakdana.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "V veseljem bomo odgovorili na vaša vprašanja in poskrbeli za vaš termin.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dolenjska cesta 373, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 610 839",
+        "href": "tel:031610839",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Dolenjska cesta 373, 1291 Škofljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kozmetični in masažni studio Anita Struna s.p.",
+    "address": "Dolenjska cesta 373, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "031 610 839"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

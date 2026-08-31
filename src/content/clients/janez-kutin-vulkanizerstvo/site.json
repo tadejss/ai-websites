@@ -1,0 +1,287 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/janez-kutin-vulkanizerstvo/hero.avif",
+      "alt": "Vulkanizerska delavnica z opremo za menjavo pnevmatik",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/janez-kutin-vulkanizerstvo/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8986133",
+      "sourceUrl": "https://www.pexels.com/photo/grayscale-photo-of-person-changing-car-tire-with-an-air-wrench-8986133/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "tire shop mechanic changing tire"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/janez-kutin-vulkanizerstvo/services.avif",
+      "alt": "Centriranje in premontaža pnevmatik v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/janez-kutin-vulkanizerstvo/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8815801",
+      "sourceUrl": "https://www.pexels.com/photo/man-using-a-lug-wrench-8815801/",
+      "photographer": "Muhammad  Khawar Nazir",
+      "photographerUrl": "https://www.pexels.com/@drmkhawarnazir",
+      "searchQuery": "tire shop mechanic changing tire"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki iz delavnice",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled pogostih vulkanizerskih storitev in okvirnih cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Premontaža pnevmatik",
+        "description": "Demontaža, montaža in centriranje",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Centriranje platišč",
+        "description": "Centriranje za eno kolo",
+        "price": "od 10 €"
+      },
+      {
+        "name": "Popravilo pnevmatike",
+        "description": "Sanacija poškodbe ali defekta",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Hramba pnevmatik",
+        "description": "Sezonska hramba kompletnega garnitura",
+        "price": "od 30 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vulkanizerstvo",
+    "highlight": "Kutin"
+  },
+  "metadata": {
+    "title": "Janez Kutin s.p. | Zanesljive vulkanizerske storitve v Grosupljem",
+    "description": "Zanesljive vulkanizerske in avtomehanične storitve v Grosupljem z okolico. Premontaža, centriranje, popravilo, hramba in prodaja pnevmatik."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljive vulkanizerske storitve",
+    "titleHighlight": "v Grosupljem",
+    "description": "Strokovne vulkanizerske storitve za lastnike osebnih in lahkih gospodarskih vozil v Grosuplju z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitro",
+        "title": "Hitro"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Osebno",
+        "label": "Osebno",
+        "title": "Osebno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovite vulkanizerske rešitve za vaše vozilo v Grosupljem z okolico.",
+    "items": [
+      {
+        "title": "Premontaža pnevmatik",
+        "description": "Hitra in strokovna premontaža pnevmatik za osebna in lahka gospodarska vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Centriranje platišč",
+        "description": "Natančno centriranje platišč za varno in udobno vožnjo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo pnevmatik",
+        "description": "Zanesljivo popravilo poškodovanih pnevmatik, kjer je to mogoče in varno.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Hramba pnevmatik",
+        "description": "Primerna in varna hramba vaših pnevmatik izven sezonske uporabe.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prodaja pnevmatik",
+        "description": "Svetovanje in prodaja kakovostnih pnevmatik za vaš avtomobil.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas?",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke poskrbimo za varno vožnjo vašega vozila.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Hitra in strokovna izvedba storitev",
+      "Zanesljiv družinski vulkanizer z izkušnjami"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka ocena strank",
+        "description": "Zadovoljstvo naših strank potrjuje kakovost in zanesljivost našega dela.",
+        "title": "Visoka ocena strank"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Storitve opravimo strokovno in v dogovorjenem času.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Družinska tradicija",
+        "description": "Zanesljiv lokalni vulkanizer z osebnim pristopom do vsake stranke.",
+        "title": "Družinska tradicija"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik",
+    "description": "Pokličite nas ali nas obiščite v naši delavnici v Grosupljem.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gasilska Cesta 23, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 692 740",
+        "href": "tel:041692740",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Gasilska Cesta 23, 1290 Grosuplje, Slovenia",
+    "rights": "Vse pravice pridržane. Janez Kutin s.p."
+  },
+  "business": {
+    "name": "Vulkanizerstvo Kutin",
+    "address": "Gasilska Cesta 23, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "041 692 740"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

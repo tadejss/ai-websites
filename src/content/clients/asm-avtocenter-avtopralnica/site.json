@@ -1,0 +1,293 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/asm-avtocenter-avtopralnica/hero.avif",
+      "alt": "Sodobna avtopralnica z urejeno notranjostjo in profesionalno opremo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/asm-avtocenter-avtopralnica/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870330",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-dress-shirt-and-blue-denim-jeans-sitting-on-brown-wooden-seat-6870330/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/asm-avtocenter-avtopralnica/services.avif",
+      "alt": "Menjava pnevmatik in vulkanizerske storitve v urejeni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/asm-avtocenter-avtopralnica/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870322",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-long-sleeve-shirt-standing-beside-orange-car-6870322/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled osnovnih storitev ročnega pranja, čiščenja in vulkanizerskih del.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Zunanje ročno pranje",
+        "description": "Predpranje, šamponiranje, sušenje z usnjem in čiščenje pragov.",
+        "price": "od 15 €",
+        "featured": false
+      },
+      {
+        "name": "Notranje in zunanje pranje",
+        "description": "Celovito pranje zunanjosti ter sesanje in brisanje prahu v kabini.",
+        "price": "od 30 €",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje notranjosti",
+        "description": "Temeljito mokro čiščenje sedežev, preprog in prtljažnika.",
+        "price": "od 90 €",
+        "featured": false
+      },
+      {
+        "name": "Menjava pnevmatik (komplet 4)",
+        "description": "Demontaža, montaža in centriranje pnevmatik.",
+        "price": "od 40 €",
+        "featured": false
+      },
+      {
+        "name": "Hramba pnevmatik (sezonska)",
+        "description": "Varno skladiščenje vašega kompleta pnevmatik v ustreznih pogojih.",
+        "price": "od 30 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "ASM",
+    "highlight": "Avtocenter"
+  },
+  "metadata": {
+    "title": "ASM Avtocenter | Avtopralnica in Vulkanizerstvo Ljubljana",
+    "description": "Celovite storitve ročnega pranja, globinskega čiščenja in vulkanizerstva v Ljubljani s širšo okolico. Zanesljiva skrb za vaše vozilo na enem mestu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni avtocenter v Ljubljani",
+    "title": "Celovite storitve pranja in vulkanizerstva",
+    "titleHighlight": "za vaše vozilo",
+    "description": "Poskrbite za brezhibno čistočo in varnost vašega jeklenega konjička na enem mestu v Ljubljani in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vse na enem mestu",
+        "label": "Pranje in pnevmatike"
+      },
+      {
+        "value": "Lokacija Tacenska",
+        "label": "Ljubljana Šiška"
+      },
+      {
+        "value": "Hitro in zanesljivo",
+        "label": "Strokovna izvedba"
+      },
+      {
+        "value": "Vsak dan",
+        "label": "Prilagodljiv urnik"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše vozilo",
+    "description": "Ponujamo celovito nego in vulkansko podporo za ohranjanje vrednosti ter varnosti vašega avtomobila.",
+    "items": [
+      {
+        "title": "Ročno pranje vozil",
+        "description": "Temeljito zunanje ročno pranje za lesk in zaščito lakirane površine vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Globinsko čiščenje notranjosti",
+        "description": "Popolno osveževanje in odstranjevanje trdovratnih madežev s sedežev ter tekstilnih površin.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in strokovna menjava pnevmatik za varno vožnjo v vseh vremenskih razmerah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Premontaža in centriranje",
+        "description": "Natančno centriranje in premontaža platišč za udobno in uravnoteženo vožnjo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Hramba pnevmatik",
+        "description": "Varno in ustrezno skladiščenje vaših pnevmatik izven sezone.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati ASM",
+    "title": "Prednosti našega avtocentra",
+    "description": "Z združitvijo avtopralnice in vulkanizerstva vam prihranimo čas ter poskrbimo za celovito nego vašega avtomobila.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Hitra in zanesljiva izvedba storitev",
+      "Celovita skrb za čistočo in pnevmatike na enem mestu"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Naše delo temelji na visokih standardih kakovosti in pozitivnih izkušnjah voznikov.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Cenimo vaš čas, zato storitve opravimo hitro, zanesljivo in brez odvečnega čakanja.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Vse na enem mestu",
+        "description": "Združujemo avtopralnico in vulkanizerstvo za celovito oskrbo vašega vozila v Ljubljani.",
+        "title": "Vse na enem mestu"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte termin ali postavite vprašanje",
+    "description": "Obiščite naš avtocenter na Tacenski cesti v Ljubljani ali nas pokličite za hiter dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tacenska cesta 94, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 342 342",
+        "href": "tel:051342342",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–19:00, Sob: 9:00–14:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Npr. 041 123 456",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Tacenska cesta 94, 1000 Ljubljana, Slovenia",
+    "rights": "© 2025 ASM Avtocenter. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "ASM Avtocenter",
+    "address": "Tacenska cesta 94, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "051 342 342"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

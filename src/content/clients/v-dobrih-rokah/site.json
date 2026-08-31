@@ -1,0 +1,274 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/v-dobrih-rokah/hero.avif",
+      "alt": "Strokovna masaža v prijetnem in temnejšem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/v-dobrih-rokah/hero.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/v-dobrih-rokah/services.avif",
+      "alt": "Sproščujoče masaže in pripomočki za dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/v-dobrih-rokah/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628520",
+      "sourceUrl": "https://www.pexels.com/photo/settee-by-the-window-6628520/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled in informativne cene masaž",
+    "description": "Izberite storitev, ki najbolj ustreza vašim trenutnim potrebam.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije terminov nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščanje celega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna nega za umiritev uma",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Ciljano lajšanje napetosti",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Regeneracija za aktivne",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "V dobrih rokah,",
+    "highlight": "masaže David Jerebic s.p."
+  },
+  "metadata": {
+    "title": "V dobrih rokah | Masaže David Jerebic s.p. Škofljica",
+    "description": "Strokovne masaže za vaše dobro počutje v varnih rokah. Klasična, sprostitvena, bolečinska in športna masaža v Škofljici in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masaže in sprostitev Škofljica",
+    "title": "Strokovne masaže za vaše dobro počutje v",
+    "titleHighlight": "varnih rokah",
+    "description": "Poskrbite za sprostitev, lajšanje bolečin v mišicah in izboljšanje splošnega počutja v topel lokalni studio v Škofljici in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Odlične ocene",
+        "label": "Zadovoljne stranke"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Prilagojeno vam"
+      },
+      {
+        "value": "Topel ambient",
+        "label": "Sproščujoče okolje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Varno in zanesljivo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Masaže za sprostitev in lajšanje napetosti",
+    "description": "V našem studiu v Škofljici nudimo celovite masažne storitve, prilagojene vašim individualnim potrebam.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Celostna masaža celega telesa, ki sprošča mišice, izboljšuje prekrvavitev in prispeva k splošnemu ravnovesju.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi za umiritev misli, zmanjšanje stresa ter popolno sprostitev telesa in duha.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljano lajšanje kroničnih ali akutnih bolečin v mišicah in odpravljanje napetosti na problematičnih predelih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Masaža, prilagojena športnikom in aktivnim posameznikom za hitrejšo regeneracijo ter pripravo na napor.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaše telo si zaslužiti najboljšo nego",
+    "description": "Zavedamo se, da je vsak posameznik edinstven, zato se vsaki stranki posvetimo s polno pozornostjo.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Prilagojen pristop k vsaki stranki",
+      "Sproščujoče in prijetno okolje"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljne stranke cenijo našo strokovnost, posluh in dosežene rezultate.",
+        "title": "Odlične ocene"
+      },
+      {
+        "label": "Prilagojen pristop",
+        "description": "Masažo vedno prilagodimo vašim trenutnim potrebam in počutju.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Sproščujoč in topel lokalni studio v Škofljici nudi popolno zatočišče pred vsakodnevnim stresom.",
+        "title": "Prijetno okolje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za masažo ali nas kontaktirajte za več informacij.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gumnišče 6, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 347 154",
+        "href": "tel:031347154",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Gumnišče 6, 1291 Škofljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "V dobrih rokah, masaže David Jerebic s.p.",
+    "address": "Gumnišče 6, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "031 347 154"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

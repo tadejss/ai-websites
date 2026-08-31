@@ -1,0 +1,274 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vrste-masaz/hero.avif",
+      "alt": "Notranjost masažnega salona z mehko osvetlitvijo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vrste-masaz/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628613",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628613/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vrste-masaz/services.avif",
+      "alt": "Masažna miza s svečami in pripravljena za sprostitveno masažo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vrste-masaz/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628520",
+      "sourceUrl": "https://www.pexels.com/photo/settee-by-the-window-6628520/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled rednih masažnih storitev in cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Masaža celega telesa (60 min)",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Aromaterapevtska sprostitev (60 min)",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Ciljna obravnava napetosti (45 min)",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Intenzivna regeneracija (60 min)",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vrste",
+    "highlight": "Masaž"
+  },
+  "metadata": {
+    "title": "Vrste masaž | Sprostitev in dobro počutje v Ljubljani",
+    "description": "Sprostitev in dobro počutje z masažo v Ljubljani. Individualen pristop, strokovne tehnike in prijeten ambient za lajšanje napetosti v mišicah."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažne storitve v Ljubljani",
+    "title": "Sprostitev in dobro počutje z",
+    "titleHighlight": "masažo",
+    "description": "Specializirani smo za ljudi, ki iščejo sprostitev, lajšanje napetosti v mišicah in boljše počutje v Ljubljani s širšo okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Individualno",
+        "label": "Individualno"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      },
+      {
+        "value": "Ssproščeno",
+        "label": "Ssproščeno"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Izberite masažo po vaši meri",
+    "description": "Ponujamo preverjene masažne tehnike za sprostitev telesa in duha ter lajšanje vsakodnevnih napetosti.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Tradicionalna masaža celega telesa za sprostitev mišic in izboljšanje počutja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi in pomirjujoč ambient za popolno odklop od stresnega vsakdana.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljno usmerjena obravnavo zatrdlin in lajšanje bolečin v mišicah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Masaža, prilagojena športnikom in aktivnim posameznikom za hitrejšo regeneracijo.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost vašemu dobremu počutju",
+    "description": "Združujemo strokovne tehnike in individualni pristop za najboljšo izkušnjo vsake stranke.",
+    "highlights": [
+      "Individualen pristop k vsaki stranki",
+      "Strokovne in sprostitvene tehnike",
+      "Prijeten ambient v središču Ljubljane"
+    ],
+    "benefits": [
+      {
+        "label": "Individualni pristop",
+        "description": "Vsaki stranki se posvetimo celostno in prilagodimo masažo njenim trenutnim potrebam.",
+        "title": "Individualni pristop"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Uporabljamo preverjene strokovne in sprostitvene tehnike za učinkovito lajšanje napetosti.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Nahajamo se na Župančičevi ulici v središču Ljubljane, kjer vas čaka topel in sproščujoč prostor.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za masažo ali postavite vprašanje preko spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Župančičeva ulica, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 970 742",
+        "href": "tel:041970742",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Župančičeva ulica, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vrste Masaž",
+    "address": "Župančičeva ulica, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 970 742"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "Alboni avtokleparstvo Borut Vrhovc s.p.",
+  "industry": "avtokleparstvo in popravilo vozil",
+  "tagline": "Kakovostno avtokleparstvo in kleparska dela za vaše vozilo",
+  "services": [
+    "avtokleparska dela",
+    "popravilo karoserije",
+    "sanacija poškodb po toči",
+    "menjava avtotehničnih delov",
+    "priprava vozila na tehnični pregled"
+  ],
+  "phone": "041 696 635",
+  "email": "",
+  "address": "Kosančeva ulica 12, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 4:00 PM · Tuesday: 7:00 AM – 4:00 PM · Wednesday: 7:00 AM – 4:00 PM · Thursday: 7:00 AM – 4:00 PM · Friday: 7:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka strokovnost in natančnost pri delu",
+    "Zanesljiva in hitra izvedba storitev",
+    "Odlične ocena strank"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil, ki potrebujejo karoserijska in kleparska popravila",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "avtentičen lokalni mojster",
+  "competitors": "lokalne avtokleparske delavnice v regiji",
+  "callToAction": "Pokličite za ponudbo"
+}

@@ -1,0 +1,285 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-bojan-zagar/hero.avif",
+      "alt": "Mehanik pri delu v avtoservisni delavnici v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-bojan-zagar/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315574",
+      "sourceUrl": "https://www.pexels.com/photo/person-in-black-long-sleeves-repairing-the-car-engine-4315574/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-bojan-zagar/services.avif",
+      "alt": "Opremljena avtoservisna delavnica za popravilo in vzdrževanje vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-bojan-zagar/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28153670",
+      "sourceUrl": "https://www.pexels.com/photo/a-young-man-is-working-on-a-car-engine-28153670/",
+      "photographer": "dionisio castigotivane",
+      "photographerUrl": "https://www.pexels.com/@dionisio-castigotivane-1013672643",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Transparentne cene storitev",
+    "description": "Pregled okvirnih cen za redna vzdrževalna dela in popravila vozil.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točno ponudbo za vaše vozilo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (mali)",
+        "description": "Menjava olja in oljnega filtra z delom",
+        "price": "od 60 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Sprednja ali zadnja os",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Priprava vozila na tehnični pregled",
+        "description": "Pregled ključnih sklopov vozila",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Pregled in diagnostika motorja",
+        "description": "Priklop na tester in branje napak",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Servisna ura dela",
+        "description": "Splošna avtoservisna dela",
+        "price": "od 45 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Bojan Žagar s.p."
+  },
+  "metadata": {
+    "title": "Avtoservis Bojan Žagar s.p. | Zanesljiv servis vozil",
+    "description": "Zanesljiv in strokovnjak servis za vaše vozilo v Ljubljani in okolici. Nudimo redne servise, popravila motorjev in pripravo na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Lokalni avtoservis v Ljubljani",
+    "title": "Zanesljiv in strokovnjak servis",
+    "titleHighlight": "za vaše vozilo",
+    "description": "Poskrbite za varno in brezskrbno vožnjo vašega osebnega vozila z zanesljivimi storitvami za lastnike v Ljubljani - Šmartno in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Zadovoljne stranke"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Izkušeni mehaniki"
+      },
+      {
+        "value": "Hitro",
+        "label": "Zanesljive storitve"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovito vzdrževanje in popravila vašega vozila",
+    "description": "Strokovne avtoservisne storitve za lastnike osebnih vozil v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Menjava olja, filtrov in pregled ključnih delov za dolgo življenjsko dobo motorja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila motorjev",
+        "description": "Diagnostika in odprava napak ter popravila pogonskih sklopov vozil.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Servis in menjava zavornih ploščic, diskov ter pregled delovanja zavorni tekočine.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje podvozja",
+        "description": "Pregled in popravila elementov podvozja za varno lego na cesti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozil na tehnični pregled",
+        "description": "Temeljit pregled vašega vozila pred obiskom tehničnih pregledov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom poskrbimo, da je vaše vozilo vedno v brezhibnem stanju.",
+    "highlights": [
+      "Visoka ocena in zaupanje strank",
+      "Izkušeni strokovnjaki z znanjem",
+      "Zanesljiva in hitra izvedba storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka ocena strank",
+        "description": "Naše delo temelji na zadovoljstvu strank in kakovostno opravljenih storitvah.",
+        "title": "Visoka ocena strank"
+      },
+      {
+        "label": "Izkušeni strokovnjaki",
+        "description": "Z znanjem in izkušnjami poskrbimo za varno delovanje vašega vozila.",
+        "title": "Izkušeni strokovnjaki"
+      },
+      {
+        "label": "Zanesljiva storitev",
+        "description": "Hitra in zanesljiva izvedba servisnih del ob dogovorjenem času.",
+        "title": "Zanesljiva storitev"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za naročilo na servis ali vprašanja glede vašega vozila.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 711 371",
+        "href": "tel:041711371",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Spodnje Gameljne 40, 1211 Ljubljana - Šmartno, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo z vozilom ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Spodnje Gameljne 40, 1211 Ljubljana - Šmartno, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Bojan Žagar s.p.",
+    "address": "Spodnje Gameljne 40, 1211 Ljubljana - Šmartno, Slovenia",
+    "email": "",
+    "phone": "041 711 371"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

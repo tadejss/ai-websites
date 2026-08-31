@@ -1,0 +1,28 @@
+{
+  "companyName": "Studio Verde",
+  "industry": "Masaža in dobro počutje",
+  "tagline": "Sprostitev in nego telesa ter duha",
+  "services": [
+    "Klasična masaža",
+    "Športna masaža",
+    "Sprostitvena masaža",
+    "Masaža z eteričnimi olji",
+    "Bolečinska masaža"
+  ],
+  "phone": "070 270 470",
+  "email": "",
+  "address": "Ob pošti 23, 1291 Škofljica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prilagojen pristop k vsaki stranki",
+    "Prijeten in miren ambient",
+    "Strokovne maserske storitve"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje napetosti v mišicah in boljše počutje",
+  "serviceArea": "Škofljica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, sproščen, strokoven",
+  "brandStyle": "naraven, miren, domač",
+  "competitors": "Lokalni saloni za masažo in wellness",
+  "callToAction": "Rezervirajte termin"
+}

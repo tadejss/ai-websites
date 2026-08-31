@@ -1,0 +1,283 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-drobni-kovinski/hero.avif",
+      "alt": "Avtokleparska delavnica z opremo za popravilo karoserij",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-drobni-kovinski/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809576",
+      "sourceUrl": "https://www.pexels.com/photo/detailing-expert-polishing-car-in-workshop-37809576/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-drobni-kovinski/services.avif",
+      "alt": "Obdelava kovin in izdelava drobnih kovinskih izdelkov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-drobni-kovinski/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809560",
+      "sourceUrl": "https://www.pexels.com/photo/young-mechanic-polishing-a-red-car-in-workshop-37809560/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih storitev avtokleparstva in kovinarstva.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtokleparska dela (ura dela)",
+        "description": "Strokovno delo na vozilu",
+        "price": "od 40 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Popravilo manjše karoserijske poškodbe",
+        "description": "Sanacija manjših udrtin in poškodb",
+        "price": "od 80 €"
+      },
+      {
+        "name": "Izdelava drobnih kovinskih izdelkov",
+        "description": "Po meri naročnika",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Pregled in ocena poškodbe po trku",
+        "description": "Ocena stanja in stroškov popravila",
+        "price": "Brezplačno"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtokleparstvo",
+    "highlight": "Selan"
+  },
+  "metadata": {
+    "title": "Avtokleparstvo in kovinarstvo Lojze Selan s.p.",
+    "description": "Kakovostno avtokleparstvo, popravilo karoserij in izdelava drobnih kovinskih izdelkov v Ljubljani in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo avtokleparstvo in kovinarstvo",
+    "title": "Kakovostna popravila in kovinski izdelki z",
+    "titleHighlight": "osebnim pristopom",
+    "description": "Nudimo strokovna avtokleparska dela, popravilo karoserij, sanacijo poškodb po trkih ter izdelavo drobnih kovinskih izdelkov za lastnike vozil in naročnike v Ljubljani in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Preverjena",
+        "label": "Kakovost"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Osebni",
+        "label": "Pristop"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovite storitve na področju avtokleparstva in obdelave kovin za stranke v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Strokovna avtokleparska dela za vsa osebna vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo karoserij",
+        "description": "Natančna popravila karoserijskih del in povrnitev prvotnega stanja vozil.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Izdelava drobnih kovinskih izdelkov",
+        "description": "Kakovostna izdelava drobnih kovinskih izdelkov po naročilu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija poškodb po trkih",
+        "description": "Hitra in zanesljiva sanacija poškodb po prometnih nesrečah in trkih.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas?",
+    "description": "Z večletnimi izkušnjami in predanostjo zagotavljamo visoko raven storitev ter zadovoljstvo naših strank.",
+    "highlights": [
+      "Visoka ocena strank in preverjena kakovost",
+      "Zanesljiva in natančna izvedba storitev",
+      "Osebni pristop k vsaki stranki"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivo",
+        "label": "Preverjena kakovost",
+        "description": "Visoka ocena strank in zanesljiva izvedba vseh del.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "stat": "Natančno",
+        "label": "Natančna izvedba",
+        "description": "Skrbno in strokovno opravljena avtokleparska dela.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "stat": "Osebno",
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in nudimo individualne rešitve.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete avtokleparsko storitev? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 712 339",
+        "href": "tel:041712339",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Dobrunjska cesta 8a, 1261 Ljubljana - Dobrunje",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Čet: 8:00 - 15:00, Pet: 8:00 - 14:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše vprašanje ali potrebo po storitvi...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Dobrunjska cesta 8a, 1261 Ljubljana - Dobrunje, Slovenia",
+    "rights": "© 2025 Avtokleparstvo in drobni kovinski izdelki Lojze Selan s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtokleparstvo Selan",
+    "address": "Dobrunjska cesta 8a, 1261 Ljubljana - Dobrunje, Slovenia",
+    "email": "",
+    "phone": "041 712 339"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

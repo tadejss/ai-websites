@@ -1,0 +1,27 @@
+{
+  "companyName": "Ritual studio Iris",
+  "industry": "masažni salon",
+  "tagline": "Sprostitev in dobro počutje za telo in dušo",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Aromaterapevtska masaža",
+    "Masaža hrbta in vratu"
+  ],
+  "phone": "041 621 034",
+  "email": "",
+  "address": "Ljubljanska cesta, 1230 Domžale, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunska osebna obravnava strank",
+    "Sproščujoče in prijetno okolje",
+    "Strokovni pristop k sprostitvi"
+  ],
+  "targetCustomers": "Posamezniki, ki iščejo sprostitev, lajšanje napetosti in skrb za dobro počutje",
+  "serviceArea": "Domžale z okolico",
+  "yearsExperience": "",
+  "tone": "miren, strokoven, prijazen",
+  "brandStyle": "naraven, eleganten, pomirjujoč",
+  "competitors": "Lokalni wellness in masažni studii v regiji",
+  "callToAction": "Rezervirajte termin"
+}

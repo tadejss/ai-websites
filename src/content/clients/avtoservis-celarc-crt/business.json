@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Celarc, Črt Celarc s.p.",
+  "industry": "Avtoservisna delavnica",
+  "tagline": "Zanesljivo in strokovno vzdrževanje vašega vozila na Vrhniki.",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava gum in vulkanizerstvo",
+    "Popravila podvozja in zavor",
+    "Diagnostika vozil",
+    "Priprava vozil na tehnični pregled"
+  ],
+  "phone": "031 396 356",
+  "email": "",
+  "address": "Travniška ulica 2, 1360 Vrhnika, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 3:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene in zaupanje strank",
+    "Strokovna in hitra izvedba storitev",
+    "Osebni pristop in svetovanje"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil na Vrhniki in okolici",
+  "serviceArea": "Vrhnika z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "lokalne avtoservisne delavnice",
+  "callToAction": "Rezervirajte termin"
+}

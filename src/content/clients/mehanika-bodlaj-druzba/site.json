@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mehanika-bodlaj-druzba/hero.avif",
+      "alt": "Mehanik pri delu v sodobni avtomehanični delavnici v Kamniku",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mehanika-bodlaj-druzba/hero.webp",
+      "width": 732,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9626877",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
+      "photographer": "MonControlteTechnique",
+      "photographerUrl": "https://www.pexels.com/@moncontroltetechnique-110684920",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mehanika-bodlaj-druzba/services.avif",
+      "alt": "Orodja in oprema za celovito vzdrževanje in popravila vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mehanika-bodlaj-druzba/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8986105",
+      "sourceUrl": "https://www.pexels.com/photo/a-serviceman-in-blue-coverall-standing-under-a-vehicle-and-fixing-it-8986105/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "car repair shop professional mechanic"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled osnovnih storitev",
+    "description": "Informativne cene naših rednih avtomehaničnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točen izračun nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni avtoservis",
+        "description": "Menjava olja in filtrov (osnovni paket)",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Premontaža in centriranje set (4 kosi)",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Pregled zavornega sistema",
+        "description": "Diagnostika in pregled zavornih ploščic ter diskov",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Ura dela",
+        "description": "Splošna avtomehanična dela in popravila",
+        "price": "od 45 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mehanika",
+    "highlight": "Bodlaj"
+  },
+  "metadata": {
+    "title": "Mehanika Bodlaj | Zanesljivo vzdrževanje in popravila vozil Kamnik",
+    "description": "Zanesljivo vzdrževanje, redni avtoservis in popravila vozil v Kamniku z okolico. Poskrbimo za varnost vašega jeklenega konjička."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Avtomehanične storitve v Kamniku",
+    "title": "Zanesljivo vzdrževanje in popravila",
+    "titleHighlight": "vašega vozila",
+    "description": "Poskrbite za varno vožnjo in dolgo življenjsko dobo vašega avtomobila z zanesljivimi in strokovnimi storitvami za lastnike vozil v Kamniku in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo osebje",
+        "title": "Zanesljivo osebje"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostna izvedba",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Kamnik z okolico",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Celovite avtomehanične storitve",
+    "description": "Za vaše vozilo poskrbimo celostno – od rednega vzdrževanja do zahtevnejših popravil v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Redni avtoservis",
+        "description": "Pravočasno in strokovno vzdrževanje ter menjava tekočin in filtrov za nemoteno delovanje vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila motorjev",
+        "description": "Natančna diagnostika in odpravljanje težav na motornih sklopih za zanesljivo vožnjo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled in popravilo zavornih komponent za vašo popolno varnost na cesti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzmetenje in podvozje",
+        "description": "Vzdrževanje podvozja in vzmetenja za udobno ter stabilno lego na cesti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in strokovna menjava ter ustrezno ravnanje z vašimi pnevmatikami.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Z domačim pristopom, strokovnim znanjem in predanostjo zagotavljamo visoko raven storitev za vsako stranko.",
+    "highlights": [
+      "Strokovno in zanesljivo osebje",
+      "Visoka ocena in zadovoljne stranke",
+      "Kakovostna izvedba vseh storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Natančno in strokovno opravljeno delo na vašem vozilu.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorov in poskrbimo za varnost na cesti.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Domač pristop",
+        "description": "Prijazna obravnava in posluh za potrebe vsake stranke.",
+        "title": "Domač pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte termin za vaše vozilo",
+    "description": "Obiščite nas v Vrhpolju pri Kamniku ali nas pokličite za dogovor o servisu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Vrhpolje pri Kamniku 42, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 418 590",
+        "href": "tel:041418590",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 7:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite za katero storitev se zanimate...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Vrhpolje pri Kamniku 42, 1241 Kamnik, Slovenia",
+    "rights": "Mehanika Bodlaj, d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mehanika Bodlaj",
+    "address": "Vrhpolje pri Kamniku 42, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 418 590"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

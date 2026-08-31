@@ -1,0 +1,28 @@
+{
+  "companyName": "Servis vozil, Tadej Štupar s.p.",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Zanesljiv in strokoven servis vašega vozila v Ljubljani",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava prodajnih gum in premontaža",
+    "Popravila zavornega sistema",
+    "Diagnostika napak na vozilu",
+    "Vzdrževanje in popravila motorja"
+  ],
+  "phone": "041 796 181",
+  "email": "",
+  "address": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in preverjeno zadovoljstvo strank",
+    "Strokovna in zanesljiva storitev",
+    "Osebni pristop k vsakemu vozilu"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici, ki iščejo zanesljivega mehanika",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zaupanja vreden",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

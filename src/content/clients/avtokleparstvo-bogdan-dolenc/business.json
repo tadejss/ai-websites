@@ -1,0 +1,27 @@
+{
+  "companyName": "Avtokleparstvo Bogdan Dolenc s.p.",
+  "industry": "Avtokleparstvo in ličarstvo",
+  "tagline": "Strokovno avtokleparstvo in popravilo vozil v Ljubljani",
+  "services": [
+    "Avtokleparska dela",
+    "Popravilo karoserije",
+    "Sanacija poškodb po toči",
+    "Priprava vozil na tehnični pregled"
+  ],
+  "phone": "041 611 292",
+  "email": "",
+  "address": "Grič 13, 1000 Ljubljana, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljstvo strank",
+    "Zanesljiva in natančna izvedba storitev",
+    "Strokovno svetovanje in hitra odzivnost"
+  ],
+  "targetCustomers": "Lastniki osebnih in lahkih gospodarskih vozil",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zaupanja vreden",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "lokalne avtokleparske delavnice",
+  "callToAction": "Pokličite nas"
+}

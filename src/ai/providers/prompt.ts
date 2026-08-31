@@ -1,4 +1,5 @@
 import type { SiteConfig } from "@/content/types/site";
+import { normalizeGallerySection } from "@/content/apply-new-lead-sections";
 import { validateSiteConfig } from "@/content/validate-site-config";
 import type { BusinessInput } from "../types";
 import { GenerationContentError, toContentError } from "../generation-error";
@@ -253,6 +254,16 @@ export function parseAndValidateSiteConfig(
     throw new GenerationContentError(
       `${providerName} returned invalid JSON`,
     );
+  }
+
+  if (parsed && typeof parsed === "object" && "gallery" in parsed) {
+    const record = parsed as Record<string, unknown>;
+    const rawGallery = record.gallery;
+    if (rawGallery && typeof rawGallery === "object") {
+      record.gallery = normalizeGallerySection(
+        rawGallery as Partial<SiteConfig["gallery"]>,
+      );
+    }
   }
 
   try {

@@ -1,0 +1,278 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "deep-ocean",
+    "fontPairingId": "geist-geist"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-druge-igor/hero.avif",
+      "alt": "Notranjost avtoličarske delavnice z vozilom",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-druge-igor/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470881",
+      "sourceUrl": "https://www.pexels.com/photo/man-repairing-broken-car-8470881/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-druge-igor/services.avif",
+      "alt": "Natančno barvanje in poliranje vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-druge-igor/services.webp",
+      "width": 1040,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "11139239",
+      "sourceUrl": "https://www.pexels.com/photo/man-buffing-the-paint-of-the-car-11139239/",
+      "photographer": "Hasan Gulec",
+      "photographerUrl": "https://www.pexels.com/@moonlightshotz",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostejših storitev avtoličarstva in popravil vozil.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točen izračun nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Poliranje vozil",
+        "description": "Osnovno poliranje in zaščita laka",
+        "price": "od 80 €",
+        "featured": true
+      },
+      {
+        "name": "Barvanje posameznega elementa",
+        "description": "Lakiranje blatnika, odbijača ali vrat",
+        "price": "od 120 €"
+      },
+      {
+        "name": "Sanacija manjših poškodb",
+        "description": "Popravilo manjših prask in udrtin",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Manjša popravila",
+        "description": "Ura dela in manjši posegi na karoseriji",
+        "price": "od 45 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoličarstvo",
+    "highlight": "Igor Habjan s.p."
+  },
+  "metadata": {
+    "title": "Avtoličarstvo Igor Habjan s.p. | Kakovostno barvanje in popravila vozil Ljubljana",
+    "description": "Kakovostno avtoličarstvo in kleparske storitve za vaše vozilo v Ljubljani in okolici. Zanesljiva izvedba, barvanje vozil, sanacija poškodb in poliranje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Avtoličarske storitve Ljubljana",
+    "title": "Kakovostno avtoličarstvo in",
+    "titleHighlight": "kleparske storitve",
+    "description": "Zanesljivo avtoličarstvo in kleparstvo za lastnike vozil v Ljubljani in okolici. Poskrbimo za strokovno popravilo vašega jeklenega konjička.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Odlične ocene",
+        "label": "Odlične ocene",
+        "title": "Odlične ocene"
+      },
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Strokovni pristop",
+        "label": "Strokovni pristop",
+        "title": "Strokovni pristop"
+      },
+      {
+        "value": "Pon-Sob",
+        "label": "Delovni čas"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Specializirani smo za avtoličarstvo, barvanje vozil, sanacijo poškodb, poliranje in manjša popravila v Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Avtoličarstvo",
+        "description": "Strokovne avtoličarske storitve z uporabo preverjenih materialov za popoln videz vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje vozil",
+        "description": "Natančno barvanje celotnih vozil ali posameznih delov z visoko obstojnostjo lakov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sanacija poškodb",
+        "description": "Učinkovita sanacija poškodb na karoseriji in povrnitev prvotnega stanja vašega vozila.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Poliranje vozil",
+        "description": "Globinsko poliranje za odstranitev prask in povrnitev visokega sijaja lakiranih površin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjša popravila",
+        "description": "Hitra in zanesljiva manjša popravila za urejen izgled in nemoteno delovanje vašega vozila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Zavedamo se, kako pomembno vam je vaše vozilo, zato vsakemu projektu posvetimo vso pozornost in strokovnost.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Zanesljiva in natančna izvedba",
+      "Strokovni pristop k vsakemu vozilu"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na odlične ocene in zaupanje naših strank.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsakemu vozilu se posvetimo z maksimalno skrbnostjo in natančnostjo.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Strokovni pristop",
+        "description": "Uporabljamo preverjene metode in poskrbimo za celovito obravnavo.",
+        "title": "Strokovni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali nas obiščite v naši delavnici v Ljubljani.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Preserska ulica 5, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 712 311",
+        "href": "tel:041712311",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon-Sob: 8:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe glede vozila...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Preserska ulica 5, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoličarstvo Igor Habjan s.p.",
+    "address": "Preserska ulica 5, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 712 311"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

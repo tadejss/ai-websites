@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtocenter-elite/hero.avif",
+      "alt": "Avtomehanik pri delu na motorju vozila v sodobni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtocenter-elite/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8986105",
+      "sourceUrl": "https://www.pexels.com/photo/a-serviceman-in-blue-coverall-standing-under-a-vehicle-and-fixing-it-8986105/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "car repair shop professional mechanic"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtocenter-elite/services.avif",
+      "alt": "Orodja in oprema v urejeni avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtocenter-elite/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985712",
+      "sourceUrl": "https://www.pexels.com/photo/car-engine-in-front-of-a-mechanic-8985712/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naša delavnica",
+    "description": "Utrinki iz našega delovnega okolja.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Transparentne cene",
+    "description": "Pregled informativnih cen naših najpogostejših avtomehaničnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in filtrov",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Premontaža pnevmatik",
+        "description": "Komplet 4 pnevmatik z centriranjem",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Pregled napak in brisanje javljanj",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Servis klimatske naprave",
+        "description": "Polnjenje plina in pregled sistema",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Popravilo zavornih sistemov",
+        "description": "Menjava ploščic in diskov",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtocenter",
+    "highlight": "Elite"
+  },
+  "metadata": {
+    "title": "Avtocenter Elite | Zanesljivo vzdrževanje vozil v Ljubljani",
+    "description": "Zanesljivo vzdrževanje in popravilo vašega vozila na enem mestu v Ljubljani s širšo okolico. Redni servisi, diagnostika in pnevmatike."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Vaš zanesljiv lokalni servis",
+    "title": "Zanesljivo vzdrževanje in popravilo vašega",
+    "titleHighlight": "vozila na enem mestu",
+    "description": "Strokovne in zanesljive avtomehanične storitve za lastnike osebnih vozil v Ljubljani in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Vzdrževanje"
+      },
+      {
+        "value": "Hitro",
+        "label": "Odzivnost"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Poskrbimo za brezhibno delovanje vašega avtomobila z zanesljivimi in strokovnimi storitvami v Ljubljani.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Kakovostno izvajanje rednih servisov za varno in dolgo delovanje vašega vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Premontaža in hramba pnevmatik",
+        "description": "Hitra menjava in ustrezna hramba pnevmatik za vse letne čase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Diagnostika napak",
+        "description": "Natančno odkrivanje in odpravljanje tehničnih napak na vašem vozilu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravilo zavornih sistemov",
+        "description": "Pregled in popravilo zavor za vaše varno ustavljanje na cesti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje klimatskih naprav",
+        "description": "Servis in polnjenje avtoklim za prijetno vožnjo v vseh vremenskih razmerah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z našo strokovnostjo in posluhom za stranke poskrbimo, da je vaše vozilo vedno v najboljših rokah.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Strokovna in zanesljiva storitev",
+      "Hitra odzivnost"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Ponašamo se z visokimi ocenami in zaupanjem naših strank.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Strokovna storitev",
+        "description": "Zanesljivo in natančno delo na vsakem vozilu.",
+        "title": "Strokovna storitev"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Pravočasno in učinkovito reševanje težav z vašim avtomobilom.",
+        "title": "Hitra odzivnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite rezervirati termin za servis? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Smoletova ulica 3, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 266 506",
+        "href": "tel:040266506",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 8:00 - 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Smoletova ulica 3, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtocenter Elite",
+    "address": "Smoletova ulica 3, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 266 506"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

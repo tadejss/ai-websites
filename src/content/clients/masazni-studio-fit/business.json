@@ -1,0 +1,27 @@
+{
+  "companyName": "Masažni studio FIT Snežinka, Vesna Monika Einfalt S.P.",
+  "industry": "masažne storitve",
+  "tagline": "Sprostitvene in terapevtske masaže za vaše dobro počutje v Zbiljah.",
+  "services": [
+    "Klasična masaža",
+    "Športna masaža",
+    "Sprostitvena masaža",
+    "Bolečinska terapevtska masaža"
+  ],
+  "phone": "051 330 723",
+  "email": "",
+  "address": "Zbilje 93, 1215 Medvode, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Osebni pristop k vsaki stranki",
+    "Prijeten in sproščujoč ambient"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje napetosti v mišicah in boljše splošno počutje.",
+  "serviceArea": "Zbilje, Medvode z okolico",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, sproščen",
+  "brandStyle": "domač in zanesljiv studio",
+  "competitors": "Lokalni ponudniki masaž in wellness storitev",
+  "callToAction": "Rezervirajte svoj termin"
+}

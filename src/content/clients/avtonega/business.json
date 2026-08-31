@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtonega d.o.o.",
+  "industry": "Avtomehanična delavnica in nega vozil",
+  "tagline": "Celovite storitve vzdrževanja in nega vašega vozila na enem mestu",
+  "services": [
+    "Redni avtoservis",
+    "Popravila vozil",
+    "Menjava pnevmatik",
+    "Diagnostika motorja",
+    "Globinsko čiščenje vozil"
+  ],
+  "phone": "041 870 789",
+  "email": "",
+  "address": "Zbilje 55a, 1215 Medvode, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunske ocene zadovoljnih strank",
+    "Zanesljiva in strokovna izvedba storitev",
+    "Celovita skrb za tehnično brezhibnost in izgled vozila"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil, ki cenijo kakovostno vzdrževanje in nego svojega avtomobila",
+  "serviceArea": "Medvode z okolico in Zbilje",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice in ponudniki avtovleke ter nege",
+  "callToAction": "Rezervirajte termin"
+}

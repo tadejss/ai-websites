@@ -16,19 +16,33 @@ const EMPTY_GALLERY: GallerySectionConfig = {
   items: [],
 };
 
+/** Fill required gallery strings when the model returns a partial section. */
+export function normalizeGallerySection(
+  gallery: Partial<GallerySectionConfig> | undefined,
+): GallerySectionConfig | undefined {
+  if (!gallery) {
+    return undefined;
+  }
+
+  return {
+    ...EMPTY_GALLERY,
+    ...gallery,
+    id: gallery.id?.trim() || EMPTY_GALLERY.id,
+    eyebrow: gallery.eyebrow?.trim() || EMPTY_GALLERY.eyebrow,
+    title: gallery.title?.trim() || EMPTY_GALLERY.title,
+    description: gallery.description?.trim() || EMPTY_GALLERY.description,
+    items: gallery.items ?? [],
+  };
+}
+
 /**
  * Post-AI defaults for newly generated clients only.
  * Enables gallery + pricing flags; keeps gallery items empty unless already present.
  * Ensures pricing disclaimer and adds a #cenik nav link when pricing will be visible.
  */
 export function applyNewLeadSectionDefaults(config: SiteConfig): SiteConfig {
-  const gallery: GallerySectionConfig = config.gallery
-    ? {
-        ...config.gallery,
-        id: config.gallery.id || "galerija",
-        items: config.gallery.items ?? [],
-      }
-    : EMPTY_GALLERY;
+  const gallery: GallerySectionConfig = normalizeGallerySection(config.gallery)
+    ?? EMPTY_GALLERY;
 
   let pricing: PricingSectionConfig | undefined = config.pricing;
   if (pricing) {

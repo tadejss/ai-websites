@@ -1,0 +1,28 @@
+{
+  "companyName": "Mehanika Bodlaj, družba za storitve, d.o.o., Kamnik",
+  "industry": "Avtomehanične storitve",
+  "tagline": "Zanesljivo vzdrževanje in popravila vašega vozila",
+  "services": [
+    "Redni avtoservis",
+    "Popravila motorjev",
+    "Zavorni sistemi",
+    "Vzmetenje in podvozje",
+    "Menjava pnevmatik"
+  ],
+  "phone": "041 418 590",
+  "email": "",
+  "address": "Vrhpolje pri Kamniku 42, 1241 Kamnik, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 5:00 PM · Tuesday: 7:00 AM – 5:00 PM · Wednesday: 7:00 AM – 5:00 PM · Thursday: 7:00 AM – 5:00 PM · Friday: 7:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Strokovno in zanesljivo osebje",
+    "Kakovostna izvedba vseh storitev"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Kamniku in okolici",
+  "serviceArea": "Kamnik z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalne avtomehanične delavnice v regiji",
+  "callToAction": "Rezervirajte termin"
+}

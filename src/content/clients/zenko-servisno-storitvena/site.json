@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zenko-servisno-storitvena/hero.avif",
+      "alt": "Avtomehanik pri delu v sodobni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zenko-servisno-storitvena/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8470679",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-repairing-a-car-8470679/",
+      "photographer": "Anastasia  Shuraeva",
+      "photographerUrl": "https://www.pexels.com/@anastasia-shuraeva",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zenko-servisno-storitvena/services.avif",
+      "alt": "Orodje in diagnostika za vozila v avtoservisu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zenko-servisno-storitvena/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8986105",
+      "sourceUrl": "https://www.pexels.com/photo/a-serviceman-in-blue-coverall-standing-under-a-vehicle-and-fixing-it-8986105/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "car repair shop professional mechanic"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregledne in poštene cene storitev",
+    "description": "Preverite okvirne cene naših rednih in vzdrževalnih del za vaše vozilo.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in natančno ponudbo za vaše vozilo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozil",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava in centriranje pnevmatik",
+        "description": "Komplet 4 koles",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika vozila",
+        "description": "Pregled krmilnih enot in brisanje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Sprednja ali zadnja os",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Ura avtomehaničnega dela",
+        "description": "Splošna mehanična popravila",
+        "price": "od 45 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Ženko",
+    "highlight": "Avtoservis"
+  },
+  "metadata": {
+    "title": "Ženko servisno storitvena dejavnost, d.o.o. Vrhnika | Avtomehanične storitve",
+    "description": "Zanesljiv in strokoven avtoservis za osebna in lahka gospodarska vozila na Vrhnika z okolico. Redni servisi, mehanična popravila, diagnostika in zavorni sistemi."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Lokalni avtoservis na Vrhniki",
+    "title": "Zanesljiv in strokoven avtoservis za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Strokovne avtomehanične storitve za lastnike osebnih in lahkih gospodarskih vozil na območju Vrhnike in okolice. Z zaupanjem poskrbimo za brezhibno delovanje vašega jeklenega konjička.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjeno",
+        "label": "Kakovost storitev",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Popravilo vozil",
+        "title": "Strokovno popravilo"
+      },
+      {
+        "value": "Hitro",
+        "label": "Odzivnost in prilagodljivost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Vrhnika in okolica",
+        "title": "Lokalni partner"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite avtomehanične storitve",
+    "description": "Poskrbimo za redno vzdrževanje in vsa potrebna popravila vašega osebnega ali lahkega gospodarskega vozila na območju Vrhnike z okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Menjava olja, filtrov in pregled ključnih sklopov za varno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Mehanična popravila",
+        "description": "Kakovostna mehanična popravila različnih znamk in tipov vozil.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Menjava pnevmatik in centriranje",
+        "description": "Hitra menjava pnevmatik in natančno centriranje za stabilno vožnjo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Servis in menjava zavornih ploščic, diskov ter ostalih delov zavor.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Računalniška diagnostika napak in pregled elektronike v vozilu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Zavedamo se, kako pomembna je varnost na cesti. Zato se vsakemu vozilu posvetimo z vso skrbnostjo in strokovnostjo.",
+    "highlights": [
+      "Preverjena kakovost storitev z ocenami zadovoljnih strank",
+      "Strokovno in zanesljivo popravilo vozil",
+      "Hitra odzivnost in prilagodljivost strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Kakovost storitev, ki temelji na izkušnjah in pozitivnih izkušnjah naših strank.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Zanesljivo popravilo",
+        "description": "Strokovno odpravljanje težav in vzdrževanje vašega vozila v vrhunski formi.",
+        "title": "Zanesljivo popravilo"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Hitra odzivnost in posluh za vaše želje ter časovne okvirje.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti svoj avtomobil na servis? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 770 501",
+        "href": "tel:041770501",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Velika Ligojna 52a, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeno storitev...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Velika Ligojna 52a, 1360 Vrhnika, Slovenia",
+    "rights": "© Ženko servisno storitvena dejavnost, d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Ženko Avtoservis",
+    "address": "Velika Ligojna 52a, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 770 501"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

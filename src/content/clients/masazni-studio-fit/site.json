@@ -1,0 +1,274 @@
+{
+  "appearance": "health",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "jakarta-fraunces"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-studio-fit/hero.avif",
+      "alt": "Topel in sproščujoč interier masažnega studia",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-studio-fit/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16574941",
+      "sourceUrl": "https://www.pexels.com/photo/beauty-portrait-blonde-woman-applying-cosmetics-face-mask-on-face-16574941/",
+      "photographer": "Vlad Deep",
+      "photographerUrl": "https://www.pexels.com/@vlad-deep-29415806",
+      "searchQuery": "professional skincare treatment spa tools copper clay aesthetic"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-studio-fit/services.avif",
+      "alt": "Strokovna terapevtska masaža za dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-studio-fit/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628520",
+      "sourceUrl": "https://www.pexels.com/photo/settee-by-the-window-6628520/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled osnovnih masažnih storitev in cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sprostitvena masaža celega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Masaža za regeneracijo mišic",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna sprostitev za odklop",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Bolečinska terapevtska masaža",
+        "description": "Lajšanje specifičnih bolečin",
+        "price": "od 55 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "FIT",
+    "highlight": "Snežinka"
+  },
+  "metadata": {
+    "title": "Masažni studio FIT Snežinka | Sprostitvene in terapevtske masaže v Zbiljah",
+    "description": "Sprostitvene in terapevtske masaže v Zbiljah. Poskrbite za svoje dobro počutje in lajšanje napetosti v mišicah."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Masažni studio v Zbiljah",
+    "title": "Sprostitvene in terapevtske masaže za vaše",
+    "titleHighlight": "dobro počutje",
+    "description": "Topel, strokoven in sproščen masažni studio v Zbiljah, namenjen vsem, ki iščete sprostitev, lajšanje napetosti v mišicah in boljše splošno počutje.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Visoka ocena"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve masažnega studia FIT Snežinka",
+    "description": "Izberite storitev, ki najbolj ustreza vašim trenutnim potrebam po sprostitvi ali lajšanju napetosti.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Sproščujoča masaža celega telesa za sprostitev mišic in izboljšanje prekrvavitve.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Intenzivnejša masaža za regeneracijo in pripravo mišic na napor.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi in pomirjujoč ambient za popoln odklop od vsakodnevnega stresa.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Bolečinska terapevtska masaža",
+        "description": "Ciljano usmerjena masaža za lajšanje bolečin in napetosti v kritičnih predelih telesa.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Celostna skrb za vaše dobro počutje",
+    "description": "V našem studiu združujemo strokovnost, domače vzdušje in individualen pristop.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Osebni pristop k vsaki stranki",
+      "Prijeten in sproščujoč ambient"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Naše delo temelji na zaupanju in visoki kakovosti storitev.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in prilagodimo masažo vašemu telesu.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Domač in zanesljiv studio, kjer boste našli svoj mir.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naše ponudbe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Zbilje 93, 1215 Medvode, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 330 723",
+        "href": "tel:051330723",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanje.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Zbilje 93, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "FIT Snežinka",
+    "address": "Zbilje 93, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "051 330 723"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

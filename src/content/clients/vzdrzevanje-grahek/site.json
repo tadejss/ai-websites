@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-grahek/hero.avif",
+      "alt": "Avtomehanična delavnica z opremo za vzdrževanje vozil",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-grahek/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315574",
+      "sourceUrl": "https://www.pexels.com/photo/person-in-black-long-sleeves-repairing-the-car-engine-4315574/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-grahek/services.avif",
+      "alt": "Serviser pri diagnostiki in vzdrževanju avtomobila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-grahek/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8986105",
+      "sourceUrl": "https://www.pexels.com/photo/a-serviceman-in-blue-coverall-standing-under-a-vehicle-and-fixing-it-8986105/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "car repair shop professional mechanic"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki iz naše delavnice",
+    "description": "Oglejte si prostor, kjer skrbimo za vaše vozilo.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene vzdrževanja",
+    "description": "Pregled pogostih storitev za vaše vozilo.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni avtoservis",
+        "description": "Menjava olja in filtrov",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Komplet 4 koles z balansiranjem",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika vozil",
+        "description": "Priklop na računalnik in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pregled zavornega sistema",
+        "description": "Pregled ploščic, diskov in tekočin",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Celovit preventivni pregled vozila",
+        "price": "od 45 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vzdrževanje",
+    "highlight": "Grahek"
+  },
+  "metadata": {
+    "title": "Vzdrževanje Grahek | Avtomehanična delavnica Ljubljana",
+    "description": "Zanesljivo in strokovno vzdrževanje vašega vozila v Ljubljani s širšo okolico. Nudimo redne avtoservise, menjavo pnevmatik, diagnostiko in pripravo na tehnični pregled."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni avtoservis",
+    "title": "Zanesljivo in strokovno vzdrževanje vašega vozila v",
+    "titleHighlight": "Ljubljani",
+    "description": "Za lastnike osebnih vozil v Ljubljani in okolici, ki iščejo zanesljivega mehanika za redni servis, menjavo pnevmatik in diagnostiko.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Prijaznost",
+        "label": "Prijaznost"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Poskrbimo za varno in brezhibno delovanje vašega avtomobila z zanesljivimi storitvami v Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Redni avtoservis",
+        "description": "Redno vzdrževanje in menjava olja ter filtrov za dolgo življenjsko dobo motorja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in strokovna menjava ter balansiranje pnevmatik za varno vožnjo v vseh razmerah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno odkrivanje napak na elektronskih sistemih in motorju vašega vozila.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zavorni sistem",
+        "description": "Pregled, popravilo in menjava zavornih diskov, ploščic ter tekočin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava vozila na tehnični pregled",
+        "description": "Temeljit pregled vašega vozila, da brez skrbi opravite tehnični pregled.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Zavedamo se, kako pomembno je varno vozilo, zato se vsakemu avtomobilu posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Odlične ocene in zadovoljne stranke",
+      "Strokovna in hitra izvedba storitev",
+      "Zanesljivo in pošteno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Strokovna in hitra izvedba storitev z dolgoletnimi izkušnjami.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Pošteno svetovanje",
+        "description": "Zanesljivo in pošteno svetovanje glede vzdrževanja vašega avtomobila.",
+        "title": "Pošteno svetovanje"
+      },
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Odlične ocene in zadovoljne stranke, ki se radi vračajo.",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte termin za servis",
+    "description": "Pokličite nas ali nam pošljite sporočilo za dogovor o terminu vzdrževanja vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 762 187",
+        "href": "tel:041762187",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 8:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite za katero storitev se zanimate...",
+      "submitLabel": "Pokličite za termin"
+    }
+  },
+  "footer": {
+    "address": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vzdrževanje Grahek",
+    "address": "Šmartinska c. 32, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 762 187"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

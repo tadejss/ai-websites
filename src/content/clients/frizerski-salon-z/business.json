@@ -1,0 +1,28 @@
+{
+  "companyName": "Frizerski salon Ž",
+  "industry": "Frizerski salon",
+  "tagline": "Vaša destinacija za čudovite in urejene lase v Ljubljani",
+  "services": [
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje lase",
+    "Prameni in balayage",
+    "Oblikovanje pričesk"
+  ],
+  "phone": "031 676 179",
+  "email": "",
+  "address": "Tacenska cesta 96, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 7:00 PM · Tuesday: 8:00 AM – 7:00 PM · Wednesday: 8:00 AM – 7:00 PM · Thursday: 8:00 AM – 7:00 PM · Friday: 8:00 AM – 7:00 PM · Saturday: 8:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Strokovno in prijazno osebje",
+    "Celovite frizerske storitve za vso družino"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo kakovostne frizerske storitve v Ljubljani",
+  "serviceArea": "Ljubljana s okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "sodoben lokalni salon",
+  "competitors": "Ostali frizerski saloni na območju Ljubljane",
+  "callToAction": "Rezervirajte termin"
+}

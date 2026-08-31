@@ -1,0 +1,289 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-brojan/hero.avif",
+      "alt": "Mehanik pri delu v sodobni avtoservisni delavnici v Kamniku",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-brojan/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985967",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-coverall-standing-near-a-car-8985967/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional car mechanic working in bright workshop interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-brojan/services.avif",
+      "alt": "Avtomobilska diagnostika in orodje v avtoservisni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-brojan/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985972",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-working-on-an-engine-8985972/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Cene osnovnih avtoservisnih storitev in pregledov.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis",
+        "description": "Zamenjava olja in filtrov",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava gum",
+        "description": "Premontaža in centriranje 4 koles",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika motorja",
+        "description": "Priklop na računalnik in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Servis klimatske naprave",
+        "description": "Polnjenje plina in pregled sistema",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Pregled zavornih sistemov",
+        "description": "Pregled ploščic, diskov in tekočine",
+        "price": "od 25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Brojan"
+  },
+  "metadata": {
+    "title": "Avtoservis Brojan | Zanesljivo vzdrževanje in popravilo vozil v Kamniku",
+    "description": "Zanesljivo vzdrževanje in popravilo vašega vozila v Kamniku z okolico. Nudimo redne servise, menjavo gum, diagnostiko motorja in drugo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis v Kamniku",
+    "title": "Zanesljivo vzdrževanje in",
+    "titleHighlight": "popravilo vašega vozila",
+    "description": "Strokovne avtoservisne storitve za lastnike osebnih vozil v Kamniku in okolici. Poskrbimo za varno in brezhibno vožnjo.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "pristop"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "izvedba"
+      },
+      {
+        "value": "Hitro",
+        "label": "delo"
+      },
+      {
+        "value": "Lokalno",
+        "label": "področje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše avtoservisne storitve",
+    "description": "Celovite storitve za vzdrževanje in popravilo vašega avtomobila na enem mestu v Kamniku z okolico.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Strokovno izvajanje rednih servisov za varno delovanje vašega jeklenega konjička.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in premontaža",
+        "description": "Hitra menjava pnevmatik, centriranje in premontaža za vse vrste osebnih vozil.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo zavornih sistemov",
+        "description": "Pregled in popravilo zavornih komponent za vašo varnost na cesti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika motorja",
+        "description": "Natančno odkrivanje napak in težav z napredno računalniško diagnostiko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje klimatskih naprav",
+        "description": "Servis, polnjenje in dezinfekcija klimatskih naprav za prijetno vožnjo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost in osebni pristop",
+    "description": "Zavedamo se pomena varnega vozila, zato se vsakemu avtomobilu posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Vrhunske ocene strank za kakovost storitev",
+      "Hitra in zanesljiva izvedba del",
+      "Strokovno svetovanje in osebni pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Visoki standardi dela in odlične ocene zadovoljnih strank.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Hitro in zanesljivo opravljena dela, da ste spet hitro na cesti.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Strokovno svetovanje in posluh za potrebe vašega vozila.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis ali postavite vprašanje glede vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Bistriška cesta 31, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 291 832",
+        "href": "tel:040291832",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 9:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opičite težavo ali želeno storitev...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Bistriška cesta 31, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Brojan",
+    "address": "Bistriška cesta 31, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "040 291 832"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

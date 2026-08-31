@@ -1,0 +1,28 @@
+{
+  "companyName": "Kraljič Janez - Avtokleparstvo in Avtovleka s.p.",
+  "industry": "Avtokleparstvo in avtovleka",
+  "tagline": "Zanesljivo avtokleparstvo in hitra avtovleka v Ljubljani.",
+  "services": [
+    "Avtokleparska dela",
+    "Avtovleka in prevoz vozil",
+    "Popravilo karoserije",
+    "Pomoč na cesti",
+    "Sanacija poškodb po trku"
+  ],
+  "phone": "031 752 290",
+  "email": "",
+  "address": "Črna vas 290, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 8:00 AM – 8:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Hitra odzivnost na klic",
+    "Celovite storitve avtokleparstva in vleke",
+    "Dolgoletne izkušnje in strokovnost"
+  ],
+  "targetCustomers": "Lastniki vozil v Ljubljani in okolici, ki potrebujejo popravilo karoserije ali prevoz vozila",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalne avtokleparske delavnice in službe za avtovleko v regiji",
+  "callToAction": "Pokličite nas"
+}

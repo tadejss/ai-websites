@@ -1,0 +1,284 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "geist-geist"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/hero.avif",
+      "alt": "Notranjost vulkanizerske delavnice z opremo za premontažo pnevmatik",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870318",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-installing-a-tire-into-a-car-6870318/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "alt": "Mehanik med centriranjem in menjavo pnevmatik",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870316",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-wearing-blue-uniform-holding-a-car-tire-6870316/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled osnovnih vulkanizerskih storitev in okvirnih cen za vaše vozilo.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Premontaža pnevmatik",
+        "description": "Demontaža, montaža in centriranje",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Centriranje platišč",
+        "description": "Natančno centriranje za kos",
+        "price": "od 10 €"
+      },
+      {
+        "name": "Popravilo pnevmatike",
+        "description": "Sanacija poškodbe ali krpanje",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Hramba pnevmatik",
+        "description": "Sezonsko shranjevanje kompleta",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Menjava gum",
+        "description": "Celostna sezonska menjava z demontažo",
+        "price": "od 35 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vulkanizerstvo",
+    "highlight": "Ig"
+  },
+  "metadata": {
+    "title": "Vulkanizerstvo | Premontaža in hramba pnevmatik Ig",
+    "description": "Zanesljive vulkanizerske storitve za lastnike osebnih in dostavnih vozil na Igotu in v okolici Ljubljane. Hitra in strokovna izvedba."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo lokalno vulkanizerstvo",
+    "title": "Zanesljive vulkanizerske storitve za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Strokovne vulkanizerske storitve za lastnike osebnih in dostavnih vozil na Igotu z oklico in v Ljubljani.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Zadovoljstvo strank"
+      },
+      {
+        "value": "Hitra izvedba",
+        "label": "Strokovne storitve"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Zanesljivo vulkanizerstvo"
+      },
+      {
+        "value": "Osebno",
+        "label": "Zaupanja vreden pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite vulkanizerske rešitve",
+    "description": "Poskrbite za varno vožnjo vašega osebnega ali dostavnega vozila z našimi preverjenimi storitvami na Igotu in okolici.",
+    "items": [
+      {
+        "title": "Premontaža pnevmatik",
+        "description": "Hitra in strokovna premontaža pnevmatik za osebna in dostavna vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Centriranje platišč",
+        "description": "Natančno centriranje platišč za udobno in varno vožnjo brez tresljajev.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo pnevmatik",
+        "description": "Zanesljivo krpanje in popravilo poškodovanih pnevmatik, kjer je to mogoče.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Hramba pnevmatik",
+        "description": "Primerno shranjevanje vaših pnevmatik izven sezonskih obdobij.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Menjava gum",
+        "description": "Sezonska menjava gum z ustreznim nategom in pregledom stanja.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše pnevmatike",
+    "description": "Zavedamo se pomena varnosti na cesti, zato se strankam posvečamo strokovno, hitro in z domačim pristopom.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Hitra in strokovna izvedba storitev",
+      "Zanesljivo lokalno vulkanizerstvo"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Ponašamo se z visokimi ocenami in zaupanjem številnih voznikov.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Delo opravimo hitro, zanesljivo in v dogovorjenem roku.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Lokalna dostopnost",
+        "description": "Zanesljivo vulkanizerstvo na Igotu z oklico in v Ljubljani.",
+        "title": "Lokalna dostopnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za termin ali dodatne informacije glede vulkanizerskih storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 670 911",
+        "href": "tel:041670911",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "BS, Ljubljanska cesta 69, 1292 Ig, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec za vprašanja ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeno storitev...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "BS, Ljubljanska cesta 69, 1292 Ig, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vulkanizerstvo Ig",
+    "address": "BS, Ljubljanska cesta 69, 1292 Ig, Slovenia",
+    "email": "",
+    "phone": "041 670 911"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

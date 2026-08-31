@@ -1,0 +1,28 @@
+{
+  "companyName": "Avtoservis Škulj, Klemen Škulj s.p.",
+  "industry": "Avtoreparaterstvo in servis vozil",
+  "tagline": "Zanesljiv in strokoven avtoservis za vaše vozilo",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava gum in vulkanizerstvo",
+    "Zavorni sistemi",
+    "Diagnostika in popravila motorjev",
+    "Priprava vozila na tehnični pregled"
+  ],
+  "phone": "031 444 851",
+  "email": "",
+  "address": "Iška vas 130, 1292 Ig, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljstvo strank",
+    "Hitra in zanesljiva izvedba storitev",
+    "Strokovno svetovanje in osebni pristop"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil, ki potrebujejo zanesljivo vzdrževanje in popravila",
+  "serviceArea": "Ig in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden lokalni avtoservis",
+  "competitors": "Lokalni avtoservisi na območju Iga in Ljubljane z okolico",
+  "callToAction": "Rezervirajte termin"
+}

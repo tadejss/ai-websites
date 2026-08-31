@@ -1,0 +1,27 @@
+{
+  "companyName": "Masaža, salut Lubomir Janeček s.p.",
+  "industry": "Masažne storitve",
+  "tagline": "Strokovne masaže za sprostitev in dobro počutje v Ljubljani",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža",
+    "Športna masaža"
+  ],
+  "phone": "041 480 371",
+  "email": "",
+  "address": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 12:00 PM, 3:00 – 6:00 PM · Tuesday: 9:00 AM – 12:00 PM, 3:00 – 6:00 PM · Wednesday: 9:00 AM – 12:00 PM, 3:00 – 6:00 PM · Thursday: 9:00 AM – 12:00 PM, 3:00 – 6:00 PM · Friday: 9:00 AM – 12:00 PM, 3:00 – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoko ocena in zadovoljne stranke",
+    "Individualen pristop k vsaki stranki",
+    "Sproščujoče in prijetno okolje"
+  ],
+  "targetCustomers": "Ljudje, ki potrebujejo sprostitev, lajšanje napetosti in boljše počutje",
+  "serviceArea": "Ljubljana",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "umirjen, zanesljiv",
+  "competitors": "Lokalni masažni saloni v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

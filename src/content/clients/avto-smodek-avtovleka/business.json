@@ -1,0 +1,27 @@
+{
+  "companyName": "AVTO SMODEK, Avtovleka, Avtoservis, Vulkanizerstvo in Prodaja rezervnih delov",
+  "industry": "Avtomehanične storitve in avtovleka",
+  "tagline": "Zanesljiva avtovleka, avtoservis, vulkanizerstvo in prodaja rezervnih delov na enem mestu",
+  "services": [
+    "Avtovleka in reševanje vozil",
+    "Avtoservis in popravila",
+    "Vulkanizerske storitve",
+    "Prodaja rezervnih delov"
+  ],
+  "phone": "070 714 117",
+  "email": "",
+  "address": "Zbilje, Jeprca) ob glavni cesti, 1215 Medvode, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 3:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena strank in preverjena zanesljivost",
+    "Celovite storitve od avtovleke do servisa in vulkanizerstva",
+    "Hitra in strokovna pomoč ob okvarah na cesti"
+  ],
+  "targetCustomers": "Lastniki vozil, ki potrebujejo hitro pomoč na cesti, redni servis ali menjavo pnevmatik",
+  "serviceArea": "Medvode z okolico in Slovenija",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "odziven lokalni avtoservis",
+  "competitors": "Lokalne avtovleke in avtoservisi v regiji",
+  "callToAction": "Pokličite za pomoč"
+}

@@ -1,0 +1,271 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "blush-champagne",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-salon-zarja/hero.avif",
+      "alt": "Topel in miren prostor masažnega salona",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-salon-zarja/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32178008",
+      "sourceUrl": "https://www.pexels.com/photo/modern-minimalist-living-room-interior-design-32178008/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean apartment interior green accents"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-salon-zarja/services.avif",
+      "alt": "Strokovna masaža v prijetnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-salon-zarja/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628613",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628613/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled naših rednih masažnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sprostitvena masaža celega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna nega za umiritev",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Ciljno lajšanje napetosti",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Intenzivna regeneracija za telo",
+        "price": "od 55 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Masažni salon",
+    "highlight": "Zarja"
+  },
+  "metadata": {
+    "title": "Masažni salon Zarja | Sprostitev in dobro počutje na Vrhhniki",
+    "description": "Masažni salon Zarja, Požinel d.o.o. na Vrhhniki nudi klasične, sprostitvene, bolečinske in športne masaže za sprostitev telesa in duše."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Vrhunski salon na Vrhhniki",
+    "title": "Sprostitev in dobro počutje za",
+    "titleHighlight": "vaše telo in dušo",
+    "description": "Nudimo strokovne masaže za lajšanje napetosti v mišicah in izboljšanje splošnega počutja za stranke z Vrhhnike in okolice.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Mirno okolje",
+        "label": "Mirno okolje"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Vrhhnika",
+        "label": "Lokalna ponudba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Masaže prilagojene vašim potrebam",
+    "description": "Izberite med različnimi vrstami masaž, ki vam pomagajo pri sprostitvi, lajšanju bolečin in regeneraciji.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Temeljita masaža celega telesa za sprostitev mišic in izboljšanje prekrvavitve.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi za umiritev uma, sprostitev napetosti in popoln odklop od vsakdanjega stresa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljna obravnava zatrdlin in bolečih predelov za zmanjšanje nelagodja in povrnitev gibljivosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Intenzivnejša masaža, namenjena športnikom in vsem z večjimi fizičnimi obremenitvami.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Topel lokalni salon za vaš mir",
+    "description": "Zavedamo se pomena sprostitve v hitrem vsakdanu, zato se vam v celoti posvetimo.",
+    "highlights": [
+      "Prilagojen pristop k vsaki stranki",
+      "Prijetno in mirno okolje za sprostitev",
+      "Strokovna obravnava in izkušnje"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojen pristop",
+        "description": "Masažo in pritiske prilagodimo vašim trenutnim potrebam in počutju.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Miren in topel ambient vam omogoča, da se popolnoma sprostite.",
+        "title": "Prijetno okolje"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Zanesljiva in strokovna obravnava za najboljše rezultate.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za masažo ali pa nas kontaktirajte za vsa vprašanja.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Vrtnarija 3, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 413 339",
+        "href": "tel:051413339",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Vrtnarija 3, 1360 Vrhnika, Slovenia",
+    "rights": "© Masažni salon Zarja, Požinel d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Masažni salon Zarja",
+    "address": "Vrtnarija 3, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "051 413 339"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

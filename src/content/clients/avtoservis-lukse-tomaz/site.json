@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-lukse-tomaz/hero.avif",
+      "alt": "Mehanik pri delu v sodobni avtoservisni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-lukse-tomaz/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985712",
+      "sourceUrl": "https://www.pexels.com/photo/car-engine-in-front-of-a-mechanic-8985712/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-lukse-tomaz/services.avif",
+      "alt": "Orodja in oprema v avtoservisni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-lukse-tomaz/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985924",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-on-a-car-8985924/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional auto repair shop mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled osnovnih storitev in okvirnih cen za vzdrževanje vozil.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo za vaše vozilo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis vozila",
+        "description": "Menjava olja in filtrov (brez materiala)",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Menjava gum in premontaža",
+        "description": "Komplet 4 koles z centriranjem",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Priklop in branje napak",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pregled zavornega sistema",
+        "description": "Pregled diskov, ploščic in tekočin",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Ura avtomehaničnega dela",
+        "description": "Splošna popravila in servis",
+        "price": "od 45 €",
+        "featured": true
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Lukše"
+  },
+  "metadata": {
+    "title": "Avtoservis Lukše | Zanesljiv avtoservis v Kamniku",
+    "description": "Zanesljiv in strokoven avtoservis za osebna vozila v Kamniku in okolici. Nudimo redne servise, menjavo gum, diagnostiko in popravila."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Vaš zanesljiv lokalni servis v Kamniku",
+    "title": "Zanesljiv in strokoven avtoservis za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Zagotavljamo kakovostno vzdrževanje, popravila in celovito skrb za vaše vozilo z osebnim pristopom v Kamniku in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "vzdrževanje",
+        "title": "Zanesljivo vzdrževanje"
+      },
+      {
+        "value": "Hitra",
+        "label": "izvedba",
+        "title": "Hitra izvedba"
+      },
+      {
+        "value": "Osebna",
+        "label": "obravnava",
+        "title": "Osebna obravnava"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite storitve za vaše vozilo",
+    "description": "Poskrbimo za brezhibno delovanje vašega avtomobila z zanesljivimi in strokovnimi posegi.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Redno vzdrževanje in menjava olja ter filtrov za varno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava gum in premontaža",
+        "description": "Strokovna menjava in centriranje pnevmatik za vse letne čase.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled in popravilo zavornih komponent za vašo varnost na cesti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje in popravila",
+        "description": "Splošna mehanska popravila in odpravljanje napak na vozilu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika vozil",
+        "description": "Natančno računalniško odkrivanje napak in težav v elektroniki vozila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Združujemo strokovnost, posluh za stranke in hitro odzivnost.",
+    "highlights": [
+      "Osebni pristop in strokovno svetovanje",
+      "Vrhunska ocena zadovoljstva strank",
+      "Zanesljiva in hitra izvedba storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in vam strokovno svetujemo glede vzdrževanja vozila.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Storitve opravimo zanesljivo, natančno in v dogovorjenem roku.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na visoko raven zadovoljstva tistih, ki nam zaupajo svoje vozilo.",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis ali postavite vprašanje glede vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Perkova ulica 15, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 949 411",
+        "href": "tel:041949411",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Perkova ulica 15, 1241 Kamnik, Slovenia",
+    "rights": "© Avtoservis Lukše, Tomaž Lukše, s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis Lukše",
+    "address": "Perkova ulica 15, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 949 411"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

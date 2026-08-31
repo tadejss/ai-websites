@@ -1,0 +1,287 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "steel-blue",
+    "fontPairingId": "inter-oswald"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtonega/hero.avif",
+      "alt": "Mehanik pri delu v sodobni avtomehanični delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtonega/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985972",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-working-on-an-engine-8985972/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtonega/services.avif",
+      "alt": "Servis in vzdrževanje vozil v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtonega/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985967",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-coverall-standing-near-a-car-8985967/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional car mechanic working in bright workshop interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naše delo in delavnica",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene vzdrževanja",
+    "description": "Pregled pogostih storitev za vaše vozilo.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis",
+        "description": "Menjava olja in filtrov",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik",
+        "description": "Set 4 pnevmatik s centriranjem",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Diagnostika motorja",
+        "description": "Pregled napak z računalnikom",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Temeljito čiščenje notranjosti",
+        "price": "od 90 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtonega",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Avtonega d.o.o. | Avtomehanična delavnica in nega vozil v Medvodah",
+    "description": "Celovite storitve vzdrževanja, popravil in nege vašega vozila v Medvodah in Zbiljah."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Celovite storitve vzdrževanja in",
+    "titleHighlight": "nega vašega vozila",
+    "description": "Zagotavljamo vrhunsko strokovno popravilo, redni servis in globinsko čiščenje za lastnike vozil v Medvodah z okolico in Zbiljah.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven",
+        "label": "pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "vzdrževanje",
+        "title": "Zanesljivo vzdrževanje"
+      },
+      {
+        "value": "Na enem",
+        "label": "mestu",
+        "title": "Na enem mestu"
+      },
+      {
+        "value": "Prijazna",
+        "label": "podpora",
+        "title": "Prijazna podpora"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Vse za vaše vozilo na enem mestu",
+    "description": "Ponujamo širok nabor mehaničnih in negovalnih storitev za varno ter urejeno vožnjo.",
+    "items": [
+      {
+        "title": "Redni avtoservis",
+        "description": "Redno vzdrževanje in menjava delov za zanesljivo delovanje motorja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila vozil",
+        "description": "Kakovostna mehanična popravila za varno vožnjo vašega avtomobila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in strokovna menjava ter centriranje pnevmatik.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika motorja",
+        "description": "Natančno odkrivanje napak in težav z napredno diagnostiko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Globinsko čiščenje vozil",
+        "description": "Temeljito čiščenje notranjosti za svežino in urejen videz vozila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivi partner za vaše vozilo",
+    "description": "Združujemo strokovnost, prilagodljivost in skrb za vsak avtomobil.",
+    "highlights": [
+      "Vrhunske ocene zadovoljnih strank",
+      "Zanesljiva in strokovna izvedba storitev",
+      "Celovita skrb za tehnično brezhibnost in izgled vozila"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunske ocene",
+        "description": "Zadovoljstvo naših strank potrjuje kakovost našega dela.",
+        "title": "Vrhunske ocene"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Zanesljivo rešujemo mehanične in negovalne izzive vozil.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Celovita skrb",
+        "description": "Skrbimo za tehnično brezhibnost in popoln izgled vašega avtomobila.",
+        "title": "Celovita skrb"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin ali postavite vprašanje glede servisa vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Zbilje 55a, 1215 Medvode, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 870 789",
+        "href": "tel:041870789",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 8:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali željeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Zbilje 55a, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtonega d.o.o.",
+    "address": "Zbilje 55a, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "041 870 789"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

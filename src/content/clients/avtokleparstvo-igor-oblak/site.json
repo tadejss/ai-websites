@@ -1,0 +1,293 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "outfit-bitter"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-igor-oblak/hero.avif",
+      "alt": "Notranjost avtokleparske delavnice z orodjem in vozilom",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-igor-oblak/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30250199",
+      "sourceUrl": "https://www.pexels.com/photo/professional-auto-body-spray-painting-workshop-30250199/",
+      "photographer": "Mohammad Hammad",
+      "photographerUrl": "https://www.pexels.com/@mohammad-hammad-2148098658",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-igor-oblak/services.avif",
+      "alt": "Mehankar med natančnim popravilom karoserije vozila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-igor-oblak/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35149611",
+      "sourceUrl": "https://www.pexels.com/photo/auto-body-repair-in-garage-with-tools-35149611/",
+      "photographer": "Melih Can",
+      "photographerUrl": "https://www.pexels.com/@papaz",
+      "searchQuery": "car dent repair bodywork garage"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in se prilagajajo glede na obseg poškodb ter model vozila.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtokleparska dela",
+        "description": "Manjša in večja kleparska popravila",
+        "price": "od 45 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Popravilo karoserije",
+        "description": "Sanacija poškodb in poravnavanje pločevine",
+        "price": "od 60 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Sanacija poškodb po toči",
+        "description": "Odstranjevanje vdolbin od toči",
+        "price": "Po ogledu",
+        "unit": "vozilo"
+      },
+      {
+        "name": "Priprava na tehnični pregled",
+        "description": "Pregled in odprava manjših napak",
+        "price": "od 40 €",
+        "unit": "komplet"
+      },
+      {
+        "name": "Menjava poškodovanih delov",
+        "description": "Demontaža in montaža novih karoserijskih delov",
+        "price": "od 50 €",
+        "unit": "kos"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtokleparstvo",
+    "highlight": "Igor Oblak s.p."
+  },
+  "metadata": {
+    "title": "Avtokleparstvo Igor Oblak s.p. | Vrhnika",
+    "description": "Strokovno avtokleparstvo in popravilo vozil na Vrhniki z okolico. Zanesljiva in natančna izvedba karoserijskih del za osebna in lahka gospodarska vozila."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster na Vrhniki",
+    "title": "Strokovno avtokleparstvo in",
+    "titleHighlight": "popravilo vozil",
+    "description": "Kakovostna avtokleparska dela, popravilo karoserije in sanacija poškodb po toči za lastnike vozil na Vrhniki in v okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Odlične ocene",
+        "label": "Odlične ocene",
+        "title": "Odlične ocene"
+      },
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba",
+        "title": "Natančna izvedba"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše avtokleparske storitve",
+    "description": "Poskrbimo za celovito obnovo karoserije in pripravo vašega vozila na varno vožnjo.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Natančna avtokleparska popravila za vsa osebna in lahka gospodarska vozila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Strokovna sanacija in popravilo poškodovanih karoserijskih delov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sanacija poškodb po toči",
+        "description": "Učinkovito odpravljanje vdolbin in poškodb, ki jih povzroči toča.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priprava vozil na tehnični pregled",
+        "description": "Pregled in odprava pomanjkljivosti pred obiskom tehničnega pregleda.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Menjava poškodovanih delov",
+        "description": "Strokovna zamenjava dotrajanih ali poškodovanih sestavnih delov vozila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z dolgoletnimi izkušnjami in predanostjo zagotavljamo vrhunske rezultate pri vsakem popravilu.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Zanesljiva in natančna izvedba storitev",
+      "Strokoven pristop k popravilu vozil"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na odlične ocene in zaupanje voznikov, ki se radi vračajo k nam.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsakemu vozilu se posvetimo z vso skrbnostjo in poskrbimo za brezhiben končni rezultat.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Uporabljamo preverjene metode dela za varno in kakovostno popravilo vaše karoserije.",
+        "title": "Strokoven pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete ponudbo za popravilo vozila? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Drenov Grič 125, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 514 990",
+        "href": "tel:041514990",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo pripravili ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite poškodbo ali storitev, ki jo potrebujete...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Drenov Grič 125, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtokleparstvo Igor Oblak s.p.",
+    "address": "Drenov Grič 125, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 514 990"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

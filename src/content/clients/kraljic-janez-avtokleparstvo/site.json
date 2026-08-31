@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kraljic-janez-avtokleparstvo/hero.avif",
+      "alt": "Avtovleka in pomoč na cesti v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kraljic-janez-avtokleparstvo/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30250199",
+      "sourceUrl": "https://www.pexels.com/photo/professional-auto-body-spray-painting-workshop-30250199/",
+      "photographer": "Mohammad Hammad",
+      "photographerUrl": "https://www.pexels.com/@mohammad-hammad-2148098658",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kraljic-janez-avtokleparstvo/services.avif",
+      "alt": "Avtokleparska delavnica in popravilo karoserije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kraljic-janez-avtokleparstvo/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809576",
+      "sourceUrl": "https://www.pexels.com/photo/detailing-expert-polishing-car-in-workshop-37809576/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za avtovleko, prevoz in avtokleparska dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtovleka v Ljubljani",
+        "description": "Prevoz okvarjenega ali poškodovanega vozila",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Prevoz vozil zunaj mesta",
+        "description": "Kilometrina za relacijske prevoze",
+        "price": "od 1,50 € / km"
+      },
+      {
+        "name": "Pomoč na cesti",
+        "description": "Interventni izhod in manjša popravila na terenu",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Avtokleparska ura",
+        "description": "Strokovno kleparsko delo",
+        "price": "od 45 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Kraljič Janez",
+    "highlight": "Avtokleparstvo in Avtovleka"
+  },
+  "metadata": {
+    "title": "Avtokleparstvo in Avtovleka Kraljič Janez s.p. | Ljubljana",
+    "description": "Zanesljivo avtokleparstvo in hitra avtovleka v Ljubljani in okolici. Nudimo popravila karoserije, avtovleko ter pomoč na cesti."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiva pomoč na cesti",
+    "title": "Zanesljivo avtokleparstvo in ",
+    "titleHighlight": "hitra avtovleka v Ljubljani",
+    "description": "Strokovna avtokleparska dela, popravilo karoserije in hitra avtovleka za lastnike vozil v Ljubljani in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "Odzivnost na klic",
+        "title": "Hitra odzivnost na klic"
+      },
+      {
+        "value": "Celovite",
+        "label": "Storitve vleke in kleparstva",
+        "title": "Celovite storitve"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Popravilo karoserije",
+        "title": "Strokovno popravilo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Osebni pristop",
+        "title": "Zanesljivo in domače"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Poskrbimo za hitro avtovleko, prevoz vozil in kakovostna avtokleparska dela v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Natančna in strokovna avtokleparska dela za odpravo vseh vrst poškodb na vašem vozilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Avtovleka in prevoz vozil",
+        "description": "Hitra in varna avtovleka ter prevoz vozil ob okvari ali nezgodi na cesti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Kakovostna sanacija in popravilo karoserije za povrnitev prvotnega stanja vašega avtomobila.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pomoč na cesti",
+        "description": "Zanesljiva pomoč na cesti v Ljubljani in širši okolici, ko jo najbolj potrebujete.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Sanacija poškodb po trku",
+        "description": "Celovita sanacija poškodb po prometni nesreči, vključno s kleparskimi deli.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vozilo",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke poskrbimo, da je vaše vozilo v varnih rokah.",
+    "highlights": [
+      "Hitra odzivnost na vsak klic",
+      "Celovite storitve na enem mestu",
+      "Domač in zaupanja vreden pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra odzivnost",
+        "description": "Hitro se odzovemo na vaš klic in nudimo takojšnjo pomoč na cesti.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Celovite storitve",
+        "description": "Združujemo avtovleko, prevoz vozil in celovita avtokleparska dela.",
+        "title": "Celovite storitve"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Zanesljivo in strokovno popravilo karoserije z dolgoletnimi izkušnjami.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete avtovleko ali avtokleparska dela? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 752 290",
+        "href": "tel:031752290",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Črna vas 290, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali vozilo...",
+      "submitLabel": "Pokličite nas / Pošlji"
+    }
+  },
+  "footer": {
+    "address": "Črna vas 290, 1000 Ljubljana, Slovenia",
+    "rights": "© Kraljič Janez s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kraljič Janez Avtokleparstvo in Avtovleka",
+    "address": "Črna vas 290, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "031 752 290"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

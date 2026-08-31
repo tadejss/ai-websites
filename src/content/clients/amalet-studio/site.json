@@ -1,0 +1,276 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "wine-velvet",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/amalet-studio/hero.avif",
+      "alt": "Notranjost masažnega studia z udobno mizo za masažo in toplo svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/amalet-studio/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16574941",
+      "sourceUrl": "https://www.pexels.com/photo/beauty-portrait-blonde-woman-applying-cosmetics-face-mask-on-face-16574941/",
+      "photographer": "Vlad Deep",
+      "photographerUrl": "https://www.pexels.com/@vlad-deep-29415806",
+      "searchQuery": "professional skincare treatment spa tools copper clay aesthetic"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/amalet-studio/services.avif",
+      "alt": "Aromaterapevtska olja in sveče za sprostitveno masažo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/amalet-studio/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4374743",
+      "sourceUrl": "https://www.pexels.com/photo/scenery-of-pure-turquoise-seawater-4374743/",
+      "photographer": "Curioso Photography",
+      "photographerUrl": "https://www.pexels.com/@curiosophotography",
+      "searchQuery": "deep cleaning service sparkling clean modern living room ocean teal"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled cen masaž",
+    "description": "Izberite storitev, ki vam najbolj ustreza.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščanje celotnega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna nega za umiritev",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Ciljna obravnava napetosti",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Aromaterapevtska masaža",
+        "description": "Masaža z eteričnimi olji",
+        "price": "od 55 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "AMALET",
+    "highlight": "Studio"
+  },
+  "metadata": {
+    "title": "AMALET Studio | Masažni salon Ljubljana",
+    "description": "Sprostitev telesa in duha v srcu Ljubljane. Klasična, sprostitvena, bolečinska in aromaterapevtska masaža za vaše dobro počutje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažni salon v Ljubljani",
+    "title": "Sprostitev telesa in duha v srcu",
+    "titleHighlight": "Ljubljane",
+    "description": "Namenjeno vsem, ki iščejo popolno sprostitev, lajšanje napetosti v mišicah in celostno dobro počutje v mirnem ambientu.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "7 dni",
+        "label": "Odprti vsak teden"
+      },
+      {
+        "value": "10h - 22h",
+        "label": "Prilagodljiv čas"
+      },
+      {
+        "value": "Topel ambient",
+        "label": "Topel ambient"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše masažne storitve",
+    "description": "Izberite masažo, ki ustreza vašim trenutnim potrebam po sprostitvi ali lajšanju bolečin v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Učinkovito sproščanje celotnega telesa, izboljšanje prekrvavitve in odpravljanje vsakodnevnega stresa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi za umiritev uma, globoko sprostitev in povrnitev notranjega ravnovesja.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljno usmerjena obravnava za lajšanje napetosti in trdovratnih bolečin v mišicah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Aromaterapevtska masaža",
+        "description": "Masaža z izbranimi eteričnimi olji, ki blagodejno vplivajo na telo in duha.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati AMALET Studio",
+    "title": "Vaš kotiček miru in sprostitve",
+    "description": "Posvečeni smo vašemu dobremu počutju in udobju v sproščujočem okolju.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Prilagodljiv delovni čas vsak dan v tednu",
+      "Prijeten in sproščujoč ambient"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljne stranke cenijo naš strokoven in prijazen pristop.",
+        "title": "Odlične ocene"
+      },
+      {
+        "label": "Vsak dan v tednu",
+        "description": "Prilagodljiv delovni čas od ponedeljka do nedelje za vaš urnik.",
+        "title": "Vsak dan v tednu"
+      },
+      {
+        "label": "Sproščujoč ambient",
+        "description": "Prijeten prostor v srcu Ljubljane, ustvarjen za vaš mir.",
+        "title": "Sproščujoč ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Štihovi ulici v Ljubljani ali nas kontaktirajte za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Štihova ulica 13, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 652 947",
+        "href": "tel:040652947",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 10:00 - 22:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Štihova ulica 13, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "AMALET Studio",
+    "address": "Štihova ulica 13, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 652 947"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

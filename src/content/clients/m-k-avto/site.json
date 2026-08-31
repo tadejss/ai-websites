@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "figtree-dm-serif"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/m-k-avto/hero.avif",
+      "alt": "Avtovleka in pomoč na cesti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/m-k-avto/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870314",
+      "sourceUrl": "https://www.pexels.com/photo/person-using-paint-spray-gun-6870314/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/m-k-avto/services.avif",
+      "alt": "Avtokleparska delavnica in popravilo karoserije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/m-k-avto/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809576",
+      "sourceUrl": "https://www.pexels.com/photo/detailing-expert-polishing-car-in-workshop-37809576/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Cene so informativne narave; za natančen izračun glede na vaše potrebe nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtovleka - osnovni izhod",
+        "description": "Prevoz vozila na območju Ljubljane",
+        "price": "od 60 €",
+        "featured": true
+      },
+      {
+        "name": "Pomoč na cesti na terenu",
+        "description": "Pregled in manjša popravila na licu mesta",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Avtokleparska ura",
+        "description": "Strokovno kleparsko delo in popravilo karoserije",
+        "price": "od 45 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Posredništvo vozil",
+        "description": "Posredovanje in svetovanje pri ureditvi",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "M. K.",
+    "highlight": "avtokleparstvo in avtovleka"
+  },
+  "metadata": {
+    "title": "M. K. avtokleparstvo in avtovleka | Pomoč 24/7",
+    "description": "Zanesljiva avtovleka, avtokleparstvo in posredništvo 24 ur na dan v Ljubljani s širšo okolico. Pokličite za takojšnjo pomoč na cesti."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za takojšnjo pomoč"
+  },
+  "hero": {
+    "badge": "Dosegljivi 24/7",
+    "title": "Zanesljiva avtovleka in",
+    "titleHighlight": "avtokleparstvo 24 ur na dan",
+    "description": "Hitra in strokovna pomoč na cesti, avtovleka ter avtokleparske storitve za lastnike vozil v Ljubljani in okolici.",
+    "primaryCta": "Pokličite za takojšnjo pomoč",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Dosegljivost"
+      },
+      {
+        "value": "Hitra pomoč",
+        "label": "Hitra pomoč",
+        "title": "Hitra pomoč"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Nudimo hitre in zanesljive storitve avtokleparstva, avtovleke in pomoči na cesti v Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Avtovleka 24/7",
+        "description": "Hitri prevoz poškodovanih ali pokvarjenih vozil kadarkoli, vse dni v tednu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Avtokleparske storitve",
+        "description": "Strokovno popravilo karoserije in sanacija poškodb na vašem vozilu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pomoč na cesti",
+        "description": "Zanesljiva in hitra pomoč ob okvari ali nezgodi na cesti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravilo karoserije",
+        "description": "Kakovostna obnova in kleparska dela za povrnitev vozila v prvotno stanje.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Posredništvo vozil",
+        "description": "Strokovno posredništvo in podpora pri urejanju z vašim vozilom.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner na cesti",
+    "description": "Z odzivnostjo, strokovnostjo in stalno dosegljivostjo poskrbimo, da niste dolgo sami v težavah.",
+    "highlights": [
+      "Dosegljivo 24 ur na dan, vse dni v tednu",
+      "Hitra in zanesljiva pomoč na cesti",
+      "Celovite storitve avtokleparstva in avtovleke"
+    ],
+    "benefits": [
+      {
+        "label": "Stalna dosegljivost",
+        "description": "Na voljo 24 ur na dan, vsak dan v tednu, za nujne primere na cesti.",
+        "title": "Stalna dosegljivost"
+      },
+      {
+        "label": "Odzivnost in hitrost",
+        "description": "Hitro ukrepanje in zanesljiv prevoz ali pomoč na terenu.",
+        "title": "Odzivnost in hitrost"
+      },
+      {
+        "label": "Celovita podpora",
+        "description": "Od avtovleke in pomoči na cesti do avtokleparskih popravil.",
+        "title": "Celovita podpora"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Potrebujete pomoč na cesti?",
+    "description": "Pokličite nas takoj ali nam pošljite sporočilo za vprašanja in naročilo storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 657 607",
+        "href": "tel:051657607",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 00:00 - 24:00 (24/7)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali vozilo...",
+      "submitLabel": "Pokličite za takojšnjo pomoč"
+    }
+  },
+  "footer": {
+    "address": "1000 Ljubljana, Slovenia",
+    "rights": "© M. K. avto avtokleparstvo, Marjan Krašovec s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "M. K. avtokleparstvo in avtovleka",
+    "address": "1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "051 657 607"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "dusty-rose",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/versal-masazni-salon/hero.avif",
+      "alt": "Sproščujoče okolje masažnega salona z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/versal-masazni-salon/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628613",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628613/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/versal-masazni-salon/services.avif",
+      "alt": "Strokovna masaža in prijeten ambient za dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/versal-masazni-salon/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628520",
+      "sourceUrl": "https://www.pexels.com/photo/settee-by-the-window-6628520/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled rednih cen naših masažnih storitev za sprostitev in dobro počutje.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije terminov nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža (60 min)",
+        "description": "Sproščujoča celostna masaža telesa",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža (60 min)",
+        "description": "Nežna aroma masaža za umiritev uma",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Bolečinska masaža (45 min)",
+        "description": "Ciljna obravnava napetih predelov",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Športna masaža (60 min)",
+        "description": "Intenzivnejša masaža za regeneracijo",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Versal",
+    "highlight": "Masažni salon"
+  },
+  "metadata": {
+    "title": "Versal | Masažni salon v Domžalah",
+    "description": "Sprostitev in dobro počutje za telo in duha v Domžalah z okolico. Nudimo klasične, sprostitvene, bolečinske in športne masaže v prijetnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažni salon v Domžalah",
+    "title": "Sprostitev in dobro počutje za",
+    "titleHighlight": "telo in duha",
+    "description": "Posvetite se sebi v mirnem in prijetnem ambientu. Nudimo prilagojene masaže za sprostitev, lajšanje bolečin in nego telesa v Domžalah z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Prilagojen pristop",
+        "label": "Prilagojen pristop",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Strokoven kader",
+        "label": "Strokoven kader",
+        "title": "Strokoven kader"
+      },
+      {
+        "value": "Vrhunske ocene",
+        "label": "Vrhunske ocene",
+        "title": "Vrhunske ocene"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve prilagojene vašim potrebam",
+    "description": "Izberite masažo, ki bo najbolje poskrbela za vaše telo, sprostitev ali odpravljanje napetosti v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Splošna sprostitev celotnega telesa, izboljšanje prekrvavitve in sproščanje napetih mišic.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi in pomirjajoč ambient za odpravljanje stresa ter popoln mir uma in telesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljno usmerjena masaža za lajšanje kroničnih ali akutnih bolečin v hrbtenici in mišicah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Intenzivnejša masaža za pripravo na napor ali hitrejšo regeneracijo po športni aktivnosti.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Udobje, strokovnost in osebni pristop",
+    "description": "Zavedamo se, da je vsak posameznik drugačen, zato se vam v celoti posvetimo in prisluhnemo vašim željam.",
+    "highlights": [
+      "Vrhunske ocene zadovoljnih strank",
+      "Prilagojen pristop k vsaki stranki posebej",
+      "Prijeten in sproščujoč ambient v Domžalah"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunske ocene",
+        "description": "Naše delo odražajo zadovoljne stranke in njihova priporočila.",
+        "title": "Vrhunske ocene"
+      },
+      {
+        "label": "Prilagojen pristop",
+        "description": "Vsako masažo prilagodimo vašemu trenutnemu počutju in potrebam.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje, ki omogoča popoln odklop od vsakodnevnega stresa.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjih kontaktih podatkov ali obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 90, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 416 545",
+        "href": "tel:070416545",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 9:00 – 20:00 (Nedelja zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili glede prostih terminov.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 90, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Versal Masažni salon",
+    "address": "Ljubljanska cesta 90, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "070 416 545"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

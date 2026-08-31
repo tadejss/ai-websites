@@ -1,0 +1,275 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sage-meadow",
+    "fontPairingId": "inter-eb-garamond"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/center-azijskih-masaz/hero.avif",
+      "alt": "Notranjost masažnega salona z naravno svetlobo za sprostitev",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/center-azijskih-masaz/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional cleaning service sparkling clean modern interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/center-azijskih-masaz/services.avif",
+      "alt": "Prostor za izvajanje tradicionalnih azijskih masaž",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/center-azijskih-masaz/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628599",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628599/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Utrinki",
+    "title": "Naš salon",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled cen masaž",
+    "description": "Izberite svojo najljubšo masažo po dostopnih cenah.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije terminov nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Tradicionalna tajska masaža",
+        "description": "60 minut sprostitve in raztezanja",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Masaža z olji",
+        "description": "60 minut aromaterapevtske sprostitve",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Masaža hrbta in vratu",
+        "description": "30 minut ciljnega lajšanja napetosti",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Sprostitvena masaža celega telesa",
+        "description": "60 minut celostne nege",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Center azijskih",
+    "highlight": "masaž"
+  },
+  "metadata": {
+    "title": "Center azijskih masaž | Sprostitev v Ljubljani",
+    "description": "Sprostite telo in um z tradicionalnimi azijskimi masažami v Ljubljani. Vrhunske masaže v prijetnem ambientu za vaše dobro počutje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Azijske masaže v Ljubljani",
+    "title": "Sprostite telo in um z",
+    "titleHighlight": "tradicionalnimi masažami",
+    "description": "Nudimo strokovne tradicionalne azijske masaže za lajšanje napetosti v mišicah, sprostitev in popolno ravnovesje v Ljubljani z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "7 dni",
+        "label": "Odprti vsak teden"
+      },
+      {
+        "value": "Sproščujoč",
+        "label": "Ambient"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše dobro počutje",
+    "description": "Izberite med pestro izbiro tradicionalnih masaž v Ljubljani, ki so prilagojene vašim potrebam po sprostitvi in lajšanju napetosti.",
+    "items": [
+      {
+        "title": "Tradicionalna tajska masaža",
+        "description": "Prvovrstna masaža za raztezanje telesa, izboljšanje prekrvavitve in sprostitev celotnega organizma.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Masaža z olji",
+        "description": "Blagodejna masaža z naravnimi olji, ki globinsko sprosti mišice in pomiri vaš um.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Masaža hrbta in vratu",
+        "description": "Ciljana masaža za lajšanje napetosti in bolečin v predelu hrbta, ramen in vratu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sprostitvena masaža celega telesa",
+        "description": "Nežna in celostna masaža za popoln odklop od vsakodnevnega stresa.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Oaza miru in sprostitve v Ljubljani",
+    "description": "Posvečeni smo vašemu dobremu počutju z visoko ocenjenimi storitvami in strokovnim kadrom.",
+    "highlights": [
+      "Visoko ocenjene storitve s strani zadovoljnih strank",
+      "Sproščujoč in prijeten ambient v Ljubljani",
+      "Izkušeni maserji in strokovni pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče in mirno okolje za popoln pobeg od vsakdanjega vrveža.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Strokoven kader",
+        "description": "Izkušeni maserji z individualnim pristopom k vsaki stranki.",
+        "title": "Strokoven kader"
+      },
+      {
+        "label": "Vsak dan v tednu",
+        "description": "Odprti smo vsak dan od ponedeljka do nedelje za vašo udobno izbiro termina.",
+        "title": "Vsak dan v tednu"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Rezervirajte svoj termin",
+    "description": "Stopite v stik z nami in si zagotovite svoj termin za sprostitev v Ljubljani.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 394 772",
+        "href": "tel:051394772",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Bratislavska cesta 12, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 10:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Bratislavska cesta 12, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Center azijskih masaž",
+    "address": "Bratislavska cesta 12, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "051 394 772"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

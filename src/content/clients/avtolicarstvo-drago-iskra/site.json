@@ -1,0 +1,282 @@
+{
+  "appearance": "construction",
+  "theme": {
+    "paletteId": "ocean-teal",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-drago-iskra/hero.avif",
+      "alt": "Strokovno barvanje vozil v avtoličarski delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-drago-iskra/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809581",
+      "sourceUrl": "https://www.pexels.com/photo/professional-car-detailing-in-garage-37809581/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-drago-iskra/services.avif",
+      "alt": "Natančna obnova laka in popravilo avtomobila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtolicarstvo-drago-iskra/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809549",
+      "sourceUrl": "https://www.pexels.com/photo/precision-dent-repair-in-automotive-workshop-37809549/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "car dent repair bodywork garage"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega dela ter vrste poškodbe.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Popravilo manjših prask",
+        "description": "Sanacija površinskih prask na posameznem delu.",
+        "price": "od 50 €",
+        "featured": false
+      },
+      {
+        "name": "Barvanje posameznega elementa",
+        "description": "Priprava in lakiranje enega avtomobilskega dela.",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Sanacija poškodb po toči",
+        "description": "Popravilo udrtin brez klasičnega ličenja ali z ličenjem.",
+        "price": "Po ogledu",
+        "featured": false
+      },
+      {
+        "name": "Obnova celotnega laka",
+        "description": "Celovita obnova in poliranje za osvežitev videza vozil.",
+        "price": "Po dogovoru",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoličarstvo",
+    "highlight": "Drago Iskra s.p."
+  },
+  "metadata": {
+    "title": "Avtoličarstvo Drago Iskra s.p. | Avtoličarstvo in kleparstvo v Ljubljani",
+    "description": "Strokovno barvanje in popravilo vozil za zanesljiv videz vašega avtomobila v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo avtoličarstvo v Ljubljani",
+    "title": "Strokovno barvanje in popravilo vozil za",
+    "titleHighlight": "zanesljiv videz vašega avtomobila",
+    "description": "Kakovostne avtoličarske storitve za lastnike vozil v Ljubljani z okolico. Poskrbimo za brezhiben izgled in zaščito vašega jeklenega konjička.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljiva obravnava"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostna izvedba"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše vozilo",
+    "description": "Zagotavljamo strokovne avtoličarske storitve in obnovo laka za stranke v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Avtoličarske storitve",
+        "description": "Natančna in strokovna izvedba vseh vrst avtoličarskih del za vaše vozilo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje vozil",
+        "description": "Kakovostno barvanje celotnih vozil ali posameznih delov z vrhunskimi materiali.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo prask",
+        "description": "Učinkovita sanacija manjših prask, odrgnin in poškodb na laku.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija poškodb po toči",
+        "description": "Strokovna sanacija udrtin in poškodb, ki jih povzroči toča.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Obnova lakiranja",
+        "description": "Povrnite sijaj in prvotni videz obledelemu ali poškodovanemu laku.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanje, podprto z izkušnjami",
+    "description": "Zavedamo se, kako pomemben je videz in ohranjenost vašega avtomobila, zato vsakemu vozilu namenimo vso potrebno pozornost.",
+    "highlights": [
+      "Kakovostna izvedba avtoličarskih del",
+      "Zanesljiva in strokovna obravnava strank",
+      "Dolgoletne izkušnje na področju popravil vozil"
+    ],
+    "benefits": [
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Kakovostna izvedba avtoličarskih del z natančnostjo in skrbjo za podrobnosti.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Strokovna obravnava",
+        "description": "Zanesljiva in strokovna obravnava vsake stranke ter svetovanje.",
+        "title": "Strokovna obravnava"
+      },
+      {
+        "label": "Dolgoletne izkušnje",
+        "description": "Dolgoletne izkušnje na področju popravil vozil in obnove laka.",
+        "title": "Dolgoletne izkušnje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za avtoličarske storitve? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Polje 353, 1260 Ljubljana - Polje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 926 753",
+        "href": "tel:041926753",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opičite vaše želje ali poškodbo vozila...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Polje 353, 1260 Ljubljana - Polje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoličarstvo Drago Iskra s.p.",
+    "address": "Polje 353, 1260 Ljubljana - Polje, Slovenia",
+    "email": "",
+    "phone": "041 926 753"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

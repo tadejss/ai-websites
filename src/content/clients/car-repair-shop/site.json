@@ -1,0 +1,288 @@
+{
+  "appearance": "auto",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "wash",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/car-repair-shop/hero.avif",
+      "alt": "Avtomehanična delavnica Pelko z mehanikom pri delu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/car-repair-shop/hero.webp",
+      "width": 732,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9626877",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
+      "photographer": "MonControlteTechnique",
+      "photographerUrl": "https://www.pexels.com/@moncontroltetechnique-110684920",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/car-repair-shop/services.avif",
+      "alt": "Diagnostika napak na motornem vozilu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/car-repair-shop/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985924",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-on-a-car-8985924/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional auto repair shop mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled osnovnih cen rednih servisov in vulkanizerskih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (delo)",
+        "description": "Menjava olja in vseh filtrov",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava in centriranje pnevmatik (set)",
+        "description": "Premontaža za 4 kolesa",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika",
+        "description": "Pregled napak in brisanje javljanj",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Sprednja ali zadnja os",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtomehanična delavnica",
+    "highlight": "Pelko"
+  },
+  "metadata": {
+    "title": "Avtomehanična delavnica Pelko | Zanesljiv servis vozil",
+    "description": "Zanesljivo in strokovno vzdrževanje vašega vozila v Medvodah in okolici. Nudimo redne servise, popravila, diagnostiko in vulkanizerstvo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo in strokovno",
+    "titleHighlight": "vzdrževanje vašega vozila",
+    "description": "Strokovne avtomehanične storitve za lastnike osebnih vozil v Medvodah in okolici. Poskrbimo za varno in brezskrbno vožnjo.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno osebje",
+        "title": "Strokovno osebje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Kakovostne storitve",
+        "title": "Zanesljivo vzdrževanje"
+      },
+      {
+        "value": "Hitra",
+        "label": "Hitra odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Celovito",
+        "label": "Celovite storitve",
+        "title": "Celovite storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše avtomehanične storitve",
+    "description": "Za vaše vozilo poskrbimo celovito – od rednega vzdrževanja do zahtevnejših popravil v Medvodah in okolici.",
+    "items": [
+      {
+        "title": "Redni servis vozil",
+        "description": "Menjava olja, filtrov in pregled ključnih sklopov za dolgo življenjsko dobo vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila motorjev",
+        "description": "Strokovna odprava napak in popravila pogonskih sklopov z zanesljivimi nadomestnimi deli.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistem in podvozje",
+        "description": "Pregled in zamenjava zavornih diskov, ploščic ter elementov podvozja za vašo varnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Premontaža in hramba pnevmatik",
+        "description": "Hitra menjava pnevmatik, centriranje in možnost varne hrambe izven sezonskih gum.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika napak",
+        "description": "natančno računalniško odkrivanje skritih napak in težav v elektroniki vašega vozila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Z dolgoletnimi izkušnjami in predanostjo zagotavljamo visoko kakovost storitev za vsako stranko.",
+    "highlights": [
+      "Visoka ocena strank in preverjena kakovost",
+      "Strokovno in zanesljivo osebje",
+      "Hitra odzivnost in celovite storitve"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Visoka ocena strank potrjuje našo zanesljivost in predanost delu.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Strokovno osebje",
+        "description": "Naša ekipa strokovno in natančno poskrbi za tehnično brezhibnost vašega avtomobila.",
+        "title": "Strokovno osebje"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Cenimo vaš čas, zato zagotavljamo hitre termine in učinkovite rešitve.",
+        "title": "Hitra odzivnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte termin za servis ali postavite vprašanje glede vašega vozila.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Zgornja Senica 46, 1215 Medvode, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 667 335",
+        "href": "tel:041667335",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–17:00 (Petek do 13:00)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite za katero storitev se zanimate...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Zgornja Senica 46, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtomehanična delavnica Pelko",
+    "address": "Zgornja Senica 46, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "041 667 335"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "MRD AVTO, Mojca Domiter s.p.",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Zanesljivo vzdrževanje in popravila vašega vozila",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava gum in premontaža",
+    "Zavorni sistem in vzmetenje",
+    "Avtoelektrika in diagnostika",
+    "Priprava vozila na tehnični pregled"
+  ],
+  "phone": "041 386 293",
+  "email": "",
+  "address": "Parmova ul. 51, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Tuesday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Wednesday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Thursday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Friday: 8:00 AM – 12:00 PM, 1:00 – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Hitra in strokovna izvedba del",
+    "Kakovostni rezervni deli in materiali"
+  ],
+  "targetCustomers": "Lastniki osebnih vozil v Ljubljani in okolici",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne avtomehanične delavnice v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}
