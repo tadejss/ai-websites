@@ -47,6 +47,8 @@ import {
 } from "@/outreach/sms/relevance";
 import { isSlovenianMobilePhone, normalizeSlovenianPhone } from "@/outreach/sms/phone";
 
+export { getReplenishStatus } from "./replenish-status";
+
 export type QueryRunStats = {
   region: string;
   profession: string;
@@ -85,8 +87,10 @@ export type ReplenishDependencies = {
   createFromLead: typeof createClientFromLead;
   readLeadBySlug: typeof readLead;
   siteExists: typeof clientSiteExists;
-  readProgress: () => DiscoveryProgress;
-  writeProgress: (progress: DiscoveryProgress) => void;
+  readProgress: () => DiscoveryProgress | Promise<DiscoveryProgress>;
+  writeProgress: (
+    progress: DiscoveryProgress,
+  ) => void | Promise<void>;
   placesLimitPerQuery: number;
   maxSearchesPerRun: number;
   zeroYieldCompletionStreak: number;
@@ -217,7 +221,7 @@ export async function replenishSmsLeads(
     batch,
   });
 
-  let progress = d.readProgress();
+  let progress = await d.readProgress();
   const labels = pointerLabels(progress);
 
   const stats: ReplenishStats = {
@@ -275,7 +279,7 @@ export async function replenishSmsLeads(
         active.professionId,
         combo,
       );
-      d.writeProgress(progress);
+      await d.writeProgress(progress);
     }
 
     const surface = comboSurface(combo);
@@ -294,7 +298,7 @@ export async function replenishSmsLeads(
         combo,
       );
       progress = advancePointer(progress);
-      d.writeProgress(progress);
+      await d.writeProgress(progress);
       continue;
     }
 
@@ -330,7 +334,7 @@ export async function replenishSmsLeads(
         active.professionId,
         combo,
       );
-      d.writeProgress(progress);
+      await d.writeProgress(progress);
       runStopReason = "global_search_limit";
       break;
     }
@@ -458,7 +462,7 @@ export async function replenishSmsLeads(
       active.professionId,
       combo,
     );
-    d.writeProgress(progress);
+    await d.writeProgress(progress);
   }
 
   if (!runStopReason) {
@@ -485,21 +489,4 @@ export async function replenishSmsLeads(
   }
 
   return stats;
-}
-
-/** Status-only snapshot for Vercel cron / admin (no Places, no generation). */
-export async function getReplenishStatus(): Promise<{
-  actionable: number;
-  target: number;
-  needed: number;
-  batch: number;
-}> {
-  const config = getSmsConfig();
-  const actionable = await countActionableSmsLeads();
-  return {
-    actionable,
-    target: config.leadTarget,
-    needed: smsLeadReplenishmentNeeded(actionable, config.leadTarget),
-    batch: config.leadReplenishBatch,
-  };
 }

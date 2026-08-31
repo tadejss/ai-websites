@@ -90,8 +90,9 @@ export async function processOnboardingSubmission(
   }
 
   if (
-    existing.status === "ready_for_approval" ||
     existing.status === "approved_for_publish" ||
+    existing.status === "publishing" ||
+    existing.status === "publish_failed" ||
     existing.status === "live"
   ) {
     return { onboarding: existing, alreadyProcessed: true };

@@ -20,7 +20,8 @@ import { SendOutreachButton } from "./send-outreach-button";
 import { SmsOutreachButtons } from "./sms-outreach-buttons";
 import {
   AdminCopyOnboardingLink,
-  AdminPublishLivePlaceholder,
+  AdminCustomerPublishPanel,
+  AdminPublishRetryButton,
 } from "./onboarding-admin";
 import { OnboardingImageGallery } from "./onboarding-gallery";
 import { AdminOnboardingApproveButton } from "./onboarding-approve-button";
@@ -35,6 +36,14 @@ import {
 } from "@/outreach/sms/store";
 import { normalizeSlovenianPhone } from "@/outreach/sms/phone";
 import { isDatabaseConfigured } from "@/db/client";
+import {
+  getDemoLifecycleBySlug,
+} from "@/demo-lifecycle/store";
+import {
+  demoAgeDays,
+  isNeverViewedDemo,
+  lifecycleStatusLabel,
+} from "@/demo-lifecycle/types";
 
 export const dynamic = "force-dynamic";
 
@@ -119,6 +128,12 @@ export default async function AdminLeadDetailPage({
   });
   const lastFailed = smsMessages.find((message) => message.status === "failed");
   const normalizedPhone = normalizeSlovenianPhone(lead.phone);
+  const isCustomerLead = Boolean(customer) || (await isCustomer(slug));
+  const demoLifecycle = isDatabaseConfigured()
+    ? await getDemoLifecycleBySlug(slug)
+    : null;
+  const neverViewed = isNeverViewedDemo(demoLifecycle, isCustomerLead);
+  const ageDays = demoAgeDays(demoLifecycle);
 
   return (
     <div>
@@ -159,6 +174,63 @@ export default async function AdminLeadDetailPage({
           />
         </div>
       </div>
+
+      <section className="mt-6 rounded-lg border border-neutral-200 bg-white p-5">
+        <h2 className="font-medium">Demo lifecycle</h2>
+        {!isDatabaseConfigured() ? (
+          <p className="mt-3 text-sm text-neutral-600">
+            DATABASE_URL is not configured — lifecycle unavailable.
+          </p>
+        ) : !demoLifecycle ? (
+          <p className="mt-3 text-sm text-neutral-600">
+            No lifecycle record yet (demo not generated via factory worker).
+          </p>
+        ) : (
+          <>
+            {neverViewed ? (
+              <p className="mt-3 rounded-md border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+                Published demo — never viewed
+              </p>
+            ) : null}
+            <dl className="mt-4 grid gap-3 text-sm md:grid-cols-2">
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Status</dt>
+                <dd className="font-semibold tracking-wide">
+                  {lifecycleStatusLabel(demoLifecycle.lifecycleStatus)}
+                </dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Views</dt>
+                <dd className="tabular-nums">{demoLifecycle.viewCount}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Created</dt>
+                <dd>{formatDate(demoLifecycle.createdAt)}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Published</dt>
+                <dd>{formatDate(demoLifecycle.publishedAt)}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">First view</dt>
+                <dd>{formatDate(demoLifecycle.firstViewedAt)}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Last view</dt>
+                <dd>{formatDate(demoLifecycle.lastViewedAt)}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Purchased</dt>
+                <dd>{formatDate(demoLifecycle.purchasedAt ?? customer?.purchasedAt)}</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-neutral-500">Demo age</dt>
+                <dd>{ageDays != null ? `${ageDays} days` : "—"}</dd>
+              </div>
+            </dl>
+          </>
+        )}
+      </section>
 
       <section className="mt-6 rounded-lg border border-emerald-200 bg-emerald-50/40 p-5">
         <h2 className="font-medium">SMS outreach</h2>
@@ -413,7 +485,15 @@ export default async function AdminLeadDetailPage({
         <section className="mt-6 rounded-lg border border-neutral-200 bg-white p-5">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <h2 className="font-medium">Onboarding</h2>
-            <AdminPublishLivePlaceholder />
+            {onboarding ? (
+              <AdminCustomerPublishPanel
+                slug={slug}
+                status={onboarding.status}
+                publishError={onboarding.publishError}
+                publishedAt={onboarding.publishedAt}
+                publishCommitSha={onboarding.publishCommitSha}
+              />
+            ) : null}
           </div>
 
           {!onboarding ? (
@@ -552,9 +632,16 @@ export default async function AdminLeadDetailPage({
                       canApprove={canAdminApproveOnboarding(onboarding.status)}
                       isApproved={
                         onboarding.status === "approved_for_publish" ||
+                        onboarding.status === "publishing" ||
                         onboarding.status === "live"
                       }
                     />
+                    <div className="mt-3">
+                      <AdminPublishRetryButton
+                        slug={slug}
+                        status={onboarding.status}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

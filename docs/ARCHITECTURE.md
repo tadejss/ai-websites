@@ -2,7 +2,8 @@
 
 > **Audit date:** 2026-08-31  
 > **Method:** Code inspection only (no assumptions from stale docs).  
-> **Scale snapshot:** ~273 TS/TSX files in `src/`, **378** generated client sites, **529** lead JSON files.
+> **Scale snapshot:** ~273 TS/TSX files in `src/`, **378** generated client sites, **529** lead JSON files.  
+> **Cost & reliability:** See [FACTORY-COST-RELIABILITY-AUDIT.md](./FACTORY-COST-RELIABILITY-AUDIT.md) for API inventory, scaling risks, and optimization priorities.
 
 ---
 

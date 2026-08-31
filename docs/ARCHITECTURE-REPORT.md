@@ -6,6 +6,8 @@
 
 This document describes **implemented behavior** in the repository. Where legacy or dormant code exists, it is called out explicitly.
 
+For **cost per demo, cache/reuse gaps, failure modes at scale, and prioritized optimizations**, see [FACTORY-COST-RELIABILITY-AUDIT.md](./FACTORY-COST-RELIABILITY-AUDIT.md).
+
 ---
 
 ## 1. High-level architecture

@@ -7,6 +7,8 @@ export const ONBOARDING_STATUSES = [
   "processing",
   "ready_for_approval",
   "approved_for_publish",
+  "publishing",
+  "publish_failed",
   "live",
 ] as const;
 
@@ -97,6 +99,10 @@ export type OnboardingRecord = {
   approvalEmailSentAt: string | null;
   adminApprovedAt: string | null;
   adminPublishNotifySentAt: string | null;
+  publishStartedAt: string | null;
+  publishedAt: string | null;
+  publishCommitSha: string | null;
+  publishError: string | null;
   submittedAt: string | null;
   processedAt: string | null;
   createdAt: string;
@@ -117,6 +123,10 @@ export function onboardingStatusLabel(status: OnboardingStatus): string {
       return "READY FOR APPROVAL";
     case "approved_for_publish":
       return "APPROVED FOR PUBLISH";
+    case "publishing":
+      return "PUBLISHING";
+    case "publish_failed":
+      return "PUBLISH FAILED";
     case "live":
       return "LIVE";
     default:
@@ -132,4 +142,24 @@ export const ADMIN_APPROVABLE_STATUSES: readonly OnboardingStatus[] = [
 
 export function canAdminApproveOnboarding(status: OnboardingStatus): boolean {
   return (ADMIN_APPROVABLE_STATUSES as readonly string[]).includes(status);
+}
+
+/** Admin may re-dispatch git publish after a failure or stuck approval. */
+export function canRetryCustomerPublish(status: OnboardingStatus): boolean {
+  return (
+    status === "approved_for_publish" ||
+    status === "publish_failed" ||
+    status === "publishing"
+  );
+}
+
+export function isOnboardingLockedForCustomerEdits(
+  status: OnboardingStatus,
+): boolean {
+  return [
+    "approved_for_publish",
+    "publishing",
+    "publish_failed",
+    "live",
+  ].includes(status);
 }

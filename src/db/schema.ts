@@ -72,6 +72,20 @@ CREATE INDEX IF NOT EXISTS customer_onboarding_status_idx
 
 ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS admin_approved_at TIMESTAMPTZ;
 ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS admin_publish_notify_sent_at TIMESTAMPTZ;
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS publish_started_at TIMESTAMPTZ;
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS published_at TIMESTAMPTZ;
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS publish_commit_sha TEXT;
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS publish_error TEXT;
+
+CREATE TABLE IF NOT EXISTS customer_publish_lease (
+  slug TEXT PRIMARY KEY REFERENCES customers (slug) ON DELETE CASCADE,
+  run_id TEXT NOT NULL,
+  worker_id TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'claimed',
+  claimed_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  expires_at TIMESTAMPTZ NOT NULL,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
 `.trim();
 
 export const SMS_SCHEMA_SQL = `
@@ -140,4 +154,98 @@ CREATE INDEX IF NOT EXISTS sms_inbound_from_phone_idx
 
 CREATE INDEX IF NOT EXISTS sms_inbound_slug_idx
   ON sms_inbound (slug);
+`.trim();
+
+/**
+ * Website factory worker state (discovery progress, leases, run metrics).
+ * Durable on Neon — never rely on the Vercel ephemeral filesystem.
+ */
+export const FACTORY_SCHEMA_SQL = `
+CREATE TABLE IF NOT EXISTS factory_discovery_progress (
+  id TEXT PRIMARY KEY DEFAULT 'default',
+  progress JSONB NOT NULL,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS factory_worker_lease (
+  id TEXT PRIMARY KEY DEFAULT 'default',
+  run_id TEXT NOT NULL,
+  worker_id TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'claimed',
+  claimed_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  expires_at TIMESTAMPTZ NOT NULL,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS factory_worker_runs (
+  run_id TEXT PRIMARY KEY,
+  worker_id TEXT NOT NULL,
+  trigger_source TEXT NOT NULL,
+  status TEXT NOT NULL,
+  actionable_before INT,
+  actionable_after INT,
+  target INT,
+  needed INT,
+  demos_generated INT NOT NULL DEFAULT 0,
+  demos_published INT NOT NULL DEFAULT 0,
+  demos_failed INT NOT NULL DEFAULT 0,
+  publish_commit_sha TEXT,
+  error TEXT,
+  metrics JSONB,
+  started_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  finished_at TIMESTAMPTZ,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS factory_worker_runs_started_idx
+  ON factory_worker_runs (started_at DESC);
+
+CREATE TABLE IF NOT EXISTS factory_generation_locks (
+  slug TEXT PRIMARY KEY,
+  run_id TEXT NOT NULL,
+  status TEXT NOT NULL,
+  error TEXT,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS factory_generation_locks_status_idx
+  ON factory_generation_locks (status, updated_at);
+`.trim();
+
+/**
+ * Demo lifecycle and lightweight view tracking (Neon only).
+ */
+export const DEMO_LIFECYCLE_SCHEMA_SQL = `
+CREATE TABLE IF NOT EXISTS demo_lifecycle (
+  slug TEXT PRIMARY KEY,
+  lifecycle_status TEXT NOT NULL DEFAULT 'generated',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  published_at TIMESTAMPTZ,
+  first_viewed_at TIMESTAMPTZ,
+  last_viewed_at TIMESTAMPTZ,
+  view_count INT NOT NULL DEFAULT 0,
+  purchased_at TIMESTAMPTZ,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS demo_lifecycle_status_idx
+  ON demo_lifecycle (lifecycle_status);
+
+CREATE INDEX IF NOT EXISTS demo_lifecycle_published_at_idx
+  ON demo_lifecycle (published_at);
+
+CREATE INDEX IF NOT EXISTS demo_lifecycle_view_count_idx
+  ON demo_lifecycle (view_count);
+
+CREATE TABLE IF NOT EXISTS demo_view_dedupe (
+  slug TEXT NOT NULL,
+  viewer_key TEXT NOT NULL,
+  expires_at TIMESTAMPTZ NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (slug, viewer_key)
+);
+
+CREATE INDEX IF NOT EXISTS demo_view_dedupe_expires_idx
+  ON demo_view_dedupe (expires_at);
 `.trim();

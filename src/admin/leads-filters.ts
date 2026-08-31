@@ -1,6 +1,8 @@
 import { getOutreachStatusLabel } from "@/outreach/eligibility";
 import { LEAD_STATUSES } from "@/leads/statuses";
 import type { LeadRecord } from "@/leads/store";
+import type { DemoLifecycleRecord } from "@/demo-lifecycle/types";
+import { demoAgeDays, isNeverViewedDemo } from "@/demo-lifecycle/types";
 import {
   isActionableSmsLead,
   isRelevantSmsLead,
@@ -33,6 +35,7 @@ export const ADMIN_STATUS_FILTERS = LEAD_STATUSES.map((status) => ({
 /** Default sales pipeline views for SMS-only outreach. */
 export const ADMIN_PIPELINE_VIEWS = [
   { value: "actionable", label: "All actionable" },
+  { value: "never_viewed", label: "Never viewed (published)" },
   { value: "customers", label: "Customers" },
   { value: "excluded", label: "Excluded / not actionable" },
 ] as const;
@@ -46,6 +49,9 @@ export type AdminLeadRow = {
   outreachLabel: string;
   isRelevantSms: boolean;
   isActionableSms: boolean;
+  lifecycle: DemoLifecycleRecord | null;
+  isNeverViewed: boolean;
+  demoAgeDays: number | null;
 };
 
 export function resolveAdminLeadStatus(
@@ -74,9 +80,11 @@ export function buildAdminLeadRows(
   leads: LeadRecord[],
   customerSlugs: Set<string>,
   smsBySlug?: Map<string, SmsLeadState>,
+  lifecycleBySlug?: Map<string, DemoLifecycleRecord>,
 ): AdminLeadRow[] {
   return leads.map((lead) => {
     const isCustomer = customerSlugs.has(lead.slug);
+    const lifecycle = lifecycleBySlug?.get(lead.slug) ?? null;
     return {
       lead,
       isCustomer,
@@ -87,6 +95,9 @@ export function buildAdminLeadRows(
         customerSlugs,
         smsBySlug,
       }),
+      lifecycle,
+      isNeverViewed: isNeverViewedDemo(lifecycle, isCustomer),
+      demoAgeDays: demoAgeDays(lifecycle),
     };
   });
 }
@@ -101,7 +112,12 @@ export type AdminLeadListFilters = {
 export function resolveAdminPipelineView(
   value: string | undefined,
 ): AdminPipelineView {
-  if (value === "customers" || value === "excluded" || value === "actionable") {
+  if (
+    value === "customers" ||
+    value === "excluded" ||
+    value === "actionable" ||
+    value === "never_viewed"
+  ) {
     return value;
   }
   return "actionable";
@@ -116,6 +132,10 @@ export function filterAdminLeadRows(
   return rows.filter((row) => {
     if (pipeline === "actionable") {
       if (!row.isActionableSms) {
+        return false;
+      }
+    } else if (pipeline === "never_viewed") {
+      if (!row.isNeverViewed) {
         return false;
       }
     } else if (pipeline === "customers") {

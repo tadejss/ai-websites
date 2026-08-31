@@ -3,6 +3,7 @@ import { getCustomerBySlug } from "@/customers/store";
 import { isAdminAuthorized } from "@/lib/admin-auth";
 import { resolveCheckoutLead } from "@/leads/checkout-lead";
 import { sendOnboardingPublishApprovedEmail } from "@/billing/notify-onboarding-approved";
+import { dispatchCustomerPublish } from "@/onboarding/dispatch-customer-publish";
 import {
   approveOnboardingForPublish,
   getOnboardingBySlug,
@@ -79,6 +80,19 @@ export async function POST(_request: Request, context: RouteContext) {
     }
   }
 
+  let dispatch = null;
+  if (!result.alreadyApproved) {
+    dispatch = await dispatchCustomerPublish({
+      slug,
+      reason: "admin_approve",
+    });
+    if (!dispatch.ok) {
+      console.error("[onboarding/approve] Publish dispatch failed:", dispatch.error);
+    } else if (!dispatch.dispatched) {
+      console.warn("[onboarding/approve] Publish not dispatched:", dispatch.reason);
+    }
+  }
+
   const refreshed = await getOnboardingBySlug(slug);
 
   return NextResponse.json({
@@ -86,5 +100,6 @@ export async function POST(_request: Request, context: RouteContext) {
     status: refreshed?.status ?? result.onboarding.status,
     alreadyApproved: result.alreadyApproved,
     adminApprovedAt: refreshed?.adminApprovedAt ?? result.onboarding.adminApprovedAt,
+    publishDispatch: dispatch,
   });
 }

@@ -364,6 +364,26 @@ export async function countDailySmsBudgetUsed(): Promise<number> {
   return rows[0]?.count ?? 0;
 }
 
+export async function getSmsQueueStalenessHours(): Promise<number | null> {
+  if (!isDatabaseConfigured()) {
+    return null;
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT MIN(created_at) AS oldest
+    FROM sms_messages
+    WHERE status IN ('queued', 'claimed', 'sending')
+  `) as Array<{ oldest: Date | string | null }>;
+
+  const oldest = rows[0]?.oldest;
+  if (!oldest) {
+    return null;
+  }
+  const ageMs = Date.now() - new Date(oldest).getTime();
+  return ageMs / 3_600_000;
+}
+
 export async function countByLeadStatus(): Promise<Record<string, number>> {
   if (!isDatabaseConfigured()) {
     return {};

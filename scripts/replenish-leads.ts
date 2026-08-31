@@ -1,20 +1,30 @@
 import { resolve } from "node:path";
 import { config as loadEnv } from "dotenv";
+import { isDatabaseConfigured } from "../src/db/client";
 import {
   formatProgressStatus,
   readDiscoveryProgress,
   resetDiscoveryProgress,
 } from "../src/leads/discovery-progress";
+import {
+  loadDiscoveryProgress,
+  resetDiscoveryProgressStore,
+  saveDiscoveryProgress,
+} from "../src/factory/discovery-progress-store";
 import { replenishSmsLeads } from "../src/leads/replenish";
 
 const root = resolve(__dirname, "..");
 loadEnv({ path: resolve(root, ".env.local") });
 
-function printStatus(): void {
-  const progress = readDiscoveryProgress();
+async function printStatus(): Promise<void> {
+  const progress = isDatabaseConfigured()
+    ? await loadDiscoveryProgress()
+    : readDiscoveryProgress();
   const status = formatProgressStatus(progress);
 
-  console.log("Discovery matrix status (no API calls)\n");
+  console.log(
+    `Discovery matrix status (${isDatabaseConfigured() ? "Neon" : "local file"})\n`,
+  );
   console.log(`Current: ${status.currentRegion} / ${status.currentProfession}`);
   console.log(
     `Combinations: ${status.combinationsCompleted}/${status.combinationsTotal} completed`,
@@ -49,7 +59,9 @@ function printStatus(): void {
 
   console.log("\nPer-region yield:");
   for (const [regionId, totals] of byRegion) {
-    console.log(`- ${regionId}: ${totals.newLeads} new leads, ${totals.completed}/16 combos done`);
+    console.log(
+      `- ${regionId}: ${totals.newLeads} new leads, ${totals.completed}/16 combos done`,
+    );
   }
 }
 
@@ -57,7 +69,7 @@ async function main(): Promise<void> {
   const args = process.argv.slice(2);
 
   if (args.includes("--status")) {
-    printStatus();
+    await printStatus();
     return;
   }
 
@@ -68,14 +80,35 @@ async function main(): Promise<void> {
       );
       process.exit(1);
     }
-    resetDiscoveryProgress();
-    console.log("Deleted data/lead-discovery-progress.json");
+    if (isDatabaseConfigured()) {
+      await resetDiscoveryProgressStore();
+      console.log("Reset discovery progress in Neon (+ local file mirror)");
+    } else {
+      resetDiscoveryProgress();
+      console.log("Deleted data/lead-discovery-progress.json");
+    }
     return;
   }
 
   console.log("SMS lead replenishment (manual). Does not commit or push.\n");
+  if (isDatabaseConfigured()) {
+    console.log(
+      "Using Neon-backed discovery progress (shared with factory worker).\n",
+    );
+  } else {
+    console.log(
+      "Using local data/lead-discovery-progress.json (no DATABASE_URL).\n",
+    );
+  }
 
   const stats = await replenishSmsLeads({
+    ...(isDatabaseConfigured()
+      ? {
+          readProgress: () => loadDiscoveryProgress(),
+          writeProgress: (progress: Parameters<typeof saveDiscoveryProgress>[0]) =>
+            saveDiscoveryProgress(progress),
+        }
+      : {}),
     onQueryComplete: (queryStats) => {
       console.log(`Region: ${queryStats.region}`);
       console.log(`Profession: ${queryStats.profession}`);
@@ -122,7 +155,7 @@ async function main(): Promise<void> {
       console.log(`- ${error}`);
     }
     if (stats.errors.length > 40) {
-      console.log(`… and ${stats.errors.length - 40} more`);
+      console.log(`… and ${stats.errors.length} more`);
     }
   }
 
@@ -131,6 +164,9 @@ async function main(): Promise<void> {
   } else {
     console.log(
       "\nInspect generated leads under src/content/leads and src/content/clients, then commit manually when ready.",
+    );
+    console.log(
+      "Or use npm run factory-worker to generate and publish automatically.",
     );
   }
 }

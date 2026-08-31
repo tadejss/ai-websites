@@ -23,6 +23,10 @@ type OnboardingRow = {
   approval_email_sent_at: Date | string | null;
   admin_approved_at: Date | string | null;
   admin_publish_notify_sent_at: Date | string | null;
+  publish_started_at: Date | string | null;
+  published_at: Date | string | null;
+  publish_commit_sha: string | null;
+  publish_error: string | null;
   submitted_at: Date | string | null;
   processed_at: Date | string | null;
   created_at: Date | string;
@@ -53,8 +57,12 @@ function mapRow(row: OnboardingRow): OnboardingRecord {
     welcomeEmailSentAt: toIso(row.welcome_email_sent_at),
     approvalEmailSentAt: toIso(row.approval_email_sent_at),
     adminApprovedAt: toIso(row.admin_approved_at),
-    adminPublishNotifySentAt: toIso(row.admin_publish_notify_sent_at),
-    submittedAt: toIso(row.submitted_at),
+  adminPublishNotifySentAt: toIso(row.admin_publish_notify_sent_at),
+  publishStartedAt: toIso(row.publish_started_at),
+  publishedAt: toIso(row.published_at),
+  publishCommitSha: row.publish_commit_sha,
+  publishError: row.publish_error,
+  submittedAt: toIso(row.submitted_at),
     processedAt: toIso(row.processed_at),
     createdAt: toIso(row.created_at) ?? new Date().toISOString(),
     updatedAt: toIso(row.updated_at) ?? new Date().toISOString(),
@@ -229,7 +237,7 @@ export async function saveOnboardingDraft(
     SET
       answers = ${merged},
       status = CASE
-        WHEN status IN ('submitted', 'processing', 'ready_for_approval', 'approved_for_publish', 'live')
+        WHEN status IN ('approved_for_publish', 'publishing', 'publish_failed', 'live')
         THEN status
         ELSE 'in_progress'
       END,
@@ -254,9 +262,12 @@ export async function submitOnboarding(
 
   if (
     existing &&
-    ["submitted", "processing", "ready_for_approval", "approved_for_publish", "live"].includes(
-      existing.status,
-    )
+    [
+      "approved_for_publish",
+      "publishing",
+      "publish_failed",
+      "live",
+    ].includes(existing.status)
   ) {
     return { onboarding: existing, alreadySubmitted: true };
   }
@@ -319,6 +330,8 @@ export async function hasSubmittedOnboarding(slug: string): Promise<boolean> {
     "processing",
     "ready_for_approval",
     "approved_for_publish",
+    "publishing",
+    "publish_failed",
     "live",
   ].includes(record.status);
 }
@@ -343,6 +356,7 @@ export async function approveOnboardingForPublish(
 
   if (
     existing.status === "approved_for_publish" ||
+    existing.status === "publishing" ||
     existing.status === "live"
   ) {
     return { onboarding: existing, alreadyApproved: true };
@@ -385,4 +399,86 @@ export async function shouldSendAdminPublishNotify(
 ): Promise<boolean> {
   const record = await getOnboardingBySlug(slug);
   return Boolean(record && !record.adminPublishNotifySentAt);
+}
+
+export async function beginCustomerPublish(slug: string): Promise<OnboardingRecord> {
+  const db = await requireDb();
+  const existing = await getOnboardingBySlug(slug);
+  if (!existing) {
+    throw new Error(`Onboarding not found for slug "${slug}"`);
+  }
+
+  if (existing.status === "live") {
+    return existing;
+  }
+
+  const allowed = ["approved_for_publish", "publish_failed", "publishing"];
+  if (!allowed.includes(existing.status)) {
+    throw new Error(
+      `Onboarding status "${existing.status}" cannot start customer publish`,
+    );
+  }
+
+  const rows = (await db`
+    UPDATE customer_onboarding
+    SET
+      status = 'publishing',
+      publish_started_at = COALESCE(publish_started_at, NOW()),
+      publish_error = NULL,
+      updated_at = NOW()
+    WHERE slug = ${slug}
+    RETURNING *
+  `) as OnboardingRow[];
+
+  if (!rows[0]) {
+    throw new Error(`Onboarding not found for slug "${slug}"`);
+  }
+
+  return mapRow(rows[0]);
+}
+
+export async function markCustomerPublished(
+  slug: string,
+  commitSha: string,
+): Promise<OnboardingRecord> {
+  const db = await requireDb();
+  const rows = (await db`
+    UPDATE customer_onboarding
+    SET
+      status = 'live',
+      published_at = NOW(),
+      publish_commit_sha = ${commitSha},
+      publish_error = NULL,
+      updated_at = NOW()
+    WHERE slug = ${slug}
+    RETURNING *
+  `) as OnboardingRow[];
+
+  if (!rows[0]) {
+    throw new Error(`Onboarding not found for slug "${slug}"`);
+  }
+
+  return mapRow(rows[0]);
+}
+
+export async function markCustomerPublishFailed(
+  slug: string,
+  error: string,
+): Promise<OnboardingRecord> {
+  const db = await requireDb();
+  const rows = (await db`
+    UPDATE customer_onboarding
+    SET
+      status = 'publish_failed',
+      publish_error = ${error.slice(0, 4000)},
+      updated_at = NOW()
+    WHERE slug = ${slug}
+    RETURNING *
+  `) as OnboardingRow[];
+
+  if (!rows[0]) {
+    throw new Error(`Onboarding not found for slug "${slug}"`);
+  }
+
+  return mapRow(rows[0]);
 }

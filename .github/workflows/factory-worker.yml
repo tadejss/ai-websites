@@ -1,0 +1,62 @@
+name: Factory worker
+
+on:
+  schedule:
+    # Safety net if Vercel dispatch is not configured (06:30 UTC daily)
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [factory-generate]
+
+concurrency:
+  group: factory-worker
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.FACTORY_GIT_TOKEN || github.token }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Configure git identity
+        run: |
+          git config user.name "factory-worker"
+          git config user.email "factory-worker@users.noreply.github.com"
+
+      - name: Run factory worker
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          AI_PROVIDER: ${{ vars.AI_PROVIDER || 'openai' }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
+          SMS_LEAD_TARGET: ${{ vars.SMS_LEAD_TARGET }}
+          SMS_LEAD_REPLENISH_BATCH: ${{ vars.SMS_LEAD_REPLENISH_BATCH }}
+          FACTORY_WORKER_ENABLED: "true"
+          FACTORY_PUBLISH_ENABLED: "true"
+          FACTORY_GIT_BRANCH: ${{ github.ref_name }}
+          FACTORY_TRIGGER_SOURCE: ${{ github.event_name }}
+          FACTORY_WORKER_LEASE_MINUTES: ${{ vars.FACTORY_WORKER_LEASE_MINUTES }}
+          FACTORY_WORKER_COOLDOWN_MINUTES: ${{ vars.FACTORY_WORKER_COOLDOWN_MINUTES }}
+          FACTORY_WORKER_MAX_CONSECUTIVE_FAILURES: ${{ vars.FACTORY_WORKER_MAX_CONSECUTIVE_FAILURES }}
+        run: npm run factory-worker

@@ -22,6 +22,10 @@ import {
 import { getSmsConfig } from "@/outreach/sms/config";
 import { isSlovenianMobilePhone } from "@/outreach/sms/phone";
 import { getCustomerSlugSet } from "@/customers/store";
+import {
+  backfillPublishedFromFactoryLocks,
+  getDemoLifecycleBySlugs,
+} from "@/demo-lifecycle/store";
 
 export const dynamic = "force-dynamic";
 
@@ -57,9 +61,22 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
   const allLeads = readAllLeads().sort((a, b) =>
     (a.companyName ?? a.slug).localeCompare(b.companyName ?? b.slug, "sl"),
   );
+  const slugs = allLeads.map((lead) => lead.slug);
+  let lifecycleBySlug = isDatabaseConfigured()
+    ? await getDemoLifecycleBySlugs(slugs)
+    : new Map();
+  if (isDatabaseConfigured() && slugs.length > 0) {
+    await backfillPublishedFromFactoryLocks(slugs);
+    lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
+  }
   const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
   const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
-  const allRows = buildAdminLeadRows(allLeads, customerSlugs, smsBySlug);
+  const allRows = buildAdminLeadRows(
+    allLeads,
+    customerSlugs,
+    smsBySlug,
+    lifecycleBySlug,
+  );
   const rows = filterAdminLeadRows(allRows, {
     pipeline,
     status: statusFilter,
@@ -209,11 +226,15 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
                 <th className="px-4 py-3 font-medium">SMS</th>
                 <th className="px-4 py-3 font-medium">SMS sent</th>
                 <th className="px-4 py-3 font-medium">SMS error</th>
+                <th className="px-4 py-3 font-medium">Views</th>
+                <th className="px-4 py-3 font-medium">First view</th>
+                <th className="px-4 py-3 font-medium">Last view</th>
+                <th className="px-4 py-3 font-medium">Demo age</th>
                 <th className="px-4 py-3 font-medium">Email</th>
               </tr>
             </thead>
             <tbody>
-              {rows.map(({ lead, displayStatus }) => {
+              {rows.map(({ lead, displayStatus, lifecycle, isNeverViewed, demoAgeDays }) => {
                 const email = resolveLeadEmail(lead);
                 const sms = smsBySlug.get(lead.slug);
 
@@ -240,6 +261,22 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
                     <td className="px-4 py-3">{formatDate(sms?.smsSentAt)}</td>
                     <td className="max-w-xs truncate px-4 py-3 text-red-600">
                       {sms?.smsLastError ?? "—"}
+                    </td>
+                    <td
+                      className={`px-4 py-3 tabular-nums ${
+                        isNeverViewed ? "font-semibold text-amber-700" : ""
+                      }`}
+                    >
+                      {lifecycle?.viewCount ?? "—"}
+                    </td>
+                    <td className="px-4 py-3">
+                      {formatDate(lifecycle?.firstViewedAt)}
+                    </td>
+                    <td className="px-4 py-3">
+                      {formatDate(lifecycle?.lastViewedAt)}
+                    </td>
+                    <td className="px-4 py-3 tabular-nums">
+                      {demoAgeDays != null ? `${demoAgeDays}d` : "—"}
                     </td>
                     <td className="px-4 py-3">{email ?? "—"}</td>
                   </tr>

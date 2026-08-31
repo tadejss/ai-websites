@@ -13,6 +13,10 @@ export default function AdminLayout({ children }: LayoutProps<"/admin">) {
               <Link href="/admin/leads" className="hover:text-neutral-900">
                 Leads
               </Link>
+              {" · "}
+              <Link href="/admin/factory" className="hover:text-neutral-900">
+                Factory
+              </Link>
             </nav>
           </div>
         </div>

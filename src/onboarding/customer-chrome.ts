@@ -1,10 +1,12 @@
 import { isCustomer } from "@/customers/store";
 import { getOnboardingBySlug, getOnboardingUrl } from "./store";
+import type { OnboardingStatus } from "./types";
 
 export type CustomerChromeState = {
   isCustomer: boolean;
   onboardingUrl: string | null;
   contactName: string | null;
+  onboardingStatus: OnboardingStatus | null;
 };
 
 /** Read-only customer/onboarding state for demo pages. Never writes to DB. */
@@ -14,24 +16,40 @@ export async function getCustomerChromeState(
   try {
     const customer = await isCustomer(slug);
     if (!customer) {
-      return { isCustomer: false, onboardingUrl: null, contactName: null };
+      return {
+        isCustomer: false,
+        onboardingUrl: null,
+        contactName: null,
+        onboardingStatus: null,
+      };
     }
 
     const onboarding = await getOnboardingBySlug(slug);
     if (!onboarding) {
-      return { isCustomer: true, onboardingUrl: null, contactName: null };
+      return {
+        isCustomer: true,
+        onboardingUrl: null,
+        contactName: null,
+        onboardingStatus: null,
+      };
     }
 
     return {
       isCustomer: true,
       onboardingUrl: getOnboardingUrl(slug, onboarding.accessToken),
       contactName: onboarding.contactName,
+      onboardingStatus: onboarding.status,
     };
   } catch (error) {
     console.warn(
       "[onboarding] customer chrome read skipped:",
       error instanceof Error ? error.message : error,
     );
-    return { isCustomer: false, onboardingUrl: null, contactName: null };
+    return {
+      isCustomer: false,
+      onboardingUrl: null,
+      contactName: null,
+      onboardingStatus: null,
+    };
   }
 }

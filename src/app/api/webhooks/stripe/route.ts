@@ -13,6 +13,7 @@ import {
   recordCustomerUpsellPurchase,
   upsertCustomerFromCheckout,
 } from "@/customers/store";
+import { markDemoLifecyclePurchased } from "@/demo-lifecycle/store";
 import { isDatabaseConfigured } from "@/db/client";
 import { resolveCheckoutLead } from "@/leads/checkout-lead";
 import {
@@ -205,6 +206,8 @@ async function handleBaseSubscriptionCompleted(
   if (alreadyProcessed) {
     return { handled: true, slug, skipped: true };
   }
+
+  await markDemoLifecyclePurchased(slug, customer.purchasedAt);
 
   const onboardingUrl = getOnboardingUrl(slug, onboarding.accessToken);
 

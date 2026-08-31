@@ -1,7 +1,8 @@
 "use client";
 
 import { useCallback, useMemo, useState } from "react";
-import type { CustomerOnboardingAnswers } from "@/onboarding/types";
+import type { CustomerOnboardingAnswers, OnboardingStatus } from "@/onboarding/types";
+import { isOnboardingLockedForCustomerEdits } from "@/onboarding/types";
 import { listOnboardingImages, syncOnboardingImageFields } from "@/onboarding/images";
 import { ImageUploadField } from "./ImageUploadField";
 
@@ -89,14 +90,7 @@ export function OnboardingForm({
   const [error, setError] = useState<string | null>(null);
 
   const readOnly = useMemo(
-    () =>
-      [
-        "submitted",
-        "processing",
-        "ready_for_approval",
-        "approved_for_publish",
-        "live",
-      ].includes(status),
+    () => isOnboardingLockedForCustomerEdits(status as OnboardingStatus),
     [status],
   );
 

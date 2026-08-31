@@ -1,0 +1,60 @@
+name: Customer publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: Customer slug to publish
+        required: true
+        type: string
+  repository_dispatch:
+    types: [customer-publish]
+
+concurrency:
+  group: customer-publish-${{ github.event.client_payload.slug || inputs.slug }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.FACTORY_GIT_TOKEN || github.token }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Configure git identity
+        run: |
+          git config user.name "customer-publish"
+          git config user.email "customer-publish@users.noreply.github.com"
+
+      - name: Resolve slug
+        id: slug
+        run: |
+          if [ -n "${{ github.event.client_payload.slug }}" ]; then
+            echo "value=${{ github.event.client_payload.slug }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=${{ inputs.slug }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish customer site
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          FACTORY_PUBLISH_ENABLED: "true"
+          FACTORY_GIT_BRANCH: ${{ github.ref_name }}
+          FACTORY_WORKER_ID: gha-customer-publish
+        run: npm run publish-customer -- "${{ steps.slug.outputs.value }}"

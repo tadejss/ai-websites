@@ -10,7 +10,9 @@ Post-purchase questionnaire for Zbrendiraj.si customers. Mutable state lives in 
 4. Customer completes `/{slug}/vsebina?token=...` (3 steps)
 5. Submit → `submitted` → `processing` → merge with demo `business.json` (read-only) → `processed_payload` in Neon → `ready_for_approval`
 6. Ops email: **Nova spletna stran čaka na potrditev**
-7. Admin reviews `/admin/leads/[slug]` — **Objavi LIVE** is a future step (placeholder only)
+7. Admin reviews `/admin/leads/[slug]` — **Potrdi in pripravi za objavo**
+8. Auto-dispatch → GitHub Action `customer-publish` → apply payload → git push → Vercel
+9. Status `live` at `https://zbrendiraj.si/{slug}`
 
 ## Statuses
 
@@ -20,8 +22,11 @@ Post-purchase questionnaire for Zbrendiraj.si customers. Mutable state lives in 
 | `in_progress` | Draft saved |
 | `submitted` | Customer submitted answers |
 | `processing` | Server merging/processing |
-| `ready_for_approval` | Processed payload ready for ops review |
-| `live` | Published (future — manual admin action) |
+| `ready_for_approval` | Processed payload ready for ops review (customer may still edit) |
+| `approved_for_publish` | Admin approved; publish dispatch queued |
+| `publishing` | GitHub Action applying content and pushing |
+| `publish_failed` | Push/apply failed — admin **Ponovi objavo LIVE** |
+| `live` | Customer content published at `/{slug}` |
 
 ## API
 
@@ -32,16 +37,15 @@ Post-purchase questionnaire for Zbrendiraj.si customers. Mutable state lives in 
 
 All endpoints require valid token + `isCustomer(slug)`.
 
-## Factory next step
+## Factory apply + publish
 
-`processed_payload.businessInput` is a merged `BusinessInput`-shaped object ready for a future CLI:
+`processed_payload` is merged into `src/content/clients/{slug}/` (demo snapshot in `demo/`). Publish runs via:
 
 ```bash
-# Planned — not implemented in app runtime
-npm run apply-onboarding -- <slug>
+npm run publish-customer -- <slug>
 ```
 
-Production runtime **does not** write `src/content/clients/` files.
+Triggered automatically on admin approve (`repository_dispatch: customer-publish`). Requires `FACTORY_DISPATCH_ENABLED`, `FACTORY_GITHUB_REPO`, `FACTORY_GITHUB_TOKEN`, and `DATABASE_URL` on GitHub Actions.
 
 ## Env
 
