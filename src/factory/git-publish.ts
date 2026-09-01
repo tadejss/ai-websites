@@ -53,37 +53,6 @@ function logGitPublishNotice(
   }
 }
 
-async function debugGitPublishLog(
-  hypothesisId: string,
-  location: string,
-  message: string,
-  data: Record<string, unknown>,
-): Promise<void> {
-  // #region agent log
-  try {
-    await fetch("http://127.0.0.1:7813/ingest/557e1e51-3235-4136-a53b-709aeb57898b", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Debug-Session-Id": "b2aa8f",
-      },
-      body: JSON.stringify({
-        sessionId: "b2aa8f",
-        runId: process.env.GITHUB_ACTIONS === "true" ? "gha" : "local",
-        hypothesisId,
-        location,
-        message,
-        data,
-        timestamp: Date.now(),
-      }),
-      signal: AbortSignal.timeout(1500),
-    });
-  } catch {
-    // ignore ingest failures
-  }
-  // #endregion
-}
-
 async function countRevRange(
   runGit: GitPublishDependencies["runGit"],
   range: string,
@@ -110,12 +79,6 @@ async function syncRemoteBranchBeforePush(
 
   const behindBefore = await countRevRange(d.runGit, `HEAD..${upstream}`);
   const aheadBefore = await countRevRange(d.runGit, `${upstream}..HEAD`);
-  await debugGitPublishLog(
-    "A",
-    "src/factory/git-publish.ts:syncRemoteBranchBeforePush",
-    "remote sync state",
-    { upstream, behindBefore, aheadBefore, attempt },
-  );
   logGitPublishNotice("remote sync state before rebase", {
     upstream,
     behindBefore,
@@ -155,12 +118,6 @@ async function pushWithRemoteSync(
     } catch (error) {
       lastError = error;
       const message = error instanceof Error ? error.message : String(error);
-      await debugGitPublishLog(
-        "B",
-        "src/factory/git-publish.ts:pushWithRemoteSync",
-        "push attempt failed",
-        { attempt, maxAttempts, error: message.slice(0, 300) },
-      );
       logGitPublishNotice("push rejected; will retry after fetch/rebase", {
         attempt,
         maxAttempts,

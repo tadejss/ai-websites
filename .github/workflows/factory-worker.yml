@@ -5,6 +5,12 @@ on:
     # Safety net if Vercel dispatch is not configured (06:30 UTC daily)
     - cron: "30 6 * * *"
   workflow_dispatch:
+    inputs:
+      force:
+        description: Bypass cooldown after a recent failure (manual runs only)
+        required: false
+        default: false
+        type: boolean
   repository_dispatch:
     types: [factory-generate]
 
@@ -94,4 +100,9 @@ jobs:
           FACTORY_WORKER_LEASE_MINUTES: ${{ vars.FACTORY_WORKER_LEASE_MINUTES }}
           FACTORY_WORKER_COOLDOWN_MINUTES: ${{ vars.FACTORY_WORKER_COOLDOWN_MINUTES }}
           FACTORY_WORKER_MAX_CONSECUTIVE_FAILURES: ${{ vars.FACTORY_WORKER_MAX_CONSECUTIVE_FAILURES }}
-        run: npm run factory-worker
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force }}" = "true" ]; then
+            npm run factory-worker -- --force
+          else
+            npm run factory-worker
+          fi
