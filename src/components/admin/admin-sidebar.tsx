@@ -3,20 +3,30 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
+  Activity,
   Factory,
   Inbox,
   Kanban,
   LayoutList,
+  MessageSquare,
+  Settings,
+  Star,
   TrendingUp,
+  Users,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
   { href: "/admin", label: "Inbox", icon: Inbox, exact: true },
+  { href: "/admin/review", label: "Review", icon: Star },
   { href: "/admin/leads", label: "Leads", icon: LayoutList },
   { href: "/admin/pipeline", label: "Pipeline", icon: Kanban },
+  { href: "/admin/sms", label: "SMS", icon: MessageSquare },
   { href: "/admin/factory", label: "Factory", icon: Factory },
+  { href: "/admin/customers", label: "Customers", icon: Users },
   { href: "/admin/revenue", label: "Revenue", icon: TrendingUp },
+  { href: "/admin/activity", label: "Activity", icon: Activity },
+  { href: "/admin/settings", label: "Settings", icon: Settings },
 ] as const;
 
 export function AdminSidebar({ className }: { className?: string }) {
@@ -37,10 +47,10 @@ export function AdminSidebar({ className }: { className?: string }) {
           Website Factory
         </Link>
         <p className="mt-0.5 text-[10px] uppercase tracking-widest text-[var(--admin-muted)]">
-          Ops Console
+          Mission Control
         </p>
       </div>
-      <nav className="flex flex-1 flex-col gap-0.5 p-2">
+      <nav className="flex flex-1 flex-col gap-0.5 overflow-y-auto p-2">
         {navItems.map(({ href, label, icon: Icon, ...rest }) => {
           const exact = "exact" in rest && rest.exact;
           const active = exact
@@ -63,12 +73,18 @@ export function AdminSidebar({ className }: { className?: string }) {
           );
         })}
       </nav>
-      <div className="border-t border-[var(--admin-border)] p-3">
+      <div className="border-t border-[var(--admin-border)] p-3 space-y-1">
         <p className="text-[10px] text-[var(--admin-muted)]">
           <kbd className="rounded border border-[var(--admin-border)] px-1.5 py-0.5 font-mono">
             ⌘K
           </kbd>{" "}
-          Command palette
+          Search
+        </p>
+        <p className="text-[10px] text-[var(--admin-muted)]">
+          <kbd className="rounded border border-[var(--admin-border)] px-1.5 py-0.5 font-mono">
+            ?
+          </kbd>{" "}
+          Shortcuts
         </p>
       </div>
     </aside>

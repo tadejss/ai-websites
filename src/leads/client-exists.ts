@@ -11,7 +11,9 @@ export function clientSiteExists(slug: string): boolean {
     return false;
   }
 
-  return existsSync(
-    resolve(process.cwd(), "src/content/clients", slug, "site.json"),
-  );
+  return existsSync(clientSitePath(slug));
+}
+
+export function clientSitePath(slug: string): string {
+  return resolve(process.cwd(), "src/content/clients", slug, "site.json");
 }

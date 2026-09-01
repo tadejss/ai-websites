@@ -1,4 +1,5 @@
 import { logAdminAction } from "@/admin/audit";
+import { afterAdminMutation } from "@/admin/revalidate";
 import { NextResponse } from "next/server";
 import { getCustomerBySlug } from "@/customers/store";
 import { isAdminAuthorized } from "@/lib/admin-auth";
@@ -102,6 +103,7 @@ export async function POST(_request: Request, context: RouteContext) {
     result: "ok",
     detail: { alreadyApproved: result.alreadyApproved },
   });
+  await afterAdminMutation();
 
   return NextResponse.json({
     ok: true,

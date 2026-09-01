@@ -1,6 +1,7 @@
 import {
   buildAdminLeadRows,
   filterAdminLeadRows,
+  type AdminLeadListFilters,
   type AdminPipelineView,
 } from "@/admin/leads-filters";
 import { getCustomerSlugSet } from "@/customers/store";
@@ -9,8 +10,13 @@ import {
   backfillPublishedFromFactoryLocks,
   getDemoLifecycleBySlugs,
 } from "@/demo-lifecycle/store";
-import { readAllLeads } from "@/leads/store";
+import { readAllLeads, readLead } from "@/leads/store";
 import { listSmsLeadStates } from "@/outreach/sms/store";
+import {
+  queryEntityIndex,
+  searchEntityIndex,
+  type EntityIndexRow,
+} from "@/admin/entity-index";
 
 export type AdminLeadsQuery = {
   page?: number;
@@ -18,6 +24,8 @@ export type AdminLeadsQuery = {
   pipeline?: AdminPipelineView;
   q?: string;
   sort?: "company" | "demo_age" | "views" | "activity";
+  status?: string;
+  outreach?: string;
 };
 
 export type AdminLeadsPageResult = {
@@ -28,68 +36,53 @@ export type AdminLeadsPageResult = {
   totalPages: number;
 };
 
-function matchesSearch(
-  row: ReturnType<typeof buildAdminLeadRows>[number],
-  q: string,
-): boolean {
-  const needle = q.toLowerCase();
-  const haystack = [
-    row.lead.slug,
-    row.lead.companyName ?? "",
-    row.lead.phone ?? "",
-    row.lead.email ?? "",
-  ]
-    .join(" ")
-    .toLowerCase();
-  return haystack.includes(needle);
-}
+async function enrichIndexRows(
+  indexRows: EntityIndexRow[],
+  filters: AdminLeadListFilters,
+): Promise<ReturnType<typeof buildAdminLeadRows>> {
+  const customerSlugs = await getCustomerSlugSet();
+  const slugs = indexRows.map((row) => row.slug);
+  const leads = slugs.map((slug) => readLead(slug)).filter(Boolean) as NonNullable<
+    ReturnType<typeof readLead>
+  >[];
 
-function sortRows(
-  rows: ReturnType<typeof buildAdminLeadRows>,
-  sort: AdminLeadsQuery["sort"],
-): ReturnType<typeof buildAdminLeadRows> {
-  const copy = [...rows];
-  switch (sort) {
-    case "demo_age":
-      return copy.sort(
-        (a, b) => (b.demoAgeDays ?? -1) - (a.demoAgeDays ?? -1),
-      );
-    case "views":
-      return copy.sort(
-        (a, b) =>
-          (b.lifecycle?.viewCount ?? 0) - (a.lifecycle?.viewCount ?? 0),
-      );
-    case "activity":
-      return copy.sort((a, b) => {
-        const aTime = new Date(
-          a.lifecycle?.lastViewedAt ??
-            a.lifecycle?.publishedAt ??
-            "1970-01-01",
-        ).getTime();
-        const bTime = new Date(
-          b.lifecycle?.lastViewedAt ??
-            b.lifecycle?.publishedAt ??
-            "1970-01-01",
-        ).getTime();
-        return bTime - aTime;
-      });
-    case "company":
-    default:
-      return copy.sort((a, b) =>
-        (a.lead.companyName ?? a.lead.slug).localeCompare(
-          b.lead.companyName ?? b.lead.slug,
-          "sl",
-        ),
-      );
+  let lifecycleBySlug = isDatabaseConfigured()
+    ? await getDemoLifecycleBySlugs(slugs)
+    : new Map();
+
+  if (isDatabaseConfigured() && slugs.length > 0) {
+    await backfillPublishedFromFactoryLocks(slugs);
+    lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
   }
+
+  const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
+  const smsBySlug = new Map(
+    smsStates
+      .filter((state) => slugs.includes(state.slug))
+      .map((state) => [state.slug, state]),
+  );
+
+  const allRows = buildAdminLeadRows(
+    leads,
+    customerSlugs,
+    smsBySlug,
+    lifecycleBySlug,
+  );
+
+  return filterAdminLeadRows(allRows, filters);
 }
 
-export async function queryAdminLeads(
+async function queryAdminLeadsLegacy(
   query: AdminLeadsQuery,
 ): Promise<AdminLeadsPageResult> {
   const page = Math.max(1, query.page ?? 1);
   const pageSize = Math.min(100, Math.max(10, query.pageSize ?? 50));
   const pipeline = query.pipeline ?? "actionable";
+  const filters: AdminLeadListFilters = {
+    pipeline,
+    status: query.status,
+    outreach: query.outreach,
+  };
 
   const customerSlugs = await getCustomerSlugSet();
   const allLeads = readAllLeads();
@@ -114,13 +107,45 @@ export async function queryAdminLeads(
     lifecycleBySlug,
   );
 
-  let filtered = filterAdminLeadRows(allRows, { pipeline });
+  let filtered = filterAdminLeadRows(allRows, filters);
 
   if (query.q?.trim()) {
-    filtered = filtered.filter((row) => matchesSearch(row, query.q!.trim()));
+    const needle = query.q.trim().toLowerCase();
+    filtered = filtered.filter((row) => {
+      const haystack = [
+        row.lead.slug,
+        row.lead.companyName ?? "",
+        row.lead.phone ?? "",
+        row.lead.email ?? "",
+      ]
+        .join(" ")
+        .toLowerCase();
+      return haystack.includes(needle);
+    });
   }
 
-  filtered = sortRows(filtered, query.sort);
+  const sort = query.sort ?? "company";
+  filtered = [...filtered].sort((a, b) => {
+    switch (sort) {
+      case "demo_age":
+        return (b.demoAgeDays ?? -1) - (a.demoAgeDays ?? -1);
+      case "views":
+        return (b.lifecycle?.viewCount ?? 0) - (a.lifecycle?.viewCount ?? 0);
+      case "activity":
+        const aTime = new Date(
+          a.lifecycle?.lastViewedAt ?? a.lifecycle?.publishedAt ?? "1970",
+        ).getTime();
+        const bTime = new Date(
+          b.lifecycle?.lastViewedAt ?? b.lifecycle?.publishedAt ?? "1970",
+        ).getTime();
+        return bTime - aTime;
+      default:
+        return (a.lead.companyName ?? a.lead.slug).localeCompare(
+          b.lead.companyName ?? b.lead.slug,
+          "sl",
+        );
+    }
+  });
 
   const total = filtered.length;
   const totalPages = Math.max(1, Math.ceil(total / pageSize));
@@ -131,13 +156,62 @@ export async function queryAdminLeads(
   return { rows, total, page: safePage, pageSize, totalPages };
 }
 
+export async function queryAdminLeads(
+  query: AdminLeadsQuery,
+): Promise<AdminLeadsPageResult> {
+  const page = Math.max(1, query.page ?? 1);
+  const pageSize = Math.min(100, Math.max(10, query.pageSize ?? 50));
+  const pipeline = query.pipeline ?? "actionable";
+  const hasRowFilters = Boolean(query.status?.trim() || query.outreach?.trim());
+
+  if (!isDatabaseConfigured() || hasRowFilters) {
+    return queryAdminLeadsLegacy(query);
+  }
+
+  const { rows: indexRows, total } = await queryEntityIndex({
+    page,
+    pageSize,
+    pipeline,
+    q: query.q,
+    sort: query.sort,
+  });
+
+  const enriched = await enrichIndexRows(indexRows, {
+    pipeline,
+    status: query.status,
+    outreach: query.outreach,
+  });
+
+  const totalPages = Math.max(1, Math.ceil(total / pageSize));
+
+  return {
+    rows: enriched,
+    total,
+    page,
+    pageSize,
+    totalPages,
+  };
+}
+
 export async function searchAdminEntities(
   q: string,
   limit = 15,
 ): Promise<
   Array<{ slug: string; companyName: string; stage: string; href: string }>
 > {
-  const result = await queryAdminLeads({
+  if (isDatabaseConfigured()) {
+    const indexResults = await searchEntityIndex(q, limit);
+    if (indexResults.length > 0) {
+      return indexResults.map((row) => ({
+        slug: row.slug,
+        companyName: row.companyName,
+        stage: row.unifiedStage,
+        href: `/admin/e/${row.slug}`,
+      }));
+    }
+  }
+
+  const result = await queryAdminLeadsLegacy({
     q,
     pipeline: "actionable",
     page: 1,
@@ -145,7 +219,7 @@ export async function searchAdminEntities(
     sort: "company",
   });
 
-  const customerResult = await queryAdminLeads({
+  const customerResult = await queryAdminLeadsLegacy({
     q,
     pipeline: "customers",
     page: 1,

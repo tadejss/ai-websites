@@ -1,6 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { cn } from "@/lib/utils";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/admin/ui/tooltip";
 import type { HeatmapCell } from "./discovery-heatmap";
 
 export function DiscoveryHeatmapGrid({ cells }: { cells: HeatmapCell[] }) {
@@ -71,17 +77,25 @@ function RegionRow({
         const key = `${region}:${profession}`;
         const cell = cellMap.get(key);
         const status = cell?.status ?? "pending";
+        const leadsHref = `/admin/leads?q=${encodeURIComponent(profession)}&pipeline=actionable`;
         return (
-          <div
-            key={`${region}-${profession}`}
-            title={`${region} × ${profession}: ${status}`}
-            className={cn(
-              "h-2.5 w-2.5 rounded-sm",
-              status === "completed" && "bg-emerald-500/80",
-              status === "active" && "animate-pulse bg-cyan-500/80",
-              status === "pending" && "bg-zinc-700",
-            )}
-          />
+          <Tooltip key={`${region}-${profession}`}>
+            <TooltipTrigger asChild>
+              <Link
+                href={leadsHref}
+                title={`${region} × ${profession}: ${status}`}
+                className={cn(
+                  "h-2.5 w-2.5 rounded-sm",
+                  status === "completed" && "bg-emerald-500/80",
+                  status === "active" && "animate-pulse bg-cyan-500/80",
+                  status === "pending" && "bg-zinc-700",
+                )}
+              />
+            </TooltipTrigger>
+            <TooltipContent>
+              {region} × {profession}: {status}
+            </TooltipContent>
+          </Tooltip>
         );
       })}
     </>

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { logAdminAction } from "@/admin/audit";
+import { afterAdminMutation } from "@/admin/revalidate";
 import { readLead } from "@/leads/store";
 import { enqueueSmsForLead } from "@/outreach/sms/queue";
 import { isAdminAuthorized } from "@/lib/admin-auth";
@@ -55,6 +56,7 @@ export async function POST(request: Request) {
     result: queued > 0 ? "ok" : "error",
     detail: { step, queued, total: parsed.data.slugs.length },
   });
+  await afterAdminMutation();
 
   return NextResponse.json({ ok: true, queued, results });
 }

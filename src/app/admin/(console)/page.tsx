@@ -1,39 +1,54 @@
-import { getAdminInboxData } from "@/admin/inbox";
+import { getActionQueue } from "@/admin/queue";
 import { getFactoryOpsSnapshot } from "@/factory/ops-snapshot";
 import {
   AdminPageHeader,
   AdminStatCard,
   AdminStatGrid,
 } from "@/components/admin/admin-page";
-import { InboxColumn } from "@/components/admin/inbox-column";
+import { ActionQueue } from "@/components/admin/action-queue";
+import { RunbookPanel } from "@/components/admin/runbook-panel";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminCommandCenterPage() {
-  const [inbox, snapshot] = await Promise.all([
-    getAdminInboxData(),
+  const [items, snapshot] = await Promise.all([
+    getActionQueue(50),
     getFactoryOpsSnapshot(),
   ]);
+
+  const publishFailedCount = items.filter(
+    (item) => item.kind === "publish_failed",
+  ).length;
 
   return (
     <div>
       <AdminPageHeader
         title="Command Center"
-        description="What needs action today"
+        description="Unified action queue — keyboard-first ops"
       />
 
+      {publishFailedCount > 0 ? (
+        <div className="mb-4">
+          <RunbookPanel kind="publish_failed" />
+        </div>
+      ) : null}
+      {snapshot.worker.circuitOpen ? (
+        <div className="mb-4">
+          <RunbookPanel kind="circuit_open" />
+        </div>
+      ) : null}
+
       <AdminStatGrid>
-        <AdminStatCard
-          label="Onboarding review"
-          value={String(inbox.counts.onboardingReview)}
-        />
+        <AdminStatCard label="Queue items" value={String(items.length)} />
         <AdminStatCard
           label="Publish failed"
-          value={String(inbox.counts.publishFailed)}
+          value={String(publishFailedCount)}
         />
         <AdminStatCard
-          label="SMS actionable"
-          value={String(inbox.counts.smsActionable)}
+          label="Onboarding review"
+          value={String(
+            items.filter((item) => item.kind === "onboarding_review").length,
+          )}
         />
         <AdminStatCard
           label="Replenish needed"
@@ -42,26 +57,7 @@ export default async function AdminCommandCenterPage() {
         />
       </AdminStatGrid>
 
-      <div className="grid gap-4 lg:grid-cols-3">
-        <InboxColumn
-          title="Onboarding review"
-          count={inbox.counts.onboardingReview}
-          items={inbox.onboardingReview}
-          emptyMessage="No onboarding waiting for review"
-        />
-        <InboxColumn
-          title="Publish failed"
-          count={inbox.counts.publishFailed}
-          items={inbox.publishFailed}
-          emptyMessage="No failed publishes"
-        />
-        <InboxColumn
-          title="SMS actionable"
-          count={inbox.counts.smsActionable}
-          items={inbox.smsActionable}
-          emptyMessage="No actionable SMS leads"
-        />
-      </div>
+      <ActionQueue initialItems={items} />
     </div>
   );
 }

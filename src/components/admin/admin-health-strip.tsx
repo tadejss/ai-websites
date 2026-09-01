@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { StatusIndicator } from "@/components/admin/ui/status-led";
+import { useAdminRealtime } from "@/components/admin/admin-realtime-provider";
 
 type HealthPayload = {
   factory: { level: "ok" | "warning" | "failed" | "idle"; detail: string };
@@ -11,22 +12,14 @@ type HealthPayload = {
 };
 
 export function AdminHealthStrip({ initial }: { initial: HealthPayload }) {
+  const realtime = useAdminRealtime();
   const [health, setHealth] = useState(initial);
 
   useEffect(() => {
-    const interval = setInterval(async () => {
-      try {
-        const response = await fetch("/api/admin/health");
-        if (response.ok) {
-          const data = (await response.json()) as HealthPayload;
-          setHealth(data);
-        }
-      } catch {
-        // ignore polling errors
-      }
-    }, 30_000);
-    return () => clearInterval(interval);
-  }, []);
+    if (realtime.health) {
+      setHealth(realtime.health);
+    }
+  }, [realtime.health]);
 
   const indicators = [
     {
@@ -55,6 +48,8 @@ export function AdminHealthStrip({ initial }: { initial: HealthPayload }) {
     },
   ] as const;
 
+  const criticalCount = realtime.queueCounts?.publish_failed ?? 0;
+
   return (
     <div className="border-b border-[var(--admin-border)] bg-[var(--admin-bg)] px-3 py-2 md:px-4">
       <div className="grid grid-cols-2 gap-x-4 gap-y-2 md:flex md:flex-wrap md:items-center md:gap-x-6 md:gap-y-2">
@@ -68,6 +63,11 @@ export function AdminHealthStrip({ initial }: { initial: HealthPayload }) {
             compact
           />
         ))}
+        {criticalCount > 0 ? (
+          <span className="text-xs text-red-400">
+            ⚠ {criticalCount} publish failed
+          </span>
+        ) : null}
       </div>
     </div>
   );

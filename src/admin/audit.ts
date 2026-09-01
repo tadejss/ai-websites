@@ -1,34 +1,11 @@
 import { createHash } from "node:crypto";
 import { cookies } from "next/headers";
 import { isDatabaseConfigured, sql } from "@/db/client";
-import { ensureCustomerSchema } from "@/db/ensure-schema";
-import { ADMIN_AUDIT_SCHEMA_SQL } from "@/db/admin-schema";
+import { ensureAdminSchema } from "@/admin/entity-index";
 import { ADMIN_COOKIE } from "@/lib/auth";
 
-let auditSchemaReady: Promise<void> | null = null;
-
 async function ensureAuditSchema(): Promise<void> {
-  if (!isDatabaseConfigured()) {
-    return;
-  }
-
-  if (!auditSchemaReady) {
-    auditSchemaReady = (async () => {
-      await ensureCustomerSchema();
-      const statements = ADMIN_AUDIT_SCHEMA_SQL.split(";")
-        .map((part) => part.trim())
-        .filter((part) => part.length > 0);
-      const db = sql();
-      for (const statement of statements) {
-        await db.query(statement);
-      }
-    })().catch((error) => {
-      auditSchemaReady = null;
-      throw error;
-    });
-  }
-
-  await auditSchemaReady;
+  await ensureAdminSchema();
 }
 
 async function sessionHash(): Promise<string | null> {

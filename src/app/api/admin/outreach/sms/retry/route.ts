@@ -11,6 +11,8 @@ import { readLead } from "@/leads/store";
 import { getSmsMessageById } from "@/outreach/sms/store";
 import { enqueueSmsForLead } from "@/outreach/sms/queue";
 import type { SmsStep } from "@/outreach/sms/types";
+import { logAdminAction } from "@/admin/audit";
+import { afterAdminMutation } from "@/admin/revalidate";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -80,8 +82,22 @@ export async function POST(request: Request) {
 
   const result = await enqueueSmsForLead({ lead, step, force: true });
   if (!result.ok) {
+    await logAdminAction({
+      action: "sms_retry",
+      slug,
+      result: "error",
+      detail: { error: result.error },
+    });
     return NextResponse.json({ error: result.error }, { status: 409 });
   }
+
+  await logAdminAction({
+    action: "sms_retry",
+    slug,
+    result: "ok",
+    detail: { messageId: result.message.messageId, step },
+  });
+  await afterAdminMutation();
 
   return NextResponse.json({
     ok: true,

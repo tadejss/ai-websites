@@ -6,6 +6,8 @@ import type { OutreachStep } from "@/leads/outreach-types";
 import { sendOutreachToLead } from "@/outreach/send";
 import { ADMIN_COOKIE } from "@/lib/auth";
 import { cookies } from "next/headers";
+import { logAdminAction } from "@/admin/audit";
+import { afterAdminMutation } from "@/admin/revalidate";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -61,8 +63,21 @@ export async function POST(request: Request) {
   });
 
   if (!result.ok) {
+    await logAdminAction({
+      action: "email_send",
+      slug: parsed.data.slug,
+      result: "error",
+      detail: { skipped: result.skipped },
+    });
     return NextResponse.json(result, { status: result.skipped ? 409 : 500 });
   }
+
+  await logAdminAction({
+    action: "email_send",
+    slug: parsed.data.slug,
+    result: "ok",
+  });
+  await afterAdminMutation();
 
   return NextResponse.json(result);
 }

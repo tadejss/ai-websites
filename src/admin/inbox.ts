@@ -166,11 +166,93 @@ export async function getSmsActionableInbox(limit = 10): Promise<InboxItem[]> {
   }));
 }
 
+async function countOnboardingReview(): Promise<number> {
+  if (!isDatabaseConfigured()) {
+    return 0;
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT COUNT(*)::int AS count
+    FROM customer_onboarding
+    WHERE status IN ('submitted', 'processing', 'ready_for_approval')
+  `) as Array<{ count: number }>;
+  return rows[0]?.count ?? 0;
+}
+
+async function countPublishFailed(): Promise<number> {
+  const aggregates = await getCustomerPublishOpsAggregates();
+  let total = aggregates.publishFailedRows.length + aggregates.stuckPublishing;
+  if (isDatabaseConfigured()) {
+    await ensureCustomerSchema();
+    const db = sql();
+    const rows = (await db`
+      SELECT COUNT(*)::int AS count
+      FROM customer_onboarding
+      WHERE status = 'publish_failed'
+    `) as Array<{ count: number }>;
+    total = rows[0]?.count ?? 0;
+    const stuckRows = (await db`
+      SELECT COUNT(*)::int AS count
+      FROM customer_onboarding
+      WHERE status = 'publishing'
+    `) as Array<{ count: number }>;
+    total += stuckRows[0]?.count ?? 0;
+  }
+  return total;
+}
+
+async function countSmsActionable(): Promise<number> {
+  const customerSlugs = await getCustomerSlugSet();
+  const allLeads = readAllLeads();
+  const slugs = allLeads.map((lead) => lead.slug);
+
+  let lifecycleBySlug = isDatabaseConfigured()
+    ? await getDemoLifecycleBySlugs(slugs)
+    : new Map();
+
+  if (isDatabaseConfigured() && slugs.length > 0) {
+    await backfillPublishedFromFactoryLocks(slugs);
+    lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
+  }
+
+  const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
+  const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
+
+  const allRows = buildAdminLeadRows(
+    allLeads,
+    customerSlugs,
+    smsBySlug,
+    lifecycleBySlug,
+  );
+
+  const actionable = filterAdminLeadRows(allRows, { pipeline: "actionable" });
+  const neverViewed = filterAdminLeadRows(allRows, { pipeline: "never_viewed" });
+  const seen = new Set<string>();
+  let count = 0;
+  for (const row of [...neverViewed, ...actionable]) {
+    if (seen.has(row.lead.slug)) continue;
+    seen.add(row.lead.slug);
+    count += 1;
+  }
+  return count;
+}
+
 export async function getAdminInboxData(): Promise<AdminInboxData> {
-  const [onboardingReview, publishFailed, smsActionable] = await Promise.all([
+  const [
+    onboardingReview,
+    publishFailed,
+    smsActionable,
+    onboardingCount,
+    publishCount,
+    smsCount,
+  ] = await Promise.all([
     getOnboardingReviewInbox(10),
     getPublishFailedInbox(10),
     getSmsActionableInbox(10),
+    countOnboardingReview(),
+    countPublishFailed(),
+    countSmsActionable(),
   ]);
 
   return {
@@ -178,9 +260,9 @@ export async function getAdminInboxData(): Promise<AdminInboxData> {
     publishFailed,
     smsActionable,
     counts: {
-      onboardingReview: onboardingReview.length,
-      publishFailed: publishFailed.length,
-      smsActionable: smsActionable.length,
+      onboardingReview: onboardingCount,
+      publishFailed: publishCount,
+      smsActionable: smsCount,
     },
   };
 }
