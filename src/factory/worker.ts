@@ -3,20 +3,21 @@ import { createClientFromLead } from "@/clients/create-client-from-lead";
 import { clientSiteExists } from "@/leads/client-exists";
 import { replenishSmsLeads, type ReplenishStats } from "@/leads/replenish";
 import { readLead } from "@/leads/store";
-import { getFactoryWorkerConfig } from "./config";
-import {
-  loadDiscoveryProgress,
-  saveDiscoveryProgress,
-} from "./discovery-progress-store";
 import {
   markGenerationLock,
   releaseGenerationLock,
   releaseGenerationLocksForRun,
+  releaseStaleFailedGenerationLocks,
   releaseStaleGeneratedLockIfNoClient,
   releaseStaleGeneratedLocksWithoutClient,
   tryAcquireGenerationLock,
   markGeneratedSlugsPublished,
 } from "./generation-lock";
+import { getFactoryWorkerConfig } from "./config";
+import {
+  loadDiscoveryProgress,
+  saveDiscoveryProgress,
+} from "./discovery-progress-store";
 import {
   claimWorkerLease,
   countConsecutiveFailures,
@@ -211,6 +212,18 @@ export async function runFactoryWorker(
     gitHubNotice("startup stale lock cleanup", {
       count: staleReleased.length,
       sample: staleReleased.slice(0, 8),
+    });
+  }
+
+  const staleFailedReleased = await releaseStaleFailedGenerationLocks();
+  if (staleFailedReleased.length > 0) {
+    log("released stale failed generation locks", {
+      count: staleFailedReleased.length,
+      sample: staleFailedReleased.slice(0, 5),
+    });
+    gitHubNotice("startup stale failed lock cleanup", {
+      count: staleFailedReleased.length,
+      sample: staleFailedReleased.slice(0, 8),
     });
   }
 

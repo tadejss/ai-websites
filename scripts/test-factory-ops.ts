@@ -181,6 +181,32 @@ function testStuckExpiredLease(): void {
   );
 }
 
+function testExpiredFailedLocksDoNotWarn(): void {
+  const health = evaluateFactoryOpsHealth(
+    baseInput({
+      generationLocks: { generating: 0, failed: 0, staleGenerating: 0 },
+    }),
+  );
+  ok("zero actionable failed locks is ok", health.level === "ok");
+  ok(
+    "no failed_generation_locks issue when actionable count is zero",
+    !health.issues.some((issue) => issue.code === "failed_generation_locks"),
+  );
+}
+
+function testActionableFailedLocksWarn(): void {
+  const health = evaluateFactoryOpsHealth(
+    baseInput({
+      generationLocks: { generating: 0, failed: 1, staleGenerating: 0 },
+    }),
+  );
+  ok("actionable failed lock is warning", health.level === "warning");
+  ok(
+    "failed_generation_locks code present",
+    health.issues.some((issue) => issue.code === "failed_generation_locks"),
+  );
+}
+
 function testQueuedForPublish(): void {
   const health = evaluateFactoryOpsHealth(
     baseInput({
@@ -207,6 +233,8 @@ testDatabaseNotConfigured();
 testCustomerPublishFailed();
 testStuckExpiredLease();
 testQueuedForPublish();
+testExpiredFailedLocksDoNotWarn();
+testActionableFailedLocksWarn();
 
 if (failures > 0) {
   console.error(`\n${failures} test(s) failed`);

@@ -4,7 +4,10 @@ import {
   publishGeneratedDemos,
 } from "../src/factory/publish";
 import { gitPublishPaths } from "../src/factory/git-publish";
-import { isGenerationLockBlocking } from "../src/factory/generation-lock";
+import {
+  isFailedGenerationLockActionable,
+  isGenerationLockBlocking,
+} from "../src/factory/generation-lock";
 import { shouldSkipForCooldown } from "../src/factory/lease";
 import { runFactoryWorker } from "../src/factory/worker";
 import type { ReplenishStats } from "../src/leads/replenish";
@@ -198,6 +201,36 @@ function testGenerationLocks(): void {
       claimRunId: "run-a",
       nowMs: 1_000_000,
       retryMinutes: 60,
+    }),
+  );
+
+  ok(
+    "failed lock: recent failure without client is actionable",
+    isFailedGenerationLockActionable({
+      updatedAtMs: 1_000_000 - 10 * 60_000,
+      nowMs: 1_000_000,
+      retryMinutes: 60,
+      clientExists: false,
+    }),
+  );
+
+  ok(
+    "failed lock: expired cooldown is not actionable",
+    !isFailedGenerationLockActionable({
+      updatedAtMs: 1_000_000 - 90 * 60_000,
+      nowMs: 1_000_000,
+      retryMinutes: 60,
+      clientExists: false,
+    }),
+  );
+
+  ok(
+    "failed lock: existing client is not actionable",
+    !isFailedGenerationLockActionable({
+      updatedAtMs: 1_000_000 - 10 * 60_000,
+      nowMs: 1_000_000,
+      retryMinutes: 60,
+      clientExists: true,
     }),
   );
 }

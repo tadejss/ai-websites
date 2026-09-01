@@ -317,13 +317,17 @@ export function AdminCleanupLocksButton() {
       const response = await fetch("/api/admin/factory/cleanup-locks", {
         method: "POST",
       });
-      const data = (await response.json()) as { error?: string; removed?: number };
+      const data = (await response.json()) as {
+        error?: string;
+        removed?: number;
+        staleFailedRemoved?: number;
+      };
       if (!response.ok) {
         throw new Error(data.error || "Cleanup failed");
       }
       setState({
         loading: false,
-        message: `Removed ${data.removed ?? 0} stale locks`,
+        message: `Removed ${data.removed ?? 0} stale generating locks${data.staleFailedRemoved ? ` and ${data.staleFailedRemoved} stale failed locks` : ""}`,
       });
       router.refresh();
     } catch (err) {

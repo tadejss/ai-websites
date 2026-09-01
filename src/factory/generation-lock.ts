@@ -195,6 +195,90 @@ export async function markGeneratedSlugsPublished(
 }
 
 /**
+ * Whether a failed lock should surface as a factory health issue.
+ * Expired cooldown rows are retryable; client-on-disk rows are stale.
+ */
+export function isFailedGenerationLockActionable(input: {
+  updatedAtMs: number;
+  nowMs: number;
+  retryMinutes: number;
+  clientExists: boolean;
+}): boolean {
+  if (input.clientExists) {
+    return false;
+  }
+
+  const ageMs = input.nowMs - input.updatedAtMs;
+  return ageMs < input.retryMinutes * 60_000;
+}
+
+export async function countActionableFailedGenerationLocks(
+  retryMinutes?: number,
+): Promise<number> {
+  if (!isDatabaseConfigured()) {
+    return 0;
+  }
+
+  const retry =
+    retryMinutes ?? getFactoryWorkerConfig().generationRetryMinutes;
+  const db = await requireDb();
+  const rows = (await db`
+    SELECT slug, updated_at
+    FROM factory_generation_locks
+    WHERE status = 'failed'
+  `) as Array<{ slug: string; updated_at: Date | string }>;
+
+  const nowMs = Date.now();
+  return rows.filter((row) =>
+    isFailedGenerationLockActionable({
+      updatedAtMs: new Date(row.updated_at).getTime(),
+      nowMs,
+      retryMinutes: retry,
+      clientExists: clientSiteExists(row.slug),
+    }),
+  ).length;
+}
+
+/**
+ * Remove failed locks that no longer block retries (cooldown elapsed or client exists).
+ */
+export async function releaseStaleFailedGenerationLocks(
+  retryMinutes?: number,
+): Promise<string[]> {
+  if (!isDatabaseConfigured()) {
+    return [];
+  }
+
+  const retry =
+    retryMinutes ?? getFactoryWorkerConfig().generationRetryMinutes;
+  const db = await requireDb();
+  const rows = (await db`
+    SELECT slug, updated_at
+    FROM factory_generation_locks
+    WHERE status = 'failed'
+  `) as Array<{ slug: string; updated_at: Date | string }>;
+
+  const nowMs = Date.now();
+  const released: string[] = [];
+
+  for (const row of rows) {
+    const actionable = isFailedGenerationLockActionable({
+      updatedAtMs: new Date(row.updated_at).getTime(),
+      nowMs,
+      retryMinutes: retry,
+      clientExists: clientSiteExists(row.slug),
+    });
+
+    if (!actionable) {
+      await releaseGenerationLock(row.slug);
+      released.push(row.slug);
+    }
+  }
+
+  return released;
+}
+
+/**
  * Pure decision helper for tests — whether an existing lock blocks a new claim.
  */
 export function isGenerationLockBlocking(input: {

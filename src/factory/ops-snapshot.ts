@@ -31,6 +31,10 @@ import {
   type WorkerRunRecord,
 } from "./lease";
 import {
+  countActionableFailedGenerationLocks,
+  releaseStaleFailedGenerationLocks,
+} from "./generation-lock";
+import {
   evaluateFactoryOpsHealth,
   type FactoryOpsHealth,
   type FactoryOpsHealthInput,
@@ -70,6 +74,7 @@ export type FactoryOpsSnapshot = {
   };
   generationLocks: Record<string, number> & {
     staleGenerating: number;
+    failedActionable: number;
   };
   discovery: {
     updatedAt: string | null;
@@ -127,7 +132,7 @@ function buildHealthInput(
     },
     generationLocks: {
       generating: snapshot.generationLocks.generating ?? 0,
-      failed: snapshot.generationLocks.failed ?? 0,
+      failed: snapshot.generationLocks.failedActionable ?? 0,
       staleGenerating: snapshot.generationLocks.staleGenerating,
     },
     customerPublish: {
@@ -184,7 +189,7 @@ export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
         lastSuccessfulRun: null,
         latestErrorRun: null,
       },
-      generationLocks: { staleGenerating: 0 },
+      generationLocks: { staleGenerating: 0, failedActionable: 0 },
       discovery: {
         updatedAt: discoveryProgress.updatedAt ?? null,
         progressUpdatedAt: discoveryProgress.updatedAt ?? null,
@@ -230,12 +235,15 @@ export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
     };
   }
 
+  await releaseStaleFailedGenerationLocks(config.generationRetryMinutes);
+
   const [
     activeLease,
     recentRuns,
     consecutiveFailures,
     minutesSinceFailure,
     lockCounts,
+    failedActionable,
     staleGenerating,
     discoveryProgress,
     discoveryUpdatedAt,
@@ -253,6 +261,7 @@ export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
     countConsecutiveFailures(),
     minutesSinceLastFailure(),
     getGenerationLockCounts(),
+    countActionableFailedGenerationLocks(config.generationRetryMinutes),
     countStaleGeneratingLocks(config.leaseMinutes),
     loadDiscoveryProgress(),
     getDiscoveryProgressUpdatedAt(),
@@ -313,6 +322,7 @@ export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
     generationLocks: {
       ...lockCounts,
       staleGenerating,
+      failedActionable,
     },
     discovery: {
       updatedAt: discoveryUpdatedAt,

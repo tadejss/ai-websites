@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import { logAdminAction } from "@/admin/audit";
 import { getFactoryWorkerConfig } from "@/factory/config";
+import {
+  releaseStaleFailedGenerationLocks,
+} from "@/factory/generation-lock";
 import { isDatabaseConfigured, sql } from "@/db/client";
 import { ensureFactorySchema } from "@/db/ensure-schema";
 import { isAdminAuthorized } from "@/lib/admin-auth";
@@ -29,11 +32,25 @@ export async function POST(request: Request) {
     RETURNING slug
   `) as Array<{ slug: string }>;
 
+  const staleFailedReleased = await releaseStaleFailedGenerationLocks(
+    config.generationRetryMinutes,
+  );
+
   await logAdminAction({
     action: "factory_cleanup_locks",
     result: "ok",
-    detail: { removed: rows.length, staleMinutes },
+    detail: {
+      removed: rows.length,
+      staleFailedRemoved: staleFailedReleased.length,
+      staleMinutes,
+    },
   });
 
-  return NextResponse.json({ ok: true, removed: rows.length, slugs: rows.map((r) => r.slug) });
+  return NextResponse.json({
+    ok: true,
+    removed: rows.length,
+    staleFailedRemoved: staleFailedReleased.length,
+    slugs: rows.map((r) => r.slug),
+    staleFailedSlugs: staleFailedReleased,
+  });
 }
