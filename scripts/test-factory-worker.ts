@@ -353,9 +353,55 @@ async function testPublishNoopAndFailure(): Promise<void> {
   ok(
     "publish: fetches and rebases when remote moved ahead",
     synced.outcome === "published"
-      && gitCalls.some((call) => call.startsWith("fetch origin main"))
+      && gitCalls.some((call) =>
+        call.startsWith("fetch origin +refs/heads/main:refs/remotes/origin/main"),
+      )
       && gitCalls.some((call) => call === "rebase origin/main")
       && gitCalls.some((call) => call.startsWith("push origin HEAD:main")),
+  );
+
+  const alwaysRebaseCalls: string[] = [];
+  const aheadOnly = await gitPublishPaths(
+    {
+      paths: ["src/content/clients"],
+      commitMessage: "factory: test ahead-only rebase",
+    },
+    {
+      publishEnabled: true,
+      gitRemote: "origin",
+      gitBranch: "main",
+      runGit: async (args) => {
+        alwaysRebaseCalls.push(args.join(" "));
+        if (args[0] === "status") {
+          return {
+            stdout: "?? src/content/clients/demo-d/site.json\n",
+            stderr: "",
+          };
+        }
+        if (args[0] === "diff") {
+          return {
+            stdout: "src/content/clients/demo-d/site.json\n",
+            stderr: "",
+          };
+        }
+        if (args[0] === "rev-list") {
+          const range = args[2] ?? "";
+          return {
+            stdout: range.startsWith("HEAD..") ? "0\n" : "1\n",
+            stderr: "",
+          };
+        }
+        if (args[0] === "rev-parse") {
+          return { stdout: "aheadonly\n", stderr: "" };
+        }
+        return { stdout: "", stderr: "" };
+      },
+    },
+  );
+  ok(
+    "publish: rebases when ahead even if behind count is zero",
+    aheadOnly.outcome === "published"
+      && alwaysRebaseCalls.some((call) => call === "rebase origin/main"),
   );
 }
 
