@@ -23,6 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
+          ref: main
           fetch-depth: 0
           token: ${{ secrets.FACTORY_GIT_TOKEN || github.token }}
 
