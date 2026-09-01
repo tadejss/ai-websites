@@ -1,6 +1,7 @@
 import type { Palette, ThemeMode, ThemeTokens } from "../types";
 import {
   contrastForeground,
+  contrastRatio,
   darken,
   lighten,
   mixHex,
@@ -8,6 +9,30 @@ import {
   pickAccent,
   sortByLightness,
 } from "./color";
+
+const MIN_BODY_CONTRAST = 4.5;
+
+function ensureMutedContrast(
+  muted: string,
+  background: string,
+  foreground: string,
+  mode: ThemeMode,
+): string {
+  if (contrastRatio(muted, background) >= MIN_BODY_CONTRAST) {
+    return muted;
+  }
+
+  const adjusted =
+    mode === "light"
+      ? darken(muted, 0.12)
+      : lighten(muted, 0.12);
+
+  if (contrastRatio(adjusted, background) >= MIN_BODY_CONTRAST) {
+    return adjusted;
+  }
+
+  return mixHex(foreground, background, mode === "light" ? 0.55 : 0.45);
+}
 
 export function deriveThemeTokens(
   swatches: string[],
@@ -23,7 +48,12 @@ export function deriveThemeTokens(
       : mixHex(background, sorted[sorted.length - 2] ?? foreground, 0.25);
   const surfaceElevated =
     mode === "light" ? lighten(surface, 0.04) : lighten(surface, 0.08);
-  const muted = mixHex(foreground, background, mode === "light" ? 0.42 : 0.38);
+  const muted = ensureMutedContrast(
+    mixHex(foreground, background, mode === "light" ? 0.42 : 0.38),
+    background,
+    foreground,
+    mode,
+  );
   const accentHover =
     mode === "light" ? darken(accent, 0.14) : lighten(accent, 0.1);
   const accentForeground = contrastForeground(accent);

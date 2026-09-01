@@ -3,7 +3,9 @@ import { defaultPrivacyConfig } from "@/privacy/defaults";
 import { deriveBusinessFromSiteConfig, mergeBusinessInfo } from "@/privacy/derive-business";
 import { fontPairingIds } from "@/theme/fonts/pairings";
 import { paletteIds } from "@/theme/palettes";
+import { lookIds } from "@/catalog/looks";
 import type { SiteConfig } from "./types/site";
+import type { SiteLookId } from "@/catalog/types";
 
 const iconNameSchema = z.enum([
   "building",
@@ -253,8 +255,11 @@ const contactFaqItemSchema = z.object({
   answer: z.string(),
 });
 
+const lookIdSchema = z.enum(lookIds as [string, ...string[]]).optional();
+
 const siteConfigSchema = z.object({
   appearance: appearanceSchema,
+  lookId: lookIdSchema,
   theme: themeSchema,
   layout: layoutSchema,
   images: siteImagesSchema,
@@ -330,6 +335,7 @@ export function validateSiteConfig(data: unknown): SiteConfig {
 
   return {
     ...base,
+    lookId: parsed.lookId as SiteLookId | undefined,
     business: mergeBusinessInfo(derivedBusiness, parsed.business),
     privacy: parsed.privacy ?? defaultPrivacyConfig(),
   };

@@ -72,8 +72,20 @@ export function lighten(hex: string, amount = 0.12): string {
   });
 }
 
+export function contrastRatio(foreground: string, background: string): number {
+  const l1 = relativeLuminance(foreground);
+  const l2 = relativeLuminance(background);
+  const lighter = Math.max(l1, l2);
+  const darker = Math.min(l1, l2);
+  return (lighter + 0.05) / (darker + 0.05);
+}
+
 export function contrastForeground(background: string): string {
-  return relativeLuminance(background) > 0.45 ? "#1a1410" : "#f7f3ee";
+  const dark = "#1a1410";
+  const light = "#f7f3ee";
+  const darkRatio = contrastRatio(dark, background);
+  const lightRatio = contrastRatio(light, background);
+  return darkRatio >= lightRatio ? dark : light;
 }
 
 export function sortByLightness(swatches: string[]): string[] {
@@ -84,9 +96,20 @@ export function sortByLightness(swatches: string[]): string[] {
 
 export function pickAccent(swatches: string[], mode: "light" | "dark"): string {
   const sorted = sortByLightness(swatches);
+  const background = mode === "light" ? sorted[0] : sorted[sorted.length - 1];
+  const minUiContrast = 3;
 
   if (mode === "light") {
     const candidates = sorted.slice(1, -1).reverse();
+    const passing = candidates.find(
+      (color) =>
+        relativeLuminance(color) > 0.15 &&
+        relativeLuminance(color) < 0.55 &&
+        contrastRatio(color, background) >= minUiContrast,
+    );
+    if (passing) {
+      return passing;
+    }
     return (
       candidates.find((color) => {
         const luminance = relativeLuminance(color);
@@ -96,6 +119,14 @@ export function pickAccent(swatches: string[], mode: "light" | "dark"): string {
   }
 
   const candidates = sorted.slice(0, -1);
+  const passing = candidates.find(
+    (color) =>
+      relativeLuminance(color) > 0.35 &&
+      contrastRatio(color, background) >= minUiContrast,
+  );
+  if (passing) {
+    return passing;
+  }
   return (
     candidates.find((color) => relativeLuminance(color) > 0.35) ??
     sorted[sorted.length - 2] ??

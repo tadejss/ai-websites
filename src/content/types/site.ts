@@ -1,3 +1,6 @@
+import type { ImagePoolCategoryId } from "@/images/image-pool-category";
+import type { SiteLookId } from "@/catalog/types";
+
 export type IconName =
   | "building"
   | "menu"
@@ -254,6 +257,8 @@ export type SitePrivacyConfig = {
 
 export type SiteConfig = {
   appearance?: AppearanceId;
+  /** Curated factory look; when set, theme/layout are denormalized from catalog. */
+  lookId?: SiteLookId;
   theme?: SiteTheme;
   layout?: SiteLayout;
   images?: SiteImages;

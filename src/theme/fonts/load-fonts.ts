@@ -1,4 +1,6 @@
 import {
+  Albert_Sans,
+  Archivo,
   Bitter,
   Bodoni_Moda,
   Cormorant_Garamond,
@@ -9,15 +11,26 @@ import {
   Fraunces,
   Geist,
   Geist_Mono,
+  Instrument_Serif,
   Inter,
   Lato,
+  Lexend,
   Libre_Baskerville,
   Lora,
   Manrope,
+  Merriweather,
+  Newsreader,
+  Nunito_Sans,
+  Onest,
   Oswald,
   Outfit,
   Playfair_Display,
   Plus_Jakarta_Sans,
+  Public_Sans,
+  Raleway,
+  Rubik,
+  Sora,
+  Source_Serif_4,
   Space_Grotesk,
   Syne,
   Work_Sans,
@@ -161,6 +174,88 @@ const bitter = Bitter({
   style: ["normal", "italic"],
 });
 
+const sora = Sora({
+  variable: "--font-sora",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+});
+
+const rubik = Rubik({
+  variable: "--font-rubik",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const lexend = Lexend({
+  variable: "--font-lexend",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const sourceSerif4 = Source_Serif_4({
+  variable: "--font-source-serif-4",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+});
+
+const albertSans = Albert_Sans({
+  variable: "--font-albert-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+});
+
+const onest = Onest({
+  variable: "--font-onest",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const archivo = Archivo({
+  variable: "--font-archivo",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const merriweather = Merriweather({
+  variable: "--font-merriweather",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+});
+
+const publicSans = Public_Sans({
+  variable: "--font-public-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 const fontClassNames = [
   geistSans.variable,
   geistMono.variable,
@@ -184,6 +279,19 @@ const fontClassNames = [
   oswald.variable,
   syne.variable,
   bitter.variable,
+  sora.variable,
+  instrumentSerif.variable,
+  rubik.variable,
+  nunitoSans.variable,
+  lexend.variable,
+  sourceSerif4.variable,
+  albertSans.variable,
+  newsreader.variable,
+  onest.variable,
+  archivo.variable,
+  raleway.variable,
+  merriweather.variable,
+  publicSans.variable,
 ];
 
 export const fontVariables = fontClassNames.join(" ");

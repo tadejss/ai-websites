@@ -1,5 +1,7 @@
 import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { cardClassForLook, sectionSpacingForLook } from "@/catalog/look-styles";
+import { resolveLookDesignTokens } from "@/catalog/resolve-look";
 import { BeautyImage } from "./BeautyImage";
 import { resolveBeautyLayout } from "../assign-layout";
 import type { SiteConfig } from "@/content/types/site";
@@ -11,18 +13,27 @@ type Props = {
 function ServiceCards({
   siteConfig,
   className,
+  cardClass,
+  listLayout,
 }: {
   siteConfig: SiteConfig;
   className?: string;
+  cardClass: string;
+  listLayout?: boolean;
 }) {
   const { services } = siteConfig;
 
   return (
-    <div className={className ?? "flex flex-col gap-5"}>
+    <div
+      className={
+        className ??
+        (listLayout ? "flex flex-col gap-8 divide-y divide-border" : "flex flex-col gap-5")
+      }
+    >
       {services.items.map((service) => (
         <article
           key={service.title}
-          className="rounded-[var(--radius-card)] bg-surface p-7 transition-colors hover:bg-surface-elevated sm:p-9"
+          className={`${cardClass} transition-colors hover:bg-surface-elevated`}
         >
           <div className="flex items-start gap-5">
             <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-accent/10 bg-background text-accent">
@@ -57,6 +68,14 @@ function ServiceCards({
 export function BeautyServicesSection({ siteConfig }: Props) {
   const { services, images } = siteConfig;
   const layout = resolveBeautyLayout(siteConfig.layout);
+  const designTokens = resolveLookDesignTokens(siteConfig);
+  const cardClass = designTokens
+    ? `${cardClassForLook(designTokens)} p-7 sm:p-9`
+    : "rounded-[var(--radius-card)] bg-surface p-7 sm:p-9";
+  const listLayout = designTokens?.cardTreatment === "none";
+  const sectionClass = designTokens
+    ? sectionSpacingForLook(designTokens)
+    : "py-24 sm:py-32";
   const hasServicesImage = Boolean(images?.services?.src);
   const showImage = layout.servicesImageSide !== "none" && hasServicesImage;
   const imageOnLeft = layout.servicesImageSide === "left";
@@ -64,7 +83,7 @@ export function BeautyServicesSection({ siteConfig }: Props) {
   return (
     <section
       id={services.id}
-      className="bg-background px-4 py-24 sm:px-6 sm:py-32"
+      className={`bg-background px-4 sm:px-6 ${sectionClass}`}
     >
       <div className="mx-auto max-w-7xl">
         <SectionHeading
@@ -86,11 +105,11 @@ export function BeautyServicesSection({ siteConfig }: Props) {
                   height={images?.services.height}
                   className="min-h-[320px] lg:min-h-full"
                 />
-                <ServiceCards siteConfig={siteConfig} />
+                <ServiceCards siteConfig={siteConfig} cardClass={cardClass} listLayout={listLayout} />
               </>
             ) : (
               <>
-                <ServiceCards siteConfig={siteConfig} />
+                <ServiceCards siteConfig={siteConfig} cardClass={cardClass} listLayout={listLayout} />
                 <BeautyImage
                   src={images?.services.src}
                   srcFallback={images?.services.srcFallback}
@@ -105,7 +124,9 @@ export function BeautyServicesSection({ siteConfig }: Props) {
         ) : (
           <ServiceCards
             siteConfig={siteConfig}
-            className="mt-14 grid gap-5 md:grid-cols-2"
+            cardClass={cardClass}
+            listLayout={listLayout}
+            className={`mt-14 ${listLayout ? "flex flex-col gap-8" : "grid gap-5 md:grid-cols-2"}`}
           />
         )}
       </div>

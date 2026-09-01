@@ -1,4 +1,5 @@
 import type { FontPairing } from "../types";
+import { catalogFontPairings } from "@/catalog/fonts";
 
 export const fontPairings: FontPairing[] = [
   {
@@ -99,6 +100,7 @@ export const fontPairings: FontPairing[] = [
     body: { family: "Outfit", variable: "--font-outfit" },
     display: { family: "Bitter", variable: "--font-bitter" },
   },
+  ...catalogFontPairings,
 ];
 
 const pairingById = new Map(

@@ -54,7 +54,7 @@ export function GallerySection({
               key={item.src}
               type="button"
               onClick={() => setLightbox(item)}
-              className="group relative aspect-square overflow-hidden rounded-2xl border border-border bg-surface text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              className="group relative aspect-square overflow-hidden rounded-[var(--radius-card,var(--gallery-radius,1rem))] border border-border bg-surface text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -80,7 +80,7 @@ export function GallerySection({
           role="presentation"
         >
           <div
-            className="relative max-h-[90vh] max-w-4xl overflow-hidden rounded-2xl bg-surface shadow-2xl"
+            className="relative max-h-[90vh] max-w-4xl overflow-hidden rounded-[var(--radius-card)] bg-surface shadow-2xl"
             onClick={(event) => event.stopPropagation()}
             role="dialog"
             aria-modal="true"

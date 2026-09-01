@@ -92,6 +92,35 @@ AI must not emit `appearance`, `theme`, or `images` — prompt + post-process in
 
 ---
 
+## Look catalog (factory)
+
+Curated **160 looks** (16 image-pool categories × 10 archetypes) live under `src/catalog/`.
+
+| Concern | File | Function |
+|---------|------|----------|
+| Types | `src/catalog/types.ts` | `SiteLookDefinition`, `LookDesignTokens` |
+| Registry | `src/catalog/looks/` | `getLook()`, `getLooksForCategory()` |
+| Assign at gen | `src/catalog/assign-look.ts` | `assignLook(categoryId, slug)` — hash + collision avoidance |
+| Runtime CSS | `src/catalog/resolve-look-css.ts` | `resolveLookCssVars(look)` |
+| Runtime resolve | `src/catalog/resolve-look.ts` | `resolveLookForSite(config)` |
+| Palettes | `src/catalog/palettes/` | 160 generated palettes (`look-{category}-{01-10}-{mood}`) |
+| Fonts | `src/catalog/fonts/` | 160 pairing IDs (`look-{category}-{01-10}`) |
+| Admin UI | `/admin/catalog` | Filter by category, preview swatches |
+
+**Generation flow** (`generate-client.ts`):
+
+1. `resolveImagePoolCategory({ industry, companyName })`
+2. If matched → `assignLook(categoryId, slug)` → writes `lookId` + denormalized `appearance`, `theme`, `layout`
+3. Else → legacy `appearanceForIndustry` + `assignTheme` + `assignBeautyLayout` / `assignTradeLayout`
+
+**Runtime** (`site-page.tsx`): if `siteConfig.lookId` → `resolveLookCssVars`; else `resolveThemeCssVars`.
+
+**Backward compat:** existing `site.json` without `lookId` render unchanged. Optional backfill: `npm run backfill-look-ids` (skip existing unless `--force`).
+
+**Validation:** `npm run validate-catalog` (WCAG AA + uniqueness per category).
+
+---
+
 ## Images
 
 ```

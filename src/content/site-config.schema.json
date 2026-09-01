@@ -30,6 +30,10 @@
       ],
       "description": "Visual appearance category controlling layout and theme tokens."
     },
+    "lookId": {
+      "type": "string",
+      "description": "Curated factory look identifier (category-index-suffix). When set, theme and layout are denormalized from the catalog."
+    },
     "sections": {
       "type": "object",
       "description": "Optional section feature flags. Omitted keys default to false.",

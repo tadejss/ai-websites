@@ -5,6 +5,8 @@ import { DemoPurchaseBar } from "@/billing/DemoPurchaseBar";
 import type { SiteConfig } from "@/content/types/site";
 import { readLead } from "@/leads/store";
 import { getCustomerChromeState } from "@/onboarding/customer-chrome";
+import { resolveLookForSite } from "@/catalog/resolve-look";
+import { resolveLookCssVars } from "@/catalog/resolve-look-css";
 import { resolveThemeCssVars } from "@/theme/resolve-theme";
 
 type Props = {
@@ -15,7 +17,10 @@ type Props = {
 export async function SitePage({ siteConfig, siteSlug }: Props) {
   const appearance = resolveAppearance(siteConfig.appearance);
   const { Page } = appearanceRegistry[appearance];
-  const themeStyle = resolveThemeCssVars(siteConfig.theme, appearance);
+  const look = resolveLookForSite(siteConfig);
+  const themeStyle = look
+    ? resolveLookCssVars(look)
+    : resolveThemeCssVars(siteConfig.theme, appearance);
   const resolvedSlug = siteSlug ?? process.env.SITE_SLUG ?? "default";
   const lead = readLead(resolvedSlug);
   const { isCustomer, onboardingUrl, contactName, onboardingStatus } =
@@ -25,6 +30,7 @@ export async function SitePage({ siteConfig, siteSlug }: Props) {
   return (
     <div
       data-appearance={appearance}
+      data-look={look?.id}
       style={themeStyle}
       className="min-h-full bg-background text-foreground"
     >

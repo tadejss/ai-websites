@@ -8,6 +8,8 @@ import { assignBeautyLayout } from "@/appearances/beauty/assign-layout";
 import { assignTradeLayout } from "@/appearances/trade/assign-layout";
 import { isTradeAppearance } from "@/appearances/types";
 import { assignTheme } from "@/theme/assign-theme";
+import { assignLook } from "@/catalog/assign-look";
+import { resolveImagePoolCategory } from "@/images/image-pool-category";
 import { generateSiteImages } from "@/images/generate-site-images";
 import type { BusinessInput } from "@/ai/types";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
@@ -49,21 +51,35 @@ export async function generateClient(
   const rawBusiness = validateRawBusinessData(await source.getBusiness());
   const businessInput = await generateBusinessInput(rawBusiness);
   const generatedConfig = await generateSiteConfig(businessInput);
+  const categoryId = resolveImagePoolCategory({
+    industry: businessInput.industry,
+    companyName: businessInput.companyName,
+  });
   const appearance = appearanceForIndustry(
     `${businessInput.industry ?? ""} ${businessInput.companyName ?? ""}`,
   );
-  const layout =
-    appearance === "beauty"
-      ? assignBeautyLayout(slug)
-      : isTradeAppearance(appearance)
-        ? assignTradeLayout(appearance, slug)
-        : undefined;
-  const siteConfig = {
-    ...generatedConfig,
-    appearance,
-    theme: assignTheme(slug, appearance),
-    ...(layout ? { layout } : {}),
-  };
+
+  const siteConfig = categoryId
+    ? (() => {
+        const look = assignLook(categoryId, slug);
+        return {
+          ...generatedConfig,
+          lookId: look.id,
+          appearance: look.appearance,
+          theme: look.theme,
+          layout: look.layout,
+        };
+      })()
+    : {
+        ...generatedConfig,
+        appearance,
+        theme: assignTheme(slug, appearance),
+        ...(appearance === "beauty"
+          ? { layout: assignBeautyLayout(slug) }
+          : isTradeAppearance(appearance)
+            ? { layout: assignTradeLayout(appearance, slug) }
+            : {}),
+      };
   const images = await generateSiteImages(slug, businessInput, siteConfig as SiteConfig);
   const withImages = images ? { ...siteConfig, images } : siteConfig;
   const withSections = applyNewLeadSectionDefaults(withImages as SiteConfig);
