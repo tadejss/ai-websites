@@ -23,13 +23,13 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           token: ${{ secrets.FACTORY_GIT_TOKEN || github.token }}
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "22"
           cache: npm
@@ -53,7 +53,8 @@ jobs:
 
       - name: Publish customer site
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL || secrets.POSTGRES_URL }}
+          POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
           FACTORY_PUBLISH_ENABLED: "true"
           FACTORY_GIT_BRANCH: ${{ github.ref_name }}
           FACTORY_WORKER_ID: gha-customer-publish

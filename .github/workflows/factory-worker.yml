@@ -21,13 +21,13 @@ jobs:
     timeout-minutes: 360
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           token: ${{ secrets.FACTORY_GIT_TOKEN || github.token }}
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "22"
           cache: npm
@@ -40,9 +40,43 @@ jobs:
           git config user.name "factory-worker"
           git config user.email "factory-worker@users.noreply.github.com"
 
-      - name: Run factory worker
+      - name: Check required secrets
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -n "$DATABASE_URL" ] || [ -n "$POSTGRES_URL" ]; then
+            echo "database=set"
+          else
+            echo "database=MISSING"
+            echo "::error::Add DATABASE_URL (or POSTGRES_URL) as a repository secret — same Neon URL as Vercel Production."
+            exit 1
+          fi
+          for name in GOOGLE_PLACES_API_KEY; do
+            eval "value=\${$name}"
+            if [ -n "$value" ]; then
+              echo "$name=set"
+            else
+              echo "$name=MISSING"
+              echo "::error::$name repository secret is required for lead discovery."
+              exit 1
+            fi
+          done
+          if [ -n "$OPENAI_API_KEY" ] || [ -n "$GEMINI_API_KEY" ]; then
+            echo "ai_key=set"
+          else
+            echo "ai_key=MISSING"
+            echo "::error::Add OPENAI_API_KEY or GEMINI_API_KEY as a repository secret."
+            exit 1
+          fi
+
+      - name: Run factory worker
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL || secrets.POSTGRES_URL }}
+          POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
