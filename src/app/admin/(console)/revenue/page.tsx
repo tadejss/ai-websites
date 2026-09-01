@@ -110,7 +110,7 @@ export default async function AdminRevenuePage() {
               {auditLogs.map((log) => (
                 <li
                   key={log.id}
-                  className="flex flex-wrap items-center justify-between gap-2 rounded-md border border-[var(--admin-border)] px-3 py-2"
+                  className="flex flex-col gap-1 rounded-md border border-[var(--admin-border)] px-3 py-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-2"
                 >
                   <span className="font-mono text-xs">{log.action}</span>
                   {log.slug ? (

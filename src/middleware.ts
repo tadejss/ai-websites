@@ -59,7 +59,10 @@ export function middleware(request: NextRequest, event: NextFetchEvent) {
     return NextResponse.next();
   }
 
-  if (pathname === "/admin/login") {
+  if (
+    pathname === "/admin/login" ||
+    pathname === "/admin/manifest.webmanifest"
+  ) {
     return NextResponse.next();
   }
 

@@ -55,7 +55,7 @@ export default async function AdminFactoryPage() {
         }
       />
 
-      <div className="mb-6 flex flex-wrap gap-2">
+      <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap [&>div]:w-full sm:[&>div]:w-auto [&_button]:min-h-[44px] [&_button]:w-full sm:[&_button]:w-auto">
         <AdminFactoryDispatchButton />
         <AdminCleanupLocksButton />
       </div>
@@ -81,7 +81,7 @@ export default async function AdminFactoryPage() {
         </Card>
       )}
 
-      <AdminStatGrid>
+      <AdminStatGrid className="grid-cols-2">
         <AdminStatCard
           label="Worker"
           value={snapshot.worker.activeLease?.status ?? "idle"}

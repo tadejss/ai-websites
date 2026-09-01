@@ -82,7 +82,7 @@ export default async function AdminPipelinePage() {
         description="Customer onboarding kanban — click a card to open journey"
       />
 
-      <div className="flex gap-3 overflow-x-auto pb-4">
+      <div className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-4">
         {KANBAN_COLUMNS.filter((status) =>
           (ONBOARDING_STATUSES as readonly string[]).includes(status),
         ).map((status) => {
@@ -90,7 +90,7 @@ export default async function AdminPipelinePage() {
           return (
             <div
               key={status}
-              className="flex w-56 shrink-0 flex-col rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)]"
+              className="flex w-56 shrink-0 snap-start flex-col rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)]"
             >
               <div className="border-b border-[var(--admin-border)] px-3 py-2">
                 <div className="flex items-center justify-between gap-2">

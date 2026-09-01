@@ -19,11 +19,16 @@ const navItems = [
   { href: "/admin/revenue", label: "Revenue", icon: TrendingUp },
 ] as const;
 
-export function AdminSidebar() {
+export function AdminSidebar({ className }: { className?: string }) {
   const pathname = usePathname();
 
   return (
-    <aside className="flex w-56 shrink-0 flex-col border-r border-[var(--admin-border)] bg-[var(--admin-surface)]">
+    <aside
+      className={cn(
+        "flex w-56 shrink-0 flex-col border-r border-[var(--admin-border)] bg-[var(--admin-surface)]",
+        className,
+      )}
+    >
       <div className="border-b border-[var(--admin-border)] px-4 py-4">
         <Link
           href="/admin"

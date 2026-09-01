@@ -36,18 +36,20 @@ export function StatusIndicator({
   level,
   detail,
   pulse,
+  compact = false,
 }: {
   label: string;
   level: StatusLevel;
   detail?: string;
   pulse?: boolean;
+  compact?: boolean;
 }) {
   return (
-    <div className="flex items-center gap-2 text-xs">
+    <div className={cn("flex items-center gap-2", compact ? "text-[10px]" : "text-xs")}>
       <StatusLed level={level} pulse={pulse} />
       <span className="text-[var(--admin-muted)]">{label}</span>
       {detail ? (
-        <span className="font-mono text-[var(--admin-foreground)]">{detail}</span>
+        <span className="truncate font-mono text-[var(--admin-foreground)]">{detail}</span>
       ) : null}
     </div>
   );

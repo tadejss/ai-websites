@@ -14,6 +14,16 @@
   background: var(--admin-bg);
   color: var(--admin-foreground);
   min-height: 100vh;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 767px) {
+  [data-admin-theme] button,
+  [data-admin-theme] a[role="button"],
+  [data-admin-theme] [type="submit"] {
+    min-height: 44px;
+  }
 }
 
 :root,

@@ -26,6 +26,7 @@ import {
 } from "@/onboarding/types";
 import { getOnboardingUrl } from "@/onboarding/store";
 import { OnboardingImageGallery } from "@/app/admin/(console)/leads/[slug]/onboarding-gallery";
+import { cn } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
 
@@ -72,7 +73,7 @@ export default async function AdminEntityJourneyPage({
       ));
 
   return (
-    <div>
+    <div className="pb-24 md:pb-0">
       <Link
         href="/admin"
         className="text-xs text-cyan-400 hover:underline"
@@ -98,7 +99,14 @@ export default async function AdminEntityJourneyPage({
         }
       />
 
-      <div className="sticky top-0 z-10 mb-6 flex flex-wrap gap-2 rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)] p-3">
+      <div
+        className={cn(
+          "z-20 mb-6 flex flex-wrap gap-2 rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)] p-3",
+          "max-md:fixed max-md:inset-x-0 max-md:bottom-[calc(4rem+env(safe-area-inset-bottom))] max-md:mb-0 max-md:rounded-none max-md:border-x-0 max-md:border-b-0 max-md:shadow-[0_-4px_24px_rgba(0,0,0,0.4)]",
+          "max-md:flex max-md:flex-wrap max-md:[&_button]:min-h-[44px] max-md:[&_button]:flex-1 max-md:[&_button]:min-w-[calc(50%-0.25rem)]",
+          "md:sticky md:top-0",
+        )}
+      >
         <AdminQueueSmsButton
           slug={slug}
           dueStep={smsDueStep}

@@ -36,7 +36,7 @@ export default async function AdminLoginPage({
   const next = typeof params.next === "string" ? params.next : "/admin";
 
   return (
-    <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-12">
+    <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-4 py-12 sm:px-6">
       <div className="mb-8">
         <p className="text-[10px] uppercase tracking-widest text-[var(--admin-muted)]">
           Ops Console
@@ -57,7 +57,8 @@ export default async function AdminLoginPage({
                 type="password"
                 name="password"
                 required
-                className="mt-1 w-full rounded-md border border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] px-3 py-2 text-[var(--admin-foreground)] outline-none focus:ring-2 focus:ring-cyan-500/40"
+                autoComplete="current-password"
+                className="mt-1 w-full min-h-[44px] rounded-md border border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] px-3 py-2 text-base text-[var(--admin-foreground)] outline-none focus:ring-2 focus:ring-cyan-500/40 touch-manipulation"
               />
             </label>
 
@@ -65,7 +66,7 @@ export default async function AdminLoginPage({
               <p className="text-sm text-red-400">Invalid password.</p>
             ) : null}
 
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="h-11 w-full touch-manipulation">
               Sign in
             </Button>
           </form>
