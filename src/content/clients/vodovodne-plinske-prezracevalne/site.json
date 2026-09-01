@@ -1,0 +1,282 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "deep-seafoam",
+    "fontPairingId": "inter-space-grotesk-light"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-plinske-prezracevalne/hero.avif",
+      "alt": "Vodovodni in inštalaterski mojster pri delu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-plinske-prezracevalne/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5463582",
+      "sourceUrl": "https://www.pexels.com/photo/technician-fixing-an-aircon-5463582/",
+      "photographer": "José Andrés  Pacheco Cortes",
+      "photographerUrl": "https://www.pexels.com/@jose-andres-pacheco-cortes-3641213",
+      "searchQuery": "heating system maintenance professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-plinske-prezracevalne/services.avif",
+      "alt": "Prenova kopalnice in vodovodne inštalacije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-plinske-prezracevalne/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32588555",
+      "sourceUrl": "https://www.pexels.com/photo/technician-performing-air-conditioning-maintenance-32588555/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "heating system maintenance professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za redna inštalaterska in vzdrževalna dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura inštalaterskih del",
+        "description": "Osnovno terensko delo in manjša popravila",
+        "price": "od 35 €",
+        "unit": "ura",
+        "featured": false
+      },
+      {
+        "name": "Pregled in manjše popravilo vodovoda",
+        "description": "Diagnostika napake in manjši posegi",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Montaža sanitarne opreme",
+        "description": "Priklop umivalnikov, pip ali WC školjk",
+        "price": "od 60 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Servis plinske napeljave",
+        "description": "Pregled in vzdrževanje obstoječih plinskih vodov",
+        "price": "od 80 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Inštalacije",
+    "highlight": "Sedin Mašinović s.p."
+  },
+  "metadata": {
+    "title": "Vodovodne, plinske in prezračevalne inštalacije Sedin Mašinović s.p. | Domžale",
+    "description": "Zanesljive vodovodne, plinske in prezračevalne inštalacije ter adaptacije kopalnic v Domžalah in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive inštalacije v Domžalah",
+    "title": "Strokovne vodovodne, plinske in prezračevalne",
+    "titleHighlight": "inštalacije",
+    "description": "Zanesljive rešitve za lastnike stanovanj, hiš in poslovnih objektov v Domžalah in okolici. Poskrbimo za celovito izvedbo na enem mestu.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Odzivno",
+        "label": "Hitra odzivnost"
+      },
+      {
+        "value": "Celovito",
+        "label": "Celovite rešitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kaj nudimo",
+    "description": "Nudimo kakovostne inštalaterske storitve za objekte v Domžalah in okolici.",
+    "items": [
+      {
+        "title": "Vodovodne inštalacije",
+        "description": "Montaža in obnova vodovodnih napeljav v vašem objektu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Plinske inštalacije",
+        "description": "Varna vgradnja in vzdrževanje plinskih inštalacij.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prezračevalni sistemi",
+        "description": "Vgradnja sodobnih prezračevalnih sistemov za čist zrak.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetka do konca.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje in popravila",
+        "description": "Redna vzdrževalna dela in hitra odprava napak.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše inštalacije",
+    "description": "Združujemo strokovnost, odzivnost in celovit pristop k vsakemu projektu.",
+    "highlights": [
+      "Strokovna izvedba inštalacij",
+      "Zanesljivost in odzivnost",
+      "Celovite rešitve na enem mestu"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Kakovostno opravljena dela z mislijo na varnost in dolgotrajno delovanje.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in nudimo zanesljivo podporo.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Vse storitve na enem mestu, prilagojene vašim potrebam in željam.",
+        "title": "Celovite rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete inštalaterske storitve ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Mlinska cesta 12, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 392 957",
+        "href": "tel:070392957",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Mlinska cesta 12, 1230 Domžale, Slovenia",
+    "rights": "© Vodovodne, plinske in prezračevalne inštalacije, Sedin Mašinović s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Inštalacije Sedin Mašinović s.p.",
+    "address": "Mlinska cesta 12, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "070 392 957"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

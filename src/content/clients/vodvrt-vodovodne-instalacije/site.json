@@ -1,0 +1,274 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodvrt-vodovodne-instalacije/hero.avif",
+      "alt": "Strokoven vodovodar pri delu na vodovodnih inštalacijah",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodvrt-vodovodne-instalacije/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8488035",
+      "sourceUrl": "https://www.pexels.com/photo/metal-pipes-on-wall-8488035/",
+      "photographer": "Kindel Media",
+      "photographerUrl": "https://www.pexels.com/@kindelmedia",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodvrt-vodovodne-instalacije/services.avif",
+      "alt": "Urejanje vrta in zunanje okolice objekta",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodvrt-vodovodne-instalacije/services.webp",
+      "width": 917,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "1029635",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-yellow-water-filter-system-1029635/",
+      "photographer": "Scott Webb",
+      "photographerUrl": "https://www.pexels.com/@scottwebb",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in se prilagagajo obsegu ter zahtevnosti posameznega dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Vodovodne inštalacije",
+        "description": "Izvedba inštalacij za kopalnice in objekte",
+        "price": "Po ogledu",
+        "featured": true
+      },
+      {
+        "name": "Popravilo in vzdrževanje vodovoda",
+        "description": "Manjša popravila in odprava okvar",
+        "price": "od 35 € / ura"
+      },
+      {
+        "name": "Urejanje vrtov",
+        "description": "Oblikovanje in vzdrževanje zelenih površin",
+        "price": "Po ogledu"
+      },
+      {
+        "name": "Zemeljska dela",
+        "description": "Manjši izkopi in priprava terena",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zunanja ureditev okolice",
+        "description": "Celovita ureditev dvorišč in okolice",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vodvrt",
+    "highlight": "Boštjan Kržič s.p."
+  },
+  "metadata": {
+    "title": "Vodvrt | Vodovodne inštalacije in urejanje vrtov",
+    "description": "Zanesljive vodovodne inštalacije in urejanje vrtov na Vrhniki in okolici. Poskrbimo za vaš dom in okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster",
+    "title": "Vodovodne inštalacije in urejanje vrtov",
+    "titleHighlight": "za vaš dom",
+    "description": "Strokovne vodovodne inštalacije, popravila in celostna zunanja ureditev za lastnike stanovanj, hiš in poslovnih objektov na Vrhniki in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljive storitve",
+        "label": "Zanesljive storitve"
+      },
+      {
+        "value": "Celostna ponudba",
+        "label": "Celostna ponudba"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite rešitve za dom in okolico",
+    "description": "Nudimo kakovostne vodovodne inštalacije, vzdrževanje ter urejanje vrtov in okolice na Vrhniki in širši okolici.",
+    "items": [
+      {
+        "title": "Vodovodne inštalacije",
+        "description": "Izvedba in montaža vodovodnih inštalacij za novogradnje in prenove objektov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo in vzdrževanje vodovoda",
+        "description": "Hitra odprava napak, popravila in redno vzdrževanje vodovodnih sistemov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje vrtov",
+        "description": "Celovito načrtovanje, oblikovanje in urejanje vašega vrta ter zelenih površin.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zemeljska dela",
+        "description": "Strokovna izvedba manjših zemeljskih del za potrebe inštalacij in zunanje ureditve.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanja ureditev okolice",
+        "description": "Urejanje okolice stanovanjskih in poslovnih objektov za lepši videz in večjo funkcionalnost.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaš dom",
+    "description": "Z združevanjem strokovnega znanja na področju vodovodnih inštalacij in urejanja okolice vam nudimo vse na enem mestu.",
+    "highlights": [
+      "Zanesljive storitve z izkušnjami",
+      "Celostna ponudba za inštalacije in okolico",
+      "Lokalni ponudnik z osebnim pristopom"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljive storitve",
+        "description": "Dela opravljamo zanesljivo, skrbno in v dogovorjenih rokih.",
+        "title": "Zanesljive storitve"
+      },
+      {
+        "label": "Celostna ponudba",
+        "description": "Rešitve za vodovod in ureditev vrta na enem mestu za vašo popolno brezskrbnost.",
+        "title": "Celostna ponudba"
+      },
+      {
+        "label": "Lokalni pristop",
+        "description": "Kot lokalni ponudnik na Vrhniki se hitro odzovemo in prisluhnemo vašim željam.",
+        "title": "Lokalni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za ponudbo",
+    "description": "Imate vprašanje ali potrebujete vodovodnega inštalaterja oz. vrtnarja? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 872 741",
+        "href": "tel:031872741",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Verd 241, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kakšne storitve potrebujete...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Verd 241, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vodvrt Boštjan Kržič s.p.",
+    "address": "Verd 241, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "031 872 741"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

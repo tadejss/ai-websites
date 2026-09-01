@@ -1,0 +1,275 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "geist-geist"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/4mvodovodne-instalacije-matic/hero.avif",
+      "alt": "Profesionalne vodovodne inštalacije in montaža sanitarne opreme",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/4mvodovodne-instalacije-matic/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "33388390",
+      "sourceUrl": "https://www.pexels.com/photo/technician-repairing-industrial-equipment-in-workshop-33388390/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/4mvodovodne-instalacije-matic/services.avif",
+      "alt": "Adaptacije kopalnic in vzdrževanje vodovodnega omrežja",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/4mvodovodne-instalacije-matic/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691536",
+      "sourceUrl": "https://www.pexels.com/photo/unrecognizable-handyman-with-ruler-near-heating-system-at-home-5691536/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih vodovodnih inštalacijskih in vzdrževalnih del.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ogled na terenu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža sanitarne opreme",
+        "description": "Vgradnja armatur, umivalnikov ali WC školjk",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Popravilo puščanj",
+        "description": "Odprava manjših napak na vodovodnem omrežju",
+        "price": "od 60 €",
+        "featured": true
+      },
+      {
+        "name": "Ura vodovodnih del",
+        "description": "Izvedba splošnih inštalacijskih in vzdrževalnih del",
+        "price": "od 40 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Inštalacijska dela pri prenovi (po ogledu)",
+        "price": "po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "4m",
+    "highlight": "Vodovodne inštalacije"
+  },
+  "metadata": {
+    "title": "4m - Vodovodne inštalacije in storitve Matic Repac s.p.",
+    "description": "Zanesljive vodovodne inštalacije, adaptacije kopalnic in hitra popravila v Domžalah in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovne vodovodne storitve",
+    "title": "Zanesljive vodovodne inštalacije ter",
+    "titleHighlight": "strokovne storitve",
+    "description": "Celovite rešitve za vodovodni sistem v Domžalah in okolici. Poskrbimo za kakovostno izvedbo in hitro odzivnost.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Hitra odzivnost",
+        "label": "Hitra odzivnost"
+      },
+      {
+        "value": "Domžale in okolica",
+        "label": "Domžale in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Strokovne vodovodne inštalacije, vzdrževanje in popravila za lastnike stanovanj, hiš in poslovnih prostorov.",
+    "items": [
+      {
+        "title": "Vodovodne inštalacije",
+        "description": "Izvedba novih inštalacij in obnova obstoječega vodovodnega omrežja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic in sanitarnih prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo puščanj",
+        "description": "Hitro odkrivanje in odpravljanje napak ter puščanj v sistemu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža sanitarne opreme",
+        "description": "Strokovna vgradnja armatur, umivalnikov, WC školjk in druge opreme.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje vodovodnega omrežja",
+        "description": "Redni pregledi in vzdrževanje za nemoteno delovanje vodovoda.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati 4m?",
+    "description": "Z zanesljivostjo, strokovnostjo in hitrim odzivom poskrbimo za vaše vodovodne inštalacije.",
+    "highlights": [
+      "Vrhunska ocena strank",
+      "Strokovna in zanesljiva izvedba",
+      "Hitro odzivanje na težave"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Kakovostno opravljeno delo z dolgoletnimi izkušnjami na področju vodovodnih inštalacij.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Pravočasno odzivanje na nujne primere in težave s puščanjem.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Zanesljiv partner",
+        "description": "Zanesljive storitve za stanovanja, hiše in poslovne prostore v Domžalah in okolici.",
+        "title": "Zanesljiv partner"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vodovodno inštalacijo ali popravilo? Pokličite nas ali pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 354 967",
+        "href": "tel:031354967",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Savska cesta 11a, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 8:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše vprašanje ali težavo...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Savska cesta 11a, 1230 Domžale, Slovenia",
+    "rights": "© 4m Matic Repac s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "4m Vodovodne inštalacije",
+    "address": "Savska cesta 11a, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "031 354 967"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

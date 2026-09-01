@@ -1,0 +1,286 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-elektro-instalacije/hero.avif",
+      "alt": "Električne inštalacije in strokovna montaža v sodobnem domu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-elektro-instalacije/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "12142829",
+      "sourceUrl": "https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/",
+      "photographer": "Bùi Hoàng Long",
+      "photographerUrl": "https://www.pexels.com/@dxaxoxfz",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-elektro-instalacije/services.avif",
+      "alt": "Vodovodne inštalacije in prenova kopalnice",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-elektro-instalacije/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5463582",
+      "sourceUrl": "https://www.pexels.com/photo/technician-fixing-an-aircon-5463582/",
+      "photographer": "José Andrés  Pacheco Cortes",
+      "photographerUrl": "https://www.pexels.com/@jose-andres-pacheco-cortes-3641213",
+      "searchQuery": "heating system maintenance professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za vodovodne in elektro inštalacije ter adaptacije.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in ogled na terenu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manjša popravila in servisi",
+        "description": "Manjši posegi in odprava napak na inštalacijah",
+        "price": "od 45 €",
+        "unit": "ura",
+        "featured": false
+      },
+      {
+        "name": "Montaža sanitarne opreme",
+        "description": "Priklop in montaža elementov",
+        "price": "od 60 €",
+        "unit": "kos",
+        "featured": true
+      },
+      {
+        "name": "Pregled in izvedba manjših elektro inštalacij",
+        "description": "Menjava vtičnic, stikal ali priklop naprav",
+        "price": "od 50 €",
+        "unit": "storitev",
+        "featured": false
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Celovita prenova inštalacij (informativni izračun)",
+        "price": "po dogovoru",
+        "unit": "projekt",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Milan Klančar",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Vodovodne in elektro inštalacije Milan Klančar s.p. | Grosuplje",
+    "description": "Zanesljive vodovodne in elektro inštalacije, adaptacije kopalnic ter popravila v Grosuplju z okolico. Pokličite nas za strokovno izvedbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive inštalacije za vaš dom",
+    "title": "Vodovodne in elektro inštalacije",
+    "titleHighlight": "Milan Klančar s.p.",
+    "description": "Strokovne vodovodne in elektro inštalacije ter adaptacije kopalnic za lastnike stanovanj, hiš in poslovnih prostorov v Grosuplju z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Hiter",
+        "label": "Odzivni čas"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljive storitve"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Grosuplje z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovite rešitve na področju vodovodnih in elektro inštalacij ter adaptacij za vaš dom ali poslovni prostor v Grosuplju z okolico.",
+    "items": [
+      {
+        "title": "Vodovodne inštalacije",
+        "description": "Montaža, obnova in vzdrževanje vodovodnih napeljav ter sanitarne opreme.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Elektro inštalacije",
+        "description": "Izvedba in vzdrževanje elektro inštalacij za varčen in varen dom.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih inštalacij do končne montaže.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Popravila in vzdrževanje",
+        "description": "Hitra odprava napak ter redno vzdrževanje vodovodnih in elektro sistemov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Montaža opreme",
+        "description": "Strokovna priključitev in montaža različne opreme ter naprav.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas?",
+    "description": "Z združevanjem strokovnega znanja in zanesljivosti poskrbimo, da so dela opravljena pravočasno in kakovostno.",
+    "highlights": [
+      "Preverjena kakovost storitev",
+      "Hiter odzivni čas",
+      "Zanesljivo in strokovno delo"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Vsak projekt izvedemo skrbno in v skladu z vašimi pričakovanji.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Hiter odziv",
+        "description": "Hitro se odzovemo na vaša povpraševanja in nujne primere.",
+        "title": "Hiter odziv"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorov in poskrbimo za varno delovanje vaših inštalacij.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vodovodne ali elektro inštalacije? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 618 462",
+        "href": "tel:041618462",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta Toneta kralja 6, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali težavo...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Cesta Toneta kralja 6, 1290 Grosuplje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Milan Klančar s.p.",
+    "address": "Cesta Toneta kralja 6, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "041 618 462"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/napeljava-vodovodnih-centralnih/hero.avif",
+      "alt": "Vodovodar pri montaži inštalacij",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/napeljava-vodovodnih-centralnih/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32588548",
+      "sourceUrl": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/napeljava-vodovodnih-centralnih/services.avif",
+      "alt": "Montaža vodovodnih inštalacij",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/napeljava-vodovodnih-centralnih/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7220892",
+      "sourceUrl": "https://www.pexels.com/photo/a-person-holding-brown-doorknob-7220892/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirni cenik storitev",
+    "description": "Cene so informativne narave in se prilagodijo glede na obseg ter zahtevnost dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža vodovodnih inštalacij",
+        "description": "Inštalacije za stanovanja ali hiše",
+        "price": "od 50 €",
+        "unit": "točka",
+        "featured": true
+      },
+      {
+        "name": "Vgradnja centralne kurjave",
+        "description": "Postavitev in priklop ogrevalnega sistema",
+        "price": "od 150 €",
+        "unit": "sklop"
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Odstranitev, inštalacije in montaža",
+        "price": "od 1.200 €",
+        "unit": "projekt"
+      },
+      {
+        "name": "Servis ogrevalnih sistemov",
+        "description": "Pregled in vzdrževanje",
+        "price": "od 80 €",
+        "unit": "servis"
+      },
+      {
+        "name": "Nujna popravila",
+        "description": "Odpravljanje napak na terenu",
+        "price": "od 50 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Tomaž Košir",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Vodovodne in ogrevalne storitve | Tomaž Košir s.p. Domžale",
+    "description": "Zanesljive in strokovne inštalacije vodovoda ter centralne kurjave v Domžalah z okolico. Montaža vodovoda, adaptacije kopalnic in servis."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster v Domžalah",
+    "title": "Strokovne vodovodne in ogrevalne",
+    "titleHighlight": "inštalacije",
+    "description": "Zanesljive rešitve za vodovod in centralno kurjavo za lastnike stanovanj, hiš in poslovnih objektov v Domžalah z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno delo",
+        "label": "Strokovno delo",
+        "title": "Strokovno delo"
+      },
+      {
+        "value": "Kakovostna izvedba",
+        "label": "Kakovostna izvedba",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vodovod in ogrevanje",
+    "description": "Nudimo kakovostno izvedbo inštalacij, adaptacije ter hitra popravila v Domžalah in okolici.",
+    "items": [
+      {
+        "title": "Montaža vodovodnih inštalacij",
+        "description": "Strokovna vgradnja in izvedba vodovodnih inštalacij za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Vgradnja centralne kurjave",
+        "description": "Zanesljiva vgradnja in urejanje sistemov centralne kurjave za učinkovito ogrevanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih inštalacij do končne izvedbe.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Servis in vzdrževanje",
+        "description": "Redni servis in vzdrževanje ogrevalnih sistemov za nemoteno delovanje.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nujna popravila",
+        "description": "Hitro odpravljanje napak in nujna popravila na vodovodnih ter ogrevalnih sistemih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, izkušnje in strokovni pristop",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke poskrbimo za kakovostno izvedbo vsakega projekta.",
+    "highlights": [
+      "Dolgoletne izkušnje na področju inštalacij",
+      "Kakovostna izvedba in zanesljivost",
+      "Prilagodljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Dolgoletne izkušnje",
+        "description": "Zanesljivo znanje in izkušnje na področju vodovodnih in ogrevalnih inštalacij.",
+        "title": "Dolgoletne izkušnje"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Precizno delo in uporaba preverjenih materialov za dolgotrajno delovanje.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Prilagodljivost vašim željam in strokovna pomoč pri izbiri najboljših rešitev.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vodovodne inštalacije, adaptacijo kopalnice ali servis ogrevanja? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 636 473",
+        "href": "tel:041636473",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica Ivana Pengova 12, 1230 Domžale, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ulica Ivana Pengova 12, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Tomaž Košir s.p.",
+    "address": "Ulica Ivana Pengova 12, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "041 636 473"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
