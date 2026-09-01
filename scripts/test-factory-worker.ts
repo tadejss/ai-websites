@@ -3,6 +3,7 @@ import {
   countChangedFiles,
   publishGeneratedDemos,
 } from "../src/factory/publish";
+import { gitPublishPaths } from "../src/factory/git-publish";
 import { isGenerationLockBlocking } from "../src/factory/generation-lock";
 import { shouldSkipForCooldown } from "../src/factory/lease";
 import { runFactoryWorker } from "../src/factory/worker";
@@ -253,6 +254,12 @@ async function testPublishNoopAndFailure(): Promise<void> {
       if (args[0] === "rev-parse") {
         return { stdout: "abc123\n", stderr: "" };
       }
+      if (args[0] === "fetch" || args[0] === "rebase") {
+        return { stdout: "", stderr: "" };
+      }
+      if (args[0] === "rev-list") {
+        return { stdout: "0\n", stderr: "" };
+      }
       if (args[0] === "push") {
         throw new Error("remote rejected");
       }
@@ -276,12 +283,64 @@ async function testPublishNoopAndFailure(): Promise<void> {
       if (args[0] === "rev-parse") {
         return { stdout: "def456\n", stderr: "" };
       }
+      if (args[0] === "fetch" || args[0] === "rebase") {
+        return { stdout: "", stderr: "" };
+      }
+      if (args[0] === "rev-list") {
+        return { stdout: "0\n", stderr: "" };
+      }
       return { stdout: "src/content/clients/demo-b/site.json\n", stderr: "" };
     },
   });
   ok(
     "publish: success returns commit sha",
     published.outcome === "published" && published.commitSha === "def456",
+  );
+
+  const gitCalls: string[] = [];
+  const synced = await gitPublishPaths(
+    {
+      paths: ["src/content/clients"],
+      commitMessage: "factory: test sync",
+    },
+    {
+      publishEnabled: true,
+      gitRemote: "origin",
+      gitBranch: "main",
+      runGit: async (args) => {
+        gitCalls.push(args.join(" "));
+        if (args[0] === "status") {
+          return {
+            stdout: "?? src/content/clients/demo-c/site.json\n",
+            stderr: "",
+          };
+        }
+        if (args[0] === "diff") {
+          return {
+            stdout: "src/content/clients/demo-c/site.json\n",
+            stderr: "",
+          };
+        }
+        if (args[0] === "rev-list") {
+          const range = args[2] ?? "";
+          return {
+            stdout: range.startsWith("HEAD..") ? "2\n" : "1\n",
+            stderr: "",
+          };
+        }
+        if (args[0] === "rev-parse") {
+          return { stdout: "synced123\n", stderr: "" };
+        }
+        return { stdout: "", stderr: "" };
+      },
+    },
+  );
+  ok(
+    "publish: fetches and rebases when remote moved ahead",
+    synced.outcome === "published"
+      && gitCalls.some((call) => call.startsWith("fetch origin main"))
+      && gitCalls.some((call) => call === "rebase origin/main")
+      && gitCalls.some((call) => call.startsWith("push origin HEAD:main")),
   );
 }
 
@@ -315,6 +374,12 @@ async function testWorkerOrchestration(): Promise<void> {
         }
         if (args[0] === "push") {
           throw new Error("deploy push failed");
+        }
+        if (args[0] === "fetch" || args[0] === "rebase") {
+          return { stdout: "", stderr: "" };
+        }
+        if (args[0] === "rev-list") {
+          return { stdout: "0\n", stderr: "" };
         }
         if (args[0] === "rev-parse") {
           return { stdout: "deadbeef\n", stderr: "" };

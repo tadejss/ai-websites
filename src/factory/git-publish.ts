@@ -43,6 +43,52 @@ export function countChangedFilesInPorcelain(porcelain: string): number {
     .filter((line) => line.length > 0).length;
 }
 
+function logGitPublishNotice(
+  message: string,
+  data: Record<string, unknown>,
+): void {
+  if (process.env.GITHUB_ACTIONS === "true") {
+    console.log(`::notice::git-publish ${message} ${JSON.stringify(data)}`);
+  }
+}
+
+async function countRevRange(
+  runGit: GitPublishDependencies["runGit"],
+  range: string,
+): Promise<number> {
+  const result = await runGit(["rev-list", "--count", range]);
+  const parsed = Number.parseInt(result.stdout.trim(), 10);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+/**
+ * Fetch latest target branch and rebase the local commit on top so a long-running
+ * worker can push after other commits landed on main during generation.
+ */
+async function syncRemoteBranchBeforePush(
+  d: GitPublishDependencies,
+): Promise<void> {
+  const upstream = `${d.gitRemote}/${d.gitBranch}`;
+  await d.runGit(["fetch", d.gitRemote, d.gitBranch]);
+
+  const behindBefore = await countRevRange(d.runGit, `HEAD..${upstream}`);
+  const aheadBefore = await countRevRange(d.runGit, `${upstream}..HEAD`);
+  logGitPublishNotice("remote sync state before rebase", {
+    upstream,
+    behindBefore,
+    aheadBefore,
+  });
+
+  if (behindBefore > 0) {
+    await d.runGit(["rebase", upstream]);
+    logGitPublishNotice("rebased onto remote branch", {
+      upstream,
+      behindBefore,
+      aheadBefore,
+    });
+  }
+}
+
 /**
  * Stage, commit, and push changes under the given repo-relative paths.
  */
@@ -101,11 +147,18 @@ export async function gitPublishPaths(
     const shaResult = await d.runGit(["rev-parse", "HEAD"]);
     const commitSha = shaResult.stdout.trim();
 
+    await syncRemoteBranchBeforePush(d);
     await d.runGit(["push", d.gitRemote, `HEAD:${d.gitBranch}`]);
+    logGitPublishNotice("push succeeded", {
+      commitSha,
+      branch: d.gitBranch,
+      remote: d.gitRemote,
+    });
 
     return { outcome: "published", commitSha, filesChanged };
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
+    logGitPublishNotice("publish failed", { error: message.slice(0, 500) });
     return { outcome: "failed", error: message };
   }
 }
