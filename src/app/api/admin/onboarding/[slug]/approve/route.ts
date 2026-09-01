@@ -1,3 +1,4 @@
+import { logAdminAction } from "@/admin/audit";
 import { NextResponse } from "next/server";
 import { getCustomerBySlug } from "@/customers/store";
 import { isAdminAuthorized } from "@/lib/admin-auth";
@@ -94,6 +95,13 @@ export async function POST(_request: Request, context: RouteContext) {
   }
 
   const refreshed = await getOnboardingBySlug(slug);
+
+  await logAdminAction({
+    action: "onboarding_approve",
+    slug,
+    result: "ok",
+    detail: { alreadyApproved: result.alreadyApproved },
+  });
 
   return NextResponse.json({
     ok: true,

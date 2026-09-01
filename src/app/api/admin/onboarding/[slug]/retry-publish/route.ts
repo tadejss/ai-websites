@@ -1,3 +1,4 @@
+import { logAdminAction } from "@/admin/audit";
 import { NextResponse } from "next/server";
 import { getCustomerBySlug } from "@/customers/store";
 import { isAdminAuthorized } from "@/lib/admin-auth";
@@ -53,8 +54,21 @@ export async function POST(_request: Request, context: RouteContext) {
   });
 
   if (!dispatch.ok) {
+    await logAdminAction({
+      action: "retry_publish",
+      slug,
+      result: "error",
+      detail: { error: dispatch.error },
+    });
     return NextResponse.json({ error: dispatch.error }, { status: 502 });
   }
+
+  await logAdminAction({
+    action: "retry_publish",
+    slug,
+    result: "ok",
+    detail: { dispatched: dispatch.dispatched },
+  });
 
   return NextResponse.json({
     ok: true,

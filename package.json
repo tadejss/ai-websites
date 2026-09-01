@@ -47,6 +47,7 @@
     "publish-customer": "tsx scripts/publish-customer.ts",
     "test-customer-publish": "tsx scripts/test-customer-publish.ts",
     "test-demo-lifecycle": "tsx scripts/test-demo-lifecycle.ts",
+    "backfill-admin-index": "tsx scripts/backfill-admin-index.ts",
     "test-factory-ops": "tsx scripts/test-factory-ops.ts"
   },
   "dependencies": {

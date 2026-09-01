@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+[data-admin-theme] {
+  --admin-bg: #0a0a0b;
+  --admin-surface: #111113;
+  --admin-surface-elevated: #1a1a1e;
+  --admin-border: rgba(255, 255, 255, 0.08);
+  --admin-foreground: #f4f4f5;
+  --admin-muted: #71717a;
+  color-scheme: dark;
+}
+
+[data-admin-theme] {
+  background: var(--admin-bg);
+  color: var(--admin-foreground);
+  min-height: 100vh;
+}
+
 :root,
 [data-appearance="default"],
 [data-appearance="elektro"],
