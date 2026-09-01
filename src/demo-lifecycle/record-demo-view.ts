@@ -34,7 +34,7 @@ export async function recordDemoView(
     return { recorded: false, slug: normalizedSlug, reason: "ineligible_request" };
   }
 
-  const viewerKey = buildViewerKey(normalizedSlug, context);
+  const viewerKey = await buildViewerKey(normalizedSlug, context);
   if (!viewerKey) {
     return {
       recorded: false,

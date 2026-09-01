@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidateTag } from "next/cache";
 import type Stripe from "stripe";
 import { sendCheckoutNotification } from "@/billing/notify";
 import { sendOnboardingCustomerEmail } from "@/billing/notify-onboarding-customer";
@@ -13,6 +14,7 @@ import {
   recordCustomerUpsellPurchase,
   upsertCustomerFromCheckout,
 } from "@/customers/store";
+import { CUSTOMER_SLUGS_CACHE_TAG } from "@/customers/slug-cache";
 import { markDemoLifecyclePurchased } from "@/demo-lifecycle/store";
 import { isDatabaseConfigured } from "@/db/client";
 import { resolveCheckoutLead } from "@/leads/checkout-lead";
@@ -123,6 +125,8 @@ async function handleUpsellCompleted(
     stripeObjectId: paymentOrSubscriptionId(session) ?? null,
   });
 
+  revalidateTag(CUSTOMER_SLUGS_CACHE_TAG, "max");
+
   if (alreadyProcessed) {
     return {
       handled: true,
@@ -194,6 +198,8 @@ async function handleBaseSubscriptionCompleted(
     subscriptionPlan: plan,
     checkoutSessionId: session.id,
   });
+
+  revalidateTag(CUSTOMER_SLUGS_CACHE_TAG, "max");
 
   const contactEmail = contactEmailFromSession(session);
   const contactName = contactNameFromSession(session);

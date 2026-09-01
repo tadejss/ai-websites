@@ -1,4 +1,3 @@
-import { createHmac } from "node:crypto";
 import type { DemoViewContext } from "./view-eligibility";
 
 const DEV_FALLBACK_SECRET = "demo-view-dev-only-not-for-production";
@@ -38,10 +37,25 @@ function uaPrefix(userAgent: string): string {
   return userAgent.trim().slice(0, 80).toLowerCase();
 }
 
-export function buildViewerKey(
+async function hmacSha256Hex(secret: string, material: string): Promise<string> {
+  const enc = new TextEncoder();
+  const key = await crypto.subtle.importKey(
+    "raw",
+    enc.encode(secret),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign"],
+  );
+  const signature = await crypto.subtle.sign("HMAC", key, enc.encode(material));
+  return Array.from(new Uint8Array(signature))
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+export async function buildViewerKey(
   slug: string,
   context: DemoViewContext,
-): string | null {
+): Promise<string | null> {
   const secret = hashSecret();
   if (!secret) {
     return null;
@@ -53,7 +67,7 @@ export function buildViewerKey(
     uaPrefix(context.userAgent),
   ].join("|");
 
-  return createHmac("sha256", secret).update(material).digest("hex");
+  return hmacSha256Hex(secret, material);
 }
 
 export function dedupeWindowHours(): number {

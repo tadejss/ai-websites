@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
-import { after } from "next/server";
 import { notFound } from "next/navigation";
 import { SitePage } from "../site-page";
 import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
 import type { SiteConfig } from "@/content/types/site";
-import {
-  extractViewContext,
-  recordDemoView,
-} from "@/demo-lifecycle/record-demo-view";
 import { toAbsoluteUrl } from "@/site-url";
 
 type Props = {
@@ -21,6 +15,9 @@ type Props = {
 export function generateStaticParams() {
   return siteSlugs.map((slug) => ({ slug }));
 }
+
+/** ISR: demo HTML can be edge-cached; customer chrome updates within 5 minutes. */
+export const revalidate = 300;
 
 function buildMetadata(slug: string, config: SiteConfig): Metadata {
   const { title, description } = config.metadata;
@@ -108,13 +105,6 @@ export default async function ClientPage({ params }: Props) {
     notFound();
   }
 
-  const requestHeaders = await headers();
-  const viewContext = extractViewContext(requestHeaders);
-
-  after(() => {
-    void recordDemoView(slug, viewContext);
-  });
-
   return (
     <>
       <LocalBusinessJsonLd slug={slug} config={siteConfig} />
@@ -122,5 +112,3 @@ export default async function ClientPage({ params }: Props) {
     </>
   );
 }
-
-export const dynamic = "force-dynamic";

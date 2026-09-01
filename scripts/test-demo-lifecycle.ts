@@ -89,7 +89,7 @@ function testViewEligibility(): void {
   ok("vercel cron rejected", !shouldCountDemoView(cron));
 }
 
-function testViewerKey(): void {
+async function testViewerKey(): Promise<void> {
   console.log("\nViewer key");
 
   process.env.DEMO_VIEW_HASH_SECRET = "test-secret";
@@ -103,21 +103,21 @@ function testViewerKey(): void {
     clientIp: "203.0.113.10",
   };
 
-  const key1 = buildViewerKey("demo-slug", context);
-  const key2 = buildViewerKey("demo-slug", context);
+  const key1 = await buildViewerKey("demo-slug", context);
+  const key2 = await buildViewerKey("demo-slug", context);
   ok("viewer key is stable", key1 === key2 && Boolean(key1));
 
-  const keyOtherSlug = buildViewerKey("other-slug", context);
+  const keyOtherSlug = await buildViewerKey("other-slug", context);
   ok("viewer key differs by slug", key1 !== keyOtherSlug);
 
   delete process.env.DEMO_VIEW_HASH_SECRET;
   process.env.NODE_ENV = "test";
-  ok("dev fallback secret works", Boolean(buildViewerKey("x", context)));
+  ok("dev fallback secret works", Boolean(await buildViewerKey("x", context)));
 
   process.env.NODE_ENV = "production";
   ok(
     "production requires secret",
-    buildViewerKey("x", context) === null,
+    (await buildViewerKey("x", context)) === null,
   );
   process.env.NODE_ENV = "test";
   process.env.DEMO_VIEW_HASH_SECRET = "test-secret";
@@ -191,7 +191,7 @@ function testExtractViewContext(): void {
 async function main(): Promise<void> {
   console.log("Demo lifecycle tests");
   testViewEligibility();
-  testViewerKey();
+  await testViewerKey();
   testLifecycleHelpers();
   testDedupeLogic();
   testExtractViewContext();

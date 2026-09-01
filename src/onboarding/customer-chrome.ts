@@ -1,4 +1,4 @@
-import { isCustomer } from "@/customers/store";
+import { getCachedCustomerSlugSet } from "@/customers/slug-cache";
 import { getOnboardingBySlug, getOnboardingUrl } from "./store";
 import type { OnboardingStatus } from "./types";
 
@@ -14,8 +14,8 @@ export async function getCustomerChromeState(
   slug: string,
 ): Promise<CustomerChromeState> {
   try {
-    const customer = await isCustomer(slug);
-    if (!customer) {
+    const customerSlugs = await getCachedCustomerSlugSet();
+    if (!customerSlugs.has(slug)) {
       return {
         isCustomer: false,
         onboardingUrl: null,

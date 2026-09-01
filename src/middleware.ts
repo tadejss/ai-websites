@@ -1,4 +1,8 @@
-import { NextResponse, type NextRequest } from "next/server";
+import { NextResponse, type NextFetchEvent, type NextRequest } from "next/server";
+import {
+  extractDemoSlugFromPathname,
+  scheduleDemoViewFromRequest,
+} from "@/demo-lifecycle/middleware-demo-view";
 import { ADMIN_COOKIE, getAdminSecret, isValidAdminToken } from "@/lib/auth";
 import { getSlugForHost } from "@/lib/custom-domains";
 
@@ -11,9 +15,20 @@ const CUSTOM_DOMAIN_ROOT_PATHS = new Set([
   "/pogosta-vprasanja",
 ]);
 
-export function middleware(request: NextRequest) {
+export function middleware(request: NextRequest, event: NextFetchEvent) {
   const { pathname } = request.nextUrl;
   const host = request.headers.get("host")?.split(":")[0]?.toLowerCase() ?? "";
+
+  if (request.method === "GET") {
+    const demoSlug = extractDemoSlugFromPathname(pathname);
+    if (demoSlug) {
+      event.waitUntil(
+        Promise.resolve().then(() =>
+          scheduleDemoViewFromRequest(demoSlug, request.headers),
+        ),
+      );
+    }
+  }
 
   // Retired project hostname — force share / SMS links onto zbrendiraj.si.
   if (host === "splet.vercel.app" || host === "www.splet.vercel.app") {
