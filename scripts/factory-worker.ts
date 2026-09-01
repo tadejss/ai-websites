@@ -8,6 +8,14 @@ import { getReplenishStatus } from "../src/leads/replenish-status";
 const root = resolve(__dirname, "..");
 loadEnv({ path: resolve(root, ".env.local") });
 
+function reportGitHubError(message: string): void {
+  if (process.env.GITHUB_ACTIONS === "true") {
+    console.error(`::error::${message}`);
+    return;
+  }
+  console.error(message);
+}
+
 async function printStatus(): Promise<void> {
   const backlog = await getReplenishStatus();
   console.log("Factory worker status\n");
@@ -48,8 +56,8 @@ async function main(): Promise<void> {
   }
 
   if (!isDatabaseConfigured()) {
-    console.error(
-      "DATABASE_URL is required for the factory worker (Neon). Use npm run replenish-leads for local file-only generation.",
+    reportGitHubError(
+      "DATABASE_URL is required for the factory worker (Neon). Use npm run replenish-leads for local file-only generation. Add the Neon DATABASE_URL secret in GitHub Settings → Secrets and variables → Actions.",
     );
     process.exit(1);
   }
@@ -107,11 +115,15 @@ async function main(): Promise<void> {
   );
 
   if (result.status === "failed") {
+    reportGitHubError(
+      `Factory worker failed: ${result.error ?? result.skipReason ?? "unknown error"}`,
+    );
     process.exit(1);
   }
 }
 
 main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
+  const message = error instanceof Error ? error.message : String(error);
+  reportGitHubError(`Factory worker crashed: ${message}`);
   process.exit(1);
 });
