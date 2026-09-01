@@ -1,5 +1,7 @@
 # Factory cost & reliability audit
 
+> **Note (2026-09-01):** Generation cost/reliability findings remain the best code-backed write-up for API spend and worker failure modes. **Out of scope then, implemented now:** customer LIVE publish, demo lifecycle views, `/admin/factory` — see [FACTORY.md](./FACTORY.md). Agent entry: [AGENT-CONTEXT.md](./AGENT-CONTEXT.md). Prefer [ARCHITECTURE.md](./ARCHITECTURE.md) over [ARCHITECTURE-REPORT.md](./ARCHITECTURE-REPORT.md).
+
 **Project:** ai-websites (zbrendiraj.si demo factory)  
 **Audit date:** 2026-08-31  
 **Method:** Read-only code inspection — no behavior changes  
@@ -8,8 +10,9 @@
 **Related docs:**
 
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — system overview and component map
-- [ARCHITECTURE-REPORT.md](./ARCHITECTURE-REPORT.md) — detailed implemented behavior
-- [WEBSITE-FACTORY-PLAN.md](./WEBSITE-FACTORY-PLAN.md) — factory automation roadmap
+- [ARCHITECTURE-REPORT.md](./ARCHITECTURE-REPORT.md) — August 2026 snapshot (stale vs ARCHITECTURE.md)
+- [WEBSITE-FACTORY-PLAN.md](./WEBSITE-FACTORY-PLAN.md) — factory automation roadmap (stale statuses)
+- [FACTORY.md](./FACTORY.md) — current lifecycle (2026-09-01)
 
 **Out of scope for this audit:** Stripe checkout, customer publishing, custom domains, demo lifecycle tracking, admin ops monitoring (`/admin/factory`), SMS outreach architecture. Those systems are referenced only where they border the generation path.
 

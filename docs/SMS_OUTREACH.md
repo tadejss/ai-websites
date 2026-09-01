@@ -1,5 +1,7 @@
 # SMS-only outreach
 
+> **STALE (2026-09-01) — replenishment section only:** The “Lead replenishment (manual)” workflow below still describes status-only cron + local `replenish-leads` + manual git commit. Current code: cron may `dispatchFactoryWorker`; `npm run factory-worker` / GHA commits and pushes. See [FACTORY.md](./FACTORY.md) and [RUNTIME-AND-OPS.md](./RUNTIME-AND-OPS.md). SMS queue/gateway/API sections remain valid.
+
 Automated lead outreach for Zbrendiraj.si is **SMS-only**. Cold email is no longer part of the automated cron flow. Resend remains for onboarding, customer, and ops emails.
 
 ## Architecture

@@ -1,5 +1,7 @@
 # Stripe checkout on demos
 
+> **Verified against code:** 2026-09-01 — still aligned. Agent map: [AGENT-CONTEXT.md](./AGENT-CONTEXT.md). Domain: [DOMAIN.md](./DOMAIN.md).
+
 Subscription checkout for demo sites (monthly / yearly) via [Stripe Checkout](https://stripe.com/payments/checkout).
 
 ## Product

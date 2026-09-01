@@ -1,9 +1,12 @@
 # Website Factory Plan
 
-> **Date:** 2026-08-31  
+> **STALE (2026-09-01):** Several “NOT IMPLEMENTED” claims in §1–§3 are **wrong vs current code**. LIVE publish, demo view tracking, factory worker (GHA), and Neon discovery progress **exist**. See [FACTORY.md](./FACTORY.md), [DOMAIN.md](./DOMAIN.md), [AGENT-CONTEXT.md](./AGENT-CONTEXT.md).  
+> This file remains useful as a **roadmap** for churn, unconverted cleanup, and lead-index-in-Postgres (still Missing). Do not implement from the outdated status table without re-reading code.
+
+> **Date:** 2026-08-31 (plan snapshot; statuses below are not a 2026-09-01 audit)  
 > **Scope:** Lead → demo → outreach → purchase → customer → upsell → churn/cleanup  
 > **Constraint:** Analysis + implementation plan only. Reuse current architecture. No rewrite.  
-> **Evidence base:** Live code (not stale docs). See also `docs/ARCHITECTURE.md`.
+> **Evidence base:** Live code as of 2026-08-31. Prefer [ARCHITECTURE.md](./ARCHITECTURE.md) (updated 2026-09-01).
 
 ---
 

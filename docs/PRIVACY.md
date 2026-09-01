@@ -1,6 +1,8 @@
 # Zasebnost in skladnost (V1)
 
-Sistem zagotavlja avtomatsko generirane strani **Politika zasebnosti** in **Politika piškotkov** za vsako stranko, povezave v footerju ter SMTP kontaktni obrazec.
+> **STALE (2026-09-01):** Kontaktni obrazec pošilja **Resend** (`src/contact/send-email.ts`), ne SMTP/`nodemailer` (`nodemailer` is an unused package.json dependency). Rest of the legal-page contract is still the code path in `src/privacy/`.
+
+Sistem zagotavlja avtomatsko generirane strani **Politika zasebnosti** in **Politika piškotkov** za vsako stranko, povezave v footerju ter kontaktni obrazec (Resend).
 
 ## Strani
 
@@ -26,21 +28,19 @@ Vsaka stran ima bloke `business` in `privacy`. Privzeta V1 konfiguracija:
 
 Pravna besedila so centralna predloga v `src/privacy/components/` (slovenščina). AI jih ne generira na stranko.
 
-## SMTP za kontaktni obrazec
+## Kontaktni obrazec (Resend)
 
-Kontaktni obrazec pošilja sporočila prek `POST /api/contact` na `business.email`.
+Kontaktni obrazec pošilja sporočila prek `POST /api/contact` → `sendContactEmail` (`src/contact/send-email.ts`) na `business.email`.
 
 Nastavite v `.env.local` / produkciji:
 
 ```bash
-SMTP_HOST=
-SMTP_PORT=587
-SMTP_USER=
-SMTP_PASS=
-SMTP_FROM=
+RESEND_API_KEY=
 ```
 
-**Resend se ne uporablja** za stranke strank. Outreach sistem ostaja ločen.
+From-naslov v kodi je fiksen: `Zbrendiraj.si <noreply@zbrendiraj.si>`. `SMTP_*` spremenljivk koda ne bere. `nodemailer` v `package.json` nima importov.
+
+Outreach e-pošta (legacy cold email) ostaja ločena (`src/outreach/`).
 
 ## Backfill obstoječih strani
 

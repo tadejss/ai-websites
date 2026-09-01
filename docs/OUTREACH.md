@@ -1,5 +1,7 @@
 # Email outreach
 
+> **LEGACY (2026-09-01):** Automated outreach is **SMS-only**. `/api/cron/outreach` returns `{ skipped: true }` (`src/app/api/cron/outreach/route.ts`). This file documents the **manual/admin/CLI email** path (`src/outreach/send.ts`, `npm run send-outreach`). Do not “fix” or re-enable the email cron as the factory default. Active channel: [SMS_OUTREACH.md](./SMS_OUTREACH.md).
+
 Automated outreach for leads with generated demo sites, powered by [Resend](https://resend.com).
 
 ## Environment variables

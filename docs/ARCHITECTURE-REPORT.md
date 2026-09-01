@@ -1,10 +1,12 @@
 # Architecture Report
 
+> **STALE / overlapping (2026-09-01):** August 2026 snapshot that duplicates [ARCHITECTURE.md](./ARCHITECTURE.md). Prefer the updated ARCHITECTURE.md plus [AGENT-CONTEXT.md](./AGENT-CONTEXT.md). This report does not include factory worker GHA, LIVE `publishCustomerSite`, or `demo_lifecycle`.
+
 **Project:** `ai-websites` (zbrendiraj.si demo-site factory)  
 **Generated from:** live codebase inspection (August 2026)  
 **Stack:** Next.js 16 App Router, React 19, TypeScript, Tailwind 4, Vercel
 
-This document describes **implemented behavior** in the repository. Where legacy or dormant code exists, it is called out explicitly.
+This document describes **implemented behavior** in the repository as of August 2026. Where legacy or dormant code exists, it is called out explicitly.
 
 For **cost per demo, cache/reuse gaps, failure modes at scale, and prioritized optimizations**, see [FACTORY-COST-RELIABILITY-AUDIT.md](./FACTORY-COST-RELIABILITY-AUDIT.md).
 

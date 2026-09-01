@@ -1,6 +1,8 @@
 # Customer onboarding
 
-Post-purchase questionnaire for Zbrendiraj.si customers. Mutable state lives in **Neon Postgres** (`customer_onboarding`); demo git JSON remains read-only input for prefill and processing.
+> **Verified against code:** 2026-09-01 — still aligned. Factory context: [AGENT-CONTEXT.md](./AGENT-CONTEXT.md), [FACTORY.md](./FACTORY.md) stage 6.
+
+Post-purchase questionnaire for Zbrendiraj.si customers. Mutable state lives in **Neon Postgres** (`customer_onboarding`); demo git JSON remains read-only input for prefill and processing until `publishCustomerSite` / `applyCustomerSite`.
 
 ## Flow
 

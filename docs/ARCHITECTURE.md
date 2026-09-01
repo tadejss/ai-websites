@@ -1,9 +1,11 @@
 # Architecture — ai-websites
 
-> **Audit date:** 2026-08-31  
-> **Method:** Code inspection only (no assumptions from stale docs).  
-> **Scale snapshot:** ~273 TS/TSX files in `src/`, **378** generated client sites, **529** lead JSON files.  
-> **Cost & reliability:** See [FACTORY-COST-RELIABILITY-AUDIT.md](./FACTORY-COST-RELIABILITY-AUDIT.md) for API inventory, scaling risks, and optimization priorities.
+> **Verified against code:** 2026-09-01  
+> **Source of truth:** `src/`, `scripts/`, `.github/workflows/`, `vercel.json`, `src/db/schema.ts`.  
+> **Agent entry:** [AGENT-CONTEXT.md](./AGENT-CONTEXT.md). Factory lifecycle: [FACTORY.md](./FACTORY.md). Entities: [DOMAIN.md](./DOMAIN.md).  
+> **Stale / unverified:** production values of `FACTORY_DISPATCH_ENABLED` / `FACTORY_GIT_TOKEN` (code default dispatch = false). Scale snapshot counts below are from 2026-08-31 and were not re-counted.  
+> **Cost & reliability:** [FACTORY-COST-RELIABILITY-AUDIT.md](./FACTORY-COST-RELIABILITY-AUDIT.md).  
+> **Performance (demo /{slug}):** [PERFORMANCE-AUDIT.md](./PERFORMANCE-AUDIT.md).
 
 ---
 
@@ -18,9 +20,9 @@
 3. **Serves** those demos at `/{slug}` and `/demo/{slug}` with industry-specific appearance templates.
 4. **Outreaches** via SMS (queued in Postgres, sent by a local HiLink gateway).
 5. **Converts** interested businesses through Stripe Checkout → subscription + upsells.
-6. **Onboards** paying customers via a token-gated form; processed payload lives in Postgres (does not auto-publish to git).
+6. **Onboards** paying customers via a token-gated form; `processed_payload` lives in Postgres until admin approve dispatches GitHub Action `customer-publish`, which writes `site.json` and git-pushes (`src/onboarding/publish-customer.ts`). Submit itself does **not** write git.
 
-The product is a **single monolithic Next.js deployment** on Vercel. There is no separate backend service. Heavy generation and lead replenishment run **locally via CLI**, not on Vercel.
+The product is a **single monolithic Next.js deployment** on Vercel. There is no separate backend service. Heavy generation and git publish run on **GitHub Actions** (`factory-worker.yml`) or **local CLI**, never on Vercel (ephemeral FS).
 
 ### Main architectural components
 
@@ -36,19 +38,23 @@ The product is a **single monolithic Next.js deployment** on Vercel. There is no
 | **Onboarding** | `src/onboarding/` | Post-purchase customer content collection |
 | **SMS outreach** | `src/outreach/sms/` | Queue, eligibility, templates |
 | **SMS gateway** | `tools/sms-gateway/` | Local poller + Huawei HiLink modem |
-| **Database** | `src/db/` | Neon Postgres schema + serverless client |
-| **Admin** | `src/app/admin/` | Lead pipeline UI (cookie auth) |
-| **Scripts** | `scripts/` | CLI for generation, discovery, backfills, tests |
+| **Factory worker** | `src/factory/` | Lease, discovery-progress store, generation locks, git publish, GHA dispatch |
+| **Demo lifecycle** | `src/demo-lifecycle/` | generated → published → viewed → purchased (Neon) |
+| **Database** | `src/db/` | Neon Postgres schema (`schema.ts`) + serverless client |
+| **Admin** | `src/app/admin/` | Lead pipeline + `/admin/factory` ops UI (cookie auth) |
+| **Scripts** | `scripts/` | CLI for generation, discovery, factory worker, customer publish |
+| **GitHub Actions** | `.github/workflows/` | `factory-worker.yml`, `customer-publish.yml` |
 
 ### Main runtime / deployment environments
 
 | Environment | Purpose |
 |-------------|---------|
-| **Vercel production** | Serves demos, checkout, webhooks, crons, admin, contact forms |
-| **Local dev** | `next dev`, full replenish + demo generation, image writes |
+| **Vercel production** | Serves demos, checkout, webhooks, crons (enqueue/dispatch only), admin, contact |
+| **GitHub Actions** | Factory generate+git push; customer LIVE publish |
+| **Local dev / CLI** | `next dev`; `replenish-leads` (no push); `factory-worker` (push if enabled) |
 | **Local SMS gateway** | `tools/sms-gateway` on `127.0.0.1:8787` polls production API |
-| **Git** | Source of truth for generated demo content (`src/content/clients/`, `src/content/leads/`) |
-| **Neon Postgres** | Customers, purchases, onboarding, SMS queue/state |
+| **Git** | Source of truth for demo/LIVE site JSON (`src/content/clients/`, `src/content/leads/`) |
+| **Neon Postgres** | Customers, purchases, onboarding, SMS, factory leases/progress, demo lifecycle |
 | **Vercel Blob** | Production image storage (optional local fallback to `public/`) |
 
 **Production domain:** `zbrendiraj.si` (custom domain mapped in `src/lib/custom-domains.ts`). Legacy hostname `splet.vercel.app` redirects to `zbrendiraj.si` (`src/middleware.ts`, `next.config.ts`).
@@ -70,20 +76,23 @@ ai-websites/
 │   ├── content/            # JSON content: clients/, leads/, sites/, types
 │   ├── customers/          # Neon customer/purchase CRUD
 │   ├── db/                 # Schema SQL strings, Neon client
+│   ├── factory/            # Worker, git publish, dispatch, leases, discovery-progress store
+│   ├── demo-lifecycle/     # View tracking + funnel statuses (Neon)
 │   ├── images/             # Image pipeline (pool, providers, storage)
 │   ├── leads/              # Discovery matrix, store, replenish
 │   ├── lib/                # Auth, custom domains
 │   ├── logs/               # Generation logging
-│   ├── onboarding/         # Customer onboarding flow
+│   ├── onboarding/         # Customer onboarding + LIVE publish apply
 │   ├── outreach/           # Email outreach (legacy) + SMS outreach (active)
 │   ├── privacy/            # Legal page content + validation
 │   ├── sources/            # Google Places business source
 │   └── theme/              # Theme assignment, fonts, palettes
-├── scripts/                # CLI tools (36 scripts)
+├── scripts/                # CLI tools
 ├── tools/sms-gateway/      # Local SMS sender (separate Node package)
-├── data/                   # Gitignored runtime state (progress, caches)
+├── .github/workflows/      # factory-worker.yml, customer-publish.yml
+├── data/                   # Gitignored runtime state (progress mirror, caches)
 ├── public/                 # Static assets; client/stock images when not on Blob
-├── docs/                   # Documentation (this file, CHECKOUT.md, SMS_OUTREACH.md)
+├── docs/                   # AGENT-CONTEXT.md is the agent entry
 ├── vercel.json             # Cron schedules
 └── package.json            # npm scripts
 ```
@@ -93,10 +102,12 @@ ai-websites/
 **Core (production path):**
 
 - `src/leads/replenish.ts` — discovery + demo generation orchestrator
+- `src/factory/worker.ts` — lease + replenish + git publish (GHA / CLI)
 - `src/clients/generate-client.ts` — AI + images + JSON persistence
 - `src/content/get-site-config.ts` — runtime site config loading
 - `src/app/site-page.tsx` — shared demo/customer page renderer
 - `src/app/api/webhooks/stripe/route.ts` — payment → customer state
+- `src/onboarding/publish-customer.ts` — LIVE apply + git push
 - `src/outreach/sms/*` — SMS pipeline
 - `src/db/schema.ts` — persistent state definitions
 
@@ -115,9 +126,13 @@ ai-websites/
 ### 3.1 Lead discovery
 
 ```
-CLI: npm run replenish-leads
+CLI: npm run factory-worker     [scripts/factory-worker.ts → runFactoryWorker]
+  OR GitHub Action factory-worker.yml (schedule / repository_dispatch factory-generate)
+  OR CLI: npm run replenish-leads  [does NOT commit/push]
+
   → replenishSmsLeads()                    [src/leads/replenish.ts]
-    → readDiscoveryProgress()              [data/lead-discovery-progress.json]
+    → loadDiscoveryProgress()              [Neon factory_discovery_progress if DATABASE_URL;
+                                            else data/lead-discovery-progress.json]
     → findActiveCombination() / advancePointer()
     → buildSearchSurface(region, profession) [src/leads/discovery-matrix.ts]
     → nextQueryInSurface() → query string
@@ -125,10 +140,11 @@ CLI: npm run replenish-leads
         → searchPlaces()                   [src/sources/google-places-source.ts]
         → filter: placeId dedup, region, website, mobile, profession match
         → saveLead()                       [src/leads/store.ts → src/content/leads/{slug}.json]
-    → markQueryCompleted() + writeDiscoveryProgress()
+    → markQueryCompleted() + saveDiscoveryProgress()
+    → createClientFromLead() per candidate (worker wraps with generation lock)
 ```
 
-**Vercel cron** (`GET /api/cron/replenish-leads`) calls `getReplenishStatus()` only — no discovery or generation (`src/app/api/cron/replenish-leads/route.ts`).
+**Vercel cron** (`GET /api/cron/replenish-leads`, `0 6 * * *`): `getReplenishStatus()` always. If `needed > 0` and `FACTORY_DISPATCH_ENABLED` + GitHub creds, `dispatchFactoryWorker()` (`src/factory/dispatch.ts`) fires `repository_dispatch: factory-generate`. Never generates on Vercel (`src/app/api/cron/replenish-leads/route.ts`).
 
 ### 3.2 Lead filtering / qualification
 
@@ -198,6 +214,8 @@ HTTP GET /{slug}
 
 Despite `generateStaticParams()` listing all slugs, routes export `dynamic = "force-dynamic"` — configs are bundled at build via webpack `require.context`, but pages render dynamically at request time.
 
+View tracking: `after(() => recordDemoView(slug, viewContext))` in `src/app/[slug]/page.tsx` (Neon; no-op without `DATABASE_URL`; skips customers and excluded slugs).
+
 ### 3.7 SMS outreach
 
 ```
@@ -243,9 +261,28 @@ POST /api/webhooks/stripe                   [src/app/api/webhooks/stripe/route.t
            sendUpsellNotification()
 ```
 
-**Important:** Paying customer state lives in **Postgres**, not in lead JSON (though `src/leads/store.ts` has optional stripe fields for merge/backfill). Demo content in git is **not** automatically updated on purchase.
+**Important:** Paying customer state lives in **Postgres**, not in lead JSON (though `src/leads/store.ts` has optional stripe fields for merge/backfill). Demo content in git is **not** updated on purchase. LIVE content is written only by `publishCustomerSite()` after admin approve.
 
-### 3.10 Admin / lead management
+### 3.10 Customer LIVE publish
+
+```
+Admin POST /api/admin/onboarding/[slug]/approve
+  → approveOnboardingForPublish()          [src/onboarding/store.ts]
+  → dispatchCustomerPublish()              [src/onboarding/dispatch-customer-publish.ts]
+       (no-op unless FACTORY_DISPATCH_ENABLED + FACTORY_GITHUB_*)
+
+GitHub Action customer-publish.yml
+  → publishCustomerSite(slug)              [src/onboarding/publish-customer.ts]
+      → claimCustomerPublishLease()
+      → applyCustomerSite()                [writes site.json + business.json;
+                                            first-time snapshot → clients/{slug}/demo/]
+      → gitPublishPaths()                  [src/factory/git-publish.ts]
+      → markCustomerPublished()            [status live]
+```
+
+Retry: `POST /api/admin/onboarding/[slug]/retry-publish`. Manual: `npm run publish-customer -- <slug>`.
+
+### 3.11 Admin / lead management
 
 ```
 /admin/leads                               [src/app/admin/leads/page.tsx]
@@ -254,7 +291,8 @@ POST /api/webhooks/stripe                   [src/app/api/webhooks/stripe/route.t
   → listSmsLeadStates() from Neon
   → filterAdminLeadRows()                    [src/admin/leads-filters.ts]
 
-/admin/leads/{slug}                        [detail + manual SMS queue, outreach controls]
+/admin/leads/{slug}                        [detail + manual SMS queue, outreach, onboarding approve]
+/admin/factory                             [src/app/admin/factory/page.tsx → getFactoryOpsSnapshot]
 
 Auth: ADMIN_SECRET cookie via middleware    [src/middleware.ts, src/lib/auth.ts]
 ```
@@ -276,14 +314,17 @@ flowchart TB
     DB[src/db]
     SMS[src/outreach/sms]
     ONBOARD[src/onboarding]
+    DISPATCH[src/factory/dispatch]
   end
 
-  subgraph generation [Generation-time - CLI]
+  subgraph generation [Generation-time - GHA or CLI]
+    WORKER[src/factory/worker]
     REPLENISH[src/leads/replenish]
     GEN[src/clients/generate-client]
     AI[src/ai]
     IMG[src/images]
     PLACES[src/sources/google-places-source]
+    GITPUB[src/factory/git-publish]
   end
 
   APP --> CONTENT
@@ -295,7 +336,10 @@ flowchart TB
   SMS --> DB
   ONBOARD --> DB
   BILLING --> CUSTOMERS
+  DISPATCH --> WORKER
 
+  WORKER --> REPLENISH
+  WORKER --> GITPUB
   REPLENISH --> PLACES
   REPLENISH --> GEN
   GEN --> AI
@@ -518,14 +562,16 @@ Google Place
 | Data | Source of truth | Notes |
 |------|-----------------|-------|
 | Lead pipeline status, notes, outreach | `src/content/leads/*.json` | `saveLead()` preserves sales-owned fields |
-| Demo site content | `src/content/clients/{slug}/site.json` | Bundled at build; git-versioned |
-| Business facts for demo | `business.json` | Derived from Places + AI |
+| Demo / LIVE site content | `src/content/clients/{slug}/site.json` | Bundled at build; git-versioned |
+| Business facts for demo | `business.json` | Derived from Places + AI; rewritten on LIVE publish |
 | Paying customer | Neon `customers` | Authoritative over lead stripe fields |
 | Purchases / upsells | Neon `customer_purchases` | Idempotent on checkout session ID |
-| Customer content updates | Neon `customer_onboarding.processed_payload` | Does **not** auto-write to git |
+| Customer content updates | Neon `customer_onboarding.processed_payload` | Applied to git only via `publishCustomerSite` |
 | SMS state | Neon `sms_lead_state`, `sms_messages` | |
-| Discovery progress | `data/lead-discovery-progress.json` | Local only |
-| Image pool cache | `data/image-asset-cache.json` | Local only |
+| Discovery progress | Neon `factory_discovery_progress` when DB set; else local file | Local file is fallback/mirror (`src/factory/discovery-progress-store.ts`) |
+| Factory worker | Neon `factory_worker_lease`, `factory_worker_runs`, `factory_generation_locks` | |
+| Demo funnel | Neon `demo_lifecycle`, `demo_view_dedupe` | |
+| Image pool cache | `data/image-asset-cache.json` | Local / GHA only |
 
 ### Static vs generated
 
@@ -546,22 +592,24 @@ Assignment: `appearanceForIndustry()` in `src/appearances/industry-appearance.ts
 | Mechanism | Path / service | Stored | Why |
 |-----------|----------------|--------|-----|
 | **Git (committed JSON)** | `src/content/leads/`, `src/content/clients/` | Leads, demos | Deployed demo catalog; version history |
-| **Gitignored JSON** | `data/lead-discovery-progress.json` | Matrix progress | Resume local replenish runs |
+| **Gitignored JSON** | `data/lead-discovery-progress.json` | Matrix progress mirror / CLI fallback | Resume without Neon; worker prefers Neon |
 | **Gitignored JSON** | `data/image-asset-cache.json` | Image pool v2 assets + usage | Avoid re-fetching stock photos |
 | **Gitignored JSON** | `data/replenish-cursor.json`, `data/replenish-slot-yield.json` | Legacy ICP cursor/yield | Obsolete; still in `.gitignore` |
 | **Gitignored JSON** | `data/.unsplash-search-times.json` | Unsplash rate limit timestamps | API compliance |
 | **Local filesystem** | `public/clients/`, `public/stock/` | AVIF/WebP when Blob unavailable | Dev/generation fallback |
 | **Vercel Blob** | Remote | Production images + onboarding uploads | CDN-served assets |
-| **Neon Postgres** | Remote | customers, purchases, onboarding, SMS | Runtime transactional state |
+| **Neon Postgres** | Remote | customers, SMS, onboarding, factory_*, demo_lifecycle | Runtime transactional state |
 | **In-memory** | Contact route `rateLimit` Map | IP rate limit counters | Resets on cold start |
 | **In-memory** | `gemini-request.ts` chain | Gemini throttle state | Per-process only |
 | **Logs** | `logs/` (gitignored) | Generation logs | Optional audit |
 
 ### Database schema
 
-Defined as SQL strings in `src/db/schema.ts`, applied lazily via `ensureCustomerSchema()` / `ensureSmsSchema()` in `src/db/ensure-schema.ts`.
+Defined as SQL strings in `src/db/schema.ts`, applied lazily via `ensureCustomerSchema()` / `ensureSmsSchema()` / `ensureFactorySchema()` in `src/db/ensure-schema.ts`.
 
-Tables: `customers`, `customer_purchases`, `customer_onboarding`, `sms_messages`, `sms_lead_state`, `sms_inbound`.
+`src/db/schema.sql` is a **manual/docs copy** and **lags** `schema.ts` (missing factory_*, demo_lifecycle, customer_publish_lease, some onboarding publish columns).
+
+Tables: `customers`, `customer_purchases`, `customer_onboarding`, `customer_publish_lease`, `sms_messages`, `sms_lead_state`, `sms_inbound`, `factory_discovery_progress`, `factory_worker_lease`, `factory_worker_runs`, `factory_generation_locks`, `demo_lifecycle`, `demo_view_dedupe`.
 
 ---
 
@@ -573,17 +621,17 @@ Tables: `customers`, `customer_purchases`, `customer_onboarding`, `sms_messages`
 | Stripe checkout + webhooks | **Request/runtime** |
 | Contact form POST | **Request/runtime** |
 | SMS queue claim/result/inbound | **Request/runtime** |
-| SMS cron enqueue | **Webhook/background** (Vercel cron) |
-| Replenish status cron | **Webhook/background** (status only) |
+| SMS cron enqueue | **Webhook/background** (Vercel cron) — does not send radio SMS |
+| Replenish cron | **Webhook/background** — status + optional GHA dispatch; no generation |
 | Admin UI | **Request/runtime** |
 | Onboarding form GET/PATCH/upload | **Request/runtime** |
+| Demo view increment | **Request/runtime** (`after()` on slug page) |
 | `next build` | **Build-time** — webpack bundles all `site.json` via `require.context` |
-| `generateStaticParams` | **Build-time** route enumeration (377+ slugs) |
-| `npm run replenish-leads` | **CLI/manual** — discovery + AI + images |
-| `npm run generate-lead` | **CLI/manual** — single demo |
-| Backfill scripts | **CLI/manual** |
-| SMS gateway poller | **CLI/manual** — long-running local process |
-| Commit + push demos | **Manual** — required for production demo updates |
+| `generateStaticParams` | **Build-time** route enumeration |
+| `npm run factory-worker` | **GHA or CLI** — discovery + AI + images + git push |
+| `npm run replenish-leads` | **CLI** — discovery + AI + images; **no** commit/push |
+| `npm run publish-customer` | **GHA or CLI** — apply onboarding + git push |
+| SMS gateway poller | **CLI/local** — long-running process |
 
 ---
 
@@ -679,7 +727,7 @@ Current scale: **529 leads**, **378 clients**, **192** matrix cells.
 
 | Rank | Issue | Why | Files |
 |------|-------|-----|-------|
-| **CRITICAL** | Demo generation not on Vercel | Production demos require local run + git commit + deploy | `replenish-leads/route.ts`, `replenish.ts` |
+| **CRITICAL** | Demo generation not on Vercel | Production demos require GHA or local worker + git push | `replenish-leads/route.ts`, `factory/worker.ts` |
 | **CRITICAL** | SMS depends on local gateway | No SMS if poller/modem offline | `tools/sms-gateway/` |
 | **HIGH** | Dual lead/customer state | Lead JSON vs Postgres can drift | `leads/store.ts`, `customers/store.ts` |
 | **HIGH** | O(n) lead filesystem scans | Blocks discovery dedup and admin at scale | `leads/store.ts` `readAllLeads()` |
@@ -688,7 +736,7 @@ Current scale: **529 leads**, **378 clients**, **192** matrix cells.
 | **MEDIUM** | Email outreach half-disabled | Cron stub; dual outreach codepaths | `cron/outreach/route.ts`, `outreach/` |
 | **MEDIUM** | OpenAI without rate limiter | Batch runs can hit limits | `providers/openai.ts` |
 | **MEDIUM** | Resend webhook optional verify | Spoofed events if secret missing | `webhooks/resend/route.ts` |
-| **MEDIUM** | Onboarding doesn't publish to git | Manual step to update live site | `onboarding/process.ts` |
+| **MEDIUM** | LIVE publish dispatch gated | Approve is a no-op dispatch if env unset | `dispatch-customer-publish.ts` |
 | **LOW** | `nodemailer` unused dependency | Package bloat | `package.json` |
 | **LOW** | force-dynamic + generateStaticParams | Misleading static optimization intent | `[slug]/page.tsx` |
 | **LOW** | In-memory contact rate limit | Weak abuse protection | `api/contact/route.ts` |
@@ -722,6 +770,8 @@ Current scale: **529 leads**, **378 clients**, **192** matrix cells.
 
 **Goal:** Preserve business model (discover → demo → SMS → Stripe → onboard) while reducing operational fragility. **Do not implement here.**
 
+**Already built since this section was first written (2026-08-31 → verified 2026-09-01):** GitHub Actions factory worker + git publish; Neon discovery progress + worker leases + generation locks; customer LIVE publish GHA; demo view tracking; `/admin/factory`. Remaining: lead index in Postgres, lazy site config loading, churn webhook, unconverted cleanup, delete ICP dead code.
+
 ### Target shape
 
 ```
@@ -749,11 +799,11 @@ Current scale: **529 leads**, **378 clients**, **192** matrix cells.
 
 1. **Single source of truth per concern:** Postgres for commercial + pipeline index; git or Blob for published site JSON (pick one publish path).
 2. **Indexed lead store:** Replace `readAllLeads()` scans with Postgres `leads` table (`google_place_id` unique, status indexed).
-3. **Generation worker:** Move replenish off laptop to CI/worker with secrets; status cron triggers worker when `needed > 0`.
+3. **Generation worker:** Move replenish off laptop to CI/worker with secrets; status cron triggers worker when `needed > 0`. **Partially done:** GHA `factory-worker.yml` + optional Vercel dispatch (default off).
 4. **Lazy site config loading:** Replace webpack `require.context` with filesystem read or DB fetch for large catalogs.
 5. **SMS:** Consider managed SMS provider OR document gateway as required infra with health checks.
 6. **Delete legacy ICP/slot-yield** once confirmed no scripts depend on them.
-7. **Onboarding publish pipeline:** Explicit admin approve → git commit or CMS write step.
+7. **Onboarding publish pipeline:** Explicit admin approve → git commit. **Done:** `publishCustomerSite` + `customer-publish.yml` (dispatch still env-gated).
 
 ---
 
@@ -776,7 +826,8 @@ flowchart TB
   end
 
   subgraph local [Local / CI]
-    CLI[replenish-leads CLI]
+    GHA[GitHub Actions factory-worker]
+    CLI[replenish-leads CLI no-push]
     GW[SMS Gateway]
   end
 
@@ -799,13 +850,19 @@ flowchart TB
   CUSTOMER -->|checkout + onboarding| WEB
   ADMIN -->|/admin| WEB
 
+  GHA --> PLACES
+  GHA --> AI
+  GHA --> STOCK
+  GHA --> GIT
+  GHA --> BLOB
   CLI --> PLACES
   CLI --> AI
   CLI --> STOCK
   CLI --> GIT
   CLI --> BLOB
 
-  CRON --> NEON
+  CRON -->|status plus optional dispatch| GHA
+  CRON -->|SMS enqueue| NEON
   GW --> API
   API --> NEON
   API --> STRIPE
@@ -866,7 +923,8 @@ sequenceDiagram
   WH->>Email: admin + welcome emails
   User->>Onboard: token URL
   User->>Onboard: submit answers
-  Note over DB: processed_payload in Postgres only
+  Note over DB: processed_payload in Postgres
+  Note over DB: LIVE git write only after admin approve + publishCustomerSite
 ```
 
 ### Module dependencies (simplified)
@@ -905,19 +963,19 @@ flowchart LR
 
 ### 5 biggest current risks
 
-1. **Manual replenish/deploy loop** — Production backlog requires local CLI + git commit.
+1. **GHA/CLI replenish/deploy loop** — Production backlog still needs a worker with git write access; Vercel never generates.
 2. **Local SMS gateway SPOF** — Automated outreach stops without `tools/sms-gateway`.
 3. **Filesystem lead store scaling** — `readAllLeads()` will not survive 5k+ leads.
 4. **Build-time bundling of all site configs** — Build size/time grows linearly with demos.
-5. **Split truth for customer content** — Onboarding in Postgres does not automatically update served demos.
+5. **LIVE publish is env-gated** — Approve does not push if `FACTORY_DISPATCH_ENABLED` is unset (code default false).
 
 ### 5 highest-value improvements
 
-1. **Generation worker (CI or VM)** triggered by replenish status cron.
-2. **Lead index in Postgres** with `google_place_id` unique constraint.
-3. **Lazy site config loading** for runtime (keep git as publish artifact or move to Blob).
-4. **Remove legacy ICP/slot-yield** and document single matrix path.
-5. **Require webhook secrets in production** (Resend, document Stripe already required).
+1. **Generation worker (CI)** — Implemented as GHA; remaining work is ensuring prod dispatch env is on.
+2. **Lead index in Postgres** with `google_place_id` unique constraint. **Not done.**
+3. **Lazy site config loading** for runtime. **Not done.**
+4. **Remove legacy ICP/slot-yield** and document single matrix path. Docs now mark Obsolete; code still present.
+5. **Churn webhook + unconverted cleanup.** **Missing.**
 
 ### What should NOT be changed yet
 
@@ -940,12 +998,13 @@ flowchart LR
 | Entry | Path |
 |-------|------|
 | Web app | `src/app/[slug]/page.tsx`, `src/app/page.tsx` |
-| Replenish | `scripts/replenish-leads.ts` → `src/leads/replenish.ts` |
+| Replenish | `scripts/factory-worker.ts` → `runFactoryWorker`; CLI-only `scripts/replenish-leads.ts` (no push) |
 | Single demo | `scripts/generate-lead.ts` → `create-client-from-lead.ts` |
 | Stripe webhook | `src/app/api/webhooks/stripe/route.ts` |
+| Customer LIVE | `scripts/publish-customer.ts` → `publishCustomerSite` |
 | SMS cron | `src/app/api/cron/sms-outreach/route.ts` |
 | SMS gateway | `tools/sms-gateway/src/server.ts` |
-| Admin | `src/app/admin/leads/page.tsx` |
+| Admin | `src/app/admin/leads/page.tsx`, `src/app/admin/factory/page.tsx` |
 
 ### Major external integrations
 
@@ -961,12 +1020,12 @@ Git (`src/content/`), Neon Postgres, Vercel Blob, local `data/*.json` caches, op
 
 ### Top 10 files to understand the system
 
-1. `src/leads/replenish.ts` — Discovery + generation orchestration
+1. `src/factory/worker.ts` — Discovery + generation + git publish orchestration
 2. `src/clients/generate-client.ts` — Full demo generation pipeline
 3. `src/content/get-site-config.ts` — How sites load at runtime
 4. `src/leads/discover.ts` — Places → lead qualification
 5. `src/leads/discovery-progress.ts` — Matrix state machine
-6. `src/ai/providers/prompt.ts` — AI output parsing + validation gate
+6. `src/onboarding/publish-customer.ts` — LIVE apply + git push
 7. `src/app/api/webhooks/stripe/route.ts` — Revenue → customer state
 8. `src/outreach/sms/enqueue-batch.ts` — SMS scheduling logic
 9. `src/images/generate-site-images.ts` — Image pool + fallback path
@@ -981,11 +1040,19 @@ Git (`src/content/`), Neon Postgres, Vercel Blob, local `data/*.json` caches, op
 | 2-region config primary (`region.ts` notranjska/dolenjska) | 12 SURS-style regions |
 | Email outreach cron (`/api/cron/outreach`) | SMS cron only (`/api/cron/sms-outreach`) |
 | `src/content/sites/{slug}.json` | `src/content/clients/{slug}/site.json` |
-| Replenish on Vercel (implied by old cursor files) | Status-only cron; full replenish local |
+| Replenish on Vercel (implied by old cursor files) | Status cron + optional GHA dispatch; generation on GHA/CLI |
 | `nodemailer` (dependency) | Resend SDK |
 
 ---
 
 ## Architecture at a glance
 
-**ai-websites** is a Vercel-hosted Next.js monolith that sells AI-generated demo websites to Slovenian SMBs. Leads and demos live in **git JSON**; customers and SMS live in **Neon Postgres**; images in **Vercel Blob**. Discovery runs through a **192-cell matrix** (local CLI), generation uses **OpenAI or Gemini** plus **Gemini-only image planning**, and outreach is **SMS via a local HiLink gateway**. Stripe webhooks create customers and onboarding tokens; paying customers see a preparation bar while content is collected in Postgres—not auto-published to demos. The main scaling constraints are filesystem lead scans, build-time site bundling, and the manual replenish→commit→deploy loop.
+**ai-websites** is a Vercel-hosted Next.js monolith that sells AI-generated demo websites to Slovenian SMBs. Leads and demos live in **git JSON**; customers and SMS live in **Neon Postgres**; images in **Vercel Blob**. Discovery runs through a **192-cell matrix** (GHA or local CLI), generation uses **OpenAI or Gemini** plus **Gemini-only image planning**, and outreach is **SMS via a local HiLink gateway**. Stripe webhooks create customers and onboarding tokens. Admin approve dispatches **customer-publish** which rewrites `site.json` at the same `/{slug}`. The main scaling constraints are filesystem lead scans, build-time site bundling, and the worker→git→Vercel loop.
+
+---
+
+## Open questions
+
+- Production `FACTORY_DISPATCH_ENABLED` / `FACTORY_GITHUB_*` / `FACTORY_GIT_TOKEN` — not readable from this repo.
+- Exact live count of lead JSON files vs client dirs — 2026-08-31 snapshot not re-counted on 2026-09-01.
+

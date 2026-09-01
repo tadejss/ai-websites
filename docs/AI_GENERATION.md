@@ -1,16 +1,20 @@
 # AI SiteConfig Generation Guide
 
+> **STALE (2026-09-01):** Factory output path is `src/content/clients/{slug}/site.json`, not `src/content/sites/{slug}.json` (legacy loader still exists; almost no live files there). Optional top-level keys (`appearance`, `theme`, `layout`, `images`, `business`, `privacy`, `sections`, `gallery`, `pricing`) **are** allowed by `site-config.schema.json` — do not treat “eight keys only / no extras” as current. Pipeline: [CONTENT-AND-RENDERING.md](./CONTENT-AND-RENDERING.md), [FACTORY.md](./FACTORY.md).
+
 This document explains how to generate a valid `SiteConfig` JSON file for this project. The output must match the TypeScript contract in `src/content/types/site.ts` and validate against `src/content/site-config.schema.json`.
 
 ## Output location
 
-Save generated site data as:
+**Current (factory):** `src/content/clients/{slug}/site.json` (+ `business.json`).
+
+**Legacy (still loaded if present):**
 
 ```
 src/content/sites/{slug}.json
 ```
 
-Example: `src/content/sites/kavarna-central.json` is loaded with `getSiteConfig("kavarna-central")` or by setting `SITE_SLUG=kavarna-central`.
+Example: a legacy file `src/content/sites/kavarna-central.json` is loaded with `getSiteConfig("kavarna-central")` or by setting `SITE_SLUG=kavarna-central`. Clients with the same slug **win**.
 
 ---
 
@@ -29,7 +33,7 @@ Every `SiteConfig` JSON object must include all eight top-level keys:
 | `contact` | Contact details, form labels, and anchor `id` |
 | `footer` | Footer address and copyright text |
 
-Do not add extra top-level keys. Do not omit any required field.
+The eight keys in the table below are **required**. Optional keys (`appearance`, `theme`, `layout`, `images`, `business`, `privacy`, `sections`, `gallery`, `pricing`) are valid per `site-config.schema.json`. Do not omit required fields.
 
 ---
 
