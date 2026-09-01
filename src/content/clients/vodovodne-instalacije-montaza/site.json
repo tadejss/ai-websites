@@ -1,0 +1,283 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-montaza/hero.avif",
+      "alt": "Vodovodni inštalater pri delu v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-montaza/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691536",
+      "sourceUrl": "https://www.pexels.com/photo/unrecognizable-handyman-with-ruler-near-heating-system-at-home-5691536/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-montaza/services.avif",
+      "alt": "Montaža in popravilo vodovodnih instalacij",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-montaza/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5463582",
+      "sourceUrl": "https://www.pexels.com/photo/technician-fixing-an-aircon-5463582/",
+      "photographer": "José Andrés  Pacheco Cortes",
+      "photographerUrl": "https://www.pexels.com/@jose-andres-pacheco-cortes-3641213",
+      "searchQuery": "heating system maintenance professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega ter zahtevnosti dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža vodovodnih instalacij",
+        "description": "Postavitev instalacij za stanovanjske in poslovne prostore",
+        "price": "od 50 €",
+        "unit": "ura / storitev",
+        "featured": true
+      },
+      {
+        "name": "Popravilo okvare na vodovodu",
+        "description": "Pregled in odprava manjših okvar",
+        "price": "od 45 €",
+        "unit": "oracija"
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Inštalacijska dela pri prenovi kopalnice",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Menjava sanitarne opreme",
+        "description": "Montaža umivalnikov, armatur, WC školjk",
+        "price": "od 40 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Interventni pregled",
+        "description": "Nujni izhod na teren in pregled situacije",
+        "price": "od 80 €",
+        "unit": "izhod"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vodovodne Instalacije",
+    "highlight": "Marko Tancik s.p."
+  },
+  "metadata": {
+    "title": "Vodovodne Instalacije Marko Tancik s.p. | Montaža in popravila vodovoda",
+    "description": "Zanesljiva montaža in strokovna popravila vodovodnih instalacij ter adaptacije kopalnic v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovne vodovodne storitve v Ljubljani",
+    "title": "Zanesljiva montaža in strokovna",
+    "titleHighlight": "popravila vodovoda",
+    "description": "Zanesljiva montaža in strokovna popravila vodovodnih instalacij za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost",
+        "title": "Strokovnost"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana",
+        "title": "Ljubljana"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite vodovodne in inštalacijske rešitve",
+    "description": "Nudimo kakovostne storitve s področja vodovodnih instalacij za stranke v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Montaža vodovodnih instalacij",
+        "description": "Strokovna in zanesljiva montaža vodovodnih instalacij v vaših objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila okvar na vodovodu",
+        "description": "Hitro odkrivanje in odpravljanje okvar na vodovodnem omrežju.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite preureditve in adaptacije kopalnic po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Menjava sanitarne opreme",
+        "description": "Strokovna vgradnja in menjava sanitarne opreme vseh vrst.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Interventna popravila",
+        "description": "Nujna popravila in odpravljanje nujnih vodovodnih težav.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vodovodne inštalacije",
+    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom poskrbimo za kakovostno izvedbo vseh del.",
+    "highlights": [
+      "Visoka kakovost izvedbe",
+      "Zanesljivost in strokovnost",
+      "Odlične ocene strank"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost izvedbe",
+        "description": "Vsak projekt izpeljemo skrbno in z uporabo zanesljivih materialov.",
+        "title": "Visoka kakovost izvedbe"
+      },
+      {
+        "label": "Zanesljivost in strokovnost",
+        "description": "Držimo se dogovorov ter strokovno pristopimo k vsakemu izzivu.",
+        "title": "Zanesljivost in strokovnost"
+      },
+      {
+        "label": "Odlične ocene strank",
+        "description": "Zadovoljstvo naših naročnikov nam je na prvem mestu.",
+        "title": "Odlične ocene strank"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete montažo, popravilo ali nasvet? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 639 038",
+        "href": "tel:041639038",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Mala Čolnarska ulica 12, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali težavo...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Mala Čolnarska ulica 12, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vodovodne Instalacije Marko Tancik s.p.",
+    "address": "Mala Čolnarska ulica 12, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 639 038"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

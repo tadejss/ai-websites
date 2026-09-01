@@ -1,0 +1,281 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "peach-bloom",
+    "fontPairingId": "manrope-bodoni"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/g-b-kozmeticni/hero.avif",
+      "alt": "Notranjost butičnega kozmetičnega salona z mehko svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/g-b-kozmeticni/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3738340",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-woman-having-facial-care-3738340/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "cosmetic facial treatment spa salon"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/g-b-kozmeticni/services.avif",
+      "alt": "Strokovna nega obraza v sproščujočem ambientu salona",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/g-b-kozmeticni/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "10600175",
+      "sourceUrl": "https://www.pexels.com/photo/woman-having-a-facial-treatment-in-a-beauty-studio-10600175/",
+      "photographer": "Тарапата Анна",
+      "photographerUrl": "https://www.pexels.com/@104274529",
+      "searchQuery": "cosmetic facial treatment spa salon"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled ponudbe in cen",
+    "description": "Izberite storitev, ki ustreza vašim trenutnim potrebam.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Nega obraza",
+        "description": "Osnovna ali ciljna nega glede na tip kože",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Nega telesa",
+        "description": "Tretmaji za nego in sprostitev telesa",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Oblikovanje obrvi in trepalnic",
+        "description": "Oblikovanje in barvanje",
+        "price": "od 15 €"
+      },
+      {
+        "name": "Depilacija",
+        "description": "Depilacija posameznih predelov",
+        "price": "od 12 €"
+      },
+      {
+        "name": "Masaža",
+        "description": "Sprostitvena masaža telesa",
+        "price": "od 40 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "\" g a b i \"",
+    "highlight": "Kozmetični salon"
+  },
+  "metadata": {
+    "title": "\" g a b i \" kozmetični salon Gabrijela Stritar s.p. | Litija",
+    "description": "Celostna nega za vašo lepoto in dobro počutje v Litiji z okolico. Obiščite butični kozmetični salon za nego obraza, telesa in sprostitvene masaže."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Butični kozmetični salon v Litiji",
+    "title": "Celostna nega za vašo lepoto in",
+    "titleHighlight": "dobro počutje",
+    "description": "Prepustite se strokovni in osebni obravnavi v prijetnem ambientu. Nudimo nego obraza, telesa, oblikovanje obrvi ter sprostitvene masaže za stranke iz Litije in okolice.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoko",
+        "label": "Zadovoljstvo strank"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Prijeten",
+        "label": "Ambient"
+      },
+      {
+        "value": "Osebna",
+        "label": "Obravnava"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Kozmetične storitve za vas",
+    "description": "V našem salonu v Litiji poskrbimo za celovito nego vašega obraza in telesa ter za vaš sproščen in urejen videz.",
+    "items": [
+      {
+        "title": "Nega obraza",
+        "description": "Prilagojena nega za sijočo, čisto in navlaženo kožo obraza.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nega telesa",
+        "description": "Učinkoviti tretmaji za gladko, tonizirano in negovano telo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje obrvi in trepalnic",
+        "description": "Poudarite svoj naravni videz z urejenimi obrvmi in trepalnicami.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Depilacija",
+        "description": "Nežno in dolgotrajno odstranjevanje dlak za svilnato gladko kožo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Masaža",
+        "description": "Sprostitvena masaža za odpravljanje napetosti in popoln mir.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Butična izkušnja in osebna pozornost",
+    "description": "Zavedamo se, da je vsaka stranka edinstvena. Zato se vam v celoti posvetimo in poskrbimo za vaše dobro počutje.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Strokovna in osebna obravnava",
+      "Prijeten in sproščujoč ambient"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Ponašamo se z visoko oceno in številnimi zadovoljnimi strankami, ki se radi vračajo.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Osebna obravnava",
+        "description": "Vsak tretma prilagodimo vašim edinstvenim željam in potrebam vaše kože.",
+        "title": "Osebna obravnava"
+      },
+      {
+        "label": "Sproščujoč ambient",
+        "description": "Uživajte v mirnem in prijetnem okolju našega salona v Litiji.",
+        "title": "Sproščujoč ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naše ponudbe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta komandanta Staneta 5, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 303 545",
+        "href": "tel:040303545",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta komandanta Staneta 5, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "\" g a b i \" Kozmetični salon",
+    "address": "Cesta komandanta Staneta 5, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "040 303 545"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

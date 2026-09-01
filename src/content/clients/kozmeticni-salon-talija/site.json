@@ -1,0 +1,277 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "sand-stone",
+    "fontPairingId": "work-sans-lora"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "left",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmeticni-salon-talija/hero.avif",
+      "alt": "Sproščujoč notranji prostor kozmetičnega salona z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmeticni-salon-talija/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37229315",
+      "sourceUrl": "https://www.pexels.com/photo/relaxing-spa-facial-with-cucumber-slices-37229315/",
+      "photographer": "DΛVΞ GΛRCIΛ",
+      "photographerUrl": "https://www.pexels.com/@davegarcia",
+      "searchQuery": "cosmetic facial treatment spa salon"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmeticni-salon-talija/services.avif",
+      "alt": "Nega obraza in sprostitveni tretma v kozmetičnem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kozmeticni-salon-talija/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37229313",
+      "sourceUrl": "https://www.pexels.com/photo/rejuvenating-spa-treatment-with-facial-mask-37229313/",
+      "photographer": "DΛVΞ GΛRCIΛ",
+      "photographerUrl": "https://www.pexels.com/@davegarcia",
+      "searchQuery": "cosmetic facial treatment spa salon"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled ponudbe in okvirne cene",
+    "description": "Izberite nego, ki ustreza vašim potrebam.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije terminov nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična nega obraza",
+        "description": "Temeljito čiščenje, piling, maska in zaključna nega",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Negovalni tretma",
+        "description": "Vlažilni ali hranilni tretma za svežino kože",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Sprostitvena masaža telesa",
+        "description": "Sproščanje napetosti in celostno razvajanje",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Nega telesa",
+        "description": "Tretmaji za glajenje in nego kože",
+        "price": "od 55 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Kozmetični salon",
+    "highlight": "Talija"
+  },
+  "metadata": {
+    "title": "Kozmetični salon Talija | Litija",
+    "description": "Udobje in nega za vaše dobro počutje v Litiji. Nega obraza, masaže in kakovostne kozmetične storitve za vas."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon Litija",
+    "title": "Udobje in nega za vaše",
+    "titleHighlight": "dobro počutje",
+    "description": "Prepustite se strokovnim rokam v urejenem in sproščujočem salonu v Litiji. Poskrbite za svoj videz in sprostitev.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Osebje"
+      },
+      {
+        "value": "Sproščujoč",
+        "label": "Ambient"
+      },
+      {
+        "value": "Kakovostne",
+        "label": "Storitve"
+      },
+      {
+        "value": "Litija",
+        "label": "in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita nega za vaš obraz in telo",
+    "description": "Nudimo vam pester nabor kozmetičnih storitev in tretmajev za sprostitev ter nego v Litiji in okolici.",
+    "items": [
+      {
+        "title": "Nega obraza",
+        "description": "Prilagojena nega obraza za sijoč in zdrav videz vaše kože.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Negovalni tretmaji",
+        "description": "Kakovostni tretmaji za obnovo in poživitev kože.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Kozmetične storitve",
+        "description": "Raznovrstne lepotne storitve za urejen videz ob vsaki priložnosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sprostitvene masaže",
+        "description": "Blagodejne masaže za odpravo stresa in popolno sprostitev telesa.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega telesa",
+        "description": "Učinkoviti tretmaji za nego in dobro počutje vašega telesa.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati salon Talija",
+    "title": "Zaupajte izkušeni ekipi za vašo osebno nego",
+    "description": "Naš cilj je, da se v urejenem in sproščujočem okolju počutite sproščeno ter odidete zadovoljni.",
+    "highlights": [
+      "Prijazno in strokovno osebje",
+      "Kvalitetne kozmetične storitve",
+      "Urejen in sproščujoč salon",
+      "Osebni pristop k vsaki stranki"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovno osebje",
+        "description": "Prijazna in strokovna ekipa, ki se posveti vašim željam.",
+        "title": "Strokovno osebje"
+      },
+      {
+        "label": "Kakovostne storitve",
+        "description": "Uporaba preverjenih metod in skrb za vaš videz ter počutje.",
+        "title": "Kakovostne storitve"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje v Litiji, ustvarjeno za vaš mir in sprostitev.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naše ponudbe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Luke Svetca, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 370 987",
+        "href": "tel:031370987",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Izpolnite spodnji obrazec za rezervacijo termina ali povpraševanje.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ulica Luke Svetca, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kozmetični salon Talija",
+    "address": "Ulica Luke Svetca, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "031 370 987"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

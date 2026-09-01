@@ -1,0 +1,28 @@
+{
+  "companyName": "Kozmeticni salon Talija",
+  "industry": "Kozmetični salon",
+  "tagline": "Udobje in nega za vaše dobro počutje v Litiji",
+  "services": [
+    "Nega obraza",
+    "Negovalni tretmaji",
+    "Kozmetične storitve",
+    "Sprostitvene masaže",
+    "Nega telesa"
+  ],
+  "phone": "031 370 987",
+  "email": "",
+  "address": "Ulica Luke Svetca, 1270 Litija, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Odlična ocena in zadovoljne stranke",
+    "Prijazno in strokovno osebje",
+    "Kvalitetne kozmetične storitve"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo skrb za videz, sprostitev in osebno nego",
+  "serviceArea": "Litija in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen in sproščujoč salon",
+  "competitors": "Lokalni kozmetični saloni v regiji",
+  "callToAction": "Rezervirajte termin"
+}

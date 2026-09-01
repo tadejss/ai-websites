@@ -1,0 +1,28 @@
+{
+  "companyName": "Alvod s.p. Vodovod in ogrevanje",
+  "industry": "Vodovodne in ogrevalne storitve",
+  "tagline": "Zanesljive vodovodne in ogrevalne storitve za vaš dom",
+  "services": [
+    "Montaža vodovoda",
+    "Popravilo in vzdrževanje ogrevanja",
+    "Sanacija puščanj",
+    "Adaptacija kopalnic",
+    "Inštalacija toplotnih črpalk"
+  ],
+  "phone": "069 800 384",
+  "email": "",
+  "address": "Tomišeljska ulica 20, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 7:00 PM · Tuesday: 7:00 AM – 7:00 PM · Wednesday: 7:00 AM – 7:00 PM · Thursday: 7:00 AM – 7:00 PM · Friday: 7:00 AM – 7:00 PM · Saturday: 7:00 AM – 7:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Hitra odzivnost in strokovnost",
+    "Zanesljiva izvedba vodovodnih in ogrevalnih del"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih objektov",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "sodoben in zaupanja vreden",
+  "competitors": "Lokalni vodovodni in ogrevalni mojstri ter serviserji",
+  "callToAction": "Pokličite nas"
+}

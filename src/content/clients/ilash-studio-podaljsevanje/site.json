@@ -1,0 +1,277 @@
+{
+  "appearance": "beauty",
+  "theme": {
+    "paletteId": "rust-linen",
+    "fontPairingId": "lato-libre"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ilash-studio-podaljsevanje/hero.avif",
+      "alt": "Strokovno podaljševanje trepalnic v urejenem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ilash-studio-podaljsevanje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16120497",
+      "sourceUrl": "https://www.pexels.com/photo/beautician-making-facial-beauty-procedures-for-woman-in-salon-16120497/",
+      "photographer": "Eumorfia  Panera",
+      "photographerUrl": "https://www.pexels.com/@eumorfia-panera-504255197",
+      "searchQuery": "beauty salon skincare professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ilash-studio-podaljsevanje/services.avif",
+      "alt": "Specializirana nega in podaljševanje trepalnic",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ilash-studio-podaljsevanje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7446689",
+      "sourceUrl": "https://www.pexels.com/photo/woman-face-during-surgery-7446689/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "cosmetic facial treatment spa salon"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled rednih storitev podaljševanja in nege trepalnic v salonu ILASH STUDIO.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična tehnika trepalnic",
+        "description": "Naravni videz podaljševanja (lash to lash)",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Volumensko podaljševanje",
+        "description": "Gostejši volumen za bolj opazen in poln videz",
+        "price": "od 65 €"
+      },
+      {
+        "name": "Korektura in vzdrževanje",
+        "description": "Obnova trepalnic do 3 tedne",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Nega naravnih trepalnic",
+        "description": "Strokovna nega in krepilni tretma",
+        "price": "od 25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "ILASH",
+    "highlight": "STUDIO"
+  },
+  "metadata": {
+    "title": "ILASH STUDIO | Podaljševanje trepalnic Medvode",
+    "description": "Strokovno podaljševanje trepalnic za zapeljiv in naraven videz v Medvodah z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon za nego trepalnic",
+    "title": "Strokovno podaljševanje trepalnic za",
+    "titleHighlight": "zapeljiv in naraven videz",
+    "description": "Popolna izbira za ženske v Medvodah z okolico, ki želijo poudariti svoj pogled in prihraniti čas pri vsakodnevnem ličenju.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovna izvedba",
+        "label": "Strokovna izvedba"
+      },
+      {
+        "value": "Kakovostni materiali",
+        "label": "Kakovostni materiali"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Sproščen ambient",
+        "label": "Sproščen ambient"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Specializirana nega in podaljševanje trepalnic",
+    "description": "V salonu v Medvodah poskrbimo za vaš sanjski pogled s skrbno izbranimi tehnikami in materiali.",
+    "items": [
+      {
+        "title": "Podaljševanje trepalnic",
+        "description": "Celovita storitev podaljševanja trepalnic za čudovit, poudarjen in dolgotrajen videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Klasična tehnika trepalnic",
+        "description": "Naraven videz 'lash to lash', kjer na vsako naravno trepalnico namestimo eno umetno.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Volumensko podaljševanje trepalnic",
+        "description": "Gostejši in bolj dramatičen videz z uporabo lahkih volumnskih šopkov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje in korekture",
+        "description": "Redne korekture za ohranjanje popolnega in urejenega videza vaših trepalnic.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega naravnih trepalnic",
+        "description": "Strokovna skrb in svetovanje za zdravje ter moč vaših naravnih trepalnic.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost lepoti in urejenosti vašega pogleda",
+    "description": "V urejenem lokalnem salonu se posvetimo vsaki stranki posebej ter poskrbimo za udobje in vrhunske rezultate.",
+    "highlights": [
+      "Strokovna in natančna izvedba",
+      "Uporaba kakovostnih materialov",
+      "Prilagojen videz za vsako stranko",
+      "Prijeten in sproščen ambient"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Strokovna in precizna skrb za vaše trepalnice ob upoštevanju zdravja vaših naravnih dlak.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporaba preverjenih in varnih materialov za dolgotrajno obstojnost ter udobno nošenje.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Prilagojen videz",
+        "description": "Oblikovanje trepalnic, ki se popolnoma prilega obliki vaših oči in osebnemu stilu.",
+        "title": "Prilagojen videz"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede nege in podaljševanja trepalnic.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta Komandanta Staneta 4a, 1215 Medvode, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 640 984",
+        "href": "tel:031640984",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeni termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Cesta Komandanta Staneta 4a, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "ILASH STUDIO",
+    "address": "Cesta Komandanta Staneta 4a, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "031 640 984"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

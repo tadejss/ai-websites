@@ -1,0 +1,280 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "forest-dark",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/alvod-vodovod-ogrevanje/hero.avif",
+      "alt": "Vodovodar pri montaži ogrevalnega sistema v sodobnem domu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/alvod-vodovod-ogrevanje/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8488035",
+      "sourceUrl": "https://www.pexels.com/photo/metal-pipes-on-wall-8488035/",
+      "photographer": "Kindel Media",
+      "photographerUrl": "https://www.pexels.com/@kindelmedia",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/alvod-vodovod-ogrevanje/services.avif",
+      "alt": "Montaža vodovodnih inštalacij in sodobna kopalnica",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/alvod-vodovod-ogrevanje/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "12142829",
+      "sourceUrl": "https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/",
+      "photographer": "Bùi Hoàng Long",
+      "photographerUrl": "https://www.pexels.com/@dxaxoxfz",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih vodovodnih in ogrevalnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura strokovnega dela",
+        "description": "Servisne ure, manjša popravila in odpravljanje napak",
+        "price": "od 45 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Sanacija puščanja",
+        "description": "Pregled in odprava manjših puščanj na inštalaciji",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Montaža sanitarne opreme",
+        "description": "Priklop umivalnikov, WC školjk, armatur in bojlerjev",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Redni servis ogrevanja",
+        "description": "Pregled in vzdrževanje ogrevalnega sistema",
+        "price": "od 90 €"
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Inštalacijska dela pri prenovi kopalnice (po ogledu)",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Alvod",
+    "highlight": "vodovod in ogrevanje"
+  },
+  "metadata": {
+    "title": "Alvod s.p. | Zanesljive vodovodne in ogrevalne storitve",
+    "description": "Strokovne vodovodne in ogrevalne storitve za domove in poslovne objekte v Ljubljani z okolico. Montaža vodovoda, toplotnih črpalk, sanacija puščanj in adaptacije kopalnic."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive storitve za vaš dom",
+    "title": "Vrhunske vodovodne in ogrevalne rešitve v",
+    "titleHighlight": "Ljubljani z okolico",
+    "description": "Zanesljive vodovodne in ogrevalne storitve za lastnike stanovanj, hiš in poslovnih objektov. Hitra odzivnost, strokovnost in kakovostna izvedba.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "Odzivnost"
+      },
+      {
+        "value": "Strokovna",
+        "label": "Izvedba"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Partner"
+      },
+      {
+        "value": "Odlične",
+        "label": "Ocene strank"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj ponujamo",
+    "title": "Naše vodovodne in ogrevalne storitve",
+    "description": "Celovite rešitve za vodovod in ogrevalne sisteme na območju Ljubljane z okolico.",
+    "items": [
+      {
+        "title": "Montaža vodovoda",
+        "description": "Strokovna in zanesljiva montaža vodovodnih napeljav za novogradnje ali prenovljene prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravilo in vzdrževanje ogrevanja",
+        "description": "Redno vzdrževanje in hitra popravila ogrevalnih sistemov za brezhibno delovanje vseh moči.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sanacija puščanj",
+        "description": "Hitro odkrivanje in učinkovita sanacija puščanj na vodovodnih in ogrevalnih inštalacijah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Adaptacija kopalnic",
+        "description": "Celovita prenova kopalnic od začetnega načrta do končne montaže sanitarne opreme.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Inštalacija toplotnih črpalk",
+        "description": "Energetsko učinkovita inštalacija sodobnih toplotnih črpalk za udobno ogrevanje vašega doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati Alvod?",
+    "description": "Združujemo strokovnost, hitro odzivnost in zaupanje naših strank.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Hitra odzivnost in strokovnost",
+      "Zanesljiva izvedba vodovodnih in ogrevalnih del"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponašamo se z odličnimi ocenami strank, ki cenijo naš trud in predanost.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Hitro se odzovemo na vaša vprašanja in pravočasno izvedemo dogovorjena dela.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Zagotavljamo strokovno in varno izvedbo vodovodnih ter ogrevalnih storitev.",
+        "title": "Zanesljiva izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete mojstra za vodovod ali ogrevanje? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "069 800 384",
+        "href": "tel:069800384",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Tomišeljska ulica 20, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 7:00 – 19:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše vprašanje ali težavo...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Tomišeljska ulica 20, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Alvod vodovod in ogrevanje",
+    "address": "Tomišeljska ulica 20, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "069 800 384"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

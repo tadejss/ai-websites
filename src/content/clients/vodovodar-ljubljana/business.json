@@ -1,0 +1,28 @@
+{
+  "companyName": "Vodovodar Ljubljana",
+  "industry": "Vodovodne in inštalacijske storitve",
+  "tagline": "Zanesljive vodovodne storitve in hitra intervencija v Ljubljani",
+  "services": [
+    "Vodovodna popravila",
+    "Hitra vodovodna intervencija",
+    "Odmaševanje odtokov",
+    "Montaža sanitarne opreme",
+    "Popravilo puščanja cevi"
+  ],
+  "phone": "040 776 744",
+  "email": "",
+  "address": "Pod ježami, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Open 24 hours · Sunday: Open 24 hours",
+  "sellingPoints": [
+    "Dosegljivi 24 ur na dan",
+    "Hitra odzivnost na nujne primere",
+    "Zanesljiva in strokovna izvedba"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostori v Ljubljani z okolico",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, dostopen",
+  "brandStyle": "odziven lokalni mojster",
+  "competitors": "Lokalni vodovodni serviserji in samostojni mojstri",
+  "callToAction": "Pokličite takoj"
+}

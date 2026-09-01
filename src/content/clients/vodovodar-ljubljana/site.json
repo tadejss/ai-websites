@@ -1,0 +1,280 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "midnight-amber",
+    "fontPairingId": "inter-space-grotesk"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodar-ljubljana/hero.avif",
+      "alt": "Vodovodar pri popravilu cevi",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodar-ljubljana/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35290675",
+      "sourceUrl": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodar-ljubljana/services.avif",
+      "alt": "Montaža sanitarne opreme in vodovodne inštalacije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodar-ljubljana/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7220892",
+      "sourceUrl": "https://www.pexels.com/photo/a-person-holding-brown-doorknob-7220892/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za redna vodovodne popravila in intervencije.",
+    "disclaimer": "Cenik je informativen. Za točen izračun in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Intervencijski pregled in odprava napake",
+        "description": "Hitri izhod na teren in pregled okvare",
+        "price": "od 60 €",
+        "featured": true
+      },
+      {
+        "name": "Odmaševanje odtokov",
+        "description": "Mehansko čiščenje odtokov",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Popravilo puščanja cevi",
+        "description": "Lokalizacija in sanacija puščanja",
+        "price": "od 70 €"
+      },
+      {
+        "name": "Montaža sanitarne opreme",
+        "description": "Montaža armature, umivalnika ali WC školjke",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Ura vodovodnih del",
+        "description": "Redna vzdrževalna dela in popravila",
+        "price": "od 40 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vodovodar",
+    "highlight": "Ljubljana"
+  },
+  "metadata": {
+    "title": "Vodovodar Ljubljana | Zanesljive vodovodne storitve in hitra intervencija",
+    "description": "Zanesljive vodovodne storitve in hitra intervencija v Ljubljani z okolico. Dosegljivi 24 ur na dan za popravila, odmaševanje in montažo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite takoj"
+  },
+  "hero": {
+    "badge": "Hitra intervencija",
+    "title": "Zanesljive vodovodne storitve in",
+    "titleHighlight": "hitra intervencija v Ljubljani",
+    "description": "Strokovne vodovodne in inštalacijske storitve za lastnike stanovanj, hiš in poslovnih prostorov. Dosegljivi smo za nujne primere in redna popravila.",
+    "primaryCta": "Pokličite takoj",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Dosegljivi vse dni v tednu"
+      },
+      {
+        "value": "Hitro",
+        "label": "Odzivnost na nujne primere"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Pokrivamo širšo okolico"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Zanesljiva izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite vodovodne in inštalacijske rešitve",
+    "description": "Hitro in strokovno rešujemo vodovodne težave vseh vrst za stranke v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Vodovodna popravila",
+        "description": "Kakovostna popravila vodovodnih napeljav ter odpravljanje okvar v vašem objektu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Hitra vodovodna intervencija",
+        "description": "Nujni posegi ob izrednih situacijah in izlivih vode, ko šteje vsaka minuta.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Odmaševanje odtokov",
+        "description": "Učinkovito čiščenje in odmaševanje zamašenih odtokov v kuhinjah, kopalnicah in vertikalah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža sanitarne opreme",
+        "description": "Strokovna montaža armatur, umivalnikov, WC školjk in druge sanitarne opreme.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Popravilo puščanja cevi",
+        "description": "Natančno odkrivanje in sanacija mest, kjer puščajo vodovodne cevi.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv lokalni mojster za vaše vodovodne težave",
+    "description": "Z odzivnostjo, strokovnostjo in prilagodljivostjo poskrbimo, da so vaše vodovodne inštalacije vedno v brezhibnem stanju.",
+    "highlights": [
+      "Neposredna dostopnost in hitra odzivnost na terenu",
+      "Strokovna izvedba manjših in večjih vodovodnih del",
+      "Celovite storitve za gospodinjstva in poslovne prostore"
+    ],
+    "benefits": [
+      {
+        "label": "Dosegljivi 24/7",
+        "description": "Na voljo smo podnevi in ponoči za vse nujne intervencije in popravila.",
+        "title": "Dosegljivi 24/7"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Hitro se odzovemo na vaše klice in nujne primere na območju Ljubljane z okolico.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Strokovno in zanesljivo poskrbimo za odpravo napak ter montažo opreme.",
+        "title": "Zanesljiva izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete nujno intervencijo ali vodovodna popravila? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 776 744",
+        "href": "tel:040776744",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Pod ježami, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 00:00 - 24:00 (24 ur na dan)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali storitev, ki jo potrebujete",
+      "submitLabel": "Pokličite takoj"
+    }
+  },
+  "footer": {
+    "address": "Pod ježami, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vodovodar Ljubljana",
+    "address": "Pod ježami, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 776 744"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

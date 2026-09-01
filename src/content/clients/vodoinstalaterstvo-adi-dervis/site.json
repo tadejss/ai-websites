@@ -1,0 +1,287 @@
+{
+  "appearance": "elektro",
+  "theme": {
+    "paletteId": "slate-blue",
+    "fontPairingId": "outfit-cormorant"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/hero.avif",
+      "alt": "Vodoinštalater pri delu na vodovodni napeljavi",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/hero.webp",
+      "width": 917,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "1029635",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-yellow-water-filter-system-1029635/",
+      "photographer": "Scott Webb",
+      "photographerUrl": "https://www.pexels.com/@scottwebb",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/services.avif",
+      "alt": "Montaža sanitarne opreme v sodobni kopalnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "33388390",
+      "sourceUrl": "https://www.pexels.com/photo/technician-repairing-industrial-equipment-in-workshop-33388390/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za pogostejše vodoinštalaterske storitve in popravila.",
+    "disclaimer": "Cenik je informativen. Za natančne cene in ogled terena nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Popravilo izcedkov",
+        "description": "Manjša popravila puščanj in tesnjenja",
+        "price": "od 40 €",
+        "unit": "storitev",
+        "featured": true
+      },
+      {
+        "name": "Montaža sanitarne opreme",
+        "description": "Montaža armature, umivalnika ali WC školjke",
+        "price": "od 50 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Odmaševanje odtokov",
+        "description": "Mehansko čiščenje in odmaševanje cevi",
+        "price": "od 60 €",
+        "unit": "storitev"
+      },
+      {
+        "name": "Ura vodoinštalaterskih del",
+        "description": "Splošna vodoinštalaterska dela in servis",
+        "price": "od 35 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vodoinštalaterstvo",
+    "highlight": "Adi"
+  },
+  "metadata": {
+    "title": "Vodoinštalaterstvo Adi | Zanesljive vodoinštalaterske storitve v Ljubljani",
+    "description": "Zanesljive vodoinštalaterske storitve v Ljubljani in okolici. Popravilo izcedkov, montaža sanitarne opreme in adaptacije kopalnic."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik",
+    "title": "Zanesljive vodoinštalaterske storitve",
+    "titleHighlight": "v Ljubljani in okolici",
+    "description": "Hitra in strokovna pomoč za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "Odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Strokovna",
+        "label": "Izvedba",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "value": "Lokalni",
+        "label": "Ponudnik",
+        "title": "Lokalni ponudnik"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Delo",
+        "title": "Zanesljivo delo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše vodoinštalaterske storitve",
+    "description": "Kakovostne storitve za vzdrževanje, popravila in prenovo vodovodnih napeljav v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Popravilo izcedkov",
+        "description": "Hitro odkrivanje in odpravljanje puščanj ter vodovodnih okvar.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montaža sanitarne opreme",
+        "description": "Strokovna namestitev umivalnikov, WC školjk, armatur in druge sanitarne opreme.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacija kopalnic",
+        "description": "Celovite prenove kopalnic in vodovodnih napeljav po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Odmaševanje odtokov",
+        "description": "Učinkovito čiščenje in odmaševanje zamašenih odtokov ter cevi.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje vodovodnih inštalacij",
+        "description": "Redni pregledi in vzdrževanje za nemoteno delovanje vašega vodovoda.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vodovodne težave",
+    "description": "S strokovnim pristopom in posluhom za stranke poskrbimo za urejene vodovodne inštalacije v vašem domu ali poslovnem prostoru.",
+    "highlights": [
+      "Hitra odzivnost na klice",
+      "Strokovna izvedba del",
+      "Zanesljiv lokalni ponudnik"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra odzivnost",
+        "description": "Pravočasno se odzovemo na vaše klice in poskrbimo za hitro rešitev težav.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Dela izvajamo strokovno in natančno z ustreznimi materiali.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Lokalna prisotnost",
+        "description": "Zanesljiv ponudnik z območja Ljubljane in okolice.",
+        "title": "Lokalna prisotnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vodoinštalaterja ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 675 196",
+        "href": "tel:051675196",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali storitev, ki jo potrebujete...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vodoinštalaterstvo Adi",
+    "address": "Kotnikova ulica 5, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "051 675 196"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "charcoal-cyan",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kaplja-vodovodne-andrej/hero.avif",
+      "alt": "Vodovodar pri delu na inštalacijah v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kaplja-vodovodne-andrej/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32588555",
+      "sourceUrl": "https://www.pexels.com/photo/technician-performing-air-conditioning-maintenance-32588555/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "heating system maintenance professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kaplja-vodovodne-andrej/services.avif",
+      "alt": "Montaža sanitarne opreme in vodovodne inštalacije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kaplja-vodovodne-andrej/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32588548",
+      "sourceUrl": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene vodovodnih storitev",
+    "description": "Pregled okvirnih cen za pogostejše vodovodne inštalacije in popravila.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manjša popravila in odpravljanje napak",
+        "description": "Menjava pip, tesnil in manjših okvar",
+        "price": "od 45 €",
+        "featured": false
+      },
+      {
+        "name": "Odstranjevanje zamašitev",
+        "description": "Čiščenje odtokov in sifonov",
+        "price": "od 50 €",
+        "featured": false
+      },
+      {
+        "name": "Montaža sanitarne opreme",
+        "description": "Vgradnja WC školjk, umivalnikov in druge opreme",
+        "price": "od 60 €",
+        "featured": true
+      },
+      {
+        "name": "Ura vodovodnega dela",
+        "description": "Terensko delo in strokovni pregled",
+        "price": "od 40 €",
+        "unit": "ura",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Kaplja",
+    "highlight": "vodovodne storitve"
+  },
+  "metadata": {
+    "title": "Kaplja vodovodne storitve Andrej Banovec s.p. | Vodovodne inštalacije Ljubljana",
+    "description": "Zanesljive vodovodne storitve, adaptacije kopalnic in hitra pomoč v Ljubljani z okolico. Pokličite nas za strokovno izvedbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni vodovodar v Ljubljani",
+    "title": "Zanesljive vodovodne storitve in",
+    "titleHighlight": "hitra pomoč na vašem domu.",
+    "description": "Strokovne vodovodne inštalacije, adaptacije kopalnic in hitra odprava težav za gospodinjstva, stanovanjske objekte in upravnike zgradb v Ljubljani z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Hitra odzivnost",
+        "label": "Hitra odzivnost"
+      },
+      {
+        "value": "Lokalni mojster",
+        "label": "Lokalni mojster"
+      },
+      {
+        "value": "Strokovno delo",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše vodovodne storitve",
+    "description": "Nudimo celovite vodovodne inštalacije, adaptacije kopalnic, montažo sanitarne opreme ter nujna popravila za objekte v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Vodovodne inštalacije",
+        "description": "Strokovna izvedba novih inštalacij in obnova obstoječega vodovodnega omrežja v vašem objektu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnega načrta do montaže sanitarne opreme.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo puščanja cevi",
+        "description": "Hitro odkrivanje in sanacija okvar ter puščanja vodovodnih cevi.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža sanitarne opreme",
+        "description": "Strokovna vgradnja pip, umivalnikov, WC školjk in druge sanitarne opreme.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Odstranjevanje zamašitev",
+        "description": "Učinkovito čiščenje odtokov in odpravljanje zamašitev v vašem domu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vodovodne težave",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke poskrbimo za varno in brezhibno delovanje vašega vodovodnega sistema.",
+    "highlights": [
+      "Hitra in odzivna storitev za nujne primere",
+      "Strokovno in natančno izvedena dela",
+      "Osebni pristop in zaupanja vreden lokalni mojster"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra in odzivna storitev",
+        "description": "Hitro se odzovemo na vaš klic in poskrbimo za rešitev težav na terenu.",
+        "title": "Hitra in odzivna storitev"
+      },
+      {
+        "label": "Strokovno izvedena dela",
+        "description": "Vsak projekt izvedemo strokovno, skrbno in v skladu s standardi.",
+        "title": "Strokovno izvedena dela"
+      },
+      {
+        "label": "Zanesljiv lokalni vodovodar",
+        "description": "Zanesljiv partner za gospodinjstva in upravnike zgradb v Ljubljani z okolico.",
+        "title": "Zanesljiv lokalni vodovodar"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vodovodarja ali nasvet glede inštalacij? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 644 660",
+        "href": "tel:041644660",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ižanska cesta 77c, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše vodovodne težave ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ižanska cesta 77c, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kaplja vodovodne storitve",
+    "address": "Ižanska cesta 77c, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 644 660"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
