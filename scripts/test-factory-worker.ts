@@ -145,6 +145,21 @@ function testGenerationLocks(): void {
   );
 
   ok(
+    "lock: generated without client on disk is not blocking (stale publish)",
+    !isGenerationLockBlocking({
+      existing: {
+        status: "generated",
+        runId: "run-b",
+        updatedAtMs: 900_000,
+      },
+      claimRunId: "run-a",
+      nowMs: 1_000_000,
+      retryMinutes: 60,
+      clientExists: false,
+    }),
+  );
+
+  ok(
     "lock: published always blocks",
     isGenerationLockBlocking({
       existing: {

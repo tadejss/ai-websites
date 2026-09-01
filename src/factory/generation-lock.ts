@@ -2,6 +2,7 @@ import { isDatabaseConfigured, sql } from "@/db/client";
 import { upsertDemoLifecycleGenerated } from "@/demo-lifecycle/store";
 import { ensureFactorySchema } from "@/db/ensure-schema";
 import { markDemoLifecyclePublished } from "@/demo-lifecycle/store";
+import { clientSiteExists } from "@/leads/client-exists";
 import { getFactoryWorkerConfig } from "./config";
 
 export type GenerationLockStatus =
@@ -116,6 +117,65 @@ export async function releaseGenerationLock(slug: string): Promise<void> {
   `;
 }
 
+/**
+ * Drop generated/generating locks for a worker run after publish failed so the
+ * next attempt can regenerate and push (GHA disk is ephemeral).
+ */
+export async function releaseGenerationLocksForRun(runId: string): Promise<number> {
+  const db = await requireDb();
+  const rows = (await db`
+    DELETE FROM factory_generation_locks
+    WHERE run_id = ${runId}
+      AND status IN ('generating', 'generated')
+    RETURNING slug
+  `) as Array<{ slug: string }>;
+  return rows.length;
+}
+
+/**
+ * Clear generated locks that never reached git (failed publish on ephemeral runner).
+ */
+export async function releaseStaleGeneratedLocksWithoutClient(): Promise<string[]> {
+  const db = await requireDb();
+  const rows = (await db`
+    SELECT slug FROM factory_generation_locks
+    WHERE status = 'generated'
+  `) as Array<{ slug: string }>;
+
+  const released: string[] = [];
+  for (const row of rows) {
+    if (clientSiteExists(row.slug)) {
+      continue;
+    }
+    await releaseGenerationLock(row.slug);
+    released.push(row.slug);
+  }
+  return released;
+}
+
+/**
+ * If a slug is marked generated in Neon but has no client JSON on disk, drop the lock.
+ */
+export async function releaseStaleGeneratedLockIfNoClient(
+  slug: string,
+): Promise<boolean> {
+  if (clientSiteExists(slug)) {
+    return false;
+  }
+  const db = await requireDb();
+  const rows = (await db`
+    SELECT status FROM factory_generation_locks
+    WHERE slug = ${slug}
+    LIMIT 1
+  `) as Array<{ status: string }>;
+  const status = rows[0]?.status;
+  if (status !== "generated" && status !== "generating") {
+    return false;
+  }
+  await releaseGenerationLock(slug);
+  return true;
+}
+
 export async function markGeneratedSlugsPublished(
   slugs: string[],
 ): Promise<void> {
@@ -146,6 +206,7 @@ export function isGenerationLockBlocking(input: {
   claimRunId: string;
   nowMs: number;
   retryMinutes: number;
+  clientExists?: boolean;
 }): boolean {
   if (!input.existing) {
     return false;
@@ -154,7 +215,16 @@ export function isGenerationLockBlocking(input: {
     input.existing.status === "generating"
     || input.existing.status === "generated"
   ) {
-    return input.existing.runId !== input.claimRunId;
+    if (input.existing.runId === input.claimRunId) {
+      return false;
+    }
+    if (
+      input.existing.status === "generated"
+      && input.clientExists === false
+    ) {
+      return false;
+    }
+    return true;
   }
   if (input.existing.status === "published") {
     return true;

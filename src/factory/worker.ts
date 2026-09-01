@@ -11,6 +11,9 @@ import {
 import {
   markGenerationLock,
   releaseGenerationLock,
+  releaseGenerationLocksForRun,
+  releaseStaleGeneratedLockIfNoClient,
+  releaseStaleGeneratedLocksWithoutClient,
   tryAcquireGenerationLock,
   markGeneratedSlugsPublished,
 } from "./generation-lock";
@@ -63,11 +66,57 @@ function log(message: string, extra?: Record<string, unknown>): void {
   }
 }
 
+async function debugWorkerLog(
+  hypothesisId: string,
+  location: string,
+  message: string,
+  data: Record<string, unknown>,
+): Promise<void> {
+  // #region agent log
+  try {
+    await fetch("http://127.0.0.1:7813/ingest/557e1e51-3235-4136-a53b-709aeb57898b", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Debug-Session-Id": "b2aa8f",
+      },
+      body: JSON.stringify({
+        sessionId: "b2aa8f",
+        runId: process.env.GITHUB_ACTIONS === "true" ? "gha" : "local",
+        hypothesisId,
+        location,
+        message,
+        data,
+        timestamp: Date.now(),
+      }),
+      signal: AbortSignal.timeout(1500),
+    });
+  } catch {
+    // ignore ingest failures
+  }
+  // #endregion
+  if (process.env.GITHUB_ACTIONS === "true") {
+    console.log(`::notice::${message} ${JSON.stringify(data)}`);
+  }
+}
+
 async function createFromLeadWithLock(
   slug: string,
   runId: string,
 ): Promise<Awaited<ReturnType<typeof createClientFromLead>>> {
-  const acquired = await tryAcquireGenerationLock(slug, runId);
+  let acquired = await tryAcquireGenerationLock(slug, runId);
+  if (!acquired && !clientSiteExists(slug)) {
+    const released = await releaseStaleGeneratedLockIfNoClient(slug);
+    if (released) {
+      await debugWorkerLog(
+        "B",
+        "src/factory/worker.ts:createFromLeadWithLock",
+        "released stale generated lock",
+        { slug },
+      );
+      acquired = await tryAcquireGenerationLock(slug, runId);
+    }
+  }
   if (!acquired) {
     const lead = readLead(slug);
     return {
@@ -185,6 +234,20 @@ export async function runFactoryWorker(
 
   const { runId } = lease;
   log("lease claimed", { runId, workerId, triggerSource });
+
+  const staleReleased = await releaseStaleGeneratedLocksWithoutClient();
+  if (staleReleased.length > 0) {
+    log("released stale generated locks without client files", {
+      count: staleReleased.length,
+      sample: staleReleased.slice(0, 5),
+    });
+    await debugWorkerLog(
+      "A",
+      "src/factory/worker.ts:runFactoryWorker",
+      "startup stale lock cleanup",
+      { count: staleReleased.length, sample: staleReleased.slice(0, 8) },
+    );
+  }
 
   let replenish: ReplenishStats | null = null;
   let publish: PublishResult | null = null;
@@ -310,9 +373,17 @@ export async function runFactoryWorker(
     publish = await runPublish();
 
     if (publish.outcome === "failed") {
+      const locksReleased = await releaseGenerationLocksForRun(runId);
       log("publish failed — generation kept local; not marked published", {
         error: publish.error,
+        locksReleased,
       });
+      await debugWorkerLog(
+        "C",
+        "src/factory/worker.ts:runFactoryWorker",
+        "publish failed; released run locks",
+        { locksReleased, error: publish.error?.slice(0, 200) ?? null },
+      );
       await updateWorkerRun(runId, {
         status: "failed",
         demosGenerated: replenish.demosGenerated,
