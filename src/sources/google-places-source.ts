@@ -1,31 +1,29 @@
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
+import type { LeadRecord } from "@/leads/store";
 import type { BusinessSource } from "./types";
 
 const PLACES_SEARCH_URL = "https://places.googleapis.com/v1/places:searchText";
 const PLACES_DETAILS_URL = "https://places.googleapis.com/v1/places";
 
-const FIELD_MASK = [
-  "places.id",
-  "places.displayName",
-  "places.primaryType",
-  "places.types",
-  "places.editorialSummary",
-  "places.nationalPhoneNumber",
-  "places.formattedAddress",
-  "places.websiteUri",
-  "places.regularOpeningHours",
-  "places.rating",
-  "places.userRatingCount",
-  "places.reviews",
-].join(",");
+/**
+ * Text Search Essentials (IDs Only) — cheapest search SKU.
+ * Field: places.id → dedup / backfill place_id lookup.
+ */
+export const PLACE_ID_SEARCH_MASK = "places.id";
 
 /**
- * Discovery deliberately omits reviews, editorial summaries and opening hours.
- * Those fields move the request into a more expensive Places billing tier, and
- * discovery pulls up to 60 businesses per query where generation pulls one.
- * The full detail is fetched later, only for businesses we decide to generate.
+ * Text Search Enterprise — highest field tier in this mask.
+ *
+ * Essentials: places.id, places.types, places.formattedAddress
+ * Pro: places.displayName, places.primaryType
+ * Enterprise: places.nationalPhoneNumber, places.websiteUri,
+ *   places.rating, places.userRatingCount
+ * Pagination: nextPageToken (no SKU charge)
+ *
+ * Consumers: discoverLeads filters (region, website, phone, profession),
+ * lead JSON (priority scoring), dedup by place_id.
  */
-const DISCOVERY_FIELD_MASK = [
+export const DISCOVERY_FIELD_MASK = [
   "places.id",
   "places.displayName",
   "places.primaryType",
@@ -38,7 +36,46 @@ const DISCOVERY_FIELD_MASK = [
   "nextPageToken",
 ].join(",");
 
-const DETAILS_FIELD_MASK = [
+/**
+ * Place Details Enterprise — demo generation from a known place_id.
+ *
+ * Essentials: id, types, formattedAddress
+ * Pro: displayName, primaryType
+ * Enterprise: nationalPhoneNumber, websiteUri, regularOpeningHours,
+ *   rating, userRatingCount
+ *
+ * Consumers: generateBusinessInput (contact fields, openingHours, category).
+ * Omits editorialSummary and reviews (Enterprise + Atmosphere tier).
+ */
+export const GENERATION_DETAILS_FIELD_MASK = [
+  "id",
+  "displayName",
+  "primaryType",
+  "types",
+  "nationalPhoneNumber",
+  "formattedAddress",
+  "websiteUri",
+  "regularOpeningHours",
+  "rating",
+  "userRatingCount",
+].join(",");
+
+/**
+ * Place Details Enterprise — incremental fetch when lead JSON already
+ * holds contact and rating fields from discovery.
+ *
+ * Field: regularOpeningHours → AI openingHours in BusinessInput.
+ */
+export const OPENING_HOURS_DETAILS_MASK = "regularOpeningHours";
+
+/**
+ * Place Details Enterprise + Atmosphere — legacy full fetch.
+ *
+ * Adds editorialSummary and reviews (Atmosphere tier).
+ *
+ * @deprecated Prefer GENERATION_DETAILS_FIELD_MASK or OPENING_HOURS_DETAILS_MASK.
+ */
+export const DETAILS_FIELD_MASK = [
   "id",
   "displayName",
   "primaryType",
@@ -51,20 +88,6 @@ const DETAILS_FIELD_MASK = [
   "rating",
   "userRatingCount",
   "reviews",
-].join(",");
-
-/** Lead demo generation — Enterprise tier without Atmosphere fields. */
-const GENERATION_DETAILS_FIELD_MASK = [
-  "id",
-  "displayName",
-  "primaryType",
-  "types",
-  "nationalPhoneNumber",
-  "formattedAddress",
-  "websiteUri",
-  "regularOpeningHours",
-  "rating",
-  "userRatingCount",
 ].join(",");
 
 // Google returns at most 20 results per page and at most 3 pages per query.
@@ -125,15 +148,19 @@ function mapPlaceToRawBusinessData(place: GooglePlace): RawBusinessData {
   };
 }
 
-async function searchPlace(textQuery: string): Promise<GooglePlace> {
+async function textSearch(
+  textQuery: string,
+  fieldMask: string,
+  pageSize = 1,
+): Promise<GooglePlace | undefined> {
   const response = await fetch(PLACES_SEARCH_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       "X-Goog-Api-Key": getApiKey(),
-      "X-Goog-FieldMask": FIELD_MASK,
+      "X-Goog-FieldMask": fieldMask,
     },
-    body: JSON.stringify({ textQuery }),
+    body: JSON.stringify({ textQuery, pageSize }),
   });
 
   if (!response.ok) {
@@ -141,20 +168,84 @@ async function searchPlace(textQuery: string): Promise<GooglePlace> {
   }
 
   const data = (await response.json()) as GooglePlacesSearchResponse;
-  const place = data.places?.[0];
+  return data.places?.[0];
+}
 
-  if (!place) {
+/**
+ * Resolves a text query to a Google place_id using the cheapest search SKU.
+ */
+export async function lookupPlaceId(
+  textQuery: string,
+): Promise<string | undefined> {
+  const place = await textSearch(textQuery, PLACE_ID_SEARCH_MASK);
+  return place?.id?.trim() || undefined;
+}
+
+/**
+ * Text Search (IDs Only) + Place Details (Enterprise) for one-off CLI flows.
+ * Cheaper than a single Enterprise + Atmosphere text search.
+ */
+export async function fetchBusinessByQuery(
+  textQuery: string,
+): Promise<RawBusinessData> {
+  const placeId = await lookupPlaceId(textQuery);
+
+  if (!placeId) {
     throw new Error(`No Google Places results found for "${textQuery}"`);
   }
 
-  return place;
+  return getPlaceDetails(placeId, GENERATION_DETAILS_FIELD_MASK);
 }
 
+/**
+ * @deprecated Use fetchBusinessByQuery or lookupPlaceId instead.
+ */
 export function createGooglePlacesSource(query: string): BusinessSource {
   return {
     async getBusiness() {
-      const place = await searchPlace(query);
-      return mapPlaceToRawBusinessData(place);
+      return fetchBusinessByQuery(query);
+    },
+  };
+}
+
+export function rawBusinessFromLead(lead: LeadRecord): RawBusinessData {
+  return {
+    googlePlaceId: lead.googlePlaceId,
+    name: lead.companyName,
+    category: lead.industry,
+    phone: lead.phone,
+    address: lead.address,
+    website: lead.existingWebsite,
+    rating: lead.googleRating,
+    reviewCount: lead.googleReviewCount,
+  };
+}
+
+/**
+ * Reuses lead-record fields from discovery and fetches only opening hours
+ * via Place Details (Enterprise tier — same SKU as a full details call).
+ */
+export function createLeadEnrichedDetailsSource(
+  lead: LeadRecord,
+): BusinessSource {
+  const googlePlaceId = lead.googlePlaceId?.trim();
+
+  if (!googlePlaceId) {
+    throw new Error("Lead has no Google Place ID");
+  }
+
+  return {
+    async getBusiness() {
+      const base = rawBusinessFromLead(lead);
+      const details = await getPlaceDetails(
+        googlePlaceId,
+        OPENING_HOURS_DETAILS_MASK,
+      );
+
+      return {
+        ...base,
+        openingHours: details.openingHours,
+      };
     },
   };
 }
@@ -273,8 +364,8 @@ export async function searchPlaces(
 }
 
 /**
- * Fetches the full field set for one business by Place ID. Used at generation
- * time so reviews and opening hours are only paid for when they are needed.
+ * Fetches place fields by place_id. Defaults to the legacy full mask;
+ * prefer GENERATION_DETAILS_FIELD_MASK or OPENING_HOURS_DETAILS_MASK.
  */
 export async function getPlaceDetails(
   googlePlaceId: string,

@@ -1,5 +1,5 @@
 import { readLead, type LeadRecord } from "@/leads/store";
-import { createPlaceDetailsSource } from "@/sources/google-places-source";
+import { createLeadEnrichedDetailsSource } from "@/sources/google-places-source";
 import { isSmsGenerationCandidate } from "@/outreach/sms/relevance";
 import { clientExists } from "./create-client-from-query";
 import { generateClient } from "./generate-client";
@@ -48,7 +48,7 @@ export async function createClientFromLead(
     );
   }
 
-  await generateClient(slug, createPlaceDetailsSource(googlePlaceId));
+  await generateClient(slug, createLeadEnrichedDetailsSource(lead));
 
   return { outcome: "created", slug, companyName };
 }

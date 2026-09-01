@@ -1,7 +1,7 @@
 import { resolve } from "node:path";
 import { config as loadEnv } from "dotenv";
 import { readAllLeads, saveLead, type LeadRecord } from "../src/leads/store";
-import { createGooglePlacesSource } from "../src/sources/google-places-source";
+import { lookupPlaceId } from "../src/sources/google-places-source";
 
 const root = resolve(__dirname, "..");
 
@@ -66,8 +66,7 @@ async function main(): Promise<void> {
     }
 
     try {
-      const business = await createGooglePlacesSource(query).getBusiness();
-      const placeId = business.googlePlaceId?.trim();
+      const placeId = await lookupPlaceId(query);
 
       if (!placeId) {
         console.log(`SKIPPED: ${lead.slug} - Google returned no Place ID`);

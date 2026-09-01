@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
 import { validateRawBusinessData } from "@/ai/validate-raw-business-data";
 import { findLeadByPlaceId } from "@/leads/store";
-import { createGooglePlacesSource } from "@/sources/google-places-source";
+import { fetchBusinessByQuery } from "@/sources/google-places-source";
 import type { BusinessSource } from "@/sources/types";
 import { generateClient } from "./generate-client";
 import { slugFromBusinessName } from "./slug";
@@ -40,8 +40,7 @@ function createCachedSource(data: RawBusinessData): BusinessSource {
 export async function createClientFromQuery(
   query: string,
 ): Promise<CreateClientResult> {
-  const source = createGooglePlacesSource(query);
-  const rawBusiness = validateRawBusinessData(await source.getBusiness());
+  const rawBusiness = validateRawBusinessData(await fetchBusinessByQuery(query));
 
   const companyName = rawBusiness.name ?? "";
   const googlePlaceId = rawBusiness.googlePlaceId ?? "";
