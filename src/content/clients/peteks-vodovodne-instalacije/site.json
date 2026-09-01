@@ -1,0 +1,270 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "steel-blue",
+    "fontPairingId": "inter-oswald"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/hero.avif",
+      "alt": "Vodovodni mojster pri delu na inštalacijah v kopalnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691536",
+      "sourceUrl": "https://www.pexels.com/photo/unrecognizable-handyman-with-ruler-near-heating-system-at-home-5691536/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/services.avif",
+      "alt": "Nova sanirana kopalnica in vodovodne inštalacije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8488035",
+      "sourceUrl": "https://www.pexels.com/photo/metal-pipes-on-wall-8488035/",
+      "photographer": "Kindel Media",
+      "photographerUrl": "https://www.pexels.com/@kindelmedia",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki z dela",
+    "description": "Oglejte si primere naših izvedenih vodovodnih inštalacij in adaptacij.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Cene so informativne narave. Točna ponudba se določi po ogledu in popisu del na objektu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura vodovodnega dela",
+        "description": "Opravljanje splošnih vodovodnih in inštalaterskih del.",
+        "price": "od 35 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Manjša popravila in odprava okvar",
+        "description": "Hitra intervencija pri manjših puščanjih ali zamenjavi elementov.",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Montaža sanitarne keramike",
+        "description": "Vgradnja posameznih elementov (WC školjka, umivalnik, armatura).",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Celovita prenova in inštalacije v kopalnici po dogovoru.",
+        "price": "po ogledu"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Peteks",
+    "highlight": "Peter Žaberl s.p."
+  },
+  "metadata": {
+    "title": "Peteks | Vodovodne inštalacije in adaptacije kopalnic",
+    "description": "Zanesljive vodovodne inštalacije, adaptacije kopalnic, popravila okvar in montaža sanitarne keramike v Domžalah in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive vodovodne inštalacije",
+    "title": "Strokovne vodovodne rešitve za",
+    "titleHighlight": "vaš dom in objekt",
+    "description": "Zanesljive vodovodne inštalacije, celovite adaptacije kopalnic, hitra popravila okvar in montaža sanitarne keramike v Domžalah in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hiter odziv",
+        "label": "Hiter odziv"
+      },
+      {
+        "value": "Kakovostna izvedba",
+        "label": "Kakovostna izvedba"
+      },
+      {
+        "value": "Strokovni nasveti",
+        "label": "Strokovni nasveti"
+      },
+      {
+        "value": "Domžale in okolica",
+        "label": "Domžale in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite vodovodne storitve za vas",
+    "description": "Poskrbimo za kakovostno izvedbo vodovodnih del, adaptacije in popravila na območju Domžal in okolice.",
+    "items": [
+      {
+        "title": "Vodovodne inštalacije",
+        "description": "Nova vgradnja in obnova obstoječih vodovodnih napeljav v stanovanjih, hišah in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnega načrta do končne izvedbe in polaganja keramike.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo okvar in puščanj",
+        "description": "Hitro odkrivanje in odpravljanje napak ter popravilo puščanj na vodovodnem omrežju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža sanitarne keramike",
+        "description": "Strokovna vgradnja umivalnikov, WC školjk, armatur, tuš kabin in druge sanitarne opreme.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje in servis",
+        "description": "Redni pregledi, vzdrževanje in manjši servisi vodovodnih sistemov za nemoteno delovanje.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vodovodne težave",
+    "description": "Združujemo domač pristop, zanesljivost in strokovnost ter nudimo rešitve prilagojene vašim potrebam.",
+    "highlights": [
+      "Hiter odziv na klice strank",
+      "Kakovostna izvedba vodovodnih del",
+      "Strokovno svetovanje na terenu"
+    ],
+    "benefits": [
+      {
+        "label": "Hiter odziv",
+        "description": "Odzivamo se na vaše klice in poskrbimo za hitro reševanje nujnih težav.",
+        "title": "Hiter odziv"
+      },
+      {
+        "label": "Kakovostna dela",
+        "description": "Vsak projekt izvedemo skrbno, natančno in z ustreznimi materiali.",
+        "title": "Kakovostna dela"
+      },
+      {
+        "label": "Strokovni nasveti",
+        "description": "Na terenu vam svetujemo najboljše in strokovno preverjene rešitve.",
+        "title": "Strokovni nasveti"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za ponudbo",
+    "description": "Potrebujete vodovodno inštalacijo, adaptacijo kopalnice ali hitro popravilo? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dragomelj 77, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 654 177",
+        "href": "tel:040654177",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali težavo...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Dragomelj 77, 1230 Domžale, Slovenia",
+    "rights": "© Peteks Peter Žaberl s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Peteks Peter Žaberl s.p.",
+    "address": "Dragomelj 77, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "040 654 177"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

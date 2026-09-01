@@ -1,0 +1,282 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "violet-night",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/3ici-install-vodovodne/hero.avif",
+      "alt": "Vodovodni inštalater pri strokovnem delu na inštalacijah",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/3ici-install-vodovodne/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35290675",
+      "sourceUrl": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/3ici-install-vodovodne/services.avif",
+      "alt": "Moderna vodovodna inštalacija in sanitarna oprema",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/3ici-install-vodovodne/services.webp",
+      "width": 917,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "1029635",
+      "sourceUrl": "https://www.pexels.com/photo/black-and-yellow-water-filter-system-1029635/",
+      "photographer": "Scott Webb",
+      "photographerUrl": "https://www.pexels.com/@scottwebb",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in se prilagodijo glede na obseg ter zahtevnost dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manjša popravila in odprava napak",
+        "description": "Hitra intervencija in odprava manjših okvar na vodovodu.",
+        "price": "od 45 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Montaža sanitarne opreme",
+        "description": "Vgradnja armatur, umivalnikov ali WC školjk.",
+        "price": "od 50 €",
+        "unit": "kos",
+        "featured": true
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Inštalacijska dela pri celoviti prenovi kopalnice.",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Nove vodovodne inštalacije",
+        "description": "Izvedba celotnega vodovodnega omrežja v objektu.",
+        "price": "Po ogledu",
+        "unit": "objekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "3ici",
+    "highlight": "install"
+  },
+  "metadata": {
+    "title": "3ici install, vodovodne inštalacije | Domžale in okolica",
+    "description": "Zanesljive vodovodne inštalacije, adaptacije kopalnic, popravila puščanja in montaža sanitarne opreme v Domžalah in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Vodovodne storitve Domžale",
+    "title": "Zanesljive vodovodne inštalacije in",
+    "titleHighlight": "popravila za vaš dom",
+    "description": "Strokovne vodovodne inštalacije, adaptacije kopalnic in hitra popravila za lastnike stanovanj, hiš in poslovnih prostorov v Domžalah in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo in točno",
+        "title": "Zanesljivost in točnost"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo strankam",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Domžale in okolica",
+        "title": "Lokalni mojster"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite vodovodne rešitve za vaš objekt",
+    "description": "Zagotavljamo kakovostno izvedbo vseh vrst vodovodnih del za Domžale in okolico.",
+    "items": [
+      {
+        "title": "Vodovodne inštalacije",
+        "description": "Nove inštalacije in prenovitvena dela za stanovanjske in poslovne prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih inštalacij do montaže opreme.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo puščanja vode",
+        "description": "Hitro odkrivanje in odpravljanje napak ter puščanja na vodovodnem omrežju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža sanitarne opreme",
+        "description": "Strokovna vgradnja vseh vrst armatur, umivalnikov, WC školjk in druge opreme.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje in servis",
+        "description": "Redni pregledi, manjša popravila in vzdrževanje vodovodnih sistemov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vodovodne inštalacije",
+    "description": "Z osredotočenostjo na kakovost, natančnost in potrebe strank poskrbimo za brezhibno delovanje vašega vodovoda.",
+    "highlights": [
+      "Strokovna izvedba del",
+      "Zanesljivost in točnost",
+      "Prilagodljivost strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Dela izvajamo strokovno, skrbno in v skladu s tehničnimi standardi.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Zanesljivost in točnost",
+        "description": "Držimo se dogovorjenih rokov in zagotavljamo zanesljive storitve.",
+        "title": "Zanesljivost in točnost"
+      },
+      {
+        "label": "Prilagodljivost strankam",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku ter potrebam.",
+        "title": "Prilagodljivost strankam"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vodovodne inštalacije, popravilo ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "030 316 502",
+        "href": "tel:030316502",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Murnova Ulica 3, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 7:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali težavo...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Murnova Ulica 3, 1230 Domžale, Slovenia",
+    "rights": "© 2025 3ici install. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "3ici install",
+    "address": "Murnova Ulica 3, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "030 316 502"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

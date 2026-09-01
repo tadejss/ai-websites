@@ -1,0 +1,278 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/aqua-install-milos/hero.avif",
+      "alt": "Vodovodni inštalater pri delu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/aqua-install-milos/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "33388390",
+      "sourceUrl": "https://www.pexels.com/photo/technician-repairing-industrial-equipment-in-workshop-33388390/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/aqua-install-milos/services.avif",
+      "alt": "Montaža in vzdrževanje vodovodnih inštalacij",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/aqua-install-milos/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "12142829",
+      "sourceUrl": "https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/",
+      "photographer": "Bùi Hoàng Long",
+      "photographerUrl": "https://www.pexels.com/@dxaxoxfz",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za vodovodne inštalacije, popravila in montažo.",
+    "disclaimer": "Cenik je informativen. Za točen izračun in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manjša popravila in odprava puščanj",
+        "description": "Pregled in hitra sanacija manjših okvar na vodovodu",
+        "price": "od 40 €",
+        "unit": "uro",
+        "featured": true
+      },
+      {
+        "name": "Montaža sanitarne keramike",
+        "description": "Montaža umivalnika, armature ali WC školjke",
+        "price": "od 50 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Informativna cena za celovito obnovo vodovoda v kopalnici",
+        "price": "po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Vodovodne inštalacije",
+        "description": "Izvedba inštalacij za novogradnje ali prenove",
+        "price": "po ogledu",
+        "unit": "popis"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Aqua Install",
+    "highlight": "Miloš Keržan s.p."
+  },
+  "metadata": {
+    "title": "Aqua Install Miloš Keržan s.p. | Vodovodne inštalacije Domžale",
+    "description": "Zanesljive vodovodne inštalacije, adaptacije kopalnic, popravila puščanj in montaža sanitarne keramike v Domžalah z okolico. Pokličite nas."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster za vodovod",
+    "title": "Kakovostne vodovodne inštalacije in",
+    "titleHighlight": "popravila",
+    "description": "Strokovne vodovodne storitve za lastnike stanovanj, hiš in poslovnih prostorov v Domžalah z okolico. Zanesljiva izvedba in hiter odziv.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra odzivnost",
+        "label": "Hitra odzivnost"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Domžale z okolico",
+        "label": "Domžale z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite vodovodne rešitve za vaš dom in poslovni prostor",
+    "description": "Nudimo strokovne in zanesljive vodovodne storitve, prilagojene vašim potrebam v Domžalah in okolici.",
+    "items": [
+      {
+        "title": "Vodovodne inštalacije",
+        "description": "Izvedba novih vodovodnih inštalacij in prenova obstoječega vodovodnega omrežja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite adaptacije kopalnic od začetnega načrtovanja do končne izvedbe.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo puščanj",
+        "description": "Hitro odkrivanje in odpravljanje puščanj ter nujna popravila na vodovodu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža sanitarne keramike",
+        "description": "Strokovna montaža umivalnikov, WC školjk, armatur in druge sanitarne opreme.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje vodovodnega omrežja",
+        "description": "Redno vzdrževanje in pregledi vodovodnega omrežja za nemoteno delovanje.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vodovodne inštalacije",
+    "description": "Z izkušnjami in posluhom za stranke poskrbimo za varno in kakovostno izvedbo vsakega projekta.",
+    "highlights": [
+      "Hitra odzivnost in zanesljivost na terenu",
+      "Kakovostna izvedba vodovodnih del",
+      "Strokovno svetovanje strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra odzivnost",
+        "description": "Na voljo smo za hitre odzive in zanesljivo reševanje vodovodnih težav.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Dela izvajamo strokovno, natančno in z ustreznimi materiali.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Pred začetkom del vam svetujemo najboljše in najučinkovitejše rešitve.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vodovodne inštalacije ali popravilo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 860 838",
+        "href": "tel:040860838",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Krumperška ulica 40, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Sob: 7:00 - 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše vprašanje ali storitev, ki jo potrebujete",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Krumperška ulica 40, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Aqua Install Miloš Keržan s.p.",
+    "address": "Krumperška ulica 40, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "040 860 838"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

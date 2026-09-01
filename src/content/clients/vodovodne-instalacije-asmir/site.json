@@ -1,0 +1,269 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "zbrendiraj",
+    "fontPairingId": "dm-sans-syne"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-asmir/hero.avif",
+      "alt": "Vodovodni inštalater pri delu v moderni kopalnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-asmir/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35290675",
+      "sourceUrl": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber working on pipes installation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-asmir/services.avif",
+      "alt": "Montaža vodovodnih inštalacij in sanitarne keramike",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-asmir/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7220892",
+      "sourceUrl": "https://www.pexels.com/photo/a-person-holding-brown-doorknob-7220892/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostejših vodovodnih storitev in okvirnih cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža sanitarne keramike",
+        "description": "Montaža umivalnika, armature ali WC školjke",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Popravilo okvar in puščanj",
+        "description": "Pregled in odprava manjših napak na vodovodu",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Celovita prenova (okvirna ocena za delo)",
+        "price": "od 1.200 €"
+      },
+      {
+        "name": "Montaža vodovodnih inštalacij",
+        "description": "Inštalacija za novogradnje ali obnove",
+        "price": "po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vodovodne inštalacije",
+    "highlight": "Asmir Čaušević s.p."
+  },
+  "metadata": {
+    "title": "Vodovodne inštalacije Asmir Čaušević s.p. | Kamnik",
+    "description": "Zanesljive vodovodne inštalacije, adaptacije kopalnic in popravila okvar v Kamniku in okolici. Pokličite za ponudbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv partner za vaše inštalacije",
+    "title": "Zanesljive vodovodne inštalacije in",
+    "titleHighlight": "adaptacije kopalnic",
+    "description": "Strokovne vodovodne storitve za lastnike stanovanj, hiš in poslovnih objektov v Kamniku in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Hitra izvedba",
+        "label": "Hitra in zanesljiva izvedba del"
+      },
+      {
+        "value": "Odlične ocene",
+        "label": "Visoka kakovost storitev"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno svetovanje"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost strankam"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite vodovodne rešitve",
+    "description": "Nudimo kakovostne storitve s področja vodovodnih inštalacij, prenove kopalnic in odpravljanja okvar.",
+    "items": [
+      {
+        "title": "Montaža vodovodnih inštalacij",
+        "description": "Strokovna vgradnja novih vodovodnih inštalacij v stanovanjskih in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnega načrta do končne izvedbe.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo okvar in puščanj",
+        "description": "Hitro odkrivanje in odpravljanje okvar ter puščanja vodovodnega omrežja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža sanitarne keramike",
+        "description": "Montaža umivalnikov, WC školjk, armatur, kadi in druge sanitarne opreme.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje in servis",
+        "description": "Redno vzdrževanje, servisi in pregledi vodovodnih sistemov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in odzivnost",
+    "description": "Z našim znanjem in izkušnjami poskrbimo za brezhibno delovanje vaših vodovodnih sistemov.",
+    "highlights": [
+      "Hitra in zanesljiva izvedba del",
+      "Visoka kakovost storitev z odličnimi ocenami strank",
+      "Strokovno svetovanje in prilagodljivost"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra izvedba",
+        "description": "Dela izvedemo hitro, zanesljivo in v dogovorjenih rokih.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Kakovostne storitve",
+        "description": "Visoka kakovost izvedbe, ki se odraža v zadovoljstvu naših strank.",
+        "title": "Kakovostne storitve"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Prisluhnemo vašim željam in vam strokovno svetujemo pri izbiri rešitev.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vodovodno inštalacijo ali prenovo kopalnice? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 685 021",
+        "href": "tel:040685021",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cankarjeva cesta 21, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Cankarjeva cesta 21, 1241 Kamnik, Slovenia",
+    "rights": "© 2025 Vodovodne inštalacije Asmir Čaušević s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vodovodne inštalacije Asmir Čaušević s.p.",
+    "address": "Cankarjeva cesta 21, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "040 685 021"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
