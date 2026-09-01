@@ -1,0 +1,295 @@
+{
+  "appearance": "auto",
+  "lookId": "avtomehaniki-04-stats-trust",
+  "theme": {
+    "paletteId": "look-avtomehaniki-04-stone",
+    "fontPairingId": "look-avtomehaniki-04"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-m-x/hero.avif",
+      "alt": "Strokovni avtomehanik pri delu v sodobni avtoservisni delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-m-x/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985712",
+      "sourceUrl": "https://www.pexels.com/photo/car-engine-in-front-of-a-mechanic-8985712/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-m-x/services.avif",
+      "alt": "Diagnostika in popravilo avtomobilskih motorjev v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-m-x/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985972",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-working-on-an-engine-8985972/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregledne in dostopne cene storitev",
+    "description": "Odkrijte okvirne cene naših rednih vzdrževalnih in mehanskih del.",
+    "disclaimer": "Cenik je informativen. Za točen izračun in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redni servis (menjava olja in filtrov)",
+        "description": "Vključuje delo, menjava olja ter zračnih in oljnih filtrov.",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Menjava pnevmatik (komplet)",
+        "description": "Premontaža, centriranje in menjava 4 koles.",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Računalniška diagnostika napak",
+        "description": "Priklop na diagnostično napravo in brisanje napak.",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Menjava zavornih ploščic",
+        "description": "Menjava zavornih oblog na sprednji ali zadnji osi.",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Splošna avtomehanična dela",
+        "description": "Urna postavka za ostala popravila in preglede.",
+        "price": "od 45 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Avtoservis",
+    "highlight": "Avtoservis M-X · Statistike in zaupanje"
+  },
+  "metadata": {
+    "title": "Look demo: avtomehaniki — Statistike in zaupanje",
+    "description": "Številke/statistike, zaupanje — vizualni QA demo za katalog lookov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv avtoservis v Litiji",
+    "title": "Zanesljivo vzdrževanje in popravilo",
+    "titleHighlight": "vašega vozila",
+    "description": "Poskrbite za varno in brezskrbno vožnjo vašega osebnega ali dostavnega vozila. Strokovne avtomehanične storitve z osebnim pristopom v Litiji s širšo okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Prilagodljiv",
+        "label": "Delovni čas",
+        "title": "Prilagodljiv delovni čas"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Vzdrževanje",
+        "title": "Strokovno vzdrževanje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Popravilo vozil",
+        "title": "Zanesljivo popravilo vozil"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Litija in okolica",
+        "title": "Lokalno v Litiji"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite avtomehanične storitve za vaše vozilo",
+    "description": "V avtoservisu m a X poskrbimo za vse znamke osebnih in dostavnih vozil z zanesljivim in strokovnim pristopom.",
+    "items": [
+      {
+        "title": "Redni servisi vozil",
+        "description": "Pravočasna menjava olja, filtrov in pregled ključnih sklopov za dolgo življenjsko dobo vašega avtomobila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Strokovna menjava, centriranje in hramba pnevmatik za varno vožnjo v vseh vremenskih razmerah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zavorni sistemi",
+        "description": "Pregled, popravilo in menjava zavornih ploščic, diskov ter tekočin za vaše popolno varno ustavljanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Diagnostika napak",
+        "description": "Natančno računalniško odkrivanje in odpravljanje napak na električnih ter elektronskih sklopih vozila.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Splošna avtomehanična dela",
+        "description": "Kakovostna popravila in vzdrževanje vseh mehanskih delov vašega osebnega ali dostavnega vozila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše vozilo",
+    "description": "Zavezani smo h kakovosti, strokovnosti in prilagodljivosti našim strankam v Litiji s širšo okolico.",
+    "highlights": [
+      "Prilagodljiv delovni čas po vaših merah",
+      "Izkušena in strokovna obravnava vsakega vozila",
+      "Kakovostne avtomehanične storitve na enem mestu"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagodljiv delovni čas",
+        "description": "Usklajujemo se z vašim urnikom in nudimo prilagodljive termine za popravilo vozil.",
+        "title": "Prilagodljiv delovni čas"
+      },
+      {
+        "label": "Strokovna obravnava",
+        "description": "Vsakemu avtomobilu se posvetimo z znanjem, izkušnjami in skrbnostjo.",
+        "title": "Strokovna obravnava"
+      },
+      {
+        "label": "Kakovostne storitve",
+        "description": "Zanesljivo vzdrževanje in popravila, ki zagotavljajo varno vožnjo vašega vozila.",
+        "title": "Kakovostne storitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite rezervirati termin za vaš avto? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Bitiče 1, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 686 085",
+        "href": "tel:041686085",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek: 24h · Torek: 9:00–17:00 · Sreda: 24h · Četrtek: 9:00–17:00 · Petek: 9:00–17:00 · Sobota: 24h · Nedelja: 9:00–17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, kakšno storitev potrebuje vaše vozilo...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Bitiče 1, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtoservis m a X",
+    "address": "Bitiče 1, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "041 686 085"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
