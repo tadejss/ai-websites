@@ -59,29 +59,18 @@ export function BeautyHeader({ siteConfig }: Props) {
               </span>
             </summary>
           }
-        >
-          {(closeMenu) => (
-            <div className="absolute right-0 mt-2 w-56 rounded-[var(--radius-card)] border border-border bg-background p-3 shadow-lg">
-              {nav.links.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={closeMenu}
-                  className="block rounded-xl px-4 py-3 text-sm font-medium text-muted transition-colors hover:bg-surface hover:text-foreground"
-                >
-                  {link.label}
-                </a>
-              ))}
-              <a
-                href={`#${contact.id}`}
-                onClick={closeMenu}
-                className={`mt-2 block bg-accent px-4 py-3 text-center text-sm font-medium text-accent-foreground ${buttonRadiusClass()}`}
-              >
-                {nav.cta}
-              </a>
-            </div>
-          )}
-        </MobileNavMenu>
+          panelClassName="absolute right-0 mt-2 w-56 rounded-[var(--radius-card)] border border-border bg-background p-3 shadow-lg"
+          linkClassName="block rounded-xl px-4 py-3 text-sm font-medium text-muted transition-colors hover:bg-surface hover:text-foreground"
+          links={nav.links.map((link) => ({
+            href: link.href,
+            label: link.label,
+          }))}
+          cta={{
+            href: `#${contact.id}`,
+            label: nav.cta,
+            className: `mt-2 block bg-accent px-4 py-3 text-center text-sm font-medium text-accent-foreground ${buttonRadiusClass()}`,
+          }}
+        />
       </nav>
     </header>
   );

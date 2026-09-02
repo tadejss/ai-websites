@@ -51,30 +51,19 @@ export function DefaultSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
                 <Icon name="menu" />
               </summary>
             }
-          >
-            {(closeMenu) => (
-              <div className="absolute right-0 mt-2 w-48 rounded-xl border border-border bg-surface-elevated p-2 shadow-xl">
-                {nav.links.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={closeMenu}
-                    className="block rounded-lg px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:bg-background hover:text-foreground"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-
-                <a
-                  href={`#${contact.id}`}
-                  onClick={closeMenu}
-                  className="mt-1 block rounded-lg bg-accent px-4 py-2.5 text-center text-sm font-semibold text-background"
-                >
-                  {nav.cta}
-                </a>
-              </div>
-            )}
-          </MobileNavMenu>
+            panelClassName="absolute right-0 mt-2 w-48 rounded-xl border border-border bg-surface-elevated p-2 shadow-xl"
+            linkClassName="block rounded-lg px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:bg-background hover:text-foreground"
+            links={nav.links.map((link) => ({
+              href: link.href,
+              label: link.label,
+            }))}
+            cta={{
+              href: `#${contact.id}`,
+              label: nav.cta,
+              className:
+                "mt-1 block rounded-lg bg-accent px-4 py-2.5 text-center text-sm font-semibold text-background",
+            }}
+          />
         </nav>
       </header>
 

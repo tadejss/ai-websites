@@ -14,7 +14,8 @@ export async function getCustomerChromeState(
   slug: string,
 ): Promise<CustomerChromeState> {
   try {
-    const customerSlugs = await getCachedCustomerSlugSet();
+    const customerSlugList = await getCachedCustomerSlugSet();
+    const customerSlugs = new Set(customerSlugList);
     if (!customerSlugs.has(slug)) {
       return {
         isCustomer: false,
