@@ -1,0 +1,216 @@
+{
+  "appearance": "construction",
+  "lookId": "suhomontazerji-04-stats-trust",
+  "theme": {
+    "paletteId": "look-suhomontazerji-04-stone",
+    "fontPairingId": "look-suhomontazerji-04"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/zakljucna-dela-v/hero.jpg",
+      "alt": "Slikopleskar pri delu v notranjosti prostora"
+    },
+    "services": {
+      "src": "/clients/zakljucna-dela-v/services.jpg",
+      "alt": "Pleskanje sten in zaključna dela v gradbeništvu"
+    }
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "suhomontazerji · Statistike in zaupanje"
+  },
+  "metadata": {
+    "title": "QA katalog: suhomontazerji — Statistike in zaupanje",
+    "description": "Številke/statistike, zaupanje — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Slikopleskarstvo in zaključna dela",
+    "title": "Kakovostna prenova za",
+    "titleHighlight": "vaš dom ali poslovni prostor",
+    "description": "Zanesljiva in natančna izvedba zaključnih del v gradbeništvu za lastnike stanovanj, hiš in poslovnih prostorov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Celovito",
+        "label": "Storitve prenov"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje"
+      },
+      {
+        "value": "Raka",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za zaključna dela",
+    "description": "Poskrbimo za kakovostno prenovo in osvežitev vaših prostorov na območju Rake in širše okolice.",
+    "items": [
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Kakovostno pleskanje za svež in urejen videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje in osvežitev prostorov",
+        "description": "Hitra in čista osvežitev barvnih tonov v vašem domu ali pisarni.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje talnih oblog",
+        "description": "Strokovna namestitev različnih talnih oblog po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Suhomontažna gradnja in mavčne plošče",
+        "description": "Izdelava predelnih sten, stropov in druge suhomontažne rešitve.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjši gradbeni in obnova prostorov",
+        "description": "Manjši gradbeni posegi in celovita manjša obnova za vaše prostore.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaša dela",
+    "description": "Odlikuje nas prilagodljivost, strokovnost in posluh za želje naših strank.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Celovite storitve zaključnih del v gradbeništvu",
+      "Prilagodljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivost",
+        "label": "Natančna izvedba",
+        "description": "Vsakemu projektu se posvetimo z enako skrbnostjo in natančnostjo.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "stat": "Celovitost",
+        "label": "Vse na enem mestu",
+        "description": "Nudimo širok nabor storitev od pleskanja do manjših prenov.",
+        "title": "Vse na enem mestu"
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Strokovni svetovalec",
+        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo rešitev.",
+        "title": "Strokovni svetovalec"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za zaključna dela? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 794 975",
+        "href": "tel:031794975",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Straža pri Raki 14, 8274 Raka, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Straža pri Raki 14, 8274 Raka, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Andrej Tomažin s.p.",
+    "address": "Straža pri Raki 14, 8274 Raka, Slovenia",
+    "email": "",
+    "phone": "031 794 975"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

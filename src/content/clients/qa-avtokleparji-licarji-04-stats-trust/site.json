@@ -1,0 +1,299 @@
+{
+  "appearance": "auto",
+  "lookId": "avtokleparji-licarji-04-stats-trust",
+  "theme": {
+    "paletteId": "look-avtokleparji-licarji-04-stone",
+    "fontPairingId": "look-avtokleparji-licarji-04"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-stanislav/hero.avif",
+      "alt": "Avtokleparska delavnica z opremo za popravilo vozil v Logatcu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-stanislav/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809549",
+      "sourceUrl": "https://www.pexels.com/photo/precision-dent-repair-in-automotive-workshop-37809549/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "car dent repair bodywork garage"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-stanislav/services.avif",
+      "alt": "Natančna avtoličarska in kleparska dela na avtomobilu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-stanislav/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37809576",
+      "sourceUrl": "https://www.pexels.com/photo/detailing-expert-polishing-car-in-workshop-37809576/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih avtokleparskih in avtoličarskih del. Končna cena je odvisna od obsega poškodb.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Avtokleparska dela (ura dela)",
+        "description": "Popravilo karoserije in ravnanje pločevine",
+        "price": "od 40 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Avtoličarska dela (ura dela)",
+        "description": "Priprava površine in lakiranje",
+        "price": "od 45 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Lakiranje posameznega elementa",
+        "description": "Barvanje in lakiranje enega dela karoserije (npr. blatnik, odbijač)",
+        "price": "od 150 €",
+        "unit": "kos",
+        "featured": true
+      },
+      {
+        "name": "Sanacija manjših prask in udrtin",
+        "description": "Lokalno popravilo manjših poškodb",
+        "price": "od 80 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Popravilo poškodb po toči",
+        "description": "Ocenitev in sanacija toče na vozilu",
+        "price": "Po ogledu",
+        "unit": "vozilo"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "avtokleparji licarji · Statistike in zaupanje"
+  },
+  "metadata": {
+    "title": "QA katalog: avtokleparji-licarji — Statistike in zaupanje",
+    "description": "Številke/statistike, zaupanje — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovna popravila vozil",
+    "title": "Kakovostna avtokleparska in avtoličarska dela za",
+    "titleHighlight": "vaše vozilo",
+    "description": "Zanesljive storitve za lastnike osebnih in lahkih gospodarskih vozil v Logatcu z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Zadovoljne stranke",
+        "title": "Visoka ocena"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Strokovna izvedba",
+        "title": "Natančnost"
+      },
+      {
+        "value": "Vse na enem mestu",
+        "label": "Kleparstvo in ličarstvo",
+        "title": "Vse na enem mestu"
+      },
+      {
+        "value": "Logatec",
+        "label": "Z okolico",
+        "title": "Lokalna storitev"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita popravila karoserije in lakiranje",
+    "description": "Poskrbimo za vaš avtomobil z natančnimi kleparskimi in l<bos>20licharskimi deli na enem mestu v Logatcu.",
+    "items": [
+      {
+        "title": "Avtokleparska dela",
+        "description": "Strokovno popravilo karoserije in ravnanje pločevine na vašem vozilu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Avtoličarske storitve",
+        "description": "Kakovostno lakiranje vozil z uporabo preverjenih materialov in tehnologij.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravilo poškodb po toči",
+        "description": "Sanacija udrtin in poškodb nastalih zaradi toče brez poškodbe laka, kjer je to mogoče.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija prask in udrtin",
+        "description": "Odstranjevanje manjših prask, udrtin in drugih površinskih poškodb na karoseriji.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Lakiranje vozil",
+        "description": "Popolno ali delno barvanje in lakiranje vozil za osvežitev videza ali sanacijo poškodb.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za popravilo vašega vozila",
+    "description": "Zavedamo se pomena varnosti in urejenosti vašega avtomobila, zato vsakemu delu posvetimo vso pozornost.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Natančna in strokovna izvedba popravil",
+      "Zanesljive storitve na enem mestu"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Naše delo temelji na dobrih izkušnjah in visoki oceni strank.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Natančno odpravljamo poškodbe na karoseriji in poskrbimo za videz vozila.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Vse na enem mestu",
+        "description": "Združujemo avtokleparska in avtoličarska dela za celovito obravnavo.",
+        "title": "Vse na enem mestu"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali nas obiščite v delavnici v Logatcu za pregled vozila in dogovor o popravilu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "IOC Zapolje IV 5, 1370 Logatec, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 403 608",
+        "href": "tel:041403608",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 8:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in stopili bomo v stik z vami glede popravila vašega vozila.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite poškodbo ali želeno storitev",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "IOC Zapolje IV 5, 1370 Logatec, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Avtokleparstvo in Avtoličarstvo Stanislav Rode s.p.",
+    "address": "IOC Zapolje IV 5, 1370 Logatec, Slovenia",
+    "email": "",
+    "phone": "041 403 608"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-01-classic-split",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-01-sand",
+    "fontPairingId": "look-mizarji-tesarji-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-podkriznik-matjaz/hero.avif",
+      "alt": "Mizarska delavnica z izdelavo pohištva po meri",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-podkriznik-matjaz/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5711815",
+      "sourceUrl": "https://www.pexels.com/photo/crop-woodworker-grinding-wooden-plank-5711815/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "custom wooden furniture workshop craftsman woodworking dark mood"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-podkriznik-matjaz/services.avif",
+      "alt": "Izdelava unikatnih lesenih izdelkov in notranje opreme",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mizarstvo-podkriznik-matjaz/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30499654",
+      "sourceUrl": "https://www.pexels.com/photo/rustic-workshop-interior-with-artistic-tools-30499654/",
+      "photographer": "Halil İbrahim  ÇETİN",
+      "photographerUrl": "https://www.pexels.com/@halilibrahimctn",
+      "searchQuery": "wooden interior design craftsmanship custom furniture workshop dark"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene storitev",
+    "description": "Ker je vsak kos pohištva unikat, so cene informativne narave in odvisne od mer, materialov ter zahtevnosti izdelave.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pohištvo po meri",
+        "description": "Izdelava unikatnega pohištva po vaših merah",
+        "price": "Po ponudbi",
+        "featured": true
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Opremljanje prostorov in vgradnja",
+        "price": "Po ponudbi"
+      },
+      {
+        "name": "Unikatni leseni izdelki",
+        "description": "Manjši leseni kosi in dodatki",
+        "price": "Od 50 €"
+      },
+      {
+        "name": "Adaptacije in montaža",
+        "description": "Montaža in manjše prilagoditve na domu",
+        "price": "Od 35 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "mizarji tesarji · Klasičen split"
+  },
+  "metadata": {
+    "title": "QA katalog: mizarji-tesarji — Klasičen split",
+    "description": "Klasičen split hero, kartice z border — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarske storitve po meri",
+    "title": "Vrhunska mizarstva in kakovostna",
+    "titleHighlight": "izdelava po meri",
+    "description": "Strokovna izdelava pohištva po meri in notranje opreme za lastnike stanovanj in hiš v Novem mestu z okolico.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Vrhunska kakovost",
+        "label": "Vrhunska kakovost"
+      },
+      {
+        "value": "Natančna izdelava",
+        "label": "Natančna izdelava"
+      },
+      {
+        "value": "Zanesljiv pristop",
+        "label": "Zanesljiv pristop"
+      },
+      {
+        "value": "Osebne rešitve",
+        "label": "Osebne rešitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Kaj nudimo",
+    "description": "Celovite mizarske storitve in izdelava pohištva po meri za vaš dom v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Izdelava unikatnega pohištva, prilagojenega vašemu prostoru, željam in potrebam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celovite rešitve za opremljanje notranjih prostorov z lesom in kakovostnimi materiali.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Unikatni leseni izdelki",
+        "description": "Ročno izdelani leseni kosi, ki vašemu domu dodajo poseben čar in domačnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Adaptacije in montaža",
+        "description": "Strokovna vgradnja in montaža pohištva ter prenovitvena dela na leseni opremi.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše mizarske projekte",
+    "description": "Združujemo tradicionalno kakovost, natančnost in posluh za stranke.",
+    "highlights": [
+      "Vrhunska kakovost izdelave in natančnost",
+      "Zanesljiv in prijazen pristop do strank",
+      "Dolgoročne izkušnje in zaupanja vreden mojster"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Vsak izdelek je narejen z natančnostjo in posluhom za detajle.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Zanesljiv pristop",
+        "description": "Držimo se dogovorov in poskrbimo za prijetno izkušnjo sodelovanja.",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "label": "Dolgoročne izkušnje",
+        "description": "Zaupanja vreden mojster z bogatimi izkušnjami na področju mizarstva.",
+        "title": "Dolgoročne izkušnje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti izdelavo pohištva? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ždinja vas 15, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 610 983",
+        "href": "tel:041610983",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Vnesite svoje podatke in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Ždinja vas 15, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Podkrižnik",
+    "address": "Ždinja vas 15, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 610 983"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

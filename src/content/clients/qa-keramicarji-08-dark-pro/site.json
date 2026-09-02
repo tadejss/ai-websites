@@ -1,0 +1,222 @@
+{
+  "appearance": "construction",
+  "lookId": "keramicarji-08-dark-pro",
+  "theme": {
+    "paletteId": "look-keramicarji-08-copper",
+    "fontPairingId": "look-keramicarji-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/keramicarstvo-mubi-igor/hero.jpg",
+      "alt": "Strokovno polaganje keramičnih ploščic v notranjih prostorih"
+    },
+    "services": {
+      "src": "/clients/keramicarstvo-mubi-igor/services.jpg",
+      "alt": "Natančno polaganje keramike in prenova kopalnice"
+    }
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "keramicarji · Temni profesionalen"
+  },
+  "metadata": {
+    "title": "QA katalog: keramicarji — Temni profesionalen",
+    "description": "Profesionalen, kompakten (dark za trade) — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovne keramičarske storitve",
+    "title": "Strokovno in zanesljivo polaganje keramike za",
+    "titleHighlight": "vaš dom",
+    "description": "Kakovostno polaganje stenske in talne keramike ter prenove kopalnic za lastnike hiš, stanovanj in investitorje na območju Preddvora in širše.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Točnost",
+        "label": "in zanesljivost"
+      },
+      {
+        "value": "Visoka",
+        "label": "strokovnost"
+      },
+      {
+        "value": "Natančna",
+        "label": "izdelava"
+      },
+      {
+        "value": "Preddvor",
+        "label": "in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske rešitve",
+    "description": "Nudimo kakovostne storitve polaganj keramike in prenove za objekte v Preddvoru in okolici.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno polaganje stenskih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Strokovna izvedba talnih oblog iz keramike za dolgotrajno obstojnost.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenova kopalnic",
+        "description": "Celovite prenove kopalnic z zanesljivim pristopom in posluhom za želje strank.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblačenje stopnic v keramiko",
+        "description": "Estetsko in natančno oblaganje notranjih ter zunanjih stopnic s keramiko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanje keramičarske storitve",
+        "description": "Polaganje keramike na terasah, balkonih in zunanjih površinah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Gradimo na zaupanju, strokovnosti in dostopnih cenah za vsak dom.",
+    "highlights": [
+      "Točnost in zanesljivost pri vsakem projektu",
+      "Visoka strokovnost in natančna izvedba",
+      "Dostopne cene storitev za vsak žep",
+      "Prilagojen in domač pristop k strankam"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivost",
+        "label": "Zanesljivost in točnost",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za urejeno delo.",
+        "title": "Zanesljivost in točnost"
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "Strokovnost in natančnost",
+        "description": "Visoka raven natančnosti pri vsakem položenem kosu keramike.",
+        "title": "Strokovnost in natančnost"
+      },
+      {
+        "stat": "Dostopnost",
+        "label": "Dostopnost in poštenost",
+        "description": "Ponujamo dostopne cene storitev brez skritih stroškov.",
+        "title": "Dostopnost in poštenost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za ponudbo ali posvet o vašem naslednjem keramičarskem projektu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tupaliče 77, 4205 Preddvor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 257 377",
+        "href": "tel:031257377",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Sob: 8:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Tupaliče 77, 4205 Preddvor, Slovenia",
+    "rights": "© 2025 KERAMIČARSTVO MUBI Igor Mubi s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "KERAMIČARSTVO MUBI Igor Mubi s.p.",
+    "address": "Tupaliče 77, 4205 Preddvor, Slovenia",
+    "email": "",
+    "phone": "031 257 377"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-21",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

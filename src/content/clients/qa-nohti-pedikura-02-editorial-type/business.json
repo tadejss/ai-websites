@@ -1,0 +1,29 @@
+{
+  "companyName": "QA Katalog · nohti-pedikura — Uredniški tipografski",
+  "industry": "Salon za nohte",
+  "tagline": "Strokovna nega in estetsko urejanje nohtov v centru Ljubljane",
+  "services": [
+    "Manikura",
+    "Geliranje nohtov",
+    "Trajni lak",
+    "Nega rok",
+    "Poslikava nohtov"
+  ],
+  "phone": "071 466 325",
+  "email": "",
+  "address": "Miklošičeva c. 3, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 8:00 PM · Tuesday: 9:00 AM – 8:00 PM · Wednesday: 9:00 AM – 8:00 PM · Thursday: 9:00 AM – 8:00 PM · Friday: 9:00 AM – 8:00 PM · Saturday: 9:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Natančna in strokovna izvedba",
+    "Prijeten ambient v središču mesta",
+    "Prilagodljiv delovni čas"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo urejen videz nohtov in kakovostno nego rok",
+  "serviceArea": "Ljubljana",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "moderen in urejen salon",
+  "competitors": "Lokalni saloni za nohte v Ljubljani",
+  "callToAction": "Rezervirajte termin"
+}

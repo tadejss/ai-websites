@@ -1,0 +1,291 @@
+{
+  "appearance": "beauty",
+  "lookId": "frizerji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-frizerji-03-bloom",
+    "fontPairingId": "look-frizerji-03"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "alt": "Svetel in urejen ženski frizerski salon v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.webp",
+      "width": 908,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7750101",
+      "sourceUrl": "https://www.pexels.com/photo/vanity-mirror-with-black-rolling-chair-7750101/",
+      "photographer": "Max Vakhtbovych",
+      "photographerUrl": "https://www.pexels.com/@artbovich",
+      "searchQuery": "modern hair salon interior natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/services.avif",
+      "alt": "Strokovne frizerske storitve barvanja in nege las",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/services.webp",
+      "width": 919,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7750144",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-black-chair-and-a-mirror-with-a-ring-light-7750144/",
+      "photographer": "Max Vakhtbovych",
+      "photographerUrl": "https://www.pexels.com/@artbovich",
+      "searchQuery": "modern hair salon interior natural light"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik frizerskih storitev",
+    "description": "Pregled okvirnih cen za naše osnovne frizerske storitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in točne ponudbe glede na dolžino las nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Žensko striženje",
+        "description": "Striženje, pranje in sušenje",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Barvanje las",
+        "description": "Barvanje narastka ali celotnih las",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Prameni / Balayage",
+        "description": "Ustvarjanje globine in naravnih prelivov",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Svečana frizura",
+        "description": "Pričeska za posebne priložnosti",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Nega in obnova las",
+        "description": "Globinski regeneracijski tretma",
+        "price": "od 20 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "frizerji · Foto v ospredju"
+  },
+  "metadata": {
+    "title": "QA katalog: frizerji — Foto v ospredju",
+    "description": "Velika fotografija, minimalni UI — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Frizerski salon v Ljubljani",
+    "title": "Strokovno žensko frizerstvo za vaš",
+    "titleHighlight": "popoln izgled",
+    "description": "Prilagojen pristop, strokovno svetovanje in sproščen ambient za vse ženske, ki iščejo vrhunske frizerske storitve v Ljubljani z okolico.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Sproščen ambient",
+        "label": "Sproščen ambient",
+        "title": "Sproščen ambient"
+      },
+      {
+        "value": "Strokovno delo",
+        "label": "Strokovno delo",
+        "title": "Strokovno delo"
+      },
+      {
+        "value": "Center Ljubljane",
+        "label": "Center Ljubljane",
+        "title": "Center Ljubljane"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše lase",
+    "description": "Poskrbimo za zdravje, lesk in popolno obliko vaših las z izbranimi frizerskimi storitvami.",
+    "items": [
+      {
+        "title": "Žensko striženje",
+        "description": "Moderne in klasične frizure, prilagojene obliki vašega obraza in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Barvanje las",
+        "description": "Kakovostni barvni odtenki za sijoče in obstojne barve vaših las.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prameni in balayage",
+        "description": "Umetnost naravnih prelivov in svetlejših pramenov za globino in dimenzijo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Frizure za posebne priložnosti",
+        "description": "Elegantne in svečane pričeske za poroke, zabave in druge pomembne dogodke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega in obnova las",
+        "description": "Globinska regeneracija in hranilni tretmaji za poškodovane in utrujene lase.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Posvečeni lepoti in zdravju vaših las",
+    "description": "V našem salonu se posvetimo vsaki stranki posebej ter poskrbimo za udobje in vrhunski končni rezultat.",
+    "highlights": [
+      "Prilagojen pristop in posvečenost vsaki stranki",
+      "Udoben in sproščen ambient v centru Ljubljane",
+      "Odlične ocene in zaupanje zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "label": "Osebni pristop",
+        "description": "Prilagojen pristop in posvečenost vsaki stranki posebej.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Udoben in sproščen ambient v centru Ljubljane.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljne stranke cenijo našo strokovnost in trud.",
+        "title": "Odlične ocene"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših frizerskih storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Vošnjakova ulica 5, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 945 232",
+        "href": "tel:041945232",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre, Čet: 6:00–14:00 · Tor: 13:00–19:30 · Pet: 6:00–12:00 · Sob: 7:00–12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in z veseljem vam bomo odgovorili ter potrdili termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Vošnjakova ulica 5, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Studio \"Moj Frizer\"",
+    "address": "Vošnjakova ulica 5, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 945 232"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

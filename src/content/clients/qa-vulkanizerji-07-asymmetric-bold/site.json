@@ -1,0 +1,204 @@
+{
+  "appearance": "auto",
+  "lookId": "vulkanizerji-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-vulkanizerji-07-linen",
+    "fontPairingId": "look-vulkanizerji-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/vulkanizerstvo-izdelava-kljucev/hero.jpg",
+      "alt": "Avtovulkanizerska delavnica z opremo za premontažo pnevmatik"
+    },
+    "services": {
+      "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg",
+      "alt": "Natančna izdelava ključev v delavnici"
+    }
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "vulkanizerji · Asimetričen bold"
+  },
+  "metadata": {
+    "title": "QA katalog: vulkanizerji — Asimetričen bold",
+    "description": "Asimetričen layout, bold accent — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za termin"
+  },
+  "hero": {
+    "badge": "Lokalni ponudnik v Cerknici",
+    "title": "Hitre vulkanizerske storitve in",
+    "titleHighlight": "natančna izdelava ključev",
+    "description": "Zanesljive rešitve za lastnike vozil in prebivalce v regiji Cerknica z okolico ter mimoidoče voznike. Poskrbimo za vaše vozilo in varnost na cesti.",
+    "primaryCta": "Pokličite za termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hiter",
+        "label": "Odziv na klic"
+      },
+      {
+        "value": "Natančna",
+        "label": "Izdelava ključev"
+      },
+      {
+        "value": "Poštena",
+        "label": "Postrežba"
+      },
+      {
+        "value": "Ugodne",
+        "label": "Cene storitev"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše vozilo in varnost",
+    "description": "Specializirani smo za vulkanizerska dela in izdelavo ključev za stranke v Cerknici z okolico.",
+    "items": [
+      {
+        "title": "Premontaža in centriranje pnevmatik",
+        "description": "Strokovna premontaža in natančno centriranje pnevmatik za varno vožnjo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Menjava pnevmatik",
+        "description": "Hitra in učinkovita menjava pnevmatik za sezonske potrebe vašega vozila.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Izdelava ključev",
+        "description": "Kakovostna in natančna izdelava ključev za različne namene.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Hitra pomoč na cesti",
+        "description": "Zanesljiv in hiter odziv ter pomoč, ko jo najbolj potrebujete.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Domač in zaupanja vreden lokalni ponudnik",
+    "description": "Zavedamo se pomembnosti hitre in zanesljive storitve za voznike v regiji.",
+    "highlights": [
+      "Hiter in zanesljiv odziv na klic",
+      "Prijazna in poštena postrežba",
+      "Ugodne cene za vsakogar"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivost",
+        "label": "Hitri odzivi",
+        "description": "Hiter in zanesljiv odziv na klic, ko se znajdete v težavah.",
+        "title": "Hitri odzivi"
+      },
+      {
+        "stat": "Natančnost",
+        "label": "Kakovostno delo",
+        "description": "Kakovostna in natančna izdelava ključev ter vulkanizerske storitve.",
+        "title": "Kakovostno delo"
+      },
+      {
+        "stat": "Prijaznost",
+        "label": "Prijaznost Pošten odnos",
+        "description": "Prijazna in poštena postrežba z ugodnimi cenami za vse stranke.",
+        "title": "Prijaznost Pošten odnos"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pokličite nas ali nam pišite",
+    "description": "Na voljo smo za vprašanja, naročila na termin in hitro pomoč.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Sinja Gorica 23, 1380 Cerknica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali želeno storitev",
+      "submitLabel": "Pokličite za termin"
+    }
+  },
+  "footer": {
+    "address": "Sinja Gorica 23, 1380 Cerknica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Damjan Rodošek s.p.",
+    "address": "Sinja Gorica 23, 1380 Cerknica, Slovenia",
+    "email": ""
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

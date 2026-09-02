@@ -1,0 +1,216 @@
+{
+  "appearance": "elektro",
+  "lookId": "elektricarji-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-elektricarji-10-frost",
+    "fontPairingId": "look-elektricarji-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/elvip-elektroinstalacije-podboj/hero.jpg",
+      "alt": "Električar pri delu na sodobni električni napeljavi"
+    },
+    "services": {
+      "src": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "alt": "Strokovne elektroinštalacije in oprema"
+    }
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "elektricarji · Industrijski preprost"
+  },
+  "metadata": {
+    "title": "QA katalog: elektricarji — Industrijski preprost",
+    "description": "Brez kartic, industrijski — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni izvajalec",
+    "title": "Strokovne elektroinštalacije za",
+    "titleHighlight": "vaš dom in poslovne prostore",
+    "description": "Nudimo zanesljive in strokovne elektroinštalacije za lastnike stanovanj, hiš in poslovnih objektov v Postojni z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Hiter",
+        "label": "Odzivni čas"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Pristop"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Izvajalec"
+      },
+      {
+        "value": "Postojna",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite elektroinštalacijske rešitve",
+    "description": "Poskrbimo za varno, sodobno in zanesljivo delovanje električnih sistemov v vaših objektih na območju Postojne z okolico.",
+    "items": [
+      {
+        "title": "Montaža električnih napeljav",
+        "description": "Strokovna vgradnja in montaža novih električnih napeljav za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije in prenove inštalacij",
+        "description": "Celovite prenove in posodobitve obstoječih elektro inštalacij v skladu z varnostnimi predpisi.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje elektro sistemov",
+        "description": "Redno vzdrževanje in pregledi za nemoteno ter varno delovanje vaših električnih sistemov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vgradnja razsvetljave",
+        "description": "Strokovna montaža notranje in zunanje razsvetljave za vaše prostore.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Odpravljanje napak in okvar",
+        "description": "Hitro odkrivanje in odpravljanje električnih okvar ter težav na inštalacijah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne sisteme",
+    "description": "Z združevanjem strokovnosti, hitrega odziva in posluha za stranke zagotavljamo kakovostno izvedbo vseh del.",
+    "highlights": [
+      "Hiter odzivni čas na vsakem koraku",
+      "Strokovna izvedba del v skladu z dogovori",
+      "Poudarek na varnosti in kakovosti"
+    ],
+    "benefits": [
+      {
+        "stat": "Hiter",
+        "label": "Hiter",
+        "description": "Odzivamo se hitro in se prilagajamo vašim časovnim okvirjem ter potrebam.",
+        "title": "Hiter"
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Strokovno",
+        "description": "Vsa dela izvajamo natančno, strokovno in z ustreznim znanjem.",
+        "title": "Strokovno"
+      },
+      {
+        "stat": "Lokalni",
+        "label": "Lokalni",
+        "description": "Kot zanesljiv lokalni izvajalec smo vedno blizu, ko nas potrebujete.",
+        "title": "Lokalni"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Potrebujete elektroinštalacijske storitve ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 696 372",
+        "href": "tel:041696372",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Studeno 32a, 6230 Postojna, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Studeno 32a, 6230 Postojna, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "El-Vip elektroinštalacije",
+    "address": "Studeno 32a, 6230 Postojna, Slovenia",
+    "email": "",
+    "phone": "041 696 372"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

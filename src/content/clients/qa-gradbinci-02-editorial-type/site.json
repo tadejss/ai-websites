@@ -1,0 +1,216 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-02-editorial-type",
+  "theme": {
+    "paletteId": "look-gradbinci-02-slate",
+    "fontPairingId": "look-gradbinci-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/gradbenistvo-matkovic-zakljucna/hero.jpg",
+      "alt": "Strokoven gradbeni delavec med prenovo notranjih prostorov"
+    },
+    "services": {
+      "src": "/clients/gradbenistvo-matkovic-zakljucna/services.jpg",
+      "alt": "Kakovostna zaključna gradbena dela in prenova prostorov"
+    }
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "gradbinci · Uredniški tipografski"
+  },
+  "metadata": {
+    "title": "QA katalog: gradbinci — Uredniški tipografski",
+    "description": "Tipografija v ospredju, brez kartic — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovna gradbena dela",
+    "title": "Zanesljiva zaključna gradbena dela in",
+    "titleHighlight": "prenove za vaš dom",
+    "description": "Kakovostne prenovitve, adaptacije in zaključna gradbena dela za lastnike hiš, stanovanj in poslovnih prostorov v Novem mestu z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka",
+        "label": "Kakovost izvedbe"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "In strokovna ekipa"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Strankam"
+      },
+      {
+        "value": "Novo mesto",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše gradbene projekte",
+    "description": "Specializirani smo za zaključna gradbena dela, prenove in adaptacije ter poskrbimo za kakovostno izvedbo vseh del v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Zaključna gradbena dela",
+        "description": "Kakovostna izvedba vseh vrst zaključnih gradbenih del za dokončanje vaših objektov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove in adaptacije",
+        "description": "Celovite prenove hiš, stanovanj in poslovnih prostorov po vaših željah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Slikopleskarska dela",
+        "description": "Strokovno pleskanje sten, stropov in zaščita površin za svež videz vaših prostorov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Talne obloge in keramika",
+        "description": "Polaganje vseh vrst talnih oblog in keramičnih ploščic z natančnostjo.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše prenove",
+    "description": "Z odlikami, kot so strokovnost, prilagodljivost in visoka kakovost izvedbe, poskrbimo za brezskrbno izvedbo vaših projektov.",
+    "highlights": [
+      "Visoka kakovost izvedbe",
+      "Zanesljivost in strokovnost",
+      "Prilagodljivost strankam"
+    ],
+    "benefits": [
+      {
+        "stat": "Kakovost",
+        "label": "Visoki standardi",
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov.",
+        "title": "Visoki standardi"
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Dogovorjeni roki",
+        "description": "Držimo se dogovorov in zagotavljamo strokovno izvedbo del.",
+        "title": "Dogovorjeni roki"
+      },
+      {
+        "stat": "Prilagodljivost",
+        "label": "Geografska pokritost",
+        "description": "Delujemo v Novem mestu z okolico ter se prilagajamo vašim potrebam.",
+        "title": "Geografska pokritost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za ponudbo",
+    "description": "Imate vprašanje ali potrebujete prenovo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "064 122 605",
+        "href": "tel:064122605",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ob potoku 1a, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–17:00, Sob: 7:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ob potoku 1a, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Gradbeništvo Matković",
+    "address": "Ob potoku 1a, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "064 122 605"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-24",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

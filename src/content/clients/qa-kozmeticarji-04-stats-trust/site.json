@@ -1,0 +1,213 @@
+{
+  "appearance": "beauty",
+  "lookId": "kozmeticarji-04-stats-trust",
+  "theme": {
+    "paletteId": "look-kozmeticarji-04-stone",
+    "fontPairingId": "look-kozmeticarji-04"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/clients/kozmeticni-salon-lila/hero.jpg",
+      "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona"
+    },
+    "services": {
+      "src": "/clients/kozmeticni-salon-lila/services.jpg",
+      "alt": "Kozmetični pripomočki in urejen ambient za nego kože"
+    }
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "kozmeticarji · Statistike in zaupanje"
+  },
+  "metadata": {
+    "title": "QA katalog: kozmeticarji — Statistike in zaupanje",
+    "description": "Številke/statistike, zaupanje — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Novo mesto z okolico",
+    "title": "Strokovna nega kože in lepotni tretmaji v",
+    "titleHighlight": "Novem mestu",
+    "description": "Namenjeno vsem, ki skrbijo za zdravje in videz svoje kože ter cenijo topel, strokoven ter osebni pristop.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Individualen",
+        "label": "Pristop"
+      },
+      {
+        "value": "Topel",
+        "label": "Ambient"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Kadrovski pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Novo mesto"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše kozmetične storitve",
+    "description": "Celovite storitve za nego in lepoto vaše kože, prilagojene posamezniku v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Nega obraza",
+        "description": "Temeljita in prilagojena nega obraza za sijoč in zdrav videz vaše polti.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Tretmaji za pomlajevanje kože",
+        "description": "Najnovejši pristopi za obnovitev elastičnosti in mladostnega videza kože.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblikovanje obrvi in trepalnic",
+        "description": "Poudarite svojo naravno lepoto z natančnim oblikovanjem in nego.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Depilacija",
+        "description": "Učinkovito in dolgotrajno odstranjevanje dlačic za gladko kožo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Sprostitvene masaže",
+        "description": "Prepustite se trenutkom sprostitve in odpravite vsakodnevni stres.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti, ki jih cenijo naše stranke",
+    "description": "Združujemo strokovnost, prijeten ambient in visoko raven posvečenosti vsakemu posamezniku.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Strokoven in individualen pristop",
+      "Prijeten ambient za sprostitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Zadovoljstvo",
+        "label": "Visoke ocene",
+        "description": "Prizadevamo si za vrhunske rezultate in zadovoljstvo vsake stranke.",
+        "title": "Visoke ocene"
+      },
+      {
+        "stat": "Pristop",
+        "label": "Individualna obravnava",
+        "description": "Vsak tretma prilagodimo edinstvenim potrebam vaše kože.",
+        "title": "Individualna obravnava"
+      },
+      {
+        "stat": "Ambient",
+        "label": "Sproščujoče okolje",
+        "description": "Uživajte v mirnem in urejenem prostoru, ustvarjenem za vaš oddih.",
+        "title": "Sproščujoče okolje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Naročite se na svoj termin ali postavite vprašanje glede storitev.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 738 507",
+        "href": "tel:070738507",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ob Težki Vodi 29, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ob Težki Vodi 29, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kozmetični salon Lila",
+    "address": "Ob Težki Vodi 29, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "070 738 507"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-25",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

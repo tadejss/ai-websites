@@ -1,0 +1,289 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-slikopleskarji-10-frost",
+    "fontPairingId": "look-slikopleskarji-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-nagelj-srecko/hero.avif",
+      "alt": "Slikopleskar pri natančnem beljenju stene v notranjih prostorih",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-nagelj-srecko/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493655",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-a-wall-5493655/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "professional painter interior wall painting warm moody lighting"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-nagelj-srecko/services.avif",
+      "alt": "Strokovno nanašanje barve na steno z valjčkom",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-nagelj-srecko/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "1694980",
+      "sourceUrl": "https://www.pexels.com/photo/blue-and-orange-concrete-wall-1694980/",
+      "photographer": "Arın  Turkay",
+      "photographerUrl": "https://www.pexels.com/@arin-turkay-39583",
+      "searchQuery": "painter painting wall surface closeup warm mood"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Spodnje cene so informativne narave. Točna ponudba se pripravi po ogledu in popisu del.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ogled prostora nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje sten in stropov",
+        "description": "Dva nanosa kakovostne disperzijske barve",
+        "price": "od 3,50 € / m²",
+        "featured": true
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Priprava podlage in strokovno lepljenje tapet",
+        "price": "od 12,00 € / m²"
+      },
+      {
+        "name": "Pleskanje vrat in oken",
+        "description": "Brušenje, temeljni premaz in končni nanos",
+        "price": "od 45,00 € / kos"
+      },
+      {
+        "name": "Dekorativne tehnike",
+        "description": "Posebne obdelave in nanosi po izbiri",
+        "price": "od 20,00 € / m²"
+      },
+      {
+        "name": "Suhomontažna dela",
+        "description": "Montaža gips plošč (stene/stropi)",
+        "price": "od 25,00 € / m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "slikopleskarji · Industrijski preprost"
+  },
+  "metadata": {
+    "title": "QA katalog: slikopleskarji — Industrijski preprost",
+    "description": "Brez kartic, industrijski — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster v vaši bližini",
+    "title": "Kakovostno slikopleskarstvo in prenova prostorov v",
+    "titleHighlight": "Novem mestu",
+    "description": "Poskrbite za svežino vašega doma ali poslovnega prostora. Nudimo strokovno izvedbo pleskanja, polaganje tapet in dekorativne tehnike za lastnike stanovanj ter hiš.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Natančna izvedba del",
+        "title": "Natančna izvedba del"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Preverjeni materiali",
+        "title": "Preverjeni materiali"
+      },
+      {
+        "value": "Svetovanje",
+        "label": "Strokovni pristop",
+        "title": "Strokovni pristop"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Novo mesto z okolico",
+        "title": "Novo mesto z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Izvajamo vsa slikopleskarska in zaključna dela na območju Novega mesta z okolico. Zanesljivo, natančno in s posluhom za vaše želje.",
+    "items": [
+      {
+        "title": "Notranje beljenje sten in stropov",
+        "description": "Osvežitev in beljenje notranjih prostorov za čist in urejen videz vašega doma.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pleskanje vrat in oken",
+        "description": "Kakovostna obnova in zaščita lesenih ter kovinskih stavbnih elementov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Suhomontažna gradnja in sanacije",
+        "description": "Hitre in čiste rešitve za predelne stene, spuščene stropove ter sanacije.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Natančno lepljenje različnih vrst tapet za edinstven pridih vaših prostorov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Dekorativne tehnike pleskanja",
+        "description": "Posebni vizualni efekti in tehnike obdelave sten za sodoben izgled interierja.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za prenovo vašega doma",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke poskrbimo, da so dela opravljena pravočasno in po vaših željah.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Uporaba kakovostnih materialov",
+      "Prilagodljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za natančno izvedbo del.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporabljamo preverjene materiale, ki zagotavljajo dolgotrajen in lep izgled.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam ter nudimo strokovno svetovanje za vaš prostor.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti ogled in ponudbo? Pokličite nas ali izpolnite kontaktni obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 623 426",
+        "href": "tel:041623426",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Smolenja vas 34a, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potreben obseg dela...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Smolenja vas 34a, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Nagelj Srečko",
+    "address": "Smolenja vas 34a, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "041 623 426"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

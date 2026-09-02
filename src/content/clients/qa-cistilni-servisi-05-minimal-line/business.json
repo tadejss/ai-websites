@@ -1,0 +1,28 @@
+{
+  "companyName": "QA Katalog · cistilni-servisi — Minimalne črte",
+  "industry": "Čistilni servis",
+  "tagline": "Kakovostne in zanesljive storitve čiščenja za vaš dom ali pisarno",
+  "services": [
+    "Globinsko čiščenje",
+    "Generalno čiščenje",
+    "Čiščenje poslovnih prostorov",
+    "Čiščenje steklenih površin",
+    "Vzdrževalno čiščenje"
+  ],
+  "phone": "040 302 264",
+  "email": "",
+  "address": "Ragovska ulica 10, 8000 Novo mesto, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Open 24 hours · Sunday: Open 24 hours",
+  "sellingPoints": [
+    "Visoka kakovost opravljenega dela po ugodni ceni",
+    "Dostopnost 24 ur na dan, vse dni v tednu",
+    "Zanesljivost in strokovnost pri vsakem naročilu"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov v Novem mestu z okolico",
+  "serviceArea": "Novo mesto z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, ustrežljiv",
+  "brandStyle": "čist in zaupanja vreden",
+  "competitors": "Lokalni čistilni servisi in ponudniki vzdrževanja objektov",
+  "callToAction": "Pokličite nas"
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "QA Katalog · avtomehaniki — Uredniški tipografski",
+  "industry": "Avtomehanična delavnica",
+  "tagline": "Zanesljivo vzdrževanje in popravilo vašega vozila",
+  "services": [
+    "Redni servisi vozil",
+    "Menjava pnevmatik",
+    "Zavorni sistemi",
+    "Diagnostika napak",
+    "Splošna avtomehanična dela"
+  ],
+  "phone": "041 686 085",
+  "email": "",
+  "address": "Bitiče 1, 1270 Litija, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: 9:00 AM – 5:00 PM · Wednesday: Open 24 hours · Thursday: 9:00 AM – 5:00 PM · Friday: 9:00 AM – 5:00 PM · Saturday: Open 24 hours · Sunday: 9:00 AM – 5:00 PM",
+  "sellingPoints": [
+    "Prilagodljiv delovni čas",
+    "Izkušena in strokovna obravnava",
+    "Kakovostne avtomehanične storitve"
+  ],
+  "targetCustomers": "Lastniki osebnih in dostavnih vozil v regiji Litija",
+  "serviceArea": "Litija s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden avtoservis",
+  "competitors": "Lokalne avtoservisne delavnice v občini Litija",
+  "callToAction": "Rezervirajte termin"
+}

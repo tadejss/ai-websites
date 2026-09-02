@@ -1,0 +1,28 @@
+{
+  "companyName": "QA Katalog · maserji-wellness — Uredniški tipografski",
+  "industry": "Masažne storitve",
+  "tagline": "Sprostitvene in terapevtske masaže za vaše dobro počutje",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Terapevtska masaža",
+    "Masaža hrbta",
+    "Bolečinska masaža"
+  ],
+  "phone": "031 399 463",
+  "email": "",
+  "address": "Adamičeva cesta 1c, 1290 Grosuplje, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prilagojen pristop k strankam",
+    "Strokovne masažne storitve",
+    "Prijeten in sproščujoč ambient"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje bolečin v mišicah in izboljšanje počutja",
+  "serviceArea": "Grosuplje z okolico",
+  "yearsExperience": "",
+  "tone": "topel, strokoven, sproščen",
+  "brandStyle": "domače, zanesljivo, butično",
+  "competitors": "Lokalni ponudniki masaž in wellness storitev",
+  "callToAction": "Rezervirajte termin"
+}

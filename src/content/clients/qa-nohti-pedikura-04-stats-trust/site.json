@@ -1,0 +1,295 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-04-stats-trust",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-04-stone",
+    "fontPairingId": "look-nohti-pedikura-04"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/valnailsstudio/hero.avif",
+      "alt": "Moderen salon za nohte v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/valnailsstudio/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997381",
+      "sourceUrl": "https://www.pexels.com/photo/person-with-red-nail-polish-3997381/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/valnailsstudio/services.avif",
+      "alt": "Strokovna nega in urejanje nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/valnailsstudio/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997359",
+      "sourceUrl": "https://www.pexels.com/photo/white-red-and-blue-hanging-decor-3997359/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Cene storitev",
+    "description": "Informativni cenik naših storitev za nego in urejanje nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in nanos zaščitnega laka.",
+        "price": "od 25 €",
+        "featured": false
+      },
+      {
+        "name": "Trajni lak",
+        "description": "Urejanje nohtov in nanos obstojnega trajnega laka.",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Geliranje nohtov",
+        "description": "Podaljševanje ali utrjevanje nohtov z gelom.",
+        "price": "od 45 €",
+        "featured": false
+      },
+      {
+        "name": "Nega rok",
+        "description": "Piling, hranljiva maska in masaža rok.",
+        "price": "od 20 €",
+        "featured": false
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Zahtevnejši vzorci in unikatni okraski na noht",
+        "price": "od 5 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "nohti pedikura · Statistike in zaupanje"
+  },
+  "metadata": {
+    "title": "QA katalog: nohti-pedikura — Statistike in zaupanje",
+    "description": "Številke/statistike, zaupanje — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Moderen in urejen salon v Ljubljani",
+    "title": "Strokovna nega in estetika vaših",
+    "titleHighlight": "nohtov",
+    "description": "Nudimo celovito nego rok in nohtov za vse, ki cenijo urejen videz in profesionalni pristop v središču mesta.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovna nega",
+        "label": "Strokovna nega",
+        "title": "Strokovna nega"
+      },
+      {
+        "value": "Center Ljubljane",
+        "label": "Center Ljubljane",
+        "title": "Center Ljubljane"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba",
+        "title": "Natančna izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve nege in urejanja nohtov",
+    "description": "Izberite storitev za urejene roke in dolgotrajen sijaj vaših nohtov v Ljubljani.",
+    "items": [
+      {
+        "title": "Manikura",
+        "description": "Celovita nega obnohtne kožice, oblikovanje in urejanje naravnih nohtov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Geliranje nohtov",
+        "description": "Podaljševanje in utrjevanje nohtov z gelom za čudovit in obstojen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Trajni lak",
+        "description": "Obstojna barva in sijaj, ki poskrbita za brezhibne nohte več tednov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega rok",
+        "description": "Hranljiva nega za mehko kožo in zdrave roke v vsakem letnem času.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Kreativni vzorci in unikatni detajli za poseben videz vaših nohtov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega studia za nohte",
+    "description": "Posvečeni smo kakovosti, natančnosti in vašemu dobremu počutju.",
+    "highlights": [
+      "Natančna in strokovna izvedba",
+      "Prijeten ambient v središču mesta",
+      "Prilagodljiv delovni čas"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsaki stranki se posvetimo individualno in poskrbimo za brezhiben končni rezultat.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščeno in urejeno okolje v centru Ljubljane za vaše popolno udobje.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagodljiv delovni čas za lažje usklajevanje vaših obveznosti.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas obiščite v salonu v centru Ljubljane.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Miklošičeva c. 3, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "071 466 325",
+        "href": "tel:071466325",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–20:00, Sob: 9:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Miklošičeva c. 3, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Val Nails Studio",
+    "address": "Miklošičeva c. 3, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "071 466 325"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

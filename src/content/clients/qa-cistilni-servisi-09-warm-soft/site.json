@@ -1,0 +1,289 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-09-warm-soft",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-09-dusk",
+    "fontPairingId": "look-cistilni-servisi-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zangor/hero.avif",
+      "alt": "Profesionalno čiščenje svetlih poslovnih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zangor/hero.webp",
+      "width": 864,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30303848",
+      "sourceUrl": "https://www.pexels.com/photo/cozy-modern-beauty-parlor-interior-design-30303848/",
+      "photographer": "Hard way",
+      "photographerUrl": "https://www.pexels.com/@hard-way-1874532183",
+      "searchQuery": "professional cleaning service modern bright office interior teal palette"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zangor/services.avif",
+      "alt": "Globinsko in generalno čiščenje čistega doma",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zangor/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4374743",
+      "sourceUrl": "https://www.pexels.com/photo/scenery-of-pure-turquoise-seawater-4374743/",
+      "photographer": "Curioso Photography",
+      "photographerUrl": "https://www.pexels.com/@curiosophotography",
+      "searchQuery": "deep cleaning service sparkling clean modern living room ocean teal"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega ter zahtevnosti dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Vzdrževalno čiščenje",
+        "description": "Redno čiščenje poslovnih ali stanovanjskih prostorov",
+        "price": "od 20 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnih prostorov",
+        "price": "od 150 €",
+        "unit": "objekt"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Čiščenje sedežnih garnitur in preprog",
+        "price": "od 50 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Čiščenje steklenih površin",
+        "description": "Pranje oken in steklenih fasad",
+        "price": "od 30 €",
+        "unit": "storitev"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "cistilni servisi · Topel mehek"
+  },
+  "metadata": {
+    "title": "QA katalog: cistilni-servisi — Topel mehek",
+    "description": "Mehke sence, pill gumbi — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo čiščenje 24/7",
+    "title": "Čistejši prostori za vaš",
+    "titleHighlight": "dom in pisarno",
+    "description": "Zagotavljamo visoko kakovost opravljenega dela po ugodni ceni za lastnike stanovanj, hiš in poslovnih prostorov v Novem mestu z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Dostopnost vsak dan"
+      },
+      {
+        "value": "Ugodno",
+        "label": "Kakovost po dostopni ceni"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Novo mesto z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite storitve čiščenja",
+    "description": "Poskrbimo za popolno čistočo vaših prostorov, bodisi gre za dom ali poslovni objekt v Novem mestu z okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Generalno čiščenje",
+        "description": "Celovito generalno čiščenje celotnih objektov ob vseh priložnostih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno vzdrževanje čistoče v vaših pisarnah in poslovnih prostorih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje steklenih površin",
+        "description": "Čiščenje oken, izložb in vseh ostalih steklenih površin za popoln sijaj.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževalno čiščenje",
+        "description": "Redno vzdrževanje čistoče za urejen in prijeten vsakdanji ambient.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za čistočo",
+    "description": "Z združevanjem strokovnosti, prilagodljivosti in dostopnosti poskrbimo, da so vaše zahteve vedno izpolnjene.",
+    "highlights": [
+      "Visoka kakovost opravljenega dela po ugodni ceni",
+      "Dostopnost 24 ur na dan, vse dni v tednu",
+      "Zanesljivost in strokovnost pri vsakem naročilu"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Zagotavljamo vrhunske rezultate in visoko raven čistosti po ugodni ceni.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Stalna dostopnost",
+        "description": "Na voljo smo vam 24 ur na dan, vse dni v tednu za vsa nujna in redna čiščenja.",
+        "title": "Stalna dostopnost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Strokovno in zanesljivo pristopamo k vsakemu naročilu ter se držimo dogovorov.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Na voljo smo vam 24 ur na dan. Pokličite nas ali nam pošljite sporočilo za dogovor o čiščenju.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ragovska ulica 10, 8000 Novo mesto, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 302 264",
+        "href": "tel:040302264",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Ned: 00:00 - 24:00 (24/7)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ragovska ulica 10, 8000 Novo mesto, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilni servis Žangor",
+    "address": "Ragovska ulica 10, 8000 Novo mesto, Slovenia",
+    "email": "",
+    "phone": "040 302 264"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-30",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -117,6 +117,8 @@ Curated **160 looks** (16 image-pool categories × 10 archetypes) live under `sr
 
 **Backward compat:** existing `site.json` without `lookId` render unchanged. Optional backfill: `npm run backfill-look-ids` (skip existing unless `--force`).
 
+**QA catalog previews:** `npm run create-look-demos` builds 160 internal pages at slug `qa-{lookId}` (e.g. `qa-frizerji-01-classic-split`). These are not factory leads — no `saveLead`, neutral `QA` branding, content cloned from one real client per category for images only.
+
 **Validation:** `npm run validate-catalog` (WCAG AA + uniqueness per category).
 
 ---

@@ -1,0 +1,291 @@
+{
+  "appearance": "construction",
+  "lookId": "vodovodarji-ogrevanje-06-service-grid",
+  "theme": {
+    "paletteId": "look-vodovodarji-ogrevanje-06-clay",
+    "fontPairingId": "look-vodovodarji-ogrevanje-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "alt": "Vodovodni mojster pri popravilu inštalacij v kopalnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32588555",
+      "sourceUrl": "https://www.pexels.com/photo/technician-performing-air-conditioning-maintenance-32588555/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "heating system maintenance professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif",
+      "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32588548",
+      "sourceUrl": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber working on pipes installation"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostejših vodovodnih in inštalaterskih del.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura vodovodnih del",
+        "description": "Standardno vodovodno delo ali popravilo",
+        "price": "od 35 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Priklop sanitarne opreme",
+        "description": "Montaža pipe, umivalnika ali WC školjke",
+        "price": "od 45 €",
+        "unit": "kos",
+        "featured": true
+      },
+      {
+        "name": "Manjša popravila in odpravljanje puščanj",
+        "description": "Hitra intervencija pri okvarah",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Informativni začetni znesek za prenovo",
+        "price": "po ogledu"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "vodovodarji ogrevanje · Mreža storitev"
+  },
+  "metadata": {
+    "title": "QA katalog: vodovodarji-ogrevanje — Mreža storitev",
+    "description": "Storitve v gridu, hero krajši — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovne vodovodne storitve",
+    "title": "Zanesljive vodovodne inštalacije in popravila v",
+    "titleHighlight": "Grosupljem z okolico",
+    "description": "Strokovne rešitve za lastnike stanovanj, hiš in poslovnih objektov. Hitra odzivnost, prilagodljivost in dolgoletne izkušnje.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "Odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "In strokovno",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Za stranke",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Grosuplje z okolico",
+        "title": "Lokalni mojster"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite vodovodne storitve na enem mestu",
+    "description": "Poskrbimo za kakovostno izvedbo vseh vrst vodovodnih del, adaptacij kopalnic in hitra popravila v Grosupljem z okolico.",
+    "items": [
+      {
+        "title": "Montaža vodovodnih inštalacij",
+        "description": "Strokovna vgradnja novih vodovodnih inštalacij za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od razpeljave cevi do priklopa sanitarne opreme.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Popravila okvar in puščanj",
+        "description": "Hitro odkrivanje in odpravljanje napak ter puščanj na vodovodnem omrežju.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priklop sanitarne opreme",
+        "description": "Montaža in priklop vseh vrst sanitarne opreme, armatur ter naprav.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vzdrževanje vodovodnega omrežja",
+        "description": "Redni pregledi in vzdrževalna dela za nemoteno delovanje vašega vodovoda.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše vodovodne inštalacije",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke zagotavljamo visoko kakovost vseh opravljenih del.",
+    "highlights": [
+      "Hitra odzivnost na nujne klice in povpraševanja",
+      "Zanesljiva in strokovna izvedba del",
+      "Osebni pristop in prilagajanje vašim željam"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra odzivnost",
+        "description": "Na vaše klice se odzivamo hitro in poskrbimo za pravočasno rešitev težav.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Dolgoletne izkušnje in zanesljiva izvedba vodovodnih del na terenu.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim potrebam in se prilagodimo vašemu urniku ter željam.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete vodovodno inštalacijo, prenovo kopalnice ali hitro popravilo? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 820 621",
+        "href": "tel:041820621",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Taborska cesta 7, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Po dogovoru",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali težavo...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Taborska cesta 7, 1290 Grosuplje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vodovodne inštalacije Marjan Kocman s.p.",
+    "address": "Taborska cesta 7, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "041 820 621"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-01",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

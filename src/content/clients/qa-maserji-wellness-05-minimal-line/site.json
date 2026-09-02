@@ -1,0 +1,289 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-05-minimal-line",
+  "theme": {
+    "paletteId": "look-maserji-wellness-05-mist",
+    "fontPairingId": "look-maserji-wellness-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "alt": "Sprostitvena masaža v prijetnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16574941",
+      "sourceUrl": "https://www.pexels.com/photo/beauty-portrait-blonde-woman-applying-cosmetics-face-mask-on-face-16574941/",
+      "photographer": "Vlad Deep",
+      "photographerUrl": "https://www.pexels.com/@vlad-deep-29415806",
+      "searchQuery": "professional skincare treatment spa tools copper clay aesthetic"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/services.avif",
+      "alt": "Terapevtska masaža za lajšanje napetosti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32216281",
+      "sourceUrl": "https://www.pexels.com/photo/modern-office-space-with-minimalist-design-32216281/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "deep cleaning service sparkling clean office interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled rednih masažnih storitev za vaše dobro počutje.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in proste termine nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Masaža celega telesa (60 min)",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Aromaterapevtski pridih za umiritev (60 min)",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Terapevtska masaža",
+        "description": "Ciljna obravnava težavnih predelov (45 min)",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Masaža hrbta",
+        "description": "Sproščanje hrbta in vratu (30 min)",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Intenzivnejša obravnava za lajšanje bolečin (50 min)",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "QA",
+    "highlight": "maserji wellness · Minimalne črte"
+  },
+  "metadata": {
+    "title": "QA katalog: maserji-wellness — Minimalne črte",
+    "description": "Tanke črte, veliko whitespace — notranji QA preview (ne lead)."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažne storitve Mojca Struna s.p.",
+    "title": "Sprostitvene in terapevtske masaže za",
+    "titleHighlight": "vaše dobro počutje",
+    "description": "Poskrbite za sprostitev in lajšanje bolečin v mišicah v Grosuplju z okolico. Ponujamo butičen in osebni pristop za vsako stranko.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Strokovne storitve",
+        "label": "Strokovne storitve",
+        "title": "Strokovne storitve"
+      },
+      {
+        "value": "Grosuplje",
+        "label": "Grosuplje z okolico",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše masažne storitve",
+    "description": "Izberite storitev, ki najbolj ustreza vašim trenutnim potrebam po sprostitvi ali lajšanju napetosti.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Tradicionalna masaža celega telesa za sprostitev napetih mišic in izboljšanje prekrvavitve.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi in pomirjajoč ambient za popoln odklop od vsakodnevnega stresa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Terapevtska masaža",
+        "description": "Ciljno usmerjena obravnava za lajšanje specifičnih težav in mišičnih blokad.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža hrbta",
+        "description": "Osredotočena na predel hrbta, vratu in ramen, kjer se najpogosteje nabira napetost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Učinkovita pomoč pri lajšanju akutnih in kroničnih bolečin v mišicah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Celostna skrb za vaše telo in duha",
+    "description": "Zavedamo se, da je vsak posameznik edinstven, zato se vam v celoti posvetimo.",
+    "highlights": [
+      "Prilagojen pristop k vsaki stranki",
+      "Strokovne in zanesljive masažne storitve",
+      "Domač, topel in sproščujoč ambient"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojen pristop",
+        "description": "Masažo prilagodimo vašim željam ter trenutnemu počutju telesa.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Kakovostne storitve z občutkom za vaše telo in zdravje.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje v Grosuplju, kjer boste lažje odložili vsakodnevne skrbi.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjega kontakta.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Adamičeva cesta 1c, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 399 463",
+        "href": "tel:031399463",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Adamičeva cesta 1c, 1290 Grosuplje, Slovenia",
+    "rights": "© Masaže Lavanda, Mojca Struna s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Masaže Lavanda",
+    "address": "Adamičeva cesta 1c, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "031 399 463"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-08-31",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
