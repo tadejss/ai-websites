@@ -1,0 +1,284 @@
+{
+  "appearance": "elektro",
+  "lookId": "elektricarji-05-minimal-line",
+  "theme": {
+    "paletteId": "look-elektricarji-05-mist",
+    "fontPairingId": "look-elektricarji-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-keber-ziga/hero.avif",
+      "alt": "Električar med nameščanjem sodobnih elektroinštalacij v svetlem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-keber-ziga/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "34054464",
+      "sourceUrl": "https://www.pexels.com/photo/electrician-diagnosing-electrical-panel-with-multimeter-34054464/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "electrician working electrical panel"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-keber-ziga/services.avif",
+      "alt": "Pregled in vzdrževanje elektro omarice ter inštalacij",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-keber-ziga/services.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "34054474",
+      "sourceUrl": "https://www.pexels.com/photo/young-technician-working-on-electrical-panel-34054474/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "electrician working electrical panel"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za standardne elektroinštalaterske in servisne storitve.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo in ogled stanja nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura elektro dela",
+        "description": "Splošna elektroinštalaterska dela in manjša popravila.",
+        "price": "od 35 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Pregled stanja in svetovanje",
+        "description": "Pregled obstoječih inštalacij in strokovni nasvet.",
+        "price": "od 50 €",
+        "unit": "obisk"
+      },
+      {
+        "name": "Servis in odprava napak",
+        "description": "Diagnostika in odprava manjših napak na električni opremi.",
+        "price": "od 40 €",
+        "unit": "storitev",
+        "featured": true
+      },
+      {
+        "name": "Manjša montaža opreme",
+        "description": "Priklop svetil, stikal, vtičnic in druge opreme.",
+        "price": "od 30 €",
+        "unit": "komad"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Elektro Keber",
+    "highlight": "Žiga Keber s.p."
+  },
+  "metadata": {
+    "title": "Elektro Keber | Zanesljive elektroinštalacije Ljubljana in okolica",
+    "description": "Zanesljive elektroinštalacije, servis in vzdrževanje električne opreme za dom in poslovne prostore na območju Ljubljane in okolice."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovne elektro storitve",
+    "title": "Zanesljive elektroinštalacije in popravila za",
+    "titleHighlight": "vaš dom ter poslovni prostor",
+    "description": "Strokovne elektroinštalacije, servis in vzdrževanje za lastnike stanovanj, hiš in poslovnih objektov na območju Ljubljane in okolice.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra odzivnost",
+        "label": "Hitra odzivnost"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Natančno delo",
+        "label": "Natančno delo"
+      },
+      {
+        "value": "Lokalni ponudnik",
+        "label": "Lokalni ponudnik"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite elektro rešitve",
+    "description": "Poskrbimo za varno, zanesljivo in sodobno delovanje vaših elektro sistemov na območju Ljubljane - Dobrunje z okolico.",
+    "items": [
+      {
+        "title": "Elektroinštalacije",
+        "description": "Izvedba kakovostnih in varnih elektroinštalacij v stanovanjskih in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis in popravila",
+        "description": "Hitro odkrivanje napak ter strokovna popravila električne opreme.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje elektro sistemov",
+        "description": "Redno vzdrževanje za nemoteno in varno delovanje vaših električnih inštalacij.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pametne inštalacije",
+        "description": "Nadgradnja vašega doma ali pisarne v sodoben in energijsko učinkovit pametni sistem.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje in pregled stanja",
+        "description": "Strokovni nasveti in celovit pregled stanja obstoječih elektroinštalacij.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne sisteme",
+    "description": "Z združevanjem strokovnega znanja, hitre odzivnosti in natančnosti zagotavljamo visoko raven zadovoljstva naših strank.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Hitra odzivnost in strokovnost",
+      "Zanesljivo in natančno delo"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Visoka ocena in predanost kakovosti zagotavljata brezskrbnost pri vsakem projektu.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Odzivamo se hitro in se prilagajamo vašim potrebam na območju Ljubljane z okolico.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Strokovnost in natančnost",
+        "description": "Vsako delo izvedemo zanesljivo, natančno in v skladu z veljavnimi standardi.",
+        "title": "Strokovnost in natančnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinštalacije ali servis? Pokličite nas ali oddajte povpraševanje preko spodnjega obrazca.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 508 545",
+        "href": "tel:041508545",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Sostrska cesta 4, 1261 Ljubljana - Dobrunje, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali težavo...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Sostrska cesta 4, 1261 Ljubljana - Dobrunje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektro Keber Žiga Keber s.p.",
+    "address": "Sostrska cesta 4, 1261 Ljubljana - Dobrunje, Slovenia",
+    "email": "",
+    "phone": "041 508 545"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

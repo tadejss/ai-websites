@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektroinstalacije Marjan Pajk s.p.",
+  "industry": "Elektroinstalaterske storitve",
+  "tagline": "Zanesljive elektroinstalacije in popravila za vaš dom in poslovni prostor",
+  "services": [
+    "Vgradnja elektroinstalacij",
+    "Servis in popravila električnih naprav",
+    "Vzdrževanje objektov",
+    "Montaža razsvetljave",
+    "Pametne inštalacije"
+  ],
+  "phone": "041 348 404",
+  "email": "",
+  "address": "Orle 16a, 1291 Škofljica, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 4:30 PM · Tuesday: 7:00 AM – 4:30 PM · Wednesday: 7:00 AM – 4:30 PM · Thursday: 7:00 AM – 4:30 PM · Friday: 7:00 AM – 4:30 PM · Saturday: 7:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka strokovnost in zanesljivost",
+    "Odlične ocene zadovoljnih strank",
+    "Prilagodljivost in hitra odzivnost"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih objektov, ki potrebujejo elektro storitve",
+  "serviceArea": "Škofljica in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni elektroinstalaterji",
+  "callToAction": "Pokličite nas"
+}

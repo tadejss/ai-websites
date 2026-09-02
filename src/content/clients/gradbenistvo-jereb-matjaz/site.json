@@ -1,0 +1,262 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-06-service-grid",
+  "theme": {
+    "paletteId": "look-gradbinci-06-clay",
+    "fontPairingId": "look-gradbinci-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene gradbenih storitev",
+    "description": "Cene so informativne narave. Za natančen izračun glede na obseg vašega projekta nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela (splošna)",
+        "description": "Izvedba osnovnih gradbenih del po dogovoru",
+        "price": "od 30 €",
+        "unit": "ura",
+        "featured": false
+      },
+      {
+        "name": "Prenove objektov",
+        "description": "Celovita prenova manjših in večjih prostorov",
+        "price": "Po dogovoru",
+        "unit": "projekt",
+        "featured": true
+      },
+      {
+        "name": "Zidarska dela",
+        "description": "Zidanje sten, predelav in manjših objektov",
+        "price": "od 35 €",
+        "unit": "m²",
+        "featured": false
+      },
+      {
+        "name": "Zemeljska dela",
+        "description": "Manjšo izkopi in priprava terena",
+        "price": "od 40 €",
+        "unit": "ura",
+        "featured": false
+      },
+      {
+        "name": "Sanacije",
+        "description": "Sanacijska dela in odprava napak na objektih",
+        "price": "Po dogovoru",
+        "unit": "projekt",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Gradbeništvo",
+    "highlight": "Jereb"
+  },
+  "metadata": {
+    "title": "Gradbeništvo Jereb | Zanesljiva gradbena in prenovitvena dela",
+    "description": "Zanesljive gradbene storitve, prenovitvena in zidarska dela na Vrhniki in okolici. Pokličite nas za strokovno izvedbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster",
+    "title": "Kakovostna gradbena dela in prenove na",
+    "titleHighlight": "Vrhniki z okolico",
+    "description": "Zanesljive gradbene storitve, prenove objektov, zidarska in zemeljska dela za lastnike nepremičnin, investitorje ter gospodinjstva.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostno"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše gradbene projekte",
+    "description": "Nudimo širok spekter gradbenih storitev na območju Vrhnike in okolice, s poudarkom na kakovosti in dogovorjenih rokovih.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Izvedba vseh vrst gradbenih del z zanesljivim pristopom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove stanovanj, hiš in drugih objektov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna zidarska dela za novogradnje in adaptacije.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zemeljska dela",
+        "description": "Priprava terena in zemeljska dela za vaše projekte.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Sanacije",
+        "description": "Strokovne sanacije in odprava pomanjkljivosti na objektih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Z dolgoletnimi izkušnjami in prilagodljivostjo poskrbimo, da so dela izvedena strokovno in pravočasno.",
+    "highlights": [
+      "Dolgoročne izkušnje na področju gradbeništva",
+      "Kakovostna izvedba del v dogovorjenih rokovih",
+      "Strokovno svetovanje in prilagodljivost strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Dolgoročne izkušnje",
+        "description": "Brezhibno poznavanje gradbene stroke in preverjene rešitve.",
+        "title": "Dolgoročne izkušnje"
+      },
+      {
+        "label": "Točni roki",
+        "description": "Spoštovanje dogovorjenih rokov izvedbe vseh gradbenih del.",
+        "title": "Točni roki"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Strokovno svetovanje in popolna prilagodljivost vašim željam.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za gradbena dela? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Idrijska cesta 34, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 633 233",
+        "href": "tel:041633233",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Idrijska cesta 34, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Gradbeništvo Jereb",
+    "address": "Idrijska cesta 34, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 633 233"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

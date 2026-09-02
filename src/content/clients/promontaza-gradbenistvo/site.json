@@ -1,0 +1,243 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-05-minimal-line",
+  "theme": {
+    "paletteId": "look-gradbinci-05-mist",
+    "fontPairingId": "look-gradbinci-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Cene so informativne narave in se prilagodijo obsegu ter specifikam posameznega projekta.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo glede na vaše potrebe nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Izvedba splošnih gradbenih del po dogovoru",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Montažne storitve",
+        "description": "Strokovna montaža opreme in elementov",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Prenove in adaptacije",
+        "description": "Celovite prenove stanovanjskih in poslovnih prostorov",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Svetovanje in izvedba",
+        "description": "Tehnično svetovanje in vodenje projektov",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Promontaža",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Promontaža d.o.o. | Gradbene storitve in montaža Ljubljana",
+    "description": "Zanesljive gradbene storitve, montaža ter prenove za lastnike nepremičnin, investitorje in podjetja v Ljubljani s okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo gradbeništvo in storitve",
+    "title": "Zanesljive gradbene storitve in ",
+    "titleHighlight": "montaža v Ljubljani",
+    "description": "Strokovne gradbene rešitve, montaža in prenove za lastnike nepremičnin, investitorje in podjetja v Ljubljani s okolico.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Preverjena",
+        "label": "kakovost del"
+      },
+      {
+        "value": "Strokovni",
+        "label": "pristop"
+      },
+      {
+        "value": "Dosledni",
+        "label": "roki"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaša gradbena in montažna dela",
+    "description": "Za lastnike nepremičnin, investitorje in podjetja v Ljubljani s okolico nudimo strokovno izvedbo gradbenih projektov, montaž in prenov.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba gradbenih del z zanesljivim pristopom in doslednim upoštevanjem dogovorjenih rokov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montažne storitve",
+        "description": "Strokovna montaža in tehnične rešitve za stanovanjske in poslovne objekte.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove in adaptacije",
+        "description": "Celovite prenove nepremičnin, ki vključujejo strokovno vodenje projektov od ideje do izvedbe.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje in izvedba projektov",
+        "description": "Strokovno svetovanje, načrtovanje in izvedba gradbenih ter montažnih projektov.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Združujemo strokovnost, prilagodljivost in dolgoletne izkušnje za doseganje najboljših rezultatov pri vsakem projektu.",
+    "highlights": [
+      "Preverjena kakovost storitev z odličnimi ocenami strank",
+      "Strokoven in zanesljiv pristop k izvedbi del",
+      "Prilagodljivost in dosledno upoštevanje rokov"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Zanesljive storitve z odličnimi ocenami zadovoljnih strank.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Zanesljiva in strokovna izvedba vseh gradbenih ter montažnih del.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Spoštovanje rokov",
+        "description": "Visoka prilagodljivost in dosledno upoštevanje dogovorjenih časovnih okvirjev.",
+        "title": "Spoštovanje rokov"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za vaš naslednji projekt",
+    "description": "Na voljo smo vam za vsa vprašanja, svetovanje in pripravo ponudbe.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 672 858",
+        "href": "tel:041672858",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Pavšičeva ulica 33A, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Pavšičeva ulica 33A, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Promontaža d.o.o.",
+    "address": "Pavšičeva ulica 33A, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 672 858"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

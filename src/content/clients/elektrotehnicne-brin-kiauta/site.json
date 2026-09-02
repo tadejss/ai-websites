@@ -1,0 +1,261 @@
+{
+  "appearance": "elektro",
+  "lookId": "elektricarji-01-classic-split",
+  "theme": {
+    "paletteId": "look-elektricarji-01-sand",
+    "fontPairingId": "look-elektricarji-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za pogostejše elektroinštalaterske in servisne storitve.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura elektro dela",
+        "description": "Splošna elektroinštalaterska in servisna dela",
+        "price": "od 35 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Priklop gospodinjskega aparata",
+        "description": "Varen priklop štedilnika, pečice ali drugega aparata",
+        "price": "od 50 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Pregled električnega omrežja",
+        "description": "Strokovni pregled in svetovanje na terenu",
+        "price": "od 60 €",
+        "unit": "pregled"
+      },
+      {
+        "name": "Odprava manjših okvar",
+        "description": "Iskanje in odprava napak na napeljavah",
+        "price": "od 45 €",
+        "unit": "storitev"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Elektrotehnične storitve",
+    "highlight": "Brin Kiauta s.p."
+  },
+  "metadata": {
+    "title": "Elektrotehnične storitve Brin Kiauta s.p. | Elektroinštalacije Domžale",
+    "description": "Zanesljive in strokovne elektro storitve, elektroinštalacije ter servis za dom in pisarno v Domžalah z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive elektro storitve",
+    "title": "Strokovne elektroinštalacije za",
+    "titleHighlight": "vaš dom in pisarno",
+    "description": "Zanesljive in strokovne elektro storitve za lastnike stanovanj, hiš in manjša podjetja v Domžalah z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hiter odziv",
+        "label": "Hiter odziv",
+        "title": "Hiter odziv"
+      },
+      {
+        "value": "Strokovno delo",
+        "label": "Strokovno delo",
+        "title": "Strokovno delo"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Domžale",
+        "label": "Z okolico",
+        "title": "Domžale z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve na področju elektrotehnike",
+    "description": "Zagotavljamo kakovostno izvedbo elektroinštalacij, servis in vzdrževanje v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Elektroinštalacije",
+        "description": "Nove inštalacije ter obnove obstoječih električnih napeljav za stanovanja, hiše in poslovne prostore.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis in popravila elektro opreme",
+        "description": "Hitro odkrivanje napak in strokovno popravilo elektro opreme ter naprav.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje električnih napeljav",
+        "description": "Redni pregledi in vzdrževanje za varno delovanje vašega električnega omrežja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Priklop gospodinjskih aparatov",
+        "description": "Varen in strokoven priklop vseh vrst gospodinjskih aparatov in bele tehnike.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje in pregled omrežja",
+        "description": "Strokovni nasveti in temeljit pregled stanja vašega električnega omrežja.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne napeljave",
+    "description": "Združujemo strokovnost, prilagodljivost in hiter odziv za vaše popolno zadovoljstvo.",
+    "highlights": [
+      "Hitro in zanesljivo ukrepanje ob klicu",
+      "Strokovno izvedena dela po vseh predpisih",
+      "Prilagodljivost željam in potrebam strank"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiv odziv",
+        "description": "Hitro odzivanje na vaše klice in potrebe po elektro storitvah.",
+        "title": "Zanesljiv odziv"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Kakovostno in varno izvedena dela na vsakem objektu.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinštalacije ali servis? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 246 029",
+        "href": "tel:040246029",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica Matije Tomca 4, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 8:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali težavo...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ulica Matije Tomca 4, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektrotehnične storitve Brin Kiauta s.p.",
+    "address": "Ulica Matije Tomca 4, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "040 246 029"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

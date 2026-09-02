@@ -1,0 +1,267 @@
+{
+  "appearance": "construction",
+  "lookId": "parketarji-talne-obloge-06-service-grid",
+  "theme": {
+    "paletteId": "look-parketarji-talne-obloge-06-clay",
+    "fontPairingId": "look-parketarji-talne-obloge-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled osnovnih storitev parketarstva. Končna cena je odvisna od obsega in stanja podlage.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje parketa",
+        "description": "Klasično ali gotovi parket",
+        "price": "od 15 €",
+        "unit": "na m2",
+        "featured": true
+      },
+      {
+        "name": "Brušenje in lakiranje parketa",
+        "description": "Celoten postopek obnove z lakiranjem",
+        "price": "od 18 €",
+        "unit": "na m2"
+      },
+      {
+        "name": "Polaganje laminata",
+        "description": "Hitra vgradnja laminatnih podov",
+        "price": "od 8 €",
+        "unit": "na m2"
+      },
+      {
+        "name": "Montaža letvic",
+        "description": "Namestitev stenskih ali talnih letvic",
+        "price": "od 3 €",
+        "unit": "na tekoči meter"
+      },
+      {
+        "name": "Obnova starih talnih oblog",
+        "description": "Pregled in sanacija po dogovoru",
+        "price": "Po dogovoru",
+        "unit": ""
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Parketarstvo",
+    "highlight": "Stanko Pirman"
+  },
+  "metadata": {
+    "title": "Parketarstvo Stanko Pirman s.p. | Polaganje in obnova parketa",
+    "description": "Strokovna vgradnja in obnova vseh vrst talnih oblog v Domžalah z okolico. Zanesljivo polaganje parketa, laminata in brušenje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovne talne obloge",
+    "title": "Kakovostna vgradnja in obnova",
+    "titleHighlight": "vaših talnih oblog",
+    "description": "Zanesljive parketarske storitve za lastnike stanovanj, hiš in poslovnih prostorov v Domžalah z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovnost",
+        "label": "Visoka natančnost",
+        "title": "Visoka strokovnost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Točna izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Izkušnje",
+        "label": "Kakovostna dela",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Domžale z okolico",
+        "title": "Lokalno delo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaša tla",
+    "description": "Poskrbimo za profesionalno polaganje in obnovo talnih oblog v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Polaganje parketa",
+        "description": "Strokovna vgradnja vseh vrst parketa za estetski in trajen videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Brušenje in lakiranje parketa",
+        "description": "Obnovitev starega parketa, da vašim tlem povrnemo prvotni sijaj.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje laminata",
+        "description": "Hitro in natančno polaganje laminatnih talnih oblog po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža letvic",
+        "description": "Natančna namestitev talnih letvic za popoln končni izgled prostora.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Obnova starih talnih oblog",
+        "description": "Celovita prenova in osvežitev dotrajanih lesenih površin.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaš dom",
+    "description": "Z združevanjem strokovnosti in natančnosti poskrbimo za brezhiben končni rezultat.",
+    "highlights": [
+      "Visoka strokovnost in natančnost pri vsakem projektu",
+      "Zanesljiva in točna izvedba dogovorjenih del",
+      "Osebni pristop in prilagajanje vašim željam"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka strokovnost",
+        "description": "Natančna izvedba vseh parketarskih del z občutkom za detajle.",
+        "title": "Visoka strokovnost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Spoštovanje dogovorjenih rokov in točna izvedba storitev.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljne stranke potrjujejo kakovost našega dela.",
+        "title": "Odlične ocene"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje parketa? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 620 350",
+        "href": "tel:040620350",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Brejčeva ulica 18, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Brejčeva ulica 18, 1230 Domžale, Slovenia",
+    "rights": "© 2025 Parketarstvo Stanko Pirman s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Parketarstvo Stanko Pirman",
+    "address": "Brejčeva ulica 18, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "040 620 350"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

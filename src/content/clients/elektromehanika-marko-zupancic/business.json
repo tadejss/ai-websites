@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektromehanika, Marko Zupančič s.p.",
+  "industry": "Elektro storitve in elektromehanika",
+  "tagline": "Zanesljive elektromehanske storitve in popravila z izkušnjami.",
+  "services": [
+    "Popravila električnih naprav",
+    "Elektroinštalacijske storitve",
+    "Servis elektromotorjev",
+    "Vzdrževanje električne opreme",
+    "Svetovanje in pregled instalacij"
+  ],
+  "phone": "031 360 794",
+  "email": "",
+  "address": "Ižanska cesta 129, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 3:00 PM · Tuesday: 7:00 AM – 3:00 PM · Wednesday: 7:00 AM – 3:00 PM · Thursday: 7:00 AM – 3:00 PM · Friday: 7:00 AM – 3:00 PM · Saturday: 7:00 AM – 1:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Preverjena kakovost storitev z odličnimi ocenami strank",
+    "Prilagodljiv delovni čas tudi ob sobotah",
+    "Strokovni pristop in zanesljivost"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš, lokalna gospodinjstva in podjetja",
+  "serviceArea": "Ljubljana in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domači mojster, profesionalen servis",
+  "competitors": "Lokalni elektro serviserji v regiji Ljubljana",
+  "callToAction": "Pokličite nas"
+}

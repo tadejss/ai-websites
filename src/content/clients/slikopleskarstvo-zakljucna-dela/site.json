@@ -1,0 +1,294 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-slikopleskarji-10-frost",
+    "fontPairingId": "look-slikopleskarji-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-zakljucna-dela/hero.avif",
+      "alt": "Slikopleskar pri delu v svetlem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-zakljucna-dela/hero.webp",
+      "width": 1040,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32115287",
+      "sourceUrl": "https://www.pexels.com/photo/worker-on-elevated-platform-painting-building-exterior-32115287/",
+      "photographer": "Melih Akkus",
+      "photographerUrl": "https://www.pexels.com/@melih-akkus-679376803",
+      "searchQuery": "professional painter painting facade"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-zakljucna-dela/services.avif",
+      "alt": "Orodja in material za slikopleskarska dela",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-zakljucna-dela/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7217987",
+      "sourceUrl": "https://www.pexels.com/photo/man-putting-adhesive-tape-on-wall-7217987/",
+      "photographer": "Blue Bird",
+      "photographerUrl": "https://www.pexels.com/@blue-bird",
+      "searchQuery": "house painter working on wall interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled rednih slikopleskarskih in zaključnih gradbenih del.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje (dvakratni nanos)",
+        "description": "Beljenje z disperzijsko barvo vključno s pripravo in zaščito",
+        "price": "od 2,50 €",
+        "unit": "m²",
+        "featured": true
+      },
+      {
+        "name": "Pleskanje fasade",
+        "description": "Priprava in nanos fasadne barve",
+        "price": "od 10,00 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Natančno lepljenje vseh vrst tapet",
+        "price": "od 12,00 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Suromontažna dela (gips plošče)",
+        "description": "Montaža podesnih stropov ali pregradnih sten",
+        "price": "od 25,00 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Ura dela",
+        "description": "Izvedba splošnih slikopleskarskih in manjših zaključnih del",
+        "price": "od 20,00 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Danilo Mištrafović s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo in zaključna dela Danilo Mištrafović s.p.",
+    "description": "Kakovostna slikopleskarska dela in zaključne gradbene storitve na Vrhniki z okolico in v osrednji Sloveniji. Zanesljiva izvedba za domove in poslovne prostore."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiva slikopleskarska dela",
+    "title": "Kakovostne prenove in",
+    "titleHighlight": "osvežitev vaših prostorov",
+    "description": "Strokovne slikopleskarske storitve in zaključna dela v gradbeništvu za lastnike stanovanj, hiš in poslovnih prostorov na Vrhniki in v osrednji Sloveniji.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Natančnost pri delu",
+        "title": "Natančnost pri delu"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Vrhnika in okolica",
+        "title": "Vrhnika in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovite rešitve za osvežitev in prenovo vaših bivalnih ali poslovnih prostorov z poudarkom na kakovosti.",
+    "items": [
+      {
+        "title": "Notranje beljenje",
+        "description": "Osvežitev stenskih površin z visokokakovostnimi materiali za čist in urejen videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pleskanje fasad",
+        "description": "Zaščita in nova podoba vaše hiše z obstojnimi fasadnimi barvami.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Natančna namestitev različnih vrst tapet za edinstven stil vaših prostorov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Gipsarsko in suhomontažno delo",
+        "description": "Izdelava pregradnih sten, stropov in ostala suhomontažna dela po vaši meri.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prenove in adaptacije",
+        "description": "Celovite prenove in zaključna dela v gradbeništvu od začetka do konca.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas?",
+    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom poskrbimo, da so dela opravljena zanesljivo in natančno.",
+    "highlights": [
+      "Zanesljiva izvedba storitev",
+      "Natančnost pri zaključnih delih",
+      "Strokovno svetovanje strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za brezhibno izvedbo del.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Natančnost",
+        "description": "Velik poudarek namenjamo detajlom in čistoči pri izvedbi zaključnih del.",
+        "title": "Natančnost"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Pomagamo vam pri izbiri pravih materialov in barvnih kombinacij za vaš prostor.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete prenovo, beljenje ali nasvet? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 697 637",
+        "href": "tel:041697637",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Sinja Gorica 72, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potreben obseg dela...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Sinja Gorica 72, 1360 Vrhnika, Slovenia",
+    "rights": "© 2025 Slikopleskarstvo Danilo Mištrafović s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Danilo Mištrafović s.p.",
+    "address": "Sinja Gorica 72, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 697 637"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-04-stats-trust",
+  "theme": {
+    "paletteId": "look-slikopleskarji-04-stone",
+    "fontPairingId": "look-slikopleskarji-04"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mejak-marjan-slikopleskarstvo/hero.avif",
+      "alt": "Slikopleskar pri delu na objektu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mejak-marjan-slikopleskarstvo/hero.webp",
+      "width": 1040,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32115287",
+      "sourceUrl": "https://www.pexels.com/photo/worker-on-elevated-platform-painting-building-exterior-32115287/",
+      "photographer": "Melih Akkus",
+      "photographerUrl": "https://www.pexels.com/@melih-akkus-679376803",
+      "searchQuery": "professional painter painting facade"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mejak-marjan-slikopleskarstvo/services.avif",
+      "alt": "Izdelava toplotne izolacijske fasade",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mejak-marjan-slikopleskarstvo/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691677",
+      "sourceUrl": "https://www.pexels.com/photo/crop-woman-painting-walls-at-home-5691677/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "house painter working on wall interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Okvirne cene",
+    "title": "Cenik storitev",
+    "description": "Pregled orientacijskih cen za slikopleskarska in fasaderska dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pleskanje sten in stropov",
+        "description": "Beljenje z osnovno zaščito prostora",
+        "price": "od 3,50 €",
+        "unit": "m²",
+        "featured": true
+      },
+      {
+        "name": "Izdelava toplotne izolacijske fasade",
+        "description": "Komplet izvedba z izolacijo (stiropor/kamena volna)",
+        "price": "od 45 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Barvanje napuščev in ograj",
+        "description": "Priprava površine in nanos dvoslojne barve",
+        "price": "od 12 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Obnova starih fasad",
+        "description": "Čiščenje, sanacija poškodb in novo barvanje",
+        "price": "od 20 €",
+        "unit": "m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mejak Marjan s.p.",
+    "highlight": "Slikopleskarstvo in Fasaderstvo"
+  },
+  "metadata": {
+    "title": "Mejak Marjan s.p. | Slikopleskarstvo in fasade Domžale",
+    "description": "Kakovostno slikopleskarstvo in izdelava toplotnih izolacijskih fasad v Domžalah in okolici. Zanesljiva izvedba in preverjeni materiali."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv izvajalec v Domžalah in okolici",
+    "title": "Kakovostno slikopleskarstvo in izdelava",
+    "titleHighlight": "toplotnih izolacijskih fasad",
+    "description": "Poskrbite za svež videz vašega doma ali poslovnega objekta. Nudimo strokovne slikopleskarske storitve in učinkovite fasaderske rešitve.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostno",
+        "title": "Kakovostno"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Za vas izvajamo celovita slikopleskarska dela in izdelavo toplotnih fasad za stanovanjske in poslovne objekte v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Slikopleskarske storitve",
+        "description": "Celovite slikopleskarske storitve za osvežitev notranjih prostorov vašega doma.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Izdelava toplotnih izolacijskih fasad",
+        "description": "Kakovostna vgradnja fasadnih sistemov za boljšo energijsko učinkovitost in lepši videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Natančno pleskanje in zaščita površin za čist in urejen končni videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Barvanje napuščev in ograj",
+        "description": "Zaščita in barvanje lesenih ter kovinskih elementov na objektu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Obnova starih fasad",
+        "description": "Sanacija in obnova dotrajanih fasadnih površin ter povrnitev prvotne zaščite.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaš dom",
+    "description": "Z dolgoletnimi izkušnjami in predanostjo kakovosti poskrbimo, da so dela opravljena pravočasno in natančno.",
+    "highlights": [
+      "Zanesljiva in strokovna izvedba del",
+      "Uporaba kakovostnih materialov",
+      "Osebni pristop k vsakemu projektu"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Zanesljiva in strokovna izvedba del na vsakem objektu.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporaba preverjenih materialov za dolgotrajne in odporne rezultate.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Zadovoljne stranke z odličnimi ocenami in posluhom za želje naročnika.",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete ponudbo? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 730 705",
+        "href": "tel:041730705",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Študljanska cesta 33d, 1230 Domžale",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali opis del...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Študljanska cesta 33d, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mejak Marjan s.p. Slikopleskarstvo in Fasaderstvo",
+    "address": "Študljanska cesta 33d, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "041 730 705"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

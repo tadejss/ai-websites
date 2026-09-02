@@ -1,0 +1,258 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-05-minimal-line",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-05-mist",
+    "fontPairingId": "look-mizarji-tesarji-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene mizarskih storitev",
+    "description": "Ker je vsak kos pohištva unikat, so cene odvisne od mer, materialov in zahtevnosti izdelave.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte in pripravili vam bomo izračun glede na vaše želje.",
+    "items": [
+      {
+        "name": "Kuhinja po meri",
+        "description": "Celovita izdelava in montaža kuhinje po vaših načrtih",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradna omara",
+        "description": "Omara z drsnimi vrata za hodnik ali spalnico",
+        "price": "od 800 €"
+      },
+      {
+        "name": "Pohištvo za spalnico",
+        "description": "Postelja in nočne omarice po meri",
+        "price": "od 700 €"
+      },
+      {
+        "name": "Dnevna soba",
+        "description": "TV regal in police po meri",
+        "price": "od 600 €"
+      },
+      {
+        "name": "Unikatni leseni izdelek",
+        "description": "Manjši kosi pohištva ali leseni dodatki",
+        "price": "od 150 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Marko Uršič"
+  },
+  "metadata": {
+    "title": "Mizarske storitve Marko Uršič s.p. | Pohištvo po meri",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Iški Loki, na Igu in v osrednji Sloveniji. Kuhinje, vgradne omare in unikatni leseni izdelki."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Mizarske storitve po meri",
+    "title": "Kakovostno izdelano pohištvo po meri",
+    "titleHighlight": "za vaš dom",
+    "description": "Unikatne in funkcionalne mizarske rešitve za lastnike stanovanj in hiš na Igu ter v celotni osrednji Sloveniji.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Po meri",
+        "label": "Unikatne rešitve"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Vaše želje"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Obdelava lesa"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Lokalni mojster"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske rešitve za vaš dom",
+    "description": "Z ročno natančnostjo in posluhom za vaše želje ustvarjamo pohištvo, ki popolnoma izkoristi vaš prostor.",
+    "items": [
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne in estetske kuhinje, prilagojene vašemu prostoru in vsakdanjim navadam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimalen izkoristek prostora z vgradnimi omaremi za predsobe, spalnice ali hodnike.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pohištvo za spalnice",
+        "description": "Udobne postelje, nočne omarice in garderobni sistemi za miren spanec.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Dnevne sobe",
+        "description": "Unikatni regali, mizice in stenske obloge, ki ustvarjajo prijeten ambient v vašem domu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Unikatni leseni izdelki",
+        "description": "Posebni leseni kosi in elementi po vaših risbah in idejah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv mizar z občutkom za detajle",
+    "description": "Združujemo tradicijo domačega mizarstva, kakovostne materiale in popolno prilagajanje naročniku.",
+    "highlights": [
+      "Individualen pristop k vsakemu projektu",
+      "Uporaba preverjenih materialov in lesa",
+      "Strokovna izdelava in montaža"
+    ],
+    "benefits": [
+      {
+        "label": "Izdelava po meri",
+        "description": "Pohištvo natančno prilagodimo meram vašega prostora in vašim bivanjskim navadam.",
+        "title": "Izdelava po meri"
+      },
+      {
+        "label": "Prilagodljivost željam",
+        "description": "Skupaj poiščemo najboljše rešitve za vaš dom, od zasnove do končne izvedbe.",
+        "title": "Prilagodljivost željam"
+      },
+      {
+        "label": "Kakovostna obdelava",
+        "description": "Skrbna obdelava lesa zagotavlja dolgo življenjsko dobo in estetsko dovršenost.",
+        "title": "Kakovostna obdelava"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Dogovorite se za izdelavo vašega pohištva",
+    "description": "Pokličite nas ali izpolnite obrazek za povpraševanje. Z veseljem vam svetujemo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 353 480",
+        "href": "tel:041353480",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Iška Loka 24, 1292 Ig, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Sob: 8:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Opišite svoje želje ali idejo in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite želeno pohištvo ali dimenzije...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Iška Loka 24, 1292 Ig, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Marko Uršič",
+    "address": "Iška Loka 24, 1292 Ig, Slovenia",
+    "email": "",
+    "phone": "041 353 480"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

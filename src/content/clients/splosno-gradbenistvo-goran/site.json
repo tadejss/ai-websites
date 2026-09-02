@@ -1,0 +1,261 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-04-stats-trust",
+  "theme": {
+    "paletteId": "look-gradbinci-04-stone",
+    "fontPairingId": "look-gradbinci-04"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega ter zahtevnosti del.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Zidarska dela",
+        "description": "Okvirna cena za splošna zidarska dela",
+        "price": "od 25 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Gradbena dela",
+        "description": "Izvedba splošnih gradbenih storitev",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Prenove in adaptacije",
+        "description": "Celovita prenova prostorov ali objektov",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Zemeljska dela",
+        "description": "Pripravljalna in manjša zemeljska dela",
+        "price": "od 35 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Manjši gradbeni projekti",
+        "description": "Manjša popravila in zaključna dela",
+        "price": "od 30 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Goran Kalamanda",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Splošno gradbeništvo Goran Kalamanda s.p. | Gradbena in prenovitvena dela",
+    "description": "Zanesljive gradbene storitve, prenovitvena in zidarska dela ter manjši gradbeni projekti v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Gradbena dela in prenove",
+    "title": "Zanesljive gradbene storitve in",
+    "titleHighlight": "prenovitvena dela",
+    "description": "Strokoven pristop za lastnike nepremičnin, investitorje in gospodinjstva v Ljubljani z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo",
+        "title": "Prilagodljivo"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostno",
+        "title": "Kakovostno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite gradbene storitve",
+    "description": "Kakovostna izvedba gradbenih in prenovitvenih del za vaše projekte v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Izvedba splošnih gradbenih del z zanesljivim in strokovnim pristopom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove in adaptacije",
+        "description": "Celovite prenove objektov in prostorov po vaših željah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna in kakovostna zidarska dela za različne vrste objektov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zemeljska dela",
+        "description": "Priprava terena in zemeljska dela za uspešen začetek gradnje.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjši gradbeni projekti",
+        "description": "Prilagodljiva izvedba manjših gradbenih in obrtniških del.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Z odzivnostjo in posluhom za stranke poskrbimo za uspešno izvedbo del.",
+    "highlights": [
+      "Zanesljiv in strokoven pristop k delu",
+      "Kakovostna izvedba gradbenih storitev",
+      "Prilagodljivost in odzivnost na terenu"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorov in poskrbimo za zanesljiv ter strokoven pristop k delu.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Kakovost",
+        "description": "Zagotavljamo kakovostno izvedbo gradbenih storitev na vsakem koraku.",
+        "title": "Kakovost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam ter se hitro odzovemo na potrebe projekta.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete gradbeno storitev? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Majaronova ulica 4, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 292 931",
+        "href": "tel:040292931",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Majaronova ulica 4, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Goran Kalamanda s.p.",
+    "address": "Majaronova ulica 4, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 292 931"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

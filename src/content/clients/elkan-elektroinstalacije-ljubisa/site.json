@@ -1,0 +1,284 @@
+{
+  "appearance": "elektro",
+  "lookId": "elektricarji-09-warm-soft",
+  "theme": {
+    "paletteId": "look-elektricarji-09-dusk",
+    "fontPairingId": "look-elektricarji-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elkan-elektroinstalacije-ljubisa/hero.avif",
+      "alt": "Električar med delom pri montaži sodobne svetlobe",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elkan-elektroinstalacije-ljubisa/hero.webp",
+      "width": 1039,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "17842834",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-hard-hat-and-eyeglasses-working-with-electric-equipment-17842834/",
+      "photographer": "Fatih Yurtman",
+      "photographerUrl": "https://www.pexels.com/@fatihyurtman",
+      "searchQuery": "electrician working electrical panel"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elkan-elektroinstalacije-ljubisa/services.avif",
+      "alt": "Strokovne elektroinštalacije in pregled električne omarice",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elkan-elektroinstalacije-ljubisa/services.webp",
+      "width": 979,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "21812143",
+      "sourceUrl": "https://www.pexels.com/photo/electrician-working-with-cables-21812143/",
+      "photographer": "Shameer Vayalakkad Hydrose",
+      "photographerUrl": "https://www.pexels.com/@shameer-vayalakkad-hydrose-2602409",
+      "searchQuery": "electrician working electrical panel"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled okvirnih cen za pogostejše elektroinštalaterske storitve.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura elektroinštalaterskih del",
+        "description": "Delo mojstra za splošne elektroinštalacije in popravila.",
+        "price": "od 35 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Priklop gospodinjskega aparata",
+        "description": "Varen priklop štedilnika, pečice ali drugega aparata.",
+        "price": "od 45 €",
+        "unit": "komad"
+      },
+      {
+        "name": "Montaža svetila",
+        "description": "Montaža in priklop svetlobnega telesa.",
+        "price": "od 25 €",
+        "unit": "komad"
+      },
+      {
+        "name": "Odpravljanje električne napake",
+        "description": "Diagnostika in odprava manjših napak v napeljavi.",
+        "price": "od 50 €",
+        "unit": "obisk"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Elkan",
+    "highlight": "Elektroinštalacije"
+  },
+  "metadata": {
+    "title": "Elkan, elektroinštalacije | Vrtnarija 8b, 1360 Vrhnika",
+    "description": "Zanesljive elektroinštalacije in električne rešitve za dom in poslovne prostore na Vrhniki z okolico. Hitra odzivnost, strokovna izvedba in prilagodljivost."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive elektroinštalacije na Vrhniki",
+    "title": "Strokovne elektro rešitve za",
+    "titleHighlight": "vaš dom in poslovni prostor",
+    "description": "Poskrbite za varno in zanesljivo delovanje električnih napeljav. Nudimo celovite elektroinštalacije, adaptacije, montažo svetil ter odpravljanje napak na Vrhniki z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra odzivnost",
+        "label": "Hitra odzivnost"
+      },
+      {
+        "value": "Strokovna izvedba",
+        "label": "Strokovna izvedba"
+      },
+      {
+        "value": "Vrhnika",
+        "label": "Lokalno območje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljive storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite električne rešitve",
+    "description": "Nudimo kakovostne storitve za stanovanjske objekte in poslovne prostore na območju Vrhnike z okolico.",
+    "items": [
+      {
+        "title": "Elektroinštalacije stanovanjskih objektov",
+        "description": "Strokovna izvedba elektroinštalacij v novogradnjah in obstoječih stanovanjskih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije in prenove napeljav",
+        "description": "Temeljite prenove in posodobitve obstoječih električnih napeljav za večjo varnost.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža svetil in elektroopreme",
+        "description": "Natančna vgradnja svetlobnih teles in druge pripadajoče elektroopreme.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Odpravljanje električnih napak",
+        "description": "Hitro odkrivanje in zanesljivo odpravljanje napak v električnem omrežju.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priklop gospodinjskih aparatov",
+        "description": "Strokoven in varen priklop vseh vrst gospodinjskih aparatov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše elektroinštalacije",
+    "description": "Z združevanjem strokovnosti, prilagodljivosti in hitre odzivnosti poskrbimo za vaše popolno zadovoljstvo.",
+    "highlights": [
+      "Hitra odzivnost in strokovna izvedba",
+      "Kakovostne storitve z dolgoletnimi izkušnjami",
+      "Prilagodljivost in strankam prijazen pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra odzivnost",
+        "description": "Hitro se odzovemo na vaše klice in poskrbimo za pravočasno izvedbo del.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Naloge opravljamo natančno, varno in v skladu s standardi.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in poiščemo najboljšo rešitev za vaš prostor.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinštalacije ali nasvet? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 334 964",
+        "href": "tel:040334964",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Vrtnarija 8b, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali storitev, ki jo potrebujete...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Vrtnarija 8b, 1360 Vrhnika, Slovenia",
+    "rights": "© 2025 Elkan, elektroinštalacije, Ljubiša Kantar s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elkan Elektroinštalacije",
+    "address": "Vrtnarija 8b, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "040 334 964"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

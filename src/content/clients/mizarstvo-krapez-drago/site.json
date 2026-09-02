@@ -1,0 +1,248 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-10-frost",
+    "fontPairingId": "look-mizarji-tesarji-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene mizarskih storitev",
+    "description": "Cene so informativne narave. Končna cena je odvisna od izbire materialov, zahtevnosti in dimenzij.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinja po naročilu",
+        "description": "Celovita izdelava in montaža kuhinje po meri",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradna omara",
+        "description": "Omarni sistemi z drsnimi vrati in notranjo razporeditvijo",
+        "price": "od 900 €"
+      },
+      {
+        "name": "Pohištvo po meri (kosi)",
+        "description": "Komode, mize, regalni elementi",
+        "price": "od 350 €"
+      },
+      {
+        "name": "Izdelava lesenih izdelkov",
+        "description": "Manjši leseni elementi in posebne želje",
+        "price": "od 100 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Krapež"
+  },
+  "metadata": {
+    "title": "Mizarstvo Krapež | Pohištvo po meri Ljubljana",
+    "description": "Kakovostno in natančno mizarstvo po vaši meri v Ljubljani in okolici. Izdelava pohištva po meri, kuhinj po naročilu, vgradnih omar in unikatnih lesenih izdelkov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarstvo po meri",
+    "title": "Unikatno pohištvo",
+    "titleHighlight": "po vaši meri",
+    "description": "Strokovna izdelava pohištva za domove v Ljubljani in okolici. Poskrbimo za vrhunsko kakovost, natančnost in rešitve, prilagojene vašemu prostoru.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska",
+        "label": "kakovost"
+      },
+      {
+        "value": "Natančna",
+        "label": "izdelava"
+      },
+      {
+        "value": "Unikatni",
+        "label": "projekti"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske storitve za vaš dom",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za želje strank ustvarjamo pohištvo, ki združuje estetiko, funkcionalnost in trajnost.",
+    "items": [
+      {
+        "title": "Izdelava pohištva po meri",
+        "description": "Unikatni kosi pohištva, prilagojeni vašemu prostoru in življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po naročilu",
+        "description": "Funkcionalne, estetske in udobne kuhinje, izdelane točno po vaših merah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimizacija prostora z vgradnimi omare in garderobnimi sistemi visoke kakovosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Opremljanje interierjev",
+        "description": "Celovite rešitve in oprema za celoten dom ali posamezne prostore.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Leseni izdelki",
+        "description": "Raznovrstni izdelki iz lesa, narejeni z občutkom za detajle in tradicijo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za opremo vašega doma",
+    "description": "Z združevanjem tradicionalnega znanja in sodobnih pristopov poskrbimo, da so vaše želje glede pohištva skrbno uresničene.",
+    "highlights": [
+      "Vrhunska kakovost izdelave in pozornost do detajlov",
+      "Zanesljiva in strokovna izvedba projektov",
+      "Prilagojene rešitve za vsak dom"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Pozornost do detajlov in brezkompromisna natančnost pri vsakem izdelku.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Zanesljivo sodelovanje od prve ideje do končne montaže.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Prilagojene rešitve",
+        "description": "Unikatni kosi pohištva, narejeni posebej za vaš prostor in zahteve.",
+        "title": "Prilagojene rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 647 029",
+        "href": "tel:031647029",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Anžurjeva ulica 36, 1260 Ljubljana - Polje, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Anžurjeva ulica 36, 1260 Ljubljana - Polje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Krapež",
+    "address": "Anžurjeva ulica 36, 1260 Ljubljana - Polje, Slovenia",
+    "email": "",
+    "phone": "031 647 029"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

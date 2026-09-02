@@ -1,0 +1,245 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-gradbinci-10-frost",
+    "fontPairingId": "look-gradbinci-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za splošna in zaključna gradbena dela ter adaptacije.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Splošna gradbena dela",
+        "description": "Izvedba splošnih gradbenih del po ogledu objekta.",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Zaključna dela v gradbeništvu",
+        "description": "Okvirna cena za zaključna dela in obdelave.",
+        "price": "od 25 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Prenove in adaptacije",
+        "description": "Celovite prenove stanovanj in hiš.",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Gradbene storitve",
+        "description": "Manjši gradbeni posegi in urejanje.",
+        "price": "od 30 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mežan Darja",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Mežan Darja s.p. | Splošna in zaključna dela v gradbeništvu Domžale",
+    "description": "Zanesljiva splošna in zaključna dela v gradbeništvu, prenove ter adaptacije v Domžalah z okolico. Pokličite nas za strokovno izvedbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv gradbeni izvajalec",
+    "title": "Zanesljiva splošna in zaključna dela v",
+    "titleHighlight": "gradbeništvu",
+    "description": "Kakovostne gradbene storitve, prenove in adaptacije za lastnike nepremičnin, investitorje in gospodinjstva v Domžalah z okolico.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite gradbene in zaključne rešitve",
+    "description": "Specializirani smo za splošna gradbena dela, zaključna dela v gradbeništvu ter celovite prenove in adaptacije objektov v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Splošna gradbena dela",
+        "description": "Izvajanje splošnih gradbenih del z zanesljivim pristopom in poudarkom na trajnosti.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Zaključna dela v gradbeništvu",
+        "description": "Natančna zaključna dela, ki vašemu objektu vdihnejo končni videz in funkcionalnost.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove in adaptacije",
+        "description": "Celovite prenove in adaptacije obstoječih prostorov po vaših željah in potrebah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Gradbene storitve",
+        "description": "Raznovrstne gradbene storitve za gospodinjstva, lastnike nepremičnin in investitorje.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Združujemo strokovnost, prilagodljivost in visoko kakovost izvedbe za vse vaše gradbene izzive.",
+    "highlights": [
+      "Visoka kakovost izvedenih gradbenih del",
+      "Zanesljivost in strokovnost na prvem mestu",
+      "Prilagodljivost potrebam strank in investitorjev"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Zagotavljamo visoko kakovost izvedenih gradbenih del na vsakem projektu.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in zagotavljamo strokovno izvedbo.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagajamo se specifičnim potrebam in željam naših strank.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za gradbena dela? Kontaktirajte nas z veseljem vam bomo pomagali.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Rožna ulica 5, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 625 624",
+        "href": "tel:041625624",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Rožna ulica 5, 1230 Domžale, Slovenia",
+    "rights": "© 2025 Mežan Darja s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mežan Darja s.p.",
+    "address": "Rožna ulica 5, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "041 625 624"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

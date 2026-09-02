@@ -1,0 +1,260 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-05-minimal-line",
+  "theme": {
+    "paletteId": "look-gradbinci-05-mist",
+    "fontPairingId": "look-gradbinci-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za gradbena in obrtniška dela. Končna cena je odvisna od obsega in zahtevnosti projekta.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo in ogled na objektu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Zidarska dela",
+        "description": "Strokovna zidarska dela in izvedba zidov",
+        "price": "od 25 €",
+        "unit": "na m² ali po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Prenove objektov",
+        "description": "Celovite adaptacije in prenove prostorov",
+        "price": "po dogovoru",
+        "unit": "glede na obseg dela"
+      },
+      {
+        "name": "Zemeljska dela",
+        "description": "Izkopi, priprava terena in zemeljska dela",
+        "price": "od 40 €",
+        "unit": "na uro ali po dogovoru"
+      },
+      {
+        "name": "Svetovanje pri gradnji",
+        "description": "Strokovno svetovanje na terenu ali projektu",
+        "price": "od 50 €",
+        "unit": "na obisk / uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Hajroski",
+    "highlight": "gradbeništvo"
+  },
+  "metadata": {
+    "title": "Hajroski, gradbeništvo, d.o.o. | Zanesljive gradbene storitve",
+    "description": "Zanesljive gradbene storitve, prenove objektov in zidarska dela v Medvodah z okolico in širši regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni partner",
+    "title": "Zanesljive gradbene storitve za",
+    "titleHighlight": "vaše projekte",
+    "description": "Strokovna izvedba gradbenih del, prenove objektov in zemeljska dela za lastnike nepremičnin in investitorje v Medvodah z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Vsak dan",
+        "label": "Dosegljivost (pon–sob)"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Zanesljiv partner"
+      },
+      {
+        "value": "Celovito",
+        "label": "Svetovanje in gradnja"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Celovite gradbene storitve",
+    "description": "Specializirani smo za gradbena dela, prenove, zidarska in zemeljska dela ter svetovanje pri gradnji v Medvodah in širši regiji.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna in strokovna izvedba vseh vrst gradbenih del za vaše objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove stanovanj, hiš in poslovnih prostorov po vaših željah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna zidarska dela za novogradnje, dozidave in sanacije.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zemeljska dela",
+        "description": "Priprava terena, izkopi in zemeljska dela z ustrezno mehanizacijo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri gradnji",
+        "description": "Strokovno svetovanje in podpora pri načrtovanju in izvedbi vaših projektov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas",
+    "description": "Z odzivnostjo, prilagodljivostjo in strokovnim pristopom poskrbimo, da so vaši gradbeni projekti izpeljani zanesljivo.",
+    "highlights": [
+      "Prilagodljivost in visoka dosegljivost vsak dan v tednu razen nedelje",
+      "Strokovna in natančna izvedba gradbenih del",
+      "Zanesljiv lokalni partner za gradbeništvo in prenove"
+    ],
+    "benefits": [
+      {
+        "stat": "Vsak dan",
+        "label": "Visoka dosegljivost",
+        "description": "Prilagodljivost in dosegljivost vsak dan v tednu razen nedelje za vaše potrebe.",
+        "title": "Visoka dosegljivost"
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Strokovna izvedba",
+        "description": "Zanesljiva in strokovna izvedba gradbenih ter prenovitvenih del.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "Lokalni partner",
+        "description": "Zanesljiv lokalni partner za gradbeništvo v Medvodah in okolici.",
+        "title": "Lokalni partner"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete gradbena dela? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 502 267",
+        "href": "tel:041502267",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Iztokova ulica 7, 1215 Medvode, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00 – 20:00, Nedelja: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Iztokova ulica 7, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Hajroski gradbeništvo",
+    "address": "Iztokova ulica 7, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "041 502 267"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-09-warm-soft",
+  "theme": {
+    "paletteId": "look-slikopleskarji-09-dusk",
+    "fontPairingId": "look-slikopleskarji-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-aljaz-baumann/hero.avif",
+      "alt": "Slikopleskar pri delu v svetlem interierju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-aljaz-baumann/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7217987",
+      "sourceUrl": "https://www.pexels.com/photo/man-putting-adhesive-tape-on-wall-7217987/",
+      "photographer": "Blue Bird",
+      "photographerUrl": "https://www.pexels.com/@blue-bird",
+      "searchQuery": "house painter working on wall interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-aljaz-baumann/services.avif",
+      "alt": "Pleskanje in obnova sten",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-aljaz-baumann/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7217975",
+      "sourceUrl": "https://www.pexels.com/photo/woman-putting-adhesive-tape-on-wall-7217975/",
+      "photographer": "Blue Bird",
+      "photographerUrl": "https://www.pexels.com/@blue-bird",
+      "searchQuery": "house painter working on wall interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za naše osnovne storitve slikanja in zaključnih del.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje sten",
+        "description": "Osnovno beljenje v belem tone.",
+        "price": "od 3,50 €",
+        "unit": "na m2",
+        "featured": true
+      },
+      {
+        "name": "Pleskanje vrat",
+        "description": "Obnova in pleskanje sobnega krila in podboja.",
+        "price": "od 60 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Priprava podlage in natančno lepljenje tapet.",
+        "price": "od 12 €",
+        "unit": "na m2"
+      },
+      {
+        "name": "Sanacija vlage",
+        "description": "Odstranitev ometa, zaščita in sanacija prizadetega mesta.",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Obnova ali manjša popravila fasadnih površin.",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Aljaž Baumann"
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Aljaž Baumann s.p. | Pleskanje in fasaderstvo",
+    "description": "Kakovostno notranje beljenje, pleskanje, tapetništvo, sanacija vlage in fasaderska dela v Kamniku in okolini."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo slikopleskarstvo v Kamniku",
+    "title": "Osvežite svoj dom z zanesljivim",
+    "titleHighlight": "slikopleskarstvom",
+    "description": "Strokovno notranje beljenje sten, pleskanje vrat in ograj, polaganje tapet, sanacija vlage ter fasaderska dela za lastnike stanovanj, hiš in poslovnih prostorov v Kamniku in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba",
+        "title": "Natančna izvedba"
+      },
+      {
+        "value": "Kakovostni materiali",
+        "label": "Kakovostni materiali",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Kamnik in okolica",
+        "label": "Kamnik in okolica",
+        "title": "Kamnik in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za Vaš prostor",
+    "description": "Izvajamo kakovostna slikopleskarska in zaključna dela v gradbeništvu, prilagojena vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Notranje beljenje sten",
+        "description": "Osvežitev in beljenje notranjih prostorov z uporabo preverjenih materialov za čist ter urejen videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pleskanje vrat in ograj",
+        "description": "Zaščita in estetska prenova lesenih ter kovinskih površin, kot so vrata in ograje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Natančno lepljenje in polaganje različnih vrst tapet za edinstven videz vaših prostorov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in ometa",
+        "description": "Strokovna sanacija poškodovanih ometov in odpravljanje težav z vlago na stenah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Urejanje in obnova fasad za boljšo zaščito in privlačen zunanji videz vašega objekta.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za prenovo vašega doma",
+    "description": "Zavedamo se, kako pomembna sta urejen in prijeten ambient ter spoštovanje dogovorov.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Uporaba preverjenih in kakovostnih materialov",
+      "Visoka stopnja prilagodljivosti urniku strank"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Delo opravimo skrbno, natančno in v dogovorjenih časovnih okvirih.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporabljamo preverjene materiale, ki zagotavljajo dolgotrajne in lepe rezultate.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku ter potrebam.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete prenovo prostora? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 559 591",
+        "href": "tel:031559591",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Podgorje 34a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: odprto (nedelja zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite svoje ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite svojo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Podgorje 34a, 1241 Kamnik, Slovenia",
+    "rights": "© Slikopleskarstvo Aljaž Baumann s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Aljaž Baumann",
+    "address": "Podgorje 34a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "031 559 591"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

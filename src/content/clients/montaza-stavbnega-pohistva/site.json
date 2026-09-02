@@ -1,0 +1,257 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-02-editorial-type",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-02-slate",
+    "fontPairingId": "look-mizarji-tesarji-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in se prilagajajo glede na obseg in zahtevnost dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža okna",
+        "description": "Strokovna vgradnja in tesnjenje",
+        "price": "od 45 €",
+        "unit": "kos",
+        "featured": true
+      },
+      {
+        "name": "Montaža vhodnih vrat",
+        "description": "Vgradnja in nastavitev",
+        "price": "od 120 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Montaža notranjih vrat",
+        "description": "Vgradnja podboja in krila",
+        "price": "od 70 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Montaža senčil",
+        "description": "Vgradnja rolet ali žaluzij",
+        "price": "od 40 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Svetovanje na terenu",
+        "description": "Ogled objekta in strokovni nasvet",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mking",
+    "highlight": "Andrej Kralj s.p."
+  },
+  "metadata": {
+    "title": "Montaža stavbnega pohištva Mking | Andrej Kralj s.p.",
+    "description": "Strokovna in zanesljiva montaža stavbnega pohištva v Kamniku in okolici. Vgradnja oken, vrat in senčil z osebnim pristopom."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni izvajalec",
+    "title": "Strokovna in zanesljiva montaža stavbnega pohištva",
+    "titleHighlight": "za vaš dom",
+    "description": "Kakovostna vgradnja oken, vrat in senčil za lastnike stanovanj in hiš, ki prenavljajo ali gradijo v Kamniku in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljiv pristop"
+      },
+      {
+        "value": "Kamnik",
+        "label": "Lokalno okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše stavbno pohištvo",
+    "description": "Poskrbimo za strokovno vgradnjo in montažo vseh vrst stavbnega pohištva v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Montaža oken",
+        "description": "Natančna vgradnja novih oken za boljši izkoristek energije in udobje v vašem domu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montaža vrat",
+        "description": "Strokovna montaža vhodnih in notranjih vrat, ki zagotavljajo varnost in estetski videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradnja senčil",
+        "description": "Montaža zunanjih in notranjih senčil za učinkovito zaščito pred soncem in zasebnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža stavbnega pohištva",
+        "description": "Celovite montažne storitve za prenovljene ali novozgrajene objekte.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri izbiri",
+        "description": "Strokovni nasveti in pomoč pri izbiri ustreznih rešitev za vaš dom.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaš dom",
+    "description": "Zavedamo se, kako pomembna je kakovostna vgradnja stavbnega pohištva za dolgoročno udobje.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Strokovna in natančna izvedba",
+      "Zanesljiv in odgovoren pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za odgovoren pristop k vsakemu projektu.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsak element vgradimo strokovno in natančno, da zagotovimo dolgo življenjsko dobo.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in vam svetujemo najboljšo rešitev za vaš dom.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za montažo stavbnega pohištva? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Podgorje 57, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 644 118",
+        "href": "tel:040644118",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Podgorje 57, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mking Andrej Kralj s.p.",
+    "address": "Podgorje 57, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "040 644 118"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

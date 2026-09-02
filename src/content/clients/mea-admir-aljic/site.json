@@ -1,0 +1,252 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-gradbinci-10-frost",
+    "fontPairingId": "look-gradbinci-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene",
+    "description": "Cene gradbenih in prenovitvenih del so odvisne od obsega, zahtevnosti in specifikacij vašega projekta.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in ogled na terenu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Splošna gradbena dela in groba gradnja",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Prenova stanovanja ali hiše",
+        "description": "Celovita prenova bivalnih prostorov",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zaključna gradbena dela",
+        "description": "Natančna izvedba zaključnih del v objektu",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Adaptacija objekta",
+        "description": "Preureditev in adaptacija obstoječih prostorov",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "MEA",
+    "highlight": "Gradbena dela"
+  },
+  "metadata": {
+    "title": "MEA, Admir Aljić s.p. | Gradbena dela in prenovitvena dela Domžale",
+    "description": "Zanesljive gradbene storitve, prenovitvena in zaključna dela v Domžalah z okolico ter širši regiji. Pokličite nas za strokovno izvedbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo gradbeništvo in prenove",
+    "title": "Zanesljive gradbene storitve in",
+    "titleHighlight": "prenovitvena dela",
+    "description": "Strokovne gradbene rešitve za lastnike stanovanj, hiš in poslovnih objektov v Domžalah z okolico in širši regiji.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Točni roki",
+        "label": "Točni roki",
+        "title": "Točni roki"
+      },
+      {
+        "value": "Strokovno svetovanje",
+        "label": "Strokovno svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite storitve za vaš gradbeni projekt",
+    "description": "Izvajamo kakovostna gradbena, prenovitvena in zaključna dela ter adaptacije objektov po vaših željah.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba splošnih gradbenih del in gradbenih posegov za različne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove stanovanj in hiš",
+        "description": "Celovite prenove bivalnih prostorov, ki vdihnejo novo življenje vašemu domu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zaključna gradbena dela",
+        "description": "Natančna zaključna dela za estetsko dovršen in urejen končni videz vašega objekta.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Adaptacije objektov",
+        "description": "Prilagoditev in preureditev obstoječih objektov novim namembnostim ter sodobnim standardom.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti sodelovanja",
+    "title": "Zakaj izbrati MEA, Admir Aljić s.p.?",
+    "description": "Z zanesljivostjo, strokovnim znanjem in posluhom za stranke poskrbimo, da so vaši gradbeni projekti izpeljani brezskrbno.",
+    "highlights": [
+      "Visoka strokovna kakovost izvedbe",
+      "Zanesljivost in držanje dogovorjenih rokov",
+      "Prilagodljivost in strokovno svetovanje strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost izvedbe",
+        "description": "Vsak projekt izpeljemo strokovno, natančno in v skladu z veljavnimi standardi.",
+        "title": "Visoka kakovost izvedbe"
+      },
+      {
+        "label": "Zanesljivost in roki",
+        "description": "Držimo se dogovorjenih rokov in dogovorov, kar vam omogoča brezskrbno gradnjo ali prenovo.",
+        "title": "Zanesljivost in roki"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Prisluhnemo vašim željam in vam svetujemo najboljše rešitve za vaš prostor.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Zagotovite si strokovnega partnerja za gradbena dela",
+    "description": "Pokličite nas ali izpolnite obrazek za povpraševanje. Z veseljem vam bomo svetovali in pripravili ponudbo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 762 719",
+        "href": "tel:031762719",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 102, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 7:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš gradbeni projekt ali prenovo...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 102, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "MEA Gradbena dela",
+    "address": "Ljubljanska cesta 102, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "031 762 719"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

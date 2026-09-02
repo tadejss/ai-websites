@@ -1,0 +1,262 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-02-editorial-type",
+  "theme": {
+    "paletteId": "look-slikopleskarji-02-slate",
+    "fontPairingId": "look-slikopleskarji-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za slikopleskarska dela in dekorativne obdelave.",
+    "disclaimer": "Cenik je informativen. Točna cena je odvisna od ogleda objekta, stanja podlage in obsega del. Za ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje sten in stropov",
+        "description": "Beljenje z osnovno disperzijsko barvo v dveh slojih, vključno z zaščito pohištva.",
+        "price": "od 3,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Mehansko čiščenje, protiglivični premaz in sanacijski nanos.",
+        "price": "od 15 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Dekorativne stenske tehnike",
+        "description": "Izvedba posebnih tehnik in unikatnih nanosov po izboru.",
+        "price": "od 25 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Priprava podlage in natančno lepljenje stenskih tapet.",
+        "price": "od 12 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Barvanje vrat, oken in ograj",
+        "description": "Priprava površine, brušenje in dvoslojno barvanje.",
+        "price": "od 30 €",
+        "unit": "na kos / m"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čopič dekor",
+    "highlight": "Janko Zupančič s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo in dekorativne tehnike Janko Zupančič s.p.",
+    "description": "Zanesljivo slikopleskarstvo, notranje beljenje, dekorativne tehnike in sanacija vlage v Grosupljem z okolico in osrednji Sloveniji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte brezplačen ogled in ponudbo"
+  },
+  "hero": {
+    "badge": "Slikopleskarske storitve",
+    "title": "Vaš zanesljiv partner za",
+    "titleHighlight": "kakovostno beljenje in dekorativne tehnike",
+    "description": "Strokovne slikopleskarske storitve, beljenje sten in stropov ter dekorativne stenske obdelave za lastnike stanovanj, hiš in poslovnih prostorov v Grosupljem ter osrednji Sloveniji.",
+    "primaryCta": "Zahtevajte brezplačen ogled in ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Čisto delo",
+        "label": "Čisto delo",
+        "title": "Čisto delo"
+      },
+      {
+        "value": "Točni roki",
+        "label": "Točni roki",
+        "title": "Točni roki"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše stene",
+    "description": "Poskrbimo za osvežitev vaših prostorov, od klasičnega beljenja do naprednih dekorativnih tehnik in sanacije vlage.",
+    "items": [
+      {
+        "title": "Notranje beljenje sten in stropov",
+        "description": "Kakovostno beljenje stanovanjskih in poslovnih prostorov z ustreznimi premazi za svež in urejen videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popleskanje oken, vrat in ograj",
+        "description": "Natančna obdelava in barvanje stavbnega pohištva ter kovinskih in lesenih ograj.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Dekorativne stenske tehnike",
+        "description": "Edinstvene stenske obdelave, ki vašemu prostoru dodajo poseben estetski značaj in pridih elegance.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Strokovna odprava vzrokov vlage ter sanacija stenskih površin za zdrav bivalni prostor.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Natančno lepljenje vseh vrst tapet za popestritev posameznih sten ali celotnih ambientov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, natančnost in strokovnost",
+    "description": "Zavedamo se pomena urejenega doma ali poslovnega prostora, zato se vsakemu projektu posvetimo z vso skrbnostjo.",
+    "highlights": [
+      "Visoka kakovost izvedbe z dolgoletnimi izkušnjami",
+      "Natančno in čisto delo ob dogovorjenih rokovih",
+      "Individualno svetovanje pri izbiri barvnih nians"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Uporaba preverjenih materialov in strokovna izvedba zagotavljata dolgotrajne in lepe rezultate.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Natančnost in čistoča",
+        "description": "Po končanem delu za seboj pustimo urejen in čist prostor, pripravljen na uporabo.",
+        "title": "Natančnost in čistoča"
+      },
+      {
+        "label": "Individualni pristop",
+        "description": "Prisluhnemo vašim željam in vam svetujemo pri izbiri pravih barv ter dekorativnih rešitev.",
+        "title": "Individualni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Z veseljem vam svetujemo in pripravimo ponudbo za vaše slikopleskarske projekte.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Obrtniška cesta 18, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 785 299",
+        "href": "tel:031785299",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Zahtevajte brezplačen ogled in ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Obrtniška cesta 18, 1290 Grosuplje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čopič dekor Janko Zupančič s.p.",
+    "address": "Obrtniška cesta 18, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "031 785 299"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

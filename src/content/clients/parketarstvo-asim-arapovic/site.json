@@ -1,0 +1,256 @@
+{
+  "appearance": "construction",
+  "lookId": "parketarji-talne-obloge-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-parketarji-talne-obloge-10-frost",
+    "fontPairingId": "look-parketarji-talne-obloge-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in so odvisne od kvadrature, stanja podlage ter izbranih materialov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ogled na objektu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje parketa",
+        "description": "Strokovna vgradnja klasičnega ali gotovega parketa",
+        "price": "od 15 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Brušenje in lakiranje parketa",
+        "description": "Celoten postopek obnove z lakiranjem v treh slojih",
+        "price": "od 22 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Oljenje parketa",
+        "description": "Nanos zaščitnega olja za naraven videz lesa",
+        "price": "od 12 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Vgradnja laminata",
+        "description": "Polaganje laminata z namestitvijo podlage in zaključnih letev",
+        "price": "od 8 €",
+        "unit": "na m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Parketarstvo",
+    "highlight": "Asim Arapović s.p."
+  },
+  "metadata": {
+    "title": "Parketarstvo Asim Arapović s.p. | Polaganje in obnova parketa Ljubljana",
+    "description": "Strokovna vgradnja, brušenje, lakiranje in oljenje parketa ter vgradnja laminata v Ljubljani z okolico. Zanesljive storitve za vaša tla."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovnjak za talne obloge v Ljubljani",
+    "title": "Strokovna vgradnja in obnova",
+    "titleHighlight": "vseh vrst talnih oblog",
+    "description": "Celovite rešitve za lesena tla za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo nova tla ali obnovo obstoječih v Ljubljani z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Natančna",
+        "label": "Izvedba",
+        "title": "Natančna izvedba"
+      },
+      {
+        "value": "Celovite",
+        "label": "Rešitve",
+        "title": "Celovite rešitve"
+      },
+      {
+        "value": "Preverjena",
+        "label": "Kakovost",
+        "title": "Preverjena kakovost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Vse za vaše lesene talne obloge na enem mestu",
+    "description": "Zagotavljamo kakovostno polaganje, brušenje, obdelavo in vgradnjo talnih oblog v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Polaganje parketa",
+        "description": "Natančno in strokovno polaganje vseh vrst parketa za dolgotrajno in lepo podobo vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Brušenje parketa",
+        "description": "Temeljito brušenje obstoječega parketa, s katerim odstranimo poškodbe in osvežimo izgled lesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Lakiranje parketa",
+        "description": "Kakovostno lakiranje za zaščito lesa pred obrabo ter enostavnejše vzdrževanje tal.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oljenje parketa",
+        "description": "Naravna obdelava s kakovostnimi olji, ki poudarijo naravno strukturo in toplino lesa.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Vgradnja laminata",
+        "description": "Hitra in strokovna vgradnja laminata za sodoben videz in udobje v vašem domu ali pisarni.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaša tla",
+    "description": "Z zanesljivostjo, strokovnim pristopom in posluhom za vaše željekrbimo za estetska in trajna tla.",
+    "highlights": [
+      "Preverjena kakovost storitev z odličnimi ocenami strank",
+      "Strokovno svetovanje in natančna izvedba",
+      "Celovite rešitve za lesena tla"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Kakovostne storitve, ki temeljijo na odličnih izkušnjah in zadovoljstvu strank.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Pomagamo vam izbrati prave materiale in rešitve za vaš prostor.",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Od priprave podlage do končne obdelave lesenih tal na enem mestu.",
+        "title": "Celovite rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete nova tla ali obnovo starega parketa? Pokličite nas ali izpolnite obrazek za ponudbo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 231 477",
+        "href": "tel:040231477",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Celovška cesta 189, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opičite vaše želje ali potrebe glede talnih oblog...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Celovška cesta 189, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Parketarstvo Asim Arapović s.p.",
+    "address": "Celovška cesta 189, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 231 477"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

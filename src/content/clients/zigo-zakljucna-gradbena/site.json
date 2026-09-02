@@ -1,0 +1,262 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-09-warm-soft",
+  "theme": {
+    "paletteId": "look-slikopleskarji-09-dusk",
+    "fontPairingId": "look-slikopleskarji-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene zaključnih del",
+    "description": "Pregled okvirnih cen za slikopleskarska in gradbena dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pleskanje sten in stropov",
+        "description": "Dvoslojni nanos bele barve z vključeno zaščito pohištva",
+        "price": "od 3,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Beljenje prostorov",
+        "description": "Osvežitev obstoječih barvnih odtenkov",
+        "price": "od 3,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Polaganje talnih oblog",
+        "description": "Montaža in polaganje laminata ali gotovega parketa",
+        "price": "od 10,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Suhomontažna gradnja (stropi/stene)",
+        "description": "Montaža mavčno-kartonskih plošč na podkonstrukcijo",
+        "price": "od 25,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Manjša gradbena dela in obnove",
+        "description": "Manjši obrtniški posegi in urejanje prostorov po dogovoru",
+        "price": "od 25,00 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "ŽIGO",
+    "highlight": "Zaključna gradbena dela"
+  },
+  "metadata": {
+    "title": "Žigo | Slikopleskarstvo in zaključna gradbena dela Litija",
+    "description": "Kakovostna zaključna gradbena dela in slikopleskarstvo v Litiji in okolici. Zanesljivo pleskanje, polaganje talnih oblog in prenova prostorov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster za vaš dom",
+    "title": "Kakovostna slikopleskarska in",
+    "titleHighlight": "zaključna gradbena dela",
+    "description": "Urejanje in prenova domov ter poslovnih prostorov v Litiji in okolici. Poskrbimo za natančno izvedbo in urejen videz vaših prostorov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Preverjeno",
+        "label": "Kakovost storitev",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Natančna izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Strokovno svetovanje",
+        "title": "Prilagodljiv pristop"
+      },
+      {
+        "value": "Litija",
+        "label": "In širša okolica",
+        "title": "Lokalni mojster"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za prenovo vašega doma",
+    "description": "Celovite rešitve za osvežitev in prenovo sten, tal ter prostorov v Litiji in okolici.",
+    "items": [
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Kakovostno pleskanje z vrhunskimi materiali za svež in urejen videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje in osvežitev prostorov",
+        "description": "Hitra in čista osvežitev barv v stanovanjih, hišah ali poslovnih objektih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje talnih oblog",
+        "description": "Natančna vgradnja in polaganje različnih talnih oblog po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Suhomontažna gradnja",
+        "description": "Strokovna izvedba suhomontažnih del, predelnih sten in stropov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjši gradbeni in obnova prostorov",
+        "description": "Manjša gradbena dela ter celovita prenova in ureditev vaših bivalnih prostorov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden mojster z osebnim pristopom",
+    "description": "Delujemo z mislijo na vaše želje, s poudarkom na čistosti, natančnosti in strokovnosti.",
+    "highlights": [
+      "Preverjena kakovost storitev z odličnimi ocenami",
+      "Zanesljivo in natančno izvajanje del",
+      "Prilagodljivost strankam in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Visok standard izvedbe, ki ga potrjujejo zadovoljne stranke in odlične ocene.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in dela izvedemo natančno ter brezhibno.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in vam strokovno svetujemo pri izbiri rešitev.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Potrebujete prenovo ali slikopleskarska dela?",
+    "description": "Pokličite nas ali nam pošljite sporočilo. Z veseljem vam bomo svetovali in pripravili ponudbo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 274 368",
+        "href": "tel:070274368",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Podkraj 2, 1270 Litija, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kakšna dela potrebujete...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Podkraj 2, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "ŽIGO Zaključna gradbena dela",
+    "address": "Podkraj 2, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "070 274 368"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

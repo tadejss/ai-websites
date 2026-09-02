@@ -1,0 +1,253 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-08-dark-pro",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-08-copper",
+    "fontPairingId": "look-mizarji-tesarji-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Orientacijske cene mizarskih storitev",
+    "description": "Cene so informativne narave in so odvisne od izbire materialov, zahtevnosti izdelave ter dimenzij.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinje po naročilu",
+        "description": "Izdelava in montaža po meri",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati po meri",
+        "price": "od 800 €"
+      },
+      {
+        "name": "Pohištvo po meri",
+        "description": "Posamezni kosi pohištva",
+        "price": "od 300 €"
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Leseni elementi in obloge",
+        "price": "od 500 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Zupančič"
+  },
+  "metadata": {
+    "title": "Mizarstvo Alojzij Zupančič s.p. | Pohištvo po meri",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Litiji in širši okolici. Kuhinje, vgradne omare in notranja oprema."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarska obrt Zupančič",
+    "title": "Kakovostno izdelano pohištvo po meri",
+    "titleHighlight": "za vaš dom",
+    "description": "Unikatno pohištvo po meri za lastnike stanovanj in hiš v Litiji s širšo okolico. Zanesljiva izvedba in posluh za vaše želje.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Tradicionalni",
+        "label": "mojster",
+        "title": "Tradicionalni mojster"
+      },
+      {
+        "value": "Unikatna",
+        "label": "izdelava",
+        "title": "Unikatna izdelava"
+      },
+      {
+        "value": "Natančna",
+        "label": "montaža",
+        "title": "Natančna montaža"
+      },
+      {
+        "value": "Kakovostni",
+        "label": "materiali",
+        "title": "Kakovostni materiali"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske rešitve za vaš prostor",
+    "description": "Specializirani smo za izdelavo pohištva po meri v Litiji in okolici. Vsak kos prilagodimo vašemu prostoru in željam.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Unikatni kosi pohištva, prilagojeni vašemu merilu in stilu bivanja.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po naročilu",
+        "description": "Funkcionalne in estetsko dovršene kuhinje, ustvarjene za vaše kuharske trenutke.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimalen izkoristek prostora z vgradnimi omaremi z drsnimi vrati.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celostna ureditev notranjih prostorov z lesnimi elementi.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Leseni izdelki",
+        "description": "Različni leseni izdelki po vaših načrtih in željah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše mizarske projekte",
+    "description": "Z dolgoletnimi izkušnjami v mizarski obrti poskrbimo, da je vsak kos pohištva narejen natančno in skrbno.",
+    "highlights": [
+      "Dolgoletne izkušnje v mizarski obrti",
+      "Individualni pristop k vsakemu projektu",
+      "Natančna izdelava in montaža",
+      "Uporaba kakovostnih lesnih materialov"
+    ],
+    "benefits": [
+      {
+        "label": "Izkušnje v obrti",
+        "description": "Dolgoletne izkušnje v mizarski obrti zagotavljajo preverjeno kakovost.",
+        "title": "Izkušnje v obrti"
+      },
+      {
+        "label": "Individualni pristop",
+        "description": "Prisluhnemo vašim željam in vsak projekt obravnavamo edinstveno.",
+        "title": "Individualni pristop"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Skrbna izdelava in strokovna montaža pohištva na vašem domu.",
+        "title": "Natančna izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Veliki Vrh pri Litiji 14a, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 707 672",
+        "href": "tel:040707672",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Veliki Vrh pri Litiji 14a, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Zupančič",
+    "address": "Veliki Vrh pri Litiji 14a, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "040 707 672"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

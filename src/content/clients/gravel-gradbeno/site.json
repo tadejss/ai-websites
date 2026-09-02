@@ -1,0 +1,256 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-03-photo-forward",
+  "theme": {
+    "paletteId": "look-gradbinci-03-bloom",
+    "fontPairingId": "look-gradbinci-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Orientacijske cene naših gradbenih in zemeljskih del za lažje načrtovanje vašega proračuna.",
+    "disclaimer": "Cenik je informativen. Za uradno ponudbo in ogled terena nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Zemeljska dela in izkopi",
+        "description": "Strojni izkopi in odvoz materiala.",
+        "price": "od 45 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Priprava terena in nasutja",
+        "description": "Urejanje in valjanje terena.",
+        "price": "od 50 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Najem gradbene mehanizacije",
+        "description": "Najem strojev z izkušenim upravljavcem.",
+        "price": "od 60 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Manjše nizke gradnje",
+        "description": "Ureditve utrjenih površin in dovozov.",
+        "price": "Po dogovoru",
+        "unit": "projekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Gravel",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Gravel, gradbeno podjetje, d.o.o. | Gradbene storitve",
+    "description": "Zanesljive gradbene storitve, zemeljska dela in nizke gradnje na območju Brezovice s širšo okolico. Strokovna izvedba za lastnike nepremičnin in investitorje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Gradbeno podjetje",
+    "title": "Zanesljive gradbene storitve za",
+    "titleHighlight": "vaše projekte",
+    "description": "Strokovne rešitve na področju zemeljskih del, nizkih gradenj in priprave terena za lastnike nepremičnin, investitorje in podjetja.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zemeljska dela",
+        "label": "Zemeljska dela",
+        "title": "Zemeljska dela"
+      },
+      {
+        "value": "Nizke gradnje",
+        "label": "Nizke gradnje",
+        "title": "Nizke gradnje"
+      },
+      {
+        "value": "Mehanizacija",
+        "label": "Gradbena mehanizacija",
+        "title": "Gradbena mehanizacija"
+      },
+      {
+        "value": "Priprava terena",
+        "label": "Ugotavljanje in priprava terena",
+        "title": "Priprava terena"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše gradbene storitve",
+    "description": "Zanesljiva izvedba gradbenih projektov z uporabo sodobne mehanizacije na območju Brezovice pri Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Zemeljska dela",
+        "description": "Kakovostni izkopi, nasutja in priprava terena za gradbene objekte ter infrastrukturo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nizke gradnje",
+        "description": "Strokovna izvedba in urejanje komunalne infrastrukture ter zunanjih površin.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Gradbena mehanizacija",
+        "description": "Uporaba zmogljive gradbene mehanizacije za učinkovito in varno izvedbo del.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Ugotavljanje in priprava terena",
+        "description": "Natančen pregled terena in celostna priprava zemljišča za začetek gradnje.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati našo ekipo?",
+    "description": "Z združevanjem strokovnega znanja, zanesljivosti in prilagodljivosti zagotavljamo visoko raven izvedbe vsakega projekta.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Zanesljiva in strokovna izvedba",
+      "Prilagodljivost in točnost"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Zanesljivo opravljena dela z visokim poudarkom na kakovosti in varnosti.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in zahtevam ter se natančno držimo dogovorjenih rokov.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Gradimo dolgoročne odnose, ki temeljijo na zaupanju in strokovnosti.",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Iščete zanesljivega izvajalca za gradbena dela? Pošljite nam povpraševanje ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Ivana Selana 19, 1351 Brezovica pri Ljubljani, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 356 356",
+        "href": "tel:031356356",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš gradbeni projekt ali povpraševanje...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Ulica Ivana Selana 19, 1351 Brezovica pri Ljubljani, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Gravel d.o.o.",
+    "address": "Ulica Ivana Selana 19, 1351 Brezovica pri Ljubljani, Slovenia",
+    "email": "",
+    "phone": "031 356 356"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-06-service-grid",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-06-clay",
+    "fontPairingId": "look-mizarji-tesarji-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in se prilagajajo glede na obseg ter zahtevnost dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža stavbnega pohištva",
+        "description": "Strokovna vgradnja po kosu ali projektu",
+        "price": "od 50 €",
+        "unit": "kos / ura",
+        "featured": true
+      },
+      {
+        "name": "Vgradnja notranjega pohištva",
+        "description": "Montaža omar, polic in elementov",
+        "price": "od 40 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Pohištvene storitve po naročilu",
+        "description": "Prilagojena vgradnja in montaža",
+        "price": "od 45 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Svetovanje na terenu",
+        "description": "Pregled prostora in strokovni nasveti",
+        "price": "od 30 €",
+        "unit": "obisk"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Sašo Kogovšek",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Sašo Kogovšek s.p. | Vgrajevanje stavbnega in drugega pohištva Vrhnika",
+    "description": "Strokovna vgradnja stavbnega in drugega pohištva na Vrhniki z okolico in v osrednji Sloveniji. Zanesljive storitve po vaši meri."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv ponudnik na Vrhniki",
+    "title": "Strokovna vgradnja stavbnega in drugega pohištva",
+    "titleHighlight": "po vaši meri",
+    "description": "Nudimo kakovostne storitve vgradnje za lastnike stanovanj, hiš in poslovnih prostorov na Vrhniki z okolico in v osrednji Sloveniji.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše pohištvo",
+    "description": "Specializirani smo za vgradnjo in montažo stavbnega ter drugega pohištva na območju Vrhnike in osrednje Slovenije.",
+    "items": [
+      {
+        "title": "Montaža stavbnega pohištva",
+        "description": "Natančna in strokovna montaža stavbnega pohištva za vaš dom ali poslovni prostor.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Vgradnja notranjega pohištva",
+        "description": "Skrbna vgradnja notranjega pohištva po vaših željah in merah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pohištvene storitve po naročilu",
+        "description": "Prilagojene rešitve in storitve vgradnje pohištva po naročilu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje in montaža",
+        "description": "Strokovno svetovanje ter celovita izvedba montaže na terenu.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vgradnjo pohištva",
+    "description": "Z našim znanjem in izkušnjami poskrbimo, da je vsak projekt izpeljan natančno in brezskrbno.",
+    "highlights": [
+      "Visoka kakovost izvedbe z odličnimi ocenami strank",
+      "Zanesljiv in strokoven pristop k delu",
+      "Prilagodljivost in natančnost pri vgradnji"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene strank",
+        "description": "Visoka kakovost izvedbe, ki prepriča in navduši naše stranke.",
+        "title": "Odlične ocene strank"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Zanesljivo delo in odgovoren odnos do vsakega projekta.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Natančnost in prilagodljivost",
+        "description": "Prisluhnemo vašim željam in poskrbimo za natančno vgradnjo.",
+        "title": "Natančnost in prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za montažo pohištva? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Pavkarjeva pot 14, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 504 751",
+        "href": "tel:041504751",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali opis projekta...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Pavkarjeva pot 14, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Sašo Kogovšek s.p.",
+    "address": "Pavkarjeva pot 14, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 504 751"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-09-warm-soft",
+  "theme": {
+    "paletteId": "look-gradbinci-09-dusk",
+    "fontPairingId": "look-gradbinci-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Orientacijske cene naših storitev",
+    "description": "Pregled okvirnih cen za gradbena dela in prenovo objektov.",
+    "disclaimer": "Cenik je informativen. Za točne ponudbe in ogled na terenu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Izvedba splošnih gradbenih del po dogovoru.",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Prenova objektov",
+        "description": "Celovita prenova stanovanjskih ali poslovnih površin.",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zastopništvo",
+        "description": "Strokovno zastopništvo in vodenje procesov.",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Gradbene storitve",
+        "description": "Različna strokovna dela in pomoči pri gradnji.",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mp gradbenik",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Mp gradbenik d.o.o. | Zanesljivi gradbeni partner",
+    "description": "Zanesljivi gradbeni partner za vaše projekte, prenove objektov in gradbene storitve v Stahovici in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Gradbeništvo in storitve",
+    "title": "Zanesljivi gradbeni partner za",
+    "titleHighlight": "vaše projekte in prenovo",
+    "description": "Strokovne gradbene storitve in prenove objektov za lastnike nepremičnin, investitorje ter posameznike v Stahovici in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Zanesljiva",
+        "label": "izvedba del",
+        "title": "Zanesljiva izvedba del"
+      },
+      {
+        "value": "Strokovno",
+        "label": "svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "pristop",
+        "title": "Prilagodljiv pristop"
+      },
+      {
+        "value": "Kakovostne",
+        "label": "gradbene storitve",
+        "title": "Kakovostne gradbene storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za gradnjo in prenovo",
+    "description": "Nudimo kakovostna gradbena dela, prenove objektov, zastopništvo in strokovne gradbene storitve na območju Stahovice in okolice.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Zanesljiva in strokovna izvedba gradbenih del za vaše stanovanjske ali poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove in posodobitve obstoječih objektov z mislijo na dolgotrajno kakovost.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zastopništvo",
+        "description": "Strokovno zastopništvo in podpora pri uresničevanju vaših gradbenih in investicijskih načrtov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Gradbene storitve",
+        "description": "Raznovrstne gradbene storitve, prilagojene potrebam lastnikov nepremičnin in investitorjev.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in prilagodljivost",
+    "description": "Kot domači gradbeni mojstri se posvetimo vsakemu projektu posebej ter zagotavljamo visoko raven strokovnosti.",
+    "highlights": [
+      "Zanesljiva izvedba gradbenih del",
+      "Strokovno svetovanje in zastopništvo",
+      "Prilagodljivost in strokovnost"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Dosledno spoštujemo dogovore in zagotavljamo zanesljivo izvedbo vseh gradbenih del.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Nudimo zanesljivo svetovanje ter zastopništvo skozi celoten potek vašega projekta.",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo specifičnim zahtevam na terenu.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete zanesljivega gradbenega partnerja? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Godič 84 A, 1241 Stahovica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 782 792",
+        "href": "tel:040782792",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Godič 84 A, 1241 Stahovica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mp gradbenik d.o.o.",
+    "address": "Godič 84 A, 1241 Stahovica, Slovenia",
+    "email": "",
+    "phone": "040 782 792"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

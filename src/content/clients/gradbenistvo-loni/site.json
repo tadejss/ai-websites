@@ -1,0 +1,261 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-08-dark-pro",
+  "theme": {
+    "paletteId": "look-gradbinci-08-copper",
+    "fontPairingId": "look-gradbinci-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naši projekti",
+    "description": "Pregled nekaterih izvedenih del.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Orientacijske cene storitev",
+    "description": "Pregled okvirnih cen za gradbena in prenovitvena dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Zidarska dela",
+        "description": "Izvedba splošnih zidarskih del po dogovoru",
+        "price": "od 25 €",
+        "unit": "m²",
+        "featured": true
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Izdelava kontaktne fasade z izolacijo",
+        "price": "od 45 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Prenova objektov",
+        "description": "Celovite adaptacije in prenovitvena dela",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Zunanja ureditev",
+        "description": "Urejanje okolice in tlakovanje",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Gradbeništvo",
+    "highlight": "LONI"
+  },
+  "metadata": {
+    "title": "Gradbeništvo LONI S.P. | Zanesljive gradbene storitve in prenove",
+    "description": "Zanesljive gradbene storitve, prenove objektov, zidarska in fasaderska dela v Kamniku in okolici. Zahtevajte ponudbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv izvajalec v Kamniku in okolici",
+    "title": "Gradbene storitve in",
+    "titleHighlight": "prenovitvena dela",
+    "description": "Kakovostne rešitve za lastnike nepremičnin, investitorje in gospodinjstva. Specializirani smo za gradbena dela, prenove objektov, zidarska in fasaderska dela.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Kakovostna",
+        "label": "izvedba del",
+        "title": "Kakovostna izvedba del"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "in prilagodljivost",
+        "title": "Zanesljivost in prilagodljivost"
+      },
+      {
+        "value": "Strokovno",
+        "label": "svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Kamnik in okolica",
+        "title": "Kamnik in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaš gradbeni projekt",
+    "description": "Nudimo strokovne gradbene in prenovitvene storitve za objekte v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Izvedba vseh vrst gradbenih del z zanesljivim pristopom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove stanovanj, hiš in poslovnih prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Kakovostna zidarska dela za novogradnje in adaptacije.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Izdelava in obnova fasad za boljšo energetsko učinkovitost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanja ureditev",
+        "description": "Urejanje okolice objektov, dvorišč in dovozov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom poskrbimo za brezhibno izvedbo vsakega projekta.",
+    "highlights": [
+      "Kakovostna izvedba del",
+      "Prilagodljivost in zanesljivost",
+      "Strokovno svetovanje strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Vsak projekt izpeljemo skrbno in v skladu z dogovori.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in potrebam na terenu.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Zanesljivo strokovno svetovanje skozi celoten proces.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za gradbena dela? Kontaktirajte nas.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Maistrova ulica 16, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "071 603 608",
+        "href": "tel:071603608",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 6:00–17:00, Sob: 8:00–14:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Maistrova ulica 16, 1241 Kamnik, Slovenia",
+    "rights": "© 2025 Gradbeništvo LONI S.P. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Gradbeništvo LONI",
+    "address": "Maistrova ulica 16, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "071 603 608"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

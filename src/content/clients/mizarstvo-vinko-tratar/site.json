@@ -1,0 +1,257 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-05-minimal-line",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-05-mist",
+    "fontPairingId": "look-mizarji-tesarji-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so odvisne od izbire materialov, zahtevnosti izdelave in dimenzij.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinje po meri",
+        "description": "Informativna izmera, načrtovanje in izdelava",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati po meri prostora",
+        "price": "od 800 €"
+      },
+      {
+        "name": "Pohištvo po meri",
+        "description": "Komode, mize, police in ostali kosi",
+        "price": "od 300 €"
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Celostna oprema manjših prostorov",
+        "price": "od 1.200 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Vinko Tratar"
+  },
+  "metadata": {
+    "title": "Mizarstvo Vinko Tratar s.p. | Pohištvo po meri",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Logu pri Brezovici in okolici. Kuhinje, vgradne omare in notranja oprema."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Tradicionalna mojstrska kakovost",
+    "title": "Kakovostno izdelano",
+    "titleHighlight": "pohištvo po meri",
+    "description": "Unikatno pohištvo po meri za lastnike stanovanj in hiš v Logu pri Brezovici in okolici, prilagodi se vašim željam in prostoru.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Po meri",
+        "label": "Po meri",
+        "title": "Po meri"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve mizarstva",
+    "description": "Izdelujemo kakovostno pohištvo po meri za domove v Logu pri Brezovici in okolici.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Unikatni kosi pohištva, prilagodi se vašemu prostoru in življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne in estetsko dovršene kuhinje, ustvarjene za udobno kuhanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimalen izkoristek prostora z vgradnimi omare po vaših merah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celovite rešitve za opremo vašega doma z lesnimi izdelki.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Leseni izdelki",
+        "description": "Različni leseni izdelki narejeni z mojstrsko natančnostjo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati mizarstvo Vinko Tratar?",
+    "description": "Z združevanjem tradicionalnega znanja in posluhom za vaše želje ustvarjamo trajne lesene rešitve.",
+    "highlights": [
+      "Visoka kakovost izdelave",
+      "Prilagojeno vašim željam in prostoru",
+      "Zanesljiva in strokovna storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Vsak kos pohištva izdelujemo skrbno in z mislijo na dolgotrajno uporabo.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Pohištvo v celoti prilagodimo vašim željam in specifičnemu prostoru.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Zagotavljamo strokovno izvedbo in držanje dogovorjenih rokov.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Loška cesta 13, 1358 Log pri Brezovici, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 743 496",
+        "href": "tel:041743496",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 17:00 (Petek do 12:00)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve glede pohištva",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Loška cesta 13, 1358 Log pri Brezovici, Slovenia",
+    "rights": "© Mizarstvo Vinko Tratar s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Vinko Tratar",
+    "address": "Loška cesta 13, 1358 Log pri Brezovici, Slovenia",
+    "email": "",
+    "phone": "041 743 496"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

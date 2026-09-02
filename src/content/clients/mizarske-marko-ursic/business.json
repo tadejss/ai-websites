@@ -1,0 +1,28 @@
+{
+  "companyName": "Mizarske storitve Marko Uršič s.p.",
+  "industry": "Mizarstvo",
+  "tagline": "Kakovostno izdelano pohištvo po meri za vaš dom",
+  "services": [
+    "Kuhinje po meri",
+    "Vgradne omare",
+    "Pohištvo za spalnice",
+    "Dnevne sobe",
+    "Unikatni leseni izdelki"
+  ],
+  "phone": "041 353 480",
+  "email": "",
+  "address": "Iška Loka 24, 1292 Ig, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 8:00 PM · Tuesday: 8:00 AM – 8:00 PM · Wednesday: 8:00 AM – 8:00 PM · Thursday: 8:00 AM – 8:00 PM · Friday: 8:00 AM – 8:00 PM · Saturday: 8:00 AM – 8:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Izdelava pohištva po meri",
+    "Prilagodljivost željam strank",
+    "Kakovostna obdelava lesa"
+  ],
+  "targetCustomers": "Lastniki stanovanj in hiš, ki iščejo unikatno in funkcionalno pohištvo",
+  "serviceArea": "Ig in okolica, osrednja Slovenija",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv",
+  "brandStyle": "domače mizarstvo",
+  "competitors": "Lokalni mizarji in ponudniki pohištva po meri",
+  "callToAction": "Pokličite za ponudbo"
+}

@@ -1,0 +1,258 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-08-dark-pro",
+  "theme": {
+    "paletteId": "look-slikopleskarji-08-copper",
+    "fontPairingId": "look-slikopleskarji-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave; točen znesek določimo po ogledu in dogovoru.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Beljenje sten in stropov",
+        "description": "Dvokratni nanos bele barve z vso osnovno zaščito.",
+        "price": "od 3,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Pleskanje v barvnih odtenkih",
+        "description": "Pleskanje s standardnimi disperzijskimi barvami.",
+        "price": "od 4,50 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Mehansko čiščenje, nanos protiglivičnega sredstva in pleskanje.",
+        "price": "od 15,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Priprava podlage in strokovno lepljenje tapet.",
+        "price": "od 12,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Zaščita prostora in pohištva",
+        "description": "Foliiranje in lepljenje zaščitnih trakov pred začetkom del.",
+        "price": "od 30,00 €",
+        "unit": "paušal"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Robert Babnik s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Robert Babnik s.p. | Kakovostno pleskanje",
+    "description": "Kakovostno in natančno pleskanje ter beljenje za vaš dom ali poslovni prostor v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv izvajalec",
+    "title": "Kakovostno in natančno pleskanje",
+    "titleHighlight": "za vaš dom",
+    "description": "Profesionalne pleskarske storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo osvežitev ali prenovo interierja v Ljubljani z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjena",
+        "label": "kakovost"
+      },
+      {
+        "value": "Zanesljiva",
+        "label": "izvedba"
+      },
+      {
+        "value": "Čisto",
+        "label": "delo"
+      },
+      {
+        "value": "Osebni",
+        "label": "pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Storitve pleskanja in osvežitve prostorov",
+    "description": "Nudimo celovite rešitve za vaše stene in strope v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Natančno pleskanje površin za popoln videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje prostorov",
+        "description": "Osvežitev bele barve za svetlejši in prijetnejši dom.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Učinkovito odstranjevanje vlage ter zaščita ogroženih površin.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Strokovno lepljenje različnih vrst tapet za edinstven ambient.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zaščita in priprava površin",
+        "description": "Temeljita zaščita pohištva in tal ter priprava sten pred pleskanjem.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše stene",
+    "description": "Zavedamo se, kako pomemben je urejen dom, zato se pri vsakem projektu držimo dogovorov in visoke ravni kakovosti.",
+    "highlights": [
+      "Preverjena kakovost z odličnimi ocenami strank",
+      "Zanesljivost in strokovna izvedba del",
+      "Čista in urejena izvedba pleskarskih storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Z odličnimi ocenami strank jamčimo za vrhunsko opravljeno delo.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Zanesljivost in natančnost na vsakem koraku prenove.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Urejeno delo",
+        "description": "Po končanem delu za seboj pustimo čiste in pospravljene prostore.",
+        "title": "Urejeno delo"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za ponudbo",
+    "description": "Z veseljem vam svetujemo in pripravimo ponudbo za vaše potrebe.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 879 963",
+        "href": "tel:031879963",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Gozdna pot 3a, 1261 Ljubljana - Dobrunje, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Gozdna pot 3a, 1261 Ljubljana - Dobrunje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Robert Babnik s.p.",
+    "address": "Gozdna pot 3a, 1261 Ljubljana - Dobrunje, Slovenia",
+    "email": "",
+    "phone": "031 879 963"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

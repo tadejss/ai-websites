@@ -1,0 +1,263 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-01-classic-split",
+  "theme": {
+    "paletteId": "look-gradbinci-01-sand",
+    "fontPairingId": "look-gradbinci-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih gradbenih in montažnih storitev z informativnimi cenami.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo glede na obseg vašega projekta nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Manjša in večja gradbena dela",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Montažne storitve",
+        "description": "Montaža elementov in opreme",
+        "price": "od 30 € / ura"
+      },
+      {
+        "name": "Adaptacije objektov",
+        "description": "Celovite preureditve prostorov",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zaključna gradbena dela",
+        "description": "Natančna zaključna dela v objektih",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Svetovanje in izvedba projektov",
+        "description": "Strokovno svetovanje na terenu",
+        "price": "od 40 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "N-D",
+    "highlight": "Monting"
+  },
+  "metadata": {
+    "title": "N-D Monting d.o.o. | Gradbene in montažne storitve Ljubljana",
+    "description": "Zanesljive gradbene storitve, adaptacije objektov in montaža v Ljubljani s širšo okolico. Pokličite nas za strokovno izvedbo vaših projektov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Gradbeništvo in storitve Ljubljana",
+    "title": "Zanesljive gradbene storitve in",
+    "titleHighlight": "montaža",
+    "description": "Strokovne gradbene storitve, adaptacije in zaključna dela za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Vsak dan",
+        "label": "Odprti vsak dan",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Lokalna podpora",
+        "title": "Lokalna podpora"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše gradbene in montažne storitve",
+    "description": "Celovite rešitve za vaše objekte, od začetnih gradbenih del do zaključnih adaptacij in strokovnega svetovanja.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba gradbenih del za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montažne storitve",
+        "description": "Zanesljiva montaža in strokovna izvedba na vašem objektu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacije objektov",
+        "description": "Celovite preureditve in adaptacije prostorov po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zaključna gradbena dela",
+        "description": "Natančno izvedena zaključna dela za popoln končni izgled.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje in izvedba projektov",
+        "description": "Strokovno svetovanje in vodenje projektov od ideje do realizacije.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati N-D Monting?",
+    "description": "Z našim znanjem in prilagodljivostjo poskrbimo za brezhibno izvedbo vaših gradbenih in montažnih projektov.",
+    "highlights": [
+      "Zanesljiva izvedba gradbenih in montažnih del",
+      "Prilagodljiv delovni čas vsak dan v tednu",
+      "Strokoven pristop k vsakemu projektu",
+      "Lokalno dostopna podpora v Ljubljani"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Kakovostno opravljena dela na področju gradbeništva in montaže.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Prilagodljiv urnik",
+        "description": "Na voljo vsak dan v tednu za lažje usklajevanje vaših obveznosti.",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "label": "Lokalna podpora",
+        "description": "Hitro odzivni in dostopni na območju Ljubljane s širšo okolico.",
+        "title": "Lokalna podpora"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete gradbena dela, montažo ali svetovanje? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 473 886",
+        "href": "tel:070473886",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Zaloška cesta 26a, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 9:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Zaloška cesta 26a, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "N-D Monting",
+    "address": "Zaloška cesta 26a, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "070 473 886"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

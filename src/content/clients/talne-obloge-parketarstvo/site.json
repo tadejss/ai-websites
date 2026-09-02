@@ -1,0 +1,254 @@
+{
+  "appearance": "construction",
+  "lookId": "parketarji-talne-obloge-03-photo-forward",
+  "theme": {
+    "paletteId": "look-parketarji-talne-obloge-03-bloom",
+    "fontPairingId": "look-parketarji-talne-obloge-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naši zaključeni projekti",
+    "description": "Oglejte si primere naših del na področju polaganja in obnove talnih oblog.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Orientacijske cene naših storitev",
+    "description": "Cene so informativne narave in se prilagajajo glede na obseg dela, stanje podlage in izbrane materiale.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in ogled nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje parketa",
+        "description": "Strokovno polaganje klasičnega ali gotovega parketa",
+        "price": "od 15 € / m²",
+        "featured": true
+      },
+      {
+        "name": "Brušenje in lakiranje parketa",
+        "description": "Komplet obnova (brušenje, kitanje, lakiranje v treh slojih)",
+        "price": "od 18 € / m²"
+      },
+      {
+        "name": "Polaganje laminata",
+        "description": "Polaganje laminatnih oblog z montažo zaključnih letev",
+        "price": "od 8 € / m²"
+      },
+      {
+        "name": "Polaganje vinila",
+        "description": "Polaganje lepljenega ali klik vinila",
+        "price": "od 12 € / m²"
+      },
+      {
+        "name": "Priprava talnih površin",
+        "description": "Izravnava tal in priprava podlage",
+        "price": "od 6 € / m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Talne Obloge",
+    "highlight": "Suad Handanović s.p."
+  },
+  "metadata": {
+    "title": "Talne Obloge in parketarstvo Suad Handanović s.p. | Ljubljana",
+    "description": "Strokovno polaganje in obnova vseh vrst talnih oblog v Ljubljani in okolici. Natančna izvedba in preverjeni materiali."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljivo parketarstvo",
+    "title": "Strokovno polaganje in obnova vseh vrst",
+    "titleHighlight": "talnih oblog",
+    "description": "Poskrbite za lepa in trpežna tla v vašem stanovanju, hiši ali poslovnem prostoru v Ljubljani in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Preverjeni materiali",
+        "label": "Preverjeni materiali"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Ljubljana z okolico",
+        "label": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaša tla",
+    "description": "Nudimo strokovno izvedbo vseh vrst parketarskih del in polaganje talnih oblog za lastnike stanovanj, hiš in poslovnih prostorov.",
+    "items": [
+      {
+        "title": "Polaganje parketa",
+        "description": "Strokovno polaganje vseh vrst parketa za estetski videz in dolgo življenjsko dobo vaših tal.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Brušenje in lakiranje parketa",
+        "description": "Obnova obstoječega parketa, ki vaši stari podlagi povrne prvotni sijaj in lepoto.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje laminata",
+        "description": "Hitro in kakovostno polaganje laminata v vaših bivalnih ali delovnih prostorih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje vinila",
+        "description": "Moderne in trpežne vinilne talne obloge, primerne za vsak sodoben prostor.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava talnih površin",
+        "description": "Temeljita priprava podlage pred polaganjem za zagotovitev ravnosti in dolgotrajnosti tal.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden izvajalec za vaša tla",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za želje strank poskrbimo za brezhibno izvedbo vsakega projekta.",
+    "highlights": [
+      "Dolgoletne izkušnje na področju parketarstva",
+      "Natančna in kvalitetna izvedba del",
+      "Uporaba preverjenih materialov",
+      "Prilagodljivost in prijazen pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Dolgoletne izkušnje",
+        "description": "Bogato strokovno znanje na področju parketarstva in polaganja talnih oblog.",
+        "title": "Dolgoletne izkušnje"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Natančno delo z uporabo preverjenih in zanesljivih materialov.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku ter potrebam.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete nova tla ali obnovo obstoječega parketa? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 810 272",
+        "href": "tel:041810272",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Rakuševa ulica 6, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in obseg dela...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Rakuševa ulica 6, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Talne Obloge Suad Handanović s.p.",
+    "address": "Rakuševa ulica 6, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 810 272"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

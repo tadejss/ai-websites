@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektro Servis",
+  "industry": "Elektroinstalaterske storitve",
+  "tagline": "Zanesljive in hitre elektro storitve 24/7 v Ljubljani in okolici.",
+  "services": [
+    "Popravilo električnih napeljav",
+    "Montaža svetil in opreme",
+    "Interventna elektro služba",
+    "Vzdrževanje elektro sistemov",
+    "Pregled in meritve inštalacij"
+  ],
+  "phone": "071 694 412",
+  "email": "",
+  "address": "Prvomajska ulica 8, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Open 24 hours · Sunday: Open 24 hours",
+  "sellingPoints": [
+    "Dosegljivi 24 ur na dan, vse dni v tednu",
+    "Hitra odzivnost na nujne primere",
+    "Strokovna izvedba elektro del"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov v Ljubljani",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, hiter",
+  "brandStyle": "moderen lokalni obrtnik",
+  "competitors": "Lokalni elektro mojstri in servisi v regiji",
+  "callToAction": "Pokličite takoj"
+}

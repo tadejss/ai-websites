@@ -1,0 +1,29 @@
+{
+  "companyName": "Painting roller Sebastjan Kovač SpA",
+  "industry": "Slikarstvo",
+  "tagline": "Strokovne slikarske storitve in pleskanje za vaš dom ali poslovni prostor",
+  "services": [
+    "Pleskanje sten in stropov",
+    "Beljenje prostorov",
+    "Slikaoferska dela",
+    "Zaščita pohištva in prostorov",
+    "Obnova stenskih površin"
+  ],
+  "phone": "041 601 695",
+  "email": "",
+  "address": "Polje, cesta XXII 25 d, 1260 Ljubljana - Polje, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 4:00 PM · Tuesday: 7:00 AM – 4:00 PM · Wednesday: 7:00 AM – 4:00 PM · Thursday: 7:00 AM – 4:00 PM · Friday: 7:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Zanesljivo in natančno delo",
+    "Uporaba kakovostnih materialov",
+    "Spoštovanje dogovorjenih rokov",
+    "Čista izvedba slikarskih del"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov, ki potrebujejo pleskarja",
+  "serviceArea": "Ljubljana in okolica",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni slikarski mojstri in ponudniki zaključnih gradbenih del",
+  "callToAction": "Pokličite za ponudbo"
+}

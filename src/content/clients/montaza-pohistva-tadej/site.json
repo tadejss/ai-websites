@@ -1,0 +1,262 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-07-linen",
+    "fontPairingId": "look-mizarji-tesarji-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene storitev montaže",
+    "description": "Pregled okvirnih cen za montažo in sestavljanje pohištva.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo glede na vaše želje in obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža kuhinje",
+        "description": "Osnovna montaža kuhinjskih elementov",
+        "price": "od 250 €",
+        "featured": true
+      },
+      {
+        "name": "Sestavljanje omare",
+        "description": "Manjše ali večje garderobne omare",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Montaža pisarniškega pohištva",
+        "description": "Mize, stoli in pisarniški sestavi",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Prilagajanje pohištva na domu",
+        "description": "Dopolnitve in prilagoditve elementov",
+        "price": "od 30 € / ura"
+      },
+      {
+        "name": "Svetovanje pri postavitvi",
+        "description": "Strokovni nasveti na terenu",
+        "price": "od 25 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "MONTAŽA POHIŠTVA",
+    "highlight": "TADEJ ŠVIGELJ s.p."
+  },
+  "metadata": {
+    "title": "Montaža pohištva Tadej Švigelj s.p. | Vrhnika in osrednja Slovenija",
+    "description": "Strokovna in zanesljiva montaža pohištva za vaš dom ali pisarno na Vrhniki z okolico in v osrednji Sloveniji. Natančna izvedba in prilagodljivost."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiva montaža pohištva",
+    "title": "Strokovna montaža pohištva za",
+    "titleHighlight": "vaš dom ali pisarno",
+    "description": "Poskrbimo za natančno in čisto montažo vašega pohištva. Delujemo na Vrhniki z okolico in v osrednji Sloveniji.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Natančnost in čista izvedba",
+        "title": "Natančna in čista izvedba"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljiv in strokoven pristop",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivo delovnemu času",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Osrednja Slovenija",
+        "label": "Vrhnika z okolico",
+        "title": "Lokalno delovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve montaže",
+    "description": "Zagotavljamo celovite in strokovne storitve sestavljanja ter prilagajanja pohištva za domove in poslovne prostore na območju Vrhnike in osrednje Slovenije.",
+    "items": [
+      {
+        "title": "Montaža kuhinj",
+        "description": "Strokovno sestavljanje in montaža kuhinj vseh proizvajalcev z natančnim priklopom ter postavitvijo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sestavljanje pisarniškega pohištva",
+        "description": "Učinkovito opremljanje in sestavljanje pohištva za vaše pisarne ter delovne prostore.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža spalnic in omar",
+        "description": "Natančna montaža postelj, vgradnih omar in spalnih programov za vaš popoln dom.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prilagajanje pohištva na domu",
+        "description": "Manjše predelave in prilagajanje elementov neposredno na vašem domu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri postavitvi",
+        "description": "Strokovni nasveti in pomoč pri optimalni postavitvi pohištva v vašem prostoru.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaše pohištvo",
+    "description": "S svojimi izkušnjami in posluhom za stranke zagotavljamo, da je vaše pohištvo sestavljeno varno, natančno in brezskrbno.",
+    "highlights": [
+      "Natančna in čista izvedba vsakega projekta",
+      "Zanesljiv in strokoven pristop do dela",
+      "Prilagodljivost vašemu urniku in potrebam"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna in čista izvedba",
+        "description": "Delo opravimo skrbno, za seboj pa pustimo urejen in čist prostor.",
+        "title": "Natančna in čista izvedba"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in se celostno posvetimo vašemu naročilu.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagajamo se vašemu delovnemu času in urniku za čim večje udobje.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete ponudbo za montažo pohištva? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kotnikova cesta 19, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 951 379",
+        "href": "tel:041951379",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Sob: 8:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kakšno montažo pohištva potrebujete...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Kotnikova cesta 19, 1360 Vrhnika, Slovenia",
+    "rights": "© 2025 Montaža pohištva Tadej Švigelj s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "MONTAŽA POHIŠTVA TADEJ ŠVIGELJ s.p.",
+    "address": "Kotnikova cesta 19, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 951 379"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

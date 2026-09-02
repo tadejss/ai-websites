@@ -1,0 +1,260 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-09-warm-soft",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-09-dusk",
+    "fontPairingId": "look-mizarji-tesarji-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Cene so informativne narave in so odvisne od zahtevnosti ter izbire materialov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pohištvo po meri",
+        "description": "Izdelava posameznih kosov pohištva po vaših merah",
+        "price": "od 150 €",
+        "featured": false
+      },
+      {
+        "name": "Kuhinje po naročilu",
+        "description": "Celovita izdelava kuhinje z montažo",
+        "price": "od 2.000 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati in notranjo opremo",
+        "price": "od 600 €",
+        "featured": false
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Opremljanje stanovanj in hiš",
+        "price": "Po dogovoru",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Dovč Tomaž s.p."
+  },
+  "metadata": {
+    "title": "Mizarstvo Dovč Tomaž s.p. | Kakovostno pohištvo po meri",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Ljubljani z okolico. Pohištvo po meri, kuhinje po naročilu, vgradne omare in notranja oprema."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Mizarstvo po meri",
+    "title": "Kakovostno izdelano pohištvo po meri za",
+    "titleHighlight": "vaš dom",
+    "description": "Unikatne in prilagojene rešitve za vsak prostor v Ljubljani z okolico. Zanesljiva in natančna izdelava z uporabo kakovostnih materialov.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prilagojeno",
+        "label": "Prilagojene rešitve",
+        "title": "Prilagojene rešitve"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančna izdelava",
+        "title": "Natančna izdelava"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostni materiali",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico",
+        "title": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše mizarske storitve",
+    "description": "Izdelujemo pohištvo po meri, ki popolnoma ustreza vašim željam in meram vašega prostora v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Unikatni kosi pohištva, prilagojeni vašemu prostoru in življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po naročilu",
+        "description": "Funkcionalne in estetsko dovršene kuhinje, narejene točno po vaših željah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimalen izkoristek prostora z vgradnimi omare in garderobnimi sistemi.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celovite rešitve za opremljanje notranjih prostorov vašega doma.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Leseni izdelki",
+        "description": "Raznovrstni izdelki iz lesa, izdelani z mojstrsko natančnostjo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše pohištvo",
+    "description": "Združujemo tradicijo, strokovnost in posluh za želje strank.",
+    "highlights": [
+      "Prilagojene rešitve za vsak prostor",
+      "Zanesljiva in natančna izdelava",
+      "Uporaba kakovostnih materialov"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojene rešitve",
+        "description": "Vsak kos pohištva oblikujemo in izdelamo posebej za vaš prostor.",
+        "title": "Prilagojene rešitve"
+      },
+      {
+        "label": "Natančna izdelava",
+        "description": "Skrbno delo in pozornost do detajlov zagotavljata dolgotrajno kakovost.",
+        "title": "Natančna izdelava"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Za izdelavo uporabljamo preverjene in trpežne materiale.",
+        "title": "Kakovostni materiali"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 228 049",
+        "href": "tel:040228049",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Selanova ulica 10, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:30 - 17:00, Sob: 8:30 - 12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in pripravili bomo ponudbo za vas.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Selanova ulica 10, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Dovč Tomaž s.p.",
+    "address": "Selanova ulica 10, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 228 049"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

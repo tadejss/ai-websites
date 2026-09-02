@@ -1,0 +1,260 @@
+{
+  "appearance": "construction",
+  "lookId": "parketarji-talne-obloge-09-warm-soft",
+  "theme": {
+    "paletteId": "look-parketarji-talne-obloge-09-dusk",
+    "fontPairingId": "look-parketarji-talne-obloge-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo glede na vaš prostor nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje parketa",
+        "description": "Natančna vgradnja različnih vrst parketa",
+        "price": "od 15 €",
+        "unit": "/ m²",
+        "featured": true
+      },
+      {
+        "name": "Brušenje in lakiranje parketa",
+        "description": "Celovita obnova obstoječega parketa z lakiranjem",
+        "price": "od 18 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Vgradnja laminata",
+        "description": "Polaganje laminatnih podov z ustreznimi podlogami",
+        "price": "od 8 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Montaža talnih letvic",
+        "description": "Namestitev zaključnih letev",
+        "price": "od 3 €",
+        "unit": "/ m"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "PARKETARSTVO",
+    "highlight": "Zlatles"
+  },
+  "metadata": {
+    "title": "Parketarstvo Zlatles | Polaganje in obnova parketa",
+    "description": "Strokovna vgradnja, obnova in vzdrževanje vseh vrst talnih oblog v Kamniku z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster za vaše pode",
+    "title": "Strokovna vgradnja in",
+    "titleHighlight": "obnova talnih oblog",
+    "description": "Specializirani smo za polaganje, brušenje in lakiranje parketa ter zaključna gradbena dela v Kamniku in okolici.",
+    "primaryCta": "Pokličite nas za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Vrhunska izvedba",
+        "label": "Vrhunska izvedba",
+        "title": "Vrhunska izvedba"
+      },
+      {
+        "value": "Strokovni pristop",
+        "label": "Strokovni pristop",
+        "title": "Strokovni pristop"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Kamnik",
+        "label": "Kamnik",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše parketarske storitve",
+    "description": "Poskrbimo za celovito prenovo vaših tal, od priprave podlage do končnega lakiranja in montaže letvic.",
+    "items": [
+      {
+        "title": "Polaganje parketa",
+        "description": "Natančno in strokovno polaganje vseh vrst parketa za dolgotrajno lepoto vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Brušenje in lakiranje parketa",
+        "description": "Osvežitev in obnova obstoječega parketa z modernimi materiali za sijoč videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Obnova starih lesenih podov",
+        "description": "Skrbna sanacija in vračanje prvotnega sijaja starejšim lesenim površinam.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vgradnja laminata in izravnalnih mas",
+        "description": "Priprava talne podlage in hitra vgradnja laminata ter drugih talnih oblog.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Montaža letvic",
+        "description": "Končna montaža talnih letvic za popoln in estetsko dovršen izgled prostora.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati Parketarstvo Zlatles?",
+    "description": "Z našim znanjem in izkušnjami poskrbimo, da bodo vaši novi or obstoječi podi zasijali v polnem sijaju.",
+    "highlights": [
+      "Vrhunska kvaliteta izvedbe",
+      "Zanesljivost in strokovnost",
+      "Odlične ocene zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kvaliteta",
+        "description": "Vsakemu projektu se posvetimo z največjo skrbnostjo in natančnostjo.",
+        "title": "Vrhunska kvaliteta"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za čistočo na delovnem mestu.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Strokovni nasveti",
+        "description": "Pomagamo vam pri izbiri ustreznih materialov in rešitev za vaš dom.",
+        "title": "Strokovni nasveti"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti ogled in ponudbo? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Klavčičeva ulica, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 907 862",
+        "href": "tel:041907862",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 17:00, Sob: 7:00 – 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Klavčičeva ulica, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "PARKETARSTVO Zlatles",
+    "address": "Klavčičeva ulica, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 907 862"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

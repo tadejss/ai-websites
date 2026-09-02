@@ -1,0 +1,298 @@
+{
+  "appearance": "elektro",
+  "lookId": "elektricarji-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-elektricarji-10-frost",
+    "fontPairingId": "look-elektricarji-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/strela-elektroinstalaterstvo-stane/hero.avif",
+      "alt": "Električar med delom na električni omarici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/strela-elektroinstalaterstvo-stane/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691588",
+      "sourceUrl": "https://www.pexels.com/photo/an-electrician-using-pliers-to-repair-the-ac-power-plugs-and-sockets-5691588/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "professional electrician installing wiring"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/strela-elektroinstalaterstvo-stane/services.avif",
+      "alt": "Orodja in sodobne elektroinstalacije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/strela-elektroinstalaterstvo-stane/services.webp",
+      "width": 979,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "21812143",
+      "sourceUrl": "https://www.pexels.com/photo/electrician-working-with-cables-21812143/",
+      "photographer": "Shameer Vayalakkad Hydrose",
+      "photographerUrl": "https://www.pexels.com/@shameer-vayalakkad-hydrose-2602409",
+      "searchQuery": "electrician working electrical panel"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen osnovnih elektroinstalaterskih storitev.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura dela elektroinštalaterja",
+        "description": "Standardno strokovno delo na terenu",
+        "price": "od 35 €",
+        "unit": "ura",
+        "featured": false
+      },
+      {
+        "name": "Izhod na teren",
+        "description": "Prihod na lokacijo in ogled",
+        "price": "od 25 €",
+        "unit": "prevoz",
+        "featured": false
+      },
+      {
+        "name": "Montaža svetila ali stikala",
+        "description": "Priklop in montaža posameznega elementa",
+        "price": "od 20 €",
+        "unit": "kos",
+        "featured": false
+      },
+      {
+        "name": "Odprava napake / Servis",
+        "description": "Diagnostika in popravilo enostavnejše okvare",
+        "price": "od 45 €",
+        "unit": "storitev",
+        "featured": true
+      },
+      {
+        "name": "Pregled in preverjanje napeljav",
+        "description": "Pregled delovanja električnih tokokrogov",
+        "price": "od 80 €",
+        "unit": "objekt",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "STRELA",
+    "highlight": "ELEKTRO"
+  },
+  "metadata": {
+    "title": "STRELA ELEKTROINSTALATERSTVO | Zanesljive elektroinstalacije",
+    "description": "Zanesljive elektroinstalacije ter strokovna montaža, servis in vzdrževanje za vaš dom in poslovne prostore na območju Škofljice in širše regije."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Elektroinstalaterstvo Stane Zoretič, s.p.",
+    "title": "Zanesljive elektroinstalacije za",
+    "titleHighlight": "vaš dom in poslovne prostore",
+    "description": "Strokovne elektro storitve, hitra odzivnost in zanesljiva izvedba za lastnike stanovanjskih hiš, stanovanj in poslovnih objektov v Škofljici z okolico in širši regiji.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hiter odziv",
+        "label": "Hitra odzivnost na klice",
+        "title": "Hiter odziv"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Strokovna izvedba",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagojeno vašim željam",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Izkušnje",
+        "label": "Kakovostne storitve",
+        "title": "Izkušnje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše električne napeljave",
+    "description": "Nudimo kakovostno montažo, servis, vzdrževanje in preverjanje za objekte v Škofljici z okolico in širši regiji.",
+    "items": [
+      {
+        "title": "Montaža elektroinstalacij",
+        "description": "Strokovna vgradnja novih elektroinstalacij v stanovanjskih hišah, stanovanjih in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis in popravila",
+        "description": "Hitro odkrivanje in odpravljanje napak na električnih napeljavah in napravah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje električnih napeljav",
+        "description": "Redni pregledi in vzdrževanje za varno delovanje vašega električnega sistema.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pametne inštalacije",
+        "description": "Vgradnja sodobnih sistemov pametnih inštalacij za večje udobje in energijsko učinkovitost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Preverjanje električnih naprav",
+        "description": "Pregledi in meritve za zagotavljanje brezhibnega delovanja in varnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne sisteme",
+    "description": "Z združevanjem strokovnega znanja, hitrega odziva in prilagodljivosti zagotavljamo varno ter kakovostno izvedbo vsakega projekta.",
+    "highlights": [
+      "Hiter odziv na klice strank",
+      "Strokovna izvedba elektrodel",
+      "Prilagodljivost in zaupanja vreden pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Hiter odziv",
+        "description": "Zavedamo se pomembnosti hitrega ukrepanja, zato se na vaše klice odzovemo nemudoma.",
+        "title": "Hiter odziv"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Vsa dela izvajamo natančno, varno in v skladu s predpisi.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in potrebam ter poiščemo najboljšo tehnično rešitev.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete montažo, servis ali nasvet? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 282 110",
+        "href": "tel:040282110",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Dolenjska cesta 255, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Dolenjska cesta 255, 1291 Škofljica, Slovenia",
+    "rights": "© STRELA ELEKTROINSTALATERSTVO STANE ZORETIČ, s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "STRELA ELEKTRO",
+    "address": "Dolenjska cesta 255, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "040 282 110"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

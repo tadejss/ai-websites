@@ -1,0 +1,256 @@
+{
+  "appearance": "construction",
+  "lookId": "suhomontazerji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-suhomontazerji-03-bloom",
+    "fontPairingId": "look-suhomontazerji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in se prilagajajo glede na obseg ter zahtevnost dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo in ogled nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Suhomontažna gradnja (stropi/stene)",
+        "description": "Montaža gips plošč na podkonstrukcijo",
+        "price": "od 25 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Polaganje talnih oblog",
+        "description": "Priprava in polaganje izbranih talnih oblog",
+        "price": "od 15 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Oblaganje sten",
+        "description": "Oblaganje in obdelava stenskih površin",
+        "price": "od 20 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Manjše adaptacije in prenove",
+        "description": "Informativna ura strokovnega dela",
+        "price": "od 30 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Aneri",
+    "highlight": "suhomontaža"
+  },
+  "metadata": {
+    "title": "Aneri suhomontaža, Elvedin Šabić s.p. | Domžale",
+    "description": "Kakovostna suhomontažna dela, oblaganje tal in sten ter prenose v Domžalah in okolici. Zanesljiv in strokoven pristop."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Strokovna suhomontažna dela v Domžalah",
+    "title": "Celovite rešitve za suhomontažo",
+    "titleHighlight": "in oblaganje tal ter sten",
+    "description": "Zanesljive in kakovostne storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki načrtujejo prenovo ali adaptacijo v Domžalah in okolici.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjena kakovost",
+        "label": "Preverjena kakovost",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "value": "Zanesljiv pristop",
+        "label": "Zanesljiv pristop",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "value": "Celovite rešitve",
+        "label": "Celovite rešitve",
+        "title": "Celovite rešitve"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Domžale in okolica",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kaj nudimo",
+    "description": "Strokovna izvedba suhomontažnih del, polaganje talnih oblog ter celovite prenove za vaš dom ali poslovni prostor v Domžalah in okolici.",
+    "items": [
+      {
+        "title": "Suhomontažna gradnja",
+        "description": "Hitra in natančna suhomontažna dela za predelne stene, strope in obloge.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talnih oblog",
+        "description": "Strokovno polaganje različnih talnih oblog z visokim poudarkom na končni videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Oblaganje sten",
+        "description": "Urejanje in oblaganje sten za sodoben videz vaših prostorov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Adaptacije in prenove",
+        "description": "Celovite adaptacije stanovanj, hiš in poslovnih objektov od začetka do konca.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Notranje zaključne gradbene dele",
+        "description": "Kakovostna izvedba vseh zaključnih gradbenih del v notranjosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše prenove",
+    "description": "Vsakemu projektu se posvetimo profesionalno in poskrbimo za urejeno ter kvalitetno izvedbo.",
+    "highlights": [
+      "Preverjena kakovost storitev z odličnimi ocenami strank",
+      "Zanesljiv in strokoven pristop k vsakemu projektu",
+      "Celovite rešitve za suhomontažo in oblaganje"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Storitve izvajamo z visoko stopnjo natančnosti in skrbjo za končni rezultat.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Zanesljivo in odgovorno sodelovanje skozi celoten potek prenove.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Vse storitve s področja suhomontaže in oblaganja na enem mestu.",
+        "title": "Celovite rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za ponudbo",
+    "description": "Imate vprašanje ali potrebujete ponudbo za prenovo? Pokličite nas ali izpolnite kontaktni obrazec.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Miklošičeva ulica 1c, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 816 735",
+        "href": "tel:051816735",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Miklošičeva ulica 1c, 1230 Domžale, Slovenia",
+    "rights": "© Aneri suhomontaža, Elvedin Šabić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Aneri suhomontaža",
+    "address": "Miklošičeva ulica 1c, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "051 816 735"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

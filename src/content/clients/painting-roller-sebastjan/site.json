@@ -1,0 +1,293 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-08-dark-pro",
+  "theme": {
+    "paletteId": "look-maserji-wellness-08-copper",
+    "fontPairingId": "look-maserji-wellness-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/painting-roller-sebastjan/hero.avif",
+      "alt": "Slikar s čopičem in valjčkom pleska steno",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/painting-roller-sebastjan/hero.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/painting-roller-sebastjan/services.avif",
+      "alt": "Pripomočki za pleskanje sten in stropov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/painting-roller-sebastjan/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "19666192",
+      "sourceUrl": "https://www.pexels.com/photo/aromatherapy-and-massage-at-the-spa-19666192/",
+      "photographer": "Jonathan Borba",
+      "photographerUrl": "https://www.pexels.com/@jonathanborba",
+      "searchQuery": "relaxing spa treatment professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za naša slikarska in pleskarska dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Beljenje sten in stropov",
+        "description": "Dvokratni nanos bele barve z vključeno osnovno zaščito",
+        "price": "od 3,50 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Pleskanje v barvnih odtenkih",
+        "description": "Pleskanje z niansirano barvo po izbiri",
+        "price": "od 4,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Zaščita prostora in pohištva",
+        "description": "Zaščitna folija, lepilni trakovi in priprava prostora",
+        "price": "po dogovoru",
+        "unit": "projekt"
+      },
+      {
+        "name": "Obnova stenskih površin",
+        "description": "Glajenje manjših poškodb in priprava podlage",
+        "price": "od 6,00 €",
+        "unit": "na m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikarstvo",
+    "highlight": "Sebastjan Kovač"
+  },
+  "metadata": {
+    "title": "Slikarstvo Sebastjan Kovač | Pleskanje in slikarske storitve Ljubljana",
+    "description": "Strokovne slikarske storitve, pleskanje sten, beljenje in obnova stenskih površin za dom in poslovne prostore v Ljubljani in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljive slikarske storitve v Ljubljani",
+    "title": "Osvežite svoj prostor z",
+    "titleHighlight": "vrhunskim pleskanjem",
+    "description": "Strokovne slikarske storitve in pleskanje za dom ali poslovni prostor v Ljubljani in okolici. Poskrbimo za natančnost in čistost pri delu.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Oglejte si storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo delo"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostni materiali"
+      },
+      {
+        "value": "Čisto",
+        "label": "Čista izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše slikarske storitve",
+    "description": "Nudimo celovite slikarske rešitve za stanovanja, hiše in poslovne prostore v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Kakovostno pleskanje notranjih stenskih površin in stropov za svež videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje prostorov",
+        "description": "Osvežitev bele barve v prostorih z uporabo preverjenih materialov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Slikopleskarska dela",
+        "description": "Celovita izvedba slikarskih del prilagojena vašim željam in potrebam.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zaščita pohištva in prostorov",
+        "description": "Temeljita zaščita tal, pohištva in opreme pred začetkom del.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Obnova stenskih površin",
+        "description": "Sanacija in priprava stenskih površin za končne nanose barv.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše pleskarske projekte",
+    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom poskrbimo, da so dela opravljena kakovostno in v dogovorjenih rokovih.",
+    "highlights": [
+      "Zanesljivo in natančno delo",
+      "Uporaba kakovostnih materialov",
+      "Spoštovanje dogovorjenih rokov",
+      "Čista izvedba slikarskih del"
+    ],
+    "benefits": [
+      {
+        "stat": "Zanesljivo",
+        "label": "Zanesljivost",
+        "description": "Dosledno spoštujemo dogovorjene roke in se držimo vseh dogovorov s strankami.",
+        "title": "Zanesljivost"
+      },
+      {
+        "stat": "Kakovost",
+        "label": "Kakovostni materiali",
+        "description": "Pri delu uporabljamo preverjene in kakovostne materiale za dolgotrajen rezultat.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "stat": "Čistoča",
+        "label": "Čista izvedba",
+        "description": "Prostorske površine in pohištvo skrbno zaščitimo ter za seboj pustimo čisto.",
+        "title": "Čista izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti ogled in ponudbo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 601 695",
+        "href": "tel:041601695",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Polje, cesta XXII 25 d, 1260 Ljubljana - Polje",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali obseg dela...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Polje, cesta XXII 25 d, 1260 Ljubljana - Polje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikarstvo Sebastjan Kovač",
+    "address": "Polje, cesta XXII 25 d, 1260 Ljubljana - Polje, Slovenia",
+    "email": "",
+    "phone": "041 601 695"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-05-minimal-line",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-05-mist",
+    "fontPairingId": "look-mizarji-tesarji-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave. Končna cena je odvisna od zahtevnosti dela, izbranih materialov in obsega projekta.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Svetovanje in izmera na terenu",
+        "description": "Strokovni ogled prostora, meritve in svetovanje",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Izdelava pohištva po meri",
+        "description": "Kuhinje, omare, mize in drugi kosi po naročilu",
+        "price": "Po ponudbi",
+        "featured": true
+      },
+      {
+        "name": "Montaža stavbnega in pohištvenega okovja",
+        "description": "Strokovna vgradnja elementov",
+        "price": "od 30 € / ura"
+      },
+      {
+        "name": "Montaža notranje opreme",
+        "description": "Postavitev in montaža pohištva",
+        "price": "od 35 € / ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Roman Golob",
+    "highlight": "mizarstvo in montaža"
+  },
+  "metadata": {
+    "title": "Montaža in mizarstvo Roman Golob s.p. | Mizarstvo in montaža po meri",
+    "description": "Kakovostno mizarstvo in strokovna montaža po meri za dom in poslovne prostore v Kamniku z okolico ter širši regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Mizarstvo in montaža po meri",
+    "title": "Kakovostno mizarstvo in",
+    "titleHighlight": "strokovna montaža",
+    "description": "Zanesljive mizarske storitve in montaža pohištva za lastnike stanovanj, hiš in poslovnih prostorov v Kamniku z okolico in širši regiji.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Po meri",
+        "label": "Prilagojeno željam"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Kakovostni materiali"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Kamnik in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske in montažne rešitve",
+    "description": "Nudimo izdelavo pohištva in montažo po meri, prilagojeno vašemu prostoru ter osebnim željam.",
+    "items": [
+      {
+        "title": "Izdelava pohištva po meri",
+        "description": "Unikatno pohištvo, prilagojeno dimenzijam in stilu vašega doma ali poslovnega prostora.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montaža stavbnega pohištva",
+        "description": "Strokovna in natančna vgradnja ter montaža elementov za dolgotrajno delovanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celostne ureditve notranjih prostorov za maksimalno izrabo prostora in udobje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Lesene konstrukcije",
+        "description": "Izdelava in postavitev kakovostnih lesenih konstrukcij z mislijo na trpežnost.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje in izmera",
+        "description": "Strokoven posvet na terenu, natančne izmere in svetovanje pri izbiri rešitev.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše mizarske projekte",
+    "description": "Združujemo tradicijo, mojstrsko natančnost in posluh za strankine želje.",
+    "highlights": [
+      "Vrhunska kakovost izdelave in montaže",
+      "Zanesljivost in strokovni pristop",
+      "Prilagojeno strankinim željam"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Natančna izbira materialov in pedantna izdelava vsakega kosa pohištva.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Strokovni pristop",
+        "description": "Zanesljivo svetovanje, izmera in montaža z dolgoletnimi izkušnjami.",
+        "title": "Strokovni pristop"
+      },
+      {
+        "label": "Po meri stranke",
+        "description": "Popolna prilagoditev vašemu prostoru, idejam in življenjskemu slogu.",
+        "title": "Po meri stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 292 088",
+        "href": "tel:031292088",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta treh talcev 24, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Cesta treh talcev 24, 1241 Kamnik, Slovenia",
+    "rights": "© Montaža in mizarstvo, Roman Golob, s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Roman Golob mizarstvo in montaža",
+    "address": "Cesta treh talcev 24, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "031 292 088"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

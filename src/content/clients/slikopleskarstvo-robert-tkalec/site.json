@@ -1,0 +1,267 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-slikopleskarji-07-linen",
+    "fontPairingId": "look-slikopleskarji-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled orientacijskih cen za naša slikopleskarska in zaključna dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ogled na terenu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje sten in stropov",
+        "description": "Dva nanosa bele barve z zaščito pohištva",
+        "price": "od 3,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Protiglivična zaščita in barvanje",
+        "price": "od 15 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Pleskanje stavbnega pohištva",
+        "description": "Brušenje, temeljni premaz in končni nanos",
+        "price": "od 45 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Dekorativne tehnike obdelave sten",
+        "description": "Izdelava unikatnih vzorcev po izbiri",
+        "price": "od 25 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Manjša fasaderska dela",
+        "description": "Popravila in manjši posegi na fasadah",
+        "price": "Po ogledu",
+        "unit": ""
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Robert Tkalec s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Robert Tkalec s.p. | Kakovostno pleskanje in zaključna dela",
+    "description": "Kakovostno notranje beljenje, sanacija vlage, pleskanje stavbnega pohištva in fasaderska dela na Vrhniki z okolico in v osrednji Sloveniji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv domači izvajalec",
+    "title": "Kakovostno pleskanje in zaključna dela v",
+    "titleHighlight": "gradbeništvu",
+    "description": "Nudimo strokovno notranje beljenje sten, sanacijo vlage in plesni ter manjša fasaderska dela za lastnike stanovanj, hiš in poslovnih prostorov na Vrhniki z okolico in v osrednji Sloveniji.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka natančnost",
+        "label": "Visoka natančnost",
+        "title": "Visoka natančnost"
+      },
+      {
+        "value": "Kakovostni materiali",
+        "label": "Kakovostni materiali",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Držanje rokov",
+        "label": "Držanje rokov",
+        "title": "Držanje rokov"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Zanesljivo izvajamo slikopleskarska in zaključna dela na Vrhniki z okolico in v osrednji Sloveniji s poudarkom na čistoči in natančnosti.",
+    "items": [
+      {
+        "title": "Notranje beljenje sten in stropov",
+        "description": "Osvežitev in beljenje vaših bivalnih ter poslovnih prostorov z ustreznimi premazi za lepši videz in zdrav dom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pleskanje stavbnega pohištva",
+        "description": "Strokovna obdelava in pleskanje vrat, oken ter drugega stavbnega pohištva za obnovljen videz in zaščito.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Dekorativna tehnika obdelave sten",
+        "description": "Ustvarjanje unikatnih vzorcev in estetskih struktur na stenah za poseben ambient v vašem prostoru.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Utemeljena odprava vzrokov in sanacija problematičnih predelov z ustreznimi preventivnimi materiali.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjša fasaderska dela",
+        "description": "Kakovostna manjša fasaderska dela za urejen zunanji videz in zaščito vašega objekta.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za prenovo vaših prostorov",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke poskrbimo, da so dela opravljena zanesljivo, čisto in ob dogovorjenem času.",
+    "highlights": [
+      "Visoka natančnost in čistost pri delu",
+      "Uporaba preverjenih in kakovostnih materialov",
+      "Zanesljivost ter natančno držanje dogovorjenih rokov"
+    ],
+    "benefits": [
+      {
+        "label": "Natančnost in čistoča",
+        "description": "Po končanem delu za seboj vedno pustimo urejene in čiste prostore.",
+        "title": "Natančnost in čistoča"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporabljamo preverjene materiale, ki zagotavljajo dolgotrajno obstojnost.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Zanesljivi roki",
+        "description": "Držimo se dogovorjenih časovnih rokov in se prilagodimo vašim željam.",
+        "title": "Zanesljivi roki"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za pleskanje in prenovo? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 714 692",
+        "href": "tel:051714692",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Drenov Grič 94a, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 7:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potreben obseg del",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Drenov Grič 94a, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Robert Tkalec s.p.",
+    "address": "Drenov Grič 94a, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "051 714 692"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

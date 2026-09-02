@@ -1,0 +1,251 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-04-stats-trust",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-04-stone",
+    "fontPairingId": "look-mizarji-tesarji-04"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene mizarskih storitev",
+    "description": "Ker je vsak projekt unikaten in narejen po meri, so spodnje cene informativne narave.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pohištvo po meri",
+        "description": "Izdelava posameznih kosov pohištva",
+        "price": "od 150 €",
+        "featured": false
+      },
+      {
+        "name": "Kuhinje po meri",
+        "description": "Kompletna izdelava kuhinje",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati in notranjo opremo",
+        "price": "od 800 €",
+        "featured": false
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Celovite rešitve za prostore",
+        "price": "od 500 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Aleš Dolenc"
+  },
+  "metadata": {
+    "title": "Mizarstvo Aleš Dolenc s.p. | Pohištvo po meri",
+    "description": "Kakovostno izdelano leseno pohištvo in mizarske storitve po meri v Logatcu in okolici. Unikatne kuhinje, vgradne omare in notranja oprema."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarske storitve po meri",
+    "title": "Kakovostno leseno pohištvo za",
+    "titleHighlight": "vaš dom",
+    "description": "Ustvarjamo unikatno pohištvo po meri za lastnike stanovanj in hiš v Logatcu in okolici. Zanesljiva izvedba in vrhunska izdelava, prilagojena vašim željam.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska izdelava",
+        "label": "Vrhunska izdelava"
+      },
+      {
+        "value": "Po meri",
+        "label": "Po meri"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske rešitve",
+    "description": "Izdelujemo kakovostno pohištvo in notranjo opremo po meri za stranke v Logatcu in okolici.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Unikatni kosi pohištva, prilagojeni vašemu prostoru in življenjskemu slogu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne in estetsko dovršene kuhinje, ustvarjene za vaše kulinarične trenutke.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimalen izkoristek prostora z vgradnimi omare in garderobnimi sistemi po meri.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celovite rešitve za opremo vašega doma, ki povezujejo prostor v usklajeno celoto.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Lesene stopnice",
+        "description": "Estetske in trpežne lesene stopnice za varno povezovanje nadstropij.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše mizarske projekte",
+    "description": "Združujemo tradicijo, natančnost in posluh za vaše želje, da vaš dom zasije v novi luči.",
+    "highlights": [
+      "Vrhunska izdelava po meri",
+      "Prilagodljivost vašim željam",
+      "Zanesljiva in natančna izvedba"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska izdelava po meri",
+        "description": "Vsak kos pohištva izdelamo skrbno in natančno ter po vaših merah.",
+        "title": "Vrhunska izdelava po meri"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim idejam in jih uresničimo v funkcionalne rešitve.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Držimo se dogovorjenih rokov in zagotavljamo kakovostno montažo.",
+        "title": "Zanesljiva izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Stara cesta 39, 1370 Logatec, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 505 484",
+        "href": "tel:040505484",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Stara cesta 39, 1370 Logatec, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Aleš Dolenc",
+    "address": "Stara cesta 39, 1370 Logatec, Slovenia",
+    "email": "",
+    "phone": "040 505 484"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

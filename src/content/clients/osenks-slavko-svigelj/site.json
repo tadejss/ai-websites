@@ -1,0 +1,259 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-gradbinci-10-frost",
+    "fontPairingId": "look-gradbinci-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled naših osnovnih storitev in informativnih cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pravno svetovanje za nepremičnine",
+        "description": "Strokovni posvet in pregled dokumentacije",
+        "price": "od 60 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Pregled gradbene dokumentacije",
+        "description": "Analiza projektne in gradbene dokumentacije",
+        "price": "od 120 €"
+      },
+      {
+        "name": "Svetovanje pri gradnji",
+        "description": "Strokovna pomoč pri načrtovanju in izvedbi",
+        "price": "od 70 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Zastopanje v nepremičninskih zadevah",
+        "description": "Individualno zastopanje po dogovoru",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Osenks",
+    "highlight": "Slavko Švigelj"
+  },
+  "metadata": {
+    "title": "Osenks | Gradbeništvo in nepremičninsko pravo",
+    "description": "Strokovne rešitve na področju gradbeništva in nepremičninskega prava za lastnike nepremičnin, investitorje ter fizične in pravne osebe na Vrhniki s širšo okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Gradbeništvo in nepremičninsko pravo",
+    "title": "Strokovne rešitve na področju",
+    "titleHighlight": "gradbeništva in prava",
+    "description": "Celovite storitve in strokovno svetovanje za lastnike nepremičnin, investitorje ter fizične in pravne osebe na Vrhniki s širšo okolico.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Celovito",
+        "label": "Celovito",
+        "title": "Celovite storitve"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno znanje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo",
+        "title": "Prilagodljive rešitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Nudimo strokovne gradbene storitve in zanesljivo nepremičninsko pravo na Vrhniki s širšo okolico.",
+    "items": [
+      {
+        "title": "Gradbene storitve",
+        "description": "Kakovostna izvedba gradbenih del z zanesljivim in strokovnim pristopom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pravno svetovanje za nepremičnine",
+        "description": "Strokovno pravno svetovanje za vse vrste nepremičninskih vprašanj.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zastopanje v nepremičninskih zadevah",
+        "description": "Zanesljivo zastopanje in podpora v postopkih z nepremičninami.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pregled gradbene dokumentacije",
+        "description": "Temeljit pregled in ureditev potrebne gradbene dokumentacije.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri gradnji",
+        "description": "Strokovna pomoč in usmerjanje v vseh fazah gradbenih projektov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za gradnjo in nepremičninsko pravo",
+    "description": "Združujemo gradbeno stroko in pravno znanje, da vam zagotovimo celovito podporo na enem mestu.",
+    "highlights": [
+      "Celovite storitve na enem mestu",
+      "Strokovno znanje z gradbenega in pravnega področja",
+      "Zanesljiv in prilagodljiv pristop k strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Celovite storitve",
+        "description": "Vse rešitve na enem mestu za gradnjo in nepremičninsko pravo.",
+        "title": "Celovite storitve"
+      },
+      {
+        "label": "Strokovno znanje",
+        "description": "Bogate izkušnje in prepletanje gradbenih ter pravnih kompetenc.",
+        "title": "Strokovno znanje"
+      },
+      {
+        "label": "Zanesljiv pristop",
+        "description": "Prilagodljivo in odgovorno delovanje v korist strank.",
+        "title": "Zanesljiv pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanja glede gradbeništva ali nepremičninskega prava? Stopite v stik z nami za strokovni posvet.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cankarjev trg 6, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 887 272",
+        "href": "tel:051887272",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali opis zadeve...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Cankarjev trg 6, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Osenks Slavko Švigelj",
+    "address": "Cankarjev trg 6, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "051 887 272"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-slikopleskarji-07-linen",
+    "fontPairingId": "look-slikopleskarji-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-tasev/hero.avif",
+      "alt": "Slikopleskar pri natančnem pleskanju svetle stene v stanovanju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-tasev/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691597",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-walls-in-new-apartment-5691597/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "professional painter interior wall painting dark mood emerald light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-tasev/services.avif",
+      "alt": "Beljenje sten in osvežitev prostorov z zanesljivimi materiali",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-tasev/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691479",
+      "sourceUrl": "https://www.pexels.com/photo/housepainter-on-ladder-working-in-room-5691479/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "house painter working on wall interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega dela ter stanja podlage.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Beljenje sten in stropov",
+        "description": "Dvokratni nanos bele barve z osnovno zaščito pohištva",
+        "price": "od 3,50 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Gletanje in glajenje sten",
+        "description": "Sanacija poškodb in glajenje površin",
+        "price": "od 7,00 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Priprava podlage in strokovno lepljenje tapet",
+        "price": "od 12,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Dekorativne tehnike sten",
+        "description": "Izvedba posebnih tehnik in unikatnih nanosov",
+        "price": "od 20,00 €",
+        "unit": "na m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Tasev"
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Tasev | Kakovostno pleskanje in prenova",
+    "description": "Kakovostno pleskanje sten, beljenje stanovanj in hiš ter dekorativne obdelave sten v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster",
+    "title": "Kakovostno pleskanje in prenova",
+    "titleHighlight": "vaših prostorov",
+    "description": "Zanesljiva in natančna izvedba pleskarstva ter osvežitev interierja za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna",
+        "label": "izvedba del",
+        "title": "Natančna izvedba del"
+      },
+      {
+        "value": "Kakovostni",
+        "label": "materiali",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "value": "Urejenost",
+        "label": "in čistoča",
+        "title": "Urejenost in čistoča"
+      },
+      {
+        "value": "Zanesljivi",
+        "label": "roki",
+        "title": "Zanesljivi roki"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše stene",
+    "description": "Poskrbimo za osvežitev, zaščito in estetsko prenovo vaših prostorov v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Kakovostno pleskanje vseh vrst notranjih površin za svež in urejen videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje stanovanj in hiš",
+        "description": "Celovito beljenje stanovanjskih objektov z ustreznimi podlago in zaščito.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Natančno lepljenje in nameščanje vseh vrst tapet za edinstven pridih prostora.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Gletanje in sanacija",
+        "description": "Sanacija stenskih poškodb, bandažiranje in ravnanje površin pred pleskanjem.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Dekorativne tehnične obdelave",
+        "description": "Unikatne dekorativne tehnike in obdelave sten za poseben estetski učinek.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden mojster za vaše stene",
+    "description": "Zavedamo se, da je urejen dom osnova dobrega počutja, zato se vsakega projekta lotimo skrbno in odgovorno.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Uporaba preverjenih materialov",
+      "Spoštovanje dogovorjenih rokov",
+      "Skrb za čistočo in urejenost prostora"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljivost",
+        "description": "Spoštujemo dogovorjene roke in se držimo vseh dogovorov z naročnikom.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Natančnost",
+        "description": "Dela izvajamo natančno in poskrbimo za čistočo ter urejenost za seboj.",
+        "title": "Natančnost"
+      },
+      {
+        "label": "Kakovost",
+        "description": "Uporabljamo kakovostne materiale za dolgotrajen in lep končni videz sten.",
+        "title": "Kakovost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete prenovo ali osvežitev prostorov? Pokličite nas ali nam pošljite povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 390 022",
+        "href": "tel:041390022",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ribniška ulica 24, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in obseg dela...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ribniška ulica 24, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Tasev",
+    "address": "Ribniška ulica 24, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 390 022"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

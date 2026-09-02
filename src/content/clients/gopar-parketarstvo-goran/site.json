@@ -1,0 +1,262 @@
+{
+  "appearance": "construction",
+  "lookId": "parketarji-talne-obloge-01-classic-split",
+  "theme": {
+    "paletteId": "look-parketarji-talne-obloge-01-sand",
+    "fontPairingId": "look-parketarji-talne-obloge-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za polaganje, obnovo in pripravo tal.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje parketa",
+        "description": "Standardno polaganje vseh vrst parketa",
+        "price": "od 18 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Brušenje in lakiranje parketa",
+        "description": "Celovita obnova z brušenjem in večkratnim lakiranjem",
+        "price": "od 22 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Polaganje laminata",
+        "description": "Hitra in čista montaža laminatnih oblog",
+        "price": "od 10 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Montaža zaključnih letvic",
+        "description": "Namestitev talnih letev",
+        "price": "od 3 €",
+        "unit": "na tekoči meter"
+      },
+      {
+        "name": "Priprava in izravnava tal",
+        "description": "Nanosi izravnalnih mas in brušenje podlage",
+        "price": "od 8 €",
+        "unit": "na m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Gopar",
+    "highlight": "parketarstvo"
+  },
+  "metadata": {
+    "title": "Gopar parketarstvo | Polaganje in obnova parketa Ljubljana",
+    "description": "Strokovna vgradnja in obnova parketa ter vseh vrst talnih oblog v Ljubljani z okolico. Pokličite za zanesljivo izvedbo in strokovno svetovanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovno parketarstvo Goran Jović s.p.",
+    "title": "Kakovostna vgradnja in obnova",
+    "titleHighlight": "vašega parketa",
+    "description": "Zanesljive parketarske storitve in polaganje vseh vrst talnih oblog za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Natančnost",
+        "title": "Natančnost izvedbe"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Svetovanje",
+        "label": "Svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana",
+        "title": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše parketarske in talne storitve",
+    "description": "Poskrbimo za celovito pripravo tal, vgradnjo in obnovo za prostore v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Polaganje parketa",
+        "description": "Strokovna vgradnja različnih vrst parketa z natančnim prileganjem v vašem prostoru.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Brušenje in lakiranje parketa",
+        "description": "Obnova obstoječega parketa, ki povrne sijaj, gladkost in naraven videz vašim tlem.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje laminata",
+        "description": "Hiter, čist in estetski nanos laminatnih talnih oblog po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža letvic",
+        "description": "Skrbna namestitev zaključnih letev za popoln in urejen končni videz prostora.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Priprava in izravnava tal",
+        "description": "Temeljita priprava podlage pred polaganjem za dolgotrajno stabilnost in ravnost.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati Gopar parketarstvo?",
+    "description": "Združujemo domač pristop, zanesljivost in strokovno znanje za dolgotrajne rezultate.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Natančna in zanesljiva izvedba storitev",
+      "Strokovno svetovanje pri izbiri materialov"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Naše delo temelji na visoki oceni in zaupanju naših naročnikov.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsak projekt izpeljemo z veliko mero natančnosti in zanesljivosti.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Strokovni nasveti",
+        "description": "Pomagamo vam pri izbiri najustreznejših materialov za vaša tla.",
+        "title": "Strokovni nasveti"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete nova tla ali obnovo parketa? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 260 976",
+        "href": "tel:051260976",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Pot k Savi 104c, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Pot k Savi 104c, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Gopar parketarstvo",
+    "address": "Pot k Savi 104c, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "051 260 976"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

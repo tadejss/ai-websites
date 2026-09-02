@@ -1,0 +1,257 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-01-classic-split",
+  "theme": {
+    "paletteId": "look-gradbinci-01-sand",
+    "fontPairingId": "look-gradbinci-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in se prilagodijo glede na obseg ter zahtevnost dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pleskarska dela",
+        "description": "Beljenje sten in stropov z barvo",
+        "price": "od 4 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Suhomontažna gradnja",
+        "description": "Montaža mavčno-kartonskih plošč",
+        "price": "od 25 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Polaganje talnih oblog",
+        "description": "Polaganje laminata ali parketa",
+        "price": "od 12 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Izdelava kontaktne fasade",
+        "price": "od 45 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Prenova stanovanj",
+        "description": "Celovita adaptacija po dogovoru",
+        "price": "Po ogledu",
+        "featured": true
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Fikret Smajić",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Kvaliteta zaključna gradbena dela Fikret Smajić s.p. | Litija",
+    "description": "Zanesljiva in kakovostna zaključna gradbena dela v Litiji s širšno okolico. Pleskarstvo, fasaderstvo, suhomontažna gradnja in prenove."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv izvajalec v Litiji",
+    "title": "Zanesljiva in kakovostna zaključna gradbena dela",
+    "titleHighlight": "za vaš dom",
+    "description": "Strokovne rešitve za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo prenovo ali adaptacijo v Litiji s širšo okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Kakovostna",
+        "label": "izvedba del"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "in strokovnost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "strankam"
+      },
+      {
+        "value": "Lokalno",
+        "label": "delovanje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve zaključnih gradbenih del",
+    "description": "Nudimo celovite rešitve za prenovo in adaptacijo vaših prostorov v Litiji s širšo okolico.",
+    "items": [
+      {
+        "title": "Pleskarska dela",
+        "description": "Kakovostno beljenje in pleskanje prostorov za osvežitev vašega doma.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Izdelava in obnova fasad za boljšo izolativnost in lepši videz objekta.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Suhomontažna gradnja",
+        "description": "Postavitev predelnih sten, spuščenih stropov in mansardnih izvedb.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje talnih oblog",
+        "description": "Strokovno polaganje vseh vrst talnih oblog po vaših željah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prenove stanovanj",
+        "description": "Celovite prenove in adaptacije stanovanj, hiš ter poslovnih prostorov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zaupanja vreden partner za prenove",
+    "description": "Zavedamo se pomena kakovosti in zanesljivosti pri urejanju vašega doma.",
+    "highlights": [
+      "Kakovostna izvedba del",
+      "Zanesljivost in strokovnost",
+      "Prilagodljivost strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in pozornostjo do detajlov.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za strokovno opravljeno delo.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in potrebam ter poiščemo najboljšo rešitev za vas.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za prenovo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 782 811",
+        "href": "tel:041782811",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Trg na Stavbah 3, 1270 Litija, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Trg na Stavbah 3, 1270 Litija, Slovenia",
+    "rights": "© Kvaliteta zaključna gradbena dela Fikret Smajić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Fikret Smajić s.p.",
+    "address": "Trg na Stavbah 3, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "041 782 811"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

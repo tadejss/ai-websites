@@ -1,0 +1,260 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-slikopleskarji-07-linen",
+    "fontPairingId": "look-slikopleskarji-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih slikopleskarskih del. Končna cena je odvisna od stanja podlage in obsega dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Beljenje sten in stropov",
+        "description": "Dvokratno beljenje z belo barvo z vključeno zaščito.",
+        "price": "od 3,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Kitanje in brušenje sten",
+        "description": "Kakovostna priprava in glajenje površin.",
+        "price": "od 6,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Zaščita prostora in pohištva",
+        "description": "Folie, trakovi in skrbna zaščita inventarja.",
+        "price": "od 40 €",
+        "unit": "po prostoru"
+      },
+      {
+        "name": "Slikopleskarska dela po meri",
+        "description": "Svetovanje, priprava in izvedba zahtevnejših prenov.",
+        "price": "po dogovoru",
+        "unit": "projekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Primož Šušteršič s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Primož Šušteršič s.p. | Beljenje in slikopleskarska dela Ljubljana",
+    "description": "Kakovostno beljenje in slikopleskarska dela za vaš dom ali pisarno v Ljubljani z okolico. Zanesljiv lokalni mojster za natančno in čisto izvedbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni mojster",
+    "title": "Kakovostno beljenje in slikopleskarska dela",
+    "titleHighlight": "za vaš dom ali pisarno",
+    "description": "Strokovne slikopleskarske storitve za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani z okolico. Zagotavljamo natančno in čisto izvedbo del.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Ljubljana",
+        "label": "z okolico"
+      },
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba",
+        "title": "Natančna izvedba"
+      },
+      {
+        "value": "Čisto delo",
+        "label": "Čisto delo",
+        "title": "Čisto delo"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite slikopleskarske rešitve",
+    "description": "Poskrbimo za celovito prenovo sten in stropov v vaših prostorih v Ljubljani z okolico, od priprave do končnega videza.",
+    "items": [
+      {
+        "title": "Beljenje sten in stropov",
+        "description": "Osvežitev in beljenje vseh vrst notranjih površin za čist ter svež videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popleskanje prostorov",
+        "description": "Celovito pleskanje stanovanj, hiš in poslovnih objektov z ustreznimi materiali.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vlaknanje in kitanje površin",
+        "description": "Kakovostna priprava in izravnava sten ter stropov pred samim pleskanjem.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Slikopleskarska dela",
+        "description": "Strokovna izvedba vseh vrst slikopleskarskih del po vaših željah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zaščita in priprava prostora",
+        "description": "Temeljita zaščita pohištva, tal in opreme pred začetkom del.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše prostore",
+    "description": "Z našim strokovnim in prilagodljivim pristopom poskrbimo, da so dela opravljena pravočasno, natančno in brezskrbno za vas.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Natančna in čista izvedba del",
+      "Zanesljiv in strokoven pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljstvo naših strank potrjuje kakovost in zanesljivost našega dela.",
+        "title": "Odlične ocene"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Poskrbimo za čistočo in natančnost pri vsakem koraku slikopleskarskih del.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Zanesljivo svetovanje in izvedba, prilagojena vašim željam in potrebam.",
+        "title": "Strokoven pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti ogled in ponudbo? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tacenska cesta 6, 1210 Ljubljana - Šentvid, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 241 190",
+        "href": "tel:031241190",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 7:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali obseg dela...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Tacenska cesta 6, 1210 Ljubljana - Šentvid, Slovenia",
+    "rights": "© 2025 Slikopleskarstvo Primož Šušteršič s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Primož Šušteršič s.p.",
+    "address": "Tacenska cesta 6, 1210 Ljubljana - Šentvid, Slovenia",
+    "email": "",
+    "phone": "031 241 190"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

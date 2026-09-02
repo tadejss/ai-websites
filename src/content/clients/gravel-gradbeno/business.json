@@ -1,0 +1,27 @@
+{
+  "companyName": "Gravel, gradbeno podjetje, d.o.o.",
+  "industry": "Gradbeništvo",
+  "tagline": "Zanesljive gradbene storitve za vaše projekte",
+  "services": [
+    "Zemeljska dela",
+    "Nizke gradnje",
+    "Gradbena mehanizacija",
+    "Ugotavljanje in priprava terena"
+  ],
+  "phone": "031 356 356",
+  "email": "",
+  "address": "Ulica Ivana Selana 19, 1351 Brezovica pri Ljubljani, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 5:00 PM · Tuesday: 7:00 AM – 5:00 PM · Wednesday: 7:00 AM – 5:00 PM · Thursday: 7:00 AM – 5:00 PM · Friday: 7:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Zanesljiva in strokovna izvedba",
+    "Prilagodljivost in točnost"
+  ],
+  "targetCustomers": "Lastniki nepremičnin, investitorji in podjetja v gradbenem sektorju",
+  "serviceArea": "Brezovica pri Ljubljani s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv",
+  "brandStyle": "profesionalno gradbeno podjetje",
+  "competitors": "Lokalni gradbeni izvajalci na območju Ljubljane in okolice",
+  "callToAction": "Stopite v stik"
+}

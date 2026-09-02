@@ -1,0 +1,289 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-slikopleskarji-03-bloom",
+    "fontPairingId": "look-slikopleskarji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-robert-pecjak/hero.avif",
+      "alt": "Slikopleskar pri natančnem pleskanju svetle stene v prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-robert-pecjak/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493655",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-a-wall-5493655/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "house painter working on wall interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-robert-pecjak/services.avif",
+      "alt": "Sveže prebeljena in urejena sodobna notranjost prostora",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-robert-pecjak/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493654",
+      "sourceUrl": "https://www.pexels.com/photo/construction-workers-renovating-a-house-5493654/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "house painter working on wall interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene slikopleskarskih del",
+    "description": "Pregled okvirnih cen za standardne storitve pleskanja in beljenja.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Beljenje sten in stropov",
+        "description": "Dvokratni nanos bele barve z vso zaščito",
+        "price": "od 2,50 €",
+        "unit": "m²",
+        "featured": true
+      },
+      {
+        "name": "Pleskanje v barvnih odtenkih",
+        "description": "Nanašanje izbranega barvnega odtenka",
+        "price": "od 3,50 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Odstranjevanje plesni in protiglivična zaščita",
+        "price": "od 15,00 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Barvanje lesenih površin",
+        "description": "Brušenje in barvanje vrat, ograj ali okvirov",
+        "price": "od 12,00 €",
+        "unit": "m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Robert Pečjak s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Robert Pečjak s.p. | Škofljica",
+    "description": "Kakovostno pleskanje, beljenje in sanacija vlage v Škofljici z okolico. Zanesljiv in natančen domač izvajalec za vaše prostore."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv slikopleskar v Škofljici",
+    "title": "Kakovostno pleskanje in ",
+    "titleHighlight": "osvežitev vaših prostorov",
+    "description": "Poskrbite za nov lesk vaših stanovanj, hiš ali poslovnih prostorov v Škofljici z okolico z zanesljivim in natančnim izvajalcem.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Kakovostni materiali",
+        "label": "Kakovostni materiali"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Škofljica z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite slikopleskarske storitve",
+    "description": "Nudimo profesionalno pleskanje, beljenje in sanacijo površin za stanovanjske in poslovne prostore v Škofljici z okolico.",
+    "items": [
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Osvežite videz svojih prostorov s kakovostnim pleskanjem sten in stropov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje stanovanjskih prostorov",
+        "description": "Čisto in natančno beljenje stanovanj ter hiš za prijetnejše bivanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Barvanje lesenih in kovinskih površin",
+        "description": "Zaščita in obnova stavbnega pohištva ter drugih elementov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Udobno in zdravo bivanje z ustrezno sanacijo problematičnih predelov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Dekorativna obdelava sten",
+        "description": "Unikatni estetski videz za posebne poudarke v vašem interierju.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden izvajalec z osebnim pristopom",
+    "description": "Delo opravimo skrbno, dosledno in v dogovorjenih rokih, pri čemer poskrbimo za čistočo vaših prostorov.",
+    "highlights": [
+      "Natančna in čista izvedba del",
+      "Uporaba kakovostnih materialov",
+      "Prilagodljivost in zanesljivost"
+    ],
+    "benefits": [
+      {
+        "label": "Čista izvedba",
+        "description": "Po končanem delu za seboj vedno pustimo urejene in čiste prostore.",
+        "title": "Čista izvedba"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporabljamo preverjene in obstojne barve za dolgotrajen rezultat.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se držimo dogovorjenih rokov izvedbe.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali pošljite povpraševanje za osvežitev vaših prostorov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Šmarska cesta 14, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 866 688",
+        "href": "tel:031866688",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 9:00–17:00, Ned: 15:00–17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in prostore...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Šmarska cesta 14, 1291 Škofljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Robert Pečjak s.p.",
+    "address": "Šmarska cesta 14, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "031 866 688"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-08-dark-pro",
+  "theme": {
+    "paletteId": "look-gradbinci-08-copper",
+    "fontPairingId": "look-gradbinci-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled informativnih cen za gradbena in prenovitvena dela.",
+    "disclaimer": "Cenik je informativen. Končna cena je odvisna od obsega dela in zahtevnosti projekta. Za ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Splošna gradbena dela po predhodnem ogledu",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Prenove objektov",
+        "description": "Celovite prenove stanovanj in hiš",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zidarska dela",
+        "description": "Izvedba zidarskih del in popravil",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Inženiring in svetovanje",
+        "description": "Strokovno vodenje projektov in svetovanje",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Hidrox",
+    "highlight": "gradbeništvo"
+  },
+  "metadata": {
+    "title": "Hidrox, gradbeništvo, d.o.o. Ljubljana | Zanesljive gradbene storitve",
+    "description": "Zanesljive gradbene storitve v Ljubljani in okolici. Nudimo gradbena dela, prenove objektov, zidarska dela in inženiring."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Strokovne gradbene storitve",
+    "title": "Zanesljive gradbene storitve v",
+    "titleHighlight": "Ljubljani in okolici",
+    "description": "Zanesljive in strokovne rešitve za lastnike nepremičnin, investitorje in posameznike, ki načrtujejo gradbena ali prenovitvena dela.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjena kakovost",
+        "label": "Preverjena kakovost",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana z okolico",
+        "title": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše gradbene storitve",
+    "description": "Celovite rešitve za vaše gradbene projekte in prenove v Ljubljani ter okolici.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba splošnih gradbenih del za različne vrste objektov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove stanovanj, hiš in poslovnih prostorov po vaših željah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna in strokovna izvedba vseh vrst zidarskih del.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Inženiring v gradbeništvu",
+        "description": "Strokovno vodenje in svetovanje pri izvedbi gradbenih projektov.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaša gradbena dela",
+    "description": "Z združevanjem strokovnosti, prilagodljivosti in dolgoletnih izkušenj poskrbimo za uspešno izvedbo vsakega projekta.",
+    "highlights": [
+      "Preverjena kakovost storitev z odličnimi ocenami strank",
+      "Zanesljiv in strokoven pristop k izvedbi projektov",
+      "Prilagodljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Preverjena kakovost storitev z odličnimi ocenami zadovoljnih strank.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Strokovni pristop",
+        "description": "Zanesljiv in strokoven pristop k izvedbi vseh vrst projektov.",
+        "title": "Strokovni pristop"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagodljivost vašim željam in strokovno svetovanje na vsakem koraku.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za gradbena dela? Kontaktirajte nas preko spodnjega obrazca ali telefona.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Društvena ulica 35, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 667 453",
+        "href": "tel:041667453",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Društvena ulica 35, 1000 Ljubljana, Slovenia",
+    "rights": "© Hidrox, gradbeništvo, d.o.o. Ljubljana. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Hidrox gradbeništvo",
+    "address": "Društvena ulica 35, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 667 453"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

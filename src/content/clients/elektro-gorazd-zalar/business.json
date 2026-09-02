@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektro storitve, Gorazd Zalar s.p.",
+  "industry": "Elektro storitve",
+  "tagline": "Zanesljive in strokovne elektro storitve",
+  "services": [
+    "Elektroinštalacije",
+    "Popravila in vzdrževanje",
+    "Montaža svetil",
+    "Odpravljanje napak",
+    "Pametne inštalacije"
+  ],
+  "phone": "041 705 614",
+  "email": "",
+  "address": "Trg komandanta Staneta 6, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 7:00 PM · Tuesday: 7:00 AM – 7:00 PM · Wednesday: 7:00 AM – 7:00 PM · Thursday: 7:00 AM – 7:00 PM · Friday: 7:00 AM – 7:00 PM · Saturday: 7:00 AM – 7:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka strokovnost in zanesljivost",
+    "Prilagodljiv delovni čas tudi ob sobotah",
+    "Kakovostna izvedba elektro storitev"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov v Ljubljani in okolici",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv, prijazen",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni elektro mojstri in elektroinštalaterska podjetja",
+  "callToAction": "Pokličite nas"
+}

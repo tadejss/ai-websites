@@ -1,0 +1,290 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-slikopleskarji-03-bloom",
+    "fontPairingId": "look-slikopleskarji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5493655.avif",
+      "alt": "Slikopleskar pri delu v modernem svavem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5493655.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493655",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-a-wall-5493655/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "professional painter interior wall painting natural light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/994164.avif",
+      "alt": "Notranja prenova in beljenje sten v stanovanju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/994164.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "994164",
+      "sourceUrl": "https://www.pexels.com/photo/person-holding-paint-roller-while-painting-the-wall-994164/",
+      "photographer": "Stephanie  Ho",
+      "photographerUrl": "https://www.pexels.com/@muffinsaurs",
+      "searchQuery": "modern house interior renovation and wall painting"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naše delo",
+    "description": "Pregled izvedenih projektov in storitev.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene naših storitev",
+    "description": "Pregled pogostih storitev slikanja in gradbenih del.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Beljenje sten in stropov",
+        "description": "Dvokatno beljenje z belo barvo z vso zaščito",
+        "price": "od 3,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Pleskarske storitve",
+        "description": "Priprava površine, kitanje in pleskanje",
+        "price": "od 5,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Izdelava ali obnova fasade z materialom",
+        "price": "Po ogledu",
+        "unit": "na m²"
+      },
+      {
+        "name": "Notranja prenova prostorov",
+        "description": "Celovita prenova stanovanja ali hiše",
+        "price": "Po dogovoru",
+        "unit": "projekt"
+      },
+      {
+        "name": "Manjša gradbena dela",
+        "description": "Manjši gradbeni posegi in popravila",
+        "price": "Po dogovoru",
+        "unit": "ura / projekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Juma",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Juma d.o.o. | Slikopleskarstvo in gradbene storitve Medvode",
+    "description": "Zanesljive gradbene storitve in strokovno slikanje vaših prostorov v Medvodah z okolico in širši regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovne gradbene in pleskarske storitve",
+    "title": "Zanesljive gradbene storitve in",
+    "titleHighlight": "strokovno slikanje prostorov",
+    "description": "Kakovostna izvedba za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo prenovo ali pleskanje v Medvodah z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovna izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivost in točnost"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivost strankam"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Medvode z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite storitve za vaše prostore",
+    "description": "Specializirani smo za pleskarska dela, beljenje, fasaderstvo ter notranje prenove v Medvodah in širši regiji.",
+    "items": [
+      {
+        "title": "Pleskarske storitve",
+        "description": "Strokovno barvanje sten in stropov ter osvežitev vaših prostorov z visokokakovostnimi materiali.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje sten in stropov",
+        "description": "Natančno beljenje za svež, čist in urejen videz stanovanj, hiš ter poslovnih objektov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Kakovostna obnova in izvedba fasad, ki ščitijo vaš objekt in izboljšujejo njegovo energijsko učinkovitost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja prenova prostorov",
+        "description": "Celovite prenove notranjih prostorov, prilagojene vašim željam in potrebam.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjša gradbena dela",
+        "description": "Zanesljiva izvedba manjših gradbenih del in popravil na vašem objektu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Juma d.o.o.?",
+    "title": "Zanesljiv partner za prenovo vašega doma",
+    "description": "Zavedamo se pomena kakovosti in točnosti, zato se dela lotimo strokovno in z mislijo na vaše želje.",
+    "highlights": [
+      "Strokovna in natančna izvedba del",
+      "Visoka stopnja zanesljivosti in točnosti",
+      "Popolna prilagodljivost potrebam strank"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Delo opravimo strokovno, natančno in v dogovorjenih rokih.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorov ter zagotavljamo zanesljivo in točno storitev.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku ter potrebam.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za ponudbo",
+    "description": "Potrebujete prenovo, pleskanje ali gradbena dela? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Goričane 80, 1215 Medvode, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 347 271",
+        "href": "tel:031347271",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kakšne storitve potrebujete...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Goričane 80, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Juma d.o.o.",
+    "address": "Goričane 80, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "031 347 271"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "appearance": "construction",
+  "lookId": "keramicarji-05-minimal-line",
+  "theme": {
+    "paletteId": "look-keramicarji-05-mist",
+    "fontPairingId": "look-keramicarji-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kerago-keramicarstvo-druga/hero.avif",
+      "alt": "Strokoven keramičar pri natančnem polaganju keramike",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kerago-keramicarstvo-druga/hero.webp",
+      "width": 979,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37508560",
+      "sourceUrl": "https://www.pexels.com/photo/colorful-geometric-tile-pattern-with-checkerboard-design-37508560/",
+      "photographer": "Nora Malmedie",
+      "photographerUrl": "https://www.pexels.com/@nora-malmedie-85581505",
+      "searchQuery": "tile installer laying ceramic floor"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kerago-keramicarstvo-druga/services.avif",
+      "alt": "Moderna prenova kopalnice in polaganje keramičnih ploščic",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kerago-keramicarstvo-druga/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "12113234",
+      "sourceUrl": "https://www.pexels.com/photo/shadows-on-pavement-12113234/",
+      "photographer": "Nikita Nikitin",
+      "photographerUrl": "https://www.pexels.com/@nikitaxnikitin",
+      "searchQuery": "tile installer laying ceramic floor"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled osnovnih informativnih cen za keramičarska in zaključna dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje stenske keramike",
+        "description": "Standardno polaganje stenskih ploščic",
+        "price": "od 20 €",
+        "unit": "m2"
+      },
+      {
+        "name": "Polaganje talne keramike",
+        "description": "Polaganje talnih ploščic in ureditev podlage",
+        "price": "od 22 €",
+        "unit": "m2",
+        "featured": true
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Celovita prenova kopalnice z demontažo in polaganjem",
+        "price": "od 2.500 €",
+        "unit": "projekt"
+      },
+      {
+        "name": "Zaključna dela v gradbeništvu",
+        "description": "Izvedba manjših zaključnih gradbenih del",
+        "price": "na povpraševanje",
+        "unit": ""
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Kerago",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Kerago, keramičarstvo in zaključna dela",
+    "description": "Strokovno polaganje keramike, adaptacije kopalnic in zaključna dela v gradbeništvu v Ljubljani in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovno keramičarstvo",
+    "title": "Vrhunsko polaganje keramike in",
+    "titleHighlight": "zaključna dela",
+    "description": "Zanesljive rešitve za lastnike stanovanj, hiš in poslovnih prostorov, ki načrtujejo prenovo ali keramičarska dela v Ljubljani in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska kvaliteta",
+        "label": "Vrhunska kvaliteta"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Natančnost"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve s področja keramike in gradbeništva",
+    "description": "Poskrbimo za natančno izvedbo keramičarskih del in celovite prenove vaših prostorov v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno polaganje stenskih keramičnih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Kakovostna vgradnja talne keramike za dolgotrajno obstojnost in urejen videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnih del do končne montaže opreme in keramike.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zaključna dela v gradbeništvu",
+        "description": "Različna zaključna dela v gradbeništvu za urejen in dovršen končni izgled objektov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prenove prostorov",
+        "description": "Kakovostna prenova stanovanj, hiš in poslovnih prostorov po vaših željah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Kerago",
+    "title": "Zanesljiv partner za vaša gradbena in keramičarska dela",
+    "description": "Zavedamo se, da so kakovost, natančnost in zanesljivost ključni za vsak uspešen projekt prenove.",
+    "highlights": [
+      "Vrhunska kvaliteta izvedbe pri vsakem projektu",
+      "Zanesljivost in strokovnost na prvem mestu",
+      "Odlične ocene zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kvaliteta",
+        "description": "Skrbna in natančna izvedba keramičarskih ter zaključnih del.",
+        "title": "Vrhunska kvaliteta"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za strokoven pristop.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Celovite rešitve za stanovanja, hiše in poslovne prostore.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za prenovo? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 428 532",
+        "href": "tel:040428532",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Preglov trg 13, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Preglov trg 13, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kerago d.o.o.",
+    "address": "Preglov trg 13, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 428 532"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

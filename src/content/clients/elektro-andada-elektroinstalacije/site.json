@@ -1,0 +1,257 @@
+{
+  "appearance": "elektro",
+  "lookId": "elektricarji-09-warm-soft",
+  "theme": {
+    "paletteId": "look-elektricarji-09-dusk",
+    "fontPairingId": "look-elektricarji-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene elektro storitev",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Diagnostika napak",
+        "description": "Pregled in odkrivanje napak na inštalacijah",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Montaža svetila",
+        "description": "Strokovna priključitev in montaža enega svetila",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Manjša popravila",
+        "description": "Servisna ura in manjša popravila inštalacij",
+        "price": "od 40 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Vgradnja elektroinštalacij",
+        "description": "Izvedba inštalacij po dogovoru in projektu",
+        "price": "Po ponudbi"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Elektro",
+    "highlight": "Andada"
+  },
+  "metadata": {
+    "title": "Elektro Andada | Zanesljive elektroinštalacije Ljubljana",
+    "description": "Strokovne elektroinštalacije, popravila, vzdrževanje in montaža svetil za dom in poslovne prostore v Ljubljani in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Elektroinštalacije Đorđe Simić s.p.",
+    "title": "Zanesljive in strokovne elektroinštalacije",
+    "titleHighlight": "za vaš dom in poslovni prostor",
+    "description": "Hitra odzivnost in strokovna izvedba elektro storitev za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra",
+        "label": "odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Strokovna",
+        "label": "izvedba",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "value": "Za dom",
+        "label": "in podjetja",
+        "title": "Za dom in podjetja"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "strankam",
+        "title": "Prilagodljivost strankam"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite elektro rešitve na enem mestu",
+    "description": "Nudimo vgradnjo, popravila, vzdrževanje in diagnostiko napak za domove ter poslovne prostore v Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Vgradnja elektroinštalacij",
+        "description": "Kakovostna in varna vgradnja elektroinštalacij v novogradnjah ter obstoječih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popravila in vzdrževanje",
+        "description": "Hitro odpravljanje napak in redno vzdrževanje električnih sistemov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža svetil",
+        "description": "Strokovna namestitev notranje in zunanje razsvetljave po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Adaptacije in prenove",
+        "description": "Prenove električnih napeljav pri stanovanjskih in poslovnih adaptacijah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Diagnostika napak",
+        "description": "Natančno odkrivanje in odprava električnih težav z ustrezno opremo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne napeljave",
+    "description": "Združujemo strokovnost, prilagodljivost in hitro odzivnost za zagotavljanje varnosti vašega doma ali poslovnega prostora.",
+    "highlights": [
+      "Hitra odzivnost in strokovna izvedba",
+      "Zanesljive storitve za gospodinjstva in podjetja",
+      "Prilagodljivost delovnemu času in strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra odzivnost",
+        "description": "Hitro se odzovemo na vaša povpraševanja in poskrbimo za pravočasno izvedbo.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Zanesljive storitve",
+        "description": "Strokovno izvajamo dela za gospodinjstva ter poslovne prostore.",
+        "title": "Zanesljive storitve"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagajamo se vašemu urniku in specifičnim zahtevam projekta.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinštalaterja ali imate vprašanje? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 455 134",
+        "href": "tel:070455134",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kašeljska cesta 31, 1000 Ljubljana",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 7:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo pripravili ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali storitev, ki jo potrebujete...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Kašeljska cesta 31, 1000 Ljubljana, Slovenia",
+    "rights": "© Elektro Andada, Đorđe Simić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektro Andada",
+    "address": "Kašeljska cesta 31, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "070 455 134"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

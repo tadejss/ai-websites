@@ -1,0 +1,279 @@
+{
+  "appearance": "default",
+  "theme": {
+    "paletteId": "slate-emerald",
+    "fontPairingId": "look-suhomontazerji-08"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pleskarstvo-tomaz-cimperman/hero.avif",
+      "alt": "Pleskar pri delu v svetlem in urejenem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pleskarstvo-tomaz-cimperman/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691597",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-walls-in-new-apartment-5691597/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "professional painter interior wall painting dark mood emerald light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pleskarstvo-tomaz-cimperman/services.avif",
+      "alt": "Pripomočki za pleskanje in prenovo sten",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pleskarstvo-tomaz-cimperman/services.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "994164",
+      "sourceUrl": "https://www.pexels.com/photo/person-holding-paint-roller-while-painting-the-wall-994164/",
+      "photographer": "Stephanie  Ho",
+      "photographerUrl": "https://www.pexels.com/@muffinsaurs",
+      "searchQuery": "painting tools roller paint can modern interior wall"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene pleskarskih del",
+    "description": "Pregled pogostih storitev. Končna cena je odvisna od stanja podlage in obsega dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Beljenje sten in stropov",
+        "description": "Dvokratni nanos bele barve na pripravljeno podlago.",
+        "price": "od 3,50 €",
+        "unit": "/ m²",
+        "featured": true
+      },
+      {
+        "name": "Notranje pleskanje v barvi",
+        "description": "Pleskanje sten z niansirano barvo po izbiri.",
+        "price": "od 4,50 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Mehanska odstranitev in protiglivična zaščita sten.",
+        "price": "od 15,00 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Pleskanje stavbnega pohištva",
+        "description": "Pleskanje vrat ali okenskih okvirjev.",
+        "price": "od 40,00 €",
+        "unit": "/ kos"
+      },
+      {
+        "name": "Zaščita prostora in pohištva",
+        "description": "Skrbno lepljenje folij in zaščita tal pred pričetkom dela.",
+        "price": "od 30,00 €",
+        "unit": "/ prostor"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Pleskarstvo",
+    "highlight": "Tomaž Cimperman"
+  },
+  "metadata": {
+    "title": "Pleskarstvo Tomaž Cimperman s.p. | Kakovostno pleskanje in prenova",
+    "description": "Kakovostne pleskarske storitve in prenovitvena dela za vaš dom v Ljubljani z okolico. Zanesljivo pleskanje sten, beljenje in sanacija plesni."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo pleskarske storitve",
+    "title": "Osvežite vaš dom z zanesljivim",
+    "titleHighlight": "pleskarjem",
+    "description": "Kakovostne pleskarske storitve in prenovitvena dela za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančno"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostno"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Poskrbimo za osvežitev, beljenje in zaščito vaših sten ter stavbnega pohištva v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Notranje pleskanje sten in stropov",
+        "description": "Strokovno pleskanje notranjih površin za svež in urejen videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje prostorov",
+        "description": "Hitro in čisto beljenje stanovanj, hiš ter poslovnih objektov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pleskanje stavbnega pohištva",
+        "description": "Obnova in pleskanje vrat, oken ter drugega stavbnega pohištva.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Učinkovito odpravljanje težav z vlago in plesnijo na ogroženih površinah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Dekorativna obdelava sten",
+        "description": "Posebne tehnike in dekorativni obliži za edinstven videz vaših sten.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanje, natančnost in kakovost",
+    "description": "Z našim delom zagotavljamo, da so vaši prostori urejeni skrbno in v dogovorjenih rokih.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Uporaba preverjenih materialov",
+      "Prilagojeno željam strank"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Držimo se dogovorov in dela izvedemo natančno ter pravočasno.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Pri delu uporabljamo preverjene materiale za dolgotrajne rezultate.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo specifičnim potrebam prostora.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Dogovorite se za ogled ali ponudbo",
+    "description": "Pokličite nas ali izpolnite obrazc za povpraševanje za pleskarska dela v Ljubljani in okolici.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 637 928",
+        "href": "tel:031637928",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Preglov trg 10, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali obseg dela...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Preglov trg 10, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Pleskarstvo Tomaž Cimperman",
+    "address": "Preglov trg 10, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "031 637 928"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

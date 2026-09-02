@@ -1,0 +1,292 @@
+{
+  "appearance": "elektro",
+  "lookId": "elektricarji-05-minimal-line",
+  "theme": {
+    "paletteId": "look-elektricarji-05-mist",
+    "fontPairingId": "look-elektricarji-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-marjan-pajk/hero.avif",
+      "alt": "Električar med vgradnjo elektroinstalacij v sodobnem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-marjan-pajk/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "33694019",
+      "sourceUrl": "https://www.pexels.com/photo/technician-working-on-electrical-control-panel-33694019/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "electrician working electrical panel"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-marjan-pajk/services.avif",
+      "alt": "Natančna montaža razsvetljave in električnih inštalacij",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-marjan-pajk/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9679179",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-working-on-the-circuit-breaker-switch-9679179/",
+      "photographer": "Aizat Ramlan",
+      "photographerUrl": "https://www.pexels.com/@aizat-ramlan-1291546",
+      "searchQuery": "electrician working electrical panel"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih elektroinstalaterskih del in storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pregled in odprava manjših napak",
+        "description": "Diagnostika in odprava enostavnejših okvar na inštalacijah.",
+        "price": "od 45 €",
+        "featured": false
+      },
+      {
+        "name": "Montaža svetila",
+        "description": "Montaža in priklop enega svetlobnega telesa.",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Servisni pregled elektroinstalacij",
+        "description": "Pregled stanja in delovanja obstoječih inštalacij.",
+        "price": "od 60 €",
+        "featured": false
+      },
+      {
+        "name": "Ura dela elektroinstalaterja",
+        "description": "Izvedba splošnih elektro del po uri.",
+        "price": "od 35 € / ura",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Elektroinstalacije",
+    "highlight": "Marjan Pajk s.p."
+  },
+  "metadata": {
+    "title": "Elektroinstalacije Marjan Pajk s.p. | Zanesljive elektro storitve",
+    "description": "Zanesljive elektroinstalacije, popravila, vzdrževanje in montaža razsvetljave v Škofljici in okolici. Pokličite nas za strokovno pomoč."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive elektroinstalacije",
+    "title": "Strokovne elektro storitve za",
+    "titleHighlight": "vaš dom in poslovni prostor",
+    "description": "Zanesljive elektroinstalacije, servis, popravila in montaža razsvetljave za lastnike stanovanj, hiš in poslovnih objektov v Škofljici in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka strokovnost",
+        "label": "Visoka strokovnost",
+        "title": "Visoka strokovnost"
+      },
+      {
+        "value": "Hitra odzivnost",
+        "label": "Hitra odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Lokalni mojster",
+        "label": "Lokalni mojster",
+        "title": "Lokalni mojster"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite elektroinstalaterske storitve",
+    "description": "Poskrbimo za varno, zanesljivo in strokovno izvedbo vseh električnih del v vaših objektih.",
+    "items": [
+      {
+        "title": "Vgradnja elektroinstalacij",
+        "description": "Strokovna vgradnja novih elektroinstalacij za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Servis in popravila električnih naprav",
+        "description": "Hitro odkrivanje napak ter učinkovit servis in popravila električnih naprav.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje objektov",
+        "description": "Redno in preventivno vzdrževanje elektroinstalacij na vaših objektih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Montaža razsvetljave",
+        "description": "Strokovna montaža notranje in zunanje razsvetljave po vaših željah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pametne inštalacije",
+        "description": "Vgradnja sodobnih pametnih inštalacij za večje udobje in energijsko učinkovitost.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas?",
+    "description": "Z združevanjem strokovnosti, prilagodljivosti in domačega pristopa zagotavljamo storitve, na katere se lahko zanesete.",
+    "highlights": [
+      "Visoka strokovnost in zanesljivost pri vsakem projektu",
+      "Odlične ocene zadovoljnih strank in oseben pristop",
+      "Prilagodljivost vašemu urniku in hitra odzivnost na terenu"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost in zanesljivost",
+        "description": "Dela izvajamo strokovno, varno in v dogovorjenih rokih.",
+        "title": "Strokovnost in zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost terenu",
+        "description": "Hitro se odzovemo na vaše klice in se prilagodimo vašim potrebam v Škofljici in okolici.",
+        "title": "Prilagodljivost terenu"
+      },
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Naš cilj je varno delovanje vaših inštalacij in vaše dolgoročno zadovoljstvo.",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinstalacije, popravilo ali nasvet? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Orle 16a, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 348 404",
+        "href": "tel:041348404",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 16:30, Sob: 7:00 – 12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe ali vprašanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Orle 16a, 1291 Škofljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektroinstalacije Marjan Pajk s.p.",
+    "address": "Orle 16a, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "041 348 404"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

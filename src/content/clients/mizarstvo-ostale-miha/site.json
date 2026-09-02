@@ -1,0 +1,254 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-03-bloom",
+    "fontPairingId": "look-mizarji-tesarji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave; za natančen izračun nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Izdelava pohištva po meri",
+        "description": "Izdelava unikatnih elementov po vaših merah",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Montaža pohištva",
+        "description": "Montaža kupljenega ali izdelanega pohištva",
+        "price": "od 30 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Mizarska popravila",
+        "description": "Popravilo in obnova lesenih delov",
+        "price": "od 35 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Lesni izdelki po naročilu",
+        "description": "Manjši lesni izdelki in police",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Miha Debenec s.p."
+  },
+  "metadata": {
+    "title": "Mizarstvo Miha Debenec s.p. | Pohištvo po meri Ljubljana",
+    "description": "Kakovostne mizarske storitve, izdelava pohištva po meri in montaža v Ljubljani in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Mizarske storitve po meri",
+    "title": "Kakovostno pohištvo po meri",
+    "titleHighlight": "po vaših željah",
+    "description": "Zanesljive mizarske storitve, natančna izdelava pohištva in strokovna montaža v Ljubljani in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Po meri",
+        "label": "Unikatni izdelki",
+        "title": "Unikatni izdelki"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Kakovostna izvedba",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Vaše želje",
+        "title": "Vaše želje"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "In okolica",
+        "title": "Ljubljana in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Storitve",
+    "title": "Kaj vam nudimo",
+    "description": "Specializirani smo za izdelavo pohištva po meri, popravila in montažo za stranke v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Izdelava pohištva po meri",
+        "description": "Izdelava unikatnega pohištva, prilagojenega vašemu prostoru in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Mizarska popravila",
+        "description": "Strokovna popravila in obnove obstoječega lesenega pohištva.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža pohištva",
+        "description": "Natančna in zanesljiva montaža vseh vrst pohištva.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Lesni izdelki po naročilu",
+        "description": "Različni lesni izdelki in elementi, izdelani po vaših načrtih in merah.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za lesene rešitve",
+    "description": "Z osredotočenostjo na kakovost in detajle poskrbimo, da so vaše želje uresničene.",
+    "highlights": [
+      "Prilagodljivost vašim željam",
+      "Natančna izvedba mizarskih del",
+      "Zanesljiva storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim idejam in pohištvo prilagodimo vašemu prostoru.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Natančnost",
+        "description": "Vsak kos pohištva je izdelan skrbno in z občutkom za detajle.",
+        "title": "Natančnost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Dogovorjene roke in kakovost storitev jemljemo resno.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "071 683 479",
+        "href": "tel:071683479",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ramovševa ulica 36, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 9:00 - 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Ramovševa ulica 36, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Miha Debenec s.p.",
+    "address": "Ramovševa ulica 36, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "071 683 479"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

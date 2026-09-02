@@ -1,0 +1,247 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-03-bloom",
+    "fontPairingId": "look-mizarji-tesarji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene mizarskih storitev",
+    "description": "Ker je vsak kos pohištva izdelan po meri vašega prostora, so cene informativne narave.",
+    "disclaimer": "Cenik je informativen. Za natančen izračun in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinja po meri",
+        "description": "Celotna izdelava in montaža kuhinje po vaših merah",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradna omara",
+        "description": "Omara z drsnimi vrati in notranjo razporeditvijo",
+        "price": "od 900 €"
+      },
+      {
+        "name": "Pohištvo po meri (kosi)",
+        "description": "Komode, mize, regalne enote in police",
+        "price": "od 300 €"
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Opremljanje posameznih prostorov ali celih stanovanj",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Andrej Hudolin"
+  },
+  "metadata": {
+    "title": "Mizarstvo Andrej Hudolin s.p. | Pohištvo po meri",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom na Vrhniki z okolico in širši regiji. Kuhinje po meri, vgradne omare in notranja oprema."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Mizarstvo po meri",
+    "title": "Kakovostno izdelano pohištvo po meri",
+    "titleHighlight": "za vaš dom",
+    "description": "Strokovna in zanesljiva izdelava pohištva po meri za lastnike stanovanj in hiš na Vrhniki z okolico in v širši regiji.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Po meri",
+        "label": "Unikatne rešitve",
+        "title": "Unikatne rešitve"
+      },
+      {
+        "value": "Natančno",
+        "label": "Kakovostna izdelava",
+        "title": "Kakovostna izdelava"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Prilagojeno",
+        "label": "Vašemu prostoru",
+        "title": "Vašemu prostoru"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve mizarstva",
+    "description": "Izdelujemo kakovostno pohištvo po meri, prilagojeno vašim željam in prostoru, na območju Vrhnike z okolico in širše regije.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Unikatni kosi pohištva, ki optimalno izkoristijo vaš prostor in ustrezajo vašemu okusu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne in estetsko dovršene kuhinje, prilagojene vašemu načinu življenja in prostoru.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Izdelava vgradnih omar z drsnimi vrati za maksimalen izkoristek prostora za shranjevanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celostna izdelava notranje opreme za dom, ki ustvarja prijetno in domače bivalno okolje.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivo mizarstvo z osebnim pristopom",
+    "description": "Z našo strokovnostjo in posluhom za želje strank uresničujemo vizijo vašega sanjskega doma.",
+    "highlights": [
+      "Prilagojen pristop vsakemu projektu",
+      "Natančna in kvalitetna izdelava",
+      "Odlična izkušnja in zadovoljne stranke"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojen pristop",
+        "description": "Vsakemu projektu se posvetimo individulano in ga prilagodimo vašim prostorskim zahtevam.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Kakovostna izdelava",
+        "description": "Z natančnim delom in izbiro materialov poskrbimo za dolgotrajno in lepo pohištvo.",
+        "title": "Kakovostna izdelava"
+      },
+      {
+        "label": "Domače mizarstvo",
+        "description": "Zanesljive mizarske storitve s poudarkom na domačnosti in domači obrtniški tradiciji.",
+        "title": "Domače mizarstvo"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Velika Ligojna 67, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 314 674",
+        "href": "tel:031314674",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Velika Ligojna 67, 1360 Vrhnika, Slovenia",
+    "rights": "© Mizarstvo Andrej Hudolin s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Andrej Hudolin",
+    "address": "Velika Ligojna 67, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "031 314 674"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

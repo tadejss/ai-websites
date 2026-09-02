@@ -1,0 +1,258 @@
+{
+  "appearance": "construction",
+  "lookId": "keramicarji-01-classic-split",
+  "theme": {
+    "paletteId": "look-keramicarji-01-sand",
+    "fontPairingId": "look-keramicarji-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Orientacijske cene storitev",
+    "description": "Pregled okvirnih cen za keramičarska in gradbena dela. Končna cena je odvisna od zahtevnosti in obsega dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje stenske in talne keramike",
+        "description": "Standardne dimenzije ploščic, priprava podlage in polaganje",
+        "price": "od 20 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Polaganje marmorja in granita",
+        "description": "Strokovna vgradnja kamnitih oblog",
+        "price": "od 35 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Adaptacija kopalnice na ključ",
+        "description": "Rušenje, inštalacije, hidroizolacija in polaganje",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Oblaganje stopnic",
+        "description": "Obdelava stopnic s keramiko ali kamnom",
+        "price": "od 25 €",
+        "unit": "na tekoci meter"
+      },
+      {
+        "name": "Svetovanje pri izbiri materialov",
+        "description": "Strokovni nasveti na terenu ali domu",
+        "price": "Po dogovoru",
+        "unit": "obisk"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Obrad Stojanović s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Obrad Stojanović s.p. | Polaganje keramike in marmorja Ljubljana",
+    "description": "Strokovno polaganje keramike, marmorja in granita ter adaptacije kopalnic na ključ v Ljubljani z okolico. Zanesljivost, natančnost in dolgoletne izkušnje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovno keramičarstvo in marmor",
+    "title": "Vrhunsko polaganje keramike in",
+    "titleHighlight": "marmorja",
+    "description": "Zanesljive keramičarske storitve in adaptacije kopalnic na ključ za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Vrhunska kvaliteta izvedbe"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Držanje dogovorjenih rokov"
+      },
+      {
+        "value": "Svetovanje",
+        "label": "Individualen pristop"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite keramičarske in kamnoseške storitve",
+    "description": "Poskrbimo za natančno vgradnjo vseh vrst keramičnih ploščic, marmorja in granita ter celovito prenovo vaših prostorov v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Strokovno polaganje stenske in talne keramike vseh dimenzij za vse vrste prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Marmor in granit",
+        "description": "Kakovostno polaganje marmorja in granita za eleganten in prestižen videz vašega doma.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite adaptacije kopalnic na ključ od začetne izmere do končne izvedbe.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Stopnice in terase",
+        "description": "Oblaganje notranjih in zunanjih stopnic ter teras z obstojnimi materiali.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje",
+        "description": "Strokovno svetovanje pri izbiri ustreznih materialov in optimalnih rešitev.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Izkušen lokalni mojster za vaše prostore",
+    "description": "Združujemo dolgoletne izkušnje, natančnost in posluh za vaše želje pri vsakem projektu.",
+    "highlights": [
+      "Vrhunska kvaliteta izvedbe in natančnost",
+      "Zanesljivost in držanje dogovorjenih rokov",
+      "Strokovno svetovanje in individualen pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Kakovost izvedbe",
+        "description": "Vrhunska kvaliteta izvedbe in natančnost pri vsakem kvadratnem metru.",
+        "title": "Kakovost izvedbe"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Dosledno držanje dogovorjenih rokov in dogovorov s strankami.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Strokovno svetovanje in individualna obravnava vaših želja.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje keramike? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Jakčeva ul. 33, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 692 507",
+        "href": "tel:041692507",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt (vrsta dela, okvirna kvadratura, lokacija)...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Jakčeva ul. 33, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Obrad Stojanović s.p.",
+    "address": "Jakčeva ul. 33, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 692 507"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

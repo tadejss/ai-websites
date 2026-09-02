@@ -1,0 +1,298 @@
+{
+  "appearance": "construction",
+  "lookId": "keramicarji-02-editorial-type",
+  "theme": {
+    "paletteId": "look-keramicarji-02-slate",
+    "fontPairingId": "look-keramicarji-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/polaganje-keram-ploscic/hero.avif",
+      "alt": "Polaganje keramičnih ploščic v svetlem in urejenem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/polaganje-keram-ploscic/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "33966531",
+      "sourceUrl": "https://www.pexels.com/photo/artistic-mosaic-pattern-with-vibrant-colors-33966531/",
+      "photographer": "Julia Fuchs",
+      "photographerUrl": "https://www.pexels.com/@julia-fuchs-19936537",
+      "searchQuery": "tile installer laying ceramic floor"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/polaganje-keram-ploscic/services.avif",
+      "alt": "Detajl položenih keramičnih ploščic in talnih oblog",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/polaganje-keram-ploscic/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32021732",
+      "sourceUrl": "https://www.pexels.com/photo/colorful-vintage-ceramic-tiles-pattern-32021732/",
+      "photographer": "Thea Xiaa",
+      "photographerUrl": "https://www.pexels.com/@xiaa",
+      "searchQuery": "tile installer laying ceramic floor"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene",
+    "description": "Pregled okvirnih cen za keramičarska dela in polaganje talnih oblog.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo glede na vaš prostor nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje keramičnih ploščic",
+        "description": "Standardno polaganje ploščic na pripravljeno podlago",
+        "price": "od 20 €",
+        "unit": "m²",
+        "featured": true
+      },
+      {
+        "name": "Polaganje velikformatnih ploščic",
+        "description": "Zahtevnejše polaganje velikih formatov",
+        "price": "od 30 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Polaganje naravnega kamna",
+        "description": "Montaža in obdelava kamnitih oblog",
+        "price": "od 35 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Celovita prenova kopalnice po dogovoru",
+        "price": "Po dogovoru",
+        "featured": false
+      },
+      {
+        "name": "Svetovanje na terenu",
+        "description": "Pregled objekta in strokovni nasveti",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Berlec"
+  },
+  "metadata": {
+    "title": "Polaganje Keramičnih Ploščic in Talnih Oblog Berlec Marjan, s.p.",
+    "description": "Kakovostno polaganje keramičnih ploščic in talnih oblog z dolgoletnimi izkušnjami v Kamniku z okolico in osrednji Sloveniji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster za keramiko",
+    "title": "Kakovostno polaganje keramike in",
+    "titleHighlight": "talnih oblog",
+    "description": "Strokovne storitve polaganja keramičnih ploščic, naravnega kamna in celovite adaptacije kopalnic za lastnike stanovanj, hiš in poslovnih prostorov.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovnost",
+        "label": "Visoka natančnost",
+        "title": "Strokovnost in natančnost"
+      },
+      {
+        "value": "Svetovanje",
+        "label": "Osebni pristop",
+        "title": "Svetovanje pri materialih"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Točna izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Kamnik",
+        "label": "Z okolico",
+        "title": "Lokalne storitve"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Specializirani smo za natančno polaganje vseh vrst keramičnih ploščic, talnih oblog in kamna ter za prenovo kopalnic v Kamniku in osrednji Sloveniji.",
+    "items": [
+      {
+        "title": "Polaganje keramičnih ploščic",
+        "description": "Natančno polaganje keramičnih ploščic vseh velikosti in formatov za stene in tla.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talnih oblog",
+        "description": "Strokovna namestitev različnih vrst talnih oblog za domove in poslovne prostore.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovite prenove kopalnic od začetnega načrtovanja do končne izvedbe.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje kamna",
+        "description": "Estetsko in trajno polaganje naravnega kamna za unikatne videze prostorov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje pri izbiri materialov",
+        "description": "Strokovna pomoč in svetovanje pri izbiri najustreznejših materialov za vaš projekt.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden mojster z izkušnjami",
+    "description": "Naše delo temelji na natančnosti, zanesljivosti in posluhu za želje strank.",
+    "highlights": [
+      "Visoka strokovnost in natančnost pri delu",
+      "Zanesljiva in točna izvedba storitev",
+      "Prilagodljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka strokovnost",
+        "description": "Natančna in skrbna izvedba vseh keramičnih in talnih del.",
+        "title": "Visoka strokovnost"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za urejen delovni prostor.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Pomagamo vam pri izbiri pravih materialov in rešitev za vaše prostore.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Iščete zanesljivega mojstra za polaganje keramike? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Sela pri Kamniku 9a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 343 047",
+        "href": "tel:041343047",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–18:00, Sob: 9:00–13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in pripravili bomo ponudbo za vaš projekt.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Sela pri Kamniku 9a, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Berlec",
+    "address": "Sela pri Kamniku 9a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 343 047"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

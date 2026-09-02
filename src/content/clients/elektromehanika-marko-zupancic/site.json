@@ -1,0 +1,295 @@
+{
+  "appearance": "auto",
+  "lookId": "avtomehaniki-01-classic-split",
+  "theme": {
+    "paletteId": "look-avtomehaniki-01-sand",
+    "fontPairingId": "look-avtomehaniki-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektromehanika-marko-zupancic/hero.avif",
+      "alt": "Električar med delom na električni plošči v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektromehanika-marko-zupancic/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28153670",
+      "sourceUrl": "https://www.pexels.com/photo/a-young-man-is-working-on-a-car-engine-28153670/",
+      "photographer": "dionisio castigotivane",
+      "photographerUrl": "https://www.pexels.com/@dionisio-castigotivane-1013672643",
+      "searchQuery": "auto mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektromehanika-marko-zupancic/services.avif",
+      "alt": "Servis in popravilo električnih naprav z orodjem v delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektromehanika-marko-zupancic/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4315571",
+      "sourceUrl": "https://www.pexels.com/photo/an-auto-mechanic-repairing-the-car-engine-4315571/",
+      "photographer": "Anna Shvets",
+      "photographerUrl": "https://www.pexels.com/@shvetsa",
+      "searchQuery": "auto mechanic working on car engine"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirni cenik storitev",
+    "description": "Pregled pogostejših storitev elektromehanike. Končna cena je odvisna od obsega dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pregled električne naprave",
+        "description": "Diagnostika okvare in ocena stroškov popravila",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Servis elektromotorja",
+        "description": "Osnovni servis in pregled delovanja",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Popravilo električne opreme",
+        "description": "Manjša popravila in zamenjava delov",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Pregled elektroinštalacij",
+        "description": "Strokovni pregled stanja instalacij",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Ura dela / svetovanja",
+        "description": "Terensko delo ali strokovno posvetovanje",
+        "price": "45 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Elektromehanika",
+    "highlight": "Marko Zupančič s.p."
+  },
+  "metadata": {
+    "title": "Elektromehanika Marko Zupančič s.p. | Elektro storitve Ljubljana",
+    "description": "Zanesljive elektromehanske storitve, popravila električnih naprav in servis elektromotorjev v Ljubljani in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovne elektro storitve",
+    "title": "Zanesljive elektromehanske storitve in",
+    "titleHighlight": "popravila z izkušnjami.",
+    "description": "Specializirani za popravila električnih naprav, servis elektromotorjev in elektroinštalacijske storitve za gospodinjstva ter podjetja v Ljubljani in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjeno",
+        "label": "Preverjeno",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "value": "Sobotno delo",
+        "label": "Sobotno delo",
+        "title": "Prilagodljiv čas"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovni pristop"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana",
+        "title": "Lokalna podpora"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše elektro in mehanske naprave",
+    "description": "Nudimo kakovostna popravila, vzdrževanje in svetovanje za stranke v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Popravila električnih naprav",
+        "description": "Hitra in zanesljiva popravila različnih električnih naprav v vašem domu ali podjetju.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Elektroinštalacijske storitve",
+        "description": "Strokovna izvedba in pregled elektroinštalacij za varno delovanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Servis elektromotorjev",
+        "description": "Kakovostno vzdrževanje in servisiranje elektromotorjev za dolgo življenjsko dobo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje električne opreme",
+        "description": "Redni pregledi in vzdrževanje za preprečevanje okvar opreme.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje in pregled instalacij",
+        "description": "Strokovni nasveti ter celovit pregled stanja vaših električnih inštalacij.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne naprave",
+    "description": "Združujemo strokovnost, prilagodljivost in prijazen pristop za vsako stranko.",
+    "highlights": [
+      "Preverjena kakovost storitev z odličnimi ocenami strank",
+      "Prilagodljiv delovni čas tudi ob sobotah",
+      "Strokovni pristop in zanesljivost"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Kakovostne storitve, ki temeljijo na dolgoletnih izkušnjah in zadovoljstvu strank.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Prilagodljiv čas",
+        "description": "Delujemo tudi ob sobotah, da se lažje prilagodimo vašemu urniku.",
+        "title": "Prilagodljiv čas"
+      },
+      {
+        "label": "Strokovni pristop",
+        "description": "Zanesljivo in strokovno reševanje težav z električnimi napravami in instalacijami.",
+        "title": "Strokovni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete popravilo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ižanska cesta 129, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 360 794",
+        "href": "tel:031360794",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 15:00, Sob: 7:00 – 13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite težavo ali storitev, ki jo potrebujete",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ižanska cesta 129, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektromehanika Marko Zupančič s.p.",
+    "address": "Ižanska cesta 129, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "031 360 794"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

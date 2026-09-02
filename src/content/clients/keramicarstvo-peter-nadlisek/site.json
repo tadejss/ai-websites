@@ -1,0 +1,294 @@
+{
+  "appearance": "construction",
+  "lookId": "keramicarji-04-stats-trust",
+  "theme": {
+    "paletteId": "look-keramicarji-04-stone",
+    "fontPairingId": "look-keramicarji-04"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-peter-nadlisek/hero.avif",
+      "alt": "Keramičar polaga stensko keramiko v svetli prenovljeni kopalnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-peter-nadlisek/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3616774",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-shower-mounted-on-wall-3616774/",
+      "photographer": "La Miko",
+      "photographerUrl": "https://www.pexels.com/@lamiko",
+      "searchQuery": "professional tiler bathroom renovation"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-peter-nadlisek/services.avif",
+      "alt": "Natančno pološčene keramične ploščice v sodobnem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-peter-nadlisek/services.webp",
+      "width": 1055,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16629411",
+      "sourceUrl": "https://www.pexels.com/photo/white-square-tiles-16629411/",
+      "photographer": "Eymen Şahin",
+      "photographerUrl": "https://www.pexels.com/@eymen-sahin-433309539",
+      "searchQuery": "tile installer laying ceramic floor"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Orientacijske cene naših storitev",
+    "description": "Pregled okvirnih cen za keramičarska dela in adaptacije.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo glede na vaš objekt nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje stenske keramike",
+        "description": "Standardno polaganje ploščic na stenske površine",
+        "price": "od 20 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Polaganje talne keramike",
+        "description": "Polaganje talnih ploščic z vsemi pripravljalnimi deli",
+        "price": "od 20 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Celovita prenova kopalnice na ključ",
+        "price": "po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Polaganje dekorativnega kamna",
+        "description": "Montaža stenskega okrasnega kamna",
+        "price": "od 25 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Zunanja keramika",
+        "description": "Polaganje keramike na terasah in balkonih",
+        "price": "od 22 €",
+        "unit": "na m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Peter Nadlišek s.p."
+  },
+  "metadata": {
+    "title": "Keramičarstvo Peter Nadlišek s.p. | Polaganje keramike in adaptacije",
+    "description": "Kakovostno polaganje stenske in talne keramike, adaptacije kopalnic ter zunanja dela na Vrhniki in v okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv keramičarski mojster",
+    "title": "Kakovostno polaganje keramike in",
+    "titleHighlight": "zaključna dela",
+    "description": "Nudimo strokovno polaganje keramike, adaptacije kopalnic in zunanja dela za lastnike stanovanj, hiš in investitorje na Vrhniki ter v okolici.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivost strankam",
+        "title": "Prilagodljivost strankam"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Vrhnika in okolica",
+        "title": "Vrhnika in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše keramičarske projekte",
+    "description": "Specializirani smo za vse vrste keramičarskih del in adaptacije kopalnic na območju Vrhnike in okolice.",
+    "items": [
+      {
+        "title": "Polaganje stenske keramike",
+        "description": "Natančno polaganje stenskih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje talne keramike",
+        "description": "Trpežna in estetska izvedba talnih keramičnih oblog za vsak prostor.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Adaptacije kopalnic",
+        "description": "Celovita prenova kopalnic od začetnih del do končne izvedbe.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje dekorativnega kamna",
+        "description": "Popestritev stenskih površin z dekorativnim kamnom za edinstven videz.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zunanja keramika za terase in balkone",
+        "description": "Kakovostna vgradnja zmrzljivi odpornih keramičnih oblog na prostem.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske in gradbene projekte",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za želje strank poskrbimo za kakovostno izvedbo vsakega projekta.",
+    "highlights": [
+      "Zanesljiva izvedba keramičarskih del",
+      "Dolgoletne izkušnje na področju adaptacij",
+      "Prilagodljivost strankam in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Dela izvedemo kakovostno, natančno in v dogovorjenih časovnih okvirih.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Izkušnje in znanje",
+        "description": "Dolgoletne izkušnje na področju adaptacij in polaganje vseh vrst keramike.",
+        "title": "Izkušnje in znanje"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prilagodljivost vašim željam ter strokovno svetovanje ob izbiri rešitev.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite zahtevati ponudbo? Kontaktirajte nas preko spodnjih podatkov ali obrazca.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 642 654",
+        "href": "tel:040642654",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Vas 34, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Vas 34, 1360 Vrhnika, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Peter Nadlišek s.p.",
+    "address": "Vas 34, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "040 642 654"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

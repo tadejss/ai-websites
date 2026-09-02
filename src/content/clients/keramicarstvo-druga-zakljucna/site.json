@@ -1,0 +1,264 @@
+{
+  "appearance": "construction",
+  "lookId": "keramicarji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-keramicarji-03-bloom",
+    "fontPairingId": "look-keramicarji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za keramičarska in zaključna gradbena dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje keramike (standardne dimenzije)",
+        "description": "Polaganje keramičnih ploščic na pripravljeno podlago",
+        "price": "od 20 €",
+        "unit": "/ m²",
+        "featured": true
+      },
+      {
+        "name": "Polaganje večjih formatov ploščic",
+        "description": "Zahtevnejše polaganje velikih formatov keramike",
+        "price": "od 30 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Celovita prenova kopalnice",
+        "description": "Demontaža, priprava, polaganje in montaža",
+        "price": "po dogovoru",
+        "unit": "projekt"
+      },
+      {
+        "name": "Polaganje zunanje keramike",
+        "description": "Balkoni, terase in zunanje površine",
+        "price": "od 25 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Hidroizolacija prostorov",
+        "description": "Nanos hidroizolacije pred polaganjem ploščic",
+        "price": "od 15 €",
+        "unit": "/ m²"
+      },
+      {
+        "name": "Ura strokovnega dela",
+        "description": "Manjša zaključna gradbena dela in popravila",
+        "price": "od 25 €",
+        "unit": "/ ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Keramičarstvo",
+    "highlight": "Franci Križman S.P."
+  },
+  "metadata": {
+    "title": "Keramičarstvo in zaključna gradbena dela | Franci Križman s.p.",
+    "description": "Kakovostno polaganje keramike, prenov kopalnic in zaključna gradbena dela na Škofljici z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv domači mojster",
+    "title": "Strokovno polaganje keramike in",
+    "titleHighlight": "zaključna gradbena dela",
+    "description": "Kakovostne storitve za lastnike stanovanj, hiš in poslovnih prostorov na Škofljici z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Strokovni nasveti",
+        "label": "Strokovni nasveti"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Specializirani smo za keramičarska dela, prenove kopalnic in notranja zaključna gradbena dela na Škofljici z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje vseh vrst keramičnih ploščic v kopalnicah, kuhinjah in drugih prostorih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Celovite prenove kopalnic po vaši meri, od odstranitve starih elementov do končne izvedbe.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje ploščic",
+        "description": "Strokovno polaganje stenskih in talnih ploščic na različnih površinah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja zaključna dela",
+        "description": "Kakovostna izvedba notranjih zaključnih gradbenih del za urejen izgled vaših prostorov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Adaptacije prostorov",
+        "description": "Prenove in prilagoditve obstoječih stanovanjskih ter poslovnih prostorov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Z bogatimi izkušnjami in strokovnim pristopom poskrbimo za kakovostno izvedbo vseh del.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba storitev",
+      "Bogate izkušnje na področju zaključnih gradbenih del",
+      "Prilagodljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsak projekt izvedemo skrbno in z občutkom za detajle.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Pomagamo vam pri izbiri ustreznih rešitev in materialov za vaš prostor.",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za prenovo? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 855 111",
+        "href": "tel:031855111",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Jagrova ulica 10, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Jagrova ulica 10, 1291 Škofljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Keramičarstvo Franci Križman S.P.",
+    "address": "Jagrova ulica 10, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "031 855 111"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

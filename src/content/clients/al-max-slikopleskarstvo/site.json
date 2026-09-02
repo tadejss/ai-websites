@@ -1,0 +1,256 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-06-service-grid",
+  "theme": {
+    "paletteId": "look-slikopleskarji-06-clay",
+    "fontPairingId": "look-slikopleskarji-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave; za natančen izračun glede na vaše potrebe nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ogled na objektu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje pleskanje sten in stropov",
+        "description": "Dvokratni nanos bele barve z zaščito pohištva",
+        "price": "od 3,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Beljenje stanovanj",
+        "description": "Celostna prenova sten v stanovanjskih objektih",
+        "price": "po dogovoru",
+        "unit": "projekt"
+      },
+      {
+        "name": "Glajenje in kitanje površin",
+        "description": "Priprava in izravnava poškodovanih sten",
+        "price": "od 6,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Komercialna slikopleskarska dela",
+        "description": "Pleskanje poslovnih prostorov in večjih objektov",
+        "price": "po dogovoru",
+        "unit": "ura / projekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "AL MAX",
+    "highlight": "Slikopleskarstvo"
+  },
+  "metadata": {
+    "title": "AL MAX | Kakovostno pleskanje in zaključna dela",
+    "description": "Zanesljivo slikopleskarstvo in zaključna dela v gradbeništvu na Vrhniki z okolico in v širši regiji. Pokličite za ponudbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni izvajalec",
+    "title": "Kakovostno pleskanje in",
+    "titleHighlight": "zaključna dela",
+    "description": "Strokovne slikopleskarske storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo osvežitev ali prenovo prostorov na Vrhniki in širši regiji.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Vrhunska ocena",
+        "label": "Vrhunska ocena strank",
+        "title": "Vrhunska ocena strank"
+      },
+      {
+        "value": "7 dni",
+        "label": "Neprekinjena dostopnost",
+        "title": "Neprekinjena dostopnost"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Čisto opravljeno delo",
+        "title": "Čisto opravljeno delo"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Vrhnika in okolica",
+        "title": "Vrhnika in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Izvajamo natančna in čista slikopleskarska dela na Vrhniki z okolico in v širši regiji.",
+    "items": [
+      {
+        "title": "Notranje pleskanje sten in stropov",
+        "description": "Osvežite videz vaših prostorov s kakovostnimi nanosi barv za estetski in urejen videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje stanovanj in poslovnih prostorov",
+        "description": "Hitro in strokovno beljenje za stanovanjske objekte ter poslovne prostore.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vlivanje in glajenje površin",
+        "description": "Priprava in obdelava podlag za popolnoma ravne in gladke stene.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zasebna in komercialna dela",
+        "description": "Prilagojene slikopleskarske rešitve za zasebne objekte in večje komercialne projekte.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in prilagodljivost",
+    "description": "Zavedamo se pomena urejenega doma ali delovnega okolja, zato delo opravimo natančno in v dogovorjenih rokih.",
+    "highlights": [
+      "Vrhunska ocena strank in zanesljiva izvedba",
+      "Prilagodljivost urniku in neprekinjena dostopnost",
+      "Natančno in čisto opravljeno delo"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska izvedba",
+        "description": "Zanesljiva izvedba in visoka ocena zadovoljnih strank.",
+        "title": "Vrhunska izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagodljivost vašemu urniku in neprekinjena dostopnost.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Natančnost",
+        "description": "Skrbno, natančno in čisto opravljeno delo brez kompromisov.",
+        "title": "Natančnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete prenovo ali imate vprašanje glede storitev? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Podlipa 93c, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 664 044",
+        "href": "tel:070664044",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Ned: Odprti 24 ur",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Podlipa 93c, 1360 Vrhnika, Slovenia",
+    "rights": "© 2025 AL MAX, Aleksandar Mitić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "AL MAX Slikopleskarstvo",
+    "address": "Podlipa 93c, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "070 664 044"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

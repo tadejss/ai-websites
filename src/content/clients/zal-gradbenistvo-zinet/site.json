@@ -1,0 +1,252 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-02-editorial-type",
+  "theme": {
+    "paletteId": "look-gradbinci-02-slate",
+    "fontPairingId": "look-gradbinci-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled informativnih cen za gradbena, obrtniška in prenovitvena dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo glede na vaš projekt nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Zidarska dela",
+        "description": "Izdelava zidov, predelnih sten in opečnih elementov.",
+        "price": "od 25 €",
+        "unit": "m²",
+        "featured": true
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Izdelava kontaktne fasade z izolacijo.",
+        "price": "od 45 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Adaptacije in prenove",
+        "description": "Rušitvena dela, priprava in prenova prostorov.",
+        "price": "od 30 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Zemeljska dela",
+        "description": "Manjši izkopi in ureditev terena.",
+        "price": "od 35 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Zal",
+    "highlight": "Gradbeništvo"
+  },
+  "metadata": {
+    "title": "Zal, gradbeništvo | Zinet Ćehić s.p.",
+    "description": "Zanesljive gradbene storitve, adaptacije, fasaderska in zidarska dela na Vrhniki z okolico. Preverjen strokovnjak za vaše gradbene projekte."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Gradbena dela in prenove",
+    "title": "Zanesljive gradbene storitve in",
+    "titleHighlight": "prenovitvena dela",
+    "description": "Strokovne gradbene rešitve za lastnike hiš, stanovanj in poslovnih objektov na Vrhniki z okolico. Zanesljivost in kakovost na prvem mestu.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Vrhunska kakovost",
+        "label": "Vrhunska kakovost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Vrhnika z okolico"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite gradbene in prenovitvene rešitve",
+    "description": "Ponujamo širok spekter gradbenih storitev za stanovanjske in poslovne objekte na območju Vrhnike z okolico.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba splošnih gradbenih del z natančnostjo in strokovnim pristopom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije in prenove",
+        "description": "Celovite prenove in adaptacije objektov, prilagojene vašim željam in potrebam.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Trdna in zanesljiva zidarska dela za novogradnje ter sanacije obstoječih objektov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Izdelava in obnova fasad za boljšo energijsko učinkovitost in estetski videz.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zemeljska dela",
+        "description": "Priprava terena in zemeljska dela kot osnova za varno ter stabilno gradnjo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Z združevanjem strokovnosti, kakovostnih materialov in zanesljivega pristopa poskrbimo, da so vaši projekti izpeljani brezskrbno.",
+    "highlights": [
+      "Visoka kakovost izvedenih gradbenih storitev",
+      "Zanesljiv in strokoven pristop k delu",
+      "Odlične ocene zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Stremimo k vrhunski izvedbi vseh gradbenih storitev.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Zanesljiv pristop",
+        "description": "Držimo se dogovorjenih rokov in natančno sledimo vašim zahtevam.",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Naše delo temelji na zaupanju in odličnih odzivih strank z Vrhnike.",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za gradbena dela? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Pod Hruševco 18, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 469 234",
+        "href": "tel:070469234",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Pod Hruševco 18, 1360 Vrhnika, Slovenia",
+    "rights": "© Zal, gradbeništvo, Zinet Ćehić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Zal Gradbeništvo",
+    "address": "Pod Hruševco 18, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "070 469 234"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

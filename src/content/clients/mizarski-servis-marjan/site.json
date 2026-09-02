@@ -1,0 +1,253 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-10-frost",
+    "fontPairingId": "look-mizarji-tesarji-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene mizarskih storitev",
+    "description": "Cene so informativne narave in se prilagajajo glede na izbiro materialov, zahtevnost izdelave ter dimenzije prostora.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte in pripravili vam bomo ponudbo.",
+    "items": [
+      {
+        "name": "Pohištvo po meri",
+        "description": "Izdelava unikatnih kosov pohištva po vaših merah.",
+        "price": "Po ponudbi",
+        "featured": true
+      },
+      {
+        "name": "Kuhinje po naročilu",
+        "description": "Načrtovanje, izdelava in montaža kuhinje.",
+        "price": "Po ponudbi"
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Izdelava in vgradnja omar za optimalen izkoristek prostora.",
+        "price": "Po ponudbi"
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Opremljanje bivalnih prostorov z lesenim pohištvom.",
+        "price": "Po ponudbi"
+      },
+      {
+        "name": "Lesene stopnice",
+        "description": "Izdelava in montaža lesenih stopnic.",
+        "price": "Po ponudbi"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Marjan Dolamič s.p."
+  },
+  "metadata": {
+    "title": "Mizarski servis Marjan Dolamič s.p. | Pohištvo po meri",
+    "description": "Kakovostno izdelano leseno pohištvo po meri za vaš dom na Vrhniki z okolico in v osrednji Sloveniji. Kuhinje, vgradne omare in notranja oprema."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarske storitve po meri",
+    "title": "Kakovostno izdelano leseno pohištvo po meri za",
+    "titleHighlight": "vaš dom",
+    "description": "Unikatne rešitve in prilagojeno pohištvo za lastnike stanovanj in hiš na Vrhnika z okolico in v osrednji Sloveniji.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Po meri",
+        "label": "Unikatni izdelki"
+      },
+      {
+        "value": "Natančno",
+        "label": "Kakovostna montaža"
+      },
+      {
+        "value": "Osebno",
+        "label": "Individualni pristop"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Strokovna izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske rešitve za vaš prostor",
+    "description": "Z dolgoletnimi izkušnjami in strokovnostjo izdelujemo pohištvo po meri, ki se popolnoma prilega vašemu domu na Vrhniki in v osrednji Sloveniji.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Unikatni kosi pohištva, prilagojeni vašim željam in meram vašega prostora.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po naročilu",
+        "description": "Funkcionalne in estetsko dovršene kuhinje, ustvarjene za udobno kuhanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimizacija prostora z vgradnimi omare, ki nudijo obilo prostora za shranjevanje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celostna oprema notranjih prostorov za skladen in prijeten videz vašega doma.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Lesene stopnice",
+        "description": "Kakovostne in trpežne lesene stopnice, izdelane z natančno montažo.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše mizarske projekte",
+    "description": "Zavezani smo k visoki kakovosti izdelave, natančni montaži in osebnemu pristopu k vsaki stranki.",
+    "highlights": [
+      "Dolgoročne izkušnje in strokovnost na področju mizarstva",
+      "Individualen pristop k vsakemu projektu in stranki",
+      "Visoka kakovost izdelave in natančna montaža"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Dolgoročne izkušnje in strokovnost na področju mizarstva zagotavljata odlične rezultate.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Individualni pristop",
+        "description": "Prisluhnemo vašim željam in se posvetimo vsakemu projektu posebej.",
+        "title": "Individualni pristop"
+      },
+      {
+        "label": "Natančna montaža",
+        "description": "Visoka kakovost izdelave in natančna montaža za dolgotrajno zadovoljstvo.",
+        "title": "Natančna montaža"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Na zelenici 3a, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 637 835",
+        "href": "tel:041637835",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Na zelenici 3a, 1360 Vrhnika, Slovenia",
+    "rights": "© 2025 Mizarski servis Marjan Dolamič s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Marjan Dolamič s.p.",
+    "address": "Na zelenici 3a, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 637 835"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

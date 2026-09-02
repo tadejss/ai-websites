@@ -1,0 +1,261 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-03-bloom",
+    "fontPairingId": "look-mizarji-tesarji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Vsak kos pohištva je unikat, zato se cene oblikujejo glede na zahteve projekta, material in obseg dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in izračun nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Izdelava pohištva po meri",
+        "description": "Unikatno pohištvo za dnevne sobe, predsobe in druge prostore.",
+        "price": "od 100 €",
+        "unit": "po projektu"
+      },
+      {
+        "name": "Kuhinje po meri",
+        "description": "Celovita izdelava in montaža kuhinje po vaših merah.",
+        "price": "od 1.500 €",
+        "unit": "po projektu",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati in notranjo opremo.",
+        "price": "od 600 €",
+        "unit": "po projektu"
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Manjši mizarski izdelki in elementi notranje opreme.",
+        "price": "od 80 €",
+        "unit": "po kosu"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Blaž Šuštar s.p."
+  },
+  "metadata": {
+    "title": "Mizarstvo Blaž Šuštar s.p. | Pohištvo po meri",
+    "description": "Kakovostno izdelano pohištvo po meri, kuhinje in vgradne omare v Kamniku pod Krimom, Preserju in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarstvo po meri",
+    "title": "Kakovostno izdelano pohištvo po meri",
+    "titleHighlight": "za vaš dom",
+    "description": "Strokovna izdelava pohištva po meri, kuhinj in notranje opreme za lastnike stanovanj in hiš v Kamniku pod Krimom, Preserju in okolici.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska kakovost",
+        "label": "Vrhunska kakovost",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Po meri",
+        "label": "Po meri",
+        "title": "Po meri"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske rešitve za vaš dom",
+    "description": "Zanesljiva in kakovostna izdelava pohištva ter notranje opreme po vaših željah.",
+    "items": [
+      {
+        "title": "Izdelava pohištwa po meri",
+        "description": "Unikatno pohištvo, prilagojeno meram vašega prostora in vašemu okusu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne in estetsko dovršene kuhinje, narejene za udobno kuhanje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimalen izkoristek prostora z vgradnimi omare in garderobnimi sistemi.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celovite rešitve opremljanja bivalnih prostorov z lesenimi elementi.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Leseni izdelki",
+        "description": "Različni leseni izdelki po naročilu za dopolnitev vašega doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše mizarske projekte",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za želje strank ustvarjamo lesene izdelke, ki trajajo.",
+    "highlights": [
+      "Vrhunska kakovost izdelave",
+      "Prilagodljivost željam strank",
+      "Zanesljivost in strokovnost"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Uporaba preverjenih materialov in natančna izdelava za dolgotrajno zadovoljstvo.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in idejam ter jih uresničimo v končni izdelek.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Spoštovanje dogovorjenih rokov in strokovna izvedba vseh del.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kamnik pod Krimom 148, 1352 Preserje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "068 174 533",
+        "href": "tel:068174533",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 7:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Kamnik pod Krimom 148, 1352 Preserje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Blaž Šuštar s.p.",
+    "address": "Kamnik pod Krimom 148, 1352 Preserje, Slovenia",
+    "email": "",
+    "phone": "068 174 533"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

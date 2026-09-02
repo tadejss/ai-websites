@@ -1,0 +1,252 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-gradbinci-07-linen",
+    "fontPairingId": "look-gradbinci-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene gradbenih storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega del ter zahtevnosti projekta.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Zidarska dela",
+        "description": "Splošna zidarska dela po dogovoru",
+        "price": "Po dogovoru",
+        "unit": "ura / m²",
+        "featured": true
+      },
+      {
+        "name": "Betoniranje",
+        "description": "Betoniranje plošč, temeljev in opornih zidov",
+        "price": "Po dogovoru",
+        "unit": "m³"
+      },
+      {
+        "name": "Prenove in adaptacije",
+        "description": "Celovite adaptacije stanovanjskih hiš in prostorov",
+        "price": "Po dogovoru",
+        "unit": "projekt"
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Izdelava fasad z izolacijo",
+        "price": "Po dogovoru",
+        "unit": "m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Zidarstvo",
+    "highlight": "Dolinšek"
+  },
+  "metadata": {
+    "title": "Zidarstvo Dolinšek | Gradbene storitve in zidarstvo",
+    "description": "Kakovostne gradbene storitve, zidarstvo, prenove in adaptacije. Zanesljiva izvedba za Škofljico in osrednjo Slovenijo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljivo zidarstvo in gradbeništvo",
+    "title": "Kakovostne gradbene storitve z",
+    "titleHighlight": "izkušnjami",
+    "description": "Celovite gradbene storitve, zidarstvo, prenove in adaptacije za lastnike nepremičnin, investitorje in gospodinjstva na Škofljici z okolico ter v osrednji Sloveniji.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Kakovost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše gradbene projekte",
+    "description": "Nudimo širok spekter gradbenih in zidarskih del, prilagojenih vašim željam in potrebam v Škofljici z okolico ter osrednji Sloveniji.",
+    "items": [
+      {
+        "title": "Gradnja stanovanjskih hiš",
+        "description": "Celovita izvedba gradbenih del pri gradnji vašega novega doma od temeljev do strehe.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove in adaptacije",
+        "description": "Kakovostna prenova obstoječih objektov, prostorov in stanovanjskih hiš.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna in strokovna izvedba vseh vrst splošnih zidarskih del.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Betoniranje",
+        "description": "Trdno in zanesljivo betoniranje elementov, plošč ter drugih konstrukcij.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Izdelava kakovostnih fasad za boljšo izolativnost in estetski videz vašega objekta.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za gradbena dela",
+    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom poskrbimo, da so vsa dela izvedena zanesljivo in v dogovorjenih rokih.",
+    "highlights": [
+      "Zanesljiva in strokovna izvedba del",
+      "Zadovoljne stranke in dobra ocena",
+      "Prilagodljivost in strokovno svetovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Zanesljiva in strokovna izvedba vseh gradbenih ter zidarskih del.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Dobra ocena",
+        "description": "Številne zadovoljne stranke in pretekle reference potrjujejo našo kakovost.",
+        "title": "Dobra ocena"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Prilagodljivost vašim željam in strokovna pomoč pri izbiri rešitev.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za gradbena dela? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Zalog pri Škofljici 11, 1291 Škofljica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 568 860",
+        "href": "tel:041568860",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in pripravili bomo ponudbo za vas.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Zalog pri Škofljici 11, 1291 Škofljica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Zidarstvo Dolinšek",
+    "address": "Zalog pri Škofljici 11, 1291 Škofljica, Slovenia",
+    "email": "",
+    "phone": "041 568 860"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

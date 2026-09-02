@@ -1,0 +1,253 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-03-photo-forward",
+  "theme": {
+    "paletteId": "look-gradbinci-03-bloom",
+    "fontPairingId": "look-gradbinci-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za gradbena in prenovitvena dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Splošna gradbena dela po dogovoru",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Adaptacije objektov",
+        "description": "Prenove in adaptacije večjih in manjših objektov",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Prenova stanovanj",
+        "description": "Celovite prenove bivalnih prostorov",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zidarska dela",
+        "description": "Izvedba zidarskih del",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zemeljska dela",
+        "description": "Priprava terena in zemeljska dela",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mišel Hodžić",
+    "highlight": "s.p."
+  },
+  "metadata": {
+    "title": "Splošno gradbeništvo Mišel Hodžić s.p. | Gradbena dela in prenove Ljubljana",
+    "description": "Zanesljive gradbene storitve, adaptacije objektov in prenove stanovanj v Ljubljani z okolico. Pokličite nas za strokovno izvedbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo gradbeništvo v Ljubljani",
+    "title": "Zanesljive gradbene storitve in",
+    "titleHighlight": "prenovitvena dela",
+    "description": "Strokovne gradbene storitve, adaptacije in prenove stanovanj za lastnike nepremičnin, investitorje in gospodinjstva v Ljubljani z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo delo"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo delo"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostno delo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite gradbene in prenovitvene storitve",
+    "description": "Izvajamo kakovostna gradbena dela, adaptacije in prenove za objekte v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Izvedba splošnih gradbenih del z zanesljivim pristopom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije objektov",
+        "description": "Celovite adaptacije in posodobitve obstoječih objektov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove stanovanj",
+        "description": "Kakovostna prenova stanovanj in bivalnih prostorov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna in strokovna zidarska dela.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zemeljska dela",
+        "description": "Pripravljalna zemeljska dela za vaše gradbene projekte.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "Z izkušnjami in prilagodljivostjo poskrbimo za kakovostno izvedbo vsakega projekta.",
+    "highlights": [
+      "Izkušnje na področju splošnega gradbeništva",
+      "Visoka prilagodljivost željam strank",
+      "Kakovostna izvedba vseh gradbenih del"
+    ],
+    "benefits": [
+      {
+        "label": "Izkušnje",
+        "description": "Dolgoletne izkušnje na področju splošnega gradbeništva.",
+        "title": "Izkušnje"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in potrebam na terenu.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Kakovost",
+        "description": "Zanesljiva in kakovostna izvedba gradbenih del.",
+        "title": "Kakovost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete gradbena dela ali prenovo? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta dveh cesarjev 18, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 737 541",
+        "href": "tel:070737541",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Cesta dveh cesarjev 18, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mišel Hodžić s.p.",
+    "address": "Cesta dveh cesarjev 18, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "070 737 541"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

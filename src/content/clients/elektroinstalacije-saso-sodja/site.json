@@ -1,0 +1,288 @@
+{
+  "appearance": "elektro",
+  "lookId": "elektricarji-05-minimal-line",
+  "theme": {
+    "paletteId": "look-elektricarji-05-mist",
+    "fontPairingId": "look-elektricarji-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-saso-sodja/hero.avif",
+      "alt": "Električar pri delu na električni omarici v svetlem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-saso-sodja/hero.webp",
+      "width": 976,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "10871585",
+      "sourceUrl": "https://www.pexels.com/photo/electricians-at-work-10871585/",
+      "photographer": "Annas Zakaria",
+      "photographerUrl": "https://www.pexels.com/@annaszakaria",
+      "searchQuery": "electrician working electrical panel"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-saso-sodja/services.avif",
+      "alt": "Montaža sodobne razsvetljave v stanovanju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-saso-sodja/services.webp",
+      "width": 976,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "10871737",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-working-on-an-electric-switch-breakers-10871737/",
+      "photographer": "Annas Zakaria",
+      "photographerUrl": "https://www.pexels.com/@annaszakaria",
+      "searchQuery": "electrician working electrical panel"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za pogostejše elektroinstalacijske storitve in popravila.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manjša popravila in odpravljanje napak",
+        "description": "Hitri pregled in odprava manjših okvar na terenu",
+        "price": "od 40 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Montaža svetil",
+        "description": "Montaža in priklop enega svetlobnega telesa",
+        "price": "od 25 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Priklop gospodinjskih aparatov",
+        "description": "Priklop štedilnika, pečice ali drugega aparata",
+        "price": "od 35 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Vzdrževalni pregled",
+        "description": "Pregled delovanja obstoječih inštalacij",
+        "price": "od 60 €",
+        "unit": "objekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Elektroinstalacije",
+    "highlight": "Sašo Sodja s.p."
+  },
+  "metadata": {
+    "title": "Elektroinstalacije Sašo Sodja s.p. | Zanesljive elektroinstalacije Ljubljana",
+    "description": "Zanesljive in strokovne elektroinstalacije za vaš dom in poslovne prostore v Ljubljani z okolico. Hitri odzivi, vzdrževanje, montaža razsvetljave in popravila."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovne elektroinstalacije v Ljubljani",
+    "title": "Zanesljive in strokovne elektroinstalacije za",
+    "titleHighlight": "vaš dom in poslovne prostore",
+    "description": "Za lastnike stanovanj, hiš in poslovnih objektov v Ljubljani z okolico nudimo strokovno izvedbo del, hiter odziv ter prilagodljiv pristop.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hiter odziv",
+        "label": "Hiter odziv",
+        "title": "Hiter odziv"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana",
+        "title": "Ljubljana"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite elektroinstalacijske rešitve",
+    "description": "Poskrbimo za varno, zanesljivo in strokovno delovanje električnih napeljav v vaših objektih v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Vzdrževanje in popravila",
+        "description": "Redno vzdrževanje in hitra popravila obstoječih elektroinstalacij.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montaža razsvetljave",
+        "description": "Strokovna namestitev notranje in zunanje razsvetljave po vaših željah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Priklop aparatov",
+        "description": "Varen in pravilen priklop vseh vrst gospodinjskih aparatov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Adaptacije napeljav",
+        "description": "Prenove in posodobitve električnih napeljav v starejših ali novih objektih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Odpravljanje okvar",
+        "description": "Hitro odkrivanje in zanesljivo odpravljanje napak na električnem omrežju.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne napeljave",
+    "description": "Zavedamo se pomena varnosti in delovanja električnih sistemov, zato se na vsak klic odzovemo hitro in strokovno.",
+    "highlights": [
+      "Hitri odzivi na klice strank",
+      "Strokovno svetovanje in izvedba",
+      "Prilagodljivost ter domač pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Hiter odziv",
+        "description": "Hitro se odzovemo na vaše klice in pravočasno rešimo nastale težave.",
+        "title": "Hiter odziv"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Vsa dela izvajamo zanesljivo, natančno in v skladu s predpisi.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in vam strokovno svetujemo najboljšo rešitev.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinstalaterja ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kuzmičeva ulica 5, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 520 098",
+        "href": "tel:041520098",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše vprašanje ali želeno storitev...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Kuzmičeva ulica 5, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektroinstalacije Sašo Sodja s.p.",
+    "address": "Kuzmičeva ulica 5, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 520 098"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

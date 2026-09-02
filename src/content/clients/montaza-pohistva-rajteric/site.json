@@ -1,0 +1,249 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-05-minimal-line",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-05-mist",
+    "fontPairingId": "look-mizarji-tesarji-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za montažo in sestavljanje pohištva.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža kuhinje",
+        "description": "Osnovna montaža kuhinjskih elementov",
+        "price": "od 250 €",
+        "featured": true
+      },
+      {
+        "name": "Sestavljanje spalnice",
+        "description": "Postelja, omara in nočne omarice",
+        "price": "od 120 €"
+      },
+      {
+        "name": "Montaža omar in regalov",
+        "description": "Garderobne omare in police",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Ura montaže",
+        "description": "Splošno sestavljanje pohištva po uri",
+        "price": "od 25 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Montaža pohištva",
+    "highlight": "Rajterič Matej s.p."
+  },
+  "metadata": {
+    "title": "Montaža pohištva Rajterič Matej s.p. | Kamnik",
+    "description": "Strokovna in natančna montaža pohištva ter kuhinj v Kamniku in okolici. Zanesljiv lokalni ponudnik za vaš dom in pisarno."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik",
+    "title": "Strokovna in natančna",
+    "titleHighlight": "montaža pohištva",
+    "description": "Kakovostna vgradnja ter sestavljanje pohištva za lastnike stanovanj, hiš in poslovnih prostorov v Kamniku in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Kamnik",
+        "label": "in okolica"
+      },
+      {
+        "value": "Natančno",
+        "label": "delo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "svetovanje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Strokovne rešitve za vaše pohištvo",
+    "description": "Nudimo celovite storitve sestavljanja in montaže za vse vrste pohištva v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Montaža kuhinj",
+        "description": "Strokovna postavitev in priklop elementov vaše nove kuhinje.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sestavljanje spalnic",
+        "description": "Natančna montaža postelj, nočnih omaric in komod.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža pisarniškega pohištva",
+        "description": "Ureditev delovnih prostorov in pisarn z ustreznim pohištvom.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vgradnja omar in regalov",
+        "description": "Montaža vgradnih omar, garderobnih sistemov in regalov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prilagajanje pohištva po meri",
+        "description": "Manjše prilagoditve in dodelave pohištva za popolno prileganje prostoru.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti sodelovanja z nami",
+    "description": "Zavedamo se pomena pravilno nameščenega pohištva, zato vsakemu projektu posvetimo vso pozornost.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Natančna in strokovna izvedba",
+      "Zanesljiv lokalni ponudnik"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Prizadevamo si za visoko raven zadovoljstva pri vsakem opravljenem delu.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Delo opravimo skrbno, natančno in z ustreznim orodjem.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Lokalni ponudnik",
+        "description": "Hitro odzivni in zanesljivi na območju Kamnika in okolice.",
+        "title": "Lokalni ponudnik"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete pomoč pri montaži pohištva? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 882 933",
+        "href": "tel:040882933",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Tunjice 42, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kakšno montažo pohištva potrebujete...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Tunjice 42, 1241 Kamnik, Slovenia",
+    "rights": "© 2024 Montaža pohištva, Rajterič Matej s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Montaža pohištva Rajterič Matej s.p.",
+    "address": "Tunjice 42, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "040 882 933"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

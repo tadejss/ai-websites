@@ -1,0 +1,262 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-slikopleskarji-07-linen",
+    "fontPairingId": "look-slikopleskarji-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen naših najbolj iskanih slikopleskarskih in prenovitvenih del.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Beljenje sten in stropov",
+        "description": "Osnovno beljenje z belo barvo v dveh nanosih vključno z zaščito.",
+        "price": "od 3,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Pleskanje sten v barvnih odtenkih",
+        "description": "Nanašanje barv po izbiri naročnika.",
+        "price": "od 4,50 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Slaganje tapet",
+        "description": "Strokovno lepljenje tapet na pripravljeno podlago.",
+        "price": "od 12,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Dekorativna obdelava sten",
+        "description": "Posebne tehnike in nanosi za unikatne stenske vzorce.",
+        "price": "od 20,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Manjša sanacija sten in kitanje",
+        "description": "Popravilo manjših poškodb in glajenje površin.",
+        "price": "od 15,00 €",
+        "unit": "na ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "FENIX",
+    "highlight": "Slikopleskarstvo"
+  },
+  "metadata": {
+    "title": "FENIX, slikopleskarstvo, Pavle Antonovski s.p. | Ljubljana",
+    "description": "Kakovostno slikopleskarstvo in prenova prostorov v Ljubljani z okolico. Pleskanje, beljenje, tapete in dekorativna obdelava sten."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovno slikopleskarstvo",
+    "title": "Kakovostno slikopleskarstvo in prenova prostorov v",
+    "titleHighlight": "Ljubljani",
+    "description": "Zanesljive slikopleskarske storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo osvežitev ali prenovo interierja.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Odlične ocene",
+        "label": "Zadovoljne stranke",
+        "title": "Odlične ocene"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Strokovna izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Urnik strank",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico",
+        "title": "Ljubljana in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše slikopleskarske storitve",
+    "description": "Poskrbimo za osvežitev vaših prostorov v Ljubljani z okolico z visokim standardom kakovosti in čistosti pri delu.",
+    "items": [
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Natančno pleskanje notranjih sten in stropov z uporabo preverjenih materialov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje stanovanj in poslovnih prostorov",
+        "description": "Celovito beljenje za svež in urejen videz vašega doma ali poslovnega objekta.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Slaganje tapet",
+        "description": "Strokovno polaganje tapet za unikaten videz in poudarek stene v prostoru.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Dekorativna obdelava sten",
+        "description": "Uporaba sodobnih tehnik dekorativne obdelave za poseben estetski značaj interierja.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjša sanacija sten",
+        "description": "Urejanje manjših poškodb, razpok in priprava podlage pred pleskanjem.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati FENIX?",
+    "description": "Z združevanjem strokovnosti, zanesljivosti in posluhom za želje strank poskrbimo za brezhiben končni rezultat.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Zanesljiva in strokovna izvedba",
+      "Prilagodljivost urniku strank"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na odlične ocene in zaupanje tistih, s katerimi smo sodelovali.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Vsak projekt izpeljemo zanesljivo, natančno in v dogovorjenih rokih.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Prilagodljiv urnik",
+        "description": "Prilagajamo se vašemu urniku, da vam olajšamo potek prenove.",
+        "title": "Prilagodljiv urnik"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete osvežitev prostorov ali nasvet? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 555 903",
+        "href": "tel:070555903",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Dvořakova ul. 11, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potreben obseg dela...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Dvořakova ul. 11, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "FENIX Slikopleskarstvo",
+    "address": "Dvořakova ul. 11, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "070 555 903"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

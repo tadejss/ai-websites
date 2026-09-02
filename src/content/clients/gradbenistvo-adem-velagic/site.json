@@ -1,0 +1,247 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-01-classic-split",
+  "theme": {
+    "paletteId": "look-gradbinci-01-sand",
+    "fontPairingId": "look-gradbinci-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave. Za natančen izračun glede na obseg dela nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Izvedba splošnih gradbenih del po dogovoru.",
+        "price": "od 30 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Prenove objektov",
+        "description": "Celovite ali delne prenove stanovanj in hiš.",
+        "price": "Po dogovoru",
+        "unit": "projekt"
+      },
+      {
+        "name": "Zidarska dela",
+        "description": "Zidarska dela za manjše in večje posege.",
+        "price": "od 35 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Zunanja ureditev",
+        "description": "Urejanje okolice in okolice objektov.",
+        "price": "Po dogovoru",
+        "unit": "projekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Gradbeništvo",
+    "highlight": "Adem Velagić s.p."
+  },
+  "metadata": {
+    "title": "Gradbeništvo Adem Velagić s.p. | Zanesljive gradbene storitve",
+    "description": "Zanesljive gradbene storitve in prenove za vaš dom ali poslovni objekt v Logatcu z okolico. Pokličite nas za strokovno izvedbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv partner za gradbena dela",
+    "title": "Gradbene storitve in prenove v",
+    "titleHighlight": "Logatcu z okolico",
+    "description": "Zanesljive gradbene storitve in prenove za vaš dom ali poslovni objekt. Strokovna izvedba, prilagojena vašim željam.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Kakovost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za gradnjo in prenove",
+    "description": "Nudimo kakovostne gradbene storitve in prenovitvena dela za lastnike hiš, stanovanj in poslovnih objektov.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Strokovno izvajanje splošnih gradbenih del za objekte vseh vrst.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Kakovostne prenove stanovanj, hiš in poslovnih prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zunanja ureditev",
+        "description": "Urejanje okolice in zunanjih površin okoli vašega objekta.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna zidarska dela za novogradnje in adaptacije.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vredne gradbene storitve",
+    "description": "Zavedamo se pomena kakovosti in zanesljivosti pri gradbenih delih, zato se posvetimo vsakemu projektu posebej.",
+    "highlights": [
+      "Zanesljiva in strokovna izvedba del",
+      "Visoka prilagodljivost željam strank",
+      "Kakovostni material in izvedba"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in obljub.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in potrebam na terenu.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Kakovostne gradbene storitve z izkušnjami.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete gradbena dela ali prenovo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 465 852",
+        "href": "tel:041465852",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Stara cesta 19, 1370 Logatec, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Stara cesta 19, 1370 Logatec, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Gradbeništvo Adem Velagić s.p.",
+    "address": "Stara cesta 19, 1370 Logatec, Slovenia",
+    "email": "",
+    "phone": "041 465 852"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

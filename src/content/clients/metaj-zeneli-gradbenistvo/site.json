@@ -1,0 +1,258 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-05-minimal-line",
+  "theme": {
+    "paletteId": "look-gradbinci-05-mist",
+    "fontPairingId": "look-gradbinci-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in se oblikujejo glede na obseg ter zahtevnost dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Splošna gradbena dela in zidanje po dogovoru",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Prenove objektov",
+        "description": "Celovite adaptacije stanovanjskih in poslovnih prostorov",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Zidarska dela",
+        "description": "Manjša in večja zidarska dela",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Izdelava fasad z materialom",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Sanacije",
+        "description": "Sanacija vlage in poškodb objektov",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Metaj - Zeneli",
+    "highlight": "gradbeništvo"
+  },
+  "metadata": {
+    "title": "Metaj - Zeneli | Zanesljive gradbene storitve in prenovitvena dela",
+    "description": "Zanesljive gradbene storitve, prenove objektov, zidarska in fasaderska dela ter sanacije v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Zanesljive gradbene storitve",
+    "title": "Kakovostna gradbena in prenovitvena dela v",
+    "titleHighlight": "Ljubljani z okolico",
+    "description": "Strokovne gradbene storitve, prenove objektov, zidarska dela, fasade in sanacije za lastnike hiš, stanovanj in poslovnih prostorov.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Kakovostna izvedba",
+        "label": "Kakovostna izvedba"
+      },
+      {
+        "value": "Zanesljiv pristop",
+        "label": "Zanesljiv pristop"
+      },
+      {
+        "value": "Spoštovanje rokov",
+        "label": "Spoštovanje rokov"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše objekte",
+    "description": "Nudimo širok nabor gradbenih in obrtniških del, prilagojenih vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Izvedba vseh vrst gradbenih del z zanesljivim in strokovnim pristopom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove stanovanj, hiš in poslovnih prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna zidarska dela za novogradnje in adaptacije.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Kakovostna izvedba fasad za boljšo izolacijo in videz objekta.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Sanacije",
+        "description": "Sanacijska dela za odpravo poškodb in obnovo stavb.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za vaša gradbena dela",
+    "description": "Zavedamo se pomembnosti kakovosti, zato se pri vsakem projektu držimo dogovorjenih rokov in visokih standardov.",
+    "highlights": [
+      "Kakovostna izvedba gradbenih del",
+      "Zanesljiv in strokoven pristop",
+      "Prilagodljivost in spoštovanje rokov"
+    ],
+    "benefits": [
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Zagotavljamo visoko raven izvedbe vseh gradbenih in prenovitvenih del.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Delujemo strokovno, transparentno in se držimo vseh dogovorov.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo zahtevam projekta.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za gradbena dela? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Štihova ulica 13, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 303 367",
+        "href": "tel:040303367",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Štihova ulica 13, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Metaj - Zeneli gradbeništvo",
+    "address": "Štihova ulica 13, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 303 367"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

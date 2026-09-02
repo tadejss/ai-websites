@@ -1,0 +1,253 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-03-bloom",
+    "fontPairingId": "look-mizarji-tesarji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih mizarstkih storitev in vgradnje pohištva.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža kuhinje",
+        "description": "Strokovna vgradnja in priklop elementov",
+        "price": "od 250 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradnja pohištva",
+        "description": "Montaža omar, regalov in drugega pohištva",
+        "price": "od 40 € / ura"
+      },
+      {
+        "name": "Izdelava pohištva po meri",
+        "description": "Izdelava unikatnih elementov glede na mere",
+        "price": "Po ponudbi"
+      },
+      {
+        "name": "Pohištvo za dnevne sobe",
+        "description": "Postavitev in montaža dnevnih sestavov",
+        "price": "od 120 €"
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Svetovanje, merjenje in montaža opreme",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Tale mizar",
+    "highlight": "Alen Tandar s.p."
+  },
+  "metadata": {
+    "title": "Tale mizar | Vgradnja in izdelava pohištva po meri Domžale",
+    "description": "Strokovna izdelava in vgradnja pohištva po meri v Domžalah in okolici. Natančna montaža kuhinj, dnevnih sob in notranje opreme."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarstvo in vgradnja pohištva",
+    "title": "Strokovna izdelava in vgradnja",
+    "titleHighlight": "pohištva po meri",
+    "description": "Zanesljive storitve za lastnike stanovanj in hiš v Domžalah in okolici. Poskrbimo za natančno vgradnjo in prilagojene rešitve za vaš dom.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Po meri",
+        "label": "Pohištvo po meri"
+      },
+      {
+        "value": "Natančno",
+        "label": "Vgradnja in montaža"
+      },
+      {
+        "value": "Domače",
+        "label": "Zanesljiv pristop"
+      },
+      {
+        "value": "Domžale",
+        "label": "In okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše pohištvo",
+    "description": "Ponujamo strokovno vgradnjo, izdelavo po meri in montažo za vsak kotiček vašega doma v Domžalah in okolici.",
+    "items": [
+      {
+        "title": "Vgradnja pohištva",
+        "description": "Strokovna vgradnja vseh vrst pohištva z mislijo na natančnost in dolgotrajnost.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Izdelava pohištva po meri",
+        "description": "Unikatni kosi pohištva, prilagojeni vašemu prostoru in življenjskemu slogu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Montaža kuhinj",
+        "description": "Natančna montaža kuhinj, ki združuje estetiko in popolno funkcionalnost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pohištvo za dnevne sobe",
+        "description": "Udobne in estetske rešitve za vaš osrednji bivalni prostor.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celovita notranja oprema za urejen in usklajen dom.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, natančnost in osebni pristop",
+    "description": "Zavedamo se, kako pomemben je dom, zato vsakemu projektu posvetimo vso pozornost in strokovnost.",
+    "highlights": [
+      "Preverjena kakovost storitev z odličnimi ocenami strank",
+      "Natančna vgradnja in montaža pohištva",
+      "Prilagojene rešitve za vsak dom"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Kakovost storitev potrjujejo odlične ocene naših strank.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Natančna montaža",
+        "description": "Skrbna in zanesljiva vgradnja ter montaža pohištva.",
+        "title": "Natančna montaža"
+      },
+      {
+        "label": "Prilagojene rešitve",
+        "description": "Vsak dom je edinstven, zato so naše rešitve prilagojene vam.",
+        "title": "Prilagojene rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti vgradnjo pohištva? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 165 625",
+        "href": "tel:040165625",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Aljaževa ulica 16, 1230 Domžale, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali povpraševanje...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Aljaževa ulica 16, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Tale mizar Alen Tandar s.p.",
+    "address": "Aljaževa ulica 16, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "040 165 625"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

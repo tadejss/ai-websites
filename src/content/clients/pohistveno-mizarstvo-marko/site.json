@@ -1,0 +1,258 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-03-bloom",
+    "fontPairingId": "look-mizarji-tesarji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene mizarskih storitev",
+    "description": "Ker je vsak kos pohištva unikat, so cene odvisne od mer, materialov in zahtevnosti izdelave.",
+    "disclaimer": "Cenik je informativen. Za natančen izračun in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinje po meri",
+        "description": "Celotna izdelava in montaža kuhinje po vaših načrtih",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati in notranjo razporeditvijo",
+        "price": "od 800 €"
+      },
+      {
+        "name": "Pohištvo za dnevne sobe",
+        "description": "TV omare, komode in regali po naročilu",
+        "price": "od 500 €"
+      },
+      {
+        "name": "Opremljanje spalnic",
+        "description": "Postelje in omare za spalnico",
+        "price": "od 900 €"
+      },
+      {
+        "name": "Izris in svetovanje",
+        "description": "Strokovni nasveti ter pomoč pri načrtovanju prostora",
+        "price": "od 100 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Marko Velkavrh"
+  },
+  "metadata": {
+    "title": "Mizarstvo Marko Velkavrh s.p. | Pohištvo po meri Ljubljana",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Ljubljani z okolico. Kuhinje, vgradne omare in notranja oprema po naročilu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarstvo po meri v Ljubljani",
+    "title": "Kakovostno izdelano pohištvo",
+    "titleHighlight": "po meri za vaš dom",
+    "description": "Prilagojene rešitve in unikatna notranja oprema za lastnike stanovanj in hiš, ki cenijo natančnost in zanesljivost.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prilagojene",
+        "label": "Prilagojene rešitve"
+      },
+      {
+        "value": "Natančna",
+        "label": "Natančna izdelava"
+      },
+      {
+        "value": "Celovito",
+        "label": "Od ideje do montaže"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske rešitve po naročilu",
+    "description": "Zanesljiva izdelava pohištva po meri za vsak kotiček vašega doma v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne in estetske kuhinje, prilagojene vašemu prostoru in kuharskim navadam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimalen izkoristek prostora z vgradnimi omare in garderobami po vaših merah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pohištvo za dnevne sobe",
+        "description": "Unikatni elementi in sestavi za udobno in urejeno dnevno sobo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Opremljanje spalnic",
+        "description": "Postelje, nočne omarice in spalni program za miren in prijeten spanec.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Notranja oprema po naročilu",
+        "description": "Celovite rešitve za opremo celotnega doma ali posameznih prostorov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše novo pohištvo",
+    "description": "S profesionalnim pristopom poskrbimo, da je vsak kos pohištva izdelan točno po vaših željah.",
+    "highlights": [
+      "Prilagojene rešitve za vsak prostor",
+      "Natančna in kakovostna izdelava",
+      "Celovita storitev od ideje do montaže"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojene rešitve",
+        "description": "Pohištvo prilagodimo specifikam vašega prostora in vašemu življenjskemu slogu.",
+        "title": "Prilagojene rešitve"
+      },
+      {
+        "label": "Natančna izdelava",
+        "description": "Skrbno izbrani materiali in natančna obdelava zagotavljajo dolgo življenjsko dobo.",
+        "title": "Natančna izdelava"
+      },
+      {
+        "label": "Celovita storitev",
+        "description": "Vodimo vas od začetne ideje in načrtovanja pa vse do končne strokovne montaže.",
+        "title": "Celovita storitev"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite ponudbo za pohištvo po meri? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cesta Dolomitskega odreda 64, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 363 513",
+        "href": "tel:031363513",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 7:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve glede pohištva...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Cesta Dolomitskega odreda 64, 1000 Ljubljana, Slovenia",
+    "rights": "© 2025 Pohištveno mizarstvo Marko Velkavrh s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Marko Velkavrh",
+    "address": "Cesta Dolomitskega odreda 64, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "031 363 513"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

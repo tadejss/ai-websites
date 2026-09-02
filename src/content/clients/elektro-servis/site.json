@@ -1,0 +1,293 @@
+{
+  "appearance": "elektro",
+  "lookId": "elektricarji-02-editorial-type",
+  "theme": {
+    "paletteId": "look-elektricarji-02-slate",
+    "fontPairingId": "look-elektricarji-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-servis/hero.avif",
+      "alt": "Električar med delom na električni omarici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-servis/hero.webp",
+      "width": 1040,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38171157",
+      "sourceUrl": "https://www.pexels.com/photo/electrician-installing-solar-energy-wiring-indoors-38171157/",
+      "photographer": "Elite Power Group",
+      "photographerUrl": "https://www.pexels.com/@elite-power-group-661996115",
+      "searchQuery": "professional electrician installing wiring"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-servis/services.avif",
+      "alt": "Orodja in električne napeljave za elektroinstalacije",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-servis/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691588",
+      "sourceUrl": "https://www.pexels.com/photo/an-electrician-using-pliers-to-repair-the-ac-power-plugs-and-sockets-5691588/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "professional electrician installing wiring"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za standardne elektroinstalaterske storitve in intervencije.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Interventni izhod",
+        "description": "Prihod na lokacijo in pregled napake ob izrednih dogodkih.",
+        "price": "od 60 €",
+        "featured": true
+      },
+      {
+        "name": "Ura dela elektro mojstra",
+        "description": "Izvedba splošnih elektro del in popravil.",
+        "price": "od 35 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Montaža svetila",
+        "description": "Montaža in priklop enega svetila ali lestenca.",
+        "price": "od 25 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Zamenjava vtičnice ali stikala",
+        "description": "Demontaža starega in montaža novega elementa.",
+        "price": "od 15 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Pregled in meritve inštalacij",
+        "description": "Osnovni pregled ter izdaja poročila za stanovanjski objekt.",
+        "price": "od 120 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Elektro",
+    "highlight": "Servis"
+  },
+  "metadata": {
+    "title": "Elektro Servis | Zanesljive elektro storitve Ljubljana",
+    "description": "Zanesljive in hitre elektro storitve 24/7 v Ljubljani in okolici. Popravila, montaža, vzdrževanje in interventna služba za vaš dom ali poslovni prostor."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite takoj"
+  },
+  "hero": {
+    "badge": "Interventna služba 24/7",
+    "title": "Zanesljive in hitre elektro storitve v",
+    "titleHighlight": "Ljubljani in okolici",
+    "description": "Strokovne elektroinstalaterske storitve za lastnike stanovanj, hiš in poslovnih prostorov. Dosegljivi smo neprekinjeno, ko nas najbolj potrebujete.",
+    "primaryCta": "Pokličite takoj",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Dosegljivost"
+      },
+      {
+        "value": "Hitro",
+        "label": "Odzivni čas"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Izvedba del"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite elektroinstalaterske rešitve",
+    "description": "Zagotavljamo varno in zanesljivo delovanje vaših elektro sistemov na območju Ljubljane s širšo okolico.",
+    "items": [
+      {
+        "title": "Popravilo električnih napeljav",
+        "description": "Hitro odkrivanje in odpravljanje napak na obstoječih električnih napeljavah v vašem objektu.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Montaža svetil in opreme",
+        "description": "Strokovna montaža vseh vrst svetil, stikal, vtičnic in druge električne opreme.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Interventna elektro služba",
+        "description": "Nujna pomoč ob okvarah in nepredvidenih težavah z elektriko, na voljo neprekinjeno.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje elektro sistemov",
+        "description": "Redni pregledi in vzdrževanje za varno delovanje elektro instalacij v stanovanjih in poslovnih prostorih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pregled in meritve inštalacij",
+        "description": "Strokovne meritve in preverjanje ustreznosti ter varnosti vaših električnih inštalacij.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne napeljave",
+    "description": "Z odzivnostjo, strokovnostjo in neprekinjeno dosegljivostjo poskrbimo za varnost vašega doma ali poslovnega prostora.",
+    "highlights": [
+      "Dosegljivi 24 ur na dan, vse dni v tednu",
+      "Hitra odzivnost na nujne primere",
+      "Strokovna izvedba elektro del"
+    ],
+    "benefits": [
+      {
+        "label": "Stalna dosegljivost",
+        "description": "Dosegljivi 24 ur na dan, vse dni v tednu za nujne primere in intervencije.",
+        "title": "Stalna dosegljivost"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Hitro se odzovemo na vaše klice in pravočasno uredimo težave z elektriko.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Kakovostna in varna izvedba vseh elektro del v Ljubljani in okolici.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete nujno pomoč ali imate vprašanje glede elektro storitev? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "071 694 412",
+        "href": "tel:071694412",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Prvomajska ulica 8, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 00:00 - 24:00 (24/7)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vašo težavo ali želeno storitev...",
+      "submitLabel": "Pokličite takoj"
+    }
+  },
+  "footer": {
+    "address": "Prvomajska ulica 8, 1000 Ljubljana, Slovenia",
+    "rights": "© Elektro Servis. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Elektro Servis",
+    "address": "Prvomajska ulica 8, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "071 694 412"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

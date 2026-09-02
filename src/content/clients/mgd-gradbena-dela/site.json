@@ -1,0 +1,256 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-03-photo-forward",
+  "theme": {
+    "paletteId": "look-gradbinci-03-bloom",
+    "fontPairingId": "look-gradbinci-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih gradbenih in prenovitvenih del.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Izvedba splošnih gradbenih del po dogovoru.",
+        "price": "Po dogovoru",
+        "unit": "projekt",
+        "featured": true
+      },
+      {
+        "name": "Prenova objekta",
+        "description": "Rušitvena dela, priprava in prenova prostorov.",
+        "price": "Po ogledu",
+        "unit": "m2"
+      },
+      {
+        "name": "Zunanje urejanje",
+        "description": "Urejanje dvorišč in okolice objektov.",
+        "price": "Po dogovoru",
+        "unit": "projekt"
+      },
+      {
+        "name": "Manjši gradbeni projekti",
+        "description": "Manjša popravila in zidarska dela.",
+        "price": "Po dogovoru",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "MGD",
+    "highlight": "Miha Kumše s.p."
+  },
+  "metadata": {
+    "title": "MGD Miha Kumše s.p. | Gradbena dela in prenove",
+    "description": "Zanesljive gradbene storitve, prenove objektov in zunanje urejanje na območju Iga in okolice."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Gradbena dela in prenove",
+    "title": "Zanesljive gradbene storitve",
+    "titleHighlight": "in prenovitvena dela",
+    "description": "Strokoven in zanesljiv partner za lastnike hiš, investitorje in gospodinjstva na območju Iga in okolice.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljiv pristop",
+        "label": "Zanesljiv pristop",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "value": "Kakovostna izvedba",
+        "label": "Kakovostna izvedba",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Ig in okolica",
+        "label": "Ig in okolica",
+        "title": "Lokalno okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celovite gradbene storitve",
+    "description": "Nudimo kakovostna gradbena dela, prenove in urejanje okolice za vaše objekte.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Izvedba različnih gradbenih del z zanesljivim in strokovnim pristopom.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove hiš in stanovanj, prilagojene vašim željam in potrebam.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zunanje urejanje",
+        "description": "Urejanje okolice objektov, dovozov in zunanjih površin na Igu in v okolici.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Manjši gradbeni projekti",
+        "description": "Učinkovita izvedba manjših gradbenih del in prilagodljivost strankam.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv domači gradbeni mojster",
+    "description": "Stremimo k visoki kakovosti izvedbe in osebnemu pristopu do vsake stranke.",
+    "highlights": [
+      "Zanesljiv in strokoven pristop",
+      "Kakovostna izvedba gradbenih del",
+      "Prilagodljivost strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Strokoven pristop",
+        "description": "Zanesljivo svetovanje in strokovna izvedba vseh gradbenih del.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Natančno opravljeno delo z mislijo na dolgotrajne rezultate.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašim časovnim okvirem.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete gradbena dela? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 405 117",
+        "href": "tel:031405117",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Vrbljene 47, 1292 Ig, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Sob: 9:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Vrbljene 47, 1292 Ig, Slovenia",
+    "rights": "© 2025 MGD, Miha Kumše s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "MGD Miha Kumše s.p.",
+    "address": "Vrbljene 47, 1292 Ig, Slovenia",
+    "email": "",
+    "phone": "031 405 117"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

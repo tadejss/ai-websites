@@ -1,0 +1,252 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-05-minimal-line",
+  "theme": {
+    "paletteId": "look-gradbinci-05-mist",
+    "fontPairingId": "look-gradbinci-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in se oblikujejo glede na obseg, zahtevnost ter lokacijo dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in ogled terena nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Zemeljska dela in izkopi",
+        "description": "Strojni izkopi z bagerjem",
+        "price": "od 50 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Rušitvena dela",
+        "description": "Rušenje manjših objektov in odstranitev materiala",
+        "price": "po dogovoru",
+        "unit": "projekt"
+      },
+      {
+        "name": "Prevoz gradbenega materiala",
+        "description": "Prevoz razsutega tovora in materiala",
+        "price": "od 40 €",
+        "unit": "ura / faza"
+      },
+      {
+        "name": "Urejanje okolice in brežin",
+        "description": "Oblikovanje terena in priprava za ureditev",
+        "price": "od 45 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Scooba",
+    "highlight": "Matej Skubic s.p."
+  },
+  "metadata": {
+    "title": "Storitve z gradbeno mehanizacijo Scooba | Matej Skubic s.p.",
+    "description": "Zanesljive storitve z gradbeno mehanizacijo, zemeljska dela, izkopi, rušitvena dela in urejanje okolice na Vrhhniki s širšo okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Gradbena mehanizacija in zemeljska dela",
+    "title": "Zanesljive storitve z gradbeno mehanizacijo za vaše",
+    "titleHighlight": "projekte",
+    "description": "Strokovne rešitve za lastnike zemljišč, investitorje in gradbena podjetja na Vrhhniki s širšo okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka strokovnost",
+        "label": "Visoka strokovnost"
+      },
+      {
+        "value": "Hitra izvedba",
+        "label": "Hitra izvedba"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Lokalni partner",
+        "label": "Lokalni partner"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve z gradbeno mehanizacijo",
+    "description": "Za vas opravljamo kakovostna zemeljska dela, izkope, rušenja in prevoze na Vrhhniki s širšo okolico.",
+    "items": [
+      {
+        "title": "Zemeljska dela",
+        "description": "Natančna in strokovno izvedena zemeljska dela za pripravo terena in gradbišč.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Izkopi in nasipi",
+        "description": "Izkopi za temelje, objekte ter izdelava nasipov z ustrezno mehanizacijo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Rušitvena dela",
+        "description": "Varno in učinkovito odstranjevanje objektov ter priprava prostora za nove gradnje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prevoz gradbenega materiala",
+        "description": "Zanesljiv prevoz materialov na vašo lokacijo v dogovorjenih rokih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Urejanje okolice in brežin",
+        "description": "Urejanje terena, brežin in okolice objektov po vaših željah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaša zemeljska dela",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke zagotavljamo kakovostno izvedbo vsakega projekta.",
+    "highlights": [
+      "Visoka strokovnost in zanesljivost pri delu",
+      "Prilagodljivost in hitra izvedba projektov",
+      "Preverjene in odlične ocene zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka strokovnost",
+        "description": "Strokoven pristop in zanesljivost pri vsakem koraku izvedbe.",
+        "title": "Visoka strokovnost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Hitra izvedba projektov, prilagojena vašim časovnim okvirjem.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Preverjene ocene in dolgoletne pozitivne izkušnje naših naročnikov.",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete izvajalca zemeljskih del ali gradbene mehanizacije? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 877 034",
+        "href": "tel:041877034",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Blatna Brezovica 44, 1360 Vrhnika, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Blatna Brezovica 44, 1360 Vrhnika, Slovenia",
+    "rights": "© 2025 Scooba Matej Skubic s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Scooba Matej Skubic s.p.",
+    "address": "Blatna Brezovica 44, 1360 Vrhnika, Slovenia",
+    "email": "",
+    "phone": "041 877 034"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

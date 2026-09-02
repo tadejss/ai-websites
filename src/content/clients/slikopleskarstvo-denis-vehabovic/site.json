@@ -1,0 +1,288 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-slikopleskarji-03-bloom",
+    "fontPairingId": "look-slikopleskarji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-denis-vehabovic/hero.avif",
+      "alt": "Slikopleskar pri natančnem pleskanju sten v sodobnem svetalem stanovanju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-denis-vehabovic/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691479",
+      "sourceUrl": "https://www.pexels.com/photo/housepainter-on-ladder-working-in-room-5691479/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "house painter working on wall interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-denis-vehabovic/services.avif",
+      "alt": "Pleskanje sten in stropov z visokokakovostnimi materiali v urejenem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-denis-vehabovic/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6474135",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-in-white-shirt-painting-a-house-6474135/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "house painter working on wall interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostih slikopleskarskih del in orientacijskih cen.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Beljenje sten in stropov",
+        "description": "Dvokratno beljenje z nanosom disperzijske barve.",
+        "price": "od 2,50 €",
+        "unit": "/ m2",
+        "featured": true
+      },
+      {
+        "name": "Pleskanje z zaščito",
+        "description": "Vključuje zaščito pohištva in tal ter pripravo podlage.",
+        "price": "od 3,50 €",
+        "unit": "/ m2"
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Natančna namestitev različnih vrst tapet.",
+        "price": "od 12,00 €",
+        "unit": "/ m2"
+      },
+      {
+        "name": "Dekorativna tehnika sten",
+        "description": "Posebni estetski nanosi in unikatni vzorci.",
+        "price": "od 20,00 €",
+        "unit": "/ m2"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Denis Vehabović s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Denis Vehabović s.p. | Kakovostno pleskanje in dekorativa",
+    "description": "Kakovostne slikopleskarske storitve za dom in poslovne prostore v Logatcu z okolico ter osrednji Sloveniji. Zanesljivo pleskanje, beljenje in dekorativne tehnike."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovno slikopleskarstvo",
+    "title": "Osvežite svoj prostor z",
+    "titleHighlight": "vrhunskim pleskanjem",
+    "description": "Zanesljive slikopleskarske storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki želijo urejen ter sodoben interier v Logatcu in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Urejenost",
+        "label": "Urejenost",
+        "title": "Urejenost"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše slikopleskarske storitve",
+    "description": "Specializirani smo za celovito prenovo sten in stropov ter zaključna dela v vaših prostorih.",
+    "items": [
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Kakovostno pleskanje površin za svež in urejen videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Beljenje prostorov",
+        "description": "Osvežitev bivalnih in delovnih okolij z vrhunskimi materiali.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Natančno lepljenje in obdelava tapet za edinstven stil interierja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Dekorativna tehnika",
+        "description": "Unikatna dekorativna obdelava sten za poseben estetski poudarek.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zaključna dela",
+        "description": "Manjša mansardna in zaključna gradbena dela za dokončan videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati nas?",
+    "description": "Z združevanjem natančnosti, čistosti in preverjenih materialov poskrbimo za brezhiben končni rezultat.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba",
+      "Skrb za čistočo in urejenost delovnega prostora",
+      "Uporaba visoko kakovostnih materialov"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Dela izpeljemo skrbno, pravočasno in v dogovoru z naročnikom.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Čistoča in urejenost",
+        "description": "Za seboj pustimo čist in urejen prostor, pripravljen na uporabo.",
+        "title": "Čistoča in urejenost"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporabljamo preverjene barve in materiale za dolgo obstojnost.",
+        "title": "Kakovostni materiali"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za prenovo vašega doma? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 802 877",
+        "href": "tel:070802877",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Tabor 23, 1370 Logatec, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali prostor, ki ga želite prenoviti...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Tabor 23, 1370 Logatec, Slovenia",
+    "rights": "© Slikopleskarstvo Denis Vehabović s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Denis Vehabović s.p.",
+    "address": "Tabor 23, 1370 Logatec, Slovenia",
+    "email": "",
+    "phone": "070 802 877"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

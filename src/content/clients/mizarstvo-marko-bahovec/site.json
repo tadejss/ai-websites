@@ -1,0 +1,253 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-08-dark-pro",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-08-copper",
+    "fontPairingId": "look-mizarji-tesarji-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene mizarskih storitev",
+    "description": "Ker je vsak kos pohištva in vsak prostor unikaten, so cene informativne narave. Za natančen izračun nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Končna cena je odvisna od izbire materialov, dimenzij in zahtevnosti montaže. Za aktualno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinje po naročilu",
+        "description": "Celotna izdelava in montaža kuhinje po meri",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omara z drsnimi vrati in notranjo razporeditvijo",
+        "price": "od 800 €"
+      },
+      {
+        "name": "Pohištvo po meri",
+        "description": "Posamezni kosi (komode, mize, police)",
+        "price": "od 250 €"
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Celovito opremljanje posameznih prostorov",
+        "price": "od 1.200 €"
+      },
+      {
+        "name": "Montaža in svetovanje",
+        "description": "Strokovna izmera na terenu in svetovanje",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Marko Bahovec s.p."
+  },
+  "metadata": {
+    "title": "Mizarstvo Marko Bahovec s.p. | Pohištvo po meri v Domžalah",
+    "description": "Kakovostno in natančno mizarstvo po meri v Domžalah z okolico in širši regiji. Izdelava kuhinj po naročilu, vgradnih omar in notranje opreme."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Vrhunsko mizarstvo po meri",
+    "title": "Unikatno pohištvo za",
+    "titleHighlight": "vaš dom",
+    "description": "Kakovostno in natančno mizarstvo po meri za lastnike stanovanj in hiš v Domžalah z okolico in širši regiji. Združujemo tradicijo obrti in sodoben dizajn.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska kakovost",
+        "label": "Vrhunska kakovost"
+      },
+      {
+        "value": "Po meri",
+        "label": "Po meri"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše mizarske storitve",
+    "description": "Specializirani smo za izdelavo unikatnega pohištva in notranje opreme, popolnoma prilagojene vašim željam in prostoru v Domžalah in okolici.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Unikatni kosi pohištva, izdelani točno po vaših merah in estetskih željah za optimalen izkoristek prostora.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po naročilu",
+        "description": "Funkcionalne, estetske in ergonomske kuhinje, ki postanejo srce vašega doma.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Prostorne vgradne omare z drsnimi vrati, ki poskrbijo za popolno urejenost shranjevalnih površin.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celovite rešitve opremljanja notranjih prostorov, ki povezujejo prostor v harmonično celoto.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Leseni izdelki",
+        "description": "Raznovrstni leseni izdelki narejeni z občutkom za detajle in naravne materiale.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za opremo vašega doma",
+    "description": "Z dolgoletnimi izkušnjami v obrti in posluhom za stranke zagotavljamo visoko raven storitev in končni izdelek, ki presega pričakovanja.",
+    "highlights": [
+      "Vrhunska kakovost izdelave",
+      "Prilagojeno vašim željam in prostoru",
+      "Zanesljiva in strokovna izvedba"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Uporabljamo preverjene materiale in posvečamo pozornost vsakemu detajlu izdelave.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Prilagojeno vam",
+        "description": "Pohištvo oblikujemo in izdelamo točno glede na specifične mere in zahteve vašega prostora.",
+        "title": "Prilagojeno vam"
+      },
+      {
+        "label": "Strokovna izvedba",
+        "description": "Zanesljivo delo od prvega posveta do končne montaže v vašem domu.",
+        "title": "Strokovna izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali želite ponudbo za pohištvo po meri? Pokličite nas ali izpolnite spodnji obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 787 521",
+        "href": "tel:041787521",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Breznikova cesta 23, 1230 Domžale, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam povpraševanje",
+      "description": "Izpolnite podatke in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Vaše ime",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Breznikova cesta 23, 1230 Domžale, Slovenia",
+    "rights": "© 2025 Mizarstvo Marko Bahovec s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Marko Bahovec s.p.",
+    "address": "Breznikova cesta 23, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "041 787 521"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

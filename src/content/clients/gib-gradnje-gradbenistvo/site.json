@@ -1,0 +1,264 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-gradbinci-10-frost",
+    "fontPairingId": "look-gradbinci-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled orientacijskih cen za gradbena dela in inženiring. Končna cena je odvisna od obsega in zahtevnosti projekta.",
+    "disclaimer": "Cenik je informativen. Za pridobitev natančne ponudbe nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Izvedba gradbenih del po projektni dokumentaciji",
+        "price": "od 50 €",
+        "unit": "na uro / po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Inženiring in vodenje projektov",
+        "description": "Celovito vodenje in koordinacija gradbišča",
+        "price": "po dogovoru",
+        "unit": "projekt"
+      },
+      {
+        "name": "Prenove objektov",
+        "description": "Celovite adaptacije in sanacije stavb",
+        "price": "od 100 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Svetovanje v gradbeništvu",
+        "description": "Strokovni pregledi, analize in tehnične rešitve",
+        "price": "od 60 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Gib gradnje",
+    "highlight": "d.o.o."
+  },
+  "metadata": {
+    "title": "Gib gradnje d.o.o. | Gradbeništvo in inženiring Grosuplje",
+    "description": "Zanesljive gradbene storitve, prenove objektov in celovit inženiring v Grosupljem z okolico in širši regiji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Zanesljiv gradbeni partner",
+    "title": "Zanesljive gradbene storitve in celovit",
+    "titleHighlight": "inženiring",
+    "description": "Celostne rešitve za lastnike zemljišč, investitorje ter fizične in pravne osebe z načrti za gradnjo ali prenovo v Grosupljem z okolico in širši regiji.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Celostna izvedba",
+        "label": "Celostna izvedba",
+        "title": "Celostna izvedba"
+      },
+      {
+        "value": "Strokovni inženiring",
+        "label": "Strokovni inženiring",
+        "title": "Strokovni inženiring"
+      },
+      {
+        "value": "Lokalno partnerstvo",
+        "label": "Lokalno partnerstvo",
+        "title": "Lokalno partnerstvo"
+      },
+      {
+        "value": "Ponedeljek–Petek",
+        "label": "Delovni čas",
+        "title": "Delovni čas"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite gradbene in inženirske rešitve",
+    "description": "Nudimo pester nabor storitev za uspešno izvedbo vaših gradbenih projektov v Grosupljem in okolici.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba gradbenih del za stanovanjske, poslovne in druge objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Inženiring",
+        "description": "Celovito vodenje in koordinacija projektov od začetne ideje do končne izvedbe.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Temeljite prenove in sanacije obstoječih objektov z večanjem energetske in bivalne učinkovitosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Visokogradnja",
+        "description": "Strokovna gradnja objektov visoke kakovosti ob upoštevanju vseh predpisov in standardov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje v gradbeništvu",
+        "description": "Strokovna pomoč, tehnično svetovanje in optimizacija stroškov za vaše načrte.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv partner za gradnjo in inženiring",
+    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom poskrbimo, da so vaši projekti izpeljani varno, kakovostno in v dogovorjenih rokovih.",
+    "highlights": [
+      "Celostna izvedba gradbenih projektov na enem mestu",
+      "Strokovno inženirsko svetovanje za optimalne rešitve",
+      "Zanesljiv lokalni partner v regiji"
+    ],
+    "benefits": [
+      {
+        "stat": "Celostno",
+        "label": "Celostna izvedba",
+        "description": "Prevzamemo celoten postopek od priprave do končne izvedbe gradbenih projektov.",
+        "title": "Celostna izvedba"
+      },
+      {
+        "stat": "Strokovno",
+        "label": "Inženirsko svetovanje",
+        "description": "Nudimo strokovno podporo in svetovanje v vseh fazah gradnje ali prenove.",
+        "title": "Inženirsko svetovanje"
+      },
+      {
+        "stat": "Zanesljivo",
+        "label": "Lokalni partner",
+        "description": "Zanesljiv lokalni partner, ki dobro pozna trg in specike regije.",
+        "title": "Lokalni partner"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali načrtujete nov gradbeni projekt? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 615 013",
+        "href": "tel:041615013",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Žalna 13a, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali vprašanje...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Žalna 13a, 1290 Grosuplje, Slovenia",
+    "rights": "© 2025 Gib gradnje d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Gib gradnje d.o.o.",
+    "address": "Žalna 13a, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "041 615 013"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

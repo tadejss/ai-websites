@@ -1,0 +1,290 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-04-stats-trust",
+  "theme": {
+    "paletteId": "look-slikopleskarji-04-stone",
+    "fontPairingId": "look-slikopleskarji-04"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-fasaderstvo-radojica/hero.avif",
+      "alt": "Slikopleskar pri natančnem pleskanju sten v svetlem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-fasaderstvo-radojica/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493654",
+      "sourceUrl": "https://www.pexels.com/photo/construction-workers-renovating-a-house-5493654/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "house painter working on wall interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-fasaderstvo-radojica/services.avif",
+      "alt": "Izdelava fasade in toplotne izolacije na stanovanjskem objektu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/slikopleskarstvo-fasaderstvo-radojica/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493655",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-a-wall-5493655/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "house painter working on wall interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in se prilagodijo glede na obseg ter zahteve dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pleskanje sten in stropov",
+        "description": "Beljenje z osnovno pripravo in zaščito",
+        "price": "od 3,50 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Strokovno lepljenje tapet",
+        "price": "od 12,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Izdelava fasade",
+        "description": "Komplet izvedba z izolacijo in zaključnim slojem",
+        "price": "od 45,00 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Toplotna izolacija objektov",
+        "description": "Vgradnja izolacijskih sistemov",
+        "price": "od 35,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Notranja in zunanja prenova",
+        "description": "Celovita prenova po dogovoru",
+        "price": "Po ogledu",
+        "unit": "projekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo in fasaderstvo",
+    "highlight": "Radojica Cvijić s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo in fasaderstvo Radojica Cvijić s.p. | Ljubljana z okolico",
+    "description": "Kakovostna slikopleskarska in fasaderska dela za vaš dom v Ljubljani z okolico. Pleskanje, fasade, toplotna izolacija in prenova."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv partner za vaš dom",
+    "title": "Kakovostna slikopleskarska in fasaderska dela za",
+    "titleHighlight": "vaš dom",
+    "description": "Strokovne rešitve za lastnike stanovanj, hiš in poslovnih objektov v Ljubljani z okolico, ki potrebujejo prenovo ali osvežitev prostorov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Kakovostni materiali",
+        "label": "Kakovostni materiali"
+      },
+      {
+        "value": "Celovite rešitve",
+        "label": "Celovite rešitve"
+      },
+      {
+        "value": "Ljubljana s okolico",
+        "label": "Ljubljana s okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za prenovo prostorov in fasad",
+    "description": "Zanesljivo in natančno izvajamo slikopleskarska in fasaderska dela za objekte v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Osvežitev in barvanje notranjih površin za prijeten videz vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Natančno polaganje vseh vrst tapet za edinstven stil vašega doma.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Izdelava fasad",
+        "description": "Kakovostna izdelava novih fasad za zaščito in lepši videz objekta.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Toplotna izolacija objektov",
+        "description": "Učinkovita toplotna izolacija za večje bivalno udobje in prihranek energije.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Notranja in zunanja prenova",
+        "description": "Celovite prenove stanovanj, hiš in poslovnih prostorov od A do Ž.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, natančnost in zaupanje",
+    "description": "S trdim delom in posluhom za želje strank poskrbimo, da so prostori urejeni po vaših merah.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Uporaba preverjenih materialov",
+      "Celovit pristop k prenovi"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Dela izvajamo zanesljivo, skrbno in v dogovorjenih rokovnih okvirih.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Za dolgotrajne rezultate uporabljamo preverjene materiale.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Nudimo celovite rešitve za prenovo prostorov in fasad na enem mestu.",
+        "title": "Celovite rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za prenovo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "030 664 552",
+        "href": "tel:030664552",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Tržaška c. 86, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potrebe po prenovi...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Tržaška c. 86, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo in fasaderstvo Radojica Cvijić s.p.",
+    "address": "Tržaška c. 86, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "030 664 552"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-05-minimal-line",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-05-mist",
+    "fontPairingId": "look-mizarji-tesarji-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene mizarskih storitev",
+    "description": "Ker je vsak kos pohištva unikat, se končna cena oblikuje glede na izbiro materialov, dimenzije in zahtevnost izvedbe.",
+    "disclaimer": "Cenik je informativen. Za natančen izračun in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinje po meri",
+        "description": "Izdelava in montaža kuhinje po vaših merah in željah",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrata za hodnike, spalnice ali predsobe",
+        "price": "od 800 €",
+        "unit": "po m2"
+      },
+      {
+        "name": "Pohištvo za dnevne sobe",
+        "description": "TV elementi, komode in regali po naročilu",
+        "price": "od 600 €"
+      },
+      {
+        "name": "Notranja oprema",
+        "description": "Posamezni leseni elementi in unikatno pohištvo",
+        "price": "od 300 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Jelnikar"
+  },
+  "metadata": {
+    "title": "Mizarstvo Jelnikar | Pohištvo po meri Litija",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Litiji in okolici. Kuhinje po meri, vgradne omare in unikatna notranja oprema."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Mizarstvo Jelnikar",
+    "title": "Kakovostno izdelano pohištvo",
+    "titleHighlight": "po meri za vaš dom",
+    "description": "Zanesljiva izdelava unikatnega pohištva za lastnike stanovanj in hiš v Litiji in okolici. Vaše želje in prostor združimo v popolno celoto.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Po meri",
+        "label": "Po meri",
+        "title": "Po meri"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Pohištvo, izdelano posebej za vaš prostor",
+    "description": "Nudimo celovite mizarske storitve in izdelavo pohištva po naročilu za stranke v Litiji in okolici.",
+    "items": [
+      {
+        "title": "Kuhinje po meri",
+        "description": "Funkcionalne in estetske kuhinje, prilagojene vašemu načinu življenja in dimenzijam prostora.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimalen izkoristek prostora z vgradnimi omarami, narejenimi točno po vaših merah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pohištvo za dnevne sobe",
+        "description": "Stilsko dovršeno pohištvo za dnevne sobe, ki ustvarja prijeten in domač ambient.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema po naročilu",
+        "description": "Celostne rešitve in unikatni leseni elementi za opremljanje celotnega doma.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za opremo vašega doma",
+    "description": "Zavedamo se, da je dom prostor, kjer se morate počutiti dobro. Zato se vsakemu projektu posvetimo individualno.",
+    "highlights": [
+      "Visoka kakovost izdelave in materialov",
+      "Popolna prilagoditev vašim želja in prostoru",
+      "Strokovno svetovanje in zanesljiva izvedba"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Skrbno izbrani materiali in natančna izdelava za dolgo življenjsko dobo pohištva.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Prilagojeno vam",
+        "description": "Pohištvo izdelamo točno po merah vašega prostora in vaših estetskih željah.",
+        "title": "Prilagojeno vam"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Zanesljiva storitev ter strokovno svetovanje od ideje do končne montaže.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite ponudbo za pohištvo po meri? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "031 599 249",
+        "href": "tel:031599249",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta Dušana Kvedra 13, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 18:00, Sob: 7:00 – 2:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Cesta Dušana Kvedra 13, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Jelnikar",
+    "address": "Cesta Dušana Kvedra 13, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "031 599 249"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

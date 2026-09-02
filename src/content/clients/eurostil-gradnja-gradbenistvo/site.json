@@ -1,0 +1,254 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-gradbinci-07-linen",
+    "fontPairingId": "look-gradbinci-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Transparentne okvirne cene storitev",
+    "description": "Pregled informativnih cen za osnovna gradbena in obrtniška dela.",
+    "disclaimer": "Cenik je informativen. Za uradno ponudbo in ogled objekta nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela (splošna)",
+        "description": "Izvedba gradbenih del po predhodnem ogledu objekta",
+        "price": "od 30 €",
+        "unit": "na uro / po dogovoru",
+        "featured": false
+      },
+      {
+        "name": "Prenove objektov",
+        "description": "Celovita prenova stanovanjskih ali poslovnih prostorov",
+        "price": "od 150 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Zidarska dela",
+        "description": "Strokovna zidarska dela in adaptacije",
+        "price": "od 35 €",
+        "unit": "na uro",
+        "featured": false
+      },
+      {
+        "name": "Inženiring v gradbeništvu",
+        "description": "Vodenje projektov, svetovanje in koordinacija",
+        "price": "Po dogovoru",
+        "unit": "projekt",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Eurostil",
+    "highlight": "gradnja"
+  },
+  "metadata": {
+    "title": "Eurostil gradnja d.o.o. | Zanesljive gradbene storitve v Ljubljani",
+    "description": "Zanesljive gradbene storitve, prenove objektov, zidarska dela in inženiring v Ljubljani z okolico. Celovite rešitve za lastnike nepremičnin in investitorje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Strokovne gradbene storitve",
+    "title": "Zanesljive gradbene rešitve za",
+    "titleHighlight": "vaše projekte",
+    "description": "Eurostil gradnja nudi celovita gradbena dela, prenove objektov, zidarska dela in inženiring za lastnike nepremičnin, investitorje in podjetja v Ljubljani s okolico.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjena kakovost",
+        "label": "Preverjena kakovost",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Celovite rešitve",
+        "label": "Celovite rešitve",
+        "title": "Celovite rešitve"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana s okolico",
+        "title": "Ljubljana"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite gradbene storitve na enem mestu",
+    "description": "Za naše stranke v Ljubljani s okolico izvajamo vsa gradbena dela, prenove in inženiring z visokim poudarkom na zanesljivosti.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba gradbenih del za stanovanjske in poslovne objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove in sanacije obstoječih objektov z modernim pristopom.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna in strokovna zidarska dela za različne vrste gradbenih projektov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Inženiring v gradbeništvu",
+        "description": "Strokovno vodenje projektov, svetovanje in celovite inženirske rešitve.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Vaš zanesljiv partner v gradbeništvu",
+    "description": "Z našim strokovnim pristopom in preverjeno kakovostjo poskrbimo, da so vaši projekti izpeljani zanesljivo in v skladu z dogovori.",
+    "highlights": [
+      "Preverjena kakovost storitev",
+      "Zanesljiv in strokoven pristop",
+      "Osredotočenost na zadovoljstvo strank"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Pri delu prisegamo na preverjene postopke in visoke standarde kakovosti.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Zanesljiv pristop",
+        "description": "Držimo se dogovorov ter zagotavljamo strokovno izvedbo vsakega projekta.",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Nudimo podporo od začetnih gradbenih del pa vse do zaključka prenove.",
+        "title": "Celovite rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za vaše gradbene projekte",
+    "description": "Pošljite nam povpraševanje ali nas pokličite za strokovni posvet in ponudbo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 688 579",
+        "href": "tel:070688579",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Parmova ul. 14, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želeno storitev...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Parmova ul. 14, 1000 Ljubljana, Slovenia",
+    "rights": "© Eurostil gradnja d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Eurostil gradnja",
+    "address": "Parmova ul. 14, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "070 688 579"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

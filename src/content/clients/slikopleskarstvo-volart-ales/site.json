@@ -1,0 +1,256 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-04-stats-trust",
+  "theme": {
+    "paletteId": "look-slikopleskarji-04-stone",
+    "fontPairingId": "look-slikopleskarji-04"
+  },
+  "layout": {
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za slikopleskarska in zaključna dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje sten in stropov",
+        "description": "Dva sloja disperzijske barve z vso zaščito",
+        "price": "od 2,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Protiglivična obdelava in pleskanje",
+        "price": "od 15 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Polaganje tapet",
+        "description": "Priprava podlage in strokovno lepljenje",
+        "price": "od 12 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Barvanje lesenih in kovinskih površin",
+        "description": "Brušenje, temeljni in pokrivni premaz",
+        "price": "od 15 €",
+        "unit": "na m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Volart",
+    "highlight": "Aleš Vollmajer s.p."
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Volart | Kamnik in okolica",
+    "description": "Kakovostne slikopleskarske storitve za vaš dom in poslovni prostor v Kamniku in okolici. Zanesljiva izvedba, beljenje, sanacija vlage in dekorativa."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Slikopleskarstvo Volart",
+    "title": "Kakovostne slikopleskarske storitve za",
+    "titleHighlight": "vaš dom in poslovni prostor",
+    "description": "Zanesljive in natančne slikopleskarske storitve za lastnike stanovanj, hiš in poslovnih prostorov, ki potrebujejo osvežitev ali prenovo prostorov v Kamniku in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančno",
+        "title": "Natančno"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo",
+        "title": "Prilagodljivo"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Kakovostno",
+        "title": "Kakovostno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše površine",
+    "description": "Poskrbimo za osvežitev, zaščito in estetski izgled vaših prostorov v Kamniku in okolici z uporabo preverjenih materialov.",
+    "items": [
+      {
+        "title": "Notranje beljenje sten in stropov",
+        "description": "Osvežitev in nanos svežih barvnih odtenkov v vaših prostorih za prijetno bivanje.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Popleskanje lesenih in kovinskih površin",
+        "description": "Zaščita in barvanje stavbnega pohištva ter drugih kovinskih in lesenih elementov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Dekorativna obdelava sten",
+        "description": "Posebne tehnične obdelave in videzi sten za edinstven značaj vašega interierja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Strokovna odprava težav z vlago in plesnijo za zdrav in čist bivalni prostor.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Polaganje tapet",
+        "description": "Natančno in čisto lepljenje tapet za popestritev posameznih sten ali celih prostorov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti sodelovanja z nami",
+    "description": "Zavedamo se, da je urejen dom osnova dobrega počutja, zato se pri vsakem projektu držimo dogovorov.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Uporaba kakovostnih materialov",
+      "Prilagodljivost strankam"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Dela izpeljemo natančno tako, kot smo se dogovorili, in v dogovorjenih rokih.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporabljamo preverjene materiale, ki zagotavljajo dolgotrajno obstojnost in lep videz.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku ter potrebam prostora.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za prenovo vaših prostorov? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 385 955",
+        "href": "tel:040385955",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta 33a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe glede prenove...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta 33a, 1241 Kamnik, Slovenia",
+    "rights": "Slikopleskarstvo Volart Aleš Vollmajer s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Volart Aleš Vollmajer s.p.",
+    "address": "Ljubljanska cesta 33a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "040 385 955"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

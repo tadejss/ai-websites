@@ -1,0 +1,28 @@
+{
+  "companyName": "Mizarstvo Pirc",
+  "industry": "Mizarstvo in izdelava pohištwa",
+  "tagline": "Kakovostno izdelano pohištvo po meri za vaš dom",
+  "services": [
+    "Pohištvo po meri",
+    "Kuhinje po naročilu",
+    "Vgradne omare",
+    "Lesene stopnice",
+    "Notranja oprema"
+  ],
+  "phone": "040 911 611",
+  "email": "",
+  "address": "1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 5:00 PM · Tuesday: 9:00 AM – 5:00 PM · Wednesday: 9:00 AM – 5:00 PM · Thursday: 9:00 AM – 5:00 PM · Friday: 9:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunska kakovost izdelave",
+    "Prilagodтивность željam strank",
+    "Natančna izvedba in montaža"
+  ],
+  "targetCustomers": "Lastniki stanovanj in hiš, ki iščejo unikatno pohištvo po meri",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "strokoven, zanesljiv",
+  "brandStyle": "domače, kakovostno mizarstvo",
+  "competitors": "Lokalni mizarji in ponudniki pohištwa po meri v regiji",
+  "callToAction": "Zahtevajte ponudbo"
+}

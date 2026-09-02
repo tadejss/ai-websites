@@ -1,0 +1,256 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-01-classic-split",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-01-sand",
+    "fontPairingId": "look-mizarji-tesarji-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega dela, zahtevnosti ter izbranih materialov.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in ogled na terenu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Izdelava pohištva po meri",
+        "description": "Cena je odvisna od vrste elementa, dimenzij in materiala.",
+        "price": "od 150 €",
+        "unit": "za m²",
+        "featured": true
+      },
+      {
+        "name": "Tesarska dela",
+        "description": "Montaža ostrešij, nadstreškov in lesenih konstrukcij.",
+        "price": "od 30 €",
+        "unit": "za uro dela"
+      },
+      {
+        "name": "Vgradnja notranje opreme",
+        "description": "Strokovna montaža in vgradnja elementov v vašem domu.",
+        "price": "od 40 €",
+        "unit": "za uro dela"
+      },
+      {
+        "name": "Adaptacije in predelave",
+        "description": "Manjše prenove, popravila in prilagoditve lesenih delov.",
+        "price": "od 35 €",
+        "unit": "za uro dela"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo Marko",
+    "highlight": "Požaršek s.p."
+  },
+  "metadata": {
+    "title": "Mizarstvo in tesarstvo Marko Požaršek s.p. | Kakovostne storitve po meri",
+    "description": "Izdelava pohištva po meri, tesarska dela in lesene konstrukcije v Litiji s širšo okolico. Zanesljiva in natančna izvedba po vaših željah."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Mizarstvo in tesarstvo",
+    "title": "Kakovostne mizarske in tesarske",
+    "titleHighlight": "storitve po vaši meri",
+    "description": "Zanesljive in celovite mizarske ter tesarske rešitve za lastnike hiš in stanovanj v Litiji s širšo okolico. Prilagajamo se vašim željam in potrebam.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Pohištvo po meri",
+        "label": "Pohištvo po meri",
+        "title": "Pohištvo po meri"
+      },
+      {
+        "value": "Tesarska dela",
+        "label": "Tesarska dela",
+        "title": "Tesarska dela"
+      },
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba",
+        "title": "Natančna izvedba"
+      },
+      {
+        "value": "Lokalni mojster",
+        "label": "Lokalni mojster",
+        "title": "Lokalni mojster"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske in tesarske rešitve",
+    "description": "Specializirani smo za izdelavo unikatnega pohištva, lesene konstrukcije in tesarska dela, prilagojena vašemu domu na območju Litije s širšo okolico.",
+    "items": [
+      {
+        "title": "Izdelava pohištva po meri",
+        "description": "Unikatni kosi pohištva, prilagojeni vašemu prostoru, okusu in funkcionalnim zahtevam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Tesarska dela",
+        "description": "Kakovostna tesarska dela za ostrešja, nadstreške in druge lesene elemente.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Lesene konstrukcije",
+        "description": "Trpežne in stabilne lesene konstrukcije za različne namene gradnje in ureditve.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celostna oprema notranjih prostorov z lesom za topel in domač videz vašega doma.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Adaptacije in predelave",
+        "description": "Prenove in predelave obstoječih lesenih elementov ter prostorov po vaših željah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše lesene projekte",
+    "description": "Z bogatimi izkušnjami, posluhom za želje strank in natančno izvedbo poskrbimo, da so vaši domovi opremljeni kakovostno in trajno.",
+    "highlights": [
+      "Celovite rešitve na enem mestu",
+      "Visoka prilagodljivost individualnim željam",
+      "Zanesljiva in natančna izvedba vsakega projekta"
+    ],
+    "benefits": [
+      {
+        "label": "Celovite rešitve",
+        "description": "Od prve ideje do končne montaže poskrbimo za celoten postopek.",
+        "title": "Celovite rešitve"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in prostor prilagodimo vašemu življenjskemu slogu.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Zanesljivo delo in spoštovanje dogovorov sta naša glavna prednost.",
+        "title": "Natančna izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za mizarska oziroma tesarska dela? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Spodnji Hotič 25, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 365 681",
+        "href": "tel:041365681",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Spodnji Hotič 25, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Marko Požaršek s.p.",
+    "address": "Spodnji Hotič 25, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "041 365 681"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-08-dark-pro",
+  "theme": {
+    "paletteId": "look-gradbinci-08-copper",
+    "fontPairingId": "look-gradbinci-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave. Točna ponudba se oblikuje glede na obseg in zahtevnost dela na terenu.",
+    "disclaimer": "Cenik je informativen. Za pridobitev točne ponudbe nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Gradbena dela",
+        "description": "Splošna gradbena dela po dogovoru",
+        "price": "Po dogovoru",
+        "featured": true
+      },
+      {
+        "name": "Prenove objektov",
+        "description": "Celovita prenova stanovanjskih prostorov ali objektov",
+        "price": "Po ogledu",
+        "featured": false
+      },
+      {
+        "name": "Zemeljska dela in izkopi",
+        "description": "Priprava terena in manjši izkopi",
+        "price": "Po dogovoru",
+        "featured": false
+      },
+      {
+        "name": "Zidarska dela",
+        "description": "Izdelava zidov, predelnih sten in sanacije",
+        "price": "Po dogovoru",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Bojić",
+    "highlight": "gradbene storitve"
+  },
+  "metadata": {
+    "title": "Storitve v gradbeništvu, Miroslav Bojić s.p.",
+    "description": "Zanesljive gradbene storitve, prenove in zemeljska dela v Ljubljani z okolico. Kakovostna izvedba za lastnike nepremičnin in investitorje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv gradbeni mojster",
+    "title": "Zanesljive gradbene storitve za",
+    "titleHighlight": "vaše projekte",
+    "description": "Strokovna gradbena dela, prenove objektov in zemeljska dela v Ljubljani z okolico. Prilagodljivost in kakovost za vsak projekt.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost strankam",
+        "title": "Prilagodljivost strankam"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Kakovostna izvedba del",
+        "title": "Kakovostna izvedba del"
+      },
+      {
+        "value": "Dosegljivost",
+        "label": "Med tednom in ob sobotah",
+        "title": "Dosegljivost tekom tedna"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Z okolico",
+        "title": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za gradnjo in prenovo",
+    "description": "Specializirani smo za različna gradbena dela, prenove in zemeljska dela na območju Ljubljane z okolico.",
+    "items": [
+      {
+        "title": "Gradbena dela",
+        "description": "Kakovostna izvedba splošnih gradbenih del za stanovanjske in druge objekte.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prenove objektov",
+        "description": "Celovite prenove obstoječih objektov, prilagojene vašim željam in potrebam.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Zemeljska dela",
+        "description": "Priprava terena, izkopi in zemeljska dela z ustrezno mehanizacijo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Zidarska dela",
+        "description": "Natančna in strokovna zidarska dela za novogradnje in adaptacije.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjši gradbeni projekti",
+        "description": "Izvedba manjših gradbenih projektov in sanacijskih del na vašem objektu.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene izzive",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke zagotavljamo kakovostno izvedbo vsakega projekta.",
+    "highlights": [
+      "Prilagodljivost vašim željam in urniku",
+      "Visoka kakovost izvedenih gradbenih del",
+      "Dosegljivost tekom celega tedna"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagodljivost strankam",
+        "description": "Prisluhnemo vašim željam in se prilagodimo zahtevam projekta.",
+        "title": "Prilagodljivost strankam"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Dela izvajamo strokovno, natančno in z ustreznimi materiali.",
+        "title": "Kakovostna izvedba"
+      },
+      {
+        "label": "Široka dosegljivost",
+        "description": "Dosegljivi smo tekom celega tedna, tudi ob sobotah.",
+        "title": "Široka dosegljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete gradbene storitve? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tomačevo 49, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 226 933",
+        "href": "tel:040226933",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00 – 17:00, Sob: 7:00 – 14:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Tomačevo 49, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Bojić gradbene storitve",
+    "address": "Tomačevo 49, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 226 933"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "appearance": "construction",
+  "lookId": "mizarji-tesarji-09-warm-soft",
+  "theme": {
+    "paletteId": "look-mizarji-tesarji-09-dusk",
+    "fontPairingId": "look-mizarji-tesarji-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene mizarskih storitev",
+    "description": "Cene so informativne narave in so odvisne od izbire materialov ter zahtevnosti izvedbe.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kuhinje po naročilu",
+        "description": "Izdelava in montaža kuhinje po meri",
+        "price": "od 2.500 €",
+        "featured": true
+      },
+      {
+        "name": "Vgradne omare",
+        "description": "Omare z drsnimi vrati po meri prostora",
+        "price": "od 800 €"
+      },
+      {
+        "name": "Pohištvo po meri",
+        "description": "Posamezni kosi pohištva (mize, komode, regali)",
+        "price": "od 300 €"
+      },
+      {
+        "name": "Lesene stopnice",
+        "description": "Obloga stopnic ali samostojne lesene stopnice",
+        "price": "od 1.500 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mizarstvo",
+    "highlight": "Pirc"
+  },
+  "metadata": {
+    "title": "Mizarstvo Pirc | Pohištvo po meri Ljubljana",
+    "description": "Kakovostno izdelano pohištvo po meri za vaš dom v Ljubljani z okolico. Kuhinje, vgradne omare, lesene stopnice in notranja oprema."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Mizarstvo po meri",
+    "title": "Kakovostno izdelano pohištvo po meri za",
+    "titleHighlight": "vaš dom",
+    "description": "Unikatne rešitve in prilagodljivo pohištvo za lastnike stanovanj in hiš v Ljubljani z okolico.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Unikatno",
+        "label": "Pohištvo po meri"
+      },
+      {
+        "value": "Natančna",
+        "label": "Izvedba in montaža"
+      },
+      {
+        "value": "Vrhunska",
+        "label": "Kakovost izdelave"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite mizarske storitve za vaš dom",
+    "description": "Izdelujemo kakovostno in zanesljivo pohištvo po meri za stranke v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Pohištvo po meri",
+        "description": "Unikatni kosi pohištva, prilagojeni vašemu prostoru in željam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kuhinje po naročilu",
+        "description": "Funkcionalne in estetske kuhinje, narejene točno po vaših merah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vgradne omare",
+        "description": "Optimalen izkoristek prostora z vgradnimi omarami z drsnimi vrati.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Lesene stopnice",
+        "description": "Estetske in trpežne lesene stopnice za povezavo vaših prostorov.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Notranja oprema",
+        "description": "Celovita oprema notranjih prostorov za usklajen videz vašega doma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše mizarske projekte",
+    "description": "Strokovnost, zanesljivost in posluh za želje strank so temelji našega dela.",
+    "highlights": [
+      "Vrhunska kakovost izdelave",
+      "Prilagodljivost željam strank",
+      "Natančna izvedba in montaža"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Uporaba skrbno izbranih materialov in skrb za vsak detajl pri izdelavi.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Pohištvo prilagodimo vašemu prostoru ter vašim osebnim željam in potrebam.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Natančna montaža",
+        "description": "Poskrbimo za strokovno izvedbo in natančno montažo na vašem domu.",
+        "title": "Natančna montaža"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti pohištvo po meri? Pošljite nam povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 911 611",
+        "href": "tel:040911611",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve glede pohištva...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mizarstvo Pirc",
+    "address": "1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 911 611"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-01-classic-split",
+  "theme": {
+    "paletteId": "look-slikopleskarji-01-sand",
+    "fontPairingId": "look-slikopleskarji-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dragan-novarlic-prevozne/hero.avif",
+      "alt": "Slikopleskar pri natančnem pleskanju stene",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dragan-novarlic-prevozne/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691597",
+      "sourceUrl": "https://www.pexels.com/photo/man-painting-walls-in-new-apartment-5691597/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "professional painter interior wall painting dark mood emerald light"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dragan-novarlic-prevozne/services.avif",
+      "alt": "Slikopleskarsko orodje in oprema za prenovo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/dragan-novarlic-prevozne/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691677",
+      "sourceUrl": "https://www.pexels.com/photo/crop-woman-painting-walls-at-home-5691677/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "house painter working on wall interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled orientacijskih cen za prevoze in slikopleskarska dela.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Pleskanje sten in stropov",
+        "description": "Beljenje z osnovno pripravo prostora",
+        "price": "od 4 €",
+        "unit": "/ m²",
+        "featured": true
+      },
+      {
+        "name": "Prevozne storitve",
+        "description": "Prevoz tovora po dogovoru",
+        "price": "od 30 €",
+        "unit": "/ prevoz"
+      },
+      {
+        "name": "Slikopleskarska dela",
+        "description": "Natančna izvedba pleskanja in bandažiranja",
+        "price": "od 25 €",
+        "unit": "/ ura"
+      },
+      {
+        "name": "Fasaderska dela",
+        "description": "Obnova in delna sanacija fasad",
+        "price": "Po ogledu",
+        "unit": ""
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Dragan Novarlić s.p.",
+    "highlight": "Prevozi in slikopleskarstvo"
+  },
+  "metadata": {
+    "title": "Dragan Novarlić s.p. | Prevozne storitve in slikopleskarstvo v Litiji",
+    "description": "Zanesljive prevozne storitve in strokovno slikopleskarstvo za dom in podjetje v Litiji s širšo okolico. Celovite rešitve na enem mestu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik",
+    "title": "Strokovne prevozne storitve in",
+    "titleHighlight": "slikopleskarstvo",
+    "description": "Zanesljive prevozne storitve in strokovno slikopleskarstvo za vaš dom in podjetje v Litiji s širšo okolico. Celovita ponudba za prenovo in prevoze.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Celovite storitve",
+        "label": "Celovite storitve",
+        "title": "Celovite storitve"
+      },
+      {
+        "value": "Lokalni ponudnik",
+        "label": "Lokalni ponudnik",
+        "title": "Lokalni ponudnik"
+      },
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaš dom in podjetje",
+    "description": "Nudimo kakovostne prevoze in slikopleskarska dela na območju Litije s širšo okolico.",
+    "items": [
+      {
+        "title": "Prevozne storitve",
+        "description": "Zanesljiv prevoz tovora in druge prevozne storitve za vaše potrebe.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Slikopleskarstvo",
+        "description": "Strokovne slikopleskarske storitve za osvežitev vaših prostorov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pleskanje sten in stropov",
+        "description": "Natančno pleskanje notranjih sten in stropov z uporabo kakovostnih materialov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Prevoz tovora",
+        "description": "Varen in pravočasen prevoz tovora na željeno lokacijo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Fasaderska dela",
+        "description": "Urejanje in obnova fasad za zaščito in lepši videz vašega objekta.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za prevoze in prenovo",
+    "description": "Z združevanjem prevoznih storitev in slikopleskarstva vam nudimo udobje celovitih rešitev na enem mestu.",
+    "highlights": [
+      "Celovite storitve na enem mestu za prevoze in prenovo",
+      "Zanesljiv in izkušen lokalni ponudnik",
+      "Prilagodljivost strankam in strokovna izvedba"
+    ],
+    "benefits": [
+      {
+        "label": "Vse na enem mestu",
+        "description": "Celovite storitve na enem mestu za prevoze in prenovo.",
+        "title": "Vse na enem mestu"
+      },
+      {
+        "label": "Lokalni ponudnik",
+        "description": "Zanesljiv in izkušen lokalni ponudnik na območju Litije.",
+        "title": "Lokalni ponudnik"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagodljivost strankam in strokovna izvedba del.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo? Kontaktirajte nas preko spodnjih podatkov ali obrazca.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 254 149",
+        "href": "tel:040254149",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Maistrova ulica 5, 1270 Litija, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali povpraševanje...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Maistrova ulica 5, 1270 Litija, Slovenia",
+    "rights": "Dragan Novarlić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Dragan Novarlić s.p. Prevozi in slikopleskarstvo",
+    "address": "Maistrova ulica 5, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "040 254 149"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

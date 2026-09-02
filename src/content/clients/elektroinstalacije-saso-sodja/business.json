@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektroinstalacije Sašo Sodja s.p.",
+  "industry": "Elektroinstalaterstvo",
+  "tagline": "Zanesljive in strokovne elektroinstalacije za vaš dom in poslovne prostore",
+  "services": [
+    "Vzdrževanje in popravila elektroinstalacij",
+    "Montaža razsvetljave",
+    "Priklop gospodinjskih aparatov",
+    "Adaptacije električnih napeljav",
+    "Odpravljanje napak in okvar"
+  ],
+  "phone": "041 520 098",
+  "email": "",
+  "address": "Kuzmičeva ulica 5, 1000 Ljubljana, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Hiter odziv na klice strank",
+    "Zanesljiva in strokovna izvedba del",
+    "Prilagodljivost in strokovno svetovanje"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih objektov",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "stroqukan, zanesljiv, dostopen",
+  "brandStyle": "domač in zaupanja vreden ponudnik",
+  "competitors": "Lokalni ponudniki elektroinstalacijskih storitev v regiji",
+  "callToAction": "Pokličite nas"
+}

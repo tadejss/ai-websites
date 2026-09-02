@@ -1,0 +1,288 @@
+{
+  "appearance": "construction",
+  "lookId": "keramicarji-09-warm-soft",
+  "theme": {
+    "paletteId": "look-keramicarji-09-dusk",
+    "fontPairingId": "look-keramicarji-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/adaptacije-keramicarstvo-deno/hero.avif",
+      "alt": "Strokovna prenova kopalnice in polaganje keramike",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/adaptacije-keramicarstvo-deno/hero.webp",
+      "width": 809,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35200609",
+      "sourceUrl": "https://www.pexels.com/photo/colorful-patterned-ceramic-floor-tiles-35200609/",
+      "photographer": "granüllükahve",
+      "photographerUrl": "https://www.pexels.com/@granullukahve-1946578768",
+      "searchQuery": "tile installer laying ceramic floor"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/adaptacije-keramicarstvo-deno/services.avif",
+      "alt": "Celovite adaptacije stanovanj in gradbena dela",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/adaptacije-keramicarstvo-deno/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16239801",
+      "sourceUrl": "https://www.pexels.com/photo/worker-working-with-pavement-pavers-16239801/",
+      "photographer": "Marianna Zuzanna",
+      "photographerUrl": "https://www.pexels.com/@marianna-zuzanna-498248397",
+      "searchQuery": "tile installer laying ceramic floor"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev",
+    "description": "Cene so informativne narave; končni znesek je odvisen od obsega in zahtevnosti del.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje keramike (osnovno)",
+        "description": "Polaganje standardnih keramičnih ploščic",
+        "price": "od 20 €",
+        "unit": "na m2",
+        "featured": true
+      },
+      {
+        "name": "Adaptacija kopalnice",
+        "description": "Celovita prenova kopalnice do 6 m2",
+        "price": "od 3.500 €",
+        "unit": "na projekt"
+      },
+      {
+        "name": "Gradbena in obrtniška dela",
+        "description": "Ura strokovnega dela",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Priprava podlage in hidroizolacija",
+        "description": "Sanacija in zaščita površin pred polaganjem",
+        "price": "od 15 €",
+        "unit": "na m2"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Adaptacije in keramičarstvo",
+    "highlight": "Deno"
+  },
+  "metadata": {
+    "title": "Adaptacije in keramičarstvo Deno | Denis Mustedanagić s.p.",
+    "description": "Kakovostne prenove, polaganje keramike in celovite adaptacije stanovanj v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv izvajalec v Ljubljani",
+    "title": "Kakovostne prenove in keramičarske storitve",
+    "titleHighlight": "po vaši meri",
+    "description": "Strokovne adaptacije stanovanj, prenova kopalnic in natančno polaganje keramike za lastnike nepremičnin v Ljubljani z okolico.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Visoka strokovnost",
+        "label": "Visoka strokovnost",
+        "title": "Visoka strokovnost"
+      },
+      {
+        "value": "Natančno delo",
+        "label": "Natančno delo",
+        "title": "Natančno delo"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "z okolico",
+        "title": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše prostore",
+    "description": "Specializirani smo za gradbena in obrtniška dela, s poudarkom na keramičarstvu in prenovah v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Polaganje keramike",
+        "description": "Natančno polaganje vseh vrst keramičnih ploščic v kopalnicah, kuhinjah, na terasah in drugih površinah.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Adaptacije stanovanj",
+        "description": "Celovite prenovitvene storitve za osvežitev ali popolno preobrazbo vašega bivalnega prostora.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Prenove kopalnic",
+        "description": "Strokovna izvedba kopalniških prenov od A do Ž, vključno s pripravo podlage in montažo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Gradbena in obrtniška dela",
+        "description": "Kakovostna izvedba splošnih gradbenih in obrtniških del v skladu z vašimi željami.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše gradbene projekte",
+    "description": "S predanostjo in natančnostjo poskrbimo, da so prenove izpeljane kakovostno in v dogovorjenih rokih.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba",
+      "Visoka strokovnost in kakovost",
+      "Odlične ocene zadovoljnih strank"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Držimo se dogovorjenih rokov in poskrbimo za urejeno delovišče.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Visoka strokovnost",
+        "description": "Uporaba preverjenih materialov in strokovni pristop k vsakemu projektu.",
+        "title": "Visoka strokovnost"
+      },
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Kakovost našega dela potrjujejo številne pozitivne izkušnje.",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pošljite povpraševanje",
+    "description": "Na voljo smo vam za vprašanja, svetovanje in pripravo ponudbe za vaš projekt.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Beblerjev trg 12, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 217 068",
+        "href": "tel:070217068",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Čet, Sob: 8:00 – 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Beblerjev trg 12, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Adaptacije in keramičarstvo Deno",
+    "address": "Beblerjev trg 12, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "070 217 068"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

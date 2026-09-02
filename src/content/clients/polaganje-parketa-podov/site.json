@@ -1,0 +1,262 @@
+{
+  "appearance": "construction",
+  "lookId": "parketarji-talne-obloge-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-parketarji-talne-obloge-10-frost",
+    "fontPairingId": "look-parketarji-talne-obloge-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za polaganje in obnovo talnih oblog.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje klasičnega parketa",
+        "description": "Vključuje pripravo in strokovno polaganje",
+        "price": "od 25 €",
+        "unit": "na m²",
+        "featured": false
+      },
+      {
+        "name": "Polaganje gotovih parketov",
+        "description": "Hitra in zanesljiva vgradnja",
+        "price": "od 20 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Polaganje vinilnih talnih oblog",
+        "description": "Lepljenje ali plavajoče polaganje",
+        "price": "od 18 €",
+        "unit": "na m²",
+        "featured": false
+      },
+      {
+        "name": "Polaganje podov iz plastičnih mas",
+        "description": "Primerno za stanovanjske in poslovne prostore",
+        "price": "od 18 €",
+        "unit": "na m²",
+        "featured": false
+      },
+      {
+        "name": "Obnova in brušenje parketa",
+        "description": "Brušenje, kitanje in lakiranje",
+        "price": "od 22 €",
+        "unit": "na m²",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Parketarstvo",
+    "highlight": "Sašo Mlakar s.p."
+  },
+  "metadata": {
+    "title": "Polaganje Parketa in Podov Sašo Mlakar s.p. | Ljubljana z okolico",
+    "description": "Strokovno polaganje parketa, vinila in podov iz plastičnih mas v Ljubljani z okolico. Zanesljivo in kakovostno izvajanje talnih oblog."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Strokovno parketarstvo",
+    "title": "Strokovno polaganje parketa in podov za",
+    "titleHighlight": "vaš dom ali pisarno",
+    "description": "Zanesljive storitve polaganja parketa, vinila in talnih oblog v Ljubljani z okolico za lastnike stanovanj, hiš in poslovnih prostorov.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Preverjena kakovost",
+        "label": "Preverjena kakovost"
+      },
+      {
+        "value": "Strokovno delo",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Celovite storitve",
+        "label": "Celovite storitve"
+      },
+      {
+        "value": "Ljubljana z okolico",
+        "label": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše nove talne obloge",
+    "description": "Specializirani smo za vgradnjo in obnovo različnih vrst tal v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Polaganje klasičnega parketa",
+        "description": "Klasično polaganje za brezčasen videz in dolgotrajno obstojnost vaših prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Polaganje gotovih parketov",
+        "description": "Hitra in čista vgradnja gotovih parketov za takojšnjo uporabo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Polaganje vinilnih talnih oblog",
+        "description": "Moderne in trpežne vinilne talne obloge, primerne za vsak dom ali pisarno.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Polaganje podov iz plastičnih mas",
+        "description": "Strokovna izvedba talnih oblog iz plastičnih mas za zahtevnejše prostore.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Obnova in brušenje parketa",
+        "description": "Obnovite sijaj in lepoto vašega starega parketa s profesionalnim brušenjem.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše nove pode",
+    "description": "Z našim strokovnim znanjem poskrbimo, da bodo vaši novi podi položeni natančno in brezskrbno.",
+    "highlights": [
+      "Preverjena kakovost z odličnimi ocenami strank",
+      "Strokovno in zanesljivo izvajanje del",
+      "Celovite storitve polaganj različnih vrst podov"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene strank",
+        "description": "Preverjena kakovost, ki prepriča tudi najzahtevnejše stranke.",
+        "title": "Odlične ocene strank"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Strokovno in zanesljivo izvajanje del v dogovorjenih rokih.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Celovita ponudba",
+        "description": "Različne vrste podov in obnova obstoječih talnih oblog na enem mestu.",
+        "title": "Celovita ponudba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali nam pošljite sporočilo za ponudbo ali vprašanja glede talnih oblog.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 332 147",
+        "href": "tel:041332147",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Dergomaška ulica 75, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Dergomaška ulica 75, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Parketarstvo Sašo Mlakar s.p.",
+    "address": "Dergomaška ulica 75, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 332 147"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

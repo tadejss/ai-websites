@@ -1,0 +1,263 @@
+{
+  "appearance": "construction",
+  "lookId": "slikopleskarji-06-service-grid",
+  "theme": {
+    "paletteId": "look-slikopleskarji-06-clay",
+    "fontPairingId": "look-slikopleskarji-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Cene so informativne narave in se prilagajajo glede na stanje podlage ter obseg dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in ogled nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje beljenje (dvakratni nanos)",
+        "description": "Beljenje z belo disperzijsko barvo vključno z zaščito pohištva",
+        "price": "od 2,50 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Glajenje sten in kitanje",
+        "description": "Fino glajenje sten in stropov z izravnalno maso",
+        "price": "od 6,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Bandažiranje stikov mavčnih plošč",
+        "description": "Sanacija in utrjevanje stikov med mavčnimi ploščami",
+        "price": "od 4,00 €",
+        "unit": "na m"
+      },
+      {
+        "name": "Sanacija vlage in plesni",
+        "description": "Mehansko čiščenje, protiglivični premaz in beljenje",
+        "price": "od 15,00 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Pleskanje vrat in podbojev",
+        "description": "Priprava in dvo slojno barvanje lesenih ali kovinskih vrat",
+        "price": "od 50,00 €",
+        "unit": "kos"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Slikopleskarstvo",
+    "highlight": "Rozina"
+  },
+  "metadata": {
+    "title": "Slikopleskarstvo Rozina Simon Rozina s.p. | Kakovostno beljenje in pleskanje",
+    "description": "Kakovostno beljenje, pleskanje in prenova prostorov v Litiji z okolico. Zanesljiva izvedba, strokovno svetovanje in uporaba vrhunskih materialov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv mojster za vaš dom",
+    "title": "Kakovostno beljenje, pleskanje in",
+    "titleHighlight": "prenova prostorov",
+    "description": "Strokovne slikopleskarske storitve za lastnike stanovanj, hiš in poslovnih prostorov v Litiji z okolico. Poskrbimo za osvežitev vašega interierja.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Kakovostni materiali",
+        "label": "Kakovostni materiali",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "value": "Strokovno svetovanje",
+        "label": "Strokovno svetovanje",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Točni roki",
+        "label": "Točni roki",
+        "title": "Točni roki"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite slikopleskarske rešitve",
+    "description": "Izvajamo vsa dela s področja slikopleskarstva in prenove prostorov v Litiji z okolico.",
+    "items": [
+      {
+        "title": "Notranje beljenje sten in stropov",
+        "description": "Osvežitev in beljenje vaših bivalnih ter poslovnih prostorov z vrhunskimi materiali.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pleskanje stavbnega pohištva in ograj",
+        "description": "Kakovostna zaščita in pleskanje vrat, oken, ograj ter drugih lesenih ali kovinskih elementov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Dekorativna obdelava sten",
+        "description": "Ustvarjanje unikatnih vzorcev in dekorativnih tehnik za poseben videz vaših sten.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sanacija vlage in plesni",
+        "description": "Učinkovito odstranjevanje plesni in sanacija vlažnih površin za zdrav dom.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Bandžanje in glajenje površin",
+        "description": "Kakovostna priprava podlag, bandažiranje stikov in fino glajenje za popoln končni videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše pleskarske projekte",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za želje strank poskrbimo za brezhibno izvedbo del.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba del",
+      "Uporaba kakovostnih materialov",
+      "Prilagodljivost in strokovno svetovanje",
+      "Spoštovanje dogovorjenih rokov"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsakemu projektu se posvetimo z vso skrbnostjo in poskrbimo za čist in urejen delovni prostor.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Kakovostni materiali",
+        "description": "Uporabljamo preverjene in obstojne barve ter materiale, ki zagotavljajo dolgotrajen rezultat.",
+        "title": "Kakovostni materiali"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam ter se prilagodimo vašemu urniku in dogovorjenim rokom.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Zaupajte nam svoj naslednji projekt",
+    "description": "Pokličite nas ali nam pišite za informativno ponudbo in strokovno svetovanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tenetiše 15, 1270 Litija, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 228 922",
+        "href": "tel:041228922",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali projekt...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Tenetiše 15, 1270 Litija, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Slikopleskarstvo Rozina",
+    "address": "Tenetiše 15, 1270 Litija, Slovenia",
+    "email": "",
+    "phone": "041 228 922"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "appearance": "construction",
+  "lookId": "suhomontazerji-03-photo-forward",
+  "theme": {
+    "paletteId": "look-suhomontazerji-03-bloom",
+    "fontPairingId": "look-suhomontazerji-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naši projekti",
+    "description": "Primeri izvedenih suhomontažnih del.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za suhomontažna in slikopleskarska dela.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in ogled na terenu nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Montaža mavčnih plošč",
+        "description": "Stenske ali stropne obloge na podkonstrukcijo",
+        "price": "od 20 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Izdelava predelnih sten",
+        "description": "Enojna konstrukcija in obojestranska obloga",
+        "price": "od 35 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Obdelava mansard",
+        "description": "Izolacija in obloga podstrešnih prostorov",
+        "price": "od 40 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Spuščeni stropovi",
+        "description": "Montaža gips plošč na spuščeni podkonstrukciji",
+        "price": "od 25 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Slikopleskarska dela",
+        "description": "Beljenje sten in stropov z osnovnim materialom",
+        "price": "od 5 €",
+        "unit": "na m²"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Suhomontaža",
+    "highlight": "Kakovostna gradnja"
+  },
+  "metadata": {
+    "title": "Suhomontažna dela in predelave prostorov | Ljubljana z okolico",
+    "description": "Kakovostna suhomontažna dela, montaža mavčnih plošč, predelne stene, mansarde in stropovi v Ljubljani z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovna suhomontažna dela",
+    "title": "Kakovostna suhomontažna dela in",
+    "titleHighlight": "predelave prostorov",
+    "description": "Zanesljive rešitve za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo",
+        "title": "Prilagodljivost rokom"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana",
+        "title": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite suhomontažne rešitve",
+    "description": "Nudimo kakovostno izvedbo del za preureditev vaših stanovanj, hiš in poslovnih prostorov.",
+    "items": [
+      {
+        "title": "Montaža mavčnih plošč",
+        "description": "Hitra in natančna montaža mavčnih plošč za stene in strope.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Izdelava predelnih sten",
+        "description": "Učinkovita razdelitev prostorov z zanesljivimi predelnimi stenami.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Obdelava mansard",
+        "description": "Ureditev in izolacija mansardnih prostorov v prijeten bivalni kotiček.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Spuščeni stropovi",
+        "description": "Montaža spuščenih stropov za estetski izgled in napeljavo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Slikopleskarska dela",
+        "description": "Zaključna slikopleskarska dela za popoln končni videz vaših prostorov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše prostore",
+    "description": "Združujemo strokovnost, prilagodljivost in skrb za vaše želje.",
+    "highlights": [
+      "Hizna in zanesljiva izvedba del",
+      "Strokovno svetovanje na terenu",
+      "Prilagodljivost vašim željam in rokovom"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Hizna in zanesljiva izvedba del ob dogovorjenih rokih.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Strokovno svetovanje na terenu za optimalne rešitve vašega prostora.",
+        "title": "Strokovno svetovanje"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagajanje vašim željam, potrebam in časovnim okvirjem.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo za suhomontažna dela? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 796 706",
+        "href": "tel:041796706",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Pot v Smrečje 4, 1231 Ljubljana - Črnuče, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Pot v Smrečje 4, 1231 Ljubljana - Črnuče, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Suhomontaža Kakovostna gradnja",
+    "address": "Pot v Smrečje 4, 1231 Ljubljana - Črnuče, Slovenia",
+    "email": "",
+    "phone": "041 796 706"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

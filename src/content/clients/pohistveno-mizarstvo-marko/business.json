@@ -1,0 +1,28 @@
+{
+  "companyName": "Pohištveno mizarstvo Marko Velkavrh s.p.",
+  "industry": "mizarstvo",
+  "tagline": "Kakovostno izdelano pohištvo po meri za vaš dom",
+  "services": [
+    "Kuhinje po meri",
+    "Vgradne omare",
+    "Pohištvo za dnevne sobe",
+    "Opremljanje spalnic",
+    "Notranja oprema po naročilu"
+  ],
+  "phone": "031 363 513",
+  "email": "",
+  "address": "Cesta Dolomitskega odreda 64, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 4:00 PM · Tuesday: 7:00 AM – 4:00 PM · Wednesday: 7:00 AM – 4:00 PM · Thursday: 7:00 AM – 4:00 PM · Friday: 7:00 AM – 4:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Prilagojene rešitve za vsak prostor",
+    "Natančna in kakovostna izdelava",
+    "Celovita storitev od ideje do montaže"
+  ],
+  "targetCustomers": "Lastniki stanovanj in hiš, ki iščejo unikatno pohištvo po meri",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "domače mizarske storitve",
+  "competitors": "Lokalni mizarji in ponudniki pohištva po meri",
+  "callToAction": "Stopite v stik"
+}

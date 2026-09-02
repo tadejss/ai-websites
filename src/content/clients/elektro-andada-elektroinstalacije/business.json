@@ -1,0 +1,28 @@
+{
+  "companyName": "Elektro Andada, elektroinštalacije Đorđe Simić s.p.",
+  "industry": "Elektroinštalacije in elektro storitve",
+  "tagline": "Zanesljive in strokovne elektroinštalacije za vaš dom in poslovni prostor",
+  "services": [
+    "Vgradnja elektroinštalacij",
+    "Popravila in vzdrževanje",
+    "Montaža svetil",
+    "Adaptacije in prenove",
+    "Diagnostika napak"
+  ],
+  "phone": "070 455 134",
+  "email": "",
+  "address": "Kašeljska cesta 31, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 7:00 AM – 8:00 PM · Tuesday: 7:00 AM – 8:00 PM · Wednesday: 7:00 AM – 8:00 PM · Thursday: 7:00 AM – 8:00 PM · Friday: 7:00 AM – 8:00 PM · Saturday: 7:00 AM – 8:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Hitra odzivnost in strokovna izvedba",
+    "Zanesljive storitve za gospodinjstva in podjetja",
+    "Prilagodljivost delovnemu času in strankam"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov v Ljubljani in okolici",
+  "serviceArea": "Ljubljana s širšo okolico",
+  "yearsExperience": "",
+  "tone": "stroquni, zanesljiv, prijazen",
+  "brandStyle": "sodoben in zaupanja vreden",
+  "competitors": "Lokalni elektroinštalaterji v regiji",
+  "callToAction": "Pokličite za ponudbo"
+}

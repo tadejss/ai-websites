@@ -1,0 +1,261 @@
+{
+  "appearance": "construction",
+  "lookId": "parketarji-talne-obloge-05-minimal-line",
+  "theme": {
+    "paletteId": "look-parketarji-talne-obloge-05-mist",
+    "fontPairingId": "look-parketarji-talne-obloge-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene storitev in materialov",
+    "description": "Pregled okvirnih cen za parketarska dela in obnovo talnih oblog.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo glede na vaše potrebe nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje parketa",
+        "description": "Strokovna vgradnja različnih vrst parketa na pripravljeno podlago.",
+        "price": "od 15 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Brusilna obnova parketa",
+        "description": "Grobo in fino brušenje obstoječega lesenega poda.",
+        "price": "od 12 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Lakiranje ali oljenje tal",
+        "description": "Nanos zaščitnih premazov v več slojih.",
+        "price": "od 8 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Svetovanje na terenu",
+        "description": "Ogled prostora in strokovni nasveti glede izbire talnih oblog.",
+        "price": "Po dogovoru",
+        "unit": ""
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Salon parketa",
+    "highlight": "Primož"
+  },
+  "metadata": {
+    "title": "Salon parketa Primož | Parketarstvo Domžale",
+    "description": "Strokovno polaganje in obnova parketa ter prodaja kakovostnih talnih oblog v Domžalah z okolico. Celovite storitve od svetovanja do izvedbe."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Parketarstvo v Domžalah",
+    "title": "Strokovna polaganje in obnova parketa",
+    "titleHighlight": "z dolgoletnimi izkušnjami",
+    "description": "Celovite storitve od svetovanja do izvedbe za lastnike stanovanj, hiš in poslovnih prostorov, ki urejajo ali obnavljajo tla v Domžalah z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Celovite",
+        "label": "Celovite storitve",
+        "title": "Celovite storitve"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "Prilagodljiv urnik",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Zanesljiv",
+        "label": "Zanesljiva izvedba",
+        "title": "Zanesljiva izvedba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve in prodaja",
+    "description": "Ponujamo vam celovito ponudbo parketarskih del in kakovostnih talnih oblog za vaše prostore v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Polaganje parketa",
+        "description": "Strokovna in natančna vgradnja vseh vrst parketa ter talnih oblog v stanovanjskih in poslovnih objektih.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Brusilna obnova parketa",
+        "description": "Temeljita obnova obstoječega parketa z brušenjem, ki povrne prvotni sijaj in lepoto vašim tlem.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Lakiranje in oljenje tal",
+        "description": "Zaščita in zaključna obdelava lesenih površin s kakovostnimi laki in olji za dolgo življenjsko dobo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje pri izbiri",
+        "description": "Strokovni nasveti pri izbiri ustreznih talnih oblog, ki ustrezajo vašemu življenjskemu slogu in prostoru.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Prodaja parketa",
+        "description": "Pester izbor kakovostnih talnih oblog in parketa priznanih vrst za vsak dom.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv mojster za vaša tla",
+    "description": "Združujemo strokovnost, prilagodljivost in posluh za želje naročnikov, kar zagotavlja trajne in estetske rezultate.",
+    "highlights": [
+      "Celovite storitve od začetnega svetovanja do končne izvedbe",
+      "Prilagodljiv delovni čas z možnostjo dogovora tudi med tednom zvečer",
+      "Poudarek na kakovostni izvedbi parketarskih del"
+    ],
+    "benefits": [
+      {
+        "label": "Celovite storitve",
+        "description": "Poskrbimo za celoten postopek od prvega nasveta pa vse do zaključne izvedbe.",
+        "title": "Celovite storitve"
+      },
+      {
+        "label": "Prilagodljiv urnik",
+        "description": "Prilagajamo se vašemu času in delamo tudi med tednom v večernih urah.",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "label": "Kakovostna izvedba",
+        "description": "Zanesljivo in natančno delo na področju parketarstva ter prodaje talnih oblog.",
+        "title": "Kakovostna izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete ponudbo za polaganje in obnovo parketa? Pokličite nas ali izpolnite spodnji obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 374 029",
+        "href": "tel:051374029",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ljubljanska cesta, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 20:00 · Sob: 8:00 – 13:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite podatke in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potrebe po parketu...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Ljubljanska cesta, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Salon parketa Primož",
+    "address": "Ljubljanska cesta, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "051 374 029"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-02",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
