@@ -1,17 +1,18 @@
 {
   "appearance": "construction",
+  "lookId": "keramicarji-06-service-grid",
   "theme": {
-    "paletteId": "rust-linen",
-    "fontPairingId": "inter-space-grotesk-light"
+    "paletteId": "look-keramicarji-06-clay",
+    "fontPairingId": "look-keramicarji-06"
   },
   "layout": {
-    "profileId": "media-left",
-    "heroImageSide": "left",
-    "servicesImageSide": "left",
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
     "heroRatio": "5050",
-    "benefitsMode": "default",
+    "benefitsMode": "visual",
     "heroAtmosphere": "wash",
-    "sectionRule": "line",
+    "sectionRule": "none",
     "cardStyle": "bordered"
   },
   "images": {
@@ -23,6 +24,17 @@
       "src": "/clients/keramicarstvo-hribar/services.jpg",
       "alt": "Detajl keramičnih talnih ploščic v svetlem prostoru"
     }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
   },
   "brand": {
     "prefix": "Keramičarstvo",

@@ -1,4 +1,5 @@
 import { Icon } from "@/content/icons";
+import { MobileNavMenu } from "@/components/ui/MobileNavMenu";
 import { formatBrandName } from "@/content/brand-name";
 import { ZbrendirajButton } from "./ZbrendirajButton";
 import type { SiteConfig } from "@/content/types/site";
@@ -44,32 +45,39 @@ export function ZbrendirajHeader({ siteConfig, siteSlug }: Props) {
           <ZbrendirajButton href="#cenik">{nav.cta}</ZbrendirajButton>
         </div>
 
-        <details className="relative lg:hidden">
-          <summary className="flex cursor-pointer list-none items-center gap-2 rounded-full border border-accent bg-accent px-4 py-2.5 text-sm font-semibold text-black">
-            <span>Menu</span>
-            <span className="flex size-7 items-center justify-center rounded-full bg-black/15">
-              <Icon name="menu" />
-            </span>
-          </summary>
-
-          <div className="absolute right-0 mt-2 w-56 rounded-[var(--radius-card)] border border-white/15 bg-black p-3 shadow-lg">
-            {nav.links.map((link) => (
+        <MobileNavMenu
+          className="relative lg:hidden"
+          summary={
+            <summary className="flex cursor-pointer list-none items-center gap-2 rounded-full border border-accent bg-accent px-4 py-2.5 text-sm font-semibold text-black">
+              <span>Menu</span>
+              <span className="flex size-7 items-center justify-center rounded-full bg-black/15">
+                <Icon name="menu" />
+              </span>
+            </summary>
+          }
+        >
+          {(closeMenu) => (
+            <div className="absolute right-0 mt-2 w-56 rounded-[var(--radius-card)] border border-white/15 bg-black p-3 shadow-lg">
+              {nav.links.map((link) => (
+                <a
+                  key={link.href}
+                  href={resolveNavHref(link.href, siteSlug)}
+                  onClick={closeMenu}
+                  className="block rounded-xl px-4 py-3 text-sm font-medium text-[#D0D0D0] transition-colors hover:bg-white/5 hover:text-white"
+                >
+                  {link.label}
+                </a>
+              ))}
               <a
-                key={link.href}
-                href={resolveNavHref(link.href, siteSlug)}
-                className="block rounded-xl px-4 py-3 text-sm font-medium text-[#D0D0D0] transition-colors hover:bg-white/5 hover:text-white"
+                href="#cenik"
+                onClick={closeMenu}
+                className="mt-2 block rounded-full bg-accent px-4 py-3 text-center text-sm font-semibold text-black"
               >
-                {link.label}
+                {nav.cta}
               </a>
-            ))}
-            <a
-              href="#cenik"
-              className="mt-2 block rounded-full bg-accent px-4 py-3 text-center text-sm font-semibold text-black"
-            >
-              {nav.cta}
-            </a>
-          </div>
-        </details>
+            </div>
+          )}
+        </MobileNavMenu>
       </nav>
     </header>
   );

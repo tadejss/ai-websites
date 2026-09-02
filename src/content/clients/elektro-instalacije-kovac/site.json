@@ -1,18 +1,19 @@
 {
   "appearance": "elektro",
+  "lookId": "elektricarji-04-stats-trust",
   "theme": {
-    "paletteId": "steel-blue",
-    "fontPairingId": "inter-oswald"
+    "paletteId": "look-elektricarji-04-stone",
+    "fontPairingId": "look-elektricarji-04"
   },
   "layout": {
-    "profileId": "copy-heavy",
-    "heroImageSide": "right",
-    "servicesImageSide": "none",
-    "heroRatio": "6040",
+    "profileId": "stats-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
     "benefitsMode": "default",
     "heroAtmosphere": "plain",
-    "sectionRule": "none",
-    "cardStyle": "soft"
+    "sectionRule": "line",
+    "cardStyle": "bordered"
   },
   "images": {
     "hero": {
@@ -23,6 +24,17 @@
       "src": "/clients/elektro-instalacije-kovac/services.jpg",
       "alt": "Montaža LED razsvetljave v sodobnem prostoru"
     }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
   },
   "brand": {
     "prefix": "Elektro",

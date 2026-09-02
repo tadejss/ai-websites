@@ -1,5 +1,6 @@
 import { BeautyButton } from "./BeautyButton";
 import { buttonRadiusClass, ICON_RADIUS_CLASS } from "@/catalog/look-styles";
+import { MobileNavMenu } from "@/components/ui/MobileNavMenu";
 import { Icon } from "@/content/icons";
 import { formatBrandName } from "@/content/brand-name";
 import type { SiteConfig } from "@/content/types/site";
@@ -48,32 +49,39 @@ export function BeautyHeader({ siteConfig }: Props) {
           </BeautyButton>
         </div>
 
-        <details className="relative lg:hidden">
-          <summary className={`flex cursor-pointer list-none items-center gap-2 bg-accent px-4 py-2.5 text-sm font-medium text-accent-foreground ${buttonRadiusClass()}`}>
-            <span>Menu</span>
-            <span className={`flex size-7 items-center justify-center bg-accent-foreground/15 ${ICON_RADIUS_CLASS}`}>
-              <Icon name="menu" />
-            </span>
-          </summary>
-
-          <div className="absolute right-0 mt-2 w-56 rounded-[var(--radius-card)] border border-border bg-background p-3 shadow-lg">
-            {nav.links.map((link) => (
+        <MobileNavMenu
+          className="relative lg:hidden"
+          summary={
+            <summary className={`flex cursor-pointer list-none items-center gap-2 bg-accent px-4 py-2.5 text-sm font-medium text-accent-foreground ${buttonRadiusClass()}`}>
+              <span>Menu</span>
+              <span className={`flex size-7 items-center justify-center bg-accent-foreground/15 ${ICON_RADIUS_CLASS}`}>
+                <Icon name="menu" />
+              </span>
+            </summary>
+          }
+        >
+          {(closeMenu) => (
+            <div className="absolute right-0 mt-2 w-56 rounded-[var(--radius-card)] border border-border bg-background p-3 shadow-lg">
+              {nav.links.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={closeMenu}
+                  className="block rounded-xl px-4 py-3 text-sm font-medium text-muted transition-colors hover:bg-surface hover:text-foreground"
+                >
+                  {link.label}
+                </a>
+              ))}
               <a
-                key={link.href}
-                href={link.href}
-                className="block rounded-xl px-4 py-3 text-sm font-medium text-muted transition-colors hover:bg-surface hover:text-foreground"
+                href={`#${contact.id}`}
+                onClick={closeMenu}
+                className={`mt-2 block bg-accent px-4 py-3 text-center text-sm font-medium text-accent-foreground ${buttonRadiusClass()}`}
               >
-                {link.label}
+                {nav.cta}
               </a>
-            ))}
-            <a
-              href={`#${contact.id}`}
-              className={`mt-2 block bg-accent px-4 py-3 text-center text-sm font-medium text-accent-foreground ${buttonRadiusClass()}`}
-            >
-              {nav.cta}
-            </a>
-          </div>
-        </details>
+            </div>
+          )}
+        </MobileNavMenu>
       </nav>
     </header>
   );

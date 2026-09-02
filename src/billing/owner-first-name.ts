@@ -378,3 +378,11 @@ export function purchaseBarSubtitle(plan: "monthly" | "yearly"): string {
   }
   return base;
 }
+
+export function showcasePurchaseBarHeadline(): string {
+  return "Taka stran je lahko vaša.";
+}
+
+export function showcasePurchaseBarSubtitle(plan: "monthly" | "yearly"): string {
+  return purchaseBarSubtitle(plan);
+}

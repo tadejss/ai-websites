@@ -6,6 +6,7 @@ import { PricingSection } from "@/components/sections/PricingSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { LegalFooterLinks } from "@/components/legal/LegalFooterLinks";
 import { Button } from "@/components/ui/Button";
+import { MobileNavMenu } from "@/components/ui/MobileNavMenu";
 import { Icon } from "@/content/icons";
 import type { AppearancePageProps } from "../types";
 
@@ -43,30 +44,37 @@ export function DefaultSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
             </Button>
           </div>
 
-          <details className="relative md:hidden">
-            <summary className="flex size-10 cursor-pointer items-center justify-center rounded-lg border border-border text-foreground">
-              <Icon name="menu" />
-            </summary>
+          <MobileNavMenu
+            className="relative md:hidden"
+            summary={
+              <summary className="flex size-10 cursor-pointer items-center justify-center rounded-lg border border-border text-foreground">
+                <Icon name="menu" />
+              </summary>
+            }
+          >
+            {(closeMenu) => (
+              <div className="absolute right-0 mt-2 w-48 rounded-xl border border-border bg-surface-elevated p-2 shadow-xl">
+                {nav.links.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={closeMenu}
+                    className="block rounded-lg px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:bg-background hover:text-foreground"
+                  >
+                    {link.label}
+                  </a>
+                ))}
 
-            <div className="absolute right-0 mt-2 w-48 rounded-xl border border-border bg-surface-elevated p-2 shadow-xl">
-              {nav.links.map((link) => (
                 <a
-                  key={link.href}
-                  href={link.href}
-                  className="block rounded-lg px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:bg-background hover:text-foreground"
+                  href={`#${contact.id}`}
+                  onClick={closeMenu}
+                  className="mt-1 block rounded-lg bg-accent px-4 py-2.5 text-center text-sm font-semibold text-background"
                 >
-                  {link.label}
+                  {nav.cta}
                 </a>
-              ))}
-
-              <a
-                href={`#${contact.id}`}
-                className="mt-1 block rounded-lg bg-accent px-4 py-2.5 text-center text-sm font-semibold text-background"
-              >
-                {nav.cta}
-              </a>
-            </div>
-          </details>
+              </div>
+            )}
+          </MobileNavMenu>
         </nav>
       </header>
 

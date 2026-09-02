@@ -6,10 +6,13 @@ import {
   extractOwnerFirstName,
   purchaseBarHeadline,
   purchaseBarSubtitle,
+  showcasePurchaseBarHeadline,
+  showcasePurchaseBarSubtitle,
 } from "@/billing/owner-first-name";
 
 type Props = {
   slug: string;
+  variant?: "personalized" | "showcase";
   companyName?: string | null;
   brandHighlight?: string | null;
 };
@@ -27,6 +30,7 @@ const PLAN_COPY: Record<CheckoutPlan, { label: string; price: string }> = {
 
 export function DemoPurchaseBar({
   slug,
+  variant = "personalized",
   companyName,
   brandHighlight,
 }: Props) {
@@ -35,9 +39,16 @@ export function DemoPurchaseBar({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const firstName = extractOwnerFirstName(companyName, brandHighlight);
-  const headline = purchaseBarHeadline(firstName);
-  const subtitle = purchaseBarSubtitle(plan);
+  const isShowcase = variant === "showcase";
+  const firstName = isShowcase
+    ? null
+    : extractOwnerFirstName(companyName, brandHighlight);
+  const headline = isShowcase
+    ? showcasePurchaseBarHeadline()
+    : purchaseBarHeadline(firstName);
+  const subtitle = isShowcase
+    ? showcasePurchaseBarSubtitle(plan)
+    : purchaseBarSubtitle(plan);
 
   useEffect(() => {
     try {

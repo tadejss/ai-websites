@@ -1,14 +1,15 @@
 {
   "appearance": "beauty",
+  "lookId": "frizerji-03-photo-forward",
   "theme": {
-    "paletteId": "blush-champagne",
-    "fontPairingId": "manrope-bodoni"
+    "paletteId": "look-frizerji-03-bloom",
+    "fontPairingId": "look-frizerji-03"
   },
   "layout": {
-    "profileId": "airy",
-    "heroImageSide": "none",
-    "servicesImageSide": "left",
-    "heroRatio": "full-copy",
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
     "benefitsMode": "default"
   },
   "images": {
@@ -21,6 +22,17 @@
       "alt": "Detajl nego in oblikovanja las v salonu"
     }
   },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
   "brand": {
     "prefix": "Frizerski salon",
     "highlight": "Luna"
@@ -31,9 +43,18 @@
   },
   "nav": {
     "links": [
-      { "href": "#storitve", "label": "Storitve" },
-      { "href": "#zakaj-mi", "label": "Zakaj Luna" },
-      { "href": "#kontakt", "label": "Kontakt" }
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj Luna"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
     ],
     "cta": "Rezerviraj termin"
   },
@@ -87,19 +108,19 @@
     ],
     "benefits": [
       {
-        "title": "Mir",
         "label": "Mir",
-        "description": "Brez prenatrpanosti in hitenja — fokus je na tebi."
+        "description": "Brez prenatrpanosti in hitenja — fokus je na tebi.",
+        "title": "Mir"
       },
       {
-        "title": "Skrb",
         "label": "Skrb",
-        "description": "Barvanje in nega z mislijo na zdravje las, ne le na barvo."
+        "description": "Barvanje in nega z mislijo na zdravje las, ne le na barvo.",
+        "title": "Skrb"
       },
       {
-        "title": "Blizu",
         "label": "Blizu",
-        "description": "Enostavno dostopen salon s preprosto rezervacijo termina."
+        "description": "Enostavno dostopen salon s preprosto rezervacijo termina.",
+        "title": "Blizu"
       }
     ]
   },
@@ -153,10 +174,19 @@
     "lastUpdated": "2026-08-23",
     "contactForm": {
       "enabled": true,
-      "fields": ["name", "phone", "message"]
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
     },
-    "analytics": { "enabled": false, "provider": null },
-    "marketing": { "enabled": false },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
     "booking": {
       "enabled": false,
       "type": "external_link",
@@ -164,7 +194,12 @@
       "url": "",
       "privacyUrl": ""
     },
-    "thirdPartyEmbeds": { "googleMaps": false, "youtube": false },
-    "cookies": { "nonEssential": false }
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
   }
 }

@@ -97,7 +97,7 @@ const CATEGORY_RULES: CategoryRule[] = [
   },
   {
     id: "gradbinci",
-    test: /gradben|renovac|zidar|adaptation|gradnja|general_contractor|construction/i,
+    test: /gradben|renovac|zidar|krov|streh|kritina|adaptation|gradnja|general_contractor|construction/i,
     exclude: /keramič|keramic|mizar|slikopleskar|fasader/i,
   },
   {

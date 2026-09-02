@@ -1,17 +1,18 @@
 {
   "appearance": "construction",
+  "lookId": "gradbinci-03-photo-forward",
   "theme": {
-    "paletteId": "midnight-amber",
-    "fontPairingId": "inter-space-grotesk"
+    "paletteId": "look-gradbinci-03-bloom",
+    "fontPairingId": "look-gradbinci-03"
   },
   "layout": {
-    "profileId": "services-first-visual",
+    "profileId": "photo-forward",
     "heroImageSide": "none",
-    "servicesImageSide": "none",
+    "servicesImageSide": "right",
     "heroRatio": "full-copy",
-    "benefitsMode": "visual",
+    "benefitsMode": "default",
     "heroAtmosphere": "photo",
-    "sectionRule": "none",
+    "sectionRule": "line",
     "cardStyle": "bordered"
   },
   "images": {
@@ -23,6 +24,17 @@
       "src": "/clients/krovstvo-petek/services.jpg",
       "alt": "Detajl nove strešne kritine in žlebov"
     }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
   },
   "brand": {
     "prefix": "Krovstvo",

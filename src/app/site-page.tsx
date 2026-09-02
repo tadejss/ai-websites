@@ -2,6 +2,7 @@ import { appearanceRegistry } from "@/appearances/registry";
 import { resolveAppearance } from "@/appearances/resolve-appearance";
 import { CustomerPreparingBar } from "@/billing/CustomerPreparingBar";
 import { DemoPurchaseBar } from "@/billing/DemoPurchaseBar";
+import { isShowcaseReferenceSlug } from "@/billing/showcase-slugs";
 import type { SiteConfig } from "@/content/types/site";
 import { readLead } from "@/leads/store";
 import { getCustomerChromeState } from "@/onboarding/customer-chrome";
@@ -38,6 +39,9 @@ export async function SitePage({ siteConfig, siteSlug }: Props) {
       {showPurchaseBar ? (
         <DemoPurchaseBar
           slug={resolvedSlug}
+          variant={
+            isShowcaseReferenceSlug(resolvedSlug) ? "showcase" : "personalized"
+          }
           companyName={lead?.companyName ?? siteConfig.business.name}
           brandHighlight={siteConfig.brand.highlight}
         />
