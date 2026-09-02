@@ -31,6 +31,35 @@ export function cardClassForLook(tokens: LookDesignTokens): string {
   }
 }
 
+function pricingSurfaceClass(tokens: LookDesignTokens): string {
+  const radius = "rounded-[var(--radius-card)]";
+  const shadow =
+    tokens.shadowCard && tokens.shadowCard !== "none"
+      ? "shadow-[var(--shadow-card)]"
+      : "";
+
+  switch (tokens.cardTreatment) {
+    case "outlined":
+      return `${radius} border border-border bg-transparent ${shadow}`.trim();
+    case "flat":
+      return `${radius} bg-surface ${shadow}`.trim();
+    case "elevated":
+      return `${radius} border border-border/50 bg-surface-elevated ${shadow}`.trim();
+    default:
+      return `${radius} border border-border bg-surface ${shadow}`.trim();
+  }
+}
+
+/** Pricing always uses a padded card shell; "none" treatment only affects services layout. */
+export function pricingCardClassForLook(tokens: LookDesignTokens): string {
+  return `${pricingSurfaceClass(tokens)} p-6`.trim();
+}
+
+export function pricingFeaturedCardClassForLook(tokens: LookDesignTokens): string {
+  const radius = "rounded-[var(--radius-card)]";
+  return `${radius} relative border-2 border-accent bg-surface-elevated p-6 pt-8 shadow-sm`.trim();
+}
+
 export function iconWellClassForLook(tokens: LookDesignTokens): string {
   if (tokens.radiusScale === "pill") {
     return "rounded-full";

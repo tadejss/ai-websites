@@ -1,6 +1,6 @@
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { buttonRadiusClass, cardClassForLook } from "@/catalog/look-styles";
+import { buttonRadiusClass, pricingCardClassForLook, pricingFeaturedCardClassForLook } from "@/catalog/look-styles";
 import { resolveLookDesignTokens } from "@/catalog/resolve-look";
 import { isPricingSectionVisible } from "@/content/sections";
 import type { SiteConfig } from "@/content/types/site";
@@ -23,11 +23,11 @@ export function PricingSection({
     headingVariant !== "default" ? resolveLookDesignTokens(siteConfig) : undefined;
   const cardRadius = "rounded-[var(--radius-card)]";
   const baseCardClass = designTokens
-    ? cardClassForLook(designTokens)
+    ? pricingCardClassForLook(designTokens)
     : `${cardRadius} border border-border bg-surface p-6`;
   const featuredCardClass = designTokens
-    ? `relative border-2 border-accent bg-surface-elevated shadow-sm ${cardClassForLook(designTokens)}`
-    : "relative rounded-2xl border-2 border-accent bg-surface-elevated p-6 shadow-sm";
+    ? pricingFeaturedCardClassForLook(designTokens)
+    : "relative rounded-2xl border-2 border-accent bg-surface-elevated p-6 pt-8 shadow-sm";
   const badgeRadius = buttonRadiusClass();
 
   return (

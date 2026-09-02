@@ -1,4 +1,5 @@
 import { assignLook } from "../src/catalog/assign-look";
+import { pricingCardClassForLook } from "../src/catalog/look-styles";
 import { resolveLookForSite } from "../src/catalog/resolve-look";
 import { resolveLookCssVars } from "../src/catalog/resolve-look-css";
 import { allLooks } from "../src/catalog/looks";
@@ -47,10 +48,18 @@ assert(approved.length === 160, `expected 160 approved looks, got ${approved.len
 console.log("== radiusButton tokens ==");
 const sharpLook = allLooks.find((look) => look.designTokens.radiusScale === "sharp");
 const pillLook = allLooks.find((look) => look.designTokens.radiusScale === "pill");
+const noneCardLook = allLooks.find(
+  (look) => look.designTokens.cardTreatment === "none",
+);
 assert(sharpLook !== undefined && pillLook !== undefined, "need sharp and pill looks");
+assert(noneCardLook !== undefined, "need a look with cardTreatment none");
 assert(
   sharpLook.designTokens.radiusButton !== pillLook.designTokens.radiusButton,
   "sharp and pill looks should differ on radiusButton",
+);
+assert(
+  pricingCardClassForLook(noneCardLook.designTokens).includes("p-6"),
+  "pricing cards should keep padding when cardTreatment is none",
 );
 const sharpVars = resolveLookCssVars(sharpLook);
 assert(
