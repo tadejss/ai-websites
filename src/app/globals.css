@@ -43,6 +43,8 @@
   --surface-elevated: #1a2332;
   --border: rgba(255, 255, 255, 0.08);
   --radius-card: 1rem;
+  --radius-button: 9999px;
+  --radius-icon: 9999px;
   --font-body: var(--font-geist-sans);
   --font-display: var(--font-geist-sans);
 }
@@ -58,6 +60,8 @@
   --surface-elevated: #e8e0d6;
   --border: rgba(44, 33, 24, 0.12);
   --radius-card: 2rem;
+  --radius-button: 9999px;
+  --radius-icon: 9999px;
   --font-body: var(--font-manrope);
   --font-display: var(--font-bodoni);
 }

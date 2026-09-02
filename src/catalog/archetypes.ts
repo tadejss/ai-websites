@@ -111,11 +111,25 @@ export const LOOK_ARCHETYPES: LookArchetype[] = [
   },
 ];
 
-const RADIUS_VALUES: Record<LookRadiusScale, string> = {
-  sharp: "0.5rem",
+const RADIUS_CARD: Record<LookRadiusScale, string> = {
+  sharp: "0.25rem",
   soft: "1rem",
   round: "1.5rem",
   pill: "2rem",
+};
+
+const RADIUS_BUTTON: Record<LookRadiusScale, string> = {
+  sharp: "0.25rem",
+  soft: "0.5rem",
+  round: "0.75rem",
+  pill: "9999px",
+};
+
+const RADIUS_ICON: Record<LookRadiusScale, string> = {
+  sharp: "0.25rem",
+  soft: "0.5rem",
+  round: "0.75rem",
+  pill: "9999px",
 };
 
 const SHADOW_VALUES: Record<LookCardTreatment, string | undefined> = {
@@ -141,14 +155,17 @@ const TRACKING: Record<LookSectionRhythm, string> = {
 };
 
 export function archetypeToDesignTokens(archetype: LookArchetype): LookDesignTokens {
+  const scale = archetype.radiusScale;
   return {
-    radiusScale: archetype.radiusScale,
-    radiusCard: RADIUS_VALUES[archetype.radiusScale],
+    radiusScale: scale,
+    radiusCard: RADIUS_CARD[scale],
+    radiusButton: RADIUS_BUTTON[scale],
+    radiusIcon: RADIUS_ICON[scale],
     cardTreatment: archetype.cardTreatment,
     sectionRhythm: archetype.sectionRhythm,
     heroStyle: archetype.heroStyle,
     useSectionRules: archetype.sectionRhythm !== "airy",
-    galleryRadius: RADIUS_VALUES[archetype.radiusScale],
+    galleryRadius: RADIUS_CARD[scale],
     shadowCard: SHADOW_VALUES[archetype.cardTreatment],
     headingTracking: TRACKING[archetype.sectionRhythm],
   };

@@ -1,4 +1,6 @@
 import { BeautyButton } from "./BeautyButton";
+import { buttonRadiusClass, cardClassForLook, iconWellClassForLook, sectionSpacingForLook } from "@/catalog/look-styles";
+import { resolveLookDesignTokens } from "@/catalog/resolve-look";
 import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -11,11 +13,25 @@ type Props = {
 
 export function BeautyContactSection({ siteConfig, siteSlug }: Props) {
   const { contact } = siteConfig;
+  const designTokens = resolveLookDesignTokens(siteConfig);
+  const cardClass = designTokens
+    ? `${cardClassForLook(designTokens)} p-6`
+    : "rounded-[var(--radius-card)] bg-surface p-6";
+  const formCardClass = designTokens
+    ? `${cardClassForLook(designTokens)} p-7 sm:p-9`
+    : "rounded-[var(--radius-card)] bg-surface p-7 sm:p-9";
+  const iconWellClass = designTokens
+    ? iconWellClassForLook(designTokens)
+    : "rounded-full";
+  const sectionClass = designTokens
+    ? sectionSpacingForLook(designTokens)
+    : "py-24 sm:py-32";
+  const inputRadiusClass = buttonRadiusClass();
 
   return (
     <section
       id={contact.id}
-      className="bg-background px-4 py-24 sm:px-6 sm:py-32"
+      className={`bg-background px-4 sm:px-6 ${sectionClass}`}
     >
       <div className="mx-auto max-w-7xl">
         <SectionHeading
@@ -30,7 +46,7 @@ export function BeautyContactSection({ siteConfig, siteSlug }: Props) {
             {contact.faq.map((item) => (
               <article
                 key={item.question}
-                className="rounded-[var(--radius-card)] bg-surface p-6"
+                className={cardClass}
               >
                 <h3 className="font-display text-lg text-foreground">
                   {item.question}
@@ -48,9 +64,9 @@ export function BeautyContactSection({ siteConfig, siteSlug }: Props) {
             {contact.items.map((item) => (
               <div
                 key={item.label}
-                className="flex gap-4 rounded-[var(--radius-card)] bg-surface p-6"
+                className={`flex gap-4 ${cardClass}`}
               >
-                <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-accent/10 bg-background text-accent">
+                <div className={`flex size-12 shrink-0 items-center justify-center border border-accent/10 bg-background text-accent ${iconWellClass}`}>
                   <Icon name={item.icon} />
                 </div>
                 <div>
@@ -74,12 +90,12 @@ export function BeautyContactSection({ siteConfig, siteSlug }: Props) {
             ))}
           </div>
 
-          <div className="rounded-[var(--radius-card)] bg-surface p-7 sm:p-9">
+          <div className={formCardClass}>
             <ContactForm
                 siteSlug={siteSlug}
                 siteConfig={siteConfig}
                 labelClassName="block text-[11px] font-semibold uppercase tracking-[0.2em] text-muted"
-                inputClassName="mt-2 min-h-12 w-full rounded-2xl border border-border bg-background px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted/50 focus:border-accent disabled:opacity-60"
+                inputClassName={`mt-2 min-h-12 w-full border border-border bg-background px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted/50 focus:border-accent disabled:opacity-60 ${inputRadiusClass}`}
                 submitButton={
                   <BeautyButton type="submit" variant="chocolate" className="w-full">
                     {contact.form.submitLabel}

@@ -3,7 +3,7 @@ import { BeautyDecorativeRings } from "./BeautyDecorativeRings";
 import { BeautyBrowserFrame } from "./BeautyBrowserFrame";
 import { BeautyHeroWebsitePreview } from "./BeautyHeroWebsitePreview";
 import { BeautyImage } from "./BeautyImage";
-import { heroStyleFlags } from "@/catalog/look-styles";
+import { heroStyleFlags, ICON_RADIUS_CLASS } from "@/catalog/look-styles";
 import { resolveLookDesignTokens } from "@/catalog/resolve-look";
 import { resolveBeautyLayout } from "../assign-layout";
 import {
@@ -57,7 +57,7 @@ export function BeautyHeroSection({ siteConfig }: Props) {
         className={`inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.25em] ${useAccentCard ? "text-accent-foreground/70" : "text-muted"}`}
       >
         <span
-          className={`size-1.5 rounded-full ${useAccentCard ? "bg-accent-foreground/50" : "bg-accent"}`}
+          className={`size-1.5 ${ICON_RADIUS_CLASS} ${useAccentCard ? "bg-accent-foreground/50" : "bg-accent"}`}
           aria-hidden="true"
         />
         {hero.badge}

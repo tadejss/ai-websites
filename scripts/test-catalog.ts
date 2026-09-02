@@ -44,4 +44,18 @@ console.log("== approved look count ==");
 const approved = allLooks.filter((look) => look.status === "approved");
 assert(approved.length === 160, `expected 160 approved looks, got ${approved.length}`);
 
+console.log("== radiusButton tokens ==");
+const sharpLook = allLooks.find((look) => look.designTokens.radiusScale === "sharp");
+const pillLook = allLooks.find((look) => look.designTokens.radiusScale === "pill");
+assert(sharpLook !== undefined && pillLook !== undefined, "need sharp and pill looks");
+assert(
+  sharpLook.designTokens.radiusButton !== pillLook.designTokens.radiusButton,
+  "sharp and pill looks should differ on radiusButton",
+);
+const sharpVars = resolveLookCssVars(sharpLook);
+assert(
+  sharpVars["--radius-button"] === sharpLook.designTokens.radiusButton,
+  "--radius-button css var should match design token",
+);
+
 console.log("\nAll catalog tests passed.");

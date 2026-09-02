@@ -21,6 +21,8 @@ export type LookHeroStyle =
 export type LookDesignTokens = {
   radiusScale: LookRadiusScale;
   radiusCard: string;
+  radiusButton: string;
+  radiusIcon?: string;
   cardTreatment: LookCardTreatment;
   sectionRhythm: LookSectionRhythm;
   heroStyle: LookHeroStyle;

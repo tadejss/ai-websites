@@ -1,5 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { buttonRadiusClass, cardClassForLook } from "@/catalog/look-styles";
+import { resolveLookDesignTokens } from "@/catalog/resolve-look";
 import { isPricingSectionVisible } from "@/content/sections";
 import type { SiteConfig } from "@/content/types/site";
 
@@ -17,6 +19,16 @@ export function PricingSection({
   }
 
   const { pricing } = siteConfig;
+  const designTokens =
+    headingVariant !== "default" ? resolveLookDesignTokens(siteConfig) : undefined;
+  const cardRadius = "rounded-[var(--radius-card)]";
+  const baseCardClass = designTokens
+    ? cardClassForLook(designTokens)
+    : `${cardRadius} border border-border bg-surface p-6`;
+  const featuredCardClass = designTokens
+    ? `relative border-2 border-accent bg-surface-elevated shadow-sm ${cardClassForLook(designTokens)}`
+    : "relative rounded-2xl border-2 border-accent bg-surface-elevated p-6 shadow-sm";
+  const badgeRadius = buttonRadiusClass();
 
   return (
     <Section id={pricing.id}>
@@ -33,12 +45,12 @@ export function PricingSection({
             key={`${item.name}-${item.price}`}
             className={
               item.featured
-                ? "relative rounded-2xl border-2 border-accent bg-surface-elevated p-6 shadow-sm"
-                : "rounded-2xl border border-border bg-surface p-6"
+                ? featuredCardClass
+                : baseCardClass
             }
           >
             {item.featured ? (
-              <span className="absolute -top-2.5 left-4 rounded-full bg-accent px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-background">
+              <span className={`absolute -top-2.5 left-4 bg-accent px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-background ${badgeRadius}`}>
                 Priporočeno
               </span>
             ) : null}

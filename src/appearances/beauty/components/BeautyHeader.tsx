@@ -1,4 +1,5 @@
 import { BeautyButton } from "./BeautyButton";
+import { buttonRadiusClass, ICON_RADIUS_CLASS } from "@/catalog/look-styles";
 import { Icon } from "@/content/icons";
 import { formatBrandName } from "@/content/brand-name";
 import type { SiteConfig } from "@/content/types/site";
@@ -16,7 +17,7 @@ export function BeautyHeader({ siteConfig }: Props) {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6">
         <a href="#" className="group flex items-center gap-3">
           {!brand.hideMonogram ? (
-            <span className="font-display flex size-10 items-center justify-center rounded-full border border-accent/15 bg-surface text-lg text-accent">
+            <span className={`font-display flex size-10 items-center justify-center border border-accent/15 bg-surface text-lg text-accent ${ICON_RADIUS_CLASS}`}>
               {brand.prefix.charAt(0)}
             </span>
           ) : null}
@@ -48,9 +49,9 @@ export function BeautyHeader({ siteConfig }: Props) {
         </div>
 
         <details className="relative lg:hidden">
-          <summary className="flex cursor-pointer list-none items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-medium text-accent-foreground">
+          <summary className={`flex cursor-pointer list-none items-center gap-2 bg-accent px-4 py-2.5 text-sm font-medium text-accent-foreground ${buttonRadiusClass()}`}>
             <span>Menu</span>
-            <span className="flex size-7 items-center justify-center rounded-full bg-accent-foreground/15">
+            <span className={`flex size-7 items-center justify-center bg-accent-foreground/15 ${ICON_RADIUS_CLASS}`}>
               <Icon name="menu" />
             </span>
           </summary>
@@ -67,7 +68,7 @@ export function BeautyHeader({ siteConfig }: Props) {
             ))}
             <a
               href={`#${contact.id}`}
-              className="mt-2 block rounded-full bg-accent px-4 py-3 text-center text-sm font-medium text-accent-foreground"
+              className={`mt-2 block bg-accent px-4 py-3 text-center text-sm font-medium text-accent-foreground ${buttonRadiusClass()}`}
             >
               {nav.cta}
             </a>

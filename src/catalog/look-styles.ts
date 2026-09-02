@@ -1,6 +1,13 @@
 import type { LookDesignTokens } from "@/catalog/types";
 import { rhythmToGap } from "@/catalog/archetypes";
 
+export const BUTTON_RADIUS_CLASS = "rounded-[var(--radius-button,9999px)]";
+export const ICON_RADIUS_CLASS = "rounded-[var(--radius-icon,9999px)]";
+
+export function buttonRadiusClass(): string {
+  return BUTTON_RADIUS_CLASS;
+}
+
 export function cardClassForLook(tokens: LookDesignTokens): string {
   const radius = "rounded-[var(--radius-card)]";
   const shadow =
@@ -22,6 +29,13 @@ export function cardClassForLook(tokens: LookDesignTokens): string {
     default:
       return `${radius} bg-surface p-6`;
   }
+}
+
+export function iconWellClassForLook(tokens: LookDesignTokens): string {
+  if (tokens.radiusScale === "pill") {
+    return "rounded-full";
+  }
+  return ICON_RADIUS_CLASS;
 }
 
 export function heroLayoutClassForLook(tokens: LookDesignTokens): string {
@@ -49,7 +63,6 @@ export function heroLayoutClassForLook(tokens: LookDesignTokens): string {
 }
 
 export function sectionSpacingForLook(tokens: LookDesignTokens): string {
-  const gap = rhythmToGap(tokens.sectionRhythm);
   switch (tokens.sectionRhythm) {
     case "compact":
       return "py-16 sm:py-20";

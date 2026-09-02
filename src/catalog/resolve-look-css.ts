@@ -26,6 +26,8 @@ export function resolveLookCssVars(look: SiteLookDefinition): CSSProperties {
     "--font-body": `var(${pairing.body.variable})`,
     "--font-display": `var(${pairing.display.variable})`,
     "--radius-card": tokens.radiusCard,
+    "--radius-button": tokens.radiusButton,
+    ...(tokens.radiusIcon ? { "--radius-icon": tokens.radiusIcon } : {}),
     "--shadow-card": tokens.shadowCard ?? "none",
     "--section-gap": rhythmToGap(tokens.sectionRhythm),
     "--heading-tracking": tokens.headingTracking ?? "-0.02em",

@@ -1,21 +1,14 @@
 import type { ReactNode } from "react";
 import type { LayoutCardStyle, LayoutSectionRule } from "@/content/types/site";
-import type { LookCardTreatment } from "@/catalog/types";
+import type { LookDesignTokens } from "@/catalog/types";
 import { cardClassForLook } from "@/catalog/look-styles";
 
 export function tradeCardClass(
   cardStyle: LayoutCardStyle | undefined,
-  cardTreatment?: LookCardTreatment,
+  designTokens?: LookDesignTokens,
 ): string {
-  if (cardTreatment) {
-    return `${cardClassForLook({
-      radiusScale: "soft",
-      radiusCard: "var(--radius-card)",
-      cardTreatment,
-      sectionRhythm: "balanced",
-      heroStyle: "split-image",
-      useSectionRules: true,
-    })} p-6`;
+  if (designTokens) {
+    return `${cardClassForLook(designTokens)} p-6`;
   }
 
   if (cardStyle === "soft") {

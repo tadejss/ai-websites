@@ -1,3 +1,5 @@
+import { buttonRadiusClass } from "@/catalog/look-styles";
+
 type Props = {
   children: React.ReactNode;
   href?: string;
@@ -44,7 +46,7 @@ export function BeautyButton({
   className = "",
 }: Props) {
   const classes = [
-    "inline-flex min-h-12 items-center justify-center gap-3 rounded-full px-6 text-sm font-medium tracking-wide transition-colors",
+    `inline-flex min-h-12 items-center justify-center gap-3 px-6 text-sm font-medium tracking-wide transition-colors ${buttonRadiusClass()}`,
     variantStyles[variant],
     className,
   ]
@@ -54,7 +56,7 @@ export function BeautyButton({
   const iconOnDark = variant === "cream" || variant === "outline-cream";
   const iconDot = (
     <span
-      className={`flex size-7 items-center justify-center rounded-full ${
+      className={`flex size-7 items-center justify-center ${buttonRadiusClass()} ${
         iconOnDark
           ? "bg-accent text-accent-foreground"
           : "bg-accent-foreground/15 text-accent-foreground"

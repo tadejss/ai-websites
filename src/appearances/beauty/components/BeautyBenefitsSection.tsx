@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { cardClassForLook, iconWellClassForLook, sectionSpacingForLook } from "@/catalog/look-styles";
+import { resolveLookDesignTokens } from "@/catalog/resolve-look";
 import { formatCardTitle } from "../utils/format-card-title";
 import { resolveBeautyLayout } from "../assign-layout";
 import { BeautyBrowserFrame } from "./BeautyBrowserFrame";
@@ -31,12 +33,22 @@ function hasRealBenefitImages(benefits: Benefit[]): boolean {
 export function BeautyBenefitsSection({ siteConfig }: Props) {
   const { whyChooseUs } = siteConfig;
   const layout = resolveBeautyLayout(siteConfig.layout);
+  const designTokens = resolveLookDesignTokens(siteConfig);
+  const cardClass = designTokens
+    ? cardClassForLook(designTokens)
+    : "rounded-[var(--radius-card)] border border-border bg-surface";
+  const iconWellClass = designTokens
+    ? iconWellClassForLook(designTokens)
+    : "rounded-full";
+  const sectionClass = designTokens
+    ? sectionSpacingForLook(designTokens)
+    : "py-24 sm:py-32";
   const useIconGrid =
     layout.benefitsMode === "visual" || hasRealBenefitImages(whyChooseUs.benefits);
 
   if (useIconGrid) {
     return (
-      <section className="bg-background px-4 py-24 sm:px-6 sm:py-32">
+      <section className={`bg-background px-4 sm:px-6 ${sectionClass}`}>
         <div className="mx-auto max-w-7xl">
           <div id={whyChooseUs.id}>
             <SectionHeading
@@ -53,7 +65,7 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
                 return (
                   <article
                     key={title}
-                    className="overflow-hidden rounded-[var(--radius-card)] border border-border bg-surface"
+                    className={`overflow-hidden ${cardClass}`}
                   >
                     {benefit.image?.src ? (
                       <BeautyBrowserFrame
@@ -72,7 +84,7 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
                       </BeautyBrowserFrame>
                     ) : (
                       <div className="flex items-start gap-4 p-6 pb-0">
-                        <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-accent/15 bg-background text-accent">
+                        <div className={`flex size-12 shrink-0 items-center justify-center border border-accent/15 bg-background text-accent ${iconWellClass}`}>
                           <Icon
                             name={BENEFIT_ICONS[index % BENEFIT_ICONS.length]}
                           />
@@ -134,7 +146,7 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
   return (
     <section
       id={whyChooseUs.id}
-      className="bg-background px-4 py-24 sm:px-6 sm:py-32"
+      className={`bg-background px-4 sm:px-6 ${sectionClass}`}
     >
       <div className="mx-auto max-w-7xl">
         <div className="grid items-start gap-16 lg:grid-cols-2 lg:gap-20">
@@ -150,7 +162,7 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
             <ul className="mt-12 space-y-5">
               {whyChooseUs.highlights.map((item) => (
                 <li key={item} className="flex items-start gap-4 text-foreground">
-                  <span className="mt-1 flex size-6 shrink-0 items-center justify-center rounded-full border border-accent/15 bg-surface text-accent">
+                  <span className={`mt-1 flex size-6 shrink-0 items-center justify-center border border-accent/15 bg-surface text-accent ${iconWellClass}`}>
                     <Icon name="check" />
                   </span>
                   <span className="text-base leading-relaxed">{item}</span>
@@ -166,7 +178,7 @@ export function BeautyBenefitsSection({ siteConfig }: Props) {
               return (
                 <article
                   key={title}
-                  className="rounded-[var(--radius-card)] bg-accent p-7 text-accent-foreground sm:p-9"
+                  className={`${designTokens?.cardTreatment === "none" ? "" : "rounded-[var(--radius-card)]"} bg-accent p-7 text-accent-foreground sm:p-9`}
                 >
                   <p className="font-display text-3xl leading-tight sm:text-4xl">
                     {title}

@@ -3,6 +3,7 @@ import {
   formatHeroStatCaption,
   formatHeroStatTitle,
 } from "@/appearances/beauty/utils/format-card-title";
+import { buttonRadiusClass, ICON_RADIUS_CLASS } from "@/catalog/look-styles";
 import { TradeImage } from "./TradeImage";
 import { resolveTradeLayoutFromConfig } from "./trade-layout";
 import type { SiteConfig } from "@/content/types/site";
@@ -35,6 +36,7 @@ function statsCardClass(cardStyle: string | undefined, emphasize: boolean): stri
 export function TradeHeroSection({ siteConfig }: Props) {
   const { hero, services, contact, images } = siteConfig;
   const layout = resolveTradeLayoutFromConfig(siteConfig);
+  const buttonRadius = buttonRadiusClass();
   const atmosphere = layout.heroAtmosphere ?? "grid";
   const hasHeroMedia = Boolean(images?.hero?.src);
   const photoHero = atmosphere === "photo" && hasHeroMedia;
@@ -52,8 +54,8 @@ export function TradeHeroSection({ siteConfig }: Props) {
 
   const copyBlock = (
     <>
-      <p className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-4 py-1.5 text-sm text-muted">
-        <span className="size-2 rounded-full bg-accent" aria-hidden="true" />
+      <p className={`inline-flex items-center gap-2 border border-border bg-surface/60 px-4 py-1.5 text-sm text-muted ${buttonRadius}`}>
+        <span className={`size-2 ${ICON_RADIUS_CLASS} bg-accent`} aria-hidden="true" />
         {hero.badge}
       </p>
       <h1 className="font-display mt-6 text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
@@ -68,13 +70,13 @@ export function TradeHeroSection({ siteConfig }: Props) {
       <div className="mt-10 flex flex-col gap-4 sm:flex-row">
         <a
           href={`#${contact.id}`}
-          className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3.5 text-base font-semibold text-accent-foreground transition-colors hover:bg-accent-hover"
+          className={`inline-flex items-center justify-center bg-accent px-8 py-3.5 text-base font-semibold text-accent-foreground transition-colors hover:bg-accent-hover ${buttonRadius}`}
         >
           {hero.primaryCta}
         </a>
         <a
           href={`#${services.id}`}
-          className="inline-flex items-center justify-center rounded-full border border-border px-8 py-3.5 text-base font-semibold text-foreground transition-colors hover:bg-surface"
+          className={`inline-flex items-center justify-center border border-border px-8 py-3.5 text-base font-semibold text-foreground transition-colors hover:bg-surface ${buttonRadius}`}
         >
           {hero.secondaryCta}
         </a>

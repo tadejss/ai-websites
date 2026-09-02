@@ -1,6 +1,6 @@
 import { Icon } from "@/content/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { cardClassForLook, sectionSpacingForLook } from "@/catalog/look-styles";
+import { cardClassForLook, iconWellClassForLook, sectionSpacingForLook } from "@/catalog/look-styles";
 import { resolveLookDesignTokens } from "@/catalog/resolve-look";
 import { BeautyImage } from "./BeautyImage";
 import { resolveBeautyLayout } from "../assign-layout";
@@ -15,11 +15,13 @@ function ServiceCards({
   className,
   cardClass,
   listLayout,
+  iconWellClass,
 }: {
   siteConfig: SiteConfig;
   className?: string;
   cardClass: string;
   listLayout?: boolean;
+  iconWellClass: string;
 }) {
   const { services } = siteConfig;
 
@@ -36,7 +38,7 @@ function ServiceCards({
           className={`${cardClass} transition-colors hover:bg-surface-elevated`}
         >
           <div className="flex items-start gap-5">
-            <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-accent/10 bg-background text-accent">
+            <div className={`flex size-12 shrink-0 items-center justify-center border border-accent/10 bg-background text-accent ${iconWellClass}`}>
               <Icon name={service.icon} />
             </div>
             <div>
@@ -52,7 +54,7 @@ function ServiceCards({
       ))}
 
       {services.pricing ? (
-        <article className="rounded-[var(--radius-card)] border border-accent/20 bg-accent/10 p-7 sm:p-9 md:col-span-2">
+        <article className={`${cardClass} border border-accent/20 bg-accent/10 md:col-span-2`}>
           <h3 className="font-display text-2xl leading-tight text-foreground sm:text-3xl">
             {services.pricing.title}
           </h3>
@@ -72,6 +74,9 @@ export function BeautyServicesSection({ siteConfig }: Props) {
   const cardClass = designTokens
     ? `${cardClassForLook(designTokens)} p-7 sm:p-9`
     : "rounded-[var(--radius-card)] bg-surface p-7 sm:p-9";
+  const iconWellClass = designTokens
+    ? iconWellClassForLook(designTokens)
+    : "rounded-full";
   const listLayout = designTokens?.cardTreatment === "none";
   const sectionClass = designTokens
     ? sectionSpacingForLook(designTokens)
@@ -105,11 +110,11 @@ export function BeautyServicesSection({ siteConfig }: Props) {
                   height={images?.services.height}
                   className="min-h-[320px] lg:min-h-full"
                 />
-                <ServiceCards siteConfig={siteConfig} cardClass={cardClass} listLayout={listLayout} />
+                <ServiceCards siteConfig={siteConfig} cardClass={cardClass} listLayout={listLayout} iconWellClass={iconWellClass} />
               </>
             ) : (
               <>
-                <ServiceCards siteConfig={siteConfig} cardClass={cardClass} listLayout={listLayout} />
+                <ServiceCards siteConfig={siteConfig} cardClass={cardClass} listLayout={listLayout} iconWellClass={iconWellClass} />
                 <BeautyImage
                   src={images?.services.src}
                   srcFallback={images?.services.srcFallback}
@@ -126,6 +131,7 @@ export function BeautyServicesSection({ siteConfig }: Props) {
             siteConfig={siteConfig}
             cardClass={cardClass}
             listLayout={listLayout}
+            iconWellClass={iconWellClass}
             className={`mt-14 ${listLayout ? "flex flex-col gap-8" : "grid gap-5 md:grid-cols-2"}`}
           />
         )}
