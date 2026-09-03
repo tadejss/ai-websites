@@ -24,7 +24,7 @@ export async function SitePage({ siteConfig, siteSlug }: Props) {
     : resolveThemeCssVars(siteConfig.theme, appearance);
   const resolvedSlug = siteSlug ?? process.env.SITE_SLUG ?? "default";
   const lead = readLead(resolvedSlug);
-  const { isCustomer, onboardingUrl, contactName, onboardingStatus } =
+  const { isCustomer, onboardingUrl, contactName, onboardingStatus, businessEmail } =
     await getCustomerChromeState(resolvedSlug);
   const showPurchaseBar = appearance !== "zbrendiraj" && !isCustomer;
 
@@ -54,6 +54,7 @@ export async function SitePage({ siteConfig, siteSlug }: Props) {
           companyName={lead?.companyName ?? siteConfig.business.name}
           brandHighlight={siteConfig.brand.highlight}
           contactName={contactName}
+          businessEmail={businessEmail}
         />
       ) : null}
     </div>

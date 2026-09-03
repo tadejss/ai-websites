@@ -81,6 +81,25 @@ GHA secrets referenced in YAML (not in app TS): `FACTORY_GIT_TOKEN`, plus the ke
 
 `STRIPE_TAX_RATE_ID`; `STRIPE_PRICE_ADDON_*` (addons **unwired**); `CHECKOUT_NOTIFY_EMAIL`; `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_STRIPE_PRICING_TABLE_ID` (zbrendiraj pricing table only); `OUTREACH_FROM_EMAIL`, `OUTREACH_FROM_NAME`, `OUTREACH_DRY_RUN`, `OUTREACH_BATCH_SIZE`, `OUTREACH_FOLLOWUP_*_DAYS`; `RESEND_WEBHOOK_SECRET` / `RESEND_SIGNING_SECRET`.
 
+### Business Email provisioning
+
+| Variable | Where |
+|----------|-------|
+| `STRIPE_PRICE_UPSELL_EMAIL` | Upsell entitlement (existing) |
+| `EMAIL_PROVIDER` | Default `mxroute` — `src/email/providers/index.ts` |
+| `MXROUTE_SERVER` | MXroute API `X-Server` header |
+| `MXROUTE_USERNAME` | MXroute API `X-Username` header |
+| `MXROUTE_API_KEY` | MXroute API `X-API-Key` header |
+| `MXROUTE_WEBMAIL_URL` | Customer-facing webmail link |
+| `CLOUDFLARE_API_TOKEN` | Email DNS upsert only |
+| `CLOUDFLARE_ACCOUNT_ID` | Optional zone lookup scoping |
+
+Cron: `/api/cron/email-provision` every 5 minutes (`vercel.json`). Requires `CRON_SECRET`. Without MXroute credentials the cron no-ops safely.
+
+Admin actions: activate domain, retry email provision, resend credentials (`/api/admin/email/[slug]/*`).
+
+Mailbox passwords are never stored in Neon; credentials are generated in memory and sent once via Resend. Cancelled subscriptions suspend mail at provider; mailboxes are retained 30 days (`MAILBOX_RETENTION_DAYS`).
+
 ### AI
 
 `AI_PROVIDER` (default `openai`); `OPENAI_API_KEY`; `GEMINI_API_KEY`; `GEMINI_MIN_REQUEST_INTERVAL_MS` (default 4100); `GEMINI_MAX_429_RETRIES` (default 3).
@@ -99,6 +118,7 @@ GHA secrets referenced in YAML (not in app TS): `FACTORY_GIT_TOKEN`, plus the ke
 |------|----------------|-------------------------|
 | `/api/cron/sms-outreach` | `0 9 * * *` | `enqueueDueSmsBatch()` — writes Neon queue; **does not** send SMS |
 | `/api/cron/replenish-leads` | `0 6 * * *` | `getReplenishStatus()`; maybe `dispatchFactoryWorker()` |
+| `/api/cron/email-provision` | `*/5 * * * *` | `processEmailProvisionBatch()` — MXroute + Cloudflare email DNS |
 
 Auth: `Authorization: Bearer CRON_SECRET` (`isValidCronToken`).
 

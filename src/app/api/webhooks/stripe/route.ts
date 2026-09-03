@@ -11,6 +11,15 @@ import {
 } from "@/billing/stripe";
 import { isUpsellType } from "@/billing/upsells";
 import {
+  isProfessionalEmailPriceId,
+} from "@/email/entitlement";
+import {
+  getEmailServiceBySubscriptionId,
+  markEmailSubscriptionLifecycle,
+  upsertEmailServiceEntitlement,
+} from "@/email/store";
+import { suspendEmailServiceAtProvider } from "@/email/provision-worker";
+import {
   recordCustomerUpsellPurchase,
   upsertCustomerFromCheckout,
 } from "@/customers/store";
@@ -153,6 +162,11 @@ async function handleUpsellCompleted(
     console.error("[stripe-webhook] Upsell notify failed:", notify.error);
   }
 
+  if (upsellTypeRaw === "professional_email") {
+    const { ensureEmailServiceForCustomer } = await import("@/email/orchestrate");
+    await ensureEmailServiceForCustomer(slug);
+  }
+
   return { handled: true, slug, upsell: upsellTypeRaw };
 }
 
@@ -274,6 +288,119 @@ async function handleCheckoutCompleted(
   return handleBaseSubscriptionCompleted(session);
 }
 
+function subscriptionIdFromObject(
+  subscription: Stripe.Subscription | string,
+): string {
+  return typeof subscription === "string" ? subscription : subscription.id;
+}
+
+function isEmailUpsellSubscription(subscription: Stripe.Subscription): boolean {
+  const priceId = subscription.items.data[0]?.price?.id;
+  return isProfessionalEmailPriceId(priceId);
+}
+
+async function handleEmailSubscriptionUpdated(
+  subscription: Stripe.Subscription,
+): Promise<HandlerResult> {
+  if (!isEmailUpsellSubscription(subscription)) {
+    return { handled: false };
+  }
+
+  const existing = await getEmailServiceBySubscriptionId(subscription.id);
+  const slug =
+    existing?.customerSlug ??
+    subscription.metadata?.slug?.trim() ??
+    "";
+
+  if (!slug) {
+    console.error(
+      "[stripe-webhook] Email subscription update without slug",
+      subscription.id,
+    );
+    return { handled: false };
+  }
+
+  if (!existing) {
+    await upsertEmailServiceEntitlement({
+      customerSlug: slug,
+      stripeSubscriptionId: subscription.id,
+      stripePriceId: subscription.items.data[0]?.price?.id ?? null,
+      status: "waiting_for_domain",
+    });
+  }
+
+  const status = subscription.status;
+  if (status === "active" || status === "trialing") {
+    await markEmailSubscriptionLifecycle({
+      stripeSubscriptionId: subscription.id,
+      status: "active",
+    });
+  } else if (
+    status === "past_due" ||
+    status === "unpaid" ||
+    status === "paused"
+  ) {
+    await markEmailSubscriptionLifecycle({
+      stripeSubscriptionId: subscription.id,
+      status: "suspended",
+    });
+    const service = await getEmailServiceBySubscriptionId(subscription.id);
+    if (service) {
+      await suspendEmailServiceAtProvider(service);
+    }
+  }
+
+  return { handled: true, slug };
+}
+
+async function handleEmailSubscriptionDeleted(
+  subscription: Stripe.Subscription,
+): Promise<HandlerResult> {
+  if (!isEmailUpsellSubscription(subscription)) {
+    return { handled: false };
+  }
+
+  const service = await getEmailServiceBySubscriptionId(subscription.id);
+  if (!service) {
+    return { handled: false };
+  }
+
+  await markEmailSubscriptionLifecycle({
+    stripeSubscriptionId: subscription.id,
+    status: "cancelled",
+  });
+  await suspendEmailServiceAtProvider(service);
+
+  return { handled: true, slug: service.customerSlug };
+}
+
+async function handleInvoicePaymentFailed(
+  invoice: Stripe.Invoice,
+): Promise<HandlerResult> {
+  const subscriptionRaw = (
+    invoice as Stripe.Invoice & {
+      subscription?: string | Stripe.Subscription | null;
+    }
+  ).subscription;
+
+  if (!subscriptionRaw) {
+    return { handled: false };
+  }
+
+  const stripe = getStripe();
+  const subscriptionId = subscriptionIdFromObject(subscriptionRaw);
+  const subscription = await stripe.subscriptions.retrieve(subscriptionId);
+
+  if (!isEmailUpsellSubscription(subscription)) {
+    return { handled: false };
+  }
+
+  return handleEmailSubscriptionUpdated({
+    ...subscription,
+    status: "past_due",
+  });
+}
+
 export async function POST(request: Request) {
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET?.trim();
 
@@ -322,6 +449,31 @@ export async function POST(request: Request) {
       // Return 500 so Stripe retries until DB write succeeds.
       return NextResponse.json({ error: message }, { status: 500 });
     }
+  }
+
+  try {
+    if (event.type === "customer.subscription.updated") {
+      const subscription = event.data.object as Stripe.Subscription;
+      const result = await handleEmailSubscriptionUpdated(subscription);
+      return NextResponse.json({ ok: true, ...result, type: event.type });
+    }
+
+    if (event.type === "customer.subscription.deleted") {
+      const subscription = event.data.object as Stripe.Subscription;
+      const result = await handleEmailSubscriptionDeleted(subscription);
+      return NextResponse.json({ ok: true, ...result, type: event.type });
+    }
+
+    if (event.type === "invoice.payment_failed") {
+      const invoice = event.data.object as Stripe.Invoice;
+      const result = await handleInvoicePaymentFailed(invoice);
+      return NextResponse.json({ ok: true, ...result, type: event.type });
+    }
+  } catch (error) {
+    const message =
+      error instanceof Error ? error.message : "Webhook handler failed";
+    console.error("[stripe-webhook]", message);
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 
   return NextResponse.json({ ok: true, handled: false, type: event.type });

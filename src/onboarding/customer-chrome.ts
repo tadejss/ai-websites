@@ -1,4 +1,6 @@
 import { getCachedCustomerSlugSet } from "@/customers/slug-cache";
+import { getBusinessEmailCustomerView } from "@/email/customer-view";
+import type { BusinessEmailCustomerView } from "@/email/types";
 import { getOnboardingBySlug, getOnboardingUrl } from "./store";
 import type { OnboardingStatus } from "./types";
 
@@ -7,6 +9,7 @@ export type CustomerChromeState = {
   onboardingUrl: string | null;
   contactName: string | null;
   onboardingStatus: OnboardingStatus | null;
+  businessEmail: BusinessEmailCustomerView | null;
 };
 
 /** Read-only customer/onboarding state for demo pages. Never writes to DB. */
@@ -22,16 +25,19 @@ export async function getCustomerChromeState(
         onboardingUrl: null,
         contactName: null,
         onboardingStatus: null,
+        businessEmail: null,
       };
     }
 
     const onboarding = await getOnboardingBySlug(slug);
+    const businessEmail = await getBusinessEmailCustomerView(slug);
     if (!onboarding) {
       return {
         isCustomer: true,
         onboardingUrl: null,
         contactName: null,
         onboardingStatus: null,
+        businessEmail,
       };
     }
 
@@ -40,6 +46,7 @@ export async function getCustomerChromeState(
       onboardingUrl: getOnboardingUrl(slug, onboarding.accessToken),
       contactName: onboarding.contactName,
       onboardingStatus: onboarding.status,
+      businessEmail,
     };
   } catch (error) {
     console.warn(
@@ -51,6 +58,7 @@ export async function getCustomerChromeState(
       onboardingUrl: null,
       contactName: null,
       onboardingStatus: null,
+      businessEmail: null,
     };
   }
 }

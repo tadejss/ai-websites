@@ -1,6 +1,11 @@
 import type { LeadWithCustomerState } from "@/customers/merge";
 import type { DemoLifecycleRecord } from "@/demo-lifecycle/types";
 import type { OnboardingRecord, OnboardingStatus } from "@/onboarding/types";
+import type {
+  CustomerDomainRecord,
+  EmailMailboxRecord,
+  EmailServiceRecord,
+} from "@/email/types";
 import type { SmsLeadState, SmsMessageRecord, SmsInboundRecord } from "@/outreach/sms/types";
 
 export const UNIFIED_STAGES = [
@@ -48,7 +53,10 @@ export type AdminActionKind =
   | "approve_onboarding"
   | "retry_publish"
   | "copy_onboarding_link"
-  | "open_demo";
+  | "open_demo"
+  | "activate_domain"
+  | "retry_email_provision"
+  | "resend_email_credentials";
 
 export type AdminAction = {
   kind: AdminActionKind;
@@ -78,6 +86,9 @@ export type AdminEntity = {
   smsState: SmsLeadState | null;
   smsMessages: SmsMessageRecord[];
   smsInbound: SmsInboundRecord[];
+  emailDomain: CustomerDomainRecord | null;
+  emailService: EmailServiceRecord | null;
+  emailMailbox: EmailMailboxRecord | null;
 };
 
 export function unifiedStageLabel(stage: UnifiedStage): string {
@@ -279,6 +290,9 @@ export function buildAdminActions(input: {
   canApprove: boolean;
   canRetryPublish: boolean;
   onboardingUrl: string | null;
+  canActivateDomain?: boolean;
+  canRetryEmailProvision?: boolean;
+  canResendEmailCredentials?: boolean;
 }): AdminAction[] {
   return [
     {
@@ -311,6 +325,21 @@ export function buildAdminActions(input: {
       kind: "open_demo",
       label: "Open demo",
       enabled: true,
+    },
+    {
+      kind: "activate_domain",
+      label: "Activate domain",
+      enabled: Boolean(input.canActivateDomain),
+    },
+    {
+      kind: "retry_email_provision",
+      label: "Retry email provision",
+      enabled: Boolean(input.canRetryEmailProvision),
+    },
+    {
+      kind: "resend_email_credentials",
+      label: "Resend email credentials",
+      enabled: Boolean(input.canResendEmailCredentials),
     },
   ];
 }

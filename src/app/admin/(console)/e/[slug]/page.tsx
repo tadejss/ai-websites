@@ -216,6 +216,62 @@ export default async function AdminEntityJourneyPage({
                 ),
               },
               {
+                id: "business_email",
+                title: "Business Email",
+                stages: [
+                  "purchased",
+                  "onboarding_pending",
+                  "onboarding_submitted",
+                  "ready_for_approval",
+                  "approved_for_publish",
+                  "publishing",
+                  "publish_failed",
+                  "live",
+                ],
+                content: entity.emailService ? (
+                  <div className="space-y-3 text-sm">
+                    <dl className="grid gap-1">
+                      <div>
+                        Domain: {entity.emailDomain?.domain ?? "—"} (
+                        {entity.emailDomain?.status ?? "—"})
+                      </div>
+                      <div>
+                        Mailbox: {entity.emailMailbox?.emailAddress ?? "—"}
+                      </div>
+                      <div>Provider: {entity.emailService.provider}</div>
+                      <div>Status: {entity.emailService.status}</div>
+                      <div>
+                        Stripe sub:{" "}
+                        {entity.emailService.stripeSubscriptionId ?? "—"}
+                      </div>
+                      <div>
+                        Created: {formatAdminDate(entity.emailService.createdAt)}
+                      </div>
+                    </dl>
+                    {entity.emailService.lastError ? (
+                      <p className="rounded border border-red-500/30 bg-red-500/10 px-2 py-1 text-xs text-red-400">
+                        {entity.emailService.lastError}
+                      </p>
+                    ) : null}
+                    <AdminActionDispatcher
+                      slug={slug}
+                      actions={entity.actions.filter((action) =>
+                        [
+                          "activate_domain",
+                          "retry_email_provision",
+                          "resend_email_credentials",
+                        ].includes(action.kind),
+                      )}
+                      layout="inline"
+                    />
+                  </div>
+                ) : (
+                  <p className="text-sm text-[var(--admin-muted)]">
+                    No Business Email service
+                  </p>
+                ),
+              },
+              {
                 id: "customer",
                 title: "Customer",
                 stages: ["live", "purchased"],

@@ -106,6 +106,15 @@ export async function processOnboardingSubmission(
     processedAt: new Date(),
   });
 
+  const desiredDomain = existing.answers.desiredDomain;
+  if (desiredDomain) {
+    const { syncEmailServiceFromOnboarding } = await import("@/email/orchestrate");
+    await syncEmailServiceFromOnboarding({
+      customerSlug: slug,
+      desiredDomain,
+    });
+  }
+
   return { onboarding, alreadyProcessed: false };
 }
 

@@ -23,6 +23,7 @@ import {
   buildEntityTimeline,
   resolveUnifiedStage,
 } from "@/admin/entity";
+import { getEmailServiceWithDomain } from "@/email/store";
 
 export async function loadAdminEntity(slug: string): Promise<AdminEntity | null> {
   const lead = await getLeadWithCustomerState(slug);
@@ -56,6 +57,10 @@ export async function loadAdminEntity(slug: string): Promise<AdminEntity | null>
   const onboardingUrl =
     onboarding != null ? getOnboardingUrl(slug, onboarding.accessToken) : null;
 
+  const emailBundle = isCustomerLead
+    ? await getEmailServiceWithDomain(slug)
+    : null;
+
   const stage = resolveUnifiedStage({
     isCustomer: isCustomerLead,
     onboardingStatus: onboarding?.status ?? null,
@@ -83,6 +88,9 @@ export async function loadAdminEntity(slug: string): Promise<AdminEntity | null>
       ? canRetryCustomerPublish(onboarding.status)
       : false,
     onboardingUrl,
+    canActivateDomain: emailBundle?.domain?.status === "pending",
+    canRetryEmailProvision: emailBundle?.service.status === "failed",
+    canResendEmailCredentials: emailBundle?.service.status === "active",
   });
 
   return {
@@ -106,6 +114,9 @@ export async function loadAdminEntity(slug: string): Promise<AdminEntity | null>
     smsState,
     smsMessages,
     smsInbound,
+    emailDomain: emailBundle?.domain ?? null,
+    emailService: emailBundle?.service ?? null,
+    emailMailbox: emailBundle?.mailbox ?? null,
   };
 }
 

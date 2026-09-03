@@ -179,6 +179,39 @@ export function AdminActionDispatcher({
           Open demo ↗
         </a>
       ) : null}
+      {actionMap.get("activate_domain")?.enabled
+        ? inlineButton(
+            actionMap.get("activate_domain")!,
+            () =>
+              void runAction(
+                "Domain activated",
+                `/api/admin/email/${slug}/activate-domain`,
+              ),
+            "default",
+          )
+        : null}
+      {actionMap.get("retry_email_provision")?.enabled
+        ? inlineButton(
+            actionMap.get("retry_email_provision")!,
+            () =>
+              void runAction(
+                "Email provisioning queued",
+                `/api/admin/email/${slug}/retry-provision`,
+              ),
+            "destructive",
+          )
+        : null}
+      {actionMap.get("resend_email_credentials")?.enabled
+        ? inlineButton(
+            actionMap.get("resend_email_credentials")!,
+            () =>
+              void runAction(
+                "Credentials sent",
+                `/api/admin/email/${slug}/resend-credentials`,
+              ),
+            "secondary",
+          )
+        : null}
     </div>
   );
 }

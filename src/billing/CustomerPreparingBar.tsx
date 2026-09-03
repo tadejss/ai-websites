@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { extractOwnerFirstName } from "@/billing/owner-first-name";
+import { ACTIVATING_STATUSES, type BusinessEmailCustomerView } from "@/email/types";
 import type { OnboardingStatus } from "@/onboarding/types";
 
 type Props = {
@@ -11,7 +12,34 @@ type Props = {
   companyName?: string | null;
   brandHighlight?: string | null;
   contactName?: string | null;
+  businessEmail?: BusinessEmailCustomerView | null;
 };
+
+function businessEmailSubtitle(email: BusinessEmailCustomerView): string | null {
+  const address = email.emailAddress ?? "info@tvoja-domena.si";
+
+  switch (email.status) {
+    case "waiting_for_domain":
+      return "Poslovni e-mail — čakamo na tvojo domeno.";
+    case "pending":
+    case "provisioning":
+    case "dns_configuring":
+    case "verifying":
+      return `Aktiviramo ${address} …`;
+    case "active":
+      return email.webmailUrl
+        ? `Poslovni e-mail: ${address} · Webmail`
+        : `Poslovni e-mail: ${address}`;
+    case "failed":
+      return "Pri nastavitvi e-pošte je prišlo do težave — rešujemo.";
+    case "suspended":
+      return "Poslovni e-mail je začasno ustavljen zaradi plačila.";
+    case "cancelled":
+      return "Naročnina na poslovni e-mail je preklicana.";
+    default:
+      return null;
+  }
+}
 
 export function CustomerPreparingBar({
   slug,
@@ -20,8 +48,9 @@ export function CustomerPreparingBar({
   companyName,
   brandHighlight,
   contactName,
+  businessEmail,
 }: Props) {
-  if (onboardingStatus === "live") {
+  if (onboardingStatus === "live" && !businessEmail) {
     return null;
   }
 
@@ -59,6 +88,26 @@ export function CustomerPreparingBar({
       : "Prejeli smo tvoje podatke.";
     subtitle =
       "Pregledamo vsebino in pripravimo končno različico. Lahko še vedno urediš obrazec.";
+  } else if (onboardingStatus === "live") {
+    headline = "Tvoja stran je objavljena.";
+    subtitle = "Hvala, ker si z nami.";
+  }
+
+  const emailSubtitle = businessEmail
+    ? businessEmailSubtitle(businessEmail)
+    : null;
+
+  const showOnboardingCta =
+    onboardingUrl &&
+    onboardingStatus !== "approved_for_publish" &&
+    onboardingStatus !== "publishing" &&
+    onboardingStatus !== "live";
+
+  const showEmailWebmail =
+    businessEmail?.status === "active" && businessEmail.webmailUrl;
+
+  if (onboardingStatus === "live" && !emailSubtitle) {
+    return null;
   }
 
   return (
@@ -70,10 +119,24 @@ export function CustomerPreparingBar({
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold tracking-tight">{headline}</p>
               <p className="mt-0.5 text-xs text-zinc-400">{subtitle}</p>
+              {emailSubtitle ? (
+                <p className="mt-2 text-xs text-lime-200/90">
+                  {showEmailWebmail ? (
+                    <a
+                      href={businessEmail!.webmailUrl!}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline underline-offset-2 hover:text-lime-100"
+                    >
+                      {emailSubtitle}
+                    </a>
+                  ) : (
+                    emailSubtitle
+                  )}
+                </p>
+              ) : null}
             </div>
-            {onboardingUrl &&
-            onboardingStatus !== "approved_for_publish" &&
-            onboardingStatus !== "publishing" ? (
+            {showOnboardingCta ? (
               <Link
                 href={onboardingUrl}
                 className="inline-flex shrink-0 items-center justify-center rounded-full bg-lime-300 px-5 py-2.5 text-sm font-semibold text-zinc-950 transition-colors hover:bg-lime-200"
@@ -87,6 +150,20 @@ export function CustomerPreparingBar({
               >
                 Kontaktiraj nas
               </a>
+            ) : showEmailWebmail ? (
+              <a
+                href={businessEmail!.webmailUrl!}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex shrink-0 items-center justify-center rounded-full bg-lime-300 px-5 py-2.5 text-sm font-semibold text-zinc-950 transition-colors hover:bg-lime-200"
+              >
+                Odpri webmail
+              </a>
+            ) : businessEmail &&
+              ACTIVATING_STATUSES.includes(businessEmail.status) ? (
+              <span className="inline-flex shrink-0 items-center justify-center rounded-full bg-white/10 px-5 py-2.5 text-sm font-semibold text-zinc-300">
+                E-pošta v pripravi
+              </span>
             ) : null}
           </div>
         </div>

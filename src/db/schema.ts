@@ -86,6 +86,78 @@ CREATE TABLE IF NOT EXISTS customer_publish_lease (
   expires_at TIMESTAMPTZ NOT NULL,
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+CREATE TABLE IF NOT EXISTS customer_domains (
+  id BIGSERIAL PRIMARY KEY,
+  customer_slug TEXT NOT NULL REFERENCES customers (slug) ON DELETE CASCADE,
+  domain TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'pending',
+  cloudflare_zone_id TEXT,
+  source TEXT NOT NULL DEFAULT 'onboarding',
+  activated_at TIMESTAMPTZ,
+  last_error TEXT,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS customer_domains_slug_domain_uidx
+  ON customer_domains (customer_slug, domain);
+
+CREATE INDEX IF NOT EXISTS customer_domains_status_idx
+  ON customer_domains (status);
+
+CREATE TABLE IF NOT EXISTS customer_email_services (
+  id BIGSERIAL PRIMARY KEY,
+  customer_slug TEXT NOT NULL UNIQUE REFERENCES customers (slug) ON DELETE CASCADE,
+  domain_id BIGINT REFERENCES customer_domains (id) ON DELETE SET NULL,
+  stripe_subscription_id TEXT,
+  stripe_price_id TEXT,
+  provider TEXT NOT NULL DEFAULT 'mxroute',
+  status TEXT NOT NULL DEFAULT 'not_requested',
+  last_error TEXT,
+  retry_count INT NOT NULL DEFAULT 0,
+  next_retry_at TIMESTAMPTZ,
+  provisioning_step TEXT,
+  password_delivered_at TIMESTAMPTZ,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  suspended_at TIMESTAMPTZ,
+  cancelled_at TIMESTAMPTZ
+);
+
+CREATE INDEX IF NOT EXISTS customer_email_services_status_retry_idx
+  ON customer_email_services (status, next_retry_at);
+
+CREATE TABLE IF NOT EXISTS customer_email_mailboxes (
+  id BIGSERIAL PRIMARY KEY,
+  email_service_id BIGINT NOT NULL REFERENCES customer_email_services (id) ON DELETE CASCADE,
+  domain_id BIGINT NOT NULL REFERENCES customer_domains (id) ON DELETE CASCADE,
+  local_part TEXT NOT NULL DEFAULT 'info',
+  email_address TEXT NOT NULL,
+  provider_mailbox_id TEXT,
+  quota_mb INT,
+  status TEXT NOT NULL DEFAULT 'pending',
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  suspended_at TIMESTAMPTZ,
+  cancelled_at TIMESTAMPTZ
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS customer_email_mailboxes_domain_local_uidx
+  ON customer_email_mailboxes (domain_id, local_part);
+
+CREATE INDEX IF NOT EXISTS customer_email_mailboxes_service_idx
+  ON customer_email_mailboxes (email_service_id);
+
+CREATE TABLE IF NOT EXISTS customer_email_provision_lease (
+  slug TEXT PRIMARY KEY REFERENCES customers (slug) ON DELETE CASCADE,
+  run_id TEXT NOT NULL,
+  worker_id TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'claimed',
+  claimed_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  expires_at TIMESTAMPTZ NOT NULL,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
 `.trim();
 
 export const SMS_SCHEMA_SQL = `
