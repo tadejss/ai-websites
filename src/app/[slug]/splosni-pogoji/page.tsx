@@ -9,6 +9,7 @@ import {
   legalStaticParams,
 } from "@/privacy/legal-page-context";
 import { siteSlugs } from "@/content/sites";
+import { withBrandIcons } from "@/lib/branding";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -24,14 +25,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const { siteConfig } = getLegalPageContext("terms", slug);
 
-    return {
-      title: legalPageTitle("terms", siteConfig),
-      description: legalPageDescription("terms", siteConfig),
-      robots: { index: true, follow: true },
-      alternates: {
-        canonical: `/${slug}/splosni-pogoji`,
+    return withBrandIcons(
+      {
+        title: legalPageTitle("terms", siteConfig),
+        description: legalPageDescription("terms", siteConfig),
+        robots: { index: true, follow: true },
+        alternates: {
+          canonical: `/${slug}/splosni-pogoji`,
+        },
       },
-    };
+      siteConfig,
+    );
   } catch {
     return { title: "Stran ni najdena" };
   }

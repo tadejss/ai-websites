@@ -1,8 +1,10 @@
 import { BeautyButton } from "./BeautyButton";
 import { buttonRadiusClass, ICON_RADIUS_CLASS } from "@/catalog/look-styles";
 import { MobileNavMenu } from "@/components/ui/MobileNavMenu";
+import { SiteBrandMark } from "@/components/branding/SiteBrandMark";
 import { Icon } from "@/content/icons";
 import { formatBrandName } from "@/content/brand-name";
+import { getBrandLogo } from "@/lib/branding";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -12,12 +14,20 @@ type Props = {
 export function BeautyHeader({ siteConfig }: Props) {
   const { brand, nav, contact } = siteConfig;
   const brandName = formatBrandName(brand);
+  const hasLogo = Boolean(getBrandLogo(siteConfig));
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-background/85 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6">
         <a href="#" className="group flex items-center gap-3">
-          {!brand.hideMonogram ? (
+          <SiteBrandMark
+            config={siteConfig}
+            alt={brandName}
+            width={40}
+            height={40}
+            className={ICON_RADIUS_CLASS}
+          />
+          {!hasLogo && !brand.hideMonogram ? (
             <span className={`font-display flex size-10 items-center justify-center border border-accent/15 bg-surface text-lg text-accent ${ICON_RADIUS_CLASS}`}>
               {brand.prefix.charAt(0)}
             </span>

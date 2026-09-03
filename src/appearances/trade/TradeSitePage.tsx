@@ -4,7 +4,10 @@ import { PricingSection } from "@/components/sections/PricingSection";
 import { LegalFooterLinks } from "@/components/legal/LegalFooterLinks";
 import { Button } from "@/components/ui/Button";
 import { MobileNavMenu } from "@/components/ui/MobileNavMenu";
+import { SiteBrandMark } from "@/components/branding/SiteBrandMark";
 import { Icon } from "@/content/icons";
+import { formatBrandName } from "@/content/brand-name";
+import { getBrandLogo } from "@/lib/branding";
 import { TradeBenefitsSection } from "./components/TradeBenefitsSection";
 import { TradeHeroSection } from "./components/TradeHeroSection";
 import { TradeServicesSection } from "./components/TradeServicesSection";
@@ -12,15 +15,26 @@ import type { AppearancePageProps } from "../types";
 
 export function TradeSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
   const { brand, nav, contact, footer } = siteConfig;
+  const brandName = formatBrandName(brand);
+  const hasLogo = Boolean(getBrandLogo(siteConfig));
 
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#" className="group flex items-center gap-2.5">
-            <span className="flex size-9 items-center justify-center rounded-lg bg-accent text-background">
-              <Icon name="building" />
-            </span>
+            <SiteBrandMark
+              config={siteConfig}
+              alt={brandName}
+              width={36}
+              height={36}
+              className="rounded-lg"
+            />
+            {!hasLogo ? (
+              <span className="flex size-9 items-center justify-center rounded-lg bg-accent text-background">
+                <Icon name="building" />
+              </span>
+            ) : null}
             <span className="font-display text-lg font-semibold tracking-tight text-foreground">
               {brand.prefix}{" "}
               <span className="text-accent transition-colors group-hover:text-accent-hover">

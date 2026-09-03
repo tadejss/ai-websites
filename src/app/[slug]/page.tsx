@@ -5,6 +5,7 @@ import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
 import type { SiteConfig } from "@/content/types/site";
 import { toAbsoluteUrl } from "@/site-url";
+import { withBrandIcons } from "@/lib/branding";
 
 type Props = {
   params: Promise<{
@@ -48,7 +49,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
 
   try {
-    return buildMetadata(slug, getSiteConfig(slug));
+    const config = getSiteConfig(slug);
+    return withBrandIcons(buildMetadata(slug, config), config);
   } catch {
     return {
       title: "Page not found",

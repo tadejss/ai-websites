@@ -11,6 +11,7 @@ import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
 import { getPurchasedUpsellTypes } from "@/leads/upsell-store";
 import { UpsellOffers } from "./UpsellOffers";
+import { withBrandIcons } from "@/lib/branding";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -33,10 +34,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const config = getSiteConfig(slug);
     const name = `${config.brand.prefix} ${config.brand.highlight}`.trim();
-    return {
-      title: `Dodatki – ${name}`,
-      robots: { index: false, follow: false },
-    };
+    return withBrandIcons(
+      {
+        title: `Dodatki – ${name}`,
+        robots: { index: false, follow: false },
+      },
+      config,
+    );
   } catch {
     return { title: "Dodatki" };
   }

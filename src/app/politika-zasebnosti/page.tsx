@@ -7,19 +7,23 @@ import {
   legalPageDescription,
   legalPageTitle,
 } from "@/privacy/legal-page-context";
+import { withBrandIcons } from "@/lib/branding";
 
 export async function generateMetadata(): Promise<Metadata> {
   try {
     const { siteConfig } = getLegalPageContext("privacy");
 
-    return {
-      title: legalPageTitle("privacy", siteConfig),
-      description: legalPageDescription("privacy", siteConfig),
-      robots: { index: true, follow: true },
-      alternates: {
-        canonical: "/politika-zasebnosti",
+    return withBrandIcons(
+      {
+        title: legalPageTitle("privacy", siteConfig),
+        description: legalPageDescription("privacy", siteConfig),
+        robots: { index: true, follow: true },
+        alternates: {
+          canonical: "/politika-zasebnosti",
+        },
       },
-    };
+      siteConfig,
+    );
   } catch {
     return { title: "Stran ni najdena" };
   }

@@ -255,6 +255,17 @@ const contactFaqItemSchema = z.object({
   answer: z.string(),
 });
 
+const brandingPathSchema = z
+  .string()
+  .refine((path) => path.startsWith("/"), "branding paths must start with /");
+
+const brandingSchema = z
+  .object({
+    logo: brandingPathSchema.optional(),
+    icon: brandingPathSchema.optional(),
+  })
+  .optional();
+
 const lookIdSchema = z.enum(lookIds as [string, ...string[]]).optional();
 
 const siteConfigSchema = z.object({
@@ -271,6 +282,7 @@ const siteConfigSchema = z.object({
     highlight: z.string(),
     hideMonogram: z.boolean().optional(),
   }),
+  branding: brandingSchema,
   metadata: z.object({
     title: z.string(),
     description: z.string(),

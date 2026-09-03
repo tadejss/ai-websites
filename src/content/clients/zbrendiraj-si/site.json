@@ -19,6 +19,10 @@
     "highlight": "",
     "hideMonogram": true
   },
+  "branding": {
+    "logo": "/brand/zbrendiraj-si/logo.png",
+    "icon": "/brand/zbrendiraj-si/icon.png"
+  },
   "metadata": {
     "title": "Zbrendiraj.si — Tvoj biznis, končno online.",
     "description": "Profesionalna spletna stran za tvoj biznis — brez kompliciranja, dolgih rokov in nepotrebnih stroškov."

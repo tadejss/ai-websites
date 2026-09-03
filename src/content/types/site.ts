@@ -272,6 +272,11 @@ export type SiteConfig = {
     highlight: string;
     hideMonogram?: boolean;
   };
+  /** Optional per-site logo (header) and icon (favicon). Paths are public URLs. */
+  branding?: {
+    logo?: string;
+    icon?: string;
+  };
   metadata: {
     title: string;
     description: string;

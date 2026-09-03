@@ -132,6 +132,9 @@
     "brand": {
       "$ref": "#/$defs/Brand"
     },
+    "branding": {
+      "$ref": "#/$defs/Branding"
+    },
     "metadata": {
       "$ref": "#/$defs/Metadata"
     },
@@ -463,6 +466,20 @@
         },
         "hideMonogram": {
           "type": "boolean"
+        }
+      }
+    },
+    "Branding": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "logo": {
+          "type": "string",
+          "description": "Header logo image URL (e.g. /brand/<slug>/logo.png). When omitted, no logo is shown in the header."
+        },
+        "icon": {
+          "type": "string",
+          "description": "Square favicon / apple-touch icon URL (e.g. /brand/<slug>/icon.png). When omitted, Zbrendiraj.si icon is used."
         }
       }
     },

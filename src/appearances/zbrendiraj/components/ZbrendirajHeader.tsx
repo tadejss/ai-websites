@@ -1,5 +1,6 @@
 import { Icon } from "@/content/icons";
 import { MobileNavMenu } from "@/components/ui/MobileNavMenu";
+import { SiteBrandMark } from "@/components/branding/SiteBrandMark";
 import { formatBrandName } from "@/content/brand-name";
 import { ZbrendirajButton } from "./ZbrendirajButton";
 import type { SiteConfig } from "@/content/types/site";
@@ -28,8 +29,17 @@ export function ZbrendirajHeader({ siteConfig, siteSlug }: Props) {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6">
-        <a href="#" className="font-display text-2xl leading-none text-white">
-          {brandName}
+        <a href="#" className="flex items-center gap-2.5">
+          <SiteBrandMark
+            config={siteConfig}
+            alt={brandName}
+            width={36}
+            height={36}
+            className="rounded-xl"
+          />
+          <span className="font-display text-2xl leading-none text-white">
+            {brandName}
+          </span>
         </a>
 
         <div className="hidden items-center gap-10 lg:flex">

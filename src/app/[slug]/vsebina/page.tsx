@@ -9,6 +9,7 @@ import {
   isValidOnboardingToken,
 } from "@/onboarding/store";
 import { OnboardingForm } from "./OnboardingForm";
+import { withBrandIcons } from "@/lib/branding";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -23,10 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const config = getSiteConfig(slug);
     const name = `${config.brand.prefix} ${config.brand.highlight}`.trim();
-    return {
-      title: `Podatki za stran – ${name}`,
-      robots: { index: false, follow: false },
-    };
+    return withBrandIcons(
+      {
+        title: `Podatki za stran – ${name}`,
+        robots: { index: false, follow: false },
+      },
+      config,
+    );
   } catch {
     return {
       title: "Podatki za stran",

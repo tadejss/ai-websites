@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ZbrendirajFaqContent } from "@/appearances/zbrendiraj/components/ZbrendirajFaqContent";
 import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
+import { withBrandIcons } from "@/lib/branding";
 import { LegalPageLayout } from "@/privacy/components/LegalPageLayout";
 
 type Props = {
@@ -30,15 +31,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       return { title: "Stran ni najdena" };
     }
 
-    return {
-      title: `Pogosta vprašanja – ${siteConfig.business.name}`,
-      description:
-        "Odgovori na pogosta vprašanja o naročnini, domeni, izdelavi in vzdrževanju spletne strani na Zbrendiraj.si.",
-      robots: { index: true, follow: true },
-      alternates: {
-        canonical: `/${slug}/pogosta-vprasanja`,
+    return withBrandIcons(
+      {
+        title: `Pogosta vprašanja – ${siteConfig.business.name}`,
+        description:
+          "Odgovori na pogosta vprašanja o naročnini, domeni, izdelavi in vzdrževanju spletne strani na Zbrendiraj.si.",
+        robots: { index: true, follow: true },
+        alternates: {
+          canonical: `/${slug}/pogosta-vprasanja`,
+        },
       },
-    };
+      siteConfig,
+    );
   } catch {
     return { title: "Stran ni najdena" };
   }

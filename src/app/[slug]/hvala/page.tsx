@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getSiteConfig } from "@/content/get-site-config";
 import { siteSlugs } from "@/content/sites";
 import { getCustomerChromeState } from "@/onboarding/customer-chrome";
+import { withBrandIcons } from "@/lib/branding";
 
 type Props = {
   params: Promise<{
@@ -21,10 +22,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const config = getSiteConfig(slug);
     const name = `${config.brand.prefix} ${config.brand.highlight}`.trim();
-    return {
-      title: `Hvala – ${name}`,
-      robots: { index: false, follow: false },
-    };
+    return withBrandIcons(
+      {
+        title: `Hvala – ${name}`,
+        robots: { index: false, follow: false },
+      },
+      config,
+    );
   } catch {
     return { title: "Hvala" };
   }
