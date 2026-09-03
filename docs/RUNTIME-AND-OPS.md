@@ -104,6 +104,19 @@ Mailbox passwords are never stored in Neon; credentials are generated in memory 
 
 `AI_PROVIDER` (default `openai`); `OPENAI_API_KEY`; `GEMINI_API_KEY`; `GEMINI_MIN_REQUEST_INTERVAL_MS` (default 4100); `GEMINI_MAX_429_RETRIES` (default 3).
 
+### Grok QA
+
+| Variable | Default | Where |
+|----------|---------|-------|
+| `XAI_API_KEY` | unset | Optional; skip QA if missing |
+| `GROK_MODEL` | `grok-4.6` | `src/qa/config.ts` |
+| `GROK_QA_ENABLED` | `true` | Disable enqueue + drain |
+| `GROK_QA_MAX_ATTEMPTS` | `2` | Bounded retries |
+| `GROK_QA_MAX_PER_WORKER_RUN` | `20` | Factory worker drain cap |
+| `GROK_QA_FAIL_ON_MEDIUM` | `false` | Policy |
+
+Cron: `/api/cron/grok-qa` every 5 minutes. Admin: `POST /api/admin/qa/[slug]/retry`. Details: [GROK-QA.md](./GROK-QA.md).
+
 ### Optional / platform
 
 `SITE_SLUG` (local); `SITE_URL` / `NEXT_PUBLIC_SITE_URL` (`src/site-url.ts`); `VERCEL`, `VERCEL_URL`; `BLOB_STORE_ID`, `VERCEL_OIDC_TOKEN`; `DEMO_VIEW_DEDUPE_HOURS`; `NODE_ENV`; `MAX_GENERATIONS_PER_RUN` (batch scripts).
@@ -119,6 +132,7 @@ Mailbox passwords are never stored in Neon; credentials are generated in memory 
 | `/api/cron/sms-outreach` | `0 9 * * *` | `enqueueDueSmsBatch()` — writes Neon queue; **does not** send SMS |
 | `/api/cron/replenish-leads` | `0 6 * * *` | `getReplenishStatus()`; maybe `dispatchFactoryWorker()` |
 | `/api/cron/email-provision` | `*/5 * * * *` | `processEmailProvisionBatch()` — MXroute + Cloudflare email DNS |
+| `/api/cron/grok-qa` | `*/5 * * * *` | `processQaBatch()` — Grok QA drain; **does not** write git |
 
 Auth: `Authorization: Bearer CRON_SECRET` (`isValidCronToken`).
 

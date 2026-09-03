@@ -15,6 +15,10 @@
     {
       "path": "/api/cron/email-provision",
       "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/cron/grok-qa",
+      "schedule": "*/5 * * * *"
     }
   ]
 }

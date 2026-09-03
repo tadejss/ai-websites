@@ -35,6 +35,7 @@ Read this first. Then open the one linked file for the task. Do not rediscover t
 | Env, crons, auth, gateway, deploy, CLI env | [RUNTIME-AND-OPS.md](./RUNTIME-AND-OPS.md) |
 | Rules you must not break | [INVARIANTS.md](./INVARIANTS.md) |
 | Term A vs term B | [GLOSSARY.md](./GLOSSARY.md) |
+| Grok QA of a generated demo | [GROK-QA.md](./GROK-QA.md) |
 | Stripe prices, webhook, upsells | [CHECKOUT.md](./CHECKOUT.md) |
 | Onboarding statuses, APIs, approve → publish | [ONBOARDING.md](./ONBOARDING.md) |
 | SMS queue, gateway, opt-out | [SMS_OUTREACH.md](./SMS_OUTREACH.md) (replenish section is stale — use FACTORY.md) |
@@ -62,6 +63,7 @@ Next.js in this repo is **16.3.0**. Docs live in `node_modules/next/dist/docs/`.
 | Discovery matrix / regions | `src/leads/discovery-matrix.ts` | `discovery-regions.ts`, `discovery-professions.ts` |
 | SiteConfig schema | `src/content/site-config.schema.json` | `validate-site-config.ts` + generator + a real `site.json` |
 | Admin UI | `src/app/admin/` | auth: `src/middleware.ts`, `src/lib/auth.ts` |
+| Grok QA | `src/qa/` | [GROK-QA.md](./GROK-QA.md); do not hook `parseAndValidateSiteConfig` |
 | SMS eligibility / opt-out | `src/outreach/sms/eligibility.ts` | `opt-out.ts`, `inbound.ts` |
 
 ---
@@ -80,6 +82,7 @@ Next.js in this repo is **16.3.0**. Docs live in `node_modules/next/dist/docs/`.
 | Discovery progress | Neon `factory_discovery_progress` when `DATABASE_URL` set; else `data/lead-discovery-progress.json` | factory worker / `replenish-leads` |
 | Factory leases / run metrics | Neon `factory_*` | `src/factory/lease.ts` |
 | Demo views | Neon `demo_lifecycle` | `recordDemoView` on `/{slug}` |
+| Grok QA findings | Neon `qa_runs` | `src/qa/` after generate; observational |
 | Production images | Vercel Blob (fallback `public/` locally) | image pipeline + onboarding upload |
 | Image pool cache / Unsplash limiter | gitignored `data/*.json` | local/GHA generation |
 | Money | Stripe | Checkout Sessions; webhook is the app's commit point |

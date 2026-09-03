@@ -3,6 +3,7 @@ import {
   CUSTOMER_SCHEMA_SQL,
   DEMO_LIFECYCLE_SCHEMA_SQL,
   FACTORY_SCHEMA_SQL,
+  QA_SCHEMA_SQL,
   SMS_SCHEMA_SQL,
 } from "./schema";
 
@@ -20,7 +21,7 @@ export async function ensureCustomerSchema(): Promise<void> {
   if (!schemaReady) {
     schemaReady = (async () => {
       const statements =
-        `${CUSTOMER_SCHEMA_SQL};\n${SMS_SCHEMA_SQL};\n${FACTORY_SCHEMA_SQL};\n${DEMO_LIFECYCLE_SCHEMA_SQL}`
+        `${CUSTOMER_SCHEMA_SQL};\n${SMS_SCHEMA_SQL};\n${FACTORY_SCHEMA_SQL};\n${DEMO_LIFECYCLE_SCHEMA_SQL};\n${QA_SCHEMA_SQL}`
           .split(";")
           .map((part) => part.trim())
           .filter((part) => part.length > 0);

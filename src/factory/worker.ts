@@ -29,6 +29,7 @@ import {
   type WorkerRunStatus,
 } from "./lease";
 import { publishGeneratedDemos, type PublishResult } from "./publish";
+import { processQaBatch } from "@/qa/worker";
 
 export type FactoryWorkerResult = {
   status: WorkerRunStatus;
@@ -57,6 +58,7 @@ export type FactoryWorkerOptions = {
   runPublish?: typeof publishGeneratedDemos;
   claimLease?: typeof claimWorkerLease;
   releaseLease?: typeof releaseWorkerLease;
+  runQa?: typeof processQaBatch;
 };
 
 function log(message: string, extra?: Record<string, unknown>): void {
@@ -70,6 +72,22 @@ function log(message: string, extra?: Record<string, unknown>): void {
 function gitHubNotice(message: string, data: Record<string, unknown>): void {
   if (process.env.GITHUB_ACTIONS === "true") {
     console.log(`::notice::${message} ${JSON.stringify(data)}`);
+  }
+}
+
+async function runQaSafely(
+  runQa: typeof processQaBatch,
+  workerId: string,
+): Promise<void> {
+  try {
+    const qa = await runQa({ workerId: `${workerId}-qa` });
+    if (qa.processed > 0) {
+      log("qa batch finished", qa);
+    }
+  } catch (error) {
+    log("qa batch failed (non-fatal)", {
+      error: error instanceof Error ? error.message : String(error),
+    });
   }
 }
 
@@ -106,7 +124,10 @@ async function createFromLeadWithLock(
   }
 
   try {
-    const result = await createClientFromLead(slug);
+    const result = await createClientFromLead(slug, {
+      qaTrigger: "factory",
+      factoryRunId: runId,
+    });
     if (result.outcome === "created") {
       await markGenerationLock(slug, "generated");
     } else {
@@ -349,6 +370,9 @@ export async function runFactoryWorker(
 
     const runPublish = options.runPublish ?? publishGeneratedDemos;
     publish = await runPublish();
+
+    const runQa = options.runQa ?? processQaBatch;
+    await runQaSafely(runQa, workerId);
 
     if (publish.outcome === "failed") {
       const locksReleased = await releaseGenerationLocksForRun(runId);

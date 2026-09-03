@@ -321,3 +321,52 @@ CREATE TABLE IF NOT EXISTS demo_view_dedupe (
 CREATE INDEX IF NOT EXISTS demo_view_dedupe_expires_idx
   ON demo_view_dedupe (expires_at);
 `.trim();
+
+/**
+ * Observational Grok QA runs. Immutable after completed/failed.
+ * Never overwrites git content; never drives lead/SMS status.
+ */
+export const QA_SCHEMA_SQL = `
+CREATE TABLE IF NOT EXISTS qa_runs (
+  id TEXT PRIMARY KEY,
+  slug TEXT NOT NULL,
+  content_hash TEXT NOT NULL,
+  factory_run_id TEXT,
+  trigger TEXT NOT NULL,
+  run_status TEXT NOT NULL,
+  policy_status TEXT,
+  score INT,
+  summary TEXT,
+  result_json JSONB,
+  model TEXT,
+  input_tokens INT,
+  output_tokens INT,
+  estimated_cost_usd NUMERIC,
+  attempt INT NOT NULL DEFAULT 0,
+  max_attempts INT NOT NULL DEFAULT 2,
+  next_retry_at TIMESTAMPTZ,
+  last_error TEXT,
+  started_at TIMESTAMPTZ,
+  completed_at TIMESTAMPTZ,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS qa_runs_slug_created_idx
+  ON qa_runs (slug, created_at DESC);
+
+CREATE INDEX IF NOT EXISTS qa_runs_status_retry_idx
+  ON qa_runs (run_status, next_retry_at);
+
+CREATE INDEX IF NOT EXISTS qa_runs_slug_hash_idx
+  ON qa_runs (slug, content_hash);
+
+CREATE TABLE IF NOT EXISTS qa_run_lease (
+  slug TEXT PRIMARY KEY,
+  run_id TEXT NOT NULL,
+  worker_id TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'claimed',
+  claimed_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  expires_at TIMESTAMPTZ NOT NULL,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+`.trim();

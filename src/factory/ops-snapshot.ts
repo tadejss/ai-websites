@@ -12,6 +12,7 @@ import {
   countSentToday,
   getSmsQueueStalenessHours,
 } from "@/outreach/sms/store";
+import { countQaRunsByStatus } from "@/qa/store";
 import { getFactoryWorkerConfig } from "./config";
 import {
   getDiscoveryProgressUpdatedAt,
@@ -88,6 +89,10 @@ export type FactoryOpsSnapshot = {
     activeLeaseRows: Awaited<ReturnType<typeof listActiveCustomerPublishLeases>>;
   };
   demoLifecycle: Awaited<ReturnType<typeof getDemoLifecycleOpsAggregates>>;
+  grokQa: {
+    pending: number;
+    failed: number;
+  };
   sms: {
     gatewayConfigured: boolean;
     sentToday: number;
@@ -219,6 +224,7 @@ export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
         oldestGeneratedUnpublished: null,
         oldestNeverViewed: null,
       },
+      grokQa: { pending: 0, failed: 0 },
       sms: {
         gatewayConfigured: isSmsGatewayConfigured(),
         sentToday: 0,
@@ -255,6 +261,7 @@ export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
     queueStaleHours,
     lastSuccessfulRun,
     latestErrorRun,
+    grokQaCounts,
   ] = await Promise.all([
     getActiveWorkerLease(),
     getRecentWorkerRuns(RECENT_RUNS_LIMIT),
@@ -273,6 +280,7 @@ export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
     getSmsQueueStalenessHours(),
     getLastSuccessfulWorkerRun(),
     getLatestWorkerRunWithError(),
+    countQaRunsByStatus(),
   ]);
 
   const cooldownCheck = shouldSkipForCooldown({
@@ -337,6 +345,7 @@ export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
       activeLeaseRows: activePublishLeases,
     },
     demoLifecycle,
+    grokQa: grokQaCounts,
     sms: {
       gatewayConfigured: isSmsGatewayConfigured(),
       sentToday,

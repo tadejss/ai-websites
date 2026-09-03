@@ -3,6 +3,7 @@ import { createLeadEnrichedDetailsSource } from "@/sources/google-places-source"
 import { isSmsGenerationCandidate } from "@/outreach/sms/relevance";
 import { clientExists } from "./create-client-from-query";
 import { generateClient } from "./generate-client";
+import type { QaTrigger } from "@/qa/types";
 
 export type CreateFromLeadResult =
   | { outcome: "created"; slug: string; companyName: string }
@@ -10,6 +11,7 @@ export type CreateFromLeadResult =
 
 export async function createClientFromLead(
   slug: string,
+  options: { qaTrigger?: QaTrigger; factoryRunId?: string } = {},
 ): Promise<CreateFromLeadResult> {
   const lead: LeadRecord | null = readLead(slug);
 
@@ -48,7 +50,10 @@ export async function createClientFromLead(
     );
   }
 
-  await generateClient(slug, createLeadEnrichedDetailsSource(lead));
+  await generateClient(slug, createLeadEnrichedDetailsSource(lead), {
+    qaTrigger: options.qaTrigger ?? "cli",
+    factoryRunId: options.factoryRunId,
+  });
 
   return { outcome: "created", slug, companyName };
 }

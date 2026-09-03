@@ -17,3 +17,7 @@ export function clientSiteExists(slug: string): boolean {
 export function clientSitePath(slug: string): string {
   return resolve(process.cwd(), "src/content/clients", slug, "site.json");
 }
+
+export function clientBusinessPath(slug: string): string {
+  return resolve(process.cwd(), "src/content/clients", slug, "business.json");
+}

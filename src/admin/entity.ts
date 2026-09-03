@@ -7,6 +7,7 @@ import type {
   EmailServiceRecord,
 } from "@/email/types";
 import type { SmsLeadState, SmsMessageRecord, SmsInboundRecord } from "@/outreach/sms/types";
+import type { QaLatestSummary } from "@/qa/types";
 
 export const UNIFIED_STAGES = [
   "discovered",
@@ -56,7 +57,8 @@ export type AdminActionKind =
   | "open_demo"
   | "activate_domain"
   | "retry_email_provision"
-  | "resend_email_credentials";
+  | "resend_email_credentials"
+  | "run_qa";
 
 export type AdminAction = {
   kind: AdminActionKind;
@@ -89,6 +91,7 @@ export type AdminEntity = {
   emailDomain: CustomerDomainRecord | null;
   emailService: EmailServiceRecord | null;
   emailMailbox: EmailMailboxRecord | null;
+  qaLatest: QaLatestSummary | null;
 };
 
 export function unifiedStageLabel(stage: UnifiedStage): string {
@@ -293,6 +296,7 @@ export function buildAdminActions(input: {
   canActivateDomain?: boolean;
   canRetryEmailProvision?: boolean;
   canResendEmailCredentials?: boolean;
+  canRunQa?: boolean;
 }): AdminAction[] {
   return [
     {
@@ -340,6 +344,11 @@ export function buildAdminActions(input: {
       kind: "resend_email_credentials",
       label: "Resend email credentials",
       enabled: Boolean(input.canResendEmailCredentials),
+    },
+    {
+      kind: "run_qa",
+      label: "Run QA",
+      enabled: Boolean(input.canRunQa),
     },
   ];
 }

@@ -152,6 +152,113 @@ export default async function AdminEntityJourneyPage({
             stage={entity.stage}
             cards={[
               {
+                id: "grok_qa",
+                title: "Grok QA",
+                stages: [
+                  "generated",
+                  "published",
+                  "viewed",
+                  "purchased",
+                  "onboarding_pending",
+                  "onboarding_submitted",
+                  "ready_for_approval",
+                  "approved_for_publish",
+                  "publishing",
+                  "publish_failed",
+                  "live",
+                ],
+                content: entity.qaLatest ? (
+                  <div className="space-y-3 text-sm">
+                    <dl className="grid gap-1">
+                      <div>
+                        Status: {entity.qaLatest.runStatus}
+                        {entity.qaLatest.policyStatus
+                          ? ` · ${entity.qaLatest.policyStatus}`
+                          : ""}
+                      </div>
+                      <div>
+                        Score:{" "}
+                        {entity.qaLatest.score != null
+                          ? entity.qaLatest.score
+                          : "—"}
+                      </div>
+                      <div>
+                        Last run: {formatAdminDate(entity.qaLatest.completedAt ?? entity.qaLatest.createdAt)}
+                      </div>
+                      <div>Runs: {entity.qaLatest.runCount}</div>
+                      <div>
+                        Open issues: {entity.qaLatest.openIssueCount}
+                        {entity.qaLatest.highestSeverity
+                          ? ` · highest ${entity.qaLatest.highestSeverity}`
+                          : ""}
+                      </div>
+                      {entity.qaLatest.model ? (
+                        <div>Model: {entity.qaLatest.model}</div>
+                      ) : null}
+                    </dl>
+                    {entity.qaLatest.summary ? (
+                      <p className="text-xs text-[var(--admin-muted)]">
+                        {entity.qaLatest.summary}
+                      </p>
+                    ) : null}
+                    {entity.qaLatest.issues.length > 0 ? (
+                      <div className="space-y-2">
+                        {entity.qaLatest.issues.map((issue) => (
+                          <div
+                            key={issue.id}
+                            className="rounded border border-[var(--admin-border)] px-2 py-1 text-xs"
+                          >
+                            <p className="font-medium">
+                              {issue.severity} · {issue.category} · {issue.type}
+                            </p>
+                            <p>{issue.message}</p>
+                            {issue.evidence ? (
+                              <p className="text-[var(--admin-muted)]">
+                                Evidence: {issue.evidence}
+                              </p>
+                            ) : null}
+                            {issue.expected ? (
+                              <p className="text-[var(--admin-muted)]">
+                                Expected: {issue.expected}
+                              </p>
+                            ) : null}
+                            {issue.actual ? (
+                              <p className="text-[var(--admin-muted)]">
+                                Actual: {issue.actual}
+                              </p>
+                            ) : null}
+                            <p className="text-[var(--admin-muted)]">
+                              Confidence: {issue.confidence}
+                              {issue.recommendedFix
+                                ? ` · Fix: ${issue.recommendedFix}`
+                                : ""}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                    <AdminActionDispatcher
+                      slug={slug}
+                      actions={entity.actions.filter(
+                        (action) => action.kind === "run_qa",
+                      )}
+                      layout="inline"
+                    />
+                  </div>
+                ) : (
+                  <div className="space-y-2 text-sm">
+                    <p className="text-[var(--admin-muted)]">No QA runs yet</p>
+                    <AdminActionDispatcher
+                      slug={slug}
+                      actions={entity.actions.filter(
+                        (action) => action.kind === "run_qa",
+                      )}
+                      layout="inline"
+                    />
+                  </div>
+                ),
+              },
+              {
                 id: "sms",
                 title: "SMS",
                 stages: [

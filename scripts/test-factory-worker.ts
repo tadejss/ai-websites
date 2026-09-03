@@ -553,6 +553,13 @@ async function testWorkerWithInjectedDeps(): Promise<void> {
       error: "simulated push failure",
       slugs: ["demo-test"],
     }),
+    runQa: async () => ({
+      processed: 0,
+      completed: 0,
+      failed: 0,
+      skipped: 0,
+      retried: 0,
+    }),
   });
 
   ok(

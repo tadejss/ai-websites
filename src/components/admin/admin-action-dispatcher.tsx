@@ -132,6 +132,14 @@ export function AdminActionDispatcher({
             Demo ↗
           </a>
         ) : null}
+        {actionMap.get("run_qa")?.enabled
+          ? inlineButton(
+              actionMap.get("run_qa")!,
+              () =>
+                void runAction("QA queued", `/api/admin/qa/${slug}/retry`),
+              "secondary",
+            )
+          : null}
       </div>
     );
   }
@@ -209,6 +217,14 @@ export function AdminActionDispatcher({
                 "Credentials sent",
                 `/api/admin/email/${slug}/resend-credentials`,
               ),
+            "secondary",
+          )
+        : null}
+      {actionMap.get("run_qa")?.enabled
+        ? inlineButton(
+            actionMap.get("run_qa")!,
+            () =>
+              void runAction("QA queued", `/api/admin/qa/${slug}/retry`),
             "secondary",
           )
         : null}

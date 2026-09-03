@@ -100,6 +100,11 @@ export default async function AdminFactoryPage() {
           label="Stale locks"
           value={String(snapshot.generationLocks.staleGenerating)}
         />
+        <AdminStatCard
+          label="Grok QA"
+          value={`${snapshot.grokQa.pending} pending`}
+          sub={`${snapshot.grokQa.failed} failed`}
+        />
       </AdminStatGrid>
 
       <div className="mb-6 grid gap-4 lg:grid-cols-2">

@@ -18,6 +18,8 @@ import { validateSiteConfig } from "@/content/validate-site-config";
 import { applyNewLeadSectionDefaults } from "@/content/apply-new-lead-sections";
 import { saveLead } from "@/leads/store";
 import type { BusinessSource } from "@/sources/types";
+import { enqueueQaRunSafe } from "@/qa/enqueue";
+import type { QaTrigger } from "@/qa/types";
 
 function writeJsonFile(filePath: string, data: unknown): void {
   writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
@@ -47,6 +49,7 @@ function createLeadData(
 export async function generateClient(
   slug: string,
   source: BusinessSource,
+  options: { qaTrigger?: QaTrigger; factoryRunId?: string } = {},
 ): Promise<void> {
   const rawBusiness = validateRawBusinessData(await source.getBusiness());
   const businessInput = await generateBusinessInput(rawBusiness);
@@ -93,4 +96,10 @@ export async function generateClient(
   writeJsonFile(resolve(clientDir, "site.json"), persistedConfig);
 
   saveLead(createLeadData(slug, businessInput, rawBusiness));
+
+  await enqueueQaRunSafe({
+    slug,
+    trigger: options.qaTrigger ?? "cli",
+    factoryRunId: options.factoryRunId,
+  });
 }

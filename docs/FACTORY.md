@@ -1,7 +1,7 @@
 # Factory lifecycle
 
-> **Verified against code:** 2026-09-01  
-> **Source of truth:** `src/leads/replenish.ts`, `src/factory/worker.ts`, `src/clients/generate-client.ts`, `src/app/api/cron/*`, `.github/workflows/*.yml`.  
+> **Verified against code:** 2026-09-03  
+> **Source of truth:** `src/leads/replenish.ts`, `src/factory/worker.ts`, `src/clients/generate-client.ts`, `src/qa/`, `src/app/api/cron/*`, `.github/workflows/*.yml`.  
 > **Stale / unverified:** whether prod Vercel dispatch is enabled (`FACTORY_DISPATCH_ENABLED` defaults false in `src/factory/config.ts`).  
 > **Do not duplicate:** [CHECKOUT.md](./CHECKOUT.md), [ONBOARDING.md](./ONBOARDING.md), [SMS_OUTREACH.md](./SMS_OUTREACH.md) (SMS mechanics). This file is the stage machine and CLI map.
 
@@ -47,6 +47,7 @@ Discover → Generate JSON → Git publish → Vercel serves /{slug}
 | **AI retries** | One content-correction retry per text stage (`generate-business-input.ts`, `generate-site-config.ts`). Image plan is always Gemini (`build-search-queries.ts`). |
 | **Idempotency** | Skip if `clientExists` / `clientSiteExists`; generation lock per slug (`factory_generation_locks`). |
 | **Failure** | AI fail after retry → replenish logs `errors[]` and continues. Images optional if keys missing. |
+| **Grok QA** | After files are written, `enqueueQaRunSafe` inserts a pending Neon `qa_runs` row. Observational — does not block this stage. See [GROK-QA.md](./GROK-QA.md). |
 
 Target: `SMS_LEAD_TARGET` default 500 actionable; per-run cap `SMS_LEAD_REPLENISH_BATCH` default 100 (`src/outreach/sms/config.ts`). Actionable count: `countActionableSmsLeads` (`relevance.ts`).
 
@@ -64,6 +65,8 @@ Target: `SMS_LEAD_TARGET` default 500 actionable; per-run cap `SMS_LEAD_REPLENIS
 | **Operator** | Prefer `npm run factory-worker` (or GHA) over manual commit after `replenish-leads`. |
 
 **Lease:** singleton `factory_worker_lease`; cooldown after consecutive failures (`src/factory/lease.ts`). Config: `FACTORY_WORKER_LEASE_MINUTES` default 90, cooldown 30, max consecutive failures 5.
+
+After publish (success or failure), the worker drains pending QA with `GROK_QA_MAX_PER_WORKER_RUN` (non-fatal). Leftovers are processed by cron `GET /api/cron/grok-qa`.
 
 ---
 
