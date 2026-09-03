@@ -1,0 +1,289 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-maserji-wellness-10-frost",
+    "fontPairingId": "look-maserji-wellness-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/harmonia-vitae-zvocne/hero.avif",
+      "alt": "Zvočna masaža za globoko sprostitev v prijetnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/harmonia-vitae-zvocne/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628647",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628647/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/harmonia-vitae-zvocne/services.avif",
+      "alt": "Sprostitveni rituali in aromaterapija za dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/harmonia-vitae-zvocne/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628613",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628613/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Izberite zvočno masažo, ritual ali nego po vaši meri.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije terminov nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Zvočna masaža",
+        "description": "Globoka sprostitev z zvoki in vibracijami",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitveni ritual",
+        "description": "Celostna nega za umiritev in ravnovesje",
+        "price": "od 70 €"
+      },
+      {
+        "name": "Kozmetična storitev",
+        "description": "Nega obraza ali telesa",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Aromaterapevtska masaža",
+        "description": "Masaža z eteričnimi olji",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Sprostitvena terapija",
+        "description": "Individualna terapija za zmanjšanje stresa",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Harmonia",
+    "highlight": "Vitae"
+  },
+  "metadata": {
+    "title": "Harmonia Vitae | Zvočne masaže in rituali Maribor",
+    "description": "Globoka sprostitev, zvočne masaže, aromaterapija in negovalni rituali v Mariboru za ravnovesje telesa in duha."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Sprostitveni center Maribor",
+    "title": "Globoka sprostitev in ravnovesje z",
+    "titleHighlight": "zvočnimi masažami",
+    "description": "Celostne zvočne masaže, aromaterapija in sprostitveni rituali v Mariboru za posameznike, ki iščejo zmanjšanje stresa ter nego telesa in duha.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Raziščite storitve",
+    "stats": [
+      {
+        "value": "Celostno",
+        "label": "Celostno",
+        "title": "Celostno ravnovesje"
+      },
+      {
+        "value": "Osebno",
+        "label": "Osebno",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Ambient",
+        "label": "Ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Maribor",
+        "label": "Maribor",
+        "title": "Maribor in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Storitve za vaše dobro počutje",
+    "description": "Prepustite se strokovnim zvočnim masažam, pomirjujočim ritualom in skrbno izbranim negovalnim terapijam v Mariboru.",
+    "items": [
+      {
+        "title": "Zvočne masaže",
+        "description": "Blagodejni zvoki in vibracije tibetanskih posod za globoko sprostitev in umiritev uma.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitveni rituali",
+        "description": "Celostni rituali za sprostitev napetosti in povrnitev notranjega ravnovesja.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Kozmetične storitve",
+        "description": "Kakovostne nege za sijočo polt in pomlajen videz z naravnim pristopom.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Aromaterapija",
+        "description": "Uporaba skrbno izbranih eteričnih olj za pomiritev čutov in sprostitev telesa.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Sprostitvene terapije",
+        "description": "Individualno prilagojene terapije za sproščanje stresa in obnovo energije.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Pot do vašega notranjega ravnovesja",
+    "description": "Združujemo strokovnost, toplino in naravne metode za doseganje globoke sprostitve v prijetnem okolju.",
+    "highlights": [
+      "Vrhunske ocene zadovoljnih strank",
+      "Celostni pristop k sprostitvi in dobremu počutju",
+      "Osebni pristop in prijeten ambient"
+    ],
+    "benefits": [
+      {
+        "label": "Celostni pristop",
+        "description": "Celostna skrb za sprostitev in dobro počutje vašega telesa in duha.",
+        "title": "Celostni pristop"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Topel, strokoven in individualno prilagojen pristop za vsako stranko.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje v Mariboru za pobeg od vsakdanjega stresa.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za zvočno masažo ali sprostitveni ritual v Mariboru.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Lackova cesta 54, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 116 216",
+        "href": "tel:070116216",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja o storitvah.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Lackova cesta 54, 2000 Maribor, Slovenia",
+    "rights": "Harmonia Vitae, Marisa Mali s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Harmonia Vitae",
+    "address": "Lackova cesta 54, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "070 116 216"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

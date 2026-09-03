@@ -1,0 +1,299 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-02-editorial-type",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-02-slate",
+    "fontPairingId": "look-cistilni-servisi-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hisniske-ciscenje-edis/hero.avif",
+      "alt": "Profesionalno čiščenje in vzdrževanje poslovnih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hisniske-ciscenje-edis/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9245158",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-orange-button-up-shirt-wearing-white-mask-9245158/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hisniske-ciscenje-edis/services.avif",
+      "alt": "Celovite storitve čiščenja in vzdrževanja objektov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hisniske-ciscenje-edis/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9462192",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-shirt-holding-white-and-blue-sprayer-bottle-9462192/",
+      "photographer": "Liliana Drew",
+      "photographerUrl": "https://www.pexels.com/@liliana-drew",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene storitev",
+    "description": "Pregled okvirnih cen za naše hišniške storitve in čiščenje.",
+    "disclaimer": "Cenik je informativen. Za točne ponudbe in ogled objekta nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje prostorov",
+        "description": "Urejanje in čiščenje stanovanjskih ali poslovnih površin",
+        "price": "od 20 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur, preprog ali vzmetnic",
+        "price": "od 40 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Manjša hišna popravila",
+        "description": "Manjša popravila in hišniška opravila v objektu",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Vzdrževanje objektov",
+        "description": "Redni pregledi in vzdrževalna dela",
+        "price": "Po dogovoru",
+        "unit": "na projekt"
+      },
+      {
+        "name": "Urejanje okolice",
+        "description": "Osnovno urejanje in vzdrževanje zelenih površin",
+        "price": "od 25 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Hišniške storitve",
+    "highlight": "in čiščenje Edis"
+  },
+  "metadata": {
+    "title": "Hišniške storitve in čiščenje, Edis Bulić s.p.",
+    "description": "Zanesljive hišniške storitve in čiščenje za vaš dom ali poslovni prostor v Ljubljani in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv partner za vaš dom in pisarno",
+    "title": "Celovite rešitve za vzdrževanje in",
+    "titleHighlight": "čiščenje objektov",
+    "description": "Zanesljive hišniške storitve in čiščenje za lastnike stanovanj, hiš in poslovnih objektov v Ljubljani in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Ljubljana in okolica",
+        "label": "Ljubljana in okolica",
+        "title": "Ljubljana in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Nudimo kakovostne in celovite storitve čiščenja ter vzdrževanja za vaš dom ali poslovni prostor.",
+    "items": [
+      {
+        "title": "Redno čiščenje prostorov",
+        "description": "Redno čiščenje stanovanj, hiš in poslovnih prostorov za urejen in čist vsakdan.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, preprog in oblazinjenega pohištva.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje objektov",
+        "description": "Sistemsko vzdrževanje objektov in tehnična podpora za brezhibno delovanje vaših prostorov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Manjša hišna popravila",
+        "description": "Hitra in strokovna izvedba manjših hišnih popravil ter vzdrževalnih del.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Urejanje okolice",
+        "description": "Urejanje in vzdrževanje okolice objektov, zelenic ter pripadajočih površin.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, ki ji lahko zaupate",
+    "description": "Trudimo se za najvišjo raven storitev in popolno prilagodljivost vašim željam in potrebam.",
+    "highlights": [
+      "Visoka kakovost opravljenih storitev",
+      "Zanesljivost in prilagodljivost strankam",
+      "Celovite rešitve za vzdrževanje in čiščenje"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Zagotavljamo visoko kakovost opravljenih storitev in skrbnost pri vsakem opravilu.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku ter potrebam.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Nudimo vse na enem mestu – od čiščenja do manjših hišnih popravil in urejanja okolice.",
+        "title": "Celovite rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Z veseljem vam pomagamo z vprašanji ali naročilom naših storitev. Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "069 602 715",
+        "href": "tel:069602715",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica Hermana Potočnika 31, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, kakšne storitve potrebujete...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ulica Hermana Potočnika 31, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Hišniške storitve in čiščenje Edis",
+    "address": "Ulica Hermana Potočnika 31, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "069 602 715"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

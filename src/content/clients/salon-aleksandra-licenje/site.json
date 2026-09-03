@@ -1,0 +1,291 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-03-photo-forward",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-03-bloom",
+    "fontPairingId": "look-nohti-pedikura-03"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/salon-aleksandra-licenje/hero.avif",
+      "alt": "Strokovno ličenje v lepotnem salonu Aleksandra v Mariboru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/salon-aleksandra-licenje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997359",
+      "sourceUrl": "https://www.pexels.com/photo/white-red-and-blue-hanging-decor-3997359/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/salon-aleksandra-licenje/services.avif",
+      "alt": "Klasična manikura in nega rok v prijetnem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/salon-aleksandra-licenje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997381",
+      "sourceUrl": "https://www.pexels.com/photo/person-with-red-nail-polish-3997381/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregled storitev in cen",
+    "description": "Informativni cenik naših storitev za nego nohtov in ličenje.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije terminov nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in zaključna nega.",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Gel nohti",
+        "description": "Nanosi gela, oblikovanje in obstojna manikura.",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Dnevno ličenje",
+        "description": "Nežen in naraven videz za vsak dan.",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Svečano ličenje",
+        "description": "Obstojen in eleganten make-up za posebne priložnosti.",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Nega rok",
+        "description": "Piling, masaža in hranilna maska za roke.",
+        "price": "od 20 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Salon",
+    "highlight": "Aleksandra"
+  },
+  "metadata": {
+    "title": "Salon Aleksandra | Ličenje in manikura v Mariboru",
+    "description": "Strokovno ličenje, klasična manikura, gel nohti in nega rok v Mariboru. Poskrbite za svoj sijoč videz v prijetnem salonu Aleksandra."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon Maribor",
+    "title": "Strokovno ličenje in manikura za",
+    "titleHighlight": "vaš sijoč videz",
+    "description": "Prilagojene lepotne storitve za ženske, ki cenijo urejen videz, nego nohtov in profesionalno ličenje v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Kvalitetni materiali",
+        "label": "Kvalitetni materiali",
+        "title": "Kvalitetni materiali"
+      },
+      {
+        "value": "Urejen salon",
+        "label": "Urejen salon",
+        "title": "Urejen salon"
+      },
+      {
+        "value": "Strokovnost",
+        "label": "Strokovnost",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za nego nohtov in ličenje",
+    "description": "V salonu Aleksandra v Mariboru poskrbimo za vaše roke in popoln videz ob vsaki priložnosti.",
+    "items": [
+      {
+        "title": "Klasična manikura",
+        "description": "Nega obnohtne kožice, oblikovanje nohtov in nega rok za urejen videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Gel nohti",
+        "description": "Dolgo obstojni in lepo oblikovani gel nohti po vaši meri.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Dnevno ličenje",
+        "description": "Osvežujoč in naraven make-up za vsak dan.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svečano ličenje",
+        "description": "Elegantno ličenje za posebne dogodke, poroke in praznovanja.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega rok",
+        "description": "Hranilna nega za mehke, gladke in negovane roke.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti obiska v salonu Aleksandra",
+    "description": "Zavedamo se, kako pomembna sta urejen videz in sproščeno vzdušje.",
+    "highlights": [
+      "Prilagojen pristop k negi nohtov in ličenju",
+      "Prijazno in strokovno osebje",
+      "Uporaba kvalitetnih materialov"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagojen pristop",
+        "description": "Vsaki stranki se posvetimo individulano in prisluhnemo vašim željam glede nege nohtov in ličenja.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Strokovno osebje",
+        "description": "Prijazna in strokovna obravnava v urejenem lokalnem salonu v Mariboru.",
+        "title": "Strokovno osebje"
+      },
+      {
+        "label": "Kvalitetni materiali",
+        "description": "Za nego vaših rok in nohtov uporabljamo preverjene in kvalitetne materiale.",
+        "title": "Kvalitetni materiali"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za ličenje ali manikuro v Mariboru.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Nikova ulica 16, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 264 291",
+        "href": "tel:051264291",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sre: 9:00–15:00 · Čet: 9:00–17:00 · Pet: 9:00–15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in z veseljem vam bomo odgovorili ter potrdili vaš termin.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Nikova ulica 16, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Salon Aleksandra",
+    "address": "Nikova ulica 16, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "051 264 291"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

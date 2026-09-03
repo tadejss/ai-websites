@@ -1,0 +1,295 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-05-minimal-line",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-05-mist",
+    "fontPairingId": "look-cistilni-servisi-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-urga/hero.avif",
+      "alt": "Svetel in čist sodoben poslovni prostor",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-urga/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16898979",
+      "sourceUrl": "https://www.pexels.com/photo/men-climbing-and-cleaning-windows-16898979/",
+      "photographer": "Natalie Minich",
+      "photographerUrl": "https://www.pexels.com/@mvntlie",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-urga/services.avif",
+      "alt": "Temeljito čiščenje in pranje steklenih površin",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-urga/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20381389",
+      "sourceUrl": "https://www.pexels.com/photo/woman-cleaning-a-window-20381389/",
+      "photographer": "Tuan Vy",
+      "photographerUrl": "https://www.pexels.com/@tuan-vy-903011268",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za naše čistilne storitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Čiščenje stanovanj",
+        "description": "Redno ali občasno čiščenje stanovanjskih prostorov",
+        "price": "od 20 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Vzdrževanje čistoče v pisarnah",
+        "price": "od 22 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur in preprog",
+        "price": "od 50 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Pranje oken",
+        "description": "Čiščenje oken in steklenih površin",
+        "price": "od 30 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Celovito čiščenje po posebnih dogodkih ali adaptacijah",
+        "price": "od 25 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čistilni servis",
+    "highlight": "URGA"
+  },
+  "metadata": {
+    "title": "Čistilni servis URGA | Čiščenje stanovanj in poslovnih prostorov Ljubljana",
+    "description": "Zanesljivo in temeljito čiščenje za vaš dom ali poslovni prostor v Ljubljani z okolico. Globinsko čiščenje, čiščenje stanovanj, poslovnih prostorov in pranje oken."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Lokalni ponudnik čistilnih storitev v Ljubljani",
+    "title": "Zanesljivo in temeljito čiščenje za vaš",
+    "titleHighlight": "dom ali poslovni prostor",
+    "description": "Strokovne čistilne storitve za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva izvedba",
+        "label": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Preverjena čistila",
+        "label": "Preverjena čistila"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja za vaše prostore",
+    "description": "Poskrbimo za čistočo in urejenost vašega doma ali poslovnega okolja v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno vzdrževanje čistoče v pisarnah in poslovnih objektih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje stanovanj",
+        "description": "Kakovostno čiščenje stanovanjskih objektov, prilagojeno vašim željam.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje oken in steklenih površin",
+        "description": "Čiščenje oken ter vseh vrst steklenih površin brez madežev.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Generalno čiščenje",
+        "description": "Temeljito generalno čiščenje po adaptacijah, selitvah ali za posebne priložnosti.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za čistočo vaših prostorov",
+    "description": "Z združevanjem natančnosti, prilagodljivosti in kakovostnih materialov zagotavljamo visoke standarde čistoče.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba storitev",
+      "Prilagodljivost urniku strank",
+      "Uporaba preverjenih čistilnih sredstev"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Zanesljiva in natančna izvedba storitev s poudarkom na detajlih.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagajamo se vašemu urniku in potrebam za čim manj motenj.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Preverjena sredstva",
+        "description": "Uporaba preverjenih čistilnih sredstev za varno in učinkovito čiščenje.",
+        "title": "Preverjena sredstva"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali nam pošljite sporočilo za dogovor o čiščenju vaših prostorov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Grablovičeva ulica 1, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 630 842",
+        "href": "tel:031630842",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Petek: 8:00 - 18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in stopili bomo v stik z vami v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Grablovičeva ulica 1, 1000 Ljubljana, Slovenia",
+    "rights": "© 2025 Čistilni servis URGA. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilni servis URGA",
+    "address": "Grablovičeva ulica 1, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "031 630 842"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

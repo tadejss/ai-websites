@@ -1,0 +1,294 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-05-minimal-line",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-05-mist",
+    "fontPairingId": "look-cistilni-servisi-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/splosno-ciscenje-stavb-3/hero.avif",
+      "alt": "Svetel in urejen poslovni prostor med čiščenjem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/splosno-ciscenje-stavb-3/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196684",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-in-orange-jumper-holding-a-vacuum-hose-6196684/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "commercial cleaning team interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/splosno-ciscenje-stavb-3/services.avif",
+      "alt": "Čist in urejen prostor po opravljenem čiščenju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/splosno-ciscenje-stavb-3/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196694",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-woman-using-a-vacuum-cleaner-6196694/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene naših čistilnih storitev",
+    "description": "Pregled orientacijskih cen za redna in generalna čiščenja ter posebne storitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje poslovnih prostorov",
+        "description": "Vzdrževalno čiščenje pisarn in poslovnih objektov",
+        "price": "od 20 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Čiščenje stanovanjskih objektov",
+        "description": "Čiščenje stanovanj in hiš po dogovoru",
+        "price": "od 22 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje oblazinjenega pohištva in preprog",
+        "price": "od 40 €",
+        "unit": "po kosu / površini",
+        "featured": true
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje po gradbenih delih ali prenovi",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Pranje steklenih površin",
+        "description": "Čiščenje oken in izložb",
+        "price": "od 25 €",
+        "unit": "po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čiščenje stavb",
+    "highlight": "Emina Porčić s.p."
+  },
+  "metadata": {
+    "title": "Splošno čiščenje stavb, Emina Porčić s.p. | Čiščenje v Domžalah z okolico",
+    "description": "Zanesljivo in temeljito čiščenje vaših prostorov v Domžalah z okolico. Nudimo globinsko čiščenje, čiščenje poslovnih in stanovanjskih objektov ter pranje steklenih površin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv čistilni servis",
+    "title": "Zanesljivo in temeljito",
+    "titleHighlight": "čiščenje vaših prostorov",
+    "description": "Strokovne čistilne storitve za lastnike stanovanj, hiš in poslovnih prostorov v Domžalah z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Natančnost",
+        "title": "Natančnost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja za vaše prostore",
+    "description": "Poskrbimo za čistočo in urejenost vaših domov ter poslovnih objektov v Domžalah in okolici.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, pohištwa in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje poslovnih prostorov",
+        "description": "Redno vzdrževanje čistoče v vaših pisarnah in poslovnih objektih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje stanovanjskih objektov",
+        "description": "Zanesljivo čiščenje stanovanj in hiš, prilagojeno vašim željam.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Generalno čiščenje po gradbenih delih",
+        "description": "Temeljito čiščenje objektov po zaključku gradbenih ali prenovitvenih del.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pranje steklenih površin",
+        "description": "Čiščenje oken in steklenih površin za bleščeč pogled.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti sodelovanja z nami",
+    "description": "Zavedamo se pomena čistega in urejenega okolja, zato se vedno posvetimo vašim željam.",
+    "highlights": [
+      "Visoka kakovost opravljenih storitev",
+      "Zanesljivost in natančnost pri delu",
+      "Prilagodljivost željam strank"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Zagotavljamo visoko raven čistoče in natančnosti pri vsakem opravljenem delu.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in zanesljivo poskrbimo za vaše prostore.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim specifičnim željam in potrebam za najboljši končni rezultat.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete zanesljiv čistilni servis? Pokličite nas za ponudbo in dogovor o čiščenju.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "068 921 835",
+        "href": "tel:068921835",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Koliška ulica 17, 1230 Domžale, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Koliška ulica 17, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čiščenje stavb Emina Porčić s.p.",
+    "address": "Koliška ulica 17, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "068 921 835"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

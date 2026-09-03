@@ -1,0 +1,275 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-maserji-wellness-07-linen",
+    "fontPairingId": "look-maserji-wellness-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/svet-refleksoterapije/hero.avif",
+      "alt": "Strokovna refleksoterapija stopal v mirnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/svet-refleksoterapije/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628647",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628647/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/svet-refleksoterapije/services.avif",
+      "alt": "Sprostitvena masaža in refleksoterapija za ravnovesje telesa",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/svet-refleksoterapije/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628613",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628613/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene",
+    "description": "Pregled cen naših storitev refleksoterapije in sprostitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Refleksoterapija stopal",
+        "description": "Klasična obravnave refleksnih točk",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Masaža za sprostitev telesa in uma",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Terapevtska obravnava bolečin",
+        "description": "Ciljano lajšanje napetosti",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Uravnavanje energije",
+        "description": "Sklop sprostitvenih tehnik",
+        "price": "od 40 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Svet",
+    "highlight": "refleksoterapije"
+  },
+  "metadata": {
+    "title": "Svet refleksoterapije | Strokovna refleksoterapija v Mariboru",
+    "description": "Strokovna refleksoterapija in sprostitvene masaže v Mariboru in okolici. Poskrbite za svoje dobro počutje, sprostitev in naravno ravnovesje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Refleksoterapija Maribor",
+    "title": "Strokovna refleksoterapija za vaše",
+    "titleHighlight": "dobro počutje in sprostitev",
+    "description": "Naravne metode sprostitve, lajšanja stresa in izboljšanja počutja v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Raziščite storitve",
+    "stats": [
+      {
+        "value": "Strokovni pristop",
+        "label": "Strokovni pristop"
+      },
+      {
+        "value": "Prilagojene obravnave",
+        "label": "Prilagojene obravnave"
+      },
+      {
+        "value": "Udoben ambient",
+        "label": "Udoben ambient"
+      },
+      {
+        "value": "Naravna sprostitev",
+        "label": "Naravna sprostitev"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celostna obravnava za ravnovesje telesa",
+    "description": "Izberite storitev, ki vam pomaga pri sprostitvi, lajšanju stresa in izboljšanju počutja v Mariboru.",
+    "items": [
+      {
+        "title": "Refleksoterapija stopal",
+        "description": "Strokovna refleksoterapija stopal za spodbujanje naravnih zdravilnih moči telesa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežna in sprostitvena masaža za odpravljanje napetosti in vsakodnevnega stresa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Lajšanje bolečin",
+        "description": "Ciljano lajšanje bolečin in nelagodja z ustreznimi terapevtskimi tehnikami.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Uravnavanje energije",
+        "description": "Metode za vzpostavitev energijskega ravnovesja in izboljšanje vitalnosti.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiva pot do vaše sprostitve",
+    "description": "Združujemo strokovnost, osebni pristop in prijeten ambient za vaše najboljše počutje.",
+    "highlights": [
+      "Strokovni pristop k refleksoterapiji",
+      "Prilagojene obravnave za vsakega posameznika",
+      "Udobno in sproščujoče okolje"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovni pristop",
+        "description": "Skrbno izbrane metode refleksoterapije, prilagojene vašim potrebam.",
+        "title": "Strokovni pristop"
+      },
+      {
+        "label": "Osebna obravnava",
+        "description": "Vsaki stranki se posvetimo individulano za doseganje najboljših rezultatov.",
+        "title": "Osebna obravnava"
+      },
+      {
+        "label": "Sproščujoče okolje",
+        "description": "Udoben prostor v Mariboru, namenjen popolnemu miru in sprostitvi.",
+        "title": "Sproščujoče okolje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gospejna ulica 4, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 299 270",
+        "href": "tel:041299270",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Gospejna ulica 4, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Svet refleksoterapije",
+    "address": "Gospejna ulica 4, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "041 299 270"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

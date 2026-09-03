@@ -1,0 +1,29 @@
+{
+  "companyName": "Masažni salon Forever",
+  "industry": "Masažne storitve in dobro počutje",
+  "tagline": "Vaša oaza sprostitve in ravnovesja v Mariboru",
+  "services": [
+    "Klasična masaža",
+    "Športna masaža",
+    "Sprostitvena aroma masaža",
+    "Masaža hrbta in vratu",
+    "Belihna masaža"
+  ],
+  "phone": "031 404 736",
+  "email": "",
+  "address": "Glavni trg 19c, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 6:00 PM · Tuesday: 9:00 AM – 6:00 PM · Wednesday: 9:00 AM – 6:00 PM · Thursday: 9:00 AM – 6:00 PM · Friday: 9:00 AM – 6:00 PM · Saturday: 10:00 AM – 4:00 PM · Sunday: 10:00 AM – 4:00 PM",
+  "sellingPoints": [
+    "Prijeten ambient v središču Maribora",
+    "Prilagojene masaže za sprostitev in lajšanje napetosti",
+    "Prilagodljiv delovni čas tudi ob vikendih",
+    "Strokoven in prijazen pristop"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje stresa, odpravljanje mišičnih napetosti in izboljšanje počutja",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "sproščen, topel, strokoven",
+  "brandStyle": "umirjen, naraven, eleganten",
+  "competitors": "Lokalni masažni saloni in wellness centri v Mariboru",
+  "callToAction": "Rezervirajte termin"
+}

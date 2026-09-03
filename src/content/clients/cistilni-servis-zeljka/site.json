@@ -1,0 +1,291 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-01-classic-split",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-01-sand",
+    "fontPairingId": "look-cistilni-servisi-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zeljka/hero.avif",
+      "alt": "Svetel in čist sodoben prostor kot prikaz profesionalnih storitev čiščenja",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zeljka/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7451918",
+      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "searchQuery": "commercial cleaning team interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zeljka/services.avif",
+      "alt": "Oprema za profesionalno čiščenje in urejeni prostori",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zeljka/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20381389",
+      "sourceUrl": "https://www.pexels.com/photo/woman-cleaning-a-window-20381389/",
+      "photographer": "Tuan Vy",
+      "photographerUrl": "https://www.pexels.com/@tuan-vy-903011268",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled rednih cen naših čistilnih storitev za dom in poslovne prostore.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje stanovanj",
+        "description": "Ura čiščenja z našimi čistili",
+        "price": "od 20 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Globinsko čiščenje sedežne garniture",
+        "description": "Globinsko sesanje in pranje",
+        "price": "od 60 €",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Pogodbeno čiščenje pisarn",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Pranje oken",
+        "description": "Okna in okenske police",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Čiščenje po gradbenih delih",
+        "description": "Generalno čiščenje",
+        "price": "Po ogledu in dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čistilni servis",
+    "highlight": "Željka Đekić s.p."
+  },
+  "metadata": {
+    "title": "Čistilni servis Željka Đekić s.p. | Čiščenje Domžale in okolica",
+    "description": "Zanesljivo in kakovostno čiščenje za vaš dom in poslovne prostore v Domžalah in okolici. Globinsko čiščenje, redno čiščenje in pranje oken."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis v Domžalah",
+    "title": "Zanesljivo in kakovostno čiščenje za",
+    "titleHighlight": "vaš dom in poslovne prostore",
+    "description": "Poskrbite za čistočo in urejenost vaših prostorov v Domžalah in širši okolici. Nudimo strokovno globinsko čiščenje, čiščenje stanovanj in poslovnih prostorov.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Temeljitost",
+        "label": "Temeljitost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Preverjena sredstva",
+        "label": "Preverjena sredstva"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše čistilne storitve",
+    "description": "Profesionalno čiščenje za domove in podjetja na območju Domžal in okolice.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje oblazinjenega pohištva, preprog in vzmetnic.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje stanovanj",
+        "description": "Redno vzdrževanje čistoče v vašem stanovanju ali hiši po vaših željah.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje poslovnih prostores",
+        "description": "Celovito čiščenje pisarn in poslovnih prostorov za urejeno delovno okolje.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje po vselitvi ali gradnji",
+        "description": "Generalno čiščenje prostorov po zaključku gradbenih del ali pred vselitvijo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pranje oken",
+        "description": "Natančno čiščenje oken in steklenih površin za bleščeč pogled.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega čistilnega servisa",
+    "description": "Zavedamo se pomena čistoče in se vedno prilagodimo vašim potrebam ter urniku.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Zanesljivost in temeljitost pri delu",
+      "Uporaba preverjenih čistilnih sredstev"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljivost",
+        "description": "Delo opravimo dosledno, natančno in v dogovorjenih časovnih okvirih.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagajamo se vašemu urniku in specifičnim zahtevam glede čiščenja.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Kakovostna sredstva",
+        "description": "Za čiščenje uporabljamo preverjena in učinkovita čistilna sredstva.",
+        "title": "Kakovostna sredstva"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanja ali želite naročiti čiščenje? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Prešernova cesta 17a, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 611 602",
+        "href": "tel:070611602",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Sob: 9:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo pripravili ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, kakšno čiščenje potrebujete...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Prešernova cesta 17a, 1230 Domžale, Slovenia",
+    "rights": "© 2025 Čistilni servis Željka Đekić s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilni servis Željka Đekić s.p.",
+    "address": "Prešernova cesta 17a, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "070 611 602"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

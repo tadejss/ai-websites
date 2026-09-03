@@ -1,0 +1,27 @@
+{
+  "companyName": "H & M čistilni servis, Hasan Mahmutović s.p.",
+  "industry": "Čistilni servis",
+  "tagline": "Zanesljivo in temeljito čiščenje za vaš dom in poslovne prostore",
+  "services": [
+    "Globinsko čiščenje",
+    "Čiščenje poslovnih prostorov",
+    "Generalno čiščenje",
+    "Pranje steklenih površin"
+  ],
+  "phone": "051 264 609",
+  "email": "",
+  "address": "Ulica Simona Jenka 12, 1230 Domžale, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Zanesljiva in strokovna izvedba storitev",
+    "Prilagodljivost potrebam strank",
+    "Kakovostno čiščenje vseh vrst prostorov"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih objektov v lokalni regiji",
+  "serviceArea": "Domžale in okolica",
+  "yearsExperience": "",
+  "tone": "profesionalen, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalni ponudniki čistilnih storitev",
+  "callToAction": "Pokličite nas"
+}

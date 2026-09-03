@@ -1,0 +1,288 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-01-classic-split",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-01-sand",
+    "fontPairingId": "look-cistilni-servisi-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/prazarna-kave-ciscenje/hero.avif",
+      "alt": "Sveže pražena kava in skrbno izbrana zrna",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/prazarna-kave-ciscenje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/prazarna-kave-ciscenje/services.avif",
+      "alt": "Skodelica in zrna vrhunske pražene kave",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/prazarna-kave-ciscenje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197114",
+      "sourceUrl": "https://www.pexels.com/photo/woman-wearing-a-jumper-cleaning-a-glass-window-6197114/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev in izdelkov",
+    "description": "Pregled okvirnih cen za naše praženje, prodajo in storitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Praženje kave",
+        "description": "Praženje po meri",
+        "price": "od 15 €",
+        "unit": "kg",
+        "featured": true
+      },
+      {
+        "name": "Domača kava",
+        "description": "Pakirana pražena kava",
+        "price": "od 8 €",
+        "unit": "pakiranje"
+      },
+      {
+        "name": "Svetovanje o kavi",
+        "description": "Strokovni nasveti in priprava",
+        "price": "od 30 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Storitve čiščenja",
+        "description": "Zanesljivo čiščenje prostorov",
+        "price": "od 20 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Primož Janez Zorec s.p.",
+    "highlight": "Pražarna kave"
+  },
+  "metadata": {
+    "title": "Pražarna kave in čiščenje Primož Janez Zorec s.p.",
+    "description": "Sveže pražena kava za popoln začetek vašega dneva v Domžalah in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite kavo"
+  },
+  "hero": {
+    "badge": "Lokalni ponudnik",
+    "title": "Sveže pražena kava za",
+    "titleHighlight": "popoln začetek dneva",
+    "description": "Ponujamo vrhunsko praženo kavo in skrbno izbrana zrna za ljubitelje kave v Domžalah in okolici.",
+    "primaryCta": "Naročite kavo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska kava",
+        "label": "Vrhunska kava",
+        "title": "Vrhunska kava"
+      },
+      {
+        "value": "Skrbna izbira",
+        "label": "Skrbna izbira",
+        "title": "Skrbna izbira"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      },
+      {
+        "value": "6 dni",
+        "label": "Odprti vsak teden",
+        "title": "6 dni"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve pražarne in čiščenja",
+    "description": "Odkrijte našo ponudbo sveže pražene kave in zanesljivih storitev za Domžale in okolico.",
+    "items": [
+      {
+        "title": "Praženje kave",
+        "description": "Skrbno praženje kave za bogat okus in aromo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Prodaja domače kave",
+        "description": "Nakup kakovostne domače kave za dom ali pisarno.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Storitve čiščenja",
+        "description": "Zanesljive in temeljite storitve čiščenja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Svetovanje o kavi",
+        "description": "Strokovni nasveti za izbiro in pripravo popolne skodelice kave.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost kakovosti in domačemu okusu",
+    "description": "Z združevanjem strasti do kave in zanesljivih storitev poskrbimo za vaše zadovoljstvo.",
+    "highlights": [
+      "Vrhunska kakovost pražene kave",
+      "Skrbno izbrana zrna",
+      "Lokalna in zanesljiva ponudba"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Uporabljamo le skrbno izbrana zrna za najboljši okus.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Lokalni pristop",
+        "description": "Zanesljiva ponudba v Domžalah in okolici z osebnim stikom.",
+        "title": "Lokalni pristop"
+      },
+      {
+        "label": "Topel ambient",
+        "description": "Pristen domač navdih in profesionalen odnos do vsake stranke.",
+        "title": "Topel ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje glede kave ali storitev čiščenja? Pokličite nas ali nam pišite.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Depala vas 54a, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 695 339",
+        "href": "tel:041695339",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon-Pet: 8:00 - 17:00, Sob: 9:00 - 12:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali vprašanje...",
+      "submitLabel": "Naročite kavo"
+    }
+  },
+  "footer": {
+    "address": "Depala vas 54a, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Primož Janez Zorec s.p. Pražarna kave",
+    "address": "Depala vas 54a, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "041 695 339"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

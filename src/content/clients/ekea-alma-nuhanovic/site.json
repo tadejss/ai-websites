@@ -1,0 +1,290 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-03-photo-forward",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-03-bloom",
+    "fontPairingId": "look-cistilni-servisi-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ekea-alma-nuhanovic/hero.avif",
+      "alt": "Svetla in urejena pisarna po profesionalnem čiščenju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ekea-alma-nuhanovic/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30875661",
+      "sourceUrl": "https://www.pexels.com/photo/window-cleaners-working-on-high-rise-building-facade-30875661/",
+      "photographer": "Juan García",
+      "photographerUrl": "https://www.pexels.com/@juan-garcia-84744800",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ekea-alma-nuhanovic/services.avif",
+      "alt": "Globinsko očiščen sodoben bivalni prostor",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ekea-alma-nuhanovic/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7451918",
+      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "searchQuery": "commercial cleaning team interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled okvirnih cen naših čistilnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Čiščenje stanovanj in hiš",
+        "description": "Redno vzdrževalno čiščenje bivalnih prostorov",
+        "price": "od 25 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Urejanje pisarn in poslovnih objektov",
+        "price": "od 30 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur in preprog",
+        "price": "od 50 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Pranje steklenih površin",
+        "description": "Čiščenje oken in steklenih fasad",
+        "price": "od 35 €",
+        "unit": "objekt"
+      },
+      {
+        "name": "Generalno čiščenje po obnovi",
+        "description": "Temeljito čiščenje po gradbenih delih",
+        "price": "od 40 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "E-Kea",
+    "highlight": "Čiščenje stavb"
+  },
+  "metadata": {
+    "title": "E-Kea - Zanesljivo čiščenje stavb v Grosupljem s okolico",
+    "description": "Zanesljivo in temeljito čiščenje stanovanj, hiš in poslovnih prostorov v Grosupljem s okolico. Pokličite nas za čist in urejen prostor."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Lokalni čistilni servis",
+    "title": "Zanesljivo in temeljito čiščenje stavb za",
+    "titleHighlight": "vaš čist prostor",
+    "description": "Strokovne čistilne storitve za lastnike stanovanj, hiš in poslovnih prostorov v Grosupljem s okolico. Zagotavljamo urejenost in čistost vaših prostorov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Hitra izvedba",
+        "label": "Hitra izvedba"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo"
+      },
+      {
+        "value": "Preverjeno",
+        "label": "Preverjeno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve čiščenja",
+    "description": "Celovite rešitve čiščenja za zasebne in poslovne objekte v Grosupljem s okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito odstranjevanje umazanije in osvežitev tekstilnih površin.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno vzdrževanje čistoće v vaših pisarnah in poslovnih objektih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje stanovanj in hiš",
+        "description": "Celovito čiščenje bivalnih prostorov, prilagojeno vašim željam.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje steklenih površin",
+        "description": "Čiščenje oken in steklenih površin brez sledi in madežev.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Generalno čiščenje po obnovi",
+        "description": "Natančno čiščenje prostorov po gradbenih ali območnih delih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati E-Kea",
+    "title": "Prednosti našega servisa",
+    "description": "Z našim delom zagotavljamo visoko raven čistoće in zadovoljstvo strank.",
+    "highlights": [
+      "Hitra in zanesljiva izvedba storitev",
+      "Prilagodljivost željam strank",
+      "Uporaba preverjenih čistilnih sredstev"
+    ],
+    "benefits": [
+      {
+        "label": "Hitra izvedba",
+        "description": "Storitve opravimo zanesljivo in v dogovorjenih rokih.",
+        "title": "Hitra izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim posebnim željam in potrebam.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Preverjena sredstva",
+        "description": "Uporabljamo preverjena čistilna sredstva za najboljše rezultate.",
+        "title": "Preverjena sredstva"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali želite naročiti čiščenje? Pokličite nas ali izpolnite obrazec.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Adamičeva cesta 1 C, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 786 607",
+        "href": "tel:051786607",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali željo glede čiščenja...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Adamičeva cesta 1 C, 1290 Grosuplje, Slovenia",
+    "rights": "© E-Kea Alma Nuhanović - Emrić, s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "E-Kea Čiščenje stavb",
+    "address": "Adamičeva cesta 1 C, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "051 786 607"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

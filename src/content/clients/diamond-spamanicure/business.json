@@ -1,0 +1,28 @@
+{
+  "companyName": "Diamond Spa-manicure",
+  "industry": "kozmetični salon",
+  "tagline": "Vrhunska nega in lepota za vaše roke in nohte",
+  "services": [
+    "manikura",
+    "spa nega rok",
+    "gel lak",
+    "poslikava nohtov",
+    "parafinska maska"
+  ],
+  "phone": "051 650 740",
+  "email": "",
+  "address": "Tržaška cesta 14, 2000 Maribor, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "visoko ocenjene storitve s strani strank",
+    "skrbna in profesionalna nega",
+    "prijeten ambient za sprostitev"
+  ],
+  "targetCustomers": "ljudje, ki cenijo urejen videz nohtov in kakovostno nego rok",
+  "serviceArea": "Maribor z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "eleganten in urejen",
+  "competitors": "lokalni kozmetični saloni in saloni za nego nohtov v Mariboru",
+  "callToAction": "Rezervirajte termin"
+}

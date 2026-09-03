@@ -1,0 +1,298 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-10-frost",
+    "fontPairingId": "look-cistilni-servisi-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-objektov-ciscenje/hero.avif",
+      "alt": "Profesionalno čiščenje poslovnih prostorov v svetli pisarni",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-objektov-ciscenje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197114",
+      "sourceUrl": "https://www.pexels.com/photo/woman-wearing-a-jumper-cleaning-a-glass-window-6197114/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-objektov-ciscenje/services.avif",
+      "alt": "Celovito vzdrževanje objektov in čiščenje prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-objektov-ciscenje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30875661",
+      "sourceUrl": "https://www.pexels.com/photo/window-cleaners-working-on-high-rise-building-facade-30875661/",
+      "photographer": "Juan García",
+      "photographerUrl": "https://www.pexels.com/@juan-garcia-84744800",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za naše storitve vzdrževanja in čiščenja.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje poslovnih prostorov",
+        "description": "Urejanje in čiščenje poslovnih površin po dogovoru",
+        "price": "od 20 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Čiščenje sedežnih garnitur, preprog in vzmetnic",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Tehnično vzdrževanje objektov",
+        "description": "Pregledi in manjša vzdrževalna dela",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Urejanje okolice",
+        "description": "Košnja, obrezovanje in čiščenje zunanjih površin",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Manjša hišnopravila in popravila",
+        "description": "Hitra popravila in hišnopravila v objektu",
+        "price": "od 25 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vzdrževanje in čiščenje",
+    "highlight": "Jaka Benjamin Cerkvenik s.p."
+  },
+  "metadata": {
+    "title": "Vzdrževanje objektov in čiščenje | Domžale z okolico",
+    "description": "Zanesljivo vzdrževanje objektov in profesionalno čiščenje prostorov v Domžalah z okolico. Redno čiščenje, globinsko čiščenje, tehnično vzdrževanje in urejanje okolice."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Profesionalne storitve za objekte",
+    "title": "Zanesljivo vzdrževanje objektov in",
+    "titleHighlight": "čiščenje prostorov",
+    "description": "Celovite rešitve za lastnike podjetij, upravnike stavb in posameznike v Domžalah z okolico. Poskrbimo za urejenost in brezhibno delovanje vaših prostorov.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost",
+        "title": "Zanesljivost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Odlične ocene",
+        "label": "Odlične ocene",
+        "title": "Odlične ocene"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovito vzdrževanje in čiščenje",
+    "description": "Zagotavljamo visoke standarde čistoče in urejenosti za poslovne in zasebne objekte v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Redno čiščenje poslovnih prostorov",
+        "description": "Redno in temeljito čiščenje pisarn ter poslovnih objektov za prijetno delovno okolje.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, preprog in oblazinjenega pohištva.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Tehnično vzdrževanje objektov",
+        "description": "Strokovno tehnično vzdrževanje objektov in skrb za nemoteno delovanje inštalacij.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Urejanje okolice",
+        "description": "Redno vzdrževanje in urejanje zelenih površin ter okolice vašega objekta.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Manjša hišnopravila in popravila",
+        "description": "Hitro in zanesljivo izvajanje manjših popravil ter hišnopravilnih del v objektih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaš objekt",
+    "description": "Z osredotočenostjo na kakovost in prilagodljivost poskrbimo, da so vaši prostori vedno v brezhibnem stanju.",
+    "highlights": [
+      "Visoka kakovost storitev",
+      "Zanesljivost in prilagodljivost",
+      "Odlične ocene strank"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost",
+        "description": "Storitve izvajamo profesionalno in skrbno, z mislijo na čistočo in urejenost.",
+        "title": "Visoka kakovost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Držimo se dogovorjenih rokov in se prilagajamo vašim urnikom.",
+        "title": "Zanesljivost"
+      },
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljstvo naših strank potrjujejo odlične ocene in dolgoletno zaupanje.",
+        "title": "Odlične ocene"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali želite naročiti naše storitve? Kontaktirajte nas preko spodnjih podatkov ali obrazca.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dragomelj 42, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 832 411",
+        "href": "tel:070832411",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali povpraševanje...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Dragomelj 42, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vzdrževanje in čiščenje Jaka Benjamin Cerkvenik s.p.",
+    "address": "Dragomelj 42, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "070 832 411"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

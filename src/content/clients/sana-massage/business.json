@@ -1,0 +1,27 @@
+{
+  "companyName": "Sana massage",
+  "industry": "Masažni salon",
+  "tagline": "Sprostitev in dobro počutje v srcu Maribora",
+  "services": [
+    "Klasična masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža",
+    "Športna masaža"
+  ],
+  "phone": "040 564 485",
+  "email": "",
+  "address": "Smetanova ulica 57, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 9:00 PM · Tuesday: 8:00 AM – 9:00 PM · Wednesday: 8:00 AM – 9:00 PM · Thursday: 8:00 AM – 9:00 PM · Friday: 8:00 AM – 9:00 PM · Saturday: 8:00 AM – 9:00 PM · Sunday: 8:00 AM – 9:00 PM",
+  "sellingPoints": [
+    "Vrhunska ocena strank",
+    "Prilagodljiv delovni čas vsak dan v tednu",
+    "Prijeten in sproščujoč ambient"
+  ],
+  "targetCustomers": "Posamezniki, ki iščejo sprostitev, lajšanje napetosti in skrb za dobro počutje",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "pomirjujoč, strokoven",
+  "brandStyle": "moderen in sproščen wellness",
+  "competitors": "Lokalni ponudniki masažnih storitev",
+  "callToAction": "Rezervirajte termin"
+}

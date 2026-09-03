@@ -1,0 +1,286 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-01-classic-split",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-01-sand",
+    "fontPairingId": "look-cistilni-servisi-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/iona-cistilni-servis/hero.avif",
+      "alt": "Profesionalno čiščenje svetle pisarne v Grosupljem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/iona-cistilni-servis/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196684",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-in-orange-jumper-holding-a-vacuum-hose-6196684/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "commercial cleaning team interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/iona-cistilni-servis/services.avif",
+      "alt": "Čisto in urejeno stanovanje po generalnem čiščenju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/iona-cistilni-servis/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16898979",
+      "sourceUrl": "https://www.pexels.com/photo/men-climbing-and-cleaning-windows-16898979/",
+      "photographer": "Natalie Minich",
+      "photographerUrl": "https://www.pexels.com/@mvntlie",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in se oblikujejo glede na obseg ter specjifiko del.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje poslovnih prostorov",
+        "description": "Ura dela oziroma pavšal po dogovoru",
+        "price": "od 20 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Generalno čiščenje stanovanj",
+        "description": "Temeljito čiščenje celotnega stanovanja",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežne garniture ali preproge",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Pranje steklenih površin",
+        "description": "Čiščenje oken in steklenih površin",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Čiščenje po gradbenih delih",
+        "description": "Končno čiščenje po adaptacijah",
+        "price": "od 150 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Iona",
+    "highlight": "čistilni servis"
+  },
+  "metadata": {
+    "title": "Iona, čistilni servis | Semira Hušidić s.p.",
+    "description": "Zanesljivo in temeljito čiščenje za vaš dom in pisarno v Grosupljem z okolico. Pokličite za ponudbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Čistilni servis Grosuplje",
+    "title": "Zanesljivo in temeljito čiščenje za",
+    "titleHighlight": "vaš dom in pisarno",
+    "description": "Profesionalne čistilne storitve za lastnike stanovanj, hiš in poslovnih prostorov v Grosupljem z okolico.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Temeljito",
+        "label": "Temeljito"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Celovite čistilne storitve",
+    "description": "Poskrbimo za čistočo vaših prostorov v Grosupljem z okolico s poudarkom na kakovosti in prilagodljivosti.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje poslovnih prostorov",
+        "description": "Strokovno redno vzdrževanje čistoče v vaših pisarnah in poslovnih objektih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Generalno čiščenje stanovanj",
+        "description": "Celovito generalno čiščenje stanovanj in hiš ob vseh priložnostih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje steklenih površin",
+        "description": "Natančno čiščenje oken, steklenih izložb in drugih steklenih površin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Čiščenje po gradbenih delih",
+        "description": "Urejanje in temeljito čiščenje objektov po zaključenih gradbenih ali prenovitvenih delih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega delovanja",
+    "description": "Z združevanjem natančnosti, zanesljivosti in uporabe kakovostnih čistil poskrbimo za popoln sijaj vaših prostorov.",
+    "highlights": [
+      "Prilagodljivost urniku strank",
+      "Uporaba kakovostnih čistil",
+      "Natančnost in zanesljivost"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagodljivost urniku",
+        "description": "Storitev prilagodimo vašemu vsakdanu in obveznostim.",
+        "title": "Prilagodljivost urniku"
+      },
+      {
+        "label": "Kakovostna čistila",
+        "description": "Uporaba preverjenih in učinkovitih čistilnih sredstev.",
+        "title": "Kakovostna čistila"
+      },
+      {
+        "label": "Natančnost in zanesljivost",
+        "description": "Držimo se dogovorov in zagotavljamo visoke standarde čistoče.",
+        "title": "Natančnost in zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali oddajte povpraševanje za ponudbo čiščenja vašega doma ali pisarne.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Adamičeva cesta 41a, 1290 Grosuplje, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "030 351 804",
+        "href": "tel:030351804",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo pripravili ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali opis prostora...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Adamičeva cesta 41a, 1290 Grosuplje, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Iona čistilni servis",
+    "address": "Adamičeva cesta 41a, 1290 Grosuplje, Slovenia",
+    "email": "",
+    "phone": "030 351 804"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

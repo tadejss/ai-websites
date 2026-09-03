@@ -1,0 +1,289 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-10-frost",
+    "fontPairingId": "look-nohti-pedikura-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-kg-nohti/hero.avif",
+      "alt": "Sodoben in urejen salon za nego nohtov v Mariboru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-kg-nohti/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997384",
+      "sourceUrl": "https://www.pexels.com/photo/person-with-red-nail-polish-3997384/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-kg-nohti/services.avif",
+      "alt": "Strokovna manikura in nega nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-kg-nohti/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677846",
+      "sourceUrl": "https://www.pexels.com/photo/nail-stylist-removing-cuticles-4677846/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene nege nohtov",
+    "description": "Pregled osnovnih storitev in cen za urejanje nohtov v našem salonu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manikura",
+        "description": "Oblikovanje nohtov in nega obnohtne kožice",
+        "price": "od 25 €",
+        "featured": false
+      },
+      {
+        "name": "Gel lak",
+        "description": "Obstojni lakiranje naravnih nohtov",
+        "price": "od 30 €",
+        "featured": true
+      },
+      {
+        "name": "Umetni nohti",
+        "description": "Podaljševanje in oblikovanje nohtov",
+        "price": "od 45 €",
+        "featured": false
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Cena odvisna od zahtevnosti vzorca",
+        "price": "od 5 €",
+        "featured": false
+      },
+      {
+        "name": "Nega nohtov",
+        "description": "Osnovna nega in obnova",
+        "price": "od 20 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "STUDIO KG",
+    "highlight": "Nohti"
+  },
+  "metadata": {
+    "title": "STUDIO KG - Nohti | Urejena manikura in nega nohtov v Mariboru",
+    "description": "Vaša destinacija za urejene in lepe nohte v Mariboru. Strokovna nega nohtov, gel lak, umetni nohti in poslikava v prijetnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Salon za nego nohtov v Mariboru",
+    "title": "Vaša destinacija za urejene in",
+    "titleHighlight": "lepe nohte",
+    "description": "Poskrbite za svoje roke v urejenem in sodobnem salonu v Mariboru. Nudimo strokovno manikuro, gel lak in nego nohtov za vsak okus.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Urejen",
+        "label": "in sodoben salon"
+      },
+      {
+        "value": "Visoka",
+        "label": "ocena strank"
+      },
+      {
+        "value": "Prijeten",
+        "label": "ambient"
+      },
+      {
+        "value": "Maribor",
+        "label": "in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita nega in urejanje nohtov",
+    "description": "Izbirajte med pestro ponudbo storitev za lepe in zdrave nohte v Mariboru in okolici.",
+    "items": [
+      {
+        "title": "Manikura",
+        "description": "Klasična nega in urejanje nohtov ter obnohtne kožice za urejen videz vaših rok.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nega nohtov",
+        "description": "Strokovna in skrbna nega za zdravje ter lepši izgled vaših naravnih nohtov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Gel lak",
+        "description": "Obstojen in sijoč nanos gel laka, ki poskrbi za brezhibne nohte več tednov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Umetni nohti",
+        "description": "Podaljševanje in oblikovanje nohtov po vaši želji za eleganten in dolgotrajen rezultat.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Unikatni vzorci in detajli, s katerimi vaši nohti zaživijo v polnem sijaju.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost lepoti in kakovostni negi",
+    "description": "Z našim strokovnim in prijaznim pristopom poskrbimo, da se boste med nego sprostili in odšli z urejenimi nohti.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Strokovna in skrbna nega nohtov",
+      "Prijeten ambient za sprostitev"
+    ],
+    "benefits": [
+      {
+        "stat": "Zadovoljne stranke",
+        "label": "Zadovoljne stranke",
+        "description": "Naše delo temelji na visokih standardih kakovosti in zadovoljstvu obiskovalcev.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "stat": "Strokovna nega",
+        "label": "Strokovna nega",
+        "description": "Skrbno in natančno delo z uporabo preverjenih materialov za nego vaši nohtov.",
+        "title": "Strokovna nega"
+      },
+      {
+        "stat": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje v Mariboru, kjer si lahko vzamete čas samo zase.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Pekrska cesta 52, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 237 988",
+        "href": "tel:040237988",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali dodatna vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Pekrska cesta 52, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "STUDIO KG Nohti",
+    "address": "Pekrska cesta 52, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "040 237 988"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

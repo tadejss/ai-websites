@@ -1,0 +1,281 @@
+{
+  "appearance": "construction",
+  "lookId": "gradbinci-08-dark-pro",
+  "theme": {
+    "paletteId": "look-gradbinci-08-copper",
+    "fontPairingId": "look-gradbinci-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sdg-dimnikarstvo-kemicno/hero.avif",
+      "alt": "Strokovni dimnikar pri vzdrževanju toplotne naprave v temnem profesionalnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sdg-dimnikarstvo-kemicno/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "37704234",
+      "sourceUrl": "https://www.pexels.com/photo/construction-workers-on-site-wearing-safety-gear-37704234/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "construction workers building site professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sdg-dimnikarstvo-kemicno/services.avif",
+      "alt": "Kemično čiščenje toplotnih naprav in strokovne dimnikarske storitve",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sdg-dimnikarstvo-kemicno/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38146879",
+      "sourceUrl": "https://www.pexels.com/photo/construction-worker-shoveling-sand-at-worksite-38146879/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "construction workers building site professional"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za naše dimnikarske, čiščenje toplotnih naprav in gradbene storitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Dimnikarske storitve",
+        "description": "Pregled in čiščenje dimnika",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Kemično čiščenje toplotnih naprav",
+        "description": "Čiščenje toplotne naprave po sistemu",
+        "price": "od 120 €"
+      },
+      {
+        "name": "Gradbene storitve",
+        "description": "Manjša gradbena dela in popravila",
+        "price": "od 40 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Vzdrževanje in pregledi",
+        "description": "Celovit pregled in svetovanje",
+        "price": "od 70 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Sdg",
+    "highlight": "dimnikarstvo"
+  },
+  "metadata": {
+    "title": "Sdg dimnikarstvo in čiščenje toplotnih naprav",
+    "description": "Zanesljive dimnikarske in gradbene storitve ter kemično čiščenje toplotnih naprav v Domžalah z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Strokovne dimnikarske in gradbene storitve",
+    "title": "Zanesljive rešitve za vaše",
+    "titleHighlight": "ogrevalne sisteme in objekte",
+    "description": "Celovite dimnikarske storitve, kemično čiščenje toplotnih naprav in gradbene storitve za lastnike stanovanjskih hiš, poslovnih objektov ter upravnike stavb.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska ocena",
+        "label": "Vrhunska ocena"
+      },
+      {
+        "value": "Celovite storitve",
+        "label": "Celovite storitve"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Kaj nudimo",
+    "description": "Zagotavljamo strokovne storitve za varno in učinkovito delovanje vaših sistemov v Domžalah z okolico in širši regiji.",
+    "items": [
+      {
+        "title": "Dimnikarske storitve",
+        "description": "Redni pregledi, čiščenje in vzdrževanje dimnikov za varno delovanje vašega ogrevalnega sistema.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Kemično čiščenje toplotnih naprav",
+        "description": "Učinkovito kemično čiščenje toplotnih naprav za večjo učinkovitost in daljšo življenjsko dobo opreme.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Gradbene storitve",
+        "description": "Kakovostne gradbene storitve prilagojene potrebam vaših stanovanjskih ali poslovnih objektov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Vzdrževanje in pregledi",
+        "description": "Celoviti pregledi in redno vzdrževanje za brezhibno delovanje in varnost.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše objekte",
+    "description": "Z našim strokovnim in zanesljivim pristopom poskrbimo za varnost in urejenost vaših ogrevalnih ter gradbenih sistemov.",
+    "highlights": [
+      "Vrhunska ocena in zaupanje strank",
+      "Celovite storitve na enem mestu",
+      "Strokoven in zanesljiv pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Zaupanje strank",
+        "description": "Vrhunska ocena in preverjeno zaupanje številnih lastnikov objektov.",
+        "title": "Zaupanje strank"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Širok nabor storitev za dimnike, toplotne naprave in gradbena dela.",
+        "title": "Celovite rešitve"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Zanesljiv in strokoven pristop pri vsakem projektu.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete naše storitve? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Prešernova cesta 7a, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 520 902",
+        "href": "tel:031520902",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon – Pet: 7:00 – 15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali vprašanje",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Prešernova cesta 7a, 1230 Domžale, Slovenia",
+    "rights": "© Sdg dimnikarstvo, d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Sdg dimnikarstvo",
+    "address": "Prešernova cesta 7a, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "031 520 902"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

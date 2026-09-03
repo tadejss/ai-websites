@@ -1,0 +1,285 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-08-dark-pro",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-08-copper",
+    "fontPairingId": "look-cistilni-servisi-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-objektov-gabriela/hero.avif",
+      "alt": "Strokovno čiščenje poslovnih prostorov v sodobni stavbi",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-objektov-gabriela/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196684",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-in-orange-jumper-holding-a-vacuum-hose-6196684/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "commercial cleaning team interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-objektov-gabriela/services.avif",
+      "alt": "Celovite storitve čiščenja in vzdrževanja objektov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-objektov-gabriela/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196694",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-woman-using-a-vacuum-cleaner-6196694/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled orientacijskih cen za naše storitve čiščenja in vzdrževanja objektov.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo in ogled objekta nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Generalno čiščenje stavb",
+        "description": "Temeljito čiščenje celotnega objekta",
+        "price": "od 150 €",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Redno vzdrževanje pisarn in poslovnih površin",
+        "price": "od 25 € / ura"
+      },
+      {
+        "name": "Vzdrževalno čiščenje",
+        "description": "Periodično čiščenje po dogovoru",
+        "price": "od 20 € / ura"
+      },
+      {
+        "name": "Pranje steklenih površin",
+        "description": "Čiščenje stekel in okvirjev",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Čiščenje po gradbenih delih",
+        "description": "Odstranjevanje prahu in ostankov po gradnji",
+        "price": "od 180 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čiščenje objektov",
+    "highlight": "Gabriela"
+  },
+  "metadata": {
+    "title": "Čiščenje objektov Gabriela, Tadej Pivk, s.p. | Medvode",
+    "description": "Zanesljivo in strokovno čiščenje poslovnih in stanovanjskih objektov v Medvodah s širšo okolico. Celovite rešitve za čist in urejen prostor."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Stopite v stik"
+  },
+  "hero": {
+    "badge": "Strokovno čiščenje objektov",
+    "title": "Zanesljivo in strokovno čiščenje za vaš",
+    "titleHighlight": "čist in urejen prostor",
+    "description": "Zagotavljamo celovite rešitve čiščenja za poslovne prostore, stavbe in stanovalce v Medvodah s širšo okolico.",
+    "primaryCta": "Stopite v stik",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo"
+      },
+      {
+        "value": "Celovito",
+        "label": "Celovito"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja objektov",
+    "description": "Poskrbimo za brezhibno čistočo vaših prostorov v Medvodah s širšo okolico z uporabo strokovnih pristopov.",
+    "items": [
+      {
+        "title": "Generalno čiščenje stavb",
+        "description": "Temeljito generalno čiščenje celotnih stavb za osvežitev in popolno urejenost prostorov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno vzdrževanje čistoče v vaših pisarnah in poslovnih objektih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževalno čiščenje",
+        "description": "Redno vzdrževalno čiščenje za dolgotrajno urejenost in higieno vaših površin.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje steklenih površin",
+        "description": "Strokovno čiščenje stekel in okenskih površin za bleščeč in čist pogled.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Čiščenje po gradbenih delih",
+        "description": "Natančno čiščenje objektov po zaključku gradbenih ali prenovitvenih del.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za čistočo",
+    "description": "Z našo prilagodljivostjo in strokovnim pristopom poskrbimo, da so vaši objekti vedno v najboljšem stanju.",
+    "highlights": [
+      "Prilagodljivost in zanesljivost pri vsakem projektu",
+      "Strokovni pristop k čiščenju in vzdrževanju",
+      "Celovite rešitve prilagojene vašim potrebam"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagodljivost",
+        "description": "Delo prilagodimo vašemu urniku in specifičnim zahtevam objekta.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Uporabljamo preverjene metode za doseganje visokih standardov čistoče.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Ponujamo širok nabor storitev za vzdrževanje in čiščenje na enem mestu.",
+        "title": "Celovite rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Iščete zanesljiv čistilni servis? Pišite nam ali nas pokličite za dogovor o sodelovanju.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 740 682",
+        "href": "tel:041740682",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Finžgarjeva ulica 16, 1215 Medvode, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje ali potrebe po čiščenju...",
+      "submitLabel": "Stopite v stik"
+    }
+  },
+  "footer": {
+    "address": "Finžgarjeva ulica 16, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čiščenje objektov Gabriela",
+    "address": "Finžgarjeva ulica 16, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "041 740 682"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

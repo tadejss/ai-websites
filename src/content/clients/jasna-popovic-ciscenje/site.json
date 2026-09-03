@@ -1,0 +1,290 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-08-dark-pro",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-08-copper",
+    "fontPairingId": "look-cistilni-servisi-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jasna-popovic-ciscenje/hero.avif",
+      "alt": "Profesionalno čiščenje in urejanje sodobnega doma v Medvodah",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jasna-popovic-ciscenje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9245158",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-orange-button-up-shirt-wearing-white-mask-9245158/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jasna-popovic-ciscenje/services.avif",
+      "alt": "Celovite storitve čiščenja in vzdrževanja prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jasna-popovic-ciscenje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9462192",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-shirt-holding-white-and-blue-sprayer-bottle-9462192/",
+      "photographer": "Liliana Drew",
+      "photographerUrl": "https://www.pexels.com/@liliana-drew",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen naših storitev čiščenja in vzdrževanja.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje prostorov",
+        "description": "Ura rednega čiščenja stanovanjskih ali poslovnih prostorov",
+        "price": "od 20 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnega objekta",
+        "price": "po dogovoru",
+        "unit": "objekt"
+      },
+      {
+        "name": "Čiščenje oken",
+        "description": "Pranje oken in steklenih površin",
+        "price": "od 30 €",
+        "unit": "storitev"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur, preprog in vzmetnic",
+        "price": "od 40 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Vzdrževanje objektov",
+        "description": "Redni pregledi in vzdrževalna dela",
+        "price": "po dogovoru",
+        "unit": "mesec"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Jasna Popović s.p.",
+    "highlight": "čiščenje in vzdrževanje"
+  },
+  "metadata": {
+    "title": "Jasna Popović s.p. - Čiščenje in vzdrževanje Medvode",
+    "description": "Zanesljive storitve čiščenja in vzdrževanja za vaš dom ali poslovni prostor v Medvodah z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik",
+    "title": "Čiščenje in vzdrževanje",
+    "titleHighlight": "za vaš dom ali poslovni prostor",
+    "description": "Zanesljive storitve čiščenja in vzdrževanja za lastnike stanovanj, hiš in poslovnih prostorov v Medvodah z okolico.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljiva ekipa",
+        "label": "Zanesljiva ekipa"
+      },
+      {
+        "value": "Prilagojeno",
+        "label": "Prilagojeno"
+      },
+      {
+        "value": "Preverjena čistila",
+        "label": "Preverjena čistila"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Medvode z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja in vzdrževanja",
+    "description": "Poskrbimo za čistočo in urejenost vaših prostorov v Medvodah z okolico s profesionalnim pristopom.",
+    "items": [
+      {
+        "title": "Generalno čiščenje",
+        "description": "Temeljito generalno čiščenje prostorov za popolno osvežitev vašega doma ali pisarne.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje prostorov",
+        "description": "Redno vzdrževanje čistoče v vaših prostorih za dolgotrajen občutek urejenosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje objektov",
+        "description": "Strokovno vzdrževanje objektov, ki zagotavlja brezhibno delovanje in urejenost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje oken",
+        "description": "Kristalno čista okna in steklene površine za več svetlobe v vaših prostorih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Globinsko odstranjevanje umazanije in osvežitev tekstilnih površin.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za čistočo in urejenost",
+    "description": "Z našim strokovnim in prilagojenim pristopom zagotavljamo visoko kakovost storitev za vsako stranko.",
+    "highlights": [
+      "Zanesljiva in izkušena ekipa",
+      "Prilagojeno čiščenje vašim željam",
+      "Uporaba preverjenih čistil"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva ekipa",
+        "description": "Delujemo zanesljivo in strokovno, da so vaši prostori vedno brezhibno čisti.",
+        "title": "Zanesljiva ekipa"
+      },
+      {
+        "label": "Prilagojen pristop",
+        "description": "Storitve prilagodimo vašim specifičnim željam in potrebam.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Preverjena čistila",
+        "description": "Uporabljamo preverjena in učinkovita čistila za varno čiščenje.",
+        "title": "Preverjena čistila"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanja ali želite naročiti naše storitve? Kontaktirajte nas z veseljem vam bomo pomagali.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "070 448 958",
+        "href": "tel:070448958",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Finžgarjeva ulica 16, 1215 Medvode, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali povpraševanje...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Finžgarjeva ulica 16, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Jasna Popović s.p. čiščenje in vzdrževanje",
+    "address": "Finžgarjeva ulica 16, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "070 448 958"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

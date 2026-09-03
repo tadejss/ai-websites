@@ -1,0 +1,284 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-06-service-grid",
+  "theme": {
+    "paletteId": "look-maserji-wellness-06-clay",
+    "fontPairingId": "look-maserji-wellness-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/tajska-masaza-siriyupha/hero.avif",
+      "alt": "Sproščujoč ambient za tradicionalno tajsko masažo z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/tajska-masaza-siriyupha/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628596",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628596/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/tajska-masaza-siriyupha/services.avif",
+      "alt": "Zeliščni snopki in pribor za sproščujočo masažo v wellness centru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/tajska-masaza-siriyupha/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6560297",
+      "sourceUrl": "https://www.pexels.com/photo/a-person-massaging-a-topless-woman-lying-on-massage-table-6560297/",
+      "photographer": "Anna Tarazevich",
+      "photographerUrl": "https://www.pexels.com/@anntarazevich",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled naših masaž",
+    "description": "Izberite storitev, ki najbolj ustreza vašim trenutnim potrebam po sprostitvi.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Tradicionalna tajska masaža",
+        "description": "Sproščanje celega telesa z akupresurnimi pritiski",
+        "price": "od 55 €",
+        "featured": true
+      },
+      {
+        "name": "Aromaterapevtska masaža",
+        "description": "Masaža z eteričnimi olji",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Masaža z zeliščnimi snopki",
+        "description": "Uporaba toplih zeliščnih snopkov za globoko sprostitev",
+        "price": "od 65 €"
+      },
+      {
+        "name": "Masaža hrbta in vratu",
+        "description": "Osredotočena obravnava zgornjega dela telesa",
+        "price": "od 45 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Siriyupha",
+    "highlight": "Tajska masaža"
+  },
+  "metadata": {
+    "title": "Tajska masaža Siriyupha Maribor | Prvovrstne tradicionalne masaže",
+    "description": "Prvovrstne tradicionalne tajske masaže v Mariboru. Sprostitev telesa in duha, aromaterapevtske masaže ter masaže z zeliščnimi snopki za vaše dobro počutje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Tradicionalna tajska masaža v Mariboru",
+    "title": "Prvovrstne tradicionalne tajske masaže za sprostitev",
+    "titleHighlight": "telesa in duha",
+    "description": "Prepustite se strokovnim rokam in poiščite globoko sprostitev ter lajšanje napetosti v mišicah v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Raziščite storitve",
+    "stats": [
+      {
+        "value": "Tradicionalno",
+        "label": "Pristna tajska tradicija",
+        "title": "Pristna tajska tradicija"
+      },
+      {
+        "value": "Sproščujoče",
+        "label": "Visoka kakovost storitev",
+        "title": "Visoka kakovost storitev"
+      },
+      {
+        "value": "Ambient",
+        "label": "Prijeten in čist prostor",
+        "title": "Prijeten in čist prostor"
+      },
+      {
+        "value": "Osebno",
+        "label": "Celostno dobro počutje",
+        "title": "Celostno dobro počutje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše ravnovesje in sprostitev",
+    "description": "Izbirajte med preverjenimi tradicionalnimi tehnikami masaže, prilagojenimi vašemu telesu in potrebam v Mariboru.",
+    "items": [
+      {
+        "title": "Tradicionalna tajska masaža",
+        "description": "Prvovrstna tehnika raztezanja in pritiskanja na akupresurne točke za sprostitev celega telesa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Aromaterapevtska masaža",
+        "description": "Nežna in pomirjujoča masaža z eteričnimi olji za globoko sprostitev čutov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Masaža z zeliščnimi snopki",
+        "description": "Tradicionalna nega s toplemi zeliščnimi snopki, ki blagodejno vplivajo na napete mišice.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža hrbta in vratu",
+        "description": "Ciljano lajšanje napetosti v predelu hrbta, ramen in vratu ter povrnitev gibljivosti.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Pridih pristne tajske tradicije v Mariboru",
+    "description": "Zavezani smo k visoki kakovosti storitev in ustvarjanju mirnega okolja, kjer boste odkrili pot do notranjega miru.",
+    "highlights": [
+      "Visoka ocena strank za kakovost storitev",
+      "Pridih pristne tajske tradicije v Mariboru",
+      "Sproščujoč in prijeten ambient"
+    ],
+    "benefits": [
+      {
+        "label": "Pristna tradicija",
+        "description": "Izkušnje in tehnike, ki prinašajo pristen duh Tajske naravnost v vaše okolje.",
+        "title": "Pristna tradicija"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Čist, topel in sproščujoč prostor, ustvarjen za vaš popoln odklop.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Celosten pristop",
+        "description": "Skrb za sprostitev telesa, lajšanje napetosti in povrnitev energije.",
+        "title": "Celosten pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin za sprostitev",
+    "description": "Obiščite nas na Nasipni ulici v Mariboru ali nas pokličite in si zagotovite svoj trenutek miru.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Nasipna ulica 53, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "064 114 226",
+        "href": "tel:064114226",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon, Sre-Pet: 10:00 – 21:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek za rezervacijo termina ali vprašanja o storitvah.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Nasipna ulica 53, 2000 Maribor, Slovenia",
+    "rights": "© 2025 Tajska masaža, Siriyupha d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Siriyupha Tajska masaža",
+    "address": "Nasipna ulica 53, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "064 114 226"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

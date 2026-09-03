@@ -1,0 +1,28 @@
+{
+  "companyName": "Senikor čiščenje s.p.",
+  "industry": "Čiščenje in vzdrževanje objektov",
+  "tagline": "Zanesljive in profesionalne čistilne storitve za vaš dom in pisarno.",
+  "services": [
+    "Globinsko čiščenje",
+    "Čiščenje poslovnih prostorov",
+    "Čiščenje stanovanj",
+    "Čiščenje oken",
+    "Vzdrževalno čiščenje"
+  ],
+  "phone": "040 213 584",
+  "email": "",
+  "address": "Miklošičeva ulica 1e, 1230 Domžale, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 9:00 AM – 5:00 PM · Wednesday: 9:00 AM – 5:00 PM · Thursday: 9:00 AM – 5:00 PM · Friday: Closed · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Strokoven in zanesljiv pristop",
+    "Prilagodljivost urniku strank",
+    "Kakovostna izvedba čistilnih storitev"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov v okolici",
+  "serviceArea": "Domžale z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "čist, sodoben, zaupanja vreden",
+  "competitors": "Lokalni ponudniki čistilnih storitev",
+  "callToAction": "Kontaktirajte nas"
+}

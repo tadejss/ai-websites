@@ -1,0 +1,286 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-09-warm-soft",
+  "theme": {
+    "paletteId": "look-maserji-wellness-09-dusk",
+    "fontPairingId": "look-maserji-wellness-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/taurus-masazni-salon/hero.avif",
+      "alt": "Sproščujoč ambient v masažnem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/taurus-masazni-salon/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628520",
+      "sourceUrl": "https://www.pexels.com/photo/settee-by-the-window-6628520/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/taurus-masazni-salon/services.avif",
+      "alt": "Strokovna masaža hrbta",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/taurus-masazni-salon/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628599",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628599/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Naš salon",
+    "description": "Udoben in miren kotiček za vaše dobro počutje.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Preglednih in dostopnih cen",
+    "description": "Izberite masažo, ki ustreza vašim trenutnim potrebam.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščanje celega telesa",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Regeneracija za aktivne",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Bolečinska masaža",
+        "description": "Ciljna obravnava napetosti",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Popoln umik od stresa",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Masaža hrbta",
+        "description": "Osredotočeno na hrbet in vrat",
+        "price": "od 30 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Taurus",
+    "highlight": "Masažni salon"
+  },
+  "metadata": {
+    "title": "Taurus masažni salon | Maribor",
+    "description": "Sprostitev in odpravljanje napetosti za vaše boljše počutje v Mariboru. Klasična, športna in bolečinska masaža."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažni salon v Mariboru",
+    "title": "Sprostitev in odpravljanje napetosti za vaše",
+    "titleHighlight": "boljše počutje",
+    "description": "Strokovne masaže za lajšanje bolečin v hrbtu, pomoč športnikom in vsem, ki potrebujete globoko sprostitev v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunske ocene",
+        "label": "Vrhunske ocene"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient"
+      },
+      {
+        "value": "Lajšanje bolečin",
+        "label": "Lajšanje bolečin"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Masaže prilagojene vašim potrebam",
+    "description": "Izberite storitev, ki vam bo pomagala pregnati napetost in povrniti energijo v Mariboru in okolici.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Sproščanje celotnega telesa, izboljšanje prekrvavitve in odpravljanje vsakodnevnega stresa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Namenjena športnikom in aktivnim posameznikom za hitrejšo regeneracijo in pripravo na napore.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljano usmerjeno lajšanje trdovratnih bolečin v mišicah in sklepih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi za umiritev uma, sprostitev mišic in popolni duševni mir.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Masaža hrbta",
+        "description": "Učinkovito deluje na predel hrbta, vratu in ramen, kjer se najpogosteje nabira napetost.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Taurus",
+    "title": "Celostna skrb za vaše telo in duha",
+    "description": "Združujemo strokovnost, posluh za posameznika in prijeten ambient za najboljšo izkušnjo masaže.",
+    "highlights": [
+      "Vrhunske ocene zadovoljnih strank",
+      "Strokoven in posamičen pristop",
+      "Udoben in sproščujoč ambient",
+      "Učinkovito lajšanje bolečin v mišicah"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunske ocene",
+        "description": "Zadovoljstvo naših strank potrjujejo številne pozitivne ocene in zaupanje.",
+        "title": "Vrhunske ocene"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Vsaki stranki se posvetimo individulano in prilagodimo masažo njenim potrebam.",
+        "title": "Osebni pristop"
+      },
+      {
+        "label": "Sproščujoč ambient",
+        "description": "Udoben prostor v Mariboru, ustvarjen za vaš mir, počitek in odmerek sprostitve.",
+        "title": "Sproščujoč ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Rezervirajte svoj termin",
+    "description": "Stopite v stik z nami in si zagotovite uro sprostitve v masažnem salonu Taurus v Mariboru.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Betnavska cesta 39, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 362 225",
+        "href": "tel:040362225",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Betnavska cesta 39, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane. Taurus masažni salon, Marko Premec s.p."
+  },
+  "business": {
+    "name": "Taurus Masažni salon",
+    "address": "Betnavska cesta 39, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "040 362 225"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

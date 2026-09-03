@@ -1,0 +1,28 @@
+{
+  "companyName": "Čistilni servis, Saša Tomašić s.p.",
+  "industry": "Čistilne storitve",
+  "tagline": "Zanesljivo in temeljito čiščenje za vaš dom in pisarno",
+  "services": [
+    "Globinsko čiščenje",
+    "Generalno čiščenje",
+    "Čiščenje poslovnih prostorov",
+    "Čiščenje stanovanjskih objektov",
+    "Vzdrževalno čiščenje"
+  ],
+  "phone": "041 360 559",
+  "email": "",
+  "address": "Depala vas 85 A, 1230 Domžale, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Zanesljiva in strokovna izvedba",
+    "Prilagodljivost potrebam strank",
+    "Uporaba preverjenih čistilnih sredstev"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov",
+  "serviceArea": "Domžale z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, zanesljiv",
+  "brandStyle": "domač in zaupanja vreden",
+  "competitors": "Lokalni ponudniki čistilnih storitev",
+  "callToAction": "Pokličite nas"
+}

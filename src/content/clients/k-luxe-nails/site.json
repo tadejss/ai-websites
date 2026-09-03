@@ -1,0 +1,295 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-02-editorial-type",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-02-slate",
+    "fontPairingId": "look-nohti-pedikura-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/k-luxe-nails/hero.avif",
+      "alt": "Eleganten ambient lepotnega salona za nego nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/k-luxe-nails/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "15202934",
+      "sourceUrl": "https://www.pexels.com/photo/beautician-working-by-table-15202934/",
+      "photographer": "Jarib Key",
+      "photographerUrl": "https://www.pexels.com/@jarib-key-427074312",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/k-luxe-nails/services.avif",
+      "alt": "Strokovna manikura in urejanje nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/k-luxe-nails/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3735653",
+      "sourceUrl": "https://www.pexels.com/photo/artificial-nail-samples-3735653/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregled storitev in cen",
+    "description": "Informativni cenik naših lepotnih storitev nego nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in zaključna nega",
+        "price": "od 25 €",
+        "featured": false
+      },
+      {
+        "name": "Gel lak in utrjevanje",
+        "description": "Obstojni lak z utrjevanjem naravnih nohtov",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Podaljševanje nohtov",
+        "description": "Podaljševanje z gelom ali šablonami po vaši izbiri",
+        "price": "od 45 €",
+        "featured": false
+      },
+      {
+        "name": "Umetniško oblikovanje nohtov",
+        "description": "Dodatno poslikavanje in umetniški detajli na nohtih",
+        "price": "od 5 €",
+        "featured": false
+      },
+      {
+        "name": "Nega obnohtne kožice",
+        "description": "Samostojna specialna nega za urejen videz rok",
+        "price": "od 15 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "K Luxe",
+    "highlight": "Nails"
+  },
+  "metadata": {
+    "title": "K Luxe Nails | Strokovna nega nohtov Ptuj",
+    "description": "Strokovna nega in urejanje nohtov na Ptuju s širšo okolico. Klasična manikura, gel lak, podaljševanje in umetniško oblikovanje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Lepotni salon za nego nohtov Ptuj",
+    "title": "Strokovna nega in urejanje nohtov za",
+    "titleHighlight": "urejen videz",
+    "description": "Vsem, ki cenite urejene nohte, estetiko in kakovostno lepotno nego na Ptuju in v širši okolici, nudimo celovite storitve v prijetnem ambientu.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka kakovost",
+        "label": "Visoka kakovost",
+        "title": "Visoka kakovost"
+      },
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba",
+        "title": "Natančna izvedba"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Urejen ambient",
+        "label": "Urejen ambient",
+        "title": "Urejen ambient"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Strokovne storitve nego nohtov",
+    "description": "Prepustite se strokovni negi in poskrbite za zdrav ter urejen videz vaših nohtov.",
+    "items": [
+      {
+        "title": "Klasična manikura",
+        "description": "Skrbno oblikovanje nohtov in celostna nega za čudovit ter naraven videz vaših rok.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Gel lak in utrjevanje",
+        "description": "Dolgotrajna obstojnost in sijaj z nanosom kakovostnega gel laka za urejene nohte.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Podaljševanje nohtov",
+        "description": "Udobno in estetsko podaljševanje nohtov prilagojeno vašim željam in obliki rok.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Umetniško oblikovanje nohtov",
+        "description": "Kreativni vzorci in unikatno umetniško oblikovanje za posebne priložnosti ali vsak dan.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega obnohtne kožice",
+        "description": "Nežna in strokovna nega obnohtne kožice za zdrav videz in urejenost celotnih rok.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Eleganca, natančnost in osebni pristop",
+    "description": "Zavedamo se pomena urejenega videza, zato vsaki stranki se namenimo posvetiti s polno pozornostjo.",
+    "highlights": [
+      "Visoka kakovost storitev in materialov",
+      "Natančna in urejena izvedba vsakega tretmaja",
+      "Prijeten ambient v sproščenem okolju"
+    ],
+    "benefits": [
+      {
+        "label": "Visoka kakovost storitev",
+        "description": "Uporaba preverjenih tehnik za vrhunske rezultate in zadovoljstvo.",
+        "title": "Visoka kakovost storitev"
+      },
+      {
+        "label": "Natančna in urejena izvedba",
+        "description": "Pozornost do vsake podrobnosti za popoln končni videz vaših nohtov.",
+        "title": "Natančna in urejena izvedba"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje in osebni pristop, kjer si lahko vzamete čas zase.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naše ponudbe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Trstenjakova ulica 5a, 2250 Ptuj, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 700 840",
+        "href": "tel:040700840",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sre: 8:00–15:00, Čet: 9:00–15:00, Pet: 8:00–15:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Trstenjakova ulica 5a, 2250 Ptuj, Slovenia",
+    "rights": "© K Luxe Nails, Katja Krajnc s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "K Luxe Nails",
+    "address": "Trstenjakova ulica 5a, 2250 Ptuj, Slovenia",
+    "email": "",
+    "phone": "040 700 840"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

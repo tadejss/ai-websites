@@ -1,0 +1,291 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-07-linen",
+    "fontPairingId": "look-cistilni-servisi-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/globinsko-ciscenje-domzale/hero.avif",
+      "alt": "Strokovno globinsko čiščenje sedežne garniture v svetlem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/globinsko-ciscenje-domzale/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196694",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-woman-using-a-vacuum-cleaner-6196694/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/globinsko-ciscenje-domzale/services.avif",
+      "alt": "Globinsko čiščenje notranjosti avtomobila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/globinsko-ciscenje-domzale/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196684",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-in-orange-jumper-holding-a-vacuum-hose-6196684/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "commercial cleaning team interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen globinskega čiščenja za dom in vozilo.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Globinsko čiščenje sedežne garniture",
+        "description": "Globinsko čiščenje tekstilne sedežne garniture glede na velikost.",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje vzmetnice",
+        "description": "Temeljito čiščenje enojne ali zakonske vzmetnice z odstranjevanjem pršic.",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Globinsko čiščenje avtomobila",
+        "description": "Celovito čiščenje notranjosti vozila (sedeži, tla, prtljažnik).",
+        "price": "od 70 €"
+      },
+      {
+        "name": "Čiščenje preprog",
+        "description": "Globinsko pranje in osvežitev preprog po kvadratnem metru.",
+        "price": "od 8 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Odstranjevanje specifičnih madežev",
+        "description": "Ciljano odstranjevanje trdovratnih madežev.",
+        "price": "od 15 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Globinsko čiščenje",
+    "highlight": "Domžale"
+  },
+  "metadata": {
+    "title": "Globinsko čiščenje Domžale | Strokovno čiščenje tekstila in vozil",
+    "description": "Strokovno globinsko čiščenje sedežnih garnitur, vzmetnic, preprog in vozil v Domžalah z okolico. Preverjena čistila in temeljito odstranjevanje madežev."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo čiščenje v Domžalah",
+    "title": "Strokovno globinsko čiščenje",
+    "titleHighlight": "tekstila in vozil",
+    "description": "Celovite storitve globinskega čiščenja za lastnike stanovanj, hiš in vozil v Domžalah z okolico. Poskrbimo za svežino in čistočo vašega doma.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Topel",
+        "label": "in čist dom"
+      },
+      {
+        "value": "Preverjena",
+        "label": "čistilna sredstva"
+      },
+      {
+        "value": "Hitra",
+        "label": "in zanesljiva storitev"
+      },
+      {
+        "value": "Prilagodljiv",
+        "label": "urnik"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve globinskega čiščenja",
+    "description": "Specializirani smo za globinsko čiščenje različnih površin in materialov v Domžalah z okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje sedežnih garnitur",
+        "description": "Temeljito odstranjevanje prahu, pršic, neprijetnih vonjav in madežev z vaših sedežnih garnitur.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje vzmetnic",
+        "description": "Zagotovite si higienično čisto in zdravo spalno okolje z globinskim čiščenjem vzmetnic.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Globinsko čiščenje avtomobilov",
+        "description": "Osvežite notranjost svojega vozila z natančnim čiščenjem sedežev, talnih oblog in prtljažnika.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje preprog",
+        "description": "Povrnite prvotni videz in mehkobo vašim preprogam z naprednimi postopki globinskega čiščenja.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Odstranjevanje trdovratnih madežev",
+        "description": "Ciljano in varno odstranjevanje težavnih madežev z občutljivih tekstilnih površin.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za čistočo v Domžalah",
+    "description": "Z našim znanjem, prilagodljivostjo in skrbnostjo poskrbimo za brezhibne rezultate.",
+    "highlights": [
+      "Dostopnost in prilagodljivost urnika vašim željam",
+      "Uporaba preverjenih in varnih čistilnih sredstev",
+      "Temeljito odstranjevanje umazanije, madežev in alergenov"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagodljiv urnik",
+        "description": "Storitve prilagodimo vašemu prostemu času in obveznostim.",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "label": "Preverjena čistila",
+        "description": "Uporabljamo preverjena sredstva, ki so učinkovita proti umazaniji in varna za materiale.",
+        "title": "Preverjena čistila"
+      },
+      {
+        "label": "Temeljito čiščenje",
+        "description": "Odstranimo trdovratne madeže ter poskrbimo za odstranjevanje alergenov.",
+        "title": "Temeljito čiščenje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali oddajte povpraševanje za hiter dogovor o terminu čiščenja.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 532 402",
+        "href": "tel:040532402",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kamniška cesta 13, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: odprto (nedelja zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, katero storitev potrebujete...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Kamniška cesta 13, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Globinsko čiščenje Domžale",
+    "address": "Kamniška cesta 13, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "040 532 402"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

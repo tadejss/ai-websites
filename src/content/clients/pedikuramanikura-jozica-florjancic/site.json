@@ -1,0 +1,292 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-04-stats-trust",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-04-stone",
+    "fontPairingId": "look-nohti-pedikura-04"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikuramanikura-jozica-florjancic/hero.avif",
+      "alt": "Sproščujoč in čist salon za nego stopal v Mariboru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikuramanikura-jozica-florjancic/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "17056219",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-making-pedicure-with-tongs-17056219/",
+      "photographer": "Andrea Mosti",
+      "photographerUrl": "https://www.pexels.com/@andreamostiphotography",
+      "searchQuery": "pedicure spa treatment close up"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikuramanikura-jozica-florjancic/services.avif",
+      "alt": "Strokovna manikura in nega rok ter nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikuramanikura-jozica-florjancic/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "17056220",
+      "sourceUrl": "https://www.pexels.com/photo/woman-getting-pedicure-done-17056220/",
+      "photographer": "Andrea Mosti",
+      "photographerUrl": "https://www.pexels.com/@andreamostiphotography",
+      "searchQuery": "pedicure spa treatment close up"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregled storitev in cen",
+    "description": "Cenik storitev za nego stopal in rok v našem salonu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična pedikura",
+        "description": "Osnovna nega in ureditev stopal",
+        "price": "od 30 €",
+        "featured": true
+      },
+      {
+        "name": "Estetska pedikura",
+        "description": "Nega in estetska ureditev stopal",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Manikura",
+        "description": "Urejanje rok in nega nohtov",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Nega nohtov",
+        "description": "Oblikovanje in nega nohtov",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Svetovanje za nego stopal",
+        "description": "Strokovni nasveti in priporočila",
+        "price": "Po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Pedikura-Manikura",
+    "highlight": "Jožica Florjančič s.p."
+  },
+  "metadata": {
+    "title": "Pedikura in manikura Jožica Florjančič s.p. | Maribor",
+    "description": "Strokovna in sproščujoča nega vaših nog in rok v Mariboru in okolici. Naročite se na klasično ali estetsko pedikuro ter manikuro."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Salon za nego stopal in rok",
+    "title": "Strokovna in sproščujoča nega vaših",
+    "titleHighlight": "nog in rok v Mariboru",
+    "description": "Celovite storitve za vse, ki skrbijo za urejen videz in zdravje svojih stopal in rok v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Prilagodljivi termini",
+        "label": "Prilagodljivi termini",
+        "title": "Prilagodljivi termini"
+      },
+      {
+        "value": "Zadovoljne stranke",
+        "label": "Zadovoljne stranke",
+        "title": "Zadovoljne stranke"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita nega za vaše zdravje in dobro počutje",
+    "description": "V našem salonu v Mariboru poskrbimo za profesionalno nego stopal in rok ter vam svetujemo o pravilni domači negi.",
+    "items": [
+      {
+        "title": "Klasična pedikura",
+        "description": "Temeljita nega stopal za zdravje in lahkotnost vaših korakov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Estetska pedikura",
+        "description": "Urejen videz in lepi nohti na vaših stopalih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Manikura",
+        "description": "Nega in urejanje rok ter nohtov za urejen vsakdanji videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega nohtov",
+        "description": "Strokovno oblikovanje in nega nohtov na rokah in nogah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje za nego stopal",
+        "description": "Strokovni nasveti za ohranjanje zdravja in mehkobe vaših stopal.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden salon za vaše roke in noge",
+    "description": "Zavedamo se pomena urejenega videza in dobrega počutja, zato se vsaki stranki posvetimo individualno.",
+    "highlights": [
+      "Visoka raven zadovoljstva strank",
+      "Prijazen in strokoven pristop",
+      "Prilagodljiv delovni čas z dopoldanskimi in popoldanskimi termini",
+      "Prijeten ambient v Mariboru"
+    ],
+    "benefits": [
+      {
+        "label": "Strokoven pristop",
+        "description": "Natančna in strokovna izvedba vseh storitev za nego stopal in rok.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Prilagodljiv čas",
+        "description": "Dopoldanski in popoldanski termini, prilagojeni vašemu urniku.",
+        "title": "Prilagodljiv čas"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje v Mariboru, kjer se boste počutili dobrodošlo.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naše ponudbe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Gosposvetska Cesta 20, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 435 801",
+        "href": "tel:031435801",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon-Sre: 13:00–20:00, Čet-Pet: 7:00–14:00, Sob-Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Gosposvetska Cesta 20, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Pedikura-Manikura Jožica Florjančič s.p.",
+    "address": "Gosposvetska Cesta 20, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "031 435 801"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

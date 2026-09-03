@@ -1,0 +1,28 @@
+{
+  "companyName": "Vitana, Negovalni salon",
+  "industry": "Masažni in negovalni salon",
+  "tagline": "Celostna skrb za vaše dobro počutje in sprostitev v Mariboru.",
+  "services": [
+    "Sprostitvene masaže",
+    "Klasične masaže",
+    "Nega telesa",
+    "Aromaterapija",
+    "Storitve za nego in sprostitev"
+  ],
+  "phone": "040 696 530",
+  "email": "",
+  "address": "Žabotova ulica 5, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 6:00 PM · Tuesday: 8:00 AM – 6:00 PM · Wednesday: 8:00 AM – 6:00 PM · Thursday: 8:00 AM – 6:00 PM · Friday: 8:00 AM – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Prijeten in sproščujoč ambient",
+    "Strokoven in oseben pristop"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje napetosti v mišicah in nego telesa v Mariboru.",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "sproščujoč, topel, strokoven",
+  "brandStyle": "umirjen, butični salon",
+  "competitors": "Lokalni masažni in negovalni saloni v Mariboru",
+  "callToAction": "Rezervirajte termin"
+}

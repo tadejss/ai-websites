@@ -1,0 +1,27 @@
+{
+  "companyName": "Svet refleksoterapije",
+  "industry": "masaža in refleksoterapija",
+  "tagline": "Strokovna refleksoterapija za vaše dobro počutje in sprostitev",
+  "services": [
+    "Refleksoterapija stopal",
+    "Sprostitvena masaža",
+    "Lajšanje bolečin",
+    "Uravnavanje energije"
+  ],
+  "phone": "041 299 270",
+  "email": "",
+  "address": "Gospejna ulica 4, 2000 Maribor, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Strokovni pristop k refleksoterapiji",
+    "Prilagojene obravnave za vsakega posameznika",
+    "Udobno in sproščujoče okolje"
+  ],
+  "targetCustomers": "Posamezniki, ki iščejo naravne metode sprostitve, lajšanja stresa in izboljšanja počutja",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "miren, strokoven, prijazen",
+  "brandStyle": "naraven in zanesljiv",
+  "competitors": "lokalni ponudniki masažnih in terapevtskih storitev",
+  "callToAction": "Rezervirajte termin"
+}

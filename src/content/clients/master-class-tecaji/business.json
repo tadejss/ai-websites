@@ -1,0 +1,28 @@
+{
+  "companyName": "masTer class d.o.o. (tečaji masaže)",
+  "industry": "masaža in izobraževanje",
+  "tagline": "Kakovostni tečaji masaže za strokovni in osebni razvoj",
+  "services": [
+    "Osnovni tečaj masaže",
+    "Nadaljevalni tečaj masaže",
+    "Specializirane masažne tehnike",
+    "Individualno izobraževanje",
+    "Pridobivanje certifikatov"
+  ],
+  "phone": "069 646 468",
+  "email": "",
+  "address": "Mlinska ulica 1, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 5:00 PM · Tuesday: 9:00 AM – 5:00 PM · Wednesday: 9:00 AM – 5:00 PM · Thursday: 9:00 AM – 5:00 PM · Friday: 9:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih tečajnikov",
+    "Strokoven in prilagojen pristop k učenju",
+    "Pridobitev uporabnega znanja za takojšnjo uporabo"
+  ],
+  "targetCustomers": "Bodoči maserji, wellness delavci in vsi, ki želijo usvojiti masažne tehnike",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "strorokoven in motivirajoč",
+  "brandStyle": "izobraževalni center za masaže",
+  "competitors": "Lokalne masažne šole in ponudniki tečajev",
+  "callToAction": "Prijavite se na tečaj"
+}

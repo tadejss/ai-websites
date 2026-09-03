@@ -1,0 +1,28 @@
+{
+  "companyName": "STUDIO KG - Nohti",
+  "industry": "Nail Salon",
+  "tagline": "Vaša destinacija za urejene in lepe nohte v Mariboru.",
+  "services": [
+    "Manikura",
+    "Nega nohtov",
+    "Gel lak",
+    "Umetni nohti",
+    "Poslikava nohtov"
+  ],
+  "phone": "040 237 988",
+  "email": "",
+  "address": "Pekrska cesta 52, 2000 Maribor, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Strokovna in skrbna nega nohtov",
+    "Prijeten ambient za sprostitev"
+  ],
+  "targetCustomers": "Posamezniki, ki cenijo urejen videz nohtov in kakovostno nego.",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "urejen in sodoben salon",
+  "competitors": "Lokalni saloni za nego nohtov v Mariboru",
+  "callToAction": "Rezervirajte termin"
+}

@@ -1,0 +1,29 @@
+{
+  "companyName": "Pedikura-Manikura Jožica Florjančič s.p.",
+  "industry": "Salon za nego stopal in rok",
+  "tagline": "Strokovna in sproščujoča nega vaših nog in rok v Mariboru.",
+  "services": [
+    "Klasična pedikura",
+    "Estetska pedikura",
+    "Manikura",
+    "Nega nohtov",
+    "Svetovanje za nego stopal"
+  ],
+  "phone": "031 435 801",
+  "email": "",
+  "address": "Gosposvetska Cesta 20, 2000 Maribor, Slovenia",
+  "openingHours": "Ponedeljek: 13:00–20:00, Torek: 13:00–20:00, Sreda: 13:00–20:00, Četrtek: 7:00–14:00, Petek: 7:00–14:00, Sobota: Zaprto, Nedelja: Zaprto",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljstvo strank",
+    "Strokoven in prijazen pristop",
+    "Prilagodljiv delovni čas z dopoldanskimi in popoldanskimi termini",
+    "Prijeten ambient v Mariboru"
+  ],
+  "targetCustomers": "Vsi, ki skrbijo za urejen videz in zdravje svojih stopal in rok",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "čist, zaupanja vreden salon",
+  "competitors": "Lokalni saloni za pedikuro in manikuro v Mariboru",
+  "callToAction": "Rezervirajte termin"
+}

@@ -1,0 +1,282 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-05-minimal-line",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-05-mist",
+    "fontPairingId": "look-nohti-pedikura-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jarmila-nails-izdelava/hero.avif",
+      "alt": "Strokovna manikura in urejeni nohti v lepotnem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jarmila-nails-izdelava/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3735653",
+      "sourceUrl": "https://www.pexels.com/photo/artificial-nail-samples-3735653/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jarmila-nails-izdelava/services.avif",
+      "alt": "Nega in urejanje geliranih nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/jarmila-nails-izdelava/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997350",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-long-sleeve-shirt-dong-manicure-3997350/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled rednih storitev nege in izdelave nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Izdelava geliranih nohtov",
+        "description": "Nova postavitev z gelom po vaši izbiri",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Nega naravnih nohtov",
+        "description": "Oblikovanje in urejanje obnohtne kožice",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Krepitev in utrjevanje nohtov",
+        "description": "Dodatna zaščita naravnih nohtov",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Obnova in vzdrževanje",
+        "description": "Korekcija geliranih nohtov",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Umetniško poslikavanje nohtov",
+        "description": "Unikatni vzorci in dodatki",
+        "price": "od 5 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Jarmila",
+    "highlight": "Nails"
+  },
+  "metadata": {
+    "title": "Jarmila Nails | Izdelava geliranih nohtov Ruše",
+    "description": "Strokovna izdelava in nega geliranih nohtov v Rušah in okolici. Poskrbite za urejen videz vaših rok."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Lepotni salon za nohte v Rušah",
+    "title": "Strokovna nega in",
+    "titleHighlight": "gelirani nohti",
+    "description": "Poskrbite za urejen videz vaših rok z natančno izdelavo in kakovostno nego za dolgotrajne rezultate v Rušah in okolici.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Natančna izdelava",
+        "label": "Natančna izdelava"
+      },
+      {
+        "value": "Preverjeni materiali",
+        "label": "Preverjeni materiali"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Urejen videz",
+        "label": "Urejen videz"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita nega in urejanje nohtov",
+    "description": "Izbirate lahko med različnimi storitvami za lepši videz, trdnost in nego vaših rok.",
+    "items": [
+      {
+        "title": "Izdelava geliranih nohtov",
+        "description": "Profesionalna izdelava geliranih nohtov za popoln in dolgotrajen videz vaših rok.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nega naravnih nohtov",
+        "description": "Nežna in skrbna nega naravnih nohtov za zdrav ter negovan videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Krepitev in utrjevanje nohtov",
+        "description": "Storitve utrjevanja za zaščito pred lomljenjem in lepšo rast.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Umetniško poslikavanje nohtov",
+        "description": "Ustvarjalno poslikavanje in unikatni dizajni po vaših željah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Obnova in vzdrževanje nohtov",
+        "description": "Redna obnova in vzdrževanje za brezhiben izgled v vsakem trenutku.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiva kakovost in urejen videz",
+    "description": "Z našim strokovnim in prijaznim pristopom poskrbimo, da so vaše roke vedno videti urejene.",
+    "highlights": [
+      "Natančna in kvalitetna izdelava nohtov",
+      "Prilagojeno oblikovanje po željah stranke",
+      "Uporaba preverjenih materialov"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izdelava",
+        "description": "Vsakemu obisku se posvetimo z maksimalno skrbnostjo za popolne rezultate.",
+        "title": "Natančna izdelava"
+      },
+      {
+        "label": "Prilagojen dizajn",
+        "description": "Oblikovanje in poslikava nohtov povsem po vaših osebnih željah in okusu.",
+        "title": "Prilagojen dizajn"
+      },
+      {
+        "label": "Preverjeni materiali",
+        "description": "Uporabljamo kakovostne materiale za dolgotrajno obstojnost in zdravje nohtov.",
+        "title": "Preverjeni materiali"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Naročite se na termin",
+    "description": "Stopite v stik z nami in si zagotovite svoj termin za urejanje nohtov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Jamnikova ulica 2, 2342 Ruše, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 419 009",
+        "href": "tel:041419009",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek za naročilo na termin ali vprašanja glede storitev.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Jamnikova ulica 2, 2342 Ruše, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Jarmila Nails",
+    "address": "Jamnikova ulica 2, 2342 Ruše, Slovenia",
+    "email": "",
+    "phone": "041 419 009"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

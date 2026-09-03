@@ -1,0 +1,293 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-06-service-grid",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-06-clay",
+    "fontPairingId": "look-cistilni-servisi-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-objektov-mix/hero.avif",
+      "alt": "Strokovno vzdrževanje in urejanje poslovnih in stanovanjskih objektov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-objektov-mix/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7451918",
+      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "searchQuery": "commercial cleaning team interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-objektov-mix/services.avif",
+      "alt": "Celovite storitve vzdrževanja, čiščenja in hišnopravih del",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-objektov-mix/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16898979",
+      "sourceUrl": "https://www.pexels.com/photo/men-climbing-and-cleaning-windows-16898979/",
+      "photographer": "Natalie Minich",
+      "photographerUrl": "https://www.pexels.com/@mvntlie",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega ter zahtevnosti dela na vašem objektu.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura hišnopravnih storitev",
+        "description": "Manjša popravila, vzdrževalna dela in manjše montaže na objektu.",
+        "price": "od 25 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Redni pregled objekta",
+        "description": "Pregled stanja in tehničnega delovanja elementov v objektu.",
+        "price": "od 50 €",
+        "unit": "pregled"
+      },
+      {
+        "name": "Urejanje okolice in košnja",
+        "description": "Vzdrževanje zelenih površin, košnja in čiščenje okolice.",
+        "price": "od 30 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Čiščenje prostorov in površin",
+        "description": "Generalno ali redno čiščenje večjih površin in objektov.",
+        "price": "od 25 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "VZDRŽEVANJE OBJEKTOV",
+    "highlight": "MIX"
+  },
+  "metadata": {
+    "title": "Vzdrževanje objektov MIX - Asmir Šahinović s.p.",
+    "description": "Celovite storitve vzdrževanja, čiščenja in hišnopravnih del za lastnike objektov v Domžalah s širšo okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv partner za vaše objekte",
+    "title": "Celovite storitve vzdrževanja in urejanja",
+    "titleHighlight": "vaših objektov",
+    "description": "Strokovne rešitve za vzdrževanje, čiščenje in manjša popravila za stanovanjske in poslovne objekte v Domžalah s širšo okolico.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Strokovne storitve",
+        "title": "Zanesljive storitve"
+      },
+      {
+        "value": "Hitro",
+        "label": "Hitra odzivnost",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "value": "Celovito",
+        "label": "Rešitve za objekte",
+        "title": "Celovite rešitve"
+      },
+      {
+        "value": "Ponedeljek - Petek",
+        "label": "Delovni čas",
+        "title": "Delovni čas"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovito vzdrževanje in urejanje objektov",
+    "description": "Ponujamo širok nabor storitev za vzdrževanje, čiščenje ter manjša popravila vaših nepremičnin.",
+    "items": [
+      {
+        "title": "Vzdrževanje objektov",
+        "description": "Redno in preventivno vzdrževanje stanovanjskih in poslovnih objektov za varno uporabo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje in urejanje okolice",
+        "description": "Urejanje zelenic, čiščenje utrjenih površin in vzdrževanje čistoče okoli vašega objekta.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Manjša popravila in hišnopravila",
+        "description": "Hitra odprava manjših okvar, hišnopravila in vzdrževalna dela v notranjosti ter zunanjosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Tehnični pregledi in vzdrževanje",
+        "description": "Pregledi delovanja sistemov in sprotno odpravljanje tehničnih pomanjkljivosti na objektu.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Zemeljska in gradbena dela",
+        "description": "Manjša zemeljska dela in gradbena urejanja za potrebe vzdrževanja okolice objektov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in prilagodljivost",
+    "description": "Z našim znanjem in izkušnjami poskrbimo, da so vaši objekti vedno v brezhibnem stanju.",
+    "highlights": [
+      "Zanesljive in strokovne storitve vzdrževanja",
+      "Prilagodljivost in hitra odzivnost na vaše potrebe",
+      "Celovite rešitve za stanovanjske in poslovne objekte"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljive storitve",
+        "description": "Kakovostno opravljena dela na katera se lahko zanesete.",
+        "title": "Zanesljive storitve"
+      },
+      {
+        "label": "Hitra odzivnost",
+        "description": "Prilagodljivost in hitro ukrepanje ob vseh vzdrževalnih izzivih.",
+        "title": "Hitra odzivnost"
+      },
+      {
+        "label": "Celovite rešitve",
+        "description": "Vse storitve za urejanje in vzdrževanje objektov na enem mestu.",
+        "title": "Celovite rešitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Imate vprašanje ali potrebujete ponudbo za vzdrževanje vašega objekta? Pokličite nas ali pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Šentpavel pri Domžalah 3, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 555 425",
+        "href": "tel:070555425",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše potrebe glede vzdrževanja...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Šentpavel pri Domžalah 3, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "VZDRŽEVANJE OBJEKTOV MIX",
+    "address": "Šentpavel pri Domžalah 3, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "070 555 425"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

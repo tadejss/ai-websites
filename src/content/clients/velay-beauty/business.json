@@ -1,0 +1,28 @@
+{
+  "companyName": "Velay beauty",
+  "industry": "Salon za nohte in lepoto",
+  "tagline": "Strokovna nega nohtov za popoln videz vaših rok",
+  "services": [
+    "Manikura",
+    "Umetni nohti",
+    "Geliranje nohtov",
+    "Nega obnohtne kožice",
+    "Poslikava nohtov"
+  ],
+  "phone": "069 793 979",
+  "email": "",
+  "address": "Slovenska ulica 33, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 8:00 PM · Tuesday: 9:00 AM – 8:00 PM · Wednesday: 9:00 AM – 8:00 PM · Thursday: 9:00 AM – 8:00 PM · Friday: 9:00 AM – 8:00 PM · Saturday: 9:00 AM – 8:00 PM · Sunday: 9:00 AM – 8:00 PM",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Prilagodljiv delovni čas vse dni v tednu",
+    "Strokovna in skrbna nega"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo urejen videz nohtov in kakovostno lepotno nego v Mariboru",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "modern in urejen salon",
+  "competitors": "Lokalni saloni za nohte v Mariboru",
+  "callToAction": "Rezervirajte termin"
+}

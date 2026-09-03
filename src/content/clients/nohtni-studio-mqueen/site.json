@@ -1,0 +1,289 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-05-minimal-line",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-05-mist",
+    "fontPairingId": "look-nohti-pedikura-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nohtni-studio-mqueen/hero.avif",
+      "alt": "Elegantna notranjost nohtnega studia z naravno svetlobo v Slovenski Bistrici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nohtni-studio-mqueen/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997381",
+      "sourceUrl": "https://www.pexels.com/photo/person-with-red-nail-polish-3997381/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nohtni-studio-mqueen/services.avif",
+      "alt": "Strokovna manikura in urejanje nohtov v salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/nohtni-studio-mqueen/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997384",
+      "sourceUrl": "https://www.pexels.com/photo/person-with-red-nail-polish-3997384/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled naših osnovnih storitev nege nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manikura",
+        "description": "Osnovna nega in urejanje nohtov",
+        "price": "od 20 €",
+        "featured": false
+      },
+      {
+        "name": "Gelish lakiranje",
+        "description": "Obstojno lakiranje naravnih nohtov",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Umetni nohti",
+        "description": "Podaljševanje in oblikovanje z gelom",
+        "price": "od 35 €",
+        "featured": false
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Unikatni vzorci in dekoracija",
+        "price": "od 5 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Nohtni studio",
+    "highlight": "MQueen"
+  },
+  "metadata": {
+    "title": "Nohtni studio MQueen | Urejanje nohtov v Slovenski Bistrici",
+    "description": "Vaša destinacija za urejene in lepe nohte v Slovenski Bistrici. Nudimo manikuro, nego nohtov, umetne nohte in gelish lakiranje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Strokovna nega nohtov",
+    "title": "Vaša destinacija za",
+    "titleHighlight": "lepe in urejene nohte",
+    "description": "Poskrbite za svoj urejen videz v Slovenski Bistrici z okolico. Ponujamo strokovno nego nohtov, manikuro in gelish lakiranje.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Odlične ocene",
+        "label": "Odlične ocene",
+        "title": "Odlične ocene"
+      },
+      {
+        "value": "Prilagodljiv čas",
+        "label": "Prilagodljiv čas",
+        "title": "Prilagodljiv čas"
+      },
+      {
+        "value": "Strokovna nega",
+        "label": "Strokovna nega",
+        "title": "Strokovna nega"
+      },
+      {
+        "value": "Urejen salon",
+        "label": "Urejen salon",
+        "title": "Urejen salon"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za nego vaših nohtov",
+    "description": "V našem studiu v Slovenski Bistrici nudimo celovite storitve za zdravje in lepoto vaših nohtov.",
+    "items": [
+      {
+        "title": "Manikura",
+        "description": "Celovita nega in oblikovanje nohtov za urejen videz vaših rok.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nega nohtov",
+        "description": "Skrbna in strokovna nega naravnih nohtov ter obnohtne kožice.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Umetni nohti",
+        "description": "Podaljševanje in oblikovanje umetnih nohtov po vaši želji.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Gelish lakiranje",
+        "description": "Dolgo obstojen gel lak za sijoče in urejene nohte.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Kreativni in estetski vzorci za unikatni videz vaših nohtov.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Urejenost in kakovost na prvem mestu",
+    "description": "Zavedamo se pomena lepih nohtov in se posvetimo vsaki stranki posebej.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Prilagodljiv delovni čas",
+      "Strokovna in skrbna nega nohtov"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na odlične ocene in zaupanje naših strank.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagajamo se vašemu urniku in vašim željam.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Strokovni pristop",
+        "description": "Natančna in skrbna nega za zdravje in lepoto vaših nohtov.",
+        "title": "Strokovni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Žolgarjeva ulica 2, 2310 Slovenska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 510 465",
+        "href": "tel:040510465",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: po dogovoru / Sob - Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali želen termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Žolgarjeva ulica 2, 2310 Slovenska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Nohtni studio MQueen",
+    "address": "Žolgarjeva ulica 2, 2310 Slovenska Bistrica, Slovenia",
+    "email": "",
+    "phone": "040 510 465"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

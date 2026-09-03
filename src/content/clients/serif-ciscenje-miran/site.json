@@ -1,0 +1,295 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-07-linen",
+    "fontPairingId": "look-cistilni-servisi-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/serif-ciscenje-miran/hero.avif",
+      "alt": "Profesionalno čiščenje svetle pisarne v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/serif-ciscenje-miran/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30875661",
+      "sourceUrl": "https://www.pexels.com/photo/window-cleaners-working-on-high-rise-building-facade-30875661/",
+      "photographer": "Juan García",
+      "photographerUrl": "https://www.pexels.com/@juan-garcia-84744800",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/serif-ciscenje-miran/services.avif",
+      "alt": "Globinsko in generalno čiščenje prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/serif-ciscenje-miran/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20381389",
+      "sourceUrl": "https://www.pexels.com/photo/woman-cleaning-a-window-20381389/",
+      "photographer": "Tuan Vy",
+      "photographerUrl": "https://www.pexels.com/@tuan-vy-903011268",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregledne in poštene cene čiščenja",
+    "description": "Okvirne cene naših storitev čiščenja. Za točno ponudbo nas kontaktirajte.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ogled prostorov nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno vzdrževalno čiščenje",
+        "description": "Redno čiščenje stanovanjskih ali poslovnih prostorov",
+        "price": "od 20 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnega objekta",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur in preprog",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Čiščenje steklenih površin",
+        "description": "Pranje oken in steklenih fasad",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Čiščenje po adaptacijah",
+        "description": "Odstranjevanje prahu in čiščenje po gradbenih delih",
+        "price": "od 150 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Šerif",
+    "highlight": "čiščenje in storitve"
+  },
+  "metadata": {
+    "title": "Šerif, čiščenje in storitve - Miran Bučar, s.p.",
+    "description": "Zanesljive in profesionalne storitve čiščenja za dom ter pisarno v Ljubljani in okolici. Globinsko, generalno in redno čiščenje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik v Ljubljani",
+    "title": "Zanesljive in profesionalne storitve čiščenja za ",
+    "titleHighlight": "vaš dom ter pisarno",
+    "description": "Strokovno čiščenje za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani z okolico. Prilagajamo se vašemu urniku.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost urniku strank",
+        "title": "Prilagodljivost urniku"
+      },
+      {
+        "value": "Temeljitost",
+        "label": "Zanesljivost in temeljitost pri delu",
+        "title": "Zanesljivost in temeljitost"
+      },
+      {
+        "value": "Preverjeno",
+        "label": "Uporaba preverjenih čistilnih sredstev",
+        "title": "Preverjena čistilna sredstva"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana z okolico",
+        "title": "Lokalna pokritost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja za čiste in urejene prostore",
+    "description": "Poskrbimo za globinsko, generalno, redno ali zaključno čiščenje vaših bivalnih in poslovnih prostorov v Ljubljani z okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprogi.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Generalno čiščenje prostorov",
+        "description": "Celovito generalno čiščenje vseh prostorov za osvežitev vašega doma ali pisarne.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje steklenih površin",
+        "description": "Brezhibno čiščenje oken, izložb in drugih steklenih površin.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Redno vzdrževalno čiščenje",
+        "description": "Redno vzdrževanje čistoče vaših poslovnih ali stanovanjskih prostorov po dogovoru.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Čiščenje po adaptacijah",
+        "description": "Temeljito čiščenje objektov in prostorov po zaključenih gradbenih ali prenovitvenih delih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za čistočo vaših prostorov",
+    "description": "Z dolgoletnimi izkušnjami in poudarkom na kakovosti zagotavljamo visoke standarde čiščenja.",
+    "highlights": [
+      "Prilagodljivost urniku strank",
+      "Zanesljivost in temeljitost pri delu",
+      "Uporaba preverjenih čistilnih sredstev"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagodljivost",
+        "description": "Delo prilagodimo vašemu urniku in vsakodnevnim obveznostim.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Temeljitost",
+        "description": "Zanesljivost in temeljitost pri vsakem opravljenem čiščenju.",
+        "title": "Temeljitost"
+      },
+      {
+        "label": "Preverjena sredstva",
+        "description": "Uporabljamo preverjena čistilna sredstva za varne in čiste površine.",
+        "title": "Preverjena sredstva"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas za ponudbo",
+    "description": "Na voljo smo vam za vsa vprašanja, dogovore o terminih in naročila storitev čiščenja.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 811 544",
+        "href": "tel:041811544",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Novakova ulica 3, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00–20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite za katero storitev se zanimate...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Novakova ulica 3, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Šerif čiščenje in storitve",
+    "address": "Novakova ulica 3, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 811 544"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

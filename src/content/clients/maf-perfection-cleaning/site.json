@@ -1,0 +1,299 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-09-warm-soft",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-09-dusk",
+    "fontPairingId": "look-cistilni-servisi-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/maf-perfection-cleaning/hero.avif",
+      "alt": "Sodoben in svetel poslovni prostor med čiščenjem",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/maf-perfection-cleaning/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9462192",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-shirt-holding-white-and-blue-sprayer-bottle-9462192/",
+      "photographer": "Liliana Drew",
+      "photographerUrl": "https://www.pexels.com/@liliana-drew",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/maf-perfection-cleaning/services.avif",
+      "alt": "Čista in urejena notranjost stanovanjskega prostora",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/maf-perfection-cleaning/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9245158",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-orange-button-up-shirt-wearing-white-mask-9245158/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativni cenik",
+    "description": "Pregled orientacijskih cen naših čistilnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno vzdrževalno čiščenje",
+        "description": "Ura rednega čiščenja poslovnih ali bivalnih prostorov",
+        "price": "od 20 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnega objekta",
+        "price": "od 150 €",
+        "unit": "objekt"
+      },
+      {
+        "name": "Globinsko čiščenje sedežne garniture",
+        "description": "Globinsko čiščenje tekstila za sedežne garniture",
+        "price": "od 60 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Čiščenje steklenih površin",
+        "description": "Pranje oken in steklenih površin",
+        "price": "od 30 €",
+        "unit": "storitev"
+      },
+      {
+        "name": "Čiščenje po adaptacijah",
+        "description": "Odstranjevanje prahu in ostankov po gradbenih delih",
+        "price": "od 180 €",
+        "unit": "objekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Maf",
+    "highlight": "perfection"
+  },
+  "metadata": {
+    "title": "Maf perfection d.o.o. | Čistilne storitve Domžale",
+    "description": "Celovite in strokovne čistilne storitve za vaš dom ali poslovni prostor v Domžalah z okolico in osrednji Sloveniji."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Zahtevajte ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni čistilni servis",
+    "title": "Celovite in strokovne čistilne storitve za",
+    "titleHighlight": "vaš dom ali poslovni prostor",
+    "description": "Zanesljivo globinsko čiščenje, generalno čiščenje stavb, čiščenje steklenih površin in vzdrževalno čiščenje za lastnike stanovanj, hiš in poslovnih objektov.",
+    "primaryCta": "Zahtevajte ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančno",
+        "title": "Natančna izvedba"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "value": "Preverjeno",
+        "label": "Preverjeno",
+        "title": "Preverjena sredstva"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Profesionalno čiščenje za čisto in urejeno okolje",
+    "description": "Izvajamo celovite čistilne storitve na območju Domžal z okolico in v osrednji Sloveniji.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Generalno čiščenje stavb",
+        "description": "Celostno generalno čiščenje stanovanjskih in poslovnih stavb za popolno čistočo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje steklenih površin",
+        "description": "Strokovno čiščenje oken, izložb in vseh vrst steklenih površin brez sledi.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Redno vzdrževalno čiščenje",
+        "description": "Redno čiščenje poslovnih in bivalnih prostorov po vašem urniku in merah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Čiščenje po adaptacijah",
+        "description": "Natančno čiščenje prostorov po prenovah, gradbenih delih in adaptacijah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost čistoči in zadovoljstvu strank",
+    "description": "Delujemo z mislijo na vaše potrebe in zagotavljamo visoke standarde čistoče.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba storitev",
+      "Prilagodljivost urniku strank",
+      "Uporaba preverjenih čistilnih sredstev"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Zanesljiva in natančna izvedba storitev ob dogovorjenem času.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Prilagodljiv urnik",
+        "description": "Prilagodljivost vašemu urniku za minimalne motnje v vsakdanu.",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "label": "Preverjena sredstva",
+        "description": "Uporaba preverjenih čistilnih sredstev, ki učinkovito odstranjujejo umazanijo.",
+        "title": "Preverjena sredstva"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Pošljite povpraševanje in zahtevajte ponudbo za vaše čistilne storitve.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Mačkovci 47, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 836 356",
+        "href": "tel:040836356",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 7:00 - 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve glede čiščenja...",
+      "submitLabel": "Zahtevajte ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Mačkovci 47, 1230 Domžale, Slovenia",
+    "rights": "© 2025 Maf perfection d.o.o. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Maf perfection",
+    "address": "Mačkovci 47, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "040 836 356"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

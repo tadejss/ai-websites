@@ -1,0 +1,300 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-08-dark-pro",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-08-copper",
+    "fontPairingId": "look-cistilni-servisi-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/express-kemicna-cistilnica/hero.avif",
+      "alt": "Notranjost kemične čistilnice z urejenimi oblačili",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/express-kemicna-cistilnica/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16898979",
+      "sourceUrl": "https://www.pexels.com/photo/men-climbing-and-cleaning-windows-16898979/",
+      "photographer": "Natalie Minich",
+      "photographerUrl": "https://www.pexels.com/@mvntlie",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/express-kemicna-cistilnica/services.avif",
+      "alt": "Storitve pranja, likanja in nege perila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/express-kemicna-cistilnica/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30875661",
+      "sourceUrl": "https://www.pexels.com/photo/window-cleaners-working-on-high-rise-building-facade-30875661/",
+      "photographer": "Juan García",
+      "photographerUrl": "https://www.pexels.com/@juan-garcia-84744800",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled pogostih storitev kemičnega čiščenja in pranja perila.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kemično čiščenje plašča ali jakne",
+        "description": "Temeljito čiščenje in osvežitev vrhnjih oblačil",
+        "price": "od 15 €",
+        "featured": true
+      },
+      {
+        "name": "Kemično čiščenje obleke (dvodelne)",
+        "description": "Skrbno čiščenje suknjiča in hlač ali krila",
+        "price": "od 18 €"
+      },
+      {
+        "name": "Pranje in likanje perila (kg)",
+        "description": "Pranje, sušenje in likanje perila na kilogram",
+        "price": "od 6 €",
+        "unit": "kg"
+      },
+      {
+        "name": "Čiščenje srajce",
+        "description": "Pranje, odstranjevanje madežev in profesionalno likanje",
+        "price": "od 3 €"
+      },
+      {
+        "name": "Čiščenje usnjenega oblačila",
+        "description": "Specialna nega usnjenih jaken in plaščev",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Čiščenje domačega tekstila",
+        "description": "Zavese, odeje in večji tekstilni kosi",
+        "price": "od 12 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Kemična čistilnica",
+    "highlight": "Turk"
+  },
+  "metadata": {
+    "title": "Express kemična čistilnica Turk Ljubljana",
+    "description": "Hitro, kakovostno in zanesljivo kemično čiščenje, pranje ter likanje perila v Ljubljani. Strokovna skrb za vaša oblačila."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Lokalni servis v Ljubljani",
+    "title": "Hitro in zanesljivo",
+    "titleHighlight": "kemično čiščenje oblačil",
+    "description": "Poskrbite za brezhibno čistočo in nego vaših oblačil, domačega tekstila ter usnja z zanesljivo storitvijo v Ljubljani.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hitra storitev",
+        "label": "Hitra storitev",
+        "title": "Hitra storitev"
+      },
+      {
+        "value": "Strokovna nega",
+        "label": "Strokovna nega",
+        "title": "Strokovna nega"
+      },
+      {
+        "value": "Prijazno osebje",
+        "label": "Prijazno osebje",
+        "title": "Prijazno osebje"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve čiščenja in nege tekstila",
+    "description": "Nudimo celovite rešitve za vaša oblačila in domači tekstil na območju Ljubljane.",
+    "items": [
+      {
+        "title": "Kemično čiščenje oblačil",
+        "description": "Temeljito in skrbno kemično čiščenje za vsa vaša občutljiva in vsakdanja oblačila.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pranje in likanje perila",
+        "description": "Profesionalno pranje in natančno likanje vašega perila za popoln videz.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje usnja in krzna",
+        "description": "Specializirana nega in čiščenje izdelkov iz usnja in krzna.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje domačega tekstila",
+        "description": "Osvežitev in čiščenje zaves, odej ter drugega domačega tekstila.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Hitre manjše popravitve oblačil",
+        "description": "Manjša šiviljska popravila in prilagoditve za vaša oblačila.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega servisa",
+    "description": "Zavedamo se pomena urejenega videza in dolge življenjske dobe vaših oblačil.",
+    "highlights": [
+      "Visoka raven zadovoljstva strank",
+      "Strokovna skrb za občutljive materiale",
+      "Prijazno in strokovno osebje"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva storitev",
+        "description": "Delujemo hitro, zanesljivo in se prilagajamo vašim potrebam.",
+        "title": "Zanesljiva storitev"
+      },
+      {
+        "label": "Občutljivi materiali",
+        "description": "Zagotavljamo strokovno nego in skrb za najzahtevnejše tkanine.",
+        "title": "Občutljivi materiali"
+      },
+      {
+        "label": "Prijazen pristop",
+        "description": "Naše prijazno osebje vam vedno z veseljem svetuje.",
+        "title": "Prijazen pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje glede čiščenja ali želite oddati oblačila v čiščenje? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cilenškova ulica 5, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 482 016",
+        "href": "tel:041482016",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 8:30 - 18:00 / 19:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali opis storitve...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Cilenškova ulica 5, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Kemična čistilnica Turk",
+    "address": "Cilenškova ulica 5, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 482 016"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

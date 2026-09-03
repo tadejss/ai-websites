@@ -1,0 +1,282 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-08-dark-pro",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-08-copper",
+    "fontPairingId": "look-nohti-pedikura-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mika-pedikura/hero.avif",
+      "alt": "Strokovna nega stopal v svetalem in čistem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mika-pedikura/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677859",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-a-lace-top-wearing-gloves-holding-a-person-s-finger-4677859/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mika-pedikura/services.avif",
+      "alt": "Izvajanje pedikure in nege stopal",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mika-pedikura/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677846",
+      "sourceUrl": "https://www.pexels.com/photo/nail-stylist-removing-cuticles-4677846/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativen pregled cen",
+    "description": "Pregled naših storitev nege stopal po dostopnih cenah.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična pedikura",
+        "description": "Osnovna nega stopal, striženje nohtov in ureditev obnohtne kožice.",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Estetska pedikura",
+        "description": "Celostna nega s poudarkom na estetskem videzu stopal in nohtov.",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Nega vraščenih nohtov",
+        "description": "Specializirana obravnava in olajšanje težav z vraščenimi nohti.",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Odstranjevanje trde kože",
+        "description": "Učinkovito odstranjevanje otrdele kože in kurjih očes.",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Svetovanje za nego stopal",
+        "description": "Strokovni napotki in smernice za vzdrževanje zdravja stopal doma.",
+        "price": "Brezplačno ob storitvi"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "MIKA",
+    "highlight": "pedikura"
+  },
+  "metadata": {
+    "title": "MIKA pedikura | Strokovna nega stopal v Slovenski Bistrici",
+    "description": "Strokovna in skrbna nega vaših stopal za zdravje in udobje v Slovenski Bistrici z okolico. Naročite se na klasično ali estetsko pedikuro."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Strokovna nega stopal",
+    "title": "Strokovna in skrbna nega vaših stopal za",
+    "titleHighlight": "zdravje in udobje.",
+    "description": "Nudimo celostno nego za vse, ki skrbijo za zdravje in urejenost svojih stopal, ter strokovno pomoč ob specifičnih težavah v Slovenski Bistrici z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Visoka strokovnost",
+        "label": "Visoka strokovnost"
+      },
+      {
+        "value": "Čisto okolje",
+        "label": "Čisto okolje"
+      },
+      {
+        "value": "Prilagojen pristop",
+        "label": "Prilagojen pristop"
+      },
+      {
+        "value": "Udobje in zdravje",
+        "label": "Udobje in zdravje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve za nego stopal",
+    "description": "Poskrbite za zdravje in urejenost svojih stopal s pomočjo strokovnih storitev, prilagojenih vašim individualnim potrebam v Slovenski Bistrici.",
+    "items": [
+      {
+        "title": "Klasična pedikura",
+        "description": "Temeljita nega stopal, ureditev nohtov in osvežitev za vsakodnevno lahkotnost.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Estetska pedikura",
+        "description": "Urejen videz in estetsko dovršena nega vaših nohtov ter stopal.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega vraščenih nohtov",
+        "description": "Strokovna in skrbna obravnava vraščenih nohtov za odpravo nelagodja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Odstranjevanje trde kože",
+        "description": "Nežno in učinkovito odstranjevanje otrdele kože za mehka stopala.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Svetovanje za nego stopal",
+        "description": "Strokovni nasveti in priporočila za pravilno domačo nego vaših stopal.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati MIKA pedikuro",
+    "title": "Zaupanja vredna nega za vaša stopala",
+    "description": "Z združevanjem strokovnosti, prijetnega ambienta in individualnega pristopa poskrbimo, da so vaša stopala v varnih rokah.",
+    "highlights": [
+      "Visoka strokovnost in posvečenost strankam",
+      "Prijetno in čisto okolje za popolno sprostitev",
+      "Prilagojen pristop k specifičnim težavam s stopali"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost in posvečenost",
+        "description": "Visoka raven strokovnega znanja in popolna predanost vsaki stranki posebej.",
+        "title": "Strokovnost in posvečenost"
+      },
+      {
+        "label": "Prijetno in čisto okolje",
+        "description": "Urejen in čist prostor, kjer se boste počutili sproščeno in dobrodošlo.",
+        "title": "Prijetno in čisto okolje"
+      },
+      {
+        "label": "Prilagojen pristop",
+        "description": "Celostna obravnava in rešitve, prilagojene vašim specifičnim težavam na stopalih.",
+        "title": "Prilagojen pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Rezervirajte svoj termin",
+    "description": "Stopite v stik z nami za vprašanja ali rezervacijo termina za nego vaših stopal v Slovenski Bistrici.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Čopova ulica 9b, 2310 Slovenska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 210 069",
+        "href": "tel:040210069",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Čopova ulica 9b, 2310 Slovenska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "MIKA pedikura",
+    "address": "Čopova ulica 9b, 2310 Slovenska Bistrica, Slovenia",
+    "email": "",
+    "phone": "040 210 069"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

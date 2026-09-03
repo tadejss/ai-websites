@@ -1,0 +1,290 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-08-dark-pro",
+  "theme": {
+    "paletteId": "look-maserji-wellness-08-copper",
+    "fontPairingId": "look-maserji-wellness-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-salon-forever/hero.avif",
+      "alt": "Sproščujoč ambient masažnega salona z mehko svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-salon-forever/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628647",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628647/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-salon-forever/services.avif",
+      "alt": "Strokovna masaža telesa v umirjenem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masazni-salon-forever/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628613",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628613/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Izberite svojo masažo",
+    "description": "Pregled rednih cen naših masažnih storitev za sprostitev in nego telesa.",
+    "disclaimer": "Cenik je informativen. Za rezervacije in dodatne informacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščanje celega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Intenzivna obdelava mišic",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Sprostitvena aroma masaža",
+        "description": "Masaža z eteričnimi olji",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Masaža hrbta in vratu",
+        "description": "Ciljna nega za zgornji del telesa",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Belihna masaža",
+        "description": "Tehnika za globoko sprostitev",
+        "price": "od 45 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Masažni salon",
+    "highlight": "Forever"
+  },
+  "metadata": {
+    "title": "Masažni salon Forever Maribor | Sprostitev in masaže",
+    "description": "Vaša oaza sprostitve in ravnovesja v Mariboru. Ponujamo klasične, športne in aroma masaže za vaše dobro počutje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažni salon Forever",
+    "title": "Vaša oaza sprostitve in",
+    "titleHighlight": "ravnovesja v Mariboru",
+    "description": "Prepustite se strokovnim rokam in pozabite na vsakodnevni stres. Ponujamo celostno nego telesa in mišic za vaše boljše počutje.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Prilagodljiv čas",
+        "label": "Prilagodljiv čas"
+      },
+      {
+        "value": "Maribor",
+        "label": "Središče mesta"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Masaže za sprostitev in dobro počutje",
+    "description": "Izberite storitev, ki ustreza vašim trenutnim potrebam po sprostitvi ali razbremenitvi mišic v Mariboru in okolici.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Sproščujoča masaža celega telesa, ki izboljšuje prekrvavitev in sprošča napete mišice.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Intenzivnejša obravnava za športnike in aktivne posameznike za lajšanje napetosti in hitrejšo regeneracijo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sprostitvena aroma masaža",
+        "description": "Nežna masaža z eteričnimi olji, ki blagodejno vpliva na um, duha in telo.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Masaža hrbta in vratu",
+        "description": "Ciljano lajšanje napetosti v predelu hrbta, ramen in vratu, kjer se najpogosteje nabira stres.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Belihna masaža",
+        "description": "Blagodejna masažna tehnika za globoko sprostitev in obnovo energije.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Celostna skrb za vaše dobro počutje",
+    "description": "Združujemo prijeten ambient, strokovno znanje in posluh za vaše individualne potrebe.",
+    "highlights": [
+      "Prijeten ambient v središču Maribora",
+      "Prilagodljiv delovni čas tudi ob vikendih",
+      "Strokoven in topel pristop do vsake stranke"
+    ],
+    "benefits": [
+      {
+        "label": "Prijeten ambient",
+        "description": "Topel in umirjen prostor v središču Maribora, ustvarjen za vaš mir.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Delujemo tudi ob vikendih, da se lažje prilagodimo vašemu urniku.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Prilagojene masaže za sprostitev in učinkovito lajšanje stresa ter napetosti.",
+        "title": "Strokovnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Rezervirajte svoj termin za sprostitev",
+    "description": "Obiščite nas na Glavnem trgu v Mariboru ali nas pokličite za dogovor o terminu.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Glavni trg 19c, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 404 736",
+        "href": "tel:031404736",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–18:00, Sob–Ned: 10:00–16:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Glavni trg 19c, 2000 Maribor, Slovenia",
+    "rights": "© Masažni salon Forever. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Masažni salon Forever",
+    "address": "Glavni trg 19c, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "031 404 736"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

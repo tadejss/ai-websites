@@ -1,0 +1,286 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-09-warm-soft",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-09-dusk",
+    "fontPairingId": "look-nohti-pedikura-09"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/queens-nails-maja/hero.avif",
+      "alt": "Strokovna manikura v urejenem in svetlem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/queens-nails-maja/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677859",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-a-lace-top-wearing-gloves-holding-a-person-s-finger-4677859/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/queens-nails-maja/services.avif",
+      "alt": "Natančno lakiranje in urejanje nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/queens-nails-maja/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677846",
+      "sourceUrl": "https://www.pexels.com/photo/nail-stylist-removing-cuticles-4677846/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled rednih storitev nege in urejanja nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Oblikovanje nohtov in nega obnohtne kožice",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Trajno lakiranje",
+        "description": "Obstojen lak in nega nohtov",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Umetni nohti",
+        "description": "Podaljševanje in oblikovanje",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Unikatni vzorci in dodatki",
+        "price": "od 5 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Queens nails",
+    "highlight": "Maja Gril s.p."
+  },
+  "metadata": {
+    "title": "Queens nails | Strokovna manikura Slovenska Bistrica",
+    "description": "Strokovna in urejena manikura ter nega nohtov v Slovenski Bistrici. Rezervirajte svoj termin za lepe in negovane nohte."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Manikura in nega nohtov",
+    "title": "Strokovna in urejena manikura za",
+    "titleHighlight": "lepe in negovane nohte",
+    "description": "Profesionalna nega nohtov za osebe, ki cenijo urejen videz in prijeten ambient v Slovenski Bistrici z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Kakovostna nega",
+        "label": "Kakovostna nega",
+        "title": "Kakovostna nega"
+      },
+      {
+        "value": "Sodobni salon",
+        "label": "Sodobni salon",
+        "title": "Sodobni salon"
+      },
+      {
+        "value": "Ob sobotah",
+        "label": "Prilagodljiv urnik",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovita nega in urejanje nohtov",
+    "description": "Izberite storitev po vaši meri za popoln videz in zdravje vaših nohtov v Slovenski Bistrici.",
+    "items": [
+      {
+        "title": "Klasična manikura",
+        "description": "Urejanje obnohtne kožice, oblikovanje in nega nohtov za urejen vsakdanji videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Trajno lakiranje",
+        "description": "Obstojno lakiranje, ki vaši manikuri zagotavlja dolgotrajen sijaj in urejenost.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Umetni nohti",
+        "description": "Podaljševanje in oblikovanje nohtov z umetnimi materiali po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega obnohtne kožice",
+        "description": "Skrbno odstranjevanje in vlaženje za zdrave in negovane roke.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Kreativni in unikatni vzorci ter poslikave za piko na i.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Urejenost, strokovnost in prijetno vzdušje",
+    "description": "Poskrbimo, da so vaše roke vedno negovane in urejene v sproščenem okolju našega salona.",
+    "highlights": [
+      "Kakovostna nega nohtov",
+      "Prilagodljiv delovni čas tudi ob sobotah",
+      "Prijazna in strokovna storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Kakovostna nega",
+        "description": "Uporaba preverjenih materialov in skrb za zdravje ter videz vaših nohtov.",
+        "title": "Kakovostna nega"
+      },
+      {
+        "label": "Prilagodljiv urnik",
+        "description": "Delujemo tudi ob sobotah, da se lažje prilagodimo vašemu vsakdanu.",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "label": "Prijazen pristop",
+        "description": "Strokovna in prijazna storitev v urejenem ter sodobnem salonu.",
+        "title": "Prijazen pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Rezervirajte svoj termin",
+    "description": "Stopite v stik z nami in si zagotovite termin za urejanje nohtov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Trg svobode 10, 2310 Slovenska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 477 270",
+        "href": "tel:040477270",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00 – 20:00 (Nedelja zaprto)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec za rezervacijo termina ali vprašanja glede storitev.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Trg svobode 10, 2310 Slovenska Bistrica, Slovenia",
+    "rights": "© 2025 Queens nails, Maja Gril s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Queens nails Maja Gril s.p.",
+    "address": "Trg svobode 10, 2310 Slovenska Bistrica, Slovenia",
+    "email": "",
+    "phone": "040 477 270"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

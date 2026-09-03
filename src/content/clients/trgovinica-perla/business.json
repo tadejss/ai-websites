@@ -1,0 +1,27 @@
+{
+  "companyName": "Trgovinica Perla",
+  "industry": "Masaže in dobro počutje",
+  "tagline": "Sprostitev in nego telesa za vaše dobro počutje.",
+  "services": [
+    "Sprostitvene masaže",
+    "Klasične masaže",
+    "Nega telesa",
+    "Aromaterapija"
+  ],
+  "phone": "031 009 333",
+  "email": "",
+  "address": "TPC City, Ulica Vita Kraigherja 5, 2000 Maribor, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Prijeten in sproščujoč ambient",
+    "Strokovni pristop k masiranju",
+    "Lokalna lokacija v središču Maribora"
+  ],
+  "targetCustomers": "Vsi, ki potrebujejo sprostitev, lajšanje napetosti v mišicah in skrb za dobro počutje.",
+  "serviceArea": "Maribor z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, sproščen",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni ponudniki masaž in wellness storitev",
+  "callToAction": "Rezervirajte termin"
+}

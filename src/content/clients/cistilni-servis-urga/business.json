@@ -1,0 +1,28 @@
+{
+  "companyName": "Čistilni servis URGA",
+  "industry": "Čistilne storitve",
+  "tagline": "Zanesljivo in temeljito čiščenje za vaš dom ali poslovni prostor",
+  "services": [
+    "Globinsko čiščenje",
+    "Čiščenje poslovnih prostorov",
+    "Čiščenje stanovanj",
+    "Pranje oken in steklenih površin",
+    "Generalno čiščenje"
+  ],
+  "phone": "031 630 842",
+  "email": "",
+  "address": "Grablovičeva ulica 1, 1000 Ljubljana, Slovenia",
+  "openingHours": "Ponedeljek - Petek: 8:00 - 18:00, Sobota - Nedelja: Zaprto",
+  "sellingPoints": [
+    "Zanesljiva in natančna izvedba storitev",
+    "Prilagodljivost urniku strank",
+    "Uporaba preverjenih čistilnih sredstev"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov v Ljubljani in okolici",
+  "serviceArea": "Ljubljana z okolico",
+  "yearsExperience": "",
+  "tone": "profesionalen, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalni ponudniki čistilnih storitev na območju Ljubljane",
+  "callToAction": "Pokličite nas"
+}

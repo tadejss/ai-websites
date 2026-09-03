@@ -1,0 +1,289 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-09-warm-soft",
+  "theme": {
+    "paletteId": "look-maserji-wellness-09-dusk",
+    "fontPairingId": "look-maserji-wellness-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/master-class-tecaji/hero.avif",
+      "alt": "Tečaj masaže v svetli in prijetni učilnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/master-class-tecaji/hero.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/master-class-tecaji/services.avif",
+      "alt": "Učenje masažnih tehnik pod strokovnim vodstvom",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/master-class-tecaji/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4599377",
+      "sourceUrl": "https://www.pexels.com/photo/a-masseuse-massaging-a-persons-back-4599377/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Cene tečajev in izobraževanj",
+    "description": "Pregled informativnih cen naših masažnih tečajev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in termine nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Osnovni tečaj masaže",
+        "description": "Uvod v osnove masažnih tehnik.",
+        "price": "od 150 €",
+        "featured": true
+      },
+      {
+        "name": "Nadaljevalni tečaj masaže",
+        "description": "Napredne tehnike za izboljšanje veščin.",
+        "price": "od 180 €"
+      },
+      {
+        "name": "Specializirane masažne tehnike",
+        "description": "Poglobljeno izobraževanje za posebne namene.",
+        "price": "od 220 €"
+      },
+      {
+        "name": "Individualno izobraževanje",
+        "description": "Učenje 1 na 1, prilagojeno vašemu tempu.",
+        "price": "od 250 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "masTer class",
+    "highlight": "tečaji masaže"
+  },
+  "metadata": {
+    "title": "masTer class d.o.o. | Kakovostni tečaji masaže Maribor",
+    "description": "Kakovostni tečaji masaže za strokovni in osebni razvoj v Mariboru in okolici. Pridobite uporabno znanje za takojšnjo uporabo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Prijavite se na tečaj"
+  },
+  "hero": {
+    "badge": "Izobraževalni center za masaže",
+    "title": "Kakovostni tečaji masaže za",
+    "titleHighlight": "strokovni in osebni razvoj",
+    "description": "Namenjeno bodočim maserjem, wellness delavcem in vsem, ki želijo usvojiti masažne tehnike v Mariboru in okolici.",
+    "primaryCta": "Prijavite se na tečaj",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Odlične ocene",
+        "label": "Odlične ocene",
+        "title": "Odlične ocene"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Uporabno znanje",
+        "label": "Uporabno znanje",
+        "title": "Uporabno znanje"
+      },
+      {
+        "value": "Maribor",
+        "label": "Maribor",
+        "title": "Maribor"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naši programi",
+    "title": "Storitve in tečaji masaže",
+    "description": "Izberite ustrezen izobraževalni program in pridobite strokovno znanje za delo na področju masaže v Mariboru in okolici.",
+    "items": [
+      {
+        "title": "Osnovni tečaj masaže",
+        "description": "Spoznajte temeljne tehnike in osnove masaže za začetnike.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nadaljevalni tečaj masaže",
+        "description": "Nadgradite svoje znanje z naprednimi prijemi in tehnikami.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Specializirane masažne tehnike",
+        "description": "Specializirana izobraževanja za specifične vrste masaž.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Individualno izobraževanje",
+        "description": "Prilagojen program učenja, posvečen vašemu napredku.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pridobivanje certifikatov",
+        "description": "Potrdila o opravljenem usposabljanju za vašo karierno pot.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati masTer class",
+    "description": "Z našim strokovnim in motivirajočim pristopom boste hitro osvojili potrebna znanja.",
+    "highlights": [
+      "Odlične ocene zadovoljnih tečajnikov",
+      "Strokoven in prilagojen pristop k učenju",
+      "Pridobitev uporabnega znanja za takojšnjo uporabo"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljni tečajniki",
+        "description": "Odlične ocene naših udeležektov potrjujejo kakovost izobraževanj.",
+        "title": "Zadovoljni tečajniki"
+      },
+      {
+        "label": "Prilagojen pristop",
+        "description": "Strokoven in posamičen pristop k učenju za vsakega tečajnika.",
+        "title": "Prilagojen pristop"
+      },
+      {
+        "label": "Takojšnja uporaba",
+        "description": "Pridobite uporabno znanje, ki ga lahko uporabite takoj po zaključku.",
+        "title": "Takojšnja uporaba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanja glede tečajev? Pišite nam ali nas pokličite.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "069 646 468",
+        "href": "tel:069646468",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Mlinska ulica 1, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon - Pet: 9:00 - 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali prijavo...",
+      "submitLabel": "Prijavite se na tečaj"
+    }
+  },
+  "footer": {
+    "address": "Mlinska ulica 1, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "masTer class tečaji masaže",
+    "address": "Mlinska ulica 1, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "069 646 468"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-05-minimal-line",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-05-mist",
+    "fontPairingId": "look-cistilni-servisi-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-luco/hero.avif",
+      "alt": "Sodobna in svetla pisarna po strokovnem čiščenju v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-luco/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7451918",
+      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "searchQuery": "commercial cleaning team interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-luco/services.avif",
+      "alt": "Čisto in urejeno stanovanje s sijočimi površinami",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-luco/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20381389",
+      "sourceUrl": "https://www.pexels.com/photo/woman-cleaning-a-window-20381389/",
+      "photographer": "Tuan Vy",
+      "photographerUrl": "https://www.pexels.com/@tuan-vy-903011268",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene čistilnih storitev",
+    "description": "Pregled rednih cen za naše osnovne storitve čiščenja.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Čiščenje stanovanja",
+        "description": "Osnovno čiščenje stanovanjskih prostorov",
+        "price": "od 30 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Čiščenje sedežnih garnitur, preprog ali vzmetnic",
+        "price": "od 40 €",
+        "unit": "kos"
+      },
+      {
+        "name": "Pranje oken",
+        "description": "Čiščenje steklenih površin in okenskih okvirjev",
+        "price": "od 25 €",
+        "unit": "storitev"
+      },
+      {
+        "name": "Redno čiščenje pisarn",
+        "description": "Periodično vzdrževanje poslovnih prostorov",
+        "price": "od 28 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Generalno čiščenje po obnovi",
+        "description": "Temeljito čiščenje po gradbenih delih",
+        "price": "od 35 €",
+        "unit": "ura"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čistilni servis",
+    "highlight": "Luco"
+  },
+  "metadata": {
+    "title": "Čistilni servis Luco | Zanesljivo čiščenje v Ljubljani",
+    "description": "Zanesljivo in temeljito čiščenje za vaš dom in pisarno v Ljubljani in okolici. Nudimo globinsko čiščenje, pranje oken in redno čiščenje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo in temeljito čiščenje za vaš",
+    "titleHighlight": "dom in pisarno",
+    "description": "Zagotavljamo čistočo in urejenost za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani in širši okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Hiter odziv",
+        "label": "Hiter odziv"
+      },
+      {
+        "value": "Temeljitost",
+        "label": "Temeljitost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Preverjena čistila",
+        "label": "Preverjena čistila"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite čistilne rešitve za vsak prostor",
+    "description": "Izvajamo strokovne čistilne storitve za domove in poslovne prostore v Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Učinkovito odstranjevanje trdovratnih madežev in osvežitev tekstilnih površin.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje poslovnih prostorov",
+        "description": "Skrb za urejenost in čistočo vaših pisarn ter delovnih površin.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje stanovanj",
+        "description": "Temeljito vzdrževanje čistoče v vašem domu po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje oken",
+        "description": "Bleščeče čista okna in steklene površine brez madežev.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Generalno čiščenje po obnovi",
+        "description": "Temeljito čiščenje prostorov po zaključenih gradbenih ali obrtniških delih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega čistilnega servisa",
+    "description": "Zavedamo se pomena čistoče, zato se posvetimo vsakemu naročniku posebej in zagotavljamo visoke standarde.",
+    "highlights": [
+      "Hiter in zanesljiv odziv na vsako povpraševanje",
+      "Visoka natančnost in temeljitost pri delu",
+      "Uporaba preverjenih in varnih čistilnih sredstev"
+    ],
+    "benefits": [
+      {
+        "label": "Hiter in zanesljiv odziv",
+        "description": "Prisluhnemo vašim časovnim okvirjem in poskrbimo za hitro izvedbo.",
+        "title": "Hiter in zanesljiv odziv"
+      },
+      {
+        "label": "Visoka natančnost",
+        "description": "Vsak kotiček vašega prostora očistimo z največjo skrbnostjo.",
+        "title": "Visoka natančnost"
+      },
+      {
+        "label": "Prilagodljivost željam",
+        "description": "Storitve prilagodimo specifičnim potrebam vašega doma ali pisarne.",
+        "title": "Prilagodljivost željam"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za dogovor o čiščenju ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 578 622",
+        "href": "tel:040578622",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Lavričeva ulica 3, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in zahteve glede čiščenja...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Lavričeva ulica 3, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilni servis Luco",
+    "address": "Lavričeva ulica 3, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "040 578 622"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

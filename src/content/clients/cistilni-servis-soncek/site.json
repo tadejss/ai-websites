@@ -1,0 +1,276 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-07-asymmetric-bold",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-07-linen",
+    "fontPairingId": "look-cistilni-servisi-07"
+  },
+  "layout": {
+    "profileId": "image-led",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-soncek/hero.avif",
+      "alt": "Čistilni servis v Medvodah za dom in poslovne prostore",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-soncek/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30875661",
+      "sourceUrl": "https://www.pexels.com/photo/window-cleaners-working-on-high-rise-building-facade-30875661/",
+      "photographer": "Juan García",
+      "photographerUrl": "https://www.pexels.com/@juan-garcia-84744800",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-soncek/services.avif",
+      "alt": "Globinsko in generalno čiščenje prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-soncek/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196684",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-in-orange-jumper-holding-a-vacuum-hose-6196684/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "commercial cleaning team interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Transparentne cene storitev",
+    "description": "Okvirne cene naših čiščenj za dom in poslovne prostore.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Generalno čiščenje stanovanja",
+        "description": "Temeljito čiščenje vseh prostorov",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje sedežne garniture",
+        "description": "Odstranjevanje madežev in osvežitev tkanine",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Redno vzdrževanje pisarn (cena po uri)",
+        "price": "od 20 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Pranje oken in steklenih površin",
+        "description": "Čiščenje oken z obeh strani in okvirjev",
+        "price": "od 40 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čistilni servis",
+    "highlight": "Sonček"
+  },
+  "metadata": {
+    "title": "Čistilni servis sonček | Zanesljivo čiščenje v Medvodah in okolici",
+    "description": "Zanesljivo in temeljito čiščenje za vaš dom in poslovne prostore v Medvodah z okolico. Globinsko čiščenje, generalno čiščenje, poslovni prostori in pranje oken."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo in temeljito čiščenje za vaš",
+    "titleHighlight": "dom in poslovne prostore",
+    "description": "Profesionalne in prijazne čistilne storitve za lastnike stanovanj, hiš in poslovnih prostorov v Medvodah in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Temeljito",
+        "label": "Temeljita izvedba"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Urnik po meri"
+      },
+      {
+        "value": "Preverjeno",
+        "label": "Kakovostna čistila"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Medvode z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše čiste storitve za vas",
+    "description": "Poskrbimo za brezhibno čistočo vaših prostorov v Medvodah in okolici z uporabo preverjenih čistilnih sredstev.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Generalno čiščenje",
+        "description": "Celovito generalno čiščenje stanovanj in hiš ob vseh priložnostih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno vzdrževalno čiščenje pisarn in poslovnih objektov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje stekel in oken",
+        "description": "Natančno pranje oken in steklenih površin za sijoč pogled na svet.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti, ki jim lahko zaupate",
+    "description": "Zavedamo se pomena čistoče v vašem domu ali pisarni. Delamo temeljito in se prilagajamo vašemu urniku.",
+    "highlights": [
+      "Temeljita in natančna izvedba storitev",
+      "Prilagodljivost urniku strank",
+      "Uporaba preverjenih čistilnih sredstev"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsak kotiček očistimo z največjo skrbnostjo in pozornostjo do detajlov.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Čistilne storitve prilagodimo vašemu urniku in vašim vsakodnevnim obveznostim.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Preverjena čistila",
+        "description": "Uporabljamo preverjena čistilna sredstva za učinkovito in varno čiščenje.",
+        "title": "Preverjena čistila"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Kontaktirajte nas",
+    "description": "Pokličite nas za dogovor o čiščenju vašega doma ali poslovnega prostora v Medvodah z okolico.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 244 961",
+        "href": "tel:041244961",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cesta Komandanta Staneta 9, 1215 Medvode, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, kakšno čiščenje potrebujete...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Cesta Komandanta Staneta 9, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilni servis Sonček",
+    "address": "Cesta Komandanta Staneta 9, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "041 244 961"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

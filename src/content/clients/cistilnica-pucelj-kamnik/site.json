@@ -1,0 +1,286 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-10-frost",
+    "fontPairingId": "look-cistilni-servisi-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilnica-pucelj-kamnik/hero.avif",
+      "alt": "Notranjost sodobne čistilnice in pralnice",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilnica-pucelj-kamnik/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7451918",
+      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "searchQuery": "commercial cleaning team interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilnica-pucelj-kamnik/services.avif",
+      "alt": "Zloženo čisto perilo in urejena oblačila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilnica-pucelj-kamnik/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled osnovnih storitev čiščenja in nege perila.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Kemično čiščenje plašča",
+        "description": "Temeljito čiščenje in osvežitev plašča ali jakne.",
+        "price": "od 15 €",
+        "featured": true
+      },
+      {
+        "name": "Pranje in likanje perila",
+        "description": "Pranje, sušenje in likanje perila na kilogram.",
+        "price": "od 8 €",
+        "unit": "kg"
+      },
+      {
+        "name": "Čiščenje obleke",
+        "description": "Dvodelna obleka (suknjič in hlače).",
+        "price": "od 18 €"
+      },
+      {
+        "name": "Likanje kosov",
+        "description": "Likanje srajc, hlač ali drugih posameznih kosov.",
+        "price": "od 3 €",
+        "unit": "kos"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čistilnica Pucelj",
+    "highlight": "Kamnik"
+  },
+  "metadata": {
+    "title": "Čistilnica Pucelj Kamnik | Zanesljivo čiščenje in nega oblačil",
+    "description": "Zanesljivo in kakovostno čiščenje perila ter oblačil v Kamniku. Profesionalna nega tekstila in občutljivih tkanin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Lokalni servis v Kamniku",
+    "title": "Zanesljivo in kakovostno",
+    "titleHighlight": "čiščenje perila ter oblačil",
+    "description": "Zagotavljamo strokovno in skrbno nego oblačil za prebivalce Kamnika in okolice.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovna nega"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljive storitve"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalni servis"
+      },
+      {
+        "value": "Skrbno",
+        "label": "Skrbno",
+        "title": "Skrb za tekstil"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve čiščenja in nege",
+    "description": "Poskrbimo za čistočo in urejenost vaših oblačil ter občutljivih tkanin v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Kemično čiščenje oblačil",
+        "description": "Temeljito in varno kemično čiščenje različnih vrst oblačil.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Pranje in likanje perila",
+        "description": "Vsakodnevno perilo oprano, posušeno in skrbno zlikano.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje tekstila",
+        "description": "Celovito čiščenje raznovrstnih tekstilnih izdelkov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega občutljivih tkanin",
+        "description": "Posebna in skrbna obravnava občutljivih materialov.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv lokalni servis z občutkom za kakovost",
+    "description": "Naše poslanstvo je zagotoviti čista in urejena oblačila z osebnim pristopom.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Strokovna in skrbna nega oblačil",
+      "Prijetna in zanesljiva lokalna storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na odlične ocene naših strank.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Skrbna nega",
+        "description": "Vsak kos oblačila obravnavamo z vso skrbnostjo.",
+        "title": "Skrbna nega"
+      },
+      {
+        "label": "Lokalna storitev",
+        "description": "Zanesljiv partner v Kamniku in okolici.",
+        "title": "Lokalna storitev"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Obiščite nas v Kamniku ali nas pokličite za več informacij o naših storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Glavni trg 14, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 282 725",
+        "href": "tel:040282725",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Torek–Petek: 9:00–12:30 in 15:00–17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše vprašanje ali povpraševanje...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Glavni trg 14, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilnica Pucelj Kamnik",
+    "address": "Glavni trg 14, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "040 282 725"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

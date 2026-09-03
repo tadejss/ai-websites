@@ -1,0 +1,285 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-maserji-wellness-10-frost",
+    "fontPairingId": "look-maserji-wellness-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vitana-sasa-memon/hero.avif",
+      "alt": "Sproščujoč ambient masažnega salona z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vitana-sasa-memon/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4599377",
+      "sourceUrl": "https://www.pexels.com/photo/a-masseuse-massaging-a-persons-back-4599377/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vitana-sasa-memon/services.avif",
+      "alt": "Aromaterapija in pripomočki za nego telesa",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vitana-sasa-memon/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6560297",
+      "sourceUrl": "https://www.pexels.com/photo/a-person-massaging-a-topless-woman-lying-on-massage-table-6560297/",
+      "photographer": "Anna Tarazevich",
+      "photographerUrl": "https://www.pexels.com/@anntarazevich",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled naših priljubljenih masaž in negovalnih tretmajev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Sproščanje celega telesa z eteričnimi olji",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Klasična masaža",
+        "description": "Masaža za lajšanje napetosti v mišicah",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Aromaterapija",
+        "description": "Masaža z izbranimi naravnimi olji",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Nega telesa",
+        "description": "Poživitev in vlaženje kože",
+        "price": "od 60 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Vitana",
+    "highlight": "Negovalni salon"
+  },
+  "metadata": {
+    "title": "Vitana, Negovalni salon | Masaže in sprostitev Maribor",
+    "description": "Celostna skrb za vaše dobro počutje in sprostitev v Mariboru. Ponujamo sprostitvene in klasične masaže, nego telesa ter aromaterapijo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Negovalni salon v Mariboru",
+    "title": "Celostna skrb za vaše",
+    "titleHighlight": "dobro počutje in sprostitev",
+    "description": "Umirjen in butični salon v Mariboru ponuja sprostitvene masaže, nego telesa in aromaterapijo za vsakogar, ki išče oddih in sprostitev.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Raziščite storitve",
+    "stats": [
+      {
+        "value": "Umirjen ambient",
+        "label": "Umirjen ambient"
+      },
+      {
+        "value": "Oseben pristop",
+        "label": "Oseben pristop"
+      },
+      {
+        "value": "Strokovna nega",
+        "label": "Strokovna nega"
+      },
+      {
+        "value": "Maribor",
+        "label": "Lokalna lokacija"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Privoščite si trenutke sprostitve",
+    "description": "Specializirani smo za nego telesa, sprostitvene in klasične masaže ter aromaterapijo v Mariboru in okolici.",
+    "items": [
+      {
+        "title": "Sprostitvene masaže",
+        "description": "Nežni gibi in pomirjajoče olje za popoln odklop od vsakodnevnega stresa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Klasične masaže",
+        "description": "Učinkovito lajšanje napetosti v mišicah in spodbujanje prekrvavitve telesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega telesa",
+        "description": "Celostna nega za poživitev kože ter povrnitev mehkobe in sijaja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Aromaterapija",
+        "description": "Blagodejni učinki naravnih eteričnih olj za harmonijo telesa in duha.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Storitve za nego in sprostitev",
+        "description": "Prilagojeni tretmaji za vaše dobro počutje in sprostitev v butičnem okolju.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati salon Vitana",
+    "title": "Vaše zatočišče miru v Mariboru",
+    "description": "Združujemo strokoven pristop, visoko kakovost storitev in topel ambient za najboljšo izkušnjo sprostitve.",
+    "highlights": [
+      "Prijeten in sproščujoč ambient",
+      "Strokoven in oseben pristop",
+      "Visoko zadovoljstvo strank"
+    ],
+    "benefits": [
+      {
+        "label": "Sproščujoč ambient",
+        "description": "Umirjeno in butično okolje, ki nudi popoln pobeg od vsakdanjega vrveža.",
+        "title": "Sproščujoč ambient"
+      },
+      {
+        "label": "Oseben pristop",
+        "description": "Posvetimo se vašim individualnim željam in potrebam telesa.",
+        "title": "Oseben pristop"
+      },
+      {
+        "label": "Strokovne storitve",
+        "description": "Kakovostna nega telesa in masaže za lajšanje napetosti.",
+        "title": "Strokovne storitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za masažo ali nego telesa v Mariboru.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 696 530",
+        "href": "tel:040696530",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Žabotova ulica 5, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00–18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Žabotova ulica 5, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Vitana Negovalni salon",
+    "address": "Žabotova ulica 5, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "040 696 530"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

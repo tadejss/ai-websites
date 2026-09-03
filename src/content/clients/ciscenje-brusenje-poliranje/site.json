@@ -1,0 +1,282 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-05-minimal-line",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-05-mist",
+    "fontPairingId": "look-cistilni-servisi-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-brusenje-poliranje/hero.avif",
+      "alt": "Delavnica za obdelavo in preoblikovanje pločevine",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-brusenje-poliranje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9245158",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-orange-button-up-shirt-wearing-white-mask-9245158/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-brusenje-poliranje/services.avif",
+      "alt": "Brušenje in poliranje pločevine",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-brusenje-poliranje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9462192",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-shirt-holding-white-and-blue-sprayer-bottle-9462192/",
+      "photographer": "Liliana Drew",
+      "photographerUrl": "https://www.pexels.com/@liliana-drew",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Cene so informativne narave in se oblikujejo glede na obseg ter zahtevnost dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Čiščenje pločevine",
+        "description": "Osnovno čiščenje in priprava površine",
+        "price": "od 30 €",
+        "unit": "ura",
+        "featured": false
+      },
+      {
+        "name": "Brušenje pločevine",
+        "description": "Priprava in odstranjevanje nepravilnosti",
+        "price": "od 35 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Poliranje pločevine",
+        "description": "Doseganje visokega sijaja površin",
+        "price": "od 40 €",
+        "unit": "ura",
+        "featured": false
+      },
+      {
+        "name": "Preoblikovanje pločevine",
+        "description": "Oblikovanje po naročilu in specifikacijah",
+        "price": "od 45 €",
+        "unit": "ura",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Dušan Brodar s.p.",
+    "highlight": "Obdelava pločevine"
+  },
+  "metadata": {
+    "title": "Čiščenje, brušenje, poliranje in preoblikovanje pločevine | Kamnik",
+    "description": "Strokovno čiščenje, brušenje, poliranje in preoblikovanje pločevine v Kamniku in okolici. Zanesljive storitve za podjetja in posameznike."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Strokovna obdelava kovin",
+    "title": "Kakovostno čiščenje, brušenje in poliranje",
+    "titleHighlight": "pločevine",
+    "description": "Zanesljive storitve čiščenja, brušenja, poliranja in preoblikovanja pločevine za podjetja, obrtnike in posameznike v Kamniku in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokovno",
+        "label": "Strokovno delo"
+      },
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljiv izvajalec"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančna obdelava"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Kamnik in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za obdelavo pločevine",
+    "description": "Nudimo natančne in strokovne storitve za vaše potrebe na področju obdelave pločevine.",
+    "items": [
+      {
+        "title": "Čiščenje pločevine",
+        "description": "Temeljito in učinkovito čiščenje površin pločevine pred nadaljnjo obdelavo ali končno uporabo.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Brušenje pločevine",
+        "description": "Kakovostno brušenje za pripravo gladkih in čistih površin ter odpravo nepravilnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Poliranje pločevine",
+        "description": "Strokovno poliranje za dosego visoke stopnje sijaja in estetskega videza kovinskih površin.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Preoblikovanje pločevine",
+        "description": "Natančno preoblikovanje pločevine po vaših merah in tehničnih zahtevah.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za obdelavo pločevine",
+    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom zagotavljamo visoko kakovost storitev za vsako naročilo.",
+    "highlights": [
+      "Strokovna obdelava in preoblikovanje pločevine",
+      "Kakovostne storitve brušenja in poliranja",
+      "Zanesljiv in izkušen lokalni izvajalec"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovnost",
+        "description": "Strokovna obdelava in preoblikovanje pločevine z mislijo na detajle.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Kakovost",
+        "description": "Kakovostne storitve brušenja in poliranja za popoln končni rezultat.",
+        "title": "Kakovost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Zanesljiv in izkušen lokalni izvajalec v Kamniku in okolici.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete obdelavo pločevine? Pokličite nas ali nam pošljite povpraševanje.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tunjiška Mlaka 26 A, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 837 233",
+        "href": "tel:041837233",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe glede obdelave pločevine...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Tunjiška Mlaka 26 A, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Dušan Brodar s.p. Obdelava pločevine",
+    "address": "Tunjiška Mlaka 26 A, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "041 837 233"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

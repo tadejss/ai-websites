@@ -1,0 +1,290 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-03-photo-forward",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-03-bloom",
+    "fontPairingId": "look-cistilni-servisi-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-kristalcek/hero.avif",
+      "alt": "Profesionalno čiščenje svetlih in urejenih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-kristalcek/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7451918",
+      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "searchQuery": "commercial cleaning team interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-kristalcek/services.avif",
+      "alt": "Globinsko čiščenje in urejanje steklenih površin",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-kristalcek/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20381389",
+      "sourceUrl": "https://www.pexels.com/photo/woman-cleaning-a-window-20381389/",
+      "photographer": "Tuan Vy",
+      "photographerUrl": "https://www.pexels.com/@tuan-vy-903011268",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene čistilnih storitev",
+    "description": "Pregled okvirnih cen za naše storitve čiščenja.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo in ogled nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje pisarn",
+        "description": "Vzdrževalno čiščenje poslovnih prostorov",
+        "price": "od 20 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnih prostorov",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Čiščenje sedežnih garnitur, preprog in vzmetnic",
+        "price": "od 40 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Pranje oken",
+        "description": "Čiščenje steklenih površin in okvirjev",
+        "price": "od 30 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Čiščenje po gradbenih delih",
+        "description": "Odstranjevanje prahu in ostankov po gradnji",
+        "price": "od 30 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čistilni servis",
+    "highlight": "Kristalček"
+  },
+  "metadata": {
+    "title": "Čistilni servis Kristalček | Miroslava Bursać s.p.",
+    "description": "Zanesljivo in temeljito čiščenje za vaš dom in poslovne prostore v Logatcu in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo in temeljito čiščenje za",
+    "titleHighlight": "vaš dom in pisarno",
+    "description": "Profesionalne čistilne storitve za lastnike stanovanj, hiš in poslovnih objektov v Logatcu in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljivost"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Natančnost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost"
+      },
+      {
+        "value": "Kakovost",
+        "label": "Kakovost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za čistočo vaših prostorov",
+    "description": "Poskrbimo za brezhibno čistočo vaših domov in poslovnih prostorov v Logatcu in okolici.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Generalno čiščenje prostorov",
+        "description": "Celovito generalno čiščenje stanovanj, hiš in poslovnih objektov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Pranje oken in steklenih površin",
+        "description": "Kristalno čista okna in steklene površine brez madežev.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Redno čiščenje pisarn",
+        "description": "Redno vzdrževanje čistoče v vaših poslovnih prostorih in pisarnah.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Čiščenje po gradbenih delih",
+        "description": "Urejanje in čiščenje prostorov po zaključenih gradbenih ali prenovitvenih delih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega čistilnega servisa",
+    "description": "Zavedamo se pomena čistoče in urejenega okolja, zato se vedno posvetimo vašim željam.",
+    "highlights": [
+      "Zanesljiva in natančna izvedba storitev",
+      "Prilagodljivost strankam in njihovim urnikom",
+      "Uporaba preverjenih čistilnih sredstev"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Storitve izvajamo zanesljivo, natančno in v dogovorjenih rokovih.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim potrebam in se prilagodimo vašemu urniku.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Preverjena sredstva",
+        "description": "Pri delu uporabljamo preverjena in učinkovita čistilna sredstva.",
+        "title": "Preverjena sredstva"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali nam pošljite sporočilo za dogovor o čiščenju vaših prostorov.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 975 981",
+        "href": "tel:041975981",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Kidričeva ulica 1a, 1370 Logatec, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite nam vaše želje ali vprašanje",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Kidričeva ulica 1a, 1370 Logatec, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilni servis Kristalček",
+    "address": "Kidričeva ulica 1a, 1370 Logatec, Slovenia",
+    "email": "",
+    "phone": "041 975 981"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-08-dark-pro",
+  "theme": {
+    "paletteId": "look-maserji-wellness-08-copper",
+    "fontPairingId": "look-maserji-wellness-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/trgovinica-perla/hero.avif",
+      "alt": "Sproščujoč ambient masažnega salona",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/trgovinica-perla/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628599",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628599/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/trgovinica-perla/services.avif",
+      "alt": "Aromaterapija in nega telesa",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/trgovinica-perla/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628520",
+      "sourceUrl": "https://www.pexels.com/photo/settee-by-the-window-6628520/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregled storitev in cen",
+    "description": "Izberite masažo ali nego po vaši meri.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Sproščanje celega telesa z eteričnimi olji",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Klasična masaža",
+        "description": "Masaža hrbta ali celega telesa za mišično napetost",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Nega telesa",
+        "description": "Poživitev in vlaženje kože",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Aromaterapija",
+        "description": "Masaža z izbranimi naravnimi olji",
+        "price": "od 55 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Trgovinica",
+    "highlight": "Perla"
+  },
+  "metadata": {
+    "title": "Trgovinica Perla | Masaže in dobro počutje Maribor",
+    "description": "Sprostitvene in klasične masaže, nega telesa ter aromaterapija v središču Maribora. Privoščite si trenutke sprostitve v prijetnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Dobro počutje in masaže Maribor",
+    "title": "Sprostitev in nego telesa za vaše",
+    "titleHighlight": "dobro počutje.",
+    "description": "Nudimo sprostitvene in klasične masaže, nego telesa ter aromaterapijo za vse, ki potrebujete sprostitev in lajšanje napetosti v mišicah v Mariboru z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Lokalna lokacija",
+        "label": "Lokalna lokacija"
+      },
+      {
+        "value": "Sproščeno vzdušje",
+        "label": "Sproščeno vzdušje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše dobro počutje",
+    "description": "Prepustite se strokovnim rokam in izberite storitev, ki bo povrhnja vaše ravnovesje in sprostitev v Mariboru.",
+    "items": [
+      {
+        "title": "Sprostitvene masaže",
+        "description": "Nežne tehnike za popolno umiritev misli in telesa ter odpravljanje vsakodnevnega stresa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Klasične masaže",
+        "description": "Učinkovito sproščanje napetih mišic in izboljšanje prekrvavitve celega telesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega telesa",
+        "description": "Celostna nega za poživitev in mehkobo vaše kože.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Aromaterapija",
+        "description": "Blagodejni vpliv eteričnih olj na vaše čute in globoko sprostitev.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Oaza miru v središču Maribora",
+    "description": "Trgovinica Perla združuje topel lokalni salon, strokovnost in prijetno okolje za vsakogar, ki ceni skrb za lastno telo.",
+    "highlights": [
+      "Prijeten in sproščujoč ambient",
+      "Strokovni pristop k masiranju",
+      "Lokalna lokacija v središču Maribora"
+    ],
+    "benefits": [
+      {
+        "label": "Prijeten ambient",
+        "description": "Topel in domač lokalni salon, kjer boste pozabili na vsakodnevne skrbi.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Skrbno izbrane tehnike masaž in nege za najboljšo izkušnjo.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Odlična lokacija",
+        "description": "Nahajamo se v TPC City v središču Maribora, enostavno dostopno.",
+        "title": "Odlična lokacija"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin za sprostitev ali postavite vprašanje glede naše ponudbe.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "TPC City, Ulica Vita Kraigherja 5, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 009 333",
+        "href": "tel:031009333",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "TPC City, Ulica Vita Kraigherja 5, 2000 Maribor, Slovenia",
+    "rights": "© 2025 Trgovinica Perla. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Trgovinica Perla",
+    "address": "TPC City, Ulica Vita Kraigherja 5, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "031 009 333"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

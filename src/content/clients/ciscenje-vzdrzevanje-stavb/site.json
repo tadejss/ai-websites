@@ -1,0 +1,279 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-08-dark-pro",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-08-copper",
+    "fontPairingId": "look-cistilni-servisi-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-vzdrzevanje-stavb/hero.avif",
+      "alt": "Strokovno čiščenje poslovnih prostorov v sodobni pisarni",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-vzdrzevanje-stavb/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197114",
+      "sourceUrl": "https://www.pexels.com/photo/woman-wearing-a-jumper-cleaning-a-glass-window-6197114/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-vzdrzevanje-stavb/services.avif",
+      "alt": "Vzdrževanje in čiščenje objektov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ciscenje-vzdrzevanje-stavb/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in se oblikujejo glede na obseg ter specifične zahteve objekta.",
+    "disclaimer": "Cenik je informativen. Za prilagojeno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Redno čiščenje pisarn in poslovnih površin",
+        "price": "od 20 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje stanovanjskih stavb",
+        "description": "Čiščenje skupnih prostorov večstanovanjskih objektov",
+        "price": "Po dogovoru",
+        "unit": "glede na obseg"
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnega objekta ali prostorov",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Vzdrževanje objektov",
+        "description": "Storitve rednega vzdrževanja in pregledov",
+        "price": "Po dogovoru",
+        "unit": "objekt"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čiščenje in vzdrževanje",
+    "highlight": "Pavel Pivk s.p."
+  },
+  "metadata": {
+    "title": "Čiščenje in vzdrževanje Pavel Pivk s.p. | Logatec",
+    "description": "Zanesljivo čiščenje in vzdrževanje poslovnih prostorov, stanovanjskih stavb ter generalna čiščenja v Logatcu z okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljive storitve v Logatcu z okolico",
+    "title": "Zanesljivo čiščenje in vzdrževanje",
+    "titleHighlight": "vaših objektov",
+    "description": "Strokovne rešitve za čiščenje poslovnih prostorov, stanovanjskih stavb in celovito vzdrževanje objektov za podjetja, upravnike in posameznike.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo"
+      },
+      {
+        "value": "Celovito",
+        "label": "Celovito"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vaše objekte",
+    "description": "Poskrbimo za čistočo in urejenost vaših poslovnih in stanovanjskih prostorov v Logatcu z okolico.",
+    "items": [
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno čiščenje pisarn in poslovnih objektov za urejeno delovno okolje.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje stanovanjskih stavb",
+        "description": "Vzdrževanje čistoće v večstanovanjskih objektih in skupnih prostorih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Vzdrževanje objektov",
+        "description": "Celovite storitve vzdrževanja, ki zagotavljajo brezhibno delovanje vaših objektov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Generalna čiščenja",
+        "description": "Temeljita generalna čiščenja za posebne priložnosti ali po zaključku del.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše objekte",
+    "description": "Z dolgoletnimi izkušnjami in posluhom za stranke zagotavljamo visoko kakovost storitev.",
+    "highlights": [
+      "Zanesljiva in strokovna izvedba",
+      "Prilagodljivost potrebam strank",
+      "Celovite storitve čiščenja in vzdrževanja"
+    ],
+    "benefits": [
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Držimo se dogovorjenih rokov in zagotavljamo visoko raven opravljenega dela.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo urniku ter specifičnim potrebam vašega objekta.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Celovite storitve",
+        "description": "Na enem mestu poskrbimo za čiščenje in vzdrževanje celotnega objekta.",
+        "title": "Celovite storitve"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanje ali potrebujete ponudbo? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 764 438",
+        "href": "tel:041764438",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Brod 12, 1370 Logatec, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali povpraševanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Brod 12, 1370 Logatec, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čiščenje in vzdrževanje Pavel Pivk s.p.",
+    "address": "Brod 12, 1370 Logatec, Slovenia",
+    "email": "",
+    "phone": "041 764 438"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

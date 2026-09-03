@@ -1,0 +1,296 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-03-photo-forward",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-03-bloom",
+    "fontPairingId": "look-cistilni-servisi-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/splosno-ciscenje-stavb/hero.avif",
+      "alt": "Strokovno čiščenje poslovnih prostorov v Ljubljani",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/splosno-ciscenje-stavb/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7451918",
+      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "searchQuery": "commercial cleaning team interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/splosno-ciscenje-stavb/services.avif",
+      "alt": "Celovite čistilne rešitve za dom in pisarno",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/splosno-ciscenje-stavb/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16898979",
+      "sourceUrl": "https://www.pexels.com/photo/men-climbing-and-cleaning-windows-16898979/",
+      "photographer": "Natalie Minich",
+      "photographerUrl": "https://www.pexels.com/@mvntlie",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregledorientacijskih cen čistilnih storitev",
+    "description": "Cene so informativne narave in so odvisne od obsega ter zahtevnosti dela.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Generalno čiščenje stavb",
+        "description": "Temeljito čiščenje večjih objektov",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Redno vzdrževanje pisarn",
+        "price": "od 25 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Čiščenje stanovanj in hiš",
+        "description": "Osnovno ali temeljito čiščenje doma",
+        "price": "od 30 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Pranje oken in steklenih površin",
+        "description": "Čiščenje oken in okvirjev",
+        "price": "od 40 €"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje tekstila in pohištva",
+        "price": "od 50 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čiščenje",
+    "highlight": "Mihaela Poropat s.p."
+  },
+  "metadata": {
+    "title": "Splošno čiščenje stavb, Mihaela Poropat s.p. | Ljubljana",
+    "description": "Zanesljivo in kakovostno čiščenje za vaš dom in poslovne prostore v Ljubljani s širšo okolico. Pokličite za ponudbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo in kakovostno čiščenje za vaš",
+    "titleHighlight": "dom in poslovne prostore",
+    "description": "Strokovne čistilne storitve za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Visoka ocena",
+        "title": "Visoka ocena"
+      },
+      {
+        "value": "Prilagodljiv čas",
+        "label": "Prilagodljiv čas",
+        "title": "Prilagodljiv čas"
+      },
+      {
+        "value": "Hitra izvedba",
+        "label": "Hitra izvedba",
+        "title": "Hitra izvedba"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana in okolica",
+        "title": "Ljubljana in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite čistilne rešitve za vsak prostor",
+    "description": "Poskrbimo za čistočo in urejenost vaših bivalnih ter delovnih okolij v Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Generalno čiščenje stavb",
+        "description": "Temeljito generalno čiščenje celotnih stavb in objektov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno čiščenje pisarn in poslovnih objektov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje stanovanj in hiš",
+        "description": "Kakovostno vzdrževanje čistoče v vaših stanovanjskih prostorih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje oken in steklenih površin",
+        "description": "Brezhibno čiščenje oken in vseh vrst steklenih površin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje oblazinjenega pohištva in tekstilnih površin.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za čistočo v Ljubljani",
+    "description": "Zavedamo se pomena čistoče, zato delujemo hitro, zanesljivo in se popolnoma prilagodimo vašim željam.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Prilagodljiv delovni čas",
+      "Hitra in zanesljiva izvedba storitev"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na visoko oceno in zaupanje naših strank.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Delovni čas prilagodimo vašim potrebam in urniku.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Zanesljivost",
+        "description": "Hitra, strokovna in zanesljiva izvedba vseh dogovorjenih storitev.",
+        "title": "Zanesljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali izpolnite obrazek za ponudbo in vprašanja.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 356 804",
+        "href": "tel:041356804",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Savinova ulica 12, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 24h, Sob–Ned: zjutraj",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnje podatke in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Savinova ulica 12, 1000 Ljubljana, Slovenia",
+    "rights": "© Splošno čiščenje stavb, Mihaela Poropat s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čiščenje Mihaela Poropat s.p.",
+    "address": "Savinova ulica 12, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 356 804"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

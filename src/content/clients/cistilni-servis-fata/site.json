@@ -1,0 +1,290 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-06-service-grid",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-06-clay",
+    "fontPairingId": "look-cistilni-servisi-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-fata/hero.avif",
+      "alt": "Strokovno čiščenje in urejanje svetlih poslovnih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-fata/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9245158",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-orange-button-up-shirt-wearing-white-mask-9245158/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-fata/services.avif",
+      "alt": "Globinsko in temeljito čiščenje stanovanjskih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-fata/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9462192",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-shirt-holding-white-and-blue-sprayer-bottle-9462192/",
+      "photographer": "Liliana Drew",
+      "photographerUrl": "https://www.pexels.com/@liliana-drew",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Informativne cene čiščenja",
+    "description": "Pregled okvirnih cen za naše najbolj iskane čistilne storitve.",
+    "disclaimer": "Cenik je informativen. Za prilagojeno ponudbo in točen izračun nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje prostorov",
+        "description": "Ura rednega čiščenja doma ali pisarne",
+        "price": "od 20 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnega objekta",
+        "price": "od 150 €",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežne garniture ali preproge",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Pranje oken",
+        "description": "Pranje oken z okvirji",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Čiščenje po obnovi",
+        "description": "Končno čiščenje po gradbenih delih",
+        "price": "od 180 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Finelesk",
+    "highlight": "Čistilni servis"
+  },
+  "metadata": {
+    "title": "Finelesk - Zanesljiv čistilni servis Kamnik",
+    "description": "Zanesljivo in kakovostno čiščenje za vaš dom in poslovne prostore v Kamniku in okolici. Nudimo globinsko čiščenje, generalno čiščenje, pranje oken in drugo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Lokalni čistilni servis",
+    "title": "Zanesljivo in kakovostno čiščenje za vaš",
+    "titleHighlight": "dom in poslovne prostore",
+    "description": "Vrhunske čistilne storitve za lastnike stanovanj, hiš in poslovnih objektov v Kamniku in okolici. Prilagajamo se vašim željam in urniku.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska kakovost",
+        "label": "Vrhunska kakovost",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "value": "Zanesljiv pristop",
+        "label": "Zanesljiv pristop",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Lokalna ponudba",
+        "label": "Lokalna ponudba",
+        "title": "Lokalna ponudba"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite čistilne rešitve",
+    "description": "Poskrbimo za čistočo vaših prostorov v Kamniku in okolici z zanesljivim in strokovnim pristopom.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje oblazinjenega pohištva, preprog in tekstilnih površin.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Generalno čiščenje",
+        "description": "Temeljito generalno čiščenje vseh prostorov od tal do stropa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Redno čiščenje prostorov",
+        "description": "Redno vzdrževanje čistoće v vašem domu ali poslovnem objektu.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje oken",
+        "description": "Strokovno pranje oken in steklenih površin za kristalno čist pogled.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Čiščenje po obnovi",
+        "description": "Učinkovito čiščenje ostankov gradbenih del in prenove.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za čistočo",
+    "description": "Z združevanjem strokovnosti, prilagodljivosti in vrhunske kakovosti zagotavljamo čistočo, ki presega pričakovanja.",
+    "highlights": [
+      "Vrhunska kakovost čiščenja z odličnimi odzivi strank",
+      "Zanesljiv in strokoven pristop k vsakemu projektu",
+      "Prilagodljivost vašim željam in urniku delovanja"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Vrhunska kakovost čiščenja z odzivom strank s čisto petico.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Zanesljiv in strokoven pristop k vsakemu posameznemu projektu.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Popolna prilagodljivost vašim željam, potrebam in urniku.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Z veseljem odgovorimo na vaša vprašanja in se dogovorimo za termin čiščenja.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Cankarjeva cesta 8, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 203 511",
+        "href": "tel:031203511",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Cankarjeva cesta 8, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Finelesk Čistilni servis",
+    "address": "Cankarjeva cesta 8, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "031 203 511"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

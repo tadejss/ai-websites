@@ -1,0 +1,272 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-01-classic-split",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-01-sand",
+    "fontPairingId": "look-nohti-pedikura-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/valy-nohtek-manikura/hero.avif",
+      "alt": "Strokovna nega in urejanje nohtov v butičnem salonu v Mariboru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/valy-nohtek-manikura/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "15202934",
+      "sourceUrl": "https://www.pexels.com/photo/beautician-working-by-table-15202934/",
+      "photographer": "Jarib Key",
+      "photographerUrl": "https://www.pexels.com/@jarib-key-427074312",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/valy-nohtek-manikura/services.avif",
+      "alt": "Klasična manikura, gel lak in estetska nega rok",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/valy-nohtek-manikura/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997384",
+      "sourceUrl": "https://www.pexels.com/photo/person-with-red-nail-polish-3997384/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled rednih storitev nege rok in nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in zaključna nega.",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Urejanje in nego nohtov",
+        "description": "Osnovna nega in urejanje nohtov.",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Gel lak",
+        "description": "Obstojen nanos gel laka v izbrani barvi.",
+        "price": "od 30 €",
+        "featured": true
+      },
+      {
+        "name": "Estetska nega rok",
+        "description": "Celovita nega rok z masažo in hranilno kremo.",
+        "price": "od 35 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Valy",
+    "highlight": "nohtek"
+  },
+  "metadata": {
+    "title": "Valy nohtek - Manikura Maribor",
+    "description": "Strokovna nega in urejanje nohtov v Mariboru. Klasična manikura, gel lak in estetska nega rok v urejenem butičnem salonu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Manikura v Mariboru",
+    "title": "Strokovna nega in urejanje",
+    "titleHighlight": "vaših nohtov",
+    "description": "Urejen butični salon v Mariboru z okolico, namenjen vsem, ki cenijo urejen videz nohtov in kakovostno nego rok.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop"
+      },
+      {
+        "value": "Urejen salon",
+        "label": "Urejen salon"
+      },
+      {
+        "value": "Kakovostna nega",
+        "label": "Kakovostna nega"
+      },
+      {
+        "value": "Maribor",
+        "label": "Maribor"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve",
+    "description": "Celovite storitve za nego rok in nohtov v Mariboru z okolico.",
+    "items": [
+      {
+        "title": "Klasična manikura",
+        "description": "Nega obnohtne kožice, oblikovanje nohtov in nanos nega za zdrave roke.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Urejanje in nego nohtov",
+        "description": "Strokovno urejanje naravnih nohtov za urejen in negovan videz ob vsaki priložnosti.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Gel lak",
+        "description": "Obstojen barvni nanos za dolgotrajno urejene in sijoče nohte.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Estetska nega rok",
+        "description": "Pobotajte se z lahkotno in prijetno nego, ki poskrbi za mehkobo in lep videz vaši rok.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati Valy nohtek?",
+    "description": "Z našim strokovnim in prijaznim pristopom poskrbimo za vaše dobro počutje in lepe roke.",
+    "highlights": [
+      "Strokoven in prijazen pristop",
+      "Visoko zadovoljstvo strank",
+      "Urejen butični salon v Mariboru"
+    ],
+    "benefits": [
+      {
+        "label": "Prijazen pristop",
+        "description": "Topel in oseben odnos do vsake stranke ter posluh za vaše želje.",
+        "title": "Prijazen pristop"
+      },
+      {
+        "label": "Strokovna nega",
+        "description": "Kakovostni materiali in preverjene tehnike za nego rok in nohtov.",
+        "title": "Strokovna nega"
+      },
+      {
+        "label": "Urejen salon",
+        "description": "Prijeten ambient v središču Maribora, kjer si lahko oddahnete.",
+        "title": "Urejen salon"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede nege nohtov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Partizanska cesta 19, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "070 200 220",
+        "href": "tel:070200220",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili glede termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Partizanska cesta 19, 2000 Maribor, Slovenia",
+    "rights": "Valy nohtek - Peter Kuntner s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Valy nohtek",
+    "address": "Partizanska cesta 19, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "070 200 220"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

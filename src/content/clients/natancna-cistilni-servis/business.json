@@ -1,0 +1,28 @@
+{
+  "companyName": "Natančna čistilni servis Nataša Vrhovnik s.p.",
+  "industry": "Čistilne storitve",
+  "tagline": "Zanesljivo in natančno čiščenje za vaš dom in pisarno",
+  "services": [
+    "Globinsko čiščenje",
+    "Redno čiščenje stanovanjskih prostorov",
+    "Čiščenje poslovnih prostorov",
+    "Čiščenje po gradbenih delih",
+    "Pranje steklenih površin"
+  ],
+  "phone": "031 200 007",
+  "email": "",
+  "address": "Livarska ulica 7, 1241 Kamnik, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka natančnost in pozornost do detajlov",
+    "Odlične ocene zadovoljnih strank",
+    "Prilagodljivost urniku strank"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov",
+  "serviceArea": "Kamnik in okolica",
+  "yearsExperience": "",
+  "tone": "profesionalen, prijazen",
+  "brandStyle": "zanesljiv lokalni ponudnik",
+  "competitors": "Lokalni čistilni servisi na območju Kamnika",
+  "callToAction": "Rezervirajte termin"
+}

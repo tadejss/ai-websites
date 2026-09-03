@@ -1,0 +1,28 @@
+{
+  "companyName": "Salon Aleksandra, ličenje in Manikura, Aleksandra Stevanović s.p.",
+  "industry": "Kozmetični salon in nega",
+  "tagline": "Strokovno ličenje in manikura za vaš sijoč videz",
+  "services": [
+    "Klasična manikura",
+    "Gel nohti",
+    "Dnevno ličenje",
+    "Svečano ličenje",
+    "Nega rok"
+  ],
+  "phone": "051 264 291",
+  "email": "",
+  "address": "Nikova ulica 16, 2000 Maribor, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 3:00 PM · Tuesday: 9:00 AM – 3:00 PM · Wednesday: 9:00 AM – 3:00 PM · Thursday: 9:00 AM – 5:00 PM · Friday: 9:00 AM – 3:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Prilagojen pristop k negi nohtov in ličenju",
+    "Prijazno in strokovno osebje",
+    "Uporaba kvalitetnih materialov"
+  ],
+  "targetCustomers": "Ženske, ki cenijo urejen videz, nego nohtov in profesionalno ličenje v Mariboru",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen lokalni salon",
+  "competitors": "Lokalni kozmetični saloni in ponudniki manikure v Mariboru",
+  "callToAction": "Rezervirajte termin"
+}

@@ -1,0 +1,277 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-08-dark-pro",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-08-copper",
+    "fontPairingId": "look-nohti-pedikura-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-lady-oblikovanje/hero.avif",
+      "alt": "Strokovna nega nohtov in manikura v prijetnem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-lady-oblikovanje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3735653",
+      "sourceUrl": "https://www.pexels.com/photo/artificial-nail-samples-3735653/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-lady-oblikovanje/services.avif",
+      "alt": "Natančno oblikovanje in geliranje nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-lady-oblikovanje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997350",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-long-sleeve-shirt-dong-manicure-3997350/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Utrinki našega dela",
+    "description": "Oglejte si primere urejenih nohtov in našega studia.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled naših osnovnih storitev in informativnih cen.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manikura in nega nohtov",
+        "description": "Osnovna nega in urejanje nohtov",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Geliranje nohtov",
+        "description": "Nanosi gela na naravne nohte",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Umetni nohti",
+        "description": "Podaljševanje nohtov z gelom",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Dodatki in unikatni vzorci",
+        "price": "od 5 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Studio lady",
+    "highlight": "Milena Medja s.p."
+  },
+  "metadata": {
+    "title": "Studio lady | Nega nohtov in kozmetični salon Maribor",
+    "description": "Strokovno oblikovanje in nega nohtov za urejen videz v Mariboru in okolici. Natančna manikura, geliranje in osebni pristop."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon Maribor",
+    "title": "Strokovno oblikovanje in",
+    "titleHighlight": "nega nohtov",
+    "description": "Za urejen videz in sproščeno nego poskrbimo z osebnim pristopom v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Vrhunska kakovost",
+        "label": "Vrhunska kakovost"
+      },
+      {
+        "value": "Natančna nega",
+        "label": "Natančna nega"
+      },
+      {
+        "value": "Urejen salon",
+        "label": "Urejen salon"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve nege in oblikovanja",
+    "description": "Specializirani smo za celovito nego nohtov za stranke v Mariboru in okolici.",
+    "items": [
+      {
+        "title": "Manikura in nega nohtov",
+        "description": "Strokovna nega naravnih nohtov za urejen in zdrav videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Umetni nohti",
+        "description": "Kakovostno podaljševanje in oblikovanje za želeno dolžino.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Geliranje nohtov",
+        "description": "Obstojno in trpežno geliranje za dolgotrajno urejenost.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Estetske in unikatne poslikave za poseben videz vaših rok.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Izdelovanje drobnih predmetov",
+        "description": "Ustvarjanje unikatnih drobnih predmetov z občutkom za detajle.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega studia",
+    "description": "Zavedamo se, kako pomemben je urejen videz, zato se posvetimo vsakemu posamezniku.",
+    "highlights": [
+      "Vrhunska kakovost storitev z odličnimi ocenami strank",
+      "Natančno in estetsko oblikovanje nohtov",
+      "Osebni pristop k vsaki stranki"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Storitve temeljijo na visoki kakovosti in zadovoljstvu strank.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Estetsko in natančno oblikovanje nohtov za brezhiben videz.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in se vam posvetimo v prijetnem okolju.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Lackova cesta 78, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 709 269",
+        "href": "tel:031709269",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Lackova cesta 78, 2000 Maribor, Slovenia",
+    "rights": "Studio lady, Milena Medja s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Studio lady Milena Medja s.p.",
+    "address": "Lackova cesta 78, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "031 709 269"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

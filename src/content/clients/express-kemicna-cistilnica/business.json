@@ -1,0 +1,29 @@
+{
+  "companyName": "Express kemična čistilnica Turk, Andreja Turk s.p.",
+  "industry": "Kemična čistilnica in pralnico perila",
+  "tagline": "Hitro, kakovostno in zanesljivo čiščenje vaših oblačil v Ljubljani",
+  "services": [
+    "Kemično čiščenje oblačil",
+    "Pranje in likanje perila",
+    "Čiščenje usnja in krzna",
+    "Čiščenje domačega tekstila",
+    "Hitre manjše popravitve oblačil"
+  ],
+  "phone": "041 482 016",
+  "email": "",
+  "address": "Cilenškova ulica 5, 1000 Ljubljana, Slovenia",
+  "openingHours": "Monday: 8:30 AM – 6:00 PM · Tuesday: 8:30 AM – 7:00 PM · Wednesday: 8:30 AM – 7:00 PM · Thursday: 8:30 AM – 7:00 PM · Friday: 8:30 AM – 6:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena zadovoljnih strank",
+    "Hitra in zanesljiva storitev",
+    "Strokovna skrb za občutljive materiale",
+    "Prijazno osebje"
+  ],
+  "targetCustomers": "Prebivalci Ljubljane in okolice, ki iščejo kakovostne storitve čiščenja oblačil",
+  "serviceArea": "Ljubljana",
+  "yearsExperience": "",
+  "tone": "profesionalen in prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne kemične čistilnice v Ljubljani",
+  "callToAction": "Pokličite nas"
+}

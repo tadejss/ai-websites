@@ -1,0 +1,27 @@
+{
+  "companyName": "Čistilnica Pucelj Kamnik",
+  "industry": "Pralnica in čistilnica",
+  "tagline": "Zanesljivo in kakovostno čiščenje perila ter oblačil v Kamniku",
+  "services": [
+    "Kemično čiščenje oblačil",
+    "Pranje in likanje perila",
+    "Čiščenje tekstila",
+    "Nega občutljivih tkanin"
+  ],
+  "phone": "040 282 725",
+  "email": "",
+  "address": "Glavni trg 14, 1241 Kamnik, Slovenia",
+  "openingHours": "Monday: Closed · Tuesday: 9:00 AM – 12:30 PM, 3:00 – 5:00 PM · Wednesday: 9:00 AM – 12:30 PM, 3:00 – 5:00 PM · Thursday: 9:00 AM – 12:30 PM, 3:00 – 5:00 PM · Friday: 9:00 AM – 12:30 PM, 3:00 – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Strokovna in skrbna nega oblačil",
+    "Prijetna in zanesljiva lokalna storitev"
+  ],
+  "targetCustomers": "Prebivalci Kamnika in okolice, ki potrebujejo profesionalno čiščenje in nego oblačil",
+  "serviceArea": "Kamnik in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalne čistilnice in pralnice v regiji",
+  "callToAction": "Kontaktirajte nas"
+}

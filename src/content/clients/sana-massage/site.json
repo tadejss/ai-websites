@@ -1,0 +1,287 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-06-service-grid",
+  "theme": {
+    "paletteId": "look-maserji-wellness-06-clay",
+    "fontPairingId": "look-maserji-wellness-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sana-massage/hero.avif",
+      "alt": "Sodoben in pomirjujoč ambient masažnega salona",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sana-massage/hero.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sana-massage/services.avif",
+      "alt": "Sprostitvena masaža hrbta v masažnem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/sana-massage/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4599377",
+      "sourceUrl": "https://www.pexels.com/photo/a-masseuse-massaging-a-persons-back-4599377/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregled cen masaž",
+    "description": "Izberite masažo zase ali podarite trenutke sprostitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža (60 min)",
+        "description": "Sproščujoča masaža celega telesa",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža (60 min)",
+        "description": "Umirjanje stresa in napetosti",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Bolečinska masaža (60 min)",
+        "description": "Ciljna obravnava napetih predelov",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Športna masaža (60 min)",
+        "description": "Intenzivnejša masaža za regeneracijo",
+        "price": "od 55 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Sana",
+    "highlight": "massage"
+  },
+  "metadata": {
+    "title": "Sana massage | Masažni salon Maribor",
+    "description": "Sprostitev in dobro počutje v srcu Maribora. Klasične, sprostitvene, bolečinske in športne masaže za posameznike."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Masažni salon v Mariboru",
+    "title": "Sprostitev in dobro počutje v",
+    "titleHighlight": "srcu Maribora",
+    "description": "Posvetite se svojemu telesu in umu. Nudimo klasične, sprostitvene, bolečinske in športne masaže za posameznike, ki iščejo sprostitev in lajšanje napetosti v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska ocena",
+        "label": "Vrhunska ocena",
+        "title": "Vrhunska ocena"
+      },
+      {
+        "value": "Vsak dan",
+        "label": "Vsak dan",
+        "title": "Vsak dan"
+      },
+      {
+        "value": "Sproščujoč ambient",
+        "label": "Sproščujoč ambient",
+        "title": "Sproščujoč ambient"
+      },
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Masažne storitve za vaše dobro počutje",
+    "description": "Izberite storitev, ki ustreza vašim trenutnim potrebom po sprostitvi in lajšanju napetosti.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Celostna masaža celega telesa, ki sprošča mišice, izboljšuje prekrvavitev in prispeva k splošnemu ravnovesju.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": " Nežna in umirjena masaža za odpravljanje stresa, sprostitev uma ter povrnitev notranjega miru.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Bolečinska masaža",
+        "description": "Ciljano usmerjena obravnava za lajšanje specifičnih bolečin, vozlov in napetosti v mišicah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Masaža, prilagojena aktivnim posameznikom za hitrejšo regeneracijo in pripravo mišic na napor.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Sana massage",
+    "title": "Celostna skrb za vaše telo in um",
+    "description": "Združujemo strokovnost, prijeten ambient in prilagodljivost vašemu urniku.",
+    "highlights": [
+      "Vrhunska ocena strank in zaupanje",
+      "Prilagodljiv delovni čas vsak dan v tednu",
+      "Prijeten in sproščujoč ambient"
+    ],
+    "benefits": [
+      {
+        "stat": "Vrhunska ocena",
+        "label": "Vrhunska ocena",
+        "description": "Zadovoljstvo naših strank potrjujejo odlične ocene in zaupanje.",
+        "title": "Vrhunska ocena"
+      },
+      {
+        "stat": "Vsak dan",
+        "label": "Vsakodnevna dostopnost",
+        "description": "Odprti smo vsak dan v tednu, da se lažje prilagodimo vašemu tempu.",
+        "title": "Vsakodnevna dostopnost"
+      },
+      {
+        "stat": "Ambient",
+        "label": "Prijeten ambient",
+        "description": "Topel in sproščujoč prostor v Mariboru za vaš popoln odklop.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Obiščite nas na Smetanovi ulici v Mariboru ali nam pišite za rezervacijo termina.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Smetanova ulica 57, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 564 485",
+        "href": "tel:040564485",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek – Nedelja: 8:00 – 21:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Smetanova ulica 57, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Sana massage",
+    "address": "Smetanova ulica 57, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "040 564 485"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "companyName": "MIKA pedikura",
+  "industry": "Negovanje stopal in pedikura",
+  "tagline": "Strokovna in skrbna nega vaših stopal za zdravje in udobje.",
+  "services": [
+    "Klasična pedikura",
+    "Estetska pedikura",
+    "Nega vraščenih nohtov",
+    "Odstranjevanje trde kože",
+    "Svetovanje za nego stopal"
+  ],
+  "phone": "040 210 069",
+  "email": "",
+  "address": "Čopova ulica 9b, 2310 Slovenska Bistrica, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Visoka strokovnost in posvečenost strankam",
+    "Prijetno in čisto okolje",
+    "Prilagojen pristop k težavam s stopali"
+  ],
+  "targetCustomers": "Vsi, ki skrbijo za zdravje in urejenost svojih stopal, ter osebe s specifičnimi težavami na stopalih.",
+  "serviceArea": "Slovenska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "čist, zaupanja vreden",
+  "competitors": "Lokalni saloni za nego stopal in pedikuro",
+  "callToAction": "Rezervirajte termin"
+}

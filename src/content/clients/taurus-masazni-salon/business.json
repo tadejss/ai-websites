@@ -1,0 +1,29 @@
+{
+  "companyName": "Taurus masažni salon, Marko Premec s.p.",
+  "industry": "Masažni salon",
+  "tagline": "Sprostitev in odpravljanje napetosti za vaše boljše počutje v Mariboru.",
+  "services": [
+    "Klasična masaža",
+    "Športna masaža",
+    "Bolečinska masaža",
+    "Sprostitvena masaža",
+    "Masaža hrbta"
+  ],
+  "phone": "040 362 225",
+  "email": "",
+  "address": "Betnavska cesta 39, 2000 Maribor, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunske ocene zadovoljnih strank",
+    "Strokoven in posamičen pristop",
+    "Udoben in sproščujoč ambient",
+    "Učinkovito lajšanje bolečin v mišicah"
+  ],
+  "targetCustomers": "Ljudje z bolečinami v hrbtu, športniki in vsi, ki potrebujejo sprostitev",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "strokoven, prijazen, pomirjujoč",
+  "brandStyle": "moderen lokalni salon",
+  "competitors": "drugi masažni saloni v regiji",
+  "callToAction": "Rezervirajte termin"
+}

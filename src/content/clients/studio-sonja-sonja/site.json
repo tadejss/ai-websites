@@ -1,0 +1,290 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-02-editorial-type",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-02-slate",
+    "fontPairingId": "look-nohti-pedikura-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-sonja-sonja/hero.avif",
+      "alt": "Strokovno urejanje in manikura nohtov v prijetnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-sonja-sonja/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "17056220",
+      "sourceUrl": "https://www.pexels.com/photo/woman-getting-pedicure-done-17056220/",
+      "photographer": "Andrea Mosti",
+      "photographerUrl": "https://www.pexels.com/@andreamostiphotography",
+      "searchQuery": "pedicure spa treatment close up"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-sonja-sonja/services.avif",
+      "alt": "Nega nohtov in estetsko urejanje rok v salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-sonja-sonja/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "17056219",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-making-pedicure-with-tongs-17056219/",
+      "photographer": "Andrea Mosti",
+      "photographerUrl": "https://www.pexels.com/@andreamostiphotography",
+      "searchQuery": "pedicure spa treatment close up"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Cene storitev v studiu",
+    "description": "Pregled okvirnih cen za umetno oblikovanje nohtov in nego rok.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manikura",
+        "description": "Osnovna nega nohtov in obnohtne kožice",
+        "price": "od 20 €",
+        "featured": false
+      },
+      {
+        "name": "Trajno lakiranje nohtov",
+        "description": "Obstojno lakiranje z barvo po izbiri",
+        "price": "od 28 €",
+        "featured": true
+      },
+      {
+        "name": "Umetno oblikovanje nohtov",
+        "description": "Podaljševanje in oblikovanje nohtov",
+        "price": "od 38 €",
+        "featured": false
+      },
+      {
+        "name": "Nega nohtov",
+        "description": "Obnova in hranilna nega rok",
+        "price": "od 25 €",
+        "featured": false
+      },
+      {
+        "name": "Estetsko urejanje rok",
+        "description": "Celostna ureditev in lakiranje",
+        "price": "od 30 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Studio",
+    "highlight": "Sonja"
+  },
+  "metadata": {
+    "title": "Studio Sonja | Umetno oblikovanje nohtov in manikura v Slovenski Bistrici",
+    "description": "Strokovno in estetsko oblikovanje nohtov, manikura ter trajno lakiranje v Slovenski Bistrici z okolico. Poskrbite za urejen videz vaših rok."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Umetno oblikovanje nohtov in salon",
+    "title": "Strokovno in estetsko oblikovanje nohtov za",
+    "titleHighlight": "urejen videz vaših rok",
+    "description": "Strokovno in estetsko oblikovanje nohtov ter nega rok v Slovenski Bistrici z okolico. Zagotovite si sproščeno izkušnjo in brezhibne rezultate.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Urejen",
+        "label": "Lokalni salon",
+        "title": "Urejen lokalni salon"
+      },
+      {
+        "value": "Strokoven",
+        "label": "Pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Estetsko",
+        "label": "Dovršeno delo",
+        "title": "Estetsko dovršeno delo"
+      },
+      {
+        "value": "Prijetno",
+        "label": "Okolje",
+        "title": "Prijetno okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za nego in lepoto vaših rok",
+    "description": "V Studiu Sonja nudimo celovito urejanje za stranke v Slovenski Bistrici z okolico, ki cenijo urejen videz nohtov in strokovno nego.",
+    "items": [
+      {
+        "title": "Umetno oblikovanje nohtov",
+        "description": "Natančna izdelava in umetno oblikovanje nohtov za dolgotrajno obstojnost in lep videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Manikura",
+        "description": "Kakovostna nega za zdrave, negovane in čudovite roke.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Trajno lakiranje nohtov",
+        "description": "Obstojno lakiranje, ki ohranja sijaj in urejen videz brez pogostega popravljanja.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega nohtov",
+        "description": "Celostna nega za obnohtno kožico in nohtno ploščo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Estetsko urejanje rok",
+        "description": "Urejanje rok za vsak priložnost in vsak dan.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega lepotnega studia",
+    "description": "Zavedamo se, kako pomemben je urejen videz. Zato vsaki stranki namenimo individualno pozornost in strokovno obravnavo.",
+    "highlights": [
+      "Visoka ocena strank in preverjena kakovost storitev",
+      "Natančno in estetsko dovršeno delo",
+      "Prijetno okolje za sprostitev in nego"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Visoka ocena strank in zanesljive storitve za urejen videz.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Natančno delo",
+        "description": "Estetsko dovršeno oblikovanje nohtov, prilagojeno vašim željam.",
+        "title": "Natančno delo"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Sproščujoč prostor, namenjen popolni negi in razvajanju vaših rok.",
+        "title": "Prijetno okolje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Rezervirajte svoj termin",
+    "description": "Pišite nam ali nas pokličite in si zagotovite termin za urejanje nohtov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Kolodvorska ulica 31b, 2310 Slovenska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 247 327",
+        "href": "tel:041247327",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazek za rezervacijo termina ali vprašanja.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite željeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Kolodvorska ulica 31b, 2310 Slovenska Bistrica, Slovenia",
+    "rights": "© 2025 Studio Sonja, Sonja Sagadin s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Studio Sonja",
+    "address": "Kolodvorska ulica 31b, 2310 Slovenska Bistrica, Slovenia",
+    "email": "",
+    "phone": "041 247 327"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

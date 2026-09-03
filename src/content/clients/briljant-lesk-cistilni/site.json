@@ -1,0 +1,291 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-01-classic-split",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-01-sand",
+    "fontPairingId": "look-cistilni-servisi-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/briljant-lesk-cistilni/hero.avif",
+      "alt": "Strokovne čistilne storitve za poslovne prostore",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/briljant-lesk-cistilni/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16898979",
+      "sourceUrl": "https://www.pexels.com/photo/men-climbing-and-cleaning-windows-16898979/",
+      "photographer": "Natalie Minich",
+      "photographerUrl": "https://www.pexels.com/@mvntlie",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/briljant-lesk-cistilni/services.avif",
+      "alt": "Celovite rešitve čiščenja in urejeni prostori",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/briljant-lesk-cistilni/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196694",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-woman-using-a-vacuum-cleaner-6196694/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za čiščenje stanovanjskih in poslovnih objektov.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje poslovnih prostorov",
+        "description": "Okvirna cena na uro ali po dogovoru.",
+        "price": "od 20 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur in preprog.",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Čiščenje stanovanjskih objektov",
+        "description": "Temeljito čiščenje stanovanj ali hiš.",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Generalno čiščenje po obnovi",
+        "description": "Odstranjevanje prahu in čiščenje po gradbenih delih.",
+        "price": "po dogovoru"
+      },
+      {
+        "name": "Pranje oken in steklenih površin",
+        "description": "Čiščenje oken in okvirjev.",
+        "price": "od 30 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Briljant",
+    "highlight": "lesk"
+  },
+  "metadata": {
+    "title": "Briljant lesk | Čistilni servis Zemine Hadžić s.p. Logatec",
+    "description": "Zanesljivo in temeljito čiščenje za vaš bleščeč prostor v Logatcu z okolico. Globinsko čiščenje, poslovni prostori, stanovanja in pranje oken."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Čistilni servis Zemine Hadžić s.p.",
+    "title": "Zanesljivo in temeljito čiščenje za vaš",
+    "titleHighlight": "bleščeč prostor",
+    "description": "Strokovne čistilne storitve za lastnike podjetij, gospodinjstva in upravnike objektov v Logatcu z okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Pregled storitev",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Visoka natančnost",
+        "title": "Visoka natančnost in kakovost"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost strankam",
+        "title": "Prilagodljivost strankam"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Zanesljiva storitev",
+        "title": "Zanesljiva storitev"
+      },
+      {
+        "value": "Logatec",
+        "label": "Lokalno delovanje",
+        "title": "Logatec z okolico"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja",
+    "description": "Poskrbimo za čistočo in urejenost vaših poslovnih ter stanovanjskih prostorov v Logatcu z okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito odstranjevanje madežev in osvežitev tekstilnih površin.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje poslovnih prostorov",
+        "description": "Vzdrževanje čistoče v pisarnah in poslovnih objektih za urejen vtis.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje stanovanjskih objektov",
+        "description": "Urejanje in čiščenje hiš ter stanovanj po vaših merah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Generalno čiščenje po obnovi",
+        "description": "Temeljito čiščenje gradbenega in drugega nereda po zaključeni prenovi.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pranje oken in steklenih površin",
+        "description": "Kristalno čista okna in steklene površine za bleščeč pogled.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost čistoči in vašemu zadovoljstvu",
+    "description": "Z našo visoko natančnostjo in prilagodljivostjo zagotavljamo zanesljivo storitev na območju Logatca.",
+    "highlights": [
+      "Prilagodljivost vašim urnikom in željam",
+      "Visoka natančnost in kakovost izvedbe",
+      "Zanesljiva in strokovna izvedba"
+    ],
+    "benefits": [
+      {
+        "label": "Prilagodljivost strankam",
+        "description": "Delo prilagodimo vašim potrebam in urniku.",
+        "title": "Prilagodljivost strankam"
+      },
+      {
+        "label": "Visoka natančnost",
+        "description": "Natančna in temeljita izvedba vsakega čiščenja.",
+        "title": "Visoka natančnost"
+      },
+      {
+        "label": "Zanesljiva storitev",
+        "description": "Strokovno in zanesljivo delo za vaš mir.",
+        "title": "Zanesljiva storitev"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za ponudbo ali več informacij o naših čistilnih storitvah v Logatcu z okolico.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 356 537",
+        "href": "tel:041356537",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Cankarjeva cesta 16, 1370 Logatec, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali povpraševanje...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Cankarjeva cesta 16, 1370 Logatec, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Briljant lesk",
+    "address": "Cankarjeva cesta 16, 1370 Logatec, Slovenia",
+    "email": "",
+    "phone": "041 356 537"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

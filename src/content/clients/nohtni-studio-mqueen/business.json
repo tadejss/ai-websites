@@ -1,0 +1,28 @@
+{
+  "companyName": "Nohtni studio MQueen",
+  "industry": "Nail Salon",
+  "tagline": "Vaša destinacija za urejene in lepe nohte v Slovenski Bistrici",
+  "services": [
+    "Manikura",
+    "Nega nohtov",
+    "Umetni nohti",
+    "Gelish lakiranje",
+    "Poslikava nohtov"
+  ],
+  "phone": "040 510 465",
+  "email": "",
+  "address": "Žolgarjeva ulica 2, 2310 Slovenska Bistrica, Slovenia",
+  "openingHours": "Monday: Open 24 hours · Tuesday: Open 24 hours · Wednesday: Open 24 hours · Thursday: Open 24 hours · Friday: Open 24 hours · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Odlične ocene zadovoljnih strank",
+    "Prilagodljiv delovni čas",
+    "Strokovna in skrbna nega nohtov"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo urejen videz nohtov in kakovostno storitev v Slovenski Bistrici",
+  "serviceArea": "Slovenska Bistrica z okolico",
+  "yearsExperience": "",
+  "tone": "prijazen, profesionalen",
+  "brandStyle": "urejen in eleganten",
+  "competitors": "Lokalni saloni za nego nohtov v Slovenski Bistrici",
+  "callToAction": "Rezervirajte termin"
+}

@@ -1,0 +1,280 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-01-classic-split",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-01-sand",
+    "fontPairingId": "look-cistilni-servisi-01"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/h-m-cistilni/hero.avif",
+      "alt": "Strokovne čistilne storitve za dom in pisarne v Domžalah",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/h-m-cistilni/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30875661",
+      "sourceUrl": "https://www.pexels.com/photo/window-cleaners-working-on-high-rise-building-facade-30875661/",
+      "photographer": "Juan García",
+      "photographerUrl": "https://www.pexels.com/@juan-garcia-84744800",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/h-m-cistilni/services.avif",
+      "alt": "Globinsko čiščenje in urejeni prostori",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/h-m-cistilni/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20381389",
+      "sourceUrl": "https://www.pexels.com/photo/woman-cleaning-a-window-20381389/",
+      "photographer": "Tuan Vy",
+      "photographerUrl": "https://www.pexels.com/@tuan-vy-903011268",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen naših čistilnih storitev.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur ali preprog",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Redno čiščenje pisarn in poslovnih objektov",
+        "price": "od 20 € / ura"
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnih prostorov",
+        "price": "od 120 €"
+      },
+      {
+        "name": "Pranje steklenih površin",
+        "description": "Čiščenje oken in steklenih fasad",
+        "price": "od 30 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "H & M",
+    "highlight": "čistilni servis"
+  },
+  "metadata": {
+    "title": "H & M čistilni servis Hasan Mahmutović s.p. | Čiščenje Domžale",
+    "description": "Zanesljivo in temeljito čiščenje za vaš dom in poslovne prostore v Domžalah in okolici. Pokličite nas za globinsko čiščenje, pranje steklenih površin in več."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni servis",
+    "title": "Zanesljivo in temeljito čiščenje za vaš",
+    "titleHighlight": "dom in poslovne prostore",
+    "description": "Strokovne čistilne storitve za lastnike stanovanj, hiš in poslovnih objektov v Domžalah in okolici.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Strokovna izvedba"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Po meri strank"
+      },
+      {
+        "value": "Kakovostno",
+        "label": "Vse vrst prostorov"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Domžale in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite čistilne rešitve",
+    "description": "Poskrbimo za čistočo vaših prostorov v Domžalah in okolici z zanesljivo ter strokovno izvedbo.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno čiščenje pisarn in poslovnih objektov za urejeno delovno okolje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Generalno čiščenje",
+        "description": "Celovito generalno čiščenje stanovanj, hiš in drugih objektov ob različnih priložnostih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje steklenih površin",
+        "description": "Čiščenje oken, izložb in ostalih steklenih površin za bleščeč videz.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti sodelovanja z nami",
+    "description": "Zavedamo se pomena čistoče in urejenosti, zato se vedno prilagodimo vašim željam in potrebam.",
+    "highlights": [
+      "Zanesljiva in strokovna izvedba storitev",
+      "Prilagodljivost potrebam strank",
+      "Kakovostno čiščenje vseh vrst prostorov"
+    ],
+    "benefits": [
+      {
+        "label": "Strokovna izvedba",
+        "description": "Zanesljivo in natančno opravljeno delo za popolno čistočo.",
+        "title": "Strokovna izvedba"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prisluhnemo vašim željam in se prilagodimo vašemu urniku.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Kakovost",
+        "description": "Kakovostno čiščenje za domove in poslovne prostore.",
+        "title": "Kakovost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanja ali želite naročiti čiščenje? Pokličite nas ali nam pošljite sporočilo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "051 264 609",
+        "href": "tel:051264609",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica Simona Jenka 12, 1230 Domžale, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Območje delovanja",
+        "value": "Domžale in okolica",
+        "icon": "service-5"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite nam, kakšno čiščenje potrebujete...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ulica Simona Jenka 12, 1230 Domžale, Slovenia",
+    "rights": "© H & M čistilni servis, Hasan Mahmutović s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "H & M čistilni servis",
+    "address": "Ulica Simona Jenka 12, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "051 264 609"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

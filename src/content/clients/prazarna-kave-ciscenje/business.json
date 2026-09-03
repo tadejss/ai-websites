@@ -1,0 +1,27 @@
+{
+  "companyName": "Pražarna kave in čiščenje, Primož Janez Zorec s.p.",
+  "industry": "Pražarna kave in čiščenje",
+  "tagline": "Sveže pražena kava za popoln začetek vašega dneva",
+  "services": [
+    "Praženje kave",
+    "Prodaja domače kave",
+    "Storitve čiščenja",
+    "Svetovanje o kavi"
+  ],
+  "phone": "041 695 339",
+  "email": "",
+  "address": "Depala vas 54a, 1230 Domžale, Slovenia",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: 9:00 AM – 12:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Vrhunska kakovost pražene kave",
+    "Skrbno izbrana zrna",
+    "Lokalna in zanesljiva ponudba"
+  ],
+  "targetCustomers": "Ljubitelji kave in lokalni prebivalci",
+  "serviceArea": "Domžale in okolica",
+  "yearsExperience": "",
+  "tone": "topel, domač, profesionalen",
+  "brandStyle": "pristen lokalni ponudnik",
+  "competitors": "Lokalne pražarne in trgovine s kavo",
+  "callToAction": "Naročite kavo"
+}

@@ -1,0 +1,282 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-05-minimal-line",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-05-mist",
+    "fontPairingId": "look-nohti-pedikura-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/diamond-spamanicure/hero.avif",
+      "alt": "Elegantna notranjost salona za manikuro z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/diamond-spamanicure/hero.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677859",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-a-lace-top-wearing-gloves-holding-a-person-s-finger-4677859/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/diamond-spamanicure/services.avif",
+      "alt": "Strokovna nega rok in spa tretma za nohte",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/diamond-spamanicure/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677846",
+      "sourceUrl": "https://www.pexels.com/photo/nail-stylist-removing-cuticles-4677846/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled naših osnovnih storitev nege rok in nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in nanos zaščitnega laka",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Spa nega rok",
+        "description": "Piling, masaža in hranilna maska za roke",
+        "price": "od 35 €"
+      },
+      {
+        "name": "Gel lak",
+        "description": " obstojna barva in sijaj",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Dodatni detajli in umetniški vzorci",
+        "price": "od 5 €"
+      },
+      {
+        "name": "Parafinska maska",
+        "description": "Intenzivna terapija za suhe roke",
+        "price": "od 20 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Diamond",
+    "highlight": "Spa-manicure"
+  },
+  "metadata": {
+    "title": "Diamond Spa-manicure | Vrhunska nega rok in nohtov v Mariboru",
+    "description": "Vrhunska nega in lepota za vaše roke in nohte v Mariboru z okolico. Privoščite si manikuro, gel lak in sproščujočo nego."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon Maribor",
+    "title": "Vrhunska nega in lepota",
+    "titleHighlight": "za vaše roke in nohte",
+    "description": "Odkrijte storitve, prilagojene vsem, ki cenijo urejen videz nohtov in kakovostno nego rok v Mariboru z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Visoke ocene",
+        "label": "Visoke ocene"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno"
+      },
+      {
+        "value": "Sproščujoče",
+        "label": "Sproščujoče"
+      },
+      {
+        "value": "Urejeno",
+        "label": "Urejeno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Storitve za vaše roke in nohte",
+    "description": "Poskrbite za popoln videz in zdravje svojih nohtov z našo pestro ponudbo storitev v Mariboru z okolico.",
+    "items": [
+      {
+        "title": "Manikura",
+        "description": "Natančna in urejena nega nohtov za urejen vsakdanji videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Spa nega rok",
+        "description": "Globinska obnova in razvajanje vaših rok v prijetnem ambientu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Gel lak",
+        "description": "Dolgo obstojen sijaj in popolna barva vaših nohtov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Kreativni vzorci in unikatni detajli za posebne priložnosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Parafinska maska",
+        "description": "Intenzivna nega za mehko in gladko kožo na rokah.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Eleganten in urejen ambient za vaše razvajanje",
+    "description": "Združujemo strokovnost, skrbnost in prijetno okolje za vsako stranko.",
+    "highlights": [
+      "Visoko ocenjene storitve s strani strank",
+      "Skrbna in profesionalna nega",
+      "Prijeten ambient za sprostitev"
+    ],
+    "benefits": [
+      {
+        "label": "Visoko ocenjene storitve",
+        "description": "Zadovoljstvo naših strank potrjujejo odlične ocene in zaupanje.",
+        "title": "Visoko ocenjene storitve"
+      },
+      {
+        "label": "Skrbna nega",
+        "description": "Profesionalen pristop in pozornost do vsakega detajla na vaših rokah.",
+        "title": "Skrbna nega"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje v Mariboru, kjer si lahko odpočijete.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Rezervirajte svoj termin",
+    "description": "Stopite v stik z nami in si zagotovite termin za nego rok v Mariboru.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Tržaška cesta 14, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "051 650 740",
+        "href": "tel:051650740",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Tržaška cesta 14, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Diamond Spa-manicure",
+    "address": "Tržaška cesta 14, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "051 650 740"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

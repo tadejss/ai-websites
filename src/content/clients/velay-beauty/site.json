@@ -1,0 +1,294 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-06-service-grid",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-06-clay",
+    "fontPairingId": "look-nohti-pedikura-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/velay-beauty/hero.avif",
+      "alt": "Notranjost modernega salona za nohte",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/velay-beauty/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "15202934",
+      "sourceUrl": "https://www.pexels.com/photo/beautician-working-by-table-15202934/",
+      "photographer": "Jarib Key",
+      "photographerUrl": "https://www.pexels.com/@jarib-key-427074312",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/velay-beauty/services.avif",
+      "alt": "Skrbna nega in poslikava nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/velay-beauty/services.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4677859",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-a-lace-top-wearing-gloves-holding-a-person-s-finger-4677859/",
+      "photographer": "Leeloo The First",
+      "photographerUrl": "https://www.pexels.com/@leeloothefirst",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled rednih storitev nege nohtov in rok v salonu Velay beauty.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in nanos zaščitnega lakiranja.",
+        "price": "od 25 €",
+        "featured": false
+      },
+      {
+        "name": "Geliranje nohtov",
+        "description": "Nanosi gela za trdnost in dolgotrajno urejen videz nohtov.",
+        "price": "od 40 €",
+        "featured": true
+      },
+      {
+        "name": "Umetni nohti",
+        "description": "Podaljševanje nohtov z gelom ali akrilgelom.",
+        "price": "od 50 €",
+        "featured": false
+      },
+      {
+        "name": "Nega obnohtne kožice in nega rok",
+        "description": "Intenzivna nega za mehke in urejene roke.",
+        "price": "od 20 €",
+        "featured": false
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Enostavnejše ali zahtevnejše umetniške poslikave po dogovoru.",
+        "price": "od 5 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Velay",
+    "highlight": "beauty"
+  },
+  "metadata": {
+    "title": "Velay beauty | Salon za nohte in lepoto Maribor",
+    "description": "Strokovna nega nohtov za popoln videz vaših rok v Mariboru in okolici. Nudimo manikuro, geliranje nohtov, umetne nohte in poslikave."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Salon za nohte in lepoto Maribor",
+    "title": "Strokovna nega nohtov za",
+    "titleHighlight": "popoln videz vaših rok",
+    "description": "V salonu Velay beauty poskrbimo za urejen videz vaših rok in kakovostno lepotno nego. Na voljo vsak dan v tednu za stranke v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Vsak dan",
+        "label": "Prilagodljiv delovni čas"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Skrbna nega nohtov"
+      },
+      {
+        "value": "Maribor",
+        "label": "Lokalna lokacija"
+      },
+      {
+        "value": "Urejeno",
+        "label": "Modern salon"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše lepotne storitve",
+    "description": "Specializirani smo za celovito nego nohtov in rok v Mariboru. Izberite storitev po vaši meri.",
+    "items": [
+      {
+        "title": "Manikura",
+        "description": "Urejanje in oblikovanje nohtov ter nega rok za zdrav in sijoč videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Geliranje nohtov",
+        "description": "Obstojno geliranje za dolgotrajno urejene in čudovite nohte.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Umetni nohti",
+        "description": "Podaljševanje in oblikovanje umetnih nohtov po vaših željah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Nega obnohtne kožice",
+        "description": "Natančna in skrbna nega obnohtne kožice za popolno estetiko.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Ustvarjalne in unikatne poslikave nohtov za posebne priložnosti ali vsak dan.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Prednosti",
+    "title": "Zakaj izbrati Velay beauty?",
+    "description": "Zavedamo se, kako pomemben je urejen videz, zato se posvetimo vsaki stranki posebej.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Prilagodljiv delovni čas vse dni v tednu",
+      "Strokovna in skrbna nega"
+    ],
+    "benefits": [
+      {
+        "stat": "Visoka ocena",
+        "label": "Zadovoljne stranke",
+        "description": "Ponosni smo na visoke ocene in zaupanje naših strank v Mariboru.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "stat": "Vse dni v tednu",
+        "label": "Prilagodljiv urnik",
+        "description": "Odprti smo vsak dan v tednu, da se lažje prilagodimo vašemu življenjskemu ritmu.",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "stat": "Strokovnost",
+        "label": "Strokovna nega",
+        "description": "Uporabljamo preverjene metode in poskrbimo za skrbno nego vaših rok.",
+        "title": "Strokovna nega"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje preko spodnjega obrazca ali kontaktnih podatkov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Slovenska ulica 33, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "069 793 979",
+        "href": "tel:069793979",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek – Nedelja: 9:00 – 20:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Rezervirajte termin",
+      "description": "Izpolnite podatke in z veseljem vam bomo odgovorili v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Slovenska ulica 33, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Velay beauty",
+    "address": "Slovenska ulica 33, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "069 793 979"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

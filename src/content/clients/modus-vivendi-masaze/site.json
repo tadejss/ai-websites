@@ -1,0 +1,276 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-09-warm-soft",
+  "theme": {
+    "paletteId": "look-maserji-wellness-09-dusk",
+    "fontPairingId": "look-maserji-wellness-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/modus-vivendi-masaze/hero.avif",
+      "alt": "Sproščujoče okolje v masažnem studiu v Mariboru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/modus-vivendi-masaze/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6560297",
+      "sourceUrl": "https://www.pexels.com/photo/a-person-massaging-a-topless-woman-lying-on-massage-table-6560297/",
+      "photographer": "Anna Tarazevich",
+      "photographerUrl": "https://www.pexels.com/@anntarazevich",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/modus-vivendi-masaze/services.avif",
+      "alt": "Strokovna masaža in skrb za dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/modus-vivendi-masaze/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628596",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628596/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Izberite storitev, ki ustreza vašim trenutnim potrebam.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična masaža",
+        "description": "Sproščanje celega telesa",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Športna masaža",
+        "description": "Intenzivnejša obravnava mišic",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Sprostitvena masaža",
+        "description": "Nežna masaža za umiritev",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Športne dejavnosti",
+        "description": "Vodene aktivnosti",
+        "price": "od 20 €",
+        "unit": "na obisk"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Modus",
+    "highlight": "Vivendi"
+  },
+  "metadata": {
+    "title": "Modus vivendi | Masaže in športne dejavnosti Maribor",
+    "description": "Poskrbite za svoje telo, sprostitev in dobro počutje v Mariboru. Klasične, športne in sprostitvene masaže ter športne dejavnosti z individualnim pristopom."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Masaže in športne dejavnosti Maribor",
+    "title": "Poskrbite za svoje telo,",
+    "titleHighlight": "sprostitev in dobro počutje",
+    "description": "Nudimo strokovne masaže in športne dejavnosti za vse, ki potrebujete sprostitev, lajšanje napetosti v mišicah ali izboljšanje športne pripravljenosti v Mariboru in okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Individualni pristop",
+        "label": "Individualni pristop"
+      },
+      {
+        "value": "Strokovne masaže",
+        "label": "Strokovne masaže"
+      },
+      {
+        "value": "Prijetno okolje",
+        "label": "Prijetno okolje"
+      },
+      {
+        "value": "Maribor in okolica",
+        "label": "Maribor in okolica"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve za vaše telo in duha",
+    "description": "V prijetnem okolju v Mariboru poskrbimo za sprostitev vašega telesa in izboljšanje športne pripravljenosti.",
+    "items": [
+      {
+        "title": "Klasična masaža",
+        "description": "Sproščanje napetih mišic in izboljšanje prekrvavitve celega telesa.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Športna masaža",
+        "description": "Ciljna masaža za športnike in rekreativce za lažjo regeneracijo in pripravo na napor.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Sprostitvena masaža",
+        "description": "Nežni gibi za popolno umiritev misli, odpravljanje stresa in globoko sprostitev.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Športne dejavnosti",
+        "description": "Vodene aktivnosti za izboljšanje vaše telesne pripravljenosti in počutja.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Butični pristop in strokovnost za vaše dobro počutje",
+    "description": "Zavedamo se, da je vsak posameznik drugačen, zato se vam v celoti posvetimo.",
+    "highlights": [
+      "Individualni pristop k vsaki stranki",
+      "Strokovne masaže in športne aktivnosti",
+      "Prijetno okolje za sprostitev v Mariboru"
+    ],
+    "benefits": [
+      {
+        "label": "Individualni pristop",
+        "description": "Prilagodimo se vašim trenutnim potrebam in željam po sprostitvi ali regeneraciji.",
+        "title": "Individualni pristop"
+      },
+      {
+        "label": "Strokovnost",
+        "description": "Kakovostne masaže in športne dejavnosti za lajšanje napetosti v mišicah.",
+        "title": "Strokovnost"
+      },
+      {
+        "label": "Prijetno okolje",
+        "description": "Udoben in sproščljiv ambient, kjer boste lažje pozabili na vsakodnevni stres.",
+        "title": "Prijetno okolje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Rezervirajte svoj termin",
+    "description": "Stopite v stik z nami in si zagotovite termin za masažo ali športno dejavnost.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Razlagova ulica 25, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 508 512",
+        "href": "tel:040508512",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem možnem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev in termin...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Razlagova ulica 25, 2000 Maribor, Slovenia",
+    "rights": "Modus vivendi, Aleksandra Doleček s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Modus Vivendi",
+    "address": "Razlagova ulica 25, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "040 508 512"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-09-warm-soft",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-09-dusk",
+    "fontPairingId": "look-cistilni-servisi-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih cen storitev",
+    "description": "Cene so informativne narave in se oblikujejo glede na obseg ter specifične zahteve prostora.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje stanovanjskih objektov",
+        "description": "Osnovno vzdrževanje čistoče stanovanja ali hiše",
+        "price": "od 25 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežne garniture ali preproge",
+        "price": "od 50 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno čiščenje pisarn in poslovnih objektov",
+        "price": "od 30 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Generalno čiščenje po obnovi",
+        "description": "Temeljito čiščenje po gradbenih ali obrtniških delih",
+        "price": "od 35 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Pranje steklenih površin",
+        "description": "Čiščenje oken in steklenih fasad",
+        "price": "od 30 €",
+        "unit": "po dogovoru"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "MAK",
+    "highlight": "Čiščenje"
+  },
+  "metadata": {
+    "title": "Maja Kozamernik Čiščenje MAK s.p. | Čistilni servis Kamnik",
+    "description": "Zanesljivo in temeljito globinsko, redno ter generalno čiščenje stanovanj, hiš in poslovnih prostorov v Kamniku in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Čistilni servis Kamnik in okolica",
+    "title": "Zanesljivo in temeljito čiščenje za vaš",
+    "titleHighlight": "dom in poslovne prostore",
+    "description": "Poskrbite za popoln sijaj vaših prostorov z lokalnim čistilnim servisom, ki združuje prilagodljivost, natančnost in oseben pristop.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Oseben pristop",
+        "label": "Oseben pristop",
+        "title": "Oseben pristop"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Prilagodljivost",
+        "title": "Prilagodljivost"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Natančnost",
+        "title": "Natančnost"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja za vsak prostor",
+    "description": "Izvajamo strokovno čiščenje za stanovanjske objekte in poslovne prostore v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje stanovanjskih objektov",
+        "description": "Redno vzdrževanje čistoče v vašem domu, prilagojeno vašemu urniku.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Urejeni in čisti poslovni prostori za prijetno delovno okolje vaših zaposlenih in strank.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Generalno čiščenje po obnovi",
+        "description": "Temeljito čiščenje ostankov gradbenih del in prenove.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pranje steklenih površin",
+        "description": "Čiščenje oken in steklenih površin brez sledi.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati MAK",
+    "title": "Zanesljiv partner za čistočo v Kamniku",
+    "description": "Z našim delom zagotavljamo visoko raven čistoče ter skrbno pozornost do vsakega detajla.",
+    "highlights": [
+      "Lokalno podjetje z osebnim pristopom",
+      "Prilagodljivost urniku strank",
+      "Visoka natančnost in pozornost do detajlov"
+    ],
+    "benefits": [
+      {
+        "label": "Oseben pristop",
+        "description": "Kot lokalno podjetje se posvetimo vsaki stranki posebej in prisluhnemo vašim željam.",
+        "title": "Oseben pristop"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Čiščenje prilagodimo vašemu urniku in potrebam vašega vsakdana ali poslovanja.",
+        "title": "Prilagodljivost"
+      },
+      {
+        "label": "Pozornost do detajlov",
+        "description": "Z visoko natančnostjo poskrbimo, da so prostori brezhibno čisti.",
+        "title": "Pozornost do detajlov"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Imate vprašanja ali želite naročiti čiščenje? Kontaktirajte nas in z veseljem vam bomo pomagali.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ulica Matije Blejca 11a, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 240 684",
+        "href": "tel:031240684",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam povpraševanje",
+      "description": "Izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše sporočilo ali želeno storitev...",
+      "submitLabel": "Kontaktirajte nas"
+    }
+  },
+  "footer": {
+    "address": "Ulica Matije Blejca 11a, 1241 Kamnik, Slovenia",
+    "rights": "© 2025 Maja Kozamernik Čiščenje MAK s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "MAK Čiščenje",
+    "address": "Ulica Matije Blejca 11a, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "031 240 684"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

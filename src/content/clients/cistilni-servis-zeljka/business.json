@@ -1,0 +1,29 @@
+{
+  "companyName": "Čistilni servis Željka Đekić s.p",
+  "industry": "Čistilne storitve",
+  "tagline": "Zanesljivo in kakovostno čiščenje za vaš dom in poslovne prostore",
+  "services": [
+    "Globinsko čiščenje",
+    "Redno čiščenje stanovanj",
+    "Čiščenje poslovnih prostorov",
+    "Čiščenje po vselitvi ali gradnji",
+    "Pranje oken"
+  ],
+  "phone": "070 611 602",
+  "email": "",
+  "address": "Prešernova cesta 17a, 1230 Domžale, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 5:00 PM · Tuesday: 9:00 AM – 5:00 PM · Wednesday: 9:00 AM – 5:00 PM · Thursday: 9:00 AM – 5:00 PM · Friday: 9:00 AM – 5:00 PM · Saturday: 9:00 AM – 5:00 PM · Sunday: Closed",
+  "sellingPoints": [
+    "Visoka ocena in zadovoljne stranke",
+    "Zanesljivost in temeljitost pri delu",
+    "Prilagodljivost urniku strank",
+    "Uporaba preverjenih čistilnih sredstev"
+  ],
+  "targetCustomers": "Lastniki stanovanj, hiš in poslovnih prostorov na območju Domžal in širše okolice",
+  "serviceArea": "Domžale in okolica",
+  "yearsExperience": "",
+  "tone": "profesionalen, prijazen",
+  "brandStyle": "zanesljiv lokalni servis",
+  "competitors": "Lokalni čistilni servisi v regiji",
+  "callToAction": "Pokličite za ponudbo"
+}

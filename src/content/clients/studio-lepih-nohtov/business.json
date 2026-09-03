@@ -1,0 +1,28 @@
+{
+  "companyName": "Studio lepih nohtov",
+  "industry": "Nail salon",
+  "tagline": "Vaša destinacija za urejene in lepe nohte v Mariboru.",
+  "services": [
+    "Klasična manikura",
+    "Gel lak",
+    "Podaljševanje nohtov",
+    "Nega obnohtne kožice",
+    "Umetniško poslikavanje nohtov"
+  ],
+  "phone": "040 190 620",
+  "email": "",
+  "address": "Pekrska cesta 52, 2000 Maribor, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Vrhunska ocena zadovoljstva strank",
+    "Strokovna in natančna izvedba",
+    "Udoben in sproščujoč ambient"
+  ],
+  "targetCustomers": "Ljudje, ki cenijo urejen videz nohtov in kakovostno nego.",
+  "serviceArea": "Maribor in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven",
+  "brandStyle": "urejen, eleganten lokalni salon",
+  "competitors": "Lokalni saloni za nego nohtov v Mariboru",
+  "callToAction": "Rezervirajte svoj termin"
+}

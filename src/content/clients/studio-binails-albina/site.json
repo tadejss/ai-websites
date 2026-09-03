@@ -1,0 +1,276 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-03-photo-forward",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-03-bloom",
+    "fontPairingId": "look-nohti-pedikura-03"
+  },
+  "layout": {
+    "profileId": "media-left",
+    "heroImageSide": "left",
+    "servicesImageSide": "right",
+    "heroRatio": "6040",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-binails-albina/hero.avif",
+      "alt": "Strokovna manikura in urejen salon v Mariboru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-binails-albina/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3735653",
+      "sourceUrl": "https://www.pexels.com/photo/artificial-nail-samples-3735653/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-binails-albina/services.avif",
+      "alt": "Nega nohtov in oblikovanje trepalnic",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-binails-albina/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997350",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-long-sleeve-shirt-dong-manicure-3997350/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled osnovnih storitev nege nohtov in trepalnic.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Urejanje obnohtne kožice, oblikovanje nohtov in lakiranje",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Podaljševanje trepalnic",
+        "description": "Set trepalnic za gostejši in zapeljivejši videz",
+        "price": "od 50 €",
+        "featured": false
+      },
+      {
+        "name": "Nega nohtov",
+        "description": "Globinska nega in zaščita naravnih nohtov",
+        "price": "od 30 €",
+        "featured": false
+      },
+      {
+        "name": "Oblikovanje obrvi",
+        "description": "Oblikovanje in urejanje obrvi po vaših merah",
+        "price": "od 12 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Studio",
+    "highlight": "Bina-Ils"
+  },
+  "metadata": {
+    "title": "Studio Bina-Ils | Manikura in podaljševanje trepalnic Maribor",
+    "description": "Strokovna manikura, podaljševanje trepalnic, nega nohtov in oblikovanje obrvi v Mariboru. Poskrbite za svoj urejen videz."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Naročite se na termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon Maribor",
+    "title": "Strokovna manikura in",
+    "titleHighlight": "podaljševanje trepalnic",
+    "description": "Vrhunska nega za vaš urejen videz. Z osebnim pristopom in kakovostnimi materiali poskrbimo za vaše nohte in trepalnice v Mariboru in okolici.",
+    "primaryCta": "Naročite se na termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Vrhunska nega",
+        "label": "Vrhunska nega"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop"
+      },
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba"
+      },
+      {
+        "value": "Kakovostni materiali",
+        "label": "Kakovostni materiali"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celostna nega za vaš urejen videz",
+    "description": "Izberite med našimi storitvami za nego nohtov in trepalnic v Mariboru.",
+    "items": [
+      {
+        "title": "Manikura",
+        "description": "Strokovna nega in urejanje vaših nohtov za privlačen in urejen videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Podaljševanje trepalnic",
+        "description": "Poudarite svoj pogled z naravno videzom ali bolj dramatičnimi trepalnicami.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega nohtov",
+        "description": "Celovita nega, ki vaši koži in nohtom povrne zdrav sijaj.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Oblikovanje obrvi",
+        "description": "Natančno oblikovanje obrvi, ki lepo uokvirijo vaš obraz.",
+        "icon": "service-4"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Predanost lepoti in urejenosti",
+    "description": "V Studiu Bina-Ils stremimo k najvišji kakovosti storitev in zadovoljstvu vsake stranke.",
+    "highlights": [
+      "Vrhunska ocena zadovoljstva strank",
+      "Strokovna in natančna izvedba storitev",
+      "Osebni pristop k vsaki stranki",
+      "Uporaba kakovostnih materialov"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljne stranke",
+        "description": "Ponašamo se z vrhunsko oceno zadovoljstva naših strank.",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "label": "Natančna izvedba",
+        "description": "Vsaki storitvi se posvetimo z vso skrbnostjo in natančnostjo.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prisluhnemo vašim željam in se posvetimo vašemu stilu.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Naročite se na termin",
+    "description": "Stopite v stik z nami in si zagotovite svoj termin v našem salonu v Mariboru.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dalmatinska ulica 11, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 549 320",
+        "href": "tel:040549320",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali izbiro storitve...",
+      "submitLabel": "Naročite se na termin"
+    }
+  },
+  "footer": {
+    "address": "Dalmatinska ulica 11, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane. Studio Bina-Ils, Albina Pečko s.p."
+  },
+  "business": {
+    "name": "Studio Bina-Ils",
+    "address": "Dalmatinska ulica 11, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "040 549 320"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-08-dark-pro",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-08-copper",
+    "fontPairingId": "look-cistilni-servisi-08"
+  },
+  "layout": {
+    "profileId": "classic",
+    "heroImageSide": "right",
+    "servicesImageSide": "right",
+    "heroRatio": "5050",
+    "benefitsMode": "default",
+    "heroAtmosphere": "grid",
+    "sectionRule": "line",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zmajcek-globinsko-ciscenje/hero.avif",
+      "alt": "Strokovno globinsko čiščenje sedežne garniture v sodobnem prostoru",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zmajcek-globinsko-ciscenje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zmajcek-globinsko-ciscenje/services.avif",
+      "alt": "Temeljito globinsko čiščenje oblazinjenega pohištva",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zmajcek-globinsko-ciscenje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197114",
+      "sourceUrl": "https://www.pexels.com/photo/woman-wearing-a-jumper-cleaning-a-glass-window-6197114/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za globinsko čiščenje oblazinjenega pohištva in avtomobilov.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo glede na obseg dela nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Globinsko čiščenje sedežne garniture",
+        "description": "Odvisno od velikosti in števila sedišč",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje vzmetnice",
+        "description": "Enojna ali zakonska postelja",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Globinsko čiščenje preproge",
+        "description": "Čiščenje po kvadratnem metru",
+        "price": "od 8 €",
+        "unit": "m²"
+      },
+      {
+        "name": "Čiščenje avtomobilskih sedežev",
+        "description": "Celoten set sedežev v vozilu",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Čiščenje oblazinjenega stola",
+        "description": "Posamezen stol",
+        "price": "od 10 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "ZMAJČEK",
+    "highlight": "STORITVE"
+  },
+  "metadata": {
+    "title": "Zmaček storitve | Globinsko čiščenje Ljubljana",
+    "description": "Strokovno globinsko čiščenje sedežnih garnitur, vzmetnic, preprog in avtomobilskih sedežev v Ljubljani in okolici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Globinsko čiščenje Ljubljana in okolica",
+    "title": "Strokovno globinsko čiščenje za vaš",
+    "titleHighlight": "dom in poslovne prostore",
+    "description": "Zanesljivo globinsko čiščenje sedežnih garnitur, vzmetnic, preprog in avtomobilskih sedežev za lastnike stanovanj, hiš in poslovnih prostorov.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Visoka ocena",
+        "label": "Visoka ocena",
+        "title": "Visoka ocena"
+      },
+      {
+        "value": "Zadovoljne stranke",
+        "label": "Zadovoljne stranke",
+        "title": "Zadovoljne stranke"
+      },
+      {
+        "value": "Brez alergenov",
+        "label": "Brez alergenov",
+        "title": "Brez alergenov"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "Ljubljana z okolico",
+        "title": "Ljubljana"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve globinskega čiščenja",
+    "description": "Poskrbimo za temeljito odstranjevanje madežev, umazanije in alergenov iz vašega oblazinjenega pohištva in avtomobilov v Ljubljani in okolici.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje sedežnih garnitur",
+        "description": "Temeljito osvežimo in očistimo vaše sedežne garniture ter jim povrnemo prvotni videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje vzmetnic",
+        "description": "Učinkovito odstranjevanje pršic, madežev in alergenov z globinskim čiščenjem vzmetnic za zdrav spanec.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Globinsko čiščenje preprog",
+        "description": "Globinsko odstranjevanje umazanije iz vlaken vaših preprog vseh velikosti.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje avtomobilskih sedežev",
+        "description": "Profesionalno čiščenje in osvežitev notranjosti vašega avtomobila ter sedežev.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Čiščenje oblazinjenega pohištva",
+        "description": "Specializirano čiščenje vseh vrst oblazinjenega pohištva v domu ali pisarni.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost, strokovnost in čistoča",
+    "description": "Z dolgoletnimi izkušnjami in profesionalnim pristopom zagotavljamo vrhunske rezultate čiščenja.",
+    "highlights": [
+      "Visoka ocena in zadovoljne stranke",
+      "Temeljito odstranjevanje madežev in alergenov",
+      "Zanesljiva in profesionalna izvedba"
+    ],
+    "benefits": [
+      {
+        "stat": "Zadovoljstvo",
+        "label": "Visoka ocena",
+        "description": "Ponosni smo na visoko oceno in zadovoljstvo naših strank.",
+        "title": "Visoka ocena"
+      },
+      {
+        "stat": "Brez alergenov",
+        "label": "Odstranjevanje madežev",
+        "description": "Temeljito odstranimo trdovratne madeže in alergene za higiensko čistočo.",
+        "title": "Odstranjevanje madežev"
+      },
+      {
+        "stat": "Zanesljivost",
+        "label": "Profesionalna izvedba",
+        "description": "Zanesljivo in strokovno opravljeno delo v dogovorjenem roku.",
+        "title": "Profesionalna izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas za ponudbo ali vprašanja glede globinskega čiščenja v Ljubljani z okolico.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Jakčeva ul. 37, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "041 887 875",
+        "href": "tel:041887875",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Sob: 8:00 – 18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in pripravili vam bomo ponudbo.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kaj potrebujete očistiti...",
+      "submitLabel": "Pokličite za ponudbo"
+    }
+  },
+  "footer": {
+    "address": "Jakčeva ul. 37, 1000 Ljubljana, Slovenia",
+    "rights": "ZMAJČEK STORITVE, Miroslav Stojaković s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "ZMAJČEK STORITVE",
+    "address": "Jakčeva ul. 37, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 887 875"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

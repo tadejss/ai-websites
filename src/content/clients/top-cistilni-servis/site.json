@@ -1,0 +1,299 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-03-photo-forward",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-03-bloom",
+    "fontPairingId": "look-cistilni-servisi-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/top-cistilni-servis/hero.avif",
+      "alt": "Sodobna in svetla pisarna po strokovnem čiščenju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/top-cistilni-servis/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9245158",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-orange-button-up-shirt-wearing-white-mask-9245158/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/top-cistilni-servis/services.avif",
+      "alt": "Oprema za globinsko čiščenje in urejen prostor",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/top-cistilni-servis/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7451918",
+      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "searchQuery": "commercial cleaning team interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik storitev",
+    "title": "Pregledne in informativne cene",
+    "description": "Cene so odvisne od obsega dela, vrste prostora in izbrane storitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Čiščenje stanovanj",
+        "description": "Redno čiščenje stanovanjskih prostorov",
+        "price": "od 25 €",
+        "unit": "na uro"
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Vzdrževanje pisarn in poslovnih objektov",
+        "price": "od 30 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur in preprog",
+        "price": "od 50 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Pranje oken",
+        "description": "Čiščenje steklenih površin in okvirjev",
+        "price": "od 40 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito čiščenje celotnega objekta",
+        "price": "od 120 €",
+        "unit": "po objektivu"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "TOP",
+    "highlight": "čistilni servis"
+  },
+  "metadata": {
+    "title": "TOP čistilni servis | Čiščenje stanovanj in poslovnih prostorov Ljubljana",
+    "description": "Zanesljivo in strokovno čiščenje za vaš dom in pisarno v Ljubljani in okolici. Dosegljivi 24/7 za globinsko čiščenje, pranje oken in generalno čiščenje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Dosegljivi 24/7",
+    "title": "Zanesljivo in strokovno čiščenje za",
+    "titleHighlight": "vaš dom in pisarno",
+    "description": "Vrhunske čistilne storitve za lastnike stanovanj, podjetja in upravnike stavb v Ljubljani in širši okolici. Poskrbimo za brezhibno čistočo vaših prostorov.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Vsak dan v tednu",
+        "title": "24/7 storitev"
+      },
+      {
+        "value": "Hitro",
+        "label": "In zanesljivo",
+        "title": "Strokovni pristop"
+      },
+      {
+        "value": "Ljubljana",
+        "label": "S širšo okolico",
+        "title": "Ljubljana in okolica"
+      },
+      {
+        "value": "Odlično",
+        "label": "Ocene strank",
+        "title": "Vrhunska kakovost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja za dom in podjetje",
+    "description": "Izvajamo strokovno čiščenje za stanovanja, poslovne prostore in objekte v Ljubljani in okolici z visoko stopnjo natančnosti.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje oblazinjenega pohištva, preprog in tekstilnih površin.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno vzdrževanje čistoče v pisarnah, trgovinah in poslovnih objektih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje stanovanj",
+        "description": "Prilagodljivo čiščenje stanovanjskih objektov za vaš brezskrben vsakdan.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Pranje oken",
+        "description": "Profesionalno čiščenje steklenih površin in okenskih okvirov za sijoč pogled.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Generalno čiščenje",
+        "description": "Temeljit celosten pregled in čiščenje prostorov ob posebnih priložnostih ali prenovi.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti, ki nas postavljajo na prvo mesto",
+    "description": "Z zanesljivostjo, prilagodljivostjo in vrhunskimi rezultati zagotavljamo čistočo, ki presega pričakovanja.",
+    "highlights": [
+      "Neprekinjena dostopnost 24 ur na dan, vse dni v tednu",
+      "Visoka kakovost izvedbe z odličnimi ocenami zadovoljstva",
+      "Hitra odzivnost in zanesljivo delovanje"
+    ],
+    "benefits": [
+      {
+        "label": "Neprekinjena dostopnost",
+        "description": "Dosegljivi smo 24 ur na dan, vse dni v tednu, za vsa nujna in redna čiščenja.",
+        "title": "Neprekinjena dostopnost"
+      },
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Ponašamo se z visoko kakovostjo storitev in odličnimi ocenami zadovoljnih strank.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Hitra izvedba",
+        "description": "Zagotavljamo hitro, zanesljivo in strokovno izvedbo vseh naročenih del.",
+        "title": "Hitra izvedba"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontaktirajte nas",
+    "title": "Stopite v stik z nami",
+    "description": "Na voljo smo vam 24/7. Pokličite nas ali nam pošljite sporočilo za hitro ponudbo.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "030 635 598",
+        "href": "tel:030635598",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Letališka cesta 6, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek - Nedelja: 00:00 - 24:00 (24/7)",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite vaše želje in potrebe po čiščenju...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Letališka cesta 6, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "TOP čistilni servis",
+    "address": "Letališka cesta 6, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "030 635 598"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

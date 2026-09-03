@@ -1,0 +1,287 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-10-industrial-plain",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-10-frost",
+    "fontPairingId": "look-cistilni-servisi-10"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/natancna-cistilni-servis/hero.avif",
+      "alt": "Profesionalno čiščenje svetlih poslovnih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/natancna-cistilni-servis/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20381389",
+      "sourceUrl": "https://www.pexels.com/photo/woman-cleaning-a-window-20381389/",
+      "photographer": "Tuan Vy",
+      "photographerUrl": "https://www.pexels.com/@tuan-vy-903011268",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/natancna-cistilni-servis/services.avif",
+      "alt": "Globinsko čiščenje in urejanje čistih bivalnih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/natancna-cistilni-servis/services.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16898979",
+      "sourceUrl": "https://www.pexels.com/photo/men-climbing-and-cleaning-windows-16898979/",
+      "photographer": "Natalie Minich",
+      "photographerUrl": "https://www.pexels.com/@mvntlie",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za naše čiščenje. Končna cena je odvisna od obsega in stanja prostorov.",
+    "disclaimer": "Cenik je informativen. Za natančno ponudbo in ogled nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje stanovanjskih prostorov",
+        "description": "Ura čiščenja z vsemi pripomočki",
+        "price": "od 20 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Globinsko čiščenje sedežne garniture",
+        "description": "Globinsko čiščenje troseda ali kota",
+        "price": "od 70 €"
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Redno vzdrževanje pisarn",
+        "price": "Po dogovoru"
+      },
+      {
+        "name": "Čiščenje po gradbenih delih",
+        "description": "Temeljito čiščenje po prenovi",
+        "price": "od 25 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Pranje steklenih površin",
+        "description": "Čiščenje oken in okvirjev",
+        "price": "od 30 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čistilni servis",
+    "highlight": "Nataša Vrhovnik"
+  },
+  "metadata": {
+    "title": "Čistilni servis Nataša Vrhovnik s.p. | Kamnik",
+    "description": "Zanesljivo in natančno čiščenje za vaš dom in pisarno v Kamniku in okolici. Globinsko čiščenje, redno čiščenje in čiščenje poslovnih prostorov."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Zanesljiv lokalni ponudnik v Kamniku",
+    "title": "Zanesljivo in natančno čiščenje za",
+    "titleHighlight": "vaš dom in pisarno",
+    "description": "Profesionalne čistilne storitve za lastnike stanovanj, hiš in poslovnih prostorov v Kamniku in okolici.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Naše storitve",
+    "stats": [
+      {
+        "value": "Natančnost",
+        "label": "Pozornost do detajlov"
+      },
+      {
+        "value": "Prilagodljivost",
+        "label": "Vaš urnik"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Kamnik in okolica"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Preverjena kakovost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite čistilne rešitve",
+    "description": "Poskrbimo za čistočo in urejenost vaših bivalnih ter delovnih prostorov v Kamniku in okolici.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje stanovanjskih prostorov",
+        "description": "Redno vzdrževanje čistoče v vašem stanovanju ali hiši, prilagojeno vašim željam.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Profesionalno čiščenje pisarn in poslovnih objektov za urejen delovni vsakdan.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje po gradbenih delih",
+        "description": "Temeljito čiščenje objektov po zaključenih gradbenih ali prenovitvenih delih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pranje steklenih površin",
+        "description": "Učinkovito čiščenje oken in drugih steklenih površin brez madežev.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljivost in predanost čistoči",
+    "description": "Z našim osebnim pristopom in visoko stopnjo natančnosti zagotavljamo urejene prostore, v katerih se boste počutili odlično.",
+    "highlights": [
+      "Visoka natančnost in pozornost do detajlov",
+      "Prilagodljivost vašemu urniku",
+      "Zanesljiv lokalni ponudnik na območju Kamnika"
+    ],
+    "benefits": [
+      {
+        "label": "Pozornost do detajlov",
+        "description": "Visoka natančnost pri vsakem čiščenju za brezhibne rezultate.",
+        "title": "Pozornost do detajlov"
+      },
+      {
+        "label": "Prilagodljiv urnik",
+        "description": "Čistilne storitve prilagodimo vašim časovnim okvirjem in obveznostim.",
+        "title": "Prilagodljiv urnik"
+      },
+      {
+        "label": "Lokalna dostopnost",
+        "description": "Zanesljiv partner za domove in pisarne v Kamniku in okolici.",
+        "title": "Lokalna dostopnost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Z veseljem odgovorimo na vaše vprašanje ali pripravimo ponudbo za čiščenje vaših prostorov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Livarska ulica 7, 1241 Kamnik, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 200 007",
+        "href": "tel:031200007",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali opis prostorov...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Livarska ulica 7, 1241 Kamnik, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilni servis Nataša Vrhovnik",
+    "address": "Livarska ulica 7, 1241 Kamnik, Slovenia",
+    "email": "",
+    "phone": "031 200 007"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

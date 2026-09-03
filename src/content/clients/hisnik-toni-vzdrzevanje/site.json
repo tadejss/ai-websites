@@ -1,0 +1,287 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-02-editorial-type",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-02-slate",
+    "fontPairingId": "look-cistilni-servisi-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hisnik-toni-vzdrzevanje/hero.avif",
+      "alt": "Hišnik opravlja manjša popravila na objektu v Domžalah",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hisnik-toni-vzdrzevanje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "30875661",
+      "sourceUrl": "https://www.pexels.com/photo/window-cleaners-working-on-high-rise-building-facade-30875661/",
+      "photographer": "Juan García",
+      "photographerUrl": "https://www.pexels.com/@juan-garcia-84744800",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hisnik-toni-vzdrzevanje/services.avif",
+      "alt": "Oprema za vzdrževanje objektov in hišniška opravila",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hisnik-toni-vzdrzevanje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7451918",
+      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+      "photographer": "Nothing Ahead",
+      "photographerUrl": "https://www.pexels.com/@ian-panelo",
+      "searchQuery": "commercial cleaning team interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Okvirne cene storitev",
+    "description": "Pregled pogostejših hišniških in vzdrževalnih del.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura hišniških del",
+        "description": "Osnovna ura manjših popravil in hišniških opravil",
+        "price": "od 25 €",
+        "unit": "ura",
+        "featured": true
+      },
+      {
+        "name": "Vzdrževanje objektov",
+        "description": "Redni mesečni pregledi in vzdrževanje po dogovoru",
+        "price": "po dogovoru",
+        "unit": "mesec"
+      },
+      {
+        "name": "Urejanje okolice",
+        "description": "Košnja, čiščenje in urejanje zunanjih površin",
+        "price": "od 30 €",
+        "unit": "ura"
+      },
+      {
+        "name": "Manjša popravila na objektu",
+        "description": "Menjava svetil, tesnjenje, manjša vodovodna in elektro dela",
+        "price": "od 35 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Hišnik",
+    "highlight": "Toni"
+  },
+  "metadata": {
+    "title": "Hišnik Toni | Zanesljivo vzdrževanje objektov in hišniška opravila Domžale",
+    "description": "Zanesljivo hišnikarstvo, manjša popravila, vzdrževanje objektov in urejanje okolice v Domžalah in okolici. Pokličite za strokovno pomoč."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo vzdrževanje v Domžalah",
+    "title": "Hišniška opravila in vzdrževanje za",
+    "titleHighlight": "vaš dom ter poslovni prostor",
+    "description": "Celovite storitve vzdrževanja objektov, manjša popravila in urejanje okolice za lastnike stanovanj, upravnike stavb in podjetja.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Celovito",
+        "label": "Celovito",
+        "title": "Celovito"
+      },
+      {
+        "value": "Lokalno",
+        "label": "Lokalno",
+        "title": "Lokalno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve vzdrževanja objektov",
+    "description": "Zagotavljamo zanesljiva hišniška opravila, popravila in urejanje okolice v Domžalah in okolici.",
+    "items": [
+      {
+        "title": "Vzdrževanje objektov",
+        "description": "Redno in preventivno vzdrževanje večstanovanjskih in poslovnih objektov.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Hišniška opravila",
+        "description": "Vsakodnevna hišniška dela in odpravljanje manjših okvar na objektu.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Manjša popravila",
+        "description": "Hitra in učinkovita manjša popravila v vaših prostorih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Urejanje okolice",
+        "description": "Vzdrževanje zelenic, okolice stavb in urejanje zunanjih površin.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Tehnični pregledi stavb",
+        "description": "Pregledi stanj objektov in tehnične delujoče opreme.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaš objekt",
+    "description": "Združujemo strokoven pristop in zanesljivost za vse vaše potrebe po vzdrževanju.",
+    "highlights": [
+      "Visoka ocena in zadovoljstvo strank",
+      "Zanesljiv in strokoven pristop",
+      "Celovite storitve vzdrževanja na enem mestu"
+    ],
+    "benefits": [
+      {
+        "label": "Zadovoljstvo strank",
+        "description": "Visoka ocena in predanost kakovostno opravljenemu delu.",
+        "title": "Zadovoljstvo strank"
+      },
+      {
+        "label": "Zanesljiv pristop",
+        "description": "Držimo se dogovorov in zagotavljamo strokovno izvedbo.",
+        "title": "Zanesljiv pristop"
+      },
+      {
+        "label": "Vse na enem mestu",
+        "description": "Celovite storitve vzdrževanja za domove, upravnike in podjetja.",
+        "title": "Vse na enem mestu"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete zanesljivega hišnika ali vzdrževanje objekta? Pokličite nas ali oddajte povpraševanje.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "040 583 305",
+        "href": "tel:040583305",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Ulica Matije Tomca 1, 1230 Domžale, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Opišite, kako vam lahko pomagamo...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Ulica Matije Tomca 1, 1230 Domžale, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Hišnik Toni",
+    "address": "Ulica Matije Tomca 1, 1230 Domžale, Slovenia",
+    "email": "",
+    "phone": "040 583 305"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

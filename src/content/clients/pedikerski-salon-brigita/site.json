@@ -1,0 +1,286 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-06-service-grid",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-06-clay",
+    "fontPairingId": "look-nohti-pedikura-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikerski-salon-brigita/hero.avif",
+      "alt": "Strokovna in nežna nega stopal v pedikerskem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikerski-salon-brigita/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "17056219",
+      "sourceUrl": "https://www.pexels.com/photo/close-up-of-making-pedicure-with-tongs-17056219/",
+      "photographer": "Andrea Mosti",
+      "photographerUrl": "https://www.pexels.com/@andreamostiphotography",
+      "searchQuery": "pedicure spa treatment close up"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikerski-salon-brigita/services.avif",
+      "alt": "Celovite storitve pedikure in nege stopal",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pedikerski-salon-brigita/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "17056220",
+      "sourceUrl": "https://www.pexels.com/photo/woman-getting-pedicure-done-17056220/",
+      "photographer": "Andrea Mosti",
+      "photographerUrl": "https://www.pexels.com/@andreamostiphotography",
+      "searchQuery": "pedicure spa treatment close up"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregled storitev in informativne cene",
+    "description": "Izberite storitev, ki jo vaše stopale trenutno najbolj potrebujejo.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Estetska pedikura",
+        "description": "Osnovna nega stopal, ureditev nohtov in kože",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Medicinska pedikura",
+        "description": "Za zahtevnejše težave in celostno nego",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Nega problematičnih nohtov",
+        "description": "Obravnava vraščenih ali poškodovanih nohtov",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Odpravljanje trde kože in kurjih očes",
+        "description": "Ciljano odstranjevanje otiščancev",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Masaža stopal",
+        "description": "Sproščujoča nega za lahkoten korak",
+        "price": "20 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Pedikerski salon",
+    "highlight": "Brigita"
+  },
+  "metadata": {
+    "title": "Pedikerski salon Brigita | Strokovna nega stopal v Rušah",
+    "description": "Strokovna in nežna nega vaših stopal za zdravje in lahkoten korak v Rušah z okolico. Rezervirajte svoj termin."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Strokovna nega stopal v Rušah",
+    "title": "Za zdravje in lahkoten korak vaših",
+    "titleHighlight": "stopal",
+    "description": "Strokovna in nežna nega vaših stopal za zdravje in lahkoten korak. Poskrbite za urejenost in dobro počutje v sproščenem okolju.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Strokoven pristop",
+        "label": "Strokoven pristop",
+        "title": "Strokoven pristop"
+      },
+      {
+        "value": "Nežna nega",
+        "label": "Nežna nega",
+        "title": "Nežna nega"
+      },
+      {
+        "value": "Visoka higiena",
+        "label": "Visoka higiena",
+        "title": "Visoka higiena"
+      },
+      {
+        "value": "Urejenost",
+        "label": "Urejenost",
+        "title": "Urejenost"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za nego in zdravje vaših stopal",
+    "description": "V našem salonu v Rušah nudimo strokovne storitve prilagojene vašim potrebam za zdravje in lahkoten korak.",
+    "items": [
+      {
+        "title": "Estetska pedikura",
+        "description": "Urejanje in nega nohtov ter stopal za lep in zdrav videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Medicinska pedikura",
+        "description": "Specializirana nega za reševanje zahtevnejših težav na stopalih.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Nega problematičnih nohtov",
+        "description": "Strokovna obravnava vraščenih, zadebeljenih ali poškodovanih nohtov.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Odpravljanje trde kože in kurjih očes",
+        "description": "Učinkovito in varno odstranjevanje otiščancev ter trde kože.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Masaža stopal",
+        "description": "Sproščujoča masaža za prekrvavitev in lahkotnejši korak.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden salon za vaše dobro počutje",
+    "description": "Z individualnim pristopom in visokimi higienskimi standardi poskrbimo, da so vaše noge vedno v najboljših rokah.",
+    "highlights": [
+      "Strokoven in individualen pristop k vsaki stranki",
+      "Uporaba preverjenih metod in visoki higienski standardi",
+      "Celovita nega in svetovanje za zdravje stopal"
+    ],
+    "benefits": [
+      {
+        "label": "Individualen pristop",
+        "description": "Vsaki stranki se posvetimo celostno in prilagodimo nego njenim specifičnim potrebam.",
+        "title": "Individualen pristop"
+      },
+      {
+        "label": "Visoki higienski standardi",
+        "description": "Uporaba preverjenih metod in brezkompromisna čistoča za vašo varnost.",
+        "title": "Visoki higienski standardi"
+      },
+      {
+        "label": "Strokovno svetovanje",
+        "description": "Nudimo nasvete za vsakodnevno nego in ohranjanje zdravja vaših stopal.",
+        "title": "Strokovno svetovanje"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede nege stopal.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Areška cesta 40, 2342 Ruše, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 253 217",
+        "href": "tel:040253217",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Areška cesta 40, 2342 Ruše, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Pedikerski salon Brigita",
+    "address": "Areška cesta 40, 2342 Ruše, Slovenia",
+    "email": "",
+    "phone": "040 253 217"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-03-photo-forward",
+  "theme": {
+    "paletteId": "look-maserji-wellness-03-bloom",
+    "fontPairingId": "look-maserji-wellness-03"
+  },
+  "layout": {
+    "profileId": "photo-forward",
+    "heroImageSide": "none",
+    "servicesImageSide": "right",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "photo",
+    "sectionRule": "line",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lotos-spa/hero.avif",
+      "alt": "Sproščujoč ambient v kozmetičnem salonu z nežno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lotos-spa/hero.webp",
+      "width": 866,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "35546238",
+      "sourceUrl": "https://www.pexels.com/photo/serene-spa-massage-bed-with-minimalist-decor-35546238/",
+      "photographer": "Triệt Lông Club Hair Removal by TL",
+      "photographerUrl": "https://www.pexels.com/@tri-t-long-club-hair-removal-by-tl-2158697365",
+      "searchQuery": "massage therapy spa wellness room"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lotos-spa/services.avif",
+      "alt": "Nega obraza in sprostitveni tretmaji v elegantnem salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lotos-spa/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628520",
+      "sourceUrl": "https://www.pexels.com/photo/settee-by-the-window-6628520/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Izberite med našimi priljubljenimi lepotnimi in sprostitvenimi tretmaji.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična nega obraza",
+        "description": "Globinsko čiščenje, masaža in maska",
+        "price": "od 45 €",
+        "featured": true
+      },
+      {
+        "name": "Sprostitvena masaža telesa",
+        "description": "60 minut sprostitve z naravnimi olji",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in lakiranje",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Pedikura",
+        "description": "Estetska nega stopal in nohtov",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Depilacija",
+        "description": "Depilacija nog ali rok",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Sprostitveni tretma",
+        "description": "Kombinacija nege obraza in masaže",
+        "price": "od 75 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Lotos",
+    "highlight": "Spa"
+  },
+  "metadata": {
+    "title": "Lotos Spa | Kozmetični salon Maribor",
+    "description": "Vaša oaza sprostitve in lepotnih neg v Mariboru. Nega obraza, masaže telesa, manikura in pedikura ter sprostitveni tretmaji v elegantnem ambientu."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Kozmetični salon v Mariboru",
+    "title": "Vaša oaza sprostitve in",
+    "titleHighlight": "lepotnih neg",
+    "description": "Prepustite se celostni negi telesa in obraza ter pobegnite pred vsakodnevnim stresom v Mariboru z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Celostna nega",
+        "label": "Celostna nega",
+        "title": "Celostna nega"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Umirjeno okolje",
+        "label": "Umirjeno okolje",
+        "title": "Umirjeno okolje"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve za vaše dobro počutje",
+    "description": "V Lotos Spa nudimo celovite lepotne storitve in sprostitvene tretmaje, prilagojene vašim željam in potrebam.",
+    "items": [
+      {
+        "title": "Nega obraza",
+        "description": "Strokovna nega obraza za sijoč in svež videz vaše polti.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Masaže telesa",
+        "description": "Sprostitvene masaže za odpravljanje napetosti in sprostitev telesa.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Manikura in pedikura",
+        "description": "Urejanje nohtov na rokah in nogah za urejen in negovan videz.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Depilacija",
+        "description": "Nežno in učinkovito odstranjevanje dlačic za gladko kožo.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Sprostitveni tretmaji",
+        "description": "Posebni tretmaji za popolno sprostitev uma in telesa.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Umirjen prostor za vašo popolno sprostitev",
+    "description": "V Lotos Spa združujemo strokovnost, eleganco in osebni pristop, da bi vam zagotovili najboljšo izkušnjo.",
+    "highlights": [
+      "Prijeten in sproščujoč ambient",
+      "Celostna nega telesa in obraza",
+      "Prilagodljiv delovni čas"
+    ],
+    "benefits": [
+      {
+        "label": "Prijeten ambient",
+        "description": "Topel, sproščujoč in eleganten prostor, ustvarjen za vaš oddih.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Celostna nega",
+        "description": "Širok nabor storitev za nego obraza, telesa, nohtov in depilacijo na enem mestu.",
+        "title": "Celostna nega"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagodljiv delovni čas, ki se usklajuje z vašim urnikom.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Železnikova ulica 4, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "031 393 986",
+        "href": "tel:031393986",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00–12:00 in 15:00–19:00, Sob: 9:00–12:00, Ned: Zaprto",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite nam sporočilo",
+      "description": "Izpolnite spodnji obrazec za povpraševanje ali rezervacijo termina.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite storitev, ki vas zanima, in želeni termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Železnikova ulica 4, 2000 Maribor, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lotos Spa",
+    "address": "Železnikova ulica 4, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "031 393 986"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

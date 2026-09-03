@@ -1,0 +1,290 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-06-service-grid",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-06-clay",
+    "fontPairingId": "look-nohti-pedikura-06"
+  },
+  "layout": {
+    "profileId": "services-first-visual",
+    "heroImageSide": "right",
+    "servicesImageSide": "none",
+    "heroRatio": "5050",
+    "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lakki-nails/hero.avif",
+      "alt": "Sodoben in svetel salon za nego nohtov v Slovenski Bistrici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lakki-nails/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997359",
+      "sourceUrl": "https://www.pexels.com/photo/white-red-and-blue-hanging-decor-3997359/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lakki-nails/services.avif",
+      "alt": "Strokovna manikura in nega rok z gel lakom",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lakki-nails/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997350",
+      "sourceUrl": "https://www.pexels.com/photo/woman-in-black-long-sleeve-shirt-dong-manicure-3997350/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za nego nohtov in manikuro.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikura",
+        "description": "Oblikovanje nohtov, nega obnohtne kožice in zaključna nega",
+        "price": "od 25 €",
+        "featured": false
+      },
+      {
+        "name": "Gel lak",
+        "description": "Urejanje nohtov in nanos obstojnega gel laka",
+        "price": "od 30 €",
+        "featured": true
+      },
+      {
+        "name": "Podaljševanje nohtov",
+        "description": "Podaljševanje z gelom ali šabloni ter nanos barve",
+        "price": "od 45 €",
+        "featured": false
+      },
+      {
+        "name": "Urejanje in oblikovanje nohtov",
+        "description": "Hitro osvežitev oblike in videza nohtov",
+        "price": "od 20 €",
+        "featured": false
+      },
+      {
+        "name": "Nega rok",
+        "description": "Piling, maska in hranljiva krema za roke",
+        "price": "od 22 €",
+        "featured": false
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Lakki",
+    "highlight": "nails"
+  },
+  "metadata": {
+    "title": "Lakki nails | Urejanje nohtov in manikura v Slovenski Bistrici",
+    "description": "Urejeni in lepi nohti za vsako priložnost. Nudimo klasično manikuro, gel lak, podaljševanje nohtov in nego rok v Slovenski Bistrici."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Negovanje nohtov in manikura",
+    "title": "Urejeni in lepi nohti za",
+    "titleHighlight": "vsako priložnost",
+    "description": "Strokovna nega rok in urejen videz nohtov za stranke v Slovenski Bistrici z okolico.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Odlične ocene",
+        "label": "Odlične ocene",
+        "title": "Odlične ocene"
+      },
+      {
+        "value": "Natančna izvedba",
+        "label": "Natančna izvedba",
+        "title": "Natančna izvedba"
+      },
+      {
+        "value": "Prijeten ambient",
+        "label": "Prijeten ambient",
+        "title": "Prijeten ambient"
+      },
+      {
+        "value": "Sodoben salon",
+        "label": "Sodoben salon",
+        "title": "Sodoben salon"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve za nego rok in nohtov",
+    "description": "Poskrbite za zdravje in lepoto svojih rok z našimi storitvami v Slovenski Bistrici.",
+    "items": [
+      {
+        "title": "Klasična manikura",
+        "description": "Urejanje obnohtne kožice, oblikovanje in nega nohtov za urejen videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Gel lak",
+        "description": "Obstojen lak, ki vašim nohtom zagotavlja dolgotrajen sijaj in urejenost.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Podaljševanje nohtov",
+        "description": "Ustvarjanje željene dolžine in oblike nohtov po vaši meri.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Urejanje in oblikovanje nohtov",
+        "description": "Oblikovanje nohtov v želeno obliko za popoln videz rok.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega rok",
+        "description": "Celostna nega za mehke, negovane in sijoče roke.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Lakki nails",
+    "title": "Predanost kakovosti in vašemu zadovoljstvu",
+    "description": "Združujemo natančnost, sodoben pristop in prijetno vzdušje.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Natančna in profesionalna izvedba",
+      "Prijeten ambient in osebžen pristop"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljne stranke cenijo našo kakovost in zanesljivost.",
+        "title": "Odlične ocene"
+      },
+      {
+        "label": "Profesionalna izvedba",
+        "description": "Natančno delo za popolne in dolgotrajne rezultate.",
+        "title": "Profesionalna izvedba"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščeno okolje in osebžen pristop za vaš popoln oddih.",
+        "title": "Prijeten ambient"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede naših storitev.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Partizanska ulica 14, 2310 Slovenska Bistrica, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 266 689",
+        "href": "tel:040266689",
+        "icon": "phone"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Partizanska ulica 14, 2310 Slovenska Bistrica, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lakki nails",
+    "address": "Partizanska ulica 14, 2310 Slovenska Bistrica, Slovenia",
+    "email": "",
+    "phone": "040 266 689"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

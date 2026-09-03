@@ -1,0 +1,288 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-09-warm-soft",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-09-dusk",
+    "fontPairingId": "look-cistilni-servisi-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-notranje/hero.avif",
+      "alt": "Poklicno čiščenje oken in notranjih prostorov v svetlem poslovnem okolju",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-notranje/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197114",
+      "sourceUrl": "https://www.pexels.com/photo/woman-wearing-a-jumper-cleaning-a-glass-window-6197114/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-notranje/services.avif",
+      "alt": "Brezhibno očiščeni poslovni in stanovanjski prostori z naravno svetlobo",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-notranje/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativne cene storitev",
+    "description": "Pregled okvirnih cen za čiščenje stanovanjskih in poslovnih objektov.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo in ogled nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Notranje čiščenje stavb",
+        "description": "Osnovno čiščenje notranjih površin",
+        "price": "od 25 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Čiščenje oken",
+        "description": "Pranje steklenih površin in okenskih okvirov",
+        "price": "od 30 €",
+        "unit": "po dogovoru"
+      },
+      {
+        "name": "Generalno čiščenje",
+        "description": "Temeljito celovito čiščenje prostorov",
+        "price": "od 120 €",
+        "unit": "objekt"
+      },
+      {
+        "name": "Čiščenje poslovnih prostorov",
+        "description": "Redno vzdrževanje čistoče v pisarnah",
+        "price": "od 30 €",
+        "unit": "na uro"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Čistilni servis",
+    "highlight": "Kristan"
+  },
+  "metadata": {
+    "title": "Čistilni servis Kristan Robert s.p. | Čiščenje stavb in oken Medvode",
+    "description": "Zanesljivo notranje čiščenje stavb, čiščenje oken in generalno čiščenje za stanovanja, hiše in poslovne prostore v Medvodah s okolico."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite nas"
+  },
+  "hero": {
+    "badge": "Zanesljivo čiščenje v Medvodah",
+    "title": "Bleščeča čistoča vaših",
+    "titleHighlight": "poslovnih in bivalnih prostorov",
+    "description": "Zanesljivo notranje čiščenje stavb, čiščenje oken in generalno čiščenje za lastnike stanovanj, hiš ter poslovnih prostorov v Medvodah s okolico.",
+    "primaryCta": "Pokličite nas",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Zanesljivo",
+        "label": "Zanesljivo",
+        "title": "Zanesljivo"
+      },
+      {
+        "value": "Natančno",
+        "label": "Natančno",
+        "title": "Natančno"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Strokovno",
+        "title": "Strokovno"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "Prilagodljivo",
+        "title": "Prilagodljivo"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve čiščenja za vsak kotiček",
+    "description": "Poskrbimo za brezhibno čistočo vaših stanovanjskih in poslovnih objektov v Medvodah in okolici.",
+    "items": [
+      {
+        "title": "Notranje čiščenje stavb",
+        "description": "Temeljito in strokovno čiščenje notranjih prostorov za urejeno ter prijetno okolje.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Čiščenje oken",
+        "description": "Kristalno čista okna brez sledi in madežev za lepši pogled na svet.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Generalno čiščenje",
+        "description": "Globinsko in celovito čiščenje ob posebnih priložnostih ali selitvah.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje poslovnih prostorov",
+        "description": "Redno ali občasno vzdrževanje čistoče v pisarnah in poslovnih objektih.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Čiščenje stanovanjskih objektov",
+        "description": "Zanesljivo čiščenje hiš, stanovanj in večstanovanjskih stavb.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zaupanja vreden partner za čistočo",
+    "description": "Z našo natančnostjo in predanostjo zagotavljamo visoke standarde čistoče, ki prepričajo še tako zahtevne stranke.",
+    "highlights": [
+      "Odlične ocene zadovoljnih strank",
+      "Zanesljiva in natančna izvedba storitev",
+      "Strokovno čiščenje stavb in oken"
+    ],
+    "benefits": [
+      {
+        "label": "Odlične ocene",
+        "description": "Zadovoljstvo naših strank potrjuje kakovost in zanesljivost našega dela.",
+        "title": "Odlične ocene"
+      },
+      {
+        "label": "Zanesljiva izvedba",
+        "description": "Storitve opravimo natančno v dogovorjenih časovnih okvirih.",
+        "title": "Zanesljiva izvedba"
+      },
+      {
+        "label": "Strokovni pristop",
+        "description": "Uporaba preverjenih postopkov za čiščenje stavb in oken.",
+        "title": "Strokovni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Pokličite nas ali nam pošljite sporočilo za dogovor o čiščenju vaših prostorov.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 378 045",
+        "href": "tel:041378045",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Zgornja Senica 1h, 1215 Medvode, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite, kakšno čiščenje potrebujete...",
+      "submitLabel": "Pokličite nas"
+    }
+  },
+  "footer": {
+    "address": "Zgornja Senica 1h, 1215 Medvode, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Čistilni servis Kristan",
+    "address": "Zgornja Senica 1h, 1215 Medvode, Slovenia",
+    "email": "",
+    "phone": "041 378 045"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

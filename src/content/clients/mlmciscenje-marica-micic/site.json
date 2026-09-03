@@ -1,0 +1,286 @@
+{
+  "appearance": "cleaning",
+  "lookId": "cistilni-servisi-05-minimal-line",
+  "theme": {
+    "paletteId": "look-cistilni-servisi-05-mist",
+    "fontPairingId": "look-cistilni-servisi-05"
+  },
+  "layout": {
+    "profileId": "airy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default",
+    "heroAtmosphere": "plain",
+    "sectionRule": "none",
+    "cardStyle": "bordered"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mlmciscenje-marica-micic/hero.avif",
+      "alt": "Strokovno čiščenje svetlih poslovnih prostorov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mlmciscenje-marica-micic/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196694",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-woman-using-a-vacuum-cleaner-6196694/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional office cleaning service worker"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mlmciscenje-marica-micic/services.avif",
+      "alt": "Globinsko in temeljito čiščenje stanovanj",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mlmciscenje-marica-micic/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196684",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-in-orange-jumper-holding-a-vacuum-hose-6196684/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "commercial cleaning team interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cene storitev",
+    "description": "Pregled okvirnih cen za naše storitve čiščenja. Končna cena je odvisna od obsega in stanja prostorov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Redno čiščenje poslovnih prostorov",
+        "description": "Urejanje in čiščenje pisarn po dogovoru",
+        "price": "od 20 €",
+        "unit": "na uro",
+        "featured": true
+      },
+      {
+        "name": "Generalno čiščenje stanovanj",
+        "description": "Celovito čiščenje vseh prostorov",
+        "price": "od 120 €"
+      },
+      {
+        "name": "Globinsko čiščenje",
+        "description": "Globinsko čiščenje sedežnih garnitur ali preprog",
+        "price": "od 50 €"
+      },
+      {
+        "name": "Čiščenje steklenih površin",
+        "description": "Pranje oken in steklenih sten",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Pospravljanje po obnovah",
+        "description": "Čiščenje prahu in ostankov gradbenih del",
+        "price": "od 150 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Mlm-Čiščenje",
+    "highlight": "Marica Mićić Lukić s.p."
+  },
+  "metadata": {
+    "title": "Mlm-Čiščenje | Zanesljivo in temeljito čiščenje",
+    "description": "Zanesljivo in temeljito čiščenje stanovanj, hiš in poslovnih prostorov v Ljubljani in širši okolici. Pokličite za ponudbo."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Pokličite za ponudbo"
+  },
+  "hero": {
+    "badge": "Storitve čiščenja v Ljubljani",
+    "title": "Zanesljivo in temeljito čiščenje",
+    "titleHighlight": "vaših prostorov",
+    "description": "Strokovne storitve čiščenja za lastnike stanovanj, hiš in poslovnih prostorov v Ljubljani in okolici.",
+    "primaryCta": "Pokličite za ponudbo",
+    "secondaryCta": "Preglejte storitve",
+    "stats": [
+      {
+        "value": "Ljubljana",
+        "label": "in okolica"
+      },
+      {
+        "value": "Temeljito",
+        "label": "čiščenje"
+      },
+      {
+        "value": "Prilagodljivo",
+        "label": "vašemu urniku"
+      },
+      {
+        "value": "Preverjeno",
+        "label": "kakovostno"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Kaj nudimo",
+    "title": "Naše storitve čiščenja",
+    "description": "Poskrbimo za čistočo in urejenost vaših bivalnih ter delovnih prostorov v Ljubljani s širšo okolico.",
+    "items": [
+      {
+        "title": "Globinsko čiščenje",
+        "description": "Temeljito globinsko čiščenje tekstilnih površin, sedežnih garnitur in preprog.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Redno čiščenje poslovnih prostorov",
+        "description": "Redno vzdrževanje čistoče v pisarnah in poslovnih objektih za prijetno delovno okolje.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Generalno čiščenje stanovanj",
+        "description": "Celovito generalno čiščenje stanovanj in hiš ob vseh priložnostih.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Čiščenje steklenih površin",
+        "description": "Natančno čiščenje oken, steklenih sten in izložb.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Pospravljanje po obnovah",
+        "description": "Urejanje in temeljito čiščenje prostorov po zaključenih gradbenih ali obrtniških delih.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv lokalni ponudnik čiščenja",
+    "description": "Z našim strokovnim in prilagodljivim pristopom zagotavljamo visoko raven čistoče v vaših prostorih.",
+    "highlights": [
+      "Preverjena kakovost storitev z odličnimi ocenami strank",
+      "Zanesljiv in strokoven pristop k čiščenju",
+      "Prilagodljivost urniku in potrebam strank"
+    ],
+    "benefits": [
+      {
+        "label": "Preverjena kakovost",
+        "description": "Storitve izvajamo skrbno in zanesljivo, kar potrjujejo odlične ocene naših strank.",
+        "title": "Preverjena kakovost"
+      },
+      {
+        "label": "Strokoven pristop",
+        "description": "Uporabljamo preverjene metode za temeljito čiščenje vaših bivalnih in poslovnih prostorov.",
+        "title": "Strokoven pristop"
+      },
+      {
+        "label": "Prilagodljivost",
+        "description": "Prilagajamo se vašemu urniku in specifičnim potrebam za čim manj motenj.",
+        "title": "Prilagodljivost"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Stopite v stik",
+    "title": "Pokličite za ponudbo",
+    "description": "Z veseljem vam svetujemo in pripravimo ponudbo za čiščenje vaših prostorov.",
+    "items": [
+      {
+        "label": "Telefon",
+        "value": "041 736 876",
+        "href": "tel:041736876",
+        "icon": "phone"
+      },
+      {
+        "label": "Naslov",
+        "value": "Roška cesta 31, 1000 Ljubljana, Slovenia",
+        "icon": "location"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite spodnji obrazec in kontaktirali vas bomo v najkrajšem možnem času.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje glede čiščenja...",
+      "submitLabel": "Pošljite povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Roška cesta 31, 1000 Ljubljana, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Mlm-Čiščenje Marica Mićić Lukić s.p.",
+    "address": "Roška cesta 31, 1000 Ljubljana, Slovenia",
+    "email": "",
+    "phone": "041 736 876"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

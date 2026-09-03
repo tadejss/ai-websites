@@ -1,0 +1,291 @@
+{
+  "appearance": "beauty",
+  "lookId": "nohti-pedikura-02-editorial-type",
+  "theme": {
+    "paletteId": "look-nohti-pedikura-02-slate",
+    "fontPairingId": "look-nohti-pedikura-02"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/artep-manikira-petra/hero.avif",
+      "alt": "Strokovna manikira in urejene roke v salonu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/artep-manikira-petra/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997381",
+      "sourceUrl": "https://www.pexels.com/photo/person-with-red-nail-polish-3997381/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/artep-manikira-petra/services.avif",
+      "alt": "Natančno lakiranje in nega nohtov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/artep-manikira-petra/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3997359",
+      "sourceUrl": "https://www.pexels.com/photo/white-red-and-blue-hanging-decor-3997359/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "nail salon manicure professional interior"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Pregled storitev in cen",
+    "description": "Izberite storitev za nega vaših rok in nohtov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Klasična manikira",
+        "description": "Oblikovanje nohtov, nega kožice in zaključna nega.",
+        "price": "od 25 €",
+        "featured": true
+      },
+      {
+        "name": "Gelish lakiranje",
+        "description": "Obstojno lakiranje z gelish laki.",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Urejanje in nego nohtov",
+        "description": "Osnovna nega in urejanje oblike nohtov.",
+        "price": "od 20 €"
+      },
+      {
+        "name": "Poslikava nohtov",
+        "description": "Dodatne poslikave in dekoracija nohtov.",
+        "price": "od 5 €"
+      },
+      {
+        "name": "Nega obnohtne kožice",
+        "description": "Specializirana nega občutljive obnohtne kožice.",
+        "price": "od 15 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Art*Ep",
+    "highlight": "manikira"
+  },
+  "metadata": {
+    "title": "Art*Ep manikira | Strokovna nega nohtov v Mariboru",
+    "description": "Strokovna manikira in nega nohtov v Mariboru za urejen videz vaših rok. Obiščite nas v Ikona centru."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte termin"
+  },
+  "hero": {
+    "badge": "Ikona center, Maribor",
+    "title": "Urejen videz vaših rok z",
+    "titleHighlight": "strokovno manikiro",
+    "description": "Strokovna manikira in nega nohtov v Mariboru za vse, ki cenijo urejen videz in profesionalno nego v prijetnem ambientu.",
+    "primaryCta": "Rezervirajte termin",
+    "secondaryCta": "Preverite storitve",
+    "stats": [
+      {
+        "value": "Urejen salon",
+        "label": "Urejen salon",
+        "title": "Urejen salon"
+      },
+      {
+        "value": "Ikona center",
+        "label": "Ikona center",
+        "title": "Ikona center"
+      },
+      {
+        "value": "Osebni pristop",
+        "label": "Osebni pristop",
+        "title": "Osebni pristop"
+      },
+      {
+        "value": "Maribor",
+        "label": "Maribor",
+        "title": "Maribor"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Storitve nege nohtov",
+    "description": "Poskrbite za zdravje in lepoto svojih rok z našimi storitvami v Mariboru z okolico.",
+    "items": [
+      {
+        "title": "Klasična manikira",
+        "description": "Celostna nega rok in nohtov za urejen ter negovan videz.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Gelish lakiranje",
+        "description": "Dolgo obstojen lak in popoln sijaj vaših nohtov.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Urejanje in nego nohtov",
+        "description": "Strokovno oblikovanje in nega prilagojena vašim željam.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Poslikava nohtov",
+        "description": "Kreativni detajli in unikatni vzorci za vaše nohte.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Nega obnohtne kožiče",
+        "description": "Natančna in skrbna nega obnohtne kožice za zdrav videz.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Prednosti našega salona",
+    "description": "Zavezani smo k visoki kakovosti storitev in prijetni izkušnji za vsako stranko.",
+    "highlights": [
+      "Strokovna in natančna izvedba storitev",
+      "Prijeten ambient v Ikona centru v Mariboru",
+      "Prilagojen pristop k negi nohtov"
+    ],
+    "benefits": [
+      {
+        "label": "Natančna izvedba",
+        "description": "Strokovna in natančna izvedba storitev za vaše zadovoljstvo.",
+        "title": "Natančna izvedba"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Sproščujoče okolje v Ikona centru v Mariboru.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prilagojen pristop k negi nohtov, ki ustreza vašim potrebam.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali postavite vprašanje glede nege nohtov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Ikona center, Na Poljanah 18, 2000 Maribor, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 431 959",
+        "href": "tel:040431959",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 9:00 – 18:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazek in z veseljem vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte termin"
+    }
+  },
+  "footer": {
+    "address": "Ikona center, Na Poljanah 18, 2000 Maribor, Slovenia",
+    "rights": "© Art*Ep manikira, Petra Ogrizek, s.p. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Art*Ep manikira",
+    "address": "Ikona center, Na Poljanah 18, 2000 Maribor, Slovenia",
+    "email": "",
+    "phone": "040 431 959"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-03",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}
