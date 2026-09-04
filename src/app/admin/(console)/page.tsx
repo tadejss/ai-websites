@@ -1,16 +1,21 @@
 import { getActionQueue } from "@/admin/queue";
+import { getAdminHealthPayload } from "@/admin/health";
 import {
   AdminPageHeader,
   AdminStatCard,
   AdminStatGrid,
 } from "@/components/admin/admin-page";
+import { AdminHealthStrip } from "@/components/admin/admin-health-strip";
 import { ActionQueue } from "@/components/admin/action-queue";
 import { RunbookPanel } from "@/components/admin/runbook-panel";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminCommandCenterPage() {
-  const items = await getActionQueue(20);
+  const [items, health] = await Promise.all([
+    getActionQueue(20),
+    getAdminHealthPayload(),
+  ]);
 
   const publishFailedCount = items.filter(
     (item) => item.kind === "publish_failed",
@@ -25,8 +30,9 @@ export default async function AdminCommandCenterPage() {
     <div>
       <AdminPageHeader
         title="Home"
-        description="Items that need action"
       />
+
+      <AdminHealthStrip initial={health} />
 
       {publishFailedCount > 0 ? (
         <div className="mb-4">
@@ -36,7 +42,7 @@ export default async function AdminCommandCenterPage() {
 
       <AdminStatCard
         variant="hero"
-        tone="accent"
+        tone={items.length > 0 ? "danger" : "accent"}
         label="Needs action"
         value={String(items.length)}
         sub="Open items in the queue below"
@@ -48,25 +54,25 @@ export default async function AdminCommandCenterPage() {
           label="Publish failed"
           value={String(publishFailedCount)}
           href="/admin/factory"
-          tone="danger"
+          tone={publishFailedCount > 0 ? "danger" : "accent"}
         />
         <AdminStatCard
           label="Onboarding review"
           value={String(reviewCount)}
           href="/admin/review"
-          tone="warning"
+          tone={reviewCount > 0 ? "danger" : "accent"}
         />
         <AdminStatCard
           label="QA failed"
           value={String(qaFailedCount)}
           href="/admin/factory"
-          tone="danger"
+          tone={qaFailedCount > 0 ? "danger" : "accent"}
         />
         <AdminStatCard
           label="Stuck publishing"
           value={String(stuckCount)}
           href="/admin/factory"
-          tone="warning"
+          tone={stuckCount > 0 ? "danger" : "accent"}
         />
       </AdminStatGrid>
 

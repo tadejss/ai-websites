@@ -33,8 +33,14 @@ export function AdminQueueSmsButton({
 }) {
   const router = useRouter();
   const [state, setState] = useActionState();
+  const [blockedReason, setBlockedReason] = useState<string | null>(null);
 
   async function handleClick() {
+    if (!canQueue) {
+      setBlockedReason(reason || "Cannot queue SMS");
+      return;
+    }
+    setBlockedReason(null);
     setState({ loading: true, message: null, error: null });
     try {
       const response = await fetch("/api/admin/outreach/sms/queue", {
@@ -57,17 +63,17 @@ export function AdminQueueSmsButton({
   }
 
   return (
-    <div className="space-y-1">
+    <div className="inline-flex flex-col items-start gap-1">
       <Button
         variant="success"
         size="sm"
-        disabled={state.loading || !canQueue}
+        disabled={state.loading}
         onClick={() => void handleClick()}
       >
         {state.loading ? "Queuing…" : "Queue SMS"}
       </Button>
-      {!canQueue && reason ? (
-        <p className="text-xs text-[var(--admin-muted)]">{reason}</p>
+      {blockedReason ? (
+        <p className="text-xs text-[var(--admin-muted)]">{blockedReason}</p>
       ) : null}
       {state.message ? (
         <p className="text-xs text-emerald-400">{state.message}</p>
@@ -118,7 +124,7 @@ export function AdminRetrySmsButton({
   }
 
   return (
-    <div className="space-y-1">
+    <div className="inline-flex flex-col items-start gap-1">
       <Button
         variant="secondary"
         size="sm"
@@ -170,7 +176,7 @@ export function AdminApproveButton({
   }
 
   return (
-    <div className="space-y-1">
+    <div className="inline-flex flex-col items-start gap-1">
       <Button
         variant="default"
         size="sm"
@@ -223,7 +229,7 @@ export function AdminRetryPublishButton({
   }
 
   return (
-    <div className="space-y-1">
+    <div className="inline-flex flex-col items-start gap-1">
       <Button
         variant="destructive"
         size="sm"
@@ -290,7 +296,7 @@ export function AdminFactoryDispatchButton() {
   }
 
   return (
-    <div className="space-y-1">
+    <div className="inline-flex flex-col items-start gap-1">
       <Button
         variant="default"
         size="sm"
@@ -339,7 +345,7 @@ export function AdminCleanupLocksButton() {
   }
 
   return (
-    <div className="space-y-1">
+    <div className="inline-flex flex-col items-start gap-1">
       <Button
         variant="secondary"
         size="sm"

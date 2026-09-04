@@ -45,29 +45,6 @@ export default async function AdminSmsPage() {
 
       <Card className="mt-4">
         <CardHeader>
-          <CardTitle>Global opt-outs</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-2">
-          {optOuts.length === 0 ? (
-            <p className="text-sm text-[var(--admin-muted)]">No opt-outs</p>
-          ) : (
-            optOuts.map((row) => (
-              <div
-                key={row.phone}
-                className="flex justify-between gap-3 rounded border border-[var(--admin-border)] px-3 py-2 text-sm"
-              >
-                <span className="font-mono">{row.phone}</span>
-                <span className="text-xs text-[var(--admin-muted)]">
-                  {row.source} · {row.reason} · {formatAdminDate(row.updatedAt)}
-                </span>
-              </div>
-            ))
-          )}
-        </CardContent>
-      </Card>
-
-      <Card className="mt-4">
-        <CardHeader>
           <CardTitle>Recent failures</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2">
@@ -82,6 +59,29 @@ export default async function AdminSmsPage() {
                 <span className="font-mono">{state.slug}</span>
                 <span className="text-xs text-[var(--admin-muted)]">
                   {state.smsLastError ?? state.smsStatus}
+                </span>
+              </div>
+            ))
+          )}
+        </CardContent>
+      </Card>
+
+      <Card className="mt-4">
+        <CardHeader>
+          <CardTitle>Global opt-outs</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-2">
+          {optOuts.length === 0 ? (
+            <p className="text-sm text-[var(--admin-muted)]">No opt-outs</p>
+          ) : (
+            optOuts.map((row) => (
+              <div
+                key={row.phone}
+                className="flex justify-between gap-3 rounded border border-[var(--admin-border)] px-3 py-2 text-sm"
+              >
+                <span className="font-mono">{row.phone}</span>
+                <span className="text-xs text-[var(--admin-muted)]">
+                  {row.source} · {row.reason} · {formatAdminDate(row.updatedAt)}
                 </span>
               </div>
             ))

@@ -14,6 +14,7 @@ import {
   formatAdminDate,
 } from "@/components/admin/admin-page";
 import { Badge } from "@/components/admin/ui/badge";
+import { Button } from "@/components/admin/ui/button";
 import { EntityTimelineV2 } from "@/components/admin/entity-timeline-v2";
 import { EntityContextCards } from "@/components/admin/entity-context-cards";
 import { OnboardingDiffView } from "@/components/admin/onboarding-diff-view";
@@ -21,6 +22,7 @@ import { OnboardingImageGallery } from "@/components/admin/onboarding-gallery";
 import { AdminActionDispatcher } from "@/components/admin/admin-action-dispatcher";
 import { RunbookPanel } from "@/components/admin/runbook-panel";
 import { EntityJourneyActions } from "@/components/admin/entity-journey-actions";
+import { EntityBackLink } from "@/components/admin/entity-back-link";
 
 export const dynamic = "force-dynamic";
 
@@ -72,10 +74,13 @@ export default async function AdminEntityJourneyPage({
   return (
     <div>
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-        <Link href="/admin" className="text-xs text-[var(--admin-accent)] hover:underline">
-          ← Home {neighbors.index >= 0 ? `${neighbors.index + 1}/${neighbors.total}` : ""}
-        </Link>
-        <div className="flex gap-2 text-xs">
+        <EntityBackLink />
+        <div className="flex items-center gap-2 text-xs">
+          {neighbors.index >= 0 ? (
+            <span className="text-[var(--admin-muted)]">
+              {neighbors.index + 1}/{neighbors.total}
+            </span>
+          ) : null}
           {neighbors.prev ? (
             <Link href={`/admin/e/${neighbors.prev}`} className="text-[var(--admin-accent)] hover:underline">
               ← Prev
@@ -86,25 +91,13 @@ export default async function AdminEntityJourneyPage({
               Next →
             </Link>
           ) : null}
+          <Badge variant="info">{unifiedStageLabel(entity.stage)}</Badge>
         </div>
       </div>
 
       <AdminPageHeader
         title={entity.companyName}
         description={[entity.industry, entity.slug].filter(Boolean).join(" · ")}
-        actions={
-          <div className="flex flex-wrap items-center gap-2">
-            <Badge variant="info">{unifiedStageLabel(entity.stage)}</Badge>
-            <a
-              href={demoUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm text-[var(--admin-accent)] hover:underline"
-            >
-              Open demo ↗
-            </a>
-          </div>
-        }
       />
 
       {entity.stage === "publish_failed" ? (
@@ -139,18 +132,132 @@ export default async function AdminEntityJourneyPage({
         lastFailedMessageId={lastFailed?.messageId}
       />
 
-      <div className="grid gap-4 lg:grid-cols-12">
-        <div className="lg:col-span-4">
-          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-[var(--admin-muted)]">
-            Timeline
-          </h2>
-          <EntityTimelineV2 events={entity.timeline} />
-        </div>
-
-        <div className="space-y-4 lg:col-span-8">
-          <EntityContextCards
+      <div className="space-y-4">
+        <EntityContextCards
             stage={entity.stage}
             cards={[
+              {
+                id: "customer",
+                title: "Customer",
+                stages: [
+                  "generated",
+                  "published",
+                  "viewed",
+                  "purchased",
+                  "onboarding_pending",
+                  "onboarding_submitted",
+                  "ready_for_approval",
+                  "approved_for_publish",
+                  "publishing",
+                  "publish_failed",
+                  "live",
+                ],
+                content: entity.lead.customer ? (
+                  <dl className="grid gap-1 text-sm">
+                    <div>Plan: {entity.lead.customer.subscriptionPlan ?? "—"}</div>
+                    <div>
+                      Stripe: {entity.lead.customer.stripeCustomerId ?? "—"}
+                    </div>
+                  </dl>
+                ) : (
+                  <p className="text-sm text-[var(--admin-muted)]">Not a customer</p>
+                ),
+              },
+              {
+                id: "business_email",
+                title: "Business Email",
+                stages: [
+                  "purchased",
+                  "onboarding_pending",
+                  "onboarding_submitted",
+                  "ready_for_approval",
+                  "approved_for_publish",
+                  "publishing",
+                  "publish_failed",
+                  "live",
+                ],
+                content: entity.emailService ? (
+                  <div className="space-y-3 text-sm">
+                    <dl className="grid gap-1">
+                      <div>
+                        Domain: {entity.emailDomain?.domain ?? "—"} (
+                        {entity.emailDomain?.status ?? "—"})
+                      </div>
+                      <div>
+                        Mailbox: {entity.emailMailbox?.emailAddress ?? "—"}
+                      </div>
+                      <div>Provider: {entity.emailService.provider}</div>
+                      <div>Status: {entity.emailService.status}</div>
+                      <div>
+                        Stripe sub:{" "}
+                        {entity.emailService.stripeSubscriptionId ?? "—"}
+                      </div>
+                      <div>
+                        Created: {formatAdminDate(entity.emailService.createdAt)}
+                      </div>
+                    </dl>
+                    {entity.emailService.lastError ? (
+                      <p className="rounded border border-red-500/30 bg-red-500/10 px-2 py-1 text-xs text-red-400">
+                        {entity.emailService.lastError}
+                      </p>
+                    ) : null}
+                    <AdminActionDispatcher
+                      slug={slug}
+                      actions={entity.actions.filter((action) =>
+                        [
+                          "activate_domain",
+                          "retry_email_provision",
+                          "resend_email_credentials",
+                        ].includes(action.kind),
+                      )}
+                      layout="inline"
+                    />
+                  </div>
+                ) : (
+                  <p className="text-sm text-[var(--admin-muted)]">
+                    No Business Email service
+                  </p>
+                ),
+              },
+              {
+                id: "onboarding",
+                title: "Onboarding",
+                stages: [
+                  "onboarding_submitted",
+                  "ready_for_approval",
+                  "approved_for_publish",
+                  "publishing",
+                  "publish_failed",
+                  "live",
+                ],
+                content: entity.onboarding ? (
+                  <div className="space-y-3 text-sm">
+                    {entity.onboarding.publishError ? (
+                      <p className="rounded border border-red-500/30 bg-red-500/10 px-2 py-1 text-red-400">
+                        {entity.onboarding.publishError}
+                      </p>
+                    ) : null}
+                    <OnboardingDiffView
+                      demoSite={demoSite}
+                      processedPayload={processedPayload ?? null}
+                    />
+                    <OnboardingImageGallery
+                      images={listOnboardingImages(entity.onboarding.answers)}
+                    />
+                    {canAdminAttachWebsiteDomain(entity.onboarding.status) ? (
+                      <p className="pt-1">
+                        <Button variant="secondary" size="sm" asChild>
+                          <Link href={`/admin/domains?slug=${encodeURIComponent(slug)}`}>
+                            Custom URL →
+                          </Link>
+                        </Button>
+                      </p>
+                    ) : null}
+                  </div>
+                ) : (
+                  <p className="text-sm text-[var(--admin-muted)]">No onboarding</p>
+                ),
+              },
               {
                 id: "grok_qa",
                 title: "Grok QA",
@@ -292,120 +399,15 @@ export default async function AdminEntityJourneyPage({
                   </div>
                 ),
               },
-              {
-                id: "onboarding",
-                title: "Onboarding",
-                stages: [
-                  "onboarding_submitted",
-                  "ready_for_approval",
-                  "approved_for_publish",
-                  "publishing",
-                  "publish_failed",
-                  "live",
-                ],
-                content: entity.onboarding ? (
-                  <div className="space-y-3 text-sm">
-                    {entity.onboarding.publishError ? (
-                      <p className="rounded border border-red-500/30 bg-red-500/10 px-2 py-1 text-red-400">
-                        {entity.onboarding.publishError}
-                      </p>
-                    ) : null}
-                    <OnboardingDiffView
-                      demoSite={demoSite}
-                      processedPayload={processedPayload ?? null}
-                    />
-                    <OnboardingImageGallery
-                      images={listOnboardingImages(entity.onboarding.answers)}
-                    />
-                    {canAdminAttachWebsiteDomain(entity.onboarding.status) ? (
-                      <p className="pt-1">
-                        <Link
-                          href={`/admin/domains?slug=${encodeURIComponent(slug)}`}
-                          className="text-sm text-[var(--admin-accent)] hover:underline"
-                        >
-                          Custom URL →
-                        </Link>
-                      </p>
-                    ) : null}
-                  </div>
-                ) : (
-                  <p className="text-sm text-[var(--admin-muted)]">No onboarding</p>
-                ),
-              },
-              {
-                id: "business_email",
-                title: "Business Email",
-                stages: [
-                  "purchased",
-                  "onboarding_pending",
-                  "onboarding_submitted",
-                  "ready_for_approval",
-                  "approved_for_publish",
-                  "publishing",
-                  "publish_failed",
-                  "live",
-                ],
-                content: entity.emailService ? (
-                  <div className="space-y-3 text-sm">
-                    <dl className="grid gap-1">
-                      <div>
-                        Domain: {entity.emailDomain?.domain ?? "—"} (
-                        {entity.emailDomain?.status ?? "—"})
-                      </div>
-                      <div>
-                        Mailbox: {entity.emailMailbox?.emailAddress ?? "—"}
-                      </div>
-                      <div>Provider: {entity.emailService.provider}</div>
-                      <div>Status: {entity.emailService.status}</div>
-                      <div>
-                        Stripe sub:{" "}
-                        {entity.emailService.stripeSubscriptionId ?? "—"}
-                      </div>
-                      <div>
-                        Created: {formatAdminDate(entity.emailService.createdAt)}
-                      </div>
-                    </dl>
-                    {entity.emailService.lastError ? (
-                      <p className="rounded border border-red-500/30 bg-red-500/10 px-2 py-1 text-xs text-red-400">
-                        {entity.emailService.lastError}
-                      </p>
-                    ) : null}
-                    <AdminActionDispatcher
-                      slug={slug}
-                      actions={entity.actions.filter((action) =>
-                        [
-                          "activate_domain",
-                          "retry_email_provision",
-                          "resend_email_credentials",
-                        ].includes(action.kind),
-                      )}
-                      layout="inline"
-                    />
-                  </div>
-                ) : (
-                  <p className="text-sm text-[var(--admin-muted)]">
-                    No Business Email service
-                  </p>
-                ),
-              },
-              {
-                id: "customer",
-                title: "Customer",
-                stages: ["live", "purchased"],
-                content: entity.lead.customer ? (
-                  <dl className="grid gap-1 text-sm">
-                    <div>Plan: {entity.lead.customer.subscriptionPlan ?? "—"}</div>
-                    <div>
-                      Stripe: {entity.lead.customer.stripeCustomerId ?? "—"}
-                    </div>
-                  </dl>
-                ) : (
-                  <p className="text-sm text-[var(--admin-muted)]">Not a customer</p>
-                ),
-              },
             ]}
           />
-        </div>
+      </div>
+
+      <div className="mt-8">
+        <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-[var(--admin-muted)]">
+          Timeline
+        </h2>
+        <EntityTimelineV2 events={entity.timeline} />
       </div>
     </div>
   );

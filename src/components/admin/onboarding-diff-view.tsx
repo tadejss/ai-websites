@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { Button } from "@/components/admin/ui/button";
 
 type DiffLine = { key: string; demo?: string; onboarding?: string };
 
@@ -55,13 +55,9 @@ export function OnboardingDiffView({
 
   return (
     <div>
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        className="text-xs text-[var(--admin-accent)] hover:underline"
-      >
+      <Button type="button" variant="secondary" size="sm" onClick={() => setOpen((v) => !v)}>
         {open ? "Hide" : "Show"} diff ({lines.length} fields)
-      </button>
+      </Button>
       {open ? (
         <ul className="mt-2 space-y-1 max-h-48 overflow-auto text-xs">
           {lines.map((line) => (

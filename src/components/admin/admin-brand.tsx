@@ -15,7 +15,7 @@ export function AdminBrandMark({
   return (
     <Image
       src={ZBRENDIRAJ_ADMIN_LOGO}
-      alt="Zbrendiraj"
+      alt="Zbrendiraj.si"
       width={size}
       height={size}
       className={cn("rounded-xl", className)}
@@ -27,7 +27,7 @@ export function AdminBrandMark({
 export function AdminWordmark({ className }: { className?: string }) {
   return (
     <span className={cn("font-display text-2xl leading-none text-white", className)}>
-      Zbrendiraj
+      Zbrendiraj.si
     </span>
   );
 }

@@ -36,8 +36,8 @@ export function AdminActionDispatcher({
   const router = useRouter();
   const className =
     layout === "inline"
-      ? "flex flex-wrap items-center gap-1"
-      : "flex flex-wrap gap-2";
+      ? "flex flex-wrap items-center gap-2"
+      : "contents";
 
   const actionMap = new Map(actions.map((action) => [action.kind, action]));
 
@@ -123,14 +123,11 @@ export function AdminActionDispatcher({
             )
           : null}
         {actionMap.get("open_demo") && demoUrl ? (
-          <a
-            href={demoUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-8 items-center rounded-full border border-white/25 px-3 text-xs font-semibold text-[var(--admin-accent)] hover:border-[var(--admin-accent)] hover:bg-transparent"
-          >
-            Demo ↗
-          </a>
+          <Button key="open_demo" variant="secondary" size="sm" asChild>
+            <a href={demoUrl} target="_blank" rel="noreferrer">
+              Demo ↗
+            </a>
+          </Button>
         ) : null}
         {actionMap.get("run_qa")?.enabled
           ? inlineButton(
@@ -162,6 +159,14 @@ export function AdminActionDispatcher({
           lastFailedMessageId={lastFailedMessageId}
         />
       ) : null}
+      {actionMap.get("run_qa")?.enabled
+        ? inlineButton(
+            actionMap.get("run_qa")!,
+            () =>
+              void runAction("QA queued", `/api/admin/qa/${slug}/retry`),
+            "secondary",
+          )
+        : null}
       {actionMap.get("approve_onboarding") ? (
         <AdminApproveButton
           slug={slug}
@@ -178,14 +183,11 @@ export function AdminActionDispatcher({
         <AdminCopyLinkButton url={onboardingUrl} label="Copy onboarding" />
       ) : null}
       {actionMap.get("open_demo")?.enabled && demoUrl ? (
-        <a
-          href={demoUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex h-8 items-center rounded-full border border-white/25 px-3 text-xs font-semibold text-[var(--admin-accent)] hover:border-[var(--admin-accent)]"
-        >
-          Open demo ↗
-        </a>
+        <Button variant="secondary" size="sm" asChild>
+          <a href={demoUrl} target="_blank" rel="noreferrer">
+            Open demo ↗
+          </a>
+        </Button>
       ) : null}
       {actionMap.get("activate_domain")?.enabled
         ? inlineButton(
@@ -217,14 +219,6 @@ export function AdminActionDispatcher({
                 "Credentials sent",
                 `/api/admin/email/${slug}/resend-credentials`,
               ),
-            "secondary",
-          )
-        : null}
-      {actionMap.get("run_qa")?.enabled
-        ? inlineButton(
-            actionMap.get("run_qa")!,
-            () =>
-              void runAction("QA queued", `/api/admin/qa/${slug}/retry`),
             "secondary",
           )
         : null}

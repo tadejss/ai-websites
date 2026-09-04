@@ -5,7 +5,6 @@ import { AdminActionDispatcher } from "@/components/admin/admin-action-dispatche
 import { ApproveChecklistDialog } from "@/components/admin/approve-checklist-dialog";
 import { Button } from "@/components/admin/ui/button";
 import type { AdminAction } from "@/admin/entity";
-import { cn } from "@/lib/utils";
 
 type ChecklistItem = {
   id: string;
@@ -38,13 +37,7 @@ export function EntityJourneyActions({
 
   return (
     <>
-      <div
-        className={cn(
-          "z-20 mb-6 flex flex-wrap gap-2 rounded-[var(--admin-radius)] border border-white/15 bg-black/90 p-3 backdrop-blur-md",
-          "max-md:fixed max-md:inset-x-0 max-md:bottom-0 max-md:mb-0 max-md:rounded-none max-md:border-x-0 max-md:border-b-0 max-md:pb-[env(safe-area-inset-bottom)]",
-          "md:sticky md:top-0",
-        )}
-      >
+      <div className="mb-6 flex flex-wrap items-center gap-2 rounded-[var(--admin-radius)] border border-white/15 bg-black/90 p-3 [&_a]:shrink-0 [&_button]:shrink-0">
         {canApprove ? (
           <Button size="sm" onClick={() => setApproveOpen(true)}>
             Approve checklist

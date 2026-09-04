@@ -83,9 +83,14 @@ export function AdminStatCard({
 
   const content = (
     <>
-      {isHero ? (
+      {isHero && tone === "accent" ? (
         <div
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_80%_at_100%_0%,rgba(199,255,61,0.22),transparent_55%)]"
+          aria-hidden
+        />
+      ) : isHero && tone === "danger" ? (
+        <div
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_80%_at_100%_0%,rgba(248,113,113,0.22),transparent_55%)]"
           aria-hidden
         />
       ) : null}

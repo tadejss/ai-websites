@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export function getAdminManifest(): MetadataRoute.Manifest {
   return {
-    name: "Zbrendiraj",
-    short_name: "Zbrendiraj",
+    name: "Zbrendiraj Admin",
+    short_name: "Zbrendiraj Admin",
     description: "Ops console for zbrendiraj.si",
     start_url: "/admin",
     scope: "/admin",

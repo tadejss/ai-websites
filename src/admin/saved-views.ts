@@ -28,7 +28,7 @@ export const ADMIN_SAVED_VIEWS: SavedView[] = [
   },
   {
     id: "onboarding-stuck-3d",
-    label: "Onboarding stuck 3d",
+    label: "Onboarding stuck",
     pipeline: "customers",
     columnPreset: "customer",
   },

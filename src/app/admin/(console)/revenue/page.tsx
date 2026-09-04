@@ -1,29 +1,23 @@
 import { getRevenueAnalytics } from "@/admin/analytics";
-import { listRecentAuditLogs } from "@/admin/audit";
 import {
   AdminPageHeader,
   AdminStatCard,
   AdminStatGrid,
-  formatAdminDate,
 } from "@/components/admin/admin-page";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/admin/ui/card";
-import { RevenueFunnelChart } from "@/components/admin/revenue-charts";
+import { RevenueMonthlyChart } from "@/components/admin/revenue-charts";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminRevenuePage() {
-  const [analytics, auditLogs] = await Promise.all([
-    getRevenueAnalytics(),
-    listRecentAuditLogs(10),
-  ]);
-
+  const analytics = await getRevenueAnalytics();
   const upsellEntries = Object.entries(analytics.upsellCounts);
 
   return (
     <div>
       <AdminPageHeader
         title="Revenue & Analytics"
-        description="MRR, funnel, SMS metrics from Neon"
+        description="MRR, customers, and monthly earnings"
       />
 
       <AdminStatCard
@@ -56,30 +50,25 @@ export default async function AdminRevenuePage() {
       <div className="mb-6 grid gap-4 lg:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>Conversion funnel</CardTitle>
+            <CardTitle>Customers per month</CardTitle>
           </CardHeader>
           <CardContent>
-            <RevenueFunnelChart funnel={analytics.funnel} />
-            <dl className="mt-4 grid grid-cols-2 gap-2 text-sm">
-              <Metric label="Published" value={analytics.funnel.published} />
-              <Metric label="Viewed" value={analytics.funnel.viewed} />
-              <Metric label="Purchased" value={analytics.funnel.purchased} />
-              <Metric label="Live" value={analytics.funnel.live} />
-            </dl>
+            <RevenueMonthlyChart
+              data={analytics.customersPerMonth}
+              valueLabel="Customers"
+            />
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>SMS metrics</CardTitle>
+            <CardTitle>Earnings per month</CardTitle>
           </CardHeader>
           <CardContent>
-            <dl className="grid grid-cols-2 gap-2 text-sm">
-              <Metric label="Sent" value={analytics.sms.sent} />
-              <Metric label="Replied" value={analytics.sms.replied} />
-              <Metric label="Opted out" value={analytics.sms.optedOut} />
-              <Metric label="Reply rate" value={`${analytics.sms.replyRate}%`} />
-            </dl>
+            <RevenueMonthlyChart
+              data={analytics.earningsPerMonth}
+              valueLabel="€"
+            />
           </CardContent>
         </Card>
       </div>
@@ -101,50 +90,6 @@ export default async function AdminRevenuePage() {
           </CardContent>
         </Card>
       ) : null}
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Recent admin actions</CardTitle>
-        </CardHeader>
-        <CardContent>
-          {auditLogs.length === 0 ? (
-            <p className="text-sm text-[var(--admin-muted)]">No audit log entries yet</p>
-          ) : (
-            <ul className="space-y-2 text-sm">
-              {auditLogs.map((log) => (
-                <li
-                  key={log.id}
-                  className="flex flex-col gap-1 rounded-2xl border border-white/15 px-3 py-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-2"
-                >
-                  <span className="font-mono text-xs">{log.action}</span>
-                  {log.slug ? (
-                    <span className="text-[var(--admin-muted)]">{log.slug}</span>
-                  ) : null}
-                  <span
-                    className={
-                      log.result === "ok" ? "text-emerald-400" : "text-red-400"
-                    }
-                  >
-                    {log.result}
-                  </span>
-                  <span className="text-xs text-[var(--admin-muted)]">
-                    {formatAdminDate(log.createdAt)}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </CardContent>
-      </Card>
-    </div>
-  );
-}
-
-function Metric({ label, value }: { label: string; value: string | number }) {
-  return (
-    <div className="rounded-2xl border border-white/15 bg-white/[0.03] px-3 py-2">
-      <dt className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#d0d0d0]">{label}</dt>
-      <dd className="font-display mt-1 text-xl tabular-nums text-white">{value}</dd>
     </div>
   );
 }

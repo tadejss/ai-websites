@@ -13,7 +13,7 @@ import {
 export const ADMIN_NAV_ITEMS = [
   { href: "/admin", label: "Home", icon: Home, exact: true },
   { href: "/admin/review", label: "Onboarding", icon: ClipboardCheck },
-  { href: "/admin/domains", label: "Custom URL", icon: Globe },
+  { href: "/admin/domains", label: "Domains", icon: Globe },
   { href: "/admin/leads", label: "Leads", icon: LayoutList },
   { href: "/admin/pipeline", label: "Pipeline", icon: Kanban },
   { href: "/admin/sms", label: "SMS", icon: MessageSquare },
@@ -25,7 +25,7 @@ export const ADMIN_NAV_ITEMS = [
 export const ADMIN_TAB_HREFS = [
   "/admin",
   "/admin/review",
-  "/admin/leads",
+  "/admin/domains",
   "/admin/factory",
 ] as const;
 

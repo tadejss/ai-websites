@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getActionQueue } from "@/admin/queue";
 import { loadAdminEntity } from "@/admin/load-entity";
 import { listOnboardingImages } from "@/onboarding/images";
@@ -33,11 +32,6 @@ export default async function AdminReviewPage() {
       <AdminPageHeader
         title="Onboarding"
         description={`${reviewItems.length} waiting for approval`}
-        actions={
-          <Link href="/admin" className="text-xs text-[var(--admin-accent)] hover:underline">
-            ← Home
-          </Link>
-        }
       />
       {enriched.length === 0 ? (
         <p className="rounded-[var(--admin-radius)] border border-[var(--admin-border)] px-4 py-8 text-center text-sm text-[var(--admin-muted)]">

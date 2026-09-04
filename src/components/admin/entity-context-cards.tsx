@@ -15,11 +15,20 @@ type ContextCard = {
 export function EntityContextCards({
   stage,
   cards,
+  defaultOpenIds = ["customer"],
 }: {
   stage: UnifiedStage;
   cards: ContextCard[];
+  defaultOpenIds?: string[];
 }) {
-  const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
+  const [collapsed, setCollapsed] = useState<Set<string>>(
+    () =>
+      new Set(
+        cards
+          .filter((card) => !defaultOpenIds.includes(card.id))
+          .map((card) => card.id),
+      ),
+  );
 
   const visible = cards.filter((card) => card.stages.includes(stage));
 

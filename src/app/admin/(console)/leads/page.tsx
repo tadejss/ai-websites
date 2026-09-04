@@ -114,7 +114,10 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
       />
 
       <div className="mb-4 flex flex-wrap gap-2">
-        {ADMIN_SAVED_VIEWS.map((view) => (
+        {ADMIN_SAVED_VIEWS.filter(
+          (view) =>
+            view.id === "sms-failed-today" || view.id === "onboarding-stuck-3d",
+        ).map((view) => (
           <Link
             key={view.id}
             href={savedViewHref(view)}
@@ -218,36 +221,67 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
           No leads match the selected filters.
         </p>
       ) : (
-        <AdminLeadsTableClient rows={tableRows} />
+        <>
+          <LeadsPagination
+            page={result.page}
+            totalPages={result.totalPages}
+            pageHref={pageHref}
+            className="mb-3"
+          />
+          <AdminLeadsTableClient rows={tableRows} />
+        </>
       )}
 
-      {result.totalPages > 1 ? (
-        <div className="mt-4 flex items-center justify-between text-sm">
-          {result.page > 1 ? (
-            <Link
-              href={pageHref(result.page - 1)}
-              className="text-[var(--admin-accent)] hover:underline"
-            >
-              ← Previous
-            </Link>
-          ) : (
-            <span />
-          )}
-          <span className="text-[var(--admin-muted)]">
-            Page {result.page} of {result.totalPages}
-          </span>
-          {result.page < result.totalPages ? (
-            <Link
-              href={pageHref(result.page + 1)}
-              className="text-[var(--admin-accent)] hover:underline"
-            >
-              Next →
-            </Link>
-          ) : (
-            <span />
-          )}
-        </div>
-      ) : null}
+      <LeadsPagination
+        page={result.page}
+        totalPages={result.totalPages}
+        pageHref={pageHref}
+        className="mt-4"
+      />
+    </div>
+  );
+}
+
+function LeadsPagination({
+  page,
+  totalPages,
+  pageHref,
+  className,
+}: {
+  page: number;
+  totalPages: number;
+  pageHref: (nextPage: number) => string;
+  className?: string;
+}) {
+  if (totalPages <= 1) {
+    return null;
+  }
+
+  return (
+    <div className={`flex items-center justify-between text-sm ${className ?? ""}`}>
+      {page > 1 ? (
+        <Link
+          href={pageHref(page - 1)}
+          className="text-[var(--admin-accent)] hover:underline"
+        >
+          ← Previous
+        </Link>
+      ) : (
+        <span />
+      )}
+      <span className="text-[var(--admin-muted)]">
+        Page {page} of {totalPages}
+      </span>
+      {page < totalPages ? (
+        <Link
+          href={pageHref(page + 1)}
+          className="text-[var(--admin-accent)] hover:underline"
+        >
+          Next →
+        </Link>
+      ) : (
+        <span />
+      )}
     </div>
   );
 }

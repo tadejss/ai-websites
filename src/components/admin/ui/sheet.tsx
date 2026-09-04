@@ -14,24 +14,31 @@ export function SheetContent({
   children,
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Content> & {
-  side?: "left" | "right";
+  side?: "left" | "right" | "bottom";
 }) {
   return (
     <DialogPrimitive.Portal>
       <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/60" />
       <DialogPrimitive.Content
         className={cn(
-          "fixed z-50 flex h-full flex-col border-white/15 bg-black shadow-lg transition ease-in-out",
-          side === "right"
-            ? "right-0 top-0 w-full max-w-md border-l"
-            : "left-0 top-0 w-full max-w-md border-r",
+          "fixed z-50 flex flex-col border-white/15 bg-black shadow-lg transition ease-in-out",
+          side === "bottom"
+            ? "bottom-[calc(4.5rem+env(safe-area-inset-bottom))] right-3 left-auto h-auto max-h-[70vh] w-[60%] rounded-3xl border"
+            : side === "right"
+              ? "right-0 top-0 h-full w-full max-w-md border-l"
+              : "left-0 top-0 h-full w-full max-w-md border-r",
           className,
         )}
         {...props}
       >
         {children}
         <DialogPrimitive.Close
-          className="absolute right-4 top-[calc(1rem+env(safe-area-inset-top))] rounded-sm text-[var(--admin-muted)] hover:text-[var(--admin-foreground)]"
+          className={cn(
+            "absolute rounded-sm text-[var(--admin-muted)] hover:text-[var(--admin-foreground)]",
+            side === "bottom"
+              ? "right-3 top-3 rounded-full"
+              : "right-4 top-[calc(1rem+env(safe-area-inset-top))]",
+          )}
         >
           <X className="h-4 w-4" />
         </DialogPrimitive.Close>

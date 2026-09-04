@@ -10,23 +10,19 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Zbrendiraj",
-    template: "%s · Zbrendiraj",
+    default: "Zbrendiraj Admin",
+    template: "%s · Zbrendiraj Admin",
   },
   description: "Ops console for zbrendiraj.si",
-  applicationName: "Zbrendiraj",
+  applicationName: "Zbrendiraj Admin",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black",
-    title: "Zbrendiraj",
+    title: "Zbrendiraj Admin",
   },
   manifest: "/admin/manifest.webmanifest",
   icons: {
-    icon: [
-      { url: "/brand/zbrendiraj-si/icon.png", type: "image/png" },
-      { url: "/admin/icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/admin/icon-512.png", sizes: "512x512", type: "image/png" },
-    ],
+    icon: [{ url: "/brand/zbrendiraj-si/icon.png", type: "image/png" }],
     apple: [{ url: "/brand/zbrendiraj-si/icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
