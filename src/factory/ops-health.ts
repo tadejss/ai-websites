@@ -158,18 +158,6 @@ export function evaluateFactoryOpsHealth(
     });
   }
 
-  if (
-    input.sms.gatewayConfigured &&
-    input.sms.queueStaleHours !== null &&
-    input.sms.queueStaleHours >= input.sms.queueStaleThresholdHours
-  ) {
-    add({
-      level: "failed",
-      code: "sms_queue_stale",
-      message: `SMS queue has messages waiting ${input.sms.queueStaleHours.toFixed(1)}h (threshold ${input.sms.queueStaleThresholdHours}h).`,
-    });
-  }
-
   if (input.grokQa.failed > 0) {
     add({
       level: "warning",

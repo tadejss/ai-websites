@@ -111,7 +111,7 @@ function testStaleGenerationLocks(): void {
   ok("stale generation locks is failed", health.level === "failed");
 }
 
-function testSmsQueueStale(): void {
+function testSmsQueueStaleDoesNotFailFactory(): void {
   const health = evaluateFactoryOpsHealth(
     baseInput({
       sms: {
@@ -121,7 +121,11 @@ function testSmsQueueStale(): void {
       },
     }),
   );
-  ok("stale sms queue is failed", health.level === "failed");
+  ok("stale sms queue is not a factory failure", health.level === "ok");
+  ok(
+    "no sms_queue_stale factory issue",
+    !health.issues.some((issue) => issue.code === "sms_queue_stale"),
+  );
 }
 
 function testDatabaseNotConfigured(): void {
@@ -265,7 +269,7 @@ testBacklogWithDispatchEnabled();
 testLastRunFailed();
 testCircuitOpen();
 testStaleGenerationLocks();
-testSmsQueueStale();
+testSmsQueueStaleDoesNotFailFactory();
 testDatabaseNotConfigured();
 testCustomerPublishFailed();
 testStuckExpiredLease();
