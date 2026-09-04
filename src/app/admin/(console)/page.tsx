@@ -23,7 +23,7 @@ export default async function AdminCommandCenterPage() {
   return (
     <div>
       <AdminPageHeader
-        title="Inbox"
+        title="Home"
         description="Items that need action"
       />
 

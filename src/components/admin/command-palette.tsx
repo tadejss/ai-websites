@@ -1,10 +1,16 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { Command } from "cmdk";
 import { Search, X, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+export const ADMIN_SEARCH_EVENT = "admin-search-open";
+
+export function openAdminSearch() {
+  window.dispatchEvent(new Event(ADMIN_SEARCH_EVENT));
+}
 
 type SearchResult = {
   slug: string;
@@ -34,27 +40,28 @@ const ACTION_ITEMS = [
   },
   {
     id: "review",
-    label: "Open onboarding review",
+    label: "Open onboarding",
     href: "/admin/review",
-    action: "navigate",
-  },
-  {
-    id: "refresh-index",
-    label: "Refresh admin index",
-    href: "/admin/settings",
     action: "navigate",
   },
 ] as const;
 
 export function AdminCommandPalette() {
   const router = useRouter();
-  const pathname = usePathname();
-  const hideFab = pathname.startsWith("/admin/e/");
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState<"search" | "actions">("search");
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    function onSearchEvent() {
+      setMode("search");
+      setOpen(true);
+    }
+    window.addEventListener(ADMIN_SEARCH_EVENT, onSearchEvent);
+    return () => window.removeEventListener(ADMIN_SEARCH_EVENT, onSearchEvent);
+  }, []);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -126,25 +133,6 @@ export function AdminCommandPalette() {
 
   return (
     <>
-      {!hideFab ? (
-        <button
-          type="button"
-          onClick={() => {
-            setMode("search");
-            setOpen(true);
-          }}
-          className={cn(
-            "fixed z-30 flex h-12 w-12 items-center justify-center rounded-full",
-            "bg-[var(--admin-accent)] text-black shadow-lg hover:bg-[var(--admin-accent-hover)]",
-            "bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4",
-            "touch-manipulation md:hidden",
-          )}
-          aria-label="Search entities"
-        >
-          <Search className="h-5 w-5" />
-        </button>
-      ) : null}
-
       {open ? (
         <div
           className={cn(

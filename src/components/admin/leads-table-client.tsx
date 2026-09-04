@@ -63,12 +63,12 @@ function LeadCard({
     <div className="rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] p-4">
       <div className="flex items-start gap-3">
         <LeadRowCheckbox slug={row.slug} selected={selected} onToggle={onToggle} />
-        <div className="min-w-0 flex-1">
+        <div className="min-w-0 flex-1 overflow-hidden">
           <Link
             href={`/admin/e/${row.slug}`}
-            className="block text-base font-medium text-[var(--admin-accent)] hover:underline"
+            className="block break-words text-base font-medium leading-snug text-[var(--admin-accent)] hover:underline"
           >
-            {row.companyName}
+            {row.companyName || row.slug}
           </Link>
           {row.industry ? (
             <p className="mt-0.5 text-sm text-[var(--admin-muted)]">{row.industry}</p>
@@ -175,12 +175,12 @@ export function AdminLeadsTableClient({ rows }: { rows: Row[] }) {
                     onToggle={toggle}
                   />
                 </td>
-                <td className="px-3 py-2">
+                <td className="min-w-[10rem] px-3 py-2">
                   <Link
                     href={`/admin/e/${row.slug}`}
-                    className="font-medium text-[var(--admin-accent)] hover:underline"
+                    className="break-words font-medium text-[var(--admin-accent)] hover:underline"
                   >
-                    {row.companyName}
+                    {row.companyName || row.slug}
                   </Link>
                   {row.industry ? (
                     <div className="text-sm text-[var(--admin-muted)]">

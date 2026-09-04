@@ -29,7 +29,7 @@ export async function AdminConsoleShell({
         </header>
         <div className="flex flex-1">
           <AdminSidebar className="hidden md:flex" />
-          <main className="flex-1 overflow-x-hidden p-4 md:p-6">{children}</main>
+          <main className="min-w-0 flex-1 overflow-x-hidden p-4 md:p-6">{children}</main>
         </div>
       </div>
     </AdminRealtimeProvider>

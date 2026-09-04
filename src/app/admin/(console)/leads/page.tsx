@@ -131,9 +131,9 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
 
       <form
         method="get"
-        className="mb-6 flex flex-wrap items-end gap-3 rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] p-4"
+        className="mb-6 grid grid-cols-2 items-end gap-3 rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] p-4 md:flex md:flex-wrap"
       >
-        <label className="block min-w-[12rem]">
+        <label className="min-w-0 md:min-w-[12rem]">
           <span className={adminLabelClassName}>Pipeline</span>
           <select
             name="pipeline"
@@ -147,7 +147,7 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
             ))}
           </select>
         </label>
-        <label className="block min-w-[10rem]">
+        <label className="min-w-0 md:min-w-[10rem]">
           <span className={adminLabelClassName}>Status</span>
           <select
             name="status"
@@ -162,7 +162,7 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
             ))}
           </select>
         </label>
-        <label className="block min-w-[12rem]">
+        <label className="min-w-0 md:min-w-[12rem]">
           <span className={adminLabelClassName}>Outreach</span>
           <select
             name="outreach"
@@ -177,16 +177,7 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
             ))}
           </select>
         </label>
-        <label className="block min-w-[14rem] flex-1">
-          <span className={adminLabelClassName}>Search</span>
-          <input
-            name="q"
-            defaultValue={q ?? ""}
-            placeholder="company, slug, phone…"
-            className={adminControlClassName}
-          />
-        </label>
-        <label className="block min-w-[10rem]">
+        <label className="min-w-0 md:min-w-[10rem]">
           <span className={adminLabelClassName}>Sort</span>
           <select
             name="sort"
@@ -199,16 +190,27 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
             <option value="activity">Last activity</option>
           </select>
         </label>
-        <Button type="submit" variant="secondary" size="sm">
-          Apply
-        </Button>
-        {q || pipeline !== "actionable" || statusFilter || outreachFilter ? (
-          <Link href="/admin/leads">
-            <Button type="button" variant="ghost" size="sm">
-              Clear
-            </Button>
-          </Link>
-        ) : null}
+        <label className="col-span-2 min-w-0 md:min-w-[14rem] md:flex-1">
+          <span className={adminLabelClassName}>Search</span>
+          <input
+            name="q"
+            defaultValue={q ?? ""}
+            placeholder="company, slug, phone…"
+            className={adminControlClassName}
+          />
+        </label>
+        <div className="col-span-2 flex gap-2 md:col-span-1">
+          <Button type="submit" variant="secondary" size="sm">
+            Apply
+          </Button>
+          {q || pipeline !== "actionable" || statusFilter || outreachFilter ? (
+            <Link href="/admin/leads">
+              <Button type="button" variant="ghost" size="sm">
+                Clear
+              </Button>
+            </Link>
+          ) : null}
+        </div>
       </form>
 
       {result.rows.length === 0 ? (

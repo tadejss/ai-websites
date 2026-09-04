@@ -72,7 +72,7 @@ export default async function AdminEntityJourneyPage({
     <div>
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
         <Link href="/admin" className="text-xs text-[var(--admin-accent)] hover:underline">
-          ← Queue {neighbors.index >= 0 ? `${neighbors.index + 1}/${neighbors.total}` : ""}
+          ← Home {neighbors.index >= 0 ? `${neighbors.index + 1}/${neighbors.total}` : ""}
         </Link>
         <div className="flex gap-2 text-xs">
           {neighbors.prev ? (

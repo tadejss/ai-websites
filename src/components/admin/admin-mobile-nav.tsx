@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, Search } from "lucide-react";
 import { AdminBrandMark, AdminWordmark } from "@/components/admin/admin-brand";
 import { ADMIN_NAV_ITEMS, isAdminNavActive } from "@/components/admin/admin-nav-items";
+import { openAdminSearch } from "@/components/admin/command-palette";
 import { Sheet, SheetContent, SheetTitle } from "@/components/admin/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -14,7 +15,19 @@ export function AdminMobileNav({ className }: { className?: string }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={cn("flex items-center gap-3 px-3 py-2", className)}>
+    <div className={cn("flex items-center gap-2 px-3 py-2", className)}>
+      <button
+        type="button"
+        onClick={() => openAdminSearch()}
+        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--admin-accent)] text-black touch-manipulation"
+        aria-label="Išči"
+      >
+        <Search className="h-5 w-5" />
+      </button>
+      <Link href="/admin" className="flex min-w-0 flex-1 items-center justify-center gap-2">
+        <AdminBrandMark size={32} />
+        <AdminWordmark className="text-lg" />
+      </Link>
       <Sheet open={open} onOpenChange={setOpen}>
         <button
           type="button"
@@ -28,7 +41,7 @@ export function AdminMobileNav({ className }: { className?: string }) {
           </span>
         </button>
         <SheetContent
-          side="left"
+          side="right"
           className="w-72 max-w-[85vw] bg-black pt-[calc(env(safe-area-inset-top)+0.75rem)]"
         >
           <SheetTitle className="flex items-center gap-2.5 px-4 pb-3">
@@ -59,10 +72,6 @@ export function AdminMobileNav({ className }: { className?: string }) {
           </nav>
         </SheetContent>
       </Sheet>
-      <Link href="/admin" className="flex items-center gap-2">
-        <AdminBrandMark size={32} />
-        <AdminWordmark className="text-lg" />
-      </Link>
     </div>
   );
 }

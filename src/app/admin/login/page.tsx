@@ -48,9 +48,6 @@ export default async function AdminLoginPage({
           Ops console
         </p>
         <h1 className="mt-2 text-3xl">Prijava</h1>
-        <p className="mt-2 text-base text-[var(--admin-muted)]">
-          Vnesi admin geslo za tovarno strani.
-        </p>
       </div>
 
       <Card>

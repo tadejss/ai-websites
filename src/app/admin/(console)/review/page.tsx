@@ -31,11 +31,11 @@ export default async function AdminReviewPage() {
   return (
     <div>
       <AdminPageHeader
-        title="Rapid onboarding review"
+        title="Onboarding"
         description={`${reviewItems.length} waiting for approval`}
         actions={
           <Link href="/admin" className="text-xs text-[var(--admin-accent)] hover:underline">
-            ← Queue
+            ← Home
           </Link>
         }
       />

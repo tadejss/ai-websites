@@ -12,7 +12,7 @@ export function AdminPageHeader({
   return (
     <div className="mb-6 flex flex-wrap items-start justify-between gap-4">
       <div>
-        <h1 className="font-display text-3xl leading-none text-white sm:text-4xl">
+        <h1 className="font-display text-3xl leading-tight text-white sm:text-4xl">
           {title}
         </h1>
         {description ? (
@@ -34,7 +34,7 @@ export function AdminStatGrid({
   return (
     <div
       className={cn(
-        "mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4",
+        "mb-6 grid grid-cols-2 gap-3 lg:grid-cols-4",
         className,
       )}
     >
