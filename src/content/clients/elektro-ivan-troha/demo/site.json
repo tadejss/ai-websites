@@ -29,8 +29,8 @@
     "highlight": "Ivan Troha s.p."
   },
   "metadata": {
-    "title": "Elektro storitve, Ivan Troha s.p.",
-    "description": "Zanesljive in strokovne elektro storitve za vaš dom in poslovne prostore"
+    "title": "Elektro storitve, Ivan Troha s.p. | Elektroinštalacije in popravila",
+    "description": "Zanesljive in strokovne elektro storitve za dom in poslovne prostore v Babnem Polju, Starem trgu pri Ložu in okolici."
   },
   "nav": {
     "links": [
@@ -160,17 +160,6 @@
         "label": "Območje delovanja",
         "value": "Babno Polje, Stari trg pri Ložu in okolica",
         "icon": "service-6"
-      },
-      {
-        "label": "Email",
-        "value": "tadej.stojs@gmail.com",
-        "href": "mailto:tadej.stojs@gmail.com",
-        "icon": "email"
-      },
-      {
-        "label": "Delovni čas",
-        "value": "8:00 - 12:00",
-        "icon": "clock"
       }
     ],
     "form": {
@@ -190,10 +179,9 @@
     "rights": "© Elektro storitve, Ivan Troha s.p. Vse pravice pridržane."
   },
   "business": {
-    "name": "Elektro storitve, Ivan Troha s.p.",
-    "legalName": "Elektro storitve, Ivan Troha s.p.",
+    "name": "Elektro storitve Ivan Troha s.p.",
     "address": "Babno Polje 104, 1386 Stari trg pri Ložu, Slovenia",
-    "email": "tadej.stojs@gmail.com",
+    "email": "",
     "phone": "051 631 734"
   },
   "privacy": {
