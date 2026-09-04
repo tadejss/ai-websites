@@ -239,15 +239,81 @@ function testPublicOverlay(): void {
     status: "approved_for_publish",
     processedPayload: {
       ...payload,
-      siteHints: {
-        ...payload.siteHints,
-        photoUrls: null as unknown as string[],
-      },
+      siteHints: null as unknown as typeof payload.siteHints,
     },
   });
   ok(
     "invalid payload falls back to git config",
     invalid.metadata.title === siteConfig.metadata.title,
+  );
+}
+
+function testOnboardingPhotosCreateGallery(): void {
+  console.log("\nOnboarding photos create gallery when demo has none");
+
+  const siteConfig = minimalSiteConfig();
+  const photo = "https://example.com/onboarding/photo.jpg";
+  const logo = "https://example.com/onboarding/logo.png";
+
+  const merged = mergeSiteConfigWithOnboarding(
+    siteConfig,
+    {
+      companyName: "Foto Firma",
+      email: "info@foto.si",
+      phone: "041 111 111",
+      address: "Ulica 1",
+      tagline: "Opis",
+      services: ["Ena"],
+    } as never,
+    {
+      desiredDomain: "foto.si",
+      hasExistingDomain: false,
+      demoChanges: null,
+      colorPreferences: null,
+      logoUrls: [logo],
+      photoUrls: [photo],
+      uploadedImages: [
+        { url: logo, kind: "logo" },
+        { url: photo, kind: "photo", fileName: "delo.jpg" },
+      ],
+      additionalNotes: null,
+    },
+  );
+
+  ok("creates gallery object", Boolean(merged.gallery));
+  ok("applies photo items", merged.gallery?.items[0]?.src === photo);
+  ok("enables gallery section flag", merged.sections?.gallery === true);
+  ok(
+    "adds gallery nav link",
+    merged.nav.links.some((link) => link.href === "#galerija"),
+  );
+  ok("applies uploaded logo", merged.branding?.logo === logo);
+
+  const fromAnswers = overlaySiteConfigFromOnboarding(siteConfig, {
+    status: "approved_for_publish",
+    processedPayload: buildProcessedPayload("test-slug", {
+      companyName: "Foto Firma",
+      email: "info@foto.si",
+      phone: "041",
+      businessDescription: "Opis",
+      services: ["Ena"],
+      desiredDomain: "foto.si",
+    }),
+    answers: {
+      companyName: "Foto Firma",
+      email: "info@foto.si",
+      phone: "041",
+      businessDescription: "Opis",
+      services: ["Ena"],
+      desiredDomain: "foto.si",
+      uploadedImages: [{ url: photo, kind: "photo", fileName: "delo.jpg" }],
+      photoUrls: [photo],
+    },
+  });
+
+  ok(
+    "overlay falls back to answer photos when payload has none",
+    fromAnswers.gallery?.items[0]?.src === photo,
   );
 }
 
@@ -280,6 +346,7 @@ async function main(): Promise<void> {
   testDemoSnapshot();
   testPublishStateTransitions();
   testPublicOverlay();
+  testOnboardingPhotosCreateGallery();
   console.log("\nAll customer publish tests passed.");
 }
 

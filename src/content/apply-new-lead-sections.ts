@@ -68,7 +68,7 @@ export function applyNewLeadSectionDefaults(config: SiteConfig): SiteConfig {
   return withSectionNavLinks(next);
 }
 
-function withSectionNavLinks(config: SiteConfig): SiteConfig {
+export function withSectionNavLinks(config: SiteConfig): SiteConfig {
   const core = config.nav.links.filter(
     (link) => link.href !== "#galerija" && link.href !== "#cenik",
   );

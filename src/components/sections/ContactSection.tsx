@@ -8,9 +8,14 @@ import type { SiteConfig } from "@/content/types/site";
 type Props = {
   siteConfig: SiteConfig;
   siteSlug: string;
+  headingVariant?: "default" | "beauty" | "trade";
 };
 
-export function ContactSection({ siteConfig, siteSlug }: Props) {
+export function ContactSection({
+  siteConfig,
+  siteSlug,
+  headingVariant = "default",
+}: Props) {
   const { contact } = siteConfig;
 
   return (
@@ -19,6 +24,7 @@ export function ContactSection({ siteConfig, siteSlug }: Props) {
         eyebrow={contact.eyebrow}
         title={contact.title}
         description={contact.description}
+        variant={headingVariant}
       />
 
       <div className="mt-16 grid gap-8 lg:grid-cols-2">

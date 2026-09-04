@@ -1,6 +1,7 @@
 import type {
   CustomerOnboardingAnswers,
   OnboardingImage,
+  ProcessedOnboardingPayload,
 } from "./types";
 
 /** Collect images from uploadedImages or legacy logoUrls/photoUrls arrays. */
@@ -63,4 +64,47 @@ export function appendOnboardingImages(
   }
 
   return syncOnboardingImageFields({ ...answers, uploadedImages: merged });
+}
+
+function uniqueUrls(urls: string[]): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const url of urls) {
+    if (!url || seen.has(url)) {
+      continue;
+    }
+    seen.add(url);
+    out.push(url);
+  }
+  return out;
+}
+
+/**
+ * Prefer processed payload URLs; fall back to saved onboarding answers
+ * when process ran before uploads or skipped a rebuild.
+ */
+export function mergeSiteHintsWithAnswers(
+  hints: ProcessedOnboardingPayload["siteHints"],
+  answers?: CustomerOnboardingAnswers | null,
+): ProcessedOnboardingPayload["siteHints"] {
+  const answerImages = listOnboardingImages(answers);
+  const photosFromAnswers = answerImages
+    .filter((img) => img.kind === "photo")
+    .map((img) => img.url);
+  const logosFromAnswers = answerImages
+    .filter((img) => img.kind === "logo")
+    .map((img) => img.url);
+
+  return {
+    ...hints,
+    photoUrls: uniqueUrls(
+      hints.photoUrls?.length ? hints.photoUrls : photosFromAnswers,
+    ),
+    logoUrls: uniqueUrls(
+      hints.logoUrls?.length ? hints.logoUrls : logosFromAnswers,
+    ),
+    uploadedImages: hints.uploadedImages?.length
+      ? hints.uploadedImages
+      : answerImages,
+  };
 }

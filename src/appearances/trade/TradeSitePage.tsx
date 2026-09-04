@@ -87,7 +87,11 @@ export function TradeSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
         <TradeBenefitsSection siteConfig={siteConfig} />
         <GallerySection siteConfig={siteConfig} headingVariant="trade" />
         <PricingSection siteConfig={siteConfig} headingVariant="trade" />
-        <ContactSection siteConfig={siteConfig} siteSlug={siteSlug} />
+        <ContactSection
+          siteConfig={siteConfig}
+          siteSlug={siteSlug}
+          headingVariant="trade"
+        />
       </main>
 
       <footer className="border-t border-border py-8">

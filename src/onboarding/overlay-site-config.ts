@@ -1,6 +1,7 @@
 import type { BusinessInput } from "@/ai/types";
 import type { SiteConfig } from "@/content/types/site";
 import { mergeSiteConfigWithOnboarding } from "./apply-customer-site";
+import { mergeSiteHintsWithAnswers } from "./images";
 import {
   canOverlayOnboardingOnPublicSite,
   type OnboardingRecord,
@@ -13,7 +14,10 @@ import {
  */
 export function overlaySiteConfigFromOnboarding(
   base: SiteConfig,
-  onboarding: Pick<OnboardingRecord, "status" | "processedPayload"> | null,
+  onboarding:
+    | (Pick<OnboardingRecord, "status" | "processedPayload"> &
+        Partial<Pick<OnboardingRecord, "answers">>)
+    | null,
 ): SiteConfig {
   if (!onboarding?.processedPayload) {
     return base;
@@ -23,10 +27,14 @@ export function overlaySiteConfigFromOnboarding(
   }
 
   try {
+    const hints = mergeSiteHintsWithAnswers(
+      onboarding.processedPayload.siteHints,
+      onboarding.answers,
+    );
     return mergeSiteConfigWithOnboarding(
       base,
       onboarding.processedPayload.businessInput as BusinessInput,
-      onboarding.processedPayload.siteHints,
+      hints,
     );
   } catch (error) {
     console.error(

@@ -257,7 +257,10 @@ const contactFaqItemSchema = z.object({
 
 const brandingPathSchema = z
   .string()
-  .refine((path) => path.startsWith("/"), "branding paths must start with /");
+  .refine(
+    (path) => path.startsWith("/") || /^https?:\/\//i.test(path),
+    "branding paths must start with / or be an http(s) URL",
+  );
 
 const brandingSchema = z
   .object({

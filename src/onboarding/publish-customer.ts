@@ -118,7 +118,11 @@ export async function publishCustomerSite(
 
   try {
     await beginCustomerPublish(slug);
-    applyCustomerSite(slug, onboarding.processedPayload);
+    applyCustomerSite(
+      slug,
+      onboarding.processedPayload,
+      onboarding.answers,
+    );
 
     const publishPath = clientPublishPath(slug);
     const gitResult = await gitPublishPaths(

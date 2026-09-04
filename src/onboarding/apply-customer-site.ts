@@ -7,9 +7,14 @@ import {
 } from "node:fs";
 import { dirname, resolve } from "node:path";
 import type { BusinessInput } from "@/ai/types";
+import { withSectionNavLinks } from "@/content/apply-new-lead-sections";
 import type { SiteConfig } from "@/content/types/site";
 import { validateSiteConfig } from "@/content/validate-site-config";
-import type { ProcessedOnboardingPayload } from "./types";
+import { mergeSiteHintsWithAnswers } from "./images";
+import type {
+  CustomerOnboardingAnswers,
+  ProcessedOnboardingPayload,
+} from "./types";
 
 const SERVICE_ICONS = [
   "service-1",
@@ -167,12 +172,33 @@ export function mergeSiteConfigWithOnboarding(
     },
   };
 
-  if (hints.photoUrls.length > 0 && next.gallery) {
+  const photoUrls = [
+    ...(hints.photoUrls ?? []),
+    ...(hints.uploadedImages ?? [])
+      .filter((img) => img.kind === "photo")
+      .map((img) => img.url),
+  ].filter((url, index, all) => url && all.indexOf(url) === index);
+  const logoUrl =
+    hints.logoUrls?.[0] ??
+    hints.uploadedImages?.find((img) => img.kind === "logo")?.url;
+
+  if (photoUrls.length > 0) {
+    const galleryBase = next.gallery ?? {
+      id: "galerija",
+      eyebrow: "Galerija",
+      title: "Vpogled v naše delo",
+      description: "Fotografije naših storitev in ambienta.",
+      items: [],
+    };
     next = {
       ...next,
+      sections: {
+        ...next.sections,
+        gallery: true,
+      },
       gallery: {
-        ...next.gallery,
-        items: hints.photoUrls.map((src, index) => ({
+        ...galleryBase,
+        items: photoUrls.map((src, index) => ({
           src,
           alt: `${companyName ?? next.brand.prefix} – fotografija ${index + 1}`,
         })),
@@ -180,7 +206,17 @@ export function mergeSiteConfigWithOnboarding(
     };
   }
 
-  return validateSiteConfig({
+  if (logoUrl) {
+    next = {
+      ...next,
+      branding: {
+        ...next.branding,
+        logo: logoUrl,
+      },
+    };
+  }
+
+  const withBusiness: SiteConfig = {
     ...next,
     business: {
       name: companyName || next.business?.name || next.brand.prefix,
@@ -191,7 +227,11 @@ export function mergeSiteConfigWithOnboarding(
       registrationNumber: next.business?.registrationNumber,
       vatNumber: next.business?.vatNumber,
     },
-  });
+  };
+
+  return validateSiteConfig(
+    photoUrls.length > 0 ? withSectionNavLinks(withBusiness) : withBusiness,
+  );
 }
 
 function snapshotDemoIfNeeded(slug: string): void {
@@ -229,6 +269,7 @@ export type ApplyCustomerSiteResult = {
 export function applyCustomerSite(
   slug: string,
   payload: ProcessedOnboardingPayload,
+  answers?: CustomerOnboardingAnswers | null,
 ): ApplyCustomerSiteResult {
   const dir = clientDir(slug);
   const sitePath = resolve(dir, "site.json");
@@ -250,7 +291,7 @@ export function applyCustomerSite(
   const mergedSite = mergeSiteConfigWithOnboarding(
     existingSite,
     businessInput,
-    payload.siteHints,
+    mergeSiteHintsWithAnswers(payload.siteHints, answers),
   );
 
   writeJsonFile(sitePath, mergedSite);
