@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function AdminPageHeader({
@@ -43,28 +45,81 @@ export function AdminStatGrid({
   );
 }
 
+const STAT_TONE: Record<
+  "default" | "accent" | "warning" | "danger",
+  string
+> = {
+  default: "border-white/15 bg-white/[0.03]",
+  accent: "border-[var(--admin-accent)]/30 bg-[var(--admin-accent)]/10",
+  warning: "border-amber-500/30 bg-amber-500/10",
+  danger: "border-red-500/30 bg-red-500/10",
+};
+
 export function AdminStatCard({
   label,
   value,
   sub,
+  href,
+  tone = "default",
+  variant = "default",
+  className,
 }: {
   label: string;
   value: string;
   sub?: string;
+  href?: string;
+  tone?: "default" | "accent" | "warning" | "danger";
+  variant?: "default" | "hero";
+  className?: string;
 }) {
-  return (
-    <div className="rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] px-4 py-4">
-      <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#d0d0d0]">
-        {label}
+  const isHero = variant === "hero";
+  const cardClassName = cn(
+    "relative overflow-hidden rounded-[var(--admin-radius)] border",
+    STAT_TONE[tone],
+    isHero ? "px-5 py-6" : "px-4 py-4",
+    href && "transition-colors hover:border-white/25",
+    className,
+  );
+
+  const content = (
+    <>
+      {isHero ? (
+        <div
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_80%_at_100%_0%,rgba(199,255,61,0.22),transparent_55%)]"
+          aria-hidden
+        />
+      ) : null}
+      <div className="relative flex items-start justify-between gap-3">
+        <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#d0d0d0]">
+          {label}
+        </div>
+        {href ? (
+          <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-[var(--admin-muted)]" />
+        ) : null}
       </div>
-      <div className="font-display mt-2 text-3xl leading-none tabular-nums text-white">
+      <div
+        className={cn(
+          "font-display relative mt-2 leading-none tabular-nums text-white",
+          isHero ? "text-5xl sm:text-6xl" : "text-3xl",
+        )}
+      >
         {value}
       </div>
       {sub ? (
-        <div className="mt-1.5 text-sm text-[var(--admin-muted)]">{sub}</div>
+        <div className="relative mt-1.5 text-sm text-[var(--admin-muted)]">{sub}</div>
       ) : null}
-    </div>
+    </>
   );
+
+  if (href) {
+    return (
+      <Link href={href} className={cn(cardClassName, "block")}>
+        {content}
+      </Link>
+    );
+  }
+
+  return <div className={cardClassName}>{content}</div>;
 }
 
 export function AdminEmptyState({ message }: { message: string }) {

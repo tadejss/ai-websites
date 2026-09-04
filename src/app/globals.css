@@ -3,14 +3,16 @@
 [data-admin-theme] {
   --admin-bg: #000000;
   --admin-surface: #111111;
-  --admin-surface-elevated: #1a1a1a;
-  --admin-border: rgba(255, 255, 255, 0.14);
+  --admin-surface-elevated: #222222;
+  --admin-border: rgba(255, 255, 255, 0.1);
   --admin-foreground: #ffffff;
   --admin-muted: #9a9a9a;
   --admin-accent: #c7ff3d;
   --admin-accent-hover: #b8eb35;
   --admin-accent-foreground: #000000;
-  --admin-radius: 1rem;
+  --admin-danger: #f87171;
+  --admin-warning: #fbbf24;
+  --admin-radius: 1.25rem;
   color-scheme: dark;
   background: var(--admin-bg);
   color: var(--admin-foreground);

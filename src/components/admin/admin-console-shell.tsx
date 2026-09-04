@@ -1,6 +1,8 @@
 import { AdminHealthStrip } from "@/components/admin/admin-health-strip";
 import { AdminMobileNav } from "@/components/admin/admin-mobile-nav";
+import { AdminMain } from "@/components/admin/admin-main";
 import { AdminSidebar } from "@/components/admin/admin-sidebar";
+import { AdminTabBar } from "@/components/admin/admin-tab-bar";
 import { AdminRealtimeProvider } from "@/components/admin/admin-realtime-provider";
 import { IncidentStrip } from "@/components/admin/ui/incident-strip";
 import { getAdminHealthPayload } from "@/admin/health";
@@ -29,8 +31,9 @@ export async function AdminConsoleShell({
         </header>
         <div className="flex flex-1">
           <AdminSidebar className="hidden md:flex" />
-          <main className="min-w-0 flex-1 overflow-x-hidden p-4 md:p-6">{children}</main>
+          <AdminMain>{children}</AdminMain>
         </div>
+        <AdminTabBar />
       </div>
     </AdminRealtimeProvider>
   );

@@ -26,12 +26,16 @@ export default async function AdminRevenuePage() {
         description="MRR, funnel, SMS metrics from Neon"
       />
 
-      <AdminStatGrid>
-        <AdminStatCard
-          label="MRR"
-          value={`€${analytics.mrrEur.toFixed(0)}`}
-          sub={`ARR €${analytics.arrEur.toFixed(0)}`}
-        />
+      <AdminStatCard
+        variant="hero"
+        tone="accent"
+        label="MRR"
+        value={`€${analytics.mrrEur.toFixed(0)}`}
+        sub={`ARR €${analytics.arrEur.toFixed(0)}`}
+        className="mb-4"
+      />
+
+      <AdminStatGrid className="lg:grid-cols-3">
         <AdminStatCard
           label="Customers"
           value={String(analytics.customerCount)}

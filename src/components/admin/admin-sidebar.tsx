@@ -33,7 +33,7 @@ export function AdminSidebar({ className }: { className?: string }) {
               className={cn(
                 "flex items-center gap-2.5 rounded-2xl px-3 py-2 text-base transition-colors",
                 active
-                  ? "bg-[var(--admin-surface-elevated)] text-[var(--admin-accent)]"
+                  ? "bg-[var(--admin-surface-elevated)] text-[var(--admin-accent)] shadow-[inset_0_0_0_1px_rgba(199,255,61,0.28)]"
                   : "text-[#d0d0d0] hover:bg-[var(--admin-surface-elevated)] hover:text-white",
               )}
             >

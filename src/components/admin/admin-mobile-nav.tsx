@@ -2,17 +2,31 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import { Menu, Search } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Search } from "lucide-react";
 import { AdminBrandMark, AdminWordmark } from "@/components/admin/admin-brand";
 import { ADMIN_NAV_ITEMS, isAdminNavActive } from "@/components/admin/admin-nav-items";
 import { openAdminSearch } from "@/components/admin/command-palette";
 import { Sheet, SheetContent, SheetTitle } from "@/components/admin/ui/sheet";
 import { cn } from "@/lib/utils";
 
+export const ADMIN_MENU_EVENT = "admin-menu-open";
+
+export function openAdminMenu() {
+  window.dispatchEvent(new Event(ADMIN_MENU_EVENT));
+}
+
 export function AdminMobileNav({ className }: { className?: string }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    function onOpen() {
+      setOpen(true);
+    }
+    window.addEventListener(ADMIN_MENU_EVENT, onOpen);
+    return () => window.removeEventListener(ADMIN_MENU_EVENT, onOpen);
+  }, []);
 
   return (
     <div className={cn("flex items-center gap-2 px-3 py-2", className)}>
@@ -28,18 +42,8 @@ export function AdminMobileNav({ className }: { className?: string }) {
         <AdminBrandMark size={32} />
         <AdminWordmark className="text-lg" />
       </Link>
+      <div className="h-11 w-11 shrink-0" aria-hidden />
       <Sheet open={open} onOpenChange={setOpen}>
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          className="flex h-11 shrink-0 items-center gap-2 rounded-full border border-[var(--admin-accent)] bg-[var(--admin-accent)] px-4 text-sm font-semibold text-black touch-manipulation"
-          aria-label="Odpri meni"
-        >
-          <span>Meni</span>
-          <span className="flex size-7 items-center justify-center rounded-full bg-black/15">
-            <Menu className="h-4 w-4" />
-          </span>
-        </button>
         <SheetContent
           side="right"
           className="w-72 max-w-[85vw] bg-black pt-[calc(env(safe-area-inset-top)+0.75rem)]"

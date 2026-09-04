@@ -141,7 +141,7 @@ export function ActionQueue({ initialItems }: { initialItems: QueueItem[] }) {
 
   return (
     <div className="space-y-3">
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2 px-1">
         <label className="flex items-center gap-2 text-sm text-[var(--admin-muted)]">
           <input
             type="checkbox"
@@ -162,64 +162,63 @@ export function ActionQueue({ initialItems }: { initialItems: QueueItem[] }) {
         ) : null}
       </div>
 
-      <div className="rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03]">
-        {items.length === 0 ? (
-          <p className="px-4 py-8 text-center text-base text-[var(--admin-muted)]">
-            Nothing needs action
-          </p>
-        ) : (
-          <ul className="divide-y divide-[var(--admin-border)]">
-            {items.map((item, index) => (
-              <li
-                key={`${item.kind}-${item.slug}`}
-                className={cn(
-                  "flex flex-col gap-2 px-3 py-3 transition-colors sm:flex-row sm:items-center sm:gap-3",
-                  index === selectedIndex && "bg-[var(--admin-surface-elevated)]",
-                )}
-                onMouseEnter={() => setSelectedIndex(index)}
-              >
-                <div className="flex min-w-0 flex-1 items-start gap-3">
-                  <input
-                    type="checkbox"
-                    checked={selectedSlugs.has(item.slug)}
-                    onChange={() => toggleSlug(item.slug)}
-                    className="mt-1 shrink-0"
-                  />
-                  <Badge variant={KIND_VARIANT[item.kind]} className="mt-0.5 shrink-0">
-                    {KIND_LABEL[item.kind]}
-                  </Badge>
-                  <div className="min-w-0 flex-1">
-                    <Link
-                      href={item.href}
-                      className="block break-words text-base font-medium hover:text-[var(--admin-accent)]"
-                    >
-                      {item.companyName}
-                    </Link>
-                    <p className="mt-0.5 break-words text-sm text-[var(--admin-muted)]">
-                      {item.subtitle}
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-wrap items-center gap-2 sm:shrink-0 sm:justify-end">
-                  <a
-                    href={`/${item.slug}`}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex h-8 items-center rounded-full border border-white/25 px-3 text-xs font-semibold text-[var(--admin-accent)] hover:border-[var(--admin-accent)]"
+      {items.length === 0 ? (
+        <p className="rounded-[var(--admin-radius)] border border-white/10 bg-white/[0.03] px-4 py-10 text-center text-base text-[var(--admin-muted)]">
+          Nothing needs action
+        </p>
+      ) : (
+        <ul className="space-y-2">
+          {items.map((item, index) => (
+            <li
+              key={`${item.kind}-${item.slug}`}
+              className={cn(
+                "flex flex-col gap-3 rounded-[var(--admin-radius)] border border-white/10 bg-white/[0.03] px-4 py-4 transition-colors sm:flex-row sm:items-center sm:gap-4",
+                index === selectedIndex &&
+                  "border-white/20 bg-[var(--admin-surface-elevated)]",
+              )}
+              onMouseEnter={() => setSelectedIndex(index)}
+            >
+              <div className="flex min-w-0 flex-1 items-start gap-3">
+                <input
+                  type="checkbox"
+                  checked={selectedSlugs.has(item.slug)}
+                  onChange={() => toggleSlug(item.slug)}
+                  className="mt-1.5 shrink-0"
+                />
+                <Badge variant={KIND_VARIANT[item.kind]} className="mt-0.5 shrink-0">
+                  {KIND_LABEL[item.kind]}
+                </Badge>
+                <div className="min-w-0 flex-1">
+                  <Link
+                    href={item.href}
+                    className="block break-words text-base font-medium hover:text-[var(--admin-accent)]"
                   >
-                    Demo ↗
-                  </a>
-                  <AdminActionDispatcher
-                    slug={item.slug}
-                    actions={item.actions}
-                    layout="inline"
-                  />
+                    {item.companyName}
+                  </Link>
+                  <p className="mt-1 break-words text-sm text-[var(--admin-muted)]">
+                    {item.subtitle}
+                  </p>
                 </div>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-2 sm:shrink-0 sm:justify-end">
+                <a
+                  href={`/${item.slug}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-8 items-center rounded-full border border-white/25 px-3 text-xs font-semibold text-[var(--admin-accent)] hover:border-[var(--admin-accent)]"
+                >
+                  Demo ↗
+                </a>
+                <AdminActionDispatcher
+                  slug={item.slug}
+                  actions={item.actions}
+                  layout="inline"
+                />
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

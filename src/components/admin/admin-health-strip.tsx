@@ -51,20 +51,21 @@ export function AdminHealthStrip({ initial }: { initial: HealthPayload }) {
   const criticalCount = realtime.queueCounts?.publish_failed ?? 0;
 
   return (
-    <div className="border-b border-[var(--admin-border)] bg-[var(--admin-bg)] px-3 py-2 md:px-4">
-      <div className="grid grid-cols-2 gap-x-4 gap-y-2 md:flex md:flex-wrap md:items-center md:gap-x-6 md:gap-y-2">
+    <div className="border-b border-[var(--admin-border)] bg-[var(--admin-bg)] px-3 py-1.5 md:px-4 md:py-2">
+      <div className="flex items-center gap-x-4 overflow-x-auto md:flex-wrap md:gap-x-6 md:gap-y-2">
         {indicators.map((item) => (
-          <StatusIndicator
-            key={item.label}
-            label={item.label}
-            level={item.level}
-            detail={item.detail}
-            pulse={item.pulse}
-            compact
-          />
+          <div key={item.label} className="shrink-0">
+            <StatusIndicator
+              label={item.label}
+              level={item.level}
+              detail={item.detail}
+              pulse={item.pulse}
+              compact
+            />
+          </div>
         ))}
         {criticalCount > 0 ? (
-          <span className="text-sm text-red-400">
+          <span className="shrink-0 text-sm text-red-400">
             ⚠ {criticalCount} publish failed
           </span>
         ) : null}

@@ -49,7 +49,14 @@ export function StatusIndicator({
       <StatusLed level={level} pulse={pulse} />
       <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#d0d0d0]">{label}</span>
       {detail ? (
-        <span className="truncate font-mono text-[var(--admin-foreground)]">{detail}</span>
+        <span
+          className={cn(
+            "truncate font-mono text-[var(--admin-foreground)]",
+            compact && "max-md:hidden",
+          )}
+        >
+          {detail}
+        </span>
       ) : null}
     </div>
   );

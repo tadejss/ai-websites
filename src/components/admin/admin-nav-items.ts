@@ -22,6 +22,13 @@ export const ADMIN_NAV_ITEMS = [
   { href: "/admin/revenue", label: "Revenue", icon: TrendingUp },
 ] as const;
 
+export const ADMIN_TAB_HREFS = [
+  "/admin",
+  "/admin/review",
+  "/admin/leads",
+  "/admin/factory",
+] as const;
+
 export function isAdminNavActive(
   pathname: string,
   href: string,
