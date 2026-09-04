@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 import { getCustomerBySlug } from "@/customers/store";
 import { isAdminAuthorized } from "@/lib/admin-auth";
 import { getOnboardingBySlug } from "@/onboarding/store";
-import { isOnboardingLockedForCustomerEdits } from "@/onboarding/types";
+import { canAdminAttachWebsiteDomain } from "@/onboarding/types";
 import { attachWebsiteDomain } from "@/website-domains/attach";
 import {
   WebsiteDomainCollisionError,
@@ -36,7 +36,7 @@ export async function POST(request: Request, context: RouteContext) {
     return NextResponse.json({ error: "Onboarding not found" }, { status: 404 });
   }
 
-  if (!isOnboardingLockedForCustomerEdits(onboarding.status)) {
+  if (!canAdminAttachWebsiteDomain(onboarding.status)) {
     return NextResponse.json(
       {
         error: "Approve onboarding before connecting a custom domain.",

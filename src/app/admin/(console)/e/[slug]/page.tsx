@@ -6,6 +6,7 @@ import { getQueueNeighbors } from "@/admin/queue";
 import { unifiedStageLabel } from "@/admin/entity";
 import { getOnboardingUrl } from "@/onboarding/store";
 import { listOnboardingImages } from "@/onboarding/images";
+import { canAdminAttachWebsiteDomain } from "@/onboarding/types";
 import { clientSitePath } from "@/leads/client-exists";
 import { getFactoryWorkerConfig } from "@/factory/config";
 import {
@@ -20,7 +21,6 @@ import { OnboardingImageGallery } from "@/components/admin/onboarding-gallery";
 import { AdminActionDispatcher } from "@/components/admin/admin-action-dispatcher";
 import { RunbookPanel } from "@/components/admin/runbook-panel";
 import { EntityJourneyActions } from "@/components/admin/entity-journey-actions";
-import { WebsiteDomainPanel } from "@/components/admin/website-domain-panel";
 
 export const dynamic = "force-dynamic";
 
@@ -317,31 +317,19 @@ export default async function AdminEntityJourneyPage({
                     <OnboardingImageGallery
                       images={listOnboardingImages(entity.onboarding.answers)}
                     />
+                    {canAdminAttachWebsiteDomain(entity.onboarding.status) ? (
+                      <p className="pt-1">
+                        <Link
+                          href={`/admin/domains?slug=${encodeURIComponent(slug)}`}
+                          className="text-sm text-[var(--admin-accent)] hover:underline"
+                        >
+                          Custom URL →
+                        </Link>
+                      </p>
+                    ) : null}
                   </div>
                 ) : (
                   <p className="text-sm text-[var(--admin-muted)]">No onboarding</p>
-                ),
-              },
-              {
-                id: "website_domain",
-                title: "Custom domain",
-                stages: [
-                  "approved_for_publish",
-                  "publishing",
-                  "publish_failed",
-                  "live",
-                ],
-                content: (
-                  <WebsiteDomainPanel
-                    slug={slug}
-                    desiredDomain={
-                      entity.onboarding?.answers?.desiredDomain ??
-                      entity.onboarding?.processedPayload?.siteHints
-                        .desiredDomain ??
-                      null
-                    }
-                    domains={entity.websiteDomains}
-                  />
                 ),
               },
               {

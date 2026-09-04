@@ -37,11 +37,32 @@ export async function loadAdminEntity(slug: string): Promise<AdminEntity | null>
   const smsEnabled = isDatabaseConfigured();
   const isCustomerLead =
     Boolean(lead.customer) || (await isCustomer(slug));
-  const demoLifecycle = smsEnabled ? await getDemoLifecycleBySlug(slug) : null;
-  const onboarding = isCustomerLead ? await getOnboardingBySlug(slug) : null;
-  const smsState = smsEnabled ? await getSmsLeadState(slug) : null;
-  const smsMessages = smsEnabled ? await listSmsMessagesForSlug(slug) : [];
-  const smsInbound = smsEnabled ? await listInboundForSlug(slug) : [];
+
+  const [
+    demoLifecycle,
+    onboarding,
+    smsState,
+    smsMessages,
+    smsInbound,
+    emailBundle,
+    qaLatest,
+    websiteDomains,
+  ] = await Promise.all([
+    smsEnabled ? getDemoLifecycleBySlug(slug) : Promise.resolve(null),
+    isCustomerLead ? getOnboardingBySlug(slug) : Promise.resolve(null),
+    smsEnabled ? getSmsLeadState(slug) : Promise.resolve(null),
+    smsEnabled ? listSmsMessagesForSlug(slug) : Promise.resolve([]),
+    smsEnabled ? listInboundForSlug(slug) : Promise.resolve([]),
+    isCustomerLead
+      ? getEmailServiceWithDomain(slug)
+      : Promise.resolve(null),
+    smsEnabled && clientSiteExists(slug)
+      ? getQaLatestSummary(slug)
+      : Promise.resolve(null),
+    isCustomerLead
+      ? listWebsiteDomainsForSlug(slug)
+      : Promise.resolve([]),
+  ]);
 
   const smsDueStep = smsEnabled
     ? await resolveDueSmsStep(slug, lead.status)
@@ -59,17 +80,6 @@ export async function loadAdminEntity(slug: string): Promise<AdminEntity | null>
   const lastFailed = smsMessages.find((message) => message.status === "failed");
   const onboardingUrl =
     onboarding != null ? getOnboardingUrl(slug, onboarding.accessToken) : null;
-
-  const emailBundle = isCustomerLead
-    ? await getEmailServiceWithDomain(slug)
-    : null;
-  const qaLatest =
-    smsEnabled && clientSiteExists(slug)
-      ? await getQaLatestSummary(slug)
-      : null;
-  const websiteDomains = isCustomerLead
-    ? await listWebsiteDomainsForSlug(slug)
-    : [];
 
   const stage = resolveUnifiedStage({
     isCustomer: isCustomerLead,

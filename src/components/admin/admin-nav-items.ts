@@ -1,6 +1,7 @@
 import {
   ClipboardCheck,
   Factory,
+  Globe,
   Home,
   Kanban,
   LayoutList,
@@ -12,6 +13,7 @@ import {
 export const ADMIN_NAV_ITEMS = [
   { href: "/admin", label: "Home", icon: Home, exact: true },
   { href: "/admin/review", label: "Onboarding", icon: ClipboardCheck },
+  { href: "/admin/domains", label: "Custom URL", icon: Globe },
   { href: "/admin/leads", label: "Leads", icon: LayoutList },
   { href: "/admin/pipeline", label: "Pipeline", icon: Kanban },
   { href: "/admin/sms", label: "SMS", icon: MessageSquare },

@@ -153,15 +153,27 @@ export function canRetryCustomerPublish(status: OnboardingStatus): boolean {
   );
 }
 
+/** Same statuses as customer edit lock — website-domain attach API and admin UI. */
+export const ONBOARDING_WEBSITE_DOMAIN_ADMIN_STATUSES = [
+  "approved_for_publish",
+  "publishing",
+  "publish_failed",
+  "live",
+] as const satisfies readonly OnboardingStatus[];
+
 export function isOnboardingLockedForCustomerEdits(
   status: OnboardingStatus,
 ): boolean {
-  return [
-    "approved_for_publish",
-    "publishing",
-    "publish_failed",
-    "live",
-  ].includes(status);
+  return (ONBOARDING_WEBSITE_DOMAIN_ADMIN_STATUSES as readonly string[]).includes(
+    status,
+  );
+}
+
+/** Admin may connect a custom website domain (attach API gate). */
+export function canAdminAttachWebsiteDomain(
+  status: OnboardingStatus,
+): boolean {
+  return isOnboardingLockedForCustomerEdits(status);
 }
 
 /** Public /{slug} may overlay processed_payload onto git site.json. */

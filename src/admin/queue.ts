@@ -25,7 +25,7 @@ export type QueueItemKind =
   | "onboarding_review"
   | "qa_failed";
 
-export type QueueItem = {
+export type QueueItemCore = {
   slug: string;
   companyName: string;
   kind: QueueItemKind;
@@ -33,6 +33,9 @@ export type QueueItem = {
   subtitle: string;
   updatedAt: string | null;
   href: string;
+};
+
+export type QueueItem = QueueItemCore & {
   actions: AdminAction[];
 };
 
@@ -42,6 +45,28 @@ const SCORE: Record<QueueItemKind, number> = {
   onboarding_review: 800,
   qa_failed: 700,
 };
+
+function sortQueueItems(items: QueueItemCore[]): QueueItemCore[] {
+  return [...items].sort(
+    (a, b) =>
+      b.score - a.score || (b.updatedAt ?? "").localeCompare(a.updatedAt ?? ""),
+  );
+}
+
+export function countQueueKinds(
+  items: QueueItemCore[],
+): Record<QueueItemKind, number> {
+  const counts: Record<QueueItemKind, number> = {
+    publish_failed: 0,
+    stuck_publishing: 0,
+    onboarding_review: 0,
+    qa_failed: 0,
+  };
+  for (const item of items) {
+    counts[item.kind] += 1;
+  }
+  return counts;
+}
 
 export async function getSnoozedSlugs(): Promise<Set<string>> {
   if (!isDatabaseConfigured()) {
@@ -119,9 +144,13 @@ async function buildQueueActions(slug: string): Promise<AdminAction[]> {
   });
 }
 
-export async function getActionQueue(limit = 20): Promise<QueueItem[]> {
+/**
+ * Shared queue membership + ordering (no actions).
+ * Same SQL limits, snooze skip, QA dedup, score sort, and slice as getActionQueue.
+ */
+export async function collectQueueItems(limit = 20): Promise<QueueItemCore[]> {
   const snoozed = await getSnoozedSlugs();
-  const items: QueueItem[] = [];
+  const items: QueueItemCore[] = [];
 
   if (isDatabaseConfigured()) {
     await ensureCustomerSchema();
@@ -155,7 +184,6 @@ export async function getActionQueue(limit = 20): Promise<QueueItem[]> {
             ? row.updated_at.toISOString()
             : new Date(row.updated_at).toISOString(),
         href: `/admin/e/${row.slug}`,
-        actions: await buildQueueActions(row.slug),
       });
     }
 
@@ -182,7 +210,6 @@ export async function getActionQueue(limit = 20): Promise<QueueItem[]> {
             ? row.updated_at.toISOString()
             : new Date(row.updated_at).toISOString(),
         href: `/admin/e/${row.slug}`,
-        actions: await buildQueueActions(row.slug),
       });
     }
 
@@ -212,7 +239,6 @@ export async function getActionQueue(limit = 20): Promise<QueueItem[]> {
             ? row.updated_at.toISOString()
             : new Date(row.updated_at).toISOString(),
         href: `/admin/e/${row.slug}`,
-        actions: await buildQueueActions(row.slug),
       });
     }
   }
@@ -233,27 +259,24 @@ export async function getActionQueue(limit = 20): Promise<QueueItem[]> {
           : (row.lastError?.slice(0, 80) ?? "QA run failed"),
       updatedAt: row.updatedAt,
       href: `/admin/e/${row.slug}`,
-      actions: await buildQueueActions(row.slug),
     });
   }
 
-  return items
-    .sort((a, b) => b.score - a.score || (b.updatedAt ?? "").localeCompare(a.updatedAt ?? ""))
-    .slice(0, limit);
+  return sortQueueItems(items).slice(0, limit);
+}
+
+export async function getActionQueue(limit = 20): Promise<QueueItem[]> {
+  const items = await collectQueueItems(limit);
+  return Promise.all(
+    items.map(async (item) => ({
+      ...item,
+      actions: await buildQueueActions(item.slug),
+    })),
+  );
 }
 
 export async function getQueueCounts(): Promise<Record<QueueItemKind, number>> {
-  const queue = await getActionQueue(200);
-  const counts: Record<QueueItemKind, number> = {
-    publish_failed: 0,
-    stuck_publishing: 0,
-    onboarding_review: 0,
-    qa_failed: 0,
-  };
-  for (const item of queue) {
-    counts[item.kind] += 1;
-  }
-  return counts;
+  return countQueueKinds(await collectQueueItems(200));
 }
 
 export async function getQueueNeighbors(slug: string): Promise<{
@@ -262,7 +285,7 @@ export async function getQueueNeighbors(slug: string): Promise<{
   index: number;
   total: number;
 }> {
-  const queue = await getActionQueue(200);
+  const queue = await collectQueueItems(200);
   const index = queue.findIndex((item) => item.slug === slug);
   if (index < 0) {
     return { prev: null, next: null, index: -1, total: queue.length };
