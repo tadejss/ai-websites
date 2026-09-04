@@ -34,13 +34,13 @@ export default async function AdminReviewPage() {
         title="Rapid onboarding review"
         description={`${reviewItems.length} waiting for approval`}
         actions={
-          <Link href="/admin" className="text-xs text-cyan-400 hover:underline">
+          <Link href="/admin" className="text-xs text-[var(--admin-accent)] hover:underline">
             ← Queue
           </Link>
         }
       />
       {enriched.length === 0 ? (
-        <p className="rounded-lg border border-[var(--admin-border)] px-4 py-8 text-center text-sm text-[var(--admin-muted)]">
+        <p className="rounded-[var(--admin-radius)] border border-[var(--admin-border)] px-4 py-8 text-center text-sm text-[var(--admin-muted)]">
           No onboarding waiting for review
         </p>
       ) : (

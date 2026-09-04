@@ -1,9 +1,10 @@
-import { getFactoryOpsSnapshot } from "@/factory/ops-snapshot";
+import {
+  getFactoryOpsSnapshot,
+  type FactoryOpsSnapshot,
+} from "@/factory/ops-snapshot";
 import type { HealthPayload } from "@/components/admin/admin-health-strip";
 
-function workerLevel(
-  snapshot: Awaited<ReturnType<typeof getFactoryOpsSnapshot>>,
-): HealthPayload["factory"] {
+function workerLevel(snapshot: FactoryOpsSnapshot): HealthPayload["factory"] {
   if (!snapshot.databaseConfigured) {
     return { level: "idle", detail: "no DB" };
   }
@@ -25,13 +26,11 @@ function workerLevel(
   return { level: "ok", detail: "idle" };
 }
 
-export async function getAdminHealthPayload(): Promise<HealthPayload> {
-  const snapshot = await getFactoryOpsSnapshot();
-
+export function healthPayloadFromSnapshot(
+  snapshot: FactoryOpsSnapshot,
+): HealthPayload {
   const smsLevel: HealthPayload["sms"]["level"] =
-    snapshot.sms.sentToday >= snapshot.sms.dailyLimit
-      ? "warning"
-      : "ok";
+    snapshot.sms.sentToday >= snapshot.sms.dailyLimit ? "warning" : "ok";
 
   const gatewayLevel: HealthPayload["gateway"]["level"] =
     snapshot.sms.gatewayConfigured ? "ok" : "failed";
@@ -61,4 +60,8 @@ export async function getAdminHealthPayload(): Promise<HealthPayload> {
     },
     dispatch: { level: dispatchLevel, detail: dispatchDetail },
   };
+}
+
+export async function getAdminHealthPayload(): Promise<HealthPayload> {
+  return healthPayloadFromSnapshot(await getFactoryOpsSnapshot());
 }

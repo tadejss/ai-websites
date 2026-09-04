@@ -1,21 +1,32 @@
 @import "tailwindcss";
 
 [data-admin-theme] {
-  --admin-bg: #0a0a0b;
-  --admin-surface: #111113;
-  --admin-surface-elevated: #1a1a1e;
-  --admin-border: rgba(255, 255, 255, 0.08);
-  --admin-foreground: #f4f4f5;
-  --admin-muted: #71717a;
+  --admin-bg: #000000;
+  --admin-surface: #111111;
+  --admin-surface-elevated: #1a1a1a;
+  --admin-border: rgba(255, 255, 255, 0.14);
+  --admin-foreground: #ffffff;
+  --admin-muted: #9a9a9a;
+  --admin-accent: #c7ff3d;
+  --admin-accent-hover: #b8eb35;
+  --admin-accent-foreground: #000000;
+  --admin-radius: 1rem;
   color-scheme: dark;
-}
-
-[data-admin-theme] {
   background: var(--admin-bg);
   color: var(--admin-foreground);
   min-height: 100vh;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  font-family: var(--font-inter), var(--font-geist-sans), system-ui, sans-serif;
+  accent-color: var(--admin-accent);
+}
+
+[data-admin-theme] .font-display,
+[data-admin-theme] h1,
+[data-admin-theme] h2 {
+  font-family: var(--font-oswald), var(--font-inter), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 
 @media (max-width: 767px) {

@@ -5,6 +5,7 @@ import {
   isQaRunStatus,
   isQaTrigger,
   type QaLatestSummary,
+  type QaListSummary,
   type QaPolicyStatus,
   type QaResult,
   type QaRunRecord,
@@ -306,6 +307,86 @@ export async function getQaLatestSummary(
   };
 }
 
+export async function getQaLatestBySlugs(
+  slugs: string[],
+): Promise<Map<string, QaListSummary>> {
+  const result = new Map<string, QaListSummary>();
+  if (!isDatabaseConfigured() || slugs.length === 0) {
+    return result;
+  }
+  const db = await requireDb();
+  const rows = (await db`
+    SELECT DISTINCT ON (slug)
+      slug, run_status, policy_status, score
+    FROM qa_runs
+    WHERE slug = ANY(${slugs})
+    ORDER BY slug, created_at DESC
+  `) as Array<{
+    slug: string;
+    run_status: string;
+    policy_status: string | null;
+    score: number | string | null;
+  }>;
+
+  for (const row of rows) {
+    result.set(row.slug, {
+      slug: row.slug,
+      runStatus: isQaRunStatus(row.run_status) ? row.run_status : "failed",
+      policyStatus:
+        row.policy_status && isQaPolicyStatus(row.policy_status)
+          ? row.policy_status
+          : null,
+      score: row.score != null ? Number(row.score) : null,
+    });
+  }
+  return result;
+}
+
+export async function listFailedQaLatest(limit: number): Promise<
+  Array<{
+    slug: string;
+    runStatus: QaRunStatus;
+    policyStatus: QaPolicyStatus | null;
+    lastError: string | null;
+    updatedAt: string;
+  }>
+> {
+  if (!isDatabaseConfigured()) {
+    return [];
+  }
+  const db = await requireDb();
+  const rows = (await db`
+    SELECT * FROM (
+      SELECT DISTINCT ON (slug)
+        slug, run_status, policy_status, last_error, created_at, completed_at
+      FROM qa_runs
+      WHERE run_status = 'failed'
+         OR (run_status = 'completed' AND policy_status = 'fail')
+      ORDER BY slug, created_at DESC
+    ) latest
+    ORDER BY COALESCE(completed_at, created_at) DESC
+    LIMIT ${limit}
+  `) as Array<{
+    slug: string;
+    run_status: string;
+    policy_status: string | null;
+    last_error: string | null;
+    created_at: Date | string;
+    completed_at: Date | string | null;
+  }>;
+
+  return rows.map((row) => ({
+    slug: row.slug,
+    runStatus: isQaRunStatus(row.run_status) ? row.run_status : "failed",
+    policyStatus:
+      row.policy_status && isQaPolicyStatus(row.policy_status)
+        ? row.policy_status
+        : null,
+    lastError: row.last_error,
+    updatedAt: toIso(row.completed_at ?? row.created_at) ?? new Date().toISOString(),
+  }));
+}
+
 export async function countQaRunsByStatus(): Promise<{
   pending: number;
   failed: number;
@@ -340,4 +421,4 @@ export function shouldSkipAutomaticQa(input: {
   return input.completedHash === input.contentHash;
 }
 
-export type { QaPolicyStatus };
+export type { QaPolicyStatus, QaListSummary };

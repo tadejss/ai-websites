@@ -2,30 +2,30 @@ import type { MetadataRoute } from "next";
 
 export function getAdminManifest(): MetadataRoute.Manifest {
   return {
-    name: "Website Factory Ops",
-    short_name: "Factory Ops",
-    description: "Ops console for zbrendiraj.si website factory",
+    name: "Zbrendiraj",
+    short_name: "Zbrendiraj",
+    description: "Ops console for zbrendiraj.si",
     start_url: "/admin",
     scope: "/admin",
     display: "standalone",
-    background_color: "#0a0a0b",
-    theme_color: "#0a0a0b",
+    background_color: "#000000",
+    theme_color: "#000000",
     orientation: "portrait-primary",
     icons: [
       {
-        src: "/admin/icon-192.png",
+        src: "/brand/zbrendiraj-si/icon.png",
         sizes: "192x192",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: "/admin/icon-512.png",
+        src: "/brand/zbrendiraj-si/icon.png",
         sizes: "512x512",
         type: "image/png",
         purpose: "any",
       },
       {
-        src: "/admin/icon-512.png",
+        src: "/brand/zbrendiraj-si/icon.png",
         sizes: "512x512",
         type: "image/png",
         purpose: "maskable",

@@ -40,8 +40,8 @@ export function EntityJourneyActions({
     <>
       <div
         className={cn(
-          "z-20 mb-6 flex flex-wrap gap-2 rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)] p-3",
-          "max-md:fixed max-md:inset-x-0 max-md:bottom-[calc(4rem+env(safe-area-inset-bottom))] max-md:mb-0 max-md:rounded-none max-md:border-x-0 max-md:border-b-0",
+          "z-20 mb-6 flex flex-wrap gap-2 rounded-[var(--admin-radius)] border border-white/15 bg-black/90 p-3 backdrop-blur-md",
+          "max-md:fixed max-md:inset-x-0 max-md:bottom-0 max-md:mb-0 max-md:rounded-none max-md:border-x-0 max-md:border-b-0 max-md:pb-[env(safe-area-inset-bottom)]",
           "md:sticky md:top-0",
         )}
       >

@@ -58,7 +58,7 @@ export function OnboardingDiffView({
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="text-xs text-cyan-400 hover:underline"
+        className="text-xs text-[var(--admin-accent)] hover:underline"
       >
         {open ? "Hide" : "Show"} diff ({lines.length} fields)
       </button>

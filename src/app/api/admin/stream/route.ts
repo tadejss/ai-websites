@@ -1,12 +1,14 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { ADMIN_COOKIE, isValidAdminToken, readBearerToken } from "@/lib/auth";
-import { getAdminHealthPayload } from "@/admin/health";
+import { healthPayloadFromSnapshot } from "@/admin/health";
 import { getQueueCounts } from "@/admin/queue";
-import { getFactoryOpsSnapshot } from "@/factory/ops-snapshot";
+import { loadFactoryOpsSnapshot } from "@/factory/ops-snapshot";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
+const STREAM_INTERVAL_MS = 30_000;
 
 async function isAuthorized(request: Request): Promise<boolean> {
   const bearer = readBearerToken(request.headers.get("authorization"));
@@ -30,14 +32,13 @@ export async function GET(request: Request) {
       async function push() {
         if (closed) return;
         try {
-          const [health, queueCounts, snapshot] = await Promise.all([
-            getAdminHealthPayload(),
+          const [snapshot, queueCounts] = await Promise.all([
+            loadFactoryOpsSnapshot(),
             getQueueCounts(),
-            getFactoryOpsSnapshot(),
           ]);
           const payload = {
             type: "health_update",
-            health,
+            health: healthPayloadFromSnapshot(snapshot),
             queueCounts,
             critical:
               queueCounts.publish_failed > 0 ||
@@ -54,7 +55,7 @@ export async function GET(request: Request) {
       }
 
       await push();
-      const interval = setInterval(() => void push(), 5000);
+      const interval = setInterval(() => void push(), STREAM_INTERVAL_MS);
 
       request.signal.addEventListener("abort", () => {
         closed = true;

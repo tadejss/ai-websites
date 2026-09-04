@@ -50,7 +50,7 @@ export default async function AdminCatalogPage({ searchParams }: Props) {
       <div className="mb-6 flex flex-wrap gap-2">
         <Link
           href="/admin/catalog"
-          className={`rounded-full border px-3 py-1 text-xs ${!activeCategory ? "border-cyan-500/50 bg-cyan-500/10 text-cyan-300" : "border-[var(--admin-border)] text-[var(--admin-muted)] hover:text-[var(--admin-foreground)]"}`}
+          className={`rounded-full border px-3 py-1 text-xs ${!activeCategory ? "border-[var(--admin-accent)]/50 bg-[var(--admin-accent)]/10 text-[var(--admin-accent)]" : "border-[var(--admin-border)] text-[var(--admin-muted)] hover:text-[var(--admin-foreground)]"}`}
         >
           Vse
         </Link>
@@ -58,7 +58,7 @@ export default async function AdminCatalogPage({ searchParams }: Props) {
           <Link
             key={categoryId}
             href={`/admin/catalog?category=${categoryId}`}
-            className={`rounded-full border px-3 py-1 text-xs ${activeCategory === categoryId ? "border-cyan-500/50 bg-cyan-500/10 text-cyan-300" : "border-[var(--admin-border)] text-[var(--admin-muted)] hover:text-[var(--admin-foreground)]"}`}
+            className={`rounded-full border px-3 py-1 text-xs ${activeCategory === categoryId ? "border-[var(--admin-accent)]/50 bg-[var(--admin-accent)]/10 text-[var(--admin-accent)]" : "border-[var(--admin-border)] text-[var(--admin-muted)] hover:text-[var(--admin-foreground)]"}`}
           >
             {categoryId}
           </Link>

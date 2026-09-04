@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { isDatabaseConfigured } from "@/db/client";
 import { getDemoLifecycleOpsAggregates } from "@/demo-lifecycle/ops-aggregates";
 import { getReplenishStatus } from "@/leads/replenish-status";
@@ -147,8 +148,8 @@ function buildHealthInput(
       activeLeases: snapshot.customerPublish.activeLeases,
       queuedForPublish: snapshot.customerPublish.queuedForPublish,
     },
-    demoLifecycle: {
-      publishedNeverViewed: snapshot.demoLifecycle.publishedNeverViewed,
+    grokQa: {
+      failed: snapshot.grokQa.failed,
     },
     sms: {
       gatewayConfigured: snapshot.sms.gatewayConfigured,
@@ -158,7 +159,7 @@ function buildHealthInput(
   };
 }
 
-export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
+export async function loadFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
   const fetchedAt = new Date().toISOString();
   const databaseConfigured = isDatabaseConfigured();
   const config = getFactoryWorkerConfig();
@@ -361,3 +362,5 @@ export async function getFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
     health: evaluateFactoryOpsHealth(buildHealthInput(partial)),
   };
 }
+
+export const getFactoryOpsSnapshot = cache(loadFactoryOpsSnapshot);

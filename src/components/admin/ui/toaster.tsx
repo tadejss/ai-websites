@@ -10,9 +10,9 @@ export function AdminToaster() {
       toastOptions={{
         classNames: {
           toast:
-            "border border-[var(--admin-border)] bg-[var(--admin-surface)] text-[var(--admin-foreground)]",
+            "rounded-[var(--admin-radius)] border border-white/15 bg-[var(--admin-surface)] text-[var(--admin-foreground)]",
           description: "text-[var(--admin-muted)]",
-          actionButton: "bg-cyan-600 text-white",
+          actionButton: "bg-[var(--admin-accent)] text-black",
           cancelButton: "bg-[var(--admin-surface-elevated)]",
         },
       }}

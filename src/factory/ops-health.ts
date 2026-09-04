@@ -40,8 +40,8 @@ export type FactoryOpsHealthInput = {
     activeLeases: number;
     queuedForPublish: number;
   };
-  demoLifecycle: {
-    publishedNeverViewed: number;
+  grokQa: {
+    failed: number;
   };
   sms: {
     gatewayConfigured: boolean;
@@ -85,35 +85,13 @@ export function evaluateFactoryOpsHealth(
     return { level, issues };
   }
 
-  if (!input.factoryEnabled) {
+  if (input.replenish.needed > 0 && input.dispatchEnabled && !input.dispatchReady) {
     add({
       level: "warning",
-      code: "factory_worker_disabled",
-      message: "Factory worker is disabled (FACTORY_WORKER_ENABLED=false).",
+      code: "dispatch_not_ready",
+      message:
+        "Automatic replenishment is enabled but GitHub dispatch is not configured (FACTORY_GITHUB_REPO / FACTORY_GITHUB_TOKEN).",
     });
-  }
-
-  if (input.replenish.needed > 0) {
-    if (!input.dispatchEnabled) {
-      add({
-        level: "warning",
-        code: "dispatch_disabled_backlog",
-        message: `Lead backlog needs ${input.replenish.needed} more demos, but automatic replenishment is disabled (FACTORY_DISPATCH_ENABLED=false).`,
-      });
-    } else if (!input.dispatchReady) {
-      add({
-        level: "warning",
-        code: "dispatch_not_ready",
-        message:
-          "Automatic replenishment is enabled but GitHub dispatch is not configured (FACTORY_GITHUB_REPO / FACTORY_GITHUB_TOKEN).",
-      });
-    } else {
-      add({
-        level: "warning",
-        code: "backlog_gap",
-        message: `Lead backlog needs ${input.replenish.needed} more demos to reach target.`,
-      });
-    }
   }
 
   if (input.worker.lastRunStatus === "failed") {
@@ -132,12 +110,6 @@ export function evaluateFactoryOpsHealth(
       code: "circuit_open",
       message: `Factory worker circuit is open after ${input.worker.consecutiveFailures} consecutive failures.`,
     });
-  } else if (input.worker.cooldownActive) {
-    add({
-      level: "warning",
-      code: "cooldown_active",
-      message: "Factory worker cooldown is active after a recent failure.",
-    });
   }
 
   if (
@@ -151,18 +123,6 @@ export function evaluateFactoryOpsHealth(
       level: "failed",
       code: "worker_lease_stuck",
       message: `Factory worker lease expired but still present (status: ${input.worker.activeLease.status}).`,
-    });
-  } else if (
-    input.worker.activeLease &&
-    !input.worker.activeLease.isExpired &&
-    input.worker.activeLease.status !== "published" &&
-    input.worker.activeLease.status !== "failed" &&
-    input.worker.activeLease.status !== "skipped"
-  ) {
-    add({
-      level: "warning",
-      code: "worker_lease_active",
-      message: `Factory worker lease is active (status: ${input.worker.activeLease.status}).`,
     });
   }
 
@@ -198,14 +158,6 @@ export function evaluateFactoryOpsHealth(
     });
   }
 
-  if (input.customerPublish.queuedForPublish > 0) {
-    add({
-      level: "warning",
-      code: "customer_publish_queued",
-      message: `${input.customerPublish.queuedForPublish} customer site(s) approved and waiting to publish.`,
-    });
-  }
-
   if (
     input.sms.gatewayConfigured &&
     input.sms.queueStaleHours !== null &&
@@ -218,22 +170,11 @@ export function evaluateFactoryOpsHealth(
     });
   }
 
-  if (
-    input.demoLifecycle.publishedNeverViewed > 0 &&
-    input.replenish.needed === 0
-  ) {
+  if (input.grokQa.failed > 0) {
     add({
       level: "warning",
-      code: "published_never_viewed",
-      message: `${input.demoLifecycle.publishedNeverViewed} published demo(s) have never been viewed.`,
-    });
-  }
-
-  if (!input.publishEnabled) {
-    add({
-      level: "warning",
-      code: "factory_publish_disabled",
-      message: "Factory git publish is disabled (FACTORY_PUBLISH_ENABLED=false).",
+      code: "grok_qa_failed",
+      message: `${input.grokQa.failed} Grok QA run(s) failed.`,
     });
   }
 

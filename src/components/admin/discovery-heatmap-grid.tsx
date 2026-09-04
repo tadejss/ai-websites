@@ -46,7 +46,7 @@ export function DiscoveryHeatmapGrid({ cells }: { cells: HeatmapCell[] }) {
           <span className="h-2 w-2 rounded-sm bg-emerald-500/80" /> completed
         </span>
         <span className="flex items-center gap-1">
-          <span className="h-2 w-2 animate-pulse rounded-sm bg-cyan-500/80" /> active
+          <span className="h-2 w-2 animate-pulse rounded-sm bg-[var(--admin-accent)]/80" /> active
         </span>
         <span className="flex items-center gap-1">
           <span className="h-2 w-2 rounded-sm bg-zinc-700" /> pending
@@ -87,7 +87,7 @@ function RegionRow({
                 className={cn(
                   "h-2.5 w-2.5 rounded-sm",
                   status === "completed" && "bg-emerald-500/80",
-                  status === "active" && "animate-pulse bg-cyan-500/80",
+                  status === "active" && "animate-pulse bg-[var(--admin-accent)]/80",
                   status === "pending" && "bg-zinc-700",
                 )}
               />

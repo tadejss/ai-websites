@@ -5,28 +5,29 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
+  themeColor: "#000000",
 };
 
 export const metadata: Metadata = {
   title: {
-    default: "Website Factory Ops",
-    template: "%s · Factory Ops",
+    default: "Zbrendiraj",
+    template: "%s · Zbrendiraj",
   },
-  description: "Ops console for zbrendiraj.si website factory",
-  applicationName: "Factory Ops",
+  description: "Ops console for zbrendiraj.si",
+  applicationName: "Zbrendiraj",
   appleWebApp: {
     capable: true,
-    statusBarStyle: "black-translucent",
-    title: "Factory Ops",
+    statusBarStyle: "black",
+    title: "Zbrendiraj",
   },
-  themeColor: "#0a0a0b",
   manifest: "/admin/manifest.webmanifest",
   icons: {
     icon: [
+      { url: "/brand/zbrendiraj-si/icon.png", type: "image/png" },
       { url: "/admin/icon-192.png", sizes: "192x192", type: "image/png" },
       { url: "/admin/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
-    apple: [{ url: "/admin/icon-192.png", sizes: "192x192", type: "image/png" }],
+    apple: [{ url: "/brand/zbrendiraj-si/icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 

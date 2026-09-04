@@ -50,7 +50,7 @@ export function EntityTimelineV2({ events }: { events: TimelineEvent[] }) {
             {dayEvents.map((event) => (
               <li
                 key={event.id}
-                className="flex gap-3 rounded-md border border-[var(--admin-border)] px-3 py-2"
+                className="flex gap-3 rounded-2xl border border-white/15 px-3 py-2"
               >
                 <span className="text-sm">
                   {KIND_ICON[event.kind] ?? KIND_ICON.default}

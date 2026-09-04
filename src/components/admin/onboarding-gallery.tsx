@@ -34,7 +34,7 @@ function GalleryThumbnail({
       <button
         type="button"
         onClick={onOpen}
-        className="flex aspect-square w-full flex-col items-center justify-center rounded-lg border border-red-200 bg-red-50 p-2 text-center text-xs text-red-700"
+        className="flex aspect-square w-full flex-col items-center justify-center rounded-[var(--admin-radius)] border border-red-500/30 bg-red-500/10 p-2 text-center text-xs text-red-300"
       >
         <span className="font-medium">Slika ni na voljo</span>
         <span className="mt-1 line-clamp-2 break-all text-[10px]">{label}</span>
@@ -46,7 +46,7 @@ function GalleryThumbnail({
     <button
       type="button"
       onClick={onOpen}
-      className="group relative overflow-hidden rounded-lg border border-neutral-200 bg-neutral-50 text-left"
+      className="group relative overflow-hidden rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] text-left"
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -69,7 +69,7 @@ export function OnboardingImageGallery({ images }: Props) {
 
   if (images.length === 0) {
     return (
-      <p className="text-sm text-neutral-500">Ni uploadanih slik.</p>
+      <p className="text-sm text-[var(--admin-muted)]">Ni uploadanih slik.</p>
     );
   }
 
@@ -100,7 +100,7 @@ export function OnboardingImageGallery({ images }: Props) {
           role="presentation"
         >
           <div
-            className="relative max-h-[90vh] max-w-4xl overflow-hidden rounded-lg bg-white shadow-xl"
+            className="relative max-h-[90vh] max-w-4xl overflow-hidden rounded-[var(--admin-radius)] border border-white/15 bg-black shadow-xl"
             onClick={(event) => event.stopPropagation()}
             role="dialog"
             aria-modal="true"
@@ -115,15 +115,15 @@ export function OnboardingImageGallery({ images }: Props) {
             </button>
             {lightboxFailed ? (
               <div className="flex min-h-[240px] min-w-[320px] flex-col items-center justify-center p-8 text-center">
-                <p className="font-medium text-red-700">Slika ni na voljo</p>
-                <p className="mt-2 text-sm text-neutral-600 break-all">
+                <p className="font-medium text-red-300">Slika ni na voljo</p>
+                <p className="mt-2 text-sm text-[var(--admin-muted)] break-all">
                   {imageLabel(lightbox)}
                 </p>
                 <a
                   href={lightbox.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-4 text-sm text-blue-700 hover:underline"
+                  className="mt-4 text-sm text-[var(--admin-accent)] hover:underline"
                 >
                   Odpri URL
                 </a>
@@ -137,7 +137,7 @@ export function OnboardingImageGallery({ images }: Props) {
                   className="max-h-[85vh] max-w-full object-contain"
                   onError={() => setLightboxFailed(true)}
                 />
-                <div className="border-t border-neutral-200 px-4 py-3 text-sm text-neutral-700">
+                <div className="border-t border-white/15 px-4 py-3 text-sm text-[#d0d0d0]">
                   <span className="font-medium">
                     {lightbox.kind === "logo" ? "Logo" : "Fotografija"}
                   </span>

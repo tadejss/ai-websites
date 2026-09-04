@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { ADMIN_COOKIE, getAdminSecret, isValidAdminToken } from "@/lib/auth";
+import { AdminBrandMark, AdminWordmark } from "@/components/admin/admin-brand";
 import { Button } from "@/components/admin/ui/button";
 import { Card, CardContent } from "@/components/admin/ui/card";
 
@@ -38,12 +39,17 @@ export default async function AdminLoginPage({
   return (
     <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-4 py-12 sm:px-6">
       <div className="mb-8">
-        <p className="text-[10px] uppercase tracking-widest text-[var(--admin-muted)]">
-          Ops Console
+        <div className="mb-5 flex items-center gap-3">
+          <AdminBrandMark size={44} />
+          <AdminWordmark className="text-2xl" />
+        </div>
+        <p className="inline-flex items-center gap-2 text-[14px] font-semibold uppercase tracking-[0.25em] text-[var(--admin-accent)]">
+          <span className="size-1.5 rounded-full bg-[var(--admin-accent)]" aria-hidden="true" />
+          Ops console
         </p>
-        <h1 className="mt-1 text-2xl font-semibold">Admin login</h1>
-        <p className="mt-2 text-sm text-[var(--admin-muted)]">
-          Enter the admin secret to access the factory console.
+        <h1 className="mt-2 text-3xl">Prijava</h1>
+        <p className="mt-2 text-base text-[var(--admin-muted)]">
+          Vnesi admin geslo za tovarno strani.
         </p>
       </div>
 
@@ -52,22 +58,24 @@ export default async function AdminLoginPage({
           <form action={loginAction} className="space-y-4">
             <input type="hidden" name="next" value={next} />
             <label className="block text-sm">
-              <span className="text-[var(--admin-muted)]">Password</span>
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#d0d0d0]">
+                Geslo
+              </span>
               <input
                 type="password"
                 name="password"
                 required
                 autoComplete="current-password"
-                className="mt-1 w-full min-h-[44px] rounded-md border border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] px-3 py-2 text-base text-[var(--admin-foreground)] outline-none focus:ring-2 focus:ring-cyan-500/40 touch-manipulation"
+                className="mt-1.5 w-full min-h-11 rounded-2xl border border-white/20 bg-black px-4 text-base text-white outline-none transition-colors placeholder:text-[#9a9a9a] focus:border-[var(--admin-accent)] touch-manipulation"
               />
             </label>
 
             {error ? (
-              <p className="text-sm text-red-400">Invalid password.</p>
+              <p className="text-sm text-red-400">Napačno geslo.</p>
             ) : null}
 
-            <Button type="submit" className="h-11 w-full touch-manipulation">
-              Sign in
+            <Button type="submit" className="h-12 w-full touch-manipulation">
+              Vstopi
             </Button>
           </form>
         </CardContent>

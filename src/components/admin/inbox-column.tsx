@@ -19,7 +19,7 @@ export function InboxColumn({
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <span>{title}</span>
-          <span className="rounded-full bg-[var(--admin-surface-elevated)] px-2 py-0.5 text-xs font-mono tabular-nums text-cyan-400">
+          <span className="rounded-full bg-[var(--admin-surface-elevated)] px-2 py-0.5 text-xs font-mono tabular-nums text-[var(--admin-accent)]">
             {count}
           </span>
         </CardTitle>

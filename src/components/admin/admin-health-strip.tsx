@@ -64,7 +64,7 @@ export function AdminHealthStrip({ initial }: { initial: HealthPayload }) {
           />
         ))}
         {criticalCount > 0 ? (
-          <span className="text-xs text-red-400">
+          <span className="text-sm text-red-400">
             ⚠ {criticalCount} publish failed
           </span>
         ) : null}

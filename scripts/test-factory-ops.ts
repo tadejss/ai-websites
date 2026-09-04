@@ -41,7 +41,7 @@ function baseInput(
       activeLeases: 0,
       queuedForPublish: 0,
     },
-    demoLifecycle: { publishedNeverViewed: 0 },
+    grokQa: { failed: 0 },
     sms: {
       gatewayConfigured: true,
       queueStaleHours: null,
@@ -57,21 +57,17 @@ function testHealthyBaseline(): void {
   ok("healthy baseline has no issues", health.issues.length === 0);
 }
 
-function testDispatchDisabledBacklogIsWarning(): void {
+function testDispatchDisabledBacklogIsNotWarning(): void {
   const health = evaluateFactoryOpsHealth(
     baseInput({
       dispatchEnabled: false,
       replenish: { actionable: 100, target: 500, needed: 400 },
     }),
   );
-  ok("dispatch disabled backlog is warning", health.level === "warning");
+  ok("dispatch disabled backlog is not a health warning", health.level === "ok");
   ok(
-    "dispatch disabled backlog code",
-    health.issues.some((issue) => issue.code === "dispatch_disabled_backlog"),
-  );
-  ok(
-    "dispatch disabled backlog is not failed",
-    !health.issues.some((issue) => issue.level === "failed"),
+    "dispatch disabled backlog has no issue code",
+    !health.issues.some((issue) => issue.code === "dispatch_disabled_backlog"),
   );
 }
 
@@ -158,10 +154,10 @@ function testBacklogWithDispatchEnabled(): void {
       dispatchReady: true,
     }),
   );
-  ok("backlog with dispatch enabled is warning", health.level === "warning");
+  ok("backlog with dispatch enabled is not a warning", health.level === "ok");
   ok(
-    "backlog gap code",
-    health.issues.some((issue) => issue.code === "backlog_gap"),
+    "no backlog gap code",
+    !health.issues.some((issue) => issue.code === "backlog_gap"),
   );
 }
 
@@ -219,11 +215,52 @@ function testQueuedForPublish(): void {
       },
     }),
   );
-  ok("queued for publish is warning", health.level === "warning");
+  ok("queued for publish is not a warning", health.level === "ok");
+}
+
+function testNeverViewedDoesNotWarn(): void {
+  const health = evaluateFactoryOpsHealth(
+    baseInput({
+      replenish: { actionable: 500, target: 500, needed: 0 },
+    }),
+  );
+  ok("never viewed is not a health warning", health.level === "ok");
+  ok(
+    "no published_never_viewed code",
+    !health.issues.some((issue) => issue.code === "published_never_viewed"),
+  );
+}
+
+function testGrokQaFailedWarns(): void {
+  const health = evaluateFactoryOpsHealth(
+    baseInput({
+      grokQa: { failed: 3 },
+    }),
+  );
+  ok("grok qa failed is warning", health.level === "warning");
+  ok(
+    "grok_qa_failed code",
+    health.issues.some((issue) => issue.code === "grok_qa_failed"),
+  );
+}
+
+function testDispatchNotReadyWarns(): void {
+  const health = evaluateFactoryOpsHealth(
+    baseInput({
+      replenish: { actionable: 100, target: 500, needed: 50 },
+      dispatchEnabled: true,
+      dispatchReady: false,
+    }),
+  );
+  ok("dispatch not ready is warning", health.level === "warning");
+  ok(
+    "dispatch_not_ready code",
+    health.issues.some((issue) => issue.code === "dispatch_not_ready"),
+  );
 }
 
 testHealthyBaseline();
-testDispatchDisabledBacklogIsWarning();
+testDispatchDisabledBacklogIsNotWarning();
 testBacklogWithDispatchEnabled();
 testLastRunFailed();
 testCircuitOpen();
@@ -233,6 +270,9 @@ testDatabaseNotConfigured();
 testCustomerPublishFailed();
 testStuckExpiredLease();
 testQueuedForPublish();
+testNeverViewedDoesNotWarn();
+testGrokQaFailedWarns();
+testDispatchNotReadyWarns();
 testExpiredFailedLocksDoNotWarn();
 testActionableFailedLocksWarn();
 

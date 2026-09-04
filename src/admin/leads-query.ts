@@ -11,7 +11,7 @@ import {
   getDemoLifecycleBySlugs,
 } from "@/demo-lifecycle/store";
 import { readAllLeads, readLead } from "@/leads/store";
-import { listSmsLeadStates } from "@/outreach/sms/store";
+import { listSmsLeadStatesBySlugs } from "@/outreach/sms/store";
 import {
   queryEntityIndex,
   searchEntityIndex,
@@ -55,12 +55,10 @@ async function enrichIndexRows(
     lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
   }
 
-  const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
-  const smsBySlug = new Map(
-    smsStates
-      .filter((state) => slugs.includes(state.slug))
-      .map((state) => [state.slug, state]),
-  );
+  const smsStates = isDatabaseConfigured()
+    ? await listSmsLeadStatesBySlugs(slugs)
+    : [];
+  const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
 
   const allRows = buildAdminLeadRows(
     leads,
@@ -76,7 +74,7 @@ async function queryAdminLeadsLegacy(
   query: AdminLeadsQuery,
 ): Promise<AdminLeadsPageResult> {
   const page = Math.max(1, query.page ?? 1);
-  const pageSize = Math.min(100, Math.max(10, query.pageSize ?? 50));
+  const pageSize = Math.min(100, Math.max(10, query.pageSize ?? 20));
   const pipeline = query.pipeline ?? "actionable";
   const filters: AdminLeadListFilters = {
     pipeline,
@@ -97,7 +95,9 @@ async function queryAdminLeadsLegacy(
     lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
   }
 
-  const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
+  const smsStates = isDatabaseConfigured()
+    ? await listSmsLeadStatesBySlugs(slugs)
+    : [];
   const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
 
   const allRows = buildAdminLeadRows(
@@ -160,7 +160,7 @@ export async function queryAdminLeads(
   query: AdminLeadsQuery,
 ): Promise<AdminLeadsPageResult> {
   const page = Math.max(1, query.page ?? 1);
-  const pageSize = Math.min(100, Math.max(10, query.pageSize ?? 50));
+  const pageSize = Math.min(100, Math.max(10, query.pageSize ?? 20));
   const pipeline = query.pipeline ?? "actionable";
   const hasRowFilters = Boolean(query.status?.trim() || query.outreach?.trim());
 

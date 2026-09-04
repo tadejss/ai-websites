@@ -2,7 +2,6 @@ import { getPipelineKanban } from "@/admin/pipeline";
 import Link from "next/link";
 import { AdminPageHeader } from "@/components/admin/admin-page";
 import { Badge } from "@/components/admin/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/admin/ui/card";
 
 export const dynamic = "force-dynamic";
 
@@ -20,11 +19,11 @@ export default async function AdminPipelinePage() {
         {columns.map((column) => (
           <div
             key={column.status}
-            className="flex w-56 shrink-0 snap-start flex-col rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)]"
+            className="flex w-56 shrink-0 snap-start flex-col rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03]"
           >
             <div className="border-b border-[var(--admin-border)] px-3 py-2">
               <div className="flex items-center justify-between gap-2">
-                <span className="text-[10px] font-semibold uppercase tracking-widest text-[var(--admin-muted)]">
+                <span className="text-xs font-semibold uppercase tracking-widest text-[var(--admin-muted)]">
                   {column.label}
                 </span>
                 <Badge variant="default">{column.cards.length}</Badge>
@@ -32,18 +31,18 @@ export default async function AdminPipelinePage() {
             </div>
             <div className="flex-1 space-y-2 p-2">
               {column.cards.length === 0 ? (
-                <p className="px-2 py-4 text-center text-[10px] text-[var(--admin-muted)]">
+                <p className="px-2 py-4 text-center text-sm text-[var(--admin-muted)]">
                   Empty
                 </p>
               ) : (
-                column.cards.map((card) => (
+                column.cards.slice(0, 20).map((card) => (
                   <Link
                     key={card.slug}
                     href={`/admin/e/${card.slug}`}
-                    className="block rounded-md border border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] p-2 transition-colors hover:border-cyan-500/40"
+                    className="block rounded-2xl border border-white/15 bg-black p-2 transition-colors hover:border-[var(--admin-accent)]/40"
                   >
-                    <div className="text-sm font-medium">{card.companyName}</div>
-                    <div className="mt-1 font-mono text-[10px] text-[var(--admin-muted)]">
+                    <div className="text-base font-medium">{card.companyName}</div>
+                    <div className="mt-1 font-mono text-xs text-[var(--admin-muted)]">
                       {card.slug}
                     </div>
                   </Link>
@@ -53,16 +52,6 @@ export default async function AdminPipelinePage() {
           </div>
         ))}
       </div>
-
-      <Card className="mt-4">
-        <CardHeader>
-          <CardTitle>Legend</CardTitle>
-        </CardHeader>
-        <CardContent className="text-sm text-[var(--admin-muted)]">
-          Cards are read-only — state changes happen via customer flow or admin
-          approve/retry on the entity journey page.
-        </CardContent>
-      </Card>
     </div>
   );
 }

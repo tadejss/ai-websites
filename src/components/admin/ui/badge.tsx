@@ -14,7 +14,7 @@ const badgeVariants = cva(
           "border-amber-500/30 bg-amber-500/10 text-amber-400",
         destructive:
           "border-red-500/30 bg-red-500/10 text-red-400",
-        info: "border-cyan-500/30 bg-cyan-500/10 text-cyan-400",
+        info: "border-[var(--admin-accent)]/30 bg-[var(--admin-accent)]/10 text-[var(--admin-accent)]",
       },
     },
     defaultVariants: {

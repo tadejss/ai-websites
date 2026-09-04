@@ -21,7 +21,7 @@ export function SheetContent({
       <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/60" />
       <DialogPrimitive.Content
         className={cn(
-          "fixed z-50 flex h-full flex-col border-[var(--admin-border)] bg-[var(--admin-surface)] shadow-lg transition ease-in-out",
+          "fixed z-50 flex h-full flex-col border-white/15 bg-black shadow-lg transition ease-in-out",
           side === "right"
             ? "right-0 top-0 w-full max-w-md border-l"
             : "left-0 top-0 w-full max-w-md border-r",
@@ -31,7 +31,7 @@ export function SheetContent({
       >
         {children}
         <DialogPrimitive.Close
-          className="absolute right-4 top-4 rounded-sm text-[var(--admin-muted)] hover:text-[var(--admin-foreground)]"
+          className="absolute right-4 top-[calc(1rem+env(safe-area-inset-top))] rounded-sm text-[var(--admin-muted)] hover:text-[var(--admin-foreground)]"
         >
           <X className="h-4 w-4" />
         </DialogPrimitive.Close>

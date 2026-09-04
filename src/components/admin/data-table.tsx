@@ -43,7 +43,7 @@ export function DataTable<T>({
   return (
     <div
       ref={parentRef}
-      className="max-h-[70vh] overflow-auto rounded-lg border border-[var(--admin-border)]"
+      className="max-h-[70vh] overflow-auto rounded-[var(--admin-radius)] border border-white/15"
     >
       <div
         className="sticky top-0 z-10 grid border-b border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] text-xs uppercase tracking-wider text-[var(--admin-muted)]"

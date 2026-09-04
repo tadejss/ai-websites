@@ -14,7 +14,6 @@ import {
 } from "@/components/admin/admin-page";
 import { Badge } from "@/components/admin/ui/badge";
 import { EntityTimelineV2 } from "@/components/admin/entity-timeline-v2";
-import { EntityPreviewPanel } from "@/components/admin/entity-preview-panel";
 import { EntityContextCards } from "@/components/admin/entity-context-cards";
 import { OnboardingDiffView } from "@/components/admin/onboarding-diff-view";
 import { OnboardingImageGallery } from "@/components/admin/onboarding-gallery";
@@ -70,19 +69,19 @@ export default async function AdminEntityJourneyPage({
       : null;
 
   return (
-    <div className="pb-24 md:pb-0">
+    <div>
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-        <Link href="/admin" className="text-xs text-cyan-400 hover:underline">
+        <Link href="/admin" className="text-xs text-[var(--admin-accent)] hover:underline">
           ← Queue {neighbors.index >= 0 ? `${neighbors.index + 1}/${neighbors.total}` : ""}
         </Link>
         <div className="flex gap-2 text-xs">
           {neighbors.prev ? (
-            <Link href={`/admin/e/${neighbors.prev}`} className="text-cyan-400 hover:underline">
+            <Link href={`/admin/e/${neighbors.prev}`} className="text-[var(--admin-accent)] hover:underline">
               ← Prev
             </Link>
           ) : null}
           {neighbors.next ? (
-            <Link href={`/admin/e/${neighbors.next}`} className="text-cyan-400 hover:underline">
+            <Link href={`/admin/e/${neighbors.next}`} className="text-[var(--admin-accent)] hover:underline">
               Next →
             </Link>
           ) : null}
@@ -99,7 +98,7 @@ export default async function AdminEntityJourneyPage({
               href={demoUrl}
               target="_blank"
               rel="noreferrer"
-              className="text-xs text-cyan-400 hover:underline"
+              className="text-sm text-[var(--admin-accent)] hover:underline"
             >
               Open demo ↗
             </a>
@@ -141,13 +140,13 @@ export default async function AdminEntityJourneyPage({
 
       <div className="grid gap-4 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <h2 className="mb-2 text-xs font-semibold uppercase tracking-wider text-[var(--admin-muted)]">
+          <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-[var(--admin-muted)]">
             Timeline
           </h2>
           <EntityTimelineV2 events={entity.timeline} />
         </div>
 
-        <div className="space-y-4 lg:col-span-5">
+        <div className="space-y-4 lg:col-span-8">
           <EntityContextCards
             stage={entity.stage}
             cards={[
@@ -395,13 +394,6 @@ export default async function AdminEntityJourneyPage({
               },
             ]}
           />
-        </div>
-
-        <div className="lg:col-span-3">
-          <h2 className="mb-2 text-xs font-semibold uppercase tracking-wider text-[var(--admin-muted)]">
-            Live preview
-          </h2>
-          <EntityPreviewPanel slug={slug} />
         </div>
       </div>
     </div>

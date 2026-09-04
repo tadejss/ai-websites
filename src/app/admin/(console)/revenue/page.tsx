@@ -110,7 +110,7 @@ export default async function AdminRevenuePage() {
               {auditLogs.map((log) => (
                 <li
                   key={log.id}
-                  className="flex flex-col gap-1 rounded-md border border-[var(--admin-border)] px-3 py-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-2"
+                  className="flex flex-col gap-1 rounded-2xl border border-white/15 px-3 py-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:gap-2"
                 >
                   <span className="font-mono text-xs">{log.action}</span>
                   {log.slug ? (
@@ -138,9 +138,9 @@ export default async function AdminRevenuePage() {
 
 function Metric({ label, value }: { label: string; value: string | number }) {
   return (
-    <div className="rounded-md bg-[var(--admin-surface-elevated)] px-3 py-2">
-      <dt className="text-xs text-[var(--admin-muted)]">{label}</dt>
-      <dd className="mt-0.5 font-semibold tabular-nums">{value}</dd>
+    <div className="rounded-2xl border border-white/15 bg-white/[0.03] px-3 py-2">
+      <dt className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#d0d0d0]">{label}</dt>
+      <dd className="font-display mt-1 text-xl tabular-nums text-white">{value}</dd>
     </div>
   );
 }

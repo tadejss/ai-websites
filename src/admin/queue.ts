@@ -1,17 +1,10 @@
 import { isDatabaseConfigured, sql } from "@/db/client";
 import { ensureCustomerSchema } from "@/db/ensure-schema";
 import { getFactoryWorkerConfig } from "@/factory/config";
-import {
-  buildAdminLeadRows,
-  filterAdminLeadRows,
-} from "@/admin/leads-filters";
-import { readLead, readAllLeads } from "@/leads/store";
-import { getCustomerSlugSet } from "@/customers/store";
-import { listSmsLeadStates } from "@/outreach/sms/store";
-import {
-  backfillPublishedFromFactoryLocks,
-  getDemoLifecycleBySlugs,
-} from "@/demo-lifecycle/store";
+import { readLead } from "@/leads/store";
+import { clientSiteExists } from "@/leads/client-exists";
+import { isGrokQaEnabled } from "@/qa/config";
+import { listFailedQaLatest } from "@/qa/store";
 import { ensureAdminSchema } from "@/admin/entity-index";
 import type { AdminAction } from "@/admin/entity";
 import { buildAdminActions } from "@/admin/entity";
@@ -30,8 +23,7 @@ export type QueueItemKind =
   | "publish_failed"
   | "stuck_publishing"
   | "onboarding_review"
-  | "never_viewed"
-  | "actionable_sms";
+  | "qa_failed";
 
 export type QueueItem = {
   slug: string;
@@ -48,8 +40,7 @@ const SCORE: Record<QueueItemKind, number> = {
   publish_failed: 1000,
   stuck_publishing: 900,
   onboarding_review: 800,
-  never_viewed: 500,
-  actionable_sms: 400,
+  qa_failed: 700,
 };
 
 export async function getSnoozedSlugs(): Promise<Set<string>> {
@@ -124,10 +115,11 @@ async function buildQueueActions(slug: string): Promise<AdminAction[]> {
       ? canRetryCustomerPublish(onboarding.status)
       : false,
     onboardingUrl: null,
+    canRunQa: clientSiteExists(slug) && isGrokQaEnabled(),
   });
 }
 
-export async function getActionQueue(limit = 50): Promise<QueueItem[]> {
+export async function getActionQueue(limit = 20): Promise<QueueItem[]> {
   const snoozed = await getSnoozedSlugs();
   const items: QueueItem[] = [];
 
@@ -225,54 +217,23 @@ export async function getActionQueue(limit = 50): Promise<QueueItem[]> {
     }
   }
 
-  const customerSlugs = await getCustomerSlugSet();
-  const allLeads = readAllLeads();
-  const slugs = allLeads.map((lead) => lead.slug);
-  let lifecycleBySlug = isDatabaseConfigured()
-    ? await getDemoLifecycleBySlugs(slugs)
-    : new Map();
-  if (isDatabaseConfigured() && slugs.length > 0) {
-    await backfillPublishedFromFactoryLocks(slugs);
-    lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
-  }
-  const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
-  const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
-  const allRows = buildAdminLeadRows(
-    allLeads,
-    customerSlugs,
-    smsBySlug,
-    lifecycleBySlug,
-  );
-
-  const neverViewed = filterAdminLeadRows(allRows, { pipeline: "never_viewed" });
-  for (const row of neverViewed.slice(0, 20)) {
-    if (snoozed.has(row.lead.slug)) continue;
-    if (items.some((item) => item.slug === row.lead.slug)) continue;
+  const qaFailed = await listFailedQaLatest(20);
+  for (const row of qaFailed) {
+    if (snoozed.has(row.slug)) continue;
+    if (items.some((item) => item.slug === row.slug)) continue;
+    const lead = readLead(row.slug);
     items.push({
-      slug: row.lead.slug,
-      companyName: row.lead.companyName ?? row.lead.slug,
-      kind: "never_viewed",
-      score: SCORE.never_viewed,
-      subtitle: "never viewed",
-      updatedAt: row.lifecycle?.publishedAt ?? null,
-      href: `/admin/e/${row.lead.slug}`,
-      actions: await buildQueueActions(row.lead.slug),
-    });
-  }
-
-  const actionable = filterAdminLeadRows(allRows, { pipeline: "actionable" });
-  for (const row of actionable.slice(0, 30)) {
-    if (snoozed.has(row.lead.slug)) continue;
-    if (items.some((item) => item.slug === row.lead.slug)) continue;
-    items.push({
-      slug: row.lead.slug,
-      companyName: row.lead.companyName ?? row.lead.slug,
-      kind: "actionable_sms",
-      score: SCORE.actionable_sms,
-      subtitle: "actionable SMS",
-      updatedAt: row.lifecycle?.lastViewedAt ?? row.lifecycle?.publishedAt ?? null,
-      href: `/admin/e/${row.lead.slug}`,
-      actions: await buildQueueActions(row.lead.slug),
+      slug: row.slug,
+      companyName: lead?.companyName ?? row.slug,
+      kind: "qa_failed",
+      score: SCORE.qa_failed,
+      subtitle:
+        row.policyStatus === "fail"
+          ? "QA policy fail"
+          : (row.lastError?.slice(0, 80) ?? "QA run failed"),
+      updatedAt: row.updatedAt,
+      href: `/admin/e/${row.slug}`,
+      actions: await buildQueueActions(row.slug),
     });
   }
 
@@ -287,8 +248,7 @@ export async function getQueueCounts(): Promise<Record<QueueItemKind, number>> {
     publish_failed: 0,
     stuck_publishing: 0,
     onboarding_review: 0,
-    never_viewed: 0,
-    actionable_sms: 0,
+    qa_failed: 0,
   };
   for (const item of queue) {
     counts[item.kind] += 1;

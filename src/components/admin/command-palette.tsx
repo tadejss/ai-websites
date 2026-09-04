@@ -135,8 +135,8 @@ export function AdminCommandPalette() {
           }}
           className={cn(
             "fixed z-30 flex h-12 w-12 items-center justify-center rounded-full",
-            "bg-cyan-600 text-white shadow-lg hover:bg-cyan-500",
-            "bottom-[calc(4.5rem+env(safe-area-inset-bottom))] right-4",
+            "bg-[var(--admin-accent)] text-black shadow-lg hover:bg-[var(--admin-accent-hover)]",
+            "bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4",
             "touch-manipulation md:hidden",
           )}
           aria-label="Search entities"
@@ -154,8 +154,8 @@ export function AdminCommandPalette() {
         >
           <div
             className={cn(
-              "flex flex-1 flex-col overflow-hidden border-[var(--admin-border)] bg-[var(--admin-surface)]",
-              "md:mx-auto md:h-auto md:max-h-[70vh] md:w-full md:max-w-lg md:flex-none md:rounded-lg md:shadow-2xl",
+              "flex flex-1 flex-col overflow-hidden border-white/15 bg-black",
+              "md:mx-auto md:h-auto md:max-h-[70vh] md:w-full md:max-w-lg md:flex-none md:rounded-[var(--admin-radius)] md:border md:shadow-2xl",
             )}
           >
             <Command shouldFilter={false} className="flex flex-1 flex-col bg-transparent md:flex-none">
@@ -197,7 +197,7 @@ export function AdminCommandPalette() {
                         key={item.id}
                         value={item.id}
                         onSelect={() => void runAction(item)}
-                        className="cursor-pointer rounded-md px-3 py-3 text-sm touch-manipulation md:py-2 aria-selected:bg-[var(--admin-surface-elevated)]"
+                        className="cursor-pointer rounded-2xl px-3 py-3 text-sm touch-manipulation md:py-2 aria-selected:bg-[var(--admin-surface-elevated)] aria-selected:text-[var(--admin-accent)]"
                       >
                         {item.label}
                       </Command.Item>
@@ -220,7 +220,7 @@ export function AdminCommandPalette() {
                         close();
                         router.push(result.href);
                       }}
-                      className="cursor-pointer rounded-md px-3 py-3 text-sm touch-manipulation md:py-2 aria-selected:bg-[var(--admin-surface-elevated)]"
+                      className="cursor-pointer rounded-2xl px-3 py-3 text-sm touch-manipulation md:py-2 aria-selected:bg-[var(--admin-surface-elevated)] aria-selected:text-[var(--admin-accent)]"
                     >
                       <div className="font-medium">{result.companyName}</div>
                       <div className="text-xs text-[var(--admin-muted)]">

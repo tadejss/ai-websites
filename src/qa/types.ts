@@ -125,6 +125,13 @@ export type QaLatestSummary = {
   issues: QaIssue[];
 };
 
+export type QaListSummary = {
+  slug: string;
+  runStatus: QaRunStatus;
+  policyStatus: QaPolicyStatus | null;
+  score: number | null;
+};
+
 export type IdentityDiff = {
   field: string;
   expected: string;

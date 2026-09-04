@@ -63,13 +63,13 @@ export default async function AdminFactoryPage() {
       {snapshot.health.issues.length > 0 && (
         <Card className="mb-6">
           <CardHeader>
-            <CardTitle>Health issues</CardTitle>
+            <CardTitle>Pipeline errors</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
             {snapshot.health.issues.map((issue) => (
               <div
                 key={issue.code}
-                className="rounded-md border border-[var(--admin-border)] px-3 py-2 text-sm"
+                className="rounded-2xl border border-white/15 px-3 py-2 text-sm"
               >
                 <Badge variant={healthVariant(issue.level)} className="mr-2">
                   {issue.level}
@@ -171,7 +171,7 @@ export default async function AdminFactoryPage() {
         </CardContent>
       </Card>
 
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div className="grid gap-4">
         <Card>
           <CardHeader>
             <CardTitle>Customer publishing</CardTitle>
@@ -201,7 +201,7 @@ export default async function AdminFactoryPage() {
                   <li key={row.slug}>
                     <Link
                       href={`/admin/e/${row.slug}`}
-                      className="text-cyan-400 hover:underline"
+                      className="text-[var(--admin-accent)] hover:underline"
                     >
                       {row.slug}
                     </Link>
@@ -213,32 +213,6 @@ export default async function AdminFactoryPage() {
                 ))}
               </ul>
             ) : null}
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>SMS queue</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <AdminStatGrid className="mb-0 lg:grid-cols-2">
-              <AdminStatCard
-                label="Sent today"
-                value={`${snapshot.sms.sentToday}/${snapshot.sms.dailyLimit}`}
-              />
-              <AdminStatCard
-                label="Gateway"
-                value={snapshot.sms.gatewayConfigured ? "online" : "offline"}
-              />
-              <AdminStatCard
-                label="Never viewed demos"
-                value={String(snapshot.demoLifecycle.publishedNeverViewed)}
-              />
-              <AdminStatCard
-                label="Dispatch"
-                value={snapshot.config.dispatchEnabled ? "on" : "off"}
-              />
-            </AdminStatGrid>
           </CardContent>
         </Card>
       </div>

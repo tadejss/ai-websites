@@ -67,7 +67,7 @@ export function AdminLeadsBulkBar({
   onToggleAll: () => void;
 }) {
   return (
-    <div className="mb-4 flex flex-wrap items-center gap-3 rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)] px-4 py-3">
+    <div className="mb-4 flex flex-wrap items-center gap-3 rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] px-4 py-3">
       <label className="flex items-center gap-2 text-sm">
         <input
           type="checkbox"

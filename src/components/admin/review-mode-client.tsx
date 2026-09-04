@@ -66,10 +66,10 @@ export function ReviewModeClient({ items }: { items: ReviewItem[] }) {
         <iframe
           src={`/${current.slug}`}
           title={`Demo ${current.slug}`}
-          className="h-[min(70vh,600px)] w-full rounded-lg border border-[var(--admin-border)] bg-white"
+          className="h-[min(70vh,600px)] w-full rounded-[var(--admin-radius)] border border-[var(--admin-border)] bg-white"
         />
       </div>
-      <div className="space-y-4 rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)] p-4">
+      <div className="space-y-4 rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] p-4">
         <h3 className="font-medium">{current.companyName}</h3>
         <p className="text-xs text-[var(--admin-muted)] font-mono">{current.slug}</p>
         <dl className="space-y-2 text-sm">

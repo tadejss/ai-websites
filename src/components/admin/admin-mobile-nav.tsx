@@ -2,74 +2,67 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  Activity,
-  Factory,
-  Inbox,
-  LayoutList,
-  Star,
-  TrendingUp,
-} from "lucide-react";
+import { useState } from "react";
+import { Menu } from "lucide-react";
+import { AdminBrandMark, AdminWordmark } from "@/components/admin/admin-brand";
+import { ADMIN_NAV_ITEMS, isAdminNavActive } from "@/components/admin/admin-nav-items";
+import { Sheet, SheetContent, SheetTitle } from "@/components/admin/ui/sheet";
 import { cn } from "@/lib/utils";
-
-const navItems = [
-  { href: "/admin", label: "Inbox", icon: Inbox, exact: true },
-  { href: "/admin/review", label: "Review", icon: Star },
-  { href: "/admin/leads", label: "Leads", icon: LayoutList },
-  { href: "/admin/factory", label: "Factory", icon: Factory },
-  { href: "/admin/revenue", label: "Revenue", icon: TrendingUp },
-  { href: "/admin/activity", label: "Activity", icon: Activity },
-] as const;
 
 export function AdminMobileNav({ className }: { className?: string }) {
   const pathname = usePathname();
-  const onEntity = pathname.startsWith("/admin/e/");
+  const [open, setOpen] = useState(false);
 
   return (
-    <>
-      {onEntity ? (
-        <Link
-          href="/admin"
-          className={cn(
-            "fixed bottom-[calc(4.5rem+env(safe-area-inset-bottom))] right-4 z-30",
-            "flex h-12 w-12 items-center justify-center rounded-full bg-cyan-600 text-white shadow-lg md:hidden",
-          )}
-          aria-label="Back to queue"
+    <div className={cn("flex items-center gap-3 px-3 py-2", className)}>
+      <Sheet open={open} onOpenChange={setOpen}>
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          className="flex h-11 shrink-0 items-center gap-2 rounded-full border border-[var(--admin-accent)] bg-[var(--admin-accent)] px-4 text-sm font-semibold text-black touch-manipulation"
+          aria-label="Odpri meni"
         >
-          <Inbox className="h-5 w-5" />
-        </Link>
-      ) : null}
-      <nav
-        className={cn(
-          "fixed inset-x-0 bottom-0 z-40 border-t border-[var(--admin-border)] bg-[var(--admin-surface)]",
-          "pb-[env(safe-area-inset-bottom)]",
-          className,
-        )}
-        aria-label="Admin navigation"
-      >
-        <div className="flex h-16 items-stretch justify-around">
-          {navItems.map(({ href, label, icon: Icon, ...rest }) => {
-            const exact = "exact" in rest && rest.exact;
-            const active = exact
-              ? pathname === href
-              : pathname === href || pathname.startsWith(`${href}/`);
-            return (
-              <Link
-                key={href}
-                href={href}
-                className={cn(
-                  "flex min-w-0 flex-1 flex-col items-center justify-center gap-0.5 px-1",
-                  "min-h-[44px] touch-manipulation",
-                  active ? "text-cyan-400" : "text-[var(--admin-muted)]",
-                )}
-              >
-                <Icon className="h-5 w-5 shrink-0" aria-hidden />
-                <span className="truncate text-[10px] font-medium">{label}</span>
-              </Link>
-            );
-          })}
-        </div>
-      </nav>
-    </>
+          <span>Meni</span>
+          <span className="flex size-7 items-center justify-center rounded-full bg-black/15">
+            <Menu className="h-4 w-4" />
+          </span>
+        </button>
+        <SheetContent
+          side="left"
+          className="w-72 max-w-[85vw] bg-black pt-[calc(env(safe-area-inset-top)+0.75rem)]"
+        >
+          <SheetTitle className="flex items-center gap-2.5 px-4 pb-3">
+            <AdminBrandMark size={32} />
+            <AdminWordmark />
+          </SheetTitle>
+          <nav className="flex flex-1 flex-col gap-0.5 overflow-y-auto px-2 pb-6">
+            {ADMIN_NAV_ITEMS.map(({ href, label, icon: Icon, ...rest }) => {
+              const exact = "exact" in rest && rest.exact;
+              const active = isAdminNavActive(pathname, href, exact);
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => setOpen(false)}
+                  className={cn(
+                    "flex min-h-[44px] items-center gap-3 rounded-2xl px-3 py-2 text-base touch-manipulation",
+                    active
+                      ? "bg-[var(--admin-surface-elevated)] text-[var(--admin-accent)]"
+                      : "text-[#d0d0d0] hover:bg-[var(--admin-surface-elevated)] hover:text-white",
+                  )}
+                >
+                  <Icon className="h-5 w-5 shrink-0" />
+                  {label}
+                </Link>
+              );
+            })}
+          </nav>
+        </SheetContent>
+      </Sheet>
+      <Link href="/admin" className="flex items-center gap-2">
+        <AdminBrandMark size={32} />
+        <AdminWordmark className="text-lg" />
+      </Link>
+    </div>
   );
 }

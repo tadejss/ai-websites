@@ -8,22 +8,11 @@ import {
   resolveAdminPipelineView,
 } from "@/admin/leads-filters";
 import { queryAdminLeads } from "@/admin/leads-query";
-import { resolveLeadEmail } from "@/leads/resolve-email";
-import { getOutreachConfig } from "@/outreach/config";
-import { getSmsConfig } from "@/outreach/sms/config";
-import {
-  countByLeadStatus,
-  countSentToday,
-  listSmsLeadStates,
-} from "@/outreach/sms/store";
-import { isDatabaseConfigured } from "@/db/client";
+import { listSmsLeadStatesBySlugs } from "@/outreach/sms/store";
+import { getQaLatestBySlugs } from "@/qa/store";
 import { resolveSavedView, ADMIN_SAVED_VIEWS, savedViewHref } from "@/admin/saved-views";
-import {
-  AdminPageHeader,
-  AdminStatCard,
-  AdminStatGrid,
-  formatAdminDate,
-} from "@/components/admin/admin-page";
+import { AdminPageHeader } from "@/components/admin/admin-page";
+import { adminControlClassName, adminLabelClassName } from "@/components/admin/admin-styles";
 import { AdminLeadsTableClient } from "@/components/admin/leads-table-client";
 import { Button } from "@/components/admin/ui/button";
 
@@ -68,7 +57,7 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
 
   const result = await queryAdminLeads({
     page,
-    pageSize: 50,
+    pageSize: 20,
     pipeline,
     q,
     sort,
@@ -76,16 +65,17 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
     outreach: outreachFilter,
   });
 
-  const config = getOutreachConfig();
-  const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
+  const slugs = result.rows.map((row) => row.lead.slug);
+  const [smsStates, qaBySlug] = await Promise.all([
+    listSmsLeadStatesBySlugs(slugs),
+    getQaLatestBySlugs(slugs),
+  ]);
   const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
-  const smsConfig = getSmsConfig();
-  const smsCounts = isDatabaseConfigured() ? await countByLeadStatus() : {};
-  const sentToday = isDatabaseConfigured() ? await countSentToday() : 0;
 
   const tableRows = result.rows.map(
     ({ lead, displayStatus, lifecycle, isNeverViewed, demoAgeDays }) => {
       const sms = smsBySlug.get(lead.slug);
+      const qa = qaBySlug.get(lead.slug) ?? null;
       return {
         slug: lead.slug,
         companyName: lead.companyName ?? lead.slug,
@@ -93,15 +83,13 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
         displayStatus: displayStatus || "—",
         phone: lead.phone ?? null,
         smsStatus: sms?.smsStatus ?? "—",
-        smsSentAt: sms?.smsSentAt ?? null,
-        smsError: sms?.smsLastError ?? null,
         viewCount:
           lifecycle?.viewCount != null ? String(lifecycle.viewCount) : "—",
-        firstView: formatAdminDate(lifecycle?.firstViewedAt),
-        lastView: formatAdminDate(lifecycle?.lastViewedAt),
         demoAge: demoAgeDays != null ? `${demoAgeDays}d` : "—",
-        email: resolveLeadEmail(lead) ?? null,
         isNeverViewed,
+        qaStatus: qa?.runStatus ?? null,
+        qaPolicy: qa?.policyStatus ?? null,
+        qaScore: qa?.score ?? null,
       };
     },
   );
@@ -122,7 +110,7 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
     <div>
       <AdminPageHeader
         title="Leads"
-        description={`${result.total} total · page ${result.page}/${result.totalPages} · email ${config.dryRun ? "DRY RUN" : "LIVE"}`}
+        description={`${result.total} total · page ${result.page} of ${result.totalPages}`}
       />
 
       <div className="mb-4 flex flex-wrap gap-2">
@@ -130,10 +118,10 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
           <Link
             key={view.id}
             href={savedViewHref(view)}
-            className={`rounded-md border px-2 py-1 text-xs ${
+            className={`rounded-full border px-4 py-2 text-xs font-semibold tracking-wide ${
               params.view === view.id
-                ? "border-cyan-500/50 bg-cyan-500/10 text-cyan-400"
-                : "border-[var(--admin-border)] text-[var(--admin-muted)] hover:text-[var(--admin-foreground)]"
+                ? "border-[var(--admin-accent)] bg-[var(--admin-accent)] text-black"
+                : "border-white/25 text-[#d0d0d0] hover:border-[var(--admin-accent)] hover:text-[var(--admin-accent)]"
             }`}
           >
             {view.label}
@@ -141,28 +129,16 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
         ))}
       </div>
 
-      <AdminStatGrid className="lg:grid-cols-6">
-        <AdminStatCard label="Showing" value={String(result.rows.length)} />
-        <AdminStatCard label="Total" value={String(result.total)} />
-        <AdminStatCard label="Queued" value={String(smsCounts.queued ?? 0)} />
-        <AdminStatCard label="Sent" value={String(smsCounts.sent ?? 0)} />
-        <AdminStatCard label="Failed" value={String(smsCounts.failed ?? 0)} />
-        <AdminStatCard
-          label="Sent today"
-          value={`${sentToday}/${smsConfig.dailyLimit}`}
-        />
-      </AdminStatGrid>
-
       <form
         method="get"
-        className="mb-6 flex flex-wrap items-end gap-3 rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)] p-4"
+        className="mb-6 flex flex-wrap items-end gap-3 rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] p-4"
       >
-        <label className="block text-sm">
-          <span className="text-xs text-[var(--admin-muted)]">Pipeline</span>
+        <label className="block min-w-[12rem]">
+          <span className={adminLabelClassName}>Pipeline</span>
           <select
             name="pipeline"
             defaultValue={pipeline}
-            className="mt-1 block min-w-[12rem] rounded-md border border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] px-3 py-2 text-sm text-[var(--admin-foreground)]"
+            className={adminControlClassName}
           >
             {ADMIN_PIPELINE_VIEWS.map((option) => (
               <option key={option.value} value={option.value}>
@@ -171,12 +147,12 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
             ))}
           </select>
         </label>
-        <label className="block text-sm">
-          <span className="text-xs text-[var(--admin-muted)]">Status</span>
+        <label className="block min-w-[10rem]">
+          <span className={adminLabelClassName}>Status</span>
           <select
             name="status"
             defaultValue={statusFilter ?? ""}
-            className="mt-1 block min-w-[10rem] rounded-md border border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] px-3 py-2 text-sm"
+            className={adminControlClassName}
           >
             <option value="">All</option>
             {ADMIN_STATUS_FILTERS.map((option) => (
@@ -186,12 +162,12 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
             ))}
           </select>
         </label>
-        <label className="block text-sm">
-          <span className="text-xs text-[var(--admin-muted)]">Outreach</span>
+        <label className="block min-w-[12rem]">
+          <span className={adminLabelClassName}>Outreach</span>
           <select
             name="outreach"
             defaultValue={outreachFilter ?? ""}
-            className="mt-1 block min-w-[12rem] rounded-md border border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] px-3 py-2 text-sm"
+            className={adminControlClassName}
           >
             <option value="">All</option>
             {ADMIN_OUTREACH_FILTERS.map((option) => (
@@ -201,21 +177,21 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
             ))}
           </select>
         </label>
-        <label className="block text-sm">
-          <span className="text-xs text-[var(--admin-muted)]">Search</span>
+        <label className="block min-w-[14rem] flex-1">
+          <span className={adminLabelClassName}>Search</span>
           <input
             name="q"
             defaultValue={q ?? ""}
             placeholder="company, slug, phone…"
-            className="mt-1 block min-w-[14rem] rounded-md border border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] px-3 py-2 text-sm text-[var(--admin-foreground)]"
+            className={adminControlClassName}
           />
         </label>
-        <label className="block text-sm">
-          <span className="text-xs text-[var(--admin-muted)]">Sort</span>
+        <label className="block min-w-[10rem]">
+          <span className={adminLabelClassName}>Sort</span>
           <select
             name="sort"
             defaultValue={sort}
-            className="mt-1 block min-w-[10rem] rounded-md border border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] px-3 py-2 text-sm"
+            className={adminControlClassName}
           >
             <option value="company">Company</option>
             <option value="demo_age">Demo age</option>
@@ -236,7 +212,7 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
       </form>
 
       {result.rows.length === 0 ? (
-        <p className="rounded-lg border border-[var(--admin-border)] px-4 py-8 text-center text-sm text-[var(--admin-muted)]">
+        <p className="rounded-[var(--admin-radius)] border border-white/15 px-4 py-8 text-center text-sm text-[var(--admin-muted)]">
           No leads match the selected filters.
         </p>
       ) : (
@@ -248,7 +224,7 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
           {result.page > 1 ? (
             <Link
               href={pageHref(result.page - 1)}
-              className="text-cyan-400 hover:underline"
+              className="text-[var(--admin-accent)] hover:underline"
             >
               ← Previous
             </Link>
@@ -261,7 +237,7 @@ export default async function AdminLeadsPage({ searchParams }: Props) {
           {result.page < result.totalPages ? (
             <Link
               href={pageHref(result.page + 1)}
-              className="text-cyan-400 hover:underline"
+              className="text-[var(--admin-accent)] hover:underline"
             >
               Next →
             </Link>

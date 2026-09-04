@@ -127,7 +127,7 @@ export function AdminActionDispatcher({
             href={demoUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex h-8 items-center rounded-md border border-[var(--admin-border)] px-2 text-xs text-cyan-400 hover:bg-[var(--admin-surface-elevated)]"
+            className="inline-flex h-8 items-center rounded-full border border-white/25 px-3 text-xs font-semibold text-[var(--admin-accent)] hover:border-[var(--admin-accent)] hover:bg-transparent"
           >
             Demo ↗
           </a>
@@ -182,7 +182,7 @@ export function AdminActionDispatcher({
           href={demoUrl}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex h-8 items-center rounded-md border border-[var(--admin-border)] px-3 text-xs text-cyan-400 hover:bg-[var(--admin-surface-elevated)]"
+          className="inline-flex h-8 items-center rounded-full border border-white/25 px-3 text-xs font-semibold text-[var(--admin-accent)] hover:border-[var(--admin-accent)]"
         >
           Open demo ↗
         </a>

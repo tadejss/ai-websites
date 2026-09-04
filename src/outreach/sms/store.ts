@@ -140,6 +140,20 @@ export async function listSmsLeadStates(): Promise<SmsLeadState[]> {
   return rows.map(mapState);
 }
 
+export async function listSmsLeadStatesBySlugs(
+  slugs: string[],
+): Promise<SmsLeadState[]> {
+  if (!isDatabaseConfigured() || slugs.length === 0) {
+    return [];
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT * FROM sms_lead_state WHERE slug = ANY(${slugs})
+  `) as StateRow[];
+  return rows.map(mapState);
+}
+
 export async function upsertSmsLeadState(input: {
   slug: string;
   normalizedPhone?: string | null;

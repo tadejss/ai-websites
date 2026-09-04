@@ -6,6 +6,7 @@ import {
   AdminBulkSmsButton,
   LeadRowCheckbox,
 } from "@/components/admin/leads-bulk";
+import { Badge } from "@/components/admin/ui/badge";
 
 type Row = {
   slug: string;
@@ -14,15 +15,40 @@ type Row = {
   displayStatus: string;
   phone: string | null;
   smsStatus: string;
-  smsSentAt: string | null;
-  smsError: string | null;
   viewCount: string;
-  firstView: string;
-  lastView: string;
   demoAge: string;
-  email: string | null;
   isNeverViewed: boolean;
+  qaStatus: string | null;
+  qaPolicy: string | null;
+  qaScore: number | null;
 };
+
+function QaBadge({ row }: { row: Row }) {
+  if (!row.qaStatus) {
+    return <span className="text-[var(--admin-muted)]">—</span>;
+  }
+  if (row.qaStatus === "failed" || row.qaPolicy === "fail") {
+    return <Badge variant="destructive">QA fail</Badge>;
+  }
+  if (row.qaPolicy === "warning") {
+    return (
+      <Badge variant="warning">
+        QA {row.qaScore != null ? row.qaScore : "warn"}
+      </Badge>
+    );
+  }
+  if (row.qaPolicy === "pass") {
+    return (
+      <Badge variant="success">
+        QA {row.qaScore != null ? row.qaScore : "ok"}
+      </Badge>
+    );
+  }
+  if (row.qaStatus === "pending" || row.qaStatus === "running") {
+    return <Badge variant="default">QA…</Badge>;
+  }
+  return <span className="text-[var(--admin-muted)]">—</span>;
+}
 
 function LeadCard({
   row,
@@ -34,23 +60,29 @@ function LeadCard({
   onToggle: (slug: string) => void;
 }) {
   return (
-    <div className="rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)] p-4">
+    <div className="rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] p-4">
       <div className="flex items-start gap-3">
         <LeadRowCheckbox slug={row.slug} selected={selected} onToggle={onToggle} />
         <div className="min-w-0 flex-1">
           <Link
             href={`/admin/e/${row.slug}`}
-            className="block font-medium text-cyan-400 hover:underline"
+            className="block text-base font-medium text-[var(--admin-accent)] hover:underline"
           >
             {row.companyName}
           </Link>
           {row.industry ? (
-            <p className="mt-0.5 text-xs text-[var(--admin-muted)]">{row.industry}</p>
+            <p className="mt-0.5 text-sm text-[var(--admin-muted)]">{row.industry}</p>
           ) : null}
-          <dl className="mt-3 grid grid-cols-2 gap-2 text-xs">
+          <dl className="mt-3 grid grid-cols-2 gap-2 text-sm">
             <div>
               <dt className="text-[var(--admin-muted)]">Status</dt>
               <dd>{row.displayStatus}</dd>
+            </div>
+            <div>
+              <dt className="text-[var(--admin-muted)]">QA</dt>
+              <dd>
+                <QaBadge row={row} />
+              </dd>
             </div>
             <div>
               <dt className="text-[var(--admin-muted)]">Views</dt>
@@ -62,11 +94,15 @@ function LeadCard({
               <dt className="text-[var(--admin-muted)]">Demo age</dt>
               <dd>{row.demoAge}</dd>
             </div>
-            <div>
-              <dt className="text-[var(--admin-muted)]">Phone</dt>
-              <dd className="font-mono">{row.phone ?? "—"}</dd>
-            </div>
           </dl>
+          <a
+            href={`/${row.slug}`}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-3 inline-block text-sm text-[var(--admin-accent)] hover:underline"
+          >
+            Open demo ↗
+          </a>
         </div>
       </div>
     </div>
@@ -89,8 +125,8 @@ export function AdminLeadsTableClient({ rows }: { rows: Row[] }) {
 
   return (
     <>
-      <div className="mb-4 flex flex-wrap items-center gap-3 rounded-lg border border-[var(--admin-border)] bg-[var(--admin-surface)] px-4 py-3">
-        <label className="flex min-h-[44px] items-center gap-2 text-sm touch-manipulation">
+      <div className="mb-4 flex flex-wrap items-center gap-3 rounded-[var(--admin-radius)] border border-white/15 bg-white/[0.03] px-4 py-3">
+        <label className="flex min-h-[44px] items-center gap-2 text-base touch-manipulation">
           <input
             type="checkbox"
             checked={selected.length === slugs.length && slugs.length > 0}
@@ -113,17 +149,17 @@ export function AdminLeadsTableClient({ rows }: { rows: Row[] }) {
         ))}
       </div>
 
-      <div className="hidden overflow-x-auto rounded-lg border border-[var(--admin-border)] md:block">
-        <table className="min-w-full text-sm">
+      <div className="hidden overflow-x-auto rounded-[var(--admin-radius)] border border-white/15 md:block">
+        <table className="min-w-full text-base">
           <thead>
-            <tr className="border-b border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] text-[10px] uppercase tracking-widest text-[var(--admin-muted)]">
+            <tr className="border-b border-[var(--admin-border)] bg-[var(--admin-surface-elevated)] text-xs uppercase tracking-widest text-[var(--admin-muted)]">
               <th className="px-3 py-2" />
               <th className="px-3 py-2 text-left">Business</th>
               <th className="px-3 py-2 text-left">Status</th>
-              <th className="px-3 py-2 text-left">Phone</th>
               <th className="px-3 py-2 text-left">SMS</th>
               <th className="px-3 py-2 text-left">Views</th>
-              <th className="px-3 py-2 text-left">Demo age</th>
+              <th className="px-3 py-2 text-left">QA</th>
+              <th className="px-3 py-2 text-left">Demo</th>
             </tr>
           </thead>
           <tbody>
@@ -142,18 +178,17 @@ export function AdminLeadsTableClient({ rows }: { rows: Row[] }) {
                 <td className="px-3 py-2">
                   <Link
                     href={`/admin/e/${row.slug}`}
-                    className="font-medium text-cyan-400 hover:underline"
+                    className="font-medium text-[var(--admin-accent)] hover:underline"
                   >
                     {row.companyName}
                   </Link>
                   {row.industry ? (
-                    <div className="text-xs text-[var(--admin-muted)]">
+                    <div className="text-sm text-[var(--admin-muted)]">
                       {row.industry}
                     </div>
                   ) : null}
                 </td>
                 <td className="px-3 py-2">{row.displayStatus}</td>
-                <td className="px-3 py-2 font-mono text-xs">{row.phone ?? "—"}</td>
                 <td className="px-3 py-2 uppercase">{row.smsStatus}</td>
                 <td
                   className={`px-3 py-2 tabular-nums ${
@@ -162,7 +197,19 @@ export function AdminLeadsTableClient({ rows }: { rows: Row[] }) {
                 >
                   {row.viewCount}
                 </td>
-                <td className="px-3 py-2 tabular-nums">{row.demoAge}</td>
+                <td className="px-3 py-2">
+                  <QaBadge row={row} />
+                </td>
+                <td className="px-3 py-2">
+                  <a
+                    href={`/${row.slug}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm text-[var(--admin-accent)] hover:underline"
+                  >
+                    Open ↗
+                  </a>
+                </td>
               </tr>
             ))}
           </tbody>
