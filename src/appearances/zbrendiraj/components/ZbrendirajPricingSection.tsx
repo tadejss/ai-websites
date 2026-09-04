@@ -1,9 +1,9 @@
 import { StripePricingTable } from "@/billing/StripePricingTable";
 import { zbBodyText, zbSectionEyebrow } from "../styles";
 
-const DEFAULT_PRICING_TABLE_ID = "prctbl_1U7U51Ga3w4RPcywbC2yHWgr";
+const DEFAULT_PRICING_TABLE_ID = "prctbl_1U99qhGsdWtwcxsI3crFnvPp";
 const DEFAULT_PUBLISHABLE_KEY =
-  "pk_test_51U6rcRGa3w4RPcywDO5OOuo3ELmCjZnwgbKeWdrxr3h4rgKE8cdU8rfMMKueixWM4LVK0d3cmiM6eSxcBTmLRobj00BRkBAePf";
+  "pk_live_51Qsj45GsdWtwcxsIISWvHBx30LulKS6z5fc0OXu5DLVBrWeZvdswYxIPSRFrfsBS87LnLRCYV0UuI7odTYXCG7io00Qix0E56P";
 
 export function ZbrendirajPricingSection() {
   const pricingTableId =
