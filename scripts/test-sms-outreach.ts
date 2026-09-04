@@ -5,7 +5,7 @@ import { join } from "node:path";
 import { normalizeSlovenianPhone, isSlovenianMobilePhone } from "../src/outreach/sms/phone";
 import { analyzeSmsLength, renderSms } from "../src/outreach/sms/templates";
 import { evaluateSmsEligibility } from "../src/outreach/sms/eligibility";
-import { isOptOutMessage } from "../src/outreach/sms/opt-out";
+import { isOptOutMessage, parseSmsOptOut, canCancelOnOptOut } from "../src/outreach/sms/opt-out";
 import { isRelevantSmsLead } from "../src/outreach/sms/relevance";
 import { clientSiteExists } from "../src/leads/client-exists";
 import type { LeadRecord } from "../src/leads/store";
@@ -136,6 +136,18 @@ async function main() {
       alreadySentForStep: false,
     }).ok,
     "opt-out blocked",
+  );
+
+  ok(
+    !evaluateSmsEligibility({
+      lead,
+      isCustomer: false,
+      state: null,
+      step: "initial",
+      alreadySentForStep: false,
+      globallyOptedOut: true,
+    }).ok,
+    "global opt-out blocked",
   );
 
   ok(
@@ -554,11 +566,25 @@ async function main() {
   ok(discoverCallsMatrix === 1, "matrix replenish runs one discover per iteration");
 
   ok(isOptOutMessage("STOP"), "STOP");
+  ok(isOptOutMessage("stop"), "stop");
+  ok(isOptOutMessage("STOP!"), "STOP!");
+  ok(isOptOutMessage(" NE"), "NE padded");
+  ok(isOptOutMessage("ne"), "ne");
   ok(isOptOutMessage(" odjava "), "ODJAVA");
-  ok(isOptOutMessage("Ne"), "NE exact");
+  ok(isOptOutMessage("odjava"), "odjava");
   ok(isOptOutMessage("stop sms"), "stop sms");
+  ok(!isOptOutMessage("NE BOM DANES"), "NE BOM DANES not opt-out");
+  ok(!isOptOutMessage("NEKAJ"), "NEKAJ not opt-out");
   ok(!isOptOutMessage("Zanima me, ne zdaj"), "ne inside sentence not opt-out");
   ok(!isOptOutMessage("Zanima me demo"), "normal reply");
+  ok(!isOptOutMessage("DA"), "DA is not opt-out");
+  ok(parseSmsOptOut("STOP").keyword === "STOP", "keyword STOP");
+  ok(parseSmsOptOut("ne").keyword === "NE", "keyword NE");
+  ok(parseSmsOptOut("ODJAVA").keyword === "ODJAVA", "keyword ODJAVA");
+  ok(canCancelOnOptOut("queued"), "cancel queued");
+  ok(canCancelOnOptOut("claimed"), "cancel claimed");
+  ok(!canCancelOnOptOut("sending"), "do not cancel sending");
+  ok(!canCancelOnOptOut("sent"), "do not cancel sent");
 
   const { DryRunModem } = await import(
     "../tools/sms-gateway/src/modem/dry-run"

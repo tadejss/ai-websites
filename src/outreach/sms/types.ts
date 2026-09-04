@@ -68,8 +68,21 @@ export type SmsInboundRecord = {
   slug: string | null;
   matched: boolean;
   isOptOut: boolean;
+  normalizationFailed: boolean;
   createdAt: string;
 };
+
+export type SmsOptOutRecord = {
+  phone: string;
+  source: string;
+  reason: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type AuthorizeSmsSendResult =
+  | { send: true }
+  | { send: false; reason: "sms_opt_out" | "cancelled" | "not_found" | "not_claimable" };
 
 export type ClaimedSms = {
   messageId: string;

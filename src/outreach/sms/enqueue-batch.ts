@@ -8,7 +8,9 @@ import {
   countDailySmsBudgetUsed,
   getSmsLeadState,
   hasActiveOrSentStep,
+  isSmsOptedOut,
 } from "./store";
+import { normalizeSlovenianPhone } from "./phone";
 import type { SmsStep } from "./types";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
@@ -87,12 +89,15 @@ export async function enqueueDueSmsBatch(): Promise<EnqueueBatchResult> {
     }
 
     const already = await hasActiveOrSentStep(lead.slug, step);
+    const phone = normalizeSlovenianPhone(lead.phone);
+    const globallyOptedOut = phone.ok ? await isSmsOptedOut(phone.e164) : false;
     const eligibility = evaluateSmsEligibility({
       lead,
       isCustomer: customer,
       state,
       step,
       alreadySentForStep: already,
+      globallyOptedOut,
     });
 
     if (!eligibility.ok) {

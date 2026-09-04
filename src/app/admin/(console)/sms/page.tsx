@@ -3,6 +3,7 @@ import { getSmsConfig, isSmsGatewayConfigured } from "@/outreach/sms/config";
 import {
   countByLeadStatus,
   countSentToday,
+  listRecentSmsOptOuts,
   listSmsLeadStates,
 } from "@/outreach/sms/store";
 import { AdminPageHeader, AdminStatCard, AdminStatGrid } from "@/components/admin/admin-page";
@@ -16,6 +17,7 @@ export default async function AdminSmsPage() {
   const smsCounts = isDatabaseConfigured() ? await countByLeadStatus() : {};
   const sentToday = isDatabaseConfigured() ? await countSentToday() : 0;
   const states = isDatabaseConfigured() ? await listSmsLeadStates() : [];
+  const optOuts = isDatabaseConfigured() ? await listRecentSmsOptOuts(20) : [];
   const recentFailed = states
     .filter((state) => state.smsStatus === "failed")
     .slice(0, 20);
@@ -40,6 +42,29 @@ export default async function AdminSmsPage() {
           value={isSmsGatewayConfigured() ? "online" : "offline"}
         />
       </AdminStatGrid>
+
+      <Card className="mt-4">
+        <CardHeader>
+          <CardTitle>Global opt-outs</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-2">
+          {optOuts.length === 0 ? (
+            <p className="text-sm text-[var(--admin-muted)]">No opt-outs</p>
+          ) : (
+            optOuts.map((row) => (
+              <div
+                key={row.phone}
+                className="flex justify-between gap-3 rounded border border-[var(--admin-border)] px-3 py-2 text-sm"
+              >
+                <span className="font-mono">{row.phone}</span>
+                <span className="text-xs text-[var(--admin-muted)]">
+                  {row.source} · {row.reason} · {formatAdminDate(row.updatedAt)}
+                </span>
+              </div>
+            ))
+          )}
+        </CardContent>
+      </Card>
 
       <Card className="mt-4">
         <CardHeader>

@@ -218,6 +218,7 @@ CREATE TABLE IF NOT EXISTS sms_inbound (
   slug TEXT,
   matched BOOLEAN NOT NULL DEFAULT FALSE,
   is_opt_out BOOLEAN NOT NULL DEFAULT FALSE,
+  normalization_failed BOOLEAN NOT NULL DEFAULT FALSE,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
@@ -226,6 +227,16 @@ CREATE INDEX IF NOT EXISTS sms_inbound_from_phone_idx
 
 CREATE INDEX IF NOT EXISTS sms_inbound_slug_idx
   ON sms_inbound (slug);
+
+ALTER TABLE sms_inbound ADD COLUMN IF NOT EXISTS normalization_failed BOOLEAN NOT NULL DEFAULT FALSE;
+
+CREATE TABLE IF NOT EXISTS sms_opt_outs (
+  phone TEXT PRIMARY KEY,
+  source TEXT NOT NULL,
+  reason TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
 `.trim();
 
 /**

@@ -1,5 +1,5 @@
 import { getSmsConfig } from "./config";
-import { claimQueuedMessages, markMessageSending } from "./store";
+import { claimQueuedMessages } from "./store";
 import type { ClaimedSms } from "./types";
 
 export async function claimSmsBatch(input?: {
@@ -16,15 +16,9 @@ export async function claimSmsBatch(input?: {
     leaseMinutes: config.claimLeaseMinutes,
   });
 
-  const claimed: ClaimedSms[] = [];
-  for (const row of rows) {
-    await markMessageSending(row.messageId);
-    claimed.push({
-      messageId: row.messageId,
-      to: row.toPhone,
-      text: row.body,
-    });
-  }
-
-  return claimed;
+  return rows.map((row) => ({
+    messageId: row.messageId,
+    to: row.toPhone,
+    text: row.body,
+  }));
 }

@@ -22,8 +22,10 @@ export function evaluateSmsEligibility(input: {
   state: SmsLeadState | null;
   step: SmsStep;
   alreadySentForStep: boolean;
+  globallyOptedOut?: boolean;
 }): SmsEligibilityResult {
-  const { lead, isCustomer, state, step, alreadySentForStep } = input;
+  const { lead, isCustomer, state, step, alreadySentForStep, globallyOptedOut } =
+    input;
 
   if (isCustomer || lead.status === "customer") {
     return { ok: false, reason: "Lead is already a customer" };
@@ -33,7 +35,11 @@ export function evaluateSmsEligibility(input: {
     return { ok: false, reason: `Lead status "${lead.status}" is suppressed` };
   }
 
-  if (state?.smsStatus === "opted_out" || state?.smsAllowed === false) {
+  if (
+    globallyOptedOut ||
+    state?.smsStatus === "opted_out" ||
+    state?.smsAllowed === false
+  ) {
     return { ok: false, reason: "Lead opted out of SMS" };
   }
 

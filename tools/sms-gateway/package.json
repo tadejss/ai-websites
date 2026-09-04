@@ -6,7 +6,9 @@
   "scripts": {
     "start": "tsx src/server.ts",
     "poll": "tsx src/poller.ts",
-    "dev": "tsx watch src/poller.ts"
+    "dev": "tsx watch src/poller.ts",
+    "probe": "tsx src/probe.ts",
+    "test": "tsx --test src/modem/xml.test.ts src/modem/detect.test.ts src/inbound-order.test.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2"

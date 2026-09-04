@@ -9,10 +9,12 @@ import {
   getSmsLeadState,
   hasActiveOrSentStep,
   insertQueuedMessage,
+  isSmsOptedOut,
   upsertSmsLeadState,
 } from "./store";
 import { renderSms } from "./templates";
 import { smsCompanyDisplayName } from "./company-name";
+import { normalizeSlovenianPhone } from "./phone";
 import type { SmsMessageRecord, SmsStep } from "./types";
 
 export type EnqueueSmsResult =
@@ -45,12 +47,17 @@ export async function enqueueSmsForLead(input: {
   const already = await hasActiveOrSentStep(lead.slug, step);
   const customer = await isCustomer(lead.slug);
   const state = await getSmsLeadState(lead.slug);
+  const phonePreview = normalizeSlovenianPhone(lead.phone);
+  const globallyOptedOut = phonePreview.ok
+    ? await isSmsOptedOut(phonePreview.e164)
+    : false;
   const eligibility = evaluateSmsEligibility({
     lead,
     isCustomer: customer,
     state,
     step,
     alreadySentForStep: already && !force,
+    globallyOptedOut,
   });
 
   if (!eligibility.ok) {
@@ -69,6 +76,7 @@ export async function enqueueSmsForLead(input: {
   // Re-check opt-out immediately before write (inbound may race).
   const freshState = await getSmsLeadState(lead.slug);
   if (
+    (await isSmsOptedOut(eligibility.phone)) ||
     freshState?.smsStatus === "opted_out" ||
     freshState?.smsAllowed === false
   ) {

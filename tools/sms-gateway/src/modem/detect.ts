@@ -24,7 +24,7 @@ export async function detectModem(input: {
       mode: "disconnected",
       detail:
         status.detail ||
-        `HiLink not reachable at ${input.hilinkUrl}. Plug in E3372h and open the HiLink page.`,
+        `HiLink not reachable at ${input.hilinkUrl}. Plug in the Brovi E3372-325 and open the HiLink page.`,
     },
   };
 }

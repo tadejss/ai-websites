@@ -2,17 +2,13 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { isValidSmsGatewayToken, readBearerToken } from "@/lib/auth";
 import { isDatabaseConfigured } from "@/db/client";
-import { processInboundSms } from "@/outreach/sms/inbound";
+import { authorizeSmsSend } from "@/outreach/sms/store";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const bodySchema = z.object({
-  providerMessageId: z.string().optional().nullable(),
-  from: z.string().min(1),
-  to: z.string().optional().nullable(),
-  body: z.string().min(1),
-  receivedAt: z.string().optional().nullable(),
+  messageId: z.string().min(1),
 });
 
 export async function POST(request: Request) {
@@ -37,15 +33,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid body", details: parsed.error.flatten() }, { status: 400 });
   }
 
-  const record = await processInboundSms(parsed.data);
-  return NextResponse.json({
-    ok: true,
-    id: record.id,
-    matched: record.matched,
-    slug: record.slug,
-    isOptOut: record.isOptOut,
-    keyword: record.keyword ?? null,
-    cancelledCount: record.cancelledCount,
-    normalizationFailed: record.normalizationFailed,
-  });
+  const outcome = await authorizeSmsSend(parsed.data.messageId);
+  return NextResponse.json(outcome);
 }

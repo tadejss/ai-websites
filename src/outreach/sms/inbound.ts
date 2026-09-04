@@ -1,5 +1,12 @@
-import { findSlugByNormalizedPhone, getSmsLeadState, insertInbound, upsertSmsLeadState } from "./store";
-import { isOptOutMessage } from "./opt-out";
+import {
+  cancelQueuedAndClaimedForPhone,
+  findSlugsByNormalizedPhone,
+  getSmsLeadState,
+  insertInbound,
+  upsertSmsLeadState,
+  upsertSmsOptOut,
+} from "./store";
+import { parseSmsOptOut } from "./opt-out";
 import { normalizeSlovenianPhone } from "./phone";
 import type { SmsInboundRecord } from "./types";
 
@@ -11,13 +18,19 @@ export type InboundSmsInput = {
   receivedAt?: string | null;
 };
 
+export type ProcessInboundSmsResult = SmsInboundRecord & {
+  keyword?: string;
+  cancelledCount: number;
+};
+
 export async function processInboundSms(
   input: InboundSmsInput,
-): Promise<SmsInboundRecord> {
+): Promise<ProcessInboundSmsResult> {
+  const parsed = parseSmsOptOut(input.body);
   const from = normalizeSlovenianPhone(input.from);
   const fromPhone = from.ok ? from.e164 : input.from.trim();
-  const slug = from.ok ? await findSlugByNormalizedPhone(from.e164) : null;
-  const optOut = isOptOutMessage(input.body);
+  const slugs = from.ok ? await findSlugsByNormalizedPhone(from.e164) : [];
+  const slug = slugs[0] ?? null;
 
   const record = await insertInbound({
     providerMessageId: input.providerMessageId ?? null,
@@ -26,11 +39,32 @@ export async function processInboundSms(
     body: input.body,
     receivedAt: input.receivedAt ?? null,
     slug,
-    matched: Boolean(slug),
-    isOptOut: optOut,
+    matched: slugs.length > 0,
+    isOptOut: parsed.optedOut,
+    normalizationFailed: !from.ok,
   });
 
-  if (slug) {
+  let cancelledCount = 0;
+
+  if (parsed.optedOut && from.ok) {
+    const reason = (parsed.keyword ?? "STOP").toLowerCase();
+    await upsertSmsOptOut({
+      phone: from.e164,
+      source: "inbound_sms",
+      reason,
+    });
+    cancelledCount = await cancelQueuedAndClaimedForPhone(from.e164);
+
+    for (const matchedSlug of slugs) {
+      await upsertSmsLeadState({
+        slug: matchedSlug,
+        normalizedPhone: from.e164,
+        smsStatus: "opted_out",
+        smsAllowed: false,
+        smsReplyAt: record.receivedAt,
+      });
+    }
+  } else if (slug) {
     const existing = await getSmsLeadState(slug);
     const alreadyOptedOut =
       existing?.smsStatus === "opted_out" || existing?.smsAllowed === false;
@@ -38,12 +72,15 @@ export async function processInboundSms(
     await upsertSmsLeadState({
       slug,
       normalizedPhone: from.ok ? from.e164 : undefined,
-      // Never downgrade opted_out → replied on a later non-STOP message.
-      smsStatus: optOut || alreadyOptedOut ? "opted_out" : "replied",
-      smsAllowed: optOut || alreadyOptedOut ? false : undefined,
+      smsStatus: alreadyOptedOut ? "opted_out" : "replied",
+      smsAllowed: alreadyOptedOut ? false : undefined,
       smsReplyAt: record.receivedAt,
     });
   }
 
-  return record;
+  return {
+    ...record,
+    keyword: parsed.keyword,
+    cancelledCount,
+  };
 }

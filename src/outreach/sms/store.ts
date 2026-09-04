@@ -1,11 +1,13 @@
 import { isDatabaseConfigured, sql } from "@/db/client";
 import { ensureCustomerSchema } from "@/db/ensure-schema";
 import type {
+  AuthorizeSmsSendResult,
   SmsInboundRecord,
   SmsLeadState,
   SmsLeadStatus,
   SmsMessageRecord,
   SmsMessageStatus,
+  SmsOptOutRecord,
   SmsStep,
 } from "./types";
 
@@ -50,7 +52,16 @@ type InboundRow = {
   slug: string | null;
   matched: boolean;
   is_opt_out: boolean;
+  normalization_failed: boolean;
   created_at: Date | string;
+};
+
+type OptOutRow = {
+  phone: string;
+  source: string;
+  reason: string;
+  created_at: Date | string;
+  updated_at: Date | string;
 };
 
 function toIso(value: Date | string | null | undefined): string | null {
@@ -106,7 +117,18 @@ function mapInbound(row: InboundRow): SmsInboundRecord {
     slug: row.slug,
     matched: row.matched,
     isOptOut: row.is_opt_out,
+    normalizationFailed: Boolean(row.normalization_failed),
     createdAt: toIso(row.created_at) ?? new Date().toISOString(),
+  };
+}
+
+function mapOptOut(row: OptOutRow): SmsOptOutRecord {
+  return {
+    phone: row.phone,
+    source: row.source,
+    reason: row.reason,
+    createdAt: toIso(row.created_at) ?? new Date().toISOString(),
+    updatedAt: toIso(row.updated_at) ?? new Date().toISOString(),
   };
 }
 
@@ -290,12 +312,17 @@ export async function claimQueuedMessages(input: {
     WHERE m.id IN (
       SELECT id
       FROM sms_messages
-      WHERE status = 'queued'
-         OR (
-           status IN ('claimed', 'sending')
-           AND claim_expires_at IS NOT NULL
-           AND claim_expires_at < NOW()
-         )
+      WHERE (
+          status = 'queued'
+          OR (
+            status IN ('claimed', 'sending')
+            AND claim_expires_at IS NOT NULL
+            AND claim_expires_at < NOW()
+          )
+        )
+        AND NOT EXISTS (
+          SELECT 1 FROM sms_opt_outs o WHERE o.phone = sms_messages.to_phone
+        )
       ORDER BY created_at ASC
       LIMIT ${input.limit}
       FOR UPDATE SKIP LOCKED
@@ -420,15 +447,22 @@ export async function countByLeadStatus(): Promise<Record<string, number>> {
 export async function findSlugByNormalizedPhone(
   e164: string,
 ): Promise<string | null> {
+  const slugs = await findSlugsByNormalizedPhone(e164);
+  return slugs[0] ?? null;
+}
+
+export async function findSlugsByNormalizedPhone(
+  e164: string,
+): Promise<string[]> {
   if (!isDatabaseConfigured()) {
-    return null;
+    return [];
   }
   await ensureCustomerSchema();
   const db = sql();
   const rows = (await db`
-    SELECT slug FROM sms_lead_state WHERE normalized_phone = ${e164} LIMIT 1
+    SELECT slug FROM sms_lead_state WHERE normalized_phone = ${e164}
   `) as Array<{ slug: string }>;
-  return rows[0]?.slug ?? null;
+  return rows.map((row) => row.slug);
 }
 
 export async function insertInbound(input: {
@@ -440,14 +474,17 @@ export async function insertInbound(input: {
   slug?: string | null;
   matched: boolean;
   isOptOut: boolean;
+  normalizationFailed?: boolean;
 }): Promise<SmsInboundRecord> {
   const db = await requireDb();
   const receivedAt = input.receivedAt ?? new Date().toISOString();
+  const normalizationFailed = input.normalizationFailed ?? false;
 
   if (input.providerMessageId) {
     const rows = (await db`
       INSERT INTO sms_inbound (
-        provider_message_id, from_phone, to_phone, body, received_at, slug, matched, is_opt_out
+        provider_message_id, from_phone, to_phone, body, received_at, slug, matched, is_opt_out,
+        normalization_failed
       )
       VALUES (
         ${input.providerMessageId},
@@ -457,10 +494,13 @@ export async function insertInbound(input: {
         ${receivedAt}::timestamptz,
         ${input.slug ?? null},
         ${input.matched},
-        ${input.isOptOut}
+        ${input.isOptOut},
+        ${normalizationFailed}
       )
       ON CONFLICT (provider_message_id) DO UPDATE SET
-        body = EXCLUDED.body
+        body = EXCLUDED.body,
+        is_opt_out = EXCLUDED.is_opt_out,
+        normalization_failed = EXCLUDED.normalization_failed
       RETURNING *
     `) as InboundRow[];
     if (!rows[0]) {
@@ -471,7 +511,7 @@ export async function insertInbound(input: {
 
   const rows = (await db`
     INSERT INTO sms_inbound (
-      from_phone, to_phone, body, received_at, slug, matched, is_opt_out
+      from_phone, to_phone, body, received_at, slug, matched, is_opt_out, normalization_failed
     )
     VALUES (
       ${input.fromPhone},
@@ -480,7 +520,8 @@ export async function insertInbound(input: {
       ${receivedAt}::timestamptz,
       ${input.slug ?? null},
       ${input.matched},
-      ${input.isOptOut}
+      ${input.isOptOut},
+      ${normalizationFailed}
     )
     RETURNING *
   `) as InboundRow[];
@@ -503,3 +544,113 @@ export async function listInboundForSlug(
   `) as InboundRow[];
   return rows.map(mapInbound);
 }
+
+export async function isSmsOptedOut(phone: string): Promise<boolean> {
+  if (!isDatabaseConfigured()) {
+    return false;
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT 1 FROM sms_opt_outs WHERE phone = ${phone} LIMIT 1
+  `) as Array<{ "?column?": number }>;
+  return rows.length > 0;
+}
+
+export async function upsertSmsOptOut(input: {
+  phone: string;
+  source: string;
+  reason: string;
+}): Promise<SmsOptOutRecord> {
+  const db = await requireDb();
+  const rows = (await db`
+    INSERT INTO sms_opt_outs (phone, source, reason, created_at, updated_at)
+    VALUES (${input.phone}, ${input.source}, ${input.reason}, NOW(), NOW())
+    ON CONFLICT (phone) DO UPDATE SET
+      source = EXCLUDED.source,
+      reason = EXCLUDED.reason,
+      updated_at = NOW()
+    RETURNING *
+  `) as OptOutRow[];
+  if (!rows[0]) {
+    throw new Error("Failed to upsert sms_opt_outs");
+  }
+  return mapOptOut(rows[0]);
+}
+
+export async function cancelQueuedAndClaimedForPhone(
+  e164: string,
+): Promise<number> {
+  const db = await requireDb();
+  const rows = (await db`
+    UPDATE sms_messages
+    SET status = 'cancelled', last_error = 'sms_opt_out', updated_at = NOW()
+    WHERE to_phone = ${e164}
+      AND status IN ('queued', 'claimed')
+    RETURNING id
+  `) as Array<{ id: number }>;
+  return rows.length;
+}
+
+export async function listRecentSmsOptOuts(
+  limit = 20,
+): Promise<SmsOptOutRecord[]> {
+  if (!isDatabaseConfigured()) {
+    return [];
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT * FROM sms_opt_outs ORDER BY updated_at DESC LIMIT ${limit}
+  `) as OptOutRow[];
+  return rows.map(mapOptOut);
+}
+
+export async function authorizeSmsSend(
+  messageId: string,
+): Promise<AuthorizeSmsSendResult> {
+  const db = await requireDb();
+  const rows = (await db`
+    UPDATE sms_messages AS m
+    SET status = 'sending', updated_at = NOW()
+    WHERE m.message_id = ${messageId}
+      AND (
+        (
+          m.status = 'claimed'
+          AND NOT EXISTS (
+            SELECT 1 FROM sms_opt_outs o WHERE o.phone = m.to_phone
+          )
+        )
+        OR m.status = 'sending'
+      )
+    RETURNING *
+  `) as MessageRow[];
+
+  if (rows[0]) {
+    return { send: true };
+  }
+
+  const existing = (await db`
+    SELECT status, to_phone FROM sms_messages WHERE message_id = ${messageId} LIMIT 1
+  `) as Array<{ status: string; to_phone: string }>;
+  if (!existing[0]) {
+    return { send: false, reason: "not_found" };
+  }
+  if (existing[0].status === "cancelled") {
+    return { send: false, reason: "cancelled" };
+  }
+  const optedOut = (await db`
+    SELECT 1 FROM sms_opt_outs WHERE phone = ${existing[0].to_phone} LIMIT 1
+  `) as Array<{ "?column?": number }>;
+  if (optedOut.length > 0 && existing[0].status === "claimed") {
+    await db`
+      UPDATE sms_messages
+      SET status = 'cancelled', last_error = 'sms_opt_out', updated_at = NOW()
+      WHERE message_id = ${messageId}
+        AND status = 'claimed'
+    `;
+    return { send: false, reason: "sms_opt_out" };
+  }
+  return { send: false, reason: "not_claimable" };
+}
+
