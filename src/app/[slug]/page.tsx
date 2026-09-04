@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { SitePage } from "../site-page";
-import { getSiteConfig } from "@/content/get-site-config";
+import { resolvePublicSiteConfig } from "@/onboarding/public-site-config";
 import { siteSlugs } from "@/content/sites";
 import type { SiteConfig } from "@/content/types/site";
 import { toAbsoluteUrl } from "@/site-url";
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
 
   try {
-    const config = getSiteConfig(slug);
+    const config = await resolvePublicSiteConfig(slug);
     return withBrandIcons(buildMetadata(slug, config), config);
   } catch {
     return {
@@ -102,7 +102,7 @@ export default async function ClientPage({ params }: Props) {
   let siteConfig: SiteConfig;
 
   try {
-    siteConfig = getSiteConfig(slug);
+    siteConfig = await resolvePublicSiteConfig(slug);
   } catch {
     notFound();
   }

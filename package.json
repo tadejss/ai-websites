@@ -57,6 +57,7 @@
     "backfill-admin-index": "tsx scripts/backfill-admin-index.ts",
     "test-factory-ops": "tsx scripts/test-factory-ops.ts",
     "test-email-provision": "tsx scripts/test-email-provision.ts",
+    "test-website-domains": "tsx scripts/test-website-domains.ts",
     "test-grok-qa": "tsx scripts/test-grok-qa.ts"
   },
   "dependencies": {

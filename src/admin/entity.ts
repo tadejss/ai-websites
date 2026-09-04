@@ -8,6 +8,7 @@ import type {
 } from "@/email/types";
 import type { SmsLeadState, SmsMessageRecord, SmsInboundRecord } from "@/outreach/sms/types";
 import type { QaLatestSummary } from "@/qa/types";
+import type { WebsiteDomainRecord } from "@/website-domains/types";
 
 export const UNIFIED_STAGES = [
   "discovered",
@@ -91,6 +92,7 @@ export type AdminEntity = {
   emailDomain: CustomerDomainRecord | null;
   emailService: EmailServiceRecord | null;
   emailMailbox: EmailMailboxRecord | null;
+  websiteDomains: WebsiteDomainRecord[];
   qaLatest: QaLatestSummary | null;
 };
 

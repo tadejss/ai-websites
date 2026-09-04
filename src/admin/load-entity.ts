@@ -26,6 +26,7 @@ import {
 import { getEmailServiceWithDomain } from "@/email/store";
 import { getQaLatestSummary } from "@/qa/store";
 import { isGrokQaEnabled } from "@/qa/config";
+import { listWebsiteDomainsForSlug } from "@/website-domains/store";
 
 export async function loadAdminEntity(slug: string): Promise<AdminEntity | null> {
   const lead = await getLeadWithCustomerState(slug);
@@ -66,6 +67,9 @@ export async function loadAdminEntity(slug: string): Promise<AdminEntity | null>
     smsEnabled && clientSiteExists(slug)
       ? await getQaLatestSummary(slug)
       : null;
+  const websiteDomains = isCustomerLead
+    ? await listWebsiteDomainsForSlug(slug)
+    : [];
 
   const stage = resolveUnifiedStage({
     isCustomer: isCustomerLead,
@@ -124,6 +128,7 @@ export async function loadAdminEntity(slug: string): Promise<AdminEntity | null>
     emailDomain: emailBundle?.domain ?? null,
     emailService: emailBundle?.service ?? null,
     emailMailbox: emailBundle?.mailbox ?? null,
+    websiteDomains,
     qaLatest,
   };
 }

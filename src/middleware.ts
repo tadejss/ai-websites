@@ -5,6 +5,11 @@ import {
 } from "@/demo-lifecycle/middleware-demo-view";
 import { ADMIN_COOKIE, getAdminSecret, isValidAdminToken } from "@/lib/auth";
 import { getSlugForHost } from "@/lib/custom-domains";
+import { lookupLiveWebsiteSlugCached } from "@/website-domains/lookup-cache";
+import {
+  customerHostRewritePath,
+  shouldSkipCustomerHostRewrite,
+} from "@/website-domains/rewrite";
 
 /** Root paths that should resolve to the mapped client slug on a custom domain. */
 const CUSTOM_DOMAIN_ROOT_PATHS = new Set([
@@ -15,7 +20,7 @@ const CUSTOM_DOMAIN_ROOT_PATHS = new Set([
   "/pogosta-vprasanja",
 ]);
 
-export function middleware(request: NextRequest, event: NextFetchEvent) {
+export async function middleware(request: NextRequest, event: NextFetchEvent) {
   const { pathname } = request.nextUrl;
   const host = request.headers.get("host")?.split(":")[0]?.toLowerCase() ?? "";
 
@@ -46,13 +51,28 @@ export function middleware(request: NextRequest, event: NextFetchEvent) {
     return NextResponse.rewrite(rewriteUrl);
   }
 
-  const customSlug = getSlugForHost(request.headers.get("host"));
+  const marketingSlug = getSlugForHost(request.headers.get("host"));
 
-  if (customSlug && CUSTOM_DOMAIN_ROOT_PATHS.has(pathname)) {
+  if (marketingSlug && CUSTOM_DOMAIN_ROOT_PATHS.has(pathname)) {
     const rewriteUrl = request.nextUrl.clone();
     rewriteUrl.pathname =
-      pathname === "/" ? `/${customSlug}` : `/${customSlug}${pathname}`;
+      pathname === "/" ? `/${marketingSlug}` : `/${marketingSlug}${pathname}`;
     return NextResponse.rewrite(rewriteUrl);
+  }
+
+  if (!marketingSlug && !shouldSkipCustomerHostRewrite(pathname)) {
+    try {
+      const liveSlug = await lookupLiveWebsiteSlugCached(
+        request.headers.get("host"),
+      );
+      if (liveSlug) {
+        const rewriteUrl = request.nextUrl.clone();
+        rewriteUrl.pathname = customerHostRewritePath(pathname, liveSlug);
+        return NextResponse.rewrite(rewriteUrl);
+      }
+    } catch {
+      // Fail-open: custom host stays unresolved; platform hosts keep working.
+    }
   }
 
   if (!pathname.startsWith("/admin")) {

@@ -163,3 +163,17 @@ export function isOnboardingLockedForCustomerEdits(
     "live",
   ].includes(status);
 }
+
+/** Public /{slug} may overlay processed_payload onto git site.json. */
+export const PUBLIC_OVERLAY_STATUSES: readonly OnboardingStatus[] = [
+  "approved_for_publish",
+  "publishing",
+  "live",
+  "publish_failed",
+] as const;
+
+export function canOverlayOnboardingOnPublicSite(
+  status: OnboardingStatus,
+): boolean {
+  return (PUBLIC_OVERLAY_STATUSES as readonly string[]).includes(status);
+}

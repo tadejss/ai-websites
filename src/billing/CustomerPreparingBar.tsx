@@ -69,10 +69,10 @@ export function CustomerPreparingBar({
     onboardingStatus === "publishing"
   ) {
     headline = firstName
-      ? `${firstName}, tvoja stran je v objavi.`
-      : "Tvoja stran je v objavi.";
+      ? `${firstName}, tvoja stran je posodobljena.`
+      : "Tvoja stran je posodobljena.";
     subtitle =
-      "Potrdili smo tvoje podatke. Kmalu bo stran na voljo na zbrendiraj.si/" +
+      "Potrdili smo tvoje podatke. Stran je posodobljena na zbrendiraj.si/" +
       slug;
   } else if (onboardingStatus === "publish_failed") {
     headline = "Pri objavi je prišlo do težave.";

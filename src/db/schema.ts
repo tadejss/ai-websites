@@ -106,6 +106,26 @@ CREATE UNIQUE INDEX IF NOT EXISTS customer_domains_slug_domain_uidx
 CREATE INDEX IF NOT EXISTS customer_domains_status_idx
   ON customer_domains (status);
 
+CREATE TABLE IF NOT EXISTS customer_website_domains (
+  id BIGSERIAL PRIMARY KEY,
+  customer_slug TEXT NOT NULL REFERENCES customers (slug) ON DELETE CASCADE,
+  hostname TEXT NOT NULL UNIQUE,
+  kind TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT 'pending',
+  canonical BOOLEAN NOT NULL DEFAULT FALSE,
+  vercel_verified BOOLEAN NOT NULL DEFAULT FALSE,
+  vercel_error TEXT,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS customer_website_domains_slug_idx
+  ON customer_website_domains (customer_slug);
+
+CREATE INDEX IF NOT EXISTS customer_website_domains_live_hostname_idx
+  ON customer_website_domains (hostname)
+  WHERE status = 'live';
+
 CREATE TABLE IF NOT EXISTS customer_email_services (
   id BIGSERIAL PRIMARY KEY,
   customer_slug TEXT NOT NULL UNIQUE REFERENCES customers (slug) ON DELETE CASCADE,

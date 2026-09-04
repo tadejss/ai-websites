@@ -70,7 +70,7 @@ export async function POST(_request: Request, context: RouteContext) {
     result: "ok",
     detail: { dispatched: dispatch.dispatched },
   });
-  await afterAdminMutation();
+  await afterAdminMutation(slug);
 
   return NextResponse.json({
     ok: true,

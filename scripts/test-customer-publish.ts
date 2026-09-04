@@ -11,6 +11,8 @@ import {
 } from "../src/onboarding/types";
 import { buildProcessedPayload } from "../src/onboarding/process";
 import { mergeSiteConfigWithOnboarding, applyCustomerSite } from "../src/onboarding/apply-customer-site";
+import { overlaySiteConfigFromOnboarding } from "../src/onboarding/overlay-site-config";
+import { canOverlayOnboardingOnPublicSite } from "../src/onboarding/types";
 import { validateSiteConfig } from "../src/content/validate-site-config";
 
 function ok(label: string, condition: boolean): void {
@@ -196,6 +198,59 @@ function testDemoSnapshot(): void {
   }
 }
 
+function testPublicOverlay(): void {
+  console.log("\nPublic overlay");
+
+  const siteConfig = minimalSiteConfig();
+  const payload = buildProcessedPayload("test-slug", {
+    companyName: "Overlay Co",
+    email: "info@overlay.si",
+    phone: "041 000 000",
+    businessDescription: "Opis",
+    services: ["Ena"],
+    desiredDomain: "overlay.si",
+  });
+
+  ok(
+    "overlay allowed after approve",
+    canOverlayOnboardingOnPublicSite("approved_for_publish"),
+  );
+  ok(
+    "overlay blocked before approve",
+    !canOverlayOnboardingOnPublicSite("ready_for_approval"),
+  );
+
+  const merged = overlaySiteConfigFromOnboarding(siteConfig, {
+    status: "approved_for_publish",
+    processedPayload: payload,
+  });
+  ok("overlay uses onboarding company name", merged.metadata.title === "Overlay Co");
+
+  const beforeApprove = overlaySiteConfigFromOnboarding(siteConfig, {
+    status: "ready_for_approval",
+    processedPayload: payload,
+  });
+  ok(
+    "no overlay before approve",
+    beforeApprove.metadata.title === siteConfig.metadata.title,
+  );
+
+  const invalid = overlaySiteConfigFromOnboarding(siteConfig, {
+    status: "approved_for_publish",
+    processedPayload: {
+      ...payload,
+      siteHints: {
+        ...payload.siteHints,
+        photoUrls: null as unknown as string[],
+      },
+    },
+  });
+  ok(
+    "invalid payload falls back to git config",
+    invalid.metadata.title === siteConfig.metadata.title,
+  );
+}
+
 function testPublishStateTransitions(): void {
   console.log("\nPublish state transitions (logic)");
 
@@ -224,6 +279,7 @@ async function main(): Promise<void> {
   testApplyCustomerSiteMerge();
   testDemoSnapshot();
   testPublishStateTransitions();
+  testPublicOverlay();
   console.log("\nAll customer publish tests passed.");
 }
 
