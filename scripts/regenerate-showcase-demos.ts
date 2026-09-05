@@ -8,10 +8,17 @@ import { assignBeautyLayout } from "../src/appearances/beauty/assign-layout";
 import { assignTradeLayout } from "../src/appearances/trade/assign-layout";
 import { isTradeAppearance } from "../src/appearances/types";
 import { assignLook } from "../src/catalog/assign-look";
-import { SHOWCASE_REFERENCE_SLUGS } from "../src/billing/showcase-slugs";
-import { applyNewLeadSectionDefaults } from "../src/content/apply-new-lead-sections";
+import {
+  SHOWCASE_REFERENCE_SLUGS,
+  type ShowcaseReferenceSlug,
+} from "../src/billing/showcase-slugs";
+import {
+  applyNewLeadSectionDefaults,
+  normalizeGallerySection,
+  withSectionNavLinks,
+} from "../src/content/apply-new-lead-sections";
 import { validateSiteConfig } from "../src/content/validate-site-config";
-import type { SiteConfig } from "../src/content/types/site";
+import type { GalleryItem, SiteConfig } from "../src/content/types/site";
 import { generateSiteImages } from "../src/images/generate-site-images";
 import { resolveImagePoolCategory } from "../src/images/image-pool-category";
 import { assignTheme } from "../src/theme/assign-theme";
@@ -19,6 +26,64 @@ import { assignTheme } from "../src/theme/assign-theme";
 const root = resolve(__dirname, "..");
 
 loadEnv({ path: resolve(root, ".env.local") });
+
+type ShowcaseSectionVariant = "all" | "no-gallery" | "no-pricing";
+
+const SHOWCASE_SECTION_VARIANTS: Record<
+  ShowcaseReferenceSlug,
+  ShowcaseSectionVariant
+> = {
+  "frizerski-salon-luna": "all",
+  "keramicarstvo-hribar": "no-gallery",
+  "elektro-instalacije-kovac": "no-pricing",
+  "krovstvo-petek": "all",
+};
+
+function galleryItemsFromImages(config: SiteConfig): GalleryItem[] {
+  const items: GalleryItem[] = [];
+
+  if (config.images?.hero?.src) {
+    items.push({
+      src: config.images.hero.src,
+      alt: config.images.hero.alt || "Ambient",
+    });
+  }
+
+  if (config.images?.services?.src) {
+    items.push({
+      src: config.images.services.src,
+      alt: config.images.services.alt || "Storitve",
+    });
+  }
+
+  return items;
+}
+
+function applyShowcaseSectionVariant(
+  config: SiteConfig,
+  variant: ShowcaseSectionVariant,
+): SiteConfig {
+  const showGallery = variant !== "no-gallery";
+  const showPricing = variant !== "no-pricing";
+  const galleryItems = showGallery
+    ? config.gallery?.items?.length
+      ? config.gallery.items
+      : galleryItemsFromImages(config)
+    : [];
+
+  return withSectionNavLinks({
+    ...config,
+    sections: {
+      ...config.sections,
+      gallery: showGallery,
+      pricing: showPricing,
+    },
+    gallery: normalizeGallerySection({
+      ...config.gallery,
+      items: galleryItems,
+    }),
+  });
+}
 
 function writeJsonFile(filePath: string, data: unknown): void {
   writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
@@ -59,7 +124,10 @@ async function migrateShowcaseCatalog(slug: string): Promise<void> {
     theme: look.theme,
     layout: look.layout,
   };
-  const withSections = applyNewLeadSectionDefaults(withLook);
+  const withSections = applyShowcaseSectionVariant(
+    applyNewLeadSectionDefaults(withLook),
+    SHOWCASE_SECTION_VARIANTS[slug as ShowcaseReferenceSlug],
+  );
   const persistedConfig = validateSiteConfig(withSections);
 
   writeJsonFile(sitePath, persistedConfig);
@@ -121,7 +189,12 @@ async function regenerateShowcaseDemo(slug: string): Promise<void> {
     siteConfig as SiteConfig,
   );
   const withImages = images ? { ...siteConfig, images } : siteConfig;
-  const withSections = applyNewLeadSectionDefaults(withImages as SiteConfig);
+  const variant = SHOWCASE_SECTION_VARIANTS[slug as ShowcaseReferenceSlug];
+  console.log(`Sections: ${variant}`);
+  const withSections = applyShowcaseSectionVariant(
+    applyNewLeadSectionDefaults(withImages as SiteConfig),
+    variant,
+  );
   const persistedConfig = validateSiteConfig(withSections);
 
   mkdirSync(resolve(clientDir, "assets"), { recursive: true });

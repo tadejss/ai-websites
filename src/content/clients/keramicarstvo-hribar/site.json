@@ -17,16 +17,38 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/keramicarstvo-hribar/hero.jpg",
-      "alt": "Sodobna kopalnica z natančno položenimi keramičnimi ploščicami"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/hero.avif",
+      "alt": "Keramičar polaga keramične ploščice v sodobni kopalnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "4752996",
+      "sourceUrl": "https://www.pexels.com/photo/white-and-blue-concrete-blocks-4752996/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "tile installer laying ceramic floor"
     },
     "services": {
-      "src": "/clients/keramicarstvo-hribar/services.jpg",
-      "alt": "Detajl keramičnih talnih ploščic v svetlem prostoru"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/services.avif",
+      "alt": "Natančno polaganje talnih ploščic in oblaganje stopnic",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/services.webp",
+      "width": 950,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6444245",
+      "sourceUrl": "https://www.pexels.com/photo/view-of-a-modern-bathroom-6444245/",
+      "photographer": "Max Vakhtbovych",
+      "photographerUrl": "https://www.pexels.com/@artbovich",
+      "searchQuery": "professional tiler bathroom renovation"
     }
   },
   "sections": {
-    "gallery": true,
+    "gallery": false,
     "pricing": true
   },
   "gallery": {
@@ -36,13 +58,53 @@
     "description": "Fotografije naših storitev in ambienta.",
     "items": []
   },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Pregled okvirnih storitev in cen",
+    "description": "Cene so informativne narave in se prilagajajo glede na zahtevnost ter velikost projekta.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Polaganje standardnih ploščic",
+        "description": "Polaganje talnih ali stenskih ploščic večjih formatov",
+        "price": "od 25 €",
+        "unit": "na m²",
+        "featured": true
+      },
+      {
+        "name": "Prenova kopalnice (standard)",
+        "description": "Odstranitev stare keramike, priprava podlage in polaganje",
+        "price": "po ogledu",
+        "unit": "projekt"
+      },
+      {
+        "name": "Oblaganje stopnic",
+        "description": "Oblaganje stopnic s keramiko vključno z zaključki",
+        "price": "od 35 €",
+        "unit": "tekoči meter"
+      },
+      {
+        "name": "Hidroizolacija površin",
+        "description": "Nanos dvokomponentne hidroizolacije pred polaganjem",
+        "price": "od 15 €",
+        "unit": "na m²"
+      },
+      {
+        "name": "Polaganje na terasah in balkonih",
+        "description": "Zunanje polaganje s poudarkom na ustrezni odvodnji",
+        "price": "od 30 €",
+        "unit": "na m²"
+      }
+    ]
+  },
   "brand": {
     "prefix": "Keramičarstvo",
     "highlight": "Hribar"
   },
   "metadata": {
-    "title": "Keramičarstvo Hribar | Ljubljana",
-    "description": "Polaganje keramike, prenove kopalnic in oblaganje stopnic v Ljubljani z okolico."
+    "title": "Keramičarstvo Hribar | Natančno polaganje keramike in prenove kopalnic Ljubljana",
+    "description": "Natančno polaganje keramike, prenove kopalnic, oblaganje stopnic in teras. Zanesljiv mojster v Ljubljani z okolico."
   },
   "nav": {
     "links": [
@@ -55,6 +117,10 @@
         "label": "Zakaj mi"
       },
       {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
         "href": "#kontakt",
         "label": "Kontakt"
       }
@@ -62,92 +128,92 @@
     "cta": "Pridobi ponudbo"
   },
   "hero": {
-    "badge": "Ljubljana z okolico",
-    "title": "Keramika, ki",
-    "titleHighlight": "drži linijo.",
-    "description": "Prenove kopalnic, tla in stopnice — natančno položeno, čisto izvedeno in dogovorjeno vnaprej.",
+    "badge": "Lokalni mojster za keramiko v Ljubljani",
+    "title": "Natančno polaganje keramike za",
+    "titleHighlight": "kopalnice, tla in stopnice",
+    "description": "Strokovne in zanesljive keramičarske storitve za lastnike stanovanj in hiš, ki prenavljajo prostore v Ljubljani z okolico.",
     "primaryCta": "Pridobi ponudbo",
     "secondaryCta": "Preglej storitve",
-    "secondaryCtaHref": "#storitve",
     "stats": [
       {
-        "value": "12+",
-        "label": "Let izkušenj"
+        "value": "12",
+        "label": "let izkušenj"
+      },
+      {
+        "value": "Natančnost",
+        "label": "Čista izvedba"
+      },
+      {
+        "value": "Zanesljivost",
+        "label": "Jasni roki"
       },
       {
         "value": "Ljubljana",
         "label": "Z okolico"
-      },
-      {
-        "value": "Natančno",
-        "label": "Polaganje"
-      },
-      {
-        "value": "Jasni",
-        "label": "Dogovori"
       }
     ]
   },
   "services": {
     "id": "storitve",
-    "eyebrow": "Storitve",
-    "title": "Od kopalnice do terase",
-    "description": "Osredotočamo se na dela, kjer se vidi vsak milimeter.",
+    "eyebrow": "Naše storitve",
+    "title": "Kakovostno polaganje keramike in prenove",
+    "description": "Specializirani smo za celovite prenove in detajlno oblaganje površin za stanovanjske objekte v Ljubljani z okolico.",
     "items": [
       {
         "title": "Prenove kopalnic",
-        "description": "Od priprave podlage do končnih oblog — urejena kopalnica brez kompromisov pri detajlih.",
+        "description": "Celovite prenove kopalnic z natančnim polaganjem ploščic in ustreznimi hidroizolacijskimi rešitvami.",
         "icon": "service-1"
       },
       {
-        "title": "Talne in stenske ploščice",
-        "description": "Polaganje vseh formatov, vključno z večjimi ploščami in zahtevnejšimi vzorci.",
+        "title": "Polaganje talnih in stenskih ploščic",
+        "description": "Strokovna montaža vseh vrst keramičnih ploščic v bivalnih prostorih, kuhinjah in na hodnikih.",
         "icon": "service-2"
       },
       {
         "title": "Oblaganje stopnic",
-        "description": "Notranje in zunanje stopnice z enakomernimi furgami in trdnim robom.",
+        "description": "Skrbno oblaganje notranjih in zunanjih stopnic s poudarkom na varnosti in estetskih detajlih.",
         "icon": "service-3"
       },
       {
-        "title": "Terase in balkoni",
-        "description": "Zunanje površine z ustrezno hidroizolacijo in trajnimi materiali.",
+        "title": "Zunanje terase in balkoni",
+        "description": "Odporno in strokovno polaganje keramike na zunanjih površinah, terasah ter balkonih.",
         "icon": "service-4"
       }
     ]
   },
   "whyChooseUs": {
     "id": "zakaj-mi",
-    "eyebrow": "Zakaj Hribar",
-    "title": "Jasno dogovorjeno. Natančno izvedeno.",
-    "description": "Delamo tako, da veš, kaj prihaja — in kako bo videti na koncu.",
-    "highlights": [],
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše keramičarske projekte",
+    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom poskrbimo, da so dela opravljena pravočasno in brez kompromisov glede kakovosti.",
+    "highlights": [
+      "Čista in natančna izvedba",
+      "Jasni roki in dogovori",
+      "Izkušnje z zahtevnimi detajli"
+    ],
     "benefits": [
       {
-        "stat": "01",
-        "label": "01 Natančnost",
-        "description": "Ravne linije, enakomerne furge in čisti zaključki.",
-        "title": "01 Natančnost"
+        "label": "Čista in natančna izvedba",
+        "description": "Delo opravimo skrbno, prostor pa za seboj vedno pustimo čist in urejen.",
+        "title": "Čista in natančna izvedba"
       },
       {
-        "stat": "02",
-        "label": "02 Dogovori",
-        "description": "Roki, obseg del in cena so usklajeni pred začetkom.",
-        "title": "02 Dogovori"
+        "label": "Jasni roki in dogovori",
+        "description": "Držimo se dogovorjenih rokov izvedbe in vnaprej določenega obsega del.",
+        "title": "Jasni roki in dogovori"
       },
       {
-        "stat": "03",
-        "label": "03 Red",
-        "description": "Objekt ostane urejen; po koncu pospravimo za sabo.",
-        "title": "03 Red"
+        "label": "Izkušnje z zahtevnimi detajli",
+        "description": "Z 12 leti izkušenj uspešno rešujemo tudi najzahtevnejše keramičarske izzive.",
+        "title": "Izkušnje z zahtevnimi detajli"
       }
     ]
   },
   "contact": {
     "id": "kontakt",
-    "eyebrow": "Kontakt",
-    "title": "Povej, kaj prenavljaš",
-    "description": "Pošlji kratek opis projekta — pripravimo okvirno ponudbo.",
+    "eyebrow": "Stopite v stik",
+    "title": "Dogovorite se za ogled in ponudbo",
+    "description": "Na voljo smo vam za vsa vprašanja, svetovanje in pripravo ponudbe za vaš projekt.",
     "items": [
       {
         "label": "Telefon",
@@ -162,36 +228,41 @@
         "icon": "email"
       },
       {
-        "label": "Območje",
-        "value": "Ljubljana z okolico",
+        "label": "Naslov",
+        "value": "Celovška cesta 88, 1000 Ljubljana, Slovenia",
         "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–16:00",
+        "icon": "clock"
       }
     ],
     "form": {
-      "title": "Povpraševanje",
-      "description": "Opiši prostor in približen obseg del.",
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili s ponudbo.",
       "nameLabel": "Ime in priimek",
-      "namePlaceholder": "Vaše ime",
-      "phoneLabel": "Telefon",
-      "phonePlaceholder": "Vaša telefonska številka",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vaš telefon",
       "messageLabel": "Sporočilo",
-      "messagePlaceholder": "Kopalnica, tla, stopnice…",
+      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
       "submitLabel": "Pridobi ponudbo"
     }
   },
   "footer": {
-    "address": "Celovška cesta 88, 1000 Ljubljana",
-    "rights": "Vse pravice pridržane."
+    "address": "Celovška cesta 88, 1000 Ljubljana, Slovenia",
+    "rights": "© 2026 Keramičarstvo Hribar. Vse pravice pridržane."
   },
   "business": {
     "name": "Keramičarstvo Hribar",
-    "address": "Celovška cesta 88, 1000 Ljubljana",
+    "address": "Celovška cesta 88, 1000 Ljubljana, Slovenia",
     "email": "info@keramicarstvo-hribar.si",
     "phone": "031 445 902"
   },
   "privacy": {
     "enabled": true,
-    "lastUpdated": "2026-08-23",
+    "lastUpdated": "2026-09-05",
     "contactForm": {
       "enabled": true,
       "fields": [

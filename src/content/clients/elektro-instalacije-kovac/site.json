@@ -17,32 +17,98 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/elektro-instalacije-kovac/hero.jpg",
-      "alt": "Sodobna električna omarica in urejeno ožičenje v objektu"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-instalacije-kovac/hero.avif",
+      "alt": "Električar pri delu na moderni elektro omari",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-instalacije-kovac/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "33314764",
+      "sourceUrl": "https://www.pexels.com/photo/minimalist-wood-interior-with-cozy-niche-seating-33314764/",
+      "photographer": "The Ghazi",
+      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
+      "searchQuery": "professional electrician installing lighting fixture warm interior"
     },
     "services": {
-      "src": "/clients/elektro-instalacije-kovac/services.jpg",
-      "alt": "Montaža LED razsvetljave v sodobnem prostoru"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-instalacije-kovac/services.avif",
+      "alt": "Strokovna izvedba elektroinštalacij v objektu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-instalacije-kovac/services.webp",
+      "width": 976,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "10871585",
+      "sourceUrl": "https://www.pexels.com/photo/electricians-at-work-10871585/",
+      "photographer": "Annas Zakaria",
+      "photographerUrl": "https://www.pexels.com/@annaszakaria",
+      "searchQuery": "electrician working electrical panel"
     }
   },
   "sections": {
     "gallery": true,
-    "pricing": true
+    "pricing": false
   },
   "gallery": {
     "id": "galerija",
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-instalacije-kovac/hero.avif",
+        "alt": "Električar pri delu na moderni elektro omari"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-instalacije-kovac/services.avif",
+        "alt": "Strokovna izvedba elektroinštalacij v objektu"
+      }
+    ]
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Pregled okvirnih cen za osnovna elektroinštalacijska dela in storitve.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ogled nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Ura dela elektroinštalaterja",
+        "description": "Standardno strokovno delo in manjša popravila",
+        "price": "od 35 €",
+        "featured": true
+      },
+      {
+        "name": "Izhod na terenu",
+        "description": "Prihod na lokacijo v Celju in okolici",
+        "price": "od 30 €"
+      },
+      {
+        "name": "Odpravljanje napak",
+        "description": "Diagnostika in odprava električne okvare",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Montaža svetila",
+        "description": "Priklop in montaža posamezne svetilke",
+        "price": "od 25 €"
+      },
+      {
+        "name": "Pregled in meritve",
+        "description": "Pregled elektroinštalacij in stanja ožičenja",
+        "price": "od 80 €"
+      }
+    ]
   },
   "brand": {
-    "prefix": "Elektro",
+    "prefix": "Elektro inštalacije",
     "highlight": "Kovač"
   },
   "metadata": {
-    "title": "Elektro inštalacije Kovač | Celje",
-    "description": "Hišne in poslovne elektroinštalacije, razsvetljava in odpravljanje napak v Celju ter Savinjski regiji."
+    "title": "Elektro inštalacije Kovač | Elektroinštalater Celje",
+    "description": "Hišne in poslovne elektroinštalacije z jasnim pristopom za lastnike hiš, upravnike in manjša podjetja v Celju in Savinjski regiji."
   },
   "nav": {
     "links": [
@@ -55,6 +121,10 @@
         "label": "Zakaj mi"
       },
       {
+        "href": "#galerija",
+        "label": "Galerija"
+      },
+      {
         "href": "#kontakt",
         "label": "Kontakt"
       }
@@ -62,97 +132,98 @@
     "cta": "Pokliči za pregled"
   },
   "hero": {
-    "badge": "Elektroinštalacije · Celje",
-    "title": "Tok mora",
-    "titleHighlight": "teči pravilno.",
-    "description": "Nove inštalacije, prenove ožičenja in hitro odpravljanje napak. Jasno, varno in brez nepotrebnega zapletanja.",
+    "badge": "Zanesljive elektroinštalacije",
+    "title": "Hišne in poslovne elektroinštalacije z",
+    "titleHighlight": "jasnim pristopom",
+    "description": "Kakovostne in varne storitve za lastnike hiš, upravnike in manjša podjetja v Celju in Savinjski regiji.",
     "primaryCta": "Pokliči za pregled",
-    "secondaryCta": "Storitve",
-    "secondaryCtaHref": "#storitve",
+    "secondaryCta": "Preglej storitve",
     "stats": [
       {
-        "value": "15+",
-        "label": "Let v panogi"
+        "value": "15 let",
+        "label": "Izkušenj"
       },
       {
-        "value": "24h",
-        "label": "Odziv na nujno"
+        "value": "Hitro",
+        "label": "Odzivanje"
+      },
+      {
+        "value": "Strokovno",
+        "label": "Delo"
       },
       {
         "value": "Celje",
-        "label": "In regija"
-      },
-      {
-        "value": "Varno",
-        "label": "Po predpisih"
+        "label": "in regija"
       }
     ]
   },
   "services": {
     "id": "storitve",
-    "eyebrow": "Kaj delamo",
-    "title": "Elektro dela, ki držijo",
-    "description": "Od nove ožičenja do razsvetljave — fokus na varnost in preglednost.",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite elektroinštalacijske rešitve",
+    "description": "Strokovna izvedba novih inštalacij, prenove, razsvetljava ter hitro odpravljanje napak v Celju in Savinjski regiji.",
     "items": [
       {
-        "title": "Nove inštalacije",
-        "description": "Celovita električna napeljava za novogradnje in večje prenove.",
+        "title": "Nove elektroinštalacije",
+        "description": "Celovita izvedba elektroinštalacij v novogradnjah in objektih.",
         "icon": "service-1"
       },
       {
-        "title": "Prenove ožičenja",
-        "description": "Zamenjava zastarelih napeljav in posodobitev razdelilnikov.",
+        "title": "Prenove in zamenjava ožičenja",
+        "description": "Sanacija in posodobitev obstoječih električnih napeljav.",
         "icon": "service-2"
       },
       {
         "title": "Razsvetljava",
-        "description": "Notranja in zunanja razsvetljava, LED rešitve in krmiljenje.",
+        "description": "Montaža in načrtovanje notranje ter zunanje razsvetljave.",
         "icon": "service-3"
       },
       {
         "title": "Odpravljanje napak",
-        "description": "Diagnoza izpadov, kratkih stikov in težav z varovalkami — hitro in jasno.",
+        "description": "Hitro odkrivanje in odprava električnih okvar.",
         "icon": "service-4"
       }
     ]
   },
   "whyChooseUs": {
     "id": "zakaj-mi",
-    "eyebrow": "Zakaj Kovač",
-    "title": "Tehnično. Direktno. Brez meglice.",
-    "description": "Poveš problem — dobiš rešitev in razlago, kaj se bo zgodilo na objektu.",
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Zanesljiv partner za vaše električne sisteme",
+    "description": "Z združevanjem strokovnega znanja in tehnične natančnosti zagotavljamo varno delovanje objektov.",
     "highlights": [
+      "Hitro odzivanje na napake",
       "Pregledno dokumentirano delo",
-      "Hitra diagnoza napak",
-      "Stanovanjski in poslovni objekti"
+      "Izkušnje v stanovanjskih in poslovnih objektih"
     ],
     "benefits": [
       {
-        "stat": "Varno",
-        "label": "Varno po standardih",
-        "description": "Delo po veljavnih predpisih in dobri praksi.",
-        "title": "Varno po standardih"
+        "label": "Hitra odzivnost",
+        "description": "Hitro odzivanje na napake in nujne primere.",
+        "title": "Hitra odzivnost"
       },
       {
-        "stat": "Jasno",
-        "label": "Jasno",
-        "description": "Veš, kaj se dela, zakaj in koliko bo stalo.",
-        "title": "Jasno"
+        "label": "Preglednost",
+        "description": "Pregledno dokumentirano delo in jasen dogovor.",
+        "title": "Preglednost"
       },
       {
-        "stat": "Hitro",
-        "label": "Hitro pri napakah",
-        "description": "Prioriteta nujnim izpadom in varnostnim težavam.",
-        "title": "Hitro pri napakah"
+        "label": "Izkušnje",
+        "description": "Bogate izkušnje v stanovanjskih in poslovnih objektih.",
+        "title": "Izkušnje"
       }
     ]
   },
   "contact": {
     "id": "kontakt",
     "eyebrow": "Kontakt",
-    "title": "Potrebuješ pregled?",
-    "description": "Pokliči ali pošlji kratek opis težave — dogovorimo se za termin.",
+    "title": "Stopite v stik z nami",
+    "description": "Potrebujete elektroinštalaterja ali imate vprašanje? Pokličite nas ali pošljite sporočilo.",
     "items": [
+      {
+        "label": "Naslov",
+        "value": "Kidričeva ulica 7, 3000 Celje, Slovenia",
+        "icon": "location"
+      },
       {
         "label": "Telefon",
         "value": "040 712 334",
@@ -166,36 +237,36 @@
         "icon": "email"
       },
       {
-        "label": "Območje",
-        "value": "Celje in Savinjska regija",
-        "icon": "location"
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 7:00–15:30",
+        "icon": "clock"
       }
     ],
     "form": {
-      "title": "Povpraševanje",
-      "description": "Opiši objekt in težavo ali želeno delo.",
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
       "nameLabel": "Ime in priimek",
-      "namePlaceholder": "Vaše ime",
-      "phoneLabel": "Telefon",
-      "phonePlaceholder": "Vaša telefonska številka",
+      "namePlaceholder": "Janez Novak",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "041 123 456",
       "messageLabel": "Sporočilo",
-      "messagePlaceholder": "Npr. izpad tokokroga, nova napeljava…",
-      "submitLabel": "Pošlji povpraševanje"
+      "messagePlaceholder": "Opišite vaše potrebe po inštalacijah...",
+      "submitLabel": "Pokliči za pregled"
     }
   },
   "footer": {
-    "address": "Kidričeva ulica 7, 3000 Celje",
+    "address": "Kidričeva ulica 7, 3000 Celje, Slovenia",
     "rights": "Vse pravice pridržane."
   },
   "business": {
     "name": "Elektro inštalacije Kovač",
-    "address": "Kidričeva ulica 7, 3000 Celje",
+    "address": "Kidričeva ulica 7, 3000 Celje, Slovenia",
     "email": "info@elektro-kovac.si",
     "phone": "040 712 334"
   },
   "privacy": {
     "enabled": true,
-    "lastUpdated": "2026-08-23",
+    "lastUpdated": "2026-09-05",
     "contactForm": {
       "enabled": true,
       "fields": [

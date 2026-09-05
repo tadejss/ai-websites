@@ -17,12 +17,34 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/krovstvo-petek/hero.jpg",
-      "alt": "Krovci na strehi hiše med menjavo kritine"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/hero.avif",
+      "alt": "Krovec pri delu na strehi",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "19250066",
+      "sourceUrl": "https://www.pexels.com/photo/construction-workers-carrying-table-19250066/",
+      "photographer": "Shojol Islam",
+      "photographerUrl": "https://www.pexels.com/@shojol",
+      "searchQuery": "construction workers building site professional"
     },
     "services": {
-      "src": "/clients/krovstvo-petek/services.jpg",
-      "alt": "Detajl nove strešne kritine in žlebov"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/services.avif",
+      "alt": "Krovska dela in nova kritina",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38706741",
+      "sourceUrl": "https://www.pexels.com/photo/construction-worker-on-scaffolding-at-work-38706741/",
+      "photographer": "Mukhtar Shuaib Mukhtar",
+      "photographerUrl": "https://www.pexels.com/@akoonie",
+      "searchQuery": "construction workers building site professional"
     }
   },
   "sections": {
@@ -34,15 +56,54 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/hero.avif",
+        "alt": "Krovec pri delu na strehi"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/services.avif",
+        "alt": "Krovska dela in nova kritina"
+      }
+    ]
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Informativni cenik",
+    "title": "Okvirne cene krovskih storitev",
+    "description": "Pregled pogostih storitev. Točna cena je odvisna od ogleda objekta in izbranih materialov.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Nujna popravila po neurju",
+        "description": "Pregled poškodb in takojšnja zasilna ali trajna sanacija",
+        "price": "od 120 €",
+        "featured": true
+      },
+      {
+        "name": "Montaža žlebov in odvodnjavanja",
+        "description": "Dobava in montaža kleparskih izdelkov",
+        "price": "od 25 € / m"
+      },
+      {
+        "name": "Sanacija strehe",
+        "description": "Delna ali popolna obnova strešne konstrukcije in kritine",
+        "price": "od 45 € / m²"
+      },
+      {
+        "name": "Polaganje nove kritine",
+        "description": "Strokovna namestitev izbrane kritine",
+        "price": "od 35 € / m²"
+      }
+    ]
   },
   "brand": {
     "prefix": "Krovstvo",
     "highlight": "Petek"
   },
   "metadata": {
-    "title": "Krovstvo Petek | Štajerska",
-    "description": "Nova kritina, sanacije streh, žlebovi in nujna popravila po neurju na Štajerskem."
+    "title": "Krovstvo Petek | Trdne strehe in sanacije na Štajerskem",
+    "description": "Krovstvo Petek z 20 leti izkušenj nudi nove kritine, sanacije streh, žlebove in nujna popravila po neurju na Štajerskem. Zanesljivo in brez odlašanja."
   },
   "nav": {
     "links": [
@@ -55,99 +116,110 @@
         "label": "Zakaj mi"
       },
       {
+        "href": "#galerija",
+        "label": "Galerija"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
         "href": "#kontakt",
         "label": "Kontakt"
       }
     ],
-    "cta": "Prijavi poškodbo"
+    "cta": "Prijavi poškodbo strehe"
   },
   "hero": {
-    "badge": "Krovstvo · Štajerska",
-    "title": "Streha, ki",
-    "titleHighlight": "drži vreme zunaj.",
-    "description": "Nova kritina, sanacije in žlebovi. Ko pušča — pridemo. Ko gradiš — naredimo prav.",
-    "primaryCta": "Prijavi poškodbo",
-    "secondaryCta": "Naše storitve",
-    "secondaryCtaHref": "#storitve",
+    "badge": "Zanesljivo krovstvo",
+    "title": "Strehe, žlebovi in sanacije — ",
+    "titleHighlight": "trdno in brez odlašanja",
+    "description": "Za lastnike hiš in upravnike večstanovanjskih objektov na Štajerskem nudimo strokovna krovska dela, hitre sanacije in nujna popravila.",
+    "primaryCta": "Prijavi poškodbo strehe",
+    "secondaryCta": "Preglej storitve",
     "stats": [
       {
-        "value": "20+",
-        "label": "Let na strehah"
+        "value": "20",
+        "label": "let izkušenj"
       },
       {
-        "value": "Nujno",
-        "label": "Po neurju"
+        "value": "Hitra sanacija",
+        "label": "Hitra sanacija",
+        "title": "Hitra sanacija"
+      },
+      {
+        "value": "Vse kritine",
+        "label": "Vse kritine",
+        "title": "Vse kritine"
       },
       {
         "value": "Štajerska",
-        "label": "Območje"
-      },
-      {
-        "value": "Vse",
-        "label": "Kritine"
+        "label": "Štajerska",
+        "title": "Štajerska"
       }
     ]
   },
   "services": {
     "id": "storitve",
-    "eyebrow": "Storitve",
-    "title": "Od kritine do žleba",
-    "description": "Osredotočeni na strehe — brez razpršenih gradbenih del.",
+    "eyebrow": "Naše storitve",
+    "title": "Celovite rešitve za vašo streho",
+    "description": "Izvajamo vse vrste krovskih in kleparskih del na Štajerskem z dolgoletnimi izkušnjami in posluhom za kakovost.",
     "items": [
       {
         "title": "Nova kritina",
-        "description": "Menjava in polaganje kritine za novogradnje in celovite prenove streh.",
+        "description": "Strokovna vgradnja nove kritine za dolgo življenjsko dobo vaše hiše.",
         "icon": "service-1"
       },
       {
         "title": "Sanacije streh",
-        "description": "Lokalna popravila, zamenjava poškodovanih delov in odprava puščanja.",
+        "description": "Temeljite sanacije obstoječih streh in dotrajanih konstrukcij.",
         "icon": "service-2"
       },
       {
         "title": "Žlebovi in odvodnjavanje",
-        "description": "Montaža in čiščenje žlebov, da voda odteče tja, kamor mora.",
+        "description": "Montaža in menjava žlebov ter urejanje zanesljivega odvodnjavanja.",
         "icon": "service-3"
       },
       {
-        "title": "Nujna popravila",
-        "description": "Hitra intervencija po neurju, toči ali odtrgani kritini.",
+        "title": "Nujna popravila po neurju",
+        "description": "Hitro posredovanje in odprava škode na strehi po neugodnih vremenskih razmerah.",
         "icon": "service-4"
       }
     ]
   },
   "whyChooseUs": {
     "id": "zakaj-mi",
-    "eyebrow": "Zakaj Petek",
-    "title": "Streha ni kraj za improvizacijo",
-    "description": "Delamo odločno, varno in z izkušnjami, ki jih dobiš samo na objektu.",
-    "highlights": [],
+    "eyebrow": "Zakaj izbrati nas",
+    "title": "Tradicija in strokovnost na prvem mestu",
+    "description": "Z združevanjem preverjene obrtniške tradicije in modernega pristopa zagotavljamo rešitve, ki zdržijo.",
+    "highlights": [
+      "Hitra sanacija po škodi in neurjih",
+      "Izkuseni krovci za vse vrste kritin",
+      "Delo tudi v zahtevnejših vremenskih razmerah"
+    ],
     "benefits": [
       {
-        "stat": "Hitra",
-        "label": "Hitra",
-        "description": "Po škodi pride na vrsto streha — ne čakanje na idealno vreme.",
-        "title": "Hitra"
+        "label": "Hitra sanacija",
+        "description": "Hitro odzivanje ob poškodbah in nemudoma izvedena nujna popravila.",
+        "title": "Hitra sanacija"
       },
       {
-        "stat": "Vse",
-        "label": "Vse",
-        "description": "Izkušnje z različnimi materiali in nakloni streh.",
-        "title": "Vse"
+        "label": "Izkušeni krovci",
+        "description": "Zanesljivi mojstri z 20 leti izkušenj na področju krovstva.",
+        "title": "Izkušeni krovci"
       },
       {
-        "stat": "Varno",
-        "label": "Varno",
-        "description": "Oprema, postopek in zaključki, ki zdržijo sezono za sezono.",
-        "title": "Varno"
+        "label": "Vse vremenske razmere",
+        "description": "Prilagodljivost in izvedba dela tudi v zahtevnejših okoliščinah.",
+        "title": "Vse vremenske razmere"
       }
     ]
   },
   "contact": {
     "id": "kontakt",
-    "eyebrow": "Kontakt",
-    "title": "Pušča? Pokliči.",
-    "description": "Opiši škodo ali projekt — dogovorimo se za ogled.",
+    "eyebrow": "Stopite v stik",
+    "title": "Potrebujete krovca ali nujno popravilo?",
+    "description": "Pošljite povpraševanje ali nas pokličite. Z veseljem vam svetujemo in pripravimo rešitev.",
     "items": [
       {
         "label": "Telefon",
@@ -162,36 +234,41 @@
         "icon": "email"
       },
       {
-        "label": "Območje",
-        "value": "Štajerska",
+        "label": "Naslov",
+        "value": "Tržaška cesta 41, 2000 Maribor",
         "icon": "location"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 6:30–15:00",
+        "icon": "clock"
       }
     ],
     "form": {
-      "title": "Prijavi poškodbo ali projekt",
-      "description": "Kratek opis strehe in težave zadostuje za prvi odziv.",
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
       "nameLabel": "Ime in priimek",
-      "namePlaceholder": "Vaše ime",
-      "phoneLabel": "Telefon",
-      "phonePlaceholder": "Vaša telefonska številka",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "npr. 041 123 456",
       "messageLabel": "Sporočilo",
-      "messagePlaceholder": "Npr. pušča pri dimniku, nova kritina…",
-      "submitLabel": "Pošlji"
+      "messagePlaceholder": "Opičite vaše težave ali potrebe glede strehe...",
+      "submitLabel": "Prijavi poškodbo strehe"
     }
   },
   "footer": {
-    "address": "Tržaška cesta 41, 2000 Maribor",
+    "address": "Tržaška cesta 41, 2000 Maribor, Slovenia",
     "rights": "Vse pravice pridržane."
   },
   "business": {
     "name": "Krovstvo Petek",
-    "address": "Tržaška cesta 41, 2000 Maribor",
+    "address": "Tržaška cesta 41, 2000 Maribor, Slovenia",
     "email": "info@krovstvo-petek.si",
     "phone": "051 880 267"
   },
   "privacy": {
     "enabled": true,
-    "lastUpdated": "2026-08-23",
+    "lastUpdated": "2026-09-05",
     "contactForm": {
       "enabled": true,
       "fields": [

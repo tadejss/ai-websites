@@ -89,62 +89,75 @@ export function BeautyHeroSection({ siteConfig }: Props) {
     </>
   );
 
+  const copyCard = (
+    <div
+      className={`relative flex h-full min-h-[480px] flex-col justify-between overflow-hidden ${
+        isPhotoDominant ? "" : copyOrder
+      } ${copyWide ? "w-full" : ""} ${
+        useAccentCard
+          ? "rounded-[var(--radius-card)] bg-accent p-8 sm:p-10 lg:min-h-[640px] lg:p-14"
+          : isTypographic
+            ? "p-2 sm:p-4 lg:min-h-[520px]"
+            : "rounded-[var(--radius-card)] border border-border bg-surface p-8 sm:p-10 lg:min-h-[640px] lg:p-14"
+      }`}
+    >
+      {useAccentCard ? <BeautyDecorativeRings /> : null}
+
+      <div className="relative flex flex-1 flex-col justify-center">{copyContent}</div>
+    </div>
+  );
+
+  const photoDominantImage = (
+    <div className="relative max-h-[50vh] min-h-[320px] w-full overflow-hidden rounded-[var(--radius-card)]">
+      <BeautyImage
+        src={images?.hero.src}
+        srcFallback={images?.hero.srcFallback}
+        alt={images?.hero.alt ?? hero.badge}
+        width={images?.hero.width}
+        height={images?.hero.height}
+        className="h-full min-h-[320px] w-full object-cover"
+        priority
+      />
+    </div>
+  );
+
   return (
     <section className="relative overflow-hidden bg-background px-4 pb-24 pt-28 sm:px-6 sm:pb-28 sm:pt-32 lg:pb-32">
       {isPhotoDominant && showImage ? (
-        <div className="relative mx-auto mb-10 max-h-[50vh] min-h-[320px] max-w-7xl overflow-hidden rounded-[var(--radius-card)]">
-          <BeautyImage
-            src={images?.hero.src}
-            srcFallback={images?.hero.srcFallback}
-            alt={images?.hero.alt ?? hero.badge}
-            width={images?.hero.width}
-            height={images?.hero.height}
-            className="h-full min-h-[320px] w-full object-cover"
-            priority
-          />
+        <div className="mx-auto flex max-w-7xl flex-col gap-10">
+          <div className="order-1 lg:order-2">{copyCard}</div>
+          <div className="order-2 lg:order-1">{photoDominantImage}</div>
         </div>
-      ) : null}
+      ) : (
+        <div className={heroGridClass(layout.heroRatio ?? "5050", showImage)}>
+          {copyCard}
 
-      <div className={heroGridClass(layout.heroRatio ?? "5050", showImage && !isPhotoDominant)}>
-        <div
-          className={`relative flex h-full min-h-[480px] flex-col justify-between overflow-hidden ${copyOrder} ${copyWide ? "w-full" : ""} ${
-            useAccentCard
-              ? "rounded-[var(--radius-card)] bg-accent p-8 sm:p-10 lg:min-h-[640px] lg:p-14"
-              : isTypographic
-                ? "p-2 sm:p-4 lg:min-h-[520px]"
-                : "rounded-[var(--radius-card)] border border-border bg-surface p-8 sm:p-10 lg:min-h-[640px] lg:p-14"
-          }`}
-        >
-          {useAccentCard ? <BeautyDecorativeRings /> : null}
-
-          <div className="relative flex flex-1 flex-col justify-center">{copyContent}</div>
+          {showImage ? (
+            <div
+              className={`relative h-full min-h-[480px] lg:min-h-[640px] ${imageOrder}`}
+            >
+              {useBrowserFrame ? (
+                <BeautyBrowserFrame
+                  url="studio-maja.si"
+                  className="h-full min-h-[480px] lg:min-h-[640px]"
+                >
+                  <BeautyHeroWebsitePreview />
+                </BeautyBrowserFrame>
+              ) : (
+                <BeautyImage
+                  src={images?.hero.src}
+                  srcFallback={images?.hero.srcFallback}
+                  alt={images?.hero.alt ?? hero.badge}
+                  width={images?.hero.width}
+                  height={images?.hero.height}
+                  className="h-full min-h-[480px] lg:min-h-[640px]"
+                  priority
+                />
+              )}
+            </div>
+          ) : null}
         </div>
-
-        {showImage && !isPhotoDominant ? (
-          <div
-            className={`relative h-full min-h-[480px] lg:min-h-[640px] ${imageOrder}`}
-          >
-            {useBrowserFrame ? (
-              <BeautyBrowserFrame
-                url="studio-maja.si"
-                className="h-full min-h-[480px] lg:min-h-[640px]"
-              >
-                <BeautyHeroWebsitePreview />
-              </BeautyBrowserFrame>
-            ) : (
-              <BeautyImage
-                src={images?.hero.src}
-                srcFallback={images?.hero.srcFallback}
-                alt={images?.hero.alt ?? hero.badge}
-                width={images?.hero.width}
-                height={images?.hero.height}
-                className="h-full min-h-[480px] lg:min-h-[640px]"
-                priority
-              />
-            )}
-          </div>
-        ) : null}
-      </div>
+      )}
 
       {hero.stats.length > 0 ? (
         <dl
