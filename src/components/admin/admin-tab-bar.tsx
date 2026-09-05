@@ -122,6 +122,7 @@ export function AdminTabBar() {
           <SheetContent
             side="bottom"
             className="overflow-hidden rounded-3xl pb-3 pt-10"
+            onOpenAutoFocus={(event) => event.preventDefault()}
           >
             <SheetTitle className="sr-only">More</SheetTitle>
             <div className="flex min-h-0 flex-1 flex-col gap-3 px-3">
