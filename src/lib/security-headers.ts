@@ -8,8 +8,8 @@
  * - style-src 'unsafe-inline' required for Next/Tailwind inline styles
  * - script-src avoids 'unsafe-eval'; 'unsafe-inline' needed for Next hydration
  *   without a nonce pipeline (documented trade-off)
- * - Customer demos may be framed by same-origin Primeri previews →
- *   frame-ancestors 'self' for public pages; admin uses 'none'
+ * - Primeri iframe previews need frame-src 'self' (parent) and
+ *   frame-ancestors 'self' (demo pages); admin uses frame-ancestors 'none'
  */
 
 export const BASE_SECURITY_HEADERS: Array<{ key: string; value: string }> = [
@@ -31,7 +31,7 @@ export const CONTENT_SECURITY_POLICY = [
   "img-src 'self' data: blob: https://*.public.blob.vercel-storage.com https://*.blob.vercel-storage.com https://*.stripe.com",
   "font-src 'self' data:",
   "connect-src 'self' https://api.stripe.com https://*.stripe.com",
-  "frame-src https://js.stripe.com https://hooks.stripe.com https://checkout.stripe.com https://*.stripe.com",
+  "frame-src 'self' https://js.stripe.com https://hooks.stripe.com https://checkout.stripe.com https://*.stripe.com",
   "form-action 'self' https://checkout.stripe.com https://*.stripe.com",
   "frame-ancestors 'self'",
   "upgrade-insecure-requests",

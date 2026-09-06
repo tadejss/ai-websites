@@ -81,6 +81,10 @@ function testCookieAndHeaders(): void {
   ok("base headers include nosniff", BASE_SECURITY_HEADERS.some((h) => h.key === "X-Content-Type-Options"));
   ok("CSP has no unsafe-eval", !CONTENT_SECURITY_POLICY.includes("unsafe-eval"));
   ok("CSP allows stripe js", CONTENT_SECURITY_POLICY.includes("js.stripe.com"));
+  ok(
+    "CSP frame-src allows self for Primeri iframes",
+    CONTENT_SECURITY_POLICY.includes("frame-src 'self'"),
+  );
   ok("admin CSP frame-ancestors none", ADMIN_CONTENT_SECURITY_POLICY.includes("frame-ancestors 'none'"));
 
   const headers = new Headers();

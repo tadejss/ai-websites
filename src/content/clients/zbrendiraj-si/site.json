@@ -108,7 +108,7 @@
           "src": "/clients/zbrendiraj-si/examples/frizerski-salon-luna.jpg",
           "alt": "frizerski-salon-luna.si"
         },
-        "href": "https://zbrendiraj.si/frizerski-salon-luna"
+        "href": "/frizerski-salon-luna"
       },
       {
         "title": "Keramičarstvo Hribar",
@@ -117,7 +117,7 @@
           "src": "/clients/zbrendiraj-si/examples/keramicarstvo-hribar.jpg",
           "alt": "keramicarstvo-hribar.si"
         },
-        "href": "https://zbrendiraj.si/keramicarstvo-hribar"
+        "href": "/keramicarstvo-hribar"
       },
       {
         "title": "Elektro inštalacije Kovač",
@@ -126,7 +126,7 @@
           "src": "/clients/zbrendiraj-si/examples/elektro-instalacije-kovac.jpg",
           "alt": "elektro-instalacije-kovac.si"
         },
-        "href": "https://zbrendiraj.si/elektro-instalacije-kovac"
+        "href": "/elektro-instalacije-kovac"
       },
       {
         "title": "Krovstvo Petek",
@@ -135,7 +135,7 @@
           "src": "/clients/zbrendiraj-si/examples/krovstvo-petek.jpg",
           "alt": "krovstvo-petek.si"
         },
-        "href": "https://zbrendiraj.si/krovstvo-petek"
+        "href": "/krovstvo-petek"
       }
     ],
     "steps": {
