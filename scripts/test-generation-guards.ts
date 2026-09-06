@@ -308,6 +308,22 @@ check(
   formatFooterCopyright("Salon X", "© 2024 Salon X. Vse pravice pridržane.") ===
     "© 2024 Salon X. Vse pravice pridržane.",
 );
+check(
+  "named rights without © do not duplicate brand",
+  formatFooterCopyright(
+    "Avtoservis Virant",
+    "Avtoservis Virant, Miran Virant s.p. Vse pravice pridržane.",
+  ) ===
+    `© ${year} Avtoservis Virant, Miran Virant s.p. Vse pravice pridržane.`,
+);
+check(
+  "brand already inside rights is not prepended again",
+  formatFooterCopyright(
+    "Studio Bina-Ils",
+    "Vse pravice pridržane. Studio Bina-Ils, Albina Pečko s.p.",
+  ) ===
+    `© ${year} Vse pravice pridržane. Studio Bina-Ils, Albina Pečko s.p.`,
+);
 
 console.log(failures === 0 ? "\nAll guard checks passed." : `\n${failures} check(s) failed.`);
 
