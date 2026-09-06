@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { sendContactEmail } from "@/contact/send-email";
 import { getSiteConfig } from "@/content/get-site-config";
+import { resolveClientIp, hashRateLimitMaterial } from "@/lib/client-ip";
+import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -13,40 +15,7 @@ const bodySchema = z.object({
   message: z.string().min(1).max(5000),
 });
 
-const rateLimit = new Map<string, { count: number; resetAt: number }>();
-const RATE_LIMIT_WINDOW_MS = 60_000;
-const RATE_LIMIT_MAX = 5;
-
-function isRateLimited(key: string): boolean {
-  const now = Date.now();
-  const entry = rateLimit.get(key);
-
-  if (!entry || entry.resetAt <= now) {
-    rateLimit.set(key, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
-    return false;
-  }
-
-  if (entry.count >= RATE_LIMIT_MAX) {
-    return true;
-  }
-
-  entry.count += 1;
-  return false;
-}
-
 export async function POST(request: Request) {
-  const ip =
-    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    request.headers.get("x-real-ip") ||
-    "unknown";
-
-  if (isRateLimited(ip)) {
-    return NextResponse.json(
-      { error: "Preveč zahtevkov. Poskusite znova čez minuto." },
-      { status: 429 },
-    );
-  }
-
   let body: unknown;
 
   try {
@@ -61,6 +30,22 @@ export async function POST(request: Request) {
     return NextResponse.json(
       { error: "Prosimo, izpolnite vsa obvezna polja." },
       { status: 400 },
+    );
+  }
+
+  const ip = resolveClientIp(request.headers);
+  const rateKey = await hashRateLimitMaterial(
+    `contact:${ip}:${parsed.data.slug}`,
+  );
+  const limited = await checkRateLimit({
+    key: rateKey,
+    limit: 5,
+    windowMs: 60_000,
+  });
+  if (!limited.allowed) {
+    return rateLimitResponse(
+      limited,
+      "Preveč zahtevkov. Poskusite znova čez minuto.",
     );
   }
 
@@ -97,7 +82,7 @@ export async function POST(request: Request) {
   });
 
   if (!result.ok) {
-    return NextResponse.json({ error: result.error }, { status: 500 });
+    return NextResponse.json({ error: "Pošiljanje ni uspelo." }, { status: 500 });
   }
 
   return NextResponse.json({ ok: true });

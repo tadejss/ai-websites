@@ -8,7 +8,6 @@ import { ImageUploadField } from "./ImageUploadField";
 
 type Props = {
   slug: string;
-  token: string;
   initialPrefill: CustomerOnboardingAnswers;
   initialStatus: string;
 };
@@ -68,7 +67,6 @@ function ListField({
 
 export function OnboardingForm({
   slug,
-  token,
   initialPrefill,
   initialStatus,
 }: Props) {
@@ -112,7 +110,8 @@ export function OnboardingForm({
       const response = await fetch(`/api/onboarding/${slug}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token, answers }),
+        credentials: "same-origin",
+        body: JSON.stringify({ answers }),
       });
       const data = (await response.json()) as { error?: string; status?: string };
       if (!response.ok) {
@@ -143,7 +142,8 @@ export function OnboardingForm({
       const response = await fetch(`/api/onboarding/${slug}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token, answers: payload }),
+        credentials: "same-origin",
+        body: JSON.stringify({ answers: payload }),
       });
       const data = (await response.json()) as {
         error?: string;
@@ -322,7 +322,6 @@ export function OnboardingForm({
           <div className="grid gap-6 sm:grid-cols-2">
             <ImageUploadField
               slug={slug}
-              token={token}
               kind="logo"
               label="Logotipi (upload)"
               answers={answers}
@@ -331,7 +330,6 @@ export function OnboardingForm({
             />
             <ImageUploadField
               slug={slug}
-              token={token}
               kind="photo"
               label="Fotografije (upload)"
               answers={answers}

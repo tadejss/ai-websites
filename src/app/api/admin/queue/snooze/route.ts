@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { isAdminAuthorized } from "@/lib/admin-auth";
+import { authorizeAdminMutation } from "@/lib/admin-auth";
 import { snoozeQueueItem } from "@/admin/queue";
 import { afterAdminMutation } from "@/admin/revalidate";
 import { logAdminAction } from "@/admin/audit";
@@ -15,7 +15,7 @@ const bodySchema = z.object({
 });
 
 export async function POST(request: Request) {
-  if (!(await isAdminAuthorized(request))) {
+  if (!(await authorizeAdminMutation(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

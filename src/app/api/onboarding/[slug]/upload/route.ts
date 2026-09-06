@@ -1,6 +1,6 @@
 import { put } from "@vercel/blob";
 import { NextResponse } from "next/server";
-import { verifyOnboardingAccess } from "@/onboarding/auth";
+import { verifyOnboardingMutationAccess } from "@/onboarding/auth";
 import { isBlobStorageConfigured } from "@/images/storage";
 
 export const runtime = "nodejs";
@@ -8,11 +8,11 @@ export const dynamic = "force-dynamic";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_FILES = 10;
+// SVG omitted: public Blob URLs + SVG can enable stored XSS when opened as documents.
 const ALLOWED_TYPES = new Set([
   "image/jpeg",
   "image/png",
   "image/webp",
-  "image/svg+xml",
 ]);
 
 type RouteContext = {
@@ -93,23 +93,16 @@ export async function POST(request: Request, context: RouteContext) {
     );
   }
 
+  const access = await verifyOnboardingMutationAccess(request, slug);
+  if (!access.ok) {
+    return NextResponse.json({ error: access.error }, { status: access.status });
+  }
+
   let formData: FormData;
   try {
     formData = await request.formData();
   } catch {
     return NextResponse.json({ error: "Invalid form data" }, { status: 400 });
-  }
-
-  const token =
-    (typeof formData.get("token") === "string"
-      ? formData.get("token")?.toString().trim()
-      : null) ||
-    new URL(request.url).searchParams.get("token")?.trim() ||
-    null;
-
-  const access = await verifyOnboardingAccess(slug, token);
-  if (!access.ok) {
-    return NextResponse.json({ error: access.error }, { status: access.status });
   }
 
   const files = collectFiles(formData);

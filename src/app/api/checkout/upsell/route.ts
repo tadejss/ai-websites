@@ -16,6 +16,8 @@ import {
 } from "@/billing/verify-checkout-session";
 import { hasPurchasedUpsell } from "@/leads/upsell-store";
 import { resolveRequestOrigin, toAbsoluteUrl } from "@/site-url";
+import { resolveClientIp, hashRateLimitMaterial } from "@/lib/client-ip";
+import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -78,6 +80,19 @@ export async function POST(request: Request) {
 
   if (!sessionId.startsWith("cs_")) {
     return NextResponse.json({ error: "Invalid session_id" }, { status: 400 });
+  }
+
+  const ip = resolveClientIp(request.headers);
+  const rateKey = await hashRateLimitMaterial(
+    `checkout-upsell:${ip}:${slug}:${sessionId.slice(0, 24)}`,
+  );
+  const limited = await checkRateLimit({
+    key: rateKey,
+    limit: 10,
+    windowMs: 60_000,
+  });
+  if (!limited.allowed) {
+    return rateLimitResponse(limited);
   }
 
   if (!isUpsellType(upsellType)) {

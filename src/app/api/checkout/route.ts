@@ -9,6 +9,8 @@ import {
 import { getSiteConfig } from "@/content/get-site-config";
 import { isCustomer } from "@/customers/store";
 import { resolveRequestOrigin, toAbsoluteUrl } from "@/site-url";
+import { resolveClientIp, hashRateLimitMaterial } from "@/lib/client-ip";
+import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -28,8 +30,6 @@ function resolveCheckoutUrls(
   const successPath = `/${slug}/upsell?session_id={CHECKOUT_SESSION_ID}`;
   const cancelPath = `/${slug}`;
 
-  // Prefer the live request host so cancel/success match zbrendiraj.si (or
-  // localhost), even if SITE_URL still points at an old deploy URL.
   const origin = resolveRequestOrigin(request);
   if (origin) {
     return {
@@ -45,6 +45,17 @@ function resolveCheckoutUrls(
 }
 
 export async function POST(request: Request) {
+  const ip = resolveClientIp(request.headers);
+  const rateKey = await hashRateLimitMaterial(`checkout:${ip}`);
+  const limited = await checkRateLimit({
+    key: rateKey,
+    limit: 10,
+    windowMs: 60_000,
+  });
+  if (!limited.allowed) {
+    return rateLimitResponse(limited);
+  }
+
   let body: CheckoutBody;
 
   try {
@@ -84,9 +95,8 @@ export async function POST(request: Request) {
 
   try {
     priceId = getPriceIdForPlan(plan as CheckoutPlan);
-  } catch (error) {
-    const message = error instanceof Error ? error.message : "Price not configured";
-    return NextResponse.json({ error: message }, { status: 503 });
+  } catch {
+    return NextResponse.json({ error: "Price not configured" }, { status: 503 });
   }
 
   const { successUrl, cancelUrl } = resolveCheckoutUrls(slug, request);
@@ -140,6 +150,9 @@ export async function POST(request: Request) {
     const message =
       error instanceof Error ? error.message : "Checkout session failed";
     console.error("[checkout]", message);
-    return NextResponse.json({ error: message }, { status: 502 });
+    return NextResponse.json(
+      { error: "Checkout session failed" },
+      { status: 502 },
+    );
   }
 }

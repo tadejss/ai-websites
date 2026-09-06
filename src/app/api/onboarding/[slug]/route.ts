@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import { isCustomer } from "@/customers/store";
-import { verifyOnboardingAccess } from "@/onboarding/auth";
+import {
+  verifyOnboardingMutationAccess,
+  verifyOnboardingSessionAccess,
+} from "@/onboarding/auth";
 import { buildOnboardingPrefill } from "@/onboarding/prefill";
 import {
   processOnboardingSubmission,
@@ -27,21 +30,9 @@ type RouteContext = {
   params: Promise<{ slug: string }>;
 };
 
-function readToken(request: Request, body?: { token?: unknown }): string | null {
-  const fromQuery = new URL(request.url).searchParams.get("token");
-  if (fromQuery?.trim()) {
-    return fromQuery.trim();
-  }
-  if (typeof body?.token === "string" && body.token.trim()) {
-    return body.token.trim();
-  }
-  return null;
-}
-
-export async function GET(request: Request, context: RouteContext) {
+export async function GET(_request: Request, context: RouteContext) {
   const { slug } = await context.params;
-  const token = readToken(request);
-  const access = await verifyOnboardingAccess(slug, token);
+  const access = await verifyOnboardingSessionAccess(slug);
 
   if (!access.ok) {
     return NextResponse.json({ error: access.error }, { status: access.status });
@@ -60,15 +51,14 @@ export async function GET(request: Request, context: RouteContext) {
 export async function PATCH(request: Request, context: RouteContext) {
   const { slug } = await context.params;
 
-  let body: { token?: unknown; answers?: unknown };
+  let body: { answers?: unknown };
   try {
-    body = (await request.json()) as { token?: unknown; answers?: unknown };
+    body = (await request.json()) as { answers?: unknown };
   } catch {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const token = readToken(request, body);
-  const access = await verifyOnboardingAccess(slug, token);
+  const access = await verifyOnboardingMutationAccess(request, slug);
   if (!access.ok) {
     return NextResponse.json({ error: access.error }, { status: access.status });
   }
@@ -91,15 +81,14 @@ export async function PATCH(request: Request, context: RouteContext) {
 export async function POST(request: Request, context: RouteContext) {
   const { slug } = await context.params;
 
-  let body: { token?: unknown; answers?: unknown };
+  let body: { answers?: unknown };
   try {
-    body = (await request.json()) as { token?: unknown; answers?: unknown };
+    body = (await request.json()) as { answers?: unknown };
   } catch {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const token = readToken(request, body);
-  const access = await verifyOnboardingAccess(slug, token);
+  const access = await verifyOnboardingMutationAccess(request, slug);
   if (!access.ok) {
     return NextResponse.json({ error: access.error }, { status: access.status });
   }

@@ -2,13 +2,13 @@ import { NextResponse } from "next/server";
 import { logAdminAction } from "@/admin/audit";
 import { dispatchFactoryWorker } from "@/factory/dispatch";
 import { getReplenishStatus } from "@/leads/replenish-status";
-import { isAdminAuthorized } from "@/lib/admin-auth";
+import { authorizeAdminMutation } from "@/lib/admin-auth";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
-  if (!(await isAdminAuthorized(request))) {
+  if (!(await authorizeAdminMutation(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

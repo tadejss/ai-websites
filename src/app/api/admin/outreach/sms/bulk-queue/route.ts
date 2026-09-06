@@ -4,7 +4,7 @@ import { logAdminAction } from "@/admin/audit";
 import { afterAdminMutation } from "@/admin/revalidate";
 import { readLead } from "@/leads/store";
 import { enqueueSmsForLead } from "@/outreach/sms/queue";
-import { isAdminAuthorized } from "@/lib/admin-auth";
+import { authorizeAdminMutation } from "@/lib/admin-auth";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -15,7 +15,7 @@ const bodySchema = z.object({
 });
 
 export async function POST(request: Request) {
-  if (!(await isAdminAuthorized(request))) {
+  if (!(await authorizeAdminMutation(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

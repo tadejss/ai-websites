@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { isAdminAuthorized } from "@/lib/admin-auth";
+import { authorizeAdminMutation } from "@/lib/admin-auth";
 import { isOutreachConfigured } from "@/outreach/config";
 import type { OutreachStep } from "@/leads/outreach-types";
 import { sendOutreachToLead } from "@/outreach/send";
@@ -17,7 +17,7 @@ const bodySchema = z.object({
 });
 
 export async function POST(request: Request) {
-  if (!(await isAdminAuthorized(request))) {
+  if (!(await authorizeAdminMutation(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

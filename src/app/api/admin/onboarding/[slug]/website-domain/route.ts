@@ -2,7 +2,7 @@ import { logAdminAction } from "@/admin/audit";
 import { afterAdminMutation } from "@/admin/revalidate";
 import { NextResponse } from "next/server";
 import { getCustomerBySlug } from "@/customers/store";
-import { isAdminAuthorized } from "@/lib/admin-auth";
+import { authorizeAdminMutation } from "@/lib/admin-auth";
 import { getOnboardingBySlug } from "@/onboarding/store";
 import { canAdminAttachWebsiteDomain } from "@/onboarding/types";
 import { attachWebsiteDomain } from "@/website-domains/attach";
@@ -20,7 +20,7 @@ type RouteContext = {
 };
 
 export async function POST(request: Request, context: RouteContext) {
-  if (!(await isAdminAuthorized(request))) {
+  if (!(await authorizeAdminMutation(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

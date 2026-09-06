@@ -22,7 +22,6 @@ type UploadProgress = {
 
 type Props = {
   slug: string;
-  token: string;
   kind: "logo" | "photo";
   label: string;
   answers: CustomerOnboardingAnswers;
@@ -32,7 +31,6 @@ type Props = {
 
 export function ImageUploadField({
   slug,
-  token,
   kind,
   label,
   answers,
@@ -86,7 +84,8 @@ export function ImageUploadField({
     const response = await fetch(`/api/onboarding/${slug}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token, answers: next }),
+      credentials: "same-origin",
+      body: JSON.stringify({ answers: next }),
     });
     const data = (await response.json()) as { error?: string };
     if (!response.ok) {
@@ -110,7 +109,6 @@ export function ImageUploadField({
 
     try {
       const formData = new FormData();
-      formData.set("token", token);
       formData.set("kind", kind);
       for (const item of pending) {
         formData.append("files", item.file);
@@ -118,6 +116,7 @@ export function ImageUploadField({
 
       const response = await fetch(`/api/onboarding/${slug}/upload`, {
         method: "POST",
+        credentials: "same-origin",
         body: formData,
       });
 

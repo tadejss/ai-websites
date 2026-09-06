@@ -12,6 +12,7 @@ import {
   customerHostRewritePath,
   shouldSkipCustomerHostRewrite,
 } from "@/website-domains/rewrite";
+import { applySecurityHeaders } from "@/lib/security-headers";
 
 /** Root paths that should resolve to the mapped client slug on a custom domain. */
 const CUSTOM_DOMAIN_ROOT_PATHS = new Set([
@@ -21,6 +22,16 @@ const CUSTOM_DOMAIN_ROOT_PATHS = new Set([
   "/splosni-pogoji",
   "/pogosta-vprasanja",
 ]);
+
+function withSecurityHeaders(
+  response: NextResponse,
+  pathname: string,
+): NextResponse {
+  applySecurityHeaders(response.headers, {
+    admin: pathname.startsWith("/admin"),
+  });
+  return response;
+}
 
 export async function middleware(request: NextRequest, event: NextFetchEvent) {
   const { pathname } = request.nextUrl;
@@ -37,20 +48,18 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
     }
   }
 
-  // Retired project hostname — force share / SMS links onto zbrendiraj.si.
   if (host === "splet.vercel.app" || host === "www.splet.vercel.app") {
     const url = request.nextUrl.clone();
     url.protocol = "https:";
     url.host = "zbrendiraj.si";
     url.port = "";
-    return NextResponse.redirect(url, 308);
+    return withSecurityHeaders(NextResponse.redirect(url, 308), pathname);
   }
 
-  // Public demos: /demo/{slug} → existing /{slug} template routes.
   if (pathname.startsWith("/demo/")) {
     const rewriteUrl = request.nextUrl.clone();
     rewriteUrl.pathname = pathname.slice("/demo".length) || "/";
-    return NextResponse.rewrite(rewriteUrl);
+    return withSecurityHeaders(NextResponse.rewrite(rewriteUrl), pathname);
   }
 
   const marketingSlug = getSlugForHost(request.headers.get("host"));
@@ -59,7 +68,7 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
     const rewriteUrl = request.nextUrl.clone();
     rewriteUrl.pathname =
       pathname === "/" ? `/${marketingSlug}` : `/${marketingSlug}${pathname}`;
-    return NextResponse.rewrite(rewriteUrl);
+    return withSecurityHeaders(NextResponse.rewrite(rewriteUrl), pathname);
   }
 
   if (!marketingSlug && !shouldSkipCustomerHostRewrite(pathname)) {
@@ -70,7 +79,7 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
       if (liveSlug) {
         const rewriteUrl = request.nextUrl.clone();
         rewriteUrl.pathname = customerHostRewritePath(pathname, liveSlug);
-        return NextResponse.rewrite(rewriteUrl);
+        return withSecurityHeaders(NextResponse.rewrite(rewriteUrl), pathname);
       }
     } catch {
       // Fail-open: custom host stays unresolved; platform hosts keep working.
@@ -78,7 +87,7 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
   }
 
   if (!pathname.startsWith("/admin")) {
-    return NextResponse.next();
+    return withSecurityHeaders(NextResponse.next(), pathname);
   }
 
   if (
@@ -86,19 +95,25 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
     pathname === "/admin/logout" ||
     pathname === "/admin/manifest.webmanifest"
   ) {
-    return NextResponse.next();
+    return withSecurityHeaders(NextResponse.next(), pathname);
   }
 
   const secret = getAdminSecret();
 
   if (!secret) {
-    return new NextResponse("Admin access is not configured.", { status: 503 });
+    return withSecurityHeaders(
+      new NextResponse("Admin access is not configured.", { status: 503 }),
+      pathname,
+    );
   }
 
   if (!isDatabaseConfigured()) {
-    return new NextResponse("Admin sessions require a database.", {
-      status: 503,
-    });
+    return withSecurityHeaders(
+      new NextResponse("Admin sessions require a database.", {
+        status: 503,
+      }),
+      pathname,
+    );
   }
 
   const session = request.cookies.get(ADMIN_COOKIE)?.value;
@@ -107,7 +122,6 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
   try {
     sessionValid = await validateAdminSessionToken(session);
   } catch {
-    // DB/transient failures must not grant access.
     sessionValid = false;
   }
 
@@ -116,18 +130,14 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
     loginUrl.pathname = "/admin/login";
     loginUrl.searchParams.set("next", pathname);
 
-    return NextResponse.redirect(loginUrl);
+    return withSecurityHeaders(NextResponse.redirect(loginUrl), pathname);
   }
 
-  return NextResponse.next();
+  return withSecurityHeaders(NextResponse.next(), pathname);
 }
 
 export const config = {
   matcher: [
-    /*
-     * Run on all paths except static assets / image optimizer.
-     * Needed so splet.vercel.app → zbrendiraj.si redirects cover every demo URL.
-     */
     "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
   ],
 };

@@ -1,4 +1,12 @@
 import type { NextConfig } from "next";
+import {
+  ADMIN_CONTENT_SECURITY_POLICY,
+  BASE_SECURITY_HEADERS,
+  CONTENT_SECURITY_POLICY,
+  productionHstsHeader,
+} from "./src/lib/security-headers";
+
+const hsts = productionHstsHeader();
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
@@ -20,6 +28,31 @@ const nextConfig: NextConfig = {
       "./public/clients/**/*",
       "./public/stock/**/*",
     ],
+  },
+  async headers() {
+    const shared = [...BASE_SECURITY_HEADERS, ...(hsts ? [hsts] : [])];
+
+    return [
+      {
+        source: "/admin/:path*",
+        headers: [
+          ...shared,
+          {
+            key: "Content-Security-Policy",
+            value: ADMIN_CONTENT_SECURITY_POLICY,
+          },
+          { key: "X-Frame-Options", value: "DENY" },
+        ],
+      },
+      {
+        source: "/:path*",
+        headers: [
+          ...shared,
+          { key: "Content-Security-Policy", value: CONTENT_SECURITY_POLICY },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+        ],
+      },
+    ];
   },
   async redirects() {
     return [

@@ -60,6 +60,7 @@
     "test-website-domains": "tsx scripts/test-website-domains.ts",
     "test-admin-queue": "tsx scripts/test-admin-queue.ts",
     "test-admin-security": "tsx scripts/test-admin-security.ts",
+    "test-p1-security": "tsx scripts/test-p1-security.ts",
     "test-grok-qa": "tsx scripts/test-grok-qa.ts"
   },
   "dependencies": {

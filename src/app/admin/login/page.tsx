@@ -1,4 +1,4 @@
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { getAdminSecret, isValidAdminToken } from "@/lib/auth";
 import { isDatabaseConfigured } from "@/db/client";
@@ -7,6 +7,8 @@ import {
   createAdminSession,
   getAdminSessionCookieOptions,
 } from "@/lib/admin-session";
+import { resolveClientIp, hashRateLimitMaterial } from "@/lib/client-ip";
+import { checkRateLimit } from "@/lib/rate-limit";
 import { AdminBrandMark, AdminWordmark } from "@/components/admin/admin-brand";
 import { Button } from "@/components/admin/ui/button";
 import { Card, CardContent } from "@/components/admin/ui/card";
@@ -19,6 +21,18 @@ async function loginAction(formData: FormData) {
   const password = String(formData.get("password") ?? "");
   const next = String(formData.get("next") ?? "/admin");
   const secret = getAdminSecret();
+
+  const headerStore = await headers();
+  const ip = resolveClientIp(headerStore);
+  const rateKey = await hashRateLimitMaterial(`admin-login:${ip}`);
+  const limited = await checkRateLimit({
+    key: rateKey,
+    limit: 5,
+    windowMs: 15 * 60 * 1000,
+  });
+  if (!limited.allowed) {
+    redirect(`/admin/login?error=1&next=${encodeURIComponent(next)}`);
+  }
 
   if (!secret || !isValidAdminToken(password)) {
     redirect(`/admin/login?error=1&next=${encodeURIComponent(next)}`);
