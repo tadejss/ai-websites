@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Website Factory — Business Plan & Pitch Report</title>
+<style>
+  :root {
+    --ink: #1c1917;
+    --muted: #57534e;
+    --faint: #78716c;
+    --line: #e7e5e4;
+    --paper: #fafaf9;
+    --card: #ffffff;
+    --accent: #1d4ed8;
+    --ok: #0f766e;
+    --warn: #b45309;
+    --bad: #b91c1c;
+    --soft: #f5f5f4;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
+  body {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 40px 32px 80px; }
+  h1 { font-size: 32px; letter-spacing: 0.04em; margin: 8px 0 4px; }
+  h2 { font-size: 20px; margin: 36px 0 10px; border-top: 1px solid var(--line); padding-top: 20px; }
+  h3 { font-size: 16px; margin: 20px 0 8px; }
+  p { margin: 0 0 12px; }
+  .kicker { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); }
+  .sub { color: var(--muted); font-size: 16px; }
+  .pills { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 12px; }
+  .pill { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; border: 1px solid var(--line); padding: 3px 8px; background: var(--card); }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0 20px; }
+  .stat { background: var(--card); border: 1px solid var(--line); padding: 12px 12px 10px; }
+  .stat b { display: block; font-size: 22px; font-family: ui-sans-serif, system-ui, sans-serif; }
+  .stat span { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; color: var(--faint); }
+  .callout { border: 1px solid var(--line); background: var(--soft); padding: 12px 14px; margin: 14px 0; }
+  .callout.warn { border-color: #fbbf24; background: #fffbeb; }
+  .callout.info { border-color: #93c5fd; background: #eff6ff; }
+  .callout strong { display: block; margin-bottom: 4px; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 12.5px; margin: 10px 0 16px; }
+  th, td { border-bottom: 1px solid var(--line); padding: 7px 8px; text-align: left; vertical-align: top; }
+  th { color: var(--faint); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .ok { color: var(--ok); } .warn { color: var(--warn); } .bad { color: var(--bad); }
+  .flow { display: flex; flex-wrap: wrap; gap: 6px; align-items: stretch; margin: 10px 0 16px; }
+  .box { border: 1px solid var(--line); background: var(--card); padding: 8px 9px; min-width: 108px; flex: 1 1 108px; }
+  .box b { display: block; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; }
+  .box i { display: block; font-style: normal; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 10px; color: var(--faint); margin-top: 3px; }
+  .box.done { background: #ecfdf5; }
+  .box.part { background: #fffbeb; }
+  .box.plan { background: #fef2f2; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .arch { width: 100%; height: auto; margin: 8px 0 6px; background: var(--card); border: 1px solid var(--line); }
+  .chart { background: var(--card); border: 1px solid var(--line); padding: 8px 8px 4px; margin: 8px 0 6px; }
+  .cap { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; color: var(--faint); margin: 0 0 18px; }
+  .sharebar { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; background: #111827; color: #f8fafc; padding: 10px 32px; }
+  .sharebar span { opacity: 0.75; }
+  @media print {
+    .sharebar { display: none; }
+    body { background: white; font-size: 11.5px; }
+    .wrap { max-width: none; padding: 12mm 14mm 16mm; }
+    h1 { font-size: 24px; }
+    h2 { break-after: avoid; page-break-after: avoid; }
+    table, .chart, .callout, .stat { break-inside: avoid; page-break-inside: avoid; }
+    .stats { grid-template-columns: repeat(4, 1fr); }
+    a { color: inherit; text-decoration: none; }
+  }
+  @media (max-width: 720px) {
+    .stats, .cols { grid-template-columns: 1fr 1fr; }
+    .wrap { padding: 24px 16px 48px; }
+  }
+</style>
+</head>
+<body>
+<div class="sharebar">Website Factory · Business Plan & Pitch Report · september 2026 &nbsp; <span>Odpri v brskalniku · Natisni / Shrani kot PDF</span></div>
+<div class="wrap">
+
+<p class="kicker">Confidential · FACT + ASSUMPTION model · zbrendiraj.si</p>
+<h1>WEBSITE FACTORY</h1>
+<p class="sub"><strong>AI-powered automated website production &amp; customer acquisition system</strong></p>
+<p>Avtomatizirana proizvodna infrastruktura, ki lokalna podjetja brez spletne strani spremeni v demo, naročnino in LIVE stran — z nizkim marginalnim stroškom dodatnega customerja.</p>
+
+<div class="pills">
+  <span class="pill">FACT = iz kode</span>
+  <span class="pill">CALCULATED = iz modela</span>
+  <span class="pill">ASSUMPTION = predpostavka</span>
+  <span class="pill">PLANNED = še ni v produkciji</span>
+</div>
+
+<div class="callout info">
+  <strong>Klasifikacija podatkov</strong>
+  FACT = potrjeno iz codebase-a. CALCULATED = izračunano iz FACT + predpostavk. ASSUMPTION = poslovna predpostavka (conversion, churn, volume). PLANNED = v kodi še ni. Produkcijski CAC, conversion rate in število plačljivih strank v Neon bazi v tem dokumentu niso merjeni — niso bili brani iz produkcijske baze.
+</div>
+
+<div class="stats">
+  <div class="stat"><b>35 €</b><span>Mesečna naročnina · FACT</span></div>
+  <div class="stat"><b>350 €</b><span>Letna naročnina · FACT</span></div>
+  <div class="stat"><b>~0,05 $</b><span>Strošek / demo · CALCULATED</span></div>
+  <div class="stat"><b>~850 / ~730</b><span>Leadov / demotov v gitu · FACT</span></div>
+</div>
+
+<h2>1. Executive summary</h2>
+<p>Večina lokalnih obrtnikov, frizerjev, avtoservisov in podobnih poslov v Sloveniji nima kakovostne spletne strani — ali pa je sploh ni. Klasična agencija ta problem rešuje z dragim prodajnim ciklusom in ročno izdelavo. To se ne skali: vsaka nova stranka zahteva sorazmerno več človeškega dela.</p>
+<p>Website Factory (produktna znamka Zbrendiraj.si, pravna oseba DETAJL, Tadej Šarabon Štojs s.p.) ta tok obrača. Sistem iz Google Places odkrije podjetja brez spletne strani, z AI ustvari personaliziran demo, ga objavi na zbrendiraj.si/{slug}, lastnika kontaktira prek SMS in ob nakupu vodi checkout → onboarding → LIVE objavo. Cene v produktu: 35 €/mesec ali 350 €/leto, plus upsell-i (Google Business 39 €, SEO 29 €, profesionalni e-mail 5 €/mesec).</p>
+<p>To ni klasična agencija z generatorjem na strani. Factory worker, Neon state, Stripe webhooki, SMS vrsta, customer-publish in e-mail provisioning so že v kodi. Človek ostaja pri odobritvi onboardinga, pripenjanju domene, vzdrževanju lokalnega SMS modema in pri izjemah. Factory dispatch na produkciji ima v kodi privzeto vrednost izklopljeno — avtomatizacija je zgrajena, vklop pa je operativna odločitev, ne slide.</p>
+<p>Poslovna prednost je nizka marginalna cena: dodatni demo stane približno 0,02–0,05 $ API stroškov, ne pa dni dizajnerja. Ista arhitektura lahko proizvaja sto ali tisoč strani. Širitev na HR/DACH/FR je tehnično ponovljiva (nov discovery matriks + jeziki), a tržno nevalidirana.</p>
+<div class="callout">
+  <strong>Definicija</strong>
+  Website Factory ni zgolj generator spletnih strani. Je avtomatizirana proizvodna infrastruktura za pridobivanje, izdelavo, prodajo in upravljanje spletnih strani za lokalna podjetja — z recurring revenue in še vedno nekaj človeškimi vrati na koncu zanke.
+</div>
+
+<h2>2. Problem in priložnost</h2>
+<p>Klasična izdelava strani za male lokale pade na štirih točkah: visok strošek prodaje (vsak klic/sestanek), visok strošek izdelave (unikaten brief), dolg delivery (tedni) in nična ponovljivost. Agencija z 2–4 ljudmi naredi desetine strani na leto, ne tisoče. Website Factory spremeni izdelavo iz ročnega service businessa v production system: discovery matrika 12 slovenskih regij × 16 poklicev, AI + image pool, git publish, SMS queue, Stripe.</p>
+<div class="callout warn">
+  <strong>Market-size assumption / external validation required</strong>
+  V repozitoriju ni tržne statistike o številu lokalnih podjetij brez spletne strani. Discovery filter (ni spletne strani + SI mobilni) v praksi že polni backlog — v gitu je ~850 leadov in ~730 demotov — a to ni ocena TAM. Velikost trga zahteva zunanjo validacijo (SURS / AJPES / Places coverage).
+</div>
+
+<h2>3. Kako Factory deluje</h2>
+<p class="cap">Diagram prilagojen kodi, ne načrtu. Statusi: Implemented / Partial / Planned.</p>
+<div class="flow">
+  <div class="box"><b>Lokalno podjetje</b><i>Vir</i></div>
+  <div class="box done"><b>Places discovery</b><i>Implemented</i></div>
+  <div class="box done"><b>Kvalifikacija</b><i>Implemented</i></div>
+  <div class="box done"><b>AI generacija</b><i>Implemented</i></div>
+  <div class="box part"><b>Demo publish</b><i>Partial</i></div>
+  <div class="box part"><b>SMS outreach</b><i>Partial</i></div>
+  <div class="box done"><b>Stripe checkout</b><i>Implemented</i></div>
+  <div class="box done"><b>Onboarding</b><i>Implemented</i></div>
+  <div class="box part"><b>LIVE publish</b><i>Partial</i></div>
+  <div class="box part"><b>Domena / e-mail</b><i>Partial</i></div>
+  <div class="box done"><b>Recurring revenue</b><i>Implemented</i></div>
+</div>
+<table>
+  <thead><tr><th>Faza</th><th>Status</th><th>Kje v sistemu</th></tr></thead>
+  <tbody>
+    <tr><td>Lead discovery</td><td class="ok">Implemented</td><td>Google Places, 192 celic, GHA/CLI — ne na Vercelu</td></tr>
+    <tr><td>Kvalifikacija</td><td class="ok">Implemented</td><td>Brez spletne strani, SI mobilni, poklic, slug</td></tr>
+    <tr><td>AI generacija</td><td class="ok">Implemented</td><td>OpenAI/Gemini + Pexels/Unsplash pool → AVIF/WebP</td></tr>
+    <tr><td>Demo publish</td><td class="warn">Partial</td><td>GHA git push; Vercel cron dispatch privzeto IZKLOPLJEN</td></tr>
+    <tr><td>Demo views</td><td class="ok">Implemented</td><td>Neon demo_lifecycle</td></tr>
+    <tr><td>Outreach</td><td class="warn">Partial</td><td>Enqueue na Vercelu; pošiljanje samo lokalni HiLink modem</td></tr>
+    <tr><td>Checkout + upsell</td><td class="ok">Implemented</td><td>Stripe 35/350 + 39/29/5 €</td></tr>
+    <tr><td>Onboarding</td><td class="ok">Implemented</td><td>Token forma → processed_payload v Neon</td></tr>
+    <tr><td>LIVE publish</td><td class="warn">Partial</td><td>Admin approve → GHA; isti URL /{slug}</td></tr>
+    <tr><td>Custom domena</td><td class="warn">Partial</td><td>Vercel API obstaja; sproži admin, ni avto-registracije</td></tr>
+    <tr><td>Business e-mail</td><td class="ok">Implemented</td><td>MXroute + Cloudflare DNS, cron vsakih 5 min</td></tr>
+    <tr><td>Website churn</td><td class="bad">Planned</td><td>Webhook pokriva samo e-mail naročnino, ne osnovne strani</td></tr>
+    <tr><td>Demo cleanup</td><td class="bad">Planned</td><td>isNeverViewedDemo obstaja; ni archive joba</td></tr>
+  </tbody>
+</table>
+
+<h2>4. Tehnični pipeline</h2>
+<div class="cols">
+  <div>
+    <h3>Acquisition → demo</h3>
+    <p>Factory worker vzame lease v Neon, požene replenish po matriki, za vsakega kandidata pridobi generation lock, kliče Places Details, dve LLM stopnji in Gemini image plan, nato image pool ali Pexels→Unsplash, Sharp (AVIF/WebP) in Vercel Blob. Na koncu commita lead + client JSON in pusha. Retry, cooldown in singleton lease so v kodi. Grok QA je opazovalen — ne blokira objave.</p>
+  </div>
+  <div>
+    <h3>Conversion → LIVE</h3>
+    <p>Cron zjutraj enqueue-a SMS (do 100/dan). Lokalni gateway claima vrsto in pošlje. Nakup gre v Stripe Checkout; webhook zapiše customer + purchase (idempotentno na session id), pošlje Resend welcome in odpre onboarding. Po admin approve customer-publish prepiše site.json in pusha. Domena se prilepi prek admin akcije (Vercel verify). E-mail upsell sproži MXroute mailbox + Cloudflare MX; geslo gre enkrat prek Resend, v bazi se ne shrani.</p>
+  </div>
+</div>
+<p>Outreach ni fully managed: brez prižganega modema se vrsta nabira. E-mail cold outreach je legacy (cron skipped). Churn osnovne naročnine se v aplikaciji ne sinhronizira — preklicana Stripe naročnina ostane isCustomer = true. To je resna luknja za unit economics, ker MRR v admin analitiki lahko precenjuje aktivne stranke.</p>
+
+<h2>5. Sistemska arhitektura</h2>
+<svg class="arch" viewBox="0 0 760 300" role="img" aria-label="Tehnična arhitektura">
+  <rect x="280" y="10" width="200" height="36" fill="#fff" stroke="#d6d3d1"/>
+  <text x="380" y="33" text-anchor="middle" font-size="12" fill="#1c1917">Admin UI / Vercel app</text>
+  <rect x="20" y="70" width="140" height="44" fill="#fff" stroke="#d6d3d1"/>
+  <text x="90" y="88" text-anchor="middle" font-size="11">Google Places</text>
+  <text x="90" y="104" text-anchor="middle" font-size="10" fill="#78716c">Lead source</text>
+  <rect x="310" y="70" width="140" height="44" fill="#ecfdf5" stroke="#d6d3d1"/>
+  <text x="380" y="88" text-anchor="middle" font-size="11">Neon Postgres</text>
+  <text x="380" y="104" text-anchor="middle" font-size="10" fill="#78716c">Pipeline + billing state</text>
+  <rect x="600" y="70" width="140" height="44" fill="#fff" stroke="#d6d3d1"/>
+  <text x="670" y="88" text-anchor="middle" font-size="11">Git content</text>
+  <text x="670" y="104" text-anchor="middle" font-size="10" fill="#78716c">leads + site.json</text>
+  <rect x="80" y="150" width="150" height="44" fill="#fff" stroke="#d6d3d1"/>
+  <text x="155" y="168" text-anchor="middle" font-size="11">Factory worker</text>
+  <text x="155" y="184" text-anchor="middle" font-size="10" fill="#78716c">GHA / CLI</text>
+  <rect x="305" y="150" width="150" height="44" fill="#fff" stroke="#d6d3d1"/>
+  <text x="380" y="168" text-anchor="middle" font-size="11">Customer publish</text>
+  <text x="380" y="184" text-anchor="middle" font-size="10" fill="#78716c">GHA apply + push</text>
+  <rect x="530" y="150" width="150" height="44" fill="#fff" stroke="#d6d3d1"/>
+  <text x="605" y="168" text-anchor="middle" font-size="11">Email provision</text>
+  <text x="605" y="184" text-anchor="middle" font-size="10" fill="#78716c">Vercel cron + MXroute</text>
+  <rect x="80" y="230" width="150" height="44" fill="#fff" stroke="#d6d3d1"/>
+  <text x="155" y="248" text-anchor="middle" font-size="11">Vercel</text>
+  <text x="155" y="264" text-anchor="middle" font-size="10" fill="#78716c">Demo / LIVE /{slug}</text>
+  <rect x="305" y="230" width="150" height="44" fill="#fff" stroke="#d6d3d1"/>
+  <text x="380" y="248" text-anchor="middle" font-size="11">HiLink SMS</text>
+  <text x="380" y="264" text-anchor="middle" font-size="10" fill="#78716c">Lokalni modem</text>
+  <rect x="530" y="230" width="150" height="44" fill="#fff" stroke="#d6d3d1"/>
+  <text x="605" y="248" text-anchor="middle" font-size="11">Stripe / Resend / CF</text>
+  <text x="605" y="264" text-anchor="middle" font-size="10" fill="#78716c">DNS / Vercel domains</text>
+  <line x1="380" y1="46" x2="380" y2="70" stroke="#a8a29e"/>
+  <line x1="90" y1="114" x2="155" y2="150" stroke="#a8a29e"/>
+  <line x1="380" y1="114" x2="380" y2="150" stroke="#a8a29e"/>
+  <line x1="670" y1="114" x2="605" y2="150" stroke="#a8a29e"/>
+  <line x1="155" y1="194" x2="155" y2="230" stroke="#a8a29e"/>
+  <line x1="380" y1="194" x2="380" y2="230" stroke="#a8a29e"/>
+  <line x1="605" y1="194" x2="605" y2="230" stroke="#a8a29e"/>
+</svg>
+<p class="cap">Vir: src/factory, src/onboarding, src/email, src/outreach/sms, src/website-domains, vercel.json, .github/workflows. En Next.js monolit; težka generacija nikoli ne teče na Vercelu.</p>
+
+<h2>6. Zakaj ima to poslovno prednost</h2>
+<table>
+  <thead><tr><th>Prednost</th><th>Kaj je že res</th><th>Omejitev</th></tr></thead>
+  <tbody>
+    <tr><td>Avtomatizacija</td><td>Discovery, gen, queue, checkout, onboard, e-mail provision</td><td>Approve, modem, domena, smoke-test kakovosti</td></tr>
+    <tr><td>Ponovljivost</td><td>8 appearances, 16 poklicev, 1 shema site.json</td><td>Nov trg = nov jezik + Places matrika</td></tr>
+    <tr><td>Nizek marginalni strošek</td><td>0,02–0,05 $/demo pri dobrem pool hit-u</td><td>Discovery Places pri nizkem yieldu podraži run</td></tr>
+    <tr><td>Hitrost</td><td>Lead→demo v enem worker runu; checkout trenuten</td><td>LIVE čaka admin + GHA; dispatch lahko off</td></tr>
+    <tr><td>Standardizacija</td><td>Ista infra za vse stranke, Neon state machine</td><td>Git kot CDN se zlomi pri tisočih buildih</td></tr>
+    <tr><td>Recurring + upsell</td><td>35/350 + e-mail 5 € + SEO/GBP one-off</td><td>Website cancel ni v produktu</td></tr>
+    <tr><td>Geo skaliranje</td><td>Engine je ločen od trga</td><td>Market validation = 0 zunaj SI</td></tr>
+  </tbody>
+</table>
+<p>Defensible moat danes ni model LLM, ampak sestavljena zanka: kvalifikacija → demo inventory → SMS → checkout → provision, z durable state. To se ne skopira z enim promptom. Moat pa ni zaprt: SMS hardware, git bundling in manjkajoči churn so točke, kjer sistem še ni tovarna brez operaterja.</p>
+
+<h2>7. Poslovni model</h2>
+<p class="cap">Cene iz produkta (DemoPurchaseBar, upsells.ts). Vse z DDV, SI 22 %.</p>
+<table>
+  <thead><tr><th>Revenue stream</th><th class="num">Cena</th><th>Tip</th><th>Frekvenca</th><th>Margina</th></tr></thead>
+  <tbody>
+    <tr><td>Website monthly</td><td class="num">35 €</td><td>Subscription</td><td>Mesečno</td><td>Visoka; infra + Stripe</td></tr>
+    <tr><td>Website yearly</td><td class="num">350 €</td><td>Subscription</td><td>Letno</td><td>Visoka; copy obljublja gratis domeno</td></tr>
+    <tr><td>Profesionalni e-mail</td><td class="num">5 €/mes</td><td>Upsell sub</td><td>Mesečno</td><td>Visoka; MXroute COGS nizek</td></tr>
+    <tr><td>Osnovni SEO</td><td class="num">29 €</td><td>One-time</td><td>Enkrat</td><td>Srednja — deloma ročno</td></tr>
+    <tr><td>Google Business</td><td class="num">39 €</td><td>One-time</td><td>Enkrat</td><td>Srednja — ni avtomatiziran delivery</td></tr>
+  </tbody>
+</table>
+<p>Letni plan v copy oglašuje brezplačno domeno; v Neon ni ločenega entitlement flaga razen subscription_plan = yearly. Registracija .si ni avtomatizirana.</p>
+
+<h2>8. Unit economics</h2>
+<p>Številke so CALCULATED iz FACT cen in ASSUMPTION lijaka (base): 0,8 % conversion SMS-kontakt → customer, 32 % letni mix, 4,5 % mesečni churn, 18/22/16 % e-mail/SEO/GBP. Pri 0,8 % je treba kontaktirati ~125 kvalificiranih leadov za eno stranko.</p>
+<div class="stats">
+  <div class="stat"><b>358 €</b><span>Prihodek / customer L1 · CALC</span></div>
+  <div class="stat"><b>28 €</b><span>Variabilni strošek · CALC</span></div>
+  <div class="stat"><b>92 %</b><span>Gross contribution · CALC</span></div>
+  <div class="stat"><b>&lt; 1 mes</b><span>Payback na acq. CAC · CALC</span></div>
+</div>
+<table>
+  <thead><tr><th>Postavka</th><th class="num">Znesek</th><th>Tip</th></tr></thead>
+  <tbody>
+    <tr><td>Blended starting MRR (stran + e-mail)</td><td class="num">34 €</td><td>CALCULATED</td></tr>
+    <tr><td>Pričakovani meseci (monthly, 4,5 % churn)</td><td class="num">9,4</td><td>CALCULATED</td></tr>
+    <tr><td>CAC (SMS + demo gen)</td><td class="num">15 €</td><td>CALCULATED</td></tr>
+    <tr><td>Stripe + domena + MXroute v L1</td><td class="num">13 €</td><td>ASSUMPTION + CALC</td></tr>
+    <tr><td>Observed CAC / reply rate</td><td class="num">—</td><td>Data not available</td></tr>
+  </tbody>
+</table>
+<div class="callout warn">
+  <strong>Skriti CAC je čas, ne API</strong>
+  API + SMS sta poceni. Pravi strošek je operater: modem, odgovori na SMS, approve, domene, support. Če conversion pade na 0,35 %, potrebujete ~286 kontaktov / stranko — še vedno nizko v evrih, a visoko v pozornosti. Brez merjenega conversiona je 92 % marža računska, ne dokazana.
+</div>
+
+<h2>9. 24-mesečna projekcija (base case)</h2>
+<p>Model: 26 operativnih dni/mesec, 1,4 SMS na unikaten kontakt, hardware cap 100 SMS/dan, SMS 0,05 €, demo 0,05 €. Opex je lastnik-operater (brez plače). Year 2 se začne iz stanja Year 1; churn in 80 % letna obnovitev sta vključena. Conservative ostane na SI + modem. Base ostane na SI in v letu 2 zadene SMS strop. Growth od M15 predpostavi managed SMS in HR ramp (+28 % volume) ter 900 €/mes delni support — ASSUMPTION, ne roadmap v kodi.</p>
+<table>
+  <thead><tr><th>Metrika</th><th class="num">Year 1</th><th class="num">Year 2</th></tr></thead>
+  <tbody>
+    <tr><td>Leads contacted</td><td class="num">14.430</td><td class="num">22.286</td></tr>
+    <tr><td>New customers</td><td class="num">115</td><td class="num">178</td></tr>
+    <tr><td>Active customers EOY</td><td class="num">102</td><td class="num">219</td></tr>
+    <tr><td>MRR EOY (recognized)</td><td class="num">3.431 €</td><td class="num">7.342 €</td></tr>
+    <tr><td>Monthly sub cash</td><td class="num">12.932 €</td><td class="num">43.931 €</td></tr>
+    <tr><td>Annual sub cash</td><td class="num">12.929 €</td><td class="num">30.311 €</td></tr>
+    <tr><td>Upsell (e-mail + SEO + GBP)</td><td class="num">1.946 €</td><td class="num">3.911 €</td></tr>
+    <tr><td>Total revenue (cash)</td><td class="num">27.807 €</td><td class="num">78.154 €</td></tr>
+    <tr><td>Variable costs</td><td class="num">3.036 €</td><td class="num">5.523 €</td></tr>
+    <tr><td>Operating costs (brez plače)</td><td class="num">2.388 €</td><td class="num">3.252 €</td></tr>
+    <tr><td>Contribution / EBITDA-like</td><td class="num">22.384 €</td><td class="num">69.378 €</td></tr>
+  </tbody>
+</table>
+<p class="cap">Source: 24-mesečni model · base case · september 2026. Letni cash v Y2 vključuje obnovitve Y1 kohorte.</p>
+
+<h2>10. Scenariji</h2>
+<table>
+  <thead><tr><th>Scenario</th><th class="num">Y1 revenue</th><th class="num">Y2 revenue</th><th class="num">Customers EOY1</th><th class="num">Customers EOY2</th></tr></thead>
+  <tbody>
+    <tr><td>Conservative (0,35 % conv., 7 % churn)</td><td class="num">5.863 €</td><td class="num">16.192 €</td><td class="num">23</td><td class="num">46</td></tr>
+    <tr><td>Base (0,80 % / 4,5 % / 32 % yearly)</td><td class="num">27.807 €</td><td class="num">78.154 €</td><td class="num">102</td><td class="num">219</td></tr>
+    <tr><td>Growth (1,30 % + managed SMS + HR)</td><td class="num">68.209 €</td><td class="num">234.989 €</td><td class="num">225</td><td class="num">697</td></tr>
+  </tbody>
+</table>
+<p>Razlika ni »več marketinga« — je conversion in ali hardware SMS ostane strop.</p>
+
+<h2>11. Grafi in številke</h2>
+
+<h3>Graf 1 — Rast aktivnih strank (vsi scenariji)</h3>
+<div class="chart"><svg viewBox="0 0 720 280" width="100%" role="img"><line x1="52" y1="244" x2="642" y2="244" stroke="#a8a29e"/>
+<line x1="52" y1="18" x2="52" y2="244" stroke="#a8a29e"/>
+<line x1="52" y1="244.0" x2="642" y2="244.0" stroke="#e7e5e4"/>
+<text x="46" y="247.0" text-anchor="end" fill="#78716c" font-size="10">0</text>
+<line x1="52" y1="198.8" x2="642" y2="198.8" stroke="#e7e5e4"/>
+<text x="46" y="201.8" text-anchor="end" fill="#78716c" font-size="10">150</text>
+<line x1="52" y1="153.6" x2="642" y2="153.6" stroke="#e7e5e4"/>
+<text x="46" y="156.6" text-anchor="end" fill="#78716c" font-size="10">300</text>
+<line x1="52" y1="108.4" x2="642" y2="108.4" stroke="#e7e5e4"/>
+<text x="46" y="111.4" text-anchor="end" fill="#78716c" font-size="10">450</text>
+<line x1="52" y1="63.2" x2="642" y2="63.2" stroke="#e7e5e4"/>
+<text x="46" y="66.2" text-anchor="end" fill="#78716c" font-size="10">600</text>
+<line x1="52" y1="18.0" x2="642" y2="18.0" stroke="#e7e5e4"/>
+<text x="46" y="21.0" text-anchor="end" fill="#78716c" font-size="10">750</text>
+<text x="52.0" y="260" text-anchor="middle" fill="#78716c" font-size="10">M1</text>
+<text x="180.3" y="260" text-anchor="middle" fill="#78716c" font-size="10">M6</text>
+<text x="334.2" y="260" text-anchor="middle" fill="#78716c" font-size="10">M12</text>
+<text x="488.1" y="260" text-anchor="middle" fill="#78716c" font-size="10">M18</text>
+<text x="642.0" y="260" text-anchor="middle" fill="#78716c" font-size="10">M24</text><polyline fill="none" stroke="#57534e" stroke-width="1.5" points="52.0,243.7 77.7,243.1 103.3,242.8 129.0,242.2 154.6,241.6 180.3,241.0 205.9,240.4 231.6,239.8 257.2,239.2 282.9,238.6 308.5,237.7 334.2,237.1 359.8,236.5 385.5,235.9 411.1,235.3 436.8,234.7 462.4,234.1 488.1,233.5 513.7,232.9 539.4,232.2 565.0,231.6 590.7,231.0 616.3,230.4 642.0,230.1"/><polyline fill="none" stroke="#1d4ed8" stroke-width="2" points="52.0,242.5 77.7,241.0 103.3,239.5 129.0,237.1 154.6,234.7 180.3,232.5 205.9,229.5 231.6,226.5 257.2,223.5 282.9,219.9 308.5,216.6 334.2,213.3 359.8,209.9 385.5,206.3 411.1,203.0 436.8,200.0 462.4,197.0 488.1,194.0 513.7,191.0 539.4,188.3 565.0,185.5 590.7,182.8 616.3,180.4 642.0,178.0"/><polyline fill="none" stroke="#0f766e" stroke-width="2" points="52.0,239.8 77.7,235.9 103.3,231.9 129.0,226.2 154.6,220.5 180.3,214.8 205.9,207.8 231.6,201.2 257.2,194.9 282.9,188.6 308.5,182.2 334.2,176.2 359.8,170.2 385.5,164.4 411.1,151.8 436.8,139.4 462.4,127.4 488.1,115.6 513.7,101.5 539.4,87.3 565.0,73.7 590.7,60.2 616.3,46.9 642.0,34.0"/><circle cx="334.2" cy="237.1" r="3" fill="#57534e"/><text x="334.2" y="229.1" text-anchor="middle" fill="#57534e" font-size="10">23</text><circle cx="642.0" cy="230.1" r="3" fill="#57534e"/><text x="648.0" y="234.1" fill="#57534e" font-size="11" font-weight="600">46</text><circle cx="334.2" cy="213.3" r="3" fill="#1d4ed8"/><text x="334.2" y="205.3" text-anchor="middle" fill="#1d4ed8" font-size="10">102</text><circle cx="642.0" cy="178.0" r="3" fill="#1d4ed8"/><text x="648.0" y="182.0" fill="#1d4ed8" font-size="11" font-weight="600">219</text><circle cx="334.2" cy="176.2" r="3" fill="#0f766e"/><text x="334.2" y="168.2" text-anchor="middle" fill="#0f766e" font-size="10">225</text><circle cx="642.0" cy="34.0" r="3" fill="#0f766e"/><text x="648.0" y="38.0" fill="#0f766e" font-size="11" font-weight="600">697</text><text x="60" y="14" fill="#57534e" font-size="11">Conservative</text><text x="150" y="14" fill="#1d4ed8" font-size="11">Base</text><text x="195" y="14" fill="#0f766e" font-size="11">Growth</text></svg></div>
+<p class="cap">X = mesec 1–24 · Y = aktivne stranke (monthly + yearly). Oznake: M12 in M24. Conservative M12 = 23, M24 = 46 · Base M12 = 102, M24 = 219 · Growth M12 = 225, M24 = 697.</p>
+
+<h3>Graf 2 — Mesečni prihodek, base case</h3>
+<div class="chart"><svg viewBox="0 0 720 280" width="100%" role="img"><line x1="52" y1="244" x2="642" y2="244" stroke="#a8a29e"/>
+<line x1="52" y1="18" x2="52" y2="244" stroke="#a8a29e"/>
+<line x1="52" y1="244.0" x2="642" y2="244.0" stroke="#e7e5e4"/>
+<text x="46" y="247.0" text-anchor="end" fill="#78716c" font-size="10">0</text>
+<line x1="52" y1="190.8" x2="642" y2="190.8" stroke="#e7e5e4"/>
+<text x="46" y="193.8" text-anchor="end" fill="#78716c" font-size="10">2.000</text>
+<line x1="52" y1="137.6" x2="642" y2="137.6" stroke="#e7e5e4"/>
+<text x="46" y="140.6" text-anchor="end" fill="#78716c" font-size="10">4.000</text>
+<line x1="52" y1="84.5" x2="642" y2="84.5" stroke="#e7e5e4"/>
+<text x="46" y="87.5" text-anchor="end" fill="#78716c" font-size="10">6.000</text>
+<line x1="52" y1="31.3" x2="642" y2="31.3" stroke="#e7e5e4"/>
+<text x="46" y="34.3" text-anchor="end" fill="#78716c" font-size="10">8.000</text>
+<text x="52.0" y="260" text-anchor="middle" fill="#78716c" font-size="10">M1</text>
+<text x="180.3" y="260" text-anchor="middle" fill="#78716c" font-size="10">M6</text>
+<text x="334.2" y="260" text-anchor="middle" fill="#78716c" font-size="10">M12</text>
+<text x="488.1" y="260" text-anchor="middle" fill="#78716c" font-size="10">M18</text>
+<text x="642.0" y="260" text-anchor="middle" fill="#78716c" font-size="10">M24</text><polygon fill="#0f766e" fill-opacity="0.08" points="52.0,223.4 77.7,220.1 103.3,217.0 129.0,201.6 154.6,196.8 180.3,192.2 205.9,175.5 231.6,169.3 257.2,163.5 282.9,149.6 308.5,143.0 334.2,136.6 359.8,112.9 385.5,106.2 411.1,99.9 436.8,86.4 462.4,80.7 488.1,75.1 513.7,62.5 539.4,57.4 565.0,52.6 590.7,43.1 616.3,38.7 642.0,34.5 642.0,244.0 52.0,244.0"/><polyline fill="none" stroke="#0f766e" stroke-width="2" points="52.0,223.4 77.7,220.1 103.3,217.0 129.0,201.6 154.6,196.8 180.3,192.2 205.9,175.5 231.6,169.3 257.2,163.5 282.9,149.6 308.5,143.0 334.2,136.6 359.8,112.9 385.5,106.2 411.1,99.9 436.8,86.4 462.4,80.7 488.1,75.1 513.7,62.5 539.4,57.4 565.0,52.6 590.7,43.1 616.3,38.7 642.0,34.5"/><polyline fill="none" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="4 3" points="52.0,239.3 77.7,234.7 103.3,230.3 129.0,223.3 154.6,216.4 180.3,209.8 205.9,200.5 231.6,191.5 257.2,182.8 282.9,172.5 308.5,162.5 334.2,152.8 359.8,142.4 385.5,132.4 411.1,122.6 436.8,113.3 462.4,104.2 488.1,95.5 513.7,87.0 539.4,78.9 565.0,71.0 590.7,63.4 616.3,56.0 642.0,48.8"/><circle cx="334.2" cy="136.6" r="3" fill="#0f766e"/><text x="334.2" y="128.6" text-anchor="middle" fill="#0f766e" font-size="10">4.038 €</text><circle cx="642.0" cy="34.5" r="3" fill="#0f766e"/><text x="648.0" y="38.5" fill="#0f766e" font-size="11" font-weight="600">7.879 €</text><circle cx="334.2" cy="152.8" r="3" fill="#1d4ed8"/><text x="334.2" y="144.8" text-anchor="middle" fill="#1d4ed8" font-size="10">3.431 €</text><circle cx="642.0" cy="48.8" r="3" fill="#1d4ed8"/><text x="648.0" y="52.8" fill="#1d4ed8" font-size="11" font-weight="600">7.342 €</text><text x="60" y="14" fill="#0f766e" font-size="11">Cash revenue</text><text x="160" y="14" fill="#1d4ed8" font-size="11">Recognized MRR</text></svg></div>
+<p class="cap">Polna črta = cash revenue €/mesec (vključuje letna predplačila). Črtkana = recognized MRR. Base M12: cash 4.038 €, MRR 3.431 € · M24: cash 7.879 €, MRR 7.342 €.</p>
+
+<h3>Graf 3 — Sestava prihodka (base, četrtletni prerez)</h3>
+<div class="chart"><svg viewBox="0 0 720 280" width="100%" role="img"><line x1="52" y1="244" x2="642" y2="244" stroke="#a8a29e"/><line x1="52" y1="18" x2="52" y2="244" stroke="#a8a29e"/><line x1="52" y1="244.0" x2="642" y2="244.0" stroke="#e7e5e4"/><text x="46" y="247.0" text-anchor="end" fill="#78716c" font-size="10">0</text><line x1="52" y1="190.8" x2="642" y2="190.8" stroke="#e7e5e4"/><text x="46" y="193.8" text-anchor="end" fill="#78716c" font-size="10">2.000</text><line x1="52" y1="137.6" x2="642" y2="137.6" stroke="#e7e5e4"/><text x="46" y="140.6" text-anchor="end" fill="#78716c" font-size="10">4.000</text><line x1="52" y1="84.5" x2="642" y2="84.5" stroke="#e7e5e4"/><text x="46" y="87.5" text-anchor="end" fill="#78716c" font-size="10">6.000</text><line x1="52" y1="31.3" x2="642" y2="31.3" stroke="#e7e5e4"/><text x="46" y="34.3" text-anchor="end" fill="#78716c" font-size="10">8.000</text><rect x="68.6" y="219.1" width="40.6" height="24.9" fill="#1d4ed8"/><rect x="68.6" y="218.7" width="40.6" height="0.5" fill="#0f766e"/><rect x="68.6" y="217.9" width="40.6" height="0.9" fill="#b45309"/><rect x="68.6" y="217.0" width="40.6" height="0.9" fill="#57534e"/><text x="88.9" y="260" text-anchor="middle" fill="#78716c" font-size="10">M3</text><text x="88.9" y="211.0" text-anchor="middle" fill="#1c1917" font-size="10" font-weight="600">1.015</text><rect x="142.3" y="195.9" width="40.6" height="48.1" fill="#1d4ed8"/><rect x="142.3" y="195.0" width="40.6" height="0.9" fill="#0f766e"/><rect x="142.3" y="193.6" width="40.6" height="1.4" fill="#b45309"/><rect x="142.3" y="192.2" width="40.6" height="1.4" fill="#57534e"/><text x="162.6" y="260" text-anchor="middle" fill="#78716c" font-size="10">M6</text><text x="162.6" y="186.2" text-anchor="middle" fill="#1c1917" font-size="10" font-weight="600">1.947</text><rect x="216.1" y="168.9" width="40.6" height="75.1" fill="#1d4ed8"/><rect x="216.1" y="167.3" width="40.6" height="1.5" fill="#0f766e"/><rect x="216.1" y="165.4" width="40.6" height="1.9" fill="#b45309"/><rect x="216.1" y="163.5" width="40.6" height="1.9" fill="#57534e"/><text x="236.4" y="260" text-anchor="middle" fill="#78716c" font-size="10">M9</text><text x="236.4" y="157.5" text-anchor="middle" fill="#1c1917" font-size="10" font-weight="600">3.028</text><rect x="289.8" y="143.4" width="40.6" height="100.6" fill="#1d4ed8"/><rect x="289.8" y="141.2" width="40.6" height="2.3" fill="#0f766e"/><rect x="289.8" y="138.9" width="40.6" height="2.3" fill="#b45309"/><rect x="289.8" y="136.6" width="40.6" height="2.2" fill="#57534e"/><text x="310.1" y="260" text-anchor="middle" fill="#78716c" font-size="10">M12</text><text x="310.1" y="130.6" text-anchor="middle" fill="#1c1917" font-size="10" font-weight="600">4.038</text><rect x="363.6" y="107.9" width="40.6" height="136.1" fill="#1d4ed8"/><rect x="363.6" y="104.9" width="40.6" height="3.0" fill="#0f766e"/><rect x="363.6" y="102.4" width="40.6" height="2.5" fill="#b45309"/><rect x="363.6" y="99.9" width="40.6" height="2.5" fill="#57534e"/><text x="383.9" y="260" text-anchor="middle" fill="#78716c" font-size="10">M15</text><text x="383.9" y="93.9" text-anchor="middle" fill="#1c1917" font-size="10" font-weight="600">5.420</text><rect x="437.3" y="83.8" width="40.6" height="160.2" fill="#1d4ed8"/><rect x="437.3" y="80.1" width="40.6" height="3.6" fill="#0f766e"/><rect x="437.3" y="77.6" width="40.6" height="2.5" fill="#b45309"/><rect x="437.3" y="75.1" width="40.6" height="2.5" fill="#57534e"/><text x="457.6" y="260" text-anchor="middle" fill="#78716c" font-size="10">M18</text><text x="457.6" y="69.1" text-anchor="middle" fill="#1c1917" font-size="10" font-weight="600">6.351</text><rect x="511.1" y="61.8" width="40.6" height="182.2" fill="#1d4ed8"/><rect x="511.1" y="57.6" width="40.6" height="4.2" fill="#0f766e"/><rect x="511.1" y="55.1" width="40.6" height="2.5" fill="#b45309"/><rect x="511.1" y="52.6" width="40.6" height="2.5" fill="#57534e"/><text x="531.4" y="260" text-anchor="middle" fill="#78716c" font-size="10">M21</text><text x="531.4" y="46.6" text-anchor="middle" fill="#1c1917" font-size="10" font-weight="600">7.198</text><rect x="584.8" y="44.2" width="40.6" height="199.8" fill="#1d4ed8"/><rect x="584.8" y="39.5" width="40.6" height="4.7" fill="#0f766e"/><rect x="584.8" y="37.0" width="40.6" height="2.5" fill="#b45309"/><rect x="584.8" y="34.5" width="40.6" height="2.5" fill="#57534e"/><text x="605.1" y="260" text-anchor="middle" fill="#78716c" font-size="10">M24</text><text x="605.1" y="28.5" text-anchor="middle" fill="#1c1917" font-size="10" font-weight="600">7.879</text><rect x="60" y="4" width="10" height="10" fill="#1d4ed8"/><text x="74" y="13" fill="#1c1917" font-size="11">Naročnine</text><rect x="150" y="4" width="10" height="10" fill="#0f766e"/><text x="164" y="13" fill="#1c1917" font-size="11">E-mail</text><rect x="240" y="4" width="10" height="10" fill="#b45309"/><text x="254" y="13" fill="#1c1917" font-size="11">SEO</text><rect x="330" y="4" width="10" height="10" fill="#57534e"/><text x="344" y="13" fill="#1c1917" font-size="11">GBP</text></svg></div>
+<p class="cap">Stacked cash €. Številka nad stolpcem = seštevek meseca. M12 = 4.038 € (3.782 naročnine + 86 e-mail + 86 SEO + 84 GBP). M24 = 7.879 € (7.516 + 175 + 95 + 93).</p>
+
+<h3>Graf 4 — Primerjava scenarijev, cash revenue</h3>
+<div class="chart"><svg viewBox="0 0 720 280" width="100%" role="img"><line x1="52" y1="244" x2="642" y2="244" stroke="#a8a29e"/>
+<line x1="52" y1="18" x2="52" y2="244" stroke="#a8a29e"/>
+<line x1="52" y1="244.0" x2="642" y2="244.0" stroke="#e7e5e4"/>
+<text x="46" y="247.0" text-anchor="end" fill="#78716c" font-size="10">0</text>
+<line x1="52" y1="202.1" x2="642" y2="202.1" stroke="#e7e5e4"/>
+<text x="46" y="205.1" text-anchor="end" fill="#78716c" font-size="10">5.000</text>
+<line x1="52" y1="160.3" x2="642" y2="160.3" stroke="#e7e5e4"/>
+<text x="46" y="163.3" text-anchor="end" fill="#78716c" font-size="10">10.000</text>
+<line x1="52" y1="118.4" x2="642" y2="118.4" stroke="#e7e5e4"/>
+<text x="46" y="121.4" text-anchor="end" fill="#78716c" font-size="10">15.000</text>
+<line x1="52" y1="76.6" x2="642" y2="76.6" stroke="#e7e5e4"/>
+<text x="46" y="79.6" text-anchor="end" fill="#78716c" font-size="10">20.000</text>
+<line x1="52" y1="34.7" x2="642" y2="34.7" stroke="#e7e5e4"/>
+<text x="46" y="37.7" text-anchor="end" fill="#78716c" font-size="10">25.000</text>
+<text x="52.0" y="260" text-anchor="middle" fill="#78716c" font-size="10">M1</text>
+<text x="180.3" y="260" text-anchor="middle" fill="#78716c" font-size="10">M6</text>
+<text x="334.2" y="260" text-anchor="middle" fill="#78716c" font-size="10">M12</text>
+<text x="488.1" y="260" text-anchor="middle" fill="#78716c" font-size="10">M18</text>
+<text x="642.0" y="260" text-anchor="middle" fill="#78716c" font-size="10">M24</text><polyline fill="none" stroke="#57534e" stroke-width="1.5" points="52.0,242.8 77.7,242.5 103.3,242.2 129.0,241.2 154.6,240.7 180.3,240.3 205.9,239.5 231.6,239.0 257.2,238.6 282.9,237.8 308.5,237.4 334.2,236.9 359.8,235.5 385.5,235.1 411.1,234.6 436.8,233.8 462.4,233.5 488.1,233.1 513.7,232.2 539.4,231.8 565.0,231.4 590.7,230.8 616.3,230.5 642.0,230.2"/><polyline fill="none" stroke="#1d4ed8" stroke-width="2" points="52.0,237.5 77.7,236.5 103.3,235.5 129.0,230.7 154.6,229.2 180.3,227.7 205.9,222.4 231.6,220.5 257.2,218.7 282.9,214.3 308.5,212.2 334.2,210.2 359.8,202.7 385.5,200.6 411.1,198.6 436.8,194.4 462.4,192.6 488.1,190.8 513.7,186.8 539.4,185.3 565.0,183.8 590.7,180.7 616.3,179.4 642.0,178.0"/><polyline fill="none" stroke="#0f766e" stroke-width="2" points="52.0,223.5 77.7,221.0 103.3,218.6 129.0,206.1 154.6,202.6 180.3,199.3 205.9,190.2 231.6,186.3 257.2,182.6 282.9,179.0 308.5,175.6 334.2,172.2 359.8,155.5 385.5,152.3 411.1,113.7 436.8,99.7 462.4,92.7 488.1,86.0 513.7,62.5 539.4,54.6 565.0,46.9 590.7,39.5 616.3,32.3 642.0,25.4"/><circle cx="334.2" cy="236.9" r="3" fill="#57534e"/><text x="328.2" y="230.9" text-anchor="end" fill="#57534e" font-size="10">846 €</text><circle cx="642.0" cy="230.2" r="3" fill="#57534e"/><text x="648.0" y="234.2" fill="#57534e" font-size="11" font-weight="600">1.649 €</text><circle cx="334.2" cy="210.2" r="3" fill="#1d4ed8"/><text x="328.2" y="204.2" text-anchor="end" fill="#1d4ed8" font-size="10">4.038 €</text><circle cx="642.0" cy="178.0" r="3" fill="#1d4ed8"/><text x="648.0" y="182.0" fill="#1d4ed8" font-size="11" font-weight="600">7.879 €</text><circle cx="334.2" cy="172.2" r="3" fill="#0f766e"/><text x="328.2" y="166.2" text-anchor="end" fill="#0f766e" font-size="10">8.578 €</text><circle cx="642.0" cy="25.4" r="3" fill="#0f766e"/><text x="648.0" y="29.4" fill="#0f766e" font-size="11" font-weight="600">26.116 €</text><text x="60" y="14" fill="#57534e" font-size="11">Conservative</text><text x="150" y="14" fill="#1d4ed8" font-size="11">Base</text><text x="195" y="14" fill="#0f766e" font-size="11">Growth</text></svg></div>
+<p class="cap">Conservative M12 / M24: 846 € / 1.649 €. Base: 4.038 € / 7.879 €. Growth: 8.578 € / 26.116 €. Skok Growth okoli M15 = managed SMS + HR volume, ne organski SI lift.</p>
+
+<h3>Mesečna tabela (24 mesecev)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Mesec</th>
+      <th class="num">Stranke Cons.</th>
+      <th class="num">Stranke Base</th>
+      <th class="num">Stranke Growth</th>
+      <th class="num">Cash Cons. €</th>
+      <th class="num">Cash Base €</th>
+      <th class="num">Cash Growth €</th>
+      <th class="num">MRR Base €</th>
+      <th class="num">Base cash Σ €</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>M1</td><td>1</td><td>5</td><td>14</td><td>143</td><td>776</td><td>2.453</td><td>177</td><td>776</td></tr>
+<tr><td>M2</td><td>3</td><td>10</td><td>27</td><td>180</td><td>899</td><td>2.746</td><td>348</td><td>898</td></tr>
+<tr><td>M3</td><td>4</td><td>15</td><td>40</td><td>213</td><td>1.016</td><td>3.030</td><td>514</td><td>1.015</td></tr>
+<tr><td>M4</td><td>6</td><td>23</td><td>59</td><td>340</td><td>1.594</td><td>4.531</td><td>780</td><td>1.594</td></tr>
+<tr><td>M5</td><td>8</td><td>31</td><td>78</td><td>393</td><td>1.774</td><td>4.944</td><td>1.039</td><td>1.775</td></tr>
+<tr><td>M6</td><td>10</td><td>38</td><td>97</td><td>443</td><td>1.947</td><td>5.343</td><td>1.288</td><td>1.947</td></tr>
+<tr><td>M7</td><td>12</td><td>48</td><td>120</td><td>537</td><td>2.577</td><td>6.430</td><td>1.637</td><td>2.577</td></tr>
+<tr><td>M8</td><td>14</td><td>58</td><td>142</td><td>592</td><td>2.808</td><td>6.888</td><td>1.974</td><td>2.807</td></tr>
+<tr><td>M9</td><td>16</td><td>68</td><td>163</td><td>643</td><td>3.028</td><td>7.331</td><td>2.302</td><td>3.028</td></tr>
+<tr><td>M10</td><td>18</td><td>80</td><td>184</td><td>738</td><td>3.549</td><td>7.760</td><td>2.690</td><td>3.549</td></tr>
+<tr><td>M11</td><td>21</td><td>91</td><td>205</td><td>794</td><td>3.799</td><td>8.176</td><td>3.066</td><td>3.799</td></tr>
+<tr><td>M12</td><td>23</td><td>102</td><td>225</td><td>846</td><td>4.038</td><td>8.578</td><td>3.431</td><td>4.038</td></tr>
+<tr><td>M13</td><td>25</td><td>113</td><td>245</td><td>1.010</td><td>4.932</td><td>10.576</td><td>3.821</td><td>4.932</td></tr>
+<tr><td>M14</td><td>27</td><td>125</td><td>264</td><td>1.067</td><td>5.181</td><td>10.952</td><td>4.199</td><td>5.181</td></tr>
+<tr><td>M15</td><td>29</td><td>136</td><td>306</td><td>1.120</td><td>5.419</td><td>15.571</td><td>4.566</td><td>5.420</td></tr>
+<tr><td>M16</td><td>31</td><td>146</td><td>347</td><td>1.214</td><td>5.926</td><td>17.237</td><td>4.917</td><td>5.926</td></tr>
+<tr><td>M17</td><td>33</td><td>156</td><td>387</td><td>1.260</td><td>6.143</td><td>18.071</td><td>5.257</td><td>6.144</td></tr>
+<tr><td>M18</td><td>35</td><td>166</td><td>426</td><td>1.303</td><td>6.351</td><td>18.878</td><td>5.587</td><td>6.351</td></tr>
+<tr><td>M19</td><td>37</td><td>176</td><td>473</td><td>1.413</td><td>6.828</td><td>21.689</td><td>5.903</td><td>6.829</td></tr>
+<tr><td>M20</td><td>39</td><td>185</td><td>520</td><td>1.462</td><td>7.017</td><td>22.633</td><td>6.209</td><td>7.018</td></tr>
+<tr><td>M21</td><td>41</td><td>194</td><td>565</td><td>1.508</td><td>7.198</td><td>23.547</td><td>6.507</td><td>7.198</td></tr>
+<tr><td>M22</td><td>43</td><td>203</td><td>610</td><td>1.573</td><td>7.557</td><td>24.431</td><td>6.793</td><td>7.558</td></tr>
+<tr><td>M23</td><td>45</td><td>211</td><td>654</td><td>1.612</td><td>7.722</td><td>25.287</td><td>7.071</td><td>7.722</td></tr>
+<tr><td>M24</td><td>46</td><td>219</td><td>697</td><td>1.649</td><td>7.879</td><td>26.116</td><td>7.342</td><td>7.879</td></tr>
+  </tbody>
+</table>
+<p class="cap">Base cash Σ je kontrolni seštevek naročnin + e-mail + SEO + GBP za isti mesec in se ujema s cash Base.</p>
+
+<h2>12. Operativni model</h2>
+<p>Business lahko teče z 1 osebo (founder) plus lokalnim modemom. Avtomatizirano: discovery, generation, enqueue, checkout, onboarding forma, e-mail provision, view tracking, admin analitika. Človek: prižgan gateway, pregled / odobritev vsebine, pripenjanje domene, odgovori na inbound SMS, izjeme, kakovost AI strani.</p>
+<div class="cols">
+  <div class="callout warn"><strong>Human bottlenecks</strong> SMS modem (SPOF, 100/dan). Admin approve pred LIVE. Domain attach. Support in inbound odgovori. Kakovost AI copy/slik. Factory dispatch mora biti eksplicitno vključen, sicer demo ostane na laptopu.</div>
+  <div class="callout info"><strong>Automation opportunities</strong> Vklop dispatch + heartbeat gateway. Auto-LIVE za nizko-riziko poklice. Website subscription webhooks. Managed SMS. Archive never-viewed demotov. Lazy load site.json namesto webpack require.context.</div>
+</div>
+
+<h2>13. Skalabilnost</h2>
+<table>
+  <thead><tr><th>Dimenzija</th><th>100 strank</th><th>1.000</th><th>10.000</th></tr></thead>
+  <tbody>
+    <tr><td>Tehnično</td><td>Trenutni stack zdrži</td><td>Git bundle + build time boleč</td><td>Zahteva lazy config / Blob CMS</td></tr>
+    <tr><td>Operativno</td><td>1 founder</td><td>1 founder + 0,5 support + managed SMS</td><td>Majhen ops tim; approve = izjema</td></tr>
+    <tr><td>SMS</td><td>Modem OK</td><td>Cap 100/dan ≈ 70 unikatov/dan</td><td>Brez managed SMS ni 10k acquisition</td></tr>
+    <tr><td>Geo</td><td>SI only</td><td>HR = nov matriks + prevodi</td><td>DACH/FR = legal + consent + jezik</td></tr>
+  </tbody>
+</table>
+<p>Ponovno uporabno: worker, Stripe, onboarding, appearances, image pipeline, Neon state. Lokalno specifično: Places queries, SMS pravila, jeziki, registrar. Tehnična skalabilnost ≠ market validation.</p>
+
+<h2>14. Tveganja in omejitve</h2>
+<table>
+  <thead><tr><th>Tveganje</th><th>Impact</th><th>Likelihood</th><th>Mitigacija</th></tr></thead>
+  <tbody>
+    <tr><td>Conversion neizmerjen</td><td>Visok</td><td>Visoka</td><td>Meriti SMS→view→checkout; ne skalirati pred 90 dnevi podatkov</td></tr>
+    <tr><td>Website churn ni v appu</td><td>Visok</td><td>Visoka</td><td>Webhook subscription.deleted → customers.status</td></tr>
+    <tr><td>SMS modem SPOF + cap 100</td><td>Visok</td><td>Visoka</td><td>Heartbeat + alert; managed SMS pred geo</td></tr>
+    <tr><td>AI kakovost / brand risk</td><td>Srednji</td><td>Srednja</td><td>Grok QA je opazovalen; človeški approve za LIVE</td></tr>
+    <tr><td>Git kot demo CDN</td><td>Visok pri skali</td><td>Srednja</td><td>Lazy load + archive</td></tr>
+    <tr><td>Provider lock-in</td><td>Srednji</td><td>Srednja</td><td>Stripe/Neon/Vercel/CF/MXroute — standardna zamenjava</td></tr>
+    <tr><td>DNS / .si kompleksnost</td><td>Srednji</td><td>Visoka</td><td>LIVE na path URL; domena ločen admin korak</td></tr>
+    <tr><td>SMS compliance</td><td>Visok</td><td>Srednja</td><td>Opt-out v kodi; pravni nasvet pred volume</td></tr>
+    <tr><td>Dispatch privzeto off</td><td>Srednji</td><td>Visoka</td><td>Ops checklist; sicer factory ni unattended</td></tr>
+    <tr><td>Zasičenost SI / lokalizacija</td><td>Srednji</td><td>Srednja</td><td>HR šele po merjenem SI lijaku</td></tr>
+  </tbody>
+</table>
+
+<h2>15. Trenutno vs. ciljno stanje</h2>
+<table>
+  <thead><tr><th>Področje</th><th>Current state</th><th>Target state</th></tr></thead>
+  <tbody>
+    <tr><td>Lead acquisition</td><td>Places matrika, GHA/CLI, ~850 leadov</td><td>Unattended worker, Neon lead index</td></tr>
+    <tr><td>Generation</td><td>AI + pool, locki, ~730 demotov</td><td>Enako + cost metrics + stale-lock expiry</td></tr>
+    <tr><td>Demo publishing</td><td>GHA push; dispatch default false</td><td>Cron → worker → prod brez laptopa</td></tr>
+    <tr><td>Outreach</td><td>Neon queue + lokalni modem</td><td>Heartbeat + managed SMS pri capu</td></tr>
+    <tr><td>Checkout</td><td>Stripe sub + 3 upsell-i</td><td>Enako + Customer Portal</td></tr>
+    <tr><td>Onboarding</td><td>Forma + payload + approve</td><td>Večinoma auto-LIVE za nizko riziko</td></tr>
+    <tr><td>Live publishing</td><td>GHA apply, isti /{slug}</td><td>Zanesljiv dispatch + retry SLO</td></tr>
+    <tr><td>Domains</td><td>Admin attach + Vercel verify</td><td>Tracking + selektivna avtomacija</td></tr>
+    <tr><td>E-mail</td><td>MXroute + CF cron implementiran</td><td>Stabilno; cancel že pokrit</td></tr>
+    <tr><td>Monitoring</td><td>Admin factory/revenue/SMS, audit log</td><td>Alerte na lease, gateway, publish fail</td></tr>
+    <tr><td>Scaling</td><td>Git bundle, 500 target backlog</td><td>Lazy configs + archive + partitioned workers</td></tr>
+  </tbody>
+</table>
+
+<h2>16. Roadmap</h2>
+<table>
+  <thead><tr><th>Faza</th><th>Fokus</th><th>Odvisno od vrzeli v kodi</th></tr></thead>
+  <tbody>
+    <tr><td>1 · SI validacija</td><td>Vklop dispatch, merjenje conversion, zapreti website churn</td><td>Ne novi trgi pred podatki</td></tr>
+    <tr><td>2 · Full automation</td><td>Gateway health, auto-LIVE, archive, lock/lease hardening</td><td>FACTORY cost audit P0/P1</td></tr>
+    <tr><td>3 · Hrvaška</td><td>HR matrika, jeziki, SMS legal, managed SMS</td><td>Šele ko SI lijak drži</td></tr>
+    <tr><td>4 · DACH</td><td>DE/AT copy + consent + plačila</td><td>Drugačen SMS/legal režim</td></tr>
+    <tr><td>5 · Multi-market</td><td>Ločen content store, ne git-as-CDN</td><td>Arhitekturni preskok, ne samo volume</td></tr>
+  </tbody>
+</table>
+
+<h2>17. Investicijska / poslovna teza</h2>
+<p>Website Factory lahko postane skalabilen business namesto majhne agencije zato, ker proizvodnja ni unikatna storitev, ampak program. Ista koda že danes iz leadov dela objavljive demoje, zaračunava naročnino in (ob odobritvi) prepiše LIVE vsebino. Recurring 35/350 € plus e-mail 5 € daje LTV, ki pri nizkem API CAC teoretično vrne investicijo v tednih — če conversion ni iluzija.</p>
+<p>Trenutna tehnologija vizijo podpira bolj, kot kažejo zastareli dokumenti: LIVE publish, e-mail provision, Vercel domene, demo views in factory worker obstajajo. Hkrati sistem še ni tovarna brez človeka. Modem, approve, izklopljen dispatch in manjkajoči website churn pomenijo, da je to founder-operated production engine z zelo dobrim software jedrom — ne avtonomen SaaS.</p>
+<p>Odločitev za vlaganje časa ali kapitala se zato ne glasi »ali znamo narediti strani«, ampak »ali 0,8 % (ali bolje) iz kvalificiranega SMS-ja zdrži 90 dni v produkciji«. Če da, unit economics opravičujejo SI, nato HR. Če ne, ostane elegantna agencija z neobičajno močnim zaledjem — koristno, a ne skali.</p>
+
+<h2>Key takeaways</h2>
+<div class="stats">
+  <div class="stat"><b>92 %</b><span>Računska L1 gross margin · base</span></div>
+  <div class="stat"><b>28 k / 78 k €</b><span>Y1 / Y2 cash revenue · base</span></div>
+  <div class="stat"><b>100 SMS/dan</b><span>Hardware strop pred managed SMS</span></div>
+  <div class="stat"><b>Conversion = ?</b><span>Edina številka, ki odloča o tezi</span></div>
+</div>
+<p>1) Engine je realen (~850 leadov, ~730 demotov, E2E checkout→LIVE v kodi). 2) Marginalni strošek strani je zanemarljiv. 3) SMS modem je obenem poceni acquisition in strop rasti. 4) Website churn in merjen conversion sta večja poslovna tveganja kot manjkajoči AI feature. 5) Geo-širitev je copy-paste enginea, ne copy-paste trga.</p>
+<p class="cap">Analiza codebase-a september 2026. Prednost ima koda pred docs/WEBSITE-FACTORY-PLAN.md (STALE). Finančni model ni napoved — je scenarijski izračun. Produkcijski Neon metrike niso bile brane iz baze.</p>
+</div>
+</body>
+</html>
