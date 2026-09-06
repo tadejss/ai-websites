@@ -8,7 +8,6 @@ type Bounds = { min: number; max: number };
 
 const SECTION_BOUNDS: Record<string, Bounds> = {
   "nav.links": { min: 3, max: 5 },
-  "hero.stats": { min: 4, max: 4 },
   "services.items": { min: 3, max: 6 },
   "whyChooseUs.highlights": { min: 3, max: 4 },
   "whyChooseUs.benefits": { min: 3, max: 4 },
@@ -19,7 +18,6 @@ const SECTION_BOUNDS: Record<string, Bounds> = {
 function sectionSizes(config: SiteConfig): Record<string, number> {
   return {
     "nav.links": config.nav.links.length,
-    "hero.stats": config.hero.stats.length,
     "services.items": config.services.items.length,
     "whyChooseUs.highlights": config.whyChooseUs.highlights.length,
     "whyChooseUs.benefits": config.whyChooseUs.benefits.length,

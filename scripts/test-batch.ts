@@ -31,9 +31,9 @@ const recoverable = [
   'No Google Places results found for "frizer nikjer"',
   "Google Places API request failed: 500",
   "OpenAI returned invalid JSON",
-  "Generated copy contains unsupported claims: hero.stats[0].value",
+  "Generated copy contains unsupported claims: hero.badge",
   'Could not create a slug from the business name ""',
-  "Generated site config is incomplete: hero.stats has 0 items",
+  "Generated site config is incomplete: services.items has 0 items",
 ];
 
 for (const message of recoverable) {

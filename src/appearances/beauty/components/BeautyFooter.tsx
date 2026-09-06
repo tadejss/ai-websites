@@ -1,5 +1,6 @@
 import { LegalFooterLinks } from "@/components/legal/LegalFooterLinks";
 import { formatBrandName } from "@/content/brand-name";
+import { formatFooterCopyright } from "@/lib/format-footer-copyright";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -16,12 +17,11 @@ export function BeautyFooter({ siteConfig, siteSlug }: Props) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-start">
           <div className="text-center sm:text-left">
-            <p className="font-display text-lg text-foreground">{brandName}</p>
             {footer.tagline ? (
-              <p className="mt-1 text-sm text-muted">{footer.tagline}</p>
+              <p className="text-sm text-muted">{footer.tagline}</p>
             ) : null}
-            <p className="mt-4 text-sm text-muted">
-              &copy; {new Date().getFullYear()} {brandName}. {footer.rights}
+            <p className={`text-sm text-muted ${footer.tagline ? "mt-4" : ""}`}>
+              {formatFooterCopyright(brandName, footer.rights)}
             </p>
             {footer.managedBy ? (
               <p className="mt-1 text-xs text-muted/80">{footer.managedBy}</p>

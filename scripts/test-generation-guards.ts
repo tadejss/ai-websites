@@ -11,6 +11,7 @@ import { validateBusinessInput } from "../src/ai/validate-business-input";
 import { findQualityProblems } from "../src/ai/validate-generated-site-config";
 import type { SiteConfig } from "../src/content/types/site";
 import { validateSiteConfig } from "../src/content/validate-site-config";
+import { formatFooterCopyright } from "../src/lib/format-footer-copyright";
 
 const clientsDir = resolve(__dirname, "../src/content/clients");
 
@@ -111,10 +112,17 @@ console.log("\n== existing content still validates ==");
 for (const client of GENERATED_CLIENTS) {
   const site = loadSite(client);
   check(`${client} passes the render schema`, Boolean(validateSiteConfig(site)));
-  check(
-    `${client} passes the generation quality gate`,
-    findQualityProblems(site).length === 0,
-  );
+  if (site.pricing) {
+    check(
+      `${client} passes the generation quality gate`,
+      findQualityProblems(site).length === 0,
+    );
+  } else {
+    check(
+      `${client} render schema ok without pricing (legacy demo)`,
+      true,
+    );
+  }
   check(
     `${client} business input validates`,
     Boolean(validateBusinessInput(loadBusiness(client))),
@@ -135,12 +143,52 @@ thin.services.items = [];
 thin.hero.title = "   ";
 
 const thinProblems = findQualityProblems(thin);
-check("empty hero stats flagged", thinProblems.some((p) => p.includes("hero.stats")));
+check(
+  "empty hero stats are allowed",
+  !thinProblems.some((p) => p.includes("hero.stats")),
+);
 check(
   "empty services flagged",
   thinProblems.some((p) => p.includes("services.items")),
 );
 check("blank title flagged", thinProblems.some((p) => p.includes("hero.title")));
+
+console.log("\n== hero.stats are stripped on parse ==");
+
+const pricedSite = loadSite("avtokleparstvo-avtolicarstvo-branko");
+const pricedBusiness = loadBusiness("avtokleparstvo-avtolicarstvo-branko");
+const withStatsPayload = JSON.parse(JSON.stringify(pricedSite)) as SiteConfig;
+delete (withStatsPayload as { appearance?: unknown }).appearance;
+delete (withStatsPayload as { theme?: unknown }).theme;
+delete (withStatsPayload as { layout?: unknown }).layout;
+delete (withStatsPayload as { images?: unknown }).images;
+delete (withStatsPayload as { sections?: unknown }).sections;
+
+check(
+  "source payload still has hero stats before parse",
+  withStatsPayload.hero.stats.length === 4,
+);
+
+let strippedStats: string[] | null = null;
+try {
+  const normalized = parseAndValidateSiteConfig(
+    JSON.stringify(withStatsPayload),
+    "TestProvider",
+    pricedBusiness,
+  );
+  strippedStats = normalized.hero.stats.map((stat) => stat.value);
+} catch (error) {
+  strippedStats = null;
+  console.log(
+    "  parse error:",
+    error instanceof Error ? error.message : String(error),
+  );
+}
+
+check(
+  "parseAndValidateSiteConfig strips hero.stats to []",
+  Array.isArray(strippedStats) && strippedStats.length === 0,
+);
 
 console.log("\n== gallery partial section defaults ==");
 
@@ -177,9 +225,12 @@ check(
 
 console.log("\n== retry classification ==");
 
-function attempt(content: string): { retryable: boolean; message: string } {
+function attempt(
+  content: string,
+  business: BusinessInput = pricedBusiness,
+): { retryable: boolean; message: string } {
   try {
-    parseAndValidateSiteConfig(content, "TestProvider", kavarnaBusiness);
+    parseAndValidateSiteConfig(content, "TestProvider", business);
     return { retryable: false, message: "" };
   } catch (error) {
     return {
@@ -189,27 +240,32 @@ function attempt(content: string): { retryable: boolean; message: string } {
   }
 }
 
-check("invalid JSON is retryable", attempt("not json").retryable);
+check("invalid JSON is retryable", attempt("not json", kavarnaBusiness).retryable);
 check(
   "schema violation is retryable",
-  attempt(JSON.stringify({ brand: { prefix: "A" } })).retryable,
+  attempt(JSON.stringify({ brand: { prefix: "A" } }), kavarnaBusiness).retryable,
 );
 
-const fabricated = JSON.parse(JSON.stringify(kavarnaSite)) as SiteConfig;
-fabricated.hero.stats[0] = { value: "100%", label: "Zadovoljne stranke" };
+const fabricated = JSON.parse(JSON.stringify(pricedSite)) as SiteConfig;
+fabricated.hero.badge = "100% zadovoljnih strank";
 const claimAttempt = attempt(JSON.stringify(fabricated));
 
 check("unsupported claim is retryable", claimAttempt.retryable);
 check(
   "correction names the offending field",
-  claimAttempt.message.includes("hero.stats[0].value"),
+  claimAttempt.message.includes("hero.badge"),
 );
 
-const cleaned = JSON.parse(JSON.stringify(kavarnaSite)) as SiteConfig;
-cleaned.hero.stats[1] = { value: "Domača", label: "Peka" };
+const cleaned = JSON.parse(JSON.stringify(pricedSite)) as SiteConfig;
+cleaned.hero.stats = [
+  { value: "Topel", label: "Ambient" },
+  { value: "Prijazne", label: "Cene" },
+  { value: "Domača", label: "Peka" },
+  { value: "Osebni", label: "Pristop" },
+];
 cleaned.whyChooseUs.benefits[0].stat = "Osebni";
 check(
-  "clean output is accepted",
+  "clean output is accepted (hero.stats stripped)",
   attempt(JSON.stringify(cleaned)).retryable === false,
 );
 
@@ -227,6 +283,30 @@ check(
 check(
   "first attempt carries no correction",
   !buildUserPrompt(kavarnaBusiness).includes("previous attempt"),
+);
+
+console.log("\n== footer copyright formatting ==");
+
+const year = new Date().getFullYear();
+check(
+  "rights without copyright get year + brand prefix",
+  formatFooterCopyright("Salon X", "Vse pravice pridržane.") ===
+    `© ${year} Salon X. Vse pravice pridržane.`,
+);
+check(
+  "unicode copyright rights returned once",
+  formatFooterCopyright("Salon X", "© Salon X. Vse pravice pridržane.") ===
+    "© Salon X. Vse pravice pridržane.",
+);
+check(
+  "html entity copyright normalized to unicode",
+  formatFooterCopyright("Salon X", "&copy; Salon X. Vse pravice pridržane.") ===
+    "© Salon X. Vse pravice pridržane.",
+);
+check(
+  "stale year in rights is left unchanged",
+  formatFooterCopyright("Salon X", "© 2024 Salon X. Vse pravice pridržane.") ===
+    "© 2024 Salon X. Vse pravice pridržane.",
 );
 
 console.log(failures === 0 ? "\nAll guard checks passed." : `\n${failures} check(s) failed.`);

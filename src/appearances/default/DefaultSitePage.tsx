@@ -11,6 +11,7 @@ import { SiteBrandMark } from "@/components/branding/SiteBrandMark";
 import { Icon } from "@/content/icons";
 import { formatBrandName } from "@/content/brand-name";
 import { getBrandLogo } from "@/lib/branding";
+import { formatFooterCopyright } from "@/lib/format-footer-copyright";
 import type { AppearancePageProps } from "../types";
 
 export function DefaultSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
@@ -92,10 +93,7 @@ export function DefaultSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
 
       <footer className="border-t border-border py-8">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-sm text-muted sm:flex-row">
-          <p>
-            &copy; {new Date().getFullYear()} {brand.prefix} {brand.highlight}.{" "}
-            {footer.rights}
-          </p>
+          <p>{formatFooterCopyright(brandName, footer.rights)}</p>
           <div className="flex flex-col items-center gap-3 sm:items-end">
             <LegalFooterLinks siteSlug={siteSlug} />
             <p>{footer.address}</p>

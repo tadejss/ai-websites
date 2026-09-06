@@ -6,10 +6,6 @@ import { BeautyImage } from "./BeautyImage";
 import { heroStyleFlags, ICON_RADIUS_CLASS } from "@/catalog/look-styles";
 import { resolveLookDesignTokens } from "@/catalog/resolve-look";
 import { resolveBeautyLayout } from "../assign-layout";
-import {
-  formatHeroStatCaption,
-  formatHeroStatTitle,
-} from "../utils/format-card-title";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -49,7 +45,6 @@ export function BeautyHeroSection({ siteConfig }: Props) {
   const useAccentCard = heroFlags ? heroFlags.useAccentHeroCard : true;
   const isTypographic = heroFlags?.isTypographic ?? false;
   const isPhotoDominant = heroFlags?.isPhotoDominant ?? false;
-  const emphasizeStats = heroFlags?.isStatsForward ?? false;
 
   const copyContent = (
     <>
@@ -158,35 +153,6 @@ export function BeautyHeroSection({ siteConfig }: Props) {
           ) : null}
         </div>
       )}
-
-      {hero.stats.length > 0 ? (
-        <dl
-          className={`mx-auto mt-10 grid max-w-7xl grid-cols-2 gap-4 sm:mt-14 sm:grid-cols-4 sm:gap-5 ${emphasizeStats ? "sm:gap-8" : ""}`}
-        >
-          {hero.stats.map((item) => {
-            const title = formatHeroStatTitle(item);
-            const caption = formatHeroStatCaption(item);
-
-            return (
-              <div
-                key={title}
-                className={`flex min-h-[5.5rem] items-center justify-center rounded-[var(--radius-card)] border border-border bg-surface px-4 py-5 text-center sm:min-h-[6.5rem] ${emphasizeStats ? "sm:min-h-[7.5rem]" : ""}`}
-              >
-                <div>
-                  <dt
-                    className={`font-display font-semibold leading-snug text-accent ${emphasizeStats ? "text-lg sm:text-xl" : "text-base sm:text-lg"}`}
-                  >
-                    {title}
-                  </dt>
-                  {caption ? (
-                    <dd className="mt-1 text-xs text-muted sm:text-sm">{caption}</dd>
-                  ) : null}
-                </div>
-              </div>
-            );
-          })}
-        </dl>
-      ) : null}
     </section>
   );
 }

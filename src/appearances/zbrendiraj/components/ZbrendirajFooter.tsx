@@ -1,5 +1,6 @@
 import { LegalFooterLinks } from "@/components/legal/LegalFooterLinks";
 import { formatBrandName } from "@/content/brand-name";
+import { formatFooterCopyright } from "@/lib/format-footer-copyright";
 import type { SiteConfig } from "@/content/types/site";
 
 type Props = {
@@ -16,14 +17,13 @@ export function ZbrendirajFooter({ siteConfig, siteSlug }: Props) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col gap-6 sm:gap-8 md:flex-row md:items-start md:justify-between">
           <div className="min-w-0">
-            <p className="font-display text-base sm:text-lg">{brandName}</p>
             {footer.tagline ? (
-              <p className="mt-1 text-xs text-black/80 sm:text-sm">
-                {footer.tagline}
-              </p>
+              <p className="text-xs text-black/80 sm:text-sm">{footer.tagline}</p>
             ) : null}
-            <p className="mt-3 text-xs text-black/70 sm:mt-4 sm:text-sm">
-              &copy; {new Date().getFullYear()} {brandName}. {footer.rights}
+            <p
+              className={`text-xs text-black/70 sm:text-sm ${footer.tagline ? "mt-3 sm:mt-4" : ""}`}
+            >
+              {formatFooterCopyright(brandName, footer.rights)}
             </p>
             {footer.managedBy ? (
               <p className="mt-1 text-[11px] text-black/60 sm:text-xs">

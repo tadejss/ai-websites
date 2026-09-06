@@ -1,8 +1,4 @@
 import Image from "next/image";
-import {
-  formatHeroStatCaption,
-  formatHeroStatTitle,
-} from "@/appearances/beauty/utils/format-card-title";
 import { buttonRadiusClass, ICON_RADIUS_CLASS } from "@/catalog/look-styles";
 import { TradeImage } from "./TradeImage";
 import { resolveTradeLayoutFromConfig } from "./trade-layout";
@@ -24,15 +20,6 @@ function heroGridClass(ratio: string, showImage: boolean): string {
   return "grid items-center gap-10 lg:grid-cols-2";
 }
 
-function statsCardClass(cardStyle: string | undefined, emphasize: boolean): string {
-  const base =
-    cardStyle === "soft"
-      ? "flex min-h-[5.5rem] items-center justify-center rounded-[var(--radius-card)] bg-surface/70 px-4 py-5 text-center backdrop-blur-sm sm:min-h-[6.5rem]"
-      : "flex min-h-[5.5rem] items-center justify-center rounded-[var(--radius-card)] border border-border bg-surface/50 px-4 py-5 text-center backdrop-blur-sm sm:min-h-[6.5rem]";
-
-  return emphasize ? `${base} sm:min-h-[7.5rem] sm:px-5 sm:py-6` : base;
-}
-
 export function TradeHeroSection({ siteConfig }: Props) {
   const { hero, services, contact, images } = siteConfig;
   const layout = resolveTradeLayoutFromConfig(siteConfig);
@@ -50,7 +37,6 @@ export function TradeHeroSection({ siteConfig }: Props) {
     : "order-1";
   const imageOrder = imageOnLeft ? "order-2 lg:order-1" : "order-2 lg:order-2";
   const copyWide = !showImage || layout.heroRatio === "full-copy";
-  const emphasizeStats = layout.profileId === "stats-forward";
 
   const copyBlock = (
     <>
@@ -142,33 +128,6 @@ export function TradeHeroSection({ siteConfig }: Props) {
             />
           ) : null}
         </div>
-
-        <dl
-          className={`mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4 ${emphasizeStats ? "sm:gap-8" : ""}`}
-        >
-          {hero.stats.map((item) => {
-            const title = formatHeroStatTitle(item);
-            const caption = formatHeroStatCaption(item);
-
-            return (
-              <div
-                key={title}
-                className={statsCardClass(layout.cardStyle, emphasizeStats)}
-              >
-                <div>
-                  <dt
-                    className={`font-display font-semibold leading-snug text-accent ${emphasizeStats ? "text-lg sm:text-xl" : "text-base sm:text-lg"}`}
-                  >
-                    {title}
-                  </dt>
-                  {caption ? (
-                    <dd className="mt-1 text-xs text-muted sm:text-sm">{caption}</dd>
-                  ) : null}
-                </div>
-              </div>
-            );
-          })}
-        </dl>
       </div>
     </section>
   );
