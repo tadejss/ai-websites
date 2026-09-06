@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Website Factory — Zbrendiraj.si</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --background: #000000;
+    --foreground: #FFFFFF;
+    --muted: #9A9A9A;
+    --body: #D0D0D0;
+    --accent: #C7FF3D;
+    --accent-hover: #b8eb35;
+    --accent-foreground: #000000;
+    --surface: #111111;
+    --surface-elevated: #1A1A1A;
+    --border: rgba(255, 255, 255, 0.14);
+    --radius-card: 1rem;
+    --radius-button: 9999px;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-display: "Oswald", "Inter", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { margin: 0; padding: 0; background: var(--background); color: var(--foreground); }
+  body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--body);
+  }
+  img { max-width: 100%; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-hover); }
+
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.90);
+    backdrop-filter: blur(12px);
+  }
+  .site-header .inner, .wrap, .cover-inner, .site-footer .inner {
+    max-width: 1080px; margin: 0 auto; padding: 0 24px;
+  }
+  .site-header .inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 18px; padding-bottom: 18px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--foreground); }
+  .brand img { width: 36px; height: 36px; border-radius: 12px; }
+  .brand span { font-family: var(--font-display); font-size: 22px; line-height: 1; letter-spacing: -0.02em; color: #fff; }
+  .nav { display: flex; align-items: center; gap: 28px; }
+  .nav a { color: #D0D0D0; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; }
+  .nav a:hover { color: #fff; }
+  .nav-cta {
+    display: inline-flex; align-items: center;
+    min-height: 40px; padding: 0 16px;
+    border-radius: var(--radius-button);
+    background: var(--accent); color: #000; font-size: 13px; font-weight: 600;
+  }
+  .nav-cta:hover { background: var(--accent-hover); color: #000; }
+
+  .cover {
+    min-height: calc(100vh - 76px);
+    display: flex; align-items: center;
+    padding: 64px 0 80px;
+    border-bottom: 1px solid var(--border);
+  }
+  .eyebrow {
+    font-size: 14px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.25em; color: var(--accent); margin: 0 0 16px;
+  }
+  .cover h1 {
+    font-family: var(--font-display);
+    font-size: clamp(3.2rem, 8vw, 6rem);
+    line-height: 0.9; letter-spacing: -0.03em;
+    color: #fff; margin: 0 0 20px; font-weight: 700;
+  }
+  .cover .lead {
+    font-size: 1.25rem; line-height: 1.45; color: #fff;
+    max-width: 36rem; margin: 0 0 16px; font-weight: 500;
+  }
+  .cover .lead em { color: var(--accent); font-style: normal; }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 0; }
+  .pill {
+    border: 1px solid var(--border); border-radius: var(--radius-button);
+    padding: 6px 12px; font-size: 12px; font-weight: 500; color: #D0D0D0;
+  }
+
+  .wrap { padding-top: 8px; padding-bottom: 80px; }
+  section.block, .cover { scroll-margin-top: 88px; }
+  section.block { padding: 56px 0 8px; }
+  .sec-head { margin-bottom: 22px; max-width: 40rem; }
+  .sec-num {
+    font-size: 14px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.25em; color: var(--accent); margin: 0 0 10px;
+  }
+  h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3.4vw, 2.75rem);
+    line-height: 1.05; letter-spacing: -0.025em;
+    color: #fff; margin: 0; font-weight: 700;
+  }
+  h3 {
+    font-family: var(--font-display);
+    font-size: 1.35rem; line-height: 1.2; color: #fff;
+    margin: 28px 0 10px; font-weight: 600;
+  }
+  p { margin: 0 0 14px; }
+  .note { font-size: 13px; color: var(--muted); margin: 0 0 18px; }
+
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0 12px; }
+  .kpi {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    background: rgba(255,255,255,0.03);
+    padding: 20px 18px 16px;
+  }
+  .kpi b {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 2rem; line-height: 1; color: var(--accent);
+    letter-spacing: -0.03em;
+  }
+  .kpi span { display: block; margin-top: 10px; font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+  .card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    background: rgba(255,255,255,0.03);
+    padding: 20px 22px;
+    margin: 16px 0 20px;
+  }
+  .card strong {
+    display: block; font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.2em; color: #D0D0D0;
+    margin-bottom: 8px;
+  }
+  .card.warn { border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+  .card.warn strong { color: var(--accent); }
+
+  .dl { display: grid; gap: 10px; }
+  .dl div { display: grid; grid-template-columns: 11rem 1fr; gap: 12px; }
+  .dl dt { color: var(--accent); font-weight: 600; font-size: 13px; }
+  .dl dd { margin: 0; font-size: 14px; }
+
+  .flow { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin: 16px 0 20px; }
+  .step {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    background: var(--surface);
+    padding: 14px 12px 12px;
+    min-height: 100%;
+  }
+  .step.auto { border-color: color-mix(in srgb, var(--accent) 45%, transparent); background: color-mix(in srgb, var(--accent) 7%, #000); }
+  .step i {
+    display: flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px; border-radius: 999px;
+    border: 2px solid var(--accent); color: var(--accent);
+    font-style: normal; font-size: 11px; font-weight: 700; margin-bottom: 10px;
+  }
+  .step b { display: block; font-size: 13px; color: #fff; line-height: 1.3; font-weight: 600; }
+  .step em { display: block; font-style: normal; margin-top: 8px; font-size: 11px; color: var(--muted); }
+
+  .table-wrap {
+    overflow-x: auto; margin: 12px 0 18px;
+    border: 1px solid var(--border); border-radius: var(--radius-card);
+    background: rgba(255,255,255,0.03);
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { padding: 11px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); }
+  th {
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--muted); background: #0a0a0a;
+  }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { color: #fff; font-weight: 500; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+
+  .chart-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    background: var(--surface);
+    padding: 16px 16px 8px;
+    margin: 10px 0 8px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+  }
+  .chart-live { min-height: 280px; }
+  .chart-print { display: none; }
+  .toggles { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+  .toggle {
+    border: 1px solid var(--border); background: transparent; color: #D0D0D0;
+    border-radius: var(--radius-button); padding: 8px 14px;
+    font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit;
+  }
+  .toggle.is-on { background: var(--accent); color: #000; border-color: var(--accent); }
+  .tip {
+    position: fixed; pointer-events: none; z-index: 80;
+    background: #1A1A1A; border: 1px solid var(--border); color: #fff;
+    border-radius: 12px; padding: 8px 10px; font-size: 12px;
+    transform: translate(-50%, -120%); white-space: nowrap;
+    display: none; box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+  }
+
+  .site-footer { border-top: 2px solid var(--accent); background: var(--accent); color: #000; margin-top: 40px; }
+  .site-footer .inner { padding: 32px 24px; display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .site-footer .name { font-family: var(--font-display); font-size: 18px; margin: 0 0 6px; }
+  .site-footer p { margin: 0; font-size: 13px; color: rgba(0,0,0,0.72); }
+  .print-foot { display: none; }
+
+  @media (max-width: 900px) {
+    .nav { display: none; }
+    .kpis { grid-template-columns: 1fr 1fr; }
+    .flow { grid-template-columns: 1fr 1fr; }
+    .dl div { grid-template-columns: 1fr; gap: 2px; }
+  }
+  @media (max-width: 560px) {
+    .kpis { grid-template-columns: 1fr; }
+    .flow { grid-template-columns: 1fr; }
+    .cover { min-height: auto; padding: 40px 0 48px; }
+  }
+
+  @page {
+    size: A4;
+    margin: 14mm 12mm 18mm;
+    @bottom-left { content: "Zbrendiraj.si  ·  Website Factory"; font-family: Inter, sans-serif; font-size: 8pt; color: #9A9A9A; }
+    @bottom-right { content: counter(page); font-family: Inter, sans-serif; font-size: 8pt; color: #9A9A9A; }
+  }
+  @media print {
+    html, body { background: #000; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .site-header { position: static; background: #000; }
+    .nav, .nav-cta, .toggles, .chart-live, .tip { display: none !important; }
+    .chart-print { display: block !important; }
+    .cover { min-height: auto; page-break-after: always; break-after: page; padding: 8mm 0 12mm; }
+    section.block { padding-top: 8mm; }
+    .sec-head { break-after: avoid; page-break-after: avoid; }
+    .kpi, .card, .table-wrap, .chart-card, .step, .kpis, .flow { break-inside: avoid; page-break-inside: avoid; }
+    .site-footer { break-inside: avoid; }
+    .print-foot {
+      display: block; position: fixed; bottom: 0; left: 0; right: 0;
+      font-size: 9px; color: #9A9A9A; border-top: 1px solid rgba(255,255,255,0.14);
+      padding: 4px 0 0; background: #000;
+    }
+    .print-foot span:last-child { float: right; }
+    h2, h3 { break-after: avoid; }
+    a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="#naslovnica">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhwAAAIcCAYAAAC9/nd8AAAACXBIWXMAAAWJAAAFiQFtaJ36AAAgAElEQVR4nO3dX2xe533Y8Z8cJvBbUqaiC7qNakuWAyxZSFgBNkex3FqAsgDVhaWgN5HQLgqGwB3yp8wGuHBWYDLQOqgvVjl/sHpBERUdLN8MkXWhAG2FyWjsON6FJUhqehFLlD17MQfYokntGIkS7YIvJYomefjy/fM855zPByAsyxT1A2mSXz7nec7ZcP369aB+Wq2RbRGx+CUiYkdEbGr/eltEbB3sVABxOSKm2r++EhFn2r+eWngpirmppX+I6tsgOKprUVTsjvmQ2BFCAqiHhTA5E/NhcjrESKUJjopox8WO9svu9j9HE44EkMJMzEfI6fY/z4iQahAcmWq1RhbCYuFFXAAsbybmA+R0RJwuirkzq742SQiOTAgMgJ4RIBkSHAm1WiP7Yz4u9od9FwD9cjkijsd8fBxPPUxTCY4BarVGNsV8XOxu/9MqBsBgzUQ7PiLieFHMXUk7TnMIjgFor2QsvIgMgDwsxMdxKx/9Jzj6pL0n41D7RWQA5G0mIo5GxFF7PvpDcPTQoksmkxFxX+JxAFifsxFxJFxy6SnB0QPte2QcDpdMAOpk4ZLLYff66J7g6EKrNbI75kPjobSTANBnz8d8eJxOPUhVCY51aLVGDsV8aDjKCtAsl2M+PI6mHqRqBEcHhAYAbcKjQ4JjDYQGACsQHmskOFYhNABYI+FRQnAso70Z9Eg42gpAZ85GxKTNpe8nOBZpH289Gk6dANCd5yPikOO0NwmOuHHDrsmI+M+pZwGgVh6PiCNuICY4Fp5zcjTcsAuA/rgc85dZGv28lsYGh8snAAxYoy+z3JZ6gBRarZHJiDgTYgOAwXkoIs60vwc1TqNWONpPcD0aTp8AkNbZmF/taMyTaRuzwtEuyldCbACQ3n0R8UqTVjtqv8JhrwYAmWvE3o5ar3C0T6DYqwFAzhb2duxPPUg/1TI4Wq2RTa3WyJGI+EE47gpA/kYj4gft7121VLtLKu1LKMfDXg0AqulsROyv2yWWWq1wLLqEIjYAqKr7ooaXWGoTHK3WyOFwCQWAeli4xHI49SC9UvlLKu3noByNiH2JRwGAfngu5k+xVPp5LJUODvs1AGiIyu/rqGxwtO8aejpcQgGgGWYiYndV705ayT0crdbIoRAbADTLaEScrupm0sqtcLRj4/up5wCAhL5YFHNHUw/RiUqtcLR364oNAJru+1U7wVKZFY5Wa+RoRHwh9RwAkJG/KYq5Q6mHWItKrHCIDQBY1hfa3yOzl31wiA0AWFUloiPr4BAbALAm2UdHtsEhNgCgI1lHR5bBITYAYF2yjY7sgkNsAEBXsoyOrIKjfaZYbABAd76Q2306srkPhzuIAkDPZXNH0iyCQ2wAQN98rijmjqceInlweOorAPRVFk+ZTRocrdbItog4E2IDAPppJiJ2FMXcVKoBkm0abbVGNkXE8RAbANBvoxFxvP29N4mUp1SORsR9Cf9+AGiS+2L+e28SSYKjfVRnX4q/GwAabF+q47ID38PRao3sj4gfDPQvBQAWG/jJlYEGh02iAJCFgW8iHdglFZtEASAbA99EOsg9HIfDJlEAyMV9Mf+9eSAGcknFvg0AyNZA9nP0PTjs2wCArA1kP8cgLqkcDbEBALkajQHcn6OvwdFqjUxGxEP9/DsAgK491P6e3Td9u6TSfijbK3154wBAP3yyXw956+cKx9E+vm0AoPeO9usN9yU42ssyjsACQLXc169LKz2/pOJUCgBUWl9OrfRjheNoiA0AqKq+nFrpaXC0b/DlVAoAVNtD7e/pPdOzSyrt+7FPhdUNAKiDmYjYVhRzV3rxxnq5wjEZYgMA6mI05r+390RPVjjaG0Uvdf2GAIDc3NOLDaS9WuE42qO3AwDk5Wgv3kjXwdFqjewOG0UBoK4ean+v70ovVjiO9OBtAAD56vp7fVfB0WqNHAp3FAWAuruv/T1/3braNNpqjUxFxNZuBgAAKuFyUcxtW+8fXvcKR7t0xAYANMPWblY51r3CYXUDABpn3asc61rhsLoBAI207lWOda1wWN0AgMZa1ypHxyscVjcAoNHWtcrR8QqH1Q0AaLyOVzk6WuFo32lMbABAs23t9O6jnV5SOdzh6wMA9XS4k1de8yUVT4QFAJZY85NkO1nhOLyuUQCAujq81ldc0wpHqzWyKSKmImJ03SMBAHUzExHbimLuStkrrnWFY3+IDQDgVqMx3wil1hock+ufBQCosTU1QmlwtFojO8Ij6AGA5d3XboVVrWWF41D3swAANXao7BVKN422WiNXwv4NAGBlM0Uxt2m1V1h1haPVGrFZFAAoM9puhhWVXVJZ085TAKDxVm2GFS+puPcGANCBVe/JsdoKh8spAMBarXpPjtWCY3fPRwEA6mz3Sv9htUsqTqcAAJ1Y8bTKsiscTqcAAOuw4mmVoRX+wO7+zUKVTezanHoEoM+2j29c0+s99/TlPk9CRe2OiONLf3PZSyqt1shURGzt+0hka2LX5pjYtTm2T2yM4dGhGH9AaADLu/rutShmr8XPp4p46eRbQoTLRTG3belvvi842vdDf2VAQ5GJ7eMbY+feO2PiwQ+LC6BrV9+9FpfOzcbJ778W/3j856nHYfA+WRRzZxb/xnLBMRkRfznIqUhj7O5W7Htka+zcOxZjd7VSjwPU1K+uXY/LP52Lpx/7afzTS++kHofB+HpRzB1Z/BvLBcfxiNg3yKkYrD0HtsRnDnzESgYwcFffvRYvnHgrvj15PvUo9NdzRTF3y+bR5YLDcdia2nNgSxx89F6rGUByv7p2PU49+6bwqK/3HY+9JTjs36gnoQHkSnjU2i37OJbeh2P3YGehn7aPb4xvnvjXMfntcbEBZOkDQxvis3+wJZ69uCd+Z/9vph6H3tq9+F+WrnDYv1ETBx/9aBx49N7UYwB05PwL78Rj+15OPQa9ccs+jqXBYf9GxW0f3xiT352Iez6xthv3AOTmF+/9Oo585ZzjtNV3yz6OG8HRao1si4hLiYaiB/Yc2BKT3x5PPQZAT/zdf3/D3o7qu6co5qYibt3DsSPNLPTC5HcmxAZQK5/9gy3x3/7X76Qeg+7caAvBUXHDo0PxrecfiD2f/0jqUQB67rfu+Y34H//738TYXbenHoX1WTY4dg9+DroxPDoU3zxxv/0aQK196Pbb4r/++HdERzXtXviFFY6KEhtAk4iOyrp1haO9YdTplIoQG0ATiY5KGm03xo0Vjm3JRqEjYgNoMtFRSdsibgbH7mRj0BGxATTdQnRQGbsjbgbHppVfj1xMfscNvQAi5qPDkdnK2BRxMzhsGM3cngNbHH0FWOS37vmN+OoR9x+qgB0R9nBUwvbxjW7qBbCMz/7BFg99y9+2iPatzVutkeslr0xC33r+AZdSAFbwi/d+Hb//23+fegxWURRzG25bOK5Cng4++lGxAbCKD91+W3zzuftTj8EqWq2RbbeFyynZ2j6+0SPmAdZgfNeHXVrJm+DI2Zee+FjqEQAq48v/5ROpR2BlgiNXew5sifEHNqceA6Ayhu8YcmolX9tuK38dUjjoUgpAx9w+IF+3hXtwZGfPgS0xdlcr9RgAlfOBoQ1WOfK047Zwl9HsWN0AWD+rHFna5JJKZqxuAHTHKkeebBrNzGcOKHOAbu16+M7UI3CrbbdFxNbUUzBv7O6WkykAPTB8x1D8y50fTj0GN211SSUj+x7RfgC98sg3P556BBYRHBnZuXcs9QgAtbH14yOpR2ARwZGJ7eMbbRYF6KEPDG1wu/OMCI5M7NxrgxNAr+394t2pR6BNcGRi4kGbmwB67Z4JT9vOheDIhNMpAL03fMdQ6hFoExwZmNglNgD6xQnAPAiODAgOgP6xRy4PgiMD211jBOib39zmBGAOBEcGhkddYwTol9ZGX2NzIDgyYMMoQP/YOJoHwQEA9J3gSMyGUYD+c1IlPcEBAPSd4AAA+k5wAAB9JzgScyQWgCYQHABA3wmOxK7OXEs9AgD0neAAAPpOcAAAfSc4AIC+ExyJnXvh7dQjANTec09fTj1C4wkOAKDvBEcGzr9olQOgX66+6zRgDgRHBhyNBeifYtbX2BwIjgxcPDebegSA2vr5VJF6BEJwZMHGUYD+eenkW6lHIARHFgQHQP84oZIHwZEJG0cBes+G0XwIjkyc+9E7qUcAqJ1L9shlQ3BkwjVGgN47+f3XUo9Am+DIxMXzszH9up3UAL3yq2vX4x+P/zz1GLQJjoy8dHI69QgAtXH5p3OpR2ARwZERO6kBeufpx36aegQWERwZmX6tcFoFoAeuvnst/uklm/FzIjgy8w/H3kw9AkDlvXDCRvzcbLj99uHrqYfgVn/9yu/G2F2t1GMAVNKvrl2P/b/5d6nHYAkrHBl65slXU48AUFmnnrVSnCMrHJmyygHQOasb+bLCkSmrHACds7qRL8GRqVPH3nBiBaADV9+9Ft+ePJ96DFYgODL2vW/8c+oRACrju//hQuoRWIXgyNjF87NxzKUVgFLnX3jHbcwzZ9NoBXzr+Qfink9sTD0GQJZ+8d6v4/d/++9Tj0EJKxwVcOTL51KPAJCtI1/xNbIKBEcFXDw/G0e+aiMUwFJ/99/fcCmlIgRHRZw69objXgCL/J9L/8+plAqxh6Ni7OcAsG+jiqxwVMxjD78cly7Mph4DIJlfvPfr+Pef/sfUY9AhwVExV2euiQ6gsRZiY/r191KPQocERwWJDqCJxEa1CY6KEh1Ak4iN6hMcFSY6gCYQG/UgOCru6sy1+NpDLzoyC9TS3JVfxr/9xP8UGzXgWGyN7DmwJSa/PZ56DICe+L9vvBdf/d0X4urMtdSj0AOCo2a2j2+Mye9OuFcHUGlvvHo1/uNnXxIbNfKBoaEPHU49BL3zzvQv4odHX48NsSEmdm1OPQ5Axy5dmI1H9/5EbNSMFY4a2z6+Mb70xMdi/AHhAVTDpQuz8djDL4uNGhIcDbDnwJY4+Oi9MXZXK/UoACsSG/UmOBpEeAC5Ehv1JzgaaM+BLfGZAx9xqQXIgthoBsHRYGN3t2LfI1tj594xqx5AEmKjOQQHETG/wXTn3jtj4sEPW/kABkJsNIvgYFkTuzbHxK7NsX1iYwyPDokQoKfERvMIDjri3h6UuX34A/GlP/9Y/NY9v5F6FDIlNppJcAA9Mzw6FN88cb873bIisdFcHt4G9ITYoIzYaDbBAXRNbFBGbCA4gK6IDcqIDSIEB9AFsUEZscECwQGsi9igjNhgMcEBdExsUEZssJTgADoiNigjNliO4ADWTGxQRmywEsEBrInYoIzYYDWCAyglNigjNigjOIBViQ3KiA3WQnAAKxIblBEbrJXgAJYlNigjNuiE4ADeR2xQRmzQKcEB3EJsUEZssB6CA7hBbFBGbLBeggOICLFBObFBNwQHIDYoJTboluCAhhMblBEb9ILggAYTG5QRG/SK4ICGEhuUERv0kuCABhIblBEb9JrggIYRG5QRG/SD4IAGERuUERv0i+CAhhAblBEb9JPggAYQG5QRG/Sb4ICaExuUERsMguCAGhMblBEbDIrggJoSG5QRGwyS4IAaEhuUERsMmuCAmhEblBEbpCA4oEbEBmXEBqkIDqgJsUEZsUFKggNqQGxQRmyQmuCAihMblBEb5EBwQIWJDcqIDXIhOKCixAZlxAY5ERxQQWKDMmKD3AgOqBixQRmxQY4EB1SI2KCM2CBXggMqQmxQRmyQM8EBFSA2KCM2yJ3ggMyJDcqIDapAcEDGxAZlxAZVITggU2KDMmKDKhEckCGxQRmxQdUIDsiM2KCM2KCKBAdkRGxQRmxQVYIDMiE2KCM2qDLBARkQG5QRG1Sd4IDExAZlxAZ1IDggIbFBGbFBXQgOSERsUEZsUCeCAxIQG5QRG9SN4IABExuUERvUkeCAARIblBEb1JXggAERG5QRG9SZ4IABEBuUERvUneCAPhMblBEbNIHggD4SG5QRGzSF4IA+ERuUERs0ieCAPhAblBEbNI3ggB4TG5QRGzSR4IAeEhuUERs0leCAHhEblBEbNJnggB4QG5QRGzSd4IAuiQ3KiA0QHNAVsUEZsQHzBAesk9igjNiAmwQHrIPYoIzYgFsJDuiQ2KCM2ID3ExzQAbFBGbEByxMcsEZigzJiA1YmOGANxAZlxAasTnBACbFBGbEB5QQHrEJsUEZswNoIDliB2KCM2IC1ExywDLFBGbEBnREcsITYoIzYgM4JDlhEbFBGbMD6CA5oExuUERuwfoIDQmxQTmxAdwQHjSc2KCM2oHuCg0YTG5QRG9AbgoPGEhuUERvQO4KDRhIblBEb0FuCg8YRG5QRG9B7goNGERuUERvQH4KDxhAblBEb0D+Cg0YQG5QRG9BfgoPaExuUERvQf4KDWhMblBEbMBiCg9oSG5QRGzA4goNaEhuUERswWIKD2hEblBEbMHiCg1oRG5QRG5CG4KA2xAZlxAakIzioBbFBGbEBaQkOKk9sUEZsQHqCg0oTG5QRG5AHwUFliQ3KiA3Ih+CgksQGZcQG5EVwUDligzJiA/IjOKgUsUEZsQF5EhxUhtigjNiAfAkOKkFsUEZsQN4EB9kTG5QRG5A/wUHWxAZlxAZUg+AgW2KDMmIDqkNwkCWxQRmxAdUiOMiO2KCM2IDqERxkRWxQRmxANQkOsiE2KCM2oLoEB1kQG5QRG1BtgoPkxAZlxAZUn+AgKbFBGbEB9SA4SEZsUEZsQH0IDpIQG5QRG1AvgoOBExuUERtQP4KDgRIblBEbUE+Cg4ERG5QRG1BfgoOBEBuUERtQb4KDvhMblBEbUH+Cg74SG5QRG9AMgoO+ERuUERvQHIKDvhAblBEb0CyCg54TG5QRG9A8goOeEhuUERvQTIKDnhEblBEb0FyCg54QG5QRG9BsgoOuiQ3KiA1AcNAVsUEZsQFECA66IDYoIzaABYKDdREblBEbwGKCg46JDcqIDWApwUFHxAZlxAawHMHBmokNyogNYCWCgzURG5QRG8BqBAelxAZlxAZQRnCwKrFBGbEBrIXgYEVigzJiA1grwcGyxAZlxAbQCcHB+4gNyogNoFOCg1uIDcqIDWA9BAc3iA3KiA1gvQQHESE2KCc2gG4IDsQGpcQG0C3B0XBigzJiA+gFwdFgYoMyYgPoFcHRUGKDMmID6KWh1AMweGKDMmKjOSZ2bY7tExtj7K5WbJ/YGMOjH1zz14ZLF2bj6swv4+K52Zh+vYiL52bj4vl3/X/Dsjbcfvvw9dRDMDhigzJio76GR4diYtfm+ZcHN/ft68ClC7Nx7kdvx7kX5l/8v0SE4GgUsUEZsVE/w6NDsXPvnfHpvWPxqd8bSzLDT344HT8+OR0vnXzL/1sNJjgaQmxQRmzUy8SuzbHnwJbY8/mPpB7lFqeefTNOHXsjzr3wdupRGDDB0QBigzJioz72HNgS+/5oa/af75cuzMZzf3U5Th17I/UoDIjgqDmxQRmxUQ97DmyJg4/eG2N3tVKP0pHp14t45slXhUcDCI4aExuUERvVN7Frcxz8k3tj/IHNqUfpyvkX345n/uJVl1pqTHDUlNigjNiotuHRofjSn388uz0a3Tr17Jvxvf/0U/9f1pDgqCGxQRmxUW07947F5HcmYviOet5K6eq71+LIV87FSyenU49CDwmOmhEblBEb1TU8OhQHH/1oPPzI1tSjDMSJpy/HM0/+zP+rNSE4akRsUEZsVNfY3a3407/9ZOM+vy9dmI0/+8NXYvq1IvUodElw1ITYoIzYqK7t4xvjiRP31/YSSpmr716Lbzz8clw8P5t6FLrg4W01IDYoIzaqa8+BLfHU6QcaGxsREcN3DMVTpx+IPQe2pB6FLnxgaOhDh1MPwfqJDcqIjerac2BLTH57PPUY2di5dyymX38vLlnpqCTBUWFigzJio7rExvJER3UJjooSG5QRG9UlNlYnOqpJcFSQ2KCM2KgusbE2oqN6nFKpGLFBGbFRXdvHN8ZTpx9IPUal/PHuF51eqQinVCpGbLAasVFdY3e34okT96ceo3KeOHF/jN1drQfWNZXgqJDJ70yIDVYkNqpreHQo/vRvP9noo6/rNXxH+3036n2XO8FREXsObKndQ5roHbFRbQcf/agfJrpwzyc2xsFHP5p6DEoIjgrYPr7RJjJWJDaqbefescY8G6WfHn5ka+zcO5Z6DFYhOCpg8rsTqUcgU2Kj2oZHh2LyOz6/e2XyOxMurWRMcGTOUisrERvV96U//7h9Gz00fMeQSysZExwZ2z6+MQ48em/qMciQ2Ki+iV2b7cvqg4cf2RoTuzanHoNlCI6MfemJj6UegQyJjXo4+Cd+mOgX79s8CY5M7TmwJcYfUOncSmzUg8/v/hp/YLMny2ZIcGTqoEspLCE26sPnd/95H+dHcGRoz4EtMXaXO+dxk9ioD5/fgzF2V8sqR2YER4aUOYuJjXrZ90fuuTEo3td5ERyZ8dMPi4mNepnYtdkx9wG65xMbnVjJiODIzGcOOCbHPLFRP5b4B8/7PB+CIyNjd7fsXCcixEYdDY8Oue9GAns+/xF3H82E4MjIPs9TIMRGXe3ce2fqERrL+z4PgiMjHjyE2KivT/v8Tsb7Pg+CIxPbxzfaLNpwYqO+hkeH4lO/55teKp/6vTGXVTIgODJhya/ZxEa9OSmRno9BeoIjExMPfjj1CCQiNurPN7v0fAzSExyZcDqlmcRGM0w86PM7NR+D9ARHBpR3M4mNZhgeHXKzrwz4GKQnODIgOJpHbDTH9vE7Uo9Am6+1aQmODIzd7XRKk4iNZtk+4SfrXPhYpCU4MnDn3benHoEBERvN47h7Pnws0hIcGbBhtBnERjP5qTofPhZpCQ4YALHRXMOjH0w9Am0+FmkJjsRsYqo/sdFsTkfkw8ciLcEBfSQ2AOYJDugTsQFwk+CAPhAbALcSHNBjYgPg/QQH9JDYAFie4IAeERsAKxMc0ANiA2B1ggO6JDYAygkO6ILYAFgbwZHYuRfeTj0C6yQ2WItLF2ZTj0Cbj0VaggPWQWywVldnfpl6BNp8LNISHBk4/6JVjioRG3Ti4jk/VefCxyItwZGBt157L/UIrJHYoFPTrxepR6DNxyItwZGB6dd8ElSB2GA9/FSdDx+LtARHBmwczZ/YYL18fufDxyItwZEBnwR5Ext0y+mI9HwM0hMcmbBxNE9ig1449yOf36n5GKQnODJx7kfvpB6BJcQGvWIVMz0fg/QERyZeOvlW6hFYRGzQS77ZpedjkJ7gyMTF87OObGVCbNBrV2euxU9+OJ16jMb6yQ+nfT5nQHBk5KWTviClJjbolx/7/E7G+z4PgiMjzz19OfUIjSY26CeXTdPxvs/DbRHhu1wmpl8rnFZJRGzQb1dnrsWpZ99MPUbjnHr2TZ/Xebh8W0RMpZ6Cm/7hmC9IgyY2GJRTx95IPULjeJ9nY8ollcycOvaGzaMDJDYYpHMvvO0GVAN06cKs0ykZuS0irqQegls98+SrqUdoBLFBCs/9lavYg+J9nZUrt0XEmdRTcCurHP0nNkjF5/dgTL9euJySlzMuqWTKKkf/iA1S8/ndf97H+bFpNFOnjr3hxEofiA1y4PO7v86/+LbVjfxMCY6Mfe8b/5x6hFoRG+Tkmb/wE3i/eN9maeoDQ0MfioiYTD0J7/fO9C9iQ2yIiV2bU49SeWKD3Ey/XsTI6AfjX/yrTalHqZVTz74ZJ9xEMUePb7h+/Xq0WiPXU0/Cyr71/ANxzyc2ph6jssQGuRoeHYq/fuWhGL5jKPUotXD13Wvx7z75vM/1DBXF3IaFTaNyMGNHvnwu9QiVJTbI2dWZa3HkKz6/e+XIV875XM/T5Yibz1KZSjcHZS6en40jXz2feozKERtUwUsnp10C6IETT1/2AMx8TUXcDA734sjcqWNveA5DB8QGVfLMkz9zB9IuXLowG888+bPUY7CyMxE3g8PdRivgyFfO+aK0BmKDqrk6cy3+7A9fiavv+n+2U1ffbb/vfL7n7ErEzeA4nW4OOvHYwy+LjlWIDapq+rUivvHwy6nHqJxvPPxyTL/mzq2ZOx1hD0flXJ25JjpWIDaoOvu1OnPkq+fj4nlfCytgKiJiw/Xr8ydiW62RKxExmnAgOjA8OhTfPHG/47JtYoM62XNgS0x+ezz1GFk78tXz7iZaDTNFMbcp4uYKR4SNo5VipeMmsUHdnDr2hpWOVYiNSrnRFouD4/Tg56AbokNsUF+iY3lio3JOL/zCCkfFXZ25Fl976MVGHpk99eyb8bWHXhQb1JbouJXYqKQbbbF4D8e2iLiUaCB6oEnXfX3hoUm2j2+MJ07c39hboF9991p84+GXbRCtpnuKYm4qYlFwRNg4WgfbxzfG5HcnaruZ9NKF2Tjy5XO+8NA4Y3e34k//9pO1/dxeyaULs/Fnf/iKo6/VdGPDaMStl1Qi7OOovIvnZ+NrD70Yx56s3+OZjz35anztoRfFBo00/VoRjz38cqNug37i6cvxmPtsVNnpxf+ydIVjMiL+csAD0SfbxzfGl574WIw/UO3H259/8e343jf+WWhA2869YzH5nYnaXmK5+u78Q+08G6Xyvl4Uc0cW/mVpcOyIiFdSTEX/7DmwJQ4+em+M3dVKPUpHpl8v4pknX7VXA5YxPDoUBx/9aDz8yNbUo/TUiacvxzNP/sxm8Hr4ZFHMvX/T6AL7OOqrKuEhNGDtJnZtjoN/cm8tVjKf+YtX49wLb6cehd64Zf9GxPLBcTwi9g1yKgZrz4Et8ZkDH8nuC9T5F9+Ofzj2ptCAdajKDxRL+QGjtp4rirn9i39jueCwj6Mhxu5uxb5HtsbOvWPJvkhNv17ESyen47mnL9sYBj2w58CW2PdHW7M/zXLpwmw891eXhUZ93bJ/I2L54LCPo4G2j2+MnXvvjIkHP9z3lY/zL74d5370Trx08i0bQaFPJnZtjj0HtovHNoEAAAhCSURBVMSez38k9Si3OPXs/CqmSye1d8v+jYhlgiMiotUamYqIeu1EoiMTuzbHxK7NMXZ3K+68+/Z1R8j5F9+Ot157L6ZfK+LcC2/7IgMDNjw6FDv33hmf3jsWn/q9sSQz/OSH0/Hjk9Px0sm3bAZthstFMbdt6W+uFBxHIuKPBzAUFTOxa23hISwgP8OjQzd+mJh4cHPfLrtcujAb53709o0fMkRG4zxVFHOTS39zpeDYHxE/GMRUAKQzsWtzbJ/YGGN3tWL7xMYYHv3gmkPk0oXZuDrzy7h4bjamXy/i4rlZP2wQEfG5opg7vvQ3lw2OCMdjAYCOve847IKltzZf7H11AgCwihXbYbXgON37OQCAGju90n9Y7ZLKpoiYCpdVAIByMxGxrSjmriz3H1dc4Wj/AZdVAIC1OL5SbESsfkklQnAAAGuzajOseEllgdMqAECJFU+nLChb4YiIONqbWQCAmjpa9gqCAwDo1tGyVygNjvbDV872YhoAoHbOLn1Q23LWssIREXGk/FUAgAZaUyOUbhqNcE8OAGBZq957Y7E1rXC4JwcAsIxV772x2JpWOCIiWq2RbRFxqYuhAIB6uaco5qbW8opr3cMR7Tf4/DoHAgDq5fm1xkZEB8HRdrjD1wcA6ulwJ6+85ksqC1qtkamI2NrRHwIA6uRyUcxt6+QPdLrCEWGVAwCa7nCnf6DjFY4IqxwA0GAdr25ErG+FI8IqBwA01eH1/KF1rXBEWOUAgAZa1+pGxPpXOCKscgBA0xxe7x9c9wpHhFUOAGiQda9uRHS3whFhlQMAmuJwN3+4qxWOiIhWa+RMRNzX1RsBAHJ2tijmdnTzBrpd4YiImOzB2wAA8tX19/qug6Mo5k6HZ6wAQF093/5e35VerHBERBzq0dsBAPJyqBdvpCfB0X5a3OO9eFsAQDYe7+SJsKvpetPoglZrZFNETEXEaE/eIACQ0kxEbCuKuSu9eGO9uqQS7YEO9ertAQBJHepVbET0cIVjQas1cjoiHurpGwUABun5opjb3cs32LMVjkUOxfwyDABQPTPRhysWPQ+O9uaSw71+uwDAQBzu1UbRxXp+SWWBO5ACQOV0fUfRlfTjksqCQ3182wBA7x3q1xvuW3AUxdyZiPh6v94+ANBTX29/7+6Lvl1SWeDUCgBkr+enUpbq5yWVBYfCqRUAyFVfTqUs1ffgaO90PdTvvwcAWJdD/TiVstQgVjiiKOaOR8RTg/i7AIA1e6r9Pbrv+r6HY0H7WSunw1FZAMhB347ALmcgKxwRN561sj/s5wCA1GZi/nvywAwsOCLs5wCATAxk38ZiAw2OiBv7OR4f9N8LAERExOOD2rex2MD2cCzVao0cj4h9Sf5yAGim54pibqCXUhYMfIVjkUMRcTbh3w8ATXI2Em5rSLbCERHRao1si4gzETGabAgAqL+ZiNgx6H0bi6Vc4VjYRLo7nFwBgH6ZiYjdKWMjInFwRNx4yNuh1HMAQE0d6udD2dYqeXBE3Di58sXUcwBAzXwxxYmU5WQRHBERRTF3NByXBYBeebz9vTULSTeNLqfVGjkaEV9IPQcAVNjfFMXcodRDLJbNCseC9jvob1LPAQAVlV1sRGQYHBGiAwDWKcvYiMg0OCJEBwB0KNvYiMg4OCJEBwCsUdaxEZF5cESIDgAokX1sRFQgOCJEBwCsoBKxEVGR4Ii4ER3u0wEA8x6vSmxEZHgfjjKt1sihiPh+6jkAIKEv5nRTr7WozArHgvY7+HPhgW8ANM9MRHyuarERUcEVjgWt1siOiDgdHm0PQDMsPPU1+YPY1qNyKxwL2u/wHRFxNvUsANBnZyNiR1VjI6LCwRERURRzUxGxOyKeSzsJAPTNczG/sjGVepBuVDo4IiKKYu5KUcztDydYAKifx4tibn9RzF1JPUi3KruHYzmt1sj+iDga9nUAUG0zEXGoKOaOpx6kV2oVHBERrdbItog4HhH3JR4FANbjbETsr/ollKUqf0llqaKYmyqKuR0R8VTqWQCgQ09FDfZrLKd2KxyLucQCQEXU7hLKUrVb4Vis/YHbERHPp54FAFbwfMwfea1tbETUfIVjsVZrZDIi/jL1HACwyNeLYu5I6iEGoTHBEXHj7qRHw4ZSANI6G/OXUCp7I69O1fqSylJFMXemvaH06+FZLAAM3kzMr2pU+q6h69GoFY7F2sdnj0bEQ2knAaAhno/5VY2p1IOk0NjgWNA+yXIkIramngWAWrocEZN13xRaplGXVJaz6CSLW6MD0GuPRwNOoKxF41c4FnOZBYAeafTlk+UIjmW0WiO7Y/4yi9MsAHTibMxfPjmdepDcCI5VtFojhyLicNjfAcDqLkfE4aKYO5p6kFwJjjUQHgCsQGiskeDogPAAoE1odEhwrIPwAGgsobFOgqML7c2lh8OpFoC6ez7mQ+N06kGqSnD0QPs47eGI2B8Ro0mHAaBXZiLieMyHxlTiWSpPcPRQqzWyKeajYzIcqQWoqrMxf2uE40UxdyX1MHUhOPqk/WTaQ+0Xqx4AeZuJ+Rs/Hm3aQ9UGRXAMQPt5LQsv4gMgDwuXTI679Xj/CY4BWnTJZXeID4AUFiLjdLhkMlCCI6H2ysfumI8PR2wB+uNytCPDSkY6giMT7T0fuxe9WP0AWJ+ZmF/BOB3zkWFPRgYER6YECMCaCYwKEBwV0b7Xx472y+72P0UI0DQzEXEm5uPiTESccY+MahAcFdaOkG0xHyCbYj5CtoX9IED1XY6IqZiPiisxHxhT4qK6BEdNLYqRhZeI+SDZ1P71thAmwOAthETEfEgsXP6YWngRFfX0/wF/tg6FBGT6DAAAAABJRU5ErkJggg==" alt="Zbrendiraj.si"/>
+      <span>Zbrendiraj.si</span>
+    </a>
+    <nav class="nav">
+      <a href="#povzetek">Povzetek</a>
+      <a href="#problem">Problem</a>
+      <a href="#resitev">Rešitev</a>
+      <a href="#potek">Potek</a>
+      <a href="#model">Model</a>
+      <a href="#projekcija">Projekcija</a>
+      <a href="#zakljucek">Zaključek</a>
+      <a class="nav-cta" href="#povzetek">Poročilo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="cover" id="naslovnica">
+  <div class="cover-inner">
+    <p class="eyebrow">Poslovno poročilo · september 2026</p>
+    <h1>Website Factory</h1>
+    <p class="lead">Tovarna spletnih strani za lokalna podjetja. Predlog nastane sam, stranka plačuje mesečno.</p>
+    <p>Namesto da vsako stran dela agencija na roke, sistem poišče podjetje brez spletne strani, pripravi demo in lastniku pošlje povezavo. Ko stranka plača, stran vodimo naprej. Pri naslednji stranki ostane drobiž stroškov, ne tednov dela.</p>
+    <div class="pills">
+      <span class="pill">Za bralca brez tehničnega znanja</span>
+      <span class="pill">Poudarek na ideji, poteku in denarju</span>
+      <span class="pill">Znamka Zbrendiraj.si</span>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+<section class="block" id="povzetek">
+  <div class="sec-head">
+    <p class="sec-num">01 / Povzetek</p>
+    <h2>Povzetek</h2>
+  </div>
+  <div class="card">
+    <strong>Besede, ki jih uporabljamo</strong>
+    <div class="dl">
+      <div><dt>Demo</dt><dd>stran, ki je že narejena in si jo lastnik lahko takoj ogleda.</dd></div>
+      <div><dt>Konverzija</dt><dd>kolikšen delež tistih, ki jih kontaktiramo, dejansko kupi.</dd></div>
+      <div><dt>Mesečni prihodek iz naročnin</dt><dd>denar, ki vsak mesec znova pride od naročnin.</dd></div>
+      <div><dt>Odpovedi</dt><dd>koliko strank preneha plačevati.</dd></div>
+      <div><dt>Dodatna storitev</dt><dd>kar stranka dokupi po prvem nakupu.</dd></div>
+      <div><dt>Neto dobiček</dt><dd>prihodek minus neposredni stroški in tekoči stroški poslovanja, brez plače lastnika.</dd></div>
+    </div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><b>35 €</b><span>Mesečna naročnina za stran</span></div>
+    <div class="kpi"><b>350 €</b><span>Letna naročnina za stran</span></div>
+    <div class="kpi"><b>~850</b><span>Že pripravljenih predlogov</span></div>
+    <div class="kpi"><b>0,8 %</b><span>Predvideni delež, ki kupi</span></div>
+  </div>
+  <p class="note">Cene in število predlogov so iz dejanskega projekta. Delež 0,8 % je predpostavka — v praksi ga še nismo izmerili.</p>
+</section>
+
+<section class="block" id="problem">
+  <div class="sec-head">
+    <p class="sec-num">02 / Problem</p>
+    <h2>Kakšen problem rešujemo</h2>
+  </div>
+  <p>Frizer, avtoservis, keramičar ali čistilni servis pogosto nima urejene spletne strani. Klasična agencija to reši z razgovori, ponudbo in ročnim oblikovanjem. To je drago, traja tedne in se ne da povečati: več strank pomeni sorazmerno več ljudi.</p>
+  <p>Website Factory — znamka Zbrendiraj.si, podjetje DETAJL, Tadej Šarabon Štojs s.p. — spremeni izdelavo strani v ponavljajoč postopek. Isti postopek lahko pripravi desetine ali stotine predlogov. Lastnik vidi že narejeno stran zase, ne prazne obljube.</p>
+</section>
+
+<section class="block" id="resitev">
+  <div class="sec-head">
+    <p class="sec-num">03 / Rešitev</p>
+    <h2>Website Factory</h2>
+  </div>
+  <div class="card">
+    <strong>Jedro ideje</strong>
+    To ni orodje, s katerim si podjetnik sam sestavi stran. To je tovarna: poišče stranke, naredi predloge, jih ponudi, zaračuna naročnino in stran potem vzdržuje. Človek ostane pri pregledu in pomoči, ne pri vsaki vrstici besedila.
+  </div>
+  <p class="note" style="margin-top:0">Zakaj to ni navadna agencija</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th></th><th>Klasična agencija</th><th>Website Factory</th></tr></thead>
+    <tbody>
+      <tr><td>Kako se začne</td><td>Klic, sestanek, ponudba</td><td>Demo je že narejen, lastnik dobi povezavo</td></tr>
+      <tr><td>Kdo naredi stran</td><td>Oblikovalec za vsako stranko</td><td>Isti postopek za vse, človek pregleda izjeme</td></tr>
+      <tr><td>Čas do predloga</td><td>Dnevi ali tedni</td><td>Ure — predlog nastane vnaprej</td></tr>
+      <tr><td>Cena za stranko</td><td>Enkratni znesek, pogosto več tisoč evrov</td><td>35 €/mesec ali 350 €/leto</td></tr>
+      <tr><td>Naslednja stranka</td><td>Skoraj enako dela kot pri prvi</td><td>Skoraj nič dodatnega ročnega dela</td></tr>
+      <tr><td>Prihodki naprej</td><td>Ko je projekt končan, se ustavi</td><td>Naročnina se ponavlja, dokler stranka ne odpove</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Prednost ni v lepšem izgledu. Prednost je, da se delo z vsako novo stranko ne podvoji. Ko je postopek vzpostavljen, stota stran v stroških orodij stane približno toliko kot prva — od nekaj centov do nekaj evrov — ne pa novega tedna ekipe.</p>
+</section>
+
+<section class="block" id="potek">
+  <div class="sec-head">
+    <p class="sec-num">04 / Potek</p>
+    <h2>Kako poteka — od podjetja do plačila</h2>
+  </div>
+  <p class="note">Zeleni koraki tečejo sami. Pri ostalih potrebujemo še človeka, kupca ali lokalni telefon.</p>
+  <div class="flow">
+    <div class="step auto"><i>1</i><b>Najdemo podjetje brez strani</b><em>Samodejno</em></div>
+    <div class="step auto"><i>2</i><b>Naredimo demo strani</b><em>Samodejno</em></div>
+    <div class="step"><i>3</i><b>Lastniku pošljemo SMS s povezavo</b><em>Skoraj samodejno</em></div>
+    <div class="step auto"><i>4</i><b>Kupec izbere mesečno ali letno</b><em>Samodejno</em></div>
+    <div class="step auto"><i>5</i><b>Vpiše prave podatke in fotografije</b><em>Kupec sam</em></div>
+    <div class="step"><i>6</i><b>Stran gre v živo</b><em>Po kratkem pregledu</em></div>
+    <div class="step auto"><i>7</i><b>Mesečno ali letno plačilo</b><em>Samodejno</em></div>
+  </div>
+  <p>Iščemo po celi Sloveniji: 12 regij in 16 poklicev, denimo frizerje, avtoservise in keramičarje. Demo dobi besedilo in slike samodejno. SMS gre iz lokalnega telefona — zato je pošiljanje poceni, a omejeno na približno 100 sporočil na dan. Po plačilu stranka dopolni svoje podatke. Lastnik projekta stran še na hitro pregleda, preden jo objavimo.</p>
+  <p>Po nakupu lahko stranka dokupi urejen Google profil (39 €, enkrat), osnovno vidnost na iskalniku (29 €, enkrat) ali e-pošto na lastni domeni, npr. info@mojepodjetje.si (5 € na mesec). Pri letnem paketu obljubljamo tudi brezplačno domeno; nakup domene še ni povsem samodejen.</p>
+</section>
+
+<section class="block" id="model">
+  <div class="sec-head">
+    <p class="sec-num">05 / Poslovni model</p>
+    <h2>Od kod prihaja denar</h2>
+  </div>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Kaj stranka plača</th><th class="num">Cena</th><th>Kdaj</th><th>Kaj to pomeni za nas</th></tr></thead>
+    <tbody>
+      <tr><td>Spletna stran, mesečno</td><td class="num">35 €</td><td>Vsak mesec</td><td>Glavni, ponavljajoči se vir</td></tr>
+      <tr><td>Spletna stran, letno</td><td class="num">350 €</td><td>Enkrat na leto</td><td>Enako, plačano vnaprej; ugodneje za stranko</td></tr>
+      <tr><td>E-pošta na lastni domeni</td><td class="num">5 € / mesec</td><td>Vsak mesec</td><td>Dodatek z visokim zaslužkom</td></tr>
+      <tr><td>Osnovna vidnost na Googlu</td><td class="num">29 €</td><td>Enkrat</td><td>Dodatek ob nakupu</td></tr>
+      <tr><td>Urejen Google profil podjetja</td><td class="num">39 €</td><td>Enkrat</td><td>Dodatek ob nakupu</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">Cene so z DDV, take, kot jih vidi kupec. Letni paket stane manj na mesec (približno 29 €) in zmanjša odpovedi, ker je leto že plačano vnaprej.</p>
+</section>
+
+<section class="block" id="enota">
+  <div class="sec-head">
+    <p class="sec-num">06 / Ekonomika ene stranke</p>
+    <h2>Neto dobiček od ene stranke</h2>
+  </div>
+  <p>V osnovnem scenariju predvidevamo, da od 125 poslanih predlogov kupi ena stranka (0,8 %). Približno tretjina izbere letno naročnino. Od mesečnih strank jih vsak mesec približno 4,5 % odpove. To so predpostavke, ne izmerjeni rezultati.</p>
+  <div class="kpis">
+    <div class="kpi"><b>358 €</b><span>Prihodek v prvem letu na stranko</span></div>
+    <div class="kpi"><b>12 €</b><span>Neposredni stroški na stranko</span></div>
+    <div class="kpi"><b>~97 %</b><span>Neto dobiček</span></div>
+    <div class="kpi"><b>&lt; 1 mesec</b><span>Kdaj se povrne strošek pridobitve</span></div>
+  </div>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Postavka</th><th class="num">Znesek</th><th>Pomen</th></tr></thead>
+    <tbody>
+      <tr><td>Iskanje in demo</td><td class="num">≈ 0 €</td><td>SMS je mesečni operater, Google gre iz dobroimetja in brezplačnih limitov</td></tr>
+      <tr><td>Plačilne provizije (Stripe)</td><td class="num">8 €</td><td>Ocena v prvem letu</td></tr>
+      <tr><td>Domena (samo pri letni naročnini)</td><td class="num">5 €</td><td>Povprečje na stranko; pri mesečni 0 €</td></tr>
+      <tr><td>Skriti strošek</td><td class="num">Čas lastnika</td><td>Odgovori, pregled, pomoč — ni v 12 €</td></tr>
+      <tr><td>Izmerjena konverzija v kupca</td><td class="num">Še ni številke</td><td>To odloča, ali model drži</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Fiksni stroški so nizki in se ne množijo s strankami. Cursor Pro, Vercel Pro, e-poštni servis, Neon in operater za SMS skupaj pridejo na približno 62 € na mesec. Prva dva meseca gre zraven 250 € Google dobroimetja — namen je narediti čim več demotov na zalogo. Potem zadoščajo mesečni brezplačni limiti; na voljo je še novo dobroimetje približno 275 € (300 $).</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Fiksni strošek na mesec</th><th class="num">Znesek</th><th>Opomba</th></tr></thead>
+    <tbody>
+      <tr><td>Cursor Pro</td><td class="num">18 €</td><td>Cenik, približno 20 $</td></tr>
+      <tr><td>Vercel Pro</td><td class="num">18 €</td><td>Cenik, približno 20 $</td></tr>
+      <tr><td>Operater za SMS</td><td class="num">13 €</td><td>Dejanski znesek</td></tr>
+      <tr><td>E-poštni servis</td><td class="num">8 €</td><td>Ocena mesečnega paketa</td></tr>
+      <tr><td>Neon</td><td class="num">5 €</td><td>Minimalno; zdaj skoraj nič, v modelu rezerva</td></tr>
+      <tr><td>Skupaj na mesec</td><td class="num">62 €</td><td>Pokrijejo že dve plačujoči stranki</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="card warn">
+    <strong>Orodje je poceni, čas ni</strong>
+    Sporočila in izdelava predlogov stanejo malo — operater 13 € na mesec, demoti iz dobroimetja in brezplačnih limitov. Drago postane, če delež kupcev pade: pri 0,35 % potrebujemo skoraj 300 kontaktov za eno stranko. Zneski v evrih ostanejo nizki, zmanjka pa časa za odgovore in preglede.
+  </div>
+</section>
+
+<section class="block" id="projekcija">
+  <div class="sec-head">
+    <p class="sec-num">07 / Dveletna projekcija</p>
+    <h2>Dve leti, tri hitrosti</h2>
+  </div>
+  <p>Model predvideva 26 delovnih dni na mesec in omejitev približno 100 SMS-ov na dan. Drugo leto se začne tam, kjer se konča prvo: stranke ostanejo, del jih odpove, letne se deloma obnovijo. Previden scenarij ostane samo v Sloveniji in raste počasi. Osnovni prav tako ostane v Sloveniji in v drugem letu zadene zgornjo mejo SMS-ov. Scenarij rasti predvideva boljšo konverzijo, prehod na večjega pošiljatelja sporočil in začetek na Hrvaškem. Tega v trenutnem načrtu še ni — gre za prikaz, kaj bi se zgodilo, če bi to naredili.</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th></th><th class="num">Previden</th><th class="num">Osnovni</th><th class="num">Rast</th></tr></thead>
+    <tbody>
+      <tr><td>Konverzija v kupca</td><td class="num">0,35 %</td><td class="num">0,80 %</td><td class="num">1,30 %</td></tr>
+      <tr><td>Prihodek, 1. leto</td><td class="num">5.863 €</td><td class="num">27.807 €</td><td class="num">68.209 €</td></tr>
+      <tr><td>Prihodek, 2. leto</td><td class="num">16.192 €</td><td class="num">78.154 €</td><td class="num">234.989 €</td></tr>
+      <tr><td>Stranke konec 1. leta</td><td class="num">23</td><td class="num">102</td><td class="num">225</td></tr>
+      <tr><td>Stranke konec 2. leta</td><td class="num">46</td><td class="num">219</td><td class="num">697</td></tr>
+      <tr><td>Mesečni prihodek konec 2. leta</td><td class="num">1.649 €</td><td class="num">7.879 €</td><td class="num">26.116 €</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">Prihodek pomeni denar, ki tisto leto res pride na račun (letne naročnine v celoti, ko jih stranka plača). Osnovni scenarij: 1. leto neto dobiček približno 25.700 €, 2. leto približno 74.500 € — po fiksnih stroških, Stripe-u, domenah in 250 € Google dobroimetja, brez plače lastnika.</p>
+</section>
+
+<section class="block" id="scenariji">
+  <div class="sec-head">
+    <p class="sec-num">08 / Scenariji in grafi</p>
+    <h2>Grafi</h2>
+  </div>
+
+  <h3>Koliko strank plačuje skozi čas</h3>
+  <div class="toggles" data-chart="customers">
+    <button type="button" class="toggle is-on" data-s="base">Osnovni</button>
+    <button type="button" class="toggle" data-s="cons">Previden</button>
+    <button type="button" class="toggle" data-s="gro">Rast</button>
+    <button type="button" class="toggle" data-s="all">Vsi trije</button>
+  </div>
+  <div class="chart-card" style="position:relative">
+    <div class="chart-live" id="chart-customers"></div>
+    <div class="chart-print"><svg viewBox="0 0 720 280" width="100%" role="img"><line x1="56" y1="240" x2="638" y2="240" stroke="rgba(255,255,255,0.22)"/>
+<line x1="56" y1="28" x2="56" y2="240" stroke="rgba(255,255,255,0.22)"/>
+<line x1="56" y1="240.0" x2="638" y2="240.0" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="243.0" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">0</text>
+<line x1="56" y1="197.6" x2="638" y2="197.6" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="200.6" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">150</text>
+<line x1="56" y1="155.2" x2="638" y2="155.2" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="158.2" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">300</text>
+<line x1="56" y1="112.8" x2="638" y2="112.8" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="115.8" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">450</text>
+<line x1="56" y1="70.4" x2="638" y2="70.4" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="73.4" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">600</text>
+<line x1="56" y1="28.0" x2="638" y2="28.0" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="31.0" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">750</text>
+<text x="56.0" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">1</text>
+<text x="182.5" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">6</text>
+<text x="334.3" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">12</text>
+<text x="486.2" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">18</text>
+<text x="638.0" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">24</text><rect x="60" y="8" width="10" height="10" rx="2" fill="#9A9A9A"/><text x="74" y="17" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">Previden</text><rect x="148" y="8" width="10" height="10" rx="2" fill="#C7FF3D"/><text x="162" y="17" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">Osnovni</text><rect x="236" y="8" width="10" height="10" rx="2" fill="#FFFFFF"/><text x="250" y="17" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">Rast</text><polyline fill="none" stroke="#9A9A9A" stroke-width="1.6" points="56.0,239.7 81.3,239.2 106.6,238.9 131.9,238.3 157.2,237.7 182.5,237.2 207.8,236.6 233.1,236.0 258.4,235.5 283.7,234.9 309.0,234.1 334.3,233.5 359.7,232.9 385.0,232.4 410.3,231.8 435.6,231.2 460.9,230.7 486.2,230.1 511.5,229.5 536.8,229.0 562.1,228.4 587.4,227.8 612.7,227.3 638.0,227.0"/><polyline fill="none" stroke="#C7FF3D" stroke-width="2.2" points="56.0,238.6 81.3,237.2 106.6,235.8 131.9,233.5 157.2,231.2 182.5,229.3 207.8,226.4 233.1,223.6 258.4,220.8 283.7,217.4 309.0,214.3 334.3,211.2 359.7,208.1 385.0,204.7 410.3,201.6 435.6,198.7 460.9,195.9 486.2,193.1 511.5,190.3 536.8,187.7 562.1,185.2 587.4,182.6 612.7,180.4 638.0,178.1"/><polyline fill="none" stroke="#FFFFFF" stroke-width="2" points="56.0,236.0 81.3,232.4 106.6,228.7 131.9,223.3 157.2,218.0 182.5,212.6 207.8,206.1 233.1,199.9 258.4,193.9 283.7,188.0 309.0,182.1 334.3,176.4 359.7,170.7 385.0,165.4 410.3,153.5 435.6,141.9 460.9,130.6 486.2,119.6 511.5,106.3 536.8,93.0 562.1,80.3 587.4,67.6 612.7,55.1 638.0,43.0"/><circle cx="334.3" cy="233.5" r="3.5" fill="#9A9A9A"/><text x="334.3" y="224.5" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">23</text><circle cx="638.0" cy="227.0" r="3.5" fill="#9A9A9A"/><text x="645.0" y="231.0" fill="#9A9A9A" font-size="11" font-weight="600" font-family="Inter,sans-serif">46</text><circle cx="334.3" cy="211.2" r="3.5" fill="#C7FF3D"/><text x="334.3" y="202.2" text-anchor="middle" fill="#C7FF3D" font-size="10" font-family="Inter,sans-serif">102</text><circle cx="638.0" cy="178.1" r="3.5" fill="#C7FF3D"/><text x="645.0" y="182.1" fill="#C7FF3D" font-size="11" font-weight="600" font-family="Inter,sans-serif">219</text><circle cx="334.3" cy="176.4" r="3.5" fill="#FFFFFF"/><text x="334.3" y="167.4" text-anchor="middle" fill="#FFFFFF" font-size="10" font-family="Inter,sans-serif">225</text><circle cx="638.0" cy="43.0" r="3.5" fill="#FFFFFF"/><text x="645.0" y="47.0" fill="#FFFFFF" font-size="11" font-weight="600" font-family="Inter,sans-serif">697</text></svg></div>
+  </div>
+  <p class="note">Od 1. do 24. meseca. Število strank, ki še plačujejo. Oznake na 12. in 24. mesecu. Previden: 23 → 46. Osnovni: 102 → 219. Rast: 225 → 697.</p>
+
+  <h3>Koliko denarja pride v posameznem mesecu (osnovni scenarij)</h3>
+  <div class="toggles" data-chart="cash">
+    <button type="button" class="toggle is-on" data-s="base">Osnovni</button>
+    <button type="button" class="toggle" data-s="cons">Previden</button>
+    <button type="button" class="toggle" data-s="gro">Rast</button>
+    <button type="button" class="toggle" data-s="all">Vsi trije</button>
+  </div>
+  <div class="chart-card" style="position:relative">
+    <div class="chart-live" id="chart-cash"></div>
+    <div class="chart-print"><svg viewBox="0 0 720 280" width="100%" role="img"><line x1="56" y1="240" x2="638" y2="240" stroke="rgba(255,255,255,0.22)"/>
+<line x1="56" y1="28" x2="56" y2="240" stroke="rgba(255,255,255,0.22)"/>
+<line x1="56" y1="240.0" x2="638" y2="240.0" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="243.0" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">0</text>
+<line x1="56" y1="190.1" x2="638" y2="190.1" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="193.1" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">2.000</text>
+<line x1="56" y1="140.2" x2="638" y2="140.2" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="143.2" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">4.000</text>
+<line x1="56" y1="90.4" x2="638" y2="90.4" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="93.4" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">6.000</text>
+<line x1="56" y1="40.5" x2="638" y2="40.5" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="43.5" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">8.000</text>
+<text x="56.0" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">1</text>
+<text x="182.5" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">6</text>
+<text x="334.3" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">12</text>
+<text x="486.2" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">18</text>
+<text x="638.0" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">24</text><polygon fill="#C7FF3D" fill-opacity="0.14" points="56.0,220.6 81.3,217.6 106.6,214.7 131.9,200.2 157.2,195.8 182.5,191.4 207.8,175.7 233.1,170.0 258.4,164.5 283.7,151.5 309.0,145.2 334.3,139.3 359.7,117.0 385.0,110.8 410.3,104.8 435.6,92.2 460.9,86.8 486.2,81.6 511.5,69.7 536.8,65.0 562.1,60.5 587.4,51.5 612.7,47.4 638.0,43.5 638.0,240.0 56.0,240.0"/><polyline fill="none" stroke="#C7FF3D" stroke-width="2.2" points="56.0,220.6 81.3,217.6 106.6,214.7 131.9,200.2 157.2,195.8 182.5,191.4 207.8,175.7 233.1,170.0 258.4,164.5 283.7,151.5 309.0,145.2 334.3,139.3 359.7,117.0 385.0,110.8 410.3,104.8 435.6,92.2 460.9,86.8 486.2,81.6 511.5,69.7 536.8,65.0 562.1,60.5 587.4,51.5 612.7,47.4 638.0,43.5"/><circle cx="334.3" cy="139.3" r="3.5" fill="#C7FF3D"/><text x="334.3" y="130.3" text-anchor="middle" fill="#C7FF3D" font-size="10" font-family="Inter,sans-serif">4.038 €</text><circle cx="638.0" cy="43.5" r="3.5" fill="#C7FF3D"/><text x="645.0" y="47.5" fill="#C7FF3D" font-size="11" font-weight="600" font-family="Inter,sans-serif">7.879 €</text></svg></div>
+  </div>
+  <p class="note">Znesek, ki tisti mesec pride na račun, vključno s celotno letno naročnino, ko jo stranka plača. 12. mesec: 4.038 €. 24. mesec: 7.879 €.</p>
+
+  <h3>Od kod prihaja prihodek (osnovni scenarij)</h3>
+  <div class="chart-card">
+    <div class="chart-live" id="chart-stack"></div>
+    <div class="chart-print"><svg viewBox="0 0 720 280" width="100%" role="img"><line x1="56" y1="240" x2="638" y2="240" stroke="rgba(255,255,255,0.22)"/><line x1="56" y1="28" x2="56" y2="240" stroke="rgba(255,255,255,0.22)"/><line x1="56" y1="240.0" x2="638" y2="240.0" stroke="rgba(255,255,255,0.10)"/><text x="48" y="243.0" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">0</text><line x1="56" y1="190.1" x2="638" y2="190.1" stroke="rgba(255,255,255,0.10)"/><text x="48" y="193.1" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">2.000</text><line x1="56" y1="140.2" x2="638" y2="140.2" stroke="rgba(255,255,255,0.10)"/><text x="48" y="143.2" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">4.000</text><line x1="56" y1="90.4" x2="638" y2="90.4" stroke="rgba(255,255,255,0.10)"/><text x="48" y="93.4" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">6.000</text><line x1="56" y1="40.5" x2="638" y2="40.5" stroke="rgba(255,255,255,0.10)"/><text x="48" y="43.5" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">8.000</text><rect x="73.5" y="216.6" width="37.8" height="23.4" fill="#C7FF3D"/><rect x="73.5" y="216.3" width="37.8" height="0.6" fill="#FFFFFF"/><rect x="73.5" y="215.5" width="37.8" height="0.8" fill="#9A9A9A"/><rect x="73.5" y="214.7" width="37.8" height="0.8" fill="#5C5C5C"/><text x="92.4" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">m3</text><text x="92.4" y="208.7" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600" font-family="Inter,sans-serif">1.015</text><rect x="146.2" y="194.9" width="37.8" height="45.1" fill="#C7FF3D"/><rect x="146.2" y="194.1" width="37.8" height="0.8" fill="#FFFFFF"/><rect x="146.2" y="192.7" width="37.8" height="1.3" fill="#9A9A9A"/><rect x="146.2" y="191.4" width="37.8" height="1.3" fill="#5C5C5C"/><text x="165.1" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">m6</text><text x="165.1" y="185.4" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600" font-family="Inter,sans-serif">1.947</text><rect x="219.0" y="169.5" width="37.8" height="70.5" fill="#C7FF3D"/><rect x="219.0" y="168.1" width="37.8" height="1.4" fill="#FFFFFF"/><rect x="219.0" y="166.2" width="37.8" height="1.8" fill="#9A9A9A"/><rect x="219.0" y="164.5" width="37.8" height="1.8" fill="#5C5C5C"/><text x="237.9" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">m9</text><text x="237.9" y="158.5" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600" font-family="Inter,sans-serif">3.028</text><rect x="291.7" y="145.7" width="37.8" height="94.3" fill="#C7FF3D"/><rect x="291.7" y="143.5" width="37.8" height="2.1" fill="#FFFFFF"/><rect x="291.7" y="141.4" width="37.8" height="2.1" fill="#9A9A9A"/><rect x="291.7" y="139.3" width="37.8" height="2.1" fill="#5C5C5C"/><text x="310.6" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">m12</text><text x="310.6" y="133.3" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600" font-family="Inter,sans-serif">4.038</text><rect x="364.5" y="112.3" width="37.8" height="127.7" fill="#C7FF3D"/><rect x="364.5" y="109.5" width="37.8" height="2.8" fill="#FFFFFF"/><rect x="364.5" y="107.1" width="37.8" height="2.4" fill="#9A9A9A"/><rect x="364.5" y="104.8" width="37.8" height="2.3" fill="#5C5C5C"/><text x="383.4" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">m15</text><text x="383.4" y="98.8" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600" font-family="Inter,sans-serif">5.420</text><rect x="437.2" y="89.7" width="37.8" height="150.3" fill="#C7FF3D"/><rect x="437.2" y="86.3" width="37.8" height="3.4" fill="#FFFFFF"/><rect x="437.2" y="83.9" width="37.8" height="2.4" fill="#9A9A9A"/><rect x="437.2" y="81.6" width="37.8" height="2.3" fill="#5C5C5C"/><text x="456.1" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">m18</text><text x="456.1" y="75.6" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600" font-family="Inter,sans-serif">6.351</text><rect x="510.0" y="69.1" width="37.8" height="170.9" fill="#C7FF3D"/><rect x="510.0" y="65.2" width="37.8" height="3.9" fill="#FFFFFF"/><rect x="510.0" y="62.8" width="37.8" height="2.4" fill="#9A9A9A"/><rect x="510.0" y="60.5" width="37.8" height="2.3" fill="#5C5C5C"/><text x="528.9" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">m21</text><text x="528.9" y="54.5" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600" font-family="Inter,sans-serif">7.198</text><rect x="582.7" y="52.5" width="37.8" height="187.5" fill="#C7FF3D"/><rect x="582.7" y="48.2" width="37.8" height="4.4" fill="#FFFFFF"/><rect x="582.7" y="45.8" width="37.8" height="2.4" fill="#9A9A9A"/><rect x="582.7" y="43.5" width="37.8" height="2.3" fill="#5C5C5C"/><text x="601.6" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">m24</text><text x="601.6" y="37.5" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="600" font-family="Inter,sans-serif">7.879</text><rect x="56" y="10" width="10" height="10" rx="2" fill="#C7FF3D"/><text x="70" y="19" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">Naročnina strani</text><rect x="174" y="10" width="10" height="10" rx="2" fill="#FFFFFF"/><text x="188" y="19" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">E-pošta</text><rect x="292" y="10" width="10" height="10" rx="2" fill="#9A9A9A"/><text x="306" y="19" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">Iskalnik</text><rect x="410" y="10" width="10" height="10" rx="2" fill="#5C5C5C"/><text x="424" y="19" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">Google profil</text></svg></div>
+  </div>
+  <p class="note">Nad stolpcem je seštevek. 12. mesec 4.038 € (3.782 naročnina + 86 e-pošta + 86 iskalnik + 84 Google profil). 24. mesec 7.879 € (7.516 + 175 + 95 + 93). Večina denarja pride od naročnine za stran.</p>
+
+  <h3>Trije scenariji na istem grafu</h3>
+  <div class="chart-card">
+    <div class="chart-live" id="chart-compare"></div>
+    <div class="chart-print"><svg viewBox="0 0 720 280" width="100%" role="img"><line x1="56" y1="240" x2="638" y2="240" stroke="rgba(255,255,255,0.22)"/>
+<line x1="56" y1="28" x2="56" y2="240" stroke="rgba(255,255,255,0.22)"/>
+<line x1="56" y1="240.0" x2="638" y2="240.0" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="243.0" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">0</text>
+<line x1="56" y1="200.7" x2="638" y2="200.7" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="203.7" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">5.000</text>
+<line x1="56" y1="161.5" x2="638" y2="161.5" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="164.5" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">10.000</text>
+<line x1="56" y1="122.2" x2="638" y2="122.2" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="125.2" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">15.000</text>
+<line x1="56" y1="83.0" x2="638" y2="83.0" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="86.0" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">20.000</text>
+<line x1="56" y1="43.7" x2="638" y2="43.7" stroke="rgba(255,255,255,0.10)"/>
+<text x="48" y="46.7" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">25.000</text>
+<text x="56.0" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">1</text>
+<text x="182.5" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">6</text>
+<text x="334.3" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">12</text>
+<text x="486.2" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">18</text>
+<text x="638.0" y="258" text-anchor="middle" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">24</text><rect x="60" y="8" width="10" height="10" rx="2" fill="#9A9A9A"/><text x="74" y="17" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">Previden</text><rect x="148" y="8" width="10" height="10" rx="2" fill="#C7FF3D"/><text x="162" y="17" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">Osnovni</text><rect x="236" y="8" width="10" height="10" rx="2" fill="#FFFFFF"/><text x="250" y="17" fill="#D0D0D0" font-size="11" font-family="Inter,sans-serif">Rast</text><polyline fill="none" stroke="#9A9A9A" stroke-width="1.6" points="56.0,238.9 81.3,238.6 106.6,238.3 131.9,237.3 157.2,236.9 182.5,236.5 207.8,235.8 233.1,235.4 258.4,235.0 283.7,234.2 309.0,233.8 334.3,233.4 359.7,232.1 385.0,231.6 410.3,231.2 435.6,230.5 460.9,230.1 486.2,229.8 511.5,228.9 536.8,228.5 562.1,228.2 587.4,227.6 612.7,227.3 638.0,227.1"/><polyline fill="none" stroke="#C7FF3D" stroke-width="2.2" points="56.0,233.9 81.3,232.9 106.6,232.0 131.9,227.5 157.2,226.1 182.5,224.7 207.8,219.8 233.1,218.0 258.4,216.2 283.7,212.1 309.0,210.2 334.3,208.3 359.7,201.3 385.0,199.3 410.3,197.5 435.6,193.5 460.9,191.8 486.2,190.1 511.5,186.4 536.8,184.9 562.1,183.5 587.4,180.7 612.7,179.4 638.0,178.1"/><polyline fill="none" stroke="#FFFFFF" stroke-width="2" points="56.0,220.7 81.3,218.4 106.6,216.2 131.9,204.4 157.2,201.2 182.5,198.0 207.8,189.5 233.1,185.9 258.4,182.4 283.7,179.1 309.0,175.8 334.3,172.6 359.7,157.0 385.0,154.0 410.3,117.7 435.6,104.7 460.9,98.1 486.2,91.8 511.5,69.7 536.8,62.3 562.1,55.1 587.4,48.2 612.7,41.5 638.0,34.9"/><circle cx="334.3" cy="233.4" r="3.5" fill="#9A9A9A"/><text x="328.3" y="225.4" text-anchor="end" fill="#9A9A9A" font-size="10" font-family="Inter,sans-serif">846 €</text><circle cx="638.0" cy="227.1" r="3.5" fill="#9A9A9A"/><text x="645.0" y="231.1" fill="#9A9A9A" font-size="11" font-weight="600" font-family="Inter,sans-serif">1.649 €</text><circle cx="334.3" cy="208.3" r="3.5" fill="#C7FF3D"/><text x="328.3" y="200.3" text-anchor="end" fill="#C7FF3D" font-size="10" font-family="Inter,sans-serif">4.038 €</text><circle cx="638.0" cy="178.1" r="3.5" fill="#C7FF3D"/><text x="645.0" y="182.1" fill="#C7FF3D" font-size="11" font-weight="600" font-family="Inter,sans-serif">7.879 €</text><circle cx="334.3" cy="172.6" r="3.5" fill="#FFFFFF"/><text x="328.3" y="164.6" text-anchor="end" fill="#FFFFFF" font-size="10" font-family="Inter,sans-serif">8.578 €</text><circle cx="638.0" cy="34.9" r="3.5" fill="#FFFFFF"/><text x="645.0" y="38.9" fill="#FFFFFF" font-size="11" font-weight="600" font-family="Inter,sans-serif">26.116 €</text></svg></div>
+  </div>
+  <p class="note">Prihodek v evrih na mesec. Previden scenarij v 12. in 24. mesecu: 846 € in 1.649 €. Osnovni: 4.038 € in 7.879 €. Rast: 8.578 € in 26.116 €. Skok po 15. mesecu predvideva več sporočil in vstop na Hrvaško — ne čudežno rast v Sloveniji.</p>
+</section>
+
+<section class="block" id="tveganja">
+  <div class="sec-head">
+    <p class="sec-num">09 / Tveganja</p>
+    <h2>Kdo dela in kje se zatakne</h2>
+  </div>
+  <p>Posel lahko vodi ena oseba. Sistem sam išče podjetja, dela predloge, sprejema plačila in pripravi e-pošto na domeni. Človek mora skrbeti, da telefon za SMS deluje, odgovarjati na sporočila, pregledati stran pred objavo in pomagati pri domeni.</p>
+  <p>Omejitev rasti v Sloveniji ni znanje, kako narediti stran, ampak koliko predlogov lahko pošljemo in koliko lastnikov res kupi. En telefon zmore približno 100 SMS-ov na dan. Brez večjega pošiljanja se rast v drugem letu ustavi, tudi če je zanimanje dobro.</p>
+  <h3>Kaj lahko gre narobe</h3>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Tveganje</th><th>Posledica</th><th>Kaj naredimo</th></tr></thead>
+    <tbody>
+      <tr><td>Lastniki ne kupujejo dovolj pogosto</td><td>Pade celoten izračun</td><td>Prvih 90 dni merimo, koliko SMS-ov prinese eno plačilo</td></tr>
+      <tr><td>Stranke tiho odpovedo, sistem tega ne vidi</td><td>Mislimo, da imamo več plačnikov, kot jih je</td><td>Preklic uskladiti z evidenco strank</td></tr>
+      <tr><td>Telefon za SMS odpove ali doseže zgornjo mejo</td><td>Ni novih strank</td><td>Spremljati zastoje; za rast zamenjati način pošiljanja</td></tr>
+      <tr><td>Demo je slab ali napačen</td><td>Izguba zaupanja in več ročnega popravljanja</td><td>Kratek človeški pregled pred objavo</td></tr>
+      <tr><td>Pravila za oglasna SMS sporočila</td><td>Globe ali blokada številke</td><td>Enostavna odjava in pravni pregled pred večjim obsegom</td></tr>
+      <tr><td>Novi trg (Hrvaška, Avstrija, Nemčija)</td><td>Jezik, pravila in navade niso isti</td><td>Najprej dokazati, da model deluje v Sloveniji</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section class="block" id="zakljucek">
+  <div class="sec-head">
+    <p class="sec-num">10 / Zaključek</p>
+    <h2>Ali to lahko zraste — ali ostane majhna agencija</h2>
+  </div>
+  <p>Lahko zraste, če lastniki demo res kupujejo. Takrat se delo ne množi: ista tovarna naredi naslednjo stran, denar pride vsak mesec, dodatne storitve povečajo znesek na stranko. Za ta potek v veliki meri že imamo delujoč postopek — v projektu je že stotine predlogov, plačilo in pot do žive strani.</p>
+  <p>To še ni tovarna brez človeka. Pregled, telefon in neizmerjena konverzija pomenijo, da je to posel, ki ga vodi lastnik z zelo močnim zaledjem — ne stroj, ki teče sam. Vprašanje za partnerja zato ni, ali znamo narediti spletne strani, ampak ali od sto poslanih predlogov kupi približno eden. Če da, se slovenski trg izplača, potem Hrvaška. Če ne, ostane okretna agencija z nenavadno dobrim strojem v ozadju.</p>
+  <h3>Kaj si zapomniti</h3>
+  <div class="kpis">
+    <div class="kpi"><b>35 / 350 €</b><span>Mesečna in letna cena strani</span></div>
+    <div class="kpi"><b>28 tisoč → 78 tisoč €</b><span>Prihodek 1. in 2. leto, osnovni scenarij</span></div>
+    <div class="kpi"><b>~97 %</b><span>Neto dobiček po neposrednih stroških</span></div>
+    <div class="kpi"><b>0,8 % = ?</b><span>Ali kupci to potrdijo, še ne vemo</span></div>
+  </div>
+  <p>Ideja je tovarna, ne agencija. Postopek od iskanja do naročnine že teče. Naslednja stranka stane malo. Največje tveganje ni tehnologija, ampak ali bodo lastniki demo dovolj pogosto kupili.</p>
+  <p class="note">September 2026. Cene in število predlogov so iz projekta. Dveletne številke so izračun, ne napoved. Dejansko število plačnikov in uspešnost SMS-ov iz poslovanja tukaj nista vključena.</p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div>
+      <p class="name">Zbrendiraj.si</p>
+      <p>Website Factory · poslovno poročilo · september 2026</p>
+      <p>DETAJL, Tadej Šarabon Štojs s.p. · info@zbrendiraj.si</p>
+    </div>
+    <div>
+      <p>zbrendiraj.si</p>
+      <p>Za bralca brez tehničnega znanja</p>
+    </div>
+  </div>
+</footer>
+<div class="print-foot"><span>Zbrendiraj.si · Website Factory</span><span>Poslovno poročilo · september 2026</span></div>
+<div class="tip" id="tip"></div>
+
+<script>
+const D = {"months":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],"consA":[1,3,4,6,8,10,12,14,16,18,21,23,25,27,29,31,33,35,37,39,41,43,45,46],"baseA":[5,10,15,23,31,38,48,58,68,80,91,102,113,125,136,146,156,166,176,185,194,203,211,219],"groA":[14,27,40,59,78,97,120,142,163,184,205,225,245,264,306,347,387,426,473,520,565,610,654,697],"consC":[143,180,213,340,393,443,537,592,643,738,794,846,1010,1067,1120,1214,1260,1303,1413,1462,1508,1573,1612,1649],"baseC":[776,899,1016,1594,1774,1947,2577,2808,3028,3549,3799,4038,4932,5181,5419,5926,6143,6351,6828,7017,7198,7557,7722,7879],"groC":[2453,2746,3030,4531,4944,5343,6430,6888,7331,7760,8176,8578,10576,10952,15571,17237,18071,18878,21689,22633,23547,24431,25287,26116],"sub":[706,824,937,1469,1643,1809,2391,2613,2826,3311,3552,3782,4649,4889,5119,5617,5827,6026,6497,6679,6853,7206,7364,7516],"email":[5,9,13,20,27,33,42,50,58,68,77,86,95,104,113,121,129,137,144,151,157,164,170,175],"seo":[33,33,33,53,53,53,73,73,73,86,86,86,95,95,95,95,95,95,95,95,95,95,95,95],"gbp":[32,32,32,52,52,52,71,71,71,84,84,84,93,93,93,93,93,93,93,93,93,93,93,93]};
+const C = { cons:"#9A9A9A", base:"#C7FF3D", gro:"#FFFFFF", grid:"rgba(255,255,255,0.10)", axis:"rgba(255,255,255,0.22)", muted:"#9A9A9A", body:"#D0D0D0" };
+const W=720,H=280,L=56,R=82,T=28,B=40,PW=W-L-R,PH=H-T-B;
+function xv(i,n){ return L+PW*i/(n-1); }
+function yv(v,m){ return T+PH*(1-v/m); }
+function fmt(n){ return Math.round(n).toLocaleString("sl-SI"); }
+function axis(svg, vmax, ticks, xLabs){
+  let s = '<line x1="'+L+'" y1="'+(T+PH)+'" x2="'+(L+PW)+'" y2="'+(T+PH)+'" stroke="'+C.axis+'"/>';
+  s += '<line x1="'+L+'" y1="'+T+'" x2="'+L+'" y2="'+(T+PH)+'" stroke="'+C.axis+'"/>';
+  ticks.forEach(function(t){
+    const y=yv(t,vmax);
+    s += '<line x1="'+L+'" y1="'+y+'" x2="'+(L+PW)+'" y2="'+y+'" stroke="'+C.grid+'"/>';
+    s += '<text x="'+(L-8)+'" y="'+(y+3)+'" text-anchor="end" fill="'+C.muted+'" font-size="10" font-family="Inter,sans-serif">'+(t>=1000?fmt(t):t)+'</text>';
+  });
+  [0,5,11,17,23].forEach(function(idx,i){
+    s += '<text x="'+xv(idx,24)+'" y="'+(T+PH+18)+'" text-anchor="middle" fill="'+C.muted+'" font-size="10" font-family="Inter,sans-serif">'+(xLabs?xLabs[i]:idx+1)+'</text>';
+  });
+  return s;
+}
+function linePts(data,vmax){
+  return data.map(function(v,i){ return xv(i,data.length)+","+yv(v,vmax); }).join(" ");
+}
+function tipShow(e, html){
+  const t=document.getElementById("tip");
+  t.innerHTML=html; t.style.display="block";
+  t.style.left=e.clientX+"px"; t.style.top=e.clientY+"px";
+}
+function tipHide(){ document.getElementById("tip").style.display="none"; }
+
+function drawLines(el, series, vmax, money){
+  let s = '<svg viewBox="0 0 '+W+' '+H+'" width="100%">';
+  s += axis(el && 0, vmax, niceTicks(vmax), ["1","6","12","18","24"]);
+  series.forEach(function(ser){
+    s += '<polyline fill="none" stroke="'+ser.color+'" stroke-width="'+(ser.w||2)+'" points="'+linePts(ser.data,vmax)+'"/>';
+    ser.data.forEach(function(v,i){
+      const show = (i===11||i===23);
+      if(show){
+        s += '<circle cx="'+xv(i,ser.data.length)+'" cy="'+yv(v,vmax)+'" r="3.5" fill="'+ser.color+'"/>';
+      }
+      s += '<circle cx="'+xv(i,ser.data.length)+'" cy="'+yv(v,vmax)+'" r="10" fill="transparent" data-i="'+i+'" data-v="'+v+'" data-n="'+ser.name+'" style="cursor:crosshair"/>';
+    });
+    const last=ser.data.length-1;
+    const lab = money ? fmt(ser.data[last])+" €" : ser.data[last];
+    s += '<text x="'+(xv(last,ser.data.length)+7)+'" y="'+(yv(ser.data[last],vmax)+4)+'" fill="'+ser.color+'" font-size="11" font-weight="600" font-family="Inter,sans-serif">'+lab+'</text>';
+  });
+  const lx=60; let x=lx;
+  series.forEach(function(ser){
+    s += '<rect x="'+x+'" y="8" width="10" height="10" rx="2" fill="'+ser.color+'"/>';
+    s += '<text x="'+(x+14)+'" y="17" fill="'+C.body+'" font-size="11" font-family="Inter,sans-serif">'+ser.name+'</text>';
+    x += 88;
+  });
+  s += '</svg>';
+  el.innerHTML=s;
+  el.querySelectorAll("circle[data-v]").forEach(function(c){
+    c.addEventListener("mousemove", function(e){
+      const v=+c.getAttribute("data-v");
+      const lab = money ? fmt(v)+" €" : v;
+      tipShow(e, "<b>"+c.getAttribute("data-n")+"</b> · mesec "+(+c.getAttribute("data-i")+1)+" · "+lab);
+    });
+    c.addEventListener("mouseleave", tipHide);
+  });
+}
+function niceTicks(max){
+  if(max<=60) return [0,10,20,30,40,50];
+  if(max<=120) return [0,25,50,75,100];
+  if(max<=280) return [0,50,100,150,200,250];
+  if(max<=900) return [0,150,300,450,600,750];
+  if(max<=2000) return [0,400,800,1200,1600];
+  if(max<=4500) return [0,1000,2000,3000,4000];
+  if(max<=9000) return [0,2000,4000,6000,8000];
+  return [0,5000,10000,15000,20000,25000];
+}
+function pick(key, kind){
+  if(kind==="A"){
+    if(key==="cons") return [{name:"Previden", data:D.consA, color:C.cons, w:1.6}];
+    if(key==="gro") return [{name:"Rast", data:D.groA, color:C.gro, w:2}];
+    if(key==="all") return [
+      {name:"Previden", data:D.consA, color:C.cons, w:1.6},
+      {name:"Osnovni", data:D.baseA, color:C.base, w:2.2},
+      {name:"Rast", data:D.groA, color:C.gro, w:2}
+    ];
+    return [{name:"Osnovni", data:D.baseA, color:C.base, w:2.2}];
+  }
+  if(key==="cons") return [{name:"Previden", data:D.consC, color:C.cons, w:1.6}];
+  if(key==="gro") return [{name:"Rast", data:D.groC, color:C.gro, w:2}];
+  if(key==="all") return [
+    {name:"Previden", data:D.consC, color:C.cons, w:1.6},
+    {name:"Osnovni", data:D.baseC, color:C.base, w:2.2},
+    {name:"Rast", data:D.groC, color:C.gro, w:2}
+  ];
+  return [{name:"Osnovni", data:D.baseC, color:C.base, w:2.2}];
+}
+function vmaxOf(series){
+  let m=1;
+  series.forEach(function(s){ s.data.forEach(function(v){ if(v>m) m=v; }); });
+  return m*1.08;
+}
+function drawStack(el){
+  const idx=[2,5,8,11,14,17,20,23], labs=["m3","m6","m9","m12","m15","m18","m21","m24"];
+  const layers=[
+    {n:"Naročnina strani", c:"#C7FF3D", d:idx.map(function(i){return D.sub[i];})},
+    {n:"E-pošta", c:"#FFFFFF", d:idx.map(function(i){return D.email[i];})},
+    {n:"Iskalnik", c:"#9A9A9A", d:idx.map(function(i){return D.seo[i];})},
+    {n:"Google profil", c:"#5C5C5C", d:idx.map(function(i){return D.gbp[i];})}
+  ];
+  const vmax=8500, n=8, gap=PW/n, bw=gap*0.52;
+  let s='<svg viewBox="0 0 '+W+' '+H+'" width="100%">';
+  s += '<line x1="'+L+'" y1="'+(T+PH)+'" x2="'+(L+PW)+'" y2="'+(T+PH)+'" stroke="'+C.axis+'"/>';
+  s += '<line x1="'+L+'" y1="'+T+'" x2="'+L+'" y2="'+(T+PH)+'" stroke="'+C.axis+'"/>';
+  [0,2000,4000,6000,8000].forEach(function(t){
+    const y=yv(t,vmax);
+    s += '<line x1="'+L+'" y1="'+y+'" x2="'+(L+PW)+'" y2="'+y+'" stroke="'+C.grid+'"/>';
+    s += '<text x="'+(L-8)+'" y="'+(y+3)+'" text-anchor="end" fill="'+C.muted+'" font-size="10" font-family="Inter,sans-serif">'+fmt(t)+'</text>';
+  });
+  for(let i=0;i<n;i++){
+    const x=L+gap*i+(gap-bw)/2;
+    let acc=0, tot=0;
+    layers.forEach(function(layer){ tot+=layer.d[i]; });
+    layers.forEach(function(layer){
+      const h=PH*layer.d[i]/vmax;
+      const y=T+PH-acc-h;
+      s += '<rect x="'+x+'" y="'+y+'" width="'+bw+'" height="'+Math.max(h,0.6)+'" fill="'+layer.c+'" data-n="'+layer.n+'" data-v="'+layer.d[i]+'" data-m="'+labs[i]+'"/>';
+      acc+=h;
+    });
+    s += '<text x="'+(x+bw/2)+'" y="'+(T+PH+18)+'" text-anchor="middle" fill="'+C.muted+'" font-size="10" font-family="Inter,sans-serif">'+labs[i]+'</text>';
+    s += '<text x="'+(x+bw/2)+'" y="'+(T+PH-acc-6)+'" text-anchor="middle" fill="#fff" font-size="10" font-weight="600" font-family="Inter,sans-serif">'+fmt(tot)+'</text>';
+  }
+  let lx=56;
+  layers.forEach(function(layer){
+    s += '<rect x="'+lx+'" y="10" width="10" height="10" rx="2" fill="'+layer.c+'"/>';
+    s += '<text x="'+(lx+14)+'" y="19" fill="'+C.body+'" font-size="11" font-family="Inter,sans-serif">'+layer.n+'</text>';
+    lx+=118;
+  });
+  s += '</svg>';
+  el.innerHTML=s;
+  el.querySelectorAll("rect[data-n]").forEach(function(r){
+    r.addEventListener("mousemove", function(e){
+      const mes = r.getAttribute("data-m").replace("m","");
+      tipShow(e, "<b>"+r.getAttribute("data-n")+"</b> · "+mes+". mesec · "+fmt(+r.getAttribute("data-v"))+" €");
+    });
+    r.addEventListener("mouseleave", tipHide);
+  });
+}
+function renderCustomers(key){
+  const ser=pick(key,"A");
+  drawLines(document.getElementById("chart-customers"), ser, vmaxOf(ser), false);
+}
+function renderCash(key){
+  const ser=pick(key,"C");
+  drawLines(document.getElementById("chart-cash"), ser, vmaxOf(ser), true);
+}
+function bindToggles(attr, fn){
+  document.querySelectorAll('.toggles[data-chart="'+attr+'"] .toggle').forEach(function(btn){
+    btn.addEventListener("click", function(){
+      btn.parentNode.querySelectorAll(".toggle").forEach(function(b){ b.classList.remove("is-on"); });
+      btn.classList.add("is-on");
+      fn(btn.getAttribute("data-s"));
+    });
+  });
+}
+renderCustomers("base");
+renderCash("base");
+drawStack(document.getElementById("chart-stack"));
+drawLines(document.getElementById("chart-compare"), pick("all","C"), 27000, true);
+bindToggles("customers", renderCustomers);
+bindToggles("cash", renderCash);
+</script>
+</body>
+</html>
