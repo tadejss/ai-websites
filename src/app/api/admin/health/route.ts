@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getAdminHealthPayload } from "@/admin/health";
+import { getAdminHealthSummary } from "@/admin/health";
 import { isAdminAuthorized } from "@/lib/admin-auth";
 
 export const runtime = "nodejs";
@@ -10,6 +10,6 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const health = await getAdminHealthPayload();
+  const health = await getAdminHealthSummary();
   return NextResponse.json(health);
 }

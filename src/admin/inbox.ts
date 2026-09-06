@@ -4,10 +4,7 @@ import { getCustomerPublishOpsAggregates } from "@/onboarding/ops-aggregates";
 import { readAllLeads } from "@/leads/store";
 import { getCustomerSlugSet } from "@/customers/store";
 import { listSmsLeadStates } from "@/outreach/sms/store";
-import {
-  backfillPublishedFromFactoryLocks,
-  getDemoLifecycleBySlugs,
-} from "@/demo-lifecycle/store";
+import { getDemoLifecycleBySlugs } from "@/demo-lifecycle/store";
 import {
   buildAdminLeadRows,
   filterAdminLeadRows,
@@ -127,14 +124,9 @@ export async function getSmsActionableInbox(limit = 10): Promise<InboxItem[]> {
   const allLeads = readAllLeads();
   const slugs = allLeads.map((lead) => lead.slug);
 
-  let lifecycleBySlug = isDatabaseConfigured()
+  const lifecycleBySlug = isDatabaseConfigured()
     ? await getDemoLifecycleBySlugs(slugs)
     : new Map();
-
-  if (isDatabaseConfigured() && slugs.length > 0) {
-    await backfillPublishedFromFactoryLocks(slugs);
-    lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
-  }
 
   const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
   const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));
@@ -207,14 +199,9 @@ async function countSmsActionable(): Promise<number> {
   const allLeads = readAllLeads();
   const slugs = allLeads.map((lead) => lead.slug);
 
-  let lifecycleBySlug = isDatabaseConfigured()
+  const lifecycleBySlug = isDatabaseConfigured()
     ? await getDemoLifecycleBySlugs(slugs)
     : new Map();
-
-  if (isDatabaseConfigured() && slugs.length > 0) {
-    await backfillPublishedFromFactoryLocks(slugs);
-    lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
-  }
 
   const smsStates = isDatabaseConfigured() ? await listSmsLeadStates() : [];
   const smsBySlug = new Map(smsStates.map((state) => [state.slug, state]));

@@ -1,5 +1,4 @@
 import { getActionQueue } from "@/admin/queue";
-import { getAdminHealthPayload } from "@/admin/health";
 import {
   AdminPageHeader,
   AdminStatCard,
@@ -12,10 +11,7 @@ import { RunbookPanel } from "@/components/admin/runbook-panel";
 export const dynamic = "force-dynamic";
 
 export default async function AdminCommandCenterPage() {
-  const [items, health] = await Promise.all([
-    getActionQueue(20),
-    getAdminHealthPayload(),
-  ]);
+  const items = await getActionQueue(20);
 
   const publishFailedCount = items.filter(
     (item) => item.kind === "publish_failed",
@@ -32,7 +28,7 @@ export default async function AdminCommandCenterPage() {
         title="Home"
       />
 
-      <AdminHealthStrip initial={health} />
+      <AdminHealthStrip />
 
       {publishFailedCount > 0 ? (
         <div className="mb-4">

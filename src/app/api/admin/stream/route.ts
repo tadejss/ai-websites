@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { isAdminAuthorized } from "@/lib/admin-auth";
-import { healthPayloadFromSnapshot } from "@/admin/health";
+import { getAdminHealthSummary } from "@/admin/health";
 import { getQueueCounts } from "@/admin/queue";
-import { loadFactoryOpsSnapshot } from "@/factory/ops-snapshot";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -22,17 +21,16 @@ export async function GET(request: Request) {
       async function push() {
         if (closed) return;
         try {
-          const [snapshot, queueCounts] = await Promise.all([
-            loadFactoryOpsSnapshot(),
+          const [health, queueCounts] = await Promise.all([
+            getAdminHealthSummary(),
             getQueueCounts(),
           ]);
           const payload = {
             type: "health_update",
-            health: healthPayloadFromSnapshot(snapshot),
+            health,
             queueCounts,
             critical:
-              queueCounts.publish_failed > 0 ||
-              snapshot.worker.circuitOpen === true,
+              queueCounts.publish_failed > 0 || health.circuitOpen === true,
           };
           controller.enqueue(
             encoder.encode(`data: ${JSON.stringify(payload)}\n\n`),

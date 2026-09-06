@@ -263,33 +263,53 @@ export async function incrementDemoViewIfNew(
 
 /** Backfill published_at from factory locks when lifecycle row exists without it. */
 export async function backfillPublishedFromFactoryLocks(
-  slugs: string[],
-): Promise<void> {
-  if (slugs.length === 0) {
-    return;
-  }
-
+  slugs?: string[],
+): Promise<number> {
   const db = await requireDb();
   if (!db) {
-    return;
+    return 0;
   }
 
-  await db`
-    UPDATE demo_lifecycle AS dl
-    SET
-      published_at = COALESCE(dl.published_at, fg.updated_at),
-      lifecycle_status = CASE
-        WHEN dl.lifecycle_status = 'purchased' THEN 'purchased'
-        WHEN dl.lifecycle_status = 'generated' THEN 'published'
-        ELSE dl.lifecycle_status
-      END,
-      updated_at = NOW()
-    FROM factory_generation_locks AS fg
-    WHERE dl.slug = fg.slug
-      AND fg.status = 'published'
-      AND dl.slug = ANY(${slugs})
-      AND dl.published_at IS NULL
-  `;
+  if (slugs && slugs.length === 0) {
+    return 0;
+  }
+
+  const rows = slugs
+    ? ((await db`
+        UPDATE demo_lifecycle AS dl
+        SET
+          published_at = COALESCE(dl.published_at, fg.updated_at),
+          lifecycle_status = CASE
+            WHEN dl.lifecycle_status = 'purchased' THEN 'purchased'
+            WHEN dl.lifecycle_status = 'generated' THEN 'published'
+            ELSE dl.lifecycle_status
+          END,
+          updated_at = NOW()
+        FROM factory_generation_locks AS fg
+        WHERE dl.slug = fg.slug
+          AND fg.status = 'published'
+          AND dl.slug = ANY(${slugs})
+          AND dl.published_at IS NULL
+        RETURNING dl.slug
+      `) as Array<{ slug: string }>)
+    : ((await db`
+        UPDATE demo_lifecycle AS dl
+        SET
+          published_at = COALESCE(dl.published_at, fg.updated_at),
+          lifecycle_status = CASE
+            WHEN dl.lifecycle_status = 'purchased' THEN 'purchased'
+            WHEN dl.lifecycle_status = 'generated' THEN 'published'
+            ELSE dl.lifecycle_status
+          END,
+          updated_at = NOW()
+        FROM factory_generation_locks AS fg
+        WHERE dl.slug = fg.slug
+          AND fg.status = 'published'
+          AND dl.published_at IS NULL
+        RETURNING dl.slug
+      `) as Array<{ slug: string }>);
+
+  return rows.length;
 }
 
 export function resolveEffectiveLifecycleStatus(

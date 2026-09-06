@@ -269,6 +269,33 @@ export async function hasActiveOrSentStep(
   return rows.length > 0;
 }
 
+/** Batched active/sent steps for queue action enrichment (avoids N+1). */
+export async function listActiveOrSentStepsBySlugs(
+  slugs: string[],
+): Promise<Map<string, Set<SmsStep>>> {
+  const bySlug = new Map<string, Set<SmsStep>>();
+  if (!isDatabaseConfigured() || slugs.length === 0) {
+    return bySlug;
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT slug, step FROM sms_messages
+    WHERE slug = ANY(${slugs})
+      AND status IN ('queued', 'claimed', 'sending', 'sent')
+  `) as Array<{ slug: string; step: string }>;
+
+  for (const row of rows) {
+    let steps = bySlug.get(row.slug);
+    if (!steps) {
+      steps = new Set();
+      bySlug.set(row.slug, steps);
+    }
+    steps.add(row.step as SmsStep);
+  }
+  return bySlug;
+}
+
 export async function insertQueuedMessage(input: {
   messageId: string;
   slug: string;

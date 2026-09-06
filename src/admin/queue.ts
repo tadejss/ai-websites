@@ -8,15 +8,20 @@ import { listFailedQaLatest } from "@/qa/store";
 import { ensureAdminSchema } from "@/admin/entity-index";
 import type { AdminAction } from "@/admin/entity";
 import { buildAdminActions } from "@/admin/entity";
-import { canAdminApproveOnboarding, canRetryCustomerPublish } from "@/onboarding/types";
-import { getOnboardingBySlug } from "@/onboarding/store";
-import { evaluateSmsEligibility } from "@/outreach/sms/eligibility";
-import { resolveDueSmsStep } from "@/outreach/sms/enqueue-batch";
 import {
-  getSmsLeadState,
-  hasActiveOrSentStep,
+  canAdminApproveOnboarding,
+  canRetryCustomerPublish,
+  type OnboardingRecord,
+} from "@/onboarding/types";
+import { listOnboardingBySlugs } from "@/onboarding/store";
+import { evaluateSmsEligibility } from "@/outreach/sms/eligibility";
+import { resolveDueSmsStepFromCaches } from "@/outreach/sms/enqueue-batch";
+import {
+  listActiveOrSentStepsBySlugs,
+  listSmsLeadStatesBySlugs,
 } from "@/outreach/sms/store";
-import { isCustomer } from "@/customers/store";
+import type { SmsLeadState, SmsStep } from "@/outreach/sms/types";
+import { listCustomerSlugsAmong } from "@/customers/store";
 import { readLead as readLeadRecord } from "@/leads/store";
 
 export type QueueItemKind =
@@ -100,7 +105,17 @@ export async function snoozeQueueItem(input: {
   `;
 }
 
-async function buildQueueActions(slug: string): Promise<AdminAction[]> {
+type QueueActionCaches = {
+  customerSlugs: Set<string>;
+  onboardingBySlug: Map<string, OnboardingRecord>;
+  smsStateBySlug: Map<string, SmsLeadState>;
+  sentStepsBySlug: Map<string, Set<SmsStep>>;
+};
+
+function buildQueueActionsFromCaches(
+  slug: string,
+  caches: QueueActionCaches,
+): AdminAction[] {
   const lead = readLeadRecord(slug);
   if (!lead) {
     return buildAdminActions({
@@ -113,13 +128,18 @@ async function buildQueueActions(slug: string): Promise<AdminAction[]> {
     });
   }
 
-  const isCustomerLead = await isCustomer(slug);
-  const onboarding = isCustomerLead ? await getOnboardingBySlug(slug) : null;
-  const smsState = await getSmsLeadState(slug);
-  const smsDueStep = await resolveDueSmsStep(slug, lead.status);
-  const smsAlready = smsDueStep
-    ? await hasActiveOrSentStep(slug, smsDueStep)
-    : false;
+  const isCustomerLead = caches.customerSlugs.has(slug);
+  const onboarding = isCustomerLead
+    ? (caches.onboardingBySlug.get(slug) ?? null)
+    : null;
+  const smsState = caches.smsStateBySlug.get(slug) ?? null;
+  const sentSteps = caches.sentStepsBySlug.get(slug);
+  const smsDueStep = resolveDueSmsStepFromCaches(
+    smsState,
+    sentSteps,
+    lead.status,
+  );
+  const smsAlready = smsDueStep ? Boolean(sentSteps?.has(smsDueStep)) : false;
   const smsEligibility = evaluateSmsEligibility({
     lead,
     isCustomer: isCustomerLead,
@@ -267,12 +287,30 @@ export async function collectQueueItems(limit = 20): Promise<QueueItemCore[]> {
 
 export async function getActionQueue(limit = 20): Promise<QueueItem[]> {
   const items = await collectQueueItems(limit);
-  return Promise.all(
-    items.map(async (item) => ({
-      ...item,
-      actions: await buildQueueActions(item.slug),
-    })),
-  );
+  if (items.length === 0) {
+    return [];
+  }
+
+  const slugs = items.map((item) => item.slug);
+  const [customerSlugs, onboardingBySlug, smsStates, sentStepsBySlug] =
+    await Promise.all([
+      listCustomerSlugsAmong(slugs),
+      listOnboardingBySlugs(slugs),
+      listSmsLeadStatesBySlugs(slugs),
+      listActiveOrSentStepsBySlugs(slugs),
+    ]);
+
+  const caches: QueueActionCaches = {
+    customerSlugs,
+    onboardingBySlug,
+    smsStateBySlug: new Map(smsStates.map((state) => [state.slug, state])),
+    sentStepsBySlug,
+  };
+
+  return items.map((item) => ({
+    ...item,
+    actions: buildQueueActionsFromCaches(item.slug, caches),
+  }));
 }
 
 export async function getQueueCounts(): Promise<Record<QueueItemKind, number>> {

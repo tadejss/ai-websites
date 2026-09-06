@@ -34,7 +34,6 @@ import {
 } from "./lease";
 import {
   countActionableFailedGenerationLocks,
-  releaseStaleFailedGenerationLocks,
 } from "./generation-lock";
 import {
   evaluateFactoryOpsHealth,
@@ -241,8 +240,6 @@ export async function loadFactoryOpsSnapshot(): Promise<FactoryOpsSnapshot> {
       health: evaluateFactoryOpsHealth(buildHealthInput(partial)),
     };
   }
-
-  await releaseStaleFailedGenerationLocks(config.generationRetryMinutes);
 
   const [
     activeLease,

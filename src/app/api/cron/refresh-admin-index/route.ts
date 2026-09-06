@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { refreshAdminEntityIndex } from "@/admin/entity-index";
 import { afterAdminMutation } from "@/admin/revalidate";
 import { logSystemEvent } from "@/admin/system-events";
+import { backfillPublishedFromFactoryLocks } from "@/demo-lifecycle/store";
+import { releaseStaleFailedGenerationLocks } from "@/factory/generation-lock";
 import { isValidCronToken, readBearerToken } from "@/lib/auth";
 
 export const runtime = "nodejs";
@@ -13,15 +15,29 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  const [backfilled, staleFailedReleased] = await Promise.all([
+    backfillPublishedFromFactoryLocks(),
+    releaseStaleFailedGenerationLocks(),
+  ]);
+
   const count = await refreshAdminEntityIndex();
   await afterAdminMutation();
   await logSystemEvent({
     kind: "index_refresh",
     message: `Refreshed admin entity index (${count} rows)`,
-    detail: { count },
+    detail: {
+      count,
+      backfilled,
+      staleFailedReleased: staleFailedReleased.length,
+    },
   });
 
-  return NextResponse.json({ ok: true, count });
+  return NextResponse.json({
+    ok: true,
+    count,
+    backfilled,
+    staleFailedReleased: staleFailedReleased.length,
+  });
 }
 
 export async function POST(request: Request) {

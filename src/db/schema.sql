@@ -66,8 +66,18 @@ CREATE UNIQUE INDEX IF NOT EXISTS customer_onboarding_token_uidx
 CREATE INDEX IF NOT EXISTS customer_onboarding_status_idx
   ON customer_onboarding (status);
 
+CREATE INDEX IF NOT EXISTS customer_onboarding_status_updated_idx
+  ON customer_onboarding (status, updated_at DESC);
+
 ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS admin_approved_at TIMESTAMPTZ;
 ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS admin_publish_notify_sent_at TIMESTAMPTZ;
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS publish_started_at TIMESTAMPTZ;
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS published_at TIMESTAMPTZ;
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS publish_commit_sha TEXT;
+ALTER TABLE customer_onboarding ADD COLUMN IF NOT EXISTS publish_error TEXT;
+
+CREATE INDEX IF NOT EXISTS customer_onboarding_status_publish_started_idx
+  ON customer_onboarding (status, publish_started_at);
 
 -- SMS outreach queue (mutable state; lead identity remains in JSON files).
 CREATE TABLE IF NOT EXISTS sms_messages (

@@ -11,7 +11,7 @@ import {
   isSmsOptedOut,
 } from "./store";
 import { normalizeSlovenianPhone } from "./phone";
-import type { SmsStep } from "./types";
+import type { SmsLeadState, SmsStep } from "./types";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
@@ -30,18 +30,20 @@ function followupDue(sentAt: string | null, days: number): boolean {
   return Number.isFinite(elapsed) && elapsed >= days;
 }
 
-export async function resolveDueSmsStep(
-  slug: string,
+/** Pure due-step resolver using prefetched SMS state + sent steps. */
+export function resolveDueSmsStepFromCaches(
+  state: SmsLeadState | null | undefined,
+  sentSteps: Set<SmsStep> | undefined,
   leadStatus: string | undefined,
-): Promise<SmsStep | null> {
-  const state = await getSmsLeadState(slug);
+): SmsStep | null {
   const config = getOutreachConfig();
 
   if (state?.smsStatus === "opted_out" || state?.smsAllowed === false) {
     return null;
   }
 
-  const initialSent = await hasActiveOrSentStep(slug, "initial");
+  const steps = sentSteps ?? new Set<SmsStep>();
+  const initialSent = steps.has("initial");
   if (!initialSent) {
     if (leadStatus === "generated" || leadStatus === "contacted" || !leadStatus) {
       return "initial";
@@ -49,17 +51,40 @@ export async function resolveDueSmsStep(
     return "initial";
   }
 
-  const follow1 = await hasActiveOrSentStep(slug, "followup_1");
+  const follow1 = steps.has("followup_1");
   if (!follow1 && followupDue(state?.smsSentAt ?? null, config.followup1Days)) {
     return "followup_1";
   }
 
-  const follow2 = await hasActiveOrSentStep(slug, "followup_2");
+  const follow2 = steps.has("followup_2");
   if (follow1 && !follow2 && followupDue(state?.smsSentAt ?? null, config.followup2Days)) {
     return "followup_2";
   }
 
   return null;
+}
+
+export async function resolveDueSmsStep(
+  slug: string,
+  leadStatus: string | undefined,
+): Promise<SmsStep | null> {
+  const state = await getSmsLeadState(slug);
+  if (state?.smsStatus === "opted_out" || state?.smsAllowed === false) {
+    return null;
+  }
+
+  const sentSteps = new Set<SmsStep>();
+  if (!(await hasActiveOrSentStep(slug, "initial"))) {
+    return resolveDueSmsStepFromCaches(state, sentSteps, leadStatus);
+  }
+  sentSteps.add("initial");
+  if (await hasActiveOrSentStep(slug, "followup_1")) {
+    sentSteps.add("followup_1");
+    if (await hasActiveOrSentStep(slug, "followup_2")) {
+      sentSteps.add("followup_2");
+    }
+  }
+  return resolveDueSmsStepFromCaches(state, sentSteps, leadStatus);
 }
 
 export async function enqueueDueSmsBatch(): Promise<EnqueueBatchResult> {

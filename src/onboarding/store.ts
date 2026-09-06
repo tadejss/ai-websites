@@ -100,6 +100,24 @@ export async function getOnboardingBySlug(
   return rows[0] ? mapRow(rows[0]) : null;
 }
 
+export async function listOnboardingBySlugs(
+  slugs: string[],
+): Promise<Map<string, OnboardingRecord>> {
+  const bySlug = new Map<string, OnboardingRecord>();
+  if (!isDatabaseConfigured() || slugs.length === 0) {
+    return bySlug;
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT * FROM customer_onboarding WHERE slug = ANY(${slugs})
+  `) as OnboardingRow[];
+  for (const row of rows) {
+    bySlug.set(row.slug, mapRow(row));
+  }
+  return bySlug;
+}
+
 export async function getOnboardingByToken(
   token: string,
 ): Promise<OnboardingRecord | null> {

@@ -11,15 +11,25 @@ type HealthPayload = {
   dispatch: { level: "ok" | "warning" | "failed" | "idle"; detail: string };
 };
 
-export function AdminHealthStrip({ initial }: { initial: HealthPayload }) {
+export function AdminHealthStrip({
+  initial,
+}: {
+  initial?: HealthPayload;
+}) {
   const realtime = useAdminRealtime();
-  const [health, setHealth] = useState(initial);
+  const [health, setHealth] = useState(
+    () => initial ?? realtime.health,
+  );
 
   useEffect(() => {
     if (realtime.health) {
       setHealth(realtime.health);
     }
   }, [realtime.health]);
+
+  if (!health) {
+    return null;
+  }
 
   const indicators = [
     {

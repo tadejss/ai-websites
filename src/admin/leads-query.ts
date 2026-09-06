@@ -6,10 +6,7 @@ import {
 } from "@/admin/leads-filters";
 import { getCustomerSlugSet } from "@/customers/store";
 import { isDatabaseConfigured } from "@/db/client";
-import {
-  backfillPublishedFromFactoryLocks,
-  getDemoLifecycleBySlugs,
-} from "@/demo-lifecycle/store";
+import { getDemoLifecycleBySlugs } from "@/demo-lifecycle/store";
 import { readAllLeads, readLead } from "@/leads/store";
 import { listSmsLeadStatesBySlugs } from "@/outreach/sms/store";
 import {
@@ -46,14 +43,9 @@ async function enrichIndexRows(
     ReturnType<typeof readLead>
   >[];
 
-  let lifecycleBySlug = isDatabaseConfigured()
+  const lifecycleBySlug = isDatabaseConfigured()
     ? await getDemoLifecycleBySlugs(slugs)
     : new Map();
-
-  if (isDatabaseConfigured() && slugs.length > 0) {
-    await backfillPublishedFromFactoryLocks(slugs);
-    lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
-  }
 
   const smsStates = isDatabaseConfigured()
     ? await listSmsLeadStatesBySlugs(slugs)
@@ -86,14 +78,9 @@ async function queryAdminLeadsLegacy(
   const allLeads = readAllLeads();
   const slugs = allLeads.map((lead) => lead.slug);
 
-  let lifecycleBySlug = isDatabaseConfigured()
+  const lifecycleBySlug = isDatabaseConfigured()
     ? await getDemoLifecycleBySlugs(slugs)
     : new Map();
-
-  if (isDatabaseConfigured() && slugs.length > 0) {
-    await backfillPublishedFromFactoryLocks(slugs);
-    lifecycleBySlug = await getDemoLifecycleBySlugs(slugs);
-  }
 
   const smsStates = isDatabaseConfigured()
     ? await listSmsLeadStatesBySlugs(slugs)

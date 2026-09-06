@@ -369,3 +369,22 @@ export async function getCustomerSlugSet(): Promise<Set<string>> {
 
   return new Set(rows.map((row) => row.slug));
 }
+
+/** Customer membership among a slug list (batched; avoids N+1 isCustomer). */
+export async function listCustomerSlugsAmong(
+  slugs: string[],
+): Promise<Set<string>> {
+  if (!isDatabaseConfigured() || slugs.length === 0) {
+    return new Set();
+  }
+
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT slug FROM customers
+    WHERE slug = ANY(${slugs})
+      AND status = 'customer'
+  `) as Array<{ slug: string }>;
+
+  return new Set(rows.map((row) => row.slug));
+}

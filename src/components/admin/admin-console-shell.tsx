@@ -4,14 +4,14 @@ import { AdminSidebar } from "@/components/admin/admin-sidebar";
 import { AdminTabBar } from "@/components/admin/admin-tab-bar";
 import { AdminRealtimeProvider } from "@/components/admin/admin-realtime-provider";
 import { IncidentStrip } from "@/components/admin/ui/incident-strip";
-import { getAdminHealthPayload } from "@/admin/health";
+import { getAdminHealthSummary } from "@/admin/health";
 
 export async function AdminConsoleShell({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const health = await getAdminHealthPayload();
+  const health = await getAdminHealthSummary();
 
   const criticalMessage =
     health.factory.level === "failed"
