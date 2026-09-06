@@ -23,6 +23,11 @@ import { AdminActionDispatcher } from "@/components/admin/admin-action-dispatche
 import { RunbookPanel } from "@/components/admin/runbook-panel";
 import { EntityJourneyActions } from "@/components/admin/entity-journey-actions";
 import { EntityBackLink } from "@/components/admin/entity-back-link";
+import { EntityEmailCard } from "@/components/admin/entity-email-card";
+import {
+  getUpsellDefinition,
+  type UpsellType,
+} from "@/billing/upsells";
 
 export const dynamic = "force-dynamic";
 
@@ -70,6 +75,11 @@ export default async function AdminEntityJourneyPage({
     : !factoryConfig.publishEnabled
       ? "Publish is OFF — site will not go live"
       : null;
+
+  const purchasedUpsellTypes = entity.lead.purchasedUpsellTypes ?? [];
+  const purchasedProfessionalEmail = purchasedUpsellTypes.includes(
+    "professional_email",
+  );
 
   return (
     <div>
@@ -158,6 +168,24 @@ export default async function AdminEntityJourneyPage({
                     <div>
                       Stripe: {entity.lead.customer.stripeCustomerId ?? "—"}
                     </div>
+                    <div>
+                      Upsells:{" "}
+                      {purchasedUpsellTypes.length > 0
+                        ? purchasedUpsellTypes
+                            .map((type) => {
+                              try {
+                                return getUpsellDefinition(type as UpsellType)
+                                  .title;
+                              } catch {
+                                return type;
+                              }
+                            })
+                            .join(", ")
+                        : "—"}
+                    </div>
+                    {purchasedProfessionalEmail ? (
+                      <div>Professional email · Purchased</div>
+                    ) : null}
                   </dl>
                 ) : (
                   <p className="text-sm text-[var(--admin-muted)]">Not a customer</p>
@@ -165,7 +193,7 @@ export default async function AdminEntityJourneyPage({
               },
               {
                 id: "business_email",
-                title: "Business Email",
+                title: "Email",
                 stages: [
                   "purchased",
                   "onboarding_pending",
@@ -176,47 +204,15 @@ export default async function AdminEntityJourneyPage({
                   "publish_failed",
                   "live",
                 ],
-                content: entity.emailService ? (
-                  <div className="space-y-3 text-sm">
-                    <dl className="grid gap-1">
-                      <div>
-                        Domain: {entity.emailDomain?.domain ?? "—"} (
-                        {entity.emailDomain?.status ?? "—"})
-                      </div>
-                      <div>
-                        Mailbox: {entity.emailMailbox?.emailAddress ?? "—"}
-                      </div>
-                      <div>Provider: {entity.emailService.provider}</div>
-                      <div>Status: {entity.emailService.status}</div>
-                      <div>
-                        Stripe sub:{" "}
-                        {entity.emailService.stripeSubscriptionId ?? "—"}
-                      </div>
-                      <div>
-                        Created: {formatAdminDate(entity.emailService.createdAt)}
-                      </div>
-                    </dl>
-                    {entity.emailService.lastError ? (
-                      <p className="rounded border border-red-500/30 bg-red-500/10 px-2 py-1 text-xs text-red-400">
-                        {entity.emailService.lastError}
-                      </p>
-                    ) : null}
-                    <AdminActionDispatcher
-                      slug={slug}
-                      actions={entity.actions.filter((action) =>
-                        [
-                          "activate_domain",
-                          "retry_email_provision",
-                          "resend_email_credentials",
-                        ].includes(action.kind),
-                      )}
-                      layout="inline"
-                    />
-                  </div>
-                ) : (
-                  <p className="text-sm text-[var(--admin-muted)]">
-                    No Business Email service
-                  </p>
+                content: (
+                  <EntityEmailCard
+                    slug={slug}
+                    purchasedProfessionalEmail={purchasedProfessionalEmail}
+                    emailDomain={entity.emailDomain}
+                    emailService={entity.emailService}
+                    emailMailbox={entity.emailMailbox}
+                    actions={entity.actions}
+                  />
                 ),
               },
               {

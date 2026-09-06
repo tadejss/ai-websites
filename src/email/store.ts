@@ -175,6 +175,82 @@ export async function upsertCustomerDomain(input: {
   return mapDomain(rows[0]);
 }
 
+/**
+ * Admin upsert: insert pending domain, or revive cancelled/failed same-name row to pending.
+ * Does not activate.
+ */
+export async function upsertAdminCustomerDomain(input: {
+  customerSlug: string;
+  domain: string;
+}): Promise<CustomerDomainRecord> {
+  const normalized = normalizeDomain(input.domain);
+  if (!normalized) {
+    throw new Error(`Invalid domain: ${input.domain}`);
+  }
+
+  const db = await requireDb();
+  const rows = (await db`
+    INSERT INTO customer_domains (
+      customer_slug,
+      domain,
+      status,
+      source,
+      created_at,
+      updated_at
+    )
+    VALUES (
+      ${input.customerSlug},
+      ${normalized},
+      'pending',
+      'admin',
+      NOW(),
+      NOW()
+    )
+    ON CONFLICT (customer_slug, domain) DO UPDATE SET
+      status = CASE
+        WHEN customer_domains.status IN ('cancelled', 'failed') THEN 'pending'
+        ELSE customer_domains.status
+      END,
+      source = 'admin',
+      last_error = NULL,
+      updated_at = NOW()
+    RETURNING *
+  `) as DomainRow[];
+
+  return mapDomain(rows[0]);
+}
+
+/** Mark other domains for this customer as cancelled (keep one canonical row). */
+export async function cancelOtherCustomerDomains(input: {
+  customerSlug: string;
+  keepDomainId: number;
+}): Promise<void> {
+  const db = await requireDb();
+  await db`
+    UPDATE customer_domains
+    SET
+      status = 'cancelled',
+      updated_at = NOW()
+    WHERE customer_slug = ${input.customerSlug}
+      AND id <> ${input.keepDomainId}
+      AND status <> 'cancelled'
+  `;
+}
+
+export async function cancelCustomerDomainById(
+  domainId: number,
+): Promise<void> {
+  const db = await requireDb();
+  await db`
+    UPDATE customer_domains
+    SET
+      status = 'cancelled',
+      updated_at = NOW()
+    WHERE id = ${domainId}
+      AND status <> 'cancelled'
+  `;
+}
+
 export async function activateCustomerDomain(
   customerSlug: string,
 ): Promise<CustomerDomainRecord | null> {
