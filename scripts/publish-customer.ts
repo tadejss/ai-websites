@@ -5,12 +5,20 @@
  * Usage: npm run publish-customer -- <slug>
  */
 import "dotenv/config";
+import { isValidCustomerSlug } from "../src/lib/customer-slug";
 import { publishCustomerSite } from "../src/onboarding/publish-customer";
 
 async function main(): Promise<void> {
   const slug = process.argv[2]?.trim();
   if (!slug) {
     console.error("Usage: npm run publish-customer -- <slug>");
+    process.exit(1);
+  }
+
+  if (!isValidCustomerSlug(slug)) {
+    console.error(
+      "Invalid customer slug. Expected /^[a-z0-9]+(?:-[a-z0-9]+)*$/ (max 64).",
+    );
     process.exit(1);
   }
 

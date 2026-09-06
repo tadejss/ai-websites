@@ -1,11 +1,9 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { isValidAdminToken, readBearerToken } from "@/lib/auth";
+import { isAdminAuthorized } from "@/lib/admin-auth";
 import { isOutreachConfigured } from "@/outreach/config";
 import type { OutreachStep } from "@/leads/outreach-types";
 import { sendOutreachToLead } from "@/outreach/send";
-import { ADMIN_COOKIE } from "@/lib/auth";
-import { cookies } from "next/headers";
 import { logAdminAction } from "@/admin/audit";
 import { afterAdminMutation } from "@/admin/revalidate";
 
@@ -18,21 +16,8 @@ const bodySchema = z.object({
   force: z.boolean().optional(),
 });
 
-async function isAuthorized(request: Request): Promise<boolean> {
-  const bearer = readBearerToken(request.headers.get("authorization"));
-
-  if (isValidAdminToken(bearer)) {
-    return true;
-  }
-
-  const cookieStore = await cookies();
-  const session = cookieStore.get(ADMIN_COOKIE)?.value;
-
-  return isValidAdminToken(session);
-}
-
 export async function POST(request: Request) {
-  if (!(await isAuthorized(request))) {
+  if (!(await isAdminAuthorized(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

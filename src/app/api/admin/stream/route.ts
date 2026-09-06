@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { cookies } from "next/headers";
-import { ADMIN_COOKIE, isValidAdminToken, readBearerToken } from "@/lib/auth";
+import { isAdminAuthorized } from "@/lib/admin-auth";
 import { healthPayloadFromSnapshot } from "@/admin/health";
 import { getQueueCounts } from "@/admin/queue";
 import { loadFactoryOpsSnapshot } from "@/factory/ops-snapshot";
@@ -10,17 +9,8 @@ export const dynamic = "force-dynamic";
 
 const STREAM_INTERVAL_MS = 30_000;
 
-async function isAuthorized(request: Request): Promise<boolean> {
-  const bearer = readBearerToken(request.headers.get("authorization"));
-  if (isValidAdminToken(bearer)) {
-    return true;
-  }
-  const cookieStore = await cookies();
-  return isValidAdminToken(cookieStore.get(ADMIN_COOKIE)?.value);
-}
-
 export async function GET(request: Request) {
-  if (!(await isAuthorized(request))) {
+  if (!(await isAdminAuthorized(request))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 

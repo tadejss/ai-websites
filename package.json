@@ -59,6 +59,7 @@
     "test-email-provision": "tsx scripts/test-email-provision.ts",
     "test-website-domains": "tsx scripts/test-website-domains.ts",
     "test-admin-queue": "tsx scripts/test-admin-queue.ts",
+    "test-admin-security": "tsx scripts/test-admin-security.ts",
     "test-grok-qa": "tsx scripts/test-grok-qa.ts"
   },
   "dependencies": {
@@ -81,7 +82,7 @@
     "cmdk": "^1.1.1",
     "framer-motion": "^13.1.1",
     "lucide-react": "^1.38.0",
-    "next": "16.3.0",
+    "next": "16.3.4",
     "nodemailer": "^9.0.5",
     "openai": "^7.4.0",
     "react": "19.2.8",
@@ -104,7 +105,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "dotenv": "^17.4.2",
     "eslint": "^9",
-    "eslint-config-next": "16.3.0",
+    "eslint-config-next": "16.3.4",
     "tailwindcss": "^4",
     "tsx": "^4.23.9",
     "typescript": "^5"

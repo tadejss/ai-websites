@@ -1,4 +1,8 @@
-const ADMIN_COOKIE = "admin_session";
+/**
+ * Prefer __Host- so browsers enforce Secure + Path=/ + no Domain.
+ * Cookie holds a random session token — never ADMIN_SECRET.
+ */
+export const ADMIN_COOKIE = "__Host-admin_session";
 
 export function getAdminSecret(): string | null {
   return process.env.ADMIN_SECRET?.trim() || null;
@@ -65,5 +69,3 @@ export function readBearerToken(
 
   return authorizationHeader.slice("Bearer ".length).trim() || null;
 }
-
-export { ADMIN_COOKIE };

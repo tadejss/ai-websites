@@ -1,6 +1,12 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { ADMIN_COOKIE, getAdminSecret, isValidAdminToken } from "@/lib/auth";
+import { getAdminSecret, isValidAdminToken } from "@/lib/auth";
+import { isDatabaseConfigured } from "@/db/client";
+import {
+  ADMIN_SESSION_COOKIE,
+  createAdminSession,
+  getAdminSessionCookieOptions,
+} from "@/lib/admin-session";
 import { AdminBrandMark, AdminWordmark } from "@/components/admin/admin-brand";
 import { Button } from "@/components/admin/ui/button";
 import { Card, CardContent } from "@/components/admin/ui/card";
@@ -18,13 +24,17 @@ async function loginAction(formData: FormData) {
     redirect(`/admin/login?error=1&next=${encodeURIComponent(next)}`);
   }
 
+  if (!isDatabaseConfigured()) {
+    redirect(`/admin/login?error=1&next=${encodeURIComponent(next)}`);
+  }
+
+  const session = await createAdminSession();
   const cookieStore = await cookies();
-  cookieStore.set(ADMIN_COOKIE, password, {
-    httpOnly: true,
-    sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
-    path: "/",
-  });
+  cookieStore.set(
+    ADMIN_SESSION_COOKIE,
+    session.token,
+    getAdminSessionCookieOptions(session.expiresAt),
+  );
 
   redirect(next.startsWith("/admin") ? next : "/admin");
 }

@@ -14,6 +14,7 @@ import { mergeSiteConfigWithOnboarding, applyCustomerSite } from "../src/onboard
 import { overlaySiteConfigFromOnboarding } from "../src/onboarding/overlay-site-config";
 import { canOverlayOnboardingOnPublicSite } from "../src/onboarding/types";
 import { validateSiteConfig } from "../src/content/validate-site-config";
+import { isValidCustomerSlug } from "../src/lib/customer-slug";
 
 function ok(label: string, condition: boolean): void {
   assert.ok(condition, label);
@@ -317,6 +318,26 @@ function testOnboardingPhotosCreateGallery(): void {
   );
 }
 
+function testSlugRejectsInjection(): void {
+  console.log("\nCustomer slug injection rejection");
+
+  ok("valid slug accepted", isValidCustomerSlug("foto-studio"));
+  const rejected = [
+    "foo; touch /tmp/pwned",
+    "foo && echo hacked",
+    "foo$(whoami)",
+    "foo`whoami`",
+    "foo\nbar",
+    "foo/bar",
+    'foo"bar',
+    "foo'bar",
+    "../../foo",
+  ];
+  for (const value of rejected) {
+    ok(`rejects ${JSON.stringify(value)}`, !isValidCustomerSlug(value));
+  }
+}
+
 function testPublishStateTransitions(): void {
   console.log("\nPublish state transitions (logic)");
 
@@ -344,6 +365,7 @@ async function main(): Promise<void> {
   testOnboardingStatuses();
   testApplyCustomerSiteMerge();
   testDemoSnapshot();
+  testSlugRejectsInjection();
   testPublishStateTransitions();
   testPublicOverlay();
   testOnboardingPhotosCreateGallery();

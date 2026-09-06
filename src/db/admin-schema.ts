@@ -74,9 +74,31 @@ CREATE INDEX IF NOT EXISTS admin_system_events_created_idx
   ON admin_system_events (created_at DESC);
 `.trim();
 
+/**
+ * Server-side admin sessions. Only a SHA-256 hash of the cookie token is stored.
+ * Plaintext tokens and ADMIN_SECRET must never appear in this table.
+ */
+export const ADMIN_SESSIONS_SCHEMA_SQL = `
+CREATE TABLE IF NOT EXISTS admin_sessions (
+  token_hash TEXT PRIMARY KEY,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  expires_at TIMESTAMPTZ NOT NULL,
+  last_seen_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  revoked_at TIMESTAMPTZ
+);
+
+CREATE INDEX IF NOT EXISTS admin_sessions_expires_idx
+  ON admin_sessions (expires_at);
+
+CREATE INDEX IF NOT EXISTS admin_sessions_active_last_seen_idx
+  ON admin_sessions (last_seen_at)
+  WHERE revoked_at IS NULL;
+`.trim();
+
 export const ADMIN_SCHEMA_SQL = [
   ADMIN_AUDIT_SCHEMA_SQL,
   ADMIN_ENTITY_INDEX_SCHEMA_SQL,
   ADMIN_QUEUE_SNOOZE_SCHEMA_SQL,
   ADMIN_SYSTEM_EVENTS_SCHEMA_SQL,
+  ADMIN_SESSIONS_SCHEMA_SQL,
 ].join(";\n");

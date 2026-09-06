@@ -42,14 +42,25 @@ jobs:
           git config user.name "customer-publish"
           git config user.email "customer-publish@users.noreply.github.com"
 
-      - name: Resolve slug
+      - name: Resolve and validate slug
         id: slug
+        env:
+          CLIENT_PAYLOAD_SLUG: ${{ github.event.client_payload.slug }}
+          INPUT_SLUG: ${{ inputs.slug }}
         run: |
-          if [ -n "${{ github.event.client_payload.slug }}" ]; then
-            echo "value=${{ github.event.client_payload.slug }}" >> "$GITHUB_OUTPUT"
-          else
-            echo "value=${{ inputs.slug }}" >> "$GITHUB_OUTPUT"
+          set -euo pipefail
+          SLUG="${CLIENT_PAYLOAD_SLUG:-${INPUT_SLUG:-}}"
+          # Exact application slug format — reject anything else (no silent normalize).
+          if ! printf '%s' "$SLUG" | grep -Eq '^[a-z0-9]+(-[a-z0-9]+)*$'; then
+            echo "Invalid customer slug (rejected)." >&2
+            exit 1
           fi
+          if [ "${#SLUG}" -gt 64 ]; then
+            echo "Invalid customer slug (too long)." >&2
+            exit 1
+          fi
+          # Safe GITHUB_OUTPUT write: validated charset only, via printf.
+          printf 'value=%s\n' "$SLUG" >> "$GITHUB_OUTPUT"
 
       - name: Publish customer site
         env:
@@ -58,4 +69,5 @@ jobs:
           FACTORY_PUBLISH_ENABLED: "true"
           FACTORY_GIT_BRANCH: ${{ github.ref_name }}
           FACTORY_WORKER_ID: gha-customer-publish
-        run: npm run publish-customer -- "${{ steps.slug.outputs.value }}"
+          CUSTOMER_SLUG: ${{ steps.slug.outputs.value }}
+        run: npm run publish-customer -- "$CUSTOMER_SLUG"

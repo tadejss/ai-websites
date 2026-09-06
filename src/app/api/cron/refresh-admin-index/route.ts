@@ -2,14 +2,14 @@ import { NextResponse } from "next/server";
 import { refreshAdminEntityIndex } from "@/admin/entity-index";
 import { afterAdminMutation } from "@/admin/revalidate";
 import { logSystemEvent } from "@/admin/system-events";
+import { isValidCronToken, readBearerToken } from "@/lib/auth";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
-  const cronSecret = process.env.CRON_SECRET;
-  const auth = request.headers.get("authorization");
-  if (cronSecret && auth !== `Bearer ${cronSecret}`) {
+  const token = readBearerToken(request.headers.get("authorization"));
+  if (!isValidCronToken(token)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
@@ -22,4 +22,8 @@ export async function GET(request: Request) {
   });
 
   return NextResponse.json({ ok: true, count });
+}
+
+export async function POST(request: Request) {
+  return GET(request);
 }

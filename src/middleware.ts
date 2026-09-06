@@ -3,7 +3,9 @@ import {
   extractDemoSlugFromPathname,
   scheduleDemoViewFromRequest,
 } from "@/demo-lifecycle/middleware-demo-view";
-import { ADMIN_COOKIE, getAdminSecret, isValidAdminToken } from "@/lib/auth";
+import { ADMIN_COOKIE, getAdminSecret } from "@/lib/auth";
+import { validateAdminSessionToken } from "@/lib/admin-session";
+import { isDatabaseConfigured } from "@/db/client";
 import { getSlugForHost } from "@/lib/custom-domains";
 import { lookupLiveWebsiteSlugCached } from "@/website-domains/lookup-cache";
 import {
@@ -81,6 +83,7 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
 
   if (
     pathname === "/admin/login" ||
+    pathname === "/admin/logout" ||
     pathname === "/admin/manifest.webmanifest"
   ) {
     return NextResponse.next();
@@ -92,9 +95,23 @@ export async function middleware(request: NextRequest, event: NextFetchEvent) {
     return new NextResponse("Admin access is not configured.", { status: 503 });
   }
 
+  if (!isDatabaseConfigured()) {
+    return new NextResponse("Admin sessions require a database.", {
+      status: 503,
+    });
+  }
+
   const session = request.cookies.get(ADMIN_COOKIE)?.value;
 
-  if (!isValidAdminToken(session)) {
+  let sessionValid = false;
+  try {
+    sessionValid = await validateAdminSessionToken(session);
+  } catch {
+    // DB/transient failures must not grant access.
+    sessionValid = false;
+  }
+
+  if (!sessionValid) {
     const loginUrl = request.nextUrl.clone();
     loginUrl.pathname = "/admin/login";
     loginUrl.searchParams.set("next", pathname);
