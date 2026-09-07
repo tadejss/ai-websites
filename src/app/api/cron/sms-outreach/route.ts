@@ -12,6 +12,19 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  if (process.env.SMS_CRON_ENQUEUE_DISABLED?.trim() === "true") {
+    return NextResponse.json({
+      ok: true,
+      channel: "sms",
+      skipped: true,
+      reason: "SMS_CRON_ENQUEUE_DISABLED",
+      considered: 0,
+      queued: 0,
+      skippedCount: 0,
+      errors: [],
+    });
+  }
+
   if (!isDatabaseConfigured()) {
     return NextResponse.json({ error: "Database not configured" }, { status: 503 });
   }

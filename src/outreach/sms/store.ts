@@ -360,6 +360,89 @@ export async function claimQueuedMessages(input: {
   return rows.map(mapMessage);
 }
 
+/**
+ * Claim exactly one queued message by message_id.
+ * Never touches other queue rows — used for isolated one-shot sends.
+ */
+export async function claimQueuedMessageById(input: {
+  messageId: string;
+  claimedBy: string;
+  leaseMinutes: number;
+}): Promise<SmsMessageRecord | null> {
+  const db = await requireDb();
+  const rows = (await db`
+    UPDATE sms_messages AS m
+    SET
+      status = 'claimed',
+      claimed_at = NOW(),
+      claimed_by = ${input.claimedBy},
+      claim_expires_at = NOW() + make_interval(mins => ${input.leaseMinutes}),
+      updated_at = NOW()
+    WHERE m.message_id = ${input.messageId}
+      AND m.status = 'queued'
+      AND NOT EXISTS (
+        SELECT 1 FROM sms_opt_outs o WHERE o.phone = m.to_phone
+      )
+    RETURNING *
+  `) as MessageRow[];
+  return rows[0] ? mapMessage(rows[0]) : null;
+}
+
+export async function countSmsMessagesByStatuses(
+  statuses: string[],
+): Promise<Record<string, number>> {
+  if (!isDatabaseConfigured()) {
+    return Object.fromEntries(statuses.map((s) => [s, 0]));
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT status, COUNT(*)::int AS count
+    FROM sms_messages
+    WHERE status = ANY(${statuses})
+    GROUP BY status
+  `) as Array<{ status: string; count: number }>;
+  const out: Record<string, number> = Object.fromEntries(
+    statuses.map((s) => [s, 0]),
+  );
+  for (const row of rows) {
+    out[row.status] = row.count;
+  }
+  return out;
+}
+
+export async function listInFlightSmsFingerprints(): Promise<
+  Array<{
+    id: number;
+    messageId: string;
+    status: string;
+    updatedAt: string;
+  }>
+> {
+  if (!isDatabaseConfigured()) {
+    return [];
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT id, message_id, status, updated_at
+    FROM sms_messages
+    WHERE status IN ('queued', 'claimed', 'sending')
+    ORDER BY id ASC
+  `) as Array<{
+    id: number;
+    message_id: string;
+    status: string;
+    updated_at: Date | string;
+  }>;
+  return rows.map((row) => ({
+    id: Number(row.id),
+    messageId: row.message_id,
+    status: row.status,
+    updatedAt: toIso(row.updated_at) ?? String(row.updated_at),
+  }));
+}
+
 export async function markMessageSending(
   messageId: string,
 ): Promise<SmsMessageRecord | null> {

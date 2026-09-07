@@ -26,13 +26,22 @@ function stableMessageId(slug: string, step: SmsStep): string {
   return `sms_${slug}_${step}_${digest}`;
 }
 
+function smsDemoUrl(lead: LeadRecord): string {
+  // SMS-only short form (no https://). Do not change getDemoUrl / routing.
+  const slug = lead.slug?.trim();
+  if (slug) {
+    return `zbrendiraj.si/${slug}`;
+  }
+  return getDemoUrl(lead);
+}
+
 function smsContext(lead: LeadRecord, step: SmsStep) {
   return {
     companyName: smsCompanyDisplayName(
       lead.companyName,
       lead.slug,
     ),
-    demoUrl: getDemoUrl(lead),
+    demoUrl: smsDemoUrl(lead),
     hasExistingWebsite: Boolean(lead.existingWebsite?.trim()),
     step,
   };

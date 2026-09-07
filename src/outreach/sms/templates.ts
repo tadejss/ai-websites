@@ -4,6 +4,7 @@ import {
   UCS2_SINGLE_SEGMENT,
   type SmsStep,
 } from "./types";
+import { isGsm7Text } from "./gsm7";
 
 export type SmsTemplateContext = {
   companyName: string;
@@ -20,26 +21,8 @@ export type RenderedSms = {
   overLimit: boolean;
 };
 
-const GSM7_EXTRA = new Set(
-  "€£¥èéùìòÇØøÅåΔ_ΦΓΛΩΠΨΣΘΞÆæßÉ !\"#¤%&'()*+,-./0123456789:;<=>?¡ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÑÜ§¿abcdefghijklmnopqrstuvwxyzäöñüà".split(
-    "",
-  ),
-);
-
-function isGsm7(text: string): boolean {
-  for (const char of text) {
-    if (char === "\n" || char === "\r") {
-      continue;
-    }
-    if (!GSM7_EXTRA.has(char) && char.charCodeAt(0) > 127) {
-      return false;
-    }
-  }
-  return true;
-}
-
 export function analyzeSmsLength(text: string): Omit<RenderedSms, "text"> {
-  const gsm7 = isGsm7(text);
+  const gsm7 = isGsm7Text(text);
   const length = text.length;
 
   if (gsm7) {
@@ -69,8 +52,9 @@ export function analyzeSmsLength(text: string): Omit<RenderedSms, "text"> {
 }
 
 function initialCopy(ctx: SmsTemplateContext): string {
-  return `Živjo! Za ${ctx.companyName} sem pripravil brezplačen predlog spletne strani: ${ctx.demoUrl}
-Bi vas zanimalo, da jo uredimo? Tadej, Zbrendiraj.si`;
+  return `Zdravo! Za ${ctx.companyName} sem pripravil zastonj predlog spletne strani: ${ctx.demoUrl}
+Bi vas zanimalo, da jo uredimo? Tadej, Zbrendiraj.si
+Ali pa samo odgovorite z NE.`;
 }
 
 function followup1Copy(ctx: SmsTemplateContext): string {

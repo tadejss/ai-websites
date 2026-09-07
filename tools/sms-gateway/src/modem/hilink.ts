@@ -1,4 +1,5 @@
 import { HilinkError } from "./errors";
+import { buildHiLinkSendSmsPayload } from "./send-sms-payload";
 import type {
   DeleteSmsResult,
   IncomingSms,
@@ -34,11 +35,6 @@ function escapeXml(value: string): string {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&apos;");
-}
-
-function formatHiLinkDate(date = new Date()): string {
-  const pad = (n: number) => String(n).padStart(2, "0");
-  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
 }
 
 function headerValue(headers: Headers, name: string): string | null {
@@ -273,22 +269,12 @@ export class HiLinkModem implements SmsModem {
 
   async sendSms(to: string, message: string): Promise<SendSmsResult> {
     try {
-      const body =
-        `<?xml version='1.0' encoding='UTF-8'?>` +
-        `<request>` +
-        `<Index>-1</Index>` +
-        `<Phones><Phone>${escapeXml(to)}</Phone></Phones>` +
-        `<Sca></Sca>` +
-        `<Content>${escapeXml(message)}</Content>` +
-        `<Length>${message.length}</Length>` +
-        `<Reserved>1</Reserved>` +
-        `<Date>${formatHiLinkDate()}</Date>` +
-        `</request>`;
+      const payload = buildHiLinkSendSmsPayload(to, message);
 
       const { response, xml } = await this.request({
         path: "/api/sms/send-sms",
         method: "POST",
-        body,
+        body: payload.body,
         timeoutMs: POST_TIMEOUT_MS,
         allowRetry: false,
       });

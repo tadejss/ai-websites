@@ -48,18 +48,33 @@ async function main() {
 
   const rendered = renderSms({
     companyName: "Studio Test",
-    demoUrl: "https://zbrendiraj.si/studio-test",
+    demoUrl: "zbrendiraj.si/studio-test",
     hasExistingWebsite: false,
     step: "initial",
   });
   ok(rendered.text.includes("Studio Test"), "template company");
   ok(
-    rendered.text.includes("https://zbrendiraj.si/studio-test"),
-    "template url",
+    rendered.text.includes("zbrendiraj.si/studio-test"),
+    "template short url",
   );
-  ok(rendered.text.includes("brezplačen predlog"), "initial copy");
+  ok(rendered.text.includes("zastonj predlog"), "initial copy");
+  ok(
+    rendered.text.includes("Ali pa samo odgovorite z NE."),
+    "opt-out hint in initial",
+  );
+  ok(!/[ščžŠČŽ]/.test(rendered.text), "initial has no Slovenian diacritics");
+  ok(rendered.encoding === "gsm7", "initial is GSM-7");
   ok(!rendered.text.toLowerCase().includes("cena"), "no pricing in initial");
   ok(rendered.length > 0, "has length");
+
+  const manual = renderSms({
+    companyName: "Studio Test",
+    demoUrl: "zbrendiraj.si/studio-test",
+    hasExistingWebsite: false,
+    step: "manual",
+  });
+  ok(manual.text === rendered.text, "manual matches initial");
+  ok(manual.encoding === "gsm7", "manual is GSM-7");
 
   const follow1 = renderSms({
     companyName: "Studio Test",
