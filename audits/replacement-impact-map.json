@@ -1,0 +1,2046 @@
+{
+  "hash:8555282400b5f761": {
+    "asset_key": "hash:8555282400b5f761",
+    "used_by_count": 13,
+    "score": 5,
+    "reason": "Colored pencils wrong trade",
+    "recommendation": "Replace with trade-matched photo (not pencils)",
+    "path": "public/clients/elektro-kovac/services.jpg",
+    "source": "local:public/clients/elektro-kovac/services.jpg",
+    "searchQuery": "",
+    "alt": "Natančna izdelava ključev v delavnici",
+    "slugs": [
+      "elektro-kovac",
+      "marko-cerekovic",
+      "qa-vulkanizerji-01-classic-split",
+      "qa-vulkanizerji-02-editorial-type",
+      "qa-vulkanizerji-03-photo-forward",
+      "qa-vulkanizerji-04-stats-trust",
+      "qa-vulkanizerji-05-minimal-line",
+      "qa-vulkanizerji-06-service-grid",
+      "qa-vulkanizerji-07-asymmetric-bold",
+      "qa-vulkanizerji-08-dark-pro",
+      "qa-vulkanizerji-09-warm-soft",
+      "qa-vulkanizerji-10-industrial-plain",
+      "vulkanizerstvo-izdelava-kljucev"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Avtovulkanizerstvo in ključavničarstvo",
+      "Elektroinstalaterstvo",
+      "Elektromonterske storitve"
+    ],
+    "uses": [
+      {
+        "slug": "qa-vulkanizerji-05-minimal-line",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "elektro-kovac",
+        "slot": "services",
+        "industry": "Elektromonterske storitve",
+        "alt": "Orodja in električne napeljave za elektroinštalacije",
+        "src": "/clients/elektro-kovac/services.jpg"
+      },
+      {
+        "slug": "qa-vulkanizerji-03-photo-forward",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "qa-vulkanizerji-09-warm-soft",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "qa-vulkanizerji-07-asymmetric-bold",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "marko-cerekovic",
+        "slot": "services",
+        "industry": "Elektroinstalaterstvo",
+        "alt": "Orodje in oprema za elektroinstalacije",
+        "src": "/clients/marko-cerekovic/services.jpg"
+      },
+      {
+        "slug": "qa-vulkanizerji-02-editorial-type",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "qa-vulkanizerji-10-industrial-plain",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "qa-vulkanizerji-01-classic-split",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "vulkanizerstvo-izdelava-kljucev",
+        "slot": "services",
+        "industry": "Avtovulkanizerstvo in ključavničarstvo",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "qa-vulkanizerji-06-service-grid",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "qa-vulkanizerji-08-dark-pro",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      },
+      {
+        "slug": "qa-vulkanizerji-04-stats-trust",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančna izdelava ključev v delavnici",
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "pexels:32588548": {
+    "asset_key": "pexels:32588548",
+    "used_by_count": 13,
+    "score": 18,
+    "reason": "Cyrillic ТЕХНОБЫТСЕРВИС overalls",
+    "recommendation": "Replace plumbing without Cyrillic",
+    "path": "",
+    "source": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
+    "searchQuery": "plumber working on pipes installation",
+    "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+    "slugs": [
+      "kaplja-vodovodne-andrej",
+      "napeljava-vodovodnih-centralnih",
+      "qa-vodovodarji-ogrevanje-01-classic-split",
+      "qa-vodovodarji-ogrevanje-02-editorial-type",
+      "qa-vodovodarji-ogrevanje-03-photo-forward",
+      "qa-vodovodarji-ogrevanje-04-stats-trust",
+      "qa-vodovodarji-ogrevanje-05-minimal-line",
+      "qa-vodovodarji-ogrevanje-06-service-grid",
+      "qa-vodovodarji-ogrevanje-07-asymmetric-bold",
+      "qa-vodovodarji-ogrevanje-08-dark-pro",
+      "qa-vodovodarji-ogrevanje-09-warm-soft",
+      "qa-vodovodarji-ogrevanje-10-industrial-plain",
+      "vodovodne-instalacije-marjan"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "Vodovodne in ogrevalne storitve",
+      "Vodovodne inštalacije",
+      "vodovodne storitve in inštalacije"
+    ],
+    "uses": [
+      {
+        "slug": "vodovodne-instalacije-marjan",
+        "slot": "services",
+        "industry": "Vodovodne inštalacije",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-09-warm-soft",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-06-service-grid",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-02-editorial-type",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "kaplja-vodovodne-andrej",
+        "slot": "services",
+        "industry": "vodovodne storitve in inštalacije",
+        "alt": "Montaža sanitarne opreme in vodovodne inštalacije",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/kaplja-vodovodne-andrej/services.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-04-stats-trust",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-01-classic-split",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-07-asymmetric-bold",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-08-dark-pro",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "napeljava-vodovodnih-centralnih",
+        "slot": "hero",
+        "industry": "Vodovodne in ogrevalne storitve",
+        "alt": "Vodovodar pri montaži inštalacij",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/napeljava-vodovodnih-centralnih/hero.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-03-photo-forward",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-05-minimal-line",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      },
+      {
+        "slug": "qa-vodovodarji-ogrevanje-10-industrial-plain",
+        "slot": "services",
+        "industry": "",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:6c4ea29bfcfb03ec": {
+    "asset_key": "hash:6c4ea29bfcfb03ec",
+    "used_by_count": 11,
+    "score": 20,
+    "reason": "SE-Asian head-spa setup; Vietnamese GỪNG label",
+    "recommendation": "Replace with EU facial/spa treatment",
+    "path": "public/clients/kozmeticni-salon-lila/hero.jpg",
+    "source": "local:public/clients/kozmeticni-salon-lila/hero.jpg",
+    "searchQuery": "",
+    "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+    "slugs": [
+      "kozmeticni-salon-lila",
+      "qa-kozmeticarji-01-classic-split",
+      "qa-kozmeticarji-02-editorial-type",
+      "qa-kozmeticarji-03-photo-forward",
+      "qa-kozmeticarji-04-stats-trust",
+      "qa-kozmeticarji-05-minimal-line",
+      "qa-kozmeticarji-06-service-grid",
+      "qa-kozmeticarji-07-asymmetric-bold",
+      "qa-kozmeticarji-08-dark-pro",
+      "qa-kozmeticarji-09-warm-soft",
+      "qa-kozmeticarji-10-industrial-plain"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Kozmetični salon"
+    ],
+    "uses": [
+      {
+        "slug": "qa-kozmeticarji-07-asymmetric-bold",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "qa-kozmeticarji-08-dark-pro",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "qa-kozmeticarji-06-service-grid",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "qa-kozmeticarji-01-classic-split",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "kozmeticni-salon-lila",
+        "slot": "hero",
+        "industry": "Kozmetični salon",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "qa-kozmeticarji-02-editorial-type",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "qa-kozmeticarji-09-warm-soft",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "qa-kozmeticarji-10-industrial-plain",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "qa-kozmeticarji-03-photo-forward",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "qa-kozmeticarji-04-stats-trust",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      },
+      {
+        "slug": "qa-kozmeticarji-05-minimal-line",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+        "src": "/clients/kozmeticni-salon-lila/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:ef30f78dabe1795f": {
+    "asset_key": "hash:ef30f78dabe1795f",
+    "used_by_count": 11,
+    "score": 22,
+    "reason": "Beauty vanity English skincare for keramičarstvo",
+    "recommendation": "Replace with tiling",
+    "path": "public/clients/keramicarstvo-mubi-igor/services.jpg",
+    "source": "local:public/clients/keramicarstvo-mubi-igor/services.jpg",
+    "searchQuery": "",
+    "alt": "Natančno polaganje keramike in prenova kopalnice",
+    "slugs": [
+      "keramicarstvo-mubi-igor",
+      "qa-keramicarji-01-classic-split",
+      "qa-keramicarji-02-editorial-type",
+      "qa-keramicarji-03-photo-forward",
+      "qa-keramicarji-04-stats-trust",
+      "qa-keramicarji-05-minimal-line",
+      "qa-keramicarji-06-service-grid",
+      "qa-keramicarji-07-asymmetric-bold",
+      "qa-keramicarji-08-dark-pro",
+      "qa-keramicarji-09-warm-soft",
+      "qa-keramicarji-10-industrial-plain"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Keramičarske storitve in polaganje keramike"
+    ],
+    "uses": [
+      {
+        "slug": "qa-keramicarji-10-industrial-plain",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "qa-keramicarji-08-dark-pro",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "keramicarstvo-mubi-igor",
+        "slot": "services",
+        "industry": "Keramičarske storitve in polaganje keramike",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "qa-keramicarji-05-minimal-line",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "qa-keramicarji-04-stats-trust",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "qa-keramicarji-02-editorial-type",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "qa-keramicarji-09-warm-soft",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "qa-keramicarji-01-classic-split",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "qa-keramicarji-06-service-grid",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "qa-keramicarji-07-asymmetric-bold",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      },
+      {
+        "slug": "qa-keramicarji-03-photo-forward",
+        "slot": "services",
+        "industry": "",
+        "alt": "Natančno polaganje keramike in prenova kopalnice",
+        "src": "/clients/keramicarstvo-mubi-igor/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "pexels:28153670": {
+    "asset_key": "pexels:28153670",
+    "used_by_count": 10,
+    "score": 35,
+    "reason": "Informal outdoor night garage non-EU plate cues",
+    "recommendation": "Indoor EU bay",
+    "path": "",
+    "source": "https://www.pexels.com/photo/a-young-man-is-working-on-a-car-engine-28153670/",
+    "searchQuery": "auto mechanic working on car engine",
+    "alt": "Avtomehanik pri delu v sodobni delavnici",
+    "slugs": [
+      "9fast-anze-soklic",
+      "avtoservis-bojan-zagar",
+      "avtoservis-celarc-crt",
+      "avtoservis-kepec-bostjan",
+      "avtoservis-stefko-stefan",
+      "elektromehanika-marko-zupancic",
+      "pirnar-stanislav-avtoservis",
+      "servis-popravilo-vozil",
+      "vzdrzevanje-popravila-motornih-2",
+      "zavorni-servis-avtomehanika"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "Avtomehanična delavnica",
+      "Avtoservisna delavnica",
+      "Elektro storitve in elektromehanika"
+    ],
+    "uses": [
+      {
+        "slug": "servis-popravilo-vozil",
+        "slot": "hero",
+        "industry": "Avtomehanična delavnica",
+        "alt": "Avtomehanik pri delu v sodobni delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/servis-popravilo-vozil/hero.avif"
+      },
+      {
+        "slug": "elektromehanika-marko-zupancic",
+        "slot": "hero",
+        "industry": "Elektro storitve in elektromehanika",
+        "alt": "Električar med delom na električni plošči v delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektromehanika-marko-zupancic/hero.avif"
+      },
+      {
+        "slug": "avtoservis-celarc-crt",
+        "slot": "hero",
+        "industry": "Avtoservisna delavnica",
+        "alt": "Mehanik pri delu v avtoservisni delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-celarc-crt/hero.avif"
+      },
+      {
+        "slug": "avtoservis-stefko-stefan",
+        "slot": "hero",
+        "industry": "Avtomehanična delavnica",
+        "alt": "Avtomehanik med popravilom motorja v delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-stefko-stefan/hero.avif"
+      },
+      {
+        "slug": "avtoservis-bojan-zagar",
+        "slot": "services",
+        "industry": "Avtoservisna delavnica",
+        "alt": "Opremljena avtoservisna delavnica za popravilo in vzdrževanje vozil",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-bojan-zagar/services.avif"
+      },
+      {
+        "slug": "9fast-anze-soklic",
+        "slot": "hero",
+        "industry": "Avtomehanična delavnica",
+        "alt": "Sodobna avtomehanična delavnica z mehanikom pri delu",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/9fast-anze-soklic/hero.avif"
+      },
+      {
+        "slug": "zavorni-servis-avtomehanika",
+        "slot": "hero",
+        "industry": "Avtomehanična delavnica",
+        "alt": "Mehanik popravlja zavorni sistem v delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/zavorni-servis-avtomehanika/hero.avif"
+      },
+      {
+        "slug": "vzdrzevanje-popravila-motornih-2",
+        "slot": "services",
+        "industry": "Avtomehanična delavnica",
+        "alt": "Servisiranje in popravilo avtomobila v delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih-2/services.avif"
+      },
+      {
+        "slug": "pirnar-stanislav-avtoservis",
+        "slot": "services",
+        "industry": "Avtoservisna delavnica",
+        "alt": "Menjava pnevmatik in vulkanizerske storitve v avtoservisu",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pirnar-stanislav-avtoservis/services.avif"
+      },
+      {
+        "slug": "avtoservis-kepec-bostjan",
+        "slot": "services",
+        "industry": "Avtoservisna delavnica",
+        "alt": "Orodja in oprema za avtodiagnostiko in popravilo vozil",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-kepec-bostjan/services.avif"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "pexels:7451918": {
+    "asset_key": "pexels:7451918",
+    "used_by_count": 9,
+    "score": 28,
+    "reason": "English CAUTION + DAIRY/DELI supermarket",
+    "recommendation": "Cleaning without English store signs",
+    "path": "",
+    "source": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
+    "searchQuery": "commercial cleaning team interior",
+    "alt": "Oprema za globinsko čiščenje in urejen prostor",
+    "slugs": [
+      "cistilni-servis-kristalcek",
+      "cistilni-servis-luco",
+      "cistilni-servis-zeljka",
+      "cistilnica-pucelj-kamnik",
+      "ekea-alma-nuhanovic",
+      "hisnik-toni-vzdrzevanje",
+      "splosno-ciscenje-stavb",
+      "top-cistilni-servis",
+      "vzdrzevanje-objektov-mix"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "Pralnica in čistilnica",
+      "Vzdrževanje in upravljanje objektov",
+      "Vzdrževanje objektov in hišniška opravila",
+      "splošno čiščenje stavb",
+      "Čistilne storitve",
+      "Čiščenje stavb in objektov"
+    ],
+    "uses": [
+      {
+        "slug": "top-cistilni-servis",
+        "slot": "services",
+        "industry": "Čistilne storitve",
+        "alt": "Oprema za globinsko čiščenje in urejen prostor",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/top-cistilni-servis/services.avif"
+      },
+      {
+        "slug": "cistilni-servis-kristalcek",
+        "slot": "hero",
+        "industry": "Čistilne storitve",
+        "alt": "Profesionalno čiščenje svetlih in urejenih prostorov",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-kristalcek/hero.avif"
+      },
+      {
+        "slug": "hisnik-toni-vzdrzevanje",
+        "slot": "services",
+        "industry": "Vzdrževanje objektov in hišniška opravila",
+        "alt": "Oprema za vzdrževanje objektov in hišniška opravila",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/hisnik-toni-vzdrzevanje/services.avif"
+      },
+      {
+        "slug": "cistilni-servis-zeljka",
+        "slot": "hero",
+        "industry": "Čistilne storitve",
+        "alt": "Svetel in čist sodoben prostor kot prikaz profesionalnih storitev čiščenja",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zeljka/hero.avif"
+      },
+      {
+        "slug": "splosno-ciscenje-stavb",
+        "slot": "hero",
+        "industry": "Čiščenje stavb in objektov",
+        "alt": "Strokovno čiščenje poslovnih prostorov v Ljubljani",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/splosno-ciscenje-stavb/hero.avif"
+      },
+      {
+        "slug": "vzdrzevanje-objektov-mix",
+        "slot": "hero",
+        "industry": "Vzdrževanje in upravljanje objektov",
+        "alt": "Strokovno vzdrževanje in urejanje poslovnih in stanovanjskih objektov",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-objektov-mix/hero.avif"
+      },
+      {
+        "slug": "cistilni-servis-luco",
+        "slot": "hero",
+        "industry": "Čistilne storitve",
+        "alt": "Sodobna in svetla pisarna po strokovnem čiščenju v Ljubljani",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-luco/hero.avif"
+      },
+      {
+        "slug": "cistilnica-pucelj-kamnik",
+        "slot": "hero",
+        "industry": "Pralnica in čistilnica",
+        "alt": "Notranjost sodobne čistilnice in pralnice",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilnica-pucelj-kamnik/hero.avif"
+      },
+      {
+        "slug": "ekea-alma-nuhanovic",
+        "slot": "services",
+        "industry": "splošno čiščenje stavb",
+        "alt": "Globinsko očiščen sodoben bivalni prostor",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/ekea-alma-nuhanovic/services.avif"
+      }
+    ],
+    "multi_trade_risk": true
+  },
+  "pexels:9626877": {
+    "asset_key": "pexels:9626877",
+    "used_by_count": 9,
+    "score": 35,
+    "reason": ".FR domain on mechanic uniform",
+    "recommendation": "Uniform without foreign domains",
+    "path": "",
+    "source": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
+    "searchQuery": "auto mechanic working on car engine",
+    "alt": "Oprema za diagnostiko in popravilo vozil v avtomehanični delavnici",
+    "slugs": [
+      "avtocenter-litija-zlato",
+      "avtomehanika-koscak-primoz",
+      "avtoservis-celarc-crt",
+      "avtoservis-handa-eldin",
+      "car-repair-shop",
+      "mehanika-bodlaj-druzba",
+      "mrd-avto-mojca",
+      "pirnar-stanislav-avtoservis",
+      "servis-vozil-tadej"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "Avtomehanična delavnica",
+      "Avtomehanična delavnica in servis",
+      "Avtomehanične storitve",
+      "Avtoservisna delavnica"
+    ],
+    "uses": [
+      {
+        "slug": "servis-vozil-tadej",
+        "slot": "services",
+        "industry": "Avtomehanična delavnica",
+        "alt": "Oprema za diagnostiko in popravilo vozil v avtomehanični delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/servis-vozil-tadej/services.avif"
+      },
+      {
+        "slug": "mrd-avto-mojca",
+        "slot": "hero",
+        "industry": "Avtomehanična delavnica",
+        "alt": "Avtomehanična delavnica med servisiranjem vozila",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mrd-avto-mojca/hero.avif"
+      },
+      {
+        "slug": "avtomehanika-koscak-primoz",
+        "slot": "hero",
+        "industry": "Avtomehanične storitve",
+        "alt": "Avtomehanik pri delu v sodobni delavnici v Grosupljem",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtomehanika-koscak-primoz/hero.avif"
+      },
+      {
+        "slug": "avtoservis-celarc-crt",
+        "slot": "services",
+        "industry": "Avtoservisna delavnica",
+        "alt": "Diagnostika in vzdrževanje vozil v delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-celarc-crt/services.avif"
+      },
+      {
+        "slug": "car-repair-shop",
+        "slot": "hero",
+        "industry": "Avtomehanične storitve",
+        "alt": "Avtomehanična delavnica Pelko z mehanikom pri delu",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/car-repair-shop/hero.avif"
+      },
+      {
+        "slug": "avtoservis-handa-eldin",
+        "slot": "hero",
+        "industry": "Avtomehanična delavnica",
+        "alt": "Avtomehanik med delom v urejeni delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtoservis-handa-eldin/hero.avif"
+      },
+      {
+        "slug": "avtocenter-litija-zlato",
+        "slot": "hero",
+        "industry": "Avtomehanična delavnica in servis",
+        "alt": "Notranjnost sodobne avtomehanične delavnice z orodjem",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtocenter-litija-zlato/hero.avif"
+      },
+      {
+        "slug": "mehanika-bodlaj-druzba",
+        "slot": "hero",
+        "industry": "Avtomehanične storitve",
+        "alt": "Mehanik pri delu v sodobni avtomehanični delavnici v Kamniku",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mehanika-bodlaj-druzba/hero.avif"
+      },
+      {
+        "slug": "pirnar-stanislav-avtoservis",
+        "slot": "hero",
+        "industry": "Avtoservisna delavnica",
+        "alt": "Mehanik med delom na motorju avtomobila v sodobni avtoservisni delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/pirnar-stanislav-avtoservis/hero.avif"
+      }
+    ],
+    "multi_trade_risk": true
+  },
+  "hash:31a9c52ff8409bbd": {
+    "asset_key": "hash:31a9c52ff8409bbd",
+    "used_by_count": 7,
+    "score": 8,
+    "reason": "Barbershop stock on elektro",
+    "recommendation": "Replace electrical",
+    "path": "public/clients/elektro-veber-tone/hero.jpg",
+    "source": "local:public/clients/elektro-veber-tone/hero.jpg",
+    "searchQuery": "",
+    "alt": "Električar pri delu na elektro omarici",
+    "slugs": [
+      "elektro-veber-tone",
+      "elektro-zagar-jan",
+      "frizerstvo-erna-tesnjak",
+      "gavro-elektro-hisniske",
+      "keramicarstvo-zeljko-zeljko",
+      "marko-cerekovic",
+      "vulkanizerstvo-andrej-kaluza"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Avtomehanična in vulkanizerska delavnica",
+      "Elektro in hišniške storitve",
+      "Elektro storitve",
+      "Elektroinstalaterstvo",
+      "Frizerski salon",
+      "Polaganje keramike in gradbena dela"
+    ],
+    "uses": [
+      {
+        "slug": "elektro-veber-tone",
+        "slot": "hero",
+        "industry": "Elektro storitve",
+        "alt": "Električar pri delu na elektro omarici",
+        "src": "/clients/elektro-veber-tone/hero.jpg"
+      },
+      {
+        "slug": "elektro-zagar-jan",
+        "slot": "hero",
+        "industry": "Elektroinstalaterstvo",
+        "alt": "Električar pri delu na elektroinštalacijah v sveti in topli sobi",
+        "src": "/clients/elektro-zagar-jan/hero.jpg"
+      },
+      {
+        "slug": "vulkanizerstvo-andrej-kaluza",
+        "slot": "hero",
+        "industry": "Avtomehanična in vulkanizerska delavnica",
+        "alt": "Mehanik menja pnevmatike v sodobni delavnici",
+        "src": "/clients/vulkanizerstvo-andrej-kaluza/hero.jpg"
+      },
+      {
+        "slug": "keramicarstvo-zeljko-zeljko",
+        "slot": "hero",
+        "industry": "Polaganje keramike in gradbena dela",
+        "alt": "Strokovno polaganje keramičnih ploščic v notranjih prostorih",
+        "src": "/clients/keramicarstvo-zeljko-zeljko/hero.jpg"
+      },
+      {
+        "slug": "marko-cerekovic",
+        "slot": "hero",
+        "industry": "Elektroinstalaterstvo",
+        "alt": "Električar pri delu na elektro omarici",
+        "src": "/clients/marko-cerekovic/hero.jpg"
+      },
+      {
+        "slug": "frizerstvo-erna-tesnjak",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Notranjost sodobnega in prijetnega frizerskega salona z naravno svetlobo",
+        "src": "/clients/frizerstvo-erna-tesnjak/hero.jpg"
+      },
+      {
+        "slug": "gavro-elektro-hisniske",
+        "slot": "hero",
+        "industry": "Elektro in hišniške storitve",
+        "alt": "Električar med delom na električni napeljavi",
+        "src": "/clients/gavro-elektro-hisniske/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": true
+  },
+  "hash:3915b81a23c3f9ce": {
+    "asset_key": "hash:3915b81a23c3f9ce",
+    "used_by_count": 6,
+    "score": 35,
+    "reason": "UK Type G wall outlet in salon",
+    "recommendation": "Replace with SI/EU Schuko salon",
+    "path": "public/clients/frizerski-salon-branka/hero.jpg",
+    "source": "local:public/clients/frizerski-salon-branka/hero.jpg",
+    "searchQuery": "",
+    "alt": "Notranjost toplega frizerskega salona z naravno svetlobo",
+    "slugs": [
+      "frizerski-salon-branka",
+      "frizerski-salon-edita",
+      "frizerski-salon-katja-2",
+      "frizerski-salon-mojca-2",
+      "frizerski-salon-neva",
+      "frizerski-salon-renata"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Frizerski salon",
+      "frizerski salon"
+    ],
+    "uses": [
+      {
+        "slug": "frizerski-salon-mojca-2",
+        "slot": "hero",
+        "industry": "frizerski salon",
+        "alt": "Notranjost toplega frizerskega salona z naravno svetlobo",
+        "src": "/clients/frizerski-salon-mojca-2/hero.jpg"
+      },
+      {
+        "slug": "frizerski-salon-renata",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Notranjost toplega lokalnega frizerskega salona v naravni svetlobi",
+        "src": "/clients/frizerski-salon-renata/hero.jpg"
+      },
+      {
+        "slug": "frizerski-salon-edita",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Svetel in urejen frizerski salon z naravno svetlobo v Pivki",
+        "src": "/clients/frizerski-salon-edita/hero.jpg"
+      },
+      {
+        "slug": "frizerski-salon-branka",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Notranjost prijetnega frizerskega salona z naravno svetlobo",
+        "src": "/clients/frizerski-salon-branka/hero.jpg"
+      },
+      {
+        "slug": "frizerski-salon-katja-2",
+        "slot": "hero",
+        "industry": "frizerski salon",
+        "alt": "Svetel in urejen ambient frizerskega salona z naravno svetlobo",
+        "src": "/clients/frizerski-salon-katja-2/hero.jpg"
+      },
+      {
+        "slug": "frizerski-salon-neva",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Svetel in topel ambient frizerskega salona z naravno svetlobo",
+        "src": "/clients/frizerski-salon-neva/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "pexels:7220892": {
+    "asset_key": "pexels:7220892",
+    "used_by_count": 4,
+    "score": 18,
+    "reason": "US round doorknob not plumbing",
+    "recommendation": "Pipe/heating install",
+    "path": "",
+    "source": "https://www.pexels.com/photo/a-person-holding-brown-doorknob-7220892/",
+    "searchQuery": "plumber working on pipes installation",
+    "alt": "Montaža vodovodnih inštalacij in sanitarne keramike",
+    "slugs": [
+      "napeljava-vodovodnih-centralnih",
+      "vodovodar-ljubljana",
+      "vodovodne-instalacije-asmir",
+      "vodovodne-napeljave-prenove"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "Vodovodne in inštalacijske storitve",
+      "Vodovodne in ogrevalne storitve",
+      "Vodovodne inštalacije"
+    ],
+    "uses": [
+      {
+        "slug": "vodovodne-instalacije-asmir",
+        "slot": "services",
+        "industry": "Vodovodne inštalacije",
+        "alt": "Montaža vodovodnih inštalacij in sanitarne keramike",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-asmir/services.avif"
+      },
+      {
+        "slug": "vodovodar-ljubljana",
+        "slot": "services",
+        "industry": "Vodovodne in inštalacijske storitve",
+        "alt": "Montaža sanitarne opreme in vodovodne inštalacije",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodar-ljubljana/services.avif"
+      },
+      {
+        "slug": "napeljava-vodovodnih-centralnih",
+        "slot": "services",
+        "industry": "Vodovodne in ogrevalne storitve",
+        "alt": "Montaža vodovodnih inštalacij",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/napeljava-vodovodnih-centralnih/services.avif"
+      },
+      {
+        "slug": "vodovodne-napeljave-prenove",
+        "slot": "hero",
+        "industry": "Vodovodne in inštalacijske storitve",
+        "alt": "Strokovni vodovodni mojster pri inštalaciji cevi",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-napeljave-prenove/hero.avif"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:da9499e132f96eff": {
+    "asset_key": "hash:da9499e132f96eff",
+    "used_by_count": 4,
+    "score": 22,
+    "reason": "Dutch Bussum/Naarden storefront text",
+    "recommendation": "Replace unmarked salon",
+    "path": "public/clients/brivsko-frizerski-salon/services.jpg",
+    "source": "local:public/clients/brivsko-frizerski-salon/services.jpg",
+    "searchQuery": "",
+    "alt": "Strokovno barvanje las in oblikovanje pričesk v prijetnem ambientu",
+    "slugs": [
+      "brivsko-frizerski-salon",
+      "frizerski-salon-renata-2",
+      "frizerstvo-marija-marija",
+      "havajana-frizersko-lepotilni"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Frizerski in brivski salon",
+      "Frizerski in lepotilni salon",
+      "Frizerski salon"
+    ],
+    "uses": [
+      {
+        "slug": "havajana-frizersko-lepotilni",
+        "slot": "services",
+        "industry": "Frizerski in lepotilni salon",
+        "alt": "Strokovno barvanje las in oblikovanje pričesk v prijetnem ambientu",
+        "src": "/clients/havajana-frizersko-lepotilni/services.jpg"
+      },
+      {
+        "slug": "frizerstvo-marija-marija",
+        "slot": "services",
+        "industry": "Frizerski salon",
+        "alt": "Strokovne frizerske storitve in urejanje las v prijetnem salonu",
+        "src": "/clients/frizerstvo-marija-marija/services.jpg"
+      },
+      {
+        "slug": "frizerski-salon-renata-2",
+        "slot": "services",
+        "industry": "Frizerski salon",
+        "alt": "Strokovno barvanje las in oblikovanje pričesk v prijetnem salonu",
+        "src": "/clients/frizerski-salon-renata-2/services.jpg"
+      },
+      {
+        "slug": "brivsko-frizerski-salon",
+        "slot": "services",
+        "industry": "Frizerski in brivski salon",
+        "alt": "Strokovno striženje in nega las v prijetnem ambientu salona",
+        "src": "/clients/brivsko-frizerski-salon/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "pexels:33388390": {
+    "asset_key": "pexels:33388390",
+    "used_by_count": 4,
+    "score": 28,
+    "reason": "Pressure washer in sandals wrong trade/OHS",
+    "recommendation": "Boiler/pipe with PPE",
+    "path": "",
+    "source": "https://www.pexels.com/photo/technician-repairing-industrial-equipment-in-workshop-33388390/",
+    "searchQuery": "professional plumber installing modern heating and plumbing system",
+    "alt": "Strokovne strojne in vodovodne inštalacije za dom",
+    "slugs": [
+      "4mvodovodne-instalacije-matic",
+      "aqua-install-milos",
+      "lekse-instalacije-vladislav",
+      "vodoinstalaterstvo-adi-dervis"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "Strojne in vodovodne inštalacije",
+      "Vodoinštalaterske storitve",
+      "Vodovodne inštalacije",
+      "Vodovodne inštalacije in storitve"
+    ],
+    "uses": [
+      {
+        "slug": "lekse-instalacije-vladislav",
+        "slot": "hero",
+        "industry": "Strojne in vodovodne inštalacije",
+        "alt": "Strokovne strojne in vodovodne inštalacije za dom",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lekse-instalacije-vladislav/hero.avif"
+      },
+      {
+        "slug": "vodoinstalaterstvo-adi-dervis",
+        "slot": "services",
+        "industry": "Vodoinštalaterske storitve",
+        "alt": "Montaža sanitarne opreme v sodobni kopalnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/services.avif"
+      },
+      {
+        "slug": "4mvodovodne-instalacije-matic",
+        "slot": "hero",
+        "industry": "Vodovodne inštalacije in storitve",
+        "alt": "Profesionalne vodovodne inštalacije in montaža sanitarne opreme",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/4mvodovodne-instalacije-matic/hero.avif"
+      },
+      {
+        "slug": "aqua-install-milos",
+        "slot": "hero",
+        "industry": "Vodovodne inštalacije",
+        "alt": "Vodovodni inštalater pri delu",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/aqua-install-milos/hero.avif"
+      }
+    ],
+    "multi_trade_risk": true
+  },
+  "pexels:1029635": {
+    "asset_key": "pexels:1029635",
+    "used_by_count": 3,
+    "score": 28,
+    "reason": "Outdoor gas-meter utility not residential plumbing",
+    "recommendation": "Indoor pipe/heating install",
+    "path": "",
+    "source": "https://www.pexels.com/photo/black-and-yellow-water-filter-system-1029635/",
+    "searchQuery": "plumber working on pipes installation",
+    "alt": "Vodoinštalater pri delu na vodovodni napeljavi",
+    "slugs": [
+      "3ici-install-vodovodne",
+      "vodoinstalaterstvo-adi-dervis",
+      "vodvrt-vodovodne-instalacije"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "Vodoinštalaterske storitve",
+      "Vodovodne inštalacije",
+      "Vodovodne inštalacije in urejanje vrtov"
+    ],
+    "uses": [
+      {
+        "slug": "vodoinstalaterstvo-adi-dervis",
+        "slot": "hero",
+        "industry": "Vodoinštalaterske storitve",
+        "alt": "Vodoinštalater pri delu na vodovodni napeljavi",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/hero.avif"
+      },
+      {
+        "slug": "vodvrt-vodovodne-instalacije",
+        "slot": "services",
+        "industry": "Vodovodne inštalacije in urejanje vrtov",
+        "alt": "Urejanje vrta in zunanje okolice objekta",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodvrt-vodovodne-instalacije/services.avif"
+      },
+      {
+        "slug": "3ici-install-vodovodne",
+        "slot": "services",
+        "industry": "Vodovodne inštalacije",
+        "alt": "Moderna vodovodna inštalacija in sanitarna oprema",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/3ici-install-vodovodne/services.avif"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:284d71d703f510a2": {
+    "asset_key": "hash:284d71d703f510a2",
+    "used_by_count": 3,
+    "score": 35,
+    "reason": "Russian Cyrillic wall text",
+    "recommendation": "Replace/crop Cyrillic",
+    "path": "public/clients/frizerski-studio-dejan/hero.jpg",
+    "source": "local:public/clients/frizerski-studio-dejan/hero.jpg",
+    "searchQuery": "",
+    "alt": "Notranjost sodobnega frizerskega studia v toplih toni",
+    "slugs": [
+      "frizerski-studio-dejan",
+      "frizerstvo-plesko-branka",
+      "frizerstvo-vesna-vuksinic"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Frizerski salon",
+      "frizerski salon"
+    ],
+    "uses": [
+      {
+        "slug": "frizerski-studio-dejan",
+        "slot": "hero",
+        "industry": "frizerski salon",
+        "alt": "Notranjost sodobnega frizerskega studia v toplih toni",
+        "src": "/clients/frizerski-studio-dejan/hero.jpg"
+      },
+      {
+        "slug": "frizerstvo-vesna-vuksinic",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Svetel in urejen frizerski salon",
+        "src": "/clients/frizerstvo-vesna-vuksinic/hero.jpg"
+      },
+      {
+        "slug": "frizerstvo-plesko-branka",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Svetel in sodoben frizerski salon z naravno svetlobo",
+        "src": "/clients/frizerstvo-plesko-branka/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "pexels:26605672": {
+    "asset_key": "pexels:26605672",
+    "used_by_count": 2,
+    "score": 5,
+    "reason": "Houston TX tire shop English/Spanish signs",
+    "recommendation": "Unmarked EU vulcanizer",
+    "path": "",
+    "source": "https://www.pexels.com/photo/exterior-of-a-tire-shop-26605672/",
+    "searchQuery": "modern tire change and wheel balancing service station",
+    "alt": "Menjava pnevmatik in vulkanizerske storitve v delavnici",
+    "slugs": [
+      "vulkanizerstvo-jan-dobnikar",
+      "vzdrzevanje-vozil-vulkanizerstvo"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "Avtomehanične in vulkanizerske storitve"
+    ],
+    "uses": [
+      {
+        "slug": "vzdrzevanje-vozil-vulkanizerstvo",
+        "slot": "services",
+        "industry": "Avtomehanične in vulkanizerske storitve",
+        "alt": "Menjava pnevmatik in vulkanizerske storitve v delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-vozil-vulkanizerstvo/services.avif"
+      },
+      {
+        "slug": "vulkanizerstvo-jan-dobnikar",
+        "slot": "hero",
+        "industry": "Avtomehanične in vulkanizerske storitve",
+        "alt": "Mehankar pri menjavi pnevmatik v delavnici",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo-jan-dobnikar/hero.avif"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "pexels:33314764": {
+    "asset_key": "pexels:33314764",
+    "used_by_count": 2,
+    "score": 12,
+    "reason": "Lounge banquette not electrician work",
+    "recommendation": "Electrical install",
+    "path": "",
+    "source": "https://www.pexels.com/photo/minimalist-wood-interior-with-cozy-niche-seating-33314764/",
+    "searchQuery": "professional electrician installing lighting fixture warm interior",
+    "alt": "Električar pri delu na moderni elektro omari",
+    "slugs": [
+      "elektro-instalacije-kovac",
+      "elektroinstalacije-tehnicne-gorazd"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "elektroinštalacije"
+    ],
+    "uses": [
+      {
+        "slug": "elektro-instalacije-kovac",
+        "slot": "hero",
+        "industry": "",
+        "alt": "Električar pri delu na moderni elektro omari",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-instalacije-kovac/hero.avif"
+      },
+      {
+        "slug": "elektroinstalacije-tehnicne-gorazd",
+        "slot": "services",
+        "industry": "elektroinštalacije",
+        "alt": "Montaža svetil in elektroinštalacijska dela",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-tehnicne-gorazd/services.avif"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:c254d8db5b5f1c6f": {
+    "asset_key": "hash:c254d8db5b5f1c6f",
+    "used_by_count": 2,
+    "score": 18,
+    "reason": "Chaotic outdoor meters; non-EU labels",
+    "recommendation": "Replace neat EU metering",
+    "path": "public/clients/elektro-zagar-jan/services.jpg",
+    "source": "local:public/clients/elektro-zagar-jan/services.jpg",
+    "searchQuery": "",
+    "alt": "Montaža in pregled elektroopreme ter razdelilnih omaric",
+    "slugs": [
+      "elektro-zagar-jan",
+      "wise-electronics"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Elektro storitve in inštalacije",
+      "Elektroinstalaterstvo"
+    ],
+    "uses": [
+      {
+        "slug": "elektro-zagar-jan",
+        "slot": "services",
+        "industry": "Elektroinstalaterstvo",
+        "alt": "Montaža in pregled elektroopreme ter razdelilnih omaric",
+        "src": "/clients/elektro-zagar-jan/services.jpg"
+      },
+      {
+        "slug": "wise-electronics",
+        "slot": "services",
+        "industry": "Elektro storitve in inštalacije",
+        "alt": "Podrobnost električne omarice in napeljav za pametne inštalacije",
+        "src": "/clients/wise-electronics/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "pexels:10871585": {
+    "asset_key": "pexels:10871585",
+    "used_by_count": 2,
+    "score": 20,
+    "reason": "Indonesian K3 hardhat emblem",
+    "recommendation": "EU panel work",
+    "path": "",
+    "source": "https://www.pexels.com/photo/electricians-at-work-10871585/",
+    "searchQuery": "electrician working electrical panel",
+    "alt": "Strokovna izvedba elektroinštalacij v objektu",
+    "slugs": [
+      "elektro-instalacije-kovac",
+      "elektroinstalacije-saso-sodja"
+    ],
+    "slots": [
+      "hero",
+      "services"
+    ],
+    "industries": [
+      "Elektroinstalaterstvo"
+    ],
+    "uses": [
+      {
+        "slug": "elektro-instalacije-kovac",
+        "slot": "services",
+        "industry": "",
+        "alt": "Strokovna izvedba elektroinštalacij v objektu",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-instalacije-kovac/services.avif"
+      },
+      {
+        "slug": "elektroinstalacije-saso-sodja",
+        "slot": "hero",
+        "industry": "Elektroinstalaterstvo",
+        "alt": "Električar pri delu na električni omarici v svetlem prostoru",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-saso-sodja/hero.avif"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "pexels:9139593": {
+    "asset_key": "pexels:9139593",
+    "used_by_count": 2,
+    "score": 22,
+    "reason": "US performance car show garage",
+    "recommendation": "EU hatchback bodywork",
+    "path": "",
+    "source": "https://www.pexels.com/photo/red-ferrari-458-italia-parked-in-garage-9139593/",
+    "searchQuery": "professional auto body repair shop dark modern workshop",
+    "alt": "Sodobna avtokleparska in ličarska delavnica za popravilo vozil",
+    "slugs": [
+      "am-janc-avtokleparstvo",
+      "don-avtokleparstvo-licarstvo"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Avtokleparstvo in avtoličarstvo",
+      "Avtokleparstvo in popravilo vozil"
+    ],
+    "uses": [
+      {
+        "slug": "don-avtokleparstvo-licarstvo",
+        "slot": "hero",
+        "industry": "Avtokleparstvo in avtoličarstvo",
+        "alt": "Sodobna avtokleparska in ličarska delavnica za popravilo vozil",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/don-avtokleparstvo-licarstvo/hero.avif"
+      },
+      {
+        "slug": "am-janc-avtokleparstvo",
+        "slot": "hero",
+        "industry": "Avtokleparstvo in popravilo vozil",
+        "alt": "Strokovna avtokleparska delavnica z opremo za popravilo vozil",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/am-janc-avtokleparstvo/hero.avif"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:8e3f9c621f419fde": {
+    "asset_key": "hash:8e3f9c621f419fde",
+    "used_by_count": 2,
+    "score": 25,
+    "reason": "Sewing atelier not salon",
+    "recommendation": "Salon interior",
+    "path": "public/clients/frizerski-studio-sonce/hero.jpg",
+    "source": "local:public/clients/frizerski-studio-sonce/hero.jpg",
+    "searchQuery": "",
+    "alt": "Topel in svetel frizerski salon",
+    "slugs": [
+      "frizerski-studio-sonce",
+      "frizerstvo-andreja-frank"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Frizerski salon",
+      "frizerski salon"
+    ],
+    "uses": [
+      {
+        "slug": "frizerstvo-andreja-frank",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Topel in svetel frizerski salon",
+        "src": "/clients/frizerstvo-andreja-frank/hero.jpg"
+      },
+      {
+        "slug": "frizerski-studio-sonce",
+        "slot": "hero",
+        "industry": "frizerski salon",
+        "alt": "Notranjost modernega frizerskega studia v Postojni z naravno svetlobo",
+        "src": "/clients/frizerski-studio-sonce/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:72a50d8763236882": {
+    "asset_key": "hash:72a50d8763236882",
+    "used_by_count": 2,
+    "score": 40,
+    "reason": "UK Type G outlets",
+    "recommendation": "EU-outlet salon",
+    "path": "public/clients/frizerski-salon-karmen/hero.jpg",
+    "source": "local:public/clients/frizerski-salon-karmen/hero.jpg",
+    "searchQuery": "",
+    "alt": "Topel in prijeten ambient frizerskega salona z naravno svetlobo",
+    "slugs": [
+      "frizerski-salon-karmen",
+      "frizerski-salon-simicak"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Frizerski salon",
+      "frizerski salon"
+    ],
+    "uses": [
+      {
+        "slug": "frizerski-salon-simicak",
+        "slot": "hero",
+        "industry": "frizerski salon",
+        "alt": "Topel in prijeten ambient frizerskega salona z naravno svetlobo",
+        "src": "/clients/frizerski-salon-simicak/hero.jpg"
+      },
+      {
+        "slug": "frizerski-salon-karmen",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Topel in prijeten frizerski salon z naravno svetlobo",
+        "src": "/clients/frizerski-salon-karmen/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:24913374f7f594c3": {
+    "asset_key": "hash:24913374f7f594c3",
+    "used_by_count": 1,
+    "score": 5,
+    "reason": "Commercial kitchen wrong trade",
+    "recommendation": "Electronics bench",
+    "path": "public/clients/servis-industrijske-elektronike/services.jpg",
+    "source": "local:public/clients/servis-industrijske-elektronike/services.jpg",
+    "searchQuery": "",
+    "alt": "Diagnostika in vzdrževanje industrijskih elektronskih naprav",
+    "slugs": [
+      "servis-industrijske-elektronike"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Servis industrijske elektronike"
+    ],
+    "uses": [
+      {
+        "slug": "servis-industrijske-elektronike",
+        "slot": "services",
+        "industry": "Servis industrijske elektronike",
+        "alt": "Diagnostika in vzdrževanje industrijskih elektronskih naprav",
+        "src": "/clients/servis-industrijske-elektronike/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:07363e93123cf01d": {
+    "asset_key": "hash:07363e93123cf01d",
+    "used_by_count": 1,
+    "score": 8,
+    "reason": "AI trunk composite / picnic not vulcanizer",
+    "recommendation": "On-road tire service",
+    "path": "public/clients/mobilni-vulkanizer-radic/services.jpg",
+    "source": "local:public/clients/mobilni-vulkanizer-radic/services.jpg",
+    "searchQuery": "",
+    "alt": "Menjava avtomobilske pnevmatike na terenu ob cesti",
+    "slugs": [
+      "mobilni-vulkanizer-radic"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Avtomehanične storitve in vulkanizerstvo"
+    ],
+    "uses": [
+      {
+        "slug": "mobilni-vulkanizer-radic",
+        "slot": "services",
+        "industry": "Avtomehanične storitve in vulkanizerstvo",
+        "alt": "Menjava avtomobilske pnevmatike na terenu ob cesti",
+        "src": "/clients/mobilni-vulkanizer-radic/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:5dea952118321630": {
+    "asset_key": "hash:5dea952118321630",
+    "used_by_count": 1,
+    "score": 10,
+    "reason": "Forest landscape no beauty",
+    "recommendation": "Treatment/salon",
+    "path": "public/clients/lepotni-studio-dama/services.jpg",
+    "source": "local:public/clients/lepotni-studio-dama/services.jpg",
+    "searchQuery": "",
+    "alt": "Kozmetične storitve in urejanje v mirnem ambientu salona",
+    "slugs": [
+      "lepotni-studio-dama"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "kozmetični salon"
+    ],
+    "uses": [
+      {
+        "slug": "lepotni-studio-dama",
+        "slot": "services",
+        "industry": "kozmetični salon",
+        "alt": "Kozmetične storitve in urejanje v mirnem ambientu salona",
+        "src": "/clients/lepotni-studio-dama/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:b9c5db74d1cb607e": {
+    "asset_key": "hash:b9c5db74d1cb607e",
+    "used_by_count": 1,
+    "score": 10,
+    "reason": "Caving scene zero elektro",
+    "recommendation": "Panel/wiring",
+    "path": "public/clients/elmont-elektroservis-peter/hero.jpg",
+    "source": "local:public/clients/elmont-elektroservis-peter/hero.jpg",
+    "searchQuery": "",
+    "alt": "Električar med delom na električni omarici",
+    "slugs": [
+      "elmont-elektroservis-peter"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Elektroservis in elektroinštalacije"
+    ],
+    "uses": [
+      {
+        "slug": "elmont-elektroservis-peter",
+        "slot": "hero",
+        "industry": "Elektroservis in elektroinštalacije",
+        "alt": "Električar med delom na električni omarici",
+        "src": "/clients/elmont-elektroservis-peter/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:2f95e44528e2d544": {
+    "asset_key": "hash:2f95e44528e2d544",
+    "used_by_count": 1,
+    "score": 12,
+    "reason": "Nightlife lifestyle portrait not elektro",
+    "recommendation": "Replace trade hero",
+    "path": "public/clients/elektro-kovac/hero.jpg",
+    "source": "local:public/clients/elektro-kovac/hero.jpg",
+    "searchQuery": "",
+    "alt": "Električar med delom na elektro omari",
+    "slugs": [
+      "elektro-kovac"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Elektromonterske storitve"
+    ],
+    "uses": [
+      {
+        "slug": "elektro-kovac",
+        "slot": "hero",
+        "industry": "Elektromonterske storitve",
+        "alt": "Električar med delom na elektro omari",
+        "src": "/clients/elektro-kovac/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:80be6e5472d750ac": {
+    "asset_key": "hash:80be6e5472d750ac",
+    "used_by_count": 1,
+    "score": 12,
+    "reason": "Metal hinge not electrical",
+    "recommendation": "Household electrical",
+    "path": "public/clients/gavro-elektro-hisniske/services.jpg",
+    "source": "local:public/clients/gavro-elektro-hisniske/services.jpg",
+    "searchQuery": "",
+    "alt": "Orodje za hišna popravila in vzdrževanje",
+    "slugs": [
+      "gavro-elektro-hisniske"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Elektro in hišniške storitve"
+    ],
+    "uses": [
+      {
+        "slug": "gavro-elektro-hisniske",
+        "slot": "services",
+        "industry": "Elektro in hišniške storitve",
+        "alt": "Orodje za hišna popravila in vzdrževanje",
+        "src": "/clients/gavro-elektro-hisniske/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:81b7772e7755926f": {
+    "asset_key": "hash:81b7772e7755926f",
+    "used_by_count": 1,
+    "score": 12,
+    "reason": "Lifestyle portrait no repair cues",
+    "recommendation": "Machine repair workshop",
+    "path": "public/clients/popravilo-elektrotehnicnih-strojev/hero.jpg",
+    "source": "local:public/clients/popravilo-elektrotehnicnih-strojev/hero.jpg",
+    "searchQuery": "",
+    "alt": "Serviser popravlja gospodinjski aparat na domu stranke",
+    "slugs": [
+      "popravilo-elektrotehnicnih-strojev"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Servis in popravilo gospodinjskih aparatov"
+    ],
+    "uses": [
+      {
+        "slug": "popravilo-elektrotehnicnih-strojev",
+        "slot": "hero",
+        "industry": "Servis in popravilo gospodinjskih aparatov",
+        "alt": "Serviser popravlja gospodinjski aparat na domu stranke",
+        "src": "/clients/popravilo-elektrotehnicnih-strojev/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:418aa4686f69d77b": {
+    "asset_key": "hash:418aa4686f69d77b",
+    "used_by_count": 1,
+    "score": 14,
+    "reason": "Outboard motor workshop not elektro",
+    "recommendation": "Electrical install",
+    "path": "public/clients/else-za-elektro/services.jpg",
+    "source": "local:public/clients/else-za-elektro/services.jpg",
+    "searchQuery": "",
+    "alt": "Orodja in material za elektro inštalacije in servis",
+    "slugs": [
+      "else-za-elektro"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "elektro inštalacije in servisne storitve"
+    ],
+    "uses": [
+      {
+        "slug": "else-za-elektro",
+        "slot": "services",
+        "industry": "elektro inštalacije in servisne storitve",
+        "alt": "Orodja in material za elektro inštalacije in servis",
+        "src": "/clients/else-za-elektro/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:9c400fab8b4b023c": {
+    "asset_key": "hash:9c400fab8b4b023c",
+    "used_by_count": 1,
+    "score": 15,
+    "reason": "Welding/metalwork not tiling",
+    "recommendation": "Swap for tiling install",
+    "path": "public/clients/keramicarstvo-ales-kucic/services.jpg",
+    "source": "local:public/clients/keramicarstvo-ales-kucic/services.jpg",
+    "searchQuery": "",
+    "alt": "Natančno polaganje talnih ploščic in zaključna dela",
+    "slugs": [
+      "keramicarstvo-ales-kucic"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Polaganje keramike in gradbena dela"
+    ],
+    "uses": [
+      {
+        "slug": "keramicarstvo-ales-kucic",
+        "slot": "services",
+        "industry": "Polaganje keramike in gradbena dela",
+        "alt": "Natančno polaganje talnih ploščic in zaključna dela",
+        "src": "/clients/keramicarstvo-ales-kucic/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:f59f973255b4f310": {
+    "asset_key": "hash:f59f973255b4f310",
+    "used_by_count": 1,
+    "score": 18,
+    "reason": "Air hose not electrical",
+    "recommendation": "Panels/wiring",
+    "path": "public/clients/elektrotehnika-puntar-slavko/services.jpg",
+    "source": "local:public/clients/elektrotehnika-puntar-slavko/services.jpg",
+    "searchQuery": "",
+    "alt": "Elektroinštalacije in oprema za dom in podjetje",
+    "slugs": [
+      "elektrotehnika-puntar-slavko"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Elektro storitve"
+    ],
+    "uses": [
+      {
+        "slug": "elektrotehnika-puntar-slavko",
+        "slot": "services",
+        "industry": "Elektro storitve",
+        "alt": "Elektroinštalacije in oprema za dom in podjetje",
+        "src": "/clients/elektrotehnika-puntar-slavko/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:f8dbc96ab16496d5": {
+    "asset_key": "hash:f8dbc96ab16496d5",
+    "used_by_count": 1,
+    "score": 18,
+    "reason": "NA double yellow road lines; no tire service",
+    "recommendation": "SI roadside tire service",
+    "path": "public/clients/mobilni-vulkanizer-radic/hero.jpg",
+    "source": "local:public/clients/mobilni-vulkanizer-radic/hero.jpg",
+    "searchQuery": "",
+    "alt": "Mobilni vulkanizer nudi pomoč na cesti v meglenem jutru",
+    "slugs": [
+      "mobilni-vulkanizer-radic"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Avtomehanične storitve in vulkanizerstvo"
+    ],
+    "uses": [
+      {
+        "slug": "mobilni-vulkanizer-radic",
+        "slot": "hero",
+        "industry": "Avtomehanične storitve in vulkanizerstvo",
+        "alt": "Mobilni vulkanizer nudi pomoč na cesti v meglenem jutru",
+        "src": "/clients/mobilni-vulkanizer-radic/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:e26fd1f51fd0808b": {
+    "asset_key": "hash:e26fd1f51fd0808b",
+    "used_by_count": 1,
+    "score": 20,
+    "reason": "Tangled cables unprofessional",
+    "recommendation": "Clean electrical work",
+    "path": "public/clients/elmont-elektroservis-peter/services.jpg",
+    "source": "local:public/clients/elmont-elektroservis-peter/services.jpg",
+    "searchQuery": "",
+    "alt": "Strokovne elektroinštalacije in orodje",
+    "slugs": [
+      "elmont-elektroservis-peter"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Elektroservis in elektroinštalacije"
+    ],
+    "uses": [
+      {
+        "slug": "elmont-elektroservis-peter",
+        "slot": "services",
+        "industry": "Elektroservis in elektroinštalacije",
+        "alt": "Strokovne elektroinštalacije in orodje",
+        "src": "/clients/elmont-elektroservis-peter/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:b396ba6b69981984": {
+    "asset_key": "hash:b396ba6b69981984",
+    "used_by_count": 1,
+    "score": 22,
+    "reason": "CGI armchair tropical plants not salon",
+    "recommendation": "Salon station",
+    "path": "public/clients/frizerski-studio-soul/hero.jpg",
+    "source": "local:public/clients/frizerski-studio-soul/hero.jpg",
+    "searchQuery": "",
+    "alt": "Sodoben in svetel frizerski salon",
+    "slugs": [
+      "frizerski-studio-soul"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Frizerski salon"
+    ],
+    "uses": [
+      {
+        "slug": "frizerski-studio-soul",
+        "slot": "hero",
+        "industry": "Frizerski salon",
+        "alt": "Sodoben in svetel frizerski salon",
+        "src": "/clients/frizerski-studio-soul/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:cd3bc9856376ff15": {
+    "asset_key": "hash:cd3bc9856376ff15",
+    "used_by_count": 1,
+    "score": 22,
+    "reason": "Informal cluttered shop with security gate",
+    "recommendation": "Replace with tidy salon",
+    "path": "public/clients/frizerstvo-suzana-suzana/services.jpg",
+    "source": "local:public/clients/frizerstvo-suzana-suzana/services.jpg",
+    "searchQuery": "",
+    "alt": "Strokovne frizerske storitve in barvanje las",
+    "slugs": [
+      "frizerstvo-suzana-suzana"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Frizerski salon"
+    ],
+    "uses": [
+      {
+        "slug": "frizerstvo-suzana-suzana",
+        "slot": "services",
+        "industry": "Frizerski salon",
+        "alt": "Strokovne frizerske storitve in barvanje las",
+        "src": "/clients/frizerstvo-suzana-suzana/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:40c45e597422eb61": {
+    "asset_key": "hash:40c45e597422eb61",
+    "used_by_count": 1,
+    "score": 25,
+    "reason": "South Asian/ME ornate terrace tiling atypical for SI SME",
+    "recommendation": "Central-EU bathroom/kitchen tiling",
+    "path": "public/clients/amoris-keramicarstvo-zakljucna/services.jpg",
+    "source": "local:public/clients/amoris-keramicarstvo-zakljucna/services.jpg",
+    "searchQuery": "",
+    "alt": "Strokovnjak pri natančnem polaganju keramičnih ploščic",
+    "slugs": [
+      "amoris-keramicarstvo-zakljucna"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Keramičarstvo in gradbena dela"
+    ],
+    "uses": [
+      {
+        "slug": "amoris-keramicarstvo-zakljucna",
+        "slot": "services",
+        "industry": "Keramičarstvo in gradbena dela",
+        "alt": "Strokovnjak pri natančnem polaganju keramičnih ploščic",
+        "src": "/clients/amoris-keramicarstvo-zakljucna/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:447c1cdb6783a99d": {
+    "asset_key": "hash:447c1cdb6783a99d",
+    "used_by_count": 1,
+    "score": 25,
+    "reason": "Tuner meet not vulcanizing; ZG plate",
+    "recommendation": "Replace with tire service",
+    "path": "public/clients/dbf-vulkanizerstvo-hitri/hero.jpg",
+    "source": "local:public/clients/dbf-vulkanizerstvo-hitri/hero.jpg",
+    "searchQuery": "",
+    "alt": "Notranjost avtomehanične delavnice z orodjem in avtomobilom",
+    "slugs": [
+      "dbf-vulkanizerstvo-hitri"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Avtomehanične in vulkanizerske storitve"
+    ],
+    "uses": [
+      {
+        "slug": "dbf-vulkanizerstvo-hitri",
+        "slot": "hero",
+        "industry": "Avtomehanične in vulkanizerske storitve",
+        "alt": "Notranjost avtomehanične delavnice z orodjem in avtomobilom",
+        "src": "/clients/dbf-vulkanizerstvo-hitri/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:8859e8a75b7064ec": {
+    "asset_key": "hash:8859e8a75b7064ec",
+    "used_by_count": 1,
+    "score": 28,
+    "reason": "Metaphorical wrenches BHARAT/imperial",
+    "recommendation": "Real electromechanical repair",
+    "path": "public/clients/popravilo-elektrotehnicnih-strojev/services.jpg",
+    "source": "local:public/clients/popravilo-elektrotehnicnih-strojev/services.jpg",
+    "searchQuery": "",
+    "alt": "Orodja in rezervni deli za servis bele tehnike",
+    "slugs": [
+      "popravilo-elektrotehnicnih-strojev"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "Servis in popravilo gospodinjskih aparatov"
+    ],
+    "uses": [
+      {
+        "slug": "popravilo-elektrotehnicnih-strojev",
+        "slot": "services",
+        "industry": "Servis in popravilo gospodinjskih aparatov",
+        "alt": "Orodja in rezervni deli za servis bele tehnike",
+        "src": "/clients/popravilo-elektrotehnicnih-strojev/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:425069b27dc5f23b": {
+    "asset_key": "hash:425069b27dc5f23b",
+    "used_by_count": 1,
+    "score": 30,
+    "reason": "Imperial measurements NA framing",
+    "recommendation": "Replace with metric/EU electrical",
+    "path": "public/clients/elektro-poje-dejan/hero.jpg",
+    "source": "local:public/clients/elektro-poje-dejan/hero.jpg",
+    "searchQuery": "",
+    "alt": "Električar med delom na elektro inštalacijah v hiši",
+    "slugs": [
+      "elektro-poje-dejan"
+    ],
+    "slots": [
+      "hero"
+    ],
+    "industries": [
+      "Elektro storitve"
+    ],
+    "uses": [
+      {
+        "slug": "elektro-poje-dejan",
+        "slot": "hero",
+        "industry": "Elektro storitve",
+        "alt": "Električar med delom na elektro inštalacijah v hiši",
+        "src": "/clients/elektro-poje-dejan/hero.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  },
+  "hash:e31028865f0af9e5": {
+    "asset_key": "hash:e31028865f0af9e5",
+    "used_by_count": 1,
+    "score": 30,
+    "reason": "Pottery workshop not sink fabrication",
+    "recommendation": "Sink machining/install",
+    "path": "public/clients/umivalniki-dreams-obdelava/services.jpg",
+    "source": "local:public/clients/umivalniki-dreams-obdelava/services.jpg",
+    "searchQuery": "",
+    "alt": "Natančno polaganje keramike in obdelava ploščic",
+    "slugs": [
+      "umivalniki-dreams-obdelava"
+    ],
+    "slots": [
+      "services"
+    ],
+    "industries": [
+      "general_contractor"
+    ],
+    "uses": [
+      {
+        "slug": "umivalniki-dreams-obdelava",
+        "slot": "services",
+        "industry": "general_contractor",
+        "alt": "Natančno polaganje keramike in obdelava ploščic",
+        "src": "/clients/umivalniki-dreams-obdelava/services.jpg"
+      }
+    ],
+    "multi_trade_risk": false
+  }
+}

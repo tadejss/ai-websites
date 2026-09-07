@@ -16,8 +16,12 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/gavro-elektro-hisniske/hero.jpg",
-      "alt": "Električar med delom na električni napeljavi"
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
+      "alt": "Električar med delom na električni napeljavi",
+      "searchQuery": "electrician working electrical panel",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     },
     "services": {
       "src": "/clients/gavro-elektro-hisniske/services.jpg",

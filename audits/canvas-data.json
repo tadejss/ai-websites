@@ -1,0 +1,1550 @@
+{
+  "coverage": {
+    "unique_used_assets": 339,
+    "unused_cache_assets": 4,
+    "classified_non_unknown": 221,
+    "unknown": 122,
+    "by_category": {
+      "REPLACE": 42,
+      "REVIEW": 51,
+      "UNKNOWN": 122,
+      "KEEP": 128
+    }
+  },
+  "high_impact": [
+    {
+      "category": "REPLACE",
+      "score": 5,
+      "asset_key": "hash:8555282400b5f761",
+      "used_by_count": 13,
+      "reason": "Colored pencils wrong trade",
+      "recommendation": "Replace tire/key cutting"
+    },
+    {
+      "category": "REPLACE",
+      "score": 18,
+      "asset_key": "pexels:32588548",
+      "used_by_count": 13,
+      "reason": "Cyrillic ТЕХНОБЫТСЕРВИС overalls",
+      "recommendation": "Replace plumbing without Cyrillic"
+    },
+    {
+      "category": "REPLACE",
+      "score": 20,
+      "asset_key": "hash:6c4ea29bfcfb03ec",
+      "used_by_count": 11,
+      "reason": "SE-Asian head-spa setup; Vietnamese GỪNG label",
+      "recommendation": "Replace with EU facial/spa treatment"
+    },
+    {
+      "category": "REPLACE",
+      "score": 22,
+      "asset_key": "hash:ef30f78dabe1795f",
+      "used_by_count": 11,
+      "reason": "Beauty vanity English skincare for keramičarstvo",
+      "recommendation": "Replace with tiling"
+    },
+    {
+      "category": "REPLACE",
+      "score": 35,
+      "asset_key": "pexels:28153670",
+      "used_by_count": 10,
+      "reason": "Informal outdoor night garage non-EU plate cues",
+      "recommendation": "Indoor EU bay"
+    },
+    {
+      "category": "REPLACE",
+      "score": 28,
+      "asset_key": "pexels:7451918",
+      "used_by_count": 9,
+      "reason": "English CAUTION + DAIRY/DELI supermarket",
+      "recommendation": "Cleaning without English store signs"
+    },
+    {
+      "category": "REPLACE",
+      "score": 35,
+      "asset_key": "pexels:9626877",
+      "used_by_count": 9,
+      "reason": ".FR domain on mechanic uniform",
+      "recommendation": "Uniform without foreign domains"
+    },
+    {
+      "category": "REPLACE",
+      "score": 8,
+      "asset_key": "hash:31a9c52ff8409bbd",
+      "used_by_count": 7,
+      "reason": "Barbershop stock on elektro",
+      "recommendation": "Replace electrical"
+    },
+    {
+      "category": "REPLACE",
+      "score": 35,
+      "asset_key": "hash:3915b81a23c3f9ce",
+      "used_by_count": 6,
+      "reason": "UK Type G wall outlet in salon",
+      "recommendation": "Replace with SI/EU Schuko salon"
+    },
+    {
+      "category": "REVIEW",
+      "score": 62,
+      "asset_key": "pexels:8985712",
+      "used_by_count": 20,
+      "reason": "Strong workshop scene but background poster appears Cyrillic",
+      "recommendation": "Crop poster or replace"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "pexels:4374743",
+      "used_by_count": 16,
+      "reason": "Abstract ocean foam weak trade visual",
+      "recommendation": "Atmosphere only or replace"
+    },
+    {
+      "category": "REVIEW",
+      "score": 74,
+      "asset_key": "pexels:37809549",
+      "used_by_count": 15,
+      "reason": "PDR strong but branded cap",
+      "recommendation": "Crop branding"
+    },
+    {
+      "category": "REVIEW",
+      "score": 46,
+      "asset_key": "hash:ee3cc120088b931d",
+      "used_by_count": 13,
+      "reason": "EXIT + palm",
+      "recommendation": "Replace"
+    },
+    {
+      "category": "REVIEW",
+      "score": 38,
+      "asset_key": "pexels:1694980",
+      "used_by_count": 11,
+      "reason": "Abstract cracked wall texture weak trade",
+      "recommendation": "Decorative only"
+    },
+    {
+      "category": "REVIEW",
+      "score": 55,
+      "asset_key": "pexels:30499654",
+      "used_by_count": 11,
+      "reason": "Dark cluttered historic workshop",
+      "recommendation": "Brighter workshop"
+    },
+    {
+      "category": "REVIEW",
+      "score": 62,
+      "asset_key": "pexels:35546238",
+      "used_by_count": 10,
+      "reason": "Spa bed with third-party logo",
+      "recommendation": "Crop logo"
+    },
+    {
+      "category": "REVIEW",
+      "score": 74,
+      "asset_key": "pexels:20381389",
+      "used_by_count": 9,
+      "reason": "English CAUTION wet-floor sign",
+      "recommendation": "Crop sign"
+    },
+    {
+      "category": "REVIEW",
+      "score": 68,
+      "asset_key": "pexels:6196684",
+      "used_by_count": 9,
+      "reason": "Staged red overalls stock campaign",
+      "recommendation": "Prefer candid action"
+    },
+    {
+      "category": "REVIEW",
+      "score": 65,
+      "asset_key": "pexels:6196694",
+      "used_by_count": 9,
+      "reason": "Staged red overalls portrait",
+      "recommendation": "Working-in-context"
+    },
+    {
+      "category": "REVIEW",
+      "score": 70,
+      "asset_key": "pexels:6197114",
+      "used_by_count": 9,
+      "reason": "B&W glass cleaning editorial",
+      "recommendation": "Prefer color"
+    },
+    {
+      "category": "REVIEW",
+      "score": 72,
+      "asset_key": "pexels:8985924",
+      "used_by_count": 9,
+      "reason": "Mechanic B&W limits color brands",
+      "recommendation": "Prefer color"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "pexels:9245158",
+      "used_by_count": 9,
+      "reason": "Disinfection sprayer not routine cleaning",
+      "recommendation": "Use only disinfection pages"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "pexels:32178008",
+      "used_by_count": 6,
+      "reason": "CGI apartment megacity skyline non-SI",
+      "recommendation": "SI-plausible interior"
+    },
+    {
+      "category": "REVIEW",
+      "score": 48,
+      "asset_key": "pexels:8470881",
+      "used_by_count": 5,
+      "reason": "Non-EU plate format in body shop",
+      "recommendation": "Crop plate"
+    }
+  ],
+  "replace": [
+    {
+      "category": "REPLACE",
+      "score": 5,
+      "asset_key": "hash:8555282400b5f761",
+      "used_by_count": 13,
+      "reason": "Colored pencils wrong trade",
+      "recommendation": "Replace tire/key cutting",
+      "used_by": "elektro-kovac; marko-cerekovic; qa-vulkanizerji-01-classic-split; qa-vulkanizerji-02-editorial-type; qa-vulkanizerji-03-photo-forward; qa-vulkanizerji-04-stats-trust; qa-vulkanizerji-05-minimal-line; qa-vulkanizerji-06-service-grid; qa-vulkanizerji-07-asymmetric-bold; qa-vulkanizerji-08-dark-pro; qa-vulkanizerji-09-warm-soft; qa-vulkanizerji-10-industrial-plain …"
+    },
+    {
+      "category": "REPLACE",
+      "score": 18,
+      "asset_key": "pexels:32588548",
+      "used_by_count": 13,
+      "reason": "Cyrillic ТЕХНОБЫТСЕРВИС overalls",
+      "recommendation": "Replace plumbing without Cyrillic",
+      "used_by": "kaplja-vodovodne-andrej; napeljava-vodovodnih-centralnih; qa-vodovodarji-ogrevanje-01-classic-split; qa-vodovodarji-ogrevanje-02-editorial-type; qa-vodovodarji-ogrevanje-03-photo-forward; qa-vodovodarji-ogrevanje-04-stats-trust; qa-vodovodarji-ogrevanje-05-minimal-line; qa-vodovodarji-ogrevanje-06-service-grid; qa-vodovodarji-ogrevanje-07-asymmetric-bold; qa-vodovodarji-ogrevanje-08-dark-pro; qa-vodovodarji-ogrevanje-09-warm-soft; qa-vodovodarji-ogrevanje-10-industrial-plain …"
+    },
+    {
+      "category": "REPLACE",
+      "score": 20,
+      "asset_key": "hash:6c4ea29bfcfb03ec",
+      "used_by_count": 11,
+      "reason": "SE-Asian head-spa setup; Vietnamese GỪNG label",
+      "recommendation": "Replace with EU facial/spa treatment",
+      "used_by": "kozmeticni-salon-lila; qa-kozmeticarji-01-classic-split; qa-kozmeticarji-02-editorial-type; qa-kozmeticarji-03-photo-forward; qa-kozmeticarji-04-stats-trust; qa-kozmeticarji-05-minimal-line; qa-kozmeticarji-06-service-grid; qa-kozmeticarji-07-asymmetric-bold; qa-kozmeticarji-08-dark-pro; qa-kozmeticarji-09-warm-soft; qa-kozmeticarji-10-industrial-plain"
+    },
+    {
+      "category": "REPLACE",
+      "score": 22,
+      "asset_key": "hash:ef30f78dabe1795f",
+      "used_by_count": 11,
+      "reason": "Beauty vanity English skincare for keramičarstvo",
+      "recommendation": "Replace with tiling",
+      "used_by": "keramicarstvo-mubi-igor; qa-keramicarji-01-classic-split; qa-keramicarji-02-editorial-type; qa-keramicarji-03-photo-forward; qa-keramicarji-04-stats-trust; qa-keramicarji-05-minimal-line; qa-keramicarji-06-service-grid; qa-keramicarji-07-asymmetric-bold; qa-keramicarji-08-dark-pro; qa-keramicarji-09-warm-soft; qa-keramicarji-10-industrial-plain"
+    },
+    {
+      "category": "REPLACE",
+      "score": 35,
+      "asset_key": "pexels:28153670",
+      "used_by_count": 10,
+      "reason": "Informal outdoor night garage non-EU plate cues",
+      "recommendation": "Indoor EU bay",
+      "used_by": "9fast-anze-soklic; avtoservis-bojan-zagar; avtoservis-celarc-crt; avtoservis-kepec-bostjan; avtoservis-stefko-stefan; elektromehanika-marko-zupancic; pirnar-stanislav-avtoservis; servis-popravilo-vozil; vzdrzevanje-popravila-motornih-2; zavorni-servis-avtomehanika"
+    },
+    {
+      "category": "REPLACE",
+      "score": 28,
+      "asset_key": "pexels:7451918",
+      "used_by_count": 9,
+      "reason": "English CAUTION + DAIRY/DELI supermarket",
+      "recommendation": "Cleaning without English store signs",
+      "used_by": "cistilni-servis-kristalcek; cistilni-servis-luco; cistilni-servis-zeljka; cistilnica-pucelj-kamnik; ekea-alma-nuhanovic; hisnik-toni-vzdrzevanje; splosno-ciscenje-stavb; top-cistilni-servis; vzdrzevanje-objektov-mix"
+    },
+    {
+      "category": "REPLACE",
+      "score": 35,
+      "asset_key": "pexels:9626877",
+      "used_by_count": 9,
+      "reason": ".FR domain on mechanic uniform",
+      "recommendation": "Uniform without foreign domains",
+      "used_by": "avtocenter-litija-zlato; avtomehanika-koscak-primoz; avtoservis-celarc-crt; avtoservis-handa-eldin; car-repair-shop; mehanika-bodlaj-druzba; mrd-avto-mojca; pirnar-stanislav-avtoservis; servis-vozil-tadej"
+    },
+    {
+      "category": "REPLACE",
+      "score": 8,
+      "asset_key": "hash:31a9c52ff8409bbd",
+      "used_by_count": 7,
+      "reason": "Barbershop stock on elektro",
+      "recommendation": "Replace electrical",
+      "used_by": "elektro-veber-tone; elektro-zagar-jan; frizerstvo-erna-tesnjak; gavro-elektro-hisniske; keramicarstvo-zeljko-zeljko; marko-cerekovic; vulkanizerstvo-andrej-kaluza"
+    },
+    {
+      "category": "REPLACE",
+      "score": 35,
+      "asset_key": "hash:3915b81a23c3f9ce",
+      "used_by_count": 6,
+      "reason": "UK Type G wall outlet in salon",
+      "recommendation": "Replace with SI/EU Schuko salon",
+      "used_by": "frizerski-salon-branka; frizerski-salon-edita; frizerski-salon-katja-2; frizerski-salon-mojca-2; frizerski-salon-neva; frizerski-salon-renata"
+    },
+    {
+      "category": "REPLACE",
+      "score": 22,
+      "asset_key": "hash:da9499e132f96eff",
+      "used_by_count": 4,
+      "reason": "Dutch Bussum/Naarden storefront text",
+      "recommendation": "Replace unmarked salon",
+      "used_by": "brivsko-frizerski-salon; frizerski-salon-renata-2; frizerstvo-marija-marija; havajana-frizersko-lepotilni"
+    },
+    {
+      "category": "REPLACE",
+      "score": 28,
+      "asset_key": "pexels:33388390",
+      "used_by_count": 4,
+      "reason": "Pressure washer in sandals wrong trade/OHS",
+      "recommendation": "Boiler/pipe with PPE",
+      "used_by": "4mvodovodne-instalacije-matic; aqua-install-milos; lekse-instalacije-vladislav; vodoinstalaterstvo-adi-dervis"
+    },
+    {
+      "category": "REPLACE",
+      "score": 18,
+      "asset_key": "pexels:7220892",
+      "used_by_count": 4,
+      "reason": "US round doorknob not plumbing",
+      "recommendation": "Pipe/heating install",
+      "used_by": "napeljava-vodovodnih-centralnih; vodovodar-ljubljana; vodovodne-instalacije-asmir; vodovodne-napeljave-prenove"
+    },
+    {
+      "category": "REPLACE",
+      "score": 35,
+      "asset_key": "hash:284d71d703f510a2",
+      "used_by_count": 3,
+      "reason": "Russian Cyrillic wall text",
+      "recommendation": "Replace/crop Cyrillic",
+      "used_by": "frizerski-studio-dejan; frizerstvo-plesko-branka; frizerstvo-vesna-vuksinic"
+    },
+    {
+      "category": "REPLACE",
+      "score": 28,
+      "asset_key": "pexels:1029635",
+      "used_by_count": 3,
+      "reason": "Outdoor gas-meter utility not residential plumbing",
+      "recommendation": "Indoor pipe/heating install",
+      "used_by": "3ici-install-vodovodne; vodoinstalaterstvo-adi-dervis; vodvrt-vodovodne-instalacije"
+    },
+    {
+      "category": "REPLACE",
+      "score": 40,
+      "asset_key": "hash:72a50d8763236882",
+      "used_by_count": 2,
+      "reason": "UK Type G outlets",
+      "recommendation": "EU-outlet salon",
+      "used_by": "frizerski-salon-karmen; frizerski-salon-simicak"
+    },
+    {
+      "category": "REPLACE",
+      "score": 25,
+      "asset_key": "hash:8e3f9c621f419fde",
+      "used_by_count": 2,
+      "reason": "Sewing atelier not salon",
+      "recommendation": "Salon interior",
+      "used_by": "frizerski-studio-sonce; frizerstvo-andreja-frank"
+    },
+    {
+      "category": "REPLACE",
+      "score": 18,
+      "asset_key": "hash:c254d8db5b5f1c6f",
+      "used_by_count": 2,
+      "reason": "Chaotic outdoor meters; non-EU labels",
+      "recommendation": "Replace neat EU metering",
+      "used_by": "elektro-zagar-jan; wise-electronics"
+    },
+    {
+      "category": "REPLACE",
+      "score": 20,
+      "asset_key": "pexels:10871585",
+      "used_by_count": 2,
+      "reason": "Indonesian K3 hardhat emblem",
+      "recommendation": "EU panel work",
+      "used_by": "elektro-instalacije-kovac; elektroinstalacije-saso-sodja"
+    },
+    {
+      "category": "REPLACE",
+      "score": 5,
+      "asset_key": "pexels:26605672",
+      "used_by_count": 2,
+      "reason": "Houston TX tire shop English/Spanish signs",
+      "recommendation": "Unmarked EU vulcanizer",
+      "used_by": "vulkanizerstvo-jan-dobnikar; vzdrzevanje-vozil-vulkanizerstvo"
+    },
+    {
+      "category": "REPLACE",
+      "score": 12,
+      "asset_key": "pexels:33314764",
+      "used_by_count": 2,
+      "reason": "Lounge banquette not electrician work",
+      "recommendation": "Electrical install",
+      "used_by": "elektro-instalacije-kovac; elektroinstalacije-tehnicne-gorazd"
+    },
+    {
+      "category": "REPLACE",
+      "score": 22,
+      "asset_key": "pexels:9139593",
+      "used_by_count": 2,
+      "reason": "US performance car show garage",
+      "recommendation": "EU hatchback bodywork",
+      "used_by": "am-janc-avtokleparstvo; don-avtokleparstvo-licarstvo"
+    },
+    {
+      "category": "REPLACE",
+      "score": 8,
+      "asset_key": "hash:07363e93123cf01d",
+      "used_by_count": 1,
+      "reason": "AI trunk composite / picnic not vulcanizer",
+      "recommendation": "On-road tire service",
+      "used_by": "mobilni-vulkanizer-radic"
+    },
+    {
+      "category": "REPLACE",
+      "score": 5,
+      "asset_key": "hash:24913374f7f594c3",
+      "used_by_count": 1,
+      "reason": "Commercial kitchen wrong trade",
+      "recommendation": "Electronics bench",
+      "used_by": "servis-industrijske-elektronike"
+    },
+    {
+      "category": "REPLACE",
+      "score": 12,
+      "asset_key": "hash:2f95e44528e2d544",
+      "used_by_count": 1,
+      "reason": "Nightlife lifestyle portrait not elektro",
+      "recommendation": "Replace trade hero",
+      "used_by": "elektro-kovac"
+    },
+    {
+      "category": "REPLACE",
+      "score": 25,
+      "asset_key": "hash:40c45e597422eb61",
+      "used_by_count": 1,
+      "reason": "South Asian/ME ornate terrace tiling atypical for SI SME",
+      "recommendation": "Central-EU bathroom/kitchen tiling",
+      "used_by": "amoris-keramicarstvo-zakljucna"
+    },
+    {
+      "category": "REPLACE",
+      "score": 14,
+      "asset_key": "hash:418aa4686f69d77b",
+      "used_by_count": 1,
+      "reason": "Outboard motor workshop not elektro",
+      "recommendation": "Electrical install",
+      "used_by": "else-za-elektro"
+    },
+    {
+      "category": "REPLACE",
+      "score": 30,
+      "asset_key": "hash:425069b27dc5f23b",
+      "used_by_count": 1,
+      "reason": "Imperial measurements NA framing",
+      "recommendation": "Replace with metric/EU electrical",
+      "used_by": "elektro-poje-dejan"
+    },
+    {
+      "category": "REPLACE",
+      "score": 25,
+      "asset_key": "hash:447c1cdb6783a99d",
+      "used_by_count": 1,
+      "reason": "Tuner meet not vulcanizing; ZG plate",
+      "recommendation": "Replace with tire service",
+      "used_by": "dbf-vulkanizerstvo-hitri"
+    },
+    {
+      "category": "REPLACE",
+      "score": 10,
+      "asset_key": "hash:5dea952118321630",
+      "used_by_count": 1,
+      "reason": "Forest landscape no beauty",
+      "recommendation": "Treatment/salon",
+      "used_by": "lepotni-studio-dama"
+    },
+    {
+      "category": "REPLACE",
+      "score": 12,
+      "asset_key": "hash:80be6e5472d750ac",
+      "used_by_count": 1,
+      "reason": "Metal hinge not electrical",
+      "recommendation": "Household electrical",
+      "used_by": "gavro-elektro-hisniske"
+    },
+    {
+      "category": "REPLACE",
+      "score": 12,
+      "asset_key": "hash:81b7772e7755926f",
+      "used_by_count": 1,
+      "reason": "Lifestyle portrait no repair cues",
+      "recommendation": "Machine repair workshop",
+      "used_by": "popravilo-elektrotehnicnih-strojev"
+    },
+    {
+      "category": "REPLACE",
+      "score": 28,
+      "asset_key": "hash:8859e8a75b7064ec",
+      "used_by_count": 1,
+      "reason": "Metaphorical wrenches BHARAT/imperial",
+      "recommendation": "Real electromechanical repair",
+      "used_by": "popravilo-elektrotehnicnih-strojev"
+    },
+    {
+      "category": "REPLACE",
+      "score": 15,
+      "asset_key": "hash:9c400fab8b4b023c",
+      "used_by_count": 1,
+      "reason": "Welding/metalwork not tiling",
+      "recommendation": "Swap for tiling install",
+      "used_by": "keramicarstvo-ales-kucic"
+    },
+    {
+      "category": "REPLACE",
+      "score": 22,
+      "asset_key": "hash:b396ba6b69981984",
+      "used_by_count": 1,
+      "reason": "CGI armchair tropical plants not salon",
+      "recommendation": "Salon station",
+      "used_by": "frizerski-studio-soul"
+    },
+    {
+      "category": "REPLACE",
+      "score": 10,
+      "asset_key": "hash:b9c5db74d1cb607e",
+      "used_by_count": 1,
+      "reason": "Caving scene zero elektro",
+      "recommendation": "Panel/wiring",
+      "used_by": "elmont-elektroservis-peter"
+    },
+    {
+      "category": "REPLACE",
+      "score": 22,
+      "asset_key": "hash:cd3bc9856376ff15",
+      "used_by_count": 1,
+      "reason": "Informal cluttered shop with security gate",
+      "recommendation": "Replace with tidy salon",
+      "used_by": "frizerstvo-suzana-suzana"
+    },
+    {
+      "category": "REPLACE",
+      "score": 20,
+      "asset_key": "hash:e26fd1f51fd0808b",
+      "used_by_count": 1,
+      "reason": "Tangled cables unprofessional",
+      "recommendation": "Clean electrical work",
+      "used_by": "elmont-elektroservis-peter"
+    },
+    {
+      "category": "REPLACE",
+      "score": 30,
+      "asset_key": "hash:e31028865f0af9e5",
+      "used_by_count": 1,
+      "reason": "Pottery workshop not sink fabrication",
+      "recommendation": "Sink machining/install",
+      "used_by": "umivalniki-dreams-obdelava"
+    },
+    {
+      "category": "REPLACE",
+      "score": 18,
+      "asset_key": "hash:f59f973255b4f310",
+      "used_by_count": 1,
+      "reason": "Air hose not electrical",
+      "recommendation": "Panels/wiring",
+      "used_by": "elektrotehnika-puntar-slavko"
+    },
+    {
+      "category": "REPLACE",
+      "score": 18,
+      "asset_key": "hash:f8dbc96ab16496d5",
+      "used_by_count": 1,
+      "reason": "NA double yellow road lines; no tire service",
+      "recommendation": "SI roadside tire service",
+      "used_by": "mobilni-vulkanizer-radic"
+    },
+    {
+      "category": "REPLACE",
+      "score": 25,
+      "asset_key": "pexels:18110372",
+      "used_by_count": 0,
+      "reason": "UNUSED pool: East Asian striped construction tarp",
+      "recommendation": "Do not use SI construction",
+      "used_by": "(UNUSED — pool/cache only)"
+    },
+    {
+      "category": "REPLACE",
+      "score": 15,
+      "asset_key": "pexels:38749872",
+      "used_by_count": 0,
+      "reason": "UNUSED pool: Cyrillic shirt + flip-flops on roof",
+      "recommendation": "Do not use",
+      "used_by": "(UNUSED — pool/cache only)"
+    }
+  ],
+  "review": [
+    {
+      "category": "REVIEW",
+      "score": 62,
+      "asset_key": "pexels:8985712",
+      "used_by_count": 20,
+      "reason": "Strong workshop scene but background poster appears Cyrillic",
+      "recommendation": "Crop poster or replace"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "pexels:4374743",
+      "used_by_count": 16,
+      "reason": "Abstract ocean foam weak trade visual",
+      "recommendation": "Atmosphere only or replace"
+    },
+    {
+      "category": "REVIEW",
+      "score": 74,
+      "asset_key": "pexels:37809549",
+      "used_by_count": 15,
+      "reason": "PDR strong but branded cap",
+      "recommendation": "Crop branding"
+    },
+    {
+      "category": "REVIEW",
+      "score": 46,
+      "asset_key": "hash:ee3cc120088b931d",
+      "used_by_count": 13,
+      "reason": "EXIT + palm",
+      "recommendation": "Replace"
+    },
+    {
+      "category": "REVIEW",
+      "score": 38,
+      "asset_key": "pexels:1694980",
+      "used_by_count": 11,
+      "reason": "Abstract cracked wall texture weak trade",
+      "recommendation": "Decorative only"
+    },
+    {
+      "category": "REVIEW",
+      "score": 55,
+      "asset_key": "pexels:30499654",
+      "used_by_count": 11,
+      "reason": "Dark cluttered historic workshop",
+      "recommendation": "Brighter workshop"
+    },
+    {
+      "category": "REVIEW",
+      "score": 62,
+      "asset_key": "pexels:35546238",
+      "used_by_count": 10,
+      "reason": "Spa bed with third-party logo",
+      "recommendation": "Crop logo"
+    },
+    {
+      "category": "REVIEW",
+      "score": 74,
+      "asset_key": "pexels:20381389",
+      "used_by_count": 9,
+      "reason": "English CAUTION wet-floor sign",
+      "recommendation": "Crop sign"
+    },
+    {
+      "category": "REVIEW",
+      "score": 68,
+      "asset_key": "pexels:6196684",
+      "used_by_count": 9,
+      "reason": "Staged red overalls stock campaign",
+      "recommendation": "Prefer candid action"
+    },
+    {
+      "category": "REVIEW",
+      "score": 65,
+      "asset_key": "pexels:6196694",
+      "used_by_count": 9,
+      "reason": "Staged red overalls portrait",
+      "recommendation": "Working-in-context"
+    },
+    {
+      "category": "REVIEW",
+      "score": 70,
+      "asset_key": "pexels:6197114",
+      "used_by_count": 9,
+      "reason": "B&W glass cleaning editorial",
+      "recommendation": "Prefer color"
+    },
+    {
+      "category": "REVIEW",
+      "score": 72,
+      "asset_key": "pexels:8985924",
+      "used_by_count": 9,
+      "reason": "Mechanic B&W limits color brands",
+      "recommendation": "Prefer color"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "pexels:9245158",
+      "used_by_count": 9,
+      "reason": "Disinfection sprayer not routine cleaning",
+      "recommendation": "Use only disinfection pages"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "pexels:32178008",
+      "used_by_count": 6,
+      "reason": "CGI apartment megacity skyline non-SI",
+      "recommendation": "SI-plausible interior"
+    },
+    {
+      "category": "REVIEW",
+      "score": 48,
+      "asset_key": "pexels:8470881",
+      "used_by_count": 5,
+      "reason": "Non-EU plate format in body shop",
+      "recommendation": "Crop plate"
+    },
+    {
+      "category": "REVIEW",
+      "score": 76,
+      "asset_key": "pexels:30250199",
+      "used_by_count": 4,
+      "reason": "Spray-booth paintwork with Tyvek logo",
+      "recommendation": "Crop logo or unbranded PPE"
+    },
+    {
+      "category": "REVIEW",
+      "score": 72,
+      "asset_key": "pexels:37809581",
+      "used_by_count": 4,
+      "reason": "Polishing in athletic shorts/sneakers hobbyist look",
+      "recommendation": "Prefer coveralls"
+    },
+    {
+      "category": "REVIEW",
+      "score": 48,
+      "asset_key": "pexels:8488035",
+      "used_by_count": 4,
+      "reason": "Messy unfinished ABS drain; weak marketing",
+      "recommendation": "Prefer clean EU pipe install"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "hash:30b9377356f06073",
+      "used_by_count": 3,
+      "reason": "NA Type-B outlets in bathroom",
+      "recommendation": "Crop outlets or replace"
+    },
+    {
+      "category": "REVIEW",
+      "score": 55,
+      "asset_key": "hash:4b05466be788b282",
+      "used_by_count": 3,
+      "reason": "Roofing tiles not wall/floor keramičarstvo",
+      "recommendation": "Bathroom/floor tiling"
+    },
+    {
+      "category": "REVIEW",
+      "score": 44,
+      "asset_key": "pexels:12142829",
+      "used_by_count": 3,
+      "reason": "Rough exterior PVC poor hero quality",
+      "recommendation": "Before-state only or replace"
+    },
+    {
+      "category": "REVIEW",
+      "score": 68,
+      "asset_key": "pexels:24653480",
+      "used_by_count": 3,
+      "reason": "Product drip with LMI bottle branding",
+      "recommendation": "Crop logo"
+    },
+    {
+      "category": "REVIEW",
+      "score": 48,
+      "asset_key": "pexels:5463582",
+      "used_by_count": 3,
+      "reason": "Outdoor AC not pure heating",
+      "recommendation": "Boiler-centric if needed"
+    },
+    {
+      "category": "REVIEW",
+      "score": 42,
+      "asset_key": "pexels:6560297",
+      "used_by_count": 3,
+      "reason": "English BODY & SPA towel",
+      "recommendation": "Crop towel text"
+    },
+    {
+      "category": "REVIEW",
+      "score": 48,
+      "asset_key": "hash:103769a408860768",
+      "used_by_count": 2,
+      "reason": "Generic DIY tools",
+      "recommendation": "Prefer electrical kit"
+    },
+    {
+      "category": "REVIEW",
+      "score": 60,
+      "asset_key": "hash:5ab17493d6c7d986",
+      "used_by_count": 2,
+      "reason": "Abstract tile light/shadow",
+      "recommendation": "Clearer finished room"
+    },
+    {
+      "category": "REVIEW",
+      "score": 65,
+      "asset_key": "hash:648dbe448c0d9e00",
+      "used_by_count": 2,
+      "reason": "Dior magazine prop stocky",
+      "recommendation": "Prefer salon work"
+    },
+    {
+      "category": "REVIEW",
+      "score": 70,
+      "asset_key": "hash:fd76b93f17688c92",
+      "used_by_count": 2,
+      "reason": "Makeup more than hairdressing",
+      "recommendation": "Cut/color shot"
+    },
+    {
+      "category": "REVIEW",
+      "score": 55,
+      "asset_key": "pexels:28704177",
+      "used_by_count": 2,
+      "reason": "Turkish tulip tea glass in cobbler shop",
+      "recommendation": "Crop tea glass"
+    },
+    {
+      "category": "REVIEW",
+      "score": 62,
+      "asset_key": "pexels:34286675",
+      "used_by_count": 2,
+      "reason": "Locksmith with English DoorAlex pack",
+      "recommendation": "Crop foreign packs"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "pexels:37229315",
+      "used_by_count": 2,
+      "reason": "Cucumber spa cliché dated",
+      "recommendation": "Contemporary facial"
+    },
+    {
+      "category": "REVIEW",
+      "score": 55,
+      "asset_key": "hash:0fafd5d302ef5309",
+      "used_by_count": 1,
+      "reason": "Phone PCB weak for industrial electronics",
+      "recommendation": "Industrial boards"
+    },
+    {
+      "category": "REVIEW",
+      "score": 72,
+      "asset_key": "hash:12ec17d8bb458841",
+      "used_by_count": 1,
+      "reason": "Generic corporate high-five stock",
+      "recommendation": "Prefer real owner photo"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "hash:138108c5570e8791",
+      "used_by_count": 1,
+      "reason": "Abstract industrial toggle; poor residential elektro storytelling",
+      "recommendation": "Use consumer unit/Schuko"
+    },
+    {
+      "category": "REVIEW",
+      "score": 50,
+      "asset_key": "hash:15bee4d04b501bf6",
+      "used_by_count": 1,
+      "reason": "km/h gauge abstract; weak tire signal",
+      "recommendation": "Prefer tires/rims"
+    },
+    {
+      "category": "REVIEW",
+      "score": 42,
+      "asset_key": "hash:3a90587fc9a801e1",
+      "used_by_count": 1,
+      "reason": "Generic tools; weak elektro",
+      "recommendation": "Swap for sockets/panel"
+    },
+    {
+      "category": "REVIEW",
+      "score": 48,
+      "asset_key": "hash:44db1c8fd48cc51d",
+      "used_by_count": 1,
+      "reason": "US Vagaro POS + Christmas",
+      "recommendation": "Year-round EU desk"
+    },
+    {
+      "category": "REVIEW",
+      "score": 32,
+      "asset_key": "hash:6760420c568c66ff",
+      "used_by_count": 1,
+      "reason": "Russian Vogue Cyrillic cover",
+      "recommendation": "Crop magazine"
+    },
+    {
+      "category": "REVIEW",
+      "score": 42,
+      "asset_key": "hash:6c68f3684b34cbfb",
+      "used_by_count": 1,
+      "reason": "Abstract lighting ceiling weak elektro",
+      "recommendation": "Prefer switchboards"
+    },
+    {
+      "category": "REVIEW",
+      "score": 42,
+      "asset_key": "hash:72b6e250a43fc975",
+      "used_by_count": 1,
+      "reason": "Lifestyle interior weak elektro",
+      "recommendation": "Prefer install detail"
+    },
+    {
+      "category": "REVIEW",
+      "score": 55,
+      "asset_key": "hash:a04f76da92da8746",
+      "used_by_count": 1,
+      "reason": "Artistic fluorescent metaphor; weak elektro usefulness",
+      "recommendation": "Prefer wiring/panel shot"
+    },
+    {
+      "category": "REVIEW",
+      "score": 72,
+      "asset_key": "hash:a0ac98cae76207e6",
+      "used_by_count": 1,
+      "reason": "English FACE CREAM prop",
+      "recommendation": "Prefer treatment room"
+    },
+    {
+      "category": "REVIEW",
+      "score": 68,
+      "asset_key": "hash:af211a6403558555",
+      "used_by_count": 1,
+      "reason": "Made in Australia soap label",
+      "recommendation": "Crop label"
+    },
+    {
+      "category": "REVIEW",
+      "score": 40,
+      "asset_key": "hash:b778c8f0c17b4b61",
+      "used_by_count": 1,
+      "reason": "Cajón portrait weak salon",
+      "recommendation": "Hair work"
+    },
+    {
+      "category": "REVIEW",
+      "score": 52,
+      "asset_key": "hash:c370b163f424b722",
+      "used_by_count": 1,
+      "reason": "Cluttered electronics bench B&W",
+      "recommendation": "Prefer cleaner workshop"
+    },
+    {
+      "category": "REVIEW",
+      "score": 62,
+      "asset_key": "hash:dde9566dcabd8472",
+      "used_by_count": 1,
+      "reason": "English Hello Gorgeous neon",
+      "recommendation": "Crop/replace neon"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "hash:f209130653a92fc3",
+      "used_by_count": 1,
+      "reason": "Flat stone steps weak showcase",
+      "recommendation": "Clearer tile project"
+    },
+    {
+      "category": "REVIEW",
+      "score": 50,
+      "asset_key": "hash:f26e7951da0e4e7a",
+      "used_by_count": 1,
+      "reason": "Dated retro bathroom",
+      "recommendation": "Contemporary tiling"
+    },
+    {
+      "category": "REVIEW",
+      "score": 58,
+      "asset_key": "hash:f70c8cc46c1b1cd6",
+      "used_by_count": 1,
+      "reason": "Detailing wrap more than tires",
+      "recommendation": "Tire equipment"
+    },
+    {
+      "category": "REVIEW",
+      "score": 45,
+      "asset_key": "pexels:17866923",
+      "used_by_count": 0,
+      "reason": "UNUSED pool: Iberian blue mosaic weak for SI tile demos",
+      "recommendation": "Do not promote to demos"
+    },
+    {
+      "category": "REVIEW",
+      "score": 50,
+      "asset_key": "pexels:34670929",
+      "used_by_count": 0,
+      "reason": "UNUSED pool: AKYAR logo on hi-vis",
+      "recommendation": "Avoid or crop logo"
+    }
+  ],
+  "dupes": [
+    {
+      "asset_key": "hash:8555282400b5f761",
+      "demos": 13,
+      "category": "REPLACE",
+      "score": 5,
+      "multi_demo_replace_impact": true,
+      "used_by": "elektro-kovac; marko-cerekovic; qa-vulkanizerji-01-classic-split; qa-vulkanizerji-02-editorial-type; qa-vulkanizerji-03-photo-forward; qa-vulkanizerji-04-stats-trust; qa-vulkanizerji-05-minimal-line; qa-vulkanizerji-06-service-grid; qa-vulkanizerji-07-asymmetric-bold; qa-vulkanizerji-08-dark-pro; qa-vulkanizerji-09-warm-soft; qa-vulkanizerji-10-industrial-plain …",
+      "reason": "Colored pencils wrong trade"
+    },
+    {
+      "asset_key": "pexels:32588548",
+      "demos": 13,
+      "category": "REPLACE",
+      "score": 18,
+      "multi_demo_replace_impact": true,
+      "used_by": "kaplja-vodovodne-andrej; napeljava-vodovodnih-centralnih; qa-vodovodarji-ogrevanje-01-classic-split; qa-vodovodarji-ogrevanje-02-editorial-type; qa-vodovodarji-ogrevanje-03-photo-forward; qa-vodovodarji-ogrevanje-04-stats-trust; qa-vodovodarji-ogrevanje-05-minimal-line; qa-vodovodarji-ogrevanje-06-service-grid; qa-vodovodarji-ogrevanje-07-asymmetric-bold; qa-vodovodarji-ogrevanje-08-dark-pro; qa-vodovodarji-ogrevanje-09-warm-soft; qa-vodovodarji-ogrevanje-10-industrial-plain …",
+      "reason": "Cyrillic ТЕХНОБЫТСЕРВИС overalls"
+    },
+    {
+      "asset_key": "hash:6c4ea29bfcfb03ec",
+      "demos": 11,
+      "category": "REPLACE",
+      "score": 20,
+      "multi_demo_replace_impact": true,
+      "used_by": "kozmeticni-salon-lila; qa-kozmeticarji-01-classic-split; qa-kozmeticarji-02-editorial-type; qa-kozmeticarji-03-photo-forward; qa-kozmeticarji-04-stats-trust; qa-kozmeticarji-05-minimal-line; qa-kozmeticarji-06-service-grid; qa-kozmeticarji-07-asymmetric-bold; qa-kozmeticarji-08-dark-pro; qa-kozmeticarji-09-warm-soft; qa-kozmeticarji-10-industrial-plain",
+      "reason": "SE-Asian head-spa setup; Vietnamese GỪNG label"
+    },
+    {
+      "asset_key": "hash:ef30f78dabe1795f",
+      "demos": 11,
+      "category": "REPLACE",
+      "score": 22,
+      "multi_demo_replace_impact": true,
+      "used_by": "keramicarstvo-mubi-igor; qa-keramicarji-01-classic-split; qa-keramicarji-02-editorial-type; qa-keramicarji-03-photo-forward; qa-keramicarji-04-stats-trust; qa-keramicarji-05-minimal-line; qa-keramicarji-06-service-grid; qa-keramicarji-07-asymmetric-bold; qa-keramicarji-08-dark-pro; qa-keramicarji-09-warm-soft; qa-keramicarji-10-industrial-plain",
+      "reason": "Beauty vanity English skincare for keramičarstvo"
+    },
+    {
+      "asset_key": "pexels:28153670",
+      "demos": 10,
+      "category": "REPLACE",
+      "score": 35,
+      "multi_demo_replace_impact": true,
+      "used_by": "9fast-anze-soklic; avtoservis-bojan-zagar; avtoservis-celarc-crt; avtoservis-kepec-bostjan; avtoservis-stefko-stefan; elektromehanika-marko-zupancic; pirnar-stanislav-avtoservis; servis-popravilo-vozil; vzdrzevanje-popravila-motornih-2; zavorni-servis-avtomehanika",
+      "reason": "Informal outdoor night garage non-EU plate cues"
+    },
+    {
+      "asset_key": "pexels:7451918",
+      "demos": 9,
+      "category": "REPLACE",
+      "score": 28,
+      "multi_demo_replace_impact": true,
+      "used_by": "cistilni-servis-kristalcek; cistilni-servis-luco; cistilni-servis-zeljka; cistilnica-pucelj-kamnik; ekea-alma-nuhanovic; hisnik-toni-vzdrzevanje; splosno-ciscenje-stavb; top-cistilni-servis; vzdrzevanje-objektov-mix",
+      "reason": "English CAUTION + DAIRY/DELI supermarket"
+    },
+    {
+      "asset_key": "pexels:9626877",
+      "demos": 9,
+      "category": "REPLACE",
+      "score": 35,
+      "multi_demo_replace_impact": true,
+      "used_by": "avtocenter-litija-zlato; avtomehanika-koscak-primoz; avtoservis-celarc-crt; avtoservis-handa-eldin; car-repair-shop; mehanika-bodlaj-druzba; mrd-avto-mojca; pirnar-stanislav-avtoservis; servis-vozil-tadej",
+      "reason": ".FR domain on mechanic uniform"
+    },
+    {
+      "asset_key": "hash:31a9c52ff8409bbd",
+      "demos": 7,
+      "category": "REPLACE",
+      "score": 8,
+      "multi_demo_replace_impact": true,
+      "used_by": "elektro-veber-tone; elektro-zagar-jan; frizerstvo-erna-tesnjak; gavro-elektro-hisniske; keramicarstvo-zeljko-zeljko; marko-cerekovic; vulkanizerstvo-andrej-kaluza",
+      "reason": "Barbershop stock on elektro"
+    },
+    {
+      "asset_key": "hash:3915b81a23c3f9ce",
+      "demos": 6,
+      "category": "REPLACE",
+      "score": 35,
+      "multi_demo_replace_impact": true,
+      "used_by": "frizerski-salon-branka; frizerski-salon-edita; frizerski-salon-katja-2; frizerski-salon-mojca-2; frizerski-salon-neva; frizerski-salon-renata",
+      "reason": "UK Type G wall outlet in salon"
+    },
+    {
+      "asset_key": "hash:da9499e132f96eff",
+      "demos": 4,
+      "category": "REPLACE",
+      "score": 22,
+      "multi_demo_replace_impact": true,
+      "used_by": "brivsko-frizerski-salon; frizerski-salon-renata-2; frizerstvo-marija-marija; havajana-frizersko-lepotilni",
+      "reason": "Dutch Bussum/Naarden storefront text"
+    },
+    {
+      "asset_key": "pexels:33388390",
+      "demos": 4,
+      "category": "REPLACE",
+      "score": 28,
+      "multi_demo_replace_impact": true,
+      "used_by": "4mvodovodne-instalacije-matic; aqua-install-milos; lekse-instalacije-vladislav; vodoinstalaterstvo-adi-dervis",
+      "reason": "Pressure washer in sandals wrong trade/OHS"
+    },
+    {
+      "asset_key": "pexels:7220892",
+      "demos": 4,
+      "category": "REPLACE",
+      "score": 18,
+      "multi_demo_replace_impact": true,
+      "used_by": "napeljava-vodovodnih-centralnih; vodovodar-ljubljana; vodovodne-instalacije-asmir; vodovodne-napeljave-prenove",
+      "reason": "US round doorknob not plumbing"
+    },
+    {
+      "asset_key": "hash:284d71d703f510a2",
+      "demos": 3,
+      "category": "REPLACE",
+      "score": 35,
+      "multi_demo_replace_impact": true,
+      "used_by": "frizerski-studio-dejan; frizerstvo-plesko-branka; frizerstvo-vesna-vuksinic",
+      "reason": "Russian Cyrillic wall text"
+    },
+    {
+      "asset_key": "pexels:1029635",
+      "demos": 3,
+      "category": "REPLACE",
+      "score": 28,
+      "multi_demo_replace_impact": true,
+      "used_by": "3ici-install-vodovodne; vodoinstalaterstvo-adi-dervis; vodvrt-vodovodne-instalacije",
+      "reason": "Outdoor gas-meter utility not residential plumbing"
+    },
+    {
+      "asset_key": "pexels:8985712",
+      "demos": 20,
+      "category": "REVIEW",
+      "score": 62,
+      "multi_demo_replace_impact": true,
+      "used_by": "avtocenter-elite; avtomehanika-bambic-gorazd; avtomehanika-mo-servis; avtoservis-koren; avtoservis-lukse-tomaz; avtoservis-m-x; avtoservis-virant-miran; fico-servis; qa-avtomehaniki-01-classic-split; qa-avtomehaniki-02-editorial-type; qa-avtomehaniki-03-photo-forward; qa-avtomehaniki-04-stats-trust …",
+      "reason": "Strong workshop scene but background poster appears Cyrillic"
+    },
+    {
+      "asset_key": "pexels:4374743",
+      "demos": 16,
+      "category": "REVIEW",
+      "score": 58,
+      "multi_demo_replace_impact": true,
+      "used_by": "amalet-studio; cistilni-servis-zangor; dani-dotik-danjela; masaze-meta-hozjan; oaza-sonca-poslovno; qa-cistilni-servisi-01-classic-split; qa-cistilni-servisi-02-editorial-type; qa-cistilni-servisi-03-photo-forward; qa-cistilni-servisi-04-stats-trust; qa-cistilni-servisi-05-minimal-line; qa-cistilni-servisi-06-service-grid; qa-cistilni-servisi-07-asymmetric-bold …",
+      "reason": "Abstract ocean foam weak trade visual"
+    },
+    {
+      "asset_key": "pexels:37809549",
+      "demos": 15,
+      "category": "REVIEW",
+      "score": 74,
+      "multi_demo_replace_impact": true,
+      "used_by": "avtokleparstvo-avtolicarstvo-stanislav; avtokleparstvo-zalaznik-andrej; avtolicarstvo-drago-iskra; avtolicarstvo-igor-kersic; avtolicarstvo-mm-avtolicarske; qa-avtokleparji-licarji-01-classic-split; qa-avtokleparji-licarji-02-editorial-type; qa-avtokleparji-licarji-03-photo-forward; qa-avtokleparji-licarji-04-stats-trust; qa-avtokleparji-licarji-05-minimal-line; qa-avtokleparji-licarji-06-service-grid; qa-avtokleparji-licarji-07-asymmetric-bold …",
+      "reason": "PDR strong but branded cap"
+    },
+    {
+      "asset_key": "hash:ee3cc120088b931d",
+      "demos": 13,
+      "category": "REVIEW",
+      "score": 46,
+      "multi_demo_replace_impact": true,
+      "used_by": "frizerski-salon-ivan; frizerski-salon-larisa; frizerski-salon-manis; frizerski-salon-masa; frizerski-salon-matea; frizerski-salon-monika; frizerski-salon-nada; frizerski-studio-simona; frizerstvo-suzana-suzana; frizerstvo-tamara-kaluza; frizerstvo-tina-frizerske; milimeter-frizerski-salon …",
+      "reason": "EXIT + palm"
+    },
+    {
+      "asset_key": "pexels:1694980",
+      "demos": 11,
+      "category": "REVIEW",
+      "score": 38,
+      "multi_demo_replace_impact": true,
+      "used_by": "qa-slikopleskarji-01-classic-split; qa-slikopleskarji-02-editorial-type; qa-slikopleskarji-03-photo-forward; qa-slikopleskarji-04-stats-trust; qa-slikopleskarji-05-minimal-line; qa-slikopleskarji-06-service-grid; qa-slikopleskarji-07-asymmetric-bold; qa-slikopleskarji-08-dark-pro; qa-slikopleskarji-09-warm-soft; qa-slikopleskarji-10-industrial-plain; slikopleskarstvo-nagelj-srecko",
+      "reason": "Abstract cracked wall texture weak trade"
+    },
+    {
+      "asset_key": "pexels:30499654",
+      "demos": 11,
+      "category": "REVIEW",
+      "score": 55,
+      "multi_demo_replace_impact": true,
+      "used_by": "mizarstvo-podkriznik-matjaz; qa-mizarji-tesarji-01-classic-split; qa-mizarji-tesarji-02-editorial-type; qa-mizarji-tesarji-03-photo-forward; qa-mizarji-tesarji-04-stats-trust; qa-mizarji-tesarji-05-minimal-line; qa-mizarji-tesarji-06-service-grid; qa-mizarji-tesarji-07-asymmetric-bold; qa-mizarji-tesarji-08-dark-pro; qa-mizarji-tesarji-09-warm-soft; qa-mizarji-tesarji-10-industrial-plain",
+      "reason": "Dark cluttered historic workshop"
+    },
+    {
+      "asset_key": "pexels:35546238",
+      "demos": 10,
+      "category": "REVIEW",
+      "score": 62,
+      "multi_demo_replace_impact": true,
+      "used_by": "jaa-refleksna-masaza; kineziotaping-bandaze-masaze; lotos-spa; masaza-salut-lubomir; master-class-tecaji; painting-roller-sebastjan; ritual-studio-iris; sana-massage; sinergija-masazna-terapija; v-dobrih-rokah",
+      "reason": "Spa bed with third-party logo"
+    },
+    {
+      "asset_key": "pexels:20381389",
+      "demos": 9,
+      "category": "REVIEW",
+      "score": 74,
+      "multi_demo_replace_impact": true,
+      "used_by": "cistilni-servis-kristalcek; cistilni-servis-luco; cistilni-servis-urga; cistilni-servis-zeljka; gaga-cistilni-servis; h-m-cistilni; nadka-cistilni-servis; natancna-cistilni-servis; serif-ciscenje-miran",
+      "reason": "English CAUTION wet-floor sign"
+    },
+    {
+      "asset_key": "pexels:6196684",
+      "demos": 9,
+      "category": "REVIEW",
+      "score": 68,
+      "multi_demo_replace_impact": true,
+      "used_by": "ciscenje; ciscenje-objektov-gabriela; cistilni-servis-sasa; cistilni-servis-soncek; globinsko-ciscenje-domzale; gregor-kiseljak-adaptacije; iona-cistilni-servis; mlmciscenje-marica-micic; splosno-ciscenje-stavb-3",
+      "reason": "Staged red overalls stock campaign"
+    },
+    {
+      "asset_key": "pexels:6196694",
+      "demos": 9,
+      "category": "REVIEW",
+      "score": 65,
+      "multi_demo_replace_impact": true,
+      "used_by": "briljant-lesk-cistilni; ciscenje; ciscenje-objektov-gabriela; cistilni-servis-sasa; globinsko-ciscenje-domzale; gregor-kiseljak-adaptacije; mika-ciscenje-vzdrzevanje; mlmciscenje-marica-micic; splosno-ciscenje-stavb-3",
+      "reason": "Staged red overalls portrait"
+    },
+    {
+      "asset_key": "pexels:6197114",
+      "demos": 9,
+      "category": "REVIEW",
+      "score": 70,
+      "multi_demo_replace_impact": true,
+      "used_by": "activ-cleaning-fuad; ciscenje-vzdrzevanje-stavb; cistilni-servis-alnis; cistilni-servis-dobra; cistilni-servis-notranje; mika-ciscenje-vzdrzevanje; prazarna-kave-ciscenje; vzdrzevanje-objektov-ciscenje; zmajcek-globinsko-ciscenje",
+      "reason": "B&W glass cleaning editorial"
+    },
+    {
+      "asset_key": "pexels:8985924",
+      "demos": 9,
+      "category": "REVIEW",
+      "score": 72,
+      "multi_demo_replace_impact": true,
+      "used_by": "9fast-anze-soklic; avtomehanika-klemen-peklaj; avtoservis-lukse-tomaz; car-repair-shop; iztok-piciga; vzdrzevanje-popravila-motornih; vzdrzevanje-popravilo-motornih; vzdrzevanje-vozil-vulkanizerstvo; walter-mobile-avtoservis",
+      "reason": "Mechanic B&W limits color brands"
+    },
+    {
+      "asset_key": "pexels:9245158",
+      "demos": 9,
+      "category": "REVIEW",
+      "score": 58,
+      "multi_demo_replace_impact": true,
+      "used_by": "bm-cistilni-servis; ciscenje-brusenje-poliranje; cistilni-servis-fata; hisniske-ciscenje-edis; jasna-popovic-ciscenje; maf-perfection-cleaning; senikor-ciscenje; top-cistilni-servis; ziki-ciscenje-zikret",
+      "reason": "Disinfection sprayer not routine cleaning"
+    },
+    {
+      "asset_key": "pexels:32178008",
+      "demos": 6,
+      "category": "REVIEW",
+      "score": 58,
+      "multi_demo_replace_impact": true,
+      "used_by": "cistilni-servis-val; energija-vzhoda-masazni; kozmeticni-masazni-studio; masaza-salut-lubomir; masaze-meta-hozjan; masazni-salon-zarja",
+      "reason": "CGI apartment megacity skyline non-SI"
+    },
+    {
+      "asset_key": "pexels:8470881",
+      "demos": 5,
+      "category": "REVIEW",
+      "score": 48,
+      "multi_demo_replace_impact": true,
+      "used_by": "avtokleparstvo-bogdan-dolenc; avtolicarstvo-druge-igor; avtolicarstvo-mm-avtolicarske; avtolicarstvo-persin-vzdrzevanje; resos-avtovleka-avtokleparstvo",
+      "reason": "Non-EU plate format in body shop"
+    },
+    {
+      "asset_key": "pexels:30250199",
+      "demos": 4,
+      "category": "REVIEW",
+      "score": 76,
+      "multi_demo_replace_impact": true,
+      "used_by": "alboni-avtokleparstvo-borut; avtokleparstvo-igor-oblak; avtokleparstvo-vinsek-ales; kraljic-janez-avtokleparstvo",
+      "reason": "Spray-booth paintwork with Tyvek logo"
+    }
+  ],
+  "replacement_pool": [
+    {
+      "asset_key": "hash:8555282400b5f761",
+      "used_by_count": 13,
+      "used_by": "elektro-kovac; marko-cerekovic; qa-vulkanizerji-01-classic-split; qa-vulkanizerji-02-editorial-type; qa-vulkanizerji-03-photo-forward; qa-vulkanizerji-04-stats-trust; qa-vulkanizerji-05-minimal-line; qa-vulkanizerji-06-service-grid; qa-vulkanizerji-07-asymmetric-bold; qa-vulkanizerji-08-dark-pro; qa-vulkanizerji-09-warm-soft; qa-vulkanizerji-10-industrial-plain …",
+      "reason": "Colored pencils wrong trade",
+      "replacement_type": "Replace tire/key cutting",
+      "must_satisfy": [
+        "Match the actual Slovenian trade shown on the demo"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:32588548",
+      "used_by_count": 13,
+      "used_by": "kaplja-vodovodne-andrej; napeljava-vodovodnih-centralnih; qa-vodovodarji-ogrevanje-01-classic-split; qa-vodovodarji-ogrevanje-02-editorial-type; qa-vodovodarji-ogrevanje-03-photo-forward; qa-vodovodarji-ogrevanje-04-stats-trust; qa-vodovodarji-ogrevanje-05-minimal-line; qa-vodovodarji-ogrevanje-06-service-grid; qa-vodovodarji-ogrevanje-07-asymmetric-bold; qa-vodovodarji-ogrevanje-08-dark-pro; qa-vodovodarji-ogrevanje-09-warm-soft; qa-vodovodarji-ogrevanje-10-industrial-plain …",
+      "reason": "Cyrillic ТЕХНОБЫТСЕРВИС overalls",
+      "replacement_type": "Replace plumbing without Cyrillic",
+      "must_satisfy": [
+        "No foreign-language commercial text (prefer unmarked or SI/EU Latin)"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:6c4ea29bfcfb03ec",
+      "used_by_count": 11,
+      "used_by": "kozmeticni-salon-lila; qa-kozmeticarji-01-classic-split; qa-kozmeticarji-02-editorial-type; qa-kozmeticarji-03-photo-forward; qa-kozmeticarji-04-stats-trust; qa-kozmeticarji-05-minimal-line; qa-kozmeticarji-06-service-grid; qa-kozmeticarji-07-asymmetric-bold; qa-kozmeticarji-08-dark-pro; qa-kozmeticarji-09-warm-soft; qa-kozmeticarji-10-industrial-plain",
+      "reason": "SE-Asian head-spa setup; Vietnamese GỪNG label",
+      "replacement_type": "Replace with EU facial/spa treatment",
+      "must_satisfy": [
+        "No foreign-language commercial text (prefer unmarked or SI/EU Latin)"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:ef30f78dabe1795f",
+      "used_by_count": 11,
+      "used_by": "keramicarstvo-mubi-igor; qa-keramicarji-01-classic-split; qa-keramicarji-02-editorial-type; qa-keramicarji-03-photo-forward; qa-keramicarji-04-stats-trust; qa-keramicarji-05-minimal-line; qa-keramicarji-06-service-grid; qa-keramicarji-07-asymmetric-bold; qa-keramicarji-08-dark-pro; qa-keramicarji-09-warm-soft; qa-keramicarji-10-industrial-plain",
+      "reason": "Beauty vanity English skincare for keramičarstvo",
+      "replacement_type": "Replace with tiling",
+      "must_satisfy": [
+        "No foreign-language commercial text (prefer unmarked or SI/EU Latin)"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:28153670",
+      "used_by_count": 10,
+      "used_by": "9fast-anze-soklic; avtoservis-bojan-zagar; avtoservis-celarc-crt; avtoservis-kepec-bostjan; avtoservis-stefko-stefan; elektromehanika-marko-zupancic; pirnar-stanislav-avtoservis; servis-popravilo-vozil; vzdrzevanje-popravila-motornih-2; zavorni-servis-avtomehanika",
+      "reason": "Informal outdoor night garage non-EU plate cues",
+      "replacement_type": "Indoor EU bay",
+      "must_satisfy": [
+        "Central-European / Slovenian-plausible setting",
+        "No foreign license plates (or fully cropped)"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:7451918",
+      "used_by_count": 9,
+      "used_by": "cistilni-servis-kristalcek; cistilni-servis-luco; cistilni-servis-zeljka; cistilnica-pucelj-kamnik; ekea-alma-nuhanovic; hisnik-toni-vzdrzevanje; splosno-ciscenje-stavb; top-cistilni-servis; vzdrzevanje-objektov-mix",
+      "reason": "English CAUTION + DAIRY/DELI supermarket",
+      "replacement_type": "Cleaning without English store signs",
+      "must_satisfy": [
+        "No foreign-language commercial text (prefer unmarked or SI/EU Latin)"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:9626877",
+      "used_by_count": 9,
+      "used_by": "avtocenter-litija-zlato; avtomehanika-koscak-primoz; avtoservis-celarc-crt; avtoservis-handa-eldin; car-repair-shop; mehanika-bodlaj-druzba; mrd-avto-mojca; pirnar-stanislav-avtoservis; servis-vozil-tadej",
+      "reason": ".FR domain on mechanic uniform",
+      "replacement_type": "Uniform without foreign domains",
+      "must_satisfy": [
+        "No foreign-language commercial text (prefer unmarked or SI/EU Latin)"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:31a9c52ff8409bbd",
+      "used_by_count": 7,
+      "used_by": "elektro-veber-tone; elektro-zagar-jan; frizerstvo-erna-tesnjak; gavro-elektro-hisniske; keramicarstvo-zeljko-zeljko; marko-cerekovic; vulkanizerstvo-andrej-kaluza",
+      "reason": "Barbershop stock on elektro",
+      "replacement_type": "Replace electrical",
+      "must_satisfy": [
+        "Match the actual Slovenian trade shown on the demo"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:3915b81a23c3f9ce",
+      "used_by_count": 6,
+      "used_by": "frizerski-salon-branka; frizerski-salon-edita; frizerski-salon-katja-2; frizerski-salon-mojca-2; frizerski-salon-neva; frizerski-salon-renata",
+      "reason": "UK Type G wall outlet in salon",
+      "replacement_type": "Replace with SI/EU Schuko salon",
+      "must_satisfy": [
+        "EU Schuko (Type C/F) outlets if fixtures visible"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:da9499e132f96eff",
+      "used_by_count": 4,
+      "used_by": "brivsko-frizerski-salon; frizerski-salon-renata-2; frizerstvo-marija-marija; havajana-frizersko-lepotilni",
+      "reason": "Dutch Bussum/Naarden storefront text",
+      "replacement_type": "Replace unmarked salon",
+      "must_satisfy": [
+        "No foreign-language commercial text (prefer unmarked or SI/EU Latin)"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:33388390",
+      "used_by_count": 4,
+      "used_by": "4mvodovodne-instalacije-matic; aqua-install-milos; lekse-instalacije-vladislav; vodoinstalaterstvo-adi-dervis",
+      "reason": "Pressure washer in sandals wrong trade/OHS",
+      "replacement_type": "Boiler/pipe with PPE",
+      "must_satisfy": [
+        "Match the actual Slovenian trade shown on the demo"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:7220892",
+      "used_by_count": 4,
+      "used_by": "napeljava-vodovodnih-centralnih; vodovodar-ljubljana; vodovodne-instalacije-asmir; vodovodne-napeljave-prenove",
+      "reason": "US round doorknob not plumbing",
+      "replacement_type": "Pipe/heating install",
+      "must_satisfy": [
+        "Match the actual Slovenian trade shown on the demo"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:284d71d703f510a2",
+      "used_by_count": 3,
+      "used_by": "frizerski-studio-dejan; frizerstvo-plesko-branka; frizerstvo-vesna-vuksinic",
+      "reason": "Russian Cyrillic wall text",
+      "replacement_type": "Replace/crop Cyrillic",
+      "must_satisfy": [
+        "No foreign-language commercial text (prefer unmarked or SI/EU Latin)"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:1029635",
+      "used_by_count": 3,
+      "used_by": "3ici-install-vodovodne; vodoinstalaterstvo-adi-dervis; vodvrt-vodovodne-instalacije",
+      "reason": "Outdoor gas-meter utility not residential plumbing",
+      "replacement_type": "Indoor pipe/heating install",
+      "must_satisfy": [
+        "Match the actual Slovenian trade shown on the demo"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:72a50d8763236882",
+      "used_by_count": 2,
+      "used_by": "frizerski-salon-karmen; frizerski-salon-simicak",
+      "reason": "UK Type G outlets",
+      "replacement_type": "EU-outlet salon",
+      "must_satisfy": [
+        "EU Schuko (Type C/F) outlets if fixtures visible"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:8e3f9c621f419fde",
+      "used_by_count": 2,
+      "used_by": "frizerski-studio-sonce; frizerstvo-andreja-frank",
+      "reason": "Sewing atelier not salon",
+      "replacement_type": "Salon interior",
+      "must_satisfy": [
+        "Match the actual Slovenian trade shown on the demo"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:c254d8db5b5f1c6f",
+      "used_by_count": 2,
+      "used_by": "elektro-zagar-jan; wise-electronics",
+      "reason": "Chaotic outdoor meters; non-EU labels",
+      "replacement_type": "Replace neat EU metering",
+      "must_satisfy": [
+        "Central-European / Slovenian-plausible setting"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:10871585",
+      "used_by_count": 2,
+      "used_by": "elektro-instalacije-kovac; elektroinstalacije-saso-sodja",
+      "reason": "Indonesian K3 hardhat emblem",
+      "replacement_type": "EU panel work",
+      "must_satisfy": [
+        "No foreign-language commercial text (prefer unmarked or SI/EU Latin)",
+        "Central-European / Slovenian-plausible setting"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:26605672",
+      "used_by_count": 2,
+      "used_by": "vulkanizerstvo-jan-dobnikar; vzdrzevanje-vozil-vulkanizerstvo",
+      "reason": "Houston TX tire shop English/Spanish signs",
+      "replacement_type": "Unmarked EU vulcanizer",
+      "must_satisfy": [
+        "No foreign-language commercial text (prefer unmarked or SI/EU Latin)",
+        "Central-European / Slovenian-plausible setting"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:33314764",
+      "used_by_count": 2,
+      "used_by": "elektro-instalacije-kovac; elektroinstalacije-tehnicne-gorazd",
+      "reason": "Lounge banquette not electrician work",
+      "replacement_type": "Electrical install",
+      "must_satisfy": [
+        "Match the actual Slovenian trade shown on the demo"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "pexels:9139593",
+      "used_by_count": 2,
+      "used_by": "am-janc-avtokleparstvo; don-avtokleparstvo-licarstvo",
+      "reason": "US performance car show garage",
+      "replacement_type": "EU hatchback bodywork",
+      "must_satisfy": [
+        "Culturally neutral EU/SI trade photography matching the demo industry"
+      ],
+      "multi_demo_impact": true
+    },
+    {
+      "asset_key": "hash:07363e93123cf01d",
+      "used_by_count": 1,
+      "used_by": "mobilni-vulkanizer-radic",
+      "reason": "AI trunk composite / picnic not vulcanizer",
+      "replacement_type": "On-road tire service",
+      "must_satisfy": [
+        "Culturally neutral EU/SI trade photography matching the demo industry"
+      ],
+      "multi_demo_impact": false
+    },
+    {
+      "asset_key": "hash:24913374f7f594c3",
+      "used_by_count": 1,
+      "used_by": "servis-industrijske-elektronike",
+      "reason": "Commercial kitchen wrong trade",
+      "replacement_type": "Electronics bench",
+      "must_satisfy": [
+        "Match the actual Slovenian trade shown on the demo"
+      ],
+      "multi_demo_impact": false
+    },
+    {
+      "asset_key": "hash:2f95e44528e2d544",
+      "used_by_count": 1,
+      "used_by": "elektro-kovac",
+      "reason": "Nightlife lifestyle portrait not elektro",
+      "replacement_type": "Replace trade hero",
+      "must_satisfy": [
+        "Culturally neutral EU/SI trade photography matching the demo industry"
+      ],
+      "multi_demo_impact": false
+    },
+    {
+      "asset_key": "hash:40c45e597422eb61",
+      "used_by_count": 1,
+      "used_by": "amoris-keramicarstvo-zakljucna",
+      "reason": "South Asian/ME ornate terrace tiling atypical for SI SME",
+      "replacement_type": "Central-EU bathroom/kitchen tiling",
+      "must_satisfy": [
+        "Culturally neutral EU/SI trade photography matching the demo industry"
+      ],
+      "multi_demo_impact": false
+    }
+  ]
+}

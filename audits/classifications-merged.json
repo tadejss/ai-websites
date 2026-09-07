@@ -1,0 +1,2166 @@
+[
+  {
+    "path": "public/clients/frisalon-frizerski-studio/hero.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Industrial barber station; EU-plausible; no foreign place text",
+    "recommendation": "Keep",
+    "has_people": false,
+    "cultural_markers": "industrial EU barber"
+  },
+  {
+    "path": "public/clients/gradbenistvo-matkovic-zakljucna/hero.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Interior renovation with PPE; Storch EU tool brand",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "EU renovation"
+  },
+  {
+    "path": "public/clients/gradbenistvo-matkovic-zakljucna/services.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Neutral paint-roller close-up; culturally neutral",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "generic painting"
+  },
+  {
+    "path": "public/clients/frizerski-salon-ivan/hero.jpg",
+    "category": "REVIEW",
+    "score": 44,
+    "reason": "US EXIT sign + outdoor palm; otherwise salon-fit",
+    "recommendation": "Replace or crop EXIT/palm",
+    "has_people": true,
+    "cultural_markers": "EXIT + palm"
+  },
+  {
+    "path": "public/clients/frizerski-salon-jelka/services.jpg",
+    "category": "KEEP",
+    "score": 95,
+    "reason": "Professional shears detail; neutral",
+    "recommendation": "Keep",
+    "has_people": false,
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/elektro-kovac/services.jpg",
+    "category": "REPLACE",
+    "score": 8,
+    "reason": "Colored pencils; wrong trade for elektro",
+    "recommendation": "Replace with electrical work",
+    "has_people": false,
+    "cultural_markers": "pencils"
+  },
+  {
+    "path": "public/clients/kozmeticni-salon-lila/hero.jpg",
+    "category": "REPLACE",
+    "score": 20,
+    "reason": "SE-Asian head-spa setup; Vietnamese GỪNG label",
+    "recommendation": "Replace with EU facial/spa treatment",
+    "has_people": true,
+    "cultural_markers": "Vietnamese label; head spa"
+  },
+  {
+    "path": "public/clients/kozmeticni-salon-lila/services.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Generic unbranded cream jar; neutral beauty",
+    "recommendation": "Keep",
+    "has_people": false,
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/zakljucna-dela-v/hero.jpg",
+    "category": "KEEP",
+    "score": 85,
+    "reason": "Painter at work; EU-plausible residential",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "EU residential"
+  },
+  {
+    "path": "public/clients/zakljucna-dela-v/services.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Paint-splattered ladder renovation; neutral",
+    "recommendation": "Keep",
+    "has_people": false,
+    "cultural_markers": "renovation"
+  },
+  {
+    "key": "pexels:8985972",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "EU-style mechanic in blue coveralls; no foreign plates/signage",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "EU garage"
+  },
+  {
+    "key": "pexels:8985712",
+    "category": "REVIEW",
+    "score": 62,
+    "reason": "Strong workshop scene but background poster appears Cyrillic",
+    "recommendation": "Crop poster or replace",
+    "has_people": true,
+    "cultural_markers": "possible Cyrillic poster"
+  },
+  {
+    "path": "public/clients/elvip-elektroinstalacije-podboj/hero.jpg",
+    "category": "KEEP",
+    "score": 82,
+    "reason": "Clear electrical install; EU Type F/C plug",
+    "recommendation": null,
+    "has_people": true,
+    "cultural_markers": "EU Schuko plug"
+  },
+  {
+    "path": "public/clients/elvip-elektroinstalacije-podboj/services.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Neutral pendant lighting still",
+    "recommendation": null,
+    "has_people": false,
+    "cultural_markers": "modern lighting"
+  },
+  {
+    "path": "public/clients/keramicarstvo-ales-kucic/hero.jpg",
+    "category": "KEEP",
+    "score": 78,
+    "reason": "Large-format tiled wall/vanity; EU switch plate",
+    "recommendation": null,
+    "has_people": false,
+    "cultural_markers": "EU switch"
+  },
+  {
+    "path": "public/clients/keramicarstvo-ales-kucic/services.jpg",
+    "category": "REPLACE",
+    "score": 15,
+    "reason": "Welding/metalwork not tiling",
+    "recommendation": "Swap for tiling install",
+    "has_people": true,
+    "cultural_markers": "welding"
+  },
+  {
+    "path": "public/clients/frizerski-salon-branka/hero.jpg",
+    "category": "REPLACE",
+    "score": 35,
+    "reason": "UK Type G wall outlet in salon",
+    "recommendation": "Replace with SI/EU Schuko salon",
+    "has_people": false,
+    "cultural_markers": "UK Type G"
+  },
+  {
+    "path": "public/clients/frizerski-salon-branka/services.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Blow-dry styling; modern salon",
+    "recommendation": null,
+    "has_people": true,
+    "cultural_markers": "generic salon"
+  },
+  {
+    "path": "public/clients/beauty-by-spela/hero.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Manicure workstation typical SI boutique",
+    "recommendation": null,
+    "has_people": true,
+    "cultural_markers": "EU beauty studio"
+  },
+  {
+    "path": "public/clients/beauty-by-spela/services.jpg",
+    "category": "KEEP",
+    "score": 84,
+    "reason": "Nail service close-up",
+    "recommendation": null,
+    "has_people": true,
+    "cultural_markers": "E.Mi branding"
+  },
+  {
+    "path": "public/clients/barber-luani/hero.jpg",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "Modern barbershop cut",
+    "recommendation": null,
+    "has_people": true,
+    "cultural_markers": "white brick salon"
+  },
+  {
+    "path": "public/clients/barber-luani/services.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Wahl clipper kit; neutral",
+    "recommendation": null,
+    "has_people": false,
+    "cultural_markers": "Wahl"
+  },
+  {
+    "path": "public/clients/amoris-keramicarstvo-zakljucna/hero.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "High-end tiled bathroom",
+    "recommendation": null,
+    "has_people": false,
+    "cultural_markers": "marble tiles"
+  },
+  {
+    "path": "public/clients/amoris-keramicarstvo-zakljucna/services.jpg",
+    "category": "REPLACE",
+    "score": 25,
+    "reason": "South Asian/ME ornate terrace tiling atypical for SI SME",
+    "recommendation": "Central-EU bathroom/kitchen tiling",
+    "has_people": false,
+    "cultural_markers": "floral stone inlays"
+  },
+  {
+    "path": "public/clients/bb-elektro-instalacije/hero.jpg",
+    "category": "REVIEW",
+    "score": 55,
+    "reason": "Artistic fluorescent metaphor; weak elektro usefulness",
+    "recommendation": "Prefer wiring/panel shot",
+    "has_people": true,
+    "cultural_markers": "fluorescent tube"
+  },
+  {
+    "path": "public/clients/bb-elektro-instalacije/services.jpg",
+    "category": "REVIEW",
+    "score": 58,
+    "reason": "Abstract industrial toggle; poor residential elektro storytelling",
+    "recommendation": "Use consumer unit/Schuko",
+    "has_people": false,
+    "cultural_markers": "industrial switch"
+  },
+  {
+    "path": "public/clients/frizerski-studio-luka/hero.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Industrial barber station",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU industrial salon"
+  },
+  {
+    "path": "public/clients/frizerski-studio-luka/services.jpg",
+    "category": "REPLACE",
+    "score": 28,
+    "reason": "Makeup application not haircutting",
+    "has_people": true,
+    "recommendation": "Replace with cutting/styling",
+    "cultural_markers": "beauty studio"
+  },
+  {
+    "path": "public/clients/zensko-frizerstvo-znidaric/hero.jpg",
+    "category": "REVIEW",
+    "score": 48,
+    "reason": "EXIT + palm foreign cues",
+    "has_people": true,
+    "recommendation": "Crop or replace",
+    "cultural_markers": "EXIT; palm"
+  },
+  {
+    "path": "public/clients/zensko-frizerstvo-znidaric/services.jpg",
+    "category": "KEEP",
+    "score": 82,
+    "reason": "Salon reception SumUp POS",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "SumUp"
+  },
+  {
+    "path": "public/clients/frizerstvo-suzana-suzana/hero.jpg",
+    "category": "REVIEW",
+    "score": 46,
+    "reason": "EXIT + palm",
+    "has_people": true,
+    "recommendation": "Replace",
+    "cultural_markers": "EXIT; palm"
+  },
+  {
+    "path": "public/clients/frizerstvo-suzana-suzana/services.jpg",
+    "category": "REPLACE",
+    "score": 22,
+    "reason": "Informal cluttered shop with security gate",
+    "has_people": true,
+    "recommendation": "Replace with tidy salon",
+    "cultural_markers": "security gate"
+  },
+  {
+    "path": "public/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Excellent tiling showcase",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU bathroom"
+  },
+  {
+    "path": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Subway tiling detail",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/keramicarstvo-sergej-mikolic/hero.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Luxury large-format tiling",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "luxury bathroom"
+  },
+  {
+    "path": "public/clients/keramicarstvo-sergej-mikolic/services.jpg",
+    "category": "KEEP",
+    "score": 87,
+    "reason": "Dark large-format vanity",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/elektro-ivan-troha/hero.jpg",
+    "category": "KEEP",
+    "score": 85,
+    "reason": "Electrician at distribution board",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "PPE panel"
+  },
+  {
+    "path": "public/clients/elektro-ivan-troha/services.jpg",
+    "category": "REVIEW",
+    "score": 55,
+    "reason": "Generic DIY tools FORGED",
+    "has_people": false,
+    "recommendation": "Prefer electrical detail",
+    "cultural_markers": "English FORGED"
+  },
+  {
+    "path": "public/clients/elektro-poje-dejan/hero.jpg",
+    "category": "REPLACE",
+    "score": 30,
+    "reason": "Imperial measurements NA framing",
+    "has_people": false,
+    "recommendation": "Replace with metric/EU electrical",
+    "cultural_markers": "imperial inches"
+  },
+  {
+    "path": "public/clients/elektro-poje-dejan/services.jpg",
+    "category": "REVIEW",
+    "score": 42,
+    "reason": "Generic tools; weak elektro",
+    "has_people": false,
+    "recommendation": "Swap for sockets/panel",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/dbf-vulkanizerstvo-hitri/hero.jpg",
+    "category": "REPLACE",
+    "score": 25,
+    "reason": "Tuner meet not vulcanizing; ZG plate",
+    "has_people": true,
+    "recommendation": "Replace with tire service",
+    "cultural_markers": "Zagreb plate"
+  },
+  {
+    "path": "public/clients/dbf-vulkanizerstvo-hitri/services.jpg",
+    "category": "REVIEW",
+    "score": 50,
+    "reason": "km/h gauge abstract; weak tire signal",
+    "has_people": false,
+    "recommendation": "Prefer tires/rims",
+    "cultural_markers": "metric gauge"
+  },
+  {
+    "path": "public/clients/adrijana-srebot/hero.jpg",
+    "category": "REVIEW",
+    "score": 47,
+    "reason": "EXIT + palm",
+    "has_people": true,
+    "recommendation": "Replace",
+    "cultural_markers": "EXIT; palm"
+  },
+  {
+    "path": "public/clients/adrijana-srebot/services.jpg",
+    "category": "KEEP",
+    "score": 84,
+    "reason": "Styling close-up",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/bors-zakljucna-gradbena/hero.jpg",
+    "category": "KEEP",
+    "score": 80,
+    "reason": "Finished bathroom tiling",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU bathroom"
+  },
+  {
+    "path": "public/clients/bors-zakljucna-gradbena/services.jpg",
+    "category": "KEEP",
+    "score": 78,
+    "reason": "Wet-room finish detail",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/brivsko-frizerski-salon/hero.jpg",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "Industrial barber station",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "Barber mirror text"
+  },
+  {
+    "path": "public/clients/brivsko-frizerski-salon/services.jpg",
+    "category": "REPLACE",
+    "score": 22,
+    "reason": "Dutch Bussum/Naarden storefront text",
+    "has_people": false,
+    "recommendation": "Replace unmarked salon",
+    "cultural_markers": "NL place names"
+  },
+  {
+    "path": "public/clients/elca-servisno-proizvodno/hero.jpg",
+    "category": "KEEP",
+    "score": 84,
+    "reason": "Tradesperson on ladder",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU workwear"
+  },
+  {
+    "path": "public/clients/elca-servisno-proizvodno/services.jpg",
+    "category": "REVIEW",
+    "score": 52,
+    "reason": "Cluttered electronics bench B&W",
+    "has_people": false,
+    "recommendation": "Prefer cleaner workshop",
+    "cultural_markers": "clutter"
+  },
+  {
+    "path": "public/clients/elektro-ika-gregor/hero.jpg",
+    "category": "KEEP",
+    "score": 82,
+    "reason": "Finished lighting pendants",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "industrial lighting"
+  },
+  {
+    "path": "public/clients/elektro-ika-gregor/services.jpg",
+    "category": "KEEP",
+    "score": 72,
+    "reason": "Residential fuse box",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "SINO breakers"
+  },
+  {
+    "path": "public/clients/elektro-instalacije-kovac/hero.jpg",
+    "category": "KEEP",
+    "score": 78,
+    "reason": "Commercial switchgear",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "industrial electrical"
+  },
+  {
+    "path": "public/clients/elektro-instalacije-kovac/services.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "LED ceiling lighting",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU interior"
+  },
+  {
+    "path": "public/clients/elektro-veber-tone/hero.jpg",
+    "category": "REPLACE",
+    "score": 8,
+    "reason": "Barber cutting hair on elektro site",
+    "has_people": true,
+    "recommendation": "Replace with electrical",
+    "cultural_markers": "CALIFORNIA shirt"
+  },
+  {
+    "path": "public/clients/elektro-veber-tone/services.jpg",
+    "category": "REVIEW",
+    "score": 42,
+    "reason": "Lifestyle interior weak elektro",
+    "has_people": false,
+    "recommendation": "Prefer install detail",
+    "cultural_markers": "suburban interior"
+  },
+  {
+    "path": "public/clients/elektro-zagar-jan/hero.jpg",
+    "category": "REPLACE",
+    "score": 8,
+    "reason": "Barbershop stock on elektro",
+    "has_people": true,
+    "recommendation": "Replace electrical",
+    "cultural_markers": "CALIFORNIA"
+  },
+  {
+    "path": "public/clients/elektro-zagar-jan/services.jpg",
+    "category": "REPLACE",
+    "score": 18,
+    "reason": "Chaotic outdoor meters; non-EU labels",
+    "has_people": false,
+    "recommendation": "Replace neat EU metering",
+    "cultural_markers": "possible EA labels"
+  },
+  {
+    "path": "public/clients/elektroinstalacije-slavko-praznik/hero.jpg",
+    "category": "KEEP",
+    "score": 76,
+    "reason": "Luxury interior finished lighting",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "luxury interior"
+  },
+  {
+    "path": "public/clients/elektroinstalacije-slavko-praznik/services.jpg",
+    "category": "REVIEW",
+    "score": 48,
+    "reason": "Generic DIY tools",
+    "has_people": false,
+    "recommendation": "Prefer electrical kit",
+    "cultural_markers": "IKEA hammer"
+  },
+  {
+    "path": "public/clients/elektromont-elektro-druge/hero.jpg",
+    "category": "KEEP",
+    "score": 84,
+    "reason": "Ladder tradesperson",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU workwear"
+  },
+  {
+    "path": "public/clients/elektromont-elektro-druge/services.jpg",
+    "category": "REPLACE",
+    "score": 5,
+    "reason": "Blow-dry salon on elektro",
+    "has_people": true,
+    "recommendation": "Replace electrical",
+    "cultural_markers": "salon"
+  },
+  {
+    "path": "public/clients/frizerski-salon-jelka/hero.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Empty industrial barber station",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/frizerski-salon-ivan/services.jpg",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "Blow-dry styling",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "salon"
+  },
+  {
+    "path": "public/clients/elektro-kovac/hero.jpg",
+    "category": "REPLACE",
+    "score": 12,
+    "reason": "Nightlife lifestyle portrait not elektro",
+    "has_people": true,
+    "recommendation": "Replace trade hero",
+    "cultural_markers": "lifestyle"
+  },
+  {
+    "path": "public/clients/keramicarstvo-mubi-igor/hero.jpg",
+    "category": "KEEP",
+    "score": 95,
+    "reason": "Clean tile wall/floor detail",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU interior"
+  },
+  {
+    "path": "public/clients/keramicarstvo-mubi-igor/services.jpg",
+    "category": "REPLACE",
+    "score": 22,
+    "reason": "Beauty vanity English skincare for keramičarstvo",
+    "has_people": false,
+    "recommendation": "Replace with tiling",
+    "cultural_markers": "English beauty labels"
+  },
+  {
+    "path": "public/clients/vulkanizerstvo-izdelava-kljucev/hero.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Tire racks warehouse",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "industrial"
+  },
+  {
+    "path": "public/clients/vulkanizerstvo-izdelava-kljucev/services.jpg",
+    "category": "REPLACE",
+    "score": 5,
+    "reason": "Colored pencils wrong trade",
+    "has_people": false,
+    "recommendation": "Replace tire/key cutting",
+    "cultural_markers": "pencils"
+  },
+  {
+    "path": "public/clients/frizerski-salon-edita/services.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Clipper work salon",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "salon"
+  },
+  {
+    "path": "public/clients/keramicarstvo-ajvaz-rama/services.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Subway tile backsplash",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/frizerski-salon-katja-2/services.jpg",
+    "category": "KEEP",
+    "score": 85,
+    "reason": "Hair portrait",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "studio"
+  },
+  {
+    "path": "public/clients/epiks-frizerski-salon/hero.jpg",
+    "category": "KEEP",
+    "score": 93,
+    "reason": "Salon floor stations",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU salon"
+  },
+  {
+    "path": "public/clients/epiks-frizerski-salon/services.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Hair result close-up",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/frizerki-salon-sabina/hero.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Colored hair styling",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "salon"
+  },
+  {
+    "path": "public/clients/frizerske-mile-vujnic/services.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Salon chair icon",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "studio"
+  },
+  {
+    "path": "public/clients/frizerski-salon-manis/services.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Curling wand styling",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/keramicarska-zakljucna-dela/hero.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Dark large-format tile finish",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "bathroom"
+  },
+  {
+    "path": "public/clients/keramicarska-zakljucna-dela/services.jpg",
+    "category": "REVIEW",
+    "score": 58,
+    "reason": "NA Type-B outlets in bathroom",
+    "has_people": false,
+    "recommendation": "Crop outlets or replace",
+    "cultural_markers": "NA Type-B"
+  },
+  {
+    "path": "public/clients/frizerski-salon-adrijana/services.jpg",
+    "category": "KEEP",
+    "score": 94,
+    "reason": "Salon reception SumUp",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "SumUp"
+  },
+  {
+    "path": "public/clients/lepotni-studio-aida/hero.jpg",
+    "category": "KEEP",
+    "score": 95,
+    "reason": "Manicure + treatment room",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "beauty interior"
+  },
+  {
+    "path": "public/clients/lepotni-studio-aida/services.jpg",
+    "category": "KEEP",
+    "score": 95,
+    "reason": "E-file manicure",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "nail station"
+  },
+  {
+    "path": "public/clients/mobilni-vulkanizer-radic/hero.jpg",
+    "category": "REPLACE",
+    "score": 18,
+    "reason": "NA double yellow road lines; no tire service",
+    "has_people": false,
+    "recommendation": "SI roadside tire service",
+    "cultural_markers": "NA yellow lines"
+  },
+  {
+    "path": "public/clients/mobilni-vulkanizer-radic/services.jpg",
+    "category": "REPLACE",
+    "score": 8,
+    "reason": "AI trunk composite / picnic not vulcanizer",
+    "has_people": true,
+    "recommendation": "On-road tire service",
+    "cultural_markers": "AI artifacts"
+  },
+  {
+    "path": "public/clients/studio-surya-del/hero.jpg",
+    "category": "KEEP",
+    "score": 82,
+    "reason": "Tanning booth solarium fit",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "SunFit; English towel"
+  },
+  {
+    "path": "public/clients/studio-surya-del/services.jpg",
+    "category": "REVIEW",
+    "score": 72,
+    "reason": "English FACE CREAM prop",
+    "has_people": false,
+    "recommendation": "Prefer treatment room",
+    "cultural_markers": "English label"
+  },
+  {
+    "path": "public/clients/popravilo-elektrotehnicnih-strojev/hero.jpg",
+    "category": "REPLACE",
+    "score": 12,
+    "reason": "Lifestyle portrait no repair cues",
+    "has_people": true,
+    "recommendation": "Machine repair workshop",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/popravilo-elektrotehnicnih-strojev/services.jpg",
+    "category": "REPLACE",
+    "score": 28,
+    "reason": "Metaphorical wrenches BHARAT/imperial",
+    "has_people": false,
+    "recommendation": "Real electromechanical repair",
+    "cultural_markers": "BHARAT; imperial"
+  },
+  {
+    "path": "public/clients/else-za-elektro/hero.jpg",
+    "category": "REVIEW",
+    "score": 42,
+    "reason": "Abstract lighting ceiling weak elektro",
+    "has_people": false,
+    "recommendation": "Prefer switchboards",
+    "cultural_markers": "industrial chic"
+  },
+  {
+    "path": "public/clients/else-za-elektro/services.jpg",
+    "category": "REPLACE",
+    "score": 14,
+    "reason": "Outboard motor workshop not elektro",
+    "has_people": false,
+    "recommendation": "Electrical install",
+    "cultural_markers": "US marine brands"
+  },
+  {
+    "path": "public/clients/frizerski-studio-dejan/hero.jpg",
+    "category": "REPLACE",
+    "score": 35,
+    "reason": "Russian Cyrillic wall text",
+    "has_people": true,
+    "recommendation": "Replace/crop Cyrillic",
+    "cultural_markers": "Cyrillic"
+  },
+  {
+    "path": "public/clients/frizerski-studio-sonce/hero.jpg",
+    "category": "REPLACE",
+    "score": 25,
+    "reason": "Sewing atelier not salon",
+    "has_people": false,
+    "recommendation": "Salon interior",
+    "cultural_markers": "Juki sewing"
+  },
+  {
+    "path": "public/clients/frizerski-salon-karmen/hero.jpg",
+    "category": "REPLACE",
+    "score": 40,
+    "reason": "UK Type G outlets",
+    "has_people": false,
+    "recommendation": "EU-outlet salon",
+    "cultural_markers": "UK Type G"
+  },
+  {
+    "path": "public/clients/frizerski-salon-andreja/hero.jpg",
+    "category": "REVIEW",
+    "score": 65,
+    "reason": "Dior magazine prop stocky",
+    "has_people": false,
+    "recommendation": "Prefer salon work",
+    "cultural_markers": "Dior"
+  },
+  {
+    "path": "public/clients/keramicarstvo-miha-seme/hero.jpg",
+    "category": "REVIEW",
+    "score": 55,
+    "reason": "Roofing tiles not wall/floor keramičarstvo",
+    "has_people": false,
+    "recommendation": "Bathroom/floor tiling",
+    "cultural_markers": "roof tiles"
+  },
+  {
+    "path": "public/clients/frisalon-frizerski-studio/services.jpg",
+    "category": "REVIEW",
+    "score": 70,
+    "reason": "Makeup more than hairdressing",
+    "has_people": true,
+    "recommendation": "Cut/color shot",
+    "cultural_markers": "beauty studio"
+  },
+  {
+    "path": "public/clients/umivalniki-dreams-obdelava/services.jpg",
+    "category": "REPLACE",
+    "score": 30,
+    "reason": "Pottery workshop not sink fabrication",
+    "has_people": true,
+    "recommendation": "Sink machining/install",
+    "cultural_markers": "pottery"
+  },
+  {
+    "path": "public/clients/elmont-elektroservis-peter/hero.jpg",
+    "category": "REPLACE",
+    "score": 10,
+    "reason": "Caving scene zero elektro",
+    "has_people": true,
+    "recommendation": "Panel/wiring",
+    "cultural_markers": "speleology"
+  },
+  {
+    "path": "public/clients/elmont-elektroservis-peter/services.jpg",
+    "category": "REPLACE",
+    "score": 20,
+    "reason": "Tangled cables unprofessional",
+    "has_people": false,
+    "recommendation": "Clean electrical work",
+    "cultural_markers": "messy wiring"
+  },
+  {
+    "path": "public/clients/keram-zlatko-mavrin/services.jpg",
+    "category": "REVIEW",
+    "score": 68,
+    "reason": "Made in Australia soap label",
+    "has_people": false,
+    "recommendation": "Crop label",
+    "cultural_markers": "Australia label"
+  },
+  {
+    "path": "public/clients/frizerski-salon-glamur/hero.jpg",
+    "category": "REVIEW",
+    "score": 62,
+    "reason": "English Hello Gorgeous neon",
+    "has_people": false,
+    "recommendation": "Crop/replace neon",
+    "cultural_markers": "English neon"
+  },
+  {
+    "path": "public/clients/frizerski-salon-monika/services.jpg",
+    "category": "REVIEW",
+    "score": 48,
+    "reason": "US Vagaro POS + Christmas",
+    "has_people": true,
+    "recommendation": "Year-round EU desk",
+    "cultural_markers": "Vagaro"
+  },
+  {
+    "path": "public/clients/frizerski-studio-soul/hero.jpg",
+    "category": "REPLACE",
+    "score": 22,
+    "reason": "CGI armchair tropical plants not salon",
+    "has_people": false,
+    "recommendation": "Salon station",
+    "cultural_markers": "tropical CGI"
+  },
+  {
+    "path": "public/clients/elektrotehnika-puntar-slavko/services.jpg",
+    "category": "REPLACE",
+    "score": 18,
+    "reason": "Air hose not electrical",
+    "has_people": false,
+    "recommendation": "Panels/wiring",
+    "cultural_markers": "pneumatic"
+  },
+  {
+    "path": "public/clients/gavro-elektro-hisniske/services.jpg",
+    "category": "REPLACE",
+    "score": 12,
+    "reason": "Metal hinge not electrical",
+    "has_people": false,
+    "recommendation": "Household electrical",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/servis-industrijske-elektronike/services.jpg",
+    "category": "REPLACE",
+    "score": 5,
+    "reason": "Commercial kitchen wrong trade",
+    "has_people": true,
+    "recommendation": "Electronics bench",
+    "cultural_markers": "kitchen"
+  },
+  {
+    "path": "public/clients/lepotni-studio-dama/services.jpg",
+    "category": "REPLACE",
+    "score": 10,
+    "reason": "Forest landscape no beauty",
+    "has_people": false,
+    "recommendation": "Treatment/salon",
+    "cultural_markers": "nature"
+  },
+  {
+    "path": "public/clients/lepotni-studio-diamond/services.jpg",
+    "category": "REVIEW",
+    "score": 32,
+    "reason": "Russian Vogue Cyrillic cover",
+    "has_people": true,
+    "recommendation": "Crop magazine",
+    "cultural_markers": "Cyrillic Vogue"
+  },
+  {
+    "path": "public/clients/servis-industrijske-elektronike/hero.jpg",
+    "category": "REVIEW",
+    "score": 55,
+    "reason": "Phone PCB weak for industrial electronics",
+    "has_people": true,
+    "recommendation": "Industrial boards",
+    "cultural_markers": "phone repair"
+  },
+  {
+    "path": "public/clients/frizerski-studio-kreativa/services.jpg",
+    "category": "REVIEW",
+    "score": 40,
+    "reason": "Cajón portrait weak salon",
+    "has_people": true,
+    "recommendation": "Hair work",
+    "cultural_markers": "cajón"
+  },
+  {
+    "path": "public/clients/vulkanizerstvo-mitja-kocevar/hero.jpg",
+    "category": "KEEP",
+    "score": 95,
+    "reason": "Tire/garage scene",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU garage"
+  },
+  {
+    "path": "public/clients/vulkanizerstvo-mitja-kocevar/services.jpg",
+    "category": "REVIEW",
+    "score": 58,
+    "reason": "Detailing wrap more than tires",
+    "has_people": false,
+    "recommendation": "Tire equipment",
+    "cultural_markers": "detailing"
+  },
+  {
+    "path": "public/clients/keramicarstvo-dejan-sek/services.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Modern bathroom tiles",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU bathroom"
+  },
+  {
+    "path": "public/clients/keramicarstvo-asmir-bajramovic/hero.jpg",
+    "category": "KEEP",
+    "score": 94,
+    "reason": "Bathroom install",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "Scandi bathroom"
+  },
+  {
+    "path": "public/clients/zlatko-gojic-polaganje/hero.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Subway tile install hands-on",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/salon-zate-frizerstvo/hero.jpg",
+    "category": "KEEP",
+    "score": 89,
+    "reason": "Salon with Koleston",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "Wella"
+  },
+  {
+    "path": "public/clients/keramicarstvo-mohorcic-borut/hero.jpg",
+    "category": "KEEP",
+    "score": 95,
+    "reason": "Kachelofen tiles CE craft",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "Kachelofen"
+  },
+  {
+    "path": "public/clients/frizerski-studio-red/hero.jpg",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "Barber steam; EU exit pictogram",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU exit"
+  },
+  {
+    "path": "public/clients/lepotni-studio-dama/hero.jpg",
+    "category": "KEEP",
+    "score": 94,
+    "reason": "Brow work beauty",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/lars-kozmeticne-radenka/hero.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Bridal beauty salon",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "bridal"
+  },
+  {
+    "path": "public/clients/lars-kozmeticne-radenka/services.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Face-mask skincare",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/keramicarstvo-buci-bostjan/hero.jpg",
+    "category": "KEEP",
+    "score": 94,
+    "reason": "Mosaic shower",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU bathroom"
+  },
+  {
+    "path": "public/clients/keramicarstvo-musaj-edon/hero.jpg",
+    "category": "KEEP",
+    "score": 93,
+    "reason": "Shower with TRES fixtures",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "TRES"
+  },
+  {
+    "path": "public/clients/vulkanizerstvo-rok-kompara/services.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Wheel/tire close-up",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "Pirelli"
+  },
+  {
+    "path": "public/clients/frizerski-salon-erika/hero.jpg",
+    "category": "KEEP",
+    "score": 91,
+    "reason": "Modern salon stations",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU salon"
+  },
+  {
+    "path": "public/clients/keramicarstvo-miklavz-anton/hero.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Protective film peeling tiles",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/keramicarstvo-robi-breznikar/hero.jpg",
+    "category": "KEEP",
+    "score": 93,
+    "reason": "Bathroom tile craftsmanship",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU bathroom"
+  },
+  {
+    "path": "public/clients/frizerski-studio-diva/hero.jpg",
+    "category": "KEEP",
+    "score": 91,
+    "reason": "Boutique salon hero",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU salon"
+  },
+  {
+    "path": "public/clients/frizersko-lepotni-studio/services.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Hair-result portrait",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "beauty"
+  },
+  {
+    "path": "public/clients/frizerski-studio-anemari/services.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Fashion color portrait",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "beauty"
+  },
+  {
+    "path": "public/clients/lepotni-studio-mojca/services.jpg",
+    "category": "KEEP",
+    "score": 85,
+    "reason": "Facial treatment",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "spa"
+  },
+  {
+    "path": "public/clients/zbrendiraj-si/hero.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Modern workspace branding",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "minimal office"
+  },
+  {
+    "path": "public/clients/zbrendiraj-si/owner.jpg",
+    "category": "REVIEW",
+    "score": 72,
+    "reason": "Generic corporate high-five stock",
+    "has_people": true,
+    "recommendation": "Prefer real owner photo",
+    "cultural_markers": "office stock"
+  },
+  {
+    "path": "public/clients/keramicarstvo-mitja-necemer/hero.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Material samples craft",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/gradbenistvokeramicarstvo-joze-macedoni/services.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Vanity tile detail",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "luxury bathroom"
+  },
+  {
+    "path": "public/clients/frizerski-studio-alla/services.jpg",
+    "category": "KEEP",
+    "score": 85,
+    "reason": "Premium salon stations",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU salon"
+  },
+  {
+    "path": "public/clients/frizer-bostjan-lustek/services.jpg",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "Hair portrait",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/frizerski-salon-mojca-2/services.jpg",
+    "category": "KEEP",
+    "score": 84,
+    "reason": "Product wall",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "retail"
+  },
+  {
+    "path": "public/clients/keramicarstvo-robi-breznikar/services.jpg",
+    "category": "KEEP",
+    "score": 82,
+    "reason": "Vanity tile CGI",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "CGI bathroom"
+  },
+  {
+    "path": "public/clients/zlatko-gojic-polaganje/services.jpg",
+    "category": "REVIEW",
+    "score": 58,
+    "reason": "Flat stone steps weak showcase",
+    "has_people": false,
+    "recommendation": "Clearer tile project",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/umivalniki-dreams-obdelava/hero.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Luxury marble bathroom sinks",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "luxury"
+  },
+  {
+    "path": "public/clients/pecarstvo-keramicarstvo-anton/services.jpg",
+    "category": "KEEP",
+    "score": 87,
+    "reason": "Interior with stove pečarstvo",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU home"
+  },
+  {
+    "path": "public/clients/keram-zlatko-mavrin/hero.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Octagon tile floor",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU bathroom"
+  },
+  {
+    "path": "public/clients/keramicarstvo-ani-anel/hero.jpg",
+    "category": "REVIEW",
+    "score": 60,
+    "reason": "Abstract tile light/shadow",
+    "has_people": false,
+    "recommendation": "Clearer finished room",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/keramicarstvo-ani-anel/services.jpg",
+    "category": "KEEP",
+    "score": 78,
+    "reason": "Mosaic corridor",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "public mosaic"
+  },
+  {
+    "path": "public/clients/keramicarstvo-marko-novak/services.jpg",
+    "category": "KEEP",
+    "score": 85,
+    "reason": "Hex tile wall",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU safety"
+  },
+  {
+    "path": "public/clients/keramicarstvo-mohorcic-borut/services.jpg",
+    "category": "REVIEW",
+    "score": 50,
+    "reason": "Dated retro bathroom",
+    "has_people": false,
+    "recommendation": "Contemporary tiling",
+    "cultural_markers": "retro"
+  },
+  {
+    "path": "public/clients/keramicarstvo-musaj-edon/services.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Stone-look tile texture",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/frizerske-mile-vujnic/hero.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Salon mirror portrait",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU salon"
+  },
+  {
+    "path": "public/clients/frizerki-salon-sabina/services.jpg",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Tool flat-lay",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/frizerski-salon-andreja/services.jpg",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Hair color waves",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "path": "public/clients/lepotni-studio-diamond/hero.jpg",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Styled hair portrait",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "key": "pexels:5493655",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Painter EU electrical boxes",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU boxes"
+  },
+  {
+    "key": "pexels:3997359",
+    "category": "KEEP",
+    "score": 85,
+    "reason": "Nail swatch fan",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "salon"
+  },
+  {
+    "key": "pexels:3997381",
+    "category": "KEEP",
+    "score": 82,
+    "reason": "Manicure UV lamp",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "key": "pexels:4374743",
+    "category": "REVIEW",
+    "score": 58,
+    "reason": "Abstract ocean foam weak trade visual",
+    "has_people": false,
+    "recommendation": "Atmosphere only or replace",
+    "cultural_markers": "ocean"
+  },
+  {
+    "key": "pexels:16574941",
+    "category": "KEEP",
+    "score": 78,
+    "reason": "Spa facial mask studio",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "studio"
+  },
+  {
+    "key": "pexels:32216281",
+    "category": "KEEP",
+    "score": 72,
+    "reason": "Modern office interior",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "tech office"
+  },
+  {
+    "key": "pexels:37809549",
+    "category": "REVIEW",
+    "score": 74,
+    "reason": "PDR strong but branded cap",
+    "has_people": true,
+    "recommendation": "Crop branding",
+    "cultural_markers": "branded cap"
+  },
+  {
+    "key": "pexels:37809576",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "PDR LHD EU vehicle",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "LHD"
+  },
+  {
+    "key": "pexels:6197122",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "Window cleaner CE setting",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "CE residential"
+  },
+  {
+    "key": "pexels:32588548",
+    "category": "REPLACE",
+    "score": 18,
+    "reason": "Cyrillic ТЕХНОБЫТСЕРВИС overalls",
+    "has_people": true,
+    "recommendation": "Replace plumbing without Cyrillic",
+    "cultural_markers": "Cyrillic patch"
+  },
+  {
+    "key": "pexels:32588555",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "HVAC/heat-pump install",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU monter"
+  },
+  {
+    "key": "pexels:1694980",
+    "category": "REVIEW",
+    "score": 38,
+    "reason": "Abstract cracked wall texture weak trade",
+    "has_people": false,
+    "recommendation": "Decorative only",
+    "cultural_markers": "texture"
+  },
+  {
+    "key": "pexels:30303848",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Modern nail salon interior",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU salon"
+  },
+  {
+    "key": "pexels:30499654",
+    "category": "REVIEW",
+    "score": 55,
+    "reason": "Dark cluttered historic workshop",
+    "has_people": false,
+    "recommendation": "Brighter workshop",
+    "cultural_markers": "heritage"
+  },
+  {
+    "key": "pexels:4315571",
+    "category": "KEEP",
+    "score": 85,
+    "reason": "Engine service hands",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "key": "pexels:5711815",
+    "category": "KEEP",
+    "score": 82,
+    "reason": "Woodworking artisan",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "craft"
+  },
+  {
+    "key": "pexels:7750101",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Modern hair salon station",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU urban"
+  },
+  {
+    "key": "pexels:7750144",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "Salon station minor English jar",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "SMOOTH jar"
+  },
+  {
+    "key": "pexels:28153670",
+    "category": "REPLACE",
+    "score": 35,
+    "reason": "Informal outdoor night garage non-EU plate cues",
+    "has_people": true,
+    "recommendation": "Indoor EU bay",
+    "cultural_markers": "non-EU plate"
+  },
+  {
+    "key": "pexels:35546238",
+    "category": "REVIEW",
+    "score": 62,
+    "reason": "Spa bed with third-party logo",
+    "has_people": false,
+    "recommendation": "Crop logo",
+    "cultural_markers": "embroidered logo"
+  },
+  {
+    "key": "pexels:4315574",
+    "category": "KEEP",
+    "score": 84,
+    "reason": "Engine service detail",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "key": "pexels:8470679",
+    "category": "KEEP",
+    "score": 87,
+    "reason": "Indoor workshop mechanic",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU garage"
+  },
+  {
+    "key": "pexels:8986105",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Professional lift bay",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU garage"
+  },
+  {
+    "key": "pexels:8985967",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Mechanic portrait blue overalls",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU garage"
+  },
+  {
+    "key": "pexels:16898979",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Rope-access window cleaning",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "commercial facade"
+  },
+  {
+    "key": "pexels:20381389",
+    "category": "REVIEW",
+    "score": 74,
+    "reason": "English CAUTION wet-floor sign",
+    "has_people": true,
+    "recommendation": "Crop sign",
+    "cultural_markers": "English CAUTION"
+  },
+  {
+    "key": "pexels:30875661",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Facade rope-access cleaning",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "CE commercial"
+  },
+  {
+    "key": "pexels:6196684",
+    "category": "REVIEW",
+    "score": 68,
+    "reason": "Staged red overalls stock campaign",
+    "has_people": true,
+    "recommendation": "Prefer candid action",
+    "cultural_markers": "posed stock"
+  },
+  {
+    "key": "pexels:6196694",
+    "category": "REVIEW",
+    "score": 65,
+    "reason": "Staged red overalls portrait",
+    "has_people": true,
+    "recommendation": "Working-in-context",
+    "cultural_markers": "posed stock"
+  },
+  {
+    "key": "pexels:6197114",
+    "category": "REVIEW",
+    "score": 70,
+    "reason": "B&W glass cleaning editorial",
+    "has_people": true,
+    "recommendation": "Prefer color",
+    "cultural_markers": "B&W"
+  },
+  {
+    "key": "pexels:7451918",
+    "category": "REPLACE",
+    "score": 28,
+    "reason": "English CAUTION + DAIRY/DELI supermarket",
+    "has_people": false,
+    "recommendation": "Cleaning without English store signs",
+    "cultural_markers": "English retail"
+  },
+  {
+    "key": "pexels:9245158",
+    "category": "REVIEW",
+    "score": 58,
+    "reason": "Disinfection sprayer not routine cleaning",
+    "has_people": true,
+    "recommendation": "Use only disinfection pages",
+    "cultural_markers": "respirator"
+  },
+  {
+    "key": "pexels:9462192",
+    "category": "KEEP",
+    "score": 80,
+    "reason": "Cleaner portrait neutral",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "none"
+  },
+  {
+    "key": "pexels:8985924",
+    "category": "REVIEW",
+    "score": 72,
+    "reason": "Mechanic B&W limits color brands",
+    "has_people": true,
+    "recommendation": "Prefer color",
+    "cultural_markers": "B&W"
+  },
+  {
+    "key": "pexels:9626877",
+    "category": "REPLACE",
+    "score": 35,
+    "reason": ".FR domain on mechanic uniform",
+    "has_people": true,
+    "recommendation": "Uniform without foreign domains",
+    "cultural_markers": ".FR domain"
+  },
+  {
+    "key": "pexels:4677846",
+    "category": "KEEP",
+    "score": 82,
+    "reason": "Manicure close-up",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "salon"
+  },
+  {
+    "key": "pexels:6628520",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "Empty massage room CE",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "CE spa"
+  },
+  {
+    "key": "pexels:6628613",
+    "category": "KEEP",
+    "score": 84,
+    "reason": "Massage in progress",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "spa"
+  },
+  {
+    "key": "pexels:3735653",
+    "category": "KEEP",
+    "score": 93,
+    "reason": "Nail swatch fan",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "salon"
+  },
+  {
+    "key": "pexels:3997350",
+    "category": "KEEP",
+    "score": 84,
+    "reason": "Manicurist station",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "PPE"
+  },
+  {
+    "key": "pexels:4677859",
+    "category": "KEEP",
+    "score": 87,
+    "reason": "Manicurist e-file",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU salon"
+  },
+  {
+    "key": "pexels:6628599",
+    "category": "KEEP",
+    "score": 85,
+    "reason": "Massage loft spa",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "industrial spa"
+  },
+  {
+    "key": "pexels:32178008",
+    "category": "REVIEW",
+    "score": 58,
+    "reason": "CGI apartment megacity skyline non-SI",
+    "has_people": false,
+    "recommendation": "SI-plausible interior",
+    "cultural_markers": "megacity CGI"
+  },
+  {
+    "key": "pexels:38218175",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "EU hatchback detailing bay",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU hatchback"
+  },
+  {
+    "key": "pexels:11139239",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Polishing hatchback",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU detailing"
+  },
+  {
+    "key": "pexels:32791637",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Clean modern living result",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU interior"
+  },
+  {
+    "key": "pexels:35149611",
+    "category": "KEEP",
+    "score": 91,
+    "reason": "PDR glue-pull detail",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "PDR tools"
+  },
+  {
+    "key": "pexels:6870314",
+    "category": "KEEP",
+    "score": 89,
+    "reason": "Spray-gun paint booth",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "3M cup"
+  },
+  {
+    "key": "pexels:7019362",
+    "category": "KEEP",
+    "score": 83,
+    "reason": "Mechanic cylinder head",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU workshop"
+  },
+  {
+    "key": "pexels:8470881",
+    "category": "REVIEW",
+    "score": 48,
+    "reason": "Non-EU plate format in body shop",
+    "has_people": true,
+    "recommendation": "Crop plate",
+    "cultural_markers": "non-EU plate"
+  },
+  {
+    "key": "pexels:26605672",
+    "category": "REPLACE",
+    "score": 5,
+    "reason": "Houston TX tire shop English/Spanish signs",
+    "has_people": false,
+    "recommendation": "Unmarked EU vulcanizer",
+    "cultural_markers": "Houston TX"
+  },
+  {
+    "key": "pexels:33314764",
+    "category": "REPLACE",
+    "score": 12,
+    "reason": "Lounge banquette not electrician work",
+    "has_people": false,
+    "recommendation": "Electrical install",
+    "cultural_markers": "lounge"
+  },
+  {
+    "key": "pexels:7220892",
+    "category": "REPLACE",
+    "score": 18,
+    "reason": "US round doorknob not plumbing",
+    "has_people": true,
+    "recommendation": "Pipe/heating install",
+    "cultural_markers": "US doorknob"
+  },
+  {
+    "key": "pexels:9139593",
+    "category": "REPLACE",
+    "score": 22,
+    "reason": "US performance car show garage",
+    "has_people": true,
+    "recommendation": "EU hatchback bodywork",
+    "cultural_markers": "Viper; Milwaukee"
+  },
+  {
+    "key": "pexels:10871585",
+    "category": "REPLACE",
+    "score": 20,
+    "reason": "Indonesian K3 hardhat emblem",
+    "has_people": true,
+    "recommendation": "EU panel work",
+    "cultural_markers": "K3 Indonesia"
+  },
+  {
+    "key": "pexels:33388390",
+    "category": "REPLACE",
+    "score": 28,
+    "reason": "Pressure washer in sandals wrong trade/OHS",
+    "has_people": true,
+    "recommendation": "Boiler/pipe with PPE",
+    "cultural_markers": "sandals"
+  },
+  {
+    "key": "pexels:6560297",
+    "category": "REVIEW",
+    "score": 42,
+    "reason": "English BODY & SPA towel",
+    "has_people": true,
+    "recommendation": "Crop towel text",
+    "cultural_markers": "English towel"
+  },
+  {
+    "key": "pexels:5463582",
+    "category": "REVIEW",
+    "score": 48,
+    "reason": "Outdoor AC not pure heating",
+    "has_people": true,
+    "recommendation": "Boiler-centric if needed",
+    "cultural_markers": "AC condenser"
+  },
+  {
+    "key": "pexels:28704177",
+    "category": "REVIEW",
+    "score": 55,
+    "reason": "Turkish tulip tea glass in cobbler shop",
+    "has_people": true,
+    "recommendation": "Crop tea glass",
+    "cultural_markers": "Turkish tea"
+  },
+  {
+    "key": "pexels:34286675",
+    "category": "REVIEW",
+    "score": 62,
+    "reason": "Locksmith with English DoorAlex pack",
+    "has_people": true,
+    "recommendation": "Crop foreign packs",
+    "cultural_markers": "DoorAlex"
+  },
+  {
+    "key": "pexels:37229315",
+    "category": "REVIEW",
+    "score": 58,
+    "reason": "Cucumber spa cliché dated",
+    "has_people": true,
+    "recommendation": "Contemporary facial",
+    "cultural_markers": "cucumber spa"
+  },
+  {
+    "key": "pexels:1895701",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Industrial barber station",
+    "has_people": false,
+    "recommendation": "Keep",
+    "cultural_markers": "EU salon"
+  },
+  {
+    "key": "pexels:6474135",
+    "category": "KEEP",
+    "score": 93,
+    "reason": "Plastering EU flush box",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU drywall"
+  },
+  {
+    "key": "pexels:6870316",
+    "category": "KEEP",
+    "score": 95,
+    "reason": "Mechanic tire EU hatchback",
+    "has_people": true,
+    "recommendation": "Keep",
+    "cultural_markers": "EU workwear"
+  },
+  {
+    "key": "pexels:17866923",
+    "category": "REVIEW",
+    "score": 45,
+    "reason": "UNUSED pool: Iberian blue mosaic weak for SI tile demos",
+    "has_people": false,
+    "recommendation": "Do not promote to demos",
+    "cultural_markers": "Trencadís mosaic",
+    "used_status": "UNUSED"
+  },
+  {
+    "key": "pexels:18110372",
+    "category": "REPLACE",
+    "score": 25,
+    "reason": "UNUSED pool: East Asian striped construction tarp",
+    "has_people": true,
+    "recommendation": "Do not use SI construction",
+    "cultural_markers": "EA tarp",
+    "used_status": "UNUSED"
+  },
+  {
+    "key": "pexels:34670929",
+    "category": "REVIEW",
+    "score": 50,
+    "reason": "UNUSED pool: AKYAR logo on hi-vis",
+    "has_people": true,
+    "recommendation": "Avoid or crop logo",
+    "cultural_markers": "AKYAR",
+    "used_status": "UNUSED"
+  },
+  {
+    "key": "pexels:38749872",
+    "category": "REPLACE",
+    "score": 15,
+    "reason": "UNUSED pool: Cyrillic shirt + flip-flops on roof",
+    "has_people": true,
+    "recommendation": "Do not use",
+    "cultural_markers": "Cyrillic; flip-flops",
+    "used_status": "UNUSED"
+  },
+  {
+    "key": "pexels:17056219",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "Clean pedicure cuticle-nipper close-up",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "none"
+  },
+  {
+    "key": "pexels:17056220",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Pink toenail polish application",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "none"
+  },
+  {
+    "key": "pexels:30250199",
+    "category": "REVIEW",
+    "score": 76,
+    "reason": "Spray-booth paintwork with Tyvek logo",
+    "recommendation": "Crop logo or unbranded PPE",
+    "has_people": true,
+    "cultural_markers": "Tyvek logo"
+  },
+  {
+    "key": "pexels:37809560",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Red-car polishing workshop",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "EU workshop"
+  },
+  {
+    "key": "pexels:37809561",
+    "category": "KEEP",
+    "score": 87,
+    "reason": "Polishing series detailing craft",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "EU garage"
+  },
+  {
+    "key": "pexels:37809581",
+    "category": "REVIEW",
+    "score": 72,
+    "reason": "Polishing in athletic shorts/sneakers hobbyist look",
+    "recommendation": "Prefer coveralls",
+    "has_people": true,
+    "cultural_markers": "casual attire"
+  },
+  {
+    "key": "pexels:8488035",
+    "category": "REVIEW",
+    "score": 48,
+    "reason": "Messy unfinished ABS drain; weak marketing",
+    "recommendation": "Prefer clean EU pipe install",
+    "has_people": false,
+    "cultural_markers": "rough ABS"
+  },
+  {
+    "key": "pexels:1029635",
+    "category": "REPLACE",
+    "score": 28,
+    "reason": "Outdoor gas-meter utility not residential plumbing",
+    "recommendation": "Indoor pipe/heating install",
+    "has_people": false,
+    "cultural_markers": "gas utility"
+  },
+  {
+    "key": "pexels:12142829",
+    "category": "REVIEW",
+    "score": 44,
+    "reason": "Rough exterior PVC poor hero quality",
+    "recommendation": "Before-state only or replace",
+    "has_people": false,
+    "cultural_markers": "rough PVC"
+  },
+  {
+    "key": "pexels:15202934",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Nail tech at glass station",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "modern salon"
+  },
+  {
+    "key": "pexels:24653480",
+    "category": "REVIEW",
+    "score": 68,
+    "reason": "Product drip with LMI bottle branding",
+    "recommendation": "Crop logo",
+    "has_people": true,
+    "cultural_markers": "LMI brand"
+  },
+  {
+    "key": "pexels:29877719",
+    "category": "KEEP",
+    "score": 92,
+    "reason": "E-file manicure pink gloves",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "none"
+  },
+  {
+    "key": "pexels:35290675",
+    "category": "KEEP",
+    "score": 86,
+    "reason": "Technician pump/hose assembly",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "workshop"
+  },
+  {
+    "key": "pexels:3997384",
+    "category": "KEEP",
+    "score": 93,
+    "reason": "Glossy red manicure result",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "none"
+  },
+  {
+    "key": "pexels:4599377",
+    "category": "KEEP",
+    "score": 84,
+    "reason": "Back-massage service",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "shoji spa"
+  },
+  {
+    "key": "pexels:5691536",
+    "category": "KEEP",
+    "score": 91,
+    "reason": "Radiator/heating service",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "EU heating"
+  },
+  {
+    "key": "pexels:5691597",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Interior wall painting",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "EU renovation"
+  },
+  {
+    "key": "pexels:6628647",
+    "category": "KEEP",
+    "score": 94,
+    "reason": "Bright modern massage loft",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "EU spa"
+  },
+  {
+    "key": "pexels:7755142",
+    "category": "KEEP",
+    "score": 90,
+    "reason": "Nail-polish wall salon atmosphere",
+    "recommendation": "Keep",
+    "has_people": false,
+    "cultural_markers": "modern salon"
+  },
+  {
+    "key": "pexels:7755549",
+    "category": "KEEP",
+    "score": 88,
+    "reason": "Full pedicure session",
+    "recommendation": "Keep",
+    "has_people": true,
+    "cultural_markers": "modern salon"
+  }
+]

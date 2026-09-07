@@ -17,8 +17,19 @@
       "alt": "Topel in eleganten frizerski salon v Novem mestu z naravno svetlobo"
     },
     "services": {
-      "src": "/clients/havajana-frizersko-lepotilni/services.jpg",
-      "alt": "Strokovno barvanje las in oblikovanje pričesk v prijetnem ambientu"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/services.avif",
+      "alt": "Strokovno barvanje las in oblikovanje pričesk v prijetnem ambientu",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/services.webp",
+      "width": 919,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7750144",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-black-chair-and-a-mirror-with-a-ring-light-7750144/",
+      "photographer": "Max Vakhtbovych",
+      "photographerUrl": "https://www.pexels.com/@artbovich",
+      "searchQuery": "modern hair salon interior natural light"
     }
   },
   "brand": {

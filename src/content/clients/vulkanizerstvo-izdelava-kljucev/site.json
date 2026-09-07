@@ -20,8 +20,19 @@
       "alt": "Avtovulkanizerska delavnica z opremo za premontažo pnevmatik"
     },
     "services": {
-      "src": "/clients/vulkanizerstvo-izdelava-kljucev/services.jpg",
-      "alt": "Natančna izdelava ključev v delavnici"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "alt": "Menjava pnevmatik in strokovno delo v vulkanizerski delavnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870316",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-wearing-blue-uniform-holding-a-car-tire-6870316/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
     }
   },
   "brand": {

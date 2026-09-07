@@ -1,0 +1,304 @@
+{
+  "notes": "Only REPLACE assets (demos>=2). Multi-trade shared hashes are split by industry. Prefer existing KEEP cache assets. REVIEW/UNKNOWN untouched. UNUSED cache not modified.",
+  "jobs": [
+    {
+      "oldKey": "pexels:32588548",
+      "brief": {
+        "trade": "vodovodarji-ogrevanje",
+        "scene": "Technician maintaining heating/HVAC or plumbing equipment indoors",
+        "setting": "EU workshop/utility room",
+        "prohibit": ["Cyrillic text", "non-EU fixtures", "foreign plates"]
+      },
+      "reuseCacheKey": "pexels:32588555",
+      "searchQuery": "heating system maintenance professional",
+      "match": "all"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "brief": {
+        "trade": "kozmeticarji",
+        "scene": "Professional facial/skincare treatment in EU beauty salon",
+        "setting": "Clean modern salon, no SE-Asian head-spa basin, no non-Latin product labels",
+        "prohibit": ["Vietnamese/Thai labels", "head-spa basin typology"]
+      },
+      "reuseCacheKey": "pexels:16574941",
+      "searchQuery": "professional skincare treatment spa",
+      "match": "all"
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "brief": {
+        "trade": "keramicarji",
+        "scene": "Finished ceramic tile work bathroom/kitchen detail",
+        "setting": "Modern Central-EU interior tiling",
+        "prohibit": ["Beauty vanity products", "English skincare brands as primary subject"]
+      },
+      "reuseLocalPath": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "searchQuery": "ceramic tile bathroom vanity finished work",
+      "match": "all"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "brief": {
+        "trade": "cistilni-servisi",
+        "scene": "Professional interior window/glass cleaning",
+        "setting": "Modern EU residential/commercial interior",
+        "prohibit": ["English retail department signs", "CAUTION wet floor English signage"]
+      },
+      "reuseCacheKey": "pexels:6197122",
+      "searchQuery": "professional cleaning service sparkling clean modern interior",
+      "match": "all"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "brief": {
+        "trade": "avtomehaniki",
+        "scene": "Mechanic working under car on lift in indoor EU garage",
+        "setting": "Bright professional workshop",
+        "prohibit": [".FR or foreign domain on uniform", "non-EU plates"]
+      },
+      "reuseCacheKey": "pexels:8986105",
+      "searchQuery": "car repair shop professional mechanic",
+      "match": "all"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "brief": {
+        "trade": "avtomehaniki",
+        "scene": "Indoor EU garage mechanic service",
+        "prohibit": ["Outdoor night informal garage", "non-EU plates"]
+      },
+      "groups": [
+        {
+          "reuseCacheKey": "pexels:8986105",
+          "searchQuery": "car repair shop professional mechanic",
+          "slugs": [
+            "servis-popravilo-vozil",
+            "avtoservis-stefko-stefan",
+            "9fast-anze-soklic",
+            "zavorni-servis-avtomehanika",
+            "vzdrzevanje-popravila-motornih-2",
+            "avtoservis-celarc-crt",
+            "avtoservis-bojan-zagar",
+            "pirnar-stanislav-avtoservis",
+            "avtoservis-kepec-bostjan"
+          ]
+        },
+        {
+          "reuseLocalPath": "public/clients/elektro-ivan-troha/hero.jpg",
+          "searchQuery": "electrician working electrical panel",
+          "slugs": ["elektromehanika-marko-zupancic"]
+        }
+      ]
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "brief": {
+        "trade": "split: vulkanizerji vs elektricarji",
+        "scene": "Trade-matched services image (not pencils)",
+        "prohibit": ["Office/school pencils", "wrong trade"]
+      },
+      "groups": [
+        {
+          "reuseCacheKey": "pexels:6870316",
+          "searchQuery": "tire shop mechanic changing tire",
+          "slugPrefix": "qa-vulkanizerji",
+          "slugs": ["vulkanizerstvo-izdelava-kljucev"]
+        },
+        {
+          "reuseLocalPath": "public/clients/elektro-ivan-troha/hero.jpg",
+          "searchQuery": "electrician working electrical panel",
+          "slugs": ["elektro-kovac", "marko-cerekovic"]
+        }
+      ]
+    },
+    {
+      "oldKey": "hash:3915b81a23c3f9ce",
+      "brief": {
+        "trade": "frizerji",
+        "scene": "Modern hair salon interior station",
+        "prohibit": ["UK Type G outlets"]
+      },
+      "reuseCacheKey": "pexels:7750101",
+      "searchQuery": "modern hair salon interior natural light",
+      "match": "all"
+    },
+    {
+      "oldKey": "hash:72a50d8763236882",
+      "brief": {
+        "trade": "frizerji",
+        "scene": "Modern hair salon interior",
+        "prohibit": ["UK Type G outlets"]
+      },
+      "reuseCacheKey": "pexels:7750101",
+      "searchQuery": "modern hair salon interior natural light",
+      "match": "all"
+    },
+    {
+      "oldKey": "hash:da9499e132f96eff",
+      "brief": {
+        "trade": "frizerji",
+        "scene": "Salon interior/services without foreign place names",
+        "prohibit": ["Dutch town names", "foreign storefront text"]
+      },
+      "reuseCacheKey": "pexels:7750144",
+      "searchQuery": "modern hair salon interior natural light",
+      "match": "all"
+    },
+    {
+      "oldKey": "hash:284d71d703f510a2",
+      "brief": {
+        "trade": "frizerji",
+        "scene": "Salon interior without Cyrillic wall text",
+        "prohibit": ["Cyrillic wall slogans"]
+      },
+      "reuseCacheKey": "pexels:7750101",
+      "searchQuery": "modern hair salon interior natural light",
+      "match": "all"
+    },
+    {
+      "oldKey": "hash:8e3f9c621f419fde",
+      "brief": {
+        "trade": "frizerji",
+        "scene": "Hair salon interior (not sewing)",
+        "prohibit": ["Sewing machines", "atelier props"]
+      },
+      "reuseCacheKey": "pexels:7750101",
+      "searchQuery": "modern hair salon interior natural light",
+      "match": "all"
+    },
+    {
+      "oldKey": "pexels:7220892",
+      "brief": {
+        "trade": "vodovodarji-ogrevanje",
+        "scene": "Plumbing/heating install not doorknob",
+        "prohibit": ["US round doorknobs as primary subject"]
+      },
+      "reuseCacheKey": "pexels:32588555",
+      "searchQuery": "plumber heating installation professional",
+      "match": "all"
+    },
+    {
+      "oldKey": "pexels:33388390",
+      "brief": {
+        "trade": "vodovodarji-ogrevanje",
+        "scene": "Professional plumbing/heating with proper PPE",
+        "prohibit": ["Sandals on wet work", "pressure washer as plumbing hero"]
+      },
+      "reuseCacheKey": "pexels:32588555",
+      "searchQuery": "plumber heating installation professional",
+      "match": "all"
+    },
+    {
+      "oldKey": "pexels:1029635",
+      "brief": {
+        "trade": "vodovodarji-ogrevanje",
+        "scene": "Indoor plumbing/heating (not outdoor gas rack)",
+        "prohibit": ["Outdoor gas utility meter racks"]
+      },
+      "groups": [
+        {
+          "reuseCacheKey": "pexels:32588555",
+          "searchQuery": "plumber heating installation professional",
+          "slugs": ["vodoinstalaterstvo-adi-dervis", "3ici-install-vodovodne"]
+        },
+        {
+          "reuseCacheKey": "pexels:6197122",
+          "searchQuery": "residential outdoor maintenance clean modern home",
+          "note": "vodvrt services is garden-oriented; window/exterior maintenance is closer than gas meters",
+          "slugs": ["vodvrt-vodovodne-instalacije"]
+        }
+      ]
+    },
+    {
+      "oldKey": "pexels:26605672",
+      "brief": {
+        "trade": "vulkanizerji",
+        "scene": "Tire change in EU workshop",
+        "prohibit": ["Houston TX", "English/Spanish shop signs"]
+      },
+      "reuseCacheKey": "pexels:6870316",
+      "searchQuery": "tire shop mechanic changing tire",
+      "match": "all"
+    },
+    {
+      "oldKey": "pexels:9139593",
+      "brief": {
+        "trade": "avtokleparji-licarji",
+        "scene": "EU bodywork/PDR or paint work",
+        "prohibit": ["US performance show cars", "Milwaukee-branded lifestyle garage"]
+      },
+      "reuseCacheKey": "pexels:37809576",
+      "searchQuery": "auto body shop car painting professional",
+      "match": "all"
+    },
+    {
+      "oldKey": "pexels:33314764",
+      "brief": {
+        "trade": "elektricarji",
+        "scene": "Electrical panel or lighting install",
+        "prohibit": ["Lounge banquette with no electrical work"]
+      },
+      "reuseLocalPath": "public/clients/elektro-ivan-troha/hero.jpg",
+      "searchQuery": "electrician working electrical panel",
+      "match": "all"
+    },
+    {
+      "oldKey": "pexels:10871585",
+      "brief": {
+        "trade": "elektricarji",
+        "scene": "EU electrical panel work",
+        "prohibit": ["Indonesian K3 emblem"]
+      },
+      "reuseLocalPath": "public/clients/elektro-ivan-troha/hero.jpg",
+      "searchQuery": "electrician working electrical panel",
+      "match": "all"
+    },
+    {
+      "oldKey": "hash:c254d8db5b5f1c6f",
+      "brief": {
+        "trade": "elektricarji",
+        "scene": "Clean electrical equipment/services detail",
+        "prohibit": ["Chaotic outdoor meters", "non-EU labels"]
+      },
+      "reuseLocalPath": "public/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "searchQuery": "modern lighting fixture electrical install",
+      "match": "all"
+    },
+    {
+      "oldKey": "hash:31a9c52ff8409bbd",
+      "brief": {
+        "trade": "split multi-trade barber misuse",
+        "scene": "Trade-matched hero per industry",
+        "prohibit": ["Barber scene on non-salon demos"]
+      },
+      "groups": [
+        {
+          "reuseLocalPath": "public/clients/elektro-ivan-troha/hero.jpg",
+          "searchQuery": "electrician working electrical panel",
+          "slugs": [
+            "gavro-elektro-hisniske",
+            "elektro-veber-tone",
+            "elektro-zagar-jan",
+            "marko-cerekovic"
+          ]
+        },
+        {
+          "reuseCacheKey": "pexels:7750101",
+          "searchQuery": "modern hair salon interior natural light",
+          "slugs": ["frizerstvo-erna-tesnjak"]
+        },
+        {
+          "reuseLocalPath": "public/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
+          "searchQuery": "ceramic tile bathroom finished work",
+          "slugs": ["keramicarstvo-zeljko-zeljko"]
+        },
+        {
+          "reuseCacheKey": "pexels:6870316",
+          "searchQuery": "tire shop mechanic changing tire",
+          "slugs": ["vulkanizerstvo-andrej-kaluza"]
+        }
+      ]
+    }
+  ]
+}

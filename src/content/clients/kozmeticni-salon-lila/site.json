@@ -13,8 +13,19 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/kozmeticni-salon-lila/hero.jpg",
-      "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "alt": "Strokovna nega obraza v prijetnem ambientu kozmetičnega salona",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16574941",
+      "sourceUrl": "https://www.pexels.com/photo/beauty-portrait-blonde-woman-applying-cosmetics-face-mask-on-face-16574941/",
+      "photographer": "Vlad Deep",
+      "photographerUrl": "https://www.pexels.com/@vlad-deep-29415806",
+      "searchQuery": "professional skincare treatment spa"
     },
     "services": {
       "src": "/clients/kozmeticni-salon-lila/services.jpg",

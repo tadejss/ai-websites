@@ -20,8 +20,12 @@
       "alt": "Električar med delom na elektro omari"
     },
     "services": {
-      "src": "/clients/elektro-kovac/services.jpg",
-      "alt": "Orodja in električne napeljave za elektroinštalacije"
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
+      "alt": "Orodja in električne napeljave za elektroinštalacije",
+      "searchQuery": "electrician working electrical panel",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     }
   },
   "brand": {

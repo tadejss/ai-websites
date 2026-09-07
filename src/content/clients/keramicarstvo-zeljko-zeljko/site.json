@@ -16,8 +16,12 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/keramicarstvo-zeljko-zeljko/hero.jpg",
-      "alt": "Strokovno polaganje keramičnih ploščic v notranjih prostorih"
+      "src": "/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
+      "srcFallback": "/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
+      "alt": "Strokovno polaganje keramičnih ploščic v notranjih prostorih",
+      "searchQuery": "ceramic tile bathroom finished work",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     },
     "services": {
       "src": "/clients/keramicarstvo-zeljko-zeljko/services.jpg",

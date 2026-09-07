@@ -1,0 +1,1095 @@
+{
+  "updated": 121,
+  "skipped": 0,
+  "log": [
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "vodovodne-instalacije-marjan",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-09-warm-soft",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-06-service-grid",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-02-editorial-type",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "kaplja-vodovodne-andrej",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-04-stats-trust",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-01-classic-split",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-07-asymmetric-bold",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-08-dark-pro",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "napeljava-vodovodnih-centralnih",
+      "slot": "hero",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-03-photo-forward",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-05-minimal-line",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:32588548",
+      "slug": "qa-vodovodarji-ogrevanje-10-industrial-plain",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-07-asymmetric-bold",
+      "slot": "hero",
+      "donor": "masaze-lavanda-masazne:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-08-dark-pro",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-06-service-grid",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-01-classic-split",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "kozmeticni-salon-lila",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-02-editorial-type",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-09-warm-soft",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-10-industrial-plain",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-03-photo-forward",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-04-stats-trust",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slug": "qa-kozmeticarji-05-minimal-line",
+      "slot": "hero",
+      "donor": "qa-kozmeticarji-07-asymmetric-bold:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/masaze-lavanda-masazne/hero.avif",
+      "sourceId": "16574941",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-10-industrial-plain",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-08-dark-pro",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "keramicarstvo-mubi-igor",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-05-minimal-line",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-04-stats-trust",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-02-editorial-type",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-09-warm-soft",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-01-classic-split",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-06-service-grid",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-07-asymmetric-bold",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slug": "qa-keramicarji-03-photo-forward",
+      "slot": "services",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slug": "top-cistilni-servis",
+      "slot": "services",
+      "donor": "cistilni-servis-val:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slug": "cistilni-servis-kristalcek",
+      "slot": "hero",
+      "donor": "top-cistilni-servis:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slug": "hisnik-toni-vzdrzevanje",
+      "slot": "services",
+      "donor": "top-cistilni-servis:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slug": "cistilni-servis-zeljka",
+      "slot": "hero",
+      "donor": "top-cistilni-servis:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slug": "splosno-ciscenje-stavb",
+      "slot": "hero",
+      "donor": "top-cistilni-servis:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slug": "vzdrzevanje-objektov-mix",
+      "slot": "hero",
+      "donor": "top-cistilni-servis:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slug": "cistilni-servis-luco",
+      "slot": "hero",
+      "donor": "top-cistilni-servis:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slug": "cistilnica-pucelj-kamnik",
+      "slot": "hero",
+      "donor": "top-cistilni-servis:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slug": "ekea-alma-nuhanovic",
+      "slot": "services",
+      "donor": "top-cistilni-servis:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slug": "servis-vozil-tadej",
+      "slot": "services",
+      "donor": "vzdrzevanje-popravila-motornih:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slug": "mrd-avto-mojca",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slug": "avtomehanika-koscak-primoz",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slug": "avtoservis-celarc-crt",
+      "slot": "services",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slug": "car-repair-shop",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slug": "avtoservis-handa-eldin",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slug": "avtocenter-litija-zlato",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slug": "mehanika-bodlaj-druzba",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slug": "pirnar-stanislav-avtoservis",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "servis-popravilo-vozil",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "elektromehanika-marko-zupancic",
+      "slot": "hero",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "avtoservis-celarc-crt",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "avtoservis-stefko-stefan",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "avtoservis-bojan-zagar",
+      "slot": "services",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "9fast-anze-soklic",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "zavorni-servis-avtomehanika",
+      "slot": "hero",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "vzdrzevanje-popravila-motornih-2",
+      "slot": "services",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "pirnar-stanislav-avtoservis",
+      "slot": "services",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slug": "avtoservis-kepec-bostjan",
+      "slot": "services",
+      "donor": "servis-vozil-tadej:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "sourceId": "8986105",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-05-minimal-line",
+      "slot": "services",
+      "donor": "vulkanizerstvo:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "elektro-kovac",
+      "slot": "services",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-03-photo-forward",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-09-warm-soft",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-07-asymmetric-bold",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "marko-cerekovic",
+      "slot": "services",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-02-editorial-type",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-10-industrial-plain",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-01-classic-split",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "vulkanizerstvo-izdelava-kljucev",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-06-service-grid",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-08-dark-pro",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slug": "qa-vulkanizerji-04-stats-trust",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:3915b81a23c3f9ce",
+      "slug": "frizerski-salon-mojca-2",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:3915b81a23c3f9ce",
+      "slug": "frizerski-salon-renata",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:3915b81a23c3f9ce",
+      "slug": "frizerski-salon-edita",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:3915b81a23c3f9ce",
+      "slug": "frizerski-salon-branka",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:3915b81a23c3f9ce",
+      "slug": "frizerski-salon-katja-2",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:3915b81a23c3f9ce",
+      "slug": "frizerski-salon-neva",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:72a50d8763236882",
+      "slug": "frizerski-salon-simicak",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:72a50d8763236882",
+      "slug": "frizerski-salon-karmen",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:da9499e132f96eff",
+      "slug": "havajana-frizersko-lepotilni",
+      "slot": "services",
+      "donor": "qa-frizerji-09-warm-soft:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/services.avif",
+      "sourceId": "7750144",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:da9499e132f96eff",
+      "slug": "frizerstvo-marija-marija",
+      "slot": "services",
+      "donor": "qa-frizerji-09-warm-soft:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/services.avif",
+      "sourceId": "7750144",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:da9499e132f96eff",
+      "slug": "frizerski-salon-renata-2",
+      "slot": "services",
+      "donor": "qa-frizerji-09-warm-soft:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/services.avif",
+      "sourceId": "7750144",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:da9499e132f96eff",
+      "slug": "brivsko-frizerski-salon",
+      "slot": "services",
+      "donor": "qa-frizerji-09-warm-soft:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/services.avif",
+      "sourceId": "7750144",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:284d71d703f510a2",
+      "slug": "frizerski-studio-dejan",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:284d71d703f510a2",
+      "slug": "frizerstvo-vesna-vuksinic",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:284d71d703f510a2",
+      "slug": "frizerstvo-plesko-branka",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8e3f9c621f419fde",
+      "slug": "frizerstvo-andreja-frank",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:8e3f9c621f419fde",
+      "slug": "frizerski-studio-sonce",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7220892",
+      "slug": "vodovodne-instalacije-asmir",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7220892",
+      "slug": "vodovodar-ljubljana",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7220892",
+      "slug": "napeljava-vodovodnih-centralnih",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:7220892",
+      "slug": "vodovodne-napeljave-prenove",
+      "slot": "hero",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:33388390",
+      "slug": "lekse-instalacije-vladislav",
+      "slot": "hero",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:33388390",
+      "slug": "vodoinstalaterstvo-adi-dervis",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:33388390",
+      "slug": "4mvodovodne-instalacije-matic",
+      "slot": "hero",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:33388390",
+      "slug": "aqua-install-milos",
+      "slot": "hero",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:1029635",
+      "slug": "vodoinstalaterstvo-adi-dervis",
+      "slot": "hero",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:1029635",
+      "slug": "vodvrt-vodovodne-instalacije",
+      "slot": "services",
+      "donor": "top-cistilni-servis:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+      "sourceId": "6197122",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:1029635",
+      "slug": "3ici-install-vodovodne",
+      "slot": "services",
+      "donor": "vodovodne-instalacije-marjan:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "sourceId": "32588555",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:26605672",
+      "slug": "vzdrzevanje-vozil-vulkanizerstvo",
+      "slot": "services",
+      "donor": "qa-vulkanizerji-05-minimal-line:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:26605672",
+      "slug": "vulkanizerstvo-jan-dobnikar",
+      "slot": "hero",
+      "donor": "vzdrzevanje-vozil-vulkanizerstvo:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9139593",
+      "slug": "don-avtokleparstvo-licarstvo",
+      "slot": "hero",
+      "donor": "qa-avtokleparji-licarji-07-asymmetric-bold:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-stanislav/services.avif",
+      "sourceId": "37809576",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:9139593",
+      "slug": "am-janc-avtokleparstvo",
+      "slot": "hero",
+      "donor": "don-avtokleparstvo-licarstvo:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-stanislav/services.avif",
+      "sourceId": "37809576",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "pexels:33314764",
+      "slug": "elektro-instalacije-kovac",
+      "slot": "hero",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "pexels:33314764",
+      "slug": "elektroinstalacije-tehnicne-gorazd",
+      "slot": "services",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "pexels:10871585",
+      "slug": "elektro-instalacije-kovac",
+      "slot": "services",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "pexels:10871585",
+      "slug": "elektroinstalacije-saso-sodja",
+      "slot": "hero",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:c254d8db5b5f1c6f",
+      "slug": "elektro-zagar-jan",
+      "slot": "services",
+      "donor": "public/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "newSrc": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:c254d8db5b5f1c6f",
+      "slug": "wise-electronics",
+      "slot": "services",
+      "donor": "public/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "newSrc": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:31a9c52ff8409bbd",
+      "slug": "elektro-veber-tone",
+      "slot": "hero",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:31a9c52ff8409bbd",
+      "slug": "elektro-zagar-jan",
+      "slot": "hero",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:31a9c52ff8409bbd",
+      "slug": "vulkanizerstvo-andrej-kaluza",
+      "slot": "hero",
+      "donor": "vzdrzevanje-vozil-vulkanizerstvo:services",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "sourceId": "6870316",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:31a9c52ff8409bbd",
+      "slug": "keramicarstvo-zeljko-zeljko",
+      "slot": "hero",
+      "donor": "public/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
+      "newSrc": "/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:31a9c52ff8409bbd",
+      "slug": "marko-cerekovic",
+      "slot": "hero",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    },
+    {
+      "oldKey": "hash:31a9c52ff8409bbd",
+      "slug": "frizerstvo-erna-tesnjak",
+      "slot": "hero",
+      "donor": "qa-frizerji-09-warm-soft:hero",
+      "newSrc": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "sourceId": "7750101",
+      "provider": "pexels"
+    },
+    {
+      "oldKey": "hash:31a9c52ff8409bbd",
+      "slug": "gavro-elektro-hisniske",
+      "slot": "hero",
+      "donor": "public/clients/elektro-ivan-troha/hero.jpg",
+      "newSrc": "/clients/elektro-ivan-troha/hero.jpg",
+      "sourceId": null,
+      "provider": null
+    }
+  ]
+}

@@ -31,19 +31,12 @@
       "searchQuery": "electrician working on modern electrical panel warm light"
     },
     "services": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-tehnicne-gorazd/services.avif",
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
       "alt": "Montaža svetil in elektroinštalacijska dela",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-tehnicne-gorazd/services.webp",
-      "width": 1300,
-      "height": 1300,
-      "format": "avif",
-      "fallbackFormat": "webp",
-      "provider": "pexels",
-      "sourceId": "33314764",
-      "sourceUrl": "https://www.pexels.com/photo/minimalist-wood-interior-with-cozy-niche-seating-33314764/",
-      "photographer": "The Ghazi",
-      "photographerUrl": "https://www.pexels.com/@the-ghazi-2152398165",
-      "searchQuery": "professional electrician installing lighting fixture warm interior"
+      "searchQuery": "electrician working electrical panel",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     }
   },
   "sections": {

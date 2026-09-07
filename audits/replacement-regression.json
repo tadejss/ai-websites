@@ -1,0 +1,289 @@
+{
+  "method": "site.json retarget to existing KEEP donor assets (no new downloads/binaries)",
+  "slots_updated": 121,
+  "groups": [
+    {
+      "oldKey": "pexels:32588548",
+      "slots": 13,
+      "demos": 13,
+      "new_sourceIds": [
+        "pexels:32588555"
+      ],
+      "donors": [
+        "vodovodne-instalacije-marjan:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:8555282400b5f761",
+      "slots": 13,
+      "demos": 13,
+      "new_sourceIds": [
+        "local",
+        "pexels:6870316"
+      ],
+      "donors": [
+        "public/clients/elektro-ivan-troha/hero.jpg",
+        "qa-vulkanizerji-05-minimal-line:services",
+        "vulkanizerstvo:services"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:6c4ea29bfcfb03ec",
+      "slots": 11,
+      "demos": 11,
+      "new_sourceIds": [
+        "pexels:16574941"
+      ],
+      "donors": [
+        "masaze-lavanda-masazne:hero",
+        "qa-kozmeticarji-07-asymmetric-bold:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:ef30f78dabe1795f",
+      "slots": 11,
+      "demos": 11,
+      "new_sourceIds": [
+        "local"
+      ],
+      "donors": [
+        "public/clients/keramicarstvo-stanislav-radovicevic/services.jpg"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:28153670",
+      "slots": 10,
+      "demos": 10,
+      "new_sourceIds": [
+        "local",
+        "pexels:8986105"
+      ],
+      "donors": [
+        "public/clients/elektro-ivan-troha/hero.jpg",
+        "servis-vozil-tadej:services"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:7451918",
+      "slots": 9,
+      "demos": 9,
+      "new_sourceIds": [
+        "pexels:6197122"
+      ],
+      "donors": [
+        "cistilni-servis-val:hero",
+        "top-cistilni-servis:services"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:9626877",
+      "slots": 9,
+      "demos": 9,
+      "new_sourceIds": [
+        "pexels:8986105"
+      ],
+      "donors": [
+        "servis-vozil-tadej:services",
+        "vzdrzevanje-popravila-motornih:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:31a9c52ff8409bbd",
+      "slots": 7,
+      "demos": 7,
+      "new_sourceIds": [
+        "local",
+        "pexels:6870316",
+        "pexels:7750101"
+      ],
+      "donors": [
+        "public/clients/elektro-ivan-troha/hero.jpg",
+        "public/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
+        "qa-frizerji-09-warm-soft:hero",
+        "vzdrzevanje-vozil-vulkanizerstvo:services"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:3915b81a23c3f9ce",
+      "slots": 6,
+      "demos": 6,
+      "new_sourceIds": [
+        "pexels:7750101"
+      ],
+      "donors": [
+        "qa-frizerji-09-warm-soft:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:da9499e132f96eff",
+      "slots": 4,
+      "demos": 4,
+      "new_sourceIds": [
+        "pexels:7750144"
+      ],
+      "donors": [
+        "qa-frizerji-09-warm-soft:services"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:7220892",
+      "slots": 4,
+      "demos": 4,
+      "new_sourceIds": [
+        "pexels:32588555"
+      ],
+      "donors": [
+        "vodovodne-instalacije-marjan:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:33388390",
+      "slots": 4,
+      "demos": 4,
+      "new_sourceIds": [
+        "pexels:32588555"
+      ],
+      "donors": [
+        "vodovodne-instalacije-marjan:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:284d71d703f510a2",
+      "slots": 3,
+      "demos": 3,
+      "new_sourceIds": [
+        "pexels:7750101"
+      ],
+      "donors": [
+        "qa-frizerji-09-warm-soft:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:1029635",
+      "slots": 3,
+      "demos": 3,
+      "new_sourceIds": [
+        "pexels:32588555",
+        "pexels:6197122"
+      ],
+      "donors": [
+        "top-cistilni-servis:services",
+        "vodovodne-instalacije-marjan:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:72a50d8763236882",
+      "slots": 2,
+      "demos": 2,
+      "new_sourceIds": [
+        "pexels:7750101"
+      ],
+      "donors": [
+        "qa-frizerji-09-warm-soft:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:8e3f9c621f419fde",
+      "slots": 2,
+      "demos": 2,
+      "new_sourceIds": [
+        "pexels:7750101"
+      ],
+      "donors": [
+        "qa-frizerji-09-warm-soft:hero"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:26605672",
+      "slots": 2,
+      "demos": 2,
+      "new_sourceIds": [
+        "pexels:6870316"
+      ],
+      "donors": [
+        "qa-vulkanizerji-05-minimal-line:services",
+        "vzdrzevanje-vozil-vulkanizerstvo:services"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:9139593",
+      "slots": 2,
+      "demos": 2,
+      "new_sourceIds": [
+        "pexels:37809576"
+      ],
+      "donors": [
+        "don-avtokleparstvo-licarstvo:hero",
+        "qa-avtokleparji-licarji-07-asymmetric-bold:services"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:33314764",
+      "slots": 2,
+      "demos": 2,
+      "new_sourceIds": [
+        "local"
+      ],
+      "donors": [
+        "public/clients/elektro-ivan-troha/hero.jpg"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "pexels:10871585",
+      "slots": 2,
+      "demos": 2,
+      "new_sourceIds": [
+        "local"
+      ],
+      "donors": [
+        "public/clients/elektro-ivan-troha/hero.jpg"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    },
+    {
+      "oldKey": "hash:c254d8db5b5f1c6f",
+      "slots": 2,
+      "demos": 2,
+      "new_sourceIds": [
+        "local"
+      ],
+      "donors": [
+        "public/clients/elvip-elektroinstalacije-podboj/services.jpg"
+      ],
+      "verdict": "PASS — trade-matched KEEP donor"
+    }
+  ],
+  "checks": {
+    "stale_old_keys_in_updated_slots": 0,
+    "missing_local_src": 0,
+    "review_unknown_untouched": true,
+    "demos_eq_1_replace_deferred": true
+  },
+  "edge_notes": [
+    "hash:855528 pencils split: vulkanizer→pexels:6870316, elektro→elektro-ivan-troha panel",
+    "hash:31a9c52 barber misuse split by industry (elektro/frizer/keramik/vulkanizer)",
+    "pexels:28153670: auto→8986105, elektromehanika→elektro panel",
+    "vodvrt services: garden alt kept; image is exterior window cleaning (better than gas meters)",
+    "demos==1 REPLACE assets deferred (not in this high-impact pass)",
+    "UNUSED cache REPLACE assets not modified"
+  ]
+}

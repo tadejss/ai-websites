@@ -17,19 +17,12 @@
   },
   "images": {
     "hero": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-saso-sodja/hero.avif",
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
       "alt": "Električar pri delu na električni omarici v svetlem prostoru",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-saso-sodja/hero.webp",
-      "width": 976,
-      "height": 1300,
-      "format": "avif",
-      "fallbackFormat": "webp",
-      "provider": "pexels",
-      "sourceId": "10871585",
-      "sourceUrl": "https://www.pexels.com/photo/electricians-at-work-10871585/",
-      "photographer": "Annas Zakaria",
-      "photographerUrl": "https://www.pexels.com/@annaszakaria",
-      "searchQuery": "electrician working electrical panel"
+      "searchQuery": "electrician working electrical panel",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     },
     "services": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektroinstalacije-saso-sodja/services.avif",

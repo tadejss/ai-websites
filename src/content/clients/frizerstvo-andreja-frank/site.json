@@ -13,8 +13,19 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/frizerstvo-andreja-frank/hero.jpg",
-      "alt": "Topel in svetel frizerski salon"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.avif",
+      "alt": "Topel in svetel frizerski salon",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/studio-moj-frizer/hero.webp",
+      "width": 908,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7750101",
+      "sourceUrl": "https://www.pexels.com/photo/vanity-mirror-with-black-rolling-chair-7750101/",
+      "photographer": "Max Vakhtbovych",
+      "photographerUrl": "https://www.pexels.com/@artbovich",
+      "searchQuery": "modern hair salon interior natural light"
     },
     "services": {
       "src": "/clients/frizerstvo-andreja-frank/services.jpg",

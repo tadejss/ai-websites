@@ -16,8 +16,12 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/elektro-veber-tone/hero.jpg",
-      "alt": "Električar pri delu na elektro omarici"
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
+      "alt": "Električar pri delu na elektro omarici",
+      "searchQuery": "electrician working electrical panel",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     },
     "services": {
       "src": "/clients/elektro-veber-tone/services.jpg",

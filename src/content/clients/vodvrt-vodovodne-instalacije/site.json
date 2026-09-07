@@ -21,19 +21,19 @@
       "searchQuery": "plumber working on pipes installation"
     },
     "services": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodvrt-vodovodne-instalacije/services.avif",
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
       "alt": "Urejanje vrta in zunanje okolice objekta",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodvrt-vodovodne-instalacije/services.webp",
-      "width": 917,
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.webp",
+      "width": 867,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "1029635",
-      "sourceUrl": "https://www.pexels.com/photo/black-and-yellow-water-filter-system-1029635/",
-      "photographer": "Scott Webb",
-      "photographerUrl": "https://www.pexels.com/@scottwebb",
-      "searchQuery": "plumber working on pipes installation"
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "residential outdoor maintenance clean modern home"
     }
   },
   "sections": {

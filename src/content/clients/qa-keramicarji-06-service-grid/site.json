@@ -21,8 +21,12 @@
       "alt": "Strokovno polaganje keramičnih ploščic v notranjih prostorih"
     },
     "services": {
-      "src": "/clients/keramicarstvo-mubi-igor/services.jpg",
-      "alt": "Natančno polaganje keramike in prenova kopalnice"
+      "src": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "srcFallback": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+      "alt": "Natančno polaganje keramike in prenova kopalnice",
+      "searchQuery": "ceramic tile bathroom vanity finished work",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     }
   },
   "brand": {

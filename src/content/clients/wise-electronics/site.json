@@ -20,8 +20,12 @@
       "alt": "Električar pri delu na sodobni električni napeljavi v svetlem prostoru"
     },
     "services": {
-      "src": "/clients/wise-electronics/services.jpg",
-      "alt": "Podrobnost električne omarice in napeljav za pametne inštalacije"
+      "src": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "srcFallback": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "alt": "Podrobnost električne omarice in napeljav za pametne inštalacije",
+      "searchQuery": "modern lighting fixture electrical install",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     }
   },
   "brand": {

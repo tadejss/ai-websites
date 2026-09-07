@@ -17,19 +17,19 @@
   },
   "images": {
     "hero": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zeljka/hero.avif",
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
       "alt": "Svetel in čist sodoben prostor kot prikaz profesionalnih storitev čiščenja",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zeljka/hero.webp",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.webp",
       "width": 867,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "7451918",
-      "sourceUrl": "https://www.pexels.com/photo/wet-floor-caution-sign-placed-in-store-7451918/",
-      "photographer": "Nothing Ahead",
-      "photographerUrl": "https://www.pexels.com/@ian-panelo",
-      "searchQuery": "commercial cleaning team interior"
+      "sourceId": "6197122",
+      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional cleaning service sparkling clean modern interior"
     },
     "services": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-zeljka/services.avif",

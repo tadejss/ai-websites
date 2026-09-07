@@ -32,19 +32,19 @@
       "searchQuery": "heating system maintenance professional"
     },
     "services": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.avif",
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
       "alt": "Montaža vodovodnih inštalacij in sanitarne opreme",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/services.webp",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.webp",
       "width": 731,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "32588548",
-      "sourceUrl": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
+      "sourceId": "32588555",
+      "sourceUrl": "https://www.pexels.com/photo/technician-performing-air-conditioning-maintenance-32588555/",
       "photographer": "Bulat843 🌙",
       "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
-      "searchQuery": "plumber working on pipes installation"
+      "searchQuery": "heating system maintenance professional"
     }
   },
   "sections": {

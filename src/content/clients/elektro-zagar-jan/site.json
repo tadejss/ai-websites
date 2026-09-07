@@ -16,12 +16,20 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/elektro-zagar-jan/hero.jpg",
-      "alt": "Električar pri delu na elektroinštalacijah v sveti in topli sobi"
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
+      "alt": "Električar pri delu na elektroinštalacijah v sveti in topli sobi",
+      "searchQuery": "electrician working electrical panel",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     },
     "services": {
-      "src": "/clients/elektro-zagar-jan/services.jpg",
-      "alt": "Montaža in pregled elektroopreme ter razdelilnih omaric"
+      "src": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "srcFallback": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+      "alt": "Montaža in pregled elektroopreme ter razdelilnih omaric",
+      "searchQuery": "modern lighting fixture electrical install",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     }
   },
   "brand": {

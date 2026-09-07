@@ -16,19 +16,19 @@
   },
   "images": {
     "hero": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/am-janc-avtokleparstvo/hero.avif",
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-stanislav/services.avif",
       "alt": "Strokovna avtokleparska delavnica z opremo za popravilo vozil",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/am-janc-avtokleparstvo/hero.webp",
-      "width": 867,
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/avtokleparstvo-avtolicarstvo-stanislav/services.webp",
+      "width": 731,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "9139593",
-      "sourceUrl": "https://www.pexels.com/photo/red-ferrari-458-italia-parked-in-garage-9139593/",
-      "photographer": "Dennis Truong",
-      "photographerUrl": "https://www.pexels.com/@dennis-truong-91950818",
-      "searchQuery": "professional auto body repair shop dark modern workshop"
+      "sourceId": "37809576",
+      "sourceUrl": "https://www.pexels.com/photo/detailing-expert-polishing-car-in-workshop-37809576/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "auto body shop car painting professional"
     },
     "services": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/am-janc-avtokleparstvo/services.avif",

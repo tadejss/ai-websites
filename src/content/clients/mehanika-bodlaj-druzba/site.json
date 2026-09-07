@@ -16,19 +16,19 @@
   },
   "images": {
     "hero": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mehanika-bodlaj-druzba/hero.avif",
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
       "alt": "Mehanik pri delu v sodobni avtomehanični delavnici v Kamniku",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mehanika-bodlaj-druzba/hero.webp",
-      "width": 732,
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.webp",
+      "width": 867,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "9626877",
-      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-the-engine-of-the-car-9626877/",
-      "photographer": "MonControlteTechnique",
-      "photographerUrl": "https://www.pexels.com/@moncontroltetechnique-110684920",
-      "searchQuery": "auto mechanic working on car engine"
+      "sourceId": "8986105",
+      "sourceUrl": "https://www.pexels.com/photo/a-serviceman-in-blue-coverall-standing-under-a-vehicle-and-fixing-it-8986105/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "car repair shop professional mechanic"
     },
     "services": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/mehanika-bodlaj-druzba/services.avif",

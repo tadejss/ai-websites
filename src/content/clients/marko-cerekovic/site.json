@@ -16,12 +16,20 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/marko-cerekovic/hero.jpg",
-      "alt": "Električar pri delu na elektro omarici"
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
+      "alt": "Električar pri delu na elektro omarici",
+      "searchQuery": "electrician working electrical panel",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     },
     "services": {
-      "src": "/clients/marko-cerekovic/services.jpg",
-      "alt": "Orodje in oprema za elektroinstalacije"
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
+      "alt": "Orodje in oprema za elektroinstalacije",
+      "searchQuery": "electrician working electrical panel",
+      "format": "jpg",
+      "fallbackFormat": "jpg"
     }
   },
   "brand": {

@@ -16,34 +16,34 @@
   },
   "images": {
     "hero": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/hero.avif",
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
       "alt": "Vodoinštalater pri delu na vodovodni napeljavi",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/hero.webp",
-      "width": 917,
-      "height": 1300,
-      "format": "avif",
-      "fallbackFormat": "webp",
-      "provider": "pexels",
-      "sourceId": "1029635",
-      "sourceUrl": "https://www.pexels.com/photo/black-and-yellow-water-filter-system-1029635/",
-      "photographer": "Scott Webb",
-      "photographerUrl": "https://www.pexels.com/@scottwebb",
-      "searchQuery": "plumber working on pipes installation"
-    },
-    "services": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/services.avif",
-      "alt": "Montaža sanitarne opreme v sodobni kopalnici",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodoinstalaterstvo-adi-dervis/services.webp",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.webp",
       "width": 731,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "33388390",
-      "sourceUrl": "https://www.pexels.com/photo/technician-repairing-industrial-equipment-in-workshop-33388390/",
+      "sourceId": "32588555",
+      "sourceUrl": "https://www.pexels.com/photo/technician-performing-air-conditioning-maintenance-32588555/",
       "photographer": "Bulat843 🌙",
       "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
-      "searchQuery": "plumber working on pipes installation"
+      "searchQuery": "plumber heating installation professional"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "alt": "Montaža sanitarne opreme v sodobni kopalnici",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "32588555",
+      "sourceUrl": "https://www.pexels.com/photo/technician-performing-air-conditioning-maintenance-32588555/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "plumber heating installation professional"
     }
   },
   "sections": {

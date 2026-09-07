@@ -6,19 +6,19 @@
   },
   "images": {
     "hero": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/4mvodovodne-instalacije-matic/hero.avif",
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
       "alt": "Profesionalne vodovodne inštalacije in montaža sanitarne opreme",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/4mvodovodne-instalacije-matic/hero.webp",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.webp",
       "width": 731,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "33388390",
-      "sourceUrl": "https://www.pexels.com/photo/technician-repairing-industrial-equipment-in-workshop-33388390/",
+      "sourceId": "32588555",
+      "sourceUrl": "https://www.pexels.com/photo/technician-performing-air-conditioning-maintenance-32588555/",
       "photographer": "Bulat843 🌙",
       "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
-      "searchQuery": "plumber working on pipes installation"
+      "searchQuery": "plumber heating installation professional"
     },
     "services": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/4mvodovodne-instalacije-matic/services.avif",
