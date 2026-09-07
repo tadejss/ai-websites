@@ -1,7 +1,10 @@
 import { isDatabaseConfigured, sql } from "@/db/client";
 import { ensureCustomerSchema } from "@/db/ensure-schema";
+import { readLead } from "@/leads/store";
+import { isPureOptOutCommand } from "./opt-out";
 import type {
   AuthorizeSmsSendResult,
+  SmsInboxInboundRow,
   SmsInboundRecord,
   SmsLeadState,
   SmsLeadStatus,
@@ -646,6 +649,96 @@ export async function listInboundForSlug(
     SELECT * FROM sms_inbound WHERE slug = ${slug} ORDER BY received_at DESC
   `) as InboundRow[];
   return rows.map(mapInbound);
+}
+
+/**
+ * Paginate inbox candidates after applying the canonical TypeScript filter.
+ * Input must already be newest-first; no semantic SQL filter is applied here.
+ */
+export function paginateAttentionInboundMessages<T extends { body: string }>(
+  orderedNewestFirst: T[],
+  input?: { page?: number; pageSize?: number },
+): {
+  rows: T[];
+  total: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+} {
+  const pageSize = Math.min(100, Math.max(1, input?.pageSize ?? 25));
+  const page = Math.max(1, input?.page ?? 1);
+  const filtered = orderedNewestFirst.filter(
+    (message) => !isPureOptOutCommand(message.body),
+  );
+  const total = filtered.length;
+  const offset = (page - 1) * pageSize;
+  return {
+    rows: filtered.slice(offset, offset + pageSize),
+    total,
+    page,
+    pageSize,
+    totalPages: total === 0 ? 0 : Math.ceil(total / pageSize),
+  };
+}
+
+export async function listInboxInboundMessages(input?: {
+  page?: number;
+  pageSize?: number;
+}): Promise<{
+  rows: SmsInboxInboundRow[];
+  total: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+}> {
+  const pageSize = Math.min(100, Math.max(1, input?.pageSize ?? 25));
+  const page = Math.max(1, input?.page ?? 1);
+
+  if (!isDatabaseConfigured()) {
+    return { rows: [], total: 0, page, pageSize, totalPages: 0 };
+  }
+
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT *
+    FROM sms_inbound
+    ORDER BY received_at DESC, id DESC
+  `) as InboundRow[];
+
+  const paged = paginateAttentionInboundMessages(rows.map(mapInbound), {
+    page,
+    pageSize,
+  });
+
+  const slugs = [
+    ...new Set(
+      paged.rows
+        .filter((row) => row.matched && row.slug)
+        .map((row) => row.slug as string),
+    ),
+  ];
+  const states = await listSmsLeadStatesBySlugs(slugs);
+  const statusBySlug = new Map(states.map((state) => [state.slug, state]));
+
+  return {
+    ...paged,
+    rows: paged.rows.map((row) => {
+      const companyName =
+        row.matched && row.slug
+          ? (readLead(row.slug)?.companyName ?? null)
+          : null;
+      const smsStatus =
+        row.matched && row.slug
+          ? (statusBySlug.get(row.slug)?.smsStatus ?? null)
+          : null;
+      return {
+        ...row,
+        companyName,
+        smsStatus,
+      };
+    }),
+  };
 }
 
 export async function isSmsOptedOut(phone: string): Promise<boolean> {

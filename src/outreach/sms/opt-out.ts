@@ -67,6 +67,18 @@ export function isOptOutMessage(body: string): boolean {
   return parseSmsOptOut(body).optedOut;
 }
 
+/** Exact whole-message commands hidden from the admin "needs attention" inbox. */
+const PURE_OPT_OUT_COMMANDS = new Set(["ne", "stop", "odjava"]);
+
+/**
+ * Canonical rule for admin inbound inbox exclusion.
+ * True only when the normalized COMPLETE body is exactly NE, STOP, or ODJAVA.
+ * Broader business opt-out (`parseSmsOptOut`) is intentionally separate.
+ */
+export function isPureOptOutCommand(body: string): boolean {
+  return PURE_OPT_OUT_COMMANDS.has(normalizeInboundBody(body));
+}
+
 export function canCancelOnOptOut(status: string): boolean {
   return status === "queued" || status === "claimed";
 }

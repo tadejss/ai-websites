@@ -94,6 +94,8 @@ Automated SMS only when:
 
 Inbound bodies matching `STOP`, `ODJAVA`, `NE` (normalized) set `sms_status=opted_out` and `sms_allowed=false`.
 
+Admin `/admin/sms?view=inbound` shows replies needing attention. It excludes only exact pure commands via `isPureOptOutCommand` (`NE` / `STOP` / `ODJAVA` after normalize). Broader business opt-out (`parseSmsOptOut`, including synonyms and contained tokens) still applies on ingest and is **not** used as the inbox filter — so e.g. `NE HVALA` / `STOP prosim` remain visible while still opting the lead out when applicable.
+
 ## Local gateway
 
 See [tools/sms-gateway/README.md](../tools/sms-gateway/README.md).

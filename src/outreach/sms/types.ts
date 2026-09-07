@@ -73,6 +73,12 @@ export type SmsInboundRecord = {
   createdAt: string;
 };
 
+/** Admin inbox row: inbound message plus lead enrichment for the page. */
+export type SmsInboxInboundRow = SmsInboundRecord & {
+  companyName: string | null;
+  smsStatus: SmsLeadStatus | null;
+};
+
 export type SmsOptOutRecord = {
   phone: string;
   source: string;

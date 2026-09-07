@@ -163,6 +163,8 @@ Locked for customer edits (`isOnboardingLockedForCustomerEdits`): `approved_for_
 
 **Opt-out** (`src/outreach/sms/opt-out.ts` + `inbound.ts`): keywords include `stop`, `odjava`, `ne` (whole message), `preklic`, `unsubscribe`. Sets `smsStatus: "opted_out"`, `smsAllowed: false`. Enqueue never re-enables.
 
+**Admin inbox** (`/admin/sms?view=inbound`, `listInboxInboundMessages`): excludes only exact `NE`/`STOP`/`ODJAVA` via `isPureOptOutCommand` — not the broader `is_opt_out` flag.
+
 **Idempotency:** unique index on `(slug, step)` while status in `queued|claimed|sending|sent`.
 
 **Eligibility:** `evaluateSmsEligibility` (`src/outreach/sms/eligibility.ts`). Generation gate: `isSmsGenerationCandidate` (`relevance.ts`) — no website + SI mobile.

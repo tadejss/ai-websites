@@ -5,7 +5,8 @@ import { join } from "node:path";
 import { normalizeSlovenianPhone, isSlovenianMobilePhone } from "../src/outreach/sms/phone";
 import { analyzeSmsLength, renderSms } from "../src/outreach/sms/templates";
 import { evaluateSmsEligibility } from "../src/outreach/sms/eligibility";
-import { isOptOutMessage, parseSmsOptOut, canCancelOnOptOut } from "../src/outreach/sms/opt-out";
+import { isOptOutMessage, parseSmsOptOut, canCancelOnOptOut, isPureOptOutCommand, normalizeInboundBody } from "../src/outreach/sms/opt-out";
+import { paginateAttentionInboundMessages } from "../src/outreach/sms/store";
 import { isRelevantSmsLead } from "../src/outreach/sms/relevance";
 import { clientSiteExists } from "../src/leads/client-exists";
 import type { LeadRecord } from "../src/leads/store";
@@ -600,6 +601,76 @@ async function main() {
   ok(canCancelOnOptOut("claimed"), "cancel claimed");
   ok(!canCancelOnOptOut("sending"), "do not cancel sending");
   ok(!canCancelOnOptOut("sent"), "do not cancel sent");
+
+  // Pure inbox exclusion (stricter than business opt-out)
+  ok(isPureOptOutCommand("NE"), "pure NE");
+  ok(isPureOptOutCommand("ne"), "pure ne");
+  ok(isPureOptOutCommand("STOP"), "pure STOP");
+  ok(isPureOptOutCommand("stop"), "pure stop");
+  ok(isPureOptOutCommand("ODJAVA"), "pure ODJAVA");
+  ok(isPureOptOutCommand("odjava"), "pure odjava");
+  ok(normalizeInboundBody("STOP!") === "stop", "STOP! normalizes to stop");
+  ok(isPureOptOutCommand("STOP!"), "STOP! is pure after normalize");
+  ok(isPureOptOutCommand(" NE "), "padded NE is pure");
+  ok(isPureOptOutCommand("  odjava  "), "padded ODJAVA is pure");
+
+  ok(!isPureOptOutCommand("NE HVALA"), "NE HVALA not pure");
+  ok(!isPureOptOutCommand("NE, hvala"), "NE, hvala not pure");
+  ok(normalizeInboundBody("NE, hvala") === "ne, hvala", "NE, hvala keeps comma");
+  ok(!isPureOptOutCommand("STOP prosim"), "STOP prosim not pure");
+  ok(!isPureOptOutCommand("ODJAVA prosim"), "ODJAVA prosim not pure");
+  ok(!isPureOptOutCommand("Ne zanima me"), "Ne zanima me not pure");
+  ok(!isPureOptOutCommand("NE, trenutno ne"), "NE, trenutno ne not pure");
+  ok(
+    !isPureOptOutCommand("Ali lahko dobim več informacij?"),
+    "info question not pure",
+  );
+  ok(!isPureOptOutCommand("STOP! Ne želim več sporočil"), "STOP! longer not pure");
+  ok(!isPureOptOutCommand("Hvala, ne"), "Hvala, ne not pure");
+  ok(
+    !isPureOptOutCommand("Ali lahko dobim več informacij? NE vem"),
+    "NE inside sentence not pure",
+  );
+
+  // Business opt-out still broader than inbox pure rule
+  ok(isOptOutMessage("stop sms"), "business still opts out stop sms");
+  ok(isOptOutMessage("NE HVALA"), "business still opts out NE HVALA");
+  ok(isOptOutMessage("STOP prosim"), "business still opts out STOP token");
+  ok(!isPureOptOutCommand("stop sms"), "stop sms not pure inbox exclude");
+  ok(!isPureOptOutCommand("NE HVALA"), "NE HVALA not pure inbox exclude");
+  ok(!isPureOptOutCommand("STOP prosim"), "STOP prosim not pure inbox exclude");
+
+  const inboxPage = paginateAttentionInboundMessages(
+    [
+      { id: 1, body: "Zanima me", receivedAt: "2026-09-07T12:00:00.000Z" },
+      { id: 2, body: "STOP", receivedAt: "2026-09-07T11:00:00.000Z" },
+      { id: 3, body: "NE, hvala", receivedAt: "2026-09-07T10:00:00.000Z" },
+      { id: 4, body: "ne", receivedAt: "2026-09-07T09:00:00.000Z" },
+      { id: 5, body: "Unknown reply", receivedAt: "2026-09-07T08:00:00.000Z" },
+    ],
+    { page: 1, pageSize: 2 },
+  );
+  ok(inboxPage.total === 3, "inbox total excludes pure opt-outs only");
+  ok(inboxPage.totalPages === 2, "inbox totalPages from filtered total");
+  ok(inboxPage.rows.length === 2, "inbox page size respected");
+  ok(inboxPage.rows[0]?.id === 1, "newest kept first after filter");
+  ok(inboxPage.rows[1]?.id === 3, "NE, hvala remains visible separately");
+  ok(
+    !inboxPage.rows.some((row) => row.body === "STOP" || row.body === "ne"),
+    "pure commands excluded from page",
+  );
+  const inboxPage2 = paginateAttentionInboundMessages(
+    [
+      { id: 1, body: "Zanima me" },
+      { id: 2, body: "STOP" },
+      { id: 3, body: "NE, hvala" },
+      { id: 4, body: "ne" },
+      { id: 5, body: "Unknown reply" },
+    ],
+    { page: 2, pageSize: 2 },
+  );
+  ok(inboxPage2.rows.length === 1, "second page has remainder");
+  ok(inboxPage2.rows[0]?.id === 5, "unknown sender remains on later page");
 
   const { DryRunModem } = await import(
     "../tools/sms-gateway/src/modem/dry-run"
