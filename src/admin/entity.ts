@@ -52,6 +52,7 @@ export type TimelineEvent = {
 export type AdminActionKind =
   | "queue_sms"
   | "retry_sms"
+  | "opt_out_sms"
   | "approve_onboarding"
   | "retry_publish"
   | "copy_onboarding_link"
@@ -291,7 +292,9 @@ export function buildAdminActions(input: {
   slug: string;
   canQueueSms: boolean;
   canRetrySms: boolean;
+  canOptOutSms?: boolean;
   smsIneligibility?: string | null;
+  smsOptOutIneligibility?: string | null;
   canApprove: boolean;
   canRetryPublish: boolean;
   onboardingUrl: string | null;
@@ -311,6 +314,12 @@ export function buildAdminActions(input: {
       kind: "retry_sms",
       label: "Retry SMS",
       enabled: input.canRetrySms,
+    },
+    {
+      kind: "opt_out_sms",
+      label: "Opt out SMS",
+      enabled: Boolean(input.canOptOutSms),
+      reason: input.smsOptOutIneligibility ?? undefined,
     },
     {
       kind: "approve_onboarding",

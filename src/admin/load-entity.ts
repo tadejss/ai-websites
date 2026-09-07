@@ -11,9 +11,12 @@ import {
 } from "@/onboarding/types";
 import { evaluateSmsEligibility } from "@/outreach/sms/eligibility";
 import { resolveDueSmsStep } from "@/outreach/sms/enqueue-batch";
+import { normalizeSlovenianPhone } from "@/outreach/sms/phone";
+import { isSmsOptedOutState } from "@/outreach/sms/relevance";
 import {
   getSmsLeadState,
   hasActiveOrSentStep,
+  isSmsOptedOut,
   listInboundForSlug,
   listSmsMessagesForSlug,
 } from "@/outreach/sms/store";
@@ -81,6 +84,19 @@ export async function loadAdminEntity(slug: string): Promise<AdminEntity | null>
   const onboardingUrl =
     onboarding != null ? getOnboardingUrl(slug, onboarding.accessToken) : null;
 
+  const normalizedPhone = normalizeSlovenianPhone(lead.phone);
+  let smsOptOutIneligibility: string | null = null;
+  if (!smsEnabled) {
+    smsOptOutIneligibility = "Database not configured";
+  } else if (!normalizedPhone.ok) {
+    smsOptOutIneligibility = normalizedPhone.error || "Invalid phone number";
+  } else if (isSmsOptedOutState(smsState)) {
+    smsOptOutIneligibility = "Lead already opted out of SMS";
+  } else if (await isSmsOptedOut(normalizedPhone.e164)) {
+    smsOptOutIneligibility = "Phone already opted out of SMS";
+  }
+  const canOptOutSms = smsOptOutIneligibility == null;
+
   const stage = resolveUnifiedStage({
     isCustomer: isCustomerLead,
     onboardingStatus: onboarding?.status ?? null,
@@ -100,7 +116,9 @@ export async function loadAdminEntity(slug: string): Promise<AdminEntity | null>
     slug,
     canQueueSms: smsEligibility.ok,
     canRetrySms: Boolean(lastFailed),
+    canOptOutSms,
     smsIneligibility: smsEligibility.ok ? null : smsEligibility.reason,
+    smsOptOutIneligibility,
     canApprove: onboarding
       ? canAdminApproveOnboarding(onboarding.status)
       : false,

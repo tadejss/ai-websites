@@ -6,6 +6,7 @@ import type { AdminAction } from "@/admin/entity";
 import {
   AdminApproveButton,
   AdminCopyLinkButton,
+  AdminOptOutSmsButton,
   AdminQueueSmsButton,
   AdminRetryPublishButton,
   AdminRetrySmsButton,
@@ -157,6 +158,13 @@ export function AdminActionDispatcher({
           dueStep={dueStep}
           canRetry={actionMap.get("retry_sms")!.enabled}
           lastFailedMessageId={lastFailedMessageId}
+        />
+      ) : null}
+      {actionMap.get("opt_out_sms") ? (
+        <AdminOptOutSmsButton
+          slug={slug}
+          canOptOut={actionMap.get("opt_out_sms")!.enabled}
+          reason={actionMap.get("opt_out_sms")!.reason}
         />
       ) : null}
       {actionMap.get("run_qa")?.enabled

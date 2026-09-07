@@ -141,6 +141,84 @@ export function AdminRetrySmsButton({
   );
 }
 
+export function AdminOptOutSmsButton({
+  slug,
+  canOptOut,
+  reason,
+}: {
+  slug: string;
+  canOptOut: boolean;
+  reason?: string | null;
+}) {
+  const router = useRouter();
+  const [state, setState] = useActionState();
+  const [blockedReason, setBlockedReason] = useState<string | null>(null);
+
+  async function handleClick() {
+    if (!canOptOut) {
+      setBlockedReason(reason || "Cannot opt out of SMS");
+      return;
+    }
+    const confirmed = window.confirm(
+      "This will stop SMS to this phone number for all leads. Continue?",
+    );
+    if (!confirmed) {
+      return;
+    }
+    setBlockedReason(null);
+    setState({ loading: true, message: null, error: null });
+    try {
+      const response = await fetch("/api/admin/outreach/sms/opt-out", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ slug }),
+      });
+      const data = (await response.json()) as {
+        error?: string;
+        cancelledCount?: number;
+      };
+      if (!response.ok) {
+        throw new Error(data.error || "Opt out failed");
+      }
+      const cancelled = data.cancelledCount ?? 0;
+      setState({
+        loading: false,
+        message:
+          cancelled > 0
+            ? `Opted out (cancelled ${cancelled} queued)`
+            : "Opted out",
+      });
+      router.refresh();
+    } catch (err) {
+      setState({
+        loading: false,
+        error: err instanceof Error ? err.message : "Opt out failed",
+      });
+    }
+  }
+
+  return (
+    <div className="inline-flex flex-col items-start gap-1">
+      <Button
+        variant="destructive"
+        size="sm"
+        disabled={state.loading || !canOptOut}
+        onClick={() => void handleClick()}
+        title={reason ?? undefined}
+      >
+        {state.loading ? "Opting out…" : "Opt out SMS"}
+      </Button>
+      {blockedReason ? (
+        <p className="text-xs text-[var(--admin-muted)]">{blockedReason}</p>
+      ) : null}
+      {state.message ? (
+        <p className="text-xs text-emerald-400">{state.message}</p>
+      ) : null}
+      {state.error ? <p className="text-xs text-red-400">{state.error}</p> : null}
+    </div>
+  );
+}
+
 export function AdminApproveButton({
   slug,
   canApprove,

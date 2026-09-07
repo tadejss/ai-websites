@@ -122,6 +122,7 @@ function buildQueueActionsFromCaches(
       slug,
       canQueueSms: false,
       canRetrySms: false,
+      canOptOutSms: false,
       canApprove: false,
       canRetryPublish: false,
       onboardingUrl: null,
@@ -152,6 +153,7 @@ function buildQueueActionsFromCaches(
     slug,
     canQueueSms: smsEligibility.ok,
     canRetrySms: false,
+    canOptOutSms: false,
     smsIneligibility: smsEligibility.ok ? null : smsEligibility.reason,
     canApprove: onboarding
       ? canAdminApproveOnboarding(onboarding.status)
