@@ -84,7 +84,7 @@ export async function enqueueSmsForLead(input: {
 
   if (!input.bypassDailyBudget) {
     const capacity = await getDailySmsCapacity({ source: "enqueue_lead" });
-    if (capacity.remaining <= 0) {
+    if (capacity.enqueueRemaining <= 0) {
       return { ok: false, error: "Daily SMS target reached" };
     }
   }

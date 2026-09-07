@@ -19,7 +19,9 @@ export async function claimSmsBatch(input?: {
   }
 
   const capacity = await getDailySmsCapacity({ source: "claim_batch" });
-  if (capacity.remaining <= 0 || capacity.sent >= capacity.target) {
+  // Send gate: drain queued messages until today's sent count hits target.
+  // Do NOT use enqueueRemaining — that only limits NEW inserts.
+  if (capacity.sendRemaining <= 0 || capacity.sent >= capacity.target) {
     return [];
   }
 

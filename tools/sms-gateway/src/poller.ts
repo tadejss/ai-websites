@@ -14,7 +14,10 @@ type BudgetSnapshot = {
   localDate: string;
   target: number;
   sent: number;
-  remaining: number;
+  sendRemaining?: number;
+  enqueueRemaining?: number;
+  /** @deprecated enqueue-only; must not gate sends */
+  remaining?: number;
   sendWindowOpen: boolean;
 };
 
@@ -174,9 +177,14 @@ export async function processOutboundBatch(
   if (!budget?.sendWindowOpen) {
     return { sent: 0, failed: 0, skipped: 0 };
   }
-  if (budget.remaining <= 0 || budget.sent >= budget.target) {
+  const sendRemaining =
+    typeof budget.sendRemaining === "number"
+      ? budget.sendRemaining
+      : Math.max(0, budget.target - budget.sent);
+  // Stop only when today's SEND quota is exhausted — not when enqueueRemaining is 0.
+  if (sendRemaining <= 0 || budget.sent >= budget.target) {
     console.log(
-      `[poller] daily target reached localDate=${budget.localDate} sent=${budget.sent} target=${budget.target}`,
+      `[poller] daily send target reached localDate=${budget.localDate} sent=${budget.sent} target=${budget.target} sendRemaining=${sendRemaining}`,
     );
     return { sent: 0, failed: 0, skipped: 0 };
   }

@@ -129,7 +129,7 @@ export async function enqueueDueSmsBatch(
     now,
     source: "enqueue_batch",
   });
-  let remaining = capacity.remaining;
+  let remaining = capacity.enqueueRemaining;
 
   if (remaining <= 0) {
     return {

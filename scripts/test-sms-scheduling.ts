@@ -4,7 +4,10 @@
  */
 import assert from "node:assert/strict";
 import {
+  canSendMore,
+  computeEnqueueRemaining,
   computeRemainingCapacity,
+  computeSendRemaining,
   randomDailySmsTarget,
   SMS_DAILY_TARGET_MAX,
   SMS_DAILY_TARGET_MIN,
@@ -44,6 +47,40 @@ function main() {
   ok(computeRemainingCapacity({ target: 45, sent: 40, inFlight: 10 }) === 0, "cap at 0");
   ok(computeRemainingCapacity({ target: 45, sent: 10, inFlight: 5 }) === 30, "remaining 30");
 
+  // LIVE stall regression: enqueue full, send still available
+  const liveStall = {
+    target: 43,
+    sent: 1,
+    inFlight: 42,
+  };
+  const enqueueRemaining = computeEnqueueRemaining(liveStall);
+  const sendRemaining = computeSendRemaining(liveStall);
+  ok(enqueueRemaining === 0, "enqueueRemaining=0 when fully reserved");
+  ok(sendRemaining === 42, "sendRemaining=42 drains queued");
+  ok(
+    canSendMore({
+      sendRemaining,
+      sent: liveStall.sent,
+      target: liveStall.target,
+    }),
+    "poller/claim may continue while sendRemaining>0",
+  );
+  ok(
+    !(enqueueRemaining > 0),
+    "enqueue must stay blocked when enqueueRemaining=0",
+  );
+
+  const doneDay = { target: 43, sent: 43, inFlight: 0 };
+  ok(computeEnqueueRemaining(doneDay) === 0, "done enqueueRemaining=0");
+  ok(computeSendRemaining(doneDay) === 0, "done sendRemaining=0");
+  ok(
+    !canSendMore({
+      sendRemaining: computeSendRemaining(doneDay),
+      sent: doneDay.sent,
+      target: doneDay.target,
+    }),
+    "sending stops at sent=target",
+  );
   // CET window: Jan 15 2026, CET = UTC+1
   const cetBefore = new Date("2026-01-15T08:12:00.000Z");
   const cetAt = new Date("2026-01-15T08:13:00.000Z");

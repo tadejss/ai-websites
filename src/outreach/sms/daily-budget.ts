@@ -14,6 +14,14 @@ export type SmsDailyBudgetSnapshot = {
   target: number;
   sent: number;
   inFlight: number;
+  /** How many NEW messages may still be enqueued today. */
+  enqueueRemaining: number;
+  /** How many already-queued (or not-yet-sent) messages may still be sent today. */
+  sendRemaining: number;
+  /**
+   * @deprecated Alias of enqueueRemaining for older callers.
+   * Do NOT use this to gate outbound sending.
+   */
   remaining: number;
   sendWindowOpen: boolean;
   created: boolean;
@@ -28,12 +36,44 @@ export function randomDailySmsTarget(
   );
 }
 
-export function computeRemainingCapacity(input: {
+/** Enqueue capacity: do not reserve more than the daily target. */
+export function computeEnqueueRemaining(input: {
   target: number;
   sent: number;
   inFlight: number;
 }): number {
   return Math.max(0, input.target - input.sent - input.inFlight);
+}
+
+/** Send capacity: drain already-queued live messages until target is reached. */
+export function computeSendRemaining(input: {
+  target: number;
+  sent: number;
+}): number {
+  return Math.max(0, input.target - input.sent);
+}
+
+/** @deprecated Use computeEnqueueRemaining. */
+export function computeRemainingCapacity(input: {
+  target: number;
+  sent: number;
+  inFlight: number;
+}): number {
+  return computeEnqueueRemaining(input);
+}
+
+export function canEnqueueMore(capacity: {
+  enqueueRemaining: number;
+}): boolean {
+  return capacity.enqueueRemaining > 0;
+}
+
+export function canSendMore(capacity: {
+  sendRemaining: number;
+  sent: number;
+  target: number;
+}): boolean {
+  return capacity.sendRemaining > 0 && capacity.sent < capacity.target;
 }
 
 /**
@@ -155,17 +195,23 @@ export async function getDailySmsCapacity(input?: {
   });
   const sent = await countSentSmsForLocalDate(budget.localDate);
   const inFlight = await countInFlightLiveSms();
-  const remaining = computeRemainingCapacity({
+  const enqueueRemaining = computeEnqueueRemaining({
     target: budget.target,
     sent,
     inFlight,
+  });
+  const sendRemaining = computeSendRemaining({
+    target: budget.target,
+    sent,
   });
   return {
     localDate: budget.localDate,
     target: budget.target,
     sent,
     inFlight,
-    remaining,
+    enqueueRemaining,
+    sendRemaining,
+    remaining: enqueueRemaining,
     sendWindowOpen: isSmsSendWindowOpen(now),
     created: budget.created,
   };
