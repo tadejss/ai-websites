@@ -1,0 +1,268 @@
+{
+  "appearance": "health",
+  "lookId": "maserji-wellness-09-warm-soft",
+  "theme": {
+    "paletteId": "look-maserji-wellness-09-dusk",
+    "fontPairingId": "look-maserji-wellness-09"
+  },
+  "layout": {
+    "profileId": "calm-visual",
+    "heroImageSide": "none",
+    "servicesImageSide": "left",
+    "heroRatio": "full-copy",
+    "benefitsMode": "visual",
+    "heroAtmosphere": "wash",
+    "sectionRule": "none",
+    "cardStyle": "soft"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lavenit-center-zdravja/hero.avif",
+      "alt": "Sprostitveni wellness center za nego telesa in duha",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lavenit-center-zdravja/hero.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628613",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628613/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room european workshop"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lavenit-center-zdravja/services.avif",
+      "alt": "Sprostitvene masaže in terapije za dobro počutje",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/lavenit-center-zdravja/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6628647",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-having-a-massage-6628647/",
+      "photographer": "KoolShooters",
+      "photographerUrl": "https://www.pexels.com/@koolshooters",
+      "searchQuery": "massage therapy spa wellness room european workshop"
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": []
+  },
+  "pricing": {
+    "id": "cenik",
+    "eyebrow": "Cenik",
+    "title": "Informativni cenik storitev",
+    "description": "Izberite razvajanje, ki si ga zaslužite. Cene so informativne narave.",
+    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacije terminov nas kontaktirajte.",
+    "items": [
+      {
+        "name": "Sprostitvena masaža celega telesa",
+        "description": "Klasična sprostitvena masaža za odpravljanje napetosti.",
+        "price": "od 50 €",
+        "featured": true
+      },
+      {
+        "name": "Nega telesa",
+        "description": "Piling in hranilna nega za mehkobo kože.",
+        "price": "od 60 €"
+      },
+      {
+        "name": "Program za dobro počutje",
+        "description": "Kombinacija masaže in sprostitvene terapije.",
+        "price": "od 80 €"
+      },
+      {
+        "name": "Stres relief program",
+        "description": "Intenziven program za sprostitev uma in telesa.",
+        "price": "od 70 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "Lavenit",
+    "highlight": "center zdravja in sprostitve"
+  },
+  "metadata": {
+    "title": "Lavenit | Center zdravja in sprostitve Ptuj",
+    "description": "Vaša oaza miru, zdravja in sprostitve na Ptuju. Nudimo sprostitvene masaže, nego telesa in programe za dobro počutje."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#storitve",
+        "label": "Storitve"
+      },
+      {
+        "href": "#zakaj-mi",
+        "label": "Zakaj mi"
+      },
+      {
+        "href": "#cenik",
+        "label": "Cenik"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Rezervirajte svoj termin"
+  },
+  "hero": {
+    "badge": "Oaza miru na Ptuju",
+    "title": "Vaš oaza miru,",
+    "titleHighlight": "zdravja in sprostitve",
+    "description": "Namenjeno vsem, ki iščejo sprostitev, lajšanje stresa ter izboljšanje splošnega počutja in zdravja na Ptuju in v okolici.",
+    "primaryCta": "Rezervirajte svoj termin",
+    "secondaryCta": "Raziščite storitve",
+    "stats": []
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Naša ponudba",
+    "title": "Celostne storitve za vaše dobro počutje",
+    "description": "Prepustite se strokovnim rokam in izberite storitev, ki bo povrhnila vašo energijo in notranji mir.",
+    "items": [
+      {
+        "title": "Sprostitvene masaže",
+        "description": "Masaže za sprostitev telesa in misli, prilagojene vašim trenutnim potrebam.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Nega telesa",
+        "description": "Negovalni tretmaji za sijočo, gladko in globoko navlaženo kožo.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Programi za dobro počutje",
+        "description": "Celostni programi za revitalizacijo telesa in povrnitev življenjske energije.",
+        "icon": "service-3"
+      },
+      {
+        "title": "Sprostitvene terapije",
+        "description": "Specializirane terapije za globoko sprostitev in sproščanje napetosti.",
+        "icon": "service-4"
+      },
+      {
+        "title": "Stres relief programi",
+        "description": "Učinkoviti programi za zmanjševanje stresa in umiritev uma.",
+        "icon": "service-5"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "zakaj-mi",
+    "eyebrow": "Zakaj izbrati Lavenit",
+    "title": "Kjer se strokovnost sreča z globoko sprostitvijo",
+    "description": "Zavedamo se pomena ravnovesja v vsakdanjem življenju, zato za vas ustvarjamo prostor miru in topline.",
+    "highlights": [
+      "Vrhunske storitve za sprostitev in zdravje v sodobnem ambientu",
+      "Prilagojen pristop k vsakemu obiskovalcu posebej",
+      "Prijetna lokacija v samem centru Ptuja"
+    ],
+    "benefits": [
+      {
+        "label": "Vrhunska kakovost",
+        "description": "Vrhunske storitve za sprostitev in zdravje, prilagojene vašim željam.",
+        "title": "Vrhunska kakovost"
+      },
+      {
+        "label": "Prijeten ambient",
+        "description": "Topel in sodoben wellness ambient v centru Ptuja.",
+        "title": "Prijeten ambient"
+      },
+      {
+        "label": "Osebni pristop",
+        "description": "Prilagojen pristop k vsakemu obiskovalcu za najboljše rezultate.",
+        "title": "Osebni pristop"
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik z nami",
+    "description": "Rezervirajte svoj termin ali nas kontaktirajte za več informacij o naših storitvah.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Prešernova ulica 6, 2250 Ptuj, Slovenia",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "040 779 024",
+        "href": "tel:040779024",
+        "icon": "phone"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Ponedeljek – Nedelja: 9:00 – 21:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vnesite vašo številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Rezervirajte svoj termin"
+    }
+  },
+  "footer": {
+    "address": "Prešernova ulica 6, 2250 Ptuj, Slovenia",
+    "rights": "Vse pravice pridržane."
+  },
+  "business": {
+    "name": "Lavenit center zdravja in sprostitve",
+    "address": "Prešernova ulica 6, 2250 Ptuj, Slovenia",
+    "email": "",
+    "phone": "040 779 024"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-07",
+    "contactForm": {
+      "enabled": true,
+      "fields": [
+        "name",
+        "phone",
+        "message"
+      ]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

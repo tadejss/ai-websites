@@ -1,0 +1,28 @@
+{
+  "companyName": "Masažni salon Atom, Tom Ciglar s.p.",
+  "industry": "Masažne storitve",
+  "tagline": "Sprostitev in dobro počutje v srcu Ptuja",
+  "services": [
+    "Klasična masaža",
+    "Športna masaža",
+    "Sprostitvena masaža",
+    "Bolečinska masaža",
+    "Masaža hrbta"
+  ],
+  "phone": "031 678 288",
+  "email": "",
+  "address": "Zagrebška cesta 7, 2250 Ptuj, Slovenia",
+  "openingHours": "",
+  "sellingPoints": [
+    "Strokovni in prilagojen pristop k vsaki stranki",
+    "Udoben in sproščujoč ambient",
+    "Celostna skrb za lajšanje napetosti in sprostitev telesa"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje bolečin v mišicah in izboljšanje splošnega počutja",
+  "serviceArea": "Ptuj in okolica",
+  "yearsExperience": "",
+  "tone": "prijazen, strokoven, sproščen",
+  "brandStyle": "topel lokalni salon",
+  "competitors": "Lokalni ponudniki masaž in wellness storitev na Ptuju",
+  "callToAction": "Rezervirajte termin"
+}

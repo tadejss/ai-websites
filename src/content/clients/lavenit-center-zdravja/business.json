@@ -1,0 +1,29 @@
+{
+  "companyName": "Lavenit, center zdravja in sprostitve",
+  "industry": "Wellness center",
+  "tagline": "Vaš oaza miru, zdravja in sprostitve na Ptuju",
+  "services": [
+    "Sprostitvene masaže",
+    "Nega telesa",
+    "Programi za dobro počutje",
+    "Sprostitvene terapije",
+    "Stres relief programi"
+  ],
+  "phone": "040 779 024",
+  "email": "",
+  "address": "Prešernova ulica 6, 2250 Ptuj, Slovenia",
+  "openingHours": "Monday: 9:00 AM – 9:00 PM · Tuesday: 9:00 AM – 9:00 PM · Wednesday: 9:00 AM – 9:00 PM · Thursday: 9:00 AM – 9:00 PM · Friday: 9:00 AM – 9:00 PM · Saturday: 9:00 AM – 9:00 PM · Sunday: 9:00 AM – 9:00 PM",
+  "sellingPoints": [
+    "Vrhunske storitve za sprostitev in zdravje",
+    "Prijeten ambient v centru Ptuja",
+    "Prilagojen pristop k vsakemu obiskovalcu",
+    "Odlične ocene zadovoljnih strank"
+  ],
+  "targetCustomers": "Ljudje, ki iščejo sprostitev, lajšanje stresa ter izboljšanje splošnega počutja in zdravja",
+  "serviceArea": "Ptuj in okolica",
+  "yearsExperience": "",
+  "tone": "pomirjujoč, strokoven, prijazen",
+  "brandStyle": "moderen wellness ambient",
+  "competitors": "Lokalni saloni za masažo in wellness centri na Ptuju",
+  "callToAction": "Rezervirajte svoj termin"
+}
