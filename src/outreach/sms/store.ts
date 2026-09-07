@@ -28,6 +28,7 @@ type MessageRow = {
   sent_at: Date | string | null;
   created_at: Date | string;
   updated_at: Date | string;
+  live_eligible?: boolean | null;
 };
 
 type StateRow = {
@@ -89,6 +90,7 @@ function mapMessage(row: MessageRow): SmsMessageRecord {
     sentAt: toIso(row.sent_at),
     createdAt: toIso(row.created_at) ?? new Date().toISOString(),
     updatedAt: toIso(row.updated_at) ?? new Date().toISOString(),
+    liveEligible: Boolean(row.live_eligible),
   };
 }
 
@@ -303,15 +305,18 @@ export async function insertQueuedMessage(input: {
   toPhoneRaw: string | null;
   body: string;
   step: SmsStep;
+  liveEligible?: boolean;
 }): Promise<SmsMessageRecord> {
   const db = await requireDb();
+  const liveEligible = input.liveEligible !== false;
   const rows = (await db`
     INSERT INTO sms_messages (
-      message_id, slug, to_phone, to_phone_raw, body, status, step, created_at, updated_at
+      message_id, slug, to_phone, to_phone_raw, body, status, step,
+      live_eligible, created_at, updated_at
     )
     VALUES (
       ${input.messageId}, ${input.slug}, ${input.toPhone}, ${input.toPhoneRaw},
-      ${input.body}, 'queued', ${input.step}, NOW(), NOW()
+      ${input.body}, 'queued', ${input.step}, ${liveEligible}, NOW(), NOW()
     )
     RETURNING *
   `) as MessageRow[];
@@ -339,7 +344,8 @@ export async function claimQueuedMessages(input: {
     WHERE m.id IN (
       SELECT id
       FROM sms_messages
-      WHERE (
+      WHERE live_eligible = TRUE
+        AND (
           status = 'queued'
           OR (
             status IN ('claimed', 'sending')
@@ -495,24 +501,11 @@ export async function countSentToday(): Promise<number> {
   return rows[0]?.count ?? 0;
 }
 
-/** Sent today + still in-flight (queued/claimed/sending). Used for daily limit. */
+/** @deprecated Prefer getDailySmsCapacity(); kept for transitional callers. */
 export async function countDailySmsBudgetUsed(): Promise<number> {
-  if (!isDatabaseConfigured()) {
-    return 0;
-  }
-  await ensureCustomerSchema();
-  const db = sql();
-  const rows = (await db`
-    SELECT COUNT(*)::int AS count
-    FROM sms_messages
-    WHERE
-      status IN ('queued', 'claimed', 'sending')
-      OR (
-        status = 'sent'
-        AND sent_at >= date_trunc('day', NOW())
-      )
-  `) as Array<{ count: number }>;
-  return rows[0]?.count ?? 0;
+  const { getDailySmsCapacity } = await import("./daily-budget");
+  const capacity = await getDailySmsCapacity({ source: "legacy_count" });
+  return capacity.sent + capacity.inFlight;
 }
 
 export async function getSmsQueueStalenessHours(): Promise<number | null> {
@@ -718,49 +711,145 @@ export async function listRecentSmsOptOuts(
 
 export async function authorizeSmsSend(
   messageId: string,
+  options?: { bypassCampaignGuards?: boolean },
 ): Promise<AuthorizeSmsSendResult> {
   const db = await requireDb();
-  const rows = (await db`
-    UPDATE sms_messages AS m
-    SET status = 'sending', updated_at = NOW()
-    WHERE m.message_id = ${messageId}
-      AND (
-        (
-          m.status = 'claimed'
-          AND NOT EXISTS (
-            SELECT 1 FROM sms_opt_outs o WHERE o.phone = m.to_phone
-          )
-        )
-        OR m.status = 'sending'
-      )
-    RETURNING *
-  `) as MessageRow[];
-
-  if (rows[0]) {
-    return { send: true };
-  }
+  const bypass = options?.bypassCampaignGuards === true;
 
   const existing = (await db`
-    SELECT status, to_phone FROM sms_messages WHERE message_id = ${messageId} LIMIT 1
-  `) as Array<{ status: string; to_phone: string }>;
+    SELECT status, to_phone, live_eligible
+    FROM sms_messages
+    WHERE message_id = ${messageId}
+    LIMIT 1
+  `) as Array<{
+    status: string;
+    to_phone: string;
+    live_eligible: boolean | null;
+  }>;
+
   if (!existing[0]) {
     return { send: false, reason: "not_found" };
   }
   if (existing[0].status === "cancelled") {
     return { send: false, reason: "cancelled" };
   }
+  if (!bypass && !existing[0].live_eligible) {
+    return { send: false, reason: "not_live_eligible" };
+  }
+
+  if (!bypass) {
+    const { isSmsSendWindowOpen, ljubljanaDayUtcBounds, ljubljanaLocalDate } =
+      await import("./timezone");
+    if (!isSmsSendWindowOpen()) {
+      return { send: false, reason: "before_send_window" };
+    }
+
+    const { getDailySmsCapacity } = await import("./daily-budget");
+    const capacity = await getDailySmsCapacity({ source: "preflight" });
+    if (capacity.sent >= capacity.target) {
+      return { send: false, reason: "daily_limit_reached" };
+    }
+
+    const optedOut = (await db`
+      SELECT 1 FROM sms_opt_outs WHERE phone = ${existing[0].to_phone} LIMIT 1
+    `) as Array<{ "?column?": number }>;
+    if (optedOut.length > 0) {
+      if (existing[0].status === "claimed" || existing[0].status === "sending") {
+        await db`
+          UPDATE sms_messages
+          SET status = 'cancelled', last_error = 'sms_opt_out', updated_at = NOW()
+          WHERE message_id = ${messageId}
+            AND status IN ('claimed', 'sending')
+        `;
+      }
+      return { send: false, reason: "sms_opt_out" };
+    }
+
+    const { start, end } = ljubljanaDayUtcBounds(ljubljanaLocalDate());
+    const startIso = start.toISOString();
+    const endIso = end.toISOString();
+
+    const rows = (await db`
+      UPDATE sms_messages AS m
+      SET status = 'sending', updated_at = NOW()
+      WHERE m.message_id = ${messageId}
+        AND m.live_eligible = TRUE
+        AND m.status IN ('claimed', 'sending')
+        AND (
+          SELECT COUNT(*)::int
+          FROM sms_messages s
+          WHERE s.status = 'sent'
+            AND s.live_eligible = TRUE
+            AND s.sent_at >= ${startIso}
+            AND s.sent_at < ${endIso}
+        ) < ${capacity.target}
+      RETURNING *
+    `) as MessageRow[];
+
+    if (rows[0]) {
+      return { send: true };
+    }
+
+    const capacityAfter = await getDailySmsCapacity({ source: "preflight_race" });
+    if (capacityAfter.sent >= capacityAfter.target) {
+      return { send: false, reason: "daily_limit_reached" };
+    }
+    return { send: false, reason: "not_claimable" };
+  }
+
+  // Harness / explicit bypass: opt-out still enforced; campaign guards skipped.
   const optedOut = (await db`
     SELECT 1 FROM sms_opt_outs WHERE phone = ${existing[0].to_phone} LIMIT 1
   `) as Array<{ "?column?": number }>;
-  if (optedOut.length > 0 && existing[0].status === "claimed") {
-    await db`
-      UPDATE sms_messages
-      SET status = 'cancelled', last_error = 'sms_opt_out', updated_at = NOW()
-      WHERE message_id = ${messageId}
-        AND status = 'claimed'
-    `;
+  if (optedOut.length > 0) {
+    if (existing[0].status === "claimed" || existing[0].status === "sending") {
+      await db`
+        UPDATE sms_messages
+        SET status = 'cancelled', last_error = 'sms_opt_out', updated_at = NOW()
+        WHERE message_id = ${messageId}
+          AND status IN ('claimed', 'sending')
+      `;
+    }
     return { send: false, reason: "sms_opt_out" };
   }
+
+  const rows = (await db`
+    UPDATE sms_messages AS m
+    SET status = 'sending', updated_at = NOW()
+    WHERE m.message_id = ${messageId}
+      AND m.status IN ('claimed', 'sending')
+    RETURNING *
+  `) as MessageRow[];
+
+  if (rows[0]) {
+    return { send: true };
+  }
   return { send: false, reason: "not_claimable" };
+}
+
+/**
+ * Cancel pre-LIVE queued/claimed rows so they cannot be claimed by the gateway.
+ * Does not delete historical rows. Leaves sent/failed untouched.
+ */
+export async function cancelNonLiveInFlightMessages(input?: {
+  reason?: string;
+}): Promise<number> {
+  if (!isDatabaseConfigured()) {
+    return 0;
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const reason = input?.reason ?? "pre_live_isolation";
+  const rows = (await db`
+    UPDATE sms_messages
+    SET
+      status = 'cancelled',
+      last_error = ${reason},
+      updated_at = NOW()
+    WHERE live_eligible = FALSE
+      AND status IN ('queued', 'claimed')
+    RETURNING id
+  `) as Array<{ id: number }>;
+  return rows.length;
 }
 

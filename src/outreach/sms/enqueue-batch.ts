@@ -1,15 +1,15 @@
 import { isCustomer } from "@/customers/store";
 import { getOutreachConfig } from "@/outreach/config";
 import { readAllLeads } from "@/leads/store";
-import { getSmsConfig } from "./config";
+import { getDailySmsCapacity } from "./daily-budget";
 import { evaluateSmsEligibility } from "./eligibility";
 import { enqueueSmsForLead } from "./queue";
 import {
-  countDailySmsBudgetUsed,
   getSmsLeadState,
   hasActiveOrSentStep,
   isSmsOptedOut,
 } from "./store";
+import { isSmsSendWindowOpen } from "./timezone";
 import { normalizeSlovenianPhone } from "./phone";
 import type { SmsLeadState, SmsStep } from "./types";
 
@@ -20,6 +20,11 @@ export type EnqueueBatchResult = {
   queued: number;
   skipped: number;
   errors: string[];
+  skippedReason?: string;
+  localDate?: string;
+  target?: number;
+  sent?: number;
+  remaining?: number;
 };
 
 function followupDue(sentAt: string | null, days: number): boolean {
@@ -87,14 +92,58 @@ export async function resolveDueSmsStep(
   return resolveDueSmsStepFromCaches(state, sentSteps, leadStatus);
 }
 
-export async function enqueueDueSmsBatch(): Promise<EnqueueBatchResult> {
-  const config = getSmsConfig();
-  const budgetUsed = await countDailySmsBudgetUsed();
-  let remaining = Math.max(0, config.dailyLimit - budgetUsed);
+export type EnqueueDueSmsBatchOptions = {
+  now?: Date;
+  /** Automated cron only enqueues these steps. Default: initial only. */
+  allowedSteps?: SmsStep[];
+  /** When false, skip the 09:13 gate (tests only). */
+  requireSendWindow?: boolean;
+};
+
+/**
+ * Automated campaign enqueue. Defaults to initial-only + Ljubljana send window
+ * + durable daily target capacity.
+ */
+export async function enqueueDueSmsBatch(
+  options: EnqueueDueSmsBatchOptions = {},
+): Promise<EnqueueBatchResult> {
+  const now = options.now ?? new Date();
+  const allowedSteps = new Set<SmsStep>(options.allowedSteps ?? ["initial"]);
+  const requireSendWindow = options.requireSendWindow !== false;
   const errors: string[] = [];
   let queued = 0;
   let skipped = 0;
   let considered = 0;
+
+  if (requireSendWindow && !isSmsSendWindowOpen(now)) {
+    return {
+      considered: 0,
+      queued: 0,
+      skipped: 0,
+      errors: [],
+      skippedReason: "before_send_window",
+    };
+  }
+
+  const capacity = await getDailySmsCapacity({
+    now,
+    source: "enqueue_batch",
+  });
+  let remaining = capacity.remaining;
+
+  if (remaining <= 0) {
+    return {
+      considered: 0,
+      queued: 0,
+      skipped: 0,
+      errors: [],
+      skippedReason: "daily_target_reached",
+      localDate: capacity.localDate,
+      target: capacity.target,
+      sent: capacity.sent,
+      remaining: 0,
+    };
+  }
 
   const leads = readAllLeads();
 
@@ -109,6 +158,11 @@ export async function enqueueDueSmsBatch(): Promise<EnqueueBatchResult> {
     const step = await resolveDueSmsStep(lead.slug, lead.status);
 
     if (!step) {
+      skipped += 1;
+      continue;
+    }
+
+    if (!allowedSteps.has(step)) {
       skipped += 1;
       continue;
     }
@@ -140,5 +194,14 @@ export async function enqueueDueSmsBatch(): Promise<EnqueueBatchResult> {
     }
   }
 
-  return { considered, queued, skipped, errors };
+  return {
+    considered,
+    queued,
+    skipped,
+    errors,
+    localDate: capacity.localDate,
+    target: capacity.target,
+    sent: capacity.sent,
+    remaining: Math.max(0, remaining),
+  };
 }

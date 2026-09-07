@@ -78,6 +78,20 @@ npm run probe
 - `POST /api/sms/sms-list` is a read-only peek; failure is `UNAVAILABLE`, not fatal.
 - No SIM → `SIM: NO_SIM`, exit 0 if the modem session works.
 
+## Live mode
+
+Set `SMS_DRY_RUN=false` only for production sending.
+
+Outbound LIVE policy (server-enforced + local poller):
+
+- Claim **1** message at a time
+- Send only after **09:13 Europe/Ljubljana**
+- Stop at durable Neon daily target (random 40–50)
+- Sleep **180–300 seconds** after each successful send
+- Inbound/opt-out continues independently
+
+Unattended Mac setup: see [`launchd/README-LAUNCHD.md`](./launchd/README-LAUNCHD.md). Do not load LaunchAgent until LIVE activation is approved.
+
 ## Dry-run outbound
 
 ```bash
@@ -87,10 +101,6 @@ SMS_DRY_RUN=true npm run poll
 Claims the Neon queue, **authorizes** send (`POST /api/outreach/sms/preflight`), simulates send, writes `status=sent` with `provider_message_id=dryrun-…`. Does not call HiLink `send-sms`.
 
 Then queue one **test** lead from `/admin` (not a real outreach blast).
-
-## Live mode
-
-Set `SMS_DRY_RUN=false` only after a successful probe, a dry-run queue cycle, and one live SMS to your own phone. That is a **later** task.
 
 ## SIM phases
 

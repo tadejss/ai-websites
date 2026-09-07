@@ -66,7 +66,13 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Lead not found" }, { status: 404 });
   }
 
-  const result = await enqueueSmsForLead({ lead, step, force: true });
+  const result = await enqueueSmsForLead({
+    lead,
+    step,
+    force: true,
+    // Retries still consume the durable daily campaign capacity.
+    bypassDailyBudget: false,
+  });
   if (!result.ok) {
     await logAdminAction({
       action: "sms_retry",

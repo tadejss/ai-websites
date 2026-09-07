@@ -8,7 +8,7 @@
     "poll": "tsx src/poller.ts",
     "dev": "tsx watch src/poller.ts",
     "probe": "tsx src/probe.ts",
-    "test": "tsx --test src/modem/xml.test.ts src/modem/detect.test.ts src/modem/send-sms-payload.test.ts src/inbound-order.test.ts"
+    "test": "tsx --test src/modem/xml.test.ts src/modem/detect.test.ts src/modem/send-sms-payload.test.ts src/inbound-order.test.ts src/poller-pacing.test.ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2"

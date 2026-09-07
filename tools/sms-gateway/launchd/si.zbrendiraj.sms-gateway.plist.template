@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  LaunchAgent template for unattended SMS gateway + poller.
+
+  DO NOT load this during implementation/testing.
+  Operator activation steps are in README-LAUNCHD.md beside this file.
+-->
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>si.zbrendiraj.sms-gateway</string>
+
+    <key>WorkingDirectory</key>
+    <string>__REPO_ROOT__/tools/sms-gateway</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>__NODE_BIN__</string>
+      <string>__REPO_ROOT__/node_modules/tsx/dist/cli.mjs</string>
+      <string>src/server.ts</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string>
+      <key>SMS_GATEWAY_AUTOPOLL</key>
+      <string>true</string>
+      <key>SMS_DRY_RUN</key>
+      <string>false</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Logs/zbrendiraj-sms-gateway.log</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Logs/zbrendiraj-sms-gateway.err.log</string>
+  </dict>
+</plist>

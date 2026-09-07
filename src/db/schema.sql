@@ -99,6 +99,9 @@ CREATE TABLE IF NOT EXISTS sms_messages (
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+ALTER TABLE sms_messages
+  ADD COLUMN IF NOT EXISTS live_eligible BOOLEAN NOT NULL DEFAULT FALSE;
+
 CREATE UNIQUE INDEX IF NOT EXISTS sms_messages_active_slug_step_uidx
   ON sms_messages (slug, step)
   WHERE status IN ('queued', 'claimed', 'sending', 'sent');
@@ -108,6 +111,9 @@ CREATE INDEX IF NOT EXISTS sms_messages_status_created_idx
 
 CREATE INDEX IF NOT EXISTS sms_messages_slug_idx
   ON sms_messages (slug);
+
+CREATE INDEX IF NOT EXISTS sms_messages_live_eligible_status_idx
+  ON sms_messages (live_eligible, status, created_at);
 
 CREATE TABLE IF NOT EXISTS sms_lead_state (
   slug TEXT PRIMARY KEY,
@@ -155,5 +161,14 @@ CREATE TABLE IF NOT EXISTS sms_opt_outs (
   reason TEXT NOT NULL,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS sms_daily_budget (
+  local_date DATE PRIMARY KEY,
+  target INT NOT NULL,
+  source TEXT,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  CONSTRAINT sms_daily_budget_target_range
+    CHECK (target >= 40 AND target <= 50)
 );
 

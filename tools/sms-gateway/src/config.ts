@@ -45,9 +45,9 @@ export function loadGatewayConfig(): GatewayConfig {
     gatewaySecret,
     localSecret,
     dryRun: process.env.SMS_DRY_RUN?.trim() === "true",
-    minDelayMs: parsePositiveInt(process.env.SMS_MIN_DELAY_MS, 3000),
-    batchSize: parsePositiveInt(process.env.SMS_BATCH_SIZE, 5),
-    dailyLimit: parsePositiveInt(process.env.SMS_DAILY_LIMIT, 100),
+    minDelayMs: parsePositiveInt(process.env.SMS_MIN_DELAY_MS, 180000),
+    batchSize: parsePositiveInt(process.env.SMS_BATCH_SIZE, 1),
+    dailyLimit: parsePositiveInt(process.env.SMS_DAILY_LIMIT, 50),
     pollIntervalMs: parsePositiveInt(process.env.SMS_POLL_INTERVAL_MS, 15000),
     hilinkUrl: (
       process.env.HILINK_URL?.trim() || "http://192.168.8.1"

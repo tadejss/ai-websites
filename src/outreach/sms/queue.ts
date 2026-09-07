@@ -2,10 +2,9 @@ import { createHash } from "node:crypto";
 import { isCustomer } from "@/customers/store";
 import { getDemoUrl } from "@/leads/demo-url";
 import type { LeadRecord } from "@/leads/store";
+import { getDailySmsCapacity } from "./daily-budget";
 import { evaluateSmsEligibility } from "./eligibility";
-import { getSmsConfig } from "./config";
 import {
-  countDailySmsBudgetUsed,
   getSmsLeadState,
   hasActiveOrSentStep,
   insertQueuedMessage,
@@ -51,6 +50,12 @@ export async function enqueueSmsForLead(input: {
   lead: LeadRecord;
   step: SmsStep;
   force?: boolean;
+  /**
+   * Intentional administrative override of the durable daily target.
+   * Normal campaign and default admin paths must leave this false/undefined.
+   */
+  bypassDailyBudget?: boolean;
+  liveEligible?: boolean;
 }): Promise<EnqueueSmsResult> {
   const { lead, step, force = false } = input;
   const already = await hasActiveOrSentStep(lead.slug, step);
@@ -77,9 +82,11 @@ export async function enqueueSmsForLead(input: {
     return { ok: false, error: `SMS step "${step}" already queued or sent` };
   }
 
-  const budgetUsed = await countDailySmsBudgetUsed();
-  if (budgetUsed >= getSmsConfig().dailyLimit && !force) {
-    return { ok: false, error: "Daily SMS limit reached" };
+  if (!input.bypassDailyBudget) {
+    const capacity = await getDailySmsCapacity({ source: "enqueue_lead" });
+    if (capacity.remaining <= 0) {
+      return { ok: false, error: "Daily SMS target reached" };
+    }
   }
 
   // Re-check opt-out immediately before write (inbound may race).
@@ -105,6 +112,7 @@ export async function enqueueSmsForLead(input: {
       toPhoneRaw: lead.phone ?? null,
       body: rendered.text,
       step,
+      liveEligible: input.liveEligible !== false,
     });
 
     await upsertSmsLeadState({

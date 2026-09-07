@@ -44,6 +44,7 @@ export type SmsMessageRecord = {
   sentAt: string | null;
   createdAt: string;
   updatedAt: string;
+  liveEligible: boolean;
 };
 
 export type SmsLeadState = {
@@ -82,7 +83,17 @@ export type SmsOptOutRecord = {
 
 export type AuthorizeSmsSendResult =
   | { send: true }
-  | { send: false; reason: "sms_opt_out" | "cancelled" | "not_found" | "not_claimable" };
+  | {
+      send: false;
+      reason:
+        | "sms_opt_out"
+        | "cancelled"
+        | "not_found"
+        | "not_claimable"
+        | "daily_limit_reached"
+        | "before_send_window"
+        | "not_live_eligible";
+    };
 
 export type ClaimedSms = {
   messageId: string;

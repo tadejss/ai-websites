@@ -45,6 +45,7 @@
     "outreach-summary": "tsx scripts/outreach-summary.ts",
     "test-outreach": "tsx scripts/test-outreach.ts",
     "test-sms-outreach": "tsx scripts/test-sms-outreach.ts",
+    "test-sms-scheduling": "tsx scripts/test-sms-scheduling.ts",
     "sms-one-shot-test": "tsx scripts/sms-one-shot-test.ts",
     "test-discovery-matrix": "tsx scripts/test-discovery-matrix.ts",
     "test-gemini-rate-limit": "tsx scripts/test-gemini-rate-limit.ts",

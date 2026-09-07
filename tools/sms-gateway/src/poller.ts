@@ -10,43 +10,24 @@ type QueueMessage = {
   text: string;
 };
 
+type BudgetSnapshot = {
+  localDate: string;
+  target: number;
+  sent: number;
+  remaining: number;
+  sendWindowOpen: boolean;
+};
+
 const seenInbound = new Set<string>();
 
-type DayCounter = {
-  dayKey: string;
-  sent: number;
-};
+export const SMS_SEND_DELAY_MIN_MS = 180_000;
+export const SMS_SEND_DELAY_MAX_MS = 300_000;
 
-const dayCounter: DayCounter = {
-  dayKey: "",
-  sent: 0,
-};
-
-function todayKey(): string {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function recordSuccessfulSend(config: GatewayConfig): void {
-  const key = todayKey();
-  if (dayCounter.dayKey !== key) {
-    dayCounter.dayKey = key;
-    dayCounter.sent = 0;
-  }
-  dayCounter.sent += 1;
-  if (dayCounter.sent >= config.dailyLimit) {
-    console.warn(
-      `[poller] Local daily send counter reached ${config.dailyLimit}`,
-    );
-  }
-}
-
-function remainingDailySends(config: GatewayConfig): number {
-  const key = todayKey();
-  if (dayCounter.dayKey !== key) {
-    dayCounter.dayKey = key;
-    dayCounter.sent = 0;
-  }
-  return Math.max(0, config.dailyLimit - dayCounter.sent);
+export function randomSendDelayMs(
+  random: () => number = Math.random,
+): number {
+  const span = SMS_SEND_DELAY_MAX_MS - SMS_SEND_DELAY_MIN_MS + 1;
+  return SMS_SEND_DELAY_MIN_MS + Math.floor(random() * span);
 }
 
 function maskPhone(phone: string): string {
@@ -111,6 +92,18 @@ export async function authorizeSend(
   return (await response.json()) as { send: boolean; reason?: string };
 }
 
+export async function fetchDailyBudget(
+  config: GatewayConfig,
+): Promise<BudgetSnapshot | null> {
+  const response = await apiFetch(config, "/api/outreach/sms/budget");
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`Budget API ${response.status}: ${text.slice(0, 200)}`);
+  }
+  const data = (await response.json()) as BudgetSnapshot & { ok?: boolean };
+  return data;
+}
+
 export async function pushInbound(
   config: GatewayConfig,
   message: IncomingSms,
@@ -139,9 +132,10 @@ export async function pushInbound(
 export async function claimQueue(
   config: GatewayConfig,
 ): Promise<QueueMessage[]> {
+  // LIVE: always request a single message; server also hard-caps to 1.
   const response = await apiFetch(
     config,
-    `/api/outreach/sms/queue?limit=${config.batchSize}`,
+    `/api/outreach/sms/queue?limit=1`,
   );
   if (!response.ok) {
     const text = await response.text();
@@ -158,6 +152,7 @@ export function shouldDeleteAfterInbound(pushSucceeded: boolean): boolean {
 export async function processOutboundBatch(
   config: GatewayConfig,
   modem: SmsModem,
+  options?: { random?: () => number },
 ): Promise<{ sent: number; failed: number; skipped: number }> {
   const status = await modem.getStatus();
   if (!status.connected && !config.dryRun) {
@@ -165,51 +160,74 @@ export async function processOutboundBatch(
     return { sent: 0, failed: 0, skipped: 0 };
   }
 
+  let budget: BudgetSnapshot | null = null;
+  try {
+    budget = await fetchDailyBudget(config);
+  } catch (error) {
+    console.error(
+      "[poller] budget fetch failed:",
+      error instanceof Error ? error.message : error,
+    );
+    return { sent: 0, failed: 0, skipped: 0 };
+  }
+
+  if (!budget?.sendWindowOpen) {
+    return { sent: 0, failed: 0, skipped: 0 };
+  }
+  if (budget.remaining <= 0 || budget.sent >= budget.target) {
+    console.log(
+      `[poller] daily target reached localDate=${budget.localDate} sent=${budget.sent} target=${budget.target}`,
+    );
+    return { sent: 0, failed: 0, skipped: 0 };
+  }
+
   const messages = await claimQueue(config);
+  if (messages.length === 0) {
+    return { sent: 0, failed: 0, skipped: 0 };
+  }
+
+  // Hard policy: never process more than one claimed message per cycle.
+  const message = messages[0]!;
+  if (messages.length > 1) {
+    console.warn(
+      `[poller] claimed ${messages.length} messages; only sending the first (batch must be 1)`,
+    );
+  }
+
   let sent = 0;
   let failed = 0;
   let skipped = 0;
-  let remaining = remainingDailySends(config);
 
-  for (const message of messages) {
-    if (remaining <= 0) {
-      console.warn(
-        `[poller] Daily limit ${config.dailyLimit} reached; not sending further claimed messages this cycle (lease will expire for reclaim)`,
-      );
-      break;
-    }
+  const auth = await authorizeSend(config, message.messageId);
+  if (!auth.send) {
+    console.log(
+      `[poller] skip message=${message.messageId} reason=${auth.reason ?? "blocked"}`,
+    );
+    skipped += 1;
+    return { sent, failed, skipped };
+  }
 
-    const auth = await authorizeSend(config, message.messageId);
-    if (!auth.send) {
-      console.log(
-        `[poller] skip message=${message.messageId} reason=${auth.reason ?? "blocked"}`,
-      );
-      skipped += 1;
-      continue;
+  const result = await modem.sendSms(message.to, message.text);
+  if (result.success) {
+    await reportResult(config, {
+      messageId: message.messageId,
+      success: true,
+      providerMessageId: result.providerMessageId,
+    });
+    sent += 1;
+    if (config.dryRun) {
+      console.log(`[poller] dry-run send message=${message.messageId}`);
     }
-
-    const result = await modem.sendSms(message.to, message.text);
-    if (result.success) {
-      await reportResult(config, {
-        messageId: message.messageId,
-        success: true,
-        providerMessageId: result.providerMessageId,
-      });
-      sent += 1;
-      remaining -= 1;
-      recordSuccessfulSend(config);
-      if (config.dryRun) {
-        console.log(`[poller] dry-run send message=${message.messageId}`);
-      }
-    } else {
-      await reportResult(config, {
-        messageId: message.messageId,
-        success: false,
-        error: result.error,
-      });
-      failed += 1;
-    }
-    await sleep(config.minDelayMs);
+    const delayMs = randomSendDelayMs(options?.random);
+    console.log(`[poller] pacing sleepMs=${delayMs}`);
+    await sleep(delayMs);
+  } else {
+    await reportResult(config, {
+      messageId: message.messageId,
+      success: false,
+      error: result.error,
+    });
+    failed += 1;
   }
 
   return { sent, failed, skipped };
@@ -302,6 +320,9 @@ export async function runPollerLoop(): Promise<void> {
     `[poller] started mode=${status.mode} dryRun=${config.dryRun} api=${config.apiBaseUrl}`,
   );
   console.log(`[poller] modem: ${status.detail ?? status.mode}`);
+  console.log(
+    `[poller] LIVE pacing: claim=1 delay=${SMS_SEND_DELAY_MIN_MS}-${SMS_SEND_DELAY_MAX_MS}ms after success`,
+  );
 
   let stopping = false;
   const stop = () => {

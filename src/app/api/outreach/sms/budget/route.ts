@@ -1,11 +1,12 @@
 import { NextResponse } from "next/server";
 import { isValidSmsGatewayToken, readBearerToken } from "@/lib/auth";
 import { isDatabaseConfigured } from "@/db/client";
-import { claimSmsBatch } from "@/outreach/sms/claim";
+import { getDailySmsCapacity } from "@/outreach/sms/daily-budget";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+/** Durable daily budget snapshot for the local gateway. */
 export async function GET(request: Request) {
   const token = readBearerToken(request.headers.get("authorization"));
   if (!isValidSmsGatewayToken(token)) {
@@ -16,11 +17,9 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Database not configured" }, { status: 503 });
   }
 
-  // LIVE policy: claim at most one live-eligible message when window + capacity allow.
-  const messages = await claimSmsBatch({
-    limit: 1,
-    claimedBy: "gateway",
+  const capacity = await getDailySmsCapacity({ source: "gateway_budget_api" });
+  return NextResponse.json({
+    ok: true,
+    ...capacity,
   });
-
-  return NextResponse.json({ messages });
 }

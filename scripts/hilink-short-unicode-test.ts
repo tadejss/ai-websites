@@ -286,6 +286,7 @@ async function runLive() {
     toPhoneRaw: TEST_PHONE_RAW,
     body: TEST_BODY,
     step: TEST_STEP,
+    liveEligible: false,
   });
   console.log(`Inserted id=${inserted.id} messageId=${messageId}`);
 
@@ -298,7 +299,9 @@ async function runLive() {
     process.exit(2);
   }
 
-  const auth = await authorizeSmsSend(messageId);
+  const auth = await authorizeSmsSend(messageId, {
+    bypassCampaignGuards: true,
+  });
   if (!auth.send) {
     console.error(`ABORT: preflight blocked: ${auth.reason}`);
     process.exit(2);

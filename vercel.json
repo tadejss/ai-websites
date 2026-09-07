@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/api/cron/sms-outreach",
-      "schedule": "0 9 * * *"
+      "schedule": "*/15 * * * *"
     },
     {
       "path": "/api/cron/replenish-leads",

@@ -53,6 +53,8 @@ export async function POST(request: Request) {
     lead,
     step,
     force: parsed.data.force,
+    // Admin queue respects durable daily target unless explicitly overridden later.
+    bypassDailyBudget: false,
   });
 
   if (!result.ok) {

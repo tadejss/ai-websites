@@ -1,5 +1,7 @@
 import { getSmsConfig } from "./config";
 import { claimQueuedMessageById, claimQueuedMessages } from "./store";
+import { getDailySmsCapacity } from "./daily-budget";
+import { isSmsSendWindowOpen } from "./timezone";
 import type { ClaimedSms } from "./types";
 
 export async function claimSmsBatch(input?: {
@@ -7,9 +9,21 @@ export async function claimSmsBatch(input?: {
   claimedBy?: string;
 }): Promise<ClaimedSms[]> {
   const config = getSmsConfig();
-  const limit = Math.min(input?.limit ?? config.batchSize, config.batchSize);
-  const claimedBy = input?.claimedBy ?? "gateway";
+  // LIVE outbound: exactly one claim at a time.
+  const limit = 1;
+  void input?.limit;
+  void config.batchSize;
 
+  if (!isSmsSendWindowOpen()) {
+    return [];
+  }
+
+  const capacity = await getDailySmsCapacity({ source: "claim_batch" });
+  if (capacity.remaining <= 0 || capacity.sent >= capacity.target) {
+    return [];
+  }
+
+  const claimedBy = input?.claimedBy ?? "gateway";
   const rows = await claimQueuedMessages({
     limit,
     claimedBy,

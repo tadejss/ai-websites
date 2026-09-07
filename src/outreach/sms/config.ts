@@ -16,9 +16,9 @@ function parsePositiveInt(value: string | undefined, fallback: number): number {
 export function getSmsConfig(): SmsConfig {
   return {
     gatewaySecret: process.env.SMS_GATEWAY_SECRET?.trim() || null,
-    dailyLimit: parsePositiveInt(process.env.SMS_DAILY_LIMIT, 100),
-    minDelayMs: parsePositiveInt(process.env.SMS_MIN_DELAY_MS, 3000),
-    batchSize: parsePositiveInt(process.env.SMS_BATCH_SIZE, 5),
+    dailyLimit: parsePositiveInt(process.env.SMS_DAILY_LIMIT, 50),
+    minDelayMs: parsePositiveInt(process.env.SMS_MIN_DELAY_MS, 180000),
+    batchSize: parsePositiveInt(process.env.SMS_BATCH_SIZE, 1),
     claimLeaseMinutes: parsePositiveInt(process.env.SMS_CLAIM_LEASE_MINUTES, 10),
     leadTarget: parsePositiveInt(process.env.SMS_LEAD_TARGET, 500),
     leadReplenishBatch: parsePositiveInt(

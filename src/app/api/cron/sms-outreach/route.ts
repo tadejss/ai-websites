@@ -29,8 +29,41 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Database not configured" }, { status: 503 });
   }
 
-  const result = await enqueueDueSmsBatch();
-  return NextResponse.json({ ok: true, channel: "sms", ...result });
+  // Automated LIVE campaign: initial only. Follow-ups stay frozen.
+  const result = await enqueueDueSmsBatch({
+    allowedSteps: ["initial"],
+    requireSendWindow: true,
+  });
+
+  if (result.skippedReason) {
+    return NextResponse.json({
+      ok: true,
+      channel: "sms",
+      skipped: true,
+      reason: result.skippedReason,
+      considered: result.considered,
+      queued: result.queued,
+      skippedCount: result.skipped,
+      errors: result.errors,
+      localDate: result.localDate,
+      target: result.target,
+      sent: result.sent,
+      remaining: result.remaining,
+    });
+  }
+
+  return NextResponse.json({
+    ok: true,
+    channel: "sms",
+    considered: result.considered,
+    queued: result.queued,
+    skippedCount: result.skipped,
+    errors: result.errors,
+    localDate: result.localDate,
+    target: result.target,
+    sent: result.sent,
+    remaining: result.remaining,
+  });
 }
 
 export async function POST(request: Request) {
