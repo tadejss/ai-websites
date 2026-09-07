@@ -1,9 +1,9 @@
 {
   "appearance": "construction",
-  "lookId": "gradbinci-03-photo-forward",
+  "lookId": "gradbinci-05-minimal-line",
   "theme": {
-    "paletteId": "look-gradbinci-03-bloom",
-    "fontPairingId": "look-gradbinci-03"
+    "paletteId": "showcase-krovec-signal",
+    "fontPairingId": "figtree-dm-serif"
   },
   "layout": {
     "profileId": "photo-forward",

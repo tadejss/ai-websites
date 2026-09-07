@@ -29,10 +29,10 @@ export function TradeSitePage({ siteConfig, siteSlug }: AppearancePageProps) {
               alt={brandName}
               width={36}
               height={36}
-              className="rounded-lg"
+              className="rounded-[var(--radius-icon,0.5rem)]"
             />
             {!hasLogo ? (
-              <span className="flex size-9 items-center justify-center rounded-lg bg-accent text-background">
+              <span className="flex size-9 items-center justify-center rounded-[var(--radius-icon,0.5rem)] bg-accent text-background">
                 <Icon name="building" />
               </span>
             ) : null}

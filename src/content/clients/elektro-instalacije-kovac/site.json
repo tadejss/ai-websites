@@ -1,9 +1,9 @@
 {
   "appearance": "elektro",
-  "lookId": "elektricarji-04-stats-trust",
+  "lookId": "elektricarji-05-minimal-line",
   "theme": {
-    "paletteId": "look-elektricarji-04-stone",
-    "fontPairingId": "look-elektricarji-04"
+    "paletteId": "showcase-elektro-green",
+    "fontPairingId": "inter-space-grotesk-light"
   },
   "layout": {
     "profileId": "stats-forward",

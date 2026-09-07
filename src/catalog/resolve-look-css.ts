@@ -5,14 +5,24 @@ import { getCatalogFontPairing } from "@/catalog/fonts";
 import { getCatalogPalette } from "@/catalog/palettes";
 import { getFontPairing } from "@/theme/fonts/pairings";
 import { getPalette } from "@/theme/palettes";
+import type { SiteTheme } from "@/theme/types";
 import { paletteToTokens, tokensToCssVars } from "@/theme/utils/tokens";
 
-export function resolveLookCssVars(look: SiteLookDefinition): CSSProperties {
-  const palette =
-    getCatalogPalette(look.theme.paletteId) ?? getPalette(look.theme.paletteId);
+/**
+ * Resolves look design tokens + colors/fonts.
+ * When `themeOverride` is set (from site.json), its palette/fonts win over the look defaults.
+ */
+export function resolveLookCssVars(
+  look: SiteLookDefinition,
+  themeOverride?: SiteTheme,
+): CSSProperties {
+  const paletteId = themeOverride?.paletteId ?? look.theme.paletteId;
+  const fontPairingId =
+    themeOverride?.fontPairingId ?? look.theme.fontPairingId;
+
+  const palette = getCatalogPalette(paletteId) ?? getPalette(paletteId);
   const pairing =
-    getCatalogFontPairing(look.theme.fontPairingId) ??
-    getFontPairing(look.theme.fontPairingId);
+    getCatalogFontPairing(fontPairingId) ?? getFontPairing(fontPairingId);
 
   if (!palette || !pairing) {
     return {};

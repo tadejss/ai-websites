@@ -87,8 +87,8 @@ export function BeautyHeroSection({ siteConfig }: Props) {
   const copyCard = (
     <div
       className={`relative flex h-full min-h-[480px] flex-col justify-between overflow-hidden ${
-        isPhotoDominant ? "" : copyOrder
-      } ${copyWide ? "w-full" : ""} ${
+        copyWide ? "w-full" : ""
+      } ${
         useAccentCard
           ? "rounded-[var(--radius-card)] bg-accent p-8 sm:p-10 lg:min-h-[640px] lg:p-14"
           : isTypographic
@@ -103,14 +103,20 @@ export function BeautyHeroSection({ siteConfig }: Props) {
   );
 
   const photoDominantImage = (
-    <div className="relative max-h-[50vh] min-h-[320px] w-full overflow-hidden rounded-[var(--radius-card)]">
+    <div
+      className={`relative overflow-hidden rounded-[var(--radius-card)] ${
+        isPhotoDominant
+          ? "min-h-[320px] w-full max-h-[50vh] lg:max-h-none lg:h-full lg:min-h-[640px]"
+          : ""
+      }`}
+    >
       <BeautyImage
         src={images?.hero.src}
         srcFallback={images?.hero.srcFallback}
         alt={images?.hero.alt ?? hero.badge}
         width={images?.hero.width}
         height={images?.hero.height}
-        className="h-full min-h-[320px] w-full object-cover"
+        className="h-full min-h-[320px] w-full object-cover lg:min-h-[640px]"
         priority
       />
     </div>
@@ -119,9 +125,9 @@ export function BeautyHeroSection({ siteConfig }: Props) {
   return (
     <section className="relative overflow-hidden bg-background px-4 pb-24 pt-28 sm:px-6 sm:pb-28 sm:pt-32 lg:pb-32">
       {isPhotoDominant && showImage ? (
-        <div className="mx-auto flex max-w-7xl flex-col gap-10">
-          <div className="order-1 lg:order-2">{copyCard}</div>
-          <div className="order-2 lg:order-1">{photoDominantImage}</div>
+        <div className={heroGridClass(layout.heroRatio ?? "5050", true)}>
+          <div className={copyOrder}>{copyCard}</div>
+          <div className={imageOrder}>{photoDominantImage}</div>
         </div>
       ) : (
         <div className={heroGridClass(layout.heroRatio ?? "5050", showImage)}>

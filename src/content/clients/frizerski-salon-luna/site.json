@@ -6,8 +6,8 @@
     "fontPairingId": "look-frizerji-03"
   },
   "layout": {
-    "profileId": "media-left",
-    "heroImageSide": "left",
+    "profileId": "classic",
+    "heroImageSide": "right",
     "servicesImageSide": "right",
     "heroRatio": "6040",
     "benefitsMode": "default"

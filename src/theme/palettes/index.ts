@@ -1,11 +1,13 @@
 import { darkPalettes } from "./dark";
 import { lightPalettes } from "./light";
+import { showcasePalettes } from "./showcase";
 import { catalogPalettes } from "@/catalog/palettes";
 import type { Palette, ThemeMode } from "../types";
 
 export const allPalettes: Palette[] = [
   ...lightPalettes,
   ...darkPalettes,
+  ...showcasePalettes,
   ...catalogPalettes,
 ];
 

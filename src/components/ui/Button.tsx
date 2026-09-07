@@ -1,8 +1,8 @@
+import { buttonRadiusClass } from "@/catalog/look-styles";
+
 const variantStyles = {
-  primary:
-    "inline-flex items-center justify-center rounded-full bg-accent font-semibold text-background transition-colors hover:bg-accent-hover",
-  secondary:
-    "inline-flex items-center justify-center rounded-full border border-border font-semibold text-foreground transition-colors hover:bg-surface",
+  primary: `inline-flex items-center justify-center ${buttonRadiusClass()} bg-accent font-semibold text-background transition-colors hover:bg-accent-hover`,
+  secondary: `inline-flex items-center justify-center ${buttonRadiusClass()} border border-border font-semibold text-foreground transition-colors hover:bg-surface`,
 } as const;
 
 const sizeStyles = {

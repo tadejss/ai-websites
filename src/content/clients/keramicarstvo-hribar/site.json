@@ -1,9 +1,9 @@
 {
   "appearance": "construction",
-  "lookId": "keramicarji-06-service-grid",
+  "lookId": "keramicarji-07-asymmetric-bold",
   "theme": {
-    "paletteId": "look-keramicarji-06-clay",
-    "fontPairingId": "look-keramicarji-06"
+    "paletteId": "showcase-keramik-dark",
+    "fontPairingId": "dm-sans-syne"
   },
   "layout": {
     "profileId": "services-first-visual",

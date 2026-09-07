@@ -20,7 +20,7 @@ export async function SitePage({ siteConfig, siteSlug }: Props) {
   const { Page } = appearanceRegistry[appearance];
   const look = resolveLookForSite(siteConfig);
   const themeStyle = look
-    ? resolveLookCssVars(look)
+    ? resolveLookCssVars(look, siteConfig.theme)
     : resolveThemeCssVars(siteConfig.theme, appearance);
   const resolvedSlug = siteSlug ?? process.env.SITE_SLUG ?? "default";
   const lead = readLead(resolvedSlug);

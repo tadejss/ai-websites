@@ -67,4 +67,18 @@ assert(
   "--radius-button css var should match design token",
 );
 
+console.log("== theme override ==");
+const overrideVars = resolveLookCssVars(first, {
+  paletteId: "showcase-elektro-green",
+  fontPairingId: "inter-space-grotesk-light",
+});
+assert(
+  overrideVars["--accent"] === "#1f7a4d",
+  "site theme palette should override look palette",
+);
+assert(
+  overrideVars["--font-display"] === "var(--font-space-grotesk)",
+  "site theme font should override look font",
+);
+
 console.log("\nAll catalog tests passed.");
