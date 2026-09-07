@@ -46,19 +46,23 @@ export function BeautyHeroSection({ siteConfig }: Props) {
   const isTypographic = heroFlags?.isTypographic ?? false;
   const isPhotoDominant = heroFlags?.isPhotoDominant ?? false;
 
+  const showBadge = Boolean(hero.badge?.trim());
+
   const copyContent = (
     <>
-      <p
-        className={`inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.25em] ${useAccentCard ? "text-accent-foreground/70" : "text-muted"}`}
-      >
-        <span
-          className={`size-1.5 ${ICON_RADIUS_CLASS} ${useAccentCard ? "bg-accent-foreground/50" : "bg-accent"}`}
-          aria-hidden="true"
-        />
-        {hero.badge}
-      </p>
+      {showBadge ? (
+        <p
+          className={`inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.25em] ${useAccentCard ? "text-accent-foreground/70" : "text-muted"}`}
+        >
+          <span
+            className={`size-1.5 ${ICON_RADIUS_CLASS} ${useAccentCard ? "bg-accent-foreground/50" : "bg-accent"}`}
+            aria-hidden="true"
+          />
+          {hero.badge}
+        </p>
+      ) : null}
       <h1
-        className={`font-display mt-8 text-[2.75rem] leading-[0.95] sm:text-6xl lg:text-7xl ${useAccentCard ? "text-accent-foreground" : "text-foreground"} ${isTypographic ? "tracking-[var(--heading-tracking)]" : ""}`}
+        className={`font-display text-[2.75rem] leading-[0.95] sm:text-6xl lg:text-7xl ${showBadge ? "mt-8" : ""} ${useAccentCard ? "text-accent-foreground" : "text-foreground"} ${isTypographic ? "tracking-[var(--heading-tracking)]" : ""}`}
       >
         {hero.title}{" "}
         <span className="block font-normal italic sm:inline">

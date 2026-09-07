@@ -3,7 +3,8 @@
   "lookId": "keramicarji-07-asymmetric-bold",
   "theme": {
     "paletteId": "showcase-keramik-dark",
-    "fontPairingId": "dm-sans-syne"
+    "fontPairingId": "dm-sans-syne",
+    "radiusScale": "sharp"
   },
   "layout": {
     "profileId": "services-first-visual",
@@ -100,11 +101,11 @@
   },
   "brand": {
     "prefix": "Keramičarstvo",
-    "highlight": "Hribar"
+    "highlight": "Linija"
   },
   "metadata": {
-    "title": "Keramičarstvo Hribar | Natančno polaganje keramike in prenove kopalnic Ljubljana",
-    "description": "Natančno polaganje keramike, prenove kopalnic, oblaganje stopnic in teras. Zanesljiv mojster v Ljubljani z okolico."
+    "title": "Keramičarstvo Linija | Primer keramičarske strani",
+    "description": "Primer spletne strani za keramičarstvo: polaganje keramike, prenove kopalnic, stopnice in terase."
   },
   "nav": {
     "links": [
@@ -128,7 +129,7 @@
     "cta": "Pridobi ponudbo"
   },
   "hero": {
-    "badge": "Lokalni mojster za keramiko v Ljubljani",
+    "badge": "",
     "title": "Natančno polaganje keramike za",
     "titleHighlight": "kopalnice, tla in stopnice",
     "description": "Strokovne in zanesljive keramičarske storitve za lastnike stanovanj in hiš, ki prenavljajo prostore v Ljubljani z okolico.",
@@ -217,19 +218,19 @@
     "items": [
       {
         "label": "Telefon",
-        "value": "031 445 902",
-        "href": "tel:031445902",
+        "value": "031 000 222",
+        "href": "tel:031000222",
         "icon": "phone"
       },
       {
         "label": "E-pošta",
-        "value": "info@keramicarstvo-hribar.si",
-        "href": "mailto:info@keramicarstvo-hribar.si",
+        "value": "info@primer-linija.si",
+        "href": "mailto:info@primer-linija.si",
         "icon": "email"
       },
       {
         "label": "Naslov",
-        "value": "Celovška cesta 88, 1000 Ljubljana, Slovenia",
+        "value": "Primerjeva cesta 8, 1000 Ljubljana",
         "icon": "location"
       },
       {
@@ -251,14 +252,14 @@
     }
   },
   "footer": {
-    "address": "Celovška cesta 88, 1000 Ljubljana, Slovenia",
-    "rights": "© 2026 Keramičarstvo Hribar. Vse pravice pridržane."
+    "address": "Primerjeva cesta 8, 1000 Ljubljana",
+    "rights": "© 2026 Keramičarstvo Linija. Vse pravice pridržane."
   },
   "business": {
-    "name": "Keramičarstvo Hribar",
-    "address": "Celovška cesta 88, 1000 Ljubljana, Slovenia",
-    "email": "info@keramicarstvo-hribar.si",
-    "phone": "031 445 902"
+    "name": "Keramičarstvo Linija",
+    "address": "Primerjeva cesta 8, 1000 Ljubljana",
+    "email": "info@primer-linija.si",
+    "phone": "031 000 222"
   },
   "privacy": {
     "enabled": true,

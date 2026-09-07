@@ -32,6 +32,8 @@ export type FontPairing = {
 export type SiteTheme = {
   paletteId: string;
   fontPairingId: string;
+  /** Optional override of look radius (e.g. showcase demos with sharp frames). */
+  radiusScale?: "sharp" | "soft" | "round" | "pill";
 };
 
 export const THEME_CSS_VAR_NAMES = [

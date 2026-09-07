@@ -38,13 +38,17 @@ export function TradeHeroSection({ siteConfig }: Props) {
   const imageOrder = imageOnLeft ? "order-2 lg:order-1" : "order-2 lg:order-2";
   const copyWide = !showImage || layout.heroRatio === "full-copy";
 
+  const showBadge = Boolean(hero.badge?.trim());
+
   const copyBlock = (
     <>
-      <p className={`inline-flex items-center gap-2 border border-border bg-surface/60 px-4 py-1.5 text-sm text-muted ${buttonRadius}`}>
-        <span className={`size-2 ${ICON_RADIUS_CLASS} bg-accent`} aria-hidden="true" />
-        {hero.badge}
-      </p>
-      <h1 className="font-display mt-6 text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+      {showBadge ? (
+        <p className={`inline-flex items-center gap-2 border border-border bg-surface/60 px-4 py-1.5 text-sm text-muted ${buttonRadius}`}>
+          <span className={`size-2 ${ICON_RADIUS_CLASS} bg-accent`} aria-hidden="true" />
+          {hero.badge}
+        </p>
+      ) : null}
+      <h1 className={`font-display text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl ${showBadge ? "mt-6" : ""}`}>
         {hero.title}{" "}
         <span className="text-accent">{hero.titleHighlight}</span>
       </h1>

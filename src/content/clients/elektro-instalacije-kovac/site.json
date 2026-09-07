@@ -3,7 +3,8 @@
   "lookId": "elektricarji-05-minimal-line",
   "theme": {
     "paletteId": "showcase-elektro-green",
-    "fontPairingId": "inter-space-grotesk-light"
+    "fontPairingId": "inter-space-grotesk-light",
+    "radiusScale": "sharp"
   },
   "layout": {
     "profileId": "stats-forward",
@@ -86,11 +87,11 @@
   },
   "brand": {
     "prefix": "Elektro inštalacije",
-    "highlight": "Kovač"
+    "highlight": "Volt"
   },
   "metadata": {
-    "title": "Elektro inštalacije Kovač | Elektroinštalater Celje",
-    "description": "Hišne in poslovne elektroinštalacije z jasnim pristopom za lastnike hiš, upravnike in manjša podjetja v Celju in Savinjski regiji."
+    "title": "Elektro inštalacije Volt | Primer elektroinštalaterske strani",
+    "description": "Primer spletne strani za elektroinštalaterja: nove inštalacije, prenove, razsvetljava in odpravljanje napak."
   },
   "nav": {
     "links": [
@@ -114,7 +115,7 @@
     "cta": "Pokliči za pregled"
   },
   "hero": {
-    "badge": "Zanesljive elektroinštalacije",
+    "badge": "",
     "title": "Hišne in poslovne elektroinštalacije z",
     "titleHighlight": "jasnim pristopom",
     "description": "Kakovostne in varne storitve za lastnike hiš, upravnike in manjša podjetja v Celju in Savinjski regiji.",
@@ -203,19 +204,19 @@
     "items": [
       {
         "label": "Naslov",
-        "value": "Kidričeva ulica 7, 3000 Celje, Slovenia",
+        "value": "Primerjeva ulica 7, 3000 Celje",
         "icon": "location"
       },
       {
         "label": "Telefon",
-        "value": "040 712 334",
-        "href": "tel:040712334",
+        "value": "040 000 333",
+        "href": "tel:040000333",
         "icon": "phone"
       },
       {
         "label": "E-pošta",
-        "value": "info@elektro-kovac.si",
-        "href": "mailto:info@elektro-kovac.si",
+        "value": "info@primer-volt.si",
+        "href": "mailto:info@primer-volt.si",
         "icon": "email"
       },
       {
@@ -237,14 +238,14 @@
     }
   },
   "footer": {
-    "address": "Kidričeva ulica 7, 3000 Celje, Slovenia",
+    "address": "Primerjeva ulica 7, 3000 Celje",
     "rights": "Vse pravice pridržane."
   },
   "business": {
-    "name": "Elektro inštalacije Kovač",
-    "address": "Kidričeva ulica 7, 3000 Celje, Slovenia",
-    "email": "info@elektro-kovac.si",
-    "phone": "040 712 334"
+    "name": "Elektro inštalacije Volt",
+    "address": "Primerjeva ulica 7, 3000 Celje",
+    "email": "info@primer-volt.si",
+    "phone": "040 000 333"
   },
   "privacy": {
     "enabled": true,

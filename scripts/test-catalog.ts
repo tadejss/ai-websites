@@ -81,4 +81,14 @@ assert(
   "site theme font should override look font",
 );
 
+const radiusOverrideVars = resolveLookCssVars(first, {
+  paletteId: first.theme.paletteId,
+  fontPairingId: first.theme.fontPairingId,
+  radiusScale: "sharp",
+});
+assert(
+  radiusOverrideVars["--radius-card"] === "0.25rem",
+  "site theme radiusScale should override look radius",
+);
+
 console.log("\nAll catalog tests passed.");

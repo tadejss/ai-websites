@@ -3,7 +3,8 @@
   "lookId": "gradbinci-05-minimal-line",
   "theme": {
     "paletteId": "showcase-krovec-signal",
-    "fontPairingId": "figtree-dm-serif"
+    "fontPairingId": "figtree-dm-serif",
+    "radiusScale": "sharp"
   },
   "layout": {
     "profileId": "photo-forward",
@@ -99,11 +100,11 @@
   },
   "brand": {
     "prefix": "Krovstvo",
-    "highlight": "Petek"
+    "highlight": "Streha"
   },
   "metadata": {
-    "title": "Krovstvo Petek | Trdne strehe in sanacije na Štajerskem",
-    "description": "Krovstvo Petek z 20 leti izkušenj nudi nove kritine, sanacije streh, žlebove in nujna popravila po neurju na Štajerskem. Zanesljivo in brez odlašanja."
+    "title": "Krovstvo Streha | Primer krovske strani",
+    "description": "Primer spletne strani za krovstvo: nove kritine, sanacije streh, žlebovi in nujna popravila."
   },
   "nav": {
     "links": [
@@ -131,7 +132,7 @@
     "cta": "Prijavi poškodbo strehe"
   },
   "hero": {
-    "badge": "Zanesljivo krovstvo",
+    "badge": "",
     "title": "Strehe, žlebovi in sanacije — ",
     "titleHighlight": "trdno in brez odlašanja",
     "description": "Za lastnike hiš in upravnike večstanovanjskih objektov na Štajerskem nudimo strokovna krovska dela, hitre sanacije in nujna popravila.",
@@ -223,19 +224,19 @@
     "items": [
       {
         "label": "Telefon",
-        "value": "051 880 267",
-        "href": "tel:051880267",
+        "value": "051 000 444",
+        "href": "tel:051000444",
         "icon": "phone"
       },
       {
         "label": "E-pošta",
-        "value": "info@krovstvo-petek.si",
-        "href": "mailto:info@krovstvo-petek.si",
+        "value": "info@primer-streha.si",
+        "href": "mailto:info@primer-streha.si",
         "icon": "email"
       },
       {
         "label": "Naslov",
-        "value": "Tržaška cesta 41, 2000 Maribor",
+        "value": "Primerjeva ulica 3, 2000 Maribor",
         "icon": "location"
       },
       {
@@ -257,14 +258,14 @@
     }
   },
   "footer": {
-    "address": "Tržaška cesta 41, 2000 Maribor, Slovenia",
+    "address": "Primerjeva ulica 3, 2000 Maribor",
     "rights": "Vse pravice pridržane."
   },
   "business": {
-    "name": "Krovstvo Petek",
-    "address": "Tržaška cesta 41, 2000 Maribor, Slovenia",
-    "email": "info@krovstvo-petek.si",
-    "phone": "051 880 267"
+    "name": "Krovstvo Streha",
+    "address": "Primerjeva ulica 3, 2000 Maribor",
+    "email": "info@primer-streha.si",
+    "phone": "051 000 444"
   },
   "privacy": {
     "enabled": true,

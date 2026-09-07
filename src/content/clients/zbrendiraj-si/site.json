@@ -106,34 +106,34 @@
         "label": "Frizerski salon",
         "image": {
           "src": "/clients/zbrendiraj-si/examples/frizerski-salon-luna.jpg",
-          "alt": "frizerski-salon-luna.si"
+          "alt": "Primer: Frizerski salon Luna"
         },
         "href": "/frizerski-salon-luna"
       },
       {
-        "title": "Keramičarstvo Hribar",
+        "title": "Keramičarstvo Linija",
         "label": "Keramičar",
         "image": {
           "src": "/clients/zbrendiraj-si/examples/keramicarstvo-hribar.jpg",
-          "alt": "keramicarstvo-hribar.si"
+          "alt": "Primer: Keramičarstvo Linija"
         },
         "href": "/keramicarstvo-hribar"
       },
       {
-        "title": "Elektro inštalacije Kovač",
+        "title": "Elektro inštalacije Volt",
         "label": "Elektroinštalater",
         "image": {
           "src": "/clients/zbrendiraj-si/examples/elektro-instalacije-kovac.jpg",
-          "alt": "elektro-instalacije-kovac.si"
+          "alt": "Primer: Elektro inštalacije Volt"
         },
         "href": "/elektro-instalacije-kovac"
       },
       {
-        "title": "Krovstvo Petek",
+        "title": "Krovstvo Streha",
         "label": "Krovec",
         "image": {
           "src": "/clients/zbrendiraj-si/examples/krovstvo-petek.jpg",
-          "alt": "krovstvo-petek.si"
+          "alt": "Primer: Krovstvo Streha"
         },
         "href": "/krovstvo-petek"
       }

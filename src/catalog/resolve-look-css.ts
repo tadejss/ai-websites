@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import type { SiteLookDefinition } from "@/catalog/types";
-import { rhythmToGap } from "@/catalog/archetypes";
+import { radiusTokensForScale, rhythmToGap } from "@/catalog/archetypes";
 import { getCatalogFontPairing } from "@/catalog/fonts";
 import { getCatalogPalette } from "@/catalog/palettes";
 import { getFontPairing } from "@/theme/fonts/pairings";
@@ -10,7 +10,7 @@ import { paletteToTokens, tokensToCssVars } from "@/theme/utils/tokens";
 
 /**
  * Resolves look design tokens + colors/fonts.
- * When `themeOverride` is set (from site.json), its palette/fonts win over the look defaults.
+ * When `themeOverride` is set (from site.json), its palette/fonts/radius win over the look defaults.
  */
 export function resolveLookCssVars(
   look: SiteLookDefinition,
@@ -30,19 +30,27 @@ export function resolveLookCssVars(
 
   const colorVars = tokensToCssVars(paletteToTokens(palette));
   const tokens = look.designTokens;
+  const radius = themeOverride?.radiusScale
+    ? radiusTokensForScale(themeOverride.radiusScale)
+    : {
+        radiusCard: tokens.radiusCard,
+        radiusButton: tokens.radiusButton,
+        radiusIcon: tokens.radiusIcon,
+        galleryRadius: tokens.galleryRadius,
+      };
 
   return {
     ...colorVars,
     "--font-body": `var(${pairing.body.variable})`,
     "--font-display": `var(${pairing.display.variable})`,
-    "--radius-card": tokens.radiusCard,
-    "--radius-button": tokens.radiusButton,
-    ...(tokens.radiusIcon ? { "--radius-icon": tokens.radiusIcon } : {}),
+    "--radius-card": radius.radiusCard,
+    "--radius-button": radius.radiusButton,
+    ...(radius.radiusIcon ? { "--radius-icon": radius.radiusIcon } : {}),
     "--shadow-card": tokens.shadowCard ?? "none",
     "--section-gap": rhythmToGap(tokens.sectionRhythm),
     "--heading-tracking": tokens.headingTracking ?? "-0.02em",
-    ...(tokens.galleryRadius
-      ? { "--gallery-radius": tokens.galleryRadius }
+    ...(radius.galleryRadius
+      ? { "--gallery-radius": radius.galleryRadius }
       : {}),
   } as CSSProperties;
 }

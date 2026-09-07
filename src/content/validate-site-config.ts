@@ -144,6 +144,7 @@ const themeSchema = z
   .object({
     paletteId: z.enum(paletteIds as [string, ...string[]]),
     fontPairingId: z.enum(fontPairingIds as [string, ...string[]]),
+    radiusScale: z.enum(["sharp", "soft", "round", "pill"]).optional(),
   })
   .optional();
 

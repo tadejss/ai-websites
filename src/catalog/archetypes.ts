@@ -154,18 +154,30 @@ const TRACKING: Record<LookSectionRhythm, string> = {
   editorial: "-0.025em",
 };
 
-export function archetypeToDesignTokens(archetype: LookArchetype): LookDesignTokens {
-  const scale = archetype.radiusScale;
+export function radiusTokensForScale(scale: LookRadiusScale): {
+  radiusScale: LookRadiusScale;
+  radiusCard: string;
+  radiusButton: string;
+  radiusIcon: string;
+  galleryRadius: string;
+} {
   return {
     radiusScale: scale,
     radiusCard: RADIUS_CARD[scale],
     radiusButton: RADIUS_BUTTON[scale],
     radiusIcon: RADIUS_ICON[scale],
+    galleryRadius: RADIUS_CARD[scale],
+  };
+}
+
+export function archetypeToDesignTokens(archetype: LookArchetype): LookDesignTokens {
+  const scale = archetype.radiusScale;
+  return {
+    ...radiusTokensForScale(scale),
     cardTreatment: archetype.cardTreatment,
     sectionRhythm: archetype.sectionRhythm,
     heroStyle: archetype.heroStyle,
     useSectionRules: archetype.sectionRhythm !== "airy",
-    galleryRadius: RADIUS_CARD[scale],
     shadowCard: SHADOW_VALUES[archetype.cardTreatment],
     headingTracking: TRACKING[archetype.sectionRhythm],
   };

@@ -3,7 +3,8 @@
   "lookId": "frizerji-03-photo-forward",
   "theme": {
     "paletteId": "look-frizerji-03-bloom",
-    "fontPairingId": "look-frizerji-03"
+    "fontPairingId": "look-frizerji-03",
+    "radiusScale": "sharp"
   },
   "layout": {
     "profileId": "classic",
@@ -104,8 +105,8 @@
     "highlight": "Luna"
   },
   "metadata": {
-    "title": "Frizerski salon Luna | Maribor",
-    "description": "Miren salon za ženske v Mariboru, ki želijo svež in urejen videz. Nudimo žensko striženje, balayage in nego las z osebnim pristopom."
+    "title": "Frizerski salon Luna | Primer frizerskega salona",
+    "description": "Primer spletne strani za frizerski salon: striženje, balayage in nega las z osebnim pristopom."
   },
   "nav": {
     "links": [
@@ -133,7 +134,7 @@
     "cta": "Rezerviraj termin"
   },
   "hero": {
-    "badge": "Frizerski salon v Mariboru",
+    "badge": "",
     "title": "Miren salon za svež in",
     "titleHighlight": "urejen videz",
     "description": "Prepustite se strokovni negi v mirnem ambientu brez hitenja. Prilagojen pristop za vsako žensko, ki išče urejeno pričesko v Mariboru z okolico.",
@@ -221,23 +222,23 @@
     "id": "kontakt",
     "eyebrow": "Kontakt",
     "title": "Rezervirajte svoj termin",
-    "description": "Obiščite nas na Partizanski cesti v Mariboru ali nas kontaktirajte za rezervacijo termina.",
+    "description": "Pišite ali pokličite — odgovorimo in rezerviramo termin.",
     "items": [
       {
         "label": "Naslov",
-        "value": "Partizanska cesta 12, 2000 Maribor, Slovenia",
+        "value": "Primerjeva ulica 12, 2000 Maribor",
         "icon": "location"
       },
       {
         "label": "Telefon",
-        "value": "041 220 118",
-        "href": "tel:041220118",
+        "value": "041 000 111",
+        "href": "tel:041000111",
         "icon": "phone"
       },
       {
         "label": "E-pošta",
-        "value": "info@salon-luna.si",
-        "href": "mailto:info@salon-luna.si",
+        "value": "info@primer-luna.si",
+        "href": "mailto:info@primer-luna.si",
         "icon": "email"
       },
       {
@@ -259,14 +260,14 @@
     }
   },
   "footer": {
-    "address": "Partizanska cesta 12, 2000 Maribor, Slovenia",
+    "address": "Primerjeva ulica 12, 2000 Maribor",
     "rights": "Vse pravice pridržane."
   },
   "business": {
     "name": "Frizerski salon Luna",
-    "address": "Partizanska cesta 12, 2000 Maribor, Slovenia",
-    "email": "info@salon-luna.si",
-    "phone": "041 220 118"
+    "address": "Primerjeva ulica 12, 2000 Maribor",
+    "email": "info@primer-luna.si",
+    "phone": "041 000 111"
   },
   "privacy": {
     "enabled": true,
