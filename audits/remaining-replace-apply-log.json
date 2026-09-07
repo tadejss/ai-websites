@@ -1,0 +1,347 @@
+{
+  "count": 19,
+  "changes": [
+    {
+      "demo": "mobilni-vulkanizer-radic",
+      "slot": "hero",
+      "reason": "REPLACE NA road lines → tire/garage KEEP",
+      "old": {
+        "src": "/clients/mobilni-vulkanizer-radic/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Mobilni vulkanizer nudi pomoč na cesti v meglenem jutru"
+      },
+      "new": {
+        "src": "/clients/vulkanizerstvo-mitja-kocevar/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Mobilni vulkanizer nudi pomoč na cesti v meglenem jutru",
+        "donor": "vulkanizerstvo-mitja-kocevar:hero"
+      }
+    },
+    {
+      "demo": "mobilni-vulkanizer-radic",
+      "slot": "services",
+      "reason": "REPLACE picnic/AI trunk → tire-change KEEP",
+      "old": {
+        "src": "/clients/mobilni-vulkanizer-radic/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Menjava avtomobilske pnevmatike na terenu ob cesti"
+      },
+      "new": {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+        "provider": "pexels",
+        "sourceId": "6870316",
+        "alt": "Menjava avtomobilske pnevmatike na terenu ob cesti",
+        "donor": "vulkanizerstvo:services"
+      }
+    },
+    {
+      "demo": "dbf-vulkanizerstvo-hitri",
+      "slot": "hero",
+      "reason": "REPLACE tuner meet/ZG plate → tire-rack KEEP",
+      "old": {
+        "src": "/clients/dbf-vulkanizerstvo-hitri/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Notranjost avtomehanične delavnice z orodjem in avtomobilom"
+      },
+      "new": {
+        "src": "/clients/vulkanizerstvo-izdelava-kljucev/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Notranjost avtomehanične delavnice z orodjem in avtomobilom",
+        "donor": "vulkanizerstvo-izdelava-kljucev:hero"
+      }
+    },
+    {
+      "demo": "servis-industrijske-elektronike",
+      "slot": "services",
+      "reason": "REPLACE commercial kitchen → electrical panel KEEP",
+      "old": {
+        "src": "/clients/servis-industrijske-elektronike/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Diagnostika in vzdrževanje industrijskih elektronskih naprav"
+      },
+      "new": {
+        "src": "/clients/elektro-ika-gregor/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Diagnostika in vzdrževanje industrijskih elektronskih naprav",
+        "donor": "elektro-ika-gregor:services"
+      }
+    },
+    {
+      "demo": "elektro-kovac",
+      "slot": "hero",
+      "reason": "REPLACE nightlife portrait → electrician lighting-install KEEP",
+      "old": {
+        "src": "/clients/elektro-kovac/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Električar med delom na elektro omari"
+      },
+      "new": {
+        "src": "/clients/elvip-elektroinstalacije-podboj/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Električar med delom na elektro omari",
+        "donor": "elvip-elektroinstalacije-podboj:hero"
+      }
+    },
+    {
+      "demo": "else-za-elektro",
+      "slot": "services",
+      "reason": "REPLACE outboard motor workshop → fuse-box KEEP",
+      "old": {
+        "src": "/clients/else-za-elektro/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Orodja in material za elektro inštalacije in servis"
+      },
+      "new": {
+        "src": "/clients/elektro-ika-gregor/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Orodja in material za elektro inštalacije in servis",
+        "donor": "elektro-ika-gregor:services"
+      }
+    },
+    {
+      "demo": "elektro-poje-dejan",
+      "slot": "hero",
+      "reason": "REPLACE imperial/NA framing → EU distribution-board KEEP",
+      "old": {
+        "src": "/clients/elektro-poje-dejan/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Električar med delom na elektro inštalacijah v hiši"
+      },
+      "new": {
+        "src": "/clients/elektro-ivan-troha/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Električar med delom na elektro inštalacijah v hiši",
+        "donor": "elektro-ivan-troha:hero"
+      }
+    },
+    {
+      "demo": "gavro-elektro-hisniske",
+      "slot": "services",
+      "reason": "REPLACE metal hinge → fuse-box KEEP",
+      "old": {
+        "src": "/clients/gavro-elektro-hisniske/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Orodje za hišna popravila in vzdrževanje"
+      },
+      "new": {
+        "src": "/clients/elektro-ika-gregor/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Orodje za hišna popravila in vzdrževanje",
+        "donor": "elektro-ika-gregor:services"
+      }
+    },
+    {
+      "demo": "elmont-elektroservis-peter",
+      "slot": "hero",
+      "reason": "REPLACE caving scene → EU panel KEEP",
+      "old": {
+        "src": "/clients/elmont-elektroservis-peter/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Električar med delom na električni omarici"
+      },
+      "new": {
+        "src": "/clients/elektro-ivan-troha/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Električar med delom na električni omarici",
+        "donor": "elektro-ivan-troha:hero"
+      }
+    },
+    {
+      "demo": "elmont-elektroservis-peter",
+      "slot": "services",
+      "reason": "REPLACE tangled cables → lighting-install KEEP",
+      "old": {
+        "src": "/clients/elmont-elektroservis-peter/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Strokovne elektroinštalacije in orodje"
+      },
+      "new": {
+        "src": "/clients/elvip-elektroinstalacije-podboj/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Strokovne elektroinštalacije in orodje",
+        "donor": "elvip-elektroinstalacije-podboj:hero"
+      }
+    },
+    {
+      "demo": "elektrotehnika-puntar-slavko",
+      "slot": "services",
+      "reason": "REPLACE air hose → fuse-box KEEP",
+      "old": {
+        "src": "/clients/elektrotehnika-puntar-slavko/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Elektroinštalacije in oprema za dom in podjetje"
+      },
+      "new": {
+        "src": "/clients/elektro-ika-gregor/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Elektroinštalacije in oprema za dom in podjetje",
+        "donor": "elektro-ika-gregor:services"
+      }
+    },
+    {
+      "demo": "popravilo-elektrotehnicnih-strojev",
+      "slot": "hero",
+      "reason": "REPLACE lifestyle portrait → electrical panel KEEP (appliance-service adjacent)",
+      "old": {
+        "src": "/clients/popravilo-elektrotehnicnih-strojev/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Serviser popravlja gospodinjski aparat na domu stranke"
+      },
+      "new": {
+        "src": "/clients/elektro-ivan-troha/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Serviser popravlja gospodinjski aparat na domu stranke",
+        "donor": "elektro-ivan-troha:hero"
+      }
+    },
+    {
+      "demo": "popravilo-elektrotehnicnih-strojev",
+      "slot": "services",
+      "reason": "REPLACE BHARAT/imperial wrenches → fuse-box KEEP",
+      "old": {
+        "src": "/clients/popravilo-elektrotehnicnih-strojev/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Orodja in rezervni deli za servis bele tehnike"
+      },
+      "new": {
+        "src": "/clients/elektro-ika-gregor/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Orodja in rezervni deli za servis bele tehnike",
+        "donor": "elektro-ika-gregor:services"
+      }
+    },
+    {
+      "demo": "amoris-keramicarstvo-zakljucna",
+      "slot": "services",
+      "reason": "REPLACE ornate non-SI terrace tiling → subway-tile KEEP",
+      "old": {
+        "src": "/clients/amoris-keramicarstvo-zakljucna/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Strokovnjak pri natančnem polaganju keramičnih ploščic"
+      },
+      "new": {
+        "src": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Strokovnjak pri natančnem polaganju keramičnih ploščic",
+        "donor": "keramicarstvo-stanislav-radovicevic:services"
+      }
+    },
+    {
+      "demo": "keramicarstvo-ales-kucic",
+      "slot": "services",
+      "reason": "REPLACE welding/metalwork → bathroom tile craftsmanship KEEP",
+      "old": {
+        "src": "/clients/keramicarstvo-ales-kucic/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Natančno polaganje talnih ploščic in zaključna dela"
+      },
+      "new": {
+        "src": "/clients/keramicarstvo-robi-breznikar/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Natančno polaganje talnih ploščic in zaključna dela",
+        "donor": "keramicarstvo-robi-breznikar:hero"
+      }
+    },
+    {
+      "demo": "umivalniki-dreams-obdelava",
+      "slot": "services",
+      "reason": "REPLACE pottery workshop → tile backsplash KEEP",
+      "old": {
+        "src": "/clients/umivalniki-dreams-obdelava/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Natančno polaganje keramike in obdelava ploščic"
+      },
+      "new": {
+        "src": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Natančno polaganje keramike in obdelava ploščic",
+        "donor": "keramicarstvo-stanislav-radovicevic:services"
+      }
+    },
+    {
+      "demo": "lepotni-studio-dama",
+      "slot": "services",
+      "reason": "REPLACE forest landscape → e-file manicure beauty KEEP",
+      "old": {
+        "src": "/clients/lepotni-studio-dama/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Kozmetične storitve in urejanje v mirnem ambientu salona"
+      },
+      "new": {
+        "src": "/clients/lepotni-studio-aida/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Kozmetične storitve in urejanje v mirnem ambientu salona",
+        "donor": "lepotni-studio-aida:services"
+      }
+    },
+    {
+      "demo": "frizerski-studio-soul",
+      "slot": "hero",
+      "reason": "REPLACE CGI armchair tropical → salon stations KEEP",
+      "old": {
+        "src": "/clients/frizerski-studio-soul/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Sodoben in svetel frizerski salon"
+      },
+      "new": {
+        "src": "/clients/havajana-frizersko-lepotilni/hero.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Sodoben in svetel frizerski salon",
+        "donor": "havajana-frizersko-lepotilni:hero"
+      }
+    },
+    {
+      "demo": "frizerstvo-suzana-suzana",
+      "slot": "services",
+      "reason": "REPLACE cluttered informal shop → professional shears salon KEEP",
+      "old": {
+        "src": "/clients/frizerstvo-suzana-suzana/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Strokovne frizerske storitve in barvanje las"
+      },
+      "new": {
+        "src": "/clients/frizerski-salon-jelka/services.jpg",
+        "provider": null,
+        "sourceId": null,
+        "alt": "Strokovne frizerske storitve in barvanje las",
+        "donor": "frizerski-salon-jelka:services"
+      }
+    }
+  ]
+}

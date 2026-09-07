@@ -20,12 +20,8 @@
       "alt": "Električar pri delu na sodobni električni napeljavi v svetlem prostoru"
     },
     "services": {
-      "src": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
-      "srcFallback": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
-      "alt": "Podrobnost električne omarice in napeljav za pametne inštalacije",
-      "searchQuery": "modern lighting fixture electrical install",
-      "format": "jpg",
-      "fallbackFormat": "jpg"
+      "src": "/clients/elektro-ika-gregor/services.jpg",
+      "alt": "Podrobnost električne omarice in napeljav za pametne inštalacije"
     }
   },
   "brand": {

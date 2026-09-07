@@ -16,11 +16,11 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/elmont-elektroservis-peter/hero.jpg",
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
       "alt": "Električar med delom na električni omarici"
     },
     "services": {
-      "src": "/clients/elmont-elektroservis-peter/services.jpg",
+      "src": "/clients/elvip-elektroinstalacije-podboj/hero.jpg",
       "alt": "Strokovne elektroinštalacije in orodje"
     }
   },

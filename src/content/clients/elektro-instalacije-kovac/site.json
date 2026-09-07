@@ -25,12 +25,8 @@
       "fallbackFormat": "jpg"
     },
     "services": {
-      "src": "/clients/elektro-ivan-troha/hero.jpg",
-      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
-      "alt": "Strokovna izvedba elektroinštalacij v objektu",
-      "searchQuery": "electrician working electrical panel",
-      "format": "jpg",
-      "fallbackFormat": "jpg"
+      "src": "/clients/elektro-ika-gregor/services.jpg",
+      "alt": "Strokovna izvedba elektroinštalacij v objektu"
     }
   },
   "sections": {

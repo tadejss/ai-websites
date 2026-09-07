@@ -21,19 +21,19 @@
       "searchQuery": "heating system maintenance professional"
     },
     "services": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/hero.avif",
       "alt": "Montaža vodovodnih inštalacij",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.webp",
-      "width": 731,
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/hero.webp",
+      "width": 868,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "32588555",
-      "sourceUrl": "https://www.pexels.com/photo/technician-performing-air-conditioning-maintenance-32588555/",
-      "photographer": "Bulat843 🌙",
-      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
-      "searchQuery": "plumber heating installation professional"
+      "sourceId": "5691536",
+      "sourceUrl": "https://www.pexels.com/photo/unrecognizable-handyman-with-ruler-near-heating-system-at-home-5691536/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "plumber working on pipes installation"
     }
   },
   "sections": {

@@ -1,0 +1,326 @@
+{
+  "title": "Corrective replacement report",
+  "summary": {
+    "slots_changed": 9,
+    "unresolved": 1,
+    "fail_remaining": 0,
+    "review_remaining": 1,
+    "related_heroes_reqa_pass": 6
+  },
+  "changed_slots": [
+    {
+      "demo": "vodvrt-vodovodne-instalacije",
+      "slot": "services",
+      "old_donor": {
+        "provider": "pexels",
+        "sourceId": "6197122",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
+        "alt": "Urejanje vrta in zunanje okolice objekta"
+      },
+      "new_donor": {
+        "provider": "pexels",
+        "sourceId": "5691536",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/hero.avif",
+        "alt": "Vodovodne inštalacije in montaža ogrevalnih sistemov",
+        "donor_ref": "peteks-vodovodne-instalacije:hero"
+      },
+      "reason": "FAIL: garden alt + window-cleaning photo → plumbing/heating KEEP radiator donor; alt corrected to match photo and trade.",
+      "qa_verdict": "PASS",
+      "qa_score": 88,
+      "unresolved": false
+    },
+    {
+      "demo": "napeljava-vodovodnih-centralnih",
+      "slot": "services",
+      "old_donor": {
+        "provider": "pexels",
+        "sourceId": "32588555",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+        "alt": "Montaža vodovodnih inštalacij"
+      },
+      "new_donor": {
+        "provider": "pexels",
+        "sourceId": "5691536",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/hero.avif",
+        "alt": "Montaža vodovodnih inštalacij",
+        "donor_ref": "peteks-vodovodne-instalacije:hero"
+      },
+      "reason": "Differentiate services from hero HVAC cabinet; radiator KEEP is plumbing/heating-fit.",
+      "qa_verdict": "PASS",
+      "qa_score": 86,
+      "unresolved": false
+    },
+    {
+      "demo": "vodoinstalaterstvo-adi-dervis",
+      "slot": "services",
+      "old_donor": {
+        "provider": "pexels",
+        "sourceId": "32588555",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+        "alt": "Montaža sanitarne opreme v sodobni kopalnici"
+      },
+      "new_donor": {
+        "provider": null,
+        "sourceId": null,
+        "src": "/clients/umivalniki-dreams-obdelava/hero.jpg",
+        "alt": "Montaža sanitarne opreme v sodobni kopalnici",
+        "donor_ref": "umivalniki-dreams-obdelava:hero"
+      },
+      "reason": "Alt drift: HVAC cabinet wrong for sanitary bathroom alt; bathroom sanitary fixtures KEEP matches alt and differentiates from hero.",
+      "qa_verdict": "PASS",
+      "qa_score": 90,
+      "unresolved": false
+    },
+    {
+      "demo": "pirnar-stanislav-avtoservis",
+      "slot": "services",
+      "old_donor": {
+        "provider": "pexels",
+        "sourceId": "8986105",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+        "alt": "Menjava pnevmatik in vulkanizerske storitve v avtoservisu"
+      },
+      "new_donor": {
+        "provider": "pexels",
+        "sourceId": "6870316",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+        "alt": "Menjava pnevmatik in vulkanizerske storitve v avtoservisu",
+        "donor_ref": "vzdrzevanje-vozil-vulkanizerstvo:services"
+      },
+      "reason": "Alt drift + duplicate: tire/vulkanizer alt mismatched under-car hero twin; tire KEEP 6870316 matches alt.",
+      "qa_verdict": "PASS",
+      "qa_score": 92,
+      "unresolved": false
+    },
+    {
+      "demo": "avtoservis-celarc-crt",
+      "slot": "services",
+      "old_donor": {
+        "provider": "pexels",
+        "sourceId": "8986105",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+        "alt": "Diagnostika in vzdrževanje vozil v delavnici"
+      },
+      "new_donor": {
+        "provider": "pexels",
+        "sourceId": "4315571",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/servis-popravilo-vozil/services.avif",
+        "alt": "Diagnostika in vzdrževanje vozil v delavnici",
+        "donor_ref": "servis-popravilo-vozil:services"
+      },
+      "reason": "Differentiate services from hero lift-bay; engine diagnostics KEEP matches services alt.",
+      "qa_verdict": "PASS",
+      "qa_score": 88,
+      "unresolved": false
+    },
+    {
+      "demo": "marko-cerekovic",
+      "slot": "services",
+      "old_donor": {
+        "provider": null,
+        "sourceId": null,
+        "src": "/clients/elektro-ivan-troha/hero.jpg",
+        "alt": "Orodje in oprema za elektroinstalacije"
+      },
+      "new_donor": {
+        "provider": null,
+        "sourceId": null,
+        "src": "/clients/elvip-elektroinstalacije-podboj/hero.jpg",
+        "alt": "Električar pri montaži razsvetljave in napeljav",
+        "donor_ref": "elvip-elektroinstalacije-podboj:hero"
+      },
+      "reason": "Differentiate from panel hero; concrete lighting-install KEEP replaces duplicate panel shot; alt updated to match photo.",
+      "qa_verdict": "PASS",
+      "qa_score": 85,
+      "unresolved": false
+    },
+    {
+      "demo": "elektro-instalacije-kovac",
+      "slot": "services",
+      "old_donor": {
+        "provider": null,
+        "sourceId": null,
+        "src": "/clients/elektro-ivan-troha/hero.jpg",
+        "alt": "Strokovna izvedba elektroinštalacij v objektu"
+      },
+      "new_donor": {
+        "provider": null,
+        "sourceId": null,
+        "src": "/clients/elektro-ika-gregor/services.jpg",
+        "alt": "Strokovna izvedba elektroinštalacij v objektu",
+        "donor_ref": "elektro-ika-gregor:services"
+      },
+      "reason": "Differentiate from panel hero; fuse-box KEEP is services-appropriate elektro detail.",
+      "qa_verdict": "PASS",
+      "qa_score": 87,
+      "unresolved": false
+    },
+    {
+      "demo": "wise-electronics",
+      "slot": "services",
+      "old_donor": {
+        "provider": null,
+        "sourceId": null,
+        "src": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+        "alt": "Podrobnost električne omarice in napeljav za pametne inštalacije"
+      },
+      "new_donor": {
+        "provider": null,
+        "sourceId": null,
+        "src": "/clients/elektro-ika-gregor/services.jpg",
+        "alt": "Podrobnost električne omarice in napeljav za pametne inštalacije",
+        "donor_ref": "elektro-ika-gregor:services"
+      },
+      "reason": "Replace abstract lighting orb with concrete fuse-box KEEP matching omarice alt.",
+      "qa_verdict": "PASS",
+      "qa_score": 88,
+      "unresolved": false
+    },
+    {
+      "demo": "elektro-zagar-jan",
+      "slot": "services",
+      "old_donor": {
+        "provider": null,
+        "sourceId": null,
+        "src": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
+        "alt": "Montaža in pregled elektroopreme ter razdelilnih omaric"
+      },
+      "new_donor": {
+        "provider": null,
+        "sourceId": null,
+        "src": "/clients/elvip-elektroinstalacije-podboj/hero.jpg",
+        "alt": "Montaža in pregled elektroopreme ter razdelilnih omaric",
+        "donor_ref": "elvip-elektroinstalacije-podboj:hero"
+      },
+      "reason": "Replace abstract lighting orb with concrete electrician lighting-install KEEP.",
+      "qa_verdict": "PASS",
+      "qa_score": 84,
+      "unresolved": false
+    },
+    {
+      "demo": "vulkanizerstvo-izdelava-kljucev",
+      "slot": "services",
+      "old_donor": {
+        "provider": "pexels",
+        "sourceId": "6870316",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+        "alt": "Menjava pnevmatik in strokovno delo v vulkanizerski delavnici"
+      },
+      "new_donor": null,
+      "reason": "Dual-trade tire-only cover: no suitable existing KEEP for key-cutting/locksmith combo (only REVIEW English DoorAlex pack). Left unchanged.",
+      "qa_verdict": "REVIEW",
+      "qa_score": 72,
+      "unresolved": true
+    }
+  ],
+  "related_heroes_unchanged": [
+    {
+      "demo": "pirnar-stanislav-avtoservis",
+      "slot": "hero",
+      "old_donor_key": null,
+      "new_donor_key": "pexels:8986105",
+      "old_src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "new_src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "old_alt": "Mehanik med delom na motorju avtomobila v sodobni avtoservisni delavnici",
+      "new_alt": "Mehanik med delom na motorju avtomobila v sodobni avtoservisni delavnici",
+      "classification": "PASS",
+      "score": 88,
+      "reason": "Under-car mechanic KEEP remains; services now uses distinct tire donor — within-demo identity resolved.",
+      "donor_visual": "Unchanged hero; re-QA after services differentiation.",
+      "unresolved": false,
+      "changed": false,
+      "note": "Hero asset unchanged; verdict upgraded because services no longer identical."
+    },
+    {
+      "demo": "avtoservis-celarc-crt",
+      "slot": "hero",
+      "old_donor_key": null,
+      "new_donor_key": "pexels:8986105",
+      "old_src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "new_src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "old_alt": "Mehanik pri delu v avtoservisni delavnici",
+      "new_alt": "Mehanik pri delu v avtoservisni delavnici",
+      "classification": "PASS",
+      "score": 90,
+      "reason": "Lift-bay mechanic KEEP remains; services now distinct diagnostics donor — identity resolved.",
+      "donor_visual": "Unchanged hero; re-QA after services differentiation.",
+      "unresolved": false,
+      "changed": false,
+      "note": "Hero asset unchanged; verdict upgraded because services no longer identical."
+    },
+    {
+      "demo": "vodoinstalaterstvo-adi-dervis",
+      "slot": "hero",
+      "old_donor_key": null,
+      "new_donor_key": "pexels:32588555",
+      "old_src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "new_src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "old_alt": "Vodoinštalater pri delu na vodovodni napeljavi",
+      "new_alt": "Vodoinštalater pri delu na vodovodni napeljavi",
+      "classification": "PASS",
+      "score": 86,
+      "reason": "HVAC/plumbing KEEP remains; services now bathroom sanitary — identity and alt-drift resolved.",
+      "donor_visual": "Unchanged hero; re-QA after services differentiation.",
+      "unresolved": false,
+      "changed": false,
+      "note": "Hero asset unchanged; verdict upgraded because services no longer identical."
+    },
+    {
+      "demo": "elektro-instalacije-kovac",
+      "slot": "hero",
+      "old_donor_key": null,
+      "new_donor_key": "local:/clients/elektro-ivan-troha/hero.jpg",
+      "old_src": "/clients/elektro-ivan-troha/hero.jpg",
+      "new_src": "/clients/elektro-ivan-troha/hero.jpg",
+      "old_alt": "Električar pri delu na moderni elektro omari",
+      "new_alt": "Električar pri delu na moderni elektro omari",
+      "classification": "PASS",
+      "score": 90,
+      "reason": "EU panel KEEP remains; services now fuse-box — identity resolved.",
+      "donor_visual": "Unchanged hero; re-QA after services differentiation.",
+      "unresolved": false,
+      "changed": false,
+      "note": "Hero asset unchanged; verdict upgraded because services no longer identical."
+    },
+    {
+      "demo": "marko-cerekovic",
+      "slot": "hero",
+      "old_donor_key": null,
+      "new_donor_key": "local:/clients/elektro-ivan-troha/hero.jpg",
+      "old_src": "/clients/elektro-ivan-troha/hero.jpg",
+      "new_src": "/clients/elektro-ivan-troha/hero.jpg",
+      "old_alt": "Električar pri delu na elektro omarici",
+      "new_alt": "Električar pri delu na elektro omarici",
+      "classification": "PASS",
+      "score": 90,
+      "reason": "EU panel KEEP remains; services now lighting install — identity resolved.",
+      "donor_visual": "Unchanged hero; re-QA after services differentiation.",
+      "unresolved": false,
+      "changed": false,
+      "note": "Hero asset unchanged; verdict upgraded because services no longer identical."
+    },
+    {
+      "demo": "napeljava-vodovodnih-centralnih",
+      "slot": "hero",
+      "old_donor_key": null,
+      "new_donor_key": "pexels:32588555",
+      "old_src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "new_src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vodovodne-instalacije-marjan/hero.avif",
+      "old_alt": "Vodovodar pri montaži inštalacij",
+      "new_alt": "Vodovodar pri montaži inštalacij",
+      "classification": "PASS",
+      "score": 88,
+      "reason": "HVAC KEEP remains; services now radiator — identity resolved.",
+      "donor_visual": "Unchanged hero; re-QA after services differentiation.",
+      "unresolved": false,
+      "changed": false,
+      "note": "Hero asset unchanged; verdict upgraded because services no longer identical."
+    }
+  ],
+  "method": {
+    "downloads": false,
+    "cache_writes": false,
+    "binary_copies": false,
+    "attribution": "Copied provider/sourceId/sourceUrl/photographer from KEEP donor when present; local donors retain path-only metadata."
+  }
+}

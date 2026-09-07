@@ -31,19 +31,19 @@
       "searchQuery": "car repair shop professional mechanic"
     },
     "services": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.avif",
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
       "alt": "Menjava pnevmatik in vulkanizerske storitve v avtoservisu",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vzdrzevanje-popravila-motornih/hero.webp",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.webp",
       "width": 867,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "8986105",
-      "sourceUrl": "https://www.pexels.com/photo/a-serviceman-in-blue-coverall-standing-under-a-vehicle-and-fixing-it-8986105/",
-      "photographer": "Artem Podrez",
-      "photographerUrl": "https://www.pexels.com/@artempodrez",
-      "searchQuery": "car repair shop professional mechanic"
+      "sourceId": "6870316",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-wearing-blue-uniform-holding-a-car-tire-6870316/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
     }
   },
   "sections": {

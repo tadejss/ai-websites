@@ -16,11 +16,11 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/popravilo-elektrotehnicnih-strojev/hero.jpg",
+      "src": "/clients/elektro-ivan-troha/hero.jpg",
       "alt": "Serviser popravlja gospodinjski aparat na domu stranke"
     },
     "services": {
-      "src": "/clients/popravilo-elektrotehnicnih-strojev/services.jpg",
+      "src": "/clients/elektro-ika-gregor/services.jpg",
       "alt": "Orodja in rezervni deli za servis bele tehnike"
     }
   },

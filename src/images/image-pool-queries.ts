@@ -1,4 +1,5 @@
 import type { ImagePoolCategoryId } from "./image-pool-category";
+import { applyLocaleQueryHint } from "./selection-rules";
 
 export type PoolSearchQuery = {
   query: string;
@@ -38,7 +39,7 @@ const QUERIES: Record<ImagePoolCategoryId, CategoryQueries> = {
     ],
     services: [
       { query: "car tires stacked garage workshop", orientation: "squarish" },
-      { query: "wheel alignment tire equipment", orientation: "squarish" },
+      { query: "mechanic holding car tire workshop", orientation: "squarish" },
     ],
   },
   "avtokleparji-licarji": {
@@ -93,11 +94,11 @@ const QUERIES: Record<ImagePoolCategoryId, CategoryQueries> = {
   },
   elektricarji: {
     hero: [
-      { query: "electrician working electrical panel", orientation: "portrait" },
-      { query: "professional electrician installing wiring", orientation: "portrait" },
+      { query: "electrician working electrical panel schuko", orientation: "portrait" },
+      { query: "professional electrician installing wiring eu", orientation: "portrait" },
     ],
     services: [
-      { query: "electrical tools and wiring professional", orientation: "squarish" },
+      { query: "electrical fuse box wiring professional", orientation: "squarish" },
       { query: "light fixture installation electrician", orientation: "squarish" },
     ],
   },
@@ -173,15 +174,26 @@ const QUERIES: Record<ImagePoolCategoryId, CategoryQueries> = {
   },
 };
 
+function withLocaleHints(queries: PoolSearchQuery[]): PoolSearchQuery[] {
+  return queries.map((entry) => ({
+    ...entry,
+    query: applyLocaleQueryHint(entry.query),
+  }));
+}
+
 export function getPoolSearchQueries(
   category: ImagePoolCategoryId,
 ): CategoryQueries {
-  return QUERIES[category];
+  const base = QUERIES[category];
+  return {
+    hero: withLocaleHints(base.hero),
+    services: withLocaleHints(base.services),
+  };
 }
 
 export function getAllPoolSearchQueries(
   category: ImagePoolCategoryId,
 ): PoolSearchQuery[] {
-  const { hero, services } = QUERIES[category];
+  const { hero, services } = getPoolSearchQueries(category);
   return [...hero, ...services];
 }

@@ -1,0 +1,477 @@
+{
+  "generated_at": "2026-09-07T07:44:44.160890+00:00",
+  "title": "Final demo image cleanup status",
+  "original_audit_categories": {
+    "REPLACE": 42,
+    "REVIEW": 51,
+    "UNKNOWN": 122,
+    "KEEP": 128
+  },
+  "live_unique_assets_by_original_category": {
+    "KEEP": 128,
+    "REVIEW": 49,
+    "UNKNOWN": 122
+  },
+  "replace_cleanup": {
+    "original_replace_assets": 42,
+    "replace_assets_no_longer_used": 42,
+    "replace_assets_still_used": 0,
+    "remaining_batch_slots_changed": 19,
+    "remaining_batch_demos": [
+      "amoris-keramicarstvo-zakljucna",
+      "dbf-vulkanizerstvo-hitri",
+      "elektro-kovac",
+      "elektro-poje-dejan",
+      "elektrotehnika-puntar-slavko",
+      "elmont-elektroservis-peter",
+      "else-za-elektro",
+      "frizerski-studio-soul",
+      "frizerstvo-suzana-suzana",
+      "gavro-elektro-hisniske",
+      "keramicarstvo-ales-kucic",
+      "lepotni-studio-dama",
+      "mobilni-vulkanizer-radic",
+      "popravilo-elektrotehnicnih-strojev",
+      "servis-industrijske-elektronike",
+      "umivalniki-dreams-obdelava"
+    ]
+  },
+  "remaining_review_live": [
+    {
+      "asset_key": "pexels:8985712",
+      "live_slots": 20,
+      "score": 62,
+      "reason": "Strong workshop scene but background poster appears Cyrillic"
+    },
+    {
+      "asset_key": "pexels:4374743",
+      "live_slots": 16,
+      "score": 58,
+      "reason": "Abstract ocean foam weak trade visual"
+    },
+    {
+      "asset_key": "pexels:37809549",
+      "live_slots": 15,
+      "score": 74,
+      "reason": "PDR strong but branded cap"
+    },
+    {
+      "asset_key": "pexels:1694980",
+      "live_slots": 11,
+      "score": 38,
+      "reason": "Abstract cracked wall texture weak trade"
+    },
+    {
+      "asset_key": "pexels:30499654",
+      "live_slots": 11,
+      "score": 55,
+      "reason": "Dark cluttered historic workshop"
+    },
+    {
+      "asset_key": "pexels:35546238",
+      "live_slots": 10,
+      "score": 62,
+      "reason": "Spa bed with third-party logo"
+    },
+    {
+      "asset_key": "pexels:8985924",
+      "live_slots": 9,
+      "score": 72,
+      "reason": "Mechanic B&W limits color brands"
+    },
+    {
+      "asset_key": "pexels:9245158",
+      "live_slots": 9,
+      "score": 58,
+      "reason": "Disinfection sprayer not routine cleaning"
+    },
+    {
+      "asset_key": "pexels:6196694",
+      "live_slots": 9,
+      "score": 65,
+      "reason": "Staged red overalls portrait"
+    },
+    {
+      "asset_key": "pexels:6196684",
+      "live_slots": 9,
+      "score": 68,
+      "reason": "Staged red overalls stock campaign"
+    },
+    {
+      "asset_key": "pexels:20381389",
+      "live_slots": 9,
+      "score": 74,
+      "reason": "English CAUTION wet-floor sign"
+    },
+    {
+      "asset_key": "pexels:6197114",
+      "live_slots": 9,
+      "score": 70,
+      "reason": "B&W glass cleaning editorial"
+    },
+    {
+      "asset_key": "pexels:32178008",
+      "live_slots": 6,
+      "score": 58,
+      "reason": "CGI apartment megacity skyline non-SI"
+    },
+    {
+      "asset_key": "pexels:8470881",
+      "live_slots": 5,
+      "score": 48,
+      "reason": "Non-EU plate format in body shop"
+    },
+    {
+      "asset_key": "pexels:30250199",
+      "live_slots": 4,
+      "score": 76,
+      "reason": "Spray-booth paintwork with Tyvek logo"
+    },
+    {
+      "asset_key": "pexels:8488035",
+      "live_slots": 4,
+      "score": 48,
+      "reason": "Messy unfinished ABS drain; weak marketing"
+    },
+    {
+      "asset_key": "pexels:37809581",
+      "live_slots": 4,
+      "score": 72,
+      "reason": "Polishing in athletic shorts/sneakers hobbyist look"
+    },
+    {
+      "asset_key": "pexels:5463582",
+      "live_slots": 3,
+      "score": 48,
+      "reason": "Outdoor AC not pure heating"
+    },
+    {
+      "asset_key": "pexels:24653480",
+      "live_slots": 3,
+      "score": 68,
+      "reason": "Product drip with LMI bottle branding"
+    },
+    {
+      "asset_key": "pexels:6560297",
+      "live_slots": 3,
+      "score": 42,
+      "reason": "English BODY & SPA towel"
+    },
+    {
+      "asset_key": "pexels:12142829",
+      "live_slots": 3,
+      "score": 44,
+      "reason": "Rough exterior PVC poor hero quality"
+    },
+    {
+      "asset_key": "pexels:37229315",
+      "live_slots": 2,
+      "score": 58,
+      "reason": "Cucumber spa cliché dated"
+    },
+    {
+      "asset_key": "pexels:28704177",
+      "live_slots": 2,
+      "score": 55,
+      "reason": "Turkish tulip tea glass in cobbler shop"
+    },
+    {
+      "asset_key": "pexels:34286675",
+      "live_slots": 2,
+      "score": 62,
+      "reason": "Locksmith with English DoorAlex pack"
+    },
+    {
+      "asset_key": "hash:12ec17d8bb458841",
+      "live_slots": 1,
+      "score": 72,
+      "reason": "Generic corporate high-five stock"
+    },
+    {
+      "asset_key": "hash:ee3cc120088b931d",
+      "live_slots": 1,
+      "score": 46,
+      "reason": "EXIT + palm"
+    },
+    {
+      "asset_key": "hash:103769a408860768",
+      "live_slots": 1,
+      "score": 48,
+      "reason": "Generic DIY tools"
+    },
+    {
+      "asset_key": "hash:fd76b93f17688c92",
+      "live_slots": 1,
+      "score": 70,
+      "reason": "Makeup more than hairdressing"
+    },
+    {
+      "asset_key": "hash:72b6e250a43fc975",
+      "live_slots": 1,
+      "score": 42,
+      "reason": "Lifestyle interior weak elektro"
+    },
+    {
+      "asset_key": "hash:15bee4d04b501bf6",
+      "live_slots": 1,
+      "score": 50,
+      "reason": "km/h gauge abstract; weak tire signal"
+    },
+    {
+      "asset_key": "hash:f209130653a92fc3",
+      "live_slots": 1,
+      "score": 58,
+      "reason": "Flat stone steps weak showcase"
+    },
+    {
+      "asset_key": "hash:4b05466be788b282",
+      "live_slots": 1,
+      "score": 55,
+      "reason": "Roofing tiles not wall/floor keramičarstvo"
+    },
+    {
+      "asset_key": "hash:30b9377356f06073",
+      "live_slots": 1,
+      "score": 58,
+      "reason": "NA Type-B outlets in bathroom"
+    },
+    {
+      "asset_key": "hash:af211a6403558555",
+      "live_slots": 1,
+      "score": 68,
+      "reason": "Made in Australia soap label"
+    },
+    {
+      "asset_key": "hash:a0ac98cae76207e6",
+      "live_slots": 1,
+      "score": 72,
+      "reason": "English FACE CREAM prop"
+    },
+    {
+      "asset_key": "hash:a04f76da92da8746",
+      "live_slots": 1,
+      "score": 55,
+      "reason": "Artistic fluorescent metaphor; weak elektro usefulness"
+    },
+    {
+      "asset_key": "hash:138108c5570e8791",
+      "live_slots": 1,
+      "score": 58,
+      "reason": "Abstract industrial toggle; poor residential elektro storytelling"
+    },
+    {
+      "asset_key": "hash:c370b163f424b722",
+      "live_slots": 1,
+      "score": 52,
+      "reason": "Cluttered electronics bench B&W"
+    },
+    {
+      "asset_key": "hash:44db1c8fd48cc51d",
+      "live_slots": 1,
+      "score": 48,
+      "reason": "US Vagaro POS + Christmas"
+    },
+    {
+      "asset_key": "hash:6c68f3684b34cbfb",
+      "live_slots": 1,
+      "score": 42,
+      "reason": "Abstract lighting ceiling weak elektro"
+    },
+    {
+      "asset_key": "hash:3a90587fc9a801e1",
+      "live_slots": 1,
+      "score": 42,
+      "reason": "Generic tools; weak elektro"
+    },
+    {
+      "asset_key": "hash:648dbe448c0d9e00",
+      "live_slots": 1,
+      "score": 65,
+      "reason": "Dior magazine prop stocky"
+    },
+    {
+      "asset_key": "hash:6760420c568c66ff",
+      "live_slots": 1,
+      "score": 32,
+      "reason": "Russian Vogue Cyrillic cover"
+    },
+    {
+      "asset_key": "hash:5ab17493d6c7d986",
+      "live_slots": 1,
+      "score": 60,
+      "reason": "Abstract tile light/shadow"
+    },
+    {
+      "asset_key": "hash:0fafd5d302ef5309",
+      "live_slots": 1,
+      "score": 55,
+      "reason": "Phone PCB weak for industrial electronics"
+    },
+    {
+      "asset_key": "hash:f26e7951da0e4e7a",
+      "live_slots": 1,
+      "score": 50,
+      "reason": "Dated retro bathroom"
+    },
+    {
+      "asset_key": "hash:f70c8cc46c1b1cd6",
+      "live_slots": 1,
+      "score": 58,
+      "reason": "Detailing wrap more than tires"
+    },
+    {
+      "asset_key": "hash:dde9566dcabd8472",
+      "live_slots": 1,
+      "score": 62,
+      "reason": "English Hello Gorgeous neon"
+    },
+    {
+      "asset_key": "hash:b778c8f0c17b4b61",
+      "live_slots": 1,
+      "score": 40,
+      "reason": "Cajón portrait weak salon"
+    }
+  ],
+  "remaining_unknown_live_count": 122,
+  "remaining_unknown_live_sample": [
+    {
+      "asset_key": "pexels:994164",
+      "live_slots": 3
+    },
+    {
+      "asset_key": "pexels:6870330",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:6870322",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:8986133",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:8815801",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:5691588",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:6870318",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:5260115",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:5493654",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:32115287",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:7217987",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:27155225",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:16551819",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:26447047",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:6628596",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:5691677",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:21812143",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:34054464",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:9607005",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:20345064",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:6474123",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:33694019",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:9679179",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:5691479",
+      "live_slots": 2
+    },
+    {
+      "asset_key": "pexels:33917084",
+      "live_slots": 1
+    },
+    {
+      "asset_key": "pexels:7823407",
+      "live_slots": 1
+    },
+    {
+      "asset_key": "pexels:19664876",
+      "live_slots": 1
+    },
+    {
+      "asset_key": "pexels:31517287",
+      "live_slots": 1
+    },
+    {
+      "asset_key": "pexels:37229313",
+      "live_slots": 1
+    },
+    {
+      "asset_key": "pexels:8931963",
+      "live_slots": 1
+    }
+  ],
+  "pipeline_rules_added": {
+    "module": "src/images/selection-rules.ts",
+    "wired_into": [
+      "src/images/build-search-queries.ts",
+      "src/images/image-pool-queries.ts",
+      "src/images/image-pool.ts",
+      "scripts/test-image-pool.ts"
+    ]
+  },
+  "prior_batches": {
+    "high_impact_note": "Earlier batch replaced multi-demo REPLACE assets via KEEP donors.",
+    "corrective_summary": {
+      "slots_changed": 9,
+      "unresolved": 1,
+      "fail_remaining": 0,
+      "review_remaining": 1,
+      "related_heroes_reqa_pass": 6
+    }
+  }
+}

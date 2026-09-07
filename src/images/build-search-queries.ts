@@ -4,11 +4,16 @@ import type { BusinessInput } from "@/ai/types";
 import type { SiteConfig } from "@/content/types/site";
 import { getPalette } from "@/theme/palettes";
 import { paletteToTokens } from "@/theme/utils/tokens";
+import {
+  applyLocaleQueryHint,
+  imageSelectionPromptBlock,
+  queryViolatesMarketRules,
+} from "./selection-rules";
 import type { ImageSearchPlan } from "./types";
 
 const MODEL = "gemini-3.5-flash-lite";
 
-const SYSTEM_PROMPT = `You create Unsplash photo search queries for a local business website.
+const SYSTEM_PROMPT = `You create Unsplash/Pexels photo search queries for a Slovenian local business website.
 
 Return ONLY valid JSON with this exact shape:
 {
@@ -17,13 +22,15 @@ Return ONLY valid JSON with this exact shape:
 }
 
 Rules:
-- Queries must be in English, 4-8 words, specific to the business
+- Queries must be in English, 4-8 words, specific to the business trade
 - Include industry, key services, location vibe, and visual mood from the palette
 - Avoid generic queries like "hair salon" alone — be specific (e.g. "warm hair salon interior natural light")
 - alt text must be in Slovenian, concise, descriptive, no invented claims
 - hero orientation is always "portrait"
 - services orientation is always "squarish"
-- Do not include markdown or comments`;
+- Do not include markdown or comments
+
+${imageSelectionPromptBlock()}`;
 
 function createClient(): GoogleGenerativeAI {
   const apiKey = process.env.GEMINI_API_KEY;
@@ -98,14 +105,23 @@ Visual mood: ${paletteMood(siteConfig)}`;
     throw new Error("Image search plan is missing hero or services queries");
   }
 
+  if (
+    queryViolatesMarketRules(parsed.hero.query) ||
+    queryViolatesMarketRules(parsed.services.query)
+  ) {
+    throw new Error(
+      "Image search plan query violates Slovenian local-market selection rules",
+    );
+  }
+
   return {
     hero: {
-      query: parsed.hero.query,
+      query: applyLocaleQueryHint(parsed.hero.query),
       alt: parsed.hero.alt,
       orientation: "portrait",
     },
     services: {
-      query: parsed.services.query,
+      query: applyLocaleQueryHint(parsed.services.query),
       alt: parsed.services.alt,
       orientation: "squarish",
     },

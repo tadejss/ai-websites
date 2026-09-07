@@ -16,12 +16,23 @@
   },
   "images": {
     "hero": {
-      "src": "/clients/mobilni-vulkanizer-radic/hero.jpg",
+      "src": "/clients/vulkanizerstvo-mitja-kocevar/hero.jpg",
       "alt": "Mobilni vulkanizer nudi pomoč na cesti v meglenem jutru"
     },
     "services": {
-      "src": "/clients/mobilni-vulkanizer-radic/services.jpg",
-      "alt": "Menjava avtomobilske pnevmatike na terenu ob cesti"
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.avif",
+      "alt": "Menjava avtomobilske pnevmatike na terenu ob cesti",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/vulkanizerstvo/services.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6870316",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-wearing-blue-uniform-holding-a-car-tire-6870316/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "searchQuery": "tire shop mechanic changing tire"
     }
   },
   "brand": {

@@ -24,12 +24,8 @@
       "fallbackFormat": "jpg"
     },
     "services": {
-      "src": "/clients/elektro-ivan-troha/hero.jpg",
-      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
-      "alt": "Orodje in oprema za elektroinstalacije",
-      "searchQuery": "electrician working electrical panel",
-      "format": "jpg",
-      "fallbackFormat": "jpg"
+      "src": "/clients/elvip-elektroinstalacije-podboj/hero.jpg",
+      "alt": "Električar pri montaži razsvetljave in napeljav"
     }
   },
   "brand": {

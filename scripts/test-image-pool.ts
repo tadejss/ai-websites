@@ -363,6 +363,37 @@ async function main() {
     }) === undefined,
   );
 
+  console.log("\n== selection rules ==");
+  const { applyLocaleQueryHint, pickDistinctSlotKeys, queryViolatesMarketRules } =
+    await import("../src/images/selection-rules");
+  check(
+    "locale hint appended once",
+    applyLocaleQueryHint("electrician panel").includes("european workshop"),
+  );
+  check(
+    "locale hint not duplicated",
+    !applyLocaleQueryHint("electrician european workshop").endsWith(
+      "european workshop european workshop",
+    ),
+  );
+  check(
+    "rejects US-specific query",
+    queryViolatesMarketRules("american highway tire roadside"),
+  );
+  check(
+    "allows neutral trade query",
+    !queryViolatesMarketRules("electrician working electrical panel"),
+  );
+  const distinct = pickDistinctSlotKeys(["pexels:1", "pexels:2", "pexels:3"]);
+  check(
+    "pickDistinctSlotKeys returns two different keys",
+    Boolean(distinct && distinct.heroKey !== distinct.servicesKey),
+  );
+  check(
+    "pickDistinctSlotKeys refuses single-key pool",
+    pickDistinctSlotKeys(["pexels:1"]) === undefined,
+  );
+
   await teardown();
 
   if (failures > 0) {

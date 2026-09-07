@@ -24,12 +24,8 @@
       "fallbackFormat": "jpg"
     },
     "services": {
-      "src": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
-      "srcFallback": "/clients/elvip-elektroinstalacije-podboj/services.jpg",
-      "alt": "Montaža in pregled elektroopreme ter razdelilnih omaric",
-      "searchQuery": "modern lighting fixture electrical install",
-      "format": "jpg",
-      "fallbackFormat": "jpg"
+      "src": "/clients/elvip-elektroinstalacije-podboj/hero.jpg",
+      "alt": "Montaža in pregled elektroopreme ter razdelilnih omaric"
     }
   },
   "brand": {

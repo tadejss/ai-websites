@@ -21,19 +21,19 @@
       "searchQuery": "plumber working on pipes installation"
     },
     "services": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.avif",
-      "alt": "Urejanje vrta in zunanje okolice objekta",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/cistilni-servis-val/hero.webp",
-      "width": 867,
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/hero.avif",
+      "alt": "Vodovodne inštalacije in montaža ogrevalnih sistemov",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/peteks-vodovodne-instalacije/hero.webp",
+      "width": 868,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "6197122",
-      "sourceUrl": "https://www.pexels.com/photo/man-cleaning-the-windows-6197122/",
-      "photographer": "Tima Miroshnichenko",
-      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
-      "searchQuery": "residential outdoor maintenance clean modern home"
+      "sourceId": "5691536",
+      "sourceUrl": "https://www.pexels.com/photo/unrecognizable-handyman-with-ruler-near-heating-system-at-home-5691536/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "plumber working on pipes installation"
     }
   },
   "sections": {

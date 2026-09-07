@@ -26,6 +26,7 @@ import {
   searchPexelsPhotos,
 } from "./providers/pexels";
 import type { StockPhotoCandidate } from "./providers/types";
+import { pickDistinctSlotKeys, queryViolatesMarketRules } from "./selection-rules";
 import type { ImageSlot } from "./types";
 
 function hashString(value: string): number {
@@ -121,6 +122,10 @@ async function fetchNewPoolAssets(
   for (const search of queries) {
     if (added >= targetCount) {
       break;
+    }
+
+    if (queryViolatesMarketRules(search.query)) {
+      continue;
     }
 
     const photos = await searchPexelsPhotos(search.query, search.orientation);
@@ -329,22 +334,32 @@ export async function generateImagesFromPool(
   await ensureCategoryPoolReady(category);
 
   let keys = await selectPoolAssets(category, slug, 2);
-  if (keys.length === 0) {
+  if (keys.length < 2) {
     await replenishCategoryPool(category);
     keys = await selectPoolAssets(category, slug, 2);
   }
 
-  if (keys.length === 0) {
+  const distinct = pickDistinctSlotKeys(keys);
+  if (!distinct) {
     return undefined;
   }
 
-  const heroKey = keys[0]!;
-  const servicesKey = keys[1] ?? keys[0]!;
+  const { heroKey, servicesKey } = distinct;
 
   const hero = await assignPoolAssetToClient(heroKey, "hero", slug);
   const services = await assignPoolAssetToClient(servicesKey, "services", slug);
 
   if (!hero || !services) {
+    return undefined;
+  }
+
+  if (
+    hero.provider === services.provider &&
+    hero.sourceId === services.sourceId
+  ) {
+    console.warn(
+      `Pool assigned identical asset to hero and services for "${slug}" (${category}); refusing duplicate slot pair.`,
+    );
     return undefined;
   }
 
