@@ -709,6 +709,51 @@ export async function listRecentSmsOptOuts(
   return rows.map(mapOptOut);
 }
 
+export async function listSentSmsMessages(input?: {
+  page?: number;
+  pageSize?: number;
+}): Promise<{
+  rows: SmsMessageRecord[];
+  total: number;
+  page: number;
+  pageSize: number;
+  totalPages: number;
+}> {
+  const pageSize = Math.min(100, Math.max(1, input?.pageSize ?? 25));
+  const page = Math.max(1, input?.page ?? 1);
+  const offset = (page - 1) * pageSize;
+
+  if (!isDatabaseConfigured()) {
+    return { rows: [], total: 0, page, pageSize, totalPages: 0 };
+  }
+
+  await ensureCustomerSchema();
+  const db = sql();
+  const [countRows, rows] = await Promise.all([
+    db`
+      SELECT COUNT(*)::int AS total
+      FROM sms_messages
+      WHERE status = 'sent'
+    `,
+    db`
+      SELECT *
+      FROM sms_messages
+      WHERE status = 'sent'
+      ORDER BY COALESCE(sent_at, created_at) DESC, id DESC
+      LIMIT ${pageSize} OFFSET ${offset}
+    `,
+  ]);
+
+  const total = Number((countRows as Array<{ total: number }>)[0]?.total ?? 0);
+  return {
+    rows: (rows as MessageRow[]).map(mapMessage),
+    total,
+    page,
+    pageSize,
+    totalPages: total === 0 ? 0 : Math.ceil(total / pageSize),
+  };
+}
+
 export async function authorizeSmsSend(
   messageId: string,
   options?: { bypassCampaignGuards?: boolean },
