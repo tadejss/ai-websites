@@ -4,7 +4,7 @@ import {
   type AppearanceId,
 } from "@/appearances/types";
 import { getFontPairing } from "./fonts/pairings";
-import { getPalette } from "./palettes";
+import { getLegacyPaletteDefinition, getPalette } from "./palettes";
 import type { SiteTheme } from "./types";
 import { paletteToTokens, tokensToCssVars } from "./utils/tokens";
 
@@ -16,8 +16,13 @@ export function resolveThemeCssVars(
     return undefined;
   }
 
-  const palette = getPalette(theme.paletteId);
-  const pairing = getFontPairing(theme.fontPairingId);
+  // Appearance path: prefer exact legacy definition (incl. zbrendiraj).
+  // Template path uses getPalette remapping separately.
+  const palette =
+    getLegacyPaletteDefinition(theme.paletteId) ?? getPalette(theme.paletteId);
+  const pairing = theme.fontPairingId
+    ? getFontPairing(theme.fontPairingId)
+    : undefined;
 
   if (!palette || !pairing) {
     return undefined;

@@ -4,7 +4,7 @@ import { radiusTokensForScale, rhythmToGap } from "@/catalog/archetypes";
 import { getCatalogFontPairing } from "@/catalog/fonts";
 import { getCatalogPalette } from "@/catalog/palettes";
 import { getFontPairing } from "@/theme/fonts/pairings";
-import { getPalette } from "@/theme/palettes";
+import { getLegacyPaletteDefinition, getPalette } from "@/theme/palettes";
 import type { SiteTheme } from "@/theme/types";
 import { paletteToTokens, tokensToCssVars } from "@/theme/utils/tokens";
 
@@ -20,9 +20,14 @@ export function resolveLookCssVars(
   const fontPairingId =
     themeOverride?.fontPairingId ?? look.theme.fontPairingId;
 
-  const palette = getCatalogPalette(paletteId) ?? getPalette(paletteId);
-  const pairing =
-    getCatalogFontPairing(fontPairingId) ?? getFontPairing(fontPairingId);
+  // Prefer exact catalog/legacy definitions so look + zbrendiraj paths never remapped.
+  const palette =
+    getCatalogPalette(paletteId) ??
+    getLegacyPaletteDefinition(paletteId) ??
+    getPalette(paletteId);
+  const pairing = fontPairingId
+    ? getCatalogFontPairing(fontPairingId) ?? getFontPairing(fontPairingId)
+    : undefined;
 
   if (!palette || !pairing) {
     return {};

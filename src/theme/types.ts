@@ -31,7 +31,8 @@ export type FontPairing = {
 
 export type SiteTheme = {
   paletteId: string;
-  fontPairingId: string;
+  /** Optional — templates own typography; kept for legacy/compat. */
+  fontPairingId?: string;
   /** Optional override of look radius (e.g. showcase demos with sharp frames). */
   radiusScale?: "sharp" | "soft" | "round" | "pill";
 };

@@ -6,13 +6,20 @@ const MAX_STAT_LENGTH = 40;
 
 type Bounds = { min: number; max: number };
 
-const SECTION_BOUNDS: Record<string, Bounds> = {
+const LEGACY_BOUNDS: Record<string, Bounds> = {
   "nav.links": { min: 3, max: 5 },
   "services.items": { min: 3, max: 6 },
   "whyChooseUs.highlights": { min: 3, max: 4 },
   "whyChooseUs.benefits": { min: 3, max: 4 },
   "contact.items": { min: 1, max: 4 },
   "pricing.items": { min: 4, max: 8 },
+};
+
+const TEMPLATE_2026_BOUNDS: Record<string, Bounds> = {
+  "nav.links": { min: 2, max: 6 },
+  "services.items": { min: 3, max: 6 },
+  "contact.items": { min: 1, max: 4 },
+  "pricing.items": { min: 3, max: 6 },
 };
 
 function sectionSizes(config: SiteConfig): Record<string, number> {
@@ -30,9 +37,20 @@ function isStatField(field: string): boolean {
   return field.endsWith(".stat") || field.startsWith("hero.stats[");
 }
 
-export function findQualityProblems(config: SiteConfig): string[] {
+export type GeneratedValidationOptions = {
+  /** New template pipeline: no whyChooseUs bounds; pricing 1–3. */
+  mode?: "legacy" | "template2026";
+};
+
+export function findQualityProblems(
+  config: SiteConfig,
+  options: GeneratedValidationOptions = {},
+): string[] {
   const problems: string[] = [];
   const sizes = sectionSizes(config);
+  const mode = options.mode ?? "legacy";
+  const boundsTable =
+    mode === "template2026" ? TEMPLATE_2026_BOUNDS : LEGACY_BOUNDS;
 
   if (!config.pricing) {
     problems.push("pricing section is required for generated site configs");
@@ -40,7 +58,7 @@ export function findQualityProblems(config: SiteConfig): string[] {
     problems.push("pricing.disclaimer is required");
   }
 
-  for (const [section, bounds] of Object.entries(SECTION_BOUNDS)) {
+  for (const [section, bounds] of Object.entries(boundsTable)) {
     if (section === "pricing.items" && !config.pricing) {
       continue;
     }
@@ -55,6 +73,10 @@ export function findQualityProblems(config: SiteConfig): string[] {
   }
 
   for (const [field, value] of collectVisibleCopy(config)) {
+    if (mode === "template2026" && field.startsWith("whyChooseUs.")) {
+      continue;
+    }
+
     if (!value.trim()) {
       problems.push(`${field} is empty`);
       continue;
@@ -72,8 +94,11 @@ export function findQualityProblems(config: SiteConfig): string[] {
   return problems;
 }
 
-export function validateGeneratedSiteConfig(config: SiteConfig): SiteConfig {
-  const problems = findQualityProblems(config);
+export function validateGeneratedSiteConfig(
+  config: SiteConfig,
+  options: GeneratedValidationOptions = {},
+): SiteConfig {
+  const problems = findQualityProblems(config, options);
 
   if (problems.length > 0) {
     throw new Error(

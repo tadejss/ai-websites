@@ -24,10 +24,12 @@ import { RunbookPanel } from "@/components/admin/runbook-panel";
 import { EntityJourneyActions } from "@/components/admin/entity-journey-actions";
 import { EntityBackLink } from "@/components/admin/entity-back-link";
 import { EntityEmailCard } from "@/components/admin/entity-email-card";
+import { AdminTemplateOverride } from "@/components/admin/admin-template-override";
 import {
   getUpsellDefinition,
   type UpsellType,
 } from "@/billing/upsells";
+import { isTemplateId, type TemplateId } from "@/templates/types";
 
 export const dynamic = "force-dynamic";
 
@@ -65,6 +67,10 @@ export default async function AdminEntityJourneyPage({
   );
 
   const demoSite = readDemoSiteJson(slug);
+  const currentTemplateId: TemplateId | null =
+    demoSite && isTemplateId(String(demoSite.templateId ?? ""))
+      ? (demoSite.templateId as TemplateId)
+      : null;
   const processedPayload = entity.onboarding?.processedPayload as
     | Record<string, unknown>
     | null
@@ -143,6 +149,15 @@ export default async function AdminEntityJourneyPage({
       />
 
       <div className="space-y-4">
+        {demoSite ? (
+          <div className="rounded-lg border border-white/10 bg-black/40 p-4">
+            <h2 className="mb-2 text-sm font-semibold">Template (2026)</h2>
+            <AdminTemplateOverride
+              slug={slug}
+              currentTemplateId={currentTemplateId}
+            />
+          </div>
+        ) : null}
         <EntityContextCards
             stage={entity.stage}
             cards={[

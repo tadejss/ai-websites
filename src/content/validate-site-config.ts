@@ -2,7 +2,6 @@ import { z } from "zod";
 import { defaultPrivacyConfig } from "@/privacy/defaults";
 import { deriveBusinessFromSiteConfig, mergeBusinessInfo } from "@/privacy/derive-business";
 import { fontPairingIds } from "@/theme/fonts/pairings";
-import { paletteIds } from "@/theme/palettes";
 import { lookIds } from "@/catalog/looks";
 import type { SiteConfig } from "./types/site";
 import type { SiteLookId } from "@/catalog/types";
@@ -142,8 +141,9 @@ const layoutSchema = z
 
 const themeSchema = z
   .object({
-    paletteId: z.enum(paletteIds as [string, ...string[]]),
-    fontPairingId: z.enum(fontPairingIds as [string, ...string[]]),
+    // Soft: any non-empty id loads (legacy remaps at render; curated is active set).
+    paletteId: z.string().min(1),
+    fontPairingId: z.enum(fontPairingIds as [string, ...string[]]).optional(),
     radiusScale: z.enum(["sharp", "soft", "round", "pill"]).optional(),
   })
   .optional();
@@ -272,8 +272,13 @@ const brandingSchema = z
 
 const lookIdSchema = z.enum(lookIds as [string, ...string[]]).optional();
 
+const templateIdSchema = z
+  .enum(["bento", "outlined", "type", "floating"])
+  .optional();
+
 const siteConfigSchema = z.object({
   appearance: appearanceSchema,
+  templateId: templateIdSchema,
   lookId: lookIdSchema,
   theme: themeSchema,
   layout: layoutSchema,

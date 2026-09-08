@@ -30,6 +30,11 @@
       ],
       "description": "Visual appearance category controlling layout and theme tokens."
     },
+    "templateId": {
+      "type": "string",
+      "enum": ["bento", "outlined", "type", "floating"],
+      "description": "2026 template shell. When set, SitePage uses the new template compositions."
+    },
     "lookId": {
       "type": "string",
       "description": "Curated factory look identifier (category-index-suffix). When set, theme and layout are denormalized from the catalog."
@@ -57,15 +62,16 @@
       "type": "object",
       "description": "Per-site palette and font pairing assigned at generation time.",
       "additionalProperties": false,
-      "required": ["paletteId", "fontPairingId"],
+      "required": ["paletteId"],
       "properties": {
         "paletteId": {
           "type": "string",
-          "description": "Identifier for the assigned color palette."
+          "minLength": 1,
+          "description": "Curated or legacy palette id (legacy remaps at render)."
         },
         "fontPairingId": {
           "type": "string",
-          "description": "Identifier for the assigned heading/body font pairing."
+          "description": "Optional font pairing id (templates own typography)."
         }
       }
     },

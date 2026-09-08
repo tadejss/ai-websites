@@ -135,6 +135,16 @@
   letter-spacing: -0.025em;
 }
 
+[data-template] {
+  font-family: var(--font-body), system-ui, sans-serif;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+[data-template] .font-display {
+  font-family: var(--font-display), var(--font-body), system-ui, sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }

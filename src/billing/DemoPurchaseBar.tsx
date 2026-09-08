@@ -126,7 +126,10 @@ export function DemoPurchaseBar({
   return (
     <>
       <div className="h-40 sm:h-28" aria-hidden="true" />
-      <div className="pointer-events-none fixed inset-x-0 bottom-0 z-[60] p-3 sm:p-4">
+      <div
+        data-demo-purchase-bar
+        className="pointer-events-none fixed inset-x-0 bottom-0 z-[60] p-3 sm:p-4"
+      >
         <div className="pointer-events-auto mx-auto max-w-4xl rounded-2xl border border-black/10 bg-zinc-950 px-4 py-3.5 text-white shadow-2xl sm:px-5 sm:py-4">
           {/* Mobile: 2×2 — title / price, slider / Naroči */}
           <div className="flex flex-col gap-3.5 sm:hidden">

@@ -3,7 +3,7 @@ import { resolveThemeCssVars } from "../src/theme/resolve-theme";
 import { THEME_CSS_VAR_NAMES } from "../src/theme/types";
 import { paletteToTokens } from "../src/theme/utils/tokens";
 import { getPalette } from "../src/theme/palettes";
-import { contrastForeground } from "../src/theme/utils/color";
+import { validatePaletteContrast } from "../src/catalog/contrast/validate-palette";
 
 function assert(condition: boolean, message: string): void {
   if (!condition) {
@@ -61,9 +61,11 @@ console.log("== accent contrast ==");
 const palette = getPalette(first.paletteId);
 assert(palette !== undefined, "assigned palette should exist");
 const tokens = paletteToTokens(palette!);
+const contrast = validatePaletteContrast(palette!);
+assert(contrast.ok, "assigned palette should pass contrast checks");
 assert(
-  contrastForeground(tokens.accent) === tokens.accentForeground,
-  "accent foreground should be contrast-safe",
+  Boolean(tokens.accentForeground),
+  "accent foreground should be set",
 );
 
 console.log("== legacy fallback ==");

@@ -1,5 +1,6 @@
 import type { BusinessInput } from "@/ai/types";
 import type { SiteConfig, SiteImage, SiteImages } from "@/content/types/site";
+import type { TemplateImagePlan } from "@/templates/types";
 import { buildImageSearchPlan } from "./build-search-queries";
 import {
   downloadStockPhoto,
@@ -77,6 +78,7 @@ export async function generateSiteImages(
   slug: string,
   businessInput: BusinessInput,
   siteConfig: SiteConfig,
+  options?: { imagePlan?: TemplateImagePlan },
 ): Promise<SiteImages | undefined> {
   if (!isStockPhotoConfigured()) {
     console.warn(
@@ -85,8 +87,15 @@ export async function generateSiteImages(
     return undefined;
   }
 
+  const skipServiceFetch = options?.imagePlan?.serviceRole === "service-none";
+  const preferPortraitHero = options?.imagePlan?.preferPortraitHero !== false;
+
   try {
     const plan = await buildImageSearchPlan(businessInput, siteConfig);
+    if (!preferPortraitHero) {
+      plan.hero.orientation = "landscape";
+    }
+
     const category = resolveImagePoolCategory({
       industry: businessInput.industry,
       companyName: businessInput.companyName,
@@ -95,9 +104,11 @@ export async function generateSiteImages(
     if (category) {
       const pooled = await generateImagesFromPool(category, slug);
 
-      if (pooled?.hero && pooled.services) {
+      if (pooled?.hero) {
         const hero = toSiteImage(pooled.hero, plan.hero.alt);
-        const services = toSiteImage(pooled.services, plan.services.alt);
+        const servicesSource =
+          !skipServiceFetch && pooled.services ? pooled.services : pooled.hero;
+        const services = toSiteImage(servicesSource, plan.services.alt);
 
         console.log(
           `Images for ${slug} [pool:${category}]: hero by ${hero.photographer} (${hero.provider}/${hero.sourceId}), services by ${services.photographer} (${services.provider}/${services.sourceId})`,
@@ -114,8 +125,15 @@ export async function generateSiteImages(
     const excludeIds = new Set<string>();
 
     const hero = await fetchSlotImage(slug, "hero", plan, excludeIds);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    const services = await fetchSlotImage(slug, "services", plan, excludeIds);
+    let services: SiteImage | undefined;
+
+    if (!skipServiceFetch) {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      services = await fetchSlotImage(slug, "services", plan, excludeIds);
+    } else if (hero) {
+      // Keep SiteImages shape; type/floating templates ignore service imagery.
+      services = { ...hero, alt: plan.services.alt };
+    }
 
     if (!hero || !services) {
       console.warn(

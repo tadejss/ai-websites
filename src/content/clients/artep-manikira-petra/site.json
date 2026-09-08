@@ -287,5 +287,6 @@
     "cookies": {
       "nonEssential": false
     }
-  }
+  },
+  "templateId": "floating"
 }

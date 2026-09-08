@@ -38,12 +38,14 @@ export function validateLookUniqueness(
     }
     paletteIds.add(look.theme.paletteId);
 
-    if (fontIds.has(look.theme.fontPairingId)) {
-      errors.push(`${look.id}: duplicate fontPairingId ${look.theme.fontPairingId}`);
+    if (look.theme.fontPairingId) {
+      if (fontIds.has(look.theme.fontPairingId)) {
+        errors.push(`${look.id}: duplicate fontPairingId ${look.theme.fontPairingId}`);
+      }
+      fontIds.add(look.theme.fontPairingId);
     }
-    fontIds.add(look.theme.fontPairingId);
 
-    const combo = `${look.theme.paletteId}::${look.theme.fontPairingId}`;
+    const combo = `${look.theme.paletteId}::${look.theme.fontPairingId ?? ""}`;
     if (comboKeys.has(combo)) {
       errors.push(`${look.id}: duplicate theme combo`);
     }

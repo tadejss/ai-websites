@@ -70,16 +70,26 @@ export function applyNewLeadSectionDefaults(config: SiteConfig): SiteConfig {
 
 export function withSectionNavLinks(config: SiteConfig): SiteConfig {
   const core = config.nav.links.filter(
-    (link) => link.href !== "#galerija" && link.href !== "#cenik",
+    (link) =>
+      link.href !== "#galerija" &&
+      link.href !== "#cenik" &&
+      link.href !== "#zakaj-mi" &&
+      link.href !== "#o-nas" &&
+      link.href !== "#faq" &&
+      link.href !== "#storitve",
   );
-  const extras: { href: string; label: string }[] = [];
 
+  const extras: { href: string; label: string }[] = [
+    { href: "#o-nas", label: "O nas" },
+  ];
+
+  if (isPricingSectionVisible(config) || config.services.items.length > 0) {
+    extras.push({ href: "#cenik", label: "Storitve" });
+  }
   if (isGallerySectionVisible(config)) {
     extras.push({ href: "#galerija", label: "Galerija" });
   }
-  if (isPricingSectionVisible(config)) {
-    extras.push({ href: "#cenik", label: "Cenik" });
-  }
+  extras.push({ href: "#faq", label: "FAQ" });
 
   const links = [...core];
   const contactIndex = links.findIndex((link) => link.href === "#kontakt");

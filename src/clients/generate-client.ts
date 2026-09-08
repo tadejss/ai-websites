@@ -4,13 +4,9 @@ import { generateBusinessInput } from "@/ai/generate-business-input";
 import { generateSiteConfig } from "@/ai/generate-site-config";
 import { validateRawBusinessData } from "@/ai/validate-raw-business-data";
 import { appearanceForIndustry } from "@/appearances/industry-appearance";
-import { assignBeautyLayout } from "@/appearances/beauty/assign-layout";
-import { assignTradeLayout } from "@/appearances/trade/assign-layout";
-import { isTradeAppearance } from "@/appearances/types";
-import { assignTheme } from "@/theme/assign-theme";
-import { assignLook } from "@/catalog/assign-look";
-import { resolveImagePoolCategory } from "@/images/image-pool-category";
+import { appearanceForCategory } from "@/catalog/category-appearance-map";
 import { generateSiteImages } from "@/images/generate-site-images";
+import { resolveImagePoolCategory } from "@/images/image-pool-category";
 import type { BusinessInput } from "@/ai/types";
 import type { RawBusinessData } from "@/ai/types/raw-business-data";
 import type { SiteConfig } from "@/content/types/site";
@@ -20,6 +16,10 @@ import { saveLead } from "@/leads/store";
 import type { BusinessSource } from "@/sources/types";
 import { enqueueQaRunSafe } from "@/qa/enqueue";
 import type { QaTrigger } from "@/qa/types";
+import { assignTemplate } from "@/templates/assign-template";
+import { assignPalette } from "@/templates/assign-palette";
+import { getTemplateImagePlan } from "@/templates/image-plan";
+import type { TemplateId } from "@/templates/types";
 
 function writeJsonFile(filePath: string, data: unknown): void {
   writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
@@ -49,7 +49,12 @@ function createLeadData(
 export async function generateClient(
   slug: string,
   source: BusinessSource,
-  options: { qaTrigger?: QaTrigger; factoryRunId?: string } = {},
+  options: {
+    qaTrigger?: QaTrigger;
+    factoryRunId?: string;
+    /** Admin/manual template override for this generation. */
+    templateOverride?: TemplateId;
+  } = {},
 ): Promise<void> {
   const rawBusiness = validateRawBusinessData(await source.getBusiness());
   const businessInput = await generateBusinessInput(rawBusiness);
@@ -58,32 +63,59 @@ export async function generateClient(
     industry: businessInput.industry,
     companyName: businessInput.companyName,
   });
-  const appearance = appearanceForIndustry(
-    `${businessInput.industry ?? ""} ${businessInput.companyName ?? ""}`,
+  const appearance = categoryId
+    ? appearanceForCategory(categoryId)
+    : appearanceForIndustry(
+        `${businessInput.industry ?? ""} ${businessInput.companyName ?? ""}`,
+      );
+
+  // Tentative template before images (optimistic imagery).
+  let templateId = assignTemplate({
+    slug,
+    categoryId,
+    override: options.templateOverride,
+    imageSignals: { hasHeroImage: true, hasServiceImages: true },
+  });
+
+  const siteConfigBase = {
+    ...generatedConfig,
+    appearance,
+    templateId,
+  } as SiteConfig;
+
+  const images = await generateSiteImages(
+    slug,
+    businessInput,
+    siteConfigBase,
+    { imagePlan: getTemplateImagePlan(templateId) },
   );
 
-  const siteConfig = categoryId
-    ? (() => {
-        const look = assignLook(categoryId, slug);
-        return {
-          ...generatedConfig,
-          lookId: look.id,
-          appearance: look.appearance,
-          theme: look.theme,
-          layout: look.layout,
-        };
-      })()
-    : {
-        ...generatedConfig,
-        appearance,
-        theme: assignTheme(slug, appearance),
-        ...(appearance === "beauty"
-          ? { layout: assignBeautyLayout(slug) }
-          : isTradeAppearance(appearance)
-            ? { layout: assignTradeLayout(appearance, slug) }
-            : {}),
-      };
-  const images = await generateSiteImages(slug, businessInput, siteConfig as SiteConfig);
+  // Re-assign with real image signals (e.g. demote floating when hero missing).
+  templateId = assignTemplate({
+    slug,
+    categoryId,
+    override: options.templateOverride,
+    imageSignals: {
+      hasHeroImage: Boolean(images?.hero?.src),
+      hasServiceImages: Boolean(images?.services?.src),
+    },
+  });
+
+  const paletteId = assignPalette({
+    slug,
+    categoryId,
+    templateId,
+  });
+
+  const siteConfig = {
+    ...siteConfigBase,
+    templateId,
+    theme: {
+      ...(siteConfigBase.theme ?? {}),
+      paletteId,
+    },
+  };
+
   const withImages = images ? { ...siteConfig, images } : siteConfig;
   const withSections = applyNewLeadSectionDefaults(withImages as SiteConfig);
   const persistedConfig = validateSiteConfig(withSections);

@@ -1,5 +1,6 @@
 import type { ImagePoolCategoryId } from "@/images/image-pool-category";
 import type { SiteLookId } from "@/catalog/types";
+import type { TemplateId } from "@/templates/types";
 
 export type IconName =
   | "building"
@@ -207,7 +208,9 @@ export type SiteLayout = {
 
 export type SiteTheme = {
   paletteId: string;
-  fontPairingId: string;
+  /** Optional — templates own typography; kept for legacy/compat. */
+  fontPairingId?: string;
+  radiusScale?: "sharp" | "soft" | "round" | "pill";
 };
 
 export type ContactFormField = "name" | "phone" | "message";
@@ -257,6 +260,12 @@ export type SitePrivacyConfig = {
 
 export type SiteConfig = {
   appearance?: AppearanceId;
+  /**
+   * 2026 visual template (bento | outlined | type | floating).
+   * When set, SitePage renders the new template shells.
+   * Legacy sites without templateId are mapped via resolveTemplateId.
+   */
+  templateId?: TemplateId;
   /** Curated factory look; when set, theme/layout are denormalized from catalog. */
   lookId?: SiteLookId;
   theme?: SiteTheme;

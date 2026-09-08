@@ -280,5 +280,6 @@
     "cookies": {
       "nonEssential": false
     }
-  }
+  },
+  "templateId": "bento"
 }

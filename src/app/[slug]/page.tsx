@@ -11,6 +11,9 @@ type Props = {
   params: Promise<{
     slug: string;
   }>;
+  searchParams: Promise<{
+    palette?: string;
+  }>;
 };
 
 export function generateStaticParams() {
@@ -96,8 +99,9 @@ function LocalBusinessJsonLd({
   );
 }
 
-export default async function ClientPage({ params }: Props) {
+export default async function ClientPage({ params, searchParams }: Props) {
   const { slug } = await params;
+  const { palette: paletteParam } = await searchParams;
 
   let siteConfig: SiteConfig;
 
@@ -107,10 +111,19 @@ export default async function ClientPage({ params }: Props) {
     notFound();
   }
 
+  const paletteOverride =
+    process.env.NODE_ENV === "development" && paletteParam?.trim()
+      ? paletteParam.trim()
+      : undefined;
+
   return (
     <>
       <LocalBusinessJsonLd slug={slug} config={siteConfig} />
-      <SitePage siteConfig={siteConfig} siteSlug={slug} />
+      <SitePage
+        siteConfig={siteConfig}
+        siteSlug={slug}
+        paletteOverride={paletteOverride}
+      />
     </>
   );
 }

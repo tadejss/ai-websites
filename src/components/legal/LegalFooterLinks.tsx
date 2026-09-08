@@ -13,6 +13,8 @@ type Props = {
   linkClassName?: string;
   separatorClassName?: string;
   className?: string;
+  /** Default stacks on mobile; `inline` keeps policies in one row. */
+  layout?: "stack" | "inline";
 };
 
 const defaultLinkClassName = "text-muted transition-colors hover:text-foreground";
@@ -25,6 +27,7 @@ export function LegalFooterLinks({
   linkClassName = defaultLinkClassName,
   separatorClassName = defaultSeparatorClassName,
   className,
+  layout = "stack",
 }: Props) {
   const showTerms = siteConfig?.privacy.terms?.enabled === true;
 
@@ -44,17 +47,22 @@ export function LegalFooterLinks({
   }
 
   const links = [...prependLinks, ...legalLinks];
+  const inline = layout === "inline";
 
   return (
     <nav
       aria-label="Pravne informacije"
-      className={`flex flex-col gap-2 text-xs sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3 sm:gap-y-1 sm:text-sm ${className ?? "sm:justify-center"}`}
+      className={`flex text-xs sm:text-sm ${
+        inline
+          ? "flex-row flex-wrap items-center gap-x-3 gap-y-1"
+          : "flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3 sm:gap-y-1"
+      } ${className ?? "sm:justify-center"}`}
     >
       {links.map((link, index) => (
         <span key={link.href} className="inline-flex items-center gap-x-3">
           {index > 0 ? (
             <span
-              className={`hidden sm:inline ${separatorClassName}`}
+              className={`${inline ? "inline" : "hidden sm:inline"} ${separatorClassName}`}
               aria-hidden="true"
             >
               |
