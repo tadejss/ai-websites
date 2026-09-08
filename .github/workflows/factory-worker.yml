@@ -96,7 +96,9 @@ jobs:
           BLOB_READ_WRITE_TOKEN: ${{ secrets.BLOB_READ_WRITE_TOKEN }}
           SMS_LEAD_TARGET: ${{ vars.SMS_LEAD_TARGET }}
           SMS_LEAD_REPLENISH_BATCH: ${{ vars.SMS_LEAD_REPLENISH_BATCH }}
-          FACTORY_WORKER_ENABLED: "true"
+          # Pause replenish without disabling the workflow: set repo var to false.
+          # Manual --force (workflow_dispatch) still bypasses this in the worker.
+          FACTORY_WORKER_ENABLED: ${{ vars.FACTORY_WORKER_ENABLED || 'true' }}
           FACTORY_PUBLISH_ENABLED: "true"
           FACTORY_GIT_BRANCH: ${{ github.ref_name }}
           FACTORY_TRIGGER_SOURCE: ${{ github.event_name }}
