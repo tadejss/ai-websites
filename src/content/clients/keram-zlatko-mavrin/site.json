@@ -1,7 +1,8 @@
 {
   "appearance": "construction",
+  "templateId": "bento",
   "theme": {
-    "paletteId": "copper-clay",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "dm-sans-playfair"
   },
   "layout": {
@@ -23,6 +24,33 @@
       "src": "/clients/keram-zlatko-mavrin/services.jpg",
       "alt": "Kakovostno položene ploščice v prenovljenem prostoru"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/28663713.webp",
+        "alt": "construction workers building site professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8961154.webp",
+        "alt": "construction workers building site professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4487611.webp",
+        "alt": "construction workers building site professional european workshop"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/38291049.webp",
+        "alt": "construction workers building site professional european commercial"
+      }
+    ]
   },
   "brand": {
     "prefix": "Kera.M",

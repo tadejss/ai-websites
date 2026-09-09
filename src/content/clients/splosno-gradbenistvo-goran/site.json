@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "outlined",
   "lookId": "gradbinci-04-stats-trust",
   "theme": {
-    "paletteId": "look-gradbinci-04-stone",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "look-gradbinci-04"
   },
   "layout": {
@@ -15,6 +16,38 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8961154.avif",
+      "alt": "construction workers building site professional european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8961154.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8961154",
+      "sourceUrl": "https://www.pexels.com/photo/workers-wearing-safety-vest-and-hard-hat-walking-on-the-dry-ground-8961154/",
+      "photographer": "Mikael Blomkvist",
+      "photographerUrl": "https://www.pexels.com/@mikael-blomkvist",
+      "searchQuery": "construction workers building site professional european commercial"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/38291049.avif",
+      "alt": "construction workers building site professional european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/38291049.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "38291049",
+      "sourceUrl": "https://www.pexels.com/photo/construction-worker-with-shovel-at-job-site-38291049/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "construction workers building site professional european commercial"
+    }
+  },
   "sections": {
     "gallery": true,
     "pricing": true
@@ -24,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/20160293.webp",
+        "alt": "construction workers building site professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/28663713.webp",
+        "alt": "construction workers building site professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/15767414.webp",
+        "alt": "construction workers building site professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4487611.webp",
+        "alt": "construction workers building site professional european workshop"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

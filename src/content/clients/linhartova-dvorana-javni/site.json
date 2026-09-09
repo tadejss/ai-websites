@@ -1,4 +1,9 @@
 {
+  "appearance": "default",
+  "templateId": "type",
+  "theme": {
+    "paletteId": "charcoal-signal"
+  },
   "brand": {
     "prefix": "Linhartova",
     "highlight": "dvorana"
@@ -149,7 +154,6 @@
     "address": "Gorenjska cesta 19a, 4240 Radovljica, Slovenia",
     "rights": "© Linhartova dvorana, javni zavod Radovljica. Vse pravice pridržane."
   },
-  "appearance": "default",
   "business": {
     "name": "Linhartova dvorana",
     "address": "Gorenjska cesta 19a, 4240 Radovljica, Slovenia",

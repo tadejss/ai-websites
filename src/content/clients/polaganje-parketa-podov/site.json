@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "outlined",
   "lookId": "parketarji-talne-obloge-10-industrial-plain",
   "theme": {
-    "paletteId": "look-parketarji-talne-obloge-10-frost",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "look-parketarji-talne-obloge-10"
   },
   "layout": {
@@ -15,6 +16,38 @@
     "sectionRule": "none",
     "cardStyle": "soft"
   },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3616756.avif",
+      "alt": "hardwood floor installation professional european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3616756.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3616756",
+      "sourceUrl": "https://www.pexels.com/photo/wood-planks-and-floor-brush-3616756/",
+      "photographer": "La Miko",
+      "photographerUrl": "https://www.pexels.com/@lamiko",
+      "searchQuery": "hardwood floor installation professional european commercial"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9219511.avif",
+      "alt": "hardwood floor installation professional european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9219511.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9219511",
+      "sourceUrl": "https://www.pexels.com/photo/wooden-floor-with-shadows-9219511/",
+      "photographer": "Sveta K",
+      "photographerUrl": "https://www.pexels.com/@sveta-k-75705601",
+      "searchQuery": "hardwood floor installation professional european commercial"
+    }
+  },
   "sections": {
     "gallery": true,
     "pricing": true
@@ -24,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/14043082.webp",
+        "alt": "hardwood floor installation professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/12510533.webp",
+        "alt": "hardwood floor installation professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5797.webp",
+        "alt": "flooring installer laying laminate european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37341468.webp",
+        "alt": "hardwood floor installation professional european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

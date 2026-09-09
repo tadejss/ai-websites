@@ -1,7 +1,8 @@
 {
   "appearance": "health",
+  "templateId": "floating",
   "theme": {
-    "paletteId": "sand-stone",
+    "paletteId": "charcoal-gold",
     "fontPairingId": "dm-sans-playfair"
   },
   "layout": {
@@ -54,7 +55,25 @@
     "id": "galerija",
     "eyebrow": "Galerija",
     "title": "Naš salon",
-    "items": []
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6628596.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6628647.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4599377.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4599436.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

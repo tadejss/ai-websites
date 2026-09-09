@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "bento",
   "lookId": "gradbinci-03-photo-forward",
   "theme": {
-    "paletteId": "look-gradbinci-03-bloom",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "look-gradbinci-03"
   },
   "layout": {
@@ -15,6 +16,38 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/20160293.avif",
+      "alt": "construction workers building site professional european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/20160293.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "20160293",
+      "sourceUrl": "https://www.pexels.com/photo/workers-on-crane-by-building-wall-20160293/",
+      "photographer": "Lauren Boswell",
+      "photographerUrl": "https://www.pexels.com/@lauren-boswell-191857954",
+      "searchQuery": "construction workers building site professional european commercial"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/28663713.avif",
+      "alt": "construction workers building site professional european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/28663713.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "28663713",
+      "sourceUrl": "https://www.pexels.com/photo/construction-worker-in-hard-hat-at-site-28663713/",
+      "photographer": "Shivam ‎",
+      "photographerUrl": "https://www.pexels.com/@eartharchive",
+      "searchQuery": "construction workers building site professional european commercial"
+    }
+  },
   "sections": {
     "gallery": true,
     "pricing": true
@@ -24,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4487611.webp",
+        "alt": "construction workers building site professional european workshop"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/38291049.webp",
+        "alt": "construction workers building site professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/15767414.webp",
+        "alt": "construction workers building site professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8961154.webp",
+        "alt": "construction workers building site professional european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

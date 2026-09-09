@@ -1,7 +1,8 @@
 {
   "appearance": "auto",
+  "templateId": "outlined",
   "theme": {
-    "paletteId": "sand-stone",
+    "paletteId": "ink-coral",
     "fontPairingId": "inter-space-grotesk-light"
   },
   "layout": {
@@ -55,7 +56,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37809560.webp",
+        "alt": "auto body shop car painting professional"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37809561.webp",
+        "alt": "auto body shop car painting professional"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37809581.webp",
+        "alt": "auto body shop car painting professional"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/30250199.webp",
+        "alt": "auto body shop car painting professional"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

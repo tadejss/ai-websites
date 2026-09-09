@@ -1,5 +1,10 @@
 import type { BusinessInput } from "@/ai/types";
-import type { SiteConfig, SiteImage, SiteImages } from "@/content/types/site";
+import type {
+  GalleryItem,
+  SiteConfig,
+  SiteImage,
+  SiteImages,
+} from "@/content/types/site";
 import type { TemplateImagePlan } from "@/templates/types";
 import { buildImageSearchPlan } from "./build-search-queries";
 import {
@@ -8,7 +13,13 @@ import {
 } from "./download-stock-photo";
 import { generateImagesFromPool } from "./image-pool";
 import { resolveImagePoolCategory } from "./image-pool-category";
+import { MIN_DEMO_SITE_IMAGES } from "./image-pool-config";
 import type { ImageSlot } from "./types";
+
+export type GeneratedSiteMedia = {
+  images: SiteImages;
+  galleryItems: GalleryItem[];
+};
 
 async function fetchSlotImage(
   slug: string,
@@ -74,12 +85,19 @@ function toSiteImage(
   };
 }
 
+function toGalleryItem(image: SiteImage): GalleryItem {
+  return {
+    src: image.srcFallback || image.src,
+    alt: image.alt,
+  };
+}
+
 export async function generateSiteImages(
   slug: string,
   businessInput: BusinessInput,
   siteConfig: SiteConfig,
   options?: { imagePlan?: TemplateImagePlan },
-): Promise<SiteImages | undefined> {
+): Promise<GeneratedSiteMedia | undefined> {
   if (!isStockPhotoConfigured()) {
     console.warn(
       "Neither PEXELS_API_KEY nor UNSPLASH_ACCESS_KEY is configured; skipping image generation.",
@@ -109,12 +127,25 @@ export async function generateSiteImages(
         const servicesSource =
           !skipServiceFetch && pooled.services ? pooled.services : pooled.hero;
         const services = toSiteImage(servicesSource, plan.services.alt);
+        const galleryItems: GalleryItem[] = pooled.gallery.map((item) => ({
+          src: item.srcFallback || item.src,
+          alt: item.alt || plan.hero.alt,
+        }));
+
+        while (galleryItems.length < MIN_DEMO_SITE_IMAGES) {
+          galleryItems.push(toGalleryItem(hero));
+          if (galleryItems.length >= MIN_DEMO_SITE_IMAGES) break;
+          galleryItems.push(toGalleryItem(services));
+        }
 
         console.log(
-          `Images for ${slug} [pool:${category}]: hero by ${hero.photographer} (${hero.provider}/${hero.sourceId}), services by ${services.photographer} (${services.provider}/${services.sourceId})`,
+          `Images for ${slug} [pool:${category}]: hero by ${hero.photographer} (${hero.provider}/${hero.sourceId}), services by ${services.photographer} (${services.provider}/${services.sourceId}), gallery ${galleryItems.length}`,
         );
 
-        return { hero, services };
+        return {
+          images: { hero, services },
+          galleryItems: galleryItems.slice(0, Math.max(MIN_DEMO_SITE_IMAGES, galleryItems.length)),
+        };
       }
 
       console.warn(
@@ -123,16 +154,25 @@ export async function generateSiteImages(
     }
 
     const excludeIds = new Set<string>();
+    const fetched: SiteImage[] = [];
 
     const hero = await fetchSlotImage(slug, "hero", plan, excludeIds);
-    let services: SiteImage | undefined;
+    if (hero) fetched.push(hero);
 
+    let services: SiteImage | undefined;
     if (!skipServiceFetch) {
       await new Promise((resolve) => setTimeout(resolve, 1000));
       services = await fetchSlotImage(slug, "services", plan, excludeIds);
+      if (services) fetched.push(services);
     } else if (hero) {
-      // Keep SiteImages shape; type/floating templates ignore service imagery.
       services = { ...hero, alt: plan.services.alt };
+    }
+
+    while (fetched.length < MIN_DEMO_SITE_IMAGES && hero) {
+      await new Promise((resolve) => setTimeout(resolve, 800));
+      const extra = await fetchSlotImage(slug, "services", plan, excludeIds);
+      if (!extra) break;
+      fetched.push(extra);
     }
 
     if (!hero || !services) {
@@ -142,11 +182,19 @@ export async function generateSiteImages(
       return undefined;
     }
 
+    const galleryItems = fetched.map(toGalleryItem);
+    while (galleryItems.length < MIN_DEMO_SITE_IMAGES) {
+      galleryItems.push(toGalleryItem(hero));
+    }
+
     console.log(
-      `Images for ${slug}: hero by ${hero.photographer} (${hero.provider}/${hero.sourceId}), services by ${services.photographer} (${services.provider}/${services.sourceId})`,
+      `Images for ${slug}: hero by ${hero.photographer} (${hero.provider}/${hero.sourceId}), services by ${services.photographer} (${services.provider}/${services.sourceId}), gallery ${galleryItems.length}`,
     );
 
-    return { hero, services };
+    return {
+      images: { hero, services },
+      galleryItems: galleryItems.slice(0, Math.max(MIN_DEMO_SITE_IMAGES, galleryItems.length)),
+    };
   } catch (error) {
     console.warn(
       `Image generation failed for "${slug}"; keeping placeholders.`,

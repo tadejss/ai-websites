@@ -24,10 +24,10 @@ export default async function PaletteQaPage({ params }: Props) {
   const slug = PREVIEW_SLUG[templateId];
 
   return (
-    <main className="min-h-screen bg-zinc-950 px-3 py-6 text-zinc-100">
-      <header className="mx-auto mb-6 max-w-[420px]">
+    <main className="min-h-screen bg-zinc-950 px-4 py-6 text-zinc-100 sm:px-6">
+      <header className="mx-auto mb-6 max-w-[1280px]">
         <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">
-          Local palette QA · mobile
+          Local palette QA · desktop
         </p>
         <h1 className="mt-1 text-2xl font-semibold tracking-tight">
           {templateId} · 14 palettes
@@ -37,7 +37,7 @@ export default async function PaletteQaPage({ params }: Props) {
         </p>
       </header>
 
-      <ol className="mx-auto flex max-w-[420px] flex-col gap-10">
+      <ol className="mx-auto flex max-w-[1280px] flex-col gap-12">
         {CURATED_PALETTES.map((palette, index) => {
           const n = index + 1;
           const src = `/${slug}?palette=${encodeURIComponent(palette.id)}`;
@@ -51,11 +51,11 @@ export default async function PaletteQaPage({ params }: Props) {
                   {palette.mode} · {palette.name}
                 </p>
               </div>
-              <div className="overflow-hidden rounded-2xl border border-white/10 bg-black shadow-xl">
+              <div className="overflow-hidden rounded-xl border border-white/10 bg-black shadow-xl">
                 <iframe
                   title={`${n} ${palette.id}`}
                   src={src}
-                  className="h-[720px] w-full bg-white"
+                  className="h-[900px] w-full bg-white"
                   loading={n <= 2 ? "eager" : "lazy"}
                 />
               </div>

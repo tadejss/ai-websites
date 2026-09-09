@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "outlined",
   "lookId": "slikopleskarji-04-stats-trust",
   "theme": {
-    "paletteId": "look-slikopleskarji-04-stone",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "look-slikopleskarji-04"
   },
   "layout": {
@@ -56,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5493662.webp",
+        "alt": "house painter working on wall interior european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5493654.webp",
+        "alt": "house painter working on wall interior european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34975633.webp",
+        "alt": "professional painter painting facade european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474491.webp",
+        "alt": "house painter working on wall interior european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

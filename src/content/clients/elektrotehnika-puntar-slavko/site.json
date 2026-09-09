@@ -1,7 +1,8 @@
 {
   "appearance": "elektro",
+  "templateId": "bento",
   "theme": {
-    "paletteId": "rust-linen",
+    "paletteId": "citrus-ink",
     "fontPairingId": "dm-sans-playfair"
   },
   "layout": {
@@ -23,6 +24,33 @@
       "src": "/clients/elektro-ika-gregor/services.jpg",
       "alt": "Elektroinštalacije in oprema za dom in podjetje"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054474.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17842834.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9679179.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054464.webp",
+        "alt": "electrician working on modern electrical panel warm light"
+      }
+    ]
   },
   "brand": {
     "prefix": "Elektrotehnika Puntar",

@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "bento",
   "lookId": "slikopleskarji-09-warm-soft",
   "theme": {
-    "paletteId": "look-slikopleskarji-09-dusk",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "look-slikopleskarji-09"
   },
   "layout": {
@@ -15,6 +16,38 @@
     "sectionRule": "none",
     "cardStyle": "soft"
   },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474491.avif",
+      "alt": "house painter working on wall interior european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474491.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6474491",
+      "sourceUrl": "https://www.pexels.com/photo/woman-painting-the-wall-6474491/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "house painter working on wall interior european commercial"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474135.avif",
+      "alt": "house painter working on wall interior european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474135.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6474135",
+      "sourceUrl": "https://www.pexels.com/photo/a-man-in-white-shirt-painting-a-house-6474135/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "house painter working on wall interior european commercial"
+    }
+  },
   "sections": {
     "gallery": true,
     "pricing": true
@@ -24,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7217987.webp",
+        "alt": "house painter working on wall interior european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34975633.webp",
+        "alt": "professional painter painting facade european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5691677.webp",
+        "alt": "house painter working on wall interior european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5493662.webp",
+        "alt": "house painter working on wall interior european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

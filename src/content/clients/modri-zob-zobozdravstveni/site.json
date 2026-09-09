@@ -1,4 +1,9 @@
 {
+  "appearance": "default",
+  "templateId": "type",
+  "theme": {
+    "paletteId": "charcoal-signal"
+  },
   "brand": {
     "prefix": "Modri",
     "highlight": "Zob"
@@ -154,7 +159,6 @@
     "address": "Ukmarjeva ul. 6, 1000 Ljubljana, Slovenia",
     "rights": "Vse pravice pridržane."
   },
-  "appearance": "default",
   "business": {
     "name": "Modri Zob",
     "address": "Ukmarjeva ul. 6, 1000 Ljubljana, Slovenia",

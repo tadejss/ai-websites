@@ -1,7 +1,8 @@
 {
   "appearance": "elektro",
+  "templateId": "outlined",
   "theme": {
-    "paletteId": "deep-ocean",
+    "paletteId": "electric-navy",
     "fontPairingId": "inter-space-grotesk"
   },
   "layout": {
@@ -21,12 +22,39 @@
     },
     "services": {
       "src": "/clients/elektro-ivan-troha/hero.jpg",
-      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
       "alt": "Orodja in električne napeljave za elektroinštalacije",
-      "searchQuery": "electrician working electrical panel",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
       "format": "jpg",
-      "fallbackFormat": "jpg"
+      "fallbackFormat": "jpg",
+      "searchQuery": "electrician working electrical panel"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054474.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17842834.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054464.webp",
+        "alt": "electrician working on modern electrical panel warm light"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/10871737.webp",
+        "alt": "electrician working electrical panel"
+      }
+    ]
   },
   "brand": {
     "prefix": "Elektro",

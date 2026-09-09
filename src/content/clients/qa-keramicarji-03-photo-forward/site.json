@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "bento",
   "lookId": "keramicarji-03-photo-forward",
   "theme": {
-    "paletteId": "look-keramicarji-03-bloom",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "look-keramicarji-03"
   },
   "layout": {
@@ -22,12 +23,39 @@
     },
     "services": {
       "src": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
-      "srcFallback": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
       "alt": "Natančno polaganje keramike in prenova kopalnice",
-      "searchQuery": "ceramic tile bathroom vanity finished work",
+      "srcFallback": "/clients/keramicarstvo-stanislav-radovicevic/services.jpg",
       "format": "jpg",
-      "fallbackFormat": "jpg"
+      "fallbackFormat": "jpg",
+      "searchQuery": "ceramic tile bathroom vanity finished work"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/32021732.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16629411.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4752996.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17866923.webp",
+        "alt": "tile installer laying ceramic floor"
+      }
+    ]
   },
   "brand": {
     "prefix": "QA",

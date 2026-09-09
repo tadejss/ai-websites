@@ -1,7 +1,8 @@
 {
   "appearance": "auto",
+  "templateId": "bento",
   "theme": {
-    "paletteId": "slate-emerald",
+    "paletteId": "obsidian-lime",
     "fontPairingId": "dm-sans-syne"
   },
   "layout": {
@@ -23,6 +24,33 @@
       "src": "/clients/vulkanizerstvo-mitja-kocevar/services.jpg",
       "alt": "Premontaža in centriranje pnevmatik"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8815800.webp",
+        "alt": "tire shop mechanic changing tire"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5260115.webp",
+        "alt": "tire shop mechanic changing tire"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8815801.webp",
+        "alt": "tire shop mechanic changing tire"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8986133.webp",
+        "alt": "tire shop mechanic changing tire"
+      }
+    ]
   },
   "brand": {
     "prefix": "Vulkanizerstvo",

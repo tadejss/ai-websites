@@ -1,7 +1,8 @@
 {
   "appearance": "zbrendiraj",
+  "templateId": "type",
   "theme": {
-    "paletteId": "zbrendiraj",
+    "paletteId": "charcoal-signal",
     "fontPairingId": "inter-oswald"
   },
   "images": {
@@ -102,8 +103,8 @@
     "highlights": [],
     "benefits": [
       {
-        "title": "Frizerski salon Luna",
         "label": "Frizerski salon",
+        "title": "Frizerski salon Luna",
         "image": {
           "src": "/clients/zbrendiraj-si/examples/frizerski-salon-luna.jpg",
           "alt": "Primer: Frizerski salon Luna"
@@ -111,8 +112,8 @@
         "href": "/frizerski-salon-luna"
       },
       {
-        "title": "Keramičarstvo Linija",
         "label": "Keramičar",
+        "title": "Keramičarstvo Linija",
         "image": {
           "src": "/clients/zbrendiraj-si/examples/keramicarstvo-hribar.jpg",
           "alt": "Primer: Keramičarstvo Linija"
@@ -120,8 +121,8 @@
         "href": "/keramicarstvo-hribar"
       },
       {
-        "title": "Elektro inštalacije Volt",
         "label": "Elektroinštalater",
+        "title": "Elektro inštalacije Volt",
         "image": {
           "src": "/clients/zbrendiraj-si/examples/elektro-instalacije-kovac.jpg",
           "alt": "Primer: Elektro inštalacije Volt"
@@ -129,8 +130,8 @@
         "href": "/elektro-instalacije-kovac"
       },
       {
-        "title": "Krovstvo Streha",
         "label": "Krovec",
+        "title": "Krovstvo Streha",
         "image": {
           "src": "/clients/zbrendiraj-si/examples/krovstvo-petek.jpg",
           "alt": "Primer: Krovstvo Streha"

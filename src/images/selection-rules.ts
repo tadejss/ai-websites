@@ -18,6 +18,10 @@ export const LOCAL_MARKET_RULES = [
   "Avoid prominently visible foreign license plates.",
   "Avoid national PPE / safety branding that creates strong non-EU cues.",
   "Prefer neutral, unbranded environments when possible.",
+  "Each demo site must receive at least 6 stock photos total (hero + services + gallery items).",
+  "Photos may be shared across multiple demos in the same profession/category; identical stock across demos is allowed.",
+  "Asset usageCount is a soft ranking signal only (prefer lower usage for rotation) — not a hard exclusivity limit.",
+  "Uniqueness of photos across different demos is not a requirement.",
 ] as const;
 
 /**
@@ -81,7 +85,7 @@ export function imageSelectionPromptBlock(): string {
 }
 
 /** Locale bias tokens appended to pool search queries. */
-const LOCALE_QUERY_HINT = "european workshop";
+const LOCALE_QUERY_HINT = "european commercial";
 
 /**
  * Soften pool queries toward EU/neutral commercial contexts without

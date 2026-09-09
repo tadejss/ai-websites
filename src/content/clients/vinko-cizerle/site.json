@@ -1,7 +1,8 @@
 {
   "appearance": "default",
+  "templateId": "type",
   "theme": {
-    "paletteId": "charcoal-cyan",
+    "paletteId": "charcoal-signal",
     "fontPairingId": "outfit-bitter"
   },
   "images": {

@@ -1,7 +1,8 @@
 {
   "appearance": "beauty",
+  "templateId": "outlined",
   "theme": {
-    "paletteId": "caramel-vanilla",
+    "paletteId": "charcoal-gold",
     "fontPairingId": "jakarta-fraunces"
   },
   "layout": {
@@ -10,6 +11,65 @@
     "servicesImageSide": "left",
     "heroRatio": "full-copy",
     "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/19664877.avif",
+      "alt": "modern hair salon interior natural light european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/19664877.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "19664877",
+      "sourceUrl": "https://www.pexels.com/photo/position-in-a-barber-shop-19664877/",
+      "photographer": "Kawê  Rodrigues",
+      "photographerUrl": "https://www.pexels.com/@kawerodriguess",
+      "searchQuery": "modern hair salon interior natural light european commercial"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3736396.avif",
+      "alt": "modern hair salon interior natural light european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3736396.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3736396",
+      "sourceUrl": "https://www.pexels.com/photo/beauty-salon-interior-3736396/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "modern hair salon interior natural light european commercial"
+    }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3993296.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16048250.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/35844833.webp",
+        "alt": "modern hair salon interior natural light"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/13809247.webp",
+        "alt": "professional barber trimming beard with scissors dark ambient"
+      }
+    ]
   },
   "brand": {
     "prefix": "Frizerstvo",

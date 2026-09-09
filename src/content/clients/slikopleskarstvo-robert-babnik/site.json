@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "outlined",
   "lookId": "slikopleskarji-08-dark-pro",
   "theme": {
-    "paletteId": "look-slikopleskarji-08-copper",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "look-slikopleskarji-08"
   },
   "layout": {
@@ -15,6 +16,38 @@
     "sectionRule": "line",
     "cardStyle": "soft"
   },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5691677.avif",
+      "alt": "house painter working on wall interior european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5691677.webp",
+      "width": 868,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5691677",
+      "sourceUrl": "https://www.pexels.com/photo/crop-woman-painting-walls-at-home-5691677/",
+      "photographer": "Ksenia Chernaya",
+      "photographerUrl": "https://www.pexels.com/@kseniachernaya",
+      "searchQuery": "house painter working on wall interior european commercial"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5493654.avif",
+      "alt": "house painter working on wall interior european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5493654.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "5493654",
+      "sourceUrl": "https://www.pexels.com/photo/construction-workers-renovating-a-house-5493654/",
+      "photographer": "Antoni Shkraba",
+      "photographerUrl": "https://www.pexels.com/@shkrabaanthony",
+      "searchQuery": "house painter working on wall interior european commercial"
+    }
+  },
   "sections": {
     "gallery": true,
     "pricing": true
@@ -24,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5493662.webp",
+        "alt": "house painter working on wall interior european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34975633.webp",
+        "alt": "professional painter painting facade european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474491.webp",
+        "alt": "house painter working on wall interior european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474135.webp",
+        "alt": "house painter working on wall interior european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

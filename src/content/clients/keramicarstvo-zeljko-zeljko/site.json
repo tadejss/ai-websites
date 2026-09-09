@@ -1,7 +1,8 @@
 {
   "appearance": "construction",
+  "templateId": "outlined",
   "theme": {
-    "paletteId": "deep-ocean",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "outfit-bitter"
   },
   "layout": {
@@ -17,16 +18,43 @@
   "images": {
     "hero": {
       "src": "/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
-      "srcFallback": "/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
       "alt": "Strokovno polaganje keramičnih ploščic v notranjih prostorih",
-      "searchQuery": "ceramic tile bathroom finished work",
+      "srcFallback": "/clients/keramicarstvo-stanislav-radovicevic/hero.jpg",
       "format": "jpg",
-      "fallbackFormat": "jpg"
+      "fallbackFormat": "jpg",
+      "searchQuery": "ceramic tile bathroom finished work"
     },
     "services": {
       "src": "/clients/keramicarstvo-zeljko-zeljko/services.jpg",
       "alt": "Natančna izvedba keramičnih del in adaptacija kopalnice"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4752996.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3616774.webp",
+        "alt": "professional tiler bathroom renovation"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/12113234.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/35200609.webp",
+        "alt": "tile installer laying ceramic floor"
+      }
+    ]
   },
   "brand": {
     "prefix": "Keramičarstvo",

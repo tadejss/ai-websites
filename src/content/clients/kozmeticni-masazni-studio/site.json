@@ -1,7 +1,8 @@
 {
   "appearance": "beauty",
+  "templateId": "floating",
   "theme": {
-    "paletteId": "wine-velvet",
+    "paletteId": "warm-black",
     "fontPairingId": "manrope-bodoni"
   },
   "layout": {
@@ -52,7 +53,24 @@
     "eyebrow": "Galerija",
     "title": "Utrinki iz našega studia",
     "description": "Oglejte si naš topel in sproščujoč ambient.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4599436.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4599377.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6628647.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6628596.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

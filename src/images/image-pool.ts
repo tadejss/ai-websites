@@ -14,7 +14,18 @@ import {
   categorySearchHint,
   type ImagePoolCategoryId,
 } from "./image-pool-category";
-import { INITIAL_FILL, MAX_IMAGE_USES, POOL_TARGET } from "./image-pool-config";
+import {
+  ALLOW_SHARED_POOL_PHOTOS,
+  INITIAL_FILL,
+  MAX_IMAGE_USES,
+  MIN_DEMO_SITE_IMAGES,
+  POOL_TARGET,
+} from "./image-pool-config";
+
+/** Hard ceiling for eligibility. Shared-pool mode keeps all valid assets eligible. */
+function selectionMaxUses(): number {
+  return ALLOW_SHARED_POOL_PHOTOS ? Number.POSITIVE_INFINITY : MAX_IMAGE_USES;
+}
 import {
   getAllPoolSearchQueries,
   getPoolSearchQueries,
@@ -173,7 +184,7 @@ export async function replenishCategoryPool(
   category: ImagePoolCategoryId,
 ): Promise<void> {
   const members = await getPoolMembers(category);
-  const eligible = await getEligiblePoolAssets(category, MAX_IMAGE_USES);
+  const eligible = await getEligiblePoolAssets(category, selectionMaxUses());
   const excludeKeys = new Set(members);
   const targetTotal = Math.min(
     POOL_TARGET,
@@ -191,19 +202,36 @@ export async function replenishCategoryPool(
   }
 }
 
+/** Fetch and register exactly `addCount` new assets into a category pool. */
+export async function topUpCategoryPool(
+  category: ImagePoolCategoryId,
+  addCount: number,
+  extraExcludeKeys: Iterable<string> = [],
+): Promise<number> {
+  if (addCount <= 0) {
+    return 0;
+  }
+  const members = await getPoolMembers(category);
+  const excludeKeys = new Set(members);
+  for (const key of extraExcludeKeys) {
+    excludeKeys.add(key);
+  }
+  return fetchNewPoolAssets(category, addCount, excludeKeys);
+}
+
 export async function ensureCategoryPoolReady(
   category: ImagePoolCategoryId,
 ): Promise<void> {
   await ensureUsageCountsSeeded();
   await seedPoolFromExistingCache(category);
 
-  let eligible = await getEligiblePoolAssets(category, MAX_IMAGE_USES);
+  let eligible = await getEligiblePoolAssets(category, selectionMaxUses());
 
   if (eligible.length < INITIAL_FILL) {
     const need = INITIAL_FILL - eligible.length;
     const members = await getPoolMembers(category);
     await fetchNewPoolAssets(category, need, new Set(members));
-    eligible = await getEligiblePoolAssets(category, MAX_IMAGE_USES);
+    eligible = await getEligiblePoolAssets(category, selectionMaxUses());
   }
 
   if (eligible.length === 0) {
@@ -267,7 +295,7 @@ export async function selectPoolAssets(
   count: number,
   excludeKeys: Set<string> = new Set(),
 ): Promise<string[]> {
-  const eligibleRecords = await getEligiblePoolAssets(category, MAX_IMAGE_USES);
+  const eligibleRecords = await getEligiblePoolAssets(category, selectionMaxUses());
   const eligible = eligibleRecords.map((asset) => ({
     key: assetCacheKey(asset.provider, asset.id),
     usageCount: asset.usageCount,
@@ -328,15 +356,33 @@ export async function generateImagesFromPool(
   | {
       hero: Awaited<ReturnType<typeof assignPoolAssetToClient>>;
       services: Awaited<ReturnType<typeof assignPoolAssetToClient>>;
+      gallery: Array<{
+        src: string;
+        srcFallback: string;
+        alt: string;
+        width: number;
+        height: number;
+        provider: string;
+        sourceId: string;
+      }>;
     }
   | undefined
 > {
   await ensureCategoryPoolReady(category);
 
-  let keys = await selectPoolAssets(category, slug, 2);
-  if (keys.length < 2) {
+  let keys = await selectPoolAssets(category, slug, MIN_DEMO_SITE_IMAGES);
+  if (keys.length < MIN_DEMO_SITE_IMAGES) {
     await replenishCategoryPool(category);
-    keys = await selectPoolAssets(category, slug, 2);
+    const members = await getPoolMembers(category);
+    const need = MIN_DEMO_SITE_IMAGES - members.length;
+    if (need > 0) {
+      await topUpCategoryPool(category, need);
+    }
+    keys = await selectPoolAssets(category, slug, MIN_DEMO_SITE_IMAGES);
+  }
+
+  if (keys.length < 2) {
+    return undefined;
   }
 
   const distinct = pickDistinctSlotKeys(keys);
@@ -363,7 +409,41 @@ export async function generateImagesFromPool(
     return undefined;
   }
 
-  return { hero, services };
+  const cache = await readAssetCache();
+  const gallery: Array<{
+    src: string;
+    srcFallback: string;
+    alt: string;
+    width: number;
+    height: number;
+    provider: string;
+    sourceId: string;
+  }> = [];
+
+  for (const key of keys) {
+    const asset = cache.assets[key];
+    if (!asset) continue;
+    gallery.push({
+      src: asset.src,
+      srcFallback: asset.srcFallback,
+      alt: asset.searchQuery || "Delo",
+      width: asset.width,
+      height: asset.height,
+      provider: asset.provider,
+      sourceId: asset.id,
+    });
+    if (key !== heroKey && key !== servicesKey) {
+      await incrementAssetUsage(key);
+    }
+  }
+
+  if (gallery.length < MIN_DEMO_SITE_IMAGES) {
+    console.warn(
+      `Pool gallery short for "${slug}" (${category}): ${gallery.length}/${MIN_DEMO_SITE_IMAGES}`,
+    );
+  }
+
+  return { hero, services, gallery };
 }
 
 /** Exported for tests — list all asset keys currently in cache. */

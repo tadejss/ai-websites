@@ -1,8 +1,9 @@
 {
   "appearance": "auto",
+  "templateId": "bento",
   "lookId": "avtomehaniki-06-service-grid",
   "theme": {
-    "paletteId": "look-avtomehaniki-06-clay",
+    "paletteId": "obsidian-lime",
     "fontPairingId": "look-avtomehaniki-06"
   },
   "layout": {
@@ -56,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8985967.webp",
+        "alt": "professional car mechanic working in bright workshop interior"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8985924.webp",
+        "alt": "professional auto repair shop mechanic working on car engine"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9626877.webp",
+        "alt": "auto mechanic working on car engine"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4315574.webp",
+        "alt": "auto mechanic working on car engine"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

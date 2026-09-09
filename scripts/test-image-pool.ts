@@ -192,6 +192,99 @@ async function main() {
       companyName: "Ključavničar Jože",
     }) === undefined,
   );
+  check(
+    "unmapped restaurant stays undefined",
+    resolveImagePoolCategory({
+      industry: "Restavracija in hitra prehrana",
+      companyName: "BESIM HAJDARI",
+    }) === undefined,
+  );
+  check(
+    "unmapped cafe/bar stays undefined",
+    resolveImagePoolCategory({
+      industry: "bar",
+      companyName: "Kavarna Trnovo",
+    }) === undefined,
+  );
+  check(
+    "unmapped dental stays undefined",
+    resolveImagePoolCategory({
+      industry: "Zobozdravstvena ordinacija",
+      companyName: "Modri Zob",
+    }) === undefined,
+  );
+
+  // Hair / beauty compounds → frizerji (primary visual)
+  check(
+    "compound frizer+lepota → frizerji",
+    resolveImagePoolCategory({
+      industry: "Frizerski in lepotni salon",
+      companyName: "ES beauty",
+    }) === "frizerji",
+  );
+  check(
+    "compound frizersko lepotilni → frizerji",
+    resolveImagePoolCategory({
+      industry: "Frizerski in lepotilni salon",
+      companyName: "Havajana frizersko lepotilni salon",
+    }) === "frizerji",
+  );
+  check(
+    "frizer salon with beauty in name → frizerji",
+    resolveImagePoolCategory({
+      industry: "Frizerski salon",
+      companyName: "Zuri Hair & Beauty Salon.",
+    }) === "frizerji",
+  );
+  check(
+    "frizer + kavarna compound → frizerji",
+    resolveImagePoolCategory({
+      industry: "Frizerski salon in kavarna",
+      companyName: "Oaza lepote manta frizerstvo",
+    }) === "frizerji",
+  );
+  check(
+    "brivec → frizerji",
+    resolveImagePoolCategory({
+      industry: "Brivec",
+      companyName: "ViP 4 MEN",
+    }) === "frizerji",
+  );
+  check(
+    "pure beauty without hair → kozmeticarji",
+    resolveImagePoolCategory({
+      industry: "Kozmetični salon",
+      companyName: "Lepota Ana",
+    }) === "kozmeticarji",
+  );
+  check(
+    "pleskarstvo → slikopleskarji",
+    resolveImagePoolCategory({
+      industry: "Pleskarstvo",
+      companyName: "Pleskarstvo Tomaž Cimperman s.p.",
+    }) === "slikopleskarji",
+  );
+  check(
+    "avtoreparaturna delavnica → avtomehaniki",
+    resolveImagePoolCategory({
+      industry: "Avtoreparaturna delavnica in servisi",
+      companyName: "Avtostoritve Omejec",
+    }) === "avtomehaniki",
+  );
+  check(
+    "avto ključi / kodiranje → avtomehaniki",
+    resolveImagePoolCategory({
+      industry: "Izdelava ključev in kodiranje",
+      companyName: "AVTO KLJUČI KODIRANI IN DALJINCI",
+    }) === "avtomehaniki",
+  );
+  check(
+    "shoe repair + keys stays undefined (no craft pool)",
+    resolveImagePoolCategory({
+      industry: "Čevljarske storitve in izdelava ključev",
+      companyName: "Čevljarstvo Sabahudin",
+    }) === undefined,
+  );
 
   console.log("\n== pool selection and usage ==");
   await seedCacheWithPool("cistilni-servisi", ["101", "102", "103"], {
@@ -368,12 +461,12 @@ async function main() {
     await import("../src/images/selection-rules");
   check(
     "locale hint appended once",
-    applyLocaleQueryHint("electrician panel").includes("european workshop"),
+    applyLocaleQueryHint("electrician panel").includes("european commercial"),
   );
   check(
     "locale hint not duplicated",
-    !applyLocaleQueryHint("electrician european workshop").endsWith(
-      "european workshop european workshop",
+    !applyLocaleQueryHint("electrician european commercial").endsWith(
+      "european commercial european commercial",
     ),
   );
   check(

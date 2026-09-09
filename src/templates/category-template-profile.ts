@@ -11,7 +11,7 @@ const BEAUTY: TemplateProfile = {
 
 const TRADE: TemplateProfile = {
   allowed: ["bento", "outlined"],
-  preferred: ["bento"],
+  preferred: ["bento", "outlined"],
   imageHeavy: false,
   typographyHeavy: false,
 };
@@ -25,7 +25,7 @@ const AUTO: TemplateProfile = {
 
 const CLEANING: TemplateProfile = {
   allowed: ["bento", "type"],
-  preferred: ["bento"],
+  preferred: ["bento", "type"],
   imageHeavy: false,
   typographyHeavy: false,
 };

@@ -41,9 +41,9 @@ export function FloatingPage({ siteConfig, siteSlug }: Props) {
       />
 
       <main className="mx-auto max-w-5xl px-4 sm:px-8">
-        <section className="relative grid grid-cols-1 items-start gap-8 pt-4 lg:grid-cols-12 lg:gap-8 lg:pt-6">
-          <div className="order-2 space-y-4 lg:order-1 lg:col-span-5 lg:pt-10">
-            <h1 className="font-display text-xl font-extrabold leading-[1.15] tracking-tight sm:text-2xl lg:text-[1.65rem]">
+        <section className="relative grid grid-cols-1 items-start gap-8 pt-4 lg:grid-cols-12 lg:items-center lg:gap-10 lg:pt-6">
+          <div className="order-2 space-y-4 lg:order-1 lg:col-span-5 lg:pt-0">
+            <h1 className="font-display text-xl font-extrabold leading-[1.15] tracking-tight sm:text-2xl lg:text-[1.85rem]">
               {siteConfig.hero.title}{" "}
               <em className="not-italic text-[var(--accent)]">
                 {siteConfig.hero.titleHighlight}
@@ -57,16 +57,16 @@ export function FloatingPage({ siteConfig, siteSlug }: Props) {
               className="!rounded-full !px-6 !text-sm !font-extrabold"
             />
           </div>
-          <div className="order-1 lg:order-2 lg:col-span-7 lg:pl-4">
+          <div className="order-1 lg:order-2 lg:col-span-7 lg:pl-2">
             {heroImage ? (
               <TemplateImage
                 image={heroImage}
                 priority
-                className="aspect-[5/4] max-h-[22rem] w-full rounded-[var(--radius)] object-cover sm:max-h-none sm:aspect-[8/15] lg:aspect-[5/9] lg:translate-x-2"
+                className="aspect-[5/4] max-h-[22rem] w-full rounded-[var(--radius)] object-cover sm:max-h-none sm:aspect-[8/15] lg:aspect-[4/5] lg:max-h-[34rem] lg:translate-x-0"
                 sizes="(max-width: 1024px) 100vw, 55vw"
               />
             ) : (
-              <div className="aspect-[5/4] max-h-[22rem] rounded-[var(--radius)] bg-[var(--surface)] sm:max-h-none sm:aspect-[8/15] lg:aspect-[5/9]" />
+              <div className="aspect-[5/4] max-h-[22rem] rounded-[var(--radius)] bg-[var(--surface)] sm:max-h-none sm:aspect-[8/15] lg:aspect-[4/5] lg:max-h-[34rem]" />
             )}
           </div>
         </section>
@@ -149,7 +149,7 @@ export function FloatingPage({ siteConfig, siteSlug }: Props) {
         ) : null}
 
         {isFaqVisible(siteConfig) ? (
-          <section id="faq" className="mt-16 max-w-2xl sm:mt-20">
+          <section id="faq" className="mt-16 sm:mt-20">
             <h2 className="font-display text-xl font-extrabold tracking-tight sm:text-2xl">
               Pogosta vprašanja
             </h2>
@@ -159,7 +159,9 @@ export function FloatingPage({ siteConfig, siteSlug }: Props) {
                   <p className="text-sm font-extrabold text-[var(--accent)] sm:text-base">
                     {item.question}
                   </p>
-                  <p className="mt-1 text-sm text-[var(--muted)]">{item.answer}</p>
+                  <p className="mt-1 max-w-2xl text-sm text-[var(--muted)]">
+                    {item.answer}
+                  </p>
                 </li>
               ))}
             </ul>

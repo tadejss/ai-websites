@@ -1,8 +1,9 @@
 {
   "appearance": "cleaning",
+  "templateId": "bento",
   "lookId": "cistilni-servisi-09-warm-soft",
   "theme": {
-    "paletteId": "look-cistilni-servisi-09-dusk",
+    "paletteId": "citrus-ink",
     "fontPairingId": "look-cistilni-servisi-09"
   },
   "layout": {
@@ -15,6 +16,38 @@
     "sectionRule": "none",
     "cardStyle": "soft"
   },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9462143.avif",
+      "alt": "professional house cleaner mopping floor european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9462143.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "9462143",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-sweeping-a-floor-9462143/",
+      "photographer": "Liliana Drew",
+      "photographerUrl": "https://www.pexels.com/@liliana-drew",
+      "searchQuery": "professional house cleaner mopping floor european commercial"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6196689.avif",
+      "alt": "professional house cleaner mopping floor european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6196689.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "6196689",
+      "sourceUrl": "https://www.pexels.com/photo/a-woman-in-gray-shirt-and-orange-jumper-mopping-the-floor-6196689/",
+      "photographer": "Tima Miroshnichenko",
+      "photographerUrl": "https://www.pexels.com/@tima-miroshnichenko",
+      "searchQuery": "professional house cleaner mopping floor european commercial"
+    }
+  },
   "sections": {
     "gallery": true,
     "pricing": true
@@ -24,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6196566.webp",
+        "alt": "professional house cleaner mopping floor european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6195278.webp",
+        "alt": "professional house cleaner mopping floor european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6197116.webp",
+        "alt": "professional house cleaner mopping floor european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/32791637.webp",
+        "alt": "deep cleaning service sparkling clean modern living room"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

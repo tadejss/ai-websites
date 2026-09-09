@@ -173,6 +173,43 @@ export async function addPoolMember(
   });
 }
 
+export async function removePoolMember(
+  category: ImagePoolCategoryId,
+  key: string,
+): Promise<boolean> {
+  let removed = false;
+  await updateCache((cache) => {
+    const members = cache.pools[category] ?? [];
+    const next = members.filter((entry) => entry !== key);
+    if (next.length !== members.length) {
+      cache.pools[category] = next;
+      removed = true;
+    }
+  });
+  return removed;
+}
+
+export async function removePoolMembers(
+  category: ImagePoolCategoryId,
+  keys: string[],
+): Promise<string[]> {
+  const removeSet = new Set(keys);
+  const removed: string[] = [];
+  await updateCache((cache) => {
+    const members = cache.pools[category] ?? [];
+    const next: string[] = [];
+    for (const key of members) {
+      if (removeSet.has(key)) {
+        removed.push(key);
+      } else {
+        next.push(key);
+      }
+    }
+    cache.pools[category] = next;
+  });
+  return removed;
+}
+
 export async function getEligiblePoolAssets(
   category: ImagePoolCategoryId,
   maxUses: number,

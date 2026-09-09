@@ -1,7 +1,8 @@
 {
   "appearance": "default",
+  "templateId": "type",
   "theme": {
-    "paletteId": "zbrendiraj",
+    "paletteId": "charcoal-signal",
     "fontPairingId": "dm-sans-syne"
   },
   "images": {

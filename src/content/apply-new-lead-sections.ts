@@ -57,9 +57,9 @@ export function applyNewLeadSectionDefaults(config: SiteConfig): SiteConfig {
   const next: SiteConfig = {
     ...config,
     sections: {
+      ...config.sections,
       gallery: true,
       pricing: true,
-      ...config.sections,
     },
     gallery,
     ...(pricing ? { pricing } : {}),

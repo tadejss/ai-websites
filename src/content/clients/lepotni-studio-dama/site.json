@@ -1,7 +1,8 @@
 {
   "appearance": "beauty",
+  "templateId": "floating",
   "theme": {
-    "paletteId": "forest-mist",
+    "paletteId": "charcoal-gold",
     "fontPairingId": "inter-eb-garamond"
   },
   "layout": {
@@ -20,6 +21,33 @@
       "src": "/clients/lepotni-studio-aida/services.jpg",
       "alt": "Kozmetične storitve in urejanje v mirnem ambientu salona"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16120497.webp",
+        "alt": "beauty salon skincare professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37229298.webp",
+        "alt": "cosmetic facial treatment spa salon european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37229299.webp",
+        "alt": "cosmetic facial treatment spa salon european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37229313.webp",
+        "alt": "cosmetic facial treatment spa salon european commercial"
+      }
+    ]
   },
   "brand": {
     "prefix": "Lepotni studio",

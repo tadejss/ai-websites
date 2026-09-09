@@ -44,6 +44,8 @@
     "backfill-trade-layout": "tsx scripts/backfill-trade-layout.ts",
     "backfill-trade-visual": "tsx scripts/backfill-trade-visual.ts",
     "backfill-look-ids": "tsx scripts/backfill-look-ids.ts",
+    "backfill-demo-gallery": "tsx scripts/backfill-demo-gallery.ts",
+    "backfill-template-palette": "tsx scripts/backfill-template-palette.ts",
     "test-privacy": "tsx scripts/test-privacy.ts",
     "send-outreach": "tsx scripts/send-outreach.ts",
     "outreach-summary": "tsx scripts/outreach-summary.ts",

@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "outlined",
   "lookId": "keramicarji-03-photo-forward",
   "theme": {
-    "paletteId": "look-keramicarji-03-bloom",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "look-keramicarji-03"
   },
   "layout": {
@@ -15,6 +16,38 @@
     "sectionRule": "line",
     "cardStyle": "bordered"
   },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16629411.avif",
+      "alt": "tile installer laying ceramic floor",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16629411.webp",
+      "width": 1055,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "16629411",
+      "sourceUrl": "https://www.pexels.com/photo/white-square-tiles-16629411/",
+      "photographer": "Eymen Şahin",
+      "photographerUrl": "https://www.pexels.com/@eymen-sahin-433309539",
+      "searchQuery": "tile installer laying ceramic floor"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/12113234.avif",
+      "alt": "tile installer laying ceramic floor",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/12113234.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "12113234",
+      "sourceUrl": "https://www.pexels.com/photo/shadows-on-pavement-12113234/",
+      "photographer": "Nikita Nikitin",
+      "photographerUrl": "https://www.pexels.com/@nikitaxnikitin",
+      "searchQuery": "tile installer laying ceramic floor"
+    }
+  },
   "sections": {
     "gallery": true,
     "pricing": true
@@ -24,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6444245.webp",
+        "alt": "professional tiler bathroom renovation"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4752996.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/35200609.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/32021732.webp",
+        "alt": "tile installer laying ceramic floor"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

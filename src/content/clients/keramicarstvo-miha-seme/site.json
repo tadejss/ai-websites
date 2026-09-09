@@ -1,7 +1,8 @@
 {
   "appearance": "construction",
+  "templateId": "bento",
   "theme": {
-    "paletteId": "rust-linen",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "manrope-bodoni"
   },
   "layout": {
@@ -23,6 +24,33 @@
       "src": "/clients/keramicarstvo-miha-seme/services.jpg",
       "alt": "Moderna kopalnica z elegantnimi keramičnimi ploščicami"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/32021732.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17866923.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/12113234.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4752996.webp",
+        "alt": "tile installer laying ceramic floor"
+      }
+    ]
   },
   "brand": {
     "prefix": "Keramičarstvo",

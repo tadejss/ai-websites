@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "bento",
   "lookId": "gradbinci-05-minimal-line",
   "theme": {
-    "paletteId": "showcase-krovec-signal",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "figtree-dm-serif",
     "radiusScale": "sharp"
   },
@@ -65,6 +66,14 @@
       {
         "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/services.avif",
         "alt": "Krovska dela in nova kritina"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8961154.webp",
+        "alt": "construction workers building site professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/15767414.webp",
+        "alt": "construction workers building site professional european commercial"
       }
     ]
   },

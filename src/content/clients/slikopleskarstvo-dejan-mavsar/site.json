@@ -1,7 +1,8 @@
 {
   "appearance": "construction",
+  "templateId": "bento",
   "theme": {
-    "paletteId": "rust-linen",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "work-sans-lora"
   },
   "layout": {
@@ -55,7 +56,24 @@
     "eyebrow": "Galerija",
     "title": "Naša pretekla dela",
     "description": "Oglejte si primere naših slikopleskarskih in prenovitvenih del.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7217987.webp",
+        "alt": "house painter working on wall interior european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474135.webp",
+        "alt": "house painter working on wall interior european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474491.webp",
+        "alt": "house painter working on wall interior european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34975633.webp",
+        "alt": "professional painter painting facade european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

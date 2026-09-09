@@ -1,7 +1,8 @@
 {
   "appearance": "elektro",
+  "templateId": "outlined",
   "theme": {
-    "paletteId": "slate-emerald",
+    "paletteId": "obsidian-lime",
     "fontPairingId": "inter-space-grotesk"
   },
   "layout": {
@@ -23,6 +24,33 @@
       "src": "/clients/elektro-ika-gregor/services.jpg",
       "alt": "Orodja in rezervni deli za servis bele tehnike"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17842834.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054474.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/10871737.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5691588.webp",
+        "alt": "professional electrician installing wiring"
+      }
+    ]
   },
   "brand": {
     "prefix": "Servis",

@@ -164,12 +164,14 @@ const QUERIES: Record<ImagePoolCategoryId, CategoryQueries> = {
   },
   "cistilni-servisi": {
     hero: [
-      { query: "professional office cleaning service worker", orientation: "portrait" },
-      { query: "commercial cleaning team interior", orientation: "portrait" },
+      { query: "professional house cleaner mopping floor", orientation: "portrait" },
+      { query: "janitor cleaning office with mop and bucket", orientation: "portrait" },
+      { query: "cleaning lady vacuuming living room", orientation: "portrait" },
     ],
     services: [
-      { query: "cleaning supplies and equipment professional", orientation: "squarish" },
-      { query: "janitorial service cleaning floor", orientation: "squarish" },
+      { query: "cleaning supplies mop bucket gloves detergents", orientation: "squarish" },
+      { query: "professional cleaner wiping kitchen counter", orientation: "squarish" },
+      { query: "window cleaning service squeegee glass", orientation: "squarish" },
     ],
   },
 };

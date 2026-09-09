@@ -1,8 +1,9 @@
 {
   "appearance": "beauty",
+  "templateId": "floating",
   "lookId": "nohti-pedikura-07-asymmetric-bold",
   "theme": {
-    "paletteId": "look-nohti-pedikura-07-linen",
+    "paletteId": "burgundy-cream",
     "fontPairingId": "look-nohti-pedikura-07"
   },
   "layout": {
@@ -53,7 +54,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7755142.webp",
+        "alt": "elegant nail salon interior dusty rose aesthetic lighting"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/29877719.webp",
+        "alt": "professional skincare facial treatment and manicure delicate warm lighting"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3997350.webp",
+        "alt": "nail salon manicure professional interior"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3735653.webp",
+        "alt": "nail salon manicure professional interior"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

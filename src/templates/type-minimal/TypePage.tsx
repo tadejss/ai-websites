@@ -49,9 +49,9 @@ export function TypePage({ siteConfig, siteSlug }: Props) {
       />
 
       <main className="mx-auto max-w-5xl px-4 sm:px-8 lg:px-12">
-        <section className="grid grid-cols-1 gap-8 pt-4 lg:grid-cols-12 lg:gap-10 lg:pt-8">
+        <section className="grid grid-cols-1 gap-8 pt-4 lg:grid-cols-12 lg:items-center lg:gap-10 lg:pt-8">
           <div className="lg:col-span-7">
-            <h1 className="font-display text-[clamp(1.55rem,5.5vw,2.6rem)] font-extrabold leading-[1.08] tracking-[-0.02em]">
+            <h1 className="font-display text-[clamp(1.55rem,5.5vw,2.6rem)] font-extrabold leading-[1.08] tracking-[-0.02em] lg:text-[2.35rem]">
               {siteConfig.hero.title}
               {siteConfig.hero.titleHighlight ? (
                 <>
@@ -77,7 +77,7 @@ export function TypePage({ siteConfig, siteSlug }: Props) {
               <TemplateImage
                 image={heroImage}
                 priority
-                className="aspect-[4/5] w-full object-cover"
+                className="aspect-[4/5] w-full object-cover lg:aspect-[5/6]"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
             </div>

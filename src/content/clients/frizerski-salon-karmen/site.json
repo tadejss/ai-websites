@@ -1,7 +1,8 @@
 {
   "appearance": "beauty",
+  "templateId": "floating",
   "theme": {
-    "paletteId": "wine-velvet",
+    "paletteId": "olive-ink",
     "fontPairingId": "inter-space-grotesk-light"
   },
   "layout": {
@@ -31,6 +32,33 @@
       "src": "/clients/frizerski-salon-karmen/services.jpg",
       "alt": "Strokovno barvanje las in stilsko oblikovanje v salonu"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16048250.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/19664877.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3993296.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3736396.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      }
+    ]
   },
   "brand": {
     "prefix": "Frizerski salon",

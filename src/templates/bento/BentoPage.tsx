@@ -38,11 +38,11 @@ export function BentoPage({ siteConfig, siteSlug }: Props) {
       <main className="mx-auto max-w-6xl px-4 sm:px-6">
         <section
           aria-label="Predstavitev"
-          className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-6 lg:grid-rows-2"
+          className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:items-stretch"
         >
-          <div className="order-2 flex flex-col justify-between rounded-[var(--radius)] bg-[var(--surface)] p-5 sm:order-1 sm:col-span-2 lg:col-span-3 lg:row-span-2 lg:p-7">
+          <div className="order-2 flex min-h-[21rem] flex-col justify-center gap-6 rounded-[var(--radius)] bg-[var(--surface)] p-5 sm:order-1 sm:min-h-[24rem] lg:min-h-[27rem] lg:p-8">
             <div className="space-y-3">
-              <h1 className="font-display text-2xl font-bold leading-tight tracking-tight sm:text-3xl lg:text-4xl">
+              <h1 className="font-display text-2xl font-bold leading-tight tracking-tight sm:text-3xl lg:text-[2.15rem]">
                 {siteConfig.hero.title}{" "}
                 <span className="text-[var(--accent)]">
                   {siteConfig.hero.titleHighlight}
@@ -52,20 +52,20 @@ export function BentoPage({ siteConfig, siteSlug }: Props) {
                 {siteConfig.hero.description}
               </p>
             </div>
-            <div className="mt-6">
+            <div>
               <PhoneCta siteConfig={siteConfig} />
             </div>
           </div>
-          <div className="order-1 overflow-hidden rounded-[var(--radius)] bg-[var(--surface)] sm:order-2 sm:col-span-1 lg:col-span-3 lg:row-span-2">
+          <div className="relative order-1 min-h-[21rem] overflow-hidden rounded-[var(--radius)] bg-[var(--surface)] sm:order-2 sm:min-h-[24rem] lg:min-h-[27rem]">
             {heroImage ? (
               <TemplateImage
                 image={heroImage}
                 priority
-                className="h-full min-h-14 w-full object-cover sm:min-h-[10.8rem] lg:min-h-full"
+                className="absolute inset-0 h-full w-full object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             ) : (
-              <div className="flex h-full min-h-14 items-end bg-[var(--accent)]/15 p-5 sm:min-h-[10.8rem] lg:min-h-[22rem]">
+              <div className="absolute inset-0 flex items-end bg-[var(--accent)]/15 p-5">
                 <p className="text-lg font-semibold">{siteConfig.hero.badge}</p>
               </div>
             )}

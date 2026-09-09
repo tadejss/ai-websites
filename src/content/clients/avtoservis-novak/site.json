@@ -1,4 +1,68 @@
 {
+  "appearance": "default",
+  "templateId": "outlined",
+  "theme": {
+    "paletteId": "ink-coral"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8985924.avif",
+      "alt": "professional auto repair shop mechanic working on car engine",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8985924.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985924",
+      "sourceUrl": "https://www.pexels.com/photo/a-mechanic-checking-on-a-car-8985924/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional auto repair shop mechanic working on car engine"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8985967.avif",
+      "alt": "professional car mechanic working in bright workshop interior",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8985967.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "8985967",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-blue-coverall-standing-near-a-car-8985967/",
+      "photographer": "Artem Podrez",
+      "photographerUrl": "https://www.pexels.com/@artempodrez",
+      "searchQuery": "professional car mechanic working in bright workshop interior"
+    }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9626877.webp",
+        "alt": "auto mechanic working on car engine"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8986105.webp",
+        "alt": "car repair shop professional mechanic"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8470679.webp",
+        "alt": "auto mechanic working on car engine"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4315574.webp",
+        "alt": "auto mechanic working on car engine"
+      }
+    ]
+  },
   "brand": {
     "prefix": "Avtoservis",
     "highlight": "Novak"
@@ -149,7 +213,6 @@
     "address": "Kašeljska cesta 12, 1000 Ljubljana, Slovenia",
     "rights": "Vse pravice pridržane."
   },
-  "appearance": "default",
   "business": {
     "name": "Avtoservis Novak",
     "address": "Kašeljska cesta 12, 1000 Ljubljana, Slovenia",

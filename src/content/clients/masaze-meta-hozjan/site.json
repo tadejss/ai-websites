@@ -1,7 +1,8 @@
 {
   "appearance": "health",
+  "templateId": "floating",
   "theme": {
-    "paletteId": "ocean-teal",
+    "paletteId": "warm-black",
     "fontPairingId": "lato-libre"
   },
   "layout": {
@@ -55,7 +56,24 @@
     "eyebrow": "Galerija",
     "title": "Utrinki iz našega salona",
     "description": "Oglejte si kotiček za sprostitev.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4599377.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4599436.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6628596.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6628647.webp",
+        "alt": "massage therapy spa wellness room european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

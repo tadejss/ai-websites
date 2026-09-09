@@ -1,7 +1,8 @@
 {
   "appearance": "construction",
+  "templateId": "outlined",
   "theme": {
-    "paletteId": "charcoal-cyan",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "dm-sans-syne"
   },
   "layout": {
@@ -23,6 +24,33 @@
       "src": "/clients/klb-keramicarstvo-liman/services.jpg",
       "alt": "Prenova kopalnice in polaganje ploščic"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/35200609.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6444245.webp",
+        "alt": "professional tiler bathroom renovation"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/32021732.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17866923.webp",
+        "alt": "tile installer laying ceramic floor"
+      }
+    ]
   },
   "brand": {
     "prefix": "KLB",

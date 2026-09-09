@@ -1,8 +1,9 @@
 {
   "appearance": "elektro",
+  "templateId": "outlined",
   "lookId": "elektricarji-05-minimal-line",
   "theme": {
-    "paletteId": "showcase-elektro-green",
+    "paletteId": "obsidian-lime",
     "fontPairingId": "inter-space-grotesk-light",
     "radiusScale": "sharp"
   },
@@ -19,11 +20,11 @@
   "images": {
     "hero": {
       "src": "/clients/elektro-ivan-troha/hero.jpg",
-      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
       "alt": "Električar pri delu na moderni elektro omari",
-      "searchQuery": "electrician working electrical panel",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
       "format": "jpg",
-      "fallbackFormat": "jpg"
+      "fallbackFormat": "jpg",
+      "searchQuery": "electrician working electrical panel"
     },
     "services": {
       "src": "/clients/elektro-ika-gregor/services.jpg",
@@ -47,6 +48,14 @@
       {
         "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektro-instalacije-kovac/services.avif",
         "alt": "Strokovna izvedba elektroinštalacij v objektu"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17842834.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054474.webp",
+        "alt": "electrician working electrical panel"
       }
     ]
   },

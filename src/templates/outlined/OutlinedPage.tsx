@@ -37,38 +37,36 @@ export function OutlinedPage({ siteConfig, siteSlug }: Props) {
       />
 
       <main className="mx-auto max-w-5xl px-4 sm:px-6">
-        <section className="relative mt-6 grid grid-cols-1 gap-6 lg:mt-10 lg:grid-cols-12 lg:gap-0">
-          <div className="relative z-10 border-2 border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8 lg:col-span-7 lg:mt-16 lg:-mr-8">
-            <h1 className="text-3xl font-bold leading-[1.05] tracking-tight sm:text-4xl">
-              {siteConfig.hero.title}{" "}
-              <span className="text-[var(--accent)]">
-                {siteConfig.hero.titleHighlight}
-              </span>
-            </h1>
-            <p className="mt-4 max-w-md text-base text-[var(--muted)]">
-              {siteConfig.hero.description}
-            </p>
-            <div className="mt-8">
-              <PhoneCta
-                siteConfig={siteConfig}
-                className="!border-[var(--accent)] !bg-[var(--accent)] !text-white"
+        <section className="relative mt-6 border-2 border-[var(--border)] lg:mt-10">
+          <div className="relative">
+            {heroImage ? (
+              <TemplateImage
+                image={heroImage}
+                priority
+                className="aspect-[4/5] w-full object-cover sm:aspect-[16/10] lg:aspect-[21/9]"
+                sizes="(max-width: 1024px) 100vw, 1024px"
               />
-            </div>
-          </div>
-          <div className="relative lg:col-span-5 lg:pl-4">
-            <div className="border-2 border-[var(--border)] bg-[var(--accent)]/10 p-2 lg:translate-y-4">
-              {heroImage ? (
-                <TemplateImage
-                  image={heroImage}
-                  priority
-                  className="aspect-[4/5] w-full object-cover"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
+            ) : (
+              <div className="flex aspect-[4/5] items-end bg-[var(--accent)]/10 p-4 font-bold sm:aspect-[16/10] lg:aspect-[21/9]">
+                {siteConfig.hero.badge}
+              </div>
+            )}
+            <div className="absolute inset-x-3 bottom-3 z-10 border-2 border-[var(--border)] bg-[var(--surface)] p-5 sm:inset-x-auto sm:bottom-6 sm:left-6 sm:max-w-md sm:p-7 lg:bottom-8 lg:left-8 lg:max-w-lg">
+              <h1 className="text-2xl font-bold leading-[1.05] tracking-tight sm:text-3xl lg:text-[2.35rem]">
+                {siteConfig.hero.title}{" "}
+                <span className="text-[var(--accent)]">
+                  {siteConfig.hero.titleHighlight}
+                </span>
+              </h1>
+              <p className="mt-3 max-w-md text-sm text-[var(--muted)] sm:mt-4 sm:text-base">
+                {siteConfig.hero.description}
+              </p>
+              <div className="mt-5 sm:mt-7">
+                <PhoneCta
+                  siteConfig={siteConfig}
+                  className="!border-[var(--accent)] !bg-[var(--accent)] !text-white"
                 />
-              ) : (
-                <div className="flex aspect-[4/5] items-end border-2 border-[var(--border)] bg-[var(--surface)] p-4 font-bold">
-                  {siteConfig.hero.badge}
-                </div>
-              )}
+              </div>
             </div>
           </div>
         </section>

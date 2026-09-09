@@ -1,7 +1,8 @@
 {
   "appearance": "default",
+  "templateId": "bento",
   "theme": {
-    "paletteId": "violet-night",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "inter-oswald"
   },
   "images": {
@@ -13,6 +14,33 @@
       "src": "/clients/polaganje-kamna-keramike/services.jpg",
       "alt": "Natančno polaganje keramike in kamna v kopalnici"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6444245.webp",
+        "alt": "professional tiler bathroom renovation"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/32021732.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/35200609.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17866923.webp",
+        "alt": "tile installer laying ceramic floor"
+      }
+    ]
   },
   "brand": {
     "prefix": "Stojan Rodica",

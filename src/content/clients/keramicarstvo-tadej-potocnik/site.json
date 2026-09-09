@@ -1,7 +1,8 @@
 {
   "appearance": "construction",
+  "templateId": "bento",
   "theme": {
-    "paletteId": "deep-seafoam",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "jakarta-fraunces"
   },
   "layout": {
@@ -23,6 +24,33 @@
       "src": "/clients/keramicarstvo-tadej-potocnik/services.jpg",
       "alt": "Natančno polaganje stenske in talne keramike"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6444245.webp",
+        "alt": "professional tiler bathroom renovation"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/12113234.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16629411.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/35200609.webp",
+        "alt": "tile installer laying ceramic floor"
+      }
+    ]
   },
   "brand": {
     "prefix": "Keramičarstvo",

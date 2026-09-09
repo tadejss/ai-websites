@@ -31,7 +31,13 @@ type CategoryRule = {
   exclude?: RegExp;
 };
 
-/** Priority-ordered: first match wins. */
+/**
+ * Priority-ordered: first match wins.
+ *
+ * Compound salons (frizer + lepota/beauty) resolve to `frizerji` — primary
+ * customer-facing visual is hair. Pure beauty (no hair markers) → kozmeticarji.
+ * Pure nail markers are caught earlier by `nohti-pedikura`.
+ */
 const CATEGORY_RULES: CategoryRule[] = [
   {
     id: "nohti-pedikura",
@@ -51,18 +57,20 @@ const CATEGORY_RULES: CategoryRule[] = [
   },
   {
     id: "avtomehaniki",
-    test: /avtoservis|avtomehan|mehanik|auto\s*repair|servis\s+avto|car_repair|auto_repair|popravilo.*vozil|vzdr[žz]evanje.*vozil|prodaja.*vozil/i,
+    test:
+      /avtoservis|avtomehan|mehanik|auto\s*repair|servis\s+avto|car_repair|auto_repair|popravilo.*vozil|vzdr[žz]evanje.*vozil|prodaja.*vozil|avtorepar|avtostorit|reparaturn|avto[\s-]*ključ|avto[\s-]*kljuc|ključ.*kodir|kljuc.*kodir/i,
     exclude: /vulkaniz|avtoklepar|ličar|licar/i,
   },
   {
     id: "frizerji",
-    test: /friz|hair|barber|brivnic|hair_salon|barber_shop/i,
-    exclude: /kozmet|nail|noht|pedik|manik|lepot|beauty/i,
+    // Includes brivec/brivnica and compound hair+beauty salons.
+    test: /friz|hair|barber|briv|hair_salon|barber_shop/i,
+    exclude: /nail|noht|pedik|manik/i,
   },
   {
     id: "kozmeticarji",
-    test: /kozmet|lepot|beauty|skin_care|kozmetolog|nega\s+kože|cosmetic/i,
-    exclude: /friz|hair|barber|brivnic|nail|noht|pedik|manik/i,
+    test: /kozmet|lepot|beauty|skin_care|kozmetolog|nega\s+kože|cosmetic|lepotiln/i,
+    exclude: /friz|hair|barber|briv|nail|noht|pedik|manik/i,
   },
   {
     id: "vodovodarji-ogrevanje",
@@ -80,7 +88,7 @@ const CATEGORY_RULES: CategoryRule[] = [
   },
   {
     id: "slikopleskarji",
-    test: /slikopleskar|fasader|plasterer|painter|barvanje|fasad|soboslikar/i,
+    test: /slikopleskar|fasader|plasterer|painter|barvanje|fasad|soboslikar|pleskar/i,
   },
   {
     id: "suhomontazerji",
@@ -98,7 +106,7 @@ const CATEGORY_RULES: CategoryRule[] = [
   {
     id: "gradbinci",
     test: /gradben|renovac|zidar|krov|streh|kritina|adaptation|gradnja|general_contractor|construction/i,
-    exclude: /keramič|keramic|mizar|slikopleskar|fasader/i,
+    exclude: /keramič|keramic|mizar|slikopleskar|fasader|pleskar/i,
   },
   {
     id: "cistilni-servisi",

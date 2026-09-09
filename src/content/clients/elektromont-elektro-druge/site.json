@@ -1,7 +1,8 @@
 {
   "appearance": "elektro",
+  "templateId": "outlined",
   "theme": {
-    "paletteId": "violet-night",
+    "paletteId": "midnight-cobalt",
     "fontPairingId": "inter-space-grotesk"
   },
   "layout": {
@@ -23,6 +24,33 @@
       "src": "/clients/elektromont-elektro-druge/services.jpg",
       "alt": "Orodje za elektroinštalacije in gradbena dela"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054474.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17842834.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9679179.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/10871737.webp",
+        "alt": "electrician working electrical panel"
+      }
+    ]
   },
   "brand": {
     "prefix": "Elektro-Mont",

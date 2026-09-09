@@ -1,7 +1,8 @@
 {
   "appearance": "auto",
+  "templateId": "bento",
   "theme": {
-    "paletteId": "slate-emerald",
+    "paletteId": "obsidian-lime",
     "fontPairingId": "outfit-bitter"
   },
   "layout": {
@@ -55,7 +56,24 @@
     "eyebrow": "Galerija del",
     "title": "Utrinki iz naše delavnice",
     "description": "Oglejte si primere naših uspešno izvedenih popravil in lakiranj.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37809560.webp",
+        "alt": "auto body shop car painting professional"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37809561.webp",
+        "alt": "auto body shop car painting professional"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/37809581.webp",
+        "alt": "auto body shop car painting professional"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/30250199.webp",
+        "alt": "auto body shop car painting professional"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

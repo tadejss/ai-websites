@@ -1,8 +1,9 @@
 {
   "appearance": "elektro",
+  "templateId": "bento",
   "lookId": "elektricarji-05-minimal-line",
   "theme": {
-    "paletteId": "look-elektricarji-05-mist",
+    "paletteId": "citrus-ink",
     "fontPairingId": "look-elektricarji-05"
   },
   "layout": {
@@ -56,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054474.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17842834.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5691588.webp",
+        "alt": "professional electrician installing wiring"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054464.webp",
+        "alt": "electrician working on modern electrical panel warm light"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

@@ -1,4 +1,9 @@
 {
+  "appearance": "default",
+  "templateId": "type",
+  "theme": {
+    "paletteId": "charcoal-signal"
+  },
   "brand": {
     "prefix": "Ime",
     "highlight": "Podjetja"
@@ -111,7 +116,6 @@
     "address": "",
     "rights": "Vse pravice pridržane."
   },
-  "appearance": "default",
   "business": {
     "name": "Ime Podjetja",
     "address": "",

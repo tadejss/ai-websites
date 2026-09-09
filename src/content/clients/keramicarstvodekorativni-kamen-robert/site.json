@@ -1,7 +1,8 @@
 {
   "appearance": "default",
+  "templateId": "outlined",
   "theme": {
-    "paletteId": "charcoal-cyan",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "inter-space-grotesk"
   },
   "images": {
@@ -13,6 +14,33 @@
       "src": "/clients/keramicarstvodekorativni-kamen-robert/services.jpg",
       "alt": "Montaža dekorativnega kamna na steno v sodobnem prostoru"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3616774.webp",
+        "alt": "professional tiler bathroom renovation"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/35200609.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/32021732.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4752996.webp",
+        "alt": "tile installer laying ceramic floor"
+      }
+    ]
   },
   "brand": {
     "prefix": "Keramičarstvo",

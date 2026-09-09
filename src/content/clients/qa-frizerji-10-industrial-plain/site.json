@@ -1,8 +1,9 @@
 {
   "appearance": "beauty",
+  "templateId": "outlined",
   "lookId": "frizerji-10-industrial-plain",
   "theme": {
-    "paletteId": "look-frizerji-10-frost",
+    "paletteId": "deep-plum",
     "fontPairingId": "look-frizerji-10"
   },
   "layout": {
@@ -53,7 +54,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3736396.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3993296.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/19664877.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16048250.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

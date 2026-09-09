@@ -2,6 +2,10 @@
  * Tests for template assignment + copy voice validator (2026 redesign).
  */
 import { assignTemplate } from "../src/templates/assign-template";
+import {
+  assignPalette,
+  isPaletteCompatibleWithTemplate,
+} from "../src/templates/assign-palette";
 import { resolveTemplateId } from "../src/templates/resolve-template";
 import { templateProfile } from "../src/templates/category-template-profile";
 import { validateCopyVoice } from "../src/ai/validate-copy-voice";
@@ -17,6 +21,9 @@ import {
   isOfferVisible,
 } from "../src/templates/shared/section-data";
 import { isPricingSectionVisible } from "../src/content/sections";
+import { isCuratedPaletteId } from "../src/theme/palettes/curated";
+import { isTemplateId } from "../src/templates/types";
+import type { TemplateId } from "../src/templates/types";
 
 let failures = 0;
 
@@ -28,7 +35,23 @@ function ok(condition: boolean, label: string): void {
 console.log("== template profiles ==");
 ok(templateProfile("frizerji").preferred.includes("floating"), "beauty prefers floating");
 ok(templateProfile("elektricarji").preferred.includes("bento"), "elektro prefers bento");
+ok(templateProfile("elektricarji").preferred.includes("outlined"), "elektro also prefers outlined");
+ok(templateProfile("elektricarji").preferred.length > 1, "TRADE preferred length > 1");
+ok(templateProfile("cistilni-servisi").preferred.includes("type"), "cleaning prefers type");
+ok(templateProfile("cistilni-servisi").preferred.length > 1, "CLEANING preferred length > 1");
 ok(templateProfile("vulkanizerji").allowed.includes("outlined"), "auto allows outlined");
+ok(
+  templateProfile("elektricarji").preferred.every((id) =>
+    templateProfile("elektricarji").allowed.includes(id),
+  ),
+  "TRADE preferred ⊆ allowed",
+);
+ok(
+  templateProfile("cistilni-servisi").preferred.every((id) =>
+    templateProfile("cistilni-servisi").allowed.includes(id),
+  ),
+  "CLEANING preferred ⊆ allowed",
+);
 
 console.log("\n== assignTemplate deterministic ==");
 const a = assignTemplate({ slug: "demo-salon-1", categoryId: "frizerji" });
@@ -56,6 +79,93 @@ ok(
   "weak imagery demotes floating",
 );
 
+const tradeSlugs = [
+  "trade-alpha",
+  "trade-bravo",
+  "trade-charlie",
+  "trade-delta",
+  "trade-echo",
+  "trade-foxtrot",
+  "trade-golf",
+  "trade-hotel",
+];
+const tradeTemplates = new Set(
+  tradeSlugs.map((slug) =>
+    assignTemplate({ slug, categoryId: "elektricarji" }),
+  ),
+);
+ok(tradeTemplates.has("bento"), "TRADE sample includes bento");
+ok(tradeTemplates.has("outlined"), "TRADE sample includes outlined");
+
+const cleaningSlugs = [
+  "clean-alpha",
+  "clean-bravo",
+  "clean-charlie",
+  "clean-delta",
+  "clean-echo",
+  "clean-foxtrot",
+  "clean-golf",
+  "clean-hotel",
+];
+const cleaningTemplates = new Set(
+  cleaningSlugs.map((slug) =>
+    assignTemplate({ slug, categoryId: "cistilni-servisi" }),
+  ),
+);
+ok(cleaningTemplates.has("bento"), "CLEANING sample includes bento");
+ok(cleaningTemplates.has("type"), "CLEANING sample includes type");
+
+console.log("\n== assignPalette + compatibility ==");
+const p1 = assignPalette({
+  slug: "demo-salon-1",
+  categoryId: "frizerji",
+  templateId: "floating",
+});
+const p2 = assignPalette({
+  slug: "demo-salon-1",
+  categoryId: "frizerji",
+  templateId: "floating",
+});
+ok(p1 === p2, "same slug+category+template → same palette");
+ok(isCuratedPaletteId(p1), "assigned palette is curated");
+ok(
+  isPaletteCompatibleWithTemplate(p1, {
+    templateId: "floating",
+    categoryId: "frizerji",
+  }),
+  "assigned palette compatible with floating/frizerji",
+);
+ok(
+  assignPalette({
+    slug: "type-demo",
+    categoryId: "cistilni-servisi",
+    templateId: "type",
+  }) === "charcoal-signal",
+  "type template → charcoal-signal",
+);
+ok(
+  isPaletteCompatibleWithTemplate("charcoal-signal", { templateId: "type" }),
+  "charcoal-signal compatible with type",
+);
+ok(
+  !isPaletteCompatibleWithTemplate("ink-coral", { templateId: "type" }),
+  "ink-coral incompatible with type",
+);
+ok(
+  !isPaletteCompatibleWithTemplate("look-frizerji-01-mist", {
+    templateId: "floating",
+    categoryId: "frizerji",
+  }),
+  "legacy look-* palette not curated → incompatible",
+);
+ok(
+  !isPaletteCompatibleWithTemplate("burgundy-cream", {
+    templateId: "bento",
+    categoryId: "elektricarji",
+  }),
+  "beauty palette avoided for elektro trade",
+);
+
 console.log("\n== resolveTemplateId legacy ==");
 ok(
   resolveTemplateId({ appearance: "beauty" } as SiteConfig) === "floating",
@@ -72,6 +182,8 @@ ok(
   } as SiteConfig) === "outlined",
   "explicit templateId wins",
 );
+ok(!isTemplateId("not-a-template"), "invalid templateId rejected");
+ok(isTemplateId("bento" as TemplateId), "valid templateId accepted");
 
 console.log("\n== copy voice ==");
 const clientsDir = resolve(__dirname, "../src/content/clients");

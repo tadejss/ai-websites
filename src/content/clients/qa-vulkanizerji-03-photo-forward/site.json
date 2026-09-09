@@ -1,8 +1,9 @@
 {
   "appearance": "auto",
+  "templateId": "outlined",
   "lookId": "vulkanizerji-03-photo-forward",
   "theme": {
-    "paletteId": "look-vulkanizerji-03-bloom",
+    "paletteId": "ink-coral",
     "fontPairingId": "look-vulkanizerji-03"
   },
   "layout": {
@@ -35,6 +36,33 @@
       "photographerUrl": "https://www.pexels.com/@gustavo-fring",
       "searchQuery": "tire shop mechanic changing tire"
     }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8815800.webp",
+        "alt": "tire shop mechanic changing tire"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6870318.webp",
+        "alt": "tire shop mechanic changing tire"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6870330.webp",
+        "alt": "tire shop mechanic changing tire"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6870322.webp",
+        "alt": "tire shop mechanic changing tire"
+      }
+    ]
   },
   "brand": {
     "prefix": "QA",

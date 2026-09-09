@@ -1,11 +1,74 @@
 {
   "appearance": "beauty",
+  "templateId": "outlined",
+  "theme": {
+    "paletteId": "olive-ink"
+  },
   "layout": {
     "profileId": "services-first-visual",
     "heroImageSide": "right",
     "servicesImageSide": "none",
     "heroRatio": "5050",
     "benefitsMode": "visual"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3993296.avif",
+      "alt": "modern hair salon interior natural light european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3993296.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3993296",
+      "sourceUrl": "https://www.pexels.com/photo/black-leather-barber-chair-in-room-3993296/",
+      "photographer": "cottonbro studio",
+      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "searchQuery": "modern hair salon interior natural light european commercial"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3736396.avif",
+      "alt": "modern hair salon interior natural light european commercial",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3736396.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "3736396",
+      "sourceUrl": "https://www.pexels.com/photo/beauty-salon-interior-3736396/",
+      "photographer": "Polina Tankilevitch",
+      "photographerUrl": "https://www.pexels.com/@polina-tankilevitch",
+      "searchQuery": "modern hair salon interior natural light european commercial"
+    }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/19664877.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16048250.webp",
+        "alt": "modern hair salon interior natural light european commercial"
+      },
+      {
+        "src": "/stock/pexels/12790167.webp",
+        "alt": "professional hair coloring and styling session"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/35844833.webp",
+        "alt": "modern hair salon interior natural light"
+      }
+    ]
   },
   "brand": {
     "prefix": "Frizerski salon",

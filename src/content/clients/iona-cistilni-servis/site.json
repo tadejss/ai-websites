@@ -1,8 +1,9 @@
 {
   "appearance": "cleaning",
+  "templateId": "bento",
   "lookId": "cistilni-servisi-01-classic-split",
   "theme": {
-    "paletteId": "look-cistilni-servisi-01-sand",
+    "paletteId": "obsidian-lime",
     "fontPairingId": "look-cistilni-servisi-01"
   },
   "layout": {
@@ -56,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9462143.webp",
+        "alt": "professional house cleaner mopping floor european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6197116.webp",
+        "alt": "professional house cleaner mopping floor european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6196689.webp",
+        "alt": "professional house cleaner mopping floor european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6196566.webp",
+        "alt": "professional house cleaner mopping floor european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

@@ -1,11 +1,74 @@
 {
   "appearance": "beauty",
+  "templateId": "floating",
+  "theme": {
+    "paletteId": "burgundy-cream"
+  },
   "layout": {
     "profileId": "airy",
     "heroImageSide": "none",
     "servicesImageSide": "left",
     "heroRatio": "full-copy",
     "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/29877719.avif",
+      "alt": "professional skincare facial treatment and manicure delicate warm lighting",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/29877719.webp",
+      "width": 1300,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "29877719",
+      "sourceUrl": "https://www.pexels.com/photo/professional-manicure-process-in-polish-salon-29877719/",
+      "photographer": "Larysa Stratiichuk",
+      "photographerUrl": "https://www.pexels.com/@larysa-stratiichuk-1606923648",
+      "searchQuery": "professional skincare facial treatment and manicure delicate warm lighting"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7755142.avif",
+      "alt": "elegant nail salon interior dusty rose aesthetic lighting",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7755142.webp",
+      "width": 867,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7755142",
+      "sourceUrl": "https://www.pexels.com/photo/nail-polish-on-wooden-shelves-7755142/",
+      "photographer": "RDNE Stock project",
+      "photographerUrl": "https://www.pexels.com/@rdne",
+      "searchQuery": "elegant nail salon interior dusty rose aesthetic lighting"
+    }
+  },
+  "sections": {
+    "gallery": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Vpogled v naše delo",
+    "description": "Fotografije naših storitev in ambienta.",
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3997350.webp",
+        "alt": "nail salon manicure professional interior"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3735653.webp",
+        "alt": "nail salon manicure professional interior"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4677859.webp",
+        "alt": "nail salon manicure professional interior"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4677846.webp",
+        "alt": "nail salon manicure professional interior"
+      }
+    ]
   },
   "brand": {
     "prefix": "Salon z razgledom",

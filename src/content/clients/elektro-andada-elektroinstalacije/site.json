@@ -1,8 +1,9 @@
 {
   "appearance": "elektro",
+  "templateId": "bento",
   "lookId": "elektricarji-09-warm-soft",
   "theme": {
-    "paletteId": "look-elektricarji-09-dusk",
+    "paletteId": "citrus-ink",
     "fontPairingId": "look-elektricarji-09"
   },
   "layout": {
@@ -15,6 +16,38 @@
     "sectionRule": "none",
     "cardStyle": "soft"
   },
+  "images": {
+    "hero": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054474.avif",
+      "alt": "electrician working electrical panel",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054474.webp",
+      "width": 731,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "34054474",
+      "sourceUrl": "https://www.pexels.com/photo/young-technician-working-on-electrical-panel-34054474/",
+      "photographer": "Bulat843 🌙",
+      "photographerUrl": "https://www.pexels.com/@bulat843-1243575272",
+      "searchQuery": "electrician working electrical panel"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17842834.avif",
+      "alt": "electrician working electrical panel",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17842834.webp",
+      "width": 1039,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "17842834",
+      "sourceUrl": "https://www.pexels.com/photo/man-in-hard-hat-and-eyeglasses-working-with-electric-equipment-17842834/",
+      "photographer": "Fatih Yurtman",
+      "photographerUrl": "https://www.pexels.com/@fatihyurtman",
+      "searchQuery": "electrician working electrical panel"
+    }
+  },
   "sections": {
     "gallery": true,
     "pricing": true
@@ -24,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/34054464.webp",
+        "alt": "electrician working on modern electrical panel warm light"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9679179.webp",
+        "alt": "electrician working electrical panel"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5691588.webp",
+        "alt": "professional electrician installing wiring"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/10871737.webp",
+        "alt": "electrician working electrical panel"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

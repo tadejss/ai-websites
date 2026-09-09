@@ -183,12 +183,31 @@ async function regenerateShowcaseDemo(slug: string): Promise<void> {
       };
 
   console.log("Generating images…");
-  const images = await generateSiteImages(
+  const media = await generateSiteImages(
     slug,
     businessInput,
     siteConfig as SiteConfig,
   );
-  const withImages = images ? { ...siteConfig, images } : siteConfig;
+  const images = media?.images;
+  const withImages = images
+    ? {
+        ...siteConfig,
+        images,
+        ...(media?.galleryItems?.length
+          ? {
+              gallery: {
+                id: "galerija",
+                eyebrow: "Galerija",
+                title: "Vpogled v naše delo",
+                description:
+                  (siteConfig as SiteConfig).gallery?.description ||
+                  "Fotografije naših storitev in ambienta.",
+                items: media.galleryItems,
+              },
+            }
+          : {}),
+      }
+    : siteConfig;
   const variant = SHOWCASE_SECTION_VARIANTS[slug as ShowcaseReferenceSlug];
   console.log(`Sections: ${variant}`);
   const withSections = applyShowcaseSectionVariant(
@@ -203,6 +222,9 @@ async function regenerateShowcaseDemo(slug: string): Promise<void> {
   console.log(`Saved ${sitePath}`);
   if (images?.hero?.src) {
     console.log(`  hero: ${images.hero.src}`);
+  }
+  if (media?.galleryItems?.length) {
+    console.log(`  gallery: ${media.galleryItems.length} items`);
   }
 }
 

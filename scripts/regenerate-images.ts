@@ -29,19 +29,34 @@ async function main(): Promise<void> {
     JSON.parse(readFileSync(sitePath, "utf8")),
   );
 
-  const images = await generateSiteImages(slug, businessInput, siteConfig);
+  const media = await generateSiteImages(slug, businessInput, siteConfig);
 
-  if (!images) {
+  if (!media?.images) {
     console.error(`No images generated for "${slug}".`);
     process.exit(1);
   }
 
-  const updated = validateSiteConfig({ ...siteConfig, images });
+  const { images, galleryItems } = media;
+  const updated = validateSiteConfig({
+    ...siteConfig,
+    images,
+    sections: { ...siteConfig.sections, gallery: true },
+    gallery: {
+      id: "galerija",
+      eyebrow: "Galerija",
+      title: "Vpogled v naše delo",
+      description:
+        siteConfig.gallery?.description ||
+        "Fotografije naših storitev in ambienta.",
+      items: galleryItems,
+    },
+  });
   writeFileSync(sitePath, `${JSON.stringify(updated, null, 2)}\n`, "utf8");
 
   console.log(`Updated images for ${slug}:`);
   console.log(`  hero: ${images.hero.src}`);
   console.log(`  services: ${images.services.src}`);
+  console.log(`  gallery: ${galleryItems.length} items`);
 }
 
 main().catch((error) => {

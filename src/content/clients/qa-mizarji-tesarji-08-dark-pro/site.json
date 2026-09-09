@@ -1,8 +1,9 @@
 {
   "appearance": "construction",
+  "templateId": "bento",
   "lookId": "mizarji-tesarji-08-dark-pro",
   "theme": {
-    "paletteId": "look-mizarji-tesarji-08-copper",
+    "paletteId": "cobalt-cream",
     "fontPairingId": "look-mizarji-tesarji-08"
   },
   "layout": {
@@ -56,7 +57,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7492582.webp",
+        "alt": "carpenter woodworking workshop professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7480248.webp",
+        "alt": "carpenter woodworking workshop professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/5089116.webp",
+        "alt": "carpenter woodworking workshop professional european commercial"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6790050.webp",
+        "alt": "carpenter woodworking workshop professional european commercial"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

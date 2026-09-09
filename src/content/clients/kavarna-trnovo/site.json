@@ -1,4 +1,9 @@
 {
+  "appearance": "default",
+  "templateId": "type",
+  "theme": {
+    "paletteId": "charcoal-signal"
+  },
   "brand": {
     "prefix": "Kavarna",
     "highlight": "Trnovo"
@@ -147,7 +152,6 @@
     "address": "Devinska ulica 1c, 1000 Ljubljana, Slovenia",
     "rights": "© 2025 Kavarna Trnovo. Vse pravice pridržane."
   },
-  "appearance": "default",
   "business": {
     "name": "Kavarna Trnovo",
     "address": "Devinska ulica 1c, 1000 Ljubljana, Slovenia",

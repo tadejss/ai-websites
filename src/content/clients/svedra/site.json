@@ -1,7 +1,8 @@
 {
   "appearance": "default",
+  "templateId": "type",
   "theme": {
-    "paletteId": "midnight-amber",
+    "paletteId": "charcoal-signal",
     "fontPairingId": "geist-geist"
   },
   "images": {

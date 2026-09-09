@@ -83,12 +83,13 @@ export async function generateClient(
     templateId,
   } as SiteConfig;
 
-  const images = await generateSiteImages(
+  const media = await generateSiteImages(
     slug,
     businessInput,
     siteConfigBase,
     { imagePlan: getTemplateImagePlan(templateId) },
   );
+  const images = media?.images;
 
   // Re-assign with real image signals (e.g. demote floating when hero missing).
   templateId = assignTemplate({
@@ -117,7 +118,22 @@ export async function generateClient(
   };
 
   const withImages = images ? { ...siteConfig, images } : siteConfig;
-  const withSections = applyNewLeadSectionDefaults(withImages as SiteConfig);
+  const withGalleryItems =
+    media?.galleryItems && media.galleryItems.length > 0
+      ? {
+          ...withImages,
+          gallery: {
+            id: "galerija",
+            eyebrow: "Galerija",
+            title: "Vpogled v naše delo",
+            description:
+              withImages.gallery?.description ||
+              "Fotografije naših storitev in ambienta.",
+            items: media.galleryItems,
+          },
+        }
+      : withImages;
+  const withSections = applyNewLeadSectionDefaults(withGalleryItems as SiteConfig);
   const persistedConfig = validateSiteConfig(withSections);
 
   const clientDir = resolve(__dirname, "../content/clients", slug);

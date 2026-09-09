@@ -2,6 +2,7 @@ import type { ImagePoolCategoryId } from "@/images/image-pool-category";
 import {
   CURATED_PALETTES,
   TEMPLATE_DEFAULT_PALETTE_ID,
+  isCuratedPaletteId,
   type CuratedPalette,
   type PaletteSuitabilityTag,
 } from "@/theme/palettes/curated";
@@ -148,4 +149,36 @@ export function assignPalette(input: {
 
   const index = stableHash(input.slug) % candidates.length;
   return candidates[index]!.id;
+}
+
+/**
+ * Whether a palette id may be persisted with the given template/category.
+ * Mirrors assignPalette hard constraints: curated id, not avoided, type→charcoal-signal.
+ */
+export function isPaletteCompatibleWithTemplate(
+  paletteId: string | undefined | null,
+  input: {
+    templateId?: TemplateId | null;
+    categoryId?: ImagePoolCategoryId | null;
+  },
+): boolean {
+  if (!paletteId || !isCuratedPaletteId(paletteId)) {
+    return false;
+  }
+
+  if (input.templateId === "type") {
+    return paletteId === "charcoal-signal";
+  }
+
+  const palette = CURATED_PALETTES.find((entry) => entry.id === paletteId);
+  if (!palette) {
+    return false;
+  }
+
+  const tags = suitabilityTagsFor({
+    categoryId: input.categoryId,
+    templateId: input.templateId,
+  });
+
+  return !hasTag(palette, tags, "avoidFor");
 }

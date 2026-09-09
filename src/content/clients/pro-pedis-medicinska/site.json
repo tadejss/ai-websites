@@ -1,7 +1,8 @@
 {
   "appearance": "default",
+  "templateId": "floating",
   "theme": {
-    "paletteId": "charcoal-cyan",
+    "paletteId": "burgundy-cream",
     "fontPairingId": "outfit-bitter"
   },
   "images": {
@@ -45,7 +46,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7755142.webp",
+        "alt": "elegant nail salon interior dusty rose aesthetic lighting"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3735653.webp",
+        "alt": "nail salon manicure professional interior"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3997350.webp",
+        "alt": "nail salon manicure professional interior"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4677859.webp",
+        "alt": "nail salon manicure professional interior"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",

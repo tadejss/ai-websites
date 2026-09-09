@@ -1,8 +1,9 @@
 {
   "appearance": "auto",
+  "templateId": "bento",
   "lookId": "avtomehaniki-01-classic-split",
   "theme": {
-    "paletteId": "look-avtomehaniki-01-sand",
+    "paletteId": "obsidian-lime",
     "fontPairingId": "look-avtomehaniki-01"
   },
   "layout": {
@@ -18,11 +19,11 @@
   "images": {
     "hero": {
       "src": "/clients/elektro-ivan-troha/hero.jpg",
-      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
       "alt": "Električar med delom na električni plošči v delavnici",
-      "searchQuery": "electrician working electrical panel",
+      "srcFallback": "/clients/elektro-ivan-troha/hero.jpg",
       "format": "jpg",
-      "fallbackFormat": "jpg"
+      "fallbackFormat": "jpg",
+      "searchQuery": "electrician working electrical panel"
     },
     "services": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/elektromehanika-marko-zupancic/services.avif",
@@ -49,7 +50,24 @@
     "eyebrow": "Galerija",
     "title": "Vpogled v naše delo",
     "description": "Fotografije naših storitev in ambienta.",
-    "items": []
+    "items": [
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/9626877.webp",
+        "alt": "auto mechanic working on car engine"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8985967.webp",
+        "alt": "professional car mechanic working in bright workshop interior"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8985924.webp",
+        "alt": "professional auto repair shop mechanic working on car engine"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/4315574.webp",
+        "alt": "auto mechanic working on car engine"
+      }
+    ]
   },
   "pricing": {
     "id": "cenik",
