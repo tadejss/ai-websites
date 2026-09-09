@@ -13,5 +13,5 @@ export const getCachedCustomerSlugSet = unstable_cache(
     return [...slugs];
   },
   ["customer-slugs"],
-  { revalidate: 60, tags: [CUSTOMER_SLUGS_CACHE_TAG] },
+  { revalidate: 300, tags: [CUSTOMER_SLUGS_CACHE_TAG] },
 );

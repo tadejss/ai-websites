@@ -1,4 +1,5 @@
 import { revalidatePath, revalidateTag } from "next/cache";
+import { publicOnboardingTag } from "@/onboarding/public-onboarding-cache";
 
 export const ADMIN_INDEX_TAG = "admin-entity-index";
 export const ADMIN_QUEUE_TAG = "admin-queue";
@@ -11,12 +12,14 @@ export function revalidateAdminQueue(): void {
   revalidateTag(ADMIN_QUEUE_TAG, "max");
 }
 
-/** ISR bust for `/{slug}` (`revalidate = 300`). Overlay itself reads Neon on render. */
+/** ISR + public onboarding Data Cache bust for `/{slug}` (`revalidate = 300`). */
 export function revalidateCustomerPage(slug: string): void {
-  if (!slug.trim()) {
+  const trimmed = slug.trim();
+  if (!trimmed) {
     return;
   }
-  revalidatePath(`/${slug.trim()}`);
+  revalidatePath(`/${trimmed}`);
+  revalidateTag(publicOnboardingTag(trimmed), "max");
 }
 
 export async function afterAdminMutation(slug?: string): Promise<void> {

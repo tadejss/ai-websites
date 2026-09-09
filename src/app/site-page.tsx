@@ -1,4 +1,3 @@
-import { appearanceRegistry } from "@/appearances/registry";
 import { resolveAppearance } from "@/appearances/resolve-appearance";
 import { CustomerPreparingBar } from "@/billing/CustomerPreparingBar";
 import { DemoPurchaseBar } from "@/billing/DemoPurchaseBar";
@@ -6,27 +5,38 @@ import { isShowcaseReferenceSlug } from "@/billing/showcase-slugs";
 import type { SiteConfig } from "@/content/types/site";
 import { readLead } from "@/leads/store";
 import { getCustomerChromeState } from "@/onboarding/customer-chrome";
-import { resolveLookForSite } from "@/catalog/resolve-look";
-import { resolveLookCssVars } from "@/catalog/resolve-look-css";
-import { resolveThemeCssVars } from "@/theme/resolve-theme";
+import { resolveTemplateId } from "@/templates/resolve-template";
+import { loadTemplatePage } from "@/templates/load-template-page";
+import { templateFontClassName } from "@/templates/fonts";
 import {
-  resolveTemplateId,
-  templateFontClassName,
-  templateRegistry,
   resolveTemplateStructure,
   mergeTemplatePaletteCssVars,
-} from "@/templates";
+} from "@/templates/tokens";
 import {
-  getPalette,
+  getCuratedPalette,
+  mapLegacyPaletteIdToCurated,
   TEMPLATE_DEFAULT_PALETTE_ID,
-} from "@/theme/palettes";
+} from "@/theme/palettes/curated";
+import type { TemplateId } from "@/templates/types";
+import type { Palette } from "@/theme/types";
 
 type Props = {
   siteConfig: SiteConfig;
   siteSlug?: string;
-  /** Local QA override — curated palette id. */
+  /** Local QA override — curated palette id (dev palette-preview only). */
   paletteOverride?: string;
 };
+
+function resolveDemoPalette(
+  paletteId: string,
+  templateId: TemplateId,
+): Palette {
+  return (
+    getCuratedPalette(paletteId) ??
+    getCuratedPalette(TEMPLATE_DEFAULT_PALETTE_ID[templateId]) ??
+    mapLegacyPaletteIdToCurated(paletteId)
+  );
+}
 
 export async function SitePage({
   siteConfig,
@@ -41,8 +51,15 @@ export async function SitePage({
   const showPurchaseBar =
     appearance !== "zbrendiraj" && !isCustomer && !paletteOverride;
 
-  // Marketing site stays on legacy appearance path.
+  // Marketing site stays on legacy appearance path (lazy — keep normal demos lean).
   if (appearance === "zbrendiraj") {
+    const [{ appearanceRegistry }, { resolveLookForSite }, { resolveLookCssVars }, { resolveThemeCssVars }] =
+      await Promise.all([
+        import("@/appearances/registry"),
+        import("@/catalog/resolve-look"),
+        import("@/catalog/resolve-look-css"),
+        import("@/theme/resolve-theme"),
+      ]);
     const { Page } = appearanceRegistry.zbrendiraj;
     const look = resolveLookForSite(siteConfig);
     const themeStyle = look
@@ -73,14 +90,13 @@ export async function SitePage({
   }
 
   const templateId = resolveTemplateId(siteConfig);
-  const { Page } = templateRegistry[templateId];
+  const { Page } = await loadTemplatePage(templateId);
   const structure = resolveTemplateStructure(templateId);
   const paletteId =
     paletteOverride ||
     siteConfig.theme?.paletteId ||
     TEMPLATE_DEFAULT_PALETTE_ID[templateId];
-  const palette =
-    getPalette(paletteId) ?? getPalette(TEMPLATE_DEFAULT_PALETTE_ID[templateId])!;
+  const palette = resolveDemoPalette(paletteId, templateId);
   const themeStyle = mergeTemplatePaletteCssVars(structure, palette, templateId);
   const fontClass = templateFontClassName(templateId);
 

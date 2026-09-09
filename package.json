@@ -26,6 +26,7 @@
     "update-lead": "tsx scripts/update-lead.ts",
     "backfill-place-ids": "tsx scripts/backfill-place-ids.ts",
     "test-guards": "tsx scripts/test-generation-guards.ts",
+    "test-demo-render-guards": "tsx scripts/test-demo-render-guards.ts",
     "test-templates-2026": "tsx scripts/test-templates-2026.ts",
     "test-template-smoke": "tsx scripts/test-template-smoke.ts",
     "test-curated-palettes": "tsx scripts/test-curated-palettes.ts",

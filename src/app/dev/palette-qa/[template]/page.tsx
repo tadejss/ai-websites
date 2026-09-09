@@ -40,7 +40,7 @@ export default async function PaletteQaPage({ params }: Props) {
       <ol className="mx-auto flex max-w-[1280px] flex-col gap-12">
         {CURATED_PALETTES.map((palette, index) => {
           const n = index + 1;
-          const src = `/${slug}?palette=${encodeURIComponent(palette.id)}`;
+          const src = `/dev/palette-preview/${slug}/${encodeURIComponent(palette.id)}`;
           return (
             <li key={palette.id} className="space-y-2">
               <div className="flex items-baseline justify-between gap-3">
