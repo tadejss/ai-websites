@@ -162,10 +162,28 @@ async function main(): Promise<void> {
       continue;
     }
 
+    let site: SiteConfig;
+    try {
+      site = JSON.parse(readFileSync(sitePath, "utf8")) as SiteConfig;
+    } catch (error) {
+      counts.failed += 1;
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`[fail] ${slug}: ${message}`);
+      continue;
+    }
+
+    // Marketing brand site keeps its own appearance shell + palette — never remap.
+    if (site.appearance === "zbrendiraj") {
+      counts.skipped += 1;
+      if (verbose) {
+        console.log(`[skip] ${slug}: zbrendiraj appearance is exempt`);
+      }
+      continue;
+    }
+
     counts.processed += 1;
 
     try {
-      const site = JSON.parse(readFileSync(sitePath, "utf8")) as SiteConfig;
       const categoryId = resolveCategory(slug, clientsDir);
       if (!categoryId) {
         counts.categoryFailures += 1;
