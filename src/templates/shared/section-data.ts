@@ -4,7 +4,16 @@ import type {
   PricingItem,
   SiteConfig,
 } from "@/content/types/site";
-import { isPricingSectionVisible } from "@/content/sections";
+import {
+  getWhyChooseUsStepDescription,
+  getWhyChooseUsStepTitle,
+} from "@/content/types/site";
+import {
+  isBenefitsSectionFlagEnabled,
+  isFinalCtaSectionFlagEnabled,
+  isPricingSectionVisible,
+  isProcessSectionFlagEnabled,
+} from "@/content/sections";
 
 /** Merged offer row: prefer pricing items; fall back to services without price. */
 export type OfferItem = {
@@ -13,6 +22,16 @@ export type OfferItem = {
   price?: string;
   unit?: string;
   featured?: boolean;
+};
+
+export type BenefitItem = {
+  title: string;
+  description?: string;
+};
+
+export type ProcessStepItem = {
+  title: string;
+  description?: string;
 };
 
 export function getOfferItems(config: SiteConfig): OfferItem[] {
@@ -41,7 +60,7 @@ export function getOfferSectionMeta(config: SiteConfig): {
 } {
   if (isPricingSectionVisible(config) && config.pricing) {
     return {
-      id: "cenik",
+      id: config.pricing.id || "cenik",
       eyebrow: config.pricing.eyebrow || "Storitve in cene",
       title: config.pricing.title || "Storitve in cene",
       description: config.pricing.description,
@@ -57,6 +76,72 @@ export function getOfferSectionMeta(config: SiteConfig): {
   };
 }
 
+/**
+ * True when this config opted into the expanded section composition.
+ * Legacy demos omit benefits/process/finalCta flags → exact historical About behavior.
+ */
+export function usesExpandedSectionComposition(config: SiteConfig): boolean {
+  return (
+    isBenefitsSectionFlagEnabled(config) ||
+    isProcessSectionFlagEnabled(config) ||
+    isFinalCtaSectionFlagEnabled(config)
+  );
+}
+
+function legacyAboutPoints(config: SiteConfig): string[] {
+  const w = config.whyChooseUs;
+  return (
+    w.highlights?.filter(Boolean).slice(0, 4) ??
+    w.benefits?.map((b) => b.title || b.label).filter(Boolean).slice(0, 4) ??
+    []
+  );
+}
+
+export function getBenefitsContent(config: SiteConfig): {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description?: string;
+  items: BenefitItem[];
+} {
+  const w = config.whyChooseUs;
+  const fromBenefits: BenefitItem[] = [];
+  for (const b of w.benefits ?? []) {
+    const title = (b.title || b.label || "").trim();
+    if (!title) {
+      continue;
+    }
+    const description = b.description?.trim();
+    fromBenefits.push({
+      title,
+      ...(description ? { description } : {}),
+    });
+  }
+
+  const items: BenefitItem[] =
+    fromBenefits.length >= 3
+      ? fromBenefits.slice(0, 4)
+      : (w.highlights ?? [])
+          .filter(Boolean)
+          .slice(0, 4)
+          .map((title) => ({ title }));
+
+  return {
+    id: "prednosti",
+    eyebrow: "Zakaj mi",
+    title: "Zakaj nas izberejo",
+    description: undefined,
+    items,
+  };
+}
+
+export function isBenefitsVisible(config: SiteConfig): boolean {
+  return (
+    isBenefitsSectionFlagEnabled(config) &&
+    getBenefitsContent(config).items.length >= 3
+  );
+}
+
 export function getAboutContent(config: SiteConfig): {
   id: string;
   eyebrow: string;
@@ -65,10 +150,8 @@ export function getAboutContent(config: SiteConfig): {
   points: string[];
 } {
   const w = config.whyChooseUs;
-  const points =
-    w.highlights?.filter(Boolean).slice(0, 4) ??
-    w.benefits?.map((b) => b.title || b.label).filter(Boolean).slice(0, 4) ??
-    [];
+  // Expanded + Benefits: About is intro-only (points live in Benefits).
+  const points = isBenefitsVisible(config) ? [] : legacyAboutPoints(config);
 
   return {
     id: "o-nas",
@@ -80,6 +163,88 @@ export function getAboutContent(config: SiteConfig): {
       config.metadata.description,
     points,
   };
+}
+
+export function getProcessContent(config: SiteConfig): {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description?: string;
+  steps: ProcessStepItem[];
+} {
+  const stepsConfig = config.whyChooseUs.steps;
+  const raw = stepsConfig?.items ?? [];
+  const steps: ProcessStepItem[] = [];
+  for (const step of raw) {
+    const title = getWhyChooseUsStepTitle(step).trim();
+    if (!title) {
+      continue;
+    }
+    const description = getWhyChooseUsStepDescription(step)?.trim();
+    steps.push({
+      title,
+      ...(description ? { description } : {}),
+    });
+    if (steps.length >= 4) {
+      break;
+    }
+  }
+
+  return {
+    id: stepsConfig?.id?.trim() || "postopek",
+    eyebrow: stepsConfig?.eyebrow?.trim() || "Postopek",
+    title: stepsConfig?.title?.trim() || "Kako poteka sodelovanje",
+    description: stepsConfig?.description?.trim() || undefined,
+    steps,
+  };
+}
+
+export function isProcessVisible(config: SiteConfig): boolean {
+  if (!isProcessSectionFlagEnabled(config)) {
+    return false;
+  }
+  const { steps } = getProcessContent(config);
+  return steps.length >= 3;
+}
+
+export function getServiceAreaContent(config: SiteConfig): {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+} | null {
+  const area = config.serviceArea;
+  if (!area?.description?.trim() || !area.title?.trim()) {
+    return null;
+  }
+  return {
+    id: area.id?.trim() || "obmocje",
+    eyebrow: area.eyebrow?.trim() || "Območje",
+    title: area.title.trim(),
+    description: area.description.trim(),
+  };
+}
+
+export function isServiceAreaVisible(config: SiteConfig): boolean {
+  return getServiceAreaContent(config) !== null;
+}
+
+export function getFinalCtaContent(config: SiteConfig): {
+  id: string;
+  title: string;
+  description: string;
+} {
+  return {
+    id: "klic-k-akciji",
+    title: config.hero.primaryCta?.trim() || config.nav.cta?.trim() || "Pokličite nas",
+    description:
+      config.contact.description?.trim() ||
+      "Za termin ali informacije nas pokličite.",
+  };
+}
+
+export function isFinalCtaVisible(config: SiteConfig): boolean {
+  return isFinalCtaSectionFlagEnabled(config);
 }
 
 /** Gallery items from config, or hero/services images as visual fallback. */

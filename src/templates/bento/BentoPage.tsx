@@ -1,20 +1,32 @@
 import type { SiteConfig } from "@/content/types/site";
 import { PhoneCta } from "../shared/PhoneCta";
+import { TemplateBenefitsSection } from "../shared/TemplateBenefitsSection";
+import { TemplateFinalCtaSection } from "../shared/TemplateFinalCtaSection";
 import { TemplateFooter } from "../shared/TemplateFooter";
 import { TemplateGalleryCarousel } from "../shared/TemplateGalleryCarousel";
 import { TemplateImage } from "../shared/TemplateImage";
+import { TemplateProcessSection } from "../shared/TemplateProcessSection";
+import { TemplateServiceAreaSection } from "../shared/TemplateServiceAreaSection";
 import { TemplateTopBar } from "../shared/TemplateTopBar";
 import { getAddress, getEmail, getHours } from "../shared/contact-data";
 import {
   getAboutContent,
+  getBenefitsContent,
   getFaqItems,
+  getFinalCtaContent,
   getGalleryItems,
   getOfferItems,
   getOfferSectionMeta,
+  getProcessContent,
+  getServiceAreaContent,
   isAboutVisible,
+  isBenefitsVisible,
   isFaqVisible,
+  isFinalCtaVisible,
   isGalleryVisible,
   isOfferVisible,
+  isProcessVisible,
+  isServiceAreaVisible,
 } from "../shared/section-data";
 
 type Props = { siteConfig: SiteConfig; siteSlug: string };
@@ -22,10 +34,14 @@ type Props = { siteConfig: SiteConfig; siteSlug: string };
 export function BentoPage({ siteConfig, siteSlug }: Props) {
   const heroImage = siteConfig.images?.hero;
   const about = getAboutContent(siteConfig);
+  const benefits = getBenefitsContent(siteConfig);
   const offerMeta = getOfferSectionMeta(siteConfig);
   const offers = getOfferItems(siteConfig);
+  const process = getProcessContent(siteConfig);
   const gallery = getGalleryItems(siteConfig);
+  const serviceArea = getServiceAreaContent(siteConfig);
   const faqs = getFaqItems(siteConfig);
+  const finalCta = getFinalCtaContent(siteConfig);
 
   return (
     <div id="top" className="pb-10">
@@ -73,7 +89,10 @@ export function BentoPage({ siteConfig, siteSlug }: Props) {
         </section>
 
         {isAboutVisible(siteConfig) ? (
-          <section id={about.id} className="mt-10 grid grid-cols-1 gap-3 lg:grid-cols-3">
+          <section
+            id={about.id}
+            className="mt-10 grid grid-cols-1 gap-3 lg:grid-cols-3"
+          >
             <div className="rounded-[var(--radius)] bg-[var(--surface)] p-5 lg:col-span-2 lg:p-7">
               <h2 className="text-xl font-bold tracking-tight sm:text-2xl">
                 {about.title}
@@ -95,6 +114,17 @@ export function BentoPage({ siteConfig, siteSlug }: Props) {
               </ul>
             ) : null}
           </section>
+        ) : null}
+
+        {isBenefitsVisible(siteConfig) ? (
+          <TemplateBenefitsSection
+            variant="bento"
+            id={benefits.id}
+            eyebrow={benefits.eyebrow}
+            title={benefits.title}
+            description={benefits.description}
+            items={benefits.items}
+          />
         ) : null}
 
         {isOfferVisible(siteConfig) ? (
@@ -153,6 +183,27 @@ export function BentoPage({ siteConfig, siteSlug }: Props) {
           </section>
         ) : null}
 
+        {isFinalCtaVisible(siteConfig) ? (
+          <TemplateFinalCtaSection
+            variant="bento"
+            id={finalCta.id}
+            title={finalCta.title}
+            description={finalCta.description}
+            siteConfig={siteConfig}
+          />
+        ) : null}
+
+        {isProcessVisible(siteConfig) ? (
+          <TemplateProcessSection
+            variant="bento"
+            id={process.id}
+            eyebrow={process.eyebrow}
+            title={process.title}
+            description={process.description}
+            steps={process.steps}
+          />
+        ) : null}
+
         {isGalleryVisible(siteConfig) ? (
           <section id="galerija" className="mt-10">
             <p className="text-sm text-[var(--muted)]">
@@ -165,6 +216,16 @@ export function BentoPage({ siteConfig, siteSlug }: Props) {
               <TemplateGalleryCarousel items={gallery} frame="soft" />
             </div>
           </section>
+        ) : null}
+
+        {isServiceAreaVisible(siteConfig) && serviceArea ? (
+          <TemplateServiceAreaSection
+            variant="bento"
+            id={serviceArea.id}
+            eyebrow={serviceArea.eyebrow}
+            title={serviceArea.title}
+            description={serviceArea.description}
+          />
         ) : null}
 
         {isFaqVisible(siteConfig) ? (

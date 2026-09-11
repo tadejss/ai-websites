@@ -1,54 +1,46 @@
 {
   "appearance": "beauty",
   "templateId": "floating",
-  "lookId": "frizerji-03-photo-forward",
   "theme": {
-    "paletteId": "warm-black",
-    "fontPairingId": "look-frizerji-03",
-    "radiusScale": "sharp"
-  },
-  "layout": {
-    "profileId": "classic",
-    "heroImageSide": "right",
-    "servicesImageSide": "right",
-    "heroRatio": "6040",
-    "benefitsMode": "default"
+    "paletteId": "burgundy-cream"
   },
   "images": {
     "hero": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-luna/hero.avif",
-      "alt": "Topel in svetel frizerski salon v Mariboru z urejenim prostorom za striženje",
+      "alt": "Elegantna notranjost frizerskega salona z mehko svetlobo",
       "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-luna/hero.webp",
-      "width": 1300,
-      "height": 1300,
-      "format": "avif",
-      "fallbackFormat": "webp",
-      "provider": "pexels",
-      "sourceId": "26447047",
-      "sourceUrl": "https://www.pexels.com/photo/black-and-white-photo-of-a-chair-standing-by-the-wall-26447047/",
-      "photographer": "Indybindy",
-      "photographerUrl": "https://www.pexels.com/@indybindy-770160605",
-      "searchQuery": "professional hair styling and coloring salon interior"
-    },
-    "services": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-luna/services.avif",
-      "alt": "Strokovno barvanje las in balayage tehnika v mirnem salonu",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-luna/services.webp",
       "width": 975,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "1895701",
-      "sourceUrl": "https://www.pexels.com/photo/salon-chair-beside-oil-heater-in-front-of-mirror-inside-room-1895701/",
-      "photographer": "Lisa Fotios",
-      "photographerUrl": "https://www.pexels.com/@fotios-photos",
-      "searchQuery": "warm hair salon interior cozy lighting styling"
+      "sourceId": "17803510",
+      "sourceUrl": "https://www.pexels.com/photo/entrance-to-a-hair-salon-17803510/",
+      "photographer": "Plastic Lines",
+      "photographerUrl": "https://www.pexels.com/@plasticlines",
+      "searchQuery": "modern hair salon interior natural light european commercial"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-luna/services.avif",
+      "alt": "Strokovno barvanje las in balayage tehnika v teku",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-luna/services.webp",
+      "width": 965,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "7750103",
+      "sourceUrl": "https://www.pexels.com/photo/black-vanity-chair-near-round-vanity-mirror-7750103/",
+      "photographer": "Max Vakhtbovych",
+      "photographerUrl": "https://www.pexels.com/@artbovich",
+      "searchQuery": "modern hair salon interior natural light"
     }
   },
   "sections": {
     "gallery": true,
-    "pricing": true
+    "pricing": true,
+    "benefits": true,
+    "finalCta": true
   },
   "gallery": {
     "id": "galerija",
@@ -57,29 +49,37 @@
     "description": "Fotografije naših storitev in ambienta.",
     "items": [
       {
-        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-luna/hero.avif",
-        "alt": "Topel in svetel frizerski salon v Mariboru z urejenim prostorom za striženje"
-      },
-      {
-        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/frizerski-salon-luna/services.avif",
-        "alt": "Strokovno barvanje las in balayage tehnika v mirnem salonu"
-      },
-      {
-        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/19664877.webp",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/17803510.webp",
         "alt": "modern hair salon interior natural light european commercial"
       },
       {
-        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16048250.webp",
-        "alt": "modern hair salon interior natural light european commercial"
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7750103.webp",
+        "alt": "modern hair salon interior natural light"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7750122.webp",
+        "alt": "modern hair salon interior natural light"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/7823407.webp",
+        "alt": "modern hair salon interior natural light"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/13809247.webp",
+        "alt": "professional barber trimming beard with scissors dark ambient"
+      },
+      {
+        "src": "/stock/pexels/12790167.webp",
+        "alt": "professional hair coloring and styling session"
       }
     ]
   },
   "pricing": {
     "id": "cenik",
     "eyebrow": "Cenik",
-    "title": "Pregled storitev in cen",
-    "description": "Okvirne cene frizerskih storitev v našem salonu.",
-    "disclaimer": "Cenik je informativen. Za aktualne cene in rezervacijo termina nas kontaktirajte.",
+    "title": "Storitve in cene",
+    "description": "Pregled frizerskih storitev z informativnimi cenami.",
+    "disclaimer": "Cenik je informativen. Za točne cene in rezervacijo termina nas kontaktirajte.",
     "items": [
       {
         "name": "Žensko striženje",
@@ -88,52 +88,65 @@
         "featured": true
       },
       {
-        "name": "Barvanje las",
-        "description": "Enobarvno barvanje z nego",
-        "price": "od 45 €"
-      },
-      {
-        "name": "Balayage",
-        "description": "Sodobna tehnika senčenja las",
-        "price": "od 75 €"
+        "name": "Barvanje in balayage",
+        "description": "Barvanje narastka ali modni prameni",
+        "price": "od 50 €"
       },
       {
         "name": "Oblikovanje pričeske",
-        "description": "Fen frizura ali kodranje",
+        "description": "Fen frizura ali svečana pričeska",
         "price": "od 20 €"
       },
       {
-        "name": "Globinska nega las",
-        "description": "Regeneracijska maska in masaža lasišča",
+        "name": "Nega in regeneracija las",
+        "description": "Globinska nega in maska za lase",
         "price": "od 15 €"
       }
     ]
+  },
+  "serviceArea": {
+    "id": "obmocje",
+    "eyebrow": "Območje",
+    "title": "Kje se nahajamo",
+    "description": "Frizerski salon Luna se nahaja na Primerjevi ulici 12 v Mariboru in sprejema stranke iz Maribora z okolico."
   },
   "brand": {
     "prefix": "Frizerski salon",
     "highlight": "Luna"
   },
   "metadata": {
-    "title": "Frizerski salon Luna | Primer frizerskega salona",
-    "description": "Primer spletne strani za frizerski salon: striženje, balayage in nega las z osebnim pristopom."
+    "title": "Frizerski salon Luna | Maribor",
+    "description": "Miren salon za ženske, ki želijo svež in urejen videz."
   },
   "nav": {
     "links": [
       {
-        "href": "#storitve",
-        "label": "Storitve"
+        "href": "#o-nas",
+        "label": "O nas"
       },
       {
-        "href": "#zakaj-mi",
-        "label": "Zakaj mi"
+        "href": "#prednosti",
+        "label": "Prednosti"
+      },
+      {
+        "href": "#cenik",
+        "label": "Storitve"
       },
       {
         "href": "#galerija",
         "label": "Galerija"
       },
       {
-        "href": "#cenik",
-        "label": "Cenik"
+        "href": "#obmocje",
+        "label": "Območje"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      },
+      {
+        "href": "#klic-k-akciji",
+        "label": "Pokličite"
       },
       {
         "href": "#kontakt",
@@ -143,101 +156,81 @@
     "cta": "Rezerviraj termin"
   },
   "hero": {
-    "badge": "",
-    "title": "Miren salon za svež in",
-    "titleHighlight": "urejen videz",
-    "description": "Prepustite se strokovni negi v mirnem ambientu brez hitenja. Prilagojen pristop za vsako žensko, ki išče urejeno pričesko v Mariboru z okolico.",
+    "badge": "Frizerski salon Luna",
+    "title": "Miren salon za ženske, ki želijo",
+    "titleHighlight": "svež in urejen videz",
+    "description": "Prepustite se osebnemu pristopu v umirjenem ambientu v Mariboru.",
     "primaryCta": "Rezerviraj termin",
-    "secondaryCta": "Naše storitve",
-    "stats": [
-      {
-        "value": "8 let",
-        "label": "izkušenj"
-      },
-      {
-        "value": "Topel ambient",
-        "label": "Topel ambient"
-      },
-      {
-        "value": "Osebni pristop",
-        "label": "Osebni pristop"
-      },
-      {
-        "value": "Svež videz",
-        "label": "Svež videz"
-      }
-    ]
+    "secondaryCta": "Preglej storitve",
+    "stats": []
   },
   "services": {
     "id": "storitve",
-    "eyebrow": "Kaj nudimo",
-    "title": "Storitve za vaše lase",
-    "description": "V našem salonu v Mariboru poskrbimo za zdravje in lepoto vaših las z izbranimi tehnikami in kakovostnimi izdelki.",
+    "eyebrow": "Storitve",
+    "title": "Naše storitve",
+    "description": "Celovita nega las v prijetnem salonu.",
     "items": [
       {
         "title": "Žensko striženje",
-        "description": "Natančno striženje, prilagojeno obliki vašega obraza in vašemu življenjskemu slogu.",
+        "description": "Oblikovanje pričeske po vaših željah.",
         "icon": "service-1"
       },
       {
         "title": "Barvanje in balayage",
-        "description": "Sodobne tehnike barvanja in balayage za naraven videz in čudovit sijaj vaših las.",
+        "description": "Sodobne tehnike barvanja in prameni.",
         "icon": "service-2"
       },
       {
-        "title": "Oblikovanje pričesk",
-        "description": "Urejanje pričesk za vsak dan ali posebne priložnosti, ki poudarijo vašo naravno lepoto.",
+        "title": "Nega in regeneracija",
+        "description": "Hranljive maske za zdravje las.",
         "icon": "service-3"
-      },
-      {
-        "title": "Nega in regeneracija las",
-        "description": "Globinska nega in regeneracija za obnovo suhih in poškodovanih las.",
-        "icon": "service-4"
       }
     ]
   },
   "whyChooseUs": {
-    "id": "zakaj-mi",
-    "eyebrow": "Zakaj mi",
-    "title": "Izberite mirno okolje in strokovnost",
-    "description": "V Frizerskem salonu Luna se posvetimo vsaki stranki posebej ter poskrbimo za sproščeno izkušnjo in urejen videz.",
+    "id": "o-nas",
+    "eyebrow": "O nas",
+    "title": "Udoben prostor za vaše lase",
+    "description": "Frizerski salon Luna nudi miren ambient brez hitenja, kjer se v celoti posvetimo željam vsake stranke.",
     "highlights": [
-      "Miren ambient brez hitenja",
-      "Sodobne tehnike barvanja",
-      "Osebni pristop k vsaki stranki"
+      "Miren ambient",
+      "Sodobne tehnike",
+      "Osebni pristop"
     ],
     "benefits": [
       {
-        "stat": "Miren ambient",
-        "label": "Miren ambient",
-        "description": "Sproščeno okolje brez hitenja, kjer si vzamemo čas samo za vas.",
-        "title": "Miren ambient"
+        "label": "Sprostitev",
+        "description": "Uživajte v urejanju pričeske v mirnem in prijetnem okolju.",
+        "title": "Miren ambient brez hitenja"
       },
       {
-        "stat": "Sodobne tehnike",
-        "label": "Sodobne tehnike",
-        "description": "Uporaba sodobnih tehnik barvanja in striženja za sodoben in urejen videz.",
-        "title": "Sodobne tehnike"
+        "label": "Trendi",
+        "description": "Uporabljamo sodobne metode za naraven in sijoč videz vaših las.",
+        "title": "Sodobne tehnike barvanja"
       },
       {
-        "stat": "Osebni pristop",
-        "label": "Osebni pristop",
-        "description": "Prilagojen nasvet in strokovna skrb za zdravje ter lepoto vaših las.",
-        "title": "Osebni pristop"
+        "label": "Posvet",
+        "description": "Prisluhnemo vašim željam in skupaj poiščemo najboljšo frizuro.",
+        "title": "Osebni pristop k vsaki stranki"
       }
     ]
   },
   "contact": {
     "id": "kontakt",
     "eyebrow": "Kontakt",
-    "title": "Rezervirajte svoj termin",
-    "description": "Pišite ali pokličite — odgovorimo in rezerviramo termin.",
-    "items": [
+    "title": "Naročite se na termin",
+    "description": "Pokličite nas ali nam pišite za rezervacijo termina.",
+    "faq": [
       {
-        "label": "Naslov",
-        "value": "Primerjeva ulica 12, 2000 Maribor",
-        "icon": "location"
+        "question": "Kako lahko rezerviram termin?",
+        "answer": "Termin lahko rezervirate s telefonskim klicem na 041 000 111 ali preko e-pošte."
       },
+      {
+        "question": "Ali je na voljo parkirno mesto?",
+        "answer": "Lokacija omogoča enostaven dostop v Mariboru z okolico."
+      }
+    ],
+    "items": [
       {
         "label": "Telefon",
         "value": "041 000 111",
@@ -251,6 +244,11 @@
         "icon": "email"
       },
       {
+        "label": "Naslov",
+        "value": "Primerjeva ulica 12, 2000 Maribor",
+        "icon": "location"
+      },
+      {
         "label": "Delovni čas",
         "value": "Pon–Pet: 9:00–18:00, Sob: 8:00–13:00",
         "icon": "clock"
@@ -258,14 +256,14 @@
     ],
     "form": {
       "title": "Pošljite povpraševanje",
-      "description": "Stopite v stik z nami in si zagotovite želeni termin.",
+      "description": "Stopite v stik z nami za vprašanja ali rezervacijo.",
       "nameLabel": "Ime in priimek",
-      "namePlaceholder": "Vnesite vaše ime",
-      "phoneLabel": "Telefon",
-      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "namePlaceholder": "Vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vaša številka",
       "messageLabel": "Sporočilo",
-      "messagePlaceholder": "Napišite želeno storitev in termin...",
-      "submitLabel": "Rezerviraj termin"
+      "messagePlaceholder": "Napišite želeno storitev ali termin...",
+      "submitLabel": "Pošlji sporočilo"
     }
   },
   "footer": {
@@ -280,7 +278,7 @@
   },
   "privacy": {
     "enabled": true,
-    "lastUpdated": "2026-09-05",
+    "lastUpdated": "2026-09-10",
     "contactForm": {
       "enabled": true,
       "fields": [

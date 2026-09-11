@@ -18,6 +18,7 @@ import { enqueueQaRunSafe } from "@/qa/enqueue";
 import type { QaTrigger } from "@/qa/types";
 import { assignTemplate } from "@/templates/assign-template";
 import { assignPalette } from "@/templates/assign-palette";
+import { sectionProfile } from "@/templates/category-section-profile";
 import { getTemplateImagePlan } from "@/templates/image-plan";
 import type { TemplateId } from "@/templates/types";
 
@@ -133,7 +134,10 @@ export async function generateClient(
           },
         }
       : withImages;
-  const withSections = applyNewLeadSectionDefaults(withGalleryItems as SiteConfig);
+  const withSections = applyNewLeadSectionDefaults(withGalleryItems as SiteConfig, {
+    sectionProfile: sectionProfile(categoryId),
+    hasExplicitServiceArea: Boolean(businessInput.serviceArea?.trim()),
+  });
   const persistedConfig = validateSiteConfig(withSections);
 
   const clientDir = resolve(__dirname, "../content/clients", slug);

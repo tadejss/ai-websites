@@ -248,8 +248,18 @@ const sectionFlagsSchema = z
   .object({
     gallery: z.boolean().optional(),
     pricing: z.boolean().optional(),
+    benefits: z.boolean().optional(),
+    process: z.boolean().optional(),
+    finalCta: z.boolean().optional(),
   })
   .optional();
+
+const serviceAreaSectionSchema = z.object({
+  id: z.string(),
+  eyebrow: z.string(),
+  title: z.string(),
+  description: z.string(),
+});
 
 const contactFaqItemSchema = z.object({
   question: z.string(),
@@ -286,6 +296,7 @@ const siteConfigSchema = z.object({
   sections: sectionFlagsSchema,
   gallery: gallerySectionSchema.optional(),
   pricing: pricingSectionSchema.optional(),
+  serviceArea: serviceAreaSectionSchema.optional(),
   brand: z.object({
     prefix: z.string(),
     highlight: z.string(),

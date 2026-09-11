@@ -32,10 +32,10 @@ export function PhoneCta({
   return (
     <a
       href={href}
-      className={`flex min-h-12 w-full items-center justify-center gap-2 rounded-[var(--radius)] px-5 text-base font-semibold transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] sm:inline-flex sm:w-auto ${variantClass} ${className}`}
+      className={`inline-flex min-h-12 w-full max-w-full flex-nowrap items-center justify-center gap-2 whitespace-nowrap rounded-[var(--radius)] px-4 text-sm font-semibold transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)] sm:w-auto sm:px-5 sm:text-base ${variantClass} ${className}`}
     >
-      <span>{text}</span>
-      <span className="font-medium opacity-80">{phone}</span>
+      <span className="min-w-0 truncate">{text}</span>
+      <span className="shrink-0 font-medium opacity-80">{phone}</span>
     </a>
   );
 }

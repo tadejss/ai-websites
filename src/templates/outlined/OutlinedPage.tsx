@@ -1,20 +1,32 @@
 import type { SiteConfig } from "@/content/types/site";
 import { PhoneCta } from "../shared/PhoneCta";
+import { TemplateBenefitsSection } from "../shared/TemplateBenefitsSection";
+import { TemplateFinalCtaSection } from "../shared/TemplateFinalCtaSection";
 import { TemplateFooter } from "../shared/TemplateFooter";
 import { TemplateGalleryCarousel } from "../shared/TemplateGalleryCarousel";
 import { TemplateImage } from "../shared/TemplateImage";
+import { TemplateProcessSection } from "../shared/TemplateProcessSection";
+import { TemplateServiceAreaSection } from "../shared/TemplateServiceAreaSection";
 import { TemplateTopBar } from "../shared/TemplateTopBar";
 import { getAddress, getEmail, getHours } from "../shared/contact-data";
 import {
   getAboutContent,
+  getBenefitsContent,
   getFaqItems,
+  getFinalCtaContent,
   getGalleryItems,
   getOfferItems,
   getOfferSectionMeta,
+  getProcessContent,
+  getServiceAreaContent,
   isAboutVisible,
+  isBenefitsVisible,
   isFaqVisible,
+  isFinalCtaVisible,
   isGalleryVisible,
   isOfferVisible,
+  isProcessVisible,
+  isServiceAreaVisible,
 } from "../shared/section-data";
 
 type Props = { siteConfig: SiteConfig; siteSlug: string };
@@ -22,10 +34,14 @@ type Props = { siteConfig: SiteConfig; siteSlug: string };
 export function OutlinedPage({ siteConfig, siteSlug }: Props) {
   const heroImage = siteConfig.images?.hero;
   const about = getAboutContent(siteConfig);
+  const benefits = getBenefitsContent(siteConfig);
   const offerMeta = getOfferSectionMeta(siteConfig);
   const offers = getOfferItems(siteConfig);
+  const process = getProcessContent(siteConfig);
   const gallery = getGalleryItems(siteConfig);
+  const serviceArea = getServiceAreaContent(siteConfig);
   const faqs = getFaqItems(siteConfig);
+  const finalCta = getFinalCtaContent(siteConfig);
 
   return (
     <div id="top" className="pb-10">
@@ -96,6 +112,17 @@ export function OutlinedPage({ siteConfig, siteSlug }: Props) {
           </section>
         ) : null}
 
+        {isBenefitsVisible(siteConfig) ? (
+          <TemplateBenefitsSection
+            variant="outlined"
+            id={benefits.id}
+            eyebrow={benefits.eyebrow}
+            title={benefits.title}
+            description={benefits.description}
+            items={benefits.items}
+          />
+        ) : null}
+
         {isOfferVisible(siteConfig) ? (
           <section id={offerMeta.id} className="mt-14 sm:mt-16">
             <p className="text-xs font-bold uppercase tracking-[0.2em]">
@@ -140,6 +167,27 @@ export function OutlinedPage({ siteConfig, siteSlug }: Props) {
           </section>
         ) : null}
 
+        {isFinalCtaVisible(siteConfig) ? (
+          <TemplateFinalCtaSection
+            variant="outlined"
+            id={finalCta.id}
+            title={finalCta.title}
+            description={finalCta.description}
+            siteConfig={siteConfig}
+          />
+        ) : null}
+
+        {isProcessVisible(siteConfig) ? (
+          <TemplateProcessSection
+            variant="outlined"
+            id={process.id}
+            eyebrow={process.eyebrow}
+            title={process.title}
+            description={process.description}
+            steps={process.steps}
+          />
+        ) : null}
+
         {isGalleryVisible(siteConfig) ? (
           <section id="galerija" className="mt-14 sm:mt-16">
             <p className="text-xs font-bold uppercase tracking-[0.2em]">
@@ -152,6 +200,16 @@ export function OutlinedPage({ siteConfig, siteSlug }: Props) {
               <TemplateGalleryCarousel items={gallery} frame="outline" />
             </div>
           </section>
+        ) : null}
+
+        {isServiceAreaVisible(siteConfig) && serviceArea ? (
+          <TemplateServiceAreaSection
+            variant="outlined"
+            id={serviceArea.id}
+            eyebrow={serviceArea.eyebrow}
+            title={serviceArea.title}
+            description={serviceArea.description}
+          />
         ) : null}
 
         {isFaqVisible(siteConfig) ? (

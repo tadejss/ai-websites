@@ -124,6 +124,41 @@ export function collectVisibleCopy(
     }
   }
 
+  if (config.serviceArea) {
+    entries.push(["serviceArea.eyebrow", config.serviceArea.eyebrow]);
+    entries.push(["serviceArea.title", config.serviceArea.title]);
+    entries.push(["serviceArea.description", config.serviceArea.description]);
+  }
+
+  if (config.whyChooseUs.steps) {
+    entries.push(["whyChooseUs.steps.eyebrow", config.whyChooseUs.steps.eyebrow]);
+    entries.push(["whyChooseUs.steps.title", config.whyChooseUs.steps.title]);
+    if (config.whyChooseUs.steps.description) {
+      entries.push([
+        "whyChooseUs.steps.description",
+        config.whyChooseUs.steps.description,
+      ]);
+    }
+    config.whyChooseUs.steps.items.forEach((step, index) => {
+      const title =
+        typeof step === "string" ? step : step.title;
+      entries.push([`whyChooseUs.steps.items[${index}].title`, title]);
+      if (typeof step !== "string" && step.description) {
+        entries.push([
+          `whyChooseUs.steps.items[${index}].description`,
+          step.description,
+        ]);
+      }
+    });
+  }
+
+  if (config.contact.faq) {
+    config.contact.faq.forEach((item, index) => {
+      entries.push([`contact.faq[${index}].question`, item.question]);
+      entries.push([`contact.faq[${index}].answer`, item.answer]);
+    });
+  }
+
   return entries;
 }
 

@@ -73,10 +73,6 @@ export function findQualityProblems(
   }
 
   for (const [field, value] of collectVisibleCopy(config)) {
-    if (mode === "template2026" && field.startsWith("whyChooseUs.")) {
-      continue;
-    }
-
     if (!value.trim()) {
       problems.push(`${field} is empty`);
       continue;
@@ -89,6 +85,31 @@ export function findQualityProblems(
         `${field} is ${value.length} characters, expected at most ${maxLength}`,
       );
     }
+  }
+
+  if (config.whyChooseUs.steps) {
+    const stepCount = config.whyChooseUs.steps.items.length;
+    if (stepCount < 3 || stepCount > 4) {
+      problems.push(
+        `whyChooseUs.steps.items has ${stepCount} items, expected 3–4 or omit steps`,
+      );
+    }
+  }
+
+  if (config.contact.faq) {
+    const faqCount = config.contact.faq.length;
+    if (faqCount < 2 || faqCount > 4) {
+      problems.push(
+        `contact.faq has ${faqCount} items, expected 2–4 or omit faq`,
+      );
+    }
+  }
+
+  if (
+    config.serviceArea &&
+    (!config.serviceArea.description.trim() || !config.serviceArea.title.trim())
+  ) {
+    problems.push("serviceArea must include non-empty title and description");
   }
 
   return problems;

@@ -1,10 +1,19 @@
 import type { SiteConfig } from "@/content/types/site";
 import { brandDisplayName, getPhoneHref } from "./contact-data";
 import {
+  getBenefitsContent,
+  getFinalCtaContent,
+  getOfferSectionMeta,
+  getProcessContent,
+  getServiceAreaContent,
   isAboutVisible,
+  isBenefitsVisible,
   isFaqVisible,
+  isFinalCtaVisible,
   isGalleryVisible,
   isOfferVisible,
+  isProcessVisible,
+  isServiceAreaVisible,
 } from "./section-data";
 
 type Props = {
@@ -29,16 +38,33 @@ export function TemplateTopBar({
 }: Props) {
   const name = brandDisplayName(siteConfig);
   const phoneHref = getPhoneHref(siteConfig);
+  const offerMeta = getOfferSectionMeta(siteConfig);
+  const benefits = getBenefitsContent(siteConfig);
+  const process = getProcessContent(siteConfig);
+  const serviceArea = getServiceAreaContent(siteConfig);
+  const finalCta = getFinalCtaContent(siteConfig);
 
   const links: Array<{ href: string; label: string }> = [];
   if (isAboutVisible(siteConfig)) {
     links.push({ href: "#o-nas", label: "O nas" });
   }
+  if (isBenefitsVisible(siteConfig)) {
+    links.push({ href: `#${benefits.id}`, label: "Prednosti" });
+  }
   if (isOfferVisible(siteConfig)) {
-    links.push({ href: "#cenik", label: "Storitve" });
+    links.push({ href: `#${offerMeta.id}`, label: "Storitve" });
+  }
+  if (isFinalCtaVisible(siteConfig)) {
+    links.push({ href: `#${finalCta.id}`, label: "Pokličite" });
+  }
+  if (isProcessVisible(siteConfig)) {
+    links.push({ href: `#${process.id}`, label: "Postopek" });
   }
   if (isGalleryVisible(siteConfig)) {
     links.push({ href: "#galerija", label: "Galerija" });
+  }
+  if (isServiceAreaVisible(siteConfig) && serviceArea) {
+    links.push({ href: `#${serviceArea.id}`, label: "Območje" });
   }
   if (isFaqVisible(siteConfig)) {
     links.push({ href: "#faq", label: "FAQ" });

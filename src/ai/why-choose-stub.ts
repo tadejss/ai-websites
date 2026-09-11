@@ -1,9 +1,9 @@
 import type { SiteConfig } from "@/content/types/site";
 
 /**
- * Schema still requires whyChooseUs for legacy SiteConfig compatibility.
- * New AI generation omits it; we inject this stub so Zod passes.
- * New templates never render whyChooseUs.
+ * Schema still requires whyChooseUs for SiteConfig compatibility.
+ * If the model omits it, inject this stub so Zod passes.
+ * Live templates render whyChooseUs as About (and optional Benefits/Process).
  */
 export const SCHEMA_WHY_CHOOSE_STUB: SiteConfig["whyChooseUs"] = {
   id: "zakaj-mi",

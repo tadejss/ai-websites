@@ -1,57 +1,47 @@
 {
   "appearance": "construction",
-  "templateId": "bento",
-  "lookId": "keramicarji-07-asymmetric-bold",
+  "templateId": "outlined",
   "theme": {
-    "paletteId": "cobalt-cream",
-    "fontPairingId": "dm-sans-syne",
-    "radiusScale": "sharp"
-  },
-  "layout": {
-    "profileId": "services-first-visual",
-    "heroImageSide": "right",
-    "servicesImageSide": "none",
-    "heroRatio": "5050",
-    "benefitsMode": "visual",
-    "heroAtmosphere": "wash",
-    "sectionRule": "none",
-    "cardStyle": "bordered"
+    "paletteId": "clay-ember"
   },
   "images": {
     "hero": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/hero.avif",
-      "alt": "Keramičar polaga keramične ploščice v sodobni kopalnici",
+      "alt": "Keramičar natančno polaga stenske ploščice v sodobni kopalnici",
       "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/hero.webp",
+      "width": 975,
+      "height": 1300,
+      "format": "avif",
+      "fallbackFormat": "webp",
+      "provider": "pexels",
+      "sourceId": "17866923",
+      "sourceUrl": "https://www.pexels.com/photo/blue-mosaic-floor-and-walls-of-a-building-17866923/",
+      "photographer": "Vincent Rivaud",
+      "photographerUrl": "https://www.pexels.com/@vince",
+      "searchQuery": "tile installer laying ceramic floor"
+    },
+    "services": {
+      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/services.avif",
+      "alt": "Orodje za precizno rezanje in polaganje keramičnih ploščic",
+      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/services.webp",
       "width": 867,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "4752996",
-      "sourceUrl": "https://www.pexels.com/photo/white-and-blue-concrete-blocks-4752996/",
-      "photographer": "cottonbro studio",
-      "photographerUrl": "https://www.pexels.com/@cottonbro",
+      "sourceId": "32021732",
+      "sourceUrl": "https://www.pexels.com/photo/colorful-vintage-ceramic-tiles-pattern-32021732/",
+      "photographer": "Thea Xiaa",
+      "photographerUrl": "https://www.pexels.com/@xiaa",
       "searchQuery": "tile installer laying ceramic floor"
-    },
-    "services": {
-      "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/services.avif",
-      "alt": "Natančno polaganje talnih ploščic in oblaganje stopnic",
-      "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/keramicarstvo-hribar/services.webp",
-      "width": 950,
-      "height": 1300,
-      "format": "avif",
-      "fallbackFormat": "webp",
-      "provider": "pexels",
-      "sourceId": "6444245",
-      "sourceUrl": "https://www.pexels.com/photo/view-of-a-modern-bathroom-6444245/",
-      "photographer": "Max Vakhtbovych",
-      "photographerUrl": "https://www.pexels.com/@artbovich",
-      "searchQuery": "professional tiler bathroom renovation"
     }
   },
   "sections": {
     "gallery": true,
-    "pricing": true
+    "pricing": true,
+    "benefits": true,
+    "process": true,
+    "finalCta": true
   },
   "gallery": {
     "id": "galerija",
@@ -68,76 +58,100 @@
         "alt": "tile installer laying ceramic floor"
       },
       {
-        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/3616774.webp",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6444245.webp",
         "alt": "professional tiler bathroom renovation"
       },
       {
         "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/35200609.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16239801.webp",
+        "alt": "tile installer laying ceramic floor"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/33966531.webp",
         "alt": "tile installer laying ceramic floor"
       }
     ]
   },
   "pricing": {
     "id": "cenik",
-    "eyebrow": "Informativni cenik",
-    "title": "Pregled okvirnih storitev in cen",
-    "description": "Cene so informativne narave in se prilagajajo glede na zahtevnost ter velikost projekta.",
-    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
+    "eyebrow": "Storitve in cene",
+    "title": "Storitve in cene",
+    "description": "Okvirne cene keramičarskih storitev za lažje načrtovanje prenove.",
+    "disclaimer": "Cenik je informativen. Končna cena je odvisna od zahtevnosti in stanja podlage.",
     "items": [
       {
-        "name": "Polaganje standardnih ploščic",
-        "description": "Polaganje talnih ali stenskih ploščic večjih formatov",
-        "price": "od 25 €",
-        "unit": "na m²",
+        "name": "Prenova kopalnice",
+        "description": "Odstranitev stare keramike, hidroizolacija in polaganje novih ploščic.",
+        "price": "od 1.200 €",
         "featured": true
       },
       {
-        "name": "Prenova kopalnice (standard)",
-        "description": "Odstranitev stare keramike, priprava podlage in polaganje",
-        "price": "po ogledu",
-        "unit": "projekt"
+        "name": "Polaganje talnih in stenskih ploščic",
+        "description": "Standardno polaganje keramike na pripravljeno podlago.",
+        "price": "od 25 € / m²"
       },
       {
         "name": "Oblaganje stopnic",
-        "description": "Oblaganje stopnic s keramiko vključno z zaključki",
-        "price": "od 35 €",
-        "unit": "tekoči meter"
+        "description": "Natančno oblaganje stopnic s keramiko in rezi pod kotom.",
+        "price": "od 40 € / tekoči meter"
       },
       {
-        "name": "Hidroizolacija površin",
-        "description": "Nanos dvokomponentne hidroizolacije pred polaganjem",
-        "price": "od 15 €",
-        "unit": "na m²"
-      },
-      {
-        "name": "Polaganje na terasah in balkonih",
-        "description": "Zunanje polaganje s poudarkom na ustrezni odvodnji",
-        "price": "od 30 €",
-        "unit": "na m²"
+        "name": "Zunanje terase in balkoni",
+        "description": "Polaganje keramike z ustreznimi nakloni in zunanjimi lepili.",
+        "price": "od 30 € / m²"
       }
     ]
+  },
+  "serviceArea": {
+    "id": "obmocje",
+    "eyebrow": "Območje delovanja",
+    "title": "Kje delujemo",
+    "description": "Storitve polaganje keramike izvajamo v Ljubljani z okolico."
   },
   "brand": {
     "prefix": "Keramičarstvo",
     "highlight": "Linija"
   },
   "metadata": {
-    "title": "Keramičarstvo Linija | Primer keramičarske strani",
-    "description": "Primer spletne strani za keramičarstvo: polaganje keramike, prenove kopalnic, stopnice in terase."
+    "title": "Keramičarstvo Linija | Natančno polaganje keramike",
+    "description": "Natančno polaganje keramike za kopalnice, tla in stopnice v Ljubljani z okolico."
   },
   "nav": {
     "links": [
       {
-        "href": "#storitve",
-        "label": "Storitve"
+        "href": "#o-nas",
+        "label": "O nas"
       },
       {
-        "href": "#zakaj-mi",
-        "label": "Zakaj mi"
+        "href": "#prednosti",
+        "label": "Prednosti"
       },
       {
         "href": "#cenik",
-        "label": "Cenik"
+        "label": "Storitve"
+      },
+      {
+        "href": "#postopek",
+        "label": "Postopek"
+      },
+      {
+        "href": "#galerija",
+        "label": "Galerija"
+      },
+      {
+        "href": "#obmocje",
+        "label": "Območje"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      },
+      {
+        "href": "#klic-k-akciji",
+        "label": "Pokličite"
       },
       {
         "href": "#kontakt",
@@ -147,64 +161,42 @@
     "cta": "Pridobi ponudbo"
   },
   "hero": {
-    "badge": "",
+    "badge": "Lokalni keramičar",
     "title": "Natančno polaganje keramike za",
     "titleHighlight": "kopalnice, tla in stopnice",
-    "description": "Strokovne in zanesljive keramičarske storitve za lastnike stanovanj in hiš, ki prenavljajo prostore v Ljubljani z okolico.",
+    "description": "Zanesljiva izvedba keramičarskih del za lastnike stanovanj in hiš.",
     "primaryCta": "Pridobi ponudbo",
     "secondaryCta": "Preglej storitve",
-    "stats": [
-      {
-        "value": "12",
-        "label": "let izkušenj"
-      },
-      {
-        "value": "Natančnost",
-        "label": "Čista izvedba"
-      },
-      {
-        "value": "Zanesljivost",
-        "label": "Jasni roki"
-      },
-      {
-        "value": "Ljubljana",
-        "label": "Z okolico"
-      }
-    ]
+    "stats": []
   },
   "services": {
     "id": "storitve",
-    "eyebrow": "Naše storitve",
-    "title": "Kakovostno polaganje keramike in prenove",
-    "description": "Specializirani smo za celovite prenove in detajlno oblaganje površin za stanovanjske objekte v Ljubljani z okolico.",
+    "eyebrow": "Storitve",
+    "title": "Naše storitve",
+    "description": "Pregled keramičarskih del, ki jih izvajamo.",
     "items": [
       {
         "title": "Prenove kopalnic",
-        "description": "Celovite prenove kopalnic z natančnim polaganjem ploščic in ustreznimi hidroizolacijskimi rešitvami.",
+        "description": "Celovito polaganje ploščic in priprava površin v kopalnicah.",
         "icon": "service-1"
       },
       {
-        "title": "Polaganje talnih in stenskih ploščic",
-        "description": "Strokovna montaža vseh vrst keramičnih ploščic v bivalnih prostorih, kuhinjah in na hodnikih.",
+        "title": "Polaganje ploščic",
+        "description": "Polaganje talnih in stenskih ploščic vseh formatov.",
         "icon": "service-2"
       },
       {
         "title": "Oblaganje stopnic",
-        "description": "Skrbno oblaganje notranjih in zunanjih stopnic s poudarkom na varnosti in estetskih detajlih.",
+        "description": "Oblaganje notranjih in zunanjih stopnic s keramiko.",
         "icon": "service-3"
-      },
-      {
-        "title": "Zunanje terase in balkoni",
-        "description": "Odporno in strokovno polaganje keramike na zunanjih površinah, terasah ter balkonih.",
-        "icon": "service-4"
       }
     ]
   },
   "whyChooseUs": {
-    "id": "zakaj-mi",
-    "eyebrow": "Zakaj izbrati nas",
-    "title": "Zanesljiv partner za vaše keramičarske projekte",
-    "description": "Z dolgoletnimi izkušnjami in strokovnim pristopom poskrbimo, da so dela opravljena pravočasno in brez kompromisov glede kakovosti.",
+    "id": "o-nas",
+    "eyebrow": "O nas",
+    "title": "Zanesljivo keramičarstvo s posluhom za detajle",
+    "description": "Specializirani smo za polaganje keramike vseh vrst na območju Ljubljane z okolico.",
     "highlights": [
       "Čista in natančna izvedba",
       "Jasni roki in dogovori",
@@ -212,27 +204,56 @@
     ],
     "benefits": [
       {
-        "label": "Čista in natančna izvedba",
-        "description": "Delo opravimo skrbno, prostor pa za seboj vedno pustimo čist in urejen.",
-        "title": "Čista in natančna izvedba"
+        "label": "Kakovost",
+        "description": "Skrb za čistočo in natančne reze ter detajle pri vsakem projektu.",
+        "title": "Natančna izvedba"
       },
       {
-        "label": "Jasni roki in dogovori",
-        "description": "Držimo se dogovorjenih rokov izvedbe in vnaprej določenega obsega del.",
-        "title": "Jasni roki in dogovori"
+        "label": "Zanesljivost",
+        "description": "Spoštujemo dogovorjene časovne okvirje izvedbe del.",
+        "title": "Držanje rokov"
       },
       {
-        "label": "Izkušnje z zahtevnimi detajli",
-        "description": "Z 12 leti izkušenj uspešno rešujemo tudi najzahtevnejše keramičarske izzive.",
-        "title": "Izkušnje z zahtevnimi detajli"
+        "label": "Izkušnje",
+        "description": "Reševanje zahtevnejših keramičarskih izzivov v kopalnicah in na terasah.",
+        "title": "Izkušnje"
       }
-    ]
+    ],
+    "steps": {
+      "id": "postopek",
+      "eyebrow": "Postopek",
+      "title": "Kako poteka sodelovanje",
+      "items": [
+        {
+          "title": "Kontakt in ogled",
+          "description": "Povpraševanje in dogovor o obsegu del ter ogled lokacije."
+        },
+        {
+          "title": "Ponudba",
+          "description": "Priprava jasne ponudbe in določitev rokov izvedbe."
+        },
+        {
+          "title": "Izvedba del",
+          "description": "Strokovno polaganje keramike in čista predaja prostora."
+        }
+      ]
+    }
   },
   "contact": {
     "id": "kontakt",
-    "eyebrow": "Stopite v stik",
-    "title": "Dogovorite se za ogled in ponudbo",
-    "description": "Na voljo smo vam za vsa vprašanja, svetovanje in pripravo ponudbe za vaš projekt.",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik",
+    "description": "Pošljite povpraševanje za vaš projekt prenove.",
+    "faq": [
+      {
+        "question": "Ali je ogled in izmera brezplačna?",
+        "answer": "Pred pripravo ponudbe po možnosti opravimo ogled lokacije na vašem objektu v Ljubljani z okolico."
+      },
+      {
+        "question": "Ali nudite tudi material ali samo delo?",
+        "answer": "Primarno izvajamo keramičarska dela, glede izbire materialov in ploščic pa vam z veseljem svetujemo."
+      }
+    ],
     "items": [
       {
         "label": "Telefon",
@@ -259,19 +280,19 @@
     ],
     "form": {
       "title": "Pošljite povpraševanje",
-      "description": "Izpolnite obrazec in v najkrajšem času vam bomo odgovorili s ponudbo.",
+      "description": "Izpolnite obrazec in odgovorili vam bomo v najkrajšem možnem času.",
       "nameLabel": "Ime in priimek",
       "namePlaceholder": "Vnesite vaše ime",
-      "phoneLabel": "Telefonska številka",
+      "phoneLabel": "Telefon",
       "phonePlaceholder": "Vnesite vaš telefon",
       "messageLabel": "Sporočilo",
-      "messagePlaceholder": "Opišite vaš projekt ali želene storitve...",
-      "submitLabel": "Pridobi ponudbo"
+      "messagePlaceholder": "Opišite vaše želje in obseg del...",
+      "submitLabel": "Pošlji povpraševanje"
     }
   },
   "footer": {
     "address": "Primerjeva cesta 8, 1000 Ljubljana",
-    "rights": "© 2026 Keramičarstvo Linija. Vse pravice pridržane."
+    "rights": "Vse pravice pridržane."
   },
   "business": {
     "name": "Keramičarstvo Linija",
@@ -281,7 +302,7 @@
   },
   "privacy": {
     "enabled": true,
-    "lastUpdated": "2026-09-05",
+    "lastUpdated": "2026-09-10",
     "contactForm": {
       "enabled": true,
       "fields": [

@@ -113,6 +113,20 @@ export type PricingSectionConfig = {
 export type SiteSectionFlags = {
   gallery?: boolean;
   pricing?: boolean;
+  /** Expanded composition: dedicated Benefits section (legacy omits → About keeps points). */
+  benefits?: boolean;
+  /** Expanded composition: Process from whyChooseUs.steps. */
+  process?: boolean;
+  /** Compact phone CTA after contact. */
+  finalCta?: boolean;
+};
+
+/** Optional geographic coverage — only when BusinessInput.serviceArea is explicit. */
+export type ServiceAreaSectionConfig = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  description: string;
 };
 
 export type ContactFaqItem = {
@@ -276,6 +290,11 @@ export type SiteConfig = {
   gallery?: GallerySectionConfig;
   /** Top-level demo/indicative price list (distinct from services.pricing note). */
   pricing?: PricingSectionConfig;
+  /**
+   * Explicit service-area copy. Never infer from address alone.
+   * Omit when BusinessInput.serviceArea is empty.
+   */
+  serviceArea?: ServiceAreaSectionConfig;
   brand: {
     prefix: string;
     highlight: string;

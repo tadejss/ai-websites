@@ -49,6 +49,18 @@
         },
         "pricing": {
           "type": "boolean"
+        },
+        "benefits": {
+          "type": "boolean",
+          "description": "Dedicated Benefits section (expanded composition)."
+        },
+        "process": {
+          "type": "boolean",
+          "description": "Process section from whyChooseUs.steps."
+        },
+        "finalCta": {
+          "type": "boolean",
+          "description": "Compact final CTA after contact."
         }
       }
     },
@@ -57,6 +69,9 @@
     },
     "pricing": {
       "$ref": "#/$defs/PricingSection"
+    },
+    "serviceArea": {
+      "$ref": "#/$defs/ServiceAreaSection"
     },
     "theme": {
       "type": "object",
@@ -369,6 +384,17 @@
           "type": "array",
           "items": { "$ref": "#/$defs/PricingItem" }
         }
+      }
+    },
+    "ServiceAreaSection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "eyebrow", "title", "description"],
+      "properties": {
+        "id": { "type": "string" },
+        "eyebrow": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" }
       }
     },
     "ContactFaqItem": {

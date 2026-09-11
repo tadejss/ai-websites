@@ -1,57 +1,46 @@
 {
   "appearance": "construction",
   "templateId": "bento",
-  "lookId": "gradbinci-05-minimal-line",
   "theme": {
-    "paletteId": "cobalt-cream",
-    "fontPairingId": "figtree-dm-serif",
-    "radiusScale": "sharp"
-  },
-  "layout": {
-    "profileId": "photo-forward",
-    "heroImageSide": "none",
-    "servicesImageSide": "right",
-    "heroRatio": "full-copy",
-    "benefitsMode": "default",
-    "heroAtmosphere": "photo",
-    "sectionRule": "line",
-    "cardStyle": "bordered"
+    "paletteId": "obsidian-lime"
   },
   "images": {
     "hero": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/hero.avif",
-      "alt": "Krovec pri delu na strehi",
+      "alt": "Krovci pri menjavi kritine na stanovanjski hiši",
       "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/hero.webp",
       "width": 867,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "19250066",
-      "sourceUrl": "https://www.pexels.com/photo/construction-workers-carrying-table-19250066/",
-      "photographer": "Shojol Islam",
-      "photographerUrl": "https://www.pexels.com/@shojol",
-      "searchQuery": "construction workers building site professional"
+      "sourceId": "8469943",
+      "sourceUrl": "https://www.pexels.com/photo/unfinished-wall-plugs-and-switch-on-a-white-wall-8469943/",
+      "photographer": "Thirdman",
+      "photographerUrl": "https://www.pexels.com/@thirdman",
+      "searchQuery": "drywall installer construction interior european commercial"
     },
     "services": {
       "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/services.avif",
-      "alt": "Krovska dela in nova kritina",
+      "alt": "Montaža žlebov in strešnega odvodnjavanja",
       "srcFallback": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/services.webp",
       "width": 867,
       "height": 1300,
       "format": "avif",
       "fallbackFormat": "webp",
       "provider": "pexels",
-      "sourceId": "38706741",
-      "sourceUrl": "https://www.pexels.com/photo/construction-worker-on-scaffolding-at-work-38706741/",
-      "photographer": "Mukhtar Shuaib Mukhtar",
-      "photographerUrl": "https://www.pexels.com/@akoonie",
-      "searchQuery": "construction workers building site professional"
+      "sourceId": "16442688",
+      "sourceUrl": "https://www.pexels.com/photo/water-protection-pros-poland-jacket-double-welding-technique-increased-resistance-to-mechanical-damage-16442688/",
+      "photographer": "Marianna Zuzanna",
+      "photographerUrl": "https://www.pexels.com/@marianna-zuzanna-498248397",
+      "searchQuery": "construction workers building site professional european commercial"
     }
   },
   "sections": {
     "gallery": true,
-    "pricing": true
+    "pricing": true,
+    "benefits": true,
+    "finalCta": true
   },
   "gallery": {
     "id": "galerija",
@@ -60,78 +49,101 @@
     "description": "Fotografije naših storitev in ambienta.",
     "items": [
       {
-        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/hero.avif",
-        "alt": "Krovec pri delu na strehi"
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8469943.webp",
+        "alt": "drywall installer construction interior european commercial"
       },
       {
-        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/clients/krovstvo-petek/services.avif",
-        "alt": "Krovska dela in nova kritina"
-      },
-      {
-        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8961154.webp",
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/16442688.webp",
         "alt": "construction workers building site professional european commercial"
       },
       {
-        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/15767414.webp",
-        "alt": "construction workers building site professional european commercial"
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/8820170.webp",
+        "alt": "construction workers building site professional european workshop"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/33388401.webp",
+        "alt": "construction workers building site professional european workshop"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/33694037.webp",
+        "alt": "construction workers building site professional european workshop"
+      },
+      {
+        "src": "https://k1dgldwcgd9jslu2.public.blob.vercel-storage.com/stock/pexels/6474118.webp",
+        "alt": "drywall installer construction interior european commercial"
       }
     ]
   },
   "pricing": {
     "id": "cenik",
-    "eyebrow": "Informativni cenik",
-    "title": "Okvirne cene krovskih storitev",
-    "description": "Pregled pogostih storitev. Točna cena je odvisna od ogleda objekta in izbranih materialov.",
-    "disclaimer": "Cenik je informativen. Za aktualne cene in ponudbo po meri nas kontaktirajte.",
+    "eyebrow": "Storitve in cene",
+    "title": "Storitve in cene",
+    "description": "Okvirne cene krovskih del in sanacij.",
+    "disclaimer": "Cenik je informativen. Za točno ponudbo nas kontaktirajte.",
     "items": [
       {
-        "name": "Nujna popravila po neurju",
-        "description": "Pregled poškodb in takojšnja zasilna ali trajna sanacija",
-        "price": "od 120 €",
-        "featured": true
-      },
-      {
-        "name": "Montaža žlebov in odvodnjavanja",
-        "description": "Dobava in montaža kleparskih izdelkov",
-        "price": "od 25 € / m"
+        "name": "Nova kritina",
+        "description": "Demontaža stare in montaža nove kritine z vsemi zaključki.",
+        "price": "Po ogledu",
+        "unit": "projekt"
       },
       {
         "name": "Sanacija strehe",
-        "description": "Delna ali popolna obnova strešne konstrukcije in kritine",
-        "price": "od 45 € / m²"
+        "description": "Popravilo poškodb in delna zamenjava strešnih elementov.",
+        "price": "Od 500 €",
+        "unit": "naprej"
       },
       {
-        "name": "Polaganje nove kritine",
-        "description": "Strokovna namestitev izbrane kritine",
-        "price": "od 35 € / m²"
+        "name": "Menjava žlebov",
+        "description": "Montaža novih žlebov in odvodnih cevi.",
+        "price": "Po dogovoru",
+        "unit": "meter"
       }
     ]
+  },
+  "serviceArea": {
+    "id": "obmocje",
+    "eyebrow": "Območje",
+    "title": "Kje delujemo",
+    "description": "Naše storitve nudimo na območju regije Štajerska."
   },
   "brand": {
     "prefix": "Krovstvo",
     "highlight": "Streha"
   },
   "metadata": {
-    "title": "Krovstvo Streha | Primer krovske strani",
-    "description": "Primer spletne strani za krovstvo: nove kritine, sanacije streh, žlebovi in nujna popravila."
+    "title": "Krovstvo Streha | Sanacije in krovska dela",
+    "description": "Nova kritina, sanacije streh in popravila žlebov na Štajerskem."
   },
   "nav": {
     "links": [
       {
-        "href": "#storitve",
-        "label": "Storitve"
+        "href": "#o-nas",
+        "label": "O nas"
       },
       {
-        "href": "#zakaj-mi",
-        "label": "Zakaj mi"
+        "href": "#prednosti",
+        "label": "Prednosti"
+      },
+      {
+        "href": "#cenik",
+        "label": "Storitve"
       },
       {
         "href": "#galerija",
         "label": "Galerija"
       },
       {
-        "href": "#cenik",
-        "label": "Cenik"
+        "href": "#obmocje",
+        "label": "Območje"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      },
+      {
+        "href": "#klic-k-akciji",
+        "label": "Pokličite"
       },
       {
         "href": "#kontakt",
@@ -141,95 +153,80 @@
     "cta": "Prijavi poškodbo strehe"
   },
   "hero": {
-    "badge": "",
+    "badge": "Krovska dela in sanacije",
     "title": "Strehe, žlebovi in sanacije — ",
     "titleHighlight": "trdno in brez odlašanja",
-    "description": "Za lastnike hiš in upravnike večstanovanjskih objektov na Štajerskem nudimo strokovna krovska dela, hitre sanacije in nujna popravila.",
+    "description": "Izvajamo menjave kritin, popravila po neurjih in kleparska dela za lastnike hiš in večstanovanjskih objektov.",
     "primaryCta": "Prijavi poškodbo strehe",
-    "secondaryCta": "Preglej storitve",
-    "stats": [
-      {
-        "value": "20",
-        "label": "let izkušenj"
-      },
-      {
-        "value": "Hitra sanacija",
-        "label": "Hitra sanacija",
-        "title": "Hitra sanacija"
-      },
-      {
-        "value": "Vse kritine",
-        "label": "Vse kritine",
-        "title": "Vse kritine"
-      },
-      {
-        "value": "Štajerska",
-        "label": "Štajerska",
-        "title": "Štajerska"
-      }
-    ]
+    "secondaryCta": "Preveri storitve",
+    "stats": []
   },
   "services": {
     "id": "storitve",
-    "eyebrow": "Naše storitve",
-    "title": "Celovite rešitve za vašo streho",
-    "description": "Izvajamo vse vrste krovskih in kleparskih del na Štajerskem z dolgoletnimi izkušnjami in posluhom za kakovost.",
+    "eyebrow": "Storitve",
+    "title": "Storitve in ponudba",
+    "description": "Pregled naših krovskih in kleparskih del.",
     "items": [
       {
         "title": "Nova kritina",
-        "description": "Strokovna vgradnja nove kritine za dolgo življenjsko dobo vaše hiše.",
+        "description": "Polaganje in menjava strešnih kritin.",
         "icon": "service-1"
       },
       {
         "title": "Sanacije streh",
-        "description": "Temeljite sanacije obstoječih streh in dotrajanih konstrukcij.",
+        "description": "Popravila in obnove dotrajanih strešnih konstrukcij.",
         "icon": "service-2"
       },
       {
         "title": "Žlebovi in odvodnjavanje",
-        "description": "Montaža in menjava žlebov ter urejanje zanesljivega odvodnjavanja.",
+        "description": "Montaža in menjava žlebov ter kleparskih izdelkov.",
         "icon": "service-3"
-      },
-      {
-        "title": "Nujna popravila po neurju",
-        "description": "Hitro posredovanje in odprava škode na strehi po neugodnih vremenskih razmerah.",
-        "icon": "service-4"
       }
     ]
   },
   "whyChooseUs": {
-    "id": "zakaj-mi",
-    "eyebrow": "Zakaj izbrati nas",
-    "title": "Tradicija in strokovnost na prvem mestu",
-    "description": "Z združevanjem preverjene obrtniške tradicije in modernega pristopa zagotavljamo rešitve, ki zdržijo.",
+    "id": "o-nas",
+    "eyebrow": "O nas",
+    "title": "Krovstvo s tradicijo",
+    "description": "Z dolgoletnimi izkušnjami na področju krovstva poskrbimo za celovito ureditev vaše strehe, od nove kritine do nujnih sanacij.",
     "highlights": [
-      "Hitra sanacija po škodi in neurjih",
-      "Izkuseni krovci za vse vrste kritin",
-      "Delo tudi v zahtevnejših vremenskih razmerah"
+      "Hitra sanacija po škodi",
+      "Izkuseni krovci za vse kritine",
+      "Delo v zahtevnih razmerah"
     ],
     "benefits": [
       {
-        "label": "Hitra sanacija",
-        "description": "Hitro odzivanje ob poškodbah in nemudoma izvedena nujna popravila.",
-        "title": "Hitra sanacija"
+        "label": "Odzivnost",
+        "description": "Hitro ukrepanje ob poškodbah strehe in nujnih popravilih.",
+        "title": "Hitra sanacija po škodi"
       },
       {
-        "label": "Izkušeni krovci",
-        "description": "Zanesljivi mojstri z 20 leti izkušenj na področju krovstva.",
-        "title": "Izkušeni krovci"
+        "label": "Znanje",
+        "description": "Strokovna izvedba z izkušenimi mojstri za različne vrste kritin.",
+        "title": "Izkuseni krovci"
       },
       {
-        "label": "Vse vremenske razmere",
-        "description": "Prilagodljivost in izvedba dela tudi v zahtevnejših okoliščinah.",
+        "label": "Zanesljivost",
+        "description": "Delo izvajamo tudi v zahtevnejših vremenskih razmerah.",
         "title": "Vse vremenske razmere"
       }
     ]
   },
   "contact": {
     "id": "kontakt",
-    "eyebrow": "Stopite v stik",
-    "title": "Potrebujete krovca ali nujno popravilo?",
-    "description": "Pošljite povpraševanje ali nas pokličite. Z veseljem vam svetujemo in pripravimo rešitev.",
+    "eyebrow": "Kontakt",
+    "title": "Stopite v stik",
+    "description": "Pokličite nas ali pošljite povpraševanje za hitro sanacijo strehe.",
+    "faq": [
+      {
+        "question": "Kako hitro lahko pričakujete sanacijo po neurju?",
+        "answer": "Po prijavi škode se dogovorimo za hiter ogled in izvedbo nujnih popravil."
+      },
+      {
+        "question": "Ali nudite ogled strehe pred pričetkom dela?",
+        "answer": "Da, pred vsakim delom opravimo ogled in pripravimo oceno stroškov."
+      }
+    ],
     "items": [
       {
         "label": "Telefon",
@@ -246,6 +243,7 @@
       {
         "label": "Naslov",
         "value": "Primerjeva ulica 3, 2000 Maribor",
+        "href": "https://maps.google.com/?q=Primerjeva+ulica+3,+2000+Maribor",
         "icon": "location"
       },
       {
@@ -260,10 +258,10 @@
       "nameLabel": "Ime in priimek",
       "namePlaceholder": "Vnesite vaše ime",
       "phoneLabel": "Telefonska številka",
-      "phonePlaceholder": "npr. 041 123 456",
+      "phonePlaceholder": "Vnesite vaš telefon",
       "messageLabel": "Sporočilo",
-      "messagePlaceholder": "Opičite vaše težave ali potrebe glede strehe...",
-      "submitLabel": "Prijavi poškodbo strehe"
+      "messagePlaceholder": "Opišite težavo ali potrebo po sanaciji strehe...",
+      "submitLabel": "Pošlji povpraševanje"
     }
   },
   "footer": {
@@ -278,7 +276,7 @@
   },
   "privacy": {
     "enabled": true,
-    "lastUpdated": "2026-09-05",
+    "lastUpdated": "2026-09-10",
     "contactForm": {
       "enabled": true,
       "fields": [

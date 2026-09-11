@@ -199,10 +199,6 @@ export function validateCopyVoice(
   }
 
   for (const claim of findUnsupportedClaims(config, input)) {
-    // whyChooseUs is legacy/stubbed for new gens — ignore those claim fields
-    if (claim.field.startsWith("whyChooseUs.")) {
-      continue;
-    }
     errors.push({
       severity: "error",
       field: claim.field,

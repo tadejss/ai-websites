@@ -128,6 +128,69 @@ check(
     !/from\s+["']@\/templates\/floating\/FloatingPage["']/.test(sitePage),
 );
 
+console.log("\n== section composition ==");
+
+const sectionData = readSrc("src/templates/shared/section-data.ts");
+const topBar = readSrc("src/templates/shared/TemplateTopBar.tsx");
+const flagsType = readSrc("src/content/types/site.ts");
+const profile = readSrc("src/templates/category-section-profile.ts");
+
+check(
+  "SiteSectionFlags includes benefits/process/finalCta",
+  /benefits\?: boolean/.test(flagsType) &&
+    /process\?: boolean/.test(flagsType) &&
+    /finalCta\?: boolean/.test(flagsType),
+);
+
+check(
+  "serviceArea section type exists",
+  /ServiceAreaSectionConfig/.test(flagsType),
+);
+
+check(
+  "category section profile module exists",
+  /SectionProfile/.test(profile) && /sectionProfile\(/.test(profile),
+);
+
+check(
+  "section-data gates process on flag + ≥3 steps",
+  /isProcessSectionFlagEnabled/.test(sectionData) &&
+    /steps\.length >= 3/.test(sectionData),
+);
+
+check(
+  "section-data gates benefits on flag + ≥3 items",
+  /isBenefitsSectionFlagEnabled/.test(sectionData) &&
+    /items\.length >= 3/.test(sectionData),
+);
+
+check(
+  "About drops points when Benefits visible",
+  /isBenefitsVisible\(config\) \? \[\]/.test(sectionData),
+);
+
+check(
+  "TopBar uses getOfferSectionMeta id (not hardcoded #cenik only)",
+  /getOfferSectionMeta/.test(topBar) &&
+    /href: `#\$\{offerMeta\.id\}`/.test(topBar),
+);
+
+for (const page of [
+  "src/templates/bento/BentoPage.tsx",
+  "src/templates/outlined/OutlinedPage.tsx",
+  "src/templates/type-minimal/TypePage.tsx",
+  "src/templates/floating/FloatingPage.tsx",
+]) {
+  const src = readSrc(page);
+  check(
+    `${page} includes optional expanded sections`,
+    /TemplateBenefitsSection/.test(src) &&
+      /TemplateProcessSection/.test(src) &&
+      /TemplateServiceAreaSection/.test(src) &&
+      /TemplateFinalCtaSection/.test(src),
+  );
+}
+
 if (failures > 0) {
   console.error(`\n${failures} guard(s) failed`);
   process.exit(1);

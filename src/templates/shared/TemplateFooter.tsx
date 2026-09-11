@@ -9,7 +9,7 @@ type Props = {
   /** Inner bar classes (horizontal padding / extras). Vertical height is fixed. */
   contentClassName?: string;
   className?: string;
-  /** Defaults to accent on background. */
+  /** Defaults to muted (not accent — avoids blending into Final CTA). */
   textClassName?: string;
   linkClassName?: string;
   separatorClassName?: string;
@@ -17,22 +17,24 @@ type Props = {
   legalLinksInline?: boolean;
 };
 
-/** Compact site footer — page-background bar with legal links, width-matched to body. */
+/** Compact site footer — page-background bar with a clear top rule, width-matched to body. */
 export function TemplateFooter({
   siteConfig,
   siteSlug,
   maxWidthClassName = "max-w-5xl",
   contentClassName,
   className = "",
-  textClassName = "text-[var(--accent)]",
-  linkClassName = "text-[var(--accent)] underline-offset-2 transition-opacity hover:opacity-80 hover:underline",
-  separatorClassName = "text-[var(--accent)]/40",
+  textClassName = "text-[var(--muted)]",
+  linkClassName = "text-[var(--muted)] underline-offset-2 transition-colors hover:text-[var(--foreground)] hover:underline",
+  separatorClassName = "text-[color-mix(in_srgb,var(--foreground)_40%,transparent)]",
   legalLinksInline = true,
 }: Props) {
   return (
-    <footer className={className}>
+    <footer
+      className={`border-t border-[color-mix(in_srgb,var(--foreground)_35%,transparent)] bg-[var(--background)] ${className}`}
+    >
       <div
-        className={`mx-auto w-full bg-[var(--background)] py-3 text-xs sm:py-9 ${textClassName} ${maxWidthClassName} ${
+        className={`mx-auto w-full py-5 text-xs sm:py-6 ${textClassName} ${maxWidthClassName} ${
           contentClassName ?? "px-4 sm:px-6"
         }`}
       >
