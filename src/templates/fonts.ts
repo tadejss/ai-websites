@@ -48,6 +48,8 @@ export function templateFontClassName(
       return archivo.variable;
     case "floating":
       return manrope.variable;
+    case "mono":
+      return "";
     default:
       return outfit.variable;
   }

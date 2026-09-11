@@ -283,7 +283,7 @@ const brandingSchema = z
 const lookIdSchema = z.enum(lookIds as [string, ...string[]]).optional();
 
 const templateIdSchema = z
-  .enum(["bento", "outlined", "type", "floating"])
+  .enum(["bento", "outlined", "type", "floating", "mono"])
   .optional();
 
 const siteConfigSchema = z.object({

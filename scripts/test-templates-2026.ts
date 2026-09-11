@@ -184,6 +184,7 @@ ok(
 );
 ok(!isTemplateId("not-a-template"), "invalid templateId rejected");
 ok(isTemplateId("bento" as TemplateId), "valid templateId accepted");
+ok(isTemplateId("mono" as TemplateId), "mono templateId accepted");
 
 console.log("\n== copy voice ==");
 const clientsDir = resolve(__dirname, "../src/content/clients");

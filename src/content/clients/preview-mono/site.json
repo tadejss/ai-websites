@@ -1,0 +1,275 @@
+{
+  "appearance": "construction",
+  "templateId": "mono",
+  "theme": {
+    "paletteId": "charcoal-signal"
+  },
+  "layout": {
+    "profileId": "copy-heavy",
+    "heroImageSide": "none",
+    "servicesImageSide": "none",
+    "heroRatio": "full-copy",
+    "benefitsMode": "default"
+  },
+  "images": {
+    "hero": {
+      "src": "/templates/mono/hero-mono.png",
+      "alt": "MONO sodobna trajnostna arhitektura",
+      "width": 1920,
+      "height": 1080
+    },
+    "services": {
+      "src": "/templates/mono/interior-view.png",
+      "alt": "Sodoben trajnostni interier",
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "sections": {
+    "gallery": true,
+    "pricing": true
+  },
+  "gallery": {
+    "id": "galerija",
+    "eyebrow": "Galerija",
+    "title": "Arhitekturni dosežki",
+    "description": "Vpogled v naše trajnostne objekte in bivalne prostore.",
+    "items": [
+      {
+        "src": "/templates/mono/mono-1.png",
+        "alt": "Sodobna arhitektura ob sončnem vzhodu"
+      },
+      {
+        "src": "/templates/mono/mono-2.png",
+        "alt": "Sodobna arhitektura v dnevni svetlobi"
+      },
+      {
+        "src": "/templates/mono/mono-3.png",
+        "alt": "Sodobna arhitektura v mraku"
+      },
+      {
+        "src": "/templates/mono/mono-4.png",
+        "alt": "Sodobna arhitektura ponoči"
+      }
+    ]
+  },
+  "pricing": {
+    "id": "ponudba",
+    "eyebrow": "Modeli",
+    "title": "Prostorske možnosti",
+    "description": "Izberite model, prilagojen vaši lokaciji in življenjskemu slogu.",
+    "disclaimer": "Cene vključujejo projektiranje, konstrukcijo in osnovno montažo.",
+    "items": [
+      {
+        "name": "Kompaktni model",
+        "description": "120 m² bivalne površine z optimalno energijsko učinkovitostjo",
+        "price": "285.000 €"
+      },
+      {
+        "name": "Standardni model",
+        "description": "180 m² popolno ravnovesje prostornosti in trajnosti",
+        "price": "395.000 €",
+        "featured": true
+      },
+      {
+        "name": "Premijski model",
+        "description": "250 m² odprt arhitekturni dizajn z maksimalnim udobjem",
+        "price": "525.000 €"
+      }
+    ]
+  },
+  "brand": {
+    "prefix": "MONO",
+    "highlight": "ARHITEKTURA"
+  },
+  "metadata": {
+    "title": "MONO ARHITEKTURA | Trajnostni bivalni moduli",
+    "description": "Sodobna trajnostna arhitektura in pasivni bivalni moduli, zgrajeni za prihodnost."
+  },
+  "nav": {
+    "links": [
+      {
+        "href": "#prednosti",
+        "label": "Prednosti"
+      },
+      {
+        "href": "#tehnologija",
+        "label": "Tehnologija"
+      },
+      {
+        "href": "#galerija",
+        "label": "Galerija"
+      },
+      {
+        "href": "#ponudba",
+        "label": "Modeli"
+      },
+      {
+        "href": "#kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "cta": "Kontaktirajte nas"
+  },
+  "hero": {
+    "badge": "Trajnostni bivalni moduli",
+    "title": "MONO",
+    "titleHighlight": "ARHITEKTURA",
+    "description": "Lahkotno, trajnostno in pripravljeno na prihodnost.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Raziščite modele",
+    "stats": [
+      {
+        "value": "A+",
+        "label": "Energijski razred",
+        "title": "Energijski razred"
+      },
+      {
+        "value": "100%",
+        "label": "Bio materiali",
+        "title": "Bio materiali"
+      },
+      {
+        "value": "0 kg",
+        "label": "CO₂ odtis",
+        "title": "CO₂ odtis"
+      },
+      {
+        "value": "30+",
+        "label": "Let garancije",
+        "title": "Let garancije"
+      }
+    ]
+  },
+  "services": {
+    "id": "storitve",
+    "eyebrow": "Storitve",
+    "title": "Celovite arhitekturne storitve",
+    "description": "Od idejne zasnove do ključa v roke.",
+    "items": [
+      {
+        "title": "Arhitekturno projektiranje",
+        "description": "Individualni načrti, prilagojeni mikrolokaciji in sončni legi.",
+        "icon": "service-1"
+      },
+      {
+        "title": "Gradnja pasivnih objektov",
+        "description": "Uporaba bio-izvornih materialov, lesa in konopljine volne.",
+        "icon": "service-2"
+      },
+      {
+        "title": "Energijski inženiring",
+        "description": "Integracija sončnih elektrarn, toplotnih črpalk in prezračevanja.",
+        "icon": "service-3"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "id": "prednosti",
+    "eyebrow": "Prednosti",
+    "title": "Vizija trajnostnega bivanja",
+    "description": "Pasivna hiša, ki združuje sodoben dizajn s spoštovanjem do narave — ustvarjena za tiste, ki nočejo izbirati med sodobnim udobjem in ekološko odgovornostjo.",
+    "highlights": [
+      "Energijska samozadostnost",
+      "Naravni bio-materiali",
+      "Vrhunska toplotna izolacija"
+    ],
+    "benefits": [
+      {
+        "label": "Trajnostna arhitektura.",
+        "description": "Dizajn s spoštovanjem narave.",
+        "title": "Trajnostna arhitektura."
+      },
+      {
+        "label": "Zgrajeno za prihodnost.",
+        "description": "Vrhunska energetska učinkovitost.",
+        "title": "Zgrajeno za prihodnost."
+      },
+      {
+        "label": "Eko-odgovorna kakovost.",
+        "description": "100% naravni bio materiali.",
+        "title": "Eko-odgovorna kakovost."
+      }
+    ]
+  },
+  "contact": {
+    "id": "kontakt",
+    "eyebrow": "Kontakt",
+    "title": "Začnimo vaš projekt skupaj",
+    "description": "Stopite v stik z našo arhitekturno ekipo za informativni posvet in predstavitev modelov.",
+    "items": [
+      {
+        "label": "Naslov",
+        "value": "Dunajska cesta 156, 1000 Ljubljana",
+        "icon": "location"
+      },
+      {
+        "label": "Telefon",
+        "value": "+386 1 430 5000",
+        "href": "tel:+38614305000",
+        "icon": "phone"
+      },
+      {
+        "label": "E-pošta",
+        "value": "info@mono-arhitektura.si",
+        "href": "mailto:info@mono-arhitektura.si",
+        "icon": "email"
+      },
+      {
+        "label": "Delovni čas",
+        "value": "Pon–Pet: 8:00 – 17:00",
+        "icon": "clock"
+      }
+    ],
+    "form": {
+      "title": "Pošljite povpraševanje",
+      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili.",
+      "nameLabel": "Ime in priimek",
+      "namePlaceholder": "Vnesite vaše ime",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "messageLabel": "Sporočilo",
+      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
+      "submitLabel": "Pošlji povpraševanje"
+    }
+  },
+  "footer": {
+    "address": "Dunajska cesta 156, 1000 Ljubljana, Slovenija",
+    "rights": "© 2026 MONO. Vse pravice pridržane."
+  },
+  "business": {
+    "name": "MONO Arhitektura",
+    "address": "Dunajska cesta 156, 1000 Ljubljana, Slovenija",
+    "email": "info@mono-arhitektura.si",
+    "phone": "+386 1 430 5000"
+  },
+  "privacy": {
+    "enabled": true,
+    "lastUpdated": "2026-09-11",
+    "contactForm": {
+      "enabled": true,
+      "fields": ["name", "phone", "message"]
+    },
+    "analytics": {
+      "enabled": false,
+      "provider": null
+    },
+    "marketing": {
+      "enabled": false
+    },
+    "booking": {
+      "enabled": false,
+      "type": "external_link",
+      "providerName": "",
+      "url": "",
+      "privacyUrl": ""
+    },
+    "thirdPartyEmbeds": {
+      "googleMaps": false,
+      "youtube": false
+    },
+    "cookies": {
+      "nonEssential": false
+    }
+  }
+}

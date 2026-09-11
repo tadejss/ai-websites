@@ -36,6 +36,10 @@ export async function loadTemplatePage(
       );
       return { Page: FloatingPage };
     }
+    case "mono": {
+      const { MonoPage } = await import("@/templates/mono/MonoPage");
+      return { Page: MonoPage };
+    }
     default: {
       const { BentoPage } = await import("@/templates/bento/BentoPage");
       return { Page: BentoPage };

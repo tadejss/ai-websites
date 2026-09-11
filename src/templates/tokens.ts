@@ -42,6 +42,11 @@ const STRUCTURE: Record<TemplateId, TemplateStructureTokens> = {
     fontBody: "var(--font-manrope), ui-sans-serif, system-ui, sans-serif",
     fontDisplay: "var(--font-manrope), ui-sans-serif, system-ui, sans-serif",
   },
+  mono: {
+    radius: "16px",
+    fontBody: "var(--font-inter), ui-sans-serif, system-ui, sans-serif",
+    fontDisplay: "var(--font-inter), ui-sans-serif, system-ui, sans-serif",
+  },
 };
 
 export function resolveTemplateStructure(
@@ -89,6 +94,14 @@ export function resolveTemplateTokens(
       surface: "#faf7f2",
       border: "#d9d0c4",
       muted: "#716a60",
+    },
+    mono: {
+      background: "#ffffff",
+      foreground: "#0a0a0a",
+      accent: "#0a0a0a",
+      surface: "#f5f5f5",
+      border: "#e5e5e5",
+      muted: "#737373",
     },
   };
   return { ...structure, ...fallback[templateId] };

@@ -2,6 +2,7 @@ import { BentoPage } from "./bento/BentoPage";
 import { FloatingPage } from "./floating/FloatingPage";
 import { OutlinedPage } from "./outlined/OutlinedPage";
 import { TypePage } from "./type-minimal/TypePage";
+import { MonoPage } from "./mono/MonoPage";
 import { getTemplateImagePlan } from "./image-plan";
 import type { TemplateDefinition, TemplateId } from "./types";
 
@@ -29,5 +30,11 @@ export const templateRegistry = {
     Page: FloatingPage,
     stickyPhoneBar: false,
     imagePlan: getTemplateImagePlan("floating"),
+  },
+  mono: {
+    id: "mono",
+    Page: MonoPage,
+    stickyPhoneBar: false,
+    imagePlan: getTemplateImagePlan("mono"),
   },
 } satisfies Record<TemplateId, TemplateDefinition>;

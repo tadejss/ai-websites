@@ -13,6 +13,7 @@ const PREVIEW_SLUG: Record<TemplateId, string> = {
   outlined: "preview-outlined",
   type: "preview-type",
   floating: "preview-floating",
+  mono: "preview-mono",
 };
 
 export default async function PaletteQaPage({ params }: Props) {
