@@ -1,0 +1,27 @@
+{
+  "companyName": "MONO Arhitektura d.o.o.",
+  "industry": "Trajnostna arhitektura in pasivna gradnja",
+  "tagline": "Lahkotno, trajnostno in pripravljeno na prihodnost.",
+  "services": [
+    "Arhitekturno projektiranje",
+    "Gradnja pasivnih objektov",
+    "Energijski inženiring"
+  ],
+  "phone": "+386 1 430 5000",
+  "email": "info@mono-arhitektura.si",
+  "address": "Dunajska cesta 156, 1000 Ljubljana, Slovenija",
+  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "sellingPoints": [
+    "Energijska samozadostnost",
+    "Naravni bio-materiali",
+    "Vrhunska toplotna izolacija",
+    "Minimalen ogljični odtis"
+  ],
+  "targetCustomers": "Vsi, ki cenijo vrhunsko sodobno arhitekturo in ekološko odgovornost.",
+  "serviceArea": "Slovenija in mednarodno",
+  "yearsExperience": "10+",
+  "tone": "minimalističen, sofisticiran, tehnološko napreden",
+  "brandStyle": "visoka estetika, mirnost, naravni materiali",
+  "competitors": "Arhitekturni biroji",
+  "callToAction": "Kontaktirajte nas"
+}

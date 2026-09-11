@@ -21,6 +21,11 @@ export const TEMPLATE_IMAGE_PLANS: Record<TemplateId, TemplateImagePlan> = {
     serviceRole: "service-none",
     preferPortraitHero: true,
   },
+  mono: {
+    heroRole: "hero-editorial",
+    serviceRole: "service-thumb",
+    preferPortraitHero: false,
+  },
 };
 
 export function getTemplateImagePlan(templateId: TemplateId): TemplateImagePlan {

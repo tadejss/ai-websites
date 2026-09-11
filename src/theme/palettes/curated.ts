@@ -28,6 +28,7 @@ export type PaletteSuitabilityTag =
   | "outlined"
   | "type"
   | "floating"
+  | "mono"
   | "all";
 
 export type CuratedPalette = Palette & {
@@ -428,11 +429,12 @@ export function mapLegacyPaletteIdToCurated(id: string): CuratedPalette {
 }
 
 export const TEMPLATE_DEFAULT_PALETTE_ID: Record<
-  "bento" | "outlined" | "type" | "floating",
+  "bento" | "outlined" | "type" | "floating" | "mono",
   string
 > = {
   bento: "obsidian-lime",
   outlined: "ink-coral",
   type: "charcoal-signal",
   floating: "burgundy-cream",
+  mono: "charcoal-signal",
 };

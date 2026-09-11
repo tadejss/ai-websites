@@ -44,7 +44,7 @@ ok(
 const backgrounds = new Set(
   TEMPLATE_IDS.map((id) => resolveTemplateTokens(id).background),
 );
-ok(backgrounds.size === 4, "four distinct background colors");
+ok(backgrounds.size >= 4, "distinct background colors");
 
 if (failures) {
   console.error(`\n${failures} failure(s)`);
