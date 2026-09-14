@@ -32,7 +32,7 @@
     },
     "templateId": {
       "type": "string",
-      "enum": ["bento", "outlined", "type", "floating"],
+      "enum": ["bento", "outlined", "type", "floating", "mono"],
       "description": "2026 template shell. When set, SitePage uses the new template compositions."
     },
     "lookId": {

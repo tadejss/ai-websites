@@ -14,27 +14,41 @@ export function MonoPhilosophySection({ siteConfig }: Props) {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [blurProgress, setBlurProgress] = useState(0);
   const rafRef = useRef<number | null>(null);
+  const [reduceMotion, setReduceMotion] = useState(false);
 
   const about = getAboutContent(siteConfig);
   const benefits = getBenefitsContent(siteConfig);
 
-  // Dynamic 3D flip titles from benefits or default philosophy statements
-  const statements: string[] =
-    benefits.items && benefits.items.length >= 3
-      ? benefits.items.slice(0, 3).map((item) => item.title)
-      : [
-          siteConfig.hero.title || "Trajnostna arhitektura.",
-          "Zgrajeno za prihodnost.",
-          "Eko-odgovorna kakovost.",
-        ];
+  const statements: string[] = (() => {
+    if (benefits.items.length >= 3) {
+      return benefits.items.slice(0, 3).map((item) => item.title);
+    }
+    const highlights = siteConfig.whyChooseUs.highlights?.filter(Boolean) ?? [];
+    if (highlights.length >= 3) {
+      return highlights.slice(0, 3);
+    }
+    const titleLine = [siteConfig.hero.title, siteConfig.hero.titleHighlight]
+      .filter(Boolean)
+      .join(" ")
+      .trim();
+    return [about.title, titleLine, siteConfig.hero.badge]
+      .map((s) => s?.trim())
+      .filter((s): s is string => Boolean(s))
+      .slice(0, 3);
+  })();
 
   const philosophyText =
-    about.description ||
-    siteConfig.hero.description ||
-    "Dizajn, ki združuje sodobno estetiko in vrhunsko energijsko učinkovitost. Zgrajeno iz naravnih materialov, ki zmanjšujejo ogljični odtis ter zagotavljajo brezkompromisno udobje bivanja.";
+    about.description?.trim() ||
+    siteConfig.hero.description?.trim() ||
+    "";
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduceMotion(mq.matches);
+  }, []);
 
   const handleScroll = useCallback(() => {
-    if (!containerRef.current) return;
+    if (!containerRef.current || reduceMotion) return;
     const rect = containerRef.current.getBoundingClientRect();
     const windowH = window.innerHeight;
     const totalH = containerRef.current.offsetHeight;
@@ -50,13 +64,21 @@ export function MonoPhilosophySection({ siteConfig }: Props) {
 
       if (top < thresholdHigh && top > thresholdLow - height) {
         setBlurProgress(
-          Math.max(0, Math.min(1, (thresholdHigh - top) / (thresholdHigh - thresholdLow))),
+          Math.max(
+            0,
+            Math.min(1, (thresholdHigh - top) / (thresholdHigh - thresholdLow)),
+          ),
         );
       }
     }
-  }, []);
+  }, [reduceMotion]);
 
   useEffect(() => {
+    if (reduceMotion) {
+      setScrollProgress(1);
+      setBlurProgress(1);
+      return;
+    }
     const onScroll = () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
       rafRef.current = requestAnimationFrame(handleScroll);
@@ -69,104 +91,101 @@ export function MonoPhilosophySection({ siteConfig }: Props) {
       window.removeEventListener("scroll", onScroll);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, [handleScroll]);
+  }, [handleScroll, reduceMotion]);
 
-  const words = philosophyText.split(" ");
+  if (statements.length === 0 && !philosophyText) {
+    return null;
+  }
+
+  const words = philosophyText.split(" ").filter(Boolean);
+  const progress = reduceMotion ? 1 : scrollProgress;
 
   return (
     <section id="prednosti" className="bg-[var(--background)]">
-      {/* 3D Cylindrical Flip Titles */}
-      <div ref={containerRef} className="relative" style={{ height: "200vh" }}>
-        <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
-          <div className="relative w-full max-w-7xl px-4">
+      {statements.length > 0 ? (
+        <div
+          ref={containerRef}
+          className="relative"
+          style={{ height: reduceMotion ? "auto" : "200vh" }}
+        >
+          <div
+            className={`${
+              reduceMotion ? "relative py-24" : "sticky top-0 h-screen"
+            } flex items-center justify-center overflow-hidden`}
+          >
             <div
-              className="flex items-center justify-center pointer-events-none"
+              className="relative w-full max-w-5xl px-6"
               style={{ perspective: "1000px" }}
             >
-              <div
-                className="relative w-full"
-                style={{ transformStyle: "preserve-3d", minHeight: "150px" }}
-              >
-                {statements.map((statement, idx) => {
-                  const isLast = idx === statements.length - 1;
-                  const step = 1 / statements.length;
-                  const start = idx * step;
-                  const end = (idx + 1) * step;
+              {statements.map((statement, idx) => {
+                const segment = 1 / statements.length;
+                const local = Math.max(
+                  0,
+                  Math.min(1, (progress - idx * segment) / segment),
+                );
+                const rotateX = reduceMotion
+                  ? 0
+                  : local < 0.5
+                    ? 90 - local * 180
+                    : -90 + (1 - local) * 180;
+                const opacity = reduceMotion
+                  ? 1
+                  : local < 0.15
+                    ? local / 0.15
+                    : local > 0.85
+                      ? (1 - local) / 0.15
+                      : 1;
 
-                  let rotateX = 0;
-                  let opacity = 0;
-
-                  if (scrollProgress >= start && scrollProgress < end) {
-                    const localProg = (scrollProgress - start) / step;
-                    rotateX = (1 - localProg) * 90;
-                    opacity = localProg;
-                  } else if (scrollProgress >= end) {
-                    if (isLast) {
-                      rotateX = 0;
-                      opacity = 1;
-                    } else {
-                      rotateX = -90;
-                      opacity = 0;
-                    }
-                  } else {
-                    rotateX = 90;
-                    opacity = 0;
-                  }
-
-                  return (
-                    <h2
-                      key={idx}
-                      className="absolute inset-0 flex items-center justify-center text-[7vw] sm:text-[6vw] font-medium leading-tight tracking-tighter text-[var(--foreground)] md:text-[5vw] lg:text-[4vw] text-center px-4"
-                      style={{
-                        transform: `rotateX(${rotateX}deg) translateZ(0)`,
-                        opacity,
-                        transformStyle: "preserve-3d",
-                        backfaceVisibility: "hidden",
-                        WebkitBackfaceVisibility: "hidden",
-                        willChange: "transform, opacity",
-                        WebkitFontSmoothing: "antialiased",
-                      }}
-                    >
-                      {statement}
-                    </h2>
-                  );
-                })}
-              </div>
+                return (
+                  <h2
+                    key={`${statement}-${idx}`}
+                    className="absolute inset-x-6 text-center text-4xl font-medium tracking-tight text-[var(--foreground)] sm:text-5xl md:text-6xl lg:text-7xl"
+                    style={{
+                      opacity: reduceMotion ? (idx === 0 ? 1 : 0.35) : opacity,
+                      transform: `rotateX(${rotateX}deg)`,
+                      transformStyle: "preserve-3d",
+                      position: reduceMotion ? "relative" : "absolute",
+                      marginBottom: reduceMotion ? "1.5rem" : undefined,
+                    }}
+                  >
+                    {statement}
+                  </h2>
+                );
+              })}
             </div>
           </div>
         </div>
-      </div>
+      ) : null}
 
-      {/* Kinetic Blur-to-Focus Text */}
-      <div
-        ref={textRef}
-        className="px-6 pt-8 pb-20 md:px-12 md:pt-12 md:pb-28 lg:px-20 lg:pt-16 lg:pb-36"
-      >
-        <div className="text-center max-w-4xl mx-auto">
-          <p className="mt-8 leading-relaxed text-[var(--muted)] text-2xl sm:text-3xl text-center">
-            {words.map((word: string, idx: number) => {
-              const wordRatio = Math.max(
+      {words.length > 0 ? (
+        <div ref={textRef} className="px-6 py-24 md:px-12 md:py-32 lg:px-20">
+          <p className="mx-auto max-w-4xl text-center text-2xl font-light leading-relaxed text-[var(--foreground)] sm:text-3xl md:text-4xl">
+            {words.map((word, wIdx) => {
+              const wordScore = Math.max(
                 0,
-                Math.min(1, blurProgress * words.length - idx),
+                Math.min(
+                  1,
+                  (reduceMotion ? 1 : blurProgress) * (words.length + 1) - wIdx,
+                ),
               );
-              const blurPx = (1 - wordRatio) * 35;
+              const blur = (1 - wordScore) * 28;
               return (
                 <span
-                  key={idx}
+                  key={`${word}-${wIdx}`}
+                  className="inline-block"
                   style={{
-                    opacity: wordRatio,
-                    filter: `blur(${blurPx}px)`,
-                    transition: "opacity 0.3s ease, filter 0.3s ease",
+                    opacity: wordScore,
+                    filter: reduceMotion ? undefined : `blur(${blur}px)`,
+                    marginRight: "0.3em",
                   }}
                 >
                   {word}
-                  {idx < words.length - 1 ? " " : ""}
                 </span>
               );
             })}
           </p>
         </div>
-      </div>
+      ) : null}
     </section>
   );
 }

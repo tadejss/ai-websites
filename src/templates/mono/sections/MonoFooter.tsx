@@ -14,9 +14,8 @@ export function MonoFooter({ siteConfig, siteSlug }: Props) {
 
   const exploreLinks = [
     { label: "Prednosti", href: "#prednosti" },
-    { label: "Tehnologija", href: "#tehnologija" },
-    { label: "Galerija", href: "#galerija" },
-    { label: "Modeli", href: "#ponudba" },
+    { label: "Ambient", href: "#tehnologija" },
+    { label: "Storitve", href: "#ponudba" },
   ];
 
   const infoLinks = [
@@ -34,8 +33,7 @@ export function MonoFooter({ siteConfig, siteSlug }: Props) {
               {brandName}
             </a>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-[var(--muted)]">
-              {siteConfig.hero.description ||
-                "Trajnostno zasnovani objekti, ki združujejo sodobno estetiko, energijsko učinkovitost in naravne materiale."}
+              {siteConfig.hero.description?.trim() || ""}
             </p>
           </div>
 

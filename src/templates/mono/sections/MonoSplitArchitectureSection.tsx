@@ -3,18 +3,66 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import type { SiteConfig } from "@/content/types/site";
+import { getAboutContent, getBenefitsContent } from "../../shared/section-data";
+import { fillMonoMedia, getMonoMediaPool, MONO_KINETIC_QUALITY, MONO_KINETIC_SIZES } from "../mono-media";
 
 type Props = {
   siteConfig: SiteConfig;
 };
 
-export function MonoSplitArchitectureSection({}: Props) {
+export function MonoSplitArchitectureSection({ siteConfig }: Props) {
   const containerRef = useRef<HTMLElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [textProgress, setTextProgress] = useState(0);
+  const [reduceMotion, setReduceMotion] = useState(false);
+
+  const pool = getMonoMediaPool(siteConfig);
+  const about = getAboutContent(siteConfig);
+  const benefits = getBenefitsContent(siteConfig);
+
+  const phases = fillMonoMedia(pool, 4);
+  const leftSrc =
+    siteConfig.images?.services?.src || phases[0]?.src || pool[0]?.src;
+  const rightSrc = phases[1]?.src || pool[1]?.src || leftSrc;
+
+  const headlinePhrases = (() => {
+    if (benefits.items.length >= 3) {
+      return benefits.items.slice(0, 3).map((b) =>
+        b.title.endsWith(".") ? b.title : `${b.title}.`,
+      );
+    }
+    const highlights = siteConfig.whyChooseUs.highlights?.filter(Boolean) ?? [];
+    if (highlights.length >= 3) {
+      return highlights.slice(0, 3).map((h) => (h.endsWith(".") ? h : `${h}.`));
+    }
+    return [
+      siteConfig.hero.title,
+      siteConfig.hero.titleHighlight,
+      siteConfig.hero.badge,
+    ]
+      .map((s) => s?.trim())
+      .filter((s): s is string => Boolean(s))
+      .slice(0, 3)
+      .map((h) => (h.endsWith(".") ? h : `${h}.`));
+  })();
+
+  const narrativeText =
+    about.description?.trim() ||
+    siteConfig.hero.description?.trim() ||
+    "";
 
   useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduceMotion(mq.matches);
+  }, []);
+
+  useEffect(() => {
+    if (reduceMotion) {
+      setScrollProgress(1);
+      setTextProgress(1);
+      return;
+    }
     const handleScroll = () => {
       if (!containerRef.current) return;
       const rect = containerRef.current.getBoundingClientRect();
@@ -26,7 +74,10 @@ export function MonoSplitArchitectureSection({}: Props) {
         const windowH = window.innerHeight;
         const targetPoint = 0.9 * windowH;
         setTextProgress(
-          Math.max(0, Math.min(1, (targetPoint - textRect.top) / (targetPoint - 0.1 * windowH))),
+          Math.max(
+            0,
+            Math.min(1, (targetPoint - textRect.top) / (targetPoint - 0.1 * windowH)),
+          ),
         );
       }
     };
@@ -34,7 +85,11 @@ export function MonoSplitArchitectureSection({}: Props) {
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [reduceMotion]);
+
+  if (phases.length === 0 || !leftSrc) {
+    return null;
+  }
 
   const openProgress = Math.max(0, Math.min(1, (scrollProgress - 0.2) / 0.8));
   const centerWidth = 100 - 58 * openProgress;
@@ -43,41 +98,24 @@ export function MonoSplitArchitectureSection({}: Props) {
   const rightX = 100 - 100 * openProgress;
   const gap = 16 * openProgress;
 
-  // Time-of-day phases
-  const centerPhases = [
-    { src: "/templates/mono/mono-1.png", alt: "Arhitektura ob sončnem vzhodu", opacity: 1 },
-    {
-      src: "/templates/mono/mono-2.png",
-      alt: "Arhitektura v dnevni svetlobi",
-      opacity: Math.max(0, Math.min(1, (scrollProgress - 0.1) / 0.2)),
-    },
-    {
-      src: "/templates/mono/mono-3.png",
-      alt: "Arhitektura v mraku",
-      opacity: Math.max(0, Math.min(1, (scrollProgress - 0.4) / 0.2)),
-    },
-    {
-      src: "/templates/mono/mono-4.png",
-      alt: "Arhitektura ponoči",
-      opacity: Math.max(0, Math.min(1, (scrollProgress - 0.7) / 0.2)),
-    },
-  ];
+  const centerPhases = phases.map((phase, idx) => ({
+    ...phase,
+    opacity:
+      idx === 0
+        ? 1
+        : Math.max(0, Math.min(1, (scrollProgress - idx * 0.22) / 0.2)),
+  }));
 
-  const headlinePhrases = [
-    "Dizajn & Trajnost.",
-    "Pasivna Energija.",
-    "Bio-izvorska Gradnja.",
-  ];
-
-  const narrativeText =
-    "Pasivna arhitektura, ki na novo definira sodobno bivanje. Troslojna zasteklitev, ojačana toplotna izolacija in naravno prezračevanje v kombinaciji s sončnimi celicami ustvarjajo energijsko samozadosten dom. Naravni bio-materiali zagotavljajo zdrav notranji zrak in minimalen ogljični odtis.";
-
-  const narrativeWords = narrativeText.split(" ");
+  const narrativeWords = narrativeText.split(" ").filter(Boolean);
 
   return (
     <section ref={containerRef} className="relative bg-black text-white">
-      <div className="sticky top-0 h-screen overflow-hidden">
-        <div className="flex h-full w-full items-center justify-center">
+      <div
+        className={`${
+          reduceMotion ? "relative min-h-[70vh]" : "sticky top-0 h-screen"
+        } overflow-hidden`}
+      >
+        <div className="flex h-full min-h-[70vh] w-full items-center justify-center">
           <div
             className="relative flex h-full w-full items-stretch justify-center"
             style={{
@@ -85,7 +123,6 @@ export function MonoSplitArchitectureSection({}: Props) {
               padding: `${16 * openProgress}px`,
             }}
           >
-            {/* Left Wing (Interior View) */}
             <div
               className="relative overflow-hidden will-change-transform"
               style={{
@@ -96,15 +133,15 @@ export function MonoSplitArchitectureSection({}: Props) {
               }}
             >
               <Image
-                src="/templates/mono/interior-view.png"
-                alt="Notranji ambient s panoramskim razgledom"
+                src={leftSrc}
+                alt={siteConfig.images?.services?.alt || "Ambient"}
                 fill
-                sizes="(max-width: 1024px) 30vw, 22vw"
+                quality={MONO_KINETIC_QUALITY}
+                sizes={MONO_KINETIC_SIZES}
                 className="object-cover"
               />
             </div>
 
-            {/* Center Dynamic Time-of-Day Cross-Fade */}
             <div
               className="relative overflow-hidden will-change-transform rounded-sm"
               style={{
@@ -115,11 +152,12 @@ export function MonoSplitArchitectureSection({}: Props) {
             >
               {centerPhases.map((phase, idx) => (
                 <Image
-                  key={idx}
+                  key={`${phase.src}-${idx}`}
                   src={phase.src}
-                  alt={phase.alt}
+                  alt={phase.alt || ""}
                   fill
-                  sizes="100vw"
+                  quality={MONO_KINETIC_QUALITY}
+                  sizes={MONO_KINETIC_SIZES}
                   className="absolute inset-0 object-cover"
                   style={{
                     opacity: phase.opacity,
@@ -130,36 +168,46 @@ export function MonoSplitArchitectureSection({}: Props) {
 
               <div className="absolute inset-0 bg-black/40" />
 
-              {/* Kinetic Animated Headlines */}
               <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
                 {headlinePhrases.map((phrase, pIdx) => {
-                  const step = 1 / headlinePhrases.length;
+                  const step = 1 / Math.max(headlinePhrases.length, 1);
                   const start = pIdx * step;
                   const end = (pIdx + 1) * step;
                   const words = phrase.split(" ");
 
                   return (
                     <h2
-                      key={pIdx}
-                      className="absolute max-w-3xl font-medium leading-tight tracking-tight text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+                      key={`${phrase}-${pIdx}`}
+                      className="absolute max-w-3xl text-4xl font-medium leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
                     >
                       {words.map((w, wIdx) => {
-                        let wordOpacity = 0;
-                        let blurPx = 40;
+                        let wordOpacity = reduceMotion ? (pIdx === 0 ? 1 : 0) : 0;
+                        let blurPx = reduceMotion ? 0 : 40;
 
-                        if (scrollProgress >= start && scrollProgress < end) {
+                        if (
+                          !reduceMotion &&
+                          scrollProgress >= start &&
+                          scrollProgress < end
+                        ) {
                           const localProg = (scrollProgress - start) / step;
                           if (localProg < 0.5) {
                             const inProg = Math.max(
                               0,
-                              Math.min(1, (localProg / 0.5) * (words.length + 1) - wIdx),
+                              Math.min(
+                                1,
+                                (localProg / 0.5) * (words.length + 1) - wIdx,
+                              ),
                             );
                             wordOpacity = inProg;
                             blurPx = (1 - inProg) * 40;
                           } else {
                             const outProg = Math.max(
                               0,
-                              Math.min(1, ((localProg - 0.5) / 0.5) * (words.length + 1) - wIdx),
+                              Math.min(
+                                1,
+                                ((localProg - 0.5) / 0.5) * (words.length + 1) -
+                                  wIdx,
+                              ),
                             );
                             wordOpacity = 1 - outProg;
                             blurPx = 40 * outProg;
@@ -168,12 +216,11 @@ export function MonoSplitArchitectureSection({}: Props) {
 
                         return (
                           <span
-                            key={wIdx}
+                            key={`${w}-${wIdx}`}
                             className="inline-block"
                             style={{
                               opacity: wordOpacity,
                               filter: `blur(${blurPx}px)`,
-                              transition: "opacity 0.1s linear, filter 0.1s linear",
                               marginRight: "0.3em",
                             }}
                           >
@@ -187,7 +234,6 @@ export function MonoSplitArchitectureSection({}: Props) {
               </div>
             </div>
 
-            {/* Right Wing (Rusted Metal / Material Texture) */}
             <div
               className="relative overflow-hidden will-change-transform"
               style={{
@@ -197,59 +243,59 @@ export function MonoSplitArchitectureSection({}: Props) {
                 opacity: openProgress,
               }}
             >
-              <Image
-                src="/templates/mono/rusted-metal.png"
-                alt="Tekstura naravnih materialov"
-                fill
-                sizes="(max-width: 1024px) 30vw, 22vw"
-                className="object-cover"
-              />
+              {rightSrc ? (
+                <Image
+                  src={rightSrc}
+                  alt=""
+                  fill
+                  quality={MONO_KINETIC_QUALITY}
+                  sizes={MONO_KINETIC_SIZES}
+                  className="object-cover"
+                />
+              ) : null}
             </div>
           </div>
         </div>
       </div>
 
-      <div className="h-[400vh]" />
+      {!reduceMotion ? <div className="h-[400vh]" /> : null}
 
-      {/* Kinetic Text Banner Below Sticky Section */}
-      <div
-        ref={textRef}
-        className="relative overflow-hidden px-6 py-24 md:px-12 md:py-32 lg:px-20 lg:py-40 bg-black"
-      >
+      {narrativeWords.length > 0 ? (
         <div
-          className="absolute top-0 left-0 right-0 z-0 pointer-events-none"
-          style={{
-            height: "150px",
-            background:
-              "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%)",
-          }}
-        />
-        <div className="relative z-10 mx-auto max-w-4xl text-center">
-          <p className="text-2xl font-normal leading-relaxed text-zinc-100 sm:text-3xl md:text-4xl lg:text-5xl">
-            {narrativeWords.map((word, wIdx) => {
-              const wordScore = Math.max(
-                0,
-                Math.min(1, textProgress * (narrativeWords.length + 1) - wIdx),
-              );
-              const blur = (1 - wordScore) * 35;
-              return (
-                <span
-                  key={wIdx}
-                  className="inline-block"
-                  style={{
-                    opacity: wordScore,
-                    filter: `blur(${blur}px)`,
-                    transition: "opacity 0.1s linear, filter 0.1s linear",
-                    marginRight: "0.3em",
-                  }}
-                >
-                  {word}
-                </span>
-              );
-            })}
-          </p>
+          ref={textRef}
+          className="relative overflow-hidden bg-black px-6 py-24 md:px-12 md:py-32 lg:px-20 lg:py-40"
+        >
+          <div className="relative z-10 mx-auto max-w-4xl text-center">
+            <p className="text-2xl font-normal leading-relaxed text-zinc-100 sm:text-3xl md:text-4xl lg:text-5xl">
+              {narrativeWords.map((word, wIdx) => {
+                const wordScore = Math.max(
+                  0,
+                  Math.min(
+                    1,
+                    (reduceMotion ? 1 : textProgress) *
+                      (narrativeWords.length + 1) -
+                      wIdx,
+                  ),
+                );
+                const blur = (1 - wordScore) * 35;
+                return (
+                  <span
+                    key={`${word}-${wIdx}`}
+                    className="inline-block"
+                    style={{
+                      opacity: wordScore,
+                      filter: reduceMotion ? undefined : `blur(${blur}px)`,
+                      marginRight: "0.3em",
+                    }}
+                  >
+                    {word}
+                  </span>
+                );
+              })}
+            </p>
+          </div>
         </div>
-      </div>
+      ) : null}
     </section>
   );
 }

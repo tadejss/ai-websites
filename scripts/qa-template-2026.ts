@@ -131,11 +131,7 @@ async function main(): Promise<void> {
       ),
     );
     ok(uniqueFonts.size <= 2, `${id}: ≤2 font families (${uniqueFonts.size})`);
-    if (id !== "mono") {
-      ok(!pageSources[id].includes("<video"), `${id}: no video element`);
-    } else {
-      ok(pageSources[id].includes("<video") || true, `${id}: video permitted for cinematic hero`);
-    }
+    ok(!pageSources[id].includes("<video"), `${id}: no video element`);
     ok(Boolean(templateRegistry[id]?.Page), `${id}: page registered`);
   }
 

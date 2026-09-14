@@ -175,6 +175,7 @@ ok(TEMPLATE_DEFAULT_PALETTE_ID.bento === "obsidian-lime", "bento default");
 ok(TEMPLATE_DEFAULT_PALETTE_ID.outlined === "ink-coral", "outlined default");
 ok(TEMPLATE_DEFAULT_PALETTE_ID.type === "charcoal-signal", "type default");
 ok(TEMPLATE_DEFAULT_PALETTE_ID.floating === "burgundy-cream", "floating default");
+ok(TEMPLATE_DEFAULT_PALETTE_ID.mono === "charcoal-gold", "mono default");
 
 console.log("\n== template bind (structure + color) ==");
 const templates: TemplateId[] = ["bento", "outlined", "type", "floating"];

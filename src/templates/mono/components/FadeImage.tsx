@@ -38,6 +38,7 @@ export function FadeImage({ className, fadeDelay = 0, alt = "", ...rest }: Props
       <Image
         {...rest}
         alt={alt}
+        quality={rest.quality ?? 90}
         className={`${className || ""} transition-all duration-700 ease-out ${
           isInView && isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-[1.02]"
         }`}

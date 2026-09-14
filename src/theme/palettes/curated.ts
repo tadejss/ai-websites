@@ -436,5 +436,5 @@ export const TEMPLATE_DEFAULT_PALETTE_ID: Record<
   outlined: "ink-coral",
   type: "charcoal-signal",
   floating: "burgundy-cream",
-  mono: "charcoal-signal",
+  mono: "charcoal-gold",
 };

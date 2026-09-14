@@ -1,27 +1,28 @@
 {
-  "companyName": "MONO Arhitektura d.o.o.",
-  "industry": "Trajnostna arhitektura in pasivna gradnja",
-  "tagline": "Lahkotno, trajnostno in pripravljeno na prihodnost.",
+  "companyName": "Atelier Nora",
+  "industry": "Frizerski salon",
+  "tagline": "Miren prostor za lase, ki izžarevajo gotovost.",
   "services": [
-    "Arhitekturno projektiranje",
-    "Gradnja pasivnih objektov",
-    "Energijski inženiring"
+    "Žensko striženje",
+    "Moško striženje",
+    "Barvanje",
+    "Balayage / prameni",
+    "Fen frizura",
+    "Svečana pričeska",
+    "Nega in regeneracija"
   ],
-  "phone": "+386 1 430 5000",
-  "email": "info@mono-arhitektura.si",
-  "address": "Dunajska cesta 156, 1000 Ljubljana, Slovenija",
-  "openingHours": "Monday: 8:00 AM – 5:00 PM · Tuesday: 8:00 AM – 5:00 PM · Wednesday: 8:00 AM – 5:00 PM · Thursday: 8:00 AM – 5:00 PM · Friday: 8:00 AM – 5:00 PM · Saturday: Closed · Sunday: Closed",
+  "phone": "041 555 220",
+  "email": "info@atelier-nora.si",
+  "address": "Trubarjeva cesta 48, 1000 Ljubljana",
+  "openingHours": "Monday: 9:00 AM – 7:00 PM · Tuesday: 9:00 AM – 7:00 PM · Wednesday: 9:00 AM – 7:00 PM · Thursday: 9:00 AM – 7:00 PM · Friday: 9:00 AM – 7:00 PM · Saturday: 8:00 AM – 2:00 PM · Sunday: Closed",
   "sellingPoints": [
-    "Energijska samozadostnost",
-    "Naravni bio-materiali",
-    "Vrhunska toplotna izolacija",
-    "Minimalen ogljični odtis"
+    "Osebni posvet",
+    "Sodobne tehnike",
+    "Umirjen ambient"
   ],
-  "targetCustomers": "Vsi, ki cenijo vrhunsko sodobno arhitekturo in ekološko odgovornost.",
-  "serviceArea": "Slovenija in mednarodno",
-  "yearsExperience": "10+",
-  "tone": "minimalističen, sofisticiran, tehnološko napreden",
-  "brandStyle": "visoka estetika, mirnost, naravni materiali",
-  "competitors": "Arhitekturni biroji",
-  "callToAction": "Kontaktirajte nas"
+  "targetCustomers": "Ženske in moški, ki iščejo premišljeno frizersko nego v Ljubljani.",
+  "serviceArea": "Ljubljana in okolica",
+  "tone": "umirjen, premišljen, premium",
+  "brandStyle": "atelier editorial, quiet luxury",
+  "callToAction": "Rezerviraj termin"
 }

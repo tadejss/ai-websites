@@ -1,16 +1,32 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import type { SiteConfig } from "@/content/types/site";
+import { getMonoMediaPool, MONO_KINETIC_QUALITY, MONO_KINETIC_SIZES } from "../mono-media";
 
 type Props = {
   siteConfig: SiteConfig;
 };
 
-export function MonoVideoMetricsSection({}: Props) {
+/** Cinematic media band + optional hero.stats strip (Mono DNA without remote video). */
+export function MonoVideoMetricsSection({ siteConfig }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [metricProgress, setMetricProgress] = useState(0);
   const rafRef = useRef<number | null>(null);
+
+  const bandImage =
+    siteConfig.images?.services?.src ||
+    getMonoMediaPool(siteConfig)[0]?.src ||
+    siteConfig.images?.hero?.src;
+
+  const metrics = (siteConfig.hero.stats ?? [])
+    .map((stat) => ({
+      label: (stat.label || stat.title || "").trim(),
+      value: (stat.value || "").trim(),
+    }))
+    .filter((m) => m.label && m.value)
+    .slice(0, 4);
 
   const handleScroll = useCallback(() => {
     if (!containerRef.current) return;
@@ -20,7 +36,10 @@ export function MonoVideoMetricsSection({}: Props) {
 
     if (rect.bottom > 0 && top < windowH) {
       setMetricProgress(
-        Math.max(0, Math.min(1, 1 - (top + rect.height / 2) / (windowH + rect.height))),
+        Math.max(
+          0,
+          Math.min(1, 1 - (top + rect.height / 2) / (windowH + rect.height)),
+        ),
       );
     }
   }, []);
@@ -40,51 +59,44 @@ export function MonoVideoMetricsSection({}: Props) {
     };
   }, [handleScroll]);
 
-  const translateY = (metricProgress - 0.5) * 30;
+  if (metrics.length === 0) {
+    return null;
+  }
 
-  // Custom metrics or architecture defaults
-  const metrics = [
-    { label: "Bivalna površina", value: "180 m²" },
-    { label: "Raba energije", value: "15 kWh/m²" },
-    { label: "Sončna elektrarna", value: "40 m²" },
-    { label: "Ogljični odtis", value: "-20%" },
-  ];
+  const translateY = (metricProgress - 0.5) * 30;
 
   return (
     <section className="bg-[var(--background)]">
-      {/* Video Container with Parallax Zoom */}
-      <div
-        ref={containerRef}
-        className="relative aspect-[16/9] w-full md:aspect-[21/9] overflow-hidden bg-black"
-      >
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 h-full w-full object-cover"
-          style={{
-            transform: `scale(1.15) translate3d(0, ${translateY}px, 0) translateZ(0)`,
-            WebkitTransform: `scale(1.15) translate3d(0, ${translateY}px, 0) translateZ(0)`,
-            backfaceVisibility: "hidden",
-            WebkitBackfaceVisibility: "hidden",
-            willChange: "transform",
-          }}
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/27eb7fb4-0105-4010-ac9e-0ac977a31b05_1-FZ89nvBAAsR3caRJbhYv7T2mjBofth.mp4"
-        />
-      </div>
+      {bandImage ? (
+        <div
+          ref={containerRef}
+          className="relative aspect-[16/9] w-full overflow-hidden bg-black md:aspect-[21/9]"
+        >
+          <Image
+            src={bandImage}
+            alt={siteConfig.images?.services?.alt || ""}
+            fill
+            quality={MONO_KINETIC_QUALITY}
+            sizes={MONO_KINETIC_SIZES}
+            className="object-cover"
+            style={{
+              transform: `scale(1.15) translate3d(0, ${translateY}px, 0)`,
+              willChange: "transform",
+            }}
+          />
+        </div>
+      ) : null}
 
-      {/* 4-Column Architectural Performance Metrics */}
       <div className="grid grid-cols-2 border-t border-[var(--border)] md:grid-cols-4">
         {metrics.map((metric, idx) => (
           <div
-            key={idx}
+            key={`${metric.label}-${idx}`}
             className="border-b border-r border-[var(--border)] p-8 text-center last:border-r-0 md:border-b-0"
           >
-            <p className="mb-2 text-xs uppercase tracking-widest text-[var(--muted)] font-mono">
+            <p className="mb-2 font-mono text-xs uppercase tracking-widest text-[var(--muted)]">
               {metric.label}
             </p>
-            <p className="font-medium text-[var(--foreground)] text-4xl sm:text-5xl">
+            <p className="text-4xl font-medium text-[var(--foreground)] sm:text-5xl">
               {metric.value}
             </p>
           </div>

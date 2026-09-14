@@ -1,251 +1,295 @@
 {
-  "appearance": "construction",
+  "appearance": "beauty",
   "templateId": "mono",
   "theme": {
-    "paletteId": "charcoal-signal"
-  },
-  "layout": {
-    "profileId": "copy-heavy",
-    "heroImageSide": "none",
-    "servicesImageSide": "none",
-    "heroRatio": "full-copy",
-    "benefitsMode": "default"
+    "paletteId": "charcoal-gold"
   },
   "images": {
     "hero": {
-      "src": "/templates/mono/hero-mono.png",
-      "alt": "MONO sodobna trajnostna arhitektura",
-      "width": 1920,
-      "height": 1080
+      "src": "/templates/mono/salon/frizer_hero.jpg",
+      "alt": "Hair Studio — premium frizerski ambient",
+      "width": 6016,
+      "height": 4000
     },
     "services": {
-      "src": "/templates/mono/interior-view.png",
-      "alt": "Sodoben trajnostni interier",
-      "width": 1920,
-      "height": 1080
+      "src": "/templates/mono/salon/gabriela-151p8tr5jkQ-unsplash.jpg",
+      "alt": "Precizno striženje las",
+      "width": 3659,
+      "height": 3008
     }
   },
   "sections": {
     "gallery": true,
-    "pricing": true
+    "pricing": true,
+    "benefits": true,
+    "process": true,
+    "finalCta": true
   },
   "gallery": {
     "id": "galerija",
     "eyebrow": "Galerija",
-    "title": "Arhitekturni dosežki",
-    "description": "Vpogled v naše trajnostne objekte in bivalne prostore.",
+    "title": "Delo in ambient",
+    "description": "Vpogled v atmosfero salona in rezultate, ki jih ustvarjamo vsak dan.",
     "items": [
       {
-        "src": "/templates/mono/mono-1.png",
-        "alt": "Sodobna arhitektura ob sončnem vzhodu"
+        "src": "/templates/mono/salon/giorgio-trovato-qrz6s4yDcIM-unsplash.jpg",
+        "alt": "Vrsta umivalnikov v sodobnem salonu"
       },
       {
-        "src": "/templates/mono/mono-2.png",
-        "alt": "Sodobna arhitektura v dnevni svetlobi"
+        "src": "/templates/mono/salon/gabriela-151p8tr5jkQ-unsplash.jpg",
+        "alt": "Striženje las s škarjami in glavnikom"
       },
       {
-        "src": "/templates/mono/mono-3.png",
-        "alt": "Sodobna arhitektura v mraku"
+        "src": "/templates/mono/salon/megan-bagshaw-YmaaUNbHHtw-unsplash.jpg",
+        "alt": "Moški profil z moderno frizuro"
       },
       {
-        "src": "/templates/mono/mono-4.png",
-        "alt": "Sodobna arhitektura ponoči"
+        "src": "/templates/mono/salon/baylee-gramling-MMz03PyCOZg-unsplash.jpg",
+        "alt": "Oblikovanje kodrov z likalnikom"
+      },
+      {
+        "src": "/templates/mono/salon/todd-trapani-7pCUY-UoIQ0-unsplash.jpg",
+        "alt": "Volumen in gibanje dolgih las"
+      },
+      {
+        "src": "/templates/mono/salon/gulom-nazarov-DrG4V5skbMY-unsplash.jpg",
+        "alt": "Detajl moškega striženja"
+      },
+      {
+        "src": "/templates/mono/salon/baylee-gramling-a3xr2mVjT5M-unsplash.jpg",
+        "alt": "Valovanje las s curling wand"
+      },
+      {
+        "src": "/templates/mono/salon/alexander-krivitskiy-1f7WL1qrrdE-unsplash.jpg",
+        "alt": "Editorial portret z valovitimi lasmi"
+      },
+      {
+        "src": "/templates/mono/salon/paul-siewert-dnpa8k6TGRE-unsplash.jpg",
+        "alt": "Tekstura in sijaj las"
       }
     ]
   },
   "pricing": {
     "id": "ponudba",
-    "eyebrow": "Modeli",
-    "title": "Prostorske možnosti",
-    "description": "Izberite model, prilagojen vaši lokaciji in življenjskemu slogu.",
-    "disclaimer": "Cene vključujejo projektiranje, konstrukcijo in osnovno montažo.",
+    "eyebrow": "Kaj delamo",
+    "title": "Storitve in cene",
+    "description": "Pregledna ponudba frizerskih storitev. Končna cena je odvisna od dolžine in gostote las.",
+    "disclaimer": "Cenik je informativen. Za natančno ceno in termin nas pokličite.",
     "items": [
       {
-        "name": "Kompaktni model",
-        "description": "120 m² bivalne površine z optimalno energijsko učinkovitostjo",
-        "price": "285.000 €"
-      },
-      {
-        "name": "Standardni model",
-        "description": "180 m² popolno ravnovesje prostornosti in trajnosti",
-        "price": "395.000 €",
+        "name": "Žensko striženje",
+        "description": "Posvet, pranje, striženje in oblikovanje",
+        "price": "od 32 €",
         "featured": true
       },
       {
-        "name": "Premijski model",
-        "description": "250 m² odprt arhitekturni dizajn z maksimalnim udobjem",
-        "price": "525.000 €"
+        "name": "Moško striženje",
+        "description": "Klasično ali sodobno striženje z oblikovanjem",
+        "price": "od 22 €"
+      },
+      {
+        "name": "Barvanje",
+        "description": "Barvanje narastka ali celotne dolžine",
+        "price": "od 55 €"
+      },
+      {
+        "name": "Balayage / prameni",
+        "description": "Mehki prehodi in sodobne tehnike posvetlitve",
+        "price": "od 75 €"
+      },
+      {
+        "name": "Fen frizura",
+        "description": "Sušenje in oblikovanje po striženju ali samostojno",
+        "price": "od 18 €"
+      },
+      {
+        "name": "Svečana pričeska",
+        "description": "Pričeska za posebne priložnosti",
+        "price": "od 45 €"
+      },
+      {
+        "name": "Nega in regeneracija",
+        "description": "Globinska maska in hranljiva nega las",
+        "price": "od 20 €"
       }
     ]
   },
+  "serviceArea": {
+    "id": "obmocje",
+    "eyebrow": "Lokacija",
+    "title": "V srcu Ljubljane",
+    "description": "Atelier Nora se nahaja na Trubarjevi cesti 48 v Ljubljani. Sprejemamo stranke iz Ljubljane in okolice."
+  },
   "brand": {
-    "prefix": "MONO",
-    "highlight": "ARHITEKTURA"
+    "prefix": "Atelier",
+    "highlight": "Nora"
   },
   "metadata": {
-    "title": "MONO ARHITEKTURA | Trajnostni bivalni moduli",
-    "description": "Sodobna trajnostna arhitektura in pasivni bivalni moduli, zgrajeni za prihodnost."
+    "title": "Atelier Nora | Frizerski salon Ljubljana",
+    "description": "Premium frizerski atelier v Ljubljani za striženje, barvanje in nego las."
   },
   "nav": {
     "links": [
-      {
-        "href": "#prednosti",
-        "label": "Prednosti"
-      },
-      {
-        "href": "#tehnologija",
-        "label": "Tehnologija"
-      },
-      {
-        "href": "#galerija",
-        "label": "Galerija"
-      },
-      {
-        "href": "#ponudba",
-        "label": "Modeli"
-      },
-      {
-        "href": "#kontakt",
-        "label": "Kontakt"
-      }
+      { "href": "#prednosti", "label": "Prednosti" },
+      { "href": "#tehnologija", "label": "Ambient" },
+      { "href": "#ponudba", "label": "Storitve" },
+      { "href": "#o-nas", "label": "O nas" },
+      { "href": "#kontakt", "label": "Kontakt" }
     ],
-    "cta": "Kontaktirajte nas"
+    "cta": "Rezerviraj"
   },
   "hero": {
-    "badge": "Trajnostni bivalni moduli",
-    "title": "MONO",
-    "titleHighlight": "ARHITEKTURA",
-    "description": "Lahkotno, trajnostno in pripravljeno na prihodnost.",
-    "primaryCta": "Kontaktirajte nas",
-    "secondaryCta": "Raziščite modele",
-    "stats": [
-      {
-        "value": "A+",
-        "label": "Energijski razred",
-        "title": "Energijski razred"
-      },
-      {
-        "value": "100%",
-        "label": "Bio materiali",
-        "title": "Bio materiali"
-      },
-      {
-        "value": "0 kg",
-        "label": "CO₂ odtis",
-        "title": "CO₂ odtis"
-      },
-      {
-        "value": "30+",
-        "label": "Let garancije",
-        "title": "Let garancije"
-      }
-    ]
+    "badge": "Frizerski atelier · Ljubljana",
+    "title": "Miren prostor za lase,",
+    "titleHighlight": "ki izžarevajo gotovost",
+    "description": "Osebni pristop, sodobne tehnike in umirjen ambient — brez hitenja.",
+    "primaryCta": "Rezerviraj termin",
+    "secondaryCta": "Preglej storitve",
+    "stats": []
   },
   "services": {
-    "id": "storitve",
+    "id": "storitve-seznam",
     "eyebrow": "Storitve",
-    "title": "Celovite arhitekturne storitve",
-    "description": "Od idejne zasnove do ključa v roke.",
+    "title": "Naše storitve",
+    "description": "Celovita frizerska nega v premišljenem ambientu.",
     "items": [
       {
-        "title": "Arhitekturno projektiranje",
-        "description": "Individualni načrti, prilagojeni mikrolokaciji in sončni legi.",
+        "title": "Striženje",
+        "description": "Žensko in moško striženje po meri.",
         "icon": "service-1"
       },
       {
-        "title": "Gradnja pasivnih objektov",
-        "description": "Uporaba bio-izvornih materialov, lesa in konopljine volne.",
+        "title": "Barvanje",
+        "description": "Naravni odtenki, balayage in prameni.",
         "icon": "service-2"
       },
       {
-        "title": "Energijski inženiring",
-        "description": "Integracija sončnih elektrarn, toplotnih črpalk in prezračevanja.",
+        "title": "Nega",
+        "description": "Regeneracija in oblikovanje pričesk.",
         "icon": "service-3"
       }
     ]
   },
   "whyChooseUs": {
-    "id": "prednosti",
-    "eyebrow": "Prednosti",
-    "title": "Vizija trajnostnega bivanja",
-    "description": "Pasivna hiša, ki združuje sodoben dizajn s spoštovanjem do narave — ustvarjena za tiste, ki nočejo izbirati med sodobnim udobjem in ekološko odgovornostjo.",
+    "id": "o-nas",
+    "eyebrow": "O nas",
+    "title": "Atelier, kjer je vsaka stranka v središču",
+    "description": "V Atelierju Nora ustvarjamo urejene, sodobne pričeske v mirnem ambientu. Posvetimo čas posvetu, preciznemu delu in detajlom, ki ostanejo.",
     "highlights": [
-      "Energijska samozadostnost",
-      "Naravni bio-materiali",
-      "Vrhunska toplotna izolacija"
+      "Osebni posvet",
+      "Sodobne tehnike",
+      "Umirjen ambient"
     ],
     "benefits": [
       {
-        "label": "Trajnostna arhitektura.",
-        "description": "Dizajn s spoštovanjem narave.",
-        "title": "Trajnostna arhitektura."
+        "label": "Posvet",
+        "title": "Pozornost do vaših želja",
+        "description": "Vsak termin začnemo s kratkim posvetom, da skupaj določimo obliko, ton in nego."
       },
       {
-        "label": "Zgrajeno za prihodnost.",
-        "description": "Vrhunska energetska učinkovitost.",
-        "title": "Zgrajeno za prihodnost."
+        "label": "Tehnika",
+        "title": "Sodobno, a nosljivo",
+        "description": "Tehnike prilagodimo vašemu vsakdanu — od uradne urejenosti do sproščenega stila."
       },
       {
-        "label": "Eko-odgovorna kakovost.",
-        "description": "100% naravni bio materiali.",
-        "title": "Eko-odgovorna kakovost."
+        "label": "Ambient",
+        "title": "Mir brez hitenja",
+        "description": "Salon je zasnovan za umirjeno izkušnjo, kjer se lahko sprostite med nego."
       }
-    ]
+    ],
+    "steps": {
+      "id": "obisk",
+      "eyebrow": "Obisk",
+      "title": "Kako poteka termin",
+      "description": "Jasen potek od rezervacije do končnega oblikovanja.",
+      "items": [
+        {
+          "title": "Rezervacija",
+          "description": "Pokličite nas in dogovorimo termin, ki vam ustreza."
+        },
+        {
+          "title": "Posvet",
+          "description": "Pregledamo lase, želje in predlagamo najboljši pristop."
+        },
+        {
+          "title": "Izvedba",
+          "description": "Striženje, barvanje ali nego izvedemo precizno in brez hitenja."
+        },
+        {
+          "title": "Nega doma",
+          "description": "Svetujemo enostavne korake za vzdrževanje rezultata."
+        }
+      ]
+    }
   },
   "contact": {
     "id": "kontakt",
     "eyebrow": "Kontakt",
-    "title": "Začnimo vaš projekt skupaj",
-    "description": "Stopite v stik z našo arhitekturno ekipo za informativni posvet in predstavitev modelov.",
-    "items": [
+    "title": "Naročite se na termin",
+    "description": "Pokličite nas za rezervacijo ali vprašanja o storitvah.",
+    "faq": [
       {
-        "label": "Naslov",
-        "value": "Dunajska cesta 156, 1000 Ljubljana",
-        "icon": "location"
+        "question": "Kako rezerviram termin?",
+        "answer": "Termine sprejemamo po telefonu. Pokličite nas in skupaj najdemo ustrezen termin."
       },
       {
+        "question": "Ali je parkirišče v bližini?",
+        "answer": "V okolici Trubarjeve ceste so javna parkirišča in garažne hiše na peš razdalji."
+      },
+      {
+        "question": "Ali sprejemate tudi moške stranke?",
+        "answer": "Da. V ponudbi imamo moško striženje in oblikovanje."
+      }
+    ],
+    "items": [
+      {
         "label": "Telefon",
-        "value": "+386 1 430 5000",
-        "href": "tel:+38614305000",
+        "value": "041 555 220",
+        "href": "tel:041555220",
         "icon": "phone"
       },
       {
         "label": "E-pošta",
-        "value": "info@mono-arhitektura.si",
-        "href": "mailto:info@mono-arhitektura.si",
+        "value": "info@atelier-nora.si",
+        "href": "mailto:info@atelier-nora.si",
         "icon": "email"
       },
       {
+        "label": "Naslov",
+        "value": "Trubarjeva cesta 48, 1000 Ljubljana",
+        "icon": "location"
+      },
+      {
         "label": "Delovni čas",
-        "value": "Pon–Pet: 8:00 – 17:00",
+        "value": "Pon–Pet: 9:00–19:00, Sob: 8:00–14:00",
         "icon": "clock"
       }
     ],
     "form": {
-      "title": "Pošljite povpraševanje",
-      "description": "Izpolnite obrazec in z veseljem vam bomo odgovorili.",
+      "title": "Pošljite sporočilo",
+      "description": "Pišite nam za vprašanja ali predlog termina.",
       "nameLabel": "Ime in priimek",
-      "namePlaceholder": "Vnesite vaše ime",
-      "phoneLabel": "Telefon",
-      "phonePlaceholder": "Vnesite vašo telefonsko številko",
+      "namePlaceholder": "Vaše ime",
+      "phoneLabel": "Telefonska številka",
+      "phonePlaceholder": "Vaša številka",
       "messageLabel": "Sporočilo",
-      "messagePlaceholder": "Napišite vaše želje ali vprašanje...",
-      "submitLabel": "Pošlji povpraševanje"
+      "messagePlaceholder": "Želena storitev ali termin…",
+      "submitLabel": "Pošlji"
     }
   },
   "footer": {
-    "address": "Dunajska cesta 156, 1000 Ljubljana, Slovenija",
-    "rights": "© 2026 MONO. Vse pravice pridržane."
+    "address": "Trubarjeva cesta 48, 1000 Ljubljana",
+    "rights": "© Atelier Nora. Vse pravice pridržane."
   },
   "business": {
-    "name": "MONO Arhitektura",
-    "address": "Dunajska cesta 156, 1000 Ljubljana, Slovenija",
-    "email": "info@mono-arhitektura.si",
-    "phone": "+386 1 430 5000"
+    "name": "Atelier Nora",
+    "address": "Trubarjeva cesta 48, 1000 Ljubljana",
+    "email": "info@atelier-nora.si",
+    "phone": "041 555 220"
   },
   "privacy": {
     "enabled": true,
-    "lastUpdated": "2026-09-11",
+    "lastUpdated": "2026-09-14",
     "contactForm": {
       "enabled": true,
       "fields": ["name", "phone", "message"]

@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   images: {
     formats: ["image/avif", "image/webp"],
+    // Allow high-quality kinetic/full-bleed renders (Next defaults to [75] only).
+    qualities: [75, 90, 92],
     remotePatterns: [
       {
         protocol: "https",
