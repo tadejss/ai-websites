@@ -154,6 +154,7 @@ function testLifecycleHelpers(): void {
   ok("demo age uses published_at", demoAgeDays(published) === 3);
 
   ok("excluded slug zbrendiraj-si", isDemoTrackingExcludedSlug("zbrendiraj-si"));
+  ok("excluded preview template slug", isDemoTrackingExcludedSlug("preview-mono"));
   ok("normal slug not excluded", !isDemoTrackingExcludedSlug("frizer-janez"));
 }
 

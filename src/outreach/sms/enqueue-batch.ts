@@ -1,4 +1,4 @@
-import { isCustomer } from "@/customers/store";
+import { listCustomerSlugsAmong } from "@/customers/store";
 import { getOutreachConfig } from "@/outreach/config";
 import { readAllLeads } from "@/leads/store";
 import { getDailySmsCapacity } from "./daily-budget";
@@ -7,7 +7,9 @@ import { enqueueSmsForLead } from "./queue";
 import {
   getSmsLeadState,
   hasActiveOrSentStep,
-  isSmsOptedOut,
+  listActiveOrSentStepsBySlugs,
+  listSmsLeadStatesBySlugs,
+  listSmsOptedOutPhones,
 } from "./store";
 import { isSmsSendWindowOpen } from "./timezone";
 import { normalizeSlovenianPhone } from "./phone";
@@ -146,6 +148,23 @@ export async function enqueueDueSmsBatch(
   }
 
   const leads = readAllLeads();
+  const slugs = leads.map((lead) => lead.slug);
+
+  const [customerSlugs, stateRows, stepsBySlug] = await Promise.all([
+    listCustomerSlugsAmong(slugs),
+    listSmsLeadStatesBySlugs(slugs),
+    listActiveOrSentStepsBySlugs(slugs),
+  ]);
+  const statesBySlug = new Map(stateRows.map((row) => [row.slug, row]));
+
+  const phones: string[] = [];
+  for (const lead of leads) {
+    const phone = normalizeSlovenianPhone(lead.phone);
+    if (phone.ok) {
+      phones.push(phone.e164);
+    }
+  }
+  const optedOutPhones = await listSmsOptedOutPhones(phones);
 
   for (const lead of leads) {
     if (remaining <= 0) {
@@ -153,9 +172,10 @@ export async function enqueueDueSmsBatch(
     }
 
     considered += 1;
-    const customer = await isCustomer(lead.slug);
-    const state = await getSmsLeadState(lead.slug);
-    const step = await resolveDueSmsStep(lead.slug, lead.status);
+    const customer = customerSlugs.has(lead.slug);
+    const state = statesBySlug.get(lead.slug) ?? null;
+    const sentSteps = stepsBySlug.get(lead.slug) ?? new Set<SmsStep>();
+    const step = resolveDueSmsStepFromCaches(state, sentSteps, lead.status);
 
     if (!step) {
       skipped += 1;
@@ -167,9 +187,11 @@ export async function enqueueDueSmsBatch(
       continue;
     }
 
-    const already = await hasActiveOrSentStep(lead.slug, step);
+    const already = sentSteps.has(step);
     const phone = normalizeSlovenianPhone(lead.phone);
-    const globallyOptedOut = phone.ok ? await isSmsOptedOut(phone.e164) : false;
+    const globallyOptedOut = phone.ok
+      ? optedOutPhones.has(phone.e164)
+      : false;
     const eligibility = evaluateSmsEligibility({
       lead,
       isCustomer: customer,
@@ -188,6 +210,7 @@ export async function enqueueDueSmsBatch(
     if (result.ok) {
       queued += 1;
       remaining -= 1;
+      sentSteps.add(step);
     } else {
       skipped += 1;
       errors.push(`${lead.slug}: ${result.error}`);

@@ -753,6 +753,26 @@ export async function isSmsOptedOut(phone: string): Promise<boolean> {
   return rows.length > 0;
 }
 
+/** Batched opt-out lookup (avoids N+1 in enqueue). */
+export async function listSmsOptedOutPhones(
+  phones: string[],
+): Promise<Set<string>> {
+  const out = new Set<string>();
+  if (!isDatabaseConfigured() || phones.length === 0) {
+    return out;
+  }
+  await ensureCustomerSchema();
+  const db = sql();
+  const rows = (await db`
+    SELECT phone FROM sms_opt_outs
+    WHERE phone = ANY(${phones})
+  `) as Array<{ phone: string }>;
+  for (const row of rows) {
+    out.add(row.phone);
+  }
+  return out;
+}
+
 export async function upsertSmsOptOut(input: {
   phone: string;
   source: string;

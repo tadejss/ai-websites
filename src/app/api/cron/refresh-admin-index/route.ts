@@ -2,7 +2,10 @@ import { NextResponse } from "next/server";
 import { refreshAdminEntityIndex } from "@/admin/entity-index";
 import { afterAdminMutation } from "@/admin/revalidate";
 import { logSystemEvent } from "@/admin/system-events";
-import { backfillPublishedFromFactoryLocks } from "@/demo-lifecycle/store";
+import {
+  backfillPublishedFromFactoryLocks,
+  purgeExpiredDemoViewDedupe,
+} from "@/demo-lifecycle/store";
 import { releaseStaleFailedGenerationLocks } from "@/factory/generation-lock";
 import { isValidCronToken, readBearerToken } from "@/lib/auth";
 
@@ -15,9 +18,10 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const [backfilled, staleFailedReleased] = await Promise.all([
+  const [backfilled, staleFailedReleased, purgedDedupe] = await Promise.all([
     backfillPublishedFromFactoryLocks(),
     releaseStaleFailedGenerationLocks(),
+    purgeExpiredDemoViewDedupe(),
   ]);
 
   const count = await refreshAdminEntityIndex();
@@ -29,6 +33,7 @@ export async function GET(request: Request) {
       count,
       backfilled,
       staleFailedReleased: staleFailedReleased.length,
+      purgedDedupe,
     },
   });
 
@@ -37,6 +42,7 @@ export async function GET(request: Request) {
     count,
     backfilled,
     staleFailedReleased: staleFailedReleased.length,
+    purgedDedupe,
   });
 }
 

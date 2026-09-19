@@ -1,4 +1,5 @@
 import { pathToFileURL } from "node:url";
+import { isSmsSendWindowOpen } from "../../../src/outreach/sms/timezone";
 import { loadGatewayConfig, type GatewayConfig } from "./config";
 import { detectModem } from "./modem/detect";
 import { HiLinkModem } from "./modem/hilink";
@@ -157,6 +158,11 @@ export async function processOutboundBatch(
   modem: SmsModem,
   options?: { random?: () => number },
 ): Promise<{ sent: number; failed: number; skipped: number }> {
+  // Avoid Neon budget/claim wakes outside the Ljubljana send window.
+  if (!isSmsSendWindowOpen()) {
+    return { sent: 0, failed: 0, skipped: 0 };
+  }
+
   const status = await modem.getStatus();
   if (!status.connected && !config.dryRun) {
     console.warn(`[poller] Modem offline: ${status.detail}`);
@@ -341,6 +347,7 @@ export async function runPollerLoop(): Promise<void> {
   process.on("SIGTERM", stop);
 
   while (!stopping) {
+    const windowOpen = isSmsSendWindowOpen();
     try {
       const result = await processOneBatch(config, modem);
       if (result.sent || result.failed) {
@@ -354,7 +361,11 @@ export async function runPollerLoop(): Promise<void> {
         error instanceof Error ? error.message : error,
       );
     }
-    await sleep(config.pollIntervalMs);
+    // Outside the send window, idle longer — inbound still runs each cycle.
+    const sleepMs = windowOpen
+      ? config.pollIntervalMs
+      : Math.max(config.pollIntervalMs, 300_000);
+    await sleep(sleepMs);
   }
 }
 

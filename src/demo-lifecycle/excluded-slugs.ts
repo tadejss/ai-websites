@@ -6,5 +6,10 @@ const EXCLUDED_SLUGS = new Set([
 ]);
 
 export function isDemoTrackingExcludedSlug(slug: string): boolean {
-  return EXCLUDED_SLUGS.has(slug.trim().toLowerCase());
+  const normalized = slug.trim().toLowerCase();
+  if (EXCLUDED_SLUGS.has(normalized)) {
+    return true;
+  }
+  // Template preview clients (not SMS outreach demos).
+  return normalized.startsWith("preview-");
 }

@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/api/cron/sms-outreach",
-      "schedule": "*/15 * * * *"
+      "schedule": "15 7-16 * * *"
     },
     {
       "path": "/api/cron/replenish-leads",
@@ -14,11 +14,11 @@
     },
     {
       "path": "/api/cron/email-provision",
-      "schedule": "*/5 * * * *"
+      "schedule": "0 * * * *"
     },
     {
       "path": "/api/cron/grok-qa",
-      "schedule": "*/5 * * * *"
+      "schedule": "0 * * * *"
     }
   ]
 }

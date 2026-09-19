@@ -35,10 +35,23 @@ export async function ensureAdminSchema(): Promise<void> {
   if (!adminSchemaReady) {
     adminSchemaReady = (async () => {
       await ensureCustomerSchema();
+      const db = sql();
+      try {
+        const existing = (await db`
+          SELECT (
+            to_regclass('public.admin_entity_index') IS NOT NULL
+            AND to_regclass('public.admin_sessions') IS NOT NULL
+          ) AS ok
+        `) as Array<{ ok: boolean }>;
+        if (existing[0]?.ok) {
+          return;
+        }
+      } catch {
+        // fall through to DDL
+      }
       const statements = ADMIN_SCHEMA_SQL.split(";")
         .map((part) => part.trim())
         .filter((part) => part.length > 0);
-      const db = sql();
       for (const statement of statements) {
         await db.query(statement);
       }

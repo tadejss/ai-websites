@@ -23,7 +23,7 @@ import {
   recordCustomerUpsellPurchase,
   upsertCustomerFromCheckout,
 } from "@/customers/store";
-import { CUSTOMER_SLUGS_CACHE_TAG } from "@/customers/slug-cache";
+import { CUSTOMER_SLUGS_CACHE_TAG, invalidateCustomerSlugMemoryCache } from "@/customers/slug-cache";
 import { markDemoLifecyclePurchased } from "@/demo-lifecycle/store";
 import { isDatabaseConfigured } from "@/db/client";
 import { resolveCheckoutLead } from "@/leads/checkout-lead";
@@ -135,6 +135,7 @@ async function handleUpsellCompleted(
   });
 
   revalidateTag(CUSTOMER_SLUGS_CACHE_TAG, "max");
+  invalidateCustomerSlugMemoryCache();
 
   if (alreadyProcessed) {
     return {
@@ -214,6 +215,7 @@ async function handleBaseSubscriptionCompleted(
   });
 
   revalidateTag(CUSTOMER_SLUGS_CACHE_TAG, "max");
+  invalidateCustomerSlugMemoryCache();
 
   const contactEmail = contactEmailFromSession(session);
   const contactName = contactNameFromSession(session);

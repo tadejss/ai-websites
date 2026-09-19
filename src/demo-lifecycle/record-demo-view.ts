@@ -1,4 +1,4 @@
-import { isCustomer } from "@/customers/store";
+import { isCustomerSlugCached } from "@/customers/slug-cache";
 import { isDemoTrackingExcludedSlug } from "./excluded-slugs";
 import {
   incrementDemoViewIfNew,
@@ -26,12 +26,13 @@ export async function recordDemoView(
     return { recorded: false, slug: normalizedSlug, reason: "excluded_slug" };
   }
 
-  if (await isCustomer(normalizedSlug)) {
-    return { recorded: false, slug: normalizedSlug, reason: "customer" };
-  }
-
+  // Eligibility before any Neon write path.
   if (!shouldCountDemoView(context)) {
     return { recorded: false, slug: normalizedSlug, reason: "ineligible_request" };
+  }
+
+  if (await isCustomerSlugCached(normalizedSlug)) {
+    return { recorded: false, slug: normalizedSlug, reason: "customer" };
   }
 
   const viewerKey = await buildViewerKey(normalizedSlug, context);

@@ -192,6 +192,20 @@ export type RecordViewResult =
   | { recorded: true; slug: string }
   | { recorded: false; slug: string; reason: string };
 
+/** Periodic cleanup for expired demo view dedupe rows (not per-request). */
+export async function purgeExpiredDemoViewDedupe(): Promise<number> {
+  const db = await requireDb();
+  if (!db) {
+    return 0;
+  }
+  const rows = (await db`
+    DELETE FROM demo_view_dedupe
+    WHERE expires_at < NOW()
+    RETURNING slug
+  `) as Array<{ slug: string }>;
+  return rows.length;
+}
+
 /**
  * Insert dedupe row then increment view counters atomically per viewer window.
  */
@@ -205,12 +219,7 @@ export async function incrementDemoViewIfNew(
     return { recorded: false, slug, reason: "database_not_configured" };
   }
 
-  // Best-effort expired dedupe cleanup
-  await db`
-    DELETE FROM demo_view_dedupe
-    WHERE expires_at < NOW()
-  `;
-
+  // Expired dedupe cleanup runs on the daily admin-index cron (not per view).
   const dedupeInsert = (await db`
     INSERT INTO demo_view_dedupe (slug, viewer_key, expires_at, created_at)
     VALUES (

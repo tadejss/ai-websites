@@ -30,6 +30,12 @@ export type QueueItemKind =
   | "onboarding_review"
   | "qa_failed";
 
+const QUEUE_COUNTS_TTL_MS = 30_000;
+let queueCountsCache: {
+  expiresAt: number;
+  value: Record<QueueItemKind, number>;
+} | null = null;
+
 export type QueueItemCore = {
   slug: string;
   companyName: string;
@@ -316,7 +322,13 @@ export async function getActionQueue(limit = 20): Promise<QueueItem[]> {
 }
 
 export async function getQueueCounts(): Promise<Record<QueueItemKind, number>> {
-  return countQueueKinds(await collectQueueItems(200));
+  const now = Date.now();
+  if (queueCountsCache && queueCountsCache.expiresAt > now) {
+    return queueCountsCache.value;
+  }
+  const value = countQueueKinds(await collectQueueItems(200));
+  queueCountsCache = { expiresAt: now + QUEUE_COUNTS_TTL_MS, value };
+  return value;
 }
 
 export async function getQueueNeighbors(slug: string): Promise<{

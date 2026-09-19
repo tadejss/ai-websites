@@ -7,7 +7,7 @@ type CacheEntry = {
 };
 
 /** Best-effort isolate cache only — not a correctness mechanism. */
-const CACHE_TTL_MS = 30_000;
+const CACHE_TTL_MS = 10 * 60_000;
 const cache = new Map<string, CacheEntry>();
 
 export function invalidateWebsiteDomainLookupCache(): void {

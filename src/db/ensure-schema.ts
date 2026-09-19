@@ -9,9 +9,28 @@ import {
 
 let schemaReady: Promise<void> | null = null;
 
+async function customerSchemaLooksPresent(): Promise<boolean> {
+  try {
+    const db = sql();
+    // Require core markers across the combined bootstrap SQL so a partial
+    // older install still runs IF NOT EXISTS DDL for missing tables.
+    const rows = (await db`
+      SELECT (
+        to_regclass('public.customers') IS NOT NULL
+        AND to_regclass('public.sms_messages') IS NOT NULL
+        AND to_regclass('public.demo_lifecycle') IS NOT NULL
+        AND to_regclass('public.demo_view_dedupe') IS NOT NULL
+      ) AS ok
+    `) as Array<{ ok: boolean }>;
+    return Boolean(rows[0]?.ok);
+  } catch {
+    return false;
+  }
+}
+
 /**
- * Idempotent schema bootstrap for serverless. Safe to call on every request;
- * runs CREATE TABLE / INDEX IF NOT EXISTS once per cold start.
+ * Idempotent schema bootstrap for serverless.
+ * Skips DDL when core tables already exist (one cheap check per cold isolate).
  */
 export async function ensureCustomerSchema(): Promise<void> {
   if (!isDatabaseConfigured()) {
@@ -20,6 +39,10 @@ export async function ensureCustomerSchema(): Promise<void> {
 
   if (!schemaReady) {
     schemaReady = (async () => {
+      if (await customerSchemaLooksPresent()) {
+        return;
+      }
+
       const statements =
         `${CUSTOMER_SCHEMA_SQL};\n${SMS_SCHEMA_SQL};\n${FACTORY_SCHEMA_SQL};\n${DEMO_LIFECYCLE_SCHEMA_SQL};\n${QA_SCHEMA_SQL}`
           .split(";")
