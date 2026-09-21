@@ -26,12 +26,34 @@ const seenInbound = new Set<string>();
 
 export const SMS_SEND_DELAY_MIN_MS = 180_000;
 export const SMS_SEND_DELAY_MAX_MS = 300_000;
+/** Idle poll interval when no outbound claim/send work (also used off-window). */
+export const SMS_IDLE_POLL_MS = 300_000;
 
 export function randomSendDelayMs(
   random: () => number = Math.random,
 ): number {
   const span = SMS_SEND_DELAY_MAX_MS - SMS_SEND_DELAY_MIN_MS + 1;
   return SMS_SEND_DELAY_MIN_MS + Math.floor(random() * span);
+}
+
+/**
+ * Next loop sleep: 15s (or configured poll) after claim/send work;
+ * 5 min when idle (empty queue, budget exhausted, or outside send window).
+ */
+export function nextPollerSleepMs(input: {
+  pollIntervalMs: number;
+  windowOpen: boolean;
+  claimed: boolean;
+  sent: number;
+  failed: number;
+}): number {
+  const idleMs = Math.max(input.pollIntervalMs, SMS_IDLE_POLL_MS);
+  if (!input.windowOpen) {
+    return idleMs;
+  }
+  const didOutboundWork =
+    input.claimed || input.sent > 0 || input.failed > 0;
+  return didOutboundWork ? input.pollIntervalMs : idleMs;
 }
 
 function maskPhone(phone: string): string {
@@ -153,20 +175,28 @@ export function shouldDeleteAfterInbound(pushSucceeded: boolean): boolean {
   return pushSucceeded;
 }
 
+export type OutboundBatchResult = {
+  sent: number;
+  failed: number;
+  skipped: number;
+  /** True when at least one message was claimed from the queue this cycle. */
+  claimed: boolean;
+};
+
 export async function processOutboundBatch(
   config: GatewayConfig,
   modem: SmsModem,
   options?: { random?: () => number },
-): Promise<{ sent: number; failed: number; skipped: number }> {
+): Promise<OutboundBatchResult> {
   // Avoid Neon budget/claim wakes outside the Ljubljana send window.
   if (!isSmsSendWindowOpen()) {
-    return { sent: 0, failed: 0, skipped: 0 };
+    return { sent: 0, failed: 0, skipped: 0, claimed: false };
   }
 
   const status = await modem.getStatus();
   if (!status.connected && !config.dryRun) {
     console.warn(`[poller] Modem offline: ${status.detail}`);
-    return { sent: 0, failed: 0, skipped: 0 };
+    return { sent: 0, failed: 0, skipped: 0, claimed: false };
   }
 
   let budget: BudgetSnapshot | null = null;
@@ -177,11 +207,11 @@ export async function processOutboundBatch(
       "[poller] budget fetch failed:",
       error instanceof Error ? error.message : error,
     );
-    return { sent: 0, failed: 0, skipped: 0 };
+    return { sent: 0, failed: 0, skipped: 0, claimed: false };
   }
 
   if (!budget?.sendWindowOpen) {
-    return { sent: 0, failed: 0, skipped: 0 };
+    return { sent: 0, failed: 0, skipped: 0, claimed: false };
   }
   const sendRemaining =
     typeof budget.sendRemaining === "number"
@@ -192,12 +222,12 @@ export async function processOutboundBatch(
     console.log(
       `[poller] daily send target reached localDate=${budget.localDate} sent=${budget.sent} target=${budget.target} sendRemaining=${sendRemaining}`,
     );
-    return { sent: 0, failed: 0, skipped: 0 };
+    return { sent: 0, failed: 0, skipped: 0, claimed: false };
   }
 
   const messages = await claimQueue(config);
   if (messages.length === 0) {
-    return { sent: 0, failed: 0, skipped: 0 };
+    return { sent: 0, failed: 0, skipped: 0, claimed: false };
   }
 
   // Hard policy: never process more than one claimed message per cycle.
@@ -218,7 +248,7 @@ export async function processOutboundBatch(
       `[poller] skip message=${message.messageId} reason=${auth.reason ?? "blocked"}`,
     );
     skipped += 1;
-    return { sent, failed, skipped };
+    return { sent, failed, skipped, claimed: true };
   }
 
   const result = await modem.sendSms(message.to, message.text);
@@ -244,7 +274,7 @@ export async function processOutboundBatch(
     failed += 1;
   }
 
-  return { sent, failed, skipped };
+  return { sent, failed, skipped, claimed: true };
 }
 
 export async function processInboundBatch(
@@ -293,14 +323,16 @@ export async function processInboundBatch(
 export async function processOneBatch(
   config: GatewayConfig,
   modem: SmsModem,
-): Promise<{ sent: number; failed: number }> {
+): Promise<{ sent: number; failed: number; claimed: boolean }> {
   let sent = 0;
   let failed = 0;
+  let claimed = false;
 
   try {
     const outbound = await processOutboundBatch(config, modem);
     sent = outbound.sent;
     failed = outbound.failed;
+    claimed = outbound.claimed;
     if (outbound.skipped) {
       console.log(`[poller] outbound skipped=${outbound.skipped}`);
     }
@@ -320,7 +352,7 @@ export async function processOneBatch(
     );
   }
 
-  return { sent, failed };
+  return { sent, failed, claimed };
 }
 
 export async function runPollerLoop(): Promise<void> {
@@ -348,8 +380,14 @@ export async function runPollerLoop(): Promise<void> {
 
   while (!stopping) {
     const windowOpen = isSmsSendWindowOpen();
+    let claimed = false;
+    let sent = 0;
+    let failed = 0;
     try {
       const result = await processOneBatch(config, modem);
+      claimed = result.claimed;
+      sent = result.sent;
+      failed = result.failed;
       if (result.sent || result.failed) {
         console.log(
           `[poller] batch sent=${result.sent} failed=${result.failed}`,
@@ -361,10 +399,14 @@ export async function runPollerLoop(): Promise<void> {
         error instanceof Error ? error.message : error,
       );
     }
-    // Outside the send window, idle longer — inbound still runs each cycle.
-    const sleepMs = windowOpen
-      ? config.pollIntervalMs
-      : Math.max(config.pollIntervalMs, 300_000);
+    // Idle (no claim/send) or outside window → 5min; after outbound work → pollInterval.
+    const sleepMs = nextPollerSleepMs({
+      pollIntervalMs: config.pollIntervalMs,
+      windowOpen,
+      claimed,
+      sent,
+      failed,
+    });
     await sleep(sleepMs);
   }
 }

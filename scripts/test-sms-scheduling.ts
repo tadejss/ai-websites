@@ -24,7 +24,9 @@ import {
   ljubljanaWallTime,
 } from "../src/outreach/sms/timezone";
 import {
+  nextPollerSleepMs,
   randomSendDelayMs,
+  SMS_IDLE_POLL_MS,
   SMS_SEND_DELAY_MAX_MS,
   SMS_SEND_DELAY_MIN_MS,
 } from "../tools/sms-gateway/src/poller";
@@ -160,6 +162,50 @@ function main() {
   ok(randomSendDelayMs(() => 0.999999) === SMS_SEND_DELAY_MAX_MS, "delay max");
   ok(SMS_SEND_DELAY_MIN_MS === 180000, "3 minutes");
   ok(SMS_SEND_DELAY_MAX_MS === 300000, "5 minutes");
+  ok(SMS_IDLE_POLL_MS === 300000, "idle poll 5 minutes");
+
+  // Idle poller sleep: 5min when no claim/send; pollInterval after work
+  const pollIntervalMs = 15_000;
+  ok(
+    nextPollerSleepMs({
+      pollIntervalMs,
+      windowOpen: true,
+      claimed: false,
+      sent: 0,
+      failed: 0,
+    }) === SMS_IDLE_POLL_MS,
+    "in-window idle → 5min",
+  );
+  ok(
+    nextPollerSleepMs({
+      pollIntervalMs,
+      windowOpen: true,
+      claimed: true,
+      sent: 0,
+      failed: 0,
+    }) === pollIntervalMs,
+    "claimed but skipped → pollInterval",
+  );
+  ok(
+    nextPollerSleepMs({
+      pollIntervalMs,
+      windowOpen: true,
+      claimed: true,
+      sent: 1,
+      failed: 0,
+    }) === pollIntervalMs,
+    "after send → pollInterval",
+  );
+  ok(
+    nextPollerSleepMs({
+      pollIntervalMs,
+      windowOpen: false,
+      claimed: false,
+      sent: 0,
+      failed: 0,
+    }) === SMS_IDLE_POLL_MS,
+    "outside window → 5min",
+  );
 
   // GSM-7 initial/manual unchanged
   const body = renderSms({
